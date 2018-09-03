@@ -1,0 +1,36 @@
+
+state={
+	id=295
+	name="STATE_295"
+	resources={
+		tungsten=2.000
+	}
+
+	history={
+		owner = FRE
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			10968 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			191 1 
+		}
+		victory_points = {
+			5117 3 
+		}
+		add_core_of = FRE
+
+	}
+
+	provinces={
+		2115 2192 3109 5117 5139 8193 8207 10948 10968 12925 12975 
+	}
+	manpower=3540948
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

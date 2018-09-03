@@ -1,0 +1,45 @@
+﻿capital = 330
+
+oob = "MON_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	limited_conscription
+}
+
+set_politics = {
+
+	parties = {
+		liberalism = { 
+			popularity = 6
+		}
+
+		rexism = {
+			popularity = 74
+		}
+		
+		absolutism = {
+			popularity = 20
+		}
+	}
+	
+	ruling_party = rexism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Anandyn Amar"
+	desc = "POLITICS_ANANDYN_AMAR_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_proletarianism.dds"
+	expire = "1965.1.1"
+	ideology = proletarianism
+	traits = {
+		#
+	}
+}

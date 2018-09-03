@@ -1,0 +1,27 @@
+
+state={
+	id=874
+	name="STATE_753"
+
+	history={
+		owner = ANH
+		victory_points = {
+			6524 5 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = ANH
+
+	}
+
+	provinces={
+		425 
+	}
+	manpower=62452
+	buildings_max_level_factor=1.000
+	state_category=city
+}

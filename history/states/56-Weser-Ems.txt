@@ -1,0 +1,31 @@
+
+state={
+	id=56
+	name="STATE_56"
+
+	history={
+		owner = RAV
+		victory_points = {
+			11388 2 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			dockyard = 2
+			241 = {
+				naval_base = 8
+
+			}
+			air_base = 3
+
+		}
+		add_core_of = RAV
+	}
+
+	provinces={
+		11233 11388 
+	}
+	manpower=2058467
+	buildings_max_level_factor=1.000
+	state_category=city
+}

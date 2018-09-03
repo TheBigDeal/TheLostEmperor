@@ -1,0 +1,25 @@
+state={
+	id=794
+	name="STATE_794"
+	
+	history={
+		owner = AUS
+		
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 3
+
+		}
+		
+		add_core_of = AUS
+		add_core_of = SLZ
+	}
+	state_category=large_city
+	
+	provinces={
+		688 3675 11634 
+	}
+	manpower=759326
+	buildings_max_level_factor=1.000
+}

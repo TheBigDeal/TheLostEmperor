@@ -1,0 +1,15 @@
+state={
+	id=890
+	name="STATE_890"
+	state_category = wasteland
+	
+	history={
+		owner = TUR
+	}
+	
+	provinces={
+		1544 4440 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

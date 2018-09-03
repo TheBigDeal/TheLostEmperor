@@ -1,0 +1,29 @@
+focus_tree = {
+	id = greece_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 3
+			tag = ATH
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = ATH_CIVIL_WAR
+		icon = GFX_goal_support_rexism
+		x = 8
+		y = 0
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+}
+	

@@ -1,0 +1,21 @@
+
+state={
+	id=861
+	name="STATE_861"
+	state_category = city
+	history={
+		owner = TOR
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = BUG
+
+	}
+
+	provinces={
+		7088 13177 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

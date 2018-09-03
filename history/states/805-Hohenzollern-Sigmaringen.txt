@@ -1,0 +1,27 @@
+state={
+	id=805
+	name="STATE_805"
+	
+	history={
+		owner = HNZ
+		victory_points = {
+			6934 1
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+
+		}
+		add_core_of = HNZ
+
+	}
+	
+	state_category=town
+	
+	provinces={
+		6934 
+	}
+	manpower=563532
+	buildings_max_level_factor=1.000
+}

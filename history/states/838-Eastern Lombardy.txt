@@ -1,0 +1,23 @@
+
+state={
+	id=838
+	name="STATE_838"
+	
+	history={
+		owner = VNC
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+
+		}
+		add_core_of = VNC
+
+	}
+
+	provinces={
+		603 969 6661 11568 11587 
+	}
+	manpower=536314
+	state_category = city
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,21 @@
+state={
+	id=830
+	name="STATE_830"
+	
+	history={
+		owner = PRU
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+		}
+		add_core_of = PRU
+	}
+	
+	state_category=town
+	
+	provinces={
+		5131 8217 8231 
+	}
+	manpower=253747
+	buildings_max_level_factor=1.000
+}

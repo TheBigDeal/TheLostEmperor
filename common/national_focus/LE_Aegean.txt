@@ -1,0 +1,121 @@
+focus_tree = {
+	id = greece_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 3
+			tag = AEG
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = AEG_CIVIL_WAR
+		icon = GFX_goal_support_rexism
+		x = 8
+		y = 0
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AEG_ALIGN_WITH_ATHENS
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = AEG_CIVIL_WAR }
+		mutually_exclusive = { focus = AEG_GO_ALONE }
+		x = 7
+		y = 1
+		cost = 3
+		available = {
+			if = {
+				ATH = { is_in_faction = no }
+			}
+		}
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			create_faction = AEGEAN_PROTECTORATE
+			add_to_faction = ATH
+		}
+	}
+	focus = {
+		id = AEG_GO_ALONE
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = AEG_CIVIL_WAR }
+		mutually_exclusive = { focus = AEG_ALIGN_WITH_ATHENS }
+		x = 9
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AEG_GREEK_LEGACY
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = AEG_GO_ALONE focus = AEG_ALIGN_WITH_ATHENS }
+		x = 8
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AEG_HARSH_TRAINING
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = AEG_GREEK_LEGACY }
+		x = 7
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AEG_MOBILIZE_THE_COUNTRY
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = AEG_GREEK_LEGACY }
+		x = 9
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AEG_IMPROVE_CHAIN_OF_COMMAND
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = AEG_MOBILIZE_THE_COUNTRY focus = AEG_HARSH_TRAINING }
+		x = 8
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+}
+	

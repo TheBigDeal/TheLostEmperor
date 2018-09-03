@@ -1,0 +1,26 @@
+
+state={
+	id=558
+	name="STATE_558"
+	resources={
+		rubber=3.000
+	}
+
+	history={
+		owner = ARO
+		buildings = {
+			infrastructure = 3
+			arms_factory = 0
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		8034 10831 
+	}
+	manpower=19757000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

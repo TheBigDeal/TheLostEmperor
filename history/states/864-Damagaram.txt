@@ -1,0 +1,20 @@
+
+state={
+	id=864
+	name="STATE_864"
+	state_category = city
+	history={
+		owner = DAM
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		8028 10758 10917 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

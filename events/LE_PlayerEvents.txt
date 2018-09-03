@@ -1,0 +1,98 @@
+﻿add_namespace = playerevents
+
+#Options
+country_event = {
+	id = playerevents.1
+	title = playerevents.1.t
+	desc = playerevents.1.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_ai = no
+	}
+	
+	option = { #Default Options
+		name = playerevents.1.a
+	}
+	option = { #Edit Options
+		name = playerevents.1.b
+		country_event = playerevents.2
+	}
+}
+
+country_event = {
+	id = playerevents.2
+	title = playerevents.2.t
+	desc = playerevents.2.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = { #FILL IN NO MANS LAND
+		name = playerevents.2.a
+		country_event = playerevents.3
+	}
+	option = { #EXIT
+		name = playerevents.2.b
+	}
+}
+
+
+country_event = {
+	id = playerevents.3
+	title = playerevents.3.t
+	desc = playerevents.3.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = { #FILL IN NO MANS LAND - AFRICA
+		name = playerevents.3.a
+		KEL = {
+			set_state_owner = 557
+			set_state_owner = 514
+		}
+		LBA = {
+			set_state_owner = 273 
+		}
+		EGY = {
+			set_state_owner = 552
+			set_state_owner = 777
+		}
+	}
+	option = { #FILL IN NO MANS LAND - ARABIA
+		name = playerevents.3.b
+		IRQ = {
+			set_state_owner = 675
+			set_state_controller = 675
+			set_state_owner = 889
+			set_state_controller = 889
+		}
+		SHM = {
+			set_state_owner = 888
+			set_state_controller = 888
+		}
+		NEJ = {
+			set_state_owner = 831 
+			set_state_controller = 831
+		}
+		TUR = {
+			set_state_owner = 890
+			set_state_controller = 890
+		}
+		YEM = {
+			set_state_owner = 898
+			set_state_controller = 898
+		}
+		OMA = {
+			set_state_owner = 897
+			set_state_controller = 987
+		}
+	}
+	option = { #EXIT
+		name = playerevents.3.c
+	}
+}
+	

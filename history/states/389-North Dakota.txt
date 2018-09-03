@@ -1,0 +1,30 @@
+
+state={
+	id=389
+	name="STATE_389"
+	resources={
+		steel=24.000
+		oil=10.000
+	}
+
+	history={
+		owner = UPP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = UPP
+		victory_points = {
+			1836 1 
+		}
+
+	}
+
+	provinces={
+		1788 1836 4759 4772 6722 7877 10709 12566 12603 
+	}
+	manpower=680844
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

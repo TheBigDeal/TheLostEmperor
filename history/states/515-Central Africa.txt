@@ -1,0 +1,22 @@
+
+state={
+	id=515
+	name="STATE_515"
+
+	history={
+		owner = TBE
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = TBE
+
+	}
+
+	provinces={
+		10893 
+	}
+	manpower=1482744
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

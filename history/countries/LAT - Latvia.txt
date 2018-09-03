@@ -1,0 +1,62 @@
+﻿capital = 840
+
+oob = "LAT_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_fighter = 1
+	early_submarine = 1
+}
+
+set_research_slots = 3
+
+set_convoys = 10
+
+set_politics = {
+
+	parties = {
+		liberalism = { 
+			popularity = 20
+		}
+
+		rexism = {
+			popularity = 15
+		}
+		
+		proletarianism = {
+			popularity = 15
+		}
+		
+		absolutism = { 
+			popularity = 50
+		}
+	}
+	
+	ruling_party = absolutism
+	last_election = "1931.10.3"
+	election_frequency = 108
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Karlis Ulmanis"
+	desc = "POLITICS_KARLIS_ULMANIS_DESC"
+	picture = "GFX_Portrait_latvia_karlis_ulmanis"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Gustavs Celmiņš"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+		#
+	}
+}

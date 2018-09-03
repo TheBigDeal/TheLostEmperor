@@ -1,0 +1,64 @@
+﻿capital = 64
+
+OOB = "PRS_1935"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+add_ideas = {
+	PRS_PRUSSIAN_MILITARISM
+}
+
+set_politics = {
+
+	parties = {
+		conservatism = { 
+			popularity = 10
+		}
+
+		rexism = {
+			popularity = 20
+		}
+		
+		royalism = {
+			popularity = 5
+		}
+		
+		absolutism = { 
+			popularity = 75
+		}
+	}
+	
+	ruling_party = absolutism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_field_marshal = {
+	name = "Heinrich Gutte"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	skill = 4
+}
+
+create_field_marshal = {
+	name = "Adolf Perte"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	skill = 4
+}
+
+create_field_marshal = {
+	name = "Fredrick von Habsburg"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	skill = 3
+}
+
+create_field_marshal = {
+	name = "Heinrich von Wurrtemburg"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	skill = 2
+}
+

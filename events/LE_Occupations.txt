@@ -1,0 +1,36 @@
+﻿###########################
+# Occupation Events
+###########################
+
+add_namespace = occupation
+
+country_event = { #Papal liberation
+	id = occupation.1
+	title = occupation.1.t
+	desc = occupation.1.d
+	trigger = {
+		NOT = { tag = PAP }
+		owns_state = 2
+		PAP = {
+			exists = no
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = { #liberate
+		name = occupation.1.a
+		ai_chance = {
+			factor = 40
+		}
+		PAP = { transfer_state = 2 }
+		puppet = PAP
+	}
+	
+	option = { #Take Bessarabia
+		name = occupation.1.b
+		transfer_state = 2
+	}
+}

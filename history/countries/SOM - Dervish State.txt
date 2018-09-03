@@ -1,0 +1,37 @@
+﻿capital = 779
+
+#OOB = "YUG_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+
+	parties = {
+		liberalism = { 
+			popularity = 4
+		}
+
+		rexism = {
+			popularity = 1
+		}
+		
+		absolutism = {
+			popularity = 4
+		}
+		
+		theocracy = { 
+			popularity = 91
+		}
+	}
+	
+	ruling_party = theocracy
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_convoys = 5

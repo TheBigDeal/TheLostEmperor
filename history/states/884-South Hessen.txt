@@ -1,0 +1,28 @@
+
+state={
+	id=884
+	name="STATE_745"
+
+	history={
+		owner = MAI
+		victory_points = {
+			6581 3 
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 7
+			industrial_complex = 1
+			air_base = 3
+
+		}
+		add_core_of = MAI
+
+	}
+
+	provinces={
+		6581 6594 
+	}
+	manpower=678945
+	buildings_max_level_factor=1.000
+	state_category=city
+}

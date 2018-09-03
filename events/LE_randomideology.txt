@@ -1,0 +1,115 @@
+﻿###########################
+# Ideology Events
+###########################
+
+add_namespace = le_randomideology
+
+# Randomize Country Ideology
+########################
+country_event = {
+	id = le_randomideology.1
+	title = le_randomideology.1.t
+	desc = le_randomideology.1.d
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		name = le_randomideology.1.a
+		random_list = { 
+			11 = { 
+				set_politics = {
+					ruling_party = liberalism
+					last_election = "1920.15.6"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				add_popularity = { ideology = liberalism popularity = 0.5 }
+				add_popularity = { ideology = conservatism popularity = 0.35 }
+				add_popularity = { ideology = royalism popularity = 0.1 }
+			}
+			11 = { 
+				set_politics = {
+					ruling_party = conservatism
+					last_election = "1920.15.6"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				add_popularity = { ideology = conservatism popularity = 0.5 }
+				add_popularity = { ideology = liberalism popularity = 0.35 }
+				add_popularity = { ideology = royalism popularity = 0.1 }
+			}
+			11 = { 
+				set_politics = {
+					ruling_party = absolutism
+					last_election = "1920.15.6"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				add_popularity = { ideology = royalism popularity = 0.3 } 
+			}
+			11 = { 
+				set_politics = {
+					ruling_party = royalism
+					last_election = "1920.15.6"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				add_popularity = { ideology = royalism popularity = 0.6 } 
+			}
+			11 = { 
+				set_politics = {
+					ruling_party = collectivism
+					last_election = "1920.15.6"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				add_popularity = { ideology = collectivism popularity = 0.45 } 
+				add_popularity = { ideology = naturalism popularity = 0.2 } 
+				add_popularity = { ideology = proletarianism popularity = 0.35 } 
+			}
+			11 = { 
+				set_politics = {
+					ruling_party = naturalism
+					last_election = "1920.15.6"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				add_popularity = { ideology = collectivism popularity = 0.2 } 
+				add_popularity = { ideology = naturalism popularity = 0.45 } 
+				add_popularity = { ideology = proletarianism popularity = 0.35 } 
+			}
+			11 = { 
+				set_politics = {
+					ruling_party = proletarianism
+					last_election = "1920.15.6"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				add_popularity = { ideology = collectivism popularity = 0.35 } 
+				add_popularity = { ideology = naturalism popularity = 0.2 } 
+				add_popularity = { ideology = proletarianism popularity = 0.45 } 
+			}
+			12 = { 
+				set_politics = {
+					ruling_party = rexism
+					last_election = "1920.15.6"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				add_popularity = { ideology = rexism popularity = 0.6 } 
+				add_popularity = { ideology = labryscism popularity = 0.4 } 
+			}
+			11 = { 
+				set_politics = {
+					ruling_party = labryscism
+					last_election = "1920.15.6"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				add_popularity = { ideology = rexism popularity = 0.4 } 
+				add_popularity = { ideology = labryscism popularity = 0.6 } 
+			}
+		}
+	}
+}

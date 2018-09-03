@@ -1,0 +1,22 @@
+state={
+	id=835
+	name="STATE_835"
+	
+	history={
+		owner = BND
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = BND
+
+	}
+	
+	provinces={
+		2220 
+	}
+	manpower=675473
+	state_category = city
+	buildings_max_level_factor=1.000
+}

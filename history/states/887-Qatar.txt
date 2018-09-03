@@ -1,0 +1,33 @@
+state={
+	id=887
+	name="STATE_887"
+	
+	history={
+		owner = TNS
+		add_core_of = TNS
+		add_core_of = NEJ
+		victory_points = {
+			7960 1 
+		}
+		buildings = {
+			infrastructure = 2
+			7960 = {
+				naval_base = 3
+
+			}
+			8051 = {
+				naval_base = 2
+
+			}
+
+		}
+
+	}
+	
+	provinces={
+		8051 
+	}
+	manpower=435653
+	state_category = city
+	buildings_max_level_factor=1.000
+}

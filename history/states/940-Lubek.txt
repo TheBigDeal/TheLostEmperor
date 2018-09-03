@@ -1,0 +1,22 @@
+state={
+	id=940
+	name="STATE_748"
+	state_category = city
+	
+	history=
+	{
+		owner = LUB
+		controller = LUB
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+		}
+		add_core_of = LUB
+	}
+	provinces={
+		11331 
+	}
+	manpower=568950
+	buildings_max_level_factor=1.000
+}

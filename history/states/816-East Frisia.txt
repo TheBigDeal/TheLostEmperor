@@ -1,0 +1,27 @@
+state={
+	id=816
+	name="STATE_816"
+	
+	history={
+		owner = EFR
+		victory_points = {
+			11360 2 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+
+		}
+		add_core_of = EFR
+
+	}
+	
+	state_category=town
+	
+	provinces={
+		11360 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

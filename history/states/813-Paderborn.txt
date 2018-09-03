@@ -1,0 +1,27 @@
+state={
+	id=813
+	name="STATE_813"
+	
+	history={
+		owner = PAD
+		victory_points = {
+			9509 1 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+
+		}
+		add_core_of = PAD
+
+	}
+	
+	state_category=town
+	
+	provinces={
+		3355 9509 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

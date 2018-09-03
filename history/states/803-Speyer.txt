@@ -1,0 +1,27 @@
+state={
+	id=803
+	name="STATE_803"
+	
+	history={
+		owner = SPY
+		victory_points = {
+			3530 1
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+
+		}
+		add_core_of = SPY
+
+	}
+	
+	state_category=town
+	
+	provinces={
+		3530 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

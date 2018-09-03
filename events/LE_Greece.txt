@@ -1,0 +1,488 @@
+﻿###########################
+# LE_greecen Events
+###########################
+
+add_namespace = LE_greece
+
+# Greek Civil War
+country_event = {
+	id = LE_greece.1
+	title = LE_greece.1.t
+	desc = LE_greece.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	
+	#trigger = {
+	#	AND = {
+	#		OR = {
+	#			tag = SPT
+	#			tag = ATH
+	#			tag = AEG
+	#			tag = MOU
+	#			tag = HEL
+	#			tag = THS
+	#		}
+	#		date > 1928.4.30 
+	#		NOT = {	has_country_flag = GREEK_CIVIL_WAR }
+	#	}
+	#}
+
+	#mean_time_to_happen = {
+	#	days = 1
+	#}
+	
+	option = {
+		name = le_greece.1.a
+		#SPARTA
+		##############################################################
+		if = {
+			limit = {
+				AND = {
+					tag = SPT
+					NOT = { SPT = { is_in_faction_with = MOU } }
+				}
+			}
+			declare_war_on = { target = ATH type = annex_everything }
+			declare_war_on = { target = AEG type = annex_everything }
+			declare_war_on = { target = MOU type = annex_everything }
+			declare_war_on = { target = HEL type = annex_everything }
+			declare_war_on = { target = THS type = annex_everything }
+			set_country_flag = GREEK_CIVIL_WAR
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = SPT
+					SPT = { is_in_faction_with = MOU }
+				}
+			}
+			declare_war_on = { target = ATH type = annex_everything }
+			declare_war_on = { target = AEG type = annex_everything }
+			declare_war_on = { target = HEL type = annex_everything }
+			declare_war_on = { target = THS type = annex_everything }
+			set_country_flag = GREEK_CIVIL_WAR
+		}
+		
+		#ATHENS
+		##############################################################
+		if = {
+			limit = {
+				AND = {
+					tag = ATH
+					NOT = { ATH = { is_in_faction_with = AEG } }
+				}
+			}
+			declare_war_on = { target = ATH type = annex_everything }
+			declare_war_on = { target = AEG type = annex_everything }
+			declare_war_on = { target = SPT type = annex_everything }
+			declare_war_on = { target = HEL type = annex_everything }
+			declare_war_on = { target = THS type = annex_everything }
+			set_country_flag = GREEK_CIVIL_WAR
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = ATH
+					ATH = { is_in_faction_with = MOU }
+				}
+			}
+			declare_war_on = { target = ATH type = annex_everything }
+			declare_war_on = { target = SPT type = annex_everything }
+			declare_war_on = { target = HEL type = annex_everything }
+			declare_war_on = { target = THS type = annex_everything }
+			set_country_flag = GREEK_CIVIL_WAR
+		}
+		
+		#AEGEAN REPUBLIC
+		##############################################################
+		if = {
+			limit = {
+				AND = {
+					tag = AEG
+					NOT = { AEG = { is_in_faction_with = ATH } }
+				}
+			}
+			declare_war_on = { target = ATH type = annex_everything }
+			declare_war_on = { target = MOU type = annex_everything }
+			declare_war_on = { target = SPT type = annex_everything }
+			declare_war_on = { target = HEL type = annex_everything }
+			declare_war_on = { target = THS type = annex_everything }
+			set_country_flag = GREEK_CIVIL_WAR
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = AEG
+					AEG = { is_in_faction_with = ATH }
+				}
+			}
+			declare_war_on = { target = MOU type = annex_everything }
+			declare_war_on = { target = SPT type = annex_everything }
+			declare_war_on = { target = HEL type = annex_everything }
+			declare_war_on = { target = THS type = annex_everything }
+			set_country_flag = GREEK_CIVIL_WAR
+		}
+		
+		#MOUNT ATHOS
+		##############################################################
+		if = {
+			limit = {
+				AND = {
+					tag = MOU
+					NOT = { MOU = { is_in_faction_with = SPT } }
+				}
+			}
+			declare_war_on = { target = ATH type = annex_everything }
+			declare_war_on = { target = AEG type = annex_everything }
+			declare_war_on = { target = SPT type = annex_everything }
+			declare_war_on = { target = HEL type = annex_everything }
+			declare_war_on = { target = THS type = annex_everything }
+			set_country_flag = GREEK_CIVIL_WAR
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = MOU
+					MOU = { is_in_faction_with = SPT }
+				}
+			}
+			declare_war_on = { target = AEG type = annex_everything }
+			declare_war_on = { target = SPT type = annex_everything }
+			declare_war_on = { target = HEL type = annex_everything }
+			declare_war_on = { target = THS type = annex_everything }
+			set_country_flag = GREEK_CIVIL_WAR
+		}
+		
+		#THESSALY
+		##############################################################
+		if = {
+			limit = {
+				AND = {
+					tag = THS
+					NOT = { THS = { is_in_faction_with = HEL } }
+				}
+			}
+			declare_war_on = { target = ATH type = annex_everything }
+			declare_war_on = { target = AEG type = annex_everything }
+			declare_war_on = { target = SPT type = annex_everything }
+			declare_war_on = { target = HEL type = annex_everything }
+			declare_war_on = { target = MOU type = annex_everything }
+			set_country_flag = GREEK_CIVIL_WAR
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = THS
+					THS = { is_in_faction_with = HEL }
+				}
+			}
+			declare_war_on = { target = AEG type = annex_everything }
+			declare_war_on = { target = SPT type = annex_everything }
+			declare_war_on = { target = MOU type = annex_everything }
+			declare_war_on = { target = THS type = annex_everything }
+			set_country_flag = GREEK_CIVIL_WAR
+		}
+		
+		#HELLENIC COMMUNE
+		##############################################################
+		if = {
+			limit = {
+				AND = {
+					tag = HEL
+					NOT = { HEL = { is_in_faction_with = THS } }
+				}
+			}
+			declare_war_on = { target = ATH type = annex_everything }
+			declare_war_on = { target = AEG type = annex_everything }
+			declare_war_on = { target = SPT type = annex_everything }
+			declare_war_on = { target = MOU type = annex_everything }
+			declare_war_on = { target = MOU type = annex_everything }
+			set_country_flag = GREEK_CIVIL_WAR
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = HEL
+					HEL = { is_in_faction_with = THS }
+				}
+			}
+			declare_war_on = { target = AEG type = annex_everything }
+			declare_war_on = { target = SPT type = annex_everything }
+			declare_war_on = { target = MOU type = annex_everything }
+			declare_war_on = { target = ATH type = annex_everything }
+			set_country_flag = GREEK_CIVIL_WAR
+		}
+	}
+}
+country_event = {
+	id = LE_greece.2
+	title = LE_greece.2.t
+	desc = LE_greece.2.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				tag = SPT
+				NOT = {
+					country_exists = ATH
+					country_exists = AEG
+					country_exists = MOU
+					country_exists = HEL
+					country_exists = THS
+				}
+				date > 1928.4.30 
+				SPT = { has_country_flag = GREEK_CIVIL_WAR }
+			}
+			AND = {
+				tag = ATH
+				NOT = {
+					country_exists = SPT
+					country_exists = AEG
+					country_exists = MOU
+					country_exists = HEL
+					country_exists = THS
+				}
+				date > 1928.4.30 
+				ATH = { has_country_flag = GREEK_CIVIL_WAR }
+			}
+			AEG = {
+				tag = SPT
+				NOT = {
+					country_exists = ATH
+					country_exists = SPT
+					country_exists = MOU
+					country_exists = HEL
+					country_exists = THS
+				}
+				date > 1928.4.30 
+				AEG = { has_country_flag = GREEK_CIVIL_WAR }
+			}
+			MOU = {
+				tag = SPT
+				NOT = {
+					country_exists = ATH
+					country_exists = SPT
+					country_exists = AEG
+					country_exists = HEL
+					country_exists = THS
+				}
+				date > 1928.4.30 
+				MOU = { has_country_flag = GREEK_CIVIL_WAR }
+			}
+			HEL = {
+				tag = SPT
+				NOT = {
+					country_exists = ATH
+					country_exists = SPT
+					country_exists = MOU
+					country_exists = AEG
+					country_exists = THS
+				}
+				date > 1928.4.30 
+				HEL = { has_country_flag = GREEK_CIVIL_WAR }
+			}
+			THS = {
+				tag = SPT
+				NOT = {
+					country_exists = ATH
+					country_exists = SPT
+					country_exists = MOU
+					country_exists = HEL
+					country_exists = AEG
+				}
+				date > 1928.4.30 
+				THS = { has_country_flag = GREEK_CIVIL_WAR }
+			}
+		}
+	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = LE_greece.2.a
+		if = {
+			limit = {
+				tag = SPT
+			}
+			GRE = { change_tag_from = SPT }
+			GRE = {
+				annex_country = { target = SPT transfer_troops = yes }
+				set_politics = { ruling_party = labryscism elections_allowed = no }
+				add_popularity = { ideology = labryscism popularity = 1 }
+				add_popularity = { ideology = rexism popularity = 0.4 }
+			}
+		}
+		if = {
+			limit = {
+				tag = ATH
+			}
+			GRE = { change_tag_from = ATH }
+			GRE = { 
+				set_politics = { ruling_party = royalism elections_allowed = no }
+				set_political_party = { ideology = royalism popularity = 1 }
+				set_political_party = { ideology = absolutism popularity = 0.4 }
+				annex_country = { target = ATH transfer_troops = yes }
+			}
+		}
+		if = {
+			limit = {
+				tag = MOU
+			}
+			GRE = { change_tag_from = MOU }
+			GRE = { 
+				set_politics = { ruling_party = theocracy elections_allowed = no }
+				set_political_party = { ideology = theocracy popularity = 1 }
+				set_political_party = { ideology = rexism popularity = 0.3 }
+				annex_country = { target = MOU transfer_troops = yes }
+			}
+		}
+		if = {
+			limit = {
+				tag = HEL
+			}
+			GRE = { change_tag_from = HEL }
+			GRE = { 
+				set_politics = { ruling_party = collectivism elections_allowed = no }
+				set_political_party = { ideology = collectivism popularity = 1 }
+				set_political_party = { ideology = proletarianism popularity = 0.4 }
+				set_political_party = { ideology = naturalism popularity = 0.2 }
+				annex_country = { target = HEL transfer_troops = yes }
+			}
+		}
+		if = {
+			limit = {
+				tag = THS
+			}
+			GRE = { change_tag_from = THS }
+			GRE = { 
+				set_politics = { ruling_party = theocracy elections_allowed = no }
+				set_political_party = { ideology = proletarianism popularity = 1 }
+				set_political_party = { ideology = collectivism popularity = 0.2 }
+				set_political_party = { ideology = naturalism popularity = 0.2 }
+				annex_country = { target = THS transfer_troops = yes }
+			}
+		}
+		if = {
+			limit = {
+				tag = AEG
+			}
+			GRE = { change_tag_from = AEG }
+			GRE = { 
+				set_politics = { ruling_party = liberalism elections_allowed = no }
+				set_political_party = { ideology = liberalism popularity = 1 }
+				set_political_party = { ideology = conservatism popularity = 0.30 }
+				set_political_party = { ideology = socialism popularity = 0.15 }
+				set_political_party = { ideology = collectivism popularity = 0.1 }
+				annex_country = { target = AEG transfer_troops = yes }
+			}
+		}
+		
+	}
+}
+country_event = { #IDEOLOGY SPLIT
+	id = LE_greece.3
+	title = LE_greece.3.t
+	desc = LE_greece.3.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			AND = { #SPARTA
+				tag = SPT
+				country_exists = MOU
+				date > 1928.4.30 
+				SPT = { has_country_flag = GREEK_CIVIL_WAR }
+				SPT = { has_war = no }
+				MOU = { has_war = no }
+			}
+			AND = { #ATHENS
+				tag = ATH
+				country_exists = AEG
+				date > 1928.4.30 
+				ATH = { has_country_flag = GREEK_CIVIL_WAR }
+				ATH = { has_war = no }
+				AEG = { has_war = no }
+			}
+			AND = { #AEGEAN REPUBLIC
+				tag = AEG 
+				country_exists = ATH
+				date > 1928.4.30 
+				AEG = { has_country_flag = GREEK_CIVIL_WAR }
+				AEG = { has_war = no }
+				ATH = { has_war = no }
+			}
+			AND = {
+				tag = MOU
+				country_exists = SPT
+				date > 1928.4.30 
+				MOU = { has_country_flag = GREEK_CIVIL_WAR }
+				MOU = { has_war = no }
+				SPT = { has_war = no }
+			}
+			AND = {
+				tag = THS
+				country_exists = HEL
+				date > 1928.4.30 
+				THS = { has_country_flag = GREEK_CIVIL_WAR }
+				THS = { has_war = no }
+				HEL = { has_war = no }
+			}
+			AND = {
+				tag = HEL
+				country_exists = THS
+				date > 1928.4.30 
+				HEL = { has_country_flag = GREEK_CIVIL_WAR }
+				HEL = { has_war = no }
+				THS = { has_war = no }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { # Combine Ideologies
+		name = le_greece.3.a
+		if = { #SPARTA AND MOUNT ATHOS = REXISM
+			limit  = {
+				OR = {
+					AND = {
+						tag = SPT
+						country_exists = MOU
+					}
+					AND = {
+						tag = MOU
+						country_exists = SPT
+					}
+				}
+			}
+			GRE = { change_tag_from = SPT }
+			GRE = {
+				annex_country = { target = SPT transfer_troops = yes }
+				set_politics = { ruling_party = rexism elections_allowed = no }
+				add_popularity = { ideology = rexism popularity = 1 }
+				add_popularity = { ideology = labryscism popularity = 0.4 }
+			}
+		}
+	}
+	option = { # Invade
+		name = le_greece.3.a
+		if = { #SPARTA
+			limit  = {
+				tag = SPT
+			}
+			
+		}
+			
+		
+	}
+}

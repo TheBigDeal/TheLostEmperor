@@ -1,0 +1,29 @@
+
+state={
+	id=878
+	name="STATE_759"
+
+	history={
+		owner = JUL
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+
+		}
+		victory_points = {
+			6573 1 
+		}
+		victory_points = {
+			6570 2 
+		}
+		add_core_of = JUL
+
+	}
+
+	provinces={
+		6469 6570 9482 
+	}
+	manpower=53414
+	buildings_max_level_factor=1.000
+	state_category=town
+}

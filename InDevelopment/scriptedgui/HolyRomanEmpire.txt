@@ -1,0 +1,93 @@
+scripted_gui = {
+	
+	fuhrer_mana_enemy_country_powers = {
+	
+		context_type = selected_country_context
+		
+		window_name = "fuhrer_mana_enemy_country_powers_container"
+		
+		visible = {
+			ROOT = {
+                has_fuhrer_mana = yes
+			}
+			NOT = {
+				tag = ROOT
+			}
+		}
+		
+		effects = {
+			fuhrer_mana_divide_enemy_click = {
+				if = {
+					limit = {
+						has_government = communism
+					}
+					start_civil_war = {
+						ideology = democratic
+						size = 0.5
+					}
+				}
+				if = {
+					limit = {
+						NOT = { has_government = communism }
+					}
+					start_civil_war = {
+						ideology = communism
+						size = 0.5
+					}
+				}
+				set_variable = { ignore_divide = 1 }
+				subtract_from_variable = { ROOT.fuhrer_mana = 100 }
+			}
+			
+			
+			fuhrer_mana_conquer_enemy_click = {
+				set_variable = { ROOT.conquering = this }
+				set_variable = { ROOT.conquer_day = 0 }
+				subtract_from_variable = { ROOT.fuhrer_mana = 150 }
+			}
+		}
+		
+		triggers = {
+			fuhrer_mana_divide_enemy_click_enabled = {
+				check_variable = { ignore_divide = 0 }
+				check_variable = { ROOT.fuhrer_mana > 99.99 }
+			}
+			fuhrer_mana_conquer_enemy_click_enabled = {
+				check_variable = { ROOT.conquering = 0 }
+				check_variable = { ROOT.fuhrer_mana > 149.99 }
+			}
+		}
+		
+		
+		ai_test_parent = "fuhrer_mana_powers"
+        
+		
+		ai_test_scopes = test_if_only_major
+		ai_test_scopes = test_enemy_countries
+		
+		ai_enabled = {
+            has_fuhrer_mana = yes
+		}
+        
+		ai_check = {
+			num_of_controlled_states > 8
+			check_variable = { ROOT.fuhrer_mana_max > 99.99 }
+		}
+		
+		ai_weights = {
+			fuhrer_mana_divide_enemy_click = {
+				ai_will_do = {
+					factor = -1
+                	modifier = {
+                        check_variable = { ignore_divide = 0 }
+						add = 10
+					}
+				}
+                ignore_lower_weights = {
+                    factor = 0
+                }
+			}
+		}
+	}
+}
+

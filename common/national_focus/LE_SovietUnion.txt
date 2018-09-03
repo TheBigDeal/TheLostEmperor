@@ -1,0 +1,660 @@
+focus_tree = {
+	id = LEsoviet_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 50 y = 3100 }
+	
+	focus = {
+		id = SOV_LENINISM
+		icon = GFX_goal_support_proletarianism
+		mutually_exclusive = { focus = SOV_STALINISM focus = SOV_MARXISM}
+		x = 4
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_LENINISM_1
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = SOV_LENINISM }
+		x = 4
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = SOV_lenin_recruitable
+		}
+	}
+	focus = {
+		id = SOV_LENINISM_2
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = SOV_LENINISM_1 }
+		x = 4
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = SOV_lenin_morale
+		}
+	}
+	focus = {
+		id = SOV_LENINISM_3
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = SOV_LENINISM_2 }
+		x = 4
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = SOV_lenin_army
+		}
+	}
+	focus = {
+		id = SOV_LENINISM_4
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = SOV_LENINISM_2 }
+		x = 4
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = SOV_lenin_unity
+		}
+	}
+	focus = {
+		id = SOV_LENINISM_5
+		icon = GFX_goal_support_fourth_int
+		prerequisite = { focus = SOV_LENINISM_3 }
+		x = 4
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_politics = { ruling_party = proletarianism elections_allowed = no }		
+		}
+	}
+	focus = {
+		id = SOV_STALINISM
+		icon = GFX_goal_support_proletarianism
+		mutually_exclusive = { focus = SOV_LENINISM focus = SOV_MARXISM}
+		x = 6
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_STALINISM_1
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = SOV_STALINISM }
+		x = 6
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = SOV_stalin_wargoal	
+		}
+	}
+	focus = {
+		id = SOV_STALINISM_2
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = SOV_STALINISM_1 }
+		x = 6
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = SOV_stalin_conscription
+		}
+	}
+	focus = {
+		id = SOV_STALINISM_3
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = SOV_STALINISM_2 }
+		x = 6
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = SOV_stalin_army
+		}
+	}
+	focus = {
+		id = SOV_STALINISM_4
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = SOV_STALINISM_2 }
+		x = 6
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = SOV_stalin_drift
+		}
+	}
+	focus = {
+		id = SOV_STALINISM_5
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { focus = SOV_STALINISM_3 }
+		x = 6
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_politics = { ruling_party = proletarianism elections_allowed = no }
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = SOV_MARXISM
+		icon = GFX_goal_support_proletarianism
+		mutually_exclusive = { focus = SOV_LENINISM focus = SOV_STALINISM}
+		x = 2
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_MARXISM_1
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SOV_MARXISM }
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = SOV_marx_political		
+		}
+	}
+	focus = {
+		id = SOV_MARXISM_2
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = SOV_MARXISM_1}
+		x = 2
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = SOV_marx_subversive
+		}
+	}
+	focus = {
+		id = SOV_MARXISM_3
+		icon = GFX_focus_generic_socialist_science
+		prerequisite = { focus = SOV_MARXISM_2 }
+		x = 2
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = SOV_MARXISM_4
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = SOV_MARXISM_3 }
+		x = 2
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_stability = 0.05	
+		}
+	}
+	focus = {
+		id = SOV_MARXISM_5
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = SOV_MARXISM_3 }
+		x = 2
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_politics = { ruling_party = proletarianism elections_allowed = no }
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = SOV_SOVIETS
+		icon = GFX_goal_support_proletarianism
+		x = 11
+		y = 0
+		cost = 10
+		available = {
+			OR = {
+				SOV = { has_government = proletarianism }
+				SOV = { has_government = proletarianism }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = SOV_UKRAINE_SOVIET
+		icon = GFX_goal_support_proletarianism
+		prerequisite = { focus = SOV_SOVIETS }
+		x = 10
+		y = 1
+		cost = 10
+		available = {
+			NOT = { country_exists = UKR }
+			SOV = {
+				228 = { is_owned_by = SOV }
+				227 = { is_owned_by = SOV }
+				221 = { is_owned_by = SOV }
+				226 = { is_owned_by = SOV }
+				200 = { is_owned_by = SOV }
+				196 = { is_owned_by = SOV }
+				225 = { is_owned_by = SOV }
+				259 = { is_owned_by = SOV }
+				193 = { is_owned_by = SOV }
+				197 = { is_owned_by = SOV }
+				203 = { is_owned_by = SOV }
+				192 = { is_owned_by = SOV }
+				202 = { is_owned_by = SOV }
+				201 = { is_owned_by = SOV }
+				198 = { is_owned_by = SOV }
+				199 = { is_owned_by = SOV }
+				752 = { is_owned_by = SOV }
+				93 = { is_owned_by = SOV }
+				91 = { is_owned_by = SOV }
+				89 = { is_owned_by = SOV }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			release = UKR
+			puppet = UKR
+			UKR = { transfer_state = 137 }
+			UKR = { set_cosmetic_tag = SOV1 }
+		}
+	}
+	focus = {
+		id = SOV_BELERUS_SOVIET
+		icon = GFX_goal_support_proletarianism
+		prerequisite = { focus = SOV_SOVIETS }
+		x = 12
+		y = 1
+		cost = 10
+		available = {
+			NOT = { country_exists = BLR }
+			SOV = {
+				241 = { is_owned_by = SOV }
+				207 = { is_owned_by = SOV }
+				206 = { is_owned_by = SOV }
+				96 = { is_owned_by = SOV }
+				204 = { is_owned_by = SOV }
+				194 = { is_owned_by = SOV }
+				94 = { is_owned_by = SOV }
+				95 = { is_owned_by = SOV }
+				97 = { is_owned_by = SOV }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			release = BLR
+			puppet = BLR
+			BLR = { set_cosmetic_tag = SOV0 }
+		}
+	}
+	focus = {
+		id = SOV_GEORGIA_SOVIET
+		icon = GFX_goal_support_proletarianism
+		prerequisite = { focus = SOV_SOVIETS }
+		x = 10
+		y = 2
+		cost = 10
+		available = {
+			NOT = { country_exists = GEO }
+			SOV = {
+				231 = { is_owned_by = SOV }
+				229 = { is_owned_by = SOV }
+				230 = { is_owned_by = SOV }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			release = GEO
+			puppet = GEO
+			GEO = { set_cosmetic_tag = SOV2 }
+			GEO = {
+				transfer_state = 231
+				transfer_state = 229
+				transfer_state = 230
+			}
+		}
+	}
+	focus = {
+		id = SOV_ESTONIA_SOVIET
+		icon = GFX_goal_support_proletarianism
+		prerequisite = { focus = SOV_SOVIETS }
+		x = 14
+		y = 1
+		cost = 10
+		available = {
+			NOT = { country_exists = EST }
+			SOV = {
+				13 = { is_owned_by = SOV }
+				191 = { is_owned_by = SOV }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			release = EST
+			puppet = EST
+			EST = { set_cosmetic_tag = SOV2 }
+		}
+	}
+	focus = {
+		id = SOV_LATVIA_SOVIET
+		icon = GFX_goal_support_proletarianism
+		prerequisite = { focus = SOV_SOVIETS }
+		x = 14
+		y = 2
+		cost = 10
+		available = {
+			NOT = { country_exists = LAT }
+			SOV = {
+				12 = { is_owned_by = SOV }
+				190 = { is_owned_by = SOV }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			release = LAT
+			puppet = LAT
+			LAT = { set_cosmetic_tag = SOV3 }
+		}
+	}
+	focus = {
+		id = SOV_LITHUANIA_SOVIET
+		icon = GFX_goal_support_proletarianism
+		prerequisite = { focus = SOV_SOVIETS }
+		x = 12
+		y = 2
+		cost = 10
+		available = {
+			NOT = { country_exists = LIT }
+			SOV = {
+				11 = { is_owned_by = SOV }
+				189 = { is_owned_by = SOV }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			LIT = {
+				transfer_state = 11
+				transfer_state = 189
+			}
+			puppet = LIT
+			#LIT = { set_cosmetic_tag = SOV3 }
+		}
+	}
+	focus = {
+		id = SOV_POLAND_SOVIET_1
+		icon = GFX_goal_support_proletarianism
+		prerequisite = { focus = SOV_SOVIETS }
+		x = 8
+		y = 1
+		cost = 10
+		available = {
+			NOT = { country_exists = POL }
+			SOV = {
+				10 = { is_owned_by = SOV }
+				98 = { is_owned_by = SOV }
+				87 = { is_owned_by = SOV }
+				90 = { is_owned_by = SOV }
+				88 = { is_owned_by = SOV }
+				72 = { is_owned_by = SOV }
+				92 = { is_owned_by = SOV }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			POL = {
+				transfer_state = 10
+				transfer_state = 98
+				transfer_state = 87
+				transfer_state = 90
+				transfer_state = 88
+				transfer_state = 72
+				transfer_state = 92
+			}
+			puppet = POL
+			#POL = { set_cosmetic_tag = SOV2 }
+		}
+	}
+	focus = {
+		id = SOV_POLAND_SOVIET_2
+		icon = GFX_goal_support_proletarianism
+		prerequisite = { focus = SOV_POLAND_SOVIET_1 }
+		x = 8
+		y = 2
+		cost = 10
+		available = {
+			SOV = {
+				5 = { is_owned_by = SOV }
+				85 = { is_owned_by = SOV }
+				86 = { is_owned_by = SOV }
+				66 = { is_owned_by = SOV }
+				67 = { is_owned_by = SOV }
+				751 = { is_owned_by = SOV }
+				63 = { is_owned_by = SOV }
+				750 = { is_owned_by = SOV }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			POL = {
+				transfer_state = 5
+				transfer_state = 85
+				transfer_state = 86
+				transfer_state = 66
+				transfer_state = 67
+				transfer_state = 751
+				transfer_state = 63
+				transfer_state = 750
+			}
+		}
+	}
+	focus = {
+		id = SOV_EXPANSION
+		icon = GFX_goal_support_proletarianism
+		mutually_exclusive = { focus = SOV_SPREAD_COMMUNISM}
+		x = 17
+		y = 0
+		cost = 10
+		available = {
+			SOV = {
+				OR = {
+					has_government = proletarianism
+					has_government = proletarianism
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_POLAND_EXPANSION_PREPARE
+		icon = GFX_goal_support_proletarianism
+		prerequisite = { focus = SOV_EXPANSION }
+		x = 16
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_POLAND_ASSERT_CLAIMS
+		icon = GFX_goal_support_proletarianism
+		prerequisite = { focus = SOV_POLAND_EXPANSION_PREPARE }
+		x = 16
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_POLAND_INVADE
+		icon = GFX_goal_support_proletarianism
+		prerequisite = { focus = SOV_POLAND_ASSERT_CLAIMS }
+		x = 16
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			declare_war_on = { target = POL type = annex_everything }
+		}
+	}
+	focus = {
+		id = SOV_LITHUANIA_EXPANSION_PREPARE
+		icon = GFX_goal_support_proletarianism
+		prerequisite = { focus = SOV_EXPANSION }
+		x = 18
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_LITHUANIA_ASSERT_CLAIMS
+		icon = GFX_goal_support_proletarianism
+		prerequisite = { focus = SOV_LITHUANIA_EXPANSION_PREPARE }
+		x = 18
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_LITHUANIA_INVADE
+		icon = GFX_goal_support_proletarianism
+		prerequisite = { focus = SOV_LITHUANIA_ASSERT_CLAIMS }
+		x = 18
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			declare_war_on = { target = LIT type = annex_everything }
+		}
+	}
+	focus = {
+		id = SOV_SPREAD_COMMUNISM
+		icon = GFX_goal_support_proletarianism
+		mutually_exclusive = { focus = SOV_EXPANSION}
+		x = 23
+		y = 0
+		cost = 10
+		available = {
+			SOV = {
+				OR = {
+					has_government = proletarianism
+					has_government = proletarianism
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}

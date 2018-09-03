@@ -1,0 +1,30 @@
+﻿capital = 47
+
+OOB = "THESSALY_1928"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+
+	parties = {
+
+		proletarianism = {
+			popularity = 86
+		}
+		
+		collectivism = { 
+			popularity = 14
+		}
+	}
+	
+	ruling_party = proletarianism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_convoys = 5

@@ -1,0 +1,30 @@
+
+state={
+	id=309
+	name="STATE_309"
+	resources={
+		aluminium=12.000
+	}
+
+	history={
+		owner = GUY
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			10906 = {
+				naval_base = 1
+			}
+
+		}
+		victory_points = {
+				10906 1 
+		}
+	}
+
+	provinces={
+		1928 10906 12828
+	}
+	manpower=132000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

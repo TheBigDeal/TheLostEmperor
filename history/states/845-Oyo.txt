@@ -1,0 +1,22 @@
+
+state={
+	id=845
+	name="STATE_845"
+	state_category = city
+	history={
+		owner = OYO
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = OYO
+
+	}
+
+	provinces={
+		2050 12731 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

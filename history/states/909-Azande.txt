@@ -1,0 +1,22 @@
+
+state={
+	id=909
+	name="STATE_909"
+
+	history={
+		owner = AZA
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = AZA
+
+	}
+
+	provinces={
+		2034 2154 6027 
+	}
+	manpower=435653
+	state_category = town
+	buildings_max_level_factor=1.000
+}

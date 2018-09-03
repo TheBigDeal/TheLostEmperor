@@ -1,0 +1,1413 @@
+focus_tree = {
+	id = prussian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 50 y = 3100 }
+	
+	focus = {
+		id = GER_FINALIZE_NATION
+		icon = GFX_focus_kaiserreich
+		x = 18
+		y = 0
+		cost = 10
+		available = {
+			has_global_flag = prussia_germany
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = GER_KING_OF_GERMANY_tt
+			country_event = le_prussia.2
+			786 = { add_core_of = GER }
+			61 = { add_core_of = GER }
+			59 = { add_core_of = GER }
+			770 = { add_core_of = GER }
+			747 = { add_core_of = GER }
+			748 = { add_core_of = GER }
+			58 = { add_core_of = GER }
+			771 = { add_core_of = GER }
+			769 = { add_core_of = GER }
+			816 = { add_core_of = GER }
+			57 = { add_core_of = GER }
+			56 = { add_core_of = GER }
+			754 = { add_core_of = GER }
+			817 = { add_core_of = GER }
+			818 = { add_core_of = GER }
+			753 = { add_core_of = GER }
+			811 = { add_core_of = GER }
+			813 = { add_core_of = GER }
+			812 = { add_core_of = GER }
+			60 = { add_core_of = GER }
+			65 = { add_core_of = GER }
+			757 = { add_core_of = GER }
+			55 = { add_core_of = GER }
+			820 = { add_core_of = GER }
+			819 = { add_core_of = GER }
+			810 = { add_core_of = GER }
+			759 = { add_core_of = GER }
+			822 = { add_core_of = GER }
+			51 = { add_core_of = GER }
+			755 = { add_core_of = GER }
+			821 = { add_core_of = GER }
+			756 = { add_core_of = GER }
+			744 = { add_core_of = GER }
+			42 = { add_core_of = GER }
+			800 = { add_core_of = GER }
+			795 = { add_core_of = GER }
+			53 = { add_core_of = GER }
+			52 = { add_core_of = GER }
+			766 = { add_core_of = GER }
+			765 = { add_core_of = GER }
+			758 = { add_core_of = GER }
+			745 = { add_core_of = GER }
+			744 = { add_core_of = GER }
+			768 = { add_core_of = GER }
+			42 = { add_core_of = GER }
+			823 = { add_core_of = GER }
+			822 = { add_core_of = GER }
+			796 = { add_core_of = GER }
+			746 = { add_core_of = GER }
+			798 = { add_core_of = GER }
+			797 = { add_core_of = GER }
+			805 = { add_core_of = GER }
+			50 = { add_core_of = GER }
+			804 = { add_core_of = GER }
+			743 = { add_core_of = GER }
+			802 = { add_core_of = GER }
+			743 = { add_core_of = GER }
+			803 = { add_core_of = GER }
+			801 = { add_core_of = GER }
+			54 = { add_core_of = GER }
+			745 = { add_core_of = GER }
+			793 = { add_core_of = GER }
+			815 = { add_core_of = GER }
+			767 = { add_core_of = GER }
+			799 = { add_core_of = GER }
+			824 = { add_core_of = GER }
+			800 = { add_core_of = GER }
+		}
+	}
+	
+	focus = {
+		id = GER_MONARCHIST_GOVERNMENT
+		icon = GFX_focus_hun_elect_a_king
+		prerequisite = { focus = GER_FINALIZE_NATION }
+		mutually_exclusive = { focus = GER_DISPOSE_OF_THE_KAISER }
+		x = 10
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = GER_KING_OF_GERMANY_tt
+		}
+	}
+	focus = {
+		id = GER_REXISM
+		icon = GFX_focus_hun_elect_a_king
+		prerequisite = { focus = GER_MONARCHIST_GOVERNMENT }
+		mutually_exclusive = { focus = GER_ROYALISM focus = GER_ABSOLUTISM }
+		x = 8
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = GER_REXISM_tt
+		}
+	}
+	focus = {
+		id = GER_DISPOSE_OF_OLD_KINGS
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = GER_REXISM }
+		x = 8
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_ABSOLUTISM
+		icon = GFX_focus_hun_elect_a_king
+		prerequisite = { focus = GER_MONARCHIST_GOVERNMENT }
+		mutually_exclusive = { focus = GER_ROYALISM focus = GER_REXISM }
+		x = 10
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = GER_ABSOLUTISM_tt
+		}
+	}
+	focus = {
+		id = GER_APPEASE_OLD_KINGS
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = GER_ABSOLUTISM }
+		x = 10
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_ROYALISM
+		icon = GFX_focus_hun_elect_a_king
+		prerequisite = { focus = GER_MONARCHIST_GOVERNMENT }
+		mutually_exclusive = { focus = GER_ABSOLUTISM focus = GER_REXISM }
+		x = 12
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = GER_ROYALISM_tt
+		}
+	}
+	focus = {
+		id = GER_CREATE_REICHSTAG
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = GER_ROYALISM }
+		x = 12
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_MISSION_TO_AFRICA
+		icon = GFX_focus_mission_to_africa
+		prerequisite = { focus = GER_DISPOSE_OF_OLD_KINGS focus = GER_APPEASE_OLD_KINGS focus = GER_CREATE_REICHSTAG }
+		x = 6
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_EXPAND_COLONIAL_BORDERS
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = GER_MISSION_TO_AFRICA }
+		x = 3
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_CLAIM_KENYA
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = GER_EXPAND_COLONIAL_BORDERS }
+		x = 0
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_state_claim = 548
+			add_state_claim = 547
+			add_state_claim = 546
+		}
+	}
+	focus = {
+		id = GER_DEMAND_KENYA
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = GER_CLAIM_KENYA }
+		x = 0
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			transfer_state = 548
+			transfer_state = 547
+			transfer_state = 546
+		}
+	}
+	focus = {
+		id = GER_CLAIM_ZIMBABWE
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = GER_EXPAND_COLONIAL_BORDERS }
+		x = 2
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_state_claim = 545
+		}
+	}
+	focus = {
+		id = GER_DEMAND_ZIMBABWE
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = GER_CLAIM_ZIMBABWE }
+		x = 2
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			transfer_state = 545
+		}
+	}
+	focus = {
+		id = GER_CLAIM_MOZAMBIQUE
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = GER_EXPAND_COLONIAL_BORDERS }
+		x = 4
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_state_claim = 544
+		}
+	}
+	focus = {
+		id = GER_DEMAND_MOZAMBIQUE
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = GER_CLAIM_MOZAMBIQUE }
+		x = 4
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			transfer_state = 544
+		}
+	}
+	focus = {
+		id = GER_CLAIM_ANGOLA
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = GER_EXPAND_COLONIAL_BORDERS }
+		x = 6
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_state_claim = 540
+		}
+	}
+	focus = {
+		id = GER_DEMAND_ANGOLA
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = GER_CLAIM_ANGOLA }
+		x = 6
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			transfer_state = 540
+		}
+	}
+	focus = {
+		id = GER_DEVELOP_COLONIAL_HOLDINGS
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = GER_MISSION_TO_AFRICA }
+		x = 9
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_DEVELOP_CONGO_INFRASTRUCTURE
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = GER_DEVELOP_COLONIAL_HOLDINGS }
+		x = 8
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_DEVELOP_CONGO_RESOURCES
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = GER_DEVELOP_COLONIAL_HOLDINGS }
+		x = 10
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_FAN_MILITARISM
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = GER_DISPOSE_OF_OLD_KINGS focus = GER_APPEASE_OLD_KINGS focus = GER_CREATE_REICHSTAG }
+		x = 10
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = PRS_GERMAN_MILITARISM
+				remove_idea = PRS_PRUSSIAN_MILITARISM
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_GROSSDEUTSCHLAND
+		icon = GFX_focus_grossdeutchland
+		prerequisite = { focus = GER_DISPOSE_OF_OLD_KINGS focus = GER_APPEASE_OLD_KINGS focus = GER_CREATE_REICHSTAG }
+		x = 14
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_DEMAND_ELSACE
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = GER_GROSSDEUTSCHLAND }
+		x = 12
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_COUP_IN_NETHERLANDS
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = GER_GROSSDEUTSCHLAND }
+		x = 14
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_ENVOY_TO_DUKE_HENRY_OF_MECKLENBURG
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_COUP_IN_NETHERLANDS }
+		x = 14
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_PREPARE_COUP
+		icon = GFX_focus_generic_air_defense
+		prerequisite = { focus = GER_ENVOY_TO_DUKE_HENRY_OF_MECKLENBURG }
+		x = 14
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_SEND_SUPPLIES
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = GER_PREPARE_COUP }
+		x = 14
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_START_COUP
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = GER_SEND_SUPPLIES }
+		x = 14
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			HOL =  { country_event = { days = 1 id = dutchrevolt.1 } }
+		}
+	}
+	focus = {
+		id = GER_AUSTRIA
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = GER_GROSSDEUTSCHLAND }
+		x = 17
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_BREAK_UP_DANUBIAN_KINGDOMS
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = GER_AUSTRIA }
+		x = 17
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_ANNEX_AUSTRIA
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = GER_BREAK_UP_DANUBIAN_KINGDOMS }
+		x = 16
+		y = 8
+		cost = 10
+		available = {
+			country_exists = AUS
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_ANNEX_BOHEMIA
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = GER_BREAK_UP_DANUBIAN_KINGDOMS }
+		x = 18
+		y = 8
+		cost = 10
+		available = {
+			country_exists = BOH
+			GER = { has_completed_focus = GER_ANNEX_AUSTRIA }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_DISPOSE_OF_THE_KAISER
+		icon = GFX_focus_rom_handle_king
+		prerequisite = { focus = GER_FINALIZE_NATION }
+		mutually_exclusive = { focus = GER_MONARCHIST_GOVERNMENT }
+		x = 26
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = GER_GREEK_IDEALS
+		icon = GFX_focus_rom_handle_king
+		prerequisite = { focus = GER_DISPOSE_OF_THE_KAISER }
+		mutually_exclusive = { focus = GER_UNITE_THE_WORKERS focus = GER_ELECT_A_CHANCELLOR }
+		x = 32
+		y = 3
+		cost = 10
+		available = {
+			OR = {
+				country_exists = SPT
+				any_country = { has_government = labryscism }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = GER_UNITE_THE_WORKERS
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = GER_DISPOSE_OF_THE_KAISER }
+		mutually_exclusive = { focus = GER_GREEK_IDEALS focus = GER_ELECT_A_CHANCELLOR }
+		x = 25
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_COLLECTIVISM
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = GER_UNITE_THE_WORKERS }
+		mutually_exclusive = { focus = GER_NATURALISM focus = GER_PROLETARIANISM }
+		x = 23
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_PROLETARIANISM
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = GER_UNITE_THE_WORKERS }
+		mutually_exclusive = { focus = GER_COLLECTIVISM focus = GER_NATURALISM }
+		x = 25
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_EXERT_INFLUENCE
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = GER_COLLECTIVISM }
+		x = 23
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_INCREASE_PROPAGANDA
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = GER_PROLETARIANISM }
+		x = 25
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_NATURALISM
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = GER_UNITE_THE_WORKERS }
+		mutually_exclusive = { focus = GER_COLLECTIVISM focus = GER_PROLETARIANISM }
+		x = 27
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_NEW_CONSTITUTION
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_NATURALISM }
+		x = 27
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_SPREAD_IDEOLOGY
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_NEW_CONSTITUTION focus = GER_INCREASE_PROPAGANDA focus = GER_EXERT_INFLUENCE }
+		x = 22
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_ANTI_IMPERIALISM
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_NEW_CONSTITUTION focus = GER_INCREASE_PROPAGANDA focus = GER_EXERT_INFLUENCE }
+		x = 28
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_CRUSH_FRENCH_IMPERIALISTS
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_ANTI_IMPERIALISM }
+		x = 28
+		y = 7
+		cost = 10
+		available = {
+			OR = {
+				FRA = { has_government = absolutism } 
+				FRA = { has_government = royalism } 
+				FRA = { has_government = theocracy } 
+				FRA = { has_government = rexism } 
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_INVADE_BURGUNDY
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_CRUSH_FRENCH_IMPERIALISTS }
+		x = 28
+		y = 8
+		cost = 10
+		bypass = {
+			NOT = { country_exists = BUR }
+		}
+		available = {
+			OR = {
+				FRA = { has_government = absolutism } 
+				FRA = { has_government = royalism } 
+				FRA = { has_government = theocracy } 
+				FRA = { has_government = rexism } 
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_INFLUENCE_FRENCH_MINORS
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_INVADE_BURGUNDY }
+		x = 28
+		y = 9
+		cost = 10
+		bypass = {
+			NOT = { country_exists = BUR }
+		}
+		available = {
+			OR = {
+				FRA = { has_government = absolutism } 
+				FRA = { has_government = royalism } 
+				FRA = { has_government = theocracy } 
+				FRA = { has_government = rexism } 
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_INVADE_THE_SWISS_CONFEDERATION
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_INFLUENCE_FRENCH_MINORS }
+		x = 28
+		y = 9
+		cost = 10
+		bypass = {
+			NOT = { country_exists = BUR }
+		}
+		available = {
+			OR = {
+				FRA = { has_government = absolutism } 
+				FRA = { has_government = royalism } 
+				FRA = { has_government = theocracy } 
+				FRA = { has_government = rexism } 
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = GER_SUPPORT_FRENCH_MINORS
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_INVADE_THE_SWISS_CONFEDERATION }
+		x = 28
+		y = 10
+		cost = 10
+		bypass = {
+			NOT = { country_exists = NRM }
+			NOT = { country_exists = BRI }
+		}
+		available = {
+			OR = {
+				FRA = { has_government = absolutism } 
+				FRA = { has_government = royalism } 
+				FRA = { has_government = theocracy } 
+				FRA = { has_government = rexism } 
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = GER_INVADE_FRANCE
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_SUPPORT_FRENCH_MINORS }
+		x = 28
+		y = 11
+		cost = 10
+		bypass = {
+			NOT = { country_exists = BUR }
+		}
+		available = {
+			OR = {
+				FRA = { has_government = absolutism } 
+				FRA = { has_government = royalism } 
+				FRA = { has_government = theocracy } 
+				FRA = { has_government = rexism } 
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = GER_CRUSH_BRITISH_IMPERIALISTS
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_ANTI_IMPERIALISM }
+		x = 26
+		y = 7
+		cost = 10
+		available = {
+			OR = {
+				GBR = { has_government = absolutism } 
+				GBR = { has_government = royalism } 
+				GBR = { has_government = theocracy } 
+				GBR = { has_government = rexism } 
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_INCREASE_SHIP_RESEARCH
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_CRUSH_BRITISH_IMPERIALISTS }
+		x = 26
+		y = 8
+		cost = 10
+		available = {
+			OR = {
+				GBR = { has_government = absolutism } 
+				GBR = { has_government = royalism } 
+				GBR = { has_government = theocracy } 
+				GBR = { has_government = rexism } 
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_INCREASE_SHIP_PRODUCTION
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_INCREASE_SHIP_RESEARCH }
+		x = 26
+		y = 9
+		cost = 10
+		available = {
+			OR = {
+				GBR = { has_government = absolutism } 
+				GBR = { has_government = royalism } 
+				GBR = { has_government = theocracy } 
+				GBR = { has_government = rexism } 
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_NEW_MARINES
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_INCREASE_SHIP_PRODUCTION }
+		x = 26
+		y = 10
+		cost = 10
+		available = {
+			OR = {
+				GBR = { has_government = absolutism } 
+				GBR = { has_government = royalism } 
+				GBR = { has_government = theocracy } 
+				GBR = { has_government = rexism } 
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_INVADE_BRITAIN
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_NEW_MARINES }
+		x = 26
+		y = 11
+		cost = 10
+		available = {
+			OR = {
+				GBR = { has_government = absolutism } 
+				GBR = { has_government = royalism } 
+				GBR = { has_government = theocracy } 
+				GBR = { has_government = rexism } 
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_CRUSH_SPANISH_IMPERIALISTS
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_ANTI_IMPERIALISM }
+		x = 30
+		y = 7
+		cost = 10
+		available = {
+			OR = {
+				SPR = { has_government = absolutism } 
+				SPR = { has_government = royalism } 
+				SPR = { has_government = theocracy } 
+				SPR = { has_government = rexism } 
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_INCREASE_SUPPORT_ON_SPANISH_COLONIES
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_CRUSH_SPANISH_IMPERIALISTS }
+		x = 30
+		y = 8
+		cost = 10
+		available = {
+			OR = {
+				SPR = { has_government = absolutism } 
+				SPR = { has_government = royalism } 
+				SPR = { has_government = theocracy } 
+				SPR = { has_government = rexism } 
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_INFLUENCE_CATALONIA
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_INCREASE_SUPPORT_ON_SPANISH_COLONIES }
+		x = 30
+		y = 9
+		cost = 10
+		available = {
+			OR = {
+				SPR = { has_government = absolutism } 
+				SPR = { has_government = royalism } 
+				SPR = { has_government = theocracy } 
+				SPR = { has_government = rexism } 
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_INFLUENCE_PORTUGAL
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_INFLUENCE_CATALONIA }
+		x = 30
+		y = 10
+		cost = 10
+		available = {
+			OR = {
+				SPR = { has_government = absolutism } 
+				SPR = { has_government = royalism } 
+				SPR = { has_government = theocracy } 
+				SPR = { has_government = rexism } 
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_INVADE_SPAIN
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_INFLUENCE_PORTUGAL }
+		x = 30
+		y = 11
+		cost = 10
+		available = {
+			OR = {
+				SPR = { has_government = absolutism } 
+				SPR = { has_government = royalism } 
+				SPR = { has_government = theocracy } 
+				SPR = { has_government = rexism } 
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_SUPPORT_COMMUNISTS_IN_RUSSIA
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_SPREAD_IDEOLOGY }
+		x = 22
+		y = 7
+		cost = 10
+		available = {
+			AND = {
+				country_exists = RUS
+				NOT = { country_exists = SOV }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GER_SUPPORT_COMMUNISTS_IN_DENMARK
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_SPREAD_IDEOLOGY }
+		x = 20
+		y = 7
+		cost = 10
+		available = {
+			AND = {
+				country_exists = RUS
+				NOT = { country_exists = SOV }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GER_SUPPORT_COMMUNISTS_IN_FRANCE
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_SPREAD_IDEOLOGY }
+		x = 24
+		y = 7
+		cost = 10
+		available = {
+			AND = {
+				country_exists = RUS
+				NOT = { country_exists = SOV }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = GER_EUROPEAN_COMMUNE
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_SUPPORT_COMMUNISTS_IN_DENMARK focus = GER_SUPPORT_COMMUNISTS_IN_FRANCE focus = GER_SUPPORT_COMMUNISTS_IN_RUSSIA }
+		x = 22
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_faction = UNION_OF_EUROPEAN_SOCIALISTS
+		}
+	}
+	focus = {
+		id = GER_INVITE_FRANCE
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_EUROPEAN_COMMUNE }
+		x = 24
+		y = 9
+		cost = 10
+		available = { 
+			OR = {
+				FRA = { has_government = naturalism }
+				FRA = { has_government = collectivism }
+				FRA = { has_government = proletarianism }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INVITE_RUSSIA
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_EUROPEAN_COMMUNE }
+		x = 22
+		y = 9
+		cost = 10
+		available = { 
+			OR = {
+				RUS = { has_government = naturalism }
+				RUS = { has_government = collectivism }
+				RUS = { has_government = proletarianism }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_faction = European_Commune
+		}
+	}
+	focus = {
+		id = GER_INVITE_DENMARK
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_EUROPEAN_COMMUNE }
+		x = 20
+		y = 9
+		cost = 10
+		available = { 
+			OR = {
+				DAN = { has_government = naturalism }
+				DAN = { has_government = collectivism }
+				DAN = { has_government = proletarianism }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	
+	focus = {
+		id = GER_ELECT_A_CHANCELLOR
+		icon = GFX_focus_rom_handle_king
+		prerequisite = { focus = GER_DISPOSE_OF_THE_KAISER }
+		mutually_exclusive = { focus = GER_UNITE_THE_WORKERS focus = GER_GREEK_IDEALS }
+		x = 34
+		y = 3
+		cost = 10
+		available = {
+			OR = {
+				country_exists = SPT
+				any_country = { has_government = labryscism }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = GER_POLAND
+		icon = GFX_focus_poland
+		x = 40
+		y = 0
+		cost = 10
+		available = {
+			POL = { is_puppet_of = GER }
+		}
+		bypass = {
+			POL = { is_puppet_of = GER }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = GER_CLAIM_POZNAN
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = GER_POLAND }
+		x = 39
+		y = 1
+		cost = 10
+		available = {
+			POL = { is_puppet_of = GER }
+		}
+		bypass = {
+			86 = { is_owned_by = GER } 
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = GER_BRIBE_LOCAL_GOVERNMENT
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = GER_POLAND }
+		x = 41
+		y = 1
+		cost = 10
+		available = {
+			POL = { is_puppet_of = GER }
+		}
+		bypass = {
+			86 = { is_owned_by = GER } 
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = GER_TAKE_CONTROL_OF_POZNAN
+		icon = GFX_goal_poland_goal
+		prerequisite = { focus = GER_BRIBE_LOCAL_GOVERNMENT }
+		prerequisite = { focus = GER_CLAIM_POZNAN }
+		x = 40
+		y = 2
+		cost = 10
+		available = {
+			POL = { is_puppet_of = GER }
+		}
+		bypass = {
+			86 = { is_owned_by = GER } 
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			transfer_state = 86
+		}
+	}
+	
+	focus = {
+		id = GER_CLAIM_NORTHERN_PLOCK
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = GER_TAKE_CONTROL_OF_POZNAN }
+		x = 39
+		y = 3
+		cost = 10
+		bypass = {
+			839 = { is_owned_by = GER } 
+		}
+		available = {
+			POL = { is_puppet_of = GER }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = GER_BRIBE_LOCAL_GOVERNMENT_PLOCK
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = GER_TAKE_CONTROL_OF_POZNAN }
+		x = 41
+		y = 3
+		cost = 10
+		available = {
+			POL = { is_puppet_of = GER }
+		}
+		bypass = {
+			839 = { is_owned_by = GER } 
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = GER_TAKE_CONTROL_OF_NORTHERN_PLOCK
+		icon = GFX_goal_poland_goal
+		prerequisite = { focus = GER_BRIBE_LOCAL_GOVERNMENT_PLOCK }
+		prerequisite = { focus = GER_CLAIM_NORTHERN_PLOCK }
+		x = 40
+		y = 4
+		cost = 10
+		available = {
+			POL = { is_puppet_of = GER }
+		}
+		bypass = {
+			839 = { is_owned_by = GER } 
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			transfer_state = 839
+		}
+	}
+	focus = {
+		id = GER_END_THE_CONDOMINIUM
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GER_TAKE_CONTROL_OF_NORTHERN_PLOCK }
+		x = 40
+		y = 5
+		cost = 10
+		available = {
+			AND = {
+				POL = { is_puppet_of = GER }
+				has_global_flag = prussia_germany
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			POL = { 
+				set_country_flag = prussian_puppet 
+				set_cosmetic_tag = KINGDOM_OF_POLAND
+			}
+		}
+	}
+	
+}

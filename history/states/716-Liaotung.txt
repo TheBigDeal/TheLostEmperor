@@ -1,0 +1,39 @@
+
+state={
+	id=716
+	name="STATE_716"
+	resources={
+		steel=38.000
+	}
+
+	history={
+		owner = QNG
+		add_core_of = QNG
+		add_core_of = QNG
+		add_core_of = QNG
+		buildings = {
+			infrastructure = 4
+			arms_factory = 3
+			air_base = 5
+			1150 = {
+				naval_base = 6
+
+			}
+
+		}
+		victory_points = {
+			1150 1 
+		}
+		victory_points = {
+			11771 3 
+		}
+
+	}
+
+	provinces={
+		836 846 892 987 3839 3849 3895 6804 6910 6951 9781 9788 9835 9885 11764 11771 11808 11815 
+	}
+	manpower=11264620
+	buildings_max_level_factor=1.000
+	state_category=city
+}

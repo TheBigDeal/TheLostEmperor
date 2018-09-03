@@ -1,0 +1,212 @@
+focus_tree = {
+	id = LEamerican_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 50 y = 3100 }
+	###############################
+	#TIME TO MANIFEST SOME DESTINY#
+	###############################
+	focus = {
+		id = USA_A_REBORN_NATION
+		icon = GFX_goal_generic_national_unity
+		x = 10
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_LAND_OF_THE_FREE
+		icon = GFX_goal_generic_national_unity
+		x = 6
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_FREE_ELECTIONS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_LAND_OF_THE_FREE }
+		x = 6
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_IMMIGRATION_GAME
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_FREE_ELECTIONS}
+		x = 6
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_NATION_OF_IMMIGRANTS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_IMMIGRATION_GAME }
+		x = 6
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_ONE_PARTY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_LAND_OF_THE_FREE }
+		x = 4
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_FIGHTERS_OF_FREEDOM
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_ONE_PARTY }
+		x = 4
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_OUR_LIVES_FOR_FREEDOM
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_FIGHTERS_OF_FREEDOM }
+		x = 4
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_INCREASE_TAXES
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_LAND_OF_THE_FREE }
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_SPAIN_PURCHASE_1
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_INCREASE_TAXES }
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_SPAIN_PURCHASE_2
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_SPAIN_PURCHASE_1 }
+		x = 0
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_SPAIN_PURCHASE_3
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_SPAIN_PURCHASE_2 }
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_NEWFOUNDLAND_PURCHASE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_SPAIN_PURCHASE_1 }
+		x = 2
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_QUEBEC_PURCHASE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_NEWFOUNDLAND_PURCHASE }
+		x = 2
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+}

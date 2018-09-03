@@ -1,0 +1,28 @@
+focus_tree = {
+	id = italy_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 50 y = 3100 }
+	
+	focus = {
+		id = ITA_ROMAN_EMPIRE_TEST
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 6
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_cosmetic_tag = SPQR_UNIFIED
+		}
+	}

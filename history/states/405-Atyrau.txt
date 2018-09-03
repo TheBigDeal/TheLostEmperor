@@ -1,0 +1,29 @@
+
+state={
+	id=405
+	name="STATE_405"
+
+	history={
+		owner = BUK
+		victory_points = {
+			1459 3 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			air_base = 1
+
+		}
+		add_core_of = BUK
+		add_core_of = RUS
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		756 1216 1384 1459 1573 1623 1632 1649 1919 4482 4629 7224 7618 7639 7682 7775 7924 9605 10187 10205 10414 10601 10671 10742 11687 12161 12218 12239 12250 12314 12430 12653 12722 
+	}
+	manpower=6275820
+	buildings_max_level_factor=1.000
+	state_category=city
+}

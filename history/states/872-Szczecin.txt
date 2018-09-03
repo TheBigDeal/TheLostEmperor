@@ -1,0 +1,29 @@
+state={
+	id=872
+	name="STATE_750"
+	
+	state_category = town
+	
+	resources={
+		oil=80
+	}
+	history={
+		owner = PRS
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 8
+			air_base = 2
+			10337 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = PRS
+		add_core_of = POM
+
+	}
+	provinces={
+		6282 6309 6334 6390 9334 
+	}
+	manpower=845431
+	buildings_max_level_factor=1.000
+}

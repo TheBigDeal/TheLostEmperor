@@ -1,0 +1,33 @@
+﻿capital = 899
+#OOB = "AAC_1928"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+
+	parties = {
+		liberalism = { 
+			popularity = 30
+		}
+		conservatism = { 
+			popularity = 35
+		}
+		socialism = {
+			popularity = 25
+		}
+		despotism = { 
+			popularity = 10
+		}
+	}
+	
+	ruling_party = conservatism
+	last_election = "1926.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_convoys = 20

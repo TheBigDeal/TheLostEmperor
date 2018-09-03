@@ -1,0 +1,1072 @@
+focus_tree = {
+	id = sardinian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SAR
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 50 y = 3100 }
+	
+	focus = {
+		id = SAR_ITALIAN_AMBITIONS
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 11
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = SAR_BEGIN_PROPAGANDA_CAMPAIGN
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = SAR_ITALIAN_AMBITIONS }
+		x = 11
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = Monarchist_Propaganda
+		}
+	}
+	focus = {
+		id = SAR_PROMOTE_ITALIAN_IDENTITY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = SAR_BEGIN_PROPAGANDA_CAMPAIGN }
+		x = 11
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = SAR_TAKE_ITALY_BY_FORCE
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = SAR_PROMOTE_ITALIAN_IDENTITY }
+		mutually_exclusive = { focus = SAR_USE_DIPLOMACY }
+		x = 10
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_DRAFT_SOLDIERS
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = SAR_TAKE_ITALY_BY_FORCE }
+		x = 5
+		y = 6
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_BAVAS_PLAN
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = SAR_DRAFT_SOLDIERS }
+		prerequisite = { focus = SAR_TRAIN_SPECIAL_FORCES }
+		mutually_exclusive = { focus = SAR_DE_SONNAZ_PLAN }
+		x = 6
+		y = 7
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = BAVAS_PLAN
+		}
+	}
+	focus = {
+		id = SAR_COERCE_GENOA
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = SAR_BAVAS_PLAN }
+		x = 6
+		y = 9
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = SAR_SEIZE_VENICE
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = SAR_COERCE_GENOA }
+		x = 6
+		y = 10
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_CENTRAL_ITALY
+		icon = GFX_goal_poland_goal
+		prerequisite = { focus = SAR_COERCE_GENOA }
+		x = 8
+		y = 10
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_PEACE_WITH_THE_SOUTH
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = SAR_CENTRAL_ITALY }
+		mutually_exclusive = { focus = SAR_INVADE_THE_SOUTH }
+		x = 7
+		y = 11
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_INVADE_THE_SOUTH
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = SAR_CENTRAL_ITALY }
+		mutually_exclusive = { focus = SAR_PEACE_WITH_THE_SOUTH }
+		x = 9
+		y = 11
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_DEAL_WITH_THE_POPE
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = SAR_INVADE_THE_SOUTH focus = SAR_PEACE_WITH_THE_SOUTH }
+		prerequisite = { focus = SAR_SEIZE_VENICE }
+		x = 6
+		y = 12
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_TRAIN_SPECIAL_FORCES
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = SAR_TAKE_ITALY_BY_FORCE }
+		x = 3
+		y = 6
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_DE_SONNAZ_PLAN
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = SAR_DRAFT_SOLDIERS }
+		prerequisite = { focus = SAR_TRAIN_SPECIAL_FORCES }
+		mutually_exclusive = { focus = SAR_BAVAS_PLAN }
+		x = 2
+		y = 7
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = DE_SONNAZ_PLAN
+		}
+	}
+	focus = {
+		id = SAR_ALLIANCE_WITH_THE_BRITISH
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = SAR_DE_SONNAZ_PLAN }
+		mutually_exclusive = { focus = SAR_ALLIANCE_WITH_THE_PRUSSIANS focus = SAR_ALLIANCE_WITH_THE_FRENCH focus = SAR_ALLIANCE_WITH_AUSTRIA } 
+		x = 0
+		y = 8
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			GBR = { country_event = { id = le_sardiniapiedmont.5 } }
+		}
+	}
+	focus = {
+		id = SAR_BRITISH_NAVAL_SUPPORT
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = SAR_ALLIANCE_WITH_THE_BRITISH }
+		x = 0
+		y = 9
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = { BRITISH_NAVAL_SUPPORT }
+		}
+	}
+	focus = {
+		id = SAR_ADOPT_BRITISH_NAVAL_TACTICS
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = SAR_BRITISH_NAVAL_SUPPORT }
+		x = 0
+		y = 10
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = { ADOPT_BRITISH_NAVAL_TACTICS }
+		}
+	}
+	focus = {
+		id = SAR_ALLIANCE_WITH_THE_PRUSSIANS
+		icon = GFX_focus_support_prussia
+		prerequisite = { focus = SAR_DE_SONNAZ_PLAN focus = SAR_BAVAS_PLAN  }
+		mutually_exclusive = { focus = SAR_ALLIANCE_WITH_THE_BRITISH focus = SAR_ALLIANCE_WITH_THE_FRENCH focus = SAR_ALLIANCE_WITH_AUSTRIA } 
+		x = 4
+		y = 8
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			PRS = { country_event = { id = le_sardiniapiedmont.7 } }
+		}
+	}
+	focus = {
+		id = SAR_PRUSSIAN_WAR_EXPERTISE
+		icon = GFX_focus_ger_revive_kaiserreich
+		prerequisite = { focus = SAR_ALLIANCE_WITH_THE_PRUSSIANS }
+		x = 4
+		y = 9
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = { PRUSSIAN_WAR_EXPERTISE }
+		}
+	}
+	focus = {
+		id = SAR_ADOPT_PRUSSIAN_DICIPLINE
+		icon = GFX_focus_ger_oppose_hitler
+		prerequisite = { focus = SAR_PRUSSIAN_WAR_EXPERTISE }
+		x = 4
+		y = 10
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = { ADOPT_PRUSSIAN_DICIPLINE }
+		}
+	}
+	focus = {
+		id = SAR_ALLIANCE_WITH_THE_FRENCH
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = SAR_BAVAS_PLAN focus = SAR_CAVOURS_PLAN }
+		mutually_exclusive = { focus = SAR_ALLIANCE_WITH_THE_BRITISH focus = SAR_ALLIANCE_WITH_THE_PRUSSIANS focus = SAR_ALLIANCE_WITH_AUSTRIA } 
+		x = 11
+		y = 8
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			FRA = { country_event = { id = le_sardiniapiedmont.6 } }
+		}
+	}
+	focus = {
+		id = SAR_FRENCH_TRAINING
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = SAR_ALLIANCE_WITH_THE_FRENCH }
+		x = 11
+		y = 9
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = { FRENCH_TRAINING }
+		}
+	}
+	focus = {
+		id = SAR_FRENCH_STYLE_ARMY
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = SAR_FRENCH_TRAINING }
+		x = 11
+		y = 10
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = { FRENCH_STYLE_ARMY }
+		}
+	}
+	focus = {
+		id = SAR_TAKE_GENOA
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = SAR_DE_SONNAZ_PLAN }
+		x = 2
+		y = 9
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = GEN
+			}
+		}
+	}
+	focus = {
+		id = SAR_INVADE_CENTRAL_ITALY
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = SAR_TAKE_GENOA }
+		x = 2
+		y = 10
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = PRM
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MOD
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = TUS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = LUC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = PAP
+			}
+		}
+	}
+	focus = {
+		id = SAR_ATTACK_VENICE
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = SAR_INVADE_CENTRAL_ITALY }
+		x = 2
+		y = 11
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = VNC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MIL
+			}
+		}
+	}
+	focus = {
+		id = SAR_INVADE_NAPLES
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = SAR_ATTACK_VENICE }
+		x = 2
+		y = 12
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = TWO
+			}
+		}
+	}
+	focus = {
+		id = SAR_USE_DIPLOMACY
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_PROMOTE_ITALIAN_IDENTITY }
+		mutually_exclusive = { focus = SAR_TAKE_ITALY_BY_FORCE }
+		x = 12
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_CAVOURS_PLAN
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_USE_DIPLOMACY }
+		mutually_exclusive = { focus = SAR_D'AZEGLIOS }
+		x = 14
+		y = 7
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = CAVOURS_PLAN
+		}
+	}
+	focus = {
+		id = SAR_GENOAN_PLEBISCITE
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = SAR_CAVOURS_PLAN }
+		x = 14
+		y = 9
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_PACIFY_MILAN
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_GENOAN_PLEBISCITE }
+		x = 14
+		y = 10
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_THE_VENETIAN_QUESTION
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_PACIFY_MILAN }
+		x = 13
+		y = 11
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_PARTITION_VENICE
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_PACIFY_MILAN focus = SAR_AUSTRIAN_DIPLOMACY }
+		x = 15
+		y = 11
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_REVOKE_PAPAL_LANDS
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_PARTITION_VENICE focus = SAR_THE_VENETIAN_QUESTION }
+		mutually_exclusive = { focus = SAR_ROME_PACT }
+		x = 14
+		y = 12
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_ROME_PACT
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_PARTITION_VENICE focus = SAR_THE_VENETIAN_QUESTION focus = SAR_THE_SOUTHERN_DEAL }
+		mutually_exclusive = { focus = SAR_REVOKE_PAPAL_LANDS }
+		x = 18
+		y = 12
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_ALLIANCE_WITH_AUSTRIA
+		icon = GFX_focus_support_austria
+		prerequisite = { focus = SAR_CAVOURS_PLAN focus = SAR_D'AZEGLIOS }
+		mutually_exclusive = { focus = SAR_ALLIANCE_WITH_THE_BRITISH focus = SAR_ALLIANCE_WITH_THE_FRENCH focus = SAR_ALLIANCE_WITH_THE_PRUSSIANS }
+		x = 16
+		y = 8
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			AUS = { country_event = { id = le_sardiniapiedmont.8 } }
+		}
+	}
+	focus = {
+		id = SAR_AUSTRIAN_DIPLOMACY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = SAR_ALLIANCE_WITH_AUSTRIA }
+		x = 16
+		y = 9
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = { AUSTRIAN_DIPLOMACY }
+		}
+	}
+	focus = {
+		id = SAR_AUSTRIAN_COURT_STYLE
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = SAR_AUSTRIAN_DIPLOMACY }
+		x = 16
+		y = 10
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = { AUSTRIAN_COURT_STYLE }
+		}
+	}
+	focus = {
+		id = SAR_D'AZEGLIOS
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_USE_DIPLOMACY }
+		mutually_exclusive = { focus = SAR_CAVOURS_PLAN }
+		x = 19
+		y = 7
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = D'AZZEGLIOS_PLAN
+		}
+	}
+	focus = {
+		id = SAR_CONFERENCE_IN_GENOA
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_D'AZEGLIOS }
+		x = 19
+		y = 8
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_INFLUENCE_THE_DUCHIES
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_D'AZEGLIOS }
+		x = 21
+		y = 8
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_ASK_FOR_MILAN
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_CONFERENCE_IN_GENOA }
+		x = 19
+		y = 9
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_THE_SOUTHERN_DEAL
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_ASK_FOR_MILAN }
+		prerequisite = { focus = SAR_INFLUENCE_TUSCANY }
+		x = 19
+		y = 11
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_VISIT_TO_VENICE
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_THE_SOUTHERN_DEAL }
+		x = 20
+		y = 12
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_INFLUENCE_TUSCANY
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_INFLUENCE_THE_DUCHIES }
+		x = 21
+		y = 9
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_THE_FINAL_QUESTION
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_ROME_PACT }
+		prerequisite = { focus = SAR_VISIT_TO_VENICE }
+		x = 19
+		y = 13
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_THE_ITALIAN_FEDERATION
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_THE_FINAL_QUESTION }
+		mutually_exclusive = { focus = SAR_THE_ITALIAN_CONFEDERATION }
+		x = 20
+		y = 14
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_THE_ITALIAN_CONFEDERATION
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_THE_FINAL_QUESTION }
+		mutually_exclusive = { focus = SAR_THE_ITALIAN_FEDERATION }
+		x = 18
+		y = 14
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_QUESTION_THE_KINGS_POWERS
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = SAR_ITALIAN_AMBITIONS }
+		x = 4
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_KINGS_ROLE_IN_THE_ARMY
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = SAR_QUESTION_THE_KINGS_POWERS }
+		x = 2
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			country_event = { id = le_sardiniapiedmont.1 }
+		}
+	}
+	focus = {
+		id = SAR_KINGS_ROLE_IN_INTERNAL_POLICY
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = SAR_QUESTION_THE_KINGS_POWERS }
+		x = 4
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			country_event = { id = le_sardiniapiedmont.2 }
+		}
+	}
+	focus = {
+		id = SAR_KINGS_ROLE_IN_FORIEGN_POLICY
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_QUESTION_THE_KINGS_POWERS }
+		x = 6
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			country_event = { id = le_sardiniapiedmont.3 }
+		}
+	}
+	focus = {
+		id = SAR_KINGS_ROLE_IN_GOVERNMENT
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = SAR_KINGS_ROLE_IN_FORIEGN_POLICY }
+		prerequisite = { focus = SAR_KINGS_ROLE_IN_INTERNAL_POLICY }
+		prerequisite = { focus = SAR_KINGS_ROLE_IN_THE_ARMY }
+		x = 4
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			country_event = { id = le_sardiniapiedmont.4 }
+		}
+	}
+	focus = {
+		id = SAR_A_CONSTITUTIONAL_REWRITING
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_KINGS_ROLE_IN_GOVERNMENT }
+		x = 4
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_THE_EMANUELIAN_CONSTITUTION
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_A_CONSTITUTIONAL_REWRITING }
+		mutually_exclusive = { focus = SAR_REDUCE_THE_STATUTE focus = SAR_NO_NEED_FOR_CHANGE focus = SAR_EXPAND_THE_STATUTE }
+		x = 7
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = { Socialist_Drift }
+		}
+	}
+	focus = {
+		id = SAR_REDUCE_THE_STATUTE
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_A_CONSTITUTIONAL_REWRITING }
+		mutually_exclusive = { focus = SAR_THE_EMANUELIAN_CONSTITUTION focus = SAR_NO_NEED_FOR_CHANGE focus = SAR_EXPAND_THE_STATUTE }
+		x = 1
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = { Monarchist_Drift }
+		}
+	}
+	focus = {
+		id = SAR_NO_NEED_FOR_CHANGE
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_A_CONSTITUTIONAL_REWRITING }
+		mutually_exclusive = { focus = SAR_REDUCE_THE_STATUTE focus = SAR_THE_EMANUELIAN_CONSTITUTION focus = SAR_EXPAND_THE_STATUTE }
+		x = 3
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = { Conservative_Drift }
+		}	
+	}
+	focus = {
+		id = SAR_EXPAND_THE_STATUTE
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = SAR_A_CONSTITUTIONAL_REWRITING }
+		mutually_exclusive = { focus = SAR_REDUCE_THE_STATUTE focus = SAR_NO_NEED_FOR_CHANGE focus = SAR_THE_EMANUELIAN_CONSTITUTION }
+		x = 5
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = { Liberal_Drift }
+		}
+	}
+	focus = {
+		id = SAR_EXPAND_THE_RAILROAD
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = SAR_ITALIAN_AMBITIONS }
+		x = 14
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			158 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			773 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			774 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SAR_BUILD_UP_THE_INDUSTRY
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = SAR_EXPAND_THE_RAILROAD }
+		x = 14
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			158 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			114 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SAR_EXPAND_MILANESE_RAILROADS
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SAR_BUILD_UP_THE_INDUSTRY }
+		x = 13
+		y = 3
+		cost = 10
+		available = {
+			AND = {
+				SAR = {
+					owns_state = 159
+					owns_state = 838
+				}
+				NOT = { country_exists = MIL }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_EXPAND_GENOESE_RAILROADS
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SAR_BUILD_UP_THE_INDUSTRY }
+		x = 15
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			AND = {
+				SAR = {
+					owns_state = 764
+					owns_state = 1
+				}
+				NOT = { country_exists = GEN }
+			}
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_REVITALIZE_CENTRAL_ITALY
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = SAR_EXPAND_GENOESE_RAILROADS }
+		prerequisite = { focus = SAR_EXPAND_MILANESE_RAILROADS }
+		x = 14
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_EXPAND_SOUTHERN_INDUSTRY
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = SAR_REVITALIZE_CENTRAL_ITALY }
+		x = 14
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SAR_DECLARE_KINGDOM_OF_ITALY
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = SAR_INVADE_NAPLES focus = SAR_DEAL_WITH_THE_POPE focus = SAR_REVOKE_PAPAL_LANDS }
+		x = 8
+		y = 13
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			ITA = { 
+				create_country_leader = {
+				name = "King Victor Emmanuel de Savoy III"
+				desc = "POLITICS_KING_ZOG_DESC"
+				picture = "Portrait_ITA_Victor_Emmanuel_III.tga"
+				expire = "1965.1.1"
+				ideology = absolutism_ideology
+					traits = {
+						
+					}
+				}
+				add_popularity = { ideology = absolutism popularity = 1 }
+				set_politics = {
+					ruling_party = absolutism
+					last_election = "1920.15.6"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				add_state_core = 764
+				add_state_core = 159
+				add_state_core = 838
+				add_state_core = 160
+				add_state_core = 736
+				add_state_core = 39
+				add_state_core = 161
+				add_state_core = 157
+				add_state_core = 763
+				add_state_core = 162
+				add_state_core = 2
+				annex_country = { target = SAR transfer_troops = yes } 
+				change_tag_from = SAR
+			}
+		}
+	}

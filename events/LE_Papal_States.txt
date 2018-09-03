@@ -1,0 +1,95 @@
+﻿###########################
+# German Events
+###########################
+
+add_namespace = papal
+
+# KONIGSBURG DEAL
+country_event = {
+	id = papal.1
+	title = papal.1.t
+	desc = papal.1.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	
+	option = { # Split Land and Puppet
+		name = papal.1.a
+		ai_chance = {
+			base = 50
+		}
+		PRS = { release = TEU }
+		PAP = { country_event = { days = 1 id = papal.2 } }
+	}
+	option = { # Invade
+		name = papal.1.b
+		ai_chance = {
+			base = 5			
+		}
+		PAP = {
+			declare_war_on = { target = PRS type = annex_everything }	
+		}
+		DAN = {
+			declare_war_on = { target = PRS type = annex_everything }	
+		}
+		BAV = {
+			declare_war_on = { target = PRS type = annex_everything }	
+		}
+		SAR = {
+			declare_war_on = { target = PRS type = annex_everything }	
+		}
+		FRA = {
+			declare_war_on = { target = PRS type = annex_everything }	
+		}
+	}
+}
+# KONIGSBURG DEAL ACCEPTED
+country_event = {
+	id = papal.2
+	title = papal.2.t
+	desc = papal.2.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	
+	option = { # Split Land and Puppet
+		name = papal.2.a
+		ai_chance = {
+			base = 50
+		}
+		add_to_faction = TEU
+		puppet = TEU
+	}
+}
+
+#ASK FRANCE IF THEY AGREE TO BECOME EMPEROR IN EXCHANGE FOR THE RELEASE OF THE TEUTONS AND SUPPORT FROM FRANCE IN THE CRUSADE
+country_event = {
+	id = papal.3
+	title = papal.3.t
+	desc = papal.3.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	
+	option = { # Split Land and Puppet
+		name = papal.3.a
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = { # Split Land and Puppet
+		name = papal.3.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}

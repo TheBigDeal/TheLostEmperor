@@ -1,0 +1,25 @@
+﻿###########################
+# German Events
+###########################
+
+add_namespace = hansa
+
+country_event = {
+	id = hansa.1
+	title = hansa.1.t
+	desc = hansa.1.d
+	#picture = GFX_report_event_SPR_civwar
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = { #Vote for Lubek
+		name = hansa.1.a
+
+	}
+}

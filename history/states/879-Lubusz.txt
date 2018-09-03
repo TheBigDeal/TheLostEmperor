@@ -1,0 +1,39 @@
+
+state={
+	id=879
+	name="STATE_751"
+	resources={
+		steel=150.000
+		aluminium=20.000
+	}
+
+	history={
+		owner = PRS
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 8
+			air_base = 2
+			10337 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = PRS
+		add_core_of = BRN
+		victory_points = {
+			10337 10 
+		}
+		victory_points = {
+			3960 10 
+		}
+
+	}
+
+	provinces={
+		444 537 3438 3473 3572 6236 9387 11478 
+	}
+	manpower=645532
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,3509 @@
+###########################
+# France Focus Tree
+###########################
+
+focus_tree = {
+	id = french_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 2600 }
+	
+	focus = {
+		id = FRA_THE_FOURTH_REVOLUTION
+		icon = GFX_goal_unknown
+		x = 11
+		y = 0
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_ARMEE_POPULAIRE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_FOURTH_REVOLUTION }
+		x = 3
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_FOCUS_ON_INFANTRY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ARMEE_POPULAIRE }
+		mutually_exclusive = { focus = FRA_FOCUS_ON_ARMOR }
+		x = 2
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INCREASE_SMALL_ARM_PRODUCTION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FOCUS_ON_INFANTRY }
+		x = 2
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_IMPROVE_COMMAND_STRUCTURE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FOCUS_ON_INFANTRY }
+		x = 0
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_CONSCRIPTION_CAMPAIGN
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_IMPROVE_COMMAND_STRUCTURE }
+		prerequisite = { focus = FRA_INCREASE_SMALL_ARM_PRODUCTION }
+		x = 2
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_MOBILIZE_THE_INFANTRY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_CONSCRIPTION_CAMPAIGN }
+		x = 2
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_FOCUS_ON_ARMOR
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ARMEE_POPULAIRE }
+		mutually_exclusive = { focus = FRA_FOCUS_ON_INFANTRY }
+		x = 4
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_MASS_PRODUCTION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FOCUS_ON_ARMOR }
+		mutually_exclusive = { focus = FRA_QUALITY_OVER_QUANTITY }
+		x = 4
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INCREASE_ARMOR_RESEARCH_SPENDING
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_MASS_PRODUCTION focus = FRA_QUALITY_OVER_QUANTITY }
+		x = 4
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INVEST_IN_OIL
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_MASS_PRODUCTION focus = FRA_QUALITY_OVER_QUANTITY }
+		x = 6
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ELITE_ARMOR_SQUADS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_INVEST_IN_OIL }
+		prerequisite = { focus = FRA_INCREASE_ARMOR_RESEARCH_SPENDING }
+		x = 4
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_QUALITY_OVER_QUANTITY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FOCUS_ON_ARMOR }
+		mutually_exclusive = { focus = FRA_MASS_PRODUCTION }
+		x = 6
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	#########################
+	#    Proletarietism     #
+	#########################
+	focus = {
+		id = FRA_DOMINANCE_OF_THE_PARTY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_FOURTH_REVOLUTION }
+		mutually_exclusive = { focus = FRA_THE_INDEPENDENT_COMMUNES focus = FRA_DEMOCRACY_IN_THE_WORKPLACE }
+		x = 13
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_RED_TERROR
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_DOMINANCE_OF_THE_PARTY }
+		x = 12
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_NATIONAL_CONVENTION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_DOMINANCE_OF_THE_PARTY }
+		x = 14
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_CATCH_THE_NOBLES
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_RED_TERROR }
+		x = 12
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_COMMITEE_OF_PUBLIC_SAFETY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_NATIONAL_CONVENTION }
+		x = 14
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_KINGS_PROCESS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_COMMITEE_OF_PUBLIC_SAFETY }
+		prerequisite = { focus = FRA_CATCH_THE_NOBLES }
+		x = 13
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_END_THE_CACHIN_DICTATORSHIP
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_KINGS_PROCESS }
+		x = 13
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_DIRECTORATE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_END_THE_CACHIN_DICTATORSHIP }
+		x = 13
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ANNEX_AQUITAINE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_DIRECTORATE }
+		x = 12
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_MARCH_TROOPS_INTO_NORMANDY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_DIRECTORATE }
+		x = 14
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_DEPOSE_OF_BURGUNDY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_MARCH_TROOPS_INTO_NORMANDY }
+		prerequisite = { focus = FRA_INTEGRATE_AQUITAINE }
+		x = 13
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_DEPOSE_OF_BRITANNY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_DEPOSE_OF_BURGUNDY }
+		x = 13
+		y = 9
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_FRONTIER_ON_THE_RHINE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_DEPOSE_OF_BRITANNY }
+		x = 13
+		y = 10
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_CONSOLATE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FRONTIER_ON_THE_RHINE }
+		x = 13
+		y = 11
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_PIEDMONT_AND_GENOA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_CONSOLATE }
+		x = 12
+		y = 12
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ITALIAN_SOCIALIST_REPUBLIC
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_PIEDMONT_AND_GENOA }
+		x = 12
+		y = 13
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_TAKE_TUSCANY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_PIEDMONT_AND_GENOA }
+		x = 12
+		y = 14
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_FREE_CATALONIA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_TAKE_TUSCANY }
+		x = 12
+		y = 15
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_SECOND_BATAVIAN_REPUBLIC
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_CONSOLATE }
+		x = 14
+		y = 12
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_UNION_OF_THE_RHINE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_SECOND_BATAVIAN_REPUBLIC }
+		x = 14
+		y = 13
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_WESTFALIAN_COMMUNE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_SECOND_BATAVIAN_REPUBLIC }
+		x = 16
+		y = 13
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_SWISS_SUBMIT
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_UNION_OF_THE_RHINE }
+		x = 14
+		y = 14
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_WIEN_COMMUNE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_SWISS_SUBMIT }
+		x = 14
+		y = 15
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_DEAL_PROCLAIMED_EMPEROR
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FREE_CATALONIA }
+		prerequisite = { focus = FRA_THE_WIEN_COMMUNE }
+		mutually_exclusive = { focus = FRA_DORIOT_PROCLAIMED_EMPEROR focus = FRA_THE_CONSOLATE_IS_DISSOLVED focus = FRA_POWER_STRUGGLE }
+		x = 10
+		y = 16
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_CONSOLATE_IS_DISSOLVED
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FREE_CATALONIA }
+		prerequisite = { focus = FRA_THE_WIEN_COMMUNE }
+		mutually_exclusive = { focus = FRA_DEAL_PROCLAIMED_EMPEROR focus = FRA_DORIOT_PROCLAIMED_EMPEROR focus = FRA_POWER_STRUGGLE }
+		x = 12
+		y = 16
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_POWER_STRUGGLE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FREE_CATALONIA }
+		prerequisite = { focus = FRA_THE_WIEN_COMMUNE }
+		mutually_exclusive = { focus = FRA_DEAL_PROCLAIMED_EMPEROR focus = FRA_THE_CONSOLATE_IS_DISSOLVED focus = FRA_DORIOT_PROCLAIMED_EMPEROR }
+		x = 14
+		y = 16
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_DORIOT_PROCLAIMED_EMPEROR
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FREE_CATALONIA }
+		prerequisite = { focus = FRA_THE_WIEN_COMMUNE }
+		mutually_exclusive = { focus = FRA_DEAL_PROCLAIMED_EMPEROR focus = FRA_THE_CONSOLATE_IS_DISSOLVED focus = FRA_POWER_STRUGGLE }
+		x = 16
+		y = 16
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	#########################
+	#     Collectivism      #
+	#########################
+	focus = {
+		id = FRA_THE_INDEPENDENT_COMMUNES
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_FOURTH_REVOLUTION }
+		mutually_exclusive = { focus = FRA_DEMOCRACY_IN_THE_WORKPLACE focus = FRA_DOMINANCE_OF_THE_PARTY }
+		x = 9
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_ASSEMBLY_OF_THE_COMMUNES
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_INDEPENDENT_COMMUNES }
+		x = 9
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_LAND_REDISTRIBUTION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_ASSEMBLY_OF_THE_COMMUNES }
+		x = 8
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_END_OF_OPPRESSION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_ASSEMBLY_OF_THE_COMMUNES }
+		x = 10
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_COLLECTIVE_OWNERSHIP
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_END_OF_OPPRESSION }
+		prerequisite = { focus = FRA_LAND_REDISTRIBUTION }
+		x = 9
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_LABOR_VOUCHERS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_COLLECTIVE_OWNERSHIP }
+		x = 9
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_PREPARE_THE_INSURECTIONS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_LABOR_VOUCHERS }
+		x = 9
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_REVOLT_IN_BRITANNY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_PREPARE_THE_INSURECTIONS }
+		x = 8
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_WEAPONS_IN_BURGUNDY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_PREPARE_THE_INSURECTIONS }
+		x = 10
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_RAISE_THE_NORMAN_WORKERS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_REVOLT_IN_BRITANNY }
+		x = 8
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_END_OF_AQUITAINE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_WEAPONS_IN_BURGUNDY }
+		x = 10
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_LIBERATE_OUR_FOREIGN_COMRADES
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_END_OF_AQUITAINE focus = FRA_RAISE_THE_NORMAN_WORKERS }
+		x = 9
+		y = 9
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_WEAPONS_IN_NORTHERN_ITALY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_LIBERATE_OUR_FOREIGN_COMRADES }
+		x = 4
+		y = 10
+		cost = 6
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ATTACK_CENTRAL_ITALY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_WEAPONS_IN_NORTHERN_ITALY }
+		x = 4
+		y = 11
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ARM_THE_SOUTHERNERS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ATTACK_CENTRAL_ITALY }
+		x = 4
+		y = 12
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_WEAPONS_IN_CATALONIA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_LIBERATE_OUR_FOREIGN_COMRADES }
+		x = 2
+		y = 10
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_MEN_IN_MADRID
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_WEAPONS_IN_CATALONIA }
+		x = 2
+		y = 11
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_REVOLT_IN_LISBOA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_MEN_IN_MADRID }
+		x = 2
+		y = 12
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_FREE_NORTH_AFRICA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_REVOLT_IN_LISBOA focus = FRA_ARM_THE_SOUTHERNERS }
+		x = 3
+		y = 13
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_LIBERATE_THE_ARABS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FREE_NORTH_AFRICA }
+		x = 3
+		y = 14
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_SWISS_REVOLT
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_WEAPONS_OVER_THE_RHINE }
+		prerequisite = { focus = FRA_WEAPONS_IN_NORTHERN_ITALY }
+		x = 6
+		y = 11
+		cost = 6
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_WEAPONS_OVER_THE_RHINE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_LIBERATE_OUR_FOREIGN_COMRADES }
+		x = 7
+		y = 10
+		cost = 6
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_FREE_THE_BAVARIANS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_WEAPONS_OVER_THE_RHINE }
+		mutually_exclusive = { focus = FRA_ATTACK_THE_PRUSSIANS }
+		x = 8
+		y = 11
+		cost = 6
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_END_THE_DANUBIAN_KINGDOMS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FREE_THE_BAVARIANS }
+		x = 8
+		y = 12
+		cost = 6
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_AWARD_TYROL
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_END_THE_DANUBIAN_KINGDOMS }
+		prerequisite = { focus = FRA_THE_SWISS_REVOLT }
+		x = 6
+		y = 13
+		cost = 6
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ATTACK_THE_PRUSSIANS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_WEAPONS_OVER_THE_RHINE }
+		mutually_exclusive = { focus = FRA_FREE_THE_BAVARIANS }
+		x = 10
+		y = 11
+		cost = 6
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_CONDENSE_GERMANY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ATTACK_THE_PRUSSIANS }
+		x = 10
+		y = 12
+		cost = 6
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INTERVENE_IN_THE_BALTIC
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_CONDENSE_GERMANY }
+		x = 10
+		y = 13
+		cost = 6
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_LIBERATE_THE_POLISH
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_CONDENSE_GERMANY focus = FRA_END_THE_DANUBIAN_KINGDOMS }
+		x = 8
+		y = 14
+		cost = 6
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_EXPORT_THE_REVOLUTION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_LIBERATE_THE_ARABS }
+		prerequisite = { focus = FRA_LIBERATE_THE_POLISH }
+		x = 5
+		y = 15
+		cost = 6
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_LIBERATE_THE_COLONIES
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_EXPORT_THE_REVOLUTION }
+		x = 3
+		y = 16
+		cost = 6
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INFLUENCE_THE_USA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_LIBERATE_THE_COLONIES }
+		x = 3
+		y = 17
+		cost = 6
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INFLUENCE_CHINA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_EXPORT_THE_REVOLUTION }
+		mutually_exclusive = { focus = FRA_INFLUENCE_JAPAN }
+		x = 5
+		y = 16
+		cost = 6
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INFLUENCE_JAPAN
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_EXPORT_THE_REVOLUTION }
+		mutually_exclusive = { focus = FRA_INFLUENCE_CHINA }
+		x = 7
+		y = 16
+		cost = 6
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			
+		}
+	}
+	#Naturalism
+	focus = {
+		id = FRA_DEMOCRACY_IN_THE_WORKPLACE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_FOURTH_REVOLUTION }
+		mutually_exclusive = { focus = FRA_THE_INDEPENDENT_COMMUNES focus = FRA_DOMINANCE_OF_THE_PARTY }
+		x = 17
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_STRIP_THE_TITLES
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_DEMOCRACY_IN_THE_WORKPLACE }
+		x = 16
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_DISTRIBUTE_LAND
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_STRIP_THE_TITLES }
+		x = 16
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_LEGALIZE_THE_CGT
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_DEMOCRACY_IN_THE_WORKPLACE }
+		x = 18
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_EXPAND_UNIONS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_LEGALIZE_THE_CGT }
+		x = 18
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_AGRARIAN_UNIONS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_DISTRIBUTE_LAND }
+		prerequisite = { focus = FRA_EXPAND_UNIONS }
+		x = 17
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_CONTACT_OTHER_SYNDICATES
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_AGRARIAN_UNIONS }
+		x = 17
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_NORTHERN_SYNDICATES
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_AGRARIAN_UNIONS }
+		x = 17
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_AQUITANIAN_PACT
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_NORTHERN_SYNDICATES }
+		x = 16
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_SYNDACATES_UNDER_OPPRESSION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_NORTHERN_SYNDICATES }
+		x = 18
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_WESTERN_INTERNATIONALE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_SYNDACATES_UNDER_OPPRESSION }
+		prerequisite = { focus = FRA_AQUITANIAN_PACT }
+		x = 17
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_SUPPORT_A_NORTHERN_ITALIAN_COMMUNE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_WESTERN_INTERNATIONALE }
+		mutually_exclusive = { focus = FRA_SUPPORT_AN_INDEPENDENT_CATALONIA focus = FRA_SUPPORT_AN_INFLUENCE_THE_DUTCH }
+		x = 15
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INFLUENCE_THE_SWISS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_SUPPORT_A_NORTHERN_ITALIAN_COMMUNE }
+		x = 15
+		y = 9
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_SUN_WILL_SET_ON_THE_BRITISH_EMPIRE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_INFLUENCE_THE_SWISS }
+		x = 15
+		y = 10
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_SUPPORT_AN_INDEPENDENT_CATALONIA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_WESTERN_INTERNATIONALE }
+		mutually_exclusive = { focus = FRA_SUPPORT_A_NORTHERN_ITALIAN_COMMUNE focus = FRA_SUPPORT_AN_INFLUENCE_THE_DUTCH }
+		x = 17
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_EXPAND_CATALONIA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_SUPPORT_AN_INDEPENDENT_CATALONIA }
+		x = 17
+		y = 9
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_CRUSH_THE_SPANISH_IMPERIALISTS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_EXPAND_CATALONIA }
+		x = 17
+		y = 10
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_SUPPORT_AN_INFLUENCE_THE_DUTCH
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_WESTERN_INTERNATIONALE }
+		mutually_exclusive = { focus = FRA_SUPPORT_AN_INDEPENDENT_CATALONIA focus = FRA_SUPPORT_A_NORTHERN_ITALIAN_COMMUNE }
+		x = 19
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_BREAK_THE_BAVARIAN_CHAINS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_SUPPORT_AN_INFLUENCE_THE_DUTCH }
+		x = 19
+		y = 9
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_CRUSH_THE_FALSE_EMPIRE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_BREAK_THE_BAVARIAN_CHAINS }
+		x = 19
+		y = 10
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	#MONARCHIST/DEMOCRATIC PATH
+	focus = {
+		id = FRA_PLEASE_THE_PEOPLE
+		icon = GFX_goal_unknown
+		x = 28
+		y = 0
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ARMEE_DU_SECOURS_NATIONALE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_PLEASE_THE_PEOPLE }
+		x = 23
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_FOCUS_ON_EQUIPMENT_QUALITY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ARMEE_DU_SECOURS_NATIONALE }
+		mutually_exclusive = { focus = FRA_FOCUS_ON_STRATEGY }
+		x = 22
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_IMPROVE_OUR_WEAPONS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FOCUS_ON_EQUIPMENT_QUALITY }
+		x = 22
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_IMPROVE_OUR_ARTILLERY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FOCUS_ON_EQUIPMENT_QUALITY }
+		x = 20
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_IMPROVE_OUR_WEAPON_PRODUCTION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_IMPROVE_OUR_ARTILLERY }
+		prerequisite = { focus = FRA_IMPROVE_OUR_WEAPONS }
+		x = 22
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_FRENCH_ARTILLERY_DIVISION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_IMPROVE_OUR_WEAPON_PRODUCTION }
+		x = 22
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_FOCUS_ON_STRATEGY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ARMEE_DU_SECOURS_NATIONALE }
+		mutually_exclusive = { focus = FRA_FOCUS_ON_EQUIPMENT_QUALITY }
+		x = 24
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_IMPROVE_LINES_OF_COMMUNICATION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FOCUS_ON_STRATEGY }
+		x = 24
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_IMPROVE_SPECIAL_FORCES_TRAINING
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FOCUS_ON_STRATEGY }
+		x = 26
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_IMPROVE_MILITARY_TRAINING
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_IMPROVE_SPECIAL_FORCES_TRAINING }
+		prerequisite = { focus = FRA_IMPROVE_LINES_OF_COMMUNICATION }
+		x = 24
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_FRENCH_MILITARY_HIGH_COMMAND
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_IMPROVE_MILITARY_TRAINING }
+		x = 24
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_STRIKE_AT_THE_NATIONALISTS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_PLEASE_THE_PEOPLE }
+		x = 27
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_STRIKE_AT_THE_COMMUNISTS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_PLEASE_THE_PEOPLE }
+		x = 29
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_FAIR_TRIALS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_STRIKE_AT_THE_COMMUNISTS focus = FRA_STRIKE_AT_THE_NATIONALISTS }
+		x = 28
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_GRAND_DEBATE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_FAIR_TRIALS }
+		x = 28
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_FRONT_DEMOCRATQUE_SPLITS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_GRAND_DEBATE }
+		x = 28
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_PRIORITIZE_COLLABORATION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_FRONT_DEMOCRATQUE_SPLITS }
+		mutually_exclusive = { focus = FRA_USE_THE_SPLIT }
+		x = 26
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_FIRST_ELECTIONS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_PRIORITIZE_COLLABORATION }
+		mutually_exclusive = { focus = FRA_USE_THE_SPLIT }
+		x = 26
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_LE_MODERE_WIN_THE_ELECTION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_FIRST_ELECTIONS }
+		mutually_exclusive = { focus = FRA_LE_LIBERAUX_WIN_THE_ELECTION focus = FRA_LE_REPUBLICAIE_WIN_THE_ELECTION }
+		x = 26
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_SOCIALIST_ECONOMICS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_LE_MODERE_WIN_THE_ELECTION }
+		x = 26
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_LE_LIBERAUX_WIN_THE_ELECTION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_FIRST_ELECTIONS }
+		mutually_exclusive = { focus = FRA_LE_MODERE_WIN_THE_ELECTION focus = FRA_LE_REPUBLICAIE_WIN_THE_ELECTION }
+		x = 24
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_LIBERAL_ECONOMICS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_LE_LIBERAUX_WIN_THE_ELECTION }
+		x = 24
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_LE_REPUBLICAIE_WIN_THE_ELECTION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_FIRST_ELECTIONS }
+		mutually_exclusive = { focus = FRA_LE_LIBERAUX_WIN_THE_ELECTION focus = FRA_LE_MODERE_WIN_THE_ELECTION }
+		x = 22
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_CONSERVATIVE_ECONOMICS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_LE_REPUBLICAIE_WIN_THE_ELECTION }
+		x = 22
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_CONSTITUTION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_CONSERVATIVE_ECONOMICS focus = FRA_LIBERAL_ECONOMICS focus = FRA_SOCIALIST_ECONOMICS }
+		x = 24
+		y = 9
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_USE_THE_SPLIT
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_FRONT_DEMOCRATQUE_SPLITS }
+		mutually_exclusive = { focus = FRA_PRIORITIZE_COLLABORATION }
+		x = 30
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_FORM_A_GOVERNMENT
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_USE_THE_SPLIT }
+		x = 30
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_LE_LOYALISTE_AT_THE_HELM
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FORM_A_GOVERNMENT }
+		mutually_exclusive = { focus = FRA_LE_BOURBONISTE_AT_THE_HELM }
+		x = 30
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_A_LOYAL_PARLIAMENT
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_LE_LOYALISTE_AT_THE_HELM }
+		x = 30
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_LE_BOURBONISTE_AT_THE_HELM
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FORM_A_GOVERNMENT }
+		mutually_exclusive = { focus = FRA_LE_LOYALISTE_AT_THE_HELM }
+		x = 32
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_A_WEAK_PARLIAMENT
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_LE_BOURBONISTE_AT_THE_HELM }
+		x = 32
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_BOURBON_CHARTER
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_A_WEAK_PARLIAMENT focus = FRA_A_LOYAL_PARLIAMENT }
+		x = 31
+		y = 9
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_REORGANIZE_THE_GOVERNMENT
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_FIRST_ELECTIONS focus = FRA_FORM_A_GOVERNMENT }
+		x = 28
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_REUNIFICATION_CAMPAIGN
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_REORGANIZE_THE_GOVERNMENT }
+		x = 28
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_USE_DIPLOMACY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_REUNIFICATION_CAMPAIGN }
+		mutually_exclusive = { focus = FRA_USE_FORCE }
+		x = 27
+		y = 9
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_REDERENDUM_IN_NORMANDY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_USE_DIPLOMACY }
+		x = 27
+		y = 10
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_REDERENDUM_IN_AQUITAINE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_USE_DIPLOMACY }
+		x = 25
+		y = 10
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_VISIT_BURGUNDY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_REDERENDUM_IN_AQUITAINE }
+		prerequisite = { focus = FRA_REDERENDUM_IN_NORMANDY }
+		x = 25
+		y = 11
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_VISIT_BRITTANY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_REDERENDUM_IN_AQUITAINE }
+		prerequisite = { focus = FRA_REDERENDUM_IN_NORMANDY }
+		x = 27
+		y = 11
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_PEACEFUL_REUNIFICATION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_VISIT_BRITTANY }
+		prerequisite = { focus = FRA_VISIT_BURGUNDY }
+		x = 27
+		y = 12
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_USE_FORCE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_REUNIFICATION_CAMPAIGN }
+		mutually_exclusive = { focus = FRA_USE_DIPLOMACY }
+		x = 29
+		y = 9
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ASSAULT_ON_NORMANDY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_USE_FORCE }
+		x = 29
+		y = 10
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INTERVENTION_IN_BRITANNY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_USE_FORCE }
+		x = 31
+		y = 10
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_BURGUNDIAN_BET
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_INTERVENTION_IN_BRITANNY }
+		prerequisite = { focus = FRA_ASSAULT_ON_NORMANDY }
+		x = 29
+		y = 11
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ATTACK_AQUITAINE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_INTERVENTION_IN_BRITANNY }
+		prerequisite = { focus = FRA_ASSAULT_ON_NORMANDY }
+		x = 31
+		y = 11
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_UNIFICATION_WARS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_BURGUNDIAN_BET }
+		prerequisite = { focus = FRA_ATTACK_AQUITAINE }
+		x = 29
+		y = 12
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_CONTINENTAL_BLOC
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_USE_DIPLOMACY focus = FRA_USE_FORCE }
+		prerequisite = { focus = FRA_THE_CONSTITUTION }
+		mutually_exclusive = { focus = FRA_THE_KINGS_ALLIANCE }
+		x = 23
+		y = 13
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_A_DEAL_WITH_THE_SPANISH
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_CONTINENTAL_BLOC }
+		x = 21
+		y = 14
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_TALKS_WITH_PORTUGAL
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_A_DEAL_WITH_THE_SPANISH }
+		x = 21
+		y = 15
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_SUPPORT_THE_ITALIANS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_TALKS_WITH_PORTUGAL }
+		x = 21
+		y = 16
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_TALKS_WITH_THE_GERMANS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_CONTINENTAL_BLOC }
+		x = 23
+		y = 14
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INFLUENCE_IN_THE_BENELUX
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_TALKS_WITH_THE_GERMANS }
+		x = 23
+		y = 15
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_WALLONIAN_QUESTION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_INFLUENCE_IN_THE_BENELUX }
+		x = 23
+		y = 16
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_WHAT_ABOUT_ALSACE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_WALLONIAN_QUESTION }
+		x = 23
+		y = 17
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_KINGS_ALLIANCE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_USE_DIPLOMACY focus = FRA_USE_FORCE }
+		prerequisite = { focus = FRA_THE_BOURBON_CHARTER }
+		mutually_exclusive = { focus = FRA_THE_CONTINENTAL_BLOC }
+		x = 33
+		y = 13
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_TALKS_WITH_THE_AMERICANS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_KINGS_ALLIANCE }
+		x = 35
+		y = 14
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_TALKS_WITH_THE_BRITISH
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_KINGS_ALLIANCE }
+		x = 33
+		y = 14
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_PROPOSE_ANGEVIN_EMPIRE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_TALKS_WITH_THE_BRITISH }
+		x = 33
+		y = 15
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_DUAL_MONARCHY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_PROPOSE_ANGEVIN_EMPIRE }
+		x = 33
+		y = 16
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_COLONIAL_EXPANSION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_UNIFICATION_WARS focus = FRA_PEACEFUL_REUNIFICATION }
+		x = 28
+		y = 14
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_DEAL_WITH_THE_GERMANS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_COLONIAL_EXPANSION }
+		x = 28
+		y = 15
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_PLANS_FOR_LOUISIANA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_DEAL_WITH_THE_GERMANS }
+		x = 26
+		y = 16
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_MARINE_EFFORT
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_DEAL_WITH_THE_GERMANS }
+		x = 28
+		y = 16
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INVADE_LOUISIANA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_MARINE_EFFORT }
+		prerequisite = { focus = FRA_PLANS_FOR_LOUISIANA }
+		x = 27
+		y = 17
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_PLANS_FOR_ASIA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_DEAL_WITH_THE_GERMANS }
+		x = 30
+		y = 16
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INVADE_INDOCHINA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_MARINE_EFFORT }
+		prerequisite = { focus = FRA_PLANS_FOR_ASIA }
+		x = 29
+		y = 17
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INVADE_SOUTHERN_CHINA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_INVADE_INDOCHINA }
+		x = 29
+		y = 17
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INVEST_IN_THE_PHILIPPINES
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_INVADE_SOUTHERN_CHINA }
+		x = 29
+		y = 18
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	#Extremeist
+	focus = {
+		id = FRA_LE_ORLENISTE_COUP
+		icon = GFX_goal_unknown
+		x = 40
+		y = 0
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ARMEE_NOUVELLE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_LE_ORLENISTE_COUP }
+		x = 50
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_IMPROVE_OUR_INFANTRY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ARMEE_NOUVELLE }
+		mutually_exclusive = { focus = FRA_IMPROVE_OUR_TANKS } 
+		x = 49
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_SIMPLIFIED_WEAPON_SCHEMATICS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_IMPROVE_OUR_INFANTRY }
+		x = 49
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_EXPAND_THE_ASSEMBLY_LINE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_IMPROVE_OUR_INFANTRY }
+		x = 47
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_MORE_RESOURCES_TO_THE_FRONT
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_EXPAND_THE_ASSEMBLY_LINE }
+		prerequisite = { focus = FRA_SIMPLIFIED_WEAPON_SCHEMATICS }
+		x = 49
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_A_WAVE_OF_BODIES
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_MORE_RESOURCES_TO_THE_FRONT }
+		x = 49
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_IMPROVE_OUR_TANKS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ARMEE_NOUVELLE }
+		mutually_exclusive = { focus = FRA_IMPROVE_OUR_INFANTRY } 
+		x = 51
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_IMPROVE_MOTORIZED_PRODUCTION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_IMPROVE_OUR_TANKS }
+		x = 53
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_SIMPLIFIED_TANK_SCHEMATICS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_IMPROVE_OUR_TANKS }
+		x = 51
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_MORE_RESOURCES_TO_INDUSTRY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_SIMPLIFIED_TANK_SCHEMATICS }
+		x = 51
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_BREAK_THE_ENEMIES
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_MORE_RESOURCES_TO_INDUSTRY }
+		x = 51
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_STRONGER_THAN_A_KING
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_LE_ORLENISTE_COUP }
+		mutually_exclusive = { focus = FRA_EMPOWER_THE_KING focus = FRA_CAROLINGIAN_IDENTITY }
+		x = 44
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_A_PARTY_DICTATORSHIP
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_STRONGER_THAN_A_KING }
+		x = 44
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INTERNMENT_CAMPS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_A_PARTY_DICTATORSHIP }
+		x = 43
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_SECRET_POLICE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_A_PARTY_DICTATORSHIP }
+		x = 45
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_WORK_CAMPS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_INTERNMENT_CAMPS }
+		x = 43
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_IMPRISON_OUR_OPPONENTS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_SECRET_POLICE }
+		x = 45
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_FORCED_LABOR
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_WORK_CAMPS }
+		prerequisite = { focus = FRA_IMPRISON_OUR_OPPONENTS }
+		x = 44
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ASSERT_WESTERN_CLAIMS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FORCED_LABOR }
+		x = 44
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_REESTABLISH_NORTHERN_CONTROL
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ASSERT_WESTERN_CLAIMS }
+		x = 43
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_REESTABLISH_EASTERN_CONTROL
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ASSERT_WESTERN_CLAIMS }
+		x = 45
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ESTABLISH_NATURAL_BORDERS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_REESTABLISH_EASTERN_CONTROL }
+		prerequisite = { focus = FRA_REESTABLISH_NORTHERN_CONTROL }
+		x = 44
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_PROPOGANDA_CAMPAIGNS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ESTABLISH_NATURAL_BORDERS }
+		x = 44
+		y = 9
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_AGGRESSIVE_POLICY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_PROPOGANDA_CAMPAIGNS }
+		x = 44
+		y = 10
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_EMPOWER_THE_KING
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_LE_ORLENISTE_COUP }
+		mutually_exclusive = { focus = FRA_STRONGER_THAN_A_KING focus = FRA_CAROLINGIAN_IDENTITY }
+		x = 40
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ELIMINATE_MONARCH_RESTRICTIONS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_EMPOWER_THE_KING }
+		x = 40
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_CLOSE_BORDERS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ELIMINATE_MONARCH_RESTRICTIONS }
+		x = 39
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_DEPORT_IMMIGRANTS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ELIMINATE_MONARCH_RESTRICTIONS }
+		x = 41
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_LIMIT_IMPORTS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_CLOSE_BORDERS }
+		x = 39
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_DEPORT_MINORITIES
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_DEPORT_IMMIGRANTS }
+		x = 41
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_DEPORT_POLITICAL_OPPOSITION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_DEPORT_MINORITIES }
+		x = 41
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_STRIKE_AT_BURGUNDY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_DEPORT_POLITICAL_OPPOSITION }
+		prerequisite = { focus = FRA_LIMIT_IMPORTS }
+		x = 40
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INTO_AQUITAINE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_STRIKE_AT_BURGUNDY }
+		x = 39
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ASSAULT_ON_ROUEN
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_STRIKE_AT_BURGUNDY }
+		x = 41
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_BRITTANY_GAMBLE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ASSAULT_ON_ROUEN }
+		prerequisite = { focus = FRA_INTO_AQUITAINE }
+		x = 40
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_NATURAL_BORDERS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_BRITTANY_GAMBLE }
+		x = 40
+		y = 9
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_OUR_PLACE_IN_THE_WORLD
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_NATURAL_BORDERS }
+		x = 40
+		y = 10
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_CAROLINGIAN_IDENTITY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_LE_ORLENISTE_COUP}
+		mutually_exclusive = { focus = FRA_EMPOWER_THE_KING focus = FRA_STRONGER_THAN_A_KING }
+		x = 36
+		y = 1
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_CAROLINGIAN_HERITAGE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_CAROLINGIAN_IDENTITY }
+		x = 37
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_PREPARE_A_NEW_CROWN
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_CAROLINGIAN_HERITAGE }
+		x = 37
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_MEDDEL_IN_PAPAL_AFFAIRS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_CAROLINGIAN_IDENTITY }
+		x = 34
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_POPE_DENIES_OUR_CROWN
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_MEDDEL_IN_PAPAL_AFFAIRS }
+		mutually_exclusive = { focus = FRA_A_FRIEND_IN_ROME }
+		x = 33
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_OUR_OWN_POPE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_POPE_DENIES_OUR_CROWN }
+		x = 33
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_BUILD_SUPPORT_FOR_OUR_POPE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_OUR_OWN_POPE }
+		x = 33
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ESTABLISH_PAPAL_CONTROL
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_BUILD_SUPPORT_FOR_OUR_POPE }
+		x = 33
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_A_FRIEND_IN_ROME
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_MEDDEL_IN_PAPAL_AFFAIRS }
+		mutually_exclusive = { focus = FRA_THE_POPE_DENIES_OUR_CROWN }
+		x = 35
+		y = 3
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ASSASSINATE_THE_POPE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_CAROLINGIAN_IDENTITY }
+		x = 34
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_FRANKISH_CORONATION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_PREPARE_A_NEW_CROWN focus = FRA_A_FRIEND_IN_ROME }
+		x = 36
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ENFORCE_CATHOLICISM
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_FRANKISH_CORONATION }
+		x = 36
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_STRIKE_AT_THE_HERETICS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ENFORCE_CATHOLICISM }
+		x = 35
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_STRIKE_AT_THE_HEATHENS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ENFORCE_CATHOLICISM }
+		x = 37
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_FRANCE_NO_MORE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_STRIKE_AT_THE_HEATHENS }
+		prerequisite = { focus = FRA_STRIKE_AT_THE_HERETICS }
+		x = 36
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ASSERT_OUR_CLAIMS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FRANCE_NO_MORE }
+		x = 36
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_PROMISED_WEDDING
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_FRANCE_NO_MORE }
+		x = 38
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ALLIANCE_WITH_SPAIN
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ASSERT_OUR_CLAIMS }
+		x = 34
+		y = 9
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_MARCH_TO_ROME
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ASSERT_OUR_CLAIMS }
+		x = 36
+		y = 9
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INTEGRATE_AQUITAINE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ASSERT_OUR_CLAIMS }
+		x = 38
+		y = 9
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INCORPORATE_AQUITAINE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ASSERT_OUR_CLAIMS }
+		x = 38
+		y = 9
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_REVOLT_IN_NORMANDY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ALLIANCE_WITH_SPAIN focus = FRA_MARCH_TO_ROME focus = FRA_INCORPORATE_AQUITAINE }
+		x = 35
+		y = 10
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_SUBJUGATE_BRITTANY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_ALLIANCE_WITH_SPAIN focus = FRA_MARCH_TO_ROME focus = FRA_INCORPORATE_AQUITAINE }
+		x = 37
+		y = 10
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INVADE_THE_BENELUX
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_SUBJUGATE_BRITTANY }
+		prerequisite = { focus = FRA_REVOLT_IN_NORMANDY }
+		x = 37
+		y = 11
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INVADE_THE_SWISS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_SUBJUGATE_BRITTANY }
+		prerequisite = { focus = FRA_REVOLT_IN_NORMANDY }
+		x = 35
+		y = 11
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_DEMAND_GERMAN_SUBJUGATION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_INVADE_THE_SWISS }
+		prerequisite = { focus = FRA_INVADE_THE_BENELUX }
+		x = 36
+		y = 12
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_RULERS_OF_EUROPE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_OUR_PLACE_IN_THE_WORLD focus = FRA_AGGRESSIVE_POLICY }
+		x = 42
+		y = 11
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_EUROPEAN_AXIS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_RULERS_OF_EUROPE }
+		mutually_exclusive = { focus = FRA_TERRITORIAL_EXPANSION }
+		x = 40
+		y = 12
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_UNITE_ITALY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_EUROPEAN_AXIS }
+		x = 39
+		y = 13
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_THE_SWISS_STATE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_UNITE_ITALY }
+		x = 39
+		y = 15
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_CATALONIAN_INDEPENDENCE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_EUROPEAN_AXIS }
+		x = 41
+		y = 13
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_RAISE_TENSIONS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_CATALONIAN_INDEPENDENCE }
+		x = 41
+		y = 14
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_ARM_THE_REBELS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_RAISE_TENSIONS }
+		x = 41
+		y = 15
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INTERVENE_IN_GERMANY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_SWISS_STATE focus = FRA_ARM_THE_REBELS focus = FRA_DEMAND_CATALONIA focus = FRA_RULE_IN_CENTRAL_ITALY }
+		x = 40
+		y = 16
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_TERRITORIAL_EXPANSION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_RULERS_OF_EUROPE }
+		mutually_exclusive = { focus = FRA_THE_EUROPEAN_AXIS }
+		x = 44
+		y = 12
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_CLAIM_CATALONIA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_TERRITORIAL_EXPANSION }
+		x = 43
+		y = 13
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_DEMAND_CATALONIA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_CLAIM_CATALONIA }
+		x = 43
+		y = 15
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_INVADE_THE_SWISS_STATES
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_TERRITORIAL_EXPANSION }
+		x = 45
+		y = 13
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_RULE_IN_NORTHERN_ITALY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_INVADE_THE_SWISS_STATES }
+		x = 45
+		y = 14
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_RULE_IN_CENTRAL_ITALY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_RULE_IN_NORTHERN_ITALY }
+		x = 45
+		y = 15
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_HELP_THE_GREEKS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_SWISS_STATE focus = FRA_ARM_THE_REBELS focus = FRA_DEMAND_CATALONIA focus = FRA_RULE_IN_CENTRAL_ITALY }
+		x = 44
+		y = 16
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_DOMINATE_IBERIA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = FRA_THE_SWISS_STATE focus = FRA_ARM_THE_REBELS focus = FRA_DEMAND_CATALONIA focus = FRA_RULE_IN_CENTRAL_ITALY }
+		x = 42
+		y = 16
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+}
+	

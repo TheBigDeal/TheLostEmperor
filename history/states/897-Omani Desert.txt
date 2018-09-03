@@ -1,0 +1,13 @@
+state={
+	id=897
+	name="STATE_897"
+	history={
+		owner = OMA
+	}
+	provinces={
+		2059 
+	}
+	manpower=435653
+	state_category = wasteland
+	buildings_max_level_factor=1.000
+}

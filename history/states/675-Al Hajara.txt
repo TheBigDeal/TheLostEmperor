@@ -1,0 +1,15 @@
+
+state={
+	id=675
+	name="STATE_675"
+	history={
+		owner = IRQ
+	}
+
+	provinces={
+		10744 12879 
+	}
+	manpower=122093
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

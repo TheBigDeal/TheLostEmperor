@@ -1,0 +1,21 @@
+
+state={
+	id=905
+	name="STATE_905"
+	state_category = town
+	history={
+		owner = BAK
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = BAK
+
+	}
+
+	provinces={
+		4941 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

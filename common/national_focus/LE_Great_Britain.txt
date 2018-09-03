@@ -1,0 +1,516 @@
+focus_tree = {
+	id = LEdanish_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GBR
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 50 y = 3100 }
+	
+	focus = {
+		id = ENG_GREAT_BRITAIN
+		icon = GFX_goal_generic_national_unity
+		x = 16
+		y = 0
+		cost = 10
+		bypass = {
+			tag = GBR
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_TRUST_THE_MONARCHY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_GREAT_BRITAIN }
+		mutually_exclusive = { focus = ENG_REMOVE_THE_KING }
+		x = 10
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_A_STRONG_PARLIAMENT
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_TRUST_THE_MONARCHY }
+		mutually_exclusive = { focus = ENG_KEEP_THE_KINGS_POWERS focus = ENG_A_STRONGER_KING }
+		x = 8
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_A_GOVERNING_KING
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_A_STRONG_PARLIAMENT }
+		mutually_exclusive = { focus = ENG_RESTORE_TRUST_IN_THE_MONARCHY focus = ENG_A_POPULAR_KING focus = ENG_A_POPULAR_KING }
+		x = 8
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_A_POPULAR_KING
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_A_STRONG_PARLIAMENT }
+		mutually_exclusive = { focus = ENG_RESTORE_TRUST_IN_THE_MONARCHY focus = ENG_A_GOVERNING_KING focus = ENG_ABOLISH_PARLIAMENT }
+		x = 1
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_KEEP_THE_KINGS_POWERS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_TRUST_THE_MONARCHY }
+		mutually_exclusive = { focus = ENG_A_STRONGER_KING focus = ENG_A_STRONG_PARLIAMENT }
+		x = 10
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_RESTORE_TRUST_IN_THE_MONARCHY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_KEEP_THE_KINGS_POWERS }
+		mutually_exclusive = { focus = ENG_ABOLISH_PARLIAMENT focus = ENG_A_GOVERNING_KING focus = ENG_A_POPULAR_KING }
+		x = 10
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_A_STRONGER_KING
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_TRUST_THE_MONARCHY }
+		mutually_exclusive = { focus = ENG_REMOVE_THE_KING focus = ENG_A_STRONG_PARLIAMENT }
+		x = 12
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_ABOLISH_PARLIAMENT
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_A_STRONGER_KING }
+		mutually_exclusive = { focus = ENG_RESTORE_TRUST_IN_THE_MONARCHY focus = ENG_A_GOVERNING_KING focus = ENG_A_POPULAR_KING }
+		x = 12
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_COUNTINUE_COLONIAL_AMBITIONS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_A_GOVERNING_KING focus = ENG_RESTORE_TRUST_IN_THE_MONARCHY focus = ENG_ABOLISH_PARLIAMENT }
+		x = 8
+		y = 4
+		cost = 10
+		available = {
+			has_completed_focus = ENG_INVADE_FRANCE
+			has_completed_focus = ENG_RELAUNCH_IMPERIAL_CAMPAIGN
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_AMERICAN_CAMPAIGN
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_COUNTINUE_COLONIAL_AMBITIONS }
+		x = 8
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_PURCHASE_LUISIANA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_AMERICAN_CAMPAIGN }
+		x = 8
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_MAKE_AMERICA_BRITAIN_AGAIN
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_PURCHASE_LUISIANA }
+		x = 8
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_ASIAN_CAMPAIGN
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_COUNTINUE_COLONIAL_AMBITIONS }
+		x = 5
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_DEAL_WITH_THE_QING_DYNASTY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_ASIAN_CAMPAIGN }
+		mutually_exclusive = { focus = ENG_DEAL_WITH_THE_GUANG_DYNASTY }
+		x = 4
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_DEAL_WITH_THE_GUANG_DYNASTY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_ASIAN_CAMPAIGN }
+		mutually_exclusive = { focus = ENG_DEAL_WITH_THE_QING_DYNASTY }
+		x = 6
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_ESTABLISH_PORTS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_DEAL_WITH_THE_GUANG_DYNASTY focus = ENG_DEAL_WITH_THE_QING_DYNASTY }
+		x = 5
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_EXPAND_PORTS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_ESTABLISH_PORTS }
+		x = 5
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_DEAL_WITH_FRANCE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_A_GOVERNING_KING focus = ENG_RESTORE_TRUST_IN_THE_MONARCHY focus = ENG_ABOLISH_PARLIAMENT }
+		x = 11
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_A_FRENCH_UNION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_DEAL_WITH_FRANCE }
+		mutually_exclusive = { focus = ENG_A_FRENCH_PUPPET }
+		x = 11
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_RESTORE_THE_ANGEVIN_EMPIRE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_A_FRENCH_UNION }
+		x = 11
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_cosmetic_tag = ANGEVIN_EMPIRE
+		}
+	}
+	focus = {
+		id = ENG_RESTORE_FEUDAL_SOCIETY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_RESTORE_THE_ANGEVIN_EMPIRE }
+		mutually_exclusive = { focus = ENG_RELAUNCH_IMPERIAL_CAMPAIGN }
+		x = 10
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_RENEW_PORTUGESE_ALLIANCE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_RESTORE_FEUDAL_SOCIETY focus = ENG_RELAUNCH_IMPERIAL_CAMPAIGN }
+		x = 11
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_ALLY_THE_AUSTRIANS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_RESTORE_FEUDAL_SOCIETY }
+		mutually_exclusive = { focus = ENG_ALLY_THE_PRUSSIANS }
+		x = 9
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_SUPPORT_A_UNITED_HRE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_ALLY_THE_AUSTRIANS }
+		x = 9
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_ALLY_THE_PRUSSIANS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_RESTORE_FEUDAL_SOCIETY }
+		mutually_exclusive = { focus = ENG_ALLY_THE_AUSTRIANS }
+		x = 7
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_SUPPORT_A_UNIFIED_GERMANY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_ALLY_THE_PRUSSIANS }
+		x = 7
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_IBERIAN_INFLUENCE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_RENEW_PORTUGESE_ALLIANCE }
+		x = 11
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_SUBJUGATE_THE_PORTUGESE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_IBERIAN_INFLUENCE }
+		mutually_exclusive = { focus = ENG_SUBJUGATE_THE_SPANISH }
+		x = 10
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_SUBJUGATE_THE_SPANISH
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_IBERIAN_INFLUENCE }
+		mutually_exclusive = { focus = ENG_SUBJUGATE_THE_PORTUGESE }
+		x = 12
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_RELAUNCH_IMPERIAL_CAMPAIGN
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_RESTORE_THE_ANGEVIN_EMPIRE }
+		mutually_exclusive = { focus = ENG_RESTORE_FEUDAL_SOCIETY }
+		x = 12
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_A_FRENCH_PUPPET
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_DEAL_WITH_FRANCE }
+		mutually_exclusive = { focus = ENG_A_FRENCH_UNION }
+		x = 13
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_INVADE_FRANCE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_A_FRENCH_PUPPET }
+		x = 13
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = ENG_REMOVE_THE_KING
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ENG_GREAT_BRITAIN }
+		mutually_exclusive = { focus = ENG_TRUST_THE_MONARCHY }
+		x = 14
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}

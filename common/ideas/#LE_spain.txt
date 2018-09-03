@@ -1,0 +1,13 @@
+ideas = {
+
+country = {
+	##################
+	#     SPAIN      #
+	##################
+	DISPUTED_HEIR = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			stability_factor = -0.30 
+		}
+	}
+}

@@ -1,0 +1,23 @@
+
+state={
+	id=437
+	name="STATE_437"
+
+	history={
+		owner = MAR
+		add_core_of = MAR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		1199 1949 2036 2092 2105 4045 4106 4950 4953 5040 5096 7080 8076 10807 10816 11995 12080 12743 12799 12829 
+	}
+	manpower=8402500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

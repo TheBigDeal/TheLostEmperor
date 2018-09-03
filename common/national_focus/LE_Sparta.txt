@@ -1,0 +1,121 @@
+focus_tree = {
+	id = greece_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 3
+			tag = SPT
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = SPT_CIVIL_WAR
+		icon = GFX_goal_support_rexism
+		x = 8
+		y = 0
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SPT_ALIGN_WITH_MOUNT_ATHOS
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = SPT_CIVIL_WAR }
+		mutually_exclusive = { focus = SPT_GO_ALONE }
+		x = 7
+		y = 1
+		cost = 3
+		available = {
+			if = {
+				MOU = { is_in_faction = no }
+			}
+		}
+		ai_will_do = {
+			factor = 6
+		}
+		completion_reward = {
+			create_faction = Spartan_Athos_Axis
+			add_to_faction = MOU
+		}
+	}
+	focus = {
+		id = SPT_GO_ALONE
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = SPT_CIVIL_WAR }
+		mutually_exclusive = { focus = SPT_ALIGN_WITH_MOUNT_ATHOS }
+		x = 9
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SPT_SPARTAN_LEGACY
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = SPT_GO_ALONE focus = SPT_ALIGN_WITH_MOUNT_ATHOS }
+		x = 8
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SPT_HARSH_TRAINING
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = SPT_SPARTAN_LEGACY }
+		x = 7
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SPT_MOBILIZE_THE_COUNTRY
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = SPT_SPARTAN_LEGACY }
+		x = 9
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SPT_IMPROVE_CHAIN_OF_COMMAND
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = SPT_MOBILIZE_THE_COUNTRY focus = SPT_HARSH_TRAINING }
+		x = 8
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+}
+	

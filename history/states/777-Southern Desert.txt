@@ -1,0 +1,17 @@
+
+state={
+	id=777
+	name="STATE_777"
+
+	history={
+		owner = EGY
+
+	}
+
+	provinces={
+		7987 10900 
+	}
+	manpower=24532
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

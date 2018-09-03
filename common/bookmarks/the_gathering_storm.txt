@@ -1,0 +1,205 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1928.2.4
+		picture = "GFX_select_date_1936"
+		default_country = "PRS"
+		default = yes
+	
+		FRA = {
+			history = FRA_BLITZKRIEG_DESC
+			ideology = absolutism
+			ideas={
+
+			}
+			focuses = {
+
+			}
+		}
+		USA = {
+			history = USA_BLITZKRIEG_DESC
+			ideology = absolutism
+			ideas = {
+				home_of_the_free
+				great_depression
+				air_war_plans_division_focus
+				bureau_of_ships_focus
+				escort_effort_focus
+			}
+			focuses = {
+
+			}
+		}
+		GBR = {
+			history = GBR_BLITZKRIEG_DESC
+			ideology = absolutism
+			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				ENG_george_vi
+				british_austerity_idea
+				ENG_colonial_elite
+			}
+			focuses = {
+
+			}
+			
+		}
+		PRS = {
+			history = GER_BLITZKRIEG_DESC
+			ideology = absolutism
+			ideas = {
+				sour_loser
+				general_staff
+			}
+			focuses = {
+
+			}
+		}
+		AUS = {
+			history = GER_BLITZKRIEG_DESC
+			ideology = absolutism
+			ideas = {
+				sour_loser
+				general_staff
+			}
+			focuses = {
+
+			}
+		}
+		SPR = {
+			history = GER_BLITZKRIEG_DESC
+			ideology = absolutism
+			ideas = {
+				sour_loser
+				general_staff
+			}
+			focuses = {
+
+			}
+		}
+		RUS = {
+			history = SOV_BLITZKRIEG_DESC
+			ideology = absolutism
+			ideas = {
+				trotskyite_plot_purged
+				home_of_revolution
+				officers_purged
+				nkvd_2
+			}
+			focuses = {
+
+			}
+		}
+
+		"---"={
+			history = "OTHER_BLITZKRIEG_DESC"
+		}
+
+		# minors from DLC ####
+		
+		"PAP"={
+			minor = yes
+			history = "ROM_BLITZKRIEG_DESC"
+			ideology = absolutism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		
+		"TUR"={
+			minor = yes
+			history = "ROM_BLITZKRIEG_DESC"
+			ideology = absolutism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		
+		"QNG"={
+			minor = yes
+			history = "ROM_BLITZKRIEG_DESC"
+			ideology = absolutism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		
+		"PER"={
+			minor = yes
+			history = "ROM_BLITZKRIEG_DESC"
+			ideology = absolutism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		
+		"ATH"={
+			minor = yes
+			history = "ROM_BLITZKRIEG_DESC"
+			ideology = absolutism
+			ideas = {
+				
+			}
+			focuses = {
+
+			}
+		}
+		
+		"SAR"={
+			minor = yes
+			history = "ROM_BLITZKRIEG_DESC"
+			ideology = absolutism
+			ideas = {
+				
+			}
+			focuses = {
+
+			}
+		}
+		
+		"SPT"={
+			minor = yes
+			history = "ROM_BLITZKRIEG_DESC"
+			ideology = absolutism
+			ideas = {
+				
+			}
+			focuses = {
+
+			}
+		}
+		
+		"DEN"={
+			minor = yes
+			history = "ROM_BLITZKRIEG_DESC"
+			ideology = absolutism
+			ideas = {
+				
+			}
+			focuses = {
+
+			}
+		}
+		
+		
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

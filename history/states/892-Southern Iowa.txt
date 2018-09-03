@@ -1,0 +1,25 @@
+state={
+	id=892
+	name="STATE_892"
+	
+	history={
+		owner = UPP
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 4
+
+		}
+		add_core_of = UPP
+		victory_points = {
+			1770 3 
+		}
+
+	}
+	
+	provinces={
+		1586 1678 1770 9892 10666 
+	}
+	manpower=435653
+	state_category = town
+	buildings_max_level_factor=1.000
+}

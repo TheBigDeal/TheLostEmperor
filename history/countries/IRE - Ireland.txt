@@ -1,0 +1,94 @@
+﻿capital = 113
+
+oob = "IRE_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+}
+
+set_convoys = 10
+
+
+set_politics = {
+
+	parties = {
+		despotism = { 
+			popularity = 55
+		}
+		liberalism = { 
+			popularity = 5
+		}
+		conservatism = { 
+			popularity = 10
+		}
+		proletarianism = {
+			popularity = 15
+		}
+		naturalism = {
+			popularity = 5
+		}
+		collectivism = {
+			popularity = 10
+		}
+	}
+	
+	ruling_party = despotism
+	last_election = "1933.1.24"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+
+create_country_leader = {
+	name = "Éamon de Valera"
+	desc = "POLITICS_ÉAMON_DE_VALERA_DESC"
+	picture = "Portrait_Ireland_Eamon_de_Valera.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Eoin O'Duffy"
+	desc = "POLITICS_EOIN_ODUFFY_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "James Larkin"
+	desc = "POLITICS_JAMES_LARKIN_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = proletarianism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "William Norton"
+	desc = "POLITICS_JAMES_LARKIN_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Michael Costello"
+	portrait_path = "gfx/leaders/GBR/Portrait_Britain_Generic_land_4.dds"
+	traits = {  }
+	skill = 2
+}

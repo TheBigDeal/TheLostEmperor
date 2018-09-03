@@ -1,0 +1,26 @@
+state={
+	id=786
+	name="STATE_786"
+	
+	history={
+		owner = MCH
+		
+		buildings = {
+			infrastructure = 7
+			arms_factory = 5
+			industrial_complex = 6
+
+		}
+		victory_points = {
+			3258 5 
+		}
+		add_core_of = MCH
+	}
+	
+	provinces={
+		3258 
+	}
+	manpower=435653
+	state_category = city
+	buildings_max_level_factor=1.000
+}

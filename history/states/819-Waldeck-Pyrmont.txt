@@ -1,0 +1,27 @@
+state={
+	id=819
+	name="STATE_819"
+	
+	history={
+		owner = PYR
+		victory_points = {
+			11431 1
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+
+		}
+		add_core_of = PYR
+
+	}
+	
+	state_category=town
+	
+	provinces={
+		9443 11431 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

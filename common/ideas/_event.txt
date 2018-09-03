@@ -1,0 +1,208 @@
+ideas = {
+
+	country = {
+		fascist_assault_divisions = {
+			
+			available = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_rexism_drift_bonus
+			
+			modifier = {
+				stability_factor = -0.05
+				conscription = 0.002
+				rexism_drift = 0.05
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		communist_partisans_recruiting = {
+			
+			available = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_proletarianism_drift_bonus
+			
+			modifier = {
+				conscription = -0.002
+				proletarianism_drift = 0.05
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		liberalism_opposition_voicing_protests = {
+			
+			available = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_liberalism_drift_bonus
+			
+			modifier = {
+				political_power_factor = -0.5
+				liberalism_drift = 0.05
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		fascist_revolutionaries = {
+			
+			removal_cost = -1
+			
+			available = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_rexism_drift_bonus
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+
+		communist_revolutionaries = {
+			
+			removal_cost = -1
+			
+			available = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_proletarianism_drift_bonus
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+
+		liberalism_revolutionaries = {
+			
+			removal_cost = -1
+			
+			available = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_liberalism_drift_bonus
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+
+
+		rexism_defeated = {
+			removal_cost = -1
+			
+			available = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_liberalism_drift_bonus
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+
+		proletarianism_defeated = {
+			removal_cost = -1
+			
+			available = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_liberalism_drift_bonus
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+		
+		reign_of_terror = {
+			removal_cost = -1
+			
+			available = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+
+		anti_soviet_pact = {
+			
+			removal_cost = -1 # Or make removable, with high cost?
+			
+			available = {
+				always = no # Triggered via event
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		anti_soviet_pact_refused_call = {
+
+			picture = generic_proletarianism_drift_bonus
+			
+			removal_cost = -1 # Or make removable, with high cost?
+			
+			available = {
+				always = no # Triggered via event
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+
+			modifier = {
+				stability_factor = -0.07
+				proletarianism_drift = 0.05
+			}
+		}
+
+		anti_nazi_coup = {			
+			
+			available = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_liberalism_drift_bonus
+			
+			modifier = {
+				rexism_acceptance = -50
+			}
+		}
+		
+		shattered_government = {
+			
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			
+			picture = generic_liberalism_drift_bonus
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+	}
+}

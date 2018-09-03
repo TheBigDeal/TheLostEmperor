@@ -1,0 +1,21 @@
+
+state={
+	id=843
+	name="STATE_843"
+	state_category = city
+	history={
+		owner = ASH
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = ASH
+
+	}
+	
+	provinces={
+		8039 8096 10862 12742 12787 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

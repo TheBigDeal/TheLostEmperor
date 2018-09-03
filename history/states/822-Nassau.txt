@@ -1,0 +1,30 @@
+
+state={
+	id=822
+	name="STATE_822"
+
+	history={
+		owner = NAS
+		victory_points = {
+			11435 3
+		}
+		victory_points = {
+			6444 1
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+
+		}
+		add_core_of = JUL
+
+	}
+
+	provinces={
+		3398 6444 9486 9547 11435 11470 11494 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+	state_category=town
+}

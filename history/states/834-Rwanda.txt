@@ -1,0 +1,23 @@
+
+state={
+	id=834
+	name="STATE_834"
+	state_category = city
+	history={
+		owner = RWA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = RWA
+
+	}
+
+	provinces={
+		4201 9962 
+	}
+	manpower=1548650
+	state_category = city
+	buildings_max_level_factor=1.000
+}

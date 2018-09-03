@@ -1,0 +1,150 @@
+ideas = {
+
+country = {
+	#########################
+	#   Sardinia Piedmont   #
+	#########################
+	Militaristic_King = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			conscription = 0.01 
+			army_core_defence_factor = 0.1 
+		}
+	}
+	#ARMY ROLE
+	########################################################
+	King_Army_Indirect = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			planning_speed = 0.10 
+		}
+	}
+	King_Army_Direct = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			army_org_Factor = 0.05
+		}
+	}
+	#INTERNAL POLICY
+	########################################################
+	King_Internal_Limited = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			stability_weekly = 0.05 
+		}
+	}
+	King_Internal_Balanced = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			stability_weekly = 0.025 
+			political_power_gain = 0.25
+		}
+	}
+	King_Internal_Extensive = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			political_power_gain = 0.5 
+			stability_weekly = 0.01 
+		}
+	}
+	#FORIEGN POLICY
+	########################################################
+	King_Foriegn_Limited = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			opinion_gain_monthly_factor = 0.15 
+		}
+	}
+	King_Foriegn_Balanced = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			trade_opinion_factor = 0.25 
+		}
+	}
+	King_Foriegn_Extensive = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			war_support_weekly = 0.01 
+		}
+	}
+	#PEOPLES PLANS
+	########################################################
+	DE_SONNAZ_PLAN = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			army_attack_factor = 0.1 
+		}
+	}
+	CAVOURS_PLAN = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			production_speed_infrastructure_factor = 0.2 
+		}
+	}
+	D'AZZEGLIOS_PLAN = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			trade_opinion_factor = 0.15 
+		}
+	}
+	BAVAS_PLAN = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			army_org = 10
+		}
+	}
+	#ALLIANCE_BUFFS
+	########################################################
+	BRITISH_NAVAL_SUPPORT = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			navy_capital_ship_defence_factor = 0.1 
+			navy_capital_ship_attack_factor = 0.05 
+		}
+	}
+	ADOPT_BRITISH_NAVAL_TACTICS = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			naval_coordination = 0.01 
+			naval_hit_chance = 0.05 
+		}
+	}
+	PRUSSIAN_WAR_EXPERTISE = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			army_morale_factor = 0.2
+		}
+	}
+	ADOPT_PRUSSIAN_DICIPLINE = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			army_org = 10
+		}
+	}
+	FRENCH_TRAINING = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			 	army_core_defence_factor = 0.1 
+		}
+	}
+	FRENCH_STYLE_ARMY = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			attrition = -0.1 
+			max_dig_in = 1 
+		}
+	}
+	AUSTRIAN_DIPLOMACY = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			opinion_gain_monthly_factor = 0.15 
+			subjects_autonomy_gain = -0.5 
+		}
+	}
+	AUSTRIAN_COURT_STYLE = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			improve_relations_maintain_cost_factor = -0.75 
+		}
+	}
+}

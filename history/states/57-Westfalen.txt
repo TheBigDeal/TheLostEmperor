@@ -1,0 +1,25 @@
+
+state={
+	id=57
+	name="STATE_57"
+
+	history={
+		owner = MUN
+		buildings = {
+			infrastructure = 8
+			arms_factory = 4
+			industrial_complex = 1
+			air_base = 3
+
+		}
+		add_core_of = MUN
+
+	}
+
+	provinces={
+		9281 11264
+	}
+	manpower=5109333
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

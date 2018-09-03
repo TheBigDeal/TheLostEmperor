@@ -1,0 +1,27 @@
+state={
+	id=823
+	name="STATE_823"
+	
+	history={
+		owner = NSA
+		victory_points = {
+			9575 1
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+
+		}
+		add_core_of = NSA
+
+	}
+	
+	state_category=town
+	
+	provinces={
+		9575 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

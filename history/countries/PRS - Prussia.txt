@@ -1,0 +1,100 @@
+﻿capital = 64
+
+OOB = "PRS_1935"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+add_ideas = {
+	PRS_PRUSSIAN_MILITARISM
+	Religion_Protestant
+	HRE_elector
+}
+
+set_politics = {
+
+	parties = {
+		conservatism = { 
+			popularity = 15
+		}
+
+		labryscism = {
+			popularity = 7
+		}
+		
+		rexism = {
+			popularity = 13
+		}
+		
+		royalism = {
+			popularity = 15
+		}
+		
+		absolutism = { 
+			popularity = 50
+		}
+	}
+	
+	ruling_party = absolutism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+POL = {
+	add_popularity = { ideology = royalism popularity = 1 }
+	add_popularity = { ideology = absolutism popularity = 0.3 }
+	add_popularity = { ideology = proletarianism popularity = 0.15 }
+	add_popularity = { ideology = rexism popularity = 0.25 }
+	add_popularity = { ideology = liberalism popularity = 0.1 }
+	set_politics = {
+		ruling_party = royalism
+		last_election = "1920.15.6"
+		election_frequency = 48
+		elections_allowed = no
+	}
+}
+
+set_convoys = 200
+give_guarantee = HRE
+#add_relation_modifier = { target = HRE modifier = part_of_hre }
+
+create_country_leader = {
+	name = "Fredrick Wilhelm II"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Prussia_Wilhelm_II.tga"
+	expire = "1942.4.6"
+	ideology = absolutism_ideology
+	traits = {
+		Political_Dancer
+		Warmonger
+	}
+}
+
+create_field_marshal = {
+	name = "Heinrich Gutte"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	skill = 4
+}
+
+create_field_marshal = {
+	name = "Adolf Perte"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	skill = 4
+}
+
+create_field_marshal = {
+	name = "Fredrick von Habsburg"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	skill = 3
+}
+
+create_field_marshal = {
+	name = "Heinrich von Wurrtemburg"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	skill = 2
+}
+

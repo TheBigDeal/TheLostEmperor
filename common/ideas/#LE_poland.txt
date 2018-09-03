@@ -1,0 +1,24 @@
+ideas = {
+
+country = {
+	#################
+	#COMMUNIST PATH
+	#################
+	POL_the_polish_red_army = {
+
+		picture = generic_communist_army
+
+		modifier = {
+			conscription = 0.05
+		}
+	}
+	POL_support_proletarianism = {
+
+		picture = FRA_scw_intervention_nationalists_focus
+
+		modifier = {
+			consumer_goods_factor = -0.05
+			proletarianism_drift = 0.05
+		}
+	}
+}

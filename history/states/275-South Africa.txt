@@ -1,0 +1,31 @@
+
+state={
+	id=275
+	name="STATE_275"
+	resources={
+		steel=8.000
+		chromium=80.000
+	}
+
+	history={
+		owner = HNG
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 5
+			air_base = 3
+
+		}
+		victory_points = {
+			10400 10 
+		}
+
+	}
+
+	provinces={
+		1688 2171 2213 5106 5217 5231 7900 7900 10400 10566 10668 12064 12648 
+	}
+	manpower=3680363
+	buildings_max_level_factor=1.000
+	state_category=city
+}

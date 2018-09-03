@@ -1,0 +1,29 @@
+
+state={
+	id=877
+	name="STATE_756"
+
+	history={
+		owner = HRE
+		victory_points = {
+			3547 20 
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 4
+			industrial_complex = 2
+			air_base = 3
+
+		}
+		add_core_of = HRE
+		add_core_of = AAC
+
+	}
+
+	provinces={
+		3547 
+	}
+	manpower=623521
+	buildings_max_level_factor=1.000
+	state_category=city
+}

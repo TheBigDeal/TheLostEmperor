@@ -1,0 +1,212 @@
+﻿###########################
+# German Events
+###########################
+
+add_namespace = le_prussia
+
+# INTRO EVENT
+country_event = {
+	id = le_prussia.1
+	title = le_prussia.1.t
+	desc = le_prussia.1.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = le_prussia.1.a
+	}
+}
+country_event = { #What flag should we use?
+	id = le_prussia.2
+	title = le_prussia.2.t
+	desc = le_prussia.2.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = { #Traditional Eagle
+		name = le_prussia.2.a
+		set_cosmetic_tag = GERMAN_EMPIRE_OLD
+	}
+	option = { #Adopt a Tricolor
+		name = le_prussia.2.b
+		set_cosmetic_tag = GERMAN_EMPIRE
+	}
+}
+country_event = { #Annex by Germany
+	id = le_prussia.3
+	title = le_prussia.3.t
+	desc = le_prussia.3.d
+	picture = GFX_report_event_hitler_parade
+	
+	trigger = {
+		AND = {
+			PRS = { focus_progress = { focus = PRS_OATHS_OF_LOYALTY progress > 0.0 } }
+			OR = {
+				tag = BAV
+				tag = SAX
+				tag = TRI
+				tag = ULM
+				tag = LUB
+				tag = HAN
+				tag = BAD
+				tag = CLG
+				tag = HES
+				tag = FRN
+				tag = WUR
+				tag = HAM
+				tag = BRE
+				tag = BRU
+				tag = ANH
+				tag = WRZ
+				tag = THU
+				tag = KLE
+				tag = HRE
+				tag = MAI
+				tag = NUR
+				tag = AUG
+				tag = ANS
+				tag = PLT
+				tag = OLD
+				tag = MST
+				tag = MCH
+				tag = HLS
+				tag = EFR
+				tag = MUN
+				tag = RAV
+				tag = PAD
+				tag = PYR
+				tag = NAS
+				tag = JUL
+				tag = NSA
+				tag = FUL
+				tag = BAM
+				tag = SPY
+				tag = OFF
+				tag = HUL
+				tag = MEM
+				tag = LND
+				tag = HNZ
+				tag = FUS
+				tag = PSU
+			}
+		}
+	}
+	
+	mean_time_to_happen = { days = 40 }
+	
+	option = { #Accept (Get Annexed)
+		name = le_prussia.3.1
+		ai_chance = { factor = 50 }
+		if = {
+			limit = {
+				AND = {
+					country_exists = GER
+					NOT = { country_exists = PRS }
+				}
+			}
+			GER = { annex_country = { target = FROM transfer_troops = yes } }
+			else = {
+				PRS = { annex_country = { target = FROM transfer_troops = yes } }
+			}
+		}
+	}
+	option = { #Decline
+		name = le_prussia.3.3
+		ai_chance = { factor = 0 }
+		PRS = { create_wargoal = { type = annex_everything target = FROM } }
+	}
+}
+
+country_event = { #Country gets puppeted
+	id = le_prussia.4
+	title = le_prussia.4.t
+	desc = le_prussia.4.d
+	picture = GFX_report_event_hitler_parade
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	
+	option = { #START THE WAR
+		name = le_prussia.4.a
+	}
+}
+country_event = {
+	id = dutchrevolt.1
+	title = dutchrevolt.1.t
+	desc = dutchrevolt.1.d
+	picture = GFX_report_event_SPR_civwar
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SPR
+		date > 1937.05.15
+		NOT = { date > 1937.10.1 }
+		OR = {
+			176 = { is_owned_and_controlled_by = SPR } #Castilla la Vieja
+			172 = { is_owned_and_controlled_by = SPR } #Navarra
+			174 = { is_owned_and_controlled_by = SPR } #León
+			171 = { is_owned_and_controlled_by = SPR } #Galicia
+			793 = { is_owned_and_controlled_by = SPR } #Asturias
+		}
+		has_country_flag = SPR_carlists_will_rise
+		NOT = { has_global_flag = SPR_carlists_have_risen }
+		NOT = { has_country_flag = election_success }
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	immediate = {
+		set_global_flag = DUTCH_REVOLT
+		every_state = {
+			limit = { is_core_of = HOL }
+			add_claim_by = GRV
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				OR = {
+					state = 35 #Castilla la Vieja
+					state = 36 #Navarra
+				}
+			}
+			remove_claim_by = GRV
+			add_core_of = GRV
+			remove_core_of = HOL
+			add_claim_by = HOL
+			GRV = { transfer_state = PREV }
+		}
+		GRV = { transfer_technology = yes }
+	}
+	
+	option = {
+		name = dutchrevolt.1.a #We shall fight them!
+		if = {
+			limit = { is_ai = yes }
+			#load_oob = SCW_SPR_reinforce1
+		}
+		GRV = {
+			#country_event = { id = sprc.2 days = 7 }
+		}
+	}
+	option = {
+		name = dutchrevolt.1.b #Long live Javier I! (Play as the Carlists)
+		trigger = { is_ai = no }
+		if = {
+			limit = { is_ai = yes }
+			#load_oob = SCW_SPR_reinforce1
+		}
+		GRV = {
+			#country_event = { id = sprc.2 days = 7 }
+			change_tag_from = SPR
+		}
+	}
+}

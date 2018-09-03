@@ -1,0 +1,864 @@
+focus_tree = {
+	id = tuscan_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 3
+			tag = TUS
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 100 y = 1600 }
+	
+	focus = {
+		id = TUS_ASSASSINATION_OF_THE_ARCHDUKE
+		icon = GFX_goal_unknown
+		x = 10
+		y = 0
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	######################################
+	#INDUSTRY & ANNEX LUCCA
+	######################################
+	focus = {
+		id = TUS_EXPAND_INDUSTRY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_ASSASSINATION_OF_THE_ARCHDUKE }
+		x = 9
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUS_INTEGRATE_LUCCA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_ASSASSINATION_OF_THE_ARCHDUKE }
+		x = 11
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUS_PEOPLE_FIRST
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_EXPAND_INDUSTRY }
+		x = 9
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUS_MILITARY_FIRST
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_EXPAND_INDUSTRY }
+		x = 11
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUS_EXPAND_INDUSTRIAL_CAPACITY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_PEOPLE_FIRST focus = TUS_MILITARY_FIRST }
+		x = 9
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUS_EXPAND_MILITARY_CAPACITY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_PEOPLE_FIRST focus = TUS_MILITARY_FIRST }
+		x = 11
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUS_EXPAND_NAVAL_CAPACITY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_EXPAND_INDUSTRIAL_CAPACITY focus = TUS_EXPAND_MILITARY_CAPACITY }
+		mutually_exclusive = { focus = TUS_CONSTRUCT_AIRFIELDS }
+		x = 9
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUS_BUILD_AN_ARSENAL
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_EXPAND_NAVAL_CAPACITY }
+		x = 9
+		y = 6
+		cost = 3
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUS_CONSTRUCT_AIRFIELDS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_EXPAND_INDUSTRIAL_CAPACITY focus = TUS_EXPAND_MILITARY_CAPACITY }
+		mutually_exclusive = { focus = TUS_EXPAND_NAVAL_CAPACITY }
+		x = 11
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUS_CONSTRUCT_AIR_DEFENCES
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_CONSTRUCT_AIRFIELDS }
+		x = 11
+		y = 6
+		cost = 3
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUS_ENCOURAGE_PRIVATE_INVESTMENTS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_CONSTRUCT_AIR_DEFENCES focus = TUS_BUILD_AN_ARSENAL }
+		x = 10
+		y = 7
+		cost = 3
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	######################################
+	#LABRYSCIST PATH
+	######################################
+	focus = {
+		id = TUS_CARBONARI_TAKEOVER
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_ASSASSINATION_OF_THE_ARCHDUKE }
+		mutually_exclusive = { focus = TUS_A_NEW_DUKE }
+		x = 4
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_A_NAVY_FOR_WAR
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_CARBONARI_TAKEOVER }
+		x = 4
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_EXPAND_MARINA_NAZIONALE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_A_NAVY_FOR_WAR }
+		x = 4
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_THE_GENOESE_INCIDENT
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_EXPAND_MARINA_NAZIONALE }
+		x = 4
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_CORSICAN_INTERVENTION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_THE_GENOESE_INCIDENT }
+		x = 3
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_OFFENSE_ON_THE_TICINO
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_THE_GENOESE_INCIDENT }
+		prerequisite = { focus = TUS_TO_MILAN_AND_BACK }
+		x = 5
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_RAID_VENICE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_TO_MILAN_AND_BACK }
+		x = 7
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_THE_TIBER_PLAN
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_TO_MILAN_AND_BACK }
+		prerequisite = { focus = TUS_OFFENSE_ON_THE_TICINO }
+		x = 7
+		y = 6
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_OVERTHROW_THE_SOUTH
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_THE_GENOESE_INCIDENT }
+		prerequisite = { focus = TUS_RAID_VENICE}
+		x = 5
+		y = 6
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_A_BLOODY_RISORGIMENTO
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_OVERTHROW_THE_SOUTH }
+		prerequisite = { focus = TUS_THE_TIBER_PLAN }
+		x = 6
+		y = 7
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_AN_ARMY_FOR_UNIFACATION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_CARBONARI_TAKEOVER }
+		x = 6
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_INVADE_THE_DUCHIES
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_AN_ARMY_FOR_UNIFACATION }
+		x = 6
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_TO_MILAN_AND_BACK
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_INVADE_THE_DUCHIES }
+		x = 6
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_MILITARY_YOUTH
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_CARBONARI_TAKEOVER }
+		x = 1
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_SET_UP_THE_CNC
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_MILITARY_YOUTH }
+		x = 1
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_SET_UP_THE_OVRA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_SET_UP_THE_CNC }
+		x = 2
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_LEGGI_CARBONARE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_SET_UP_THE_CNC }
+		x = 0
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_SET_UP_THE_SPECIAL_TRIBUNAL
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_SET_UP_THE_OVRA focus = TUS_LEGGI_CARBONARE }
+		x = 1
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_SUPPORT_THE_FUTURIST_MOVEMENT
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_SET_UP_THE_SPECIAL_TRIBUNAL }
+		x = 0
+		y = 6
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_MANIFESTO_DEGLI_SCIENZIATI_CARBONARI
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_SET_UP_THE_SPECIAL_TRIBUNAL }
+		x = 2
+		y = 6
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	######################################
+	#MONARCHIST PATH
+	######################################
+	focus = {
+		id = TUS_A_NEW_DUKE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_ASSASSINATION_OF_THE_ARCHDUKE }
+		mutually_exclusive = { focus = TUS_CARBONARI_TAKEOVER }
+		x = 16
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_PARLIAMENTARY_EXPANSION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_A_NEW_DUKE }
+		mutually_exclusive = { focus = TUS_ABOLISH_THE_PARLIAMENT }
+		x = 15
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_THE_LAW_ABOVE_ALL
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_PARLIAMENTARY_EXPANSION }
+		x = 15
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_OUR_BET_FOR_UNIFICATION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_THE_LAW_ABOVE_ALL focus = TUS_THE_KING_ABOVE_ALL }
+		x = 15
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_PETITION_THE_DUCHIES
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_OUR_BET_FOR_UNIFICATION }
+		x = 15
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_THE_MILANESE_CONCESSION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_PETITION_THE_DUCHIES }
+		x = 15
+		y = 6
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_INVEST_IN_VENETO
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_THE_MILANESE_CONCESSION }
+		x = 14
+		y = 7
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_THE_PERUGIAN_PACTS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_INVEST_IN_VENETO }
+		x = 13
+		y = 8
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_PROPOSE_SOUTHERN_UNIFICTION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_INVEST_IN_VENETO}
+		x = 15
+		y = 8
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_DEAL_WITH_THE_PIEDMONTESE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_PROPOSE_SOUTHERN_UNIFICTION }
+		prerequisite = { focus = TUS_THE_PERUGIAN_PACTS }
+		x = 14
+		y = 9
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_A_PEACEFUL_REUNIFICATION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_DEAL_WITH_THE_PIEDMONTESE }
+		x = 14
+		y = 10
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_THE_GENOESE_PLEBISCITE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_THE_MILANESE_CONCESSION}
+		x = 16
+		y = 7
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_THE_CORSICA_AFFAIR
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_THE_GENOESE_PLEBISCITE }
+		x = 17
+		y = 8
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_ALIGN_WITH_THE_DANUBIANS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_THE_LAW_ABOVE_ALL focus = TUS_THE_KING_ABOVE_ALL }
+		x = 17
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_OPPOSE_THE_UNIFACTION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_ALIGN_WITH_THE_DANUBIANS }
+		x = 17
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_ANTI-ITALIAN_SENTIMENT
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_OPPOSE_THE_UNIFACTION }
+		x = 17
+		y = 6
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_A_TUSCAN_CULTURE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_ANTI-ITALIAN_SENTIMENT }
+		x = 19
+		y = 7
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_DANUBIAN_ADVISORY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_A_TUSCAN_CULTURE }
+		x = 19
+		y = 8
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_BUILD_THE_ETRURIAN_LINE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_DANUBIAN_ADVISORY }
+		x = 19
+		y = 9
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_EXPAND_VOTING_RIGHTS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_THE_LAW_ABOVE_ALL }
+		x = 13
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_THE_NEW_CONSTITUTION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_EXPAND_VOTING_RIGHTS }
+		x = 13
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_PATRONAGE_OF_THE_ARTS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_THE_NEW_CONSTITUTION }
+		x = 13
+		y = 6
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_ABOLISH_THE_PARLIAMENT
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_A_NEW_DUKE }
+		mutually_exclusive = { focus = TUS_PARLIAMENTARY_EXPANSION }
+		x = 17
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_THE_KING_ABOVE_ALL
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_ABOLISH_THE_PARLIAMENT }
+		x = 17
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_THE_KINGS_GUARD
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_THE_KING_ABOVE_ALL }
+		x = 19
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_ABOLISH_THE_CONSTITUTION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_THE_KINGS_GUARD }
+		x = 19
+		y = 5
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TUS_EXPAND_THE_UFFIZI
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TUS_ABOLISH_THE_CONSTITUTION }
+		x = 19
+		y = 6
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+}
+	

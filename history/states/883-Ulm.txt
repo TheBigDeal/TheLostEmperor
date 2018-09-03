@@ -1,0 +1,24 @@
+
+state={
+	id=883
+	name="STATE_746"
+
+	history={
+		owner = ULM
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+
+		}
+		add_core_of = ULM
+
+	}
+
+	provinces={
+		11499 
+	}
+	manpower=157965
+	buildings_max_level_factor=1.000
+	state_category=town
+}

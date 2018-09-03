@@ -1,0 +1,192 @@
+focus_tree = {
+	id = LEpersian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = PER
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 50 y = 3100 }
+	
+	
+	#MAIN FOCUS PATH
+	#####################
+	focus = {
+		id = PER_FOCUS
+		icon = GFX_goal_generic_national_unity
+		x = 4
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = PER_STRIKE_BRITIAN
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PER_FOCUS }
+		
+		x = 6
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = PER_WITH_RUSSIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PER_STRIKE_BRITIAN }
+		mutually_exclusive = { focus = PER_WITHOUT_RUSSIA }
+		x = 5
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = PER_WITHOUT_RUSSIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PER_STRIKE_BRITIAN }
+		mutually_exclusive = { focus = PER_WITH_RUSSIA }
+		x = 7
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = PER_STRIKE_TURKS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PER_FOCUS }
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = PER_WITH_GREECE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PER_STRIKE_TURKS }
+		mutually_exclusive = { focus = PER_WITHOUT_GREECE }
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = PER_WITHOUT_GREECE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PER_STRIKE_TURKS }
+		mutually_exclusive = { focus = PER_WITH_GREECE }
+		x = 3
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	
+	#POLITCAL PATH
+	#####################
+	focus = {
+		id = PER_POLITICAL_PATH
+		icon = GFX_goal_generic_national_unity
+		x = 12
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = PER_COMMUNISM
+		icon = GFX_goal_support_proletarianism
+		prerequisite = { focus = PER_POLITICAL_PATH }
+		x = 9
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = PER_DEMOCRACY
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = PER_POLITICAL_PATH }
+		x = 11
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = PER_MONARCHIST
+		icon = GFX_focus_hun_elect_a_king
+		prerequisite = { focus = PER_POLITICAL_PATH }
+		x = 13
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = PER_FASCISM
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = PER_POLITICAL_PATH }
+		x = 15
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}

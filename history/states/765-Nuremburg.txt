@@ -1,0 +1,27 @@
+state={
+	id=765
+	name="STATE_765"
+	
+	state_category = large_city
+	
+	history={
+		owner = NUR
+		victory_points = {
+			9517 5 
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 7
+			industrial_complex = 1
+			air_base = 3
+
+		}
+		add_core_of = NUR
+	}
+	
+	provinces={
+		11544 
+	}
+	manpower=523141
+	buildings_max_level_factor=1.000
+}

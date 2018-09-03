@@ -1,0 +1,23 @@
+state={
+	id=833
+	name="STATE_833"
+	
+	state_category = city
+	
+	history={
+		owner = BUR
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+
+		}
+		add_core_of = BUR
+
+	}
+	
+	provinces={
+		648 680 817 3650 3652 3669 11628 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

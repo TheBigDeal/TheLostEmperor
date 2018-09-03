@@ -1,0 +1,1543 @@
+focus_tree = {
+	id = LEottoman_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 50 y = 3100 }
+	
+	focus = {
+		id = TUR_DIPLOMATIC_DIRECTION
+		icon = GFX_goal_generic_national_unity
+		x = 6
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 50		
+		}
+	}
+	focus = {
+		id = TUR_STATE_DIPLOMACY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_DIPLOMATIC_DIRECTION }
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 50		
+		}
+	}
+	focus = {
+		id = TUR_CREATE_AUTONOMUS_REGIONS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_STATE_DIPLOMACY }
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 50		
+		}
+	}
+	focus = {
+		id = TUR_SYRIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_CREATE_AUTONOMUS_REGIONS }
+		x = 1
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			release = SYR
+			puppet = SYR
+		}
+	}
+	focus = {
+		id = TUR_JORDAN
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_SYRIA }
+		x = 1
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			release = JOR
+			puppet = JOR
+		}
+	}
+	focus = {
+		id = TUR_LEBANON
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_JORDAN }
+		x = 1
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			release = LEB
+			puppet = LEB
+		}
+	}
+	focus = {
+		id = TUR_ISREAL
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_LEBANON }
+		mutually_exclusive = { focus = TUR_PALESTINE }
+		x = 0
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			release = ISR
+			puppet = ISR
+		}
+	}
+	focus = {
+		id = TUR_PALESTINE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_LEBANON }
+		mutually_exclusive = { focus = TUR_ISREAL }
+		x = 2
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			release = PAL
+			puppet = PAL
+		}
+	}
+	focus = {
+		id = TUR_APPEASE_EGYPT
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_PALESTINE focus = TUR_ISREAL }
+		x = 1
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			EGY = { transfer_State = 453 }
+		}
+	}
+	
+	focus = {
+		id = TUR_AGGRESSION_FOCUS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_DIPLOMATIC_DIRECTION }
+		mutually_exclusive = { focus = TUR_PASSIVE_FOCUS }
+		x = 7
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 20
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = TUR_ANTI_INDEPENDANCE_MILITA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_AGGRESSION_FOCUS }
+		x = 5
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 20
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = TUR_CRUSH_LOCAL_REBELLIONS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_ANTI_INDEPENDANCE_MILITA }
+		x = 4
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 20
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = TUR_CENSORSHIP
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_CRUSH_LOCAL_REBELLIONS }
+		x = 4
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 20
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = TUR_CRUSH_STRIKES
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_ANTI_INDEPENDANCE_MILITA }
+		x = 6
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 20
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = TUR_LABOUR_CAMPS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_CRUSH_STRIKES }
+		x = 6
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 20
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = TUR_LOOK_OUTWARD
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_CENSORSHIP }
+		prerequisite = { focus = TUR_LABOUR_CAMPS }
+		x = 5
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 20
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = TUR_WAR_PLANS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_AGGRESSION_FOCUS }
+		x = 10
+		y = 2
+		cost = 10
+		available = {
+			TUR = { has_completed_focus = TUR_LOOK_OUTWARD }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 20
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = TUR_RECONQUEST_OF_RUMELIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_WAR_PLANS }
+		mutually_exclusive = { focus = TUR_UNITE_ISLAM }
+		x = 8
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 20
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = TUR_BULGARIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_RECONQUEST_OF_RUMELIA }
+		x = 8
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = BUL}
+		}
+	}
+	focus = {
+		id = TUR_GREECE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_BULGARIA }
+		x = 8
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = SPT }
+			create_wargoal = { type = annex_everything target = MOU }
+			create_wargoal = { type = annex_everything target = ATH }
+			create_wargoal = { type = annex_everything target = HEL }
+			create_wargoal = { type = annex_everything target = THS }
+		}
+	}
+	focus = {
+		id = TUR_SERBIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_GREECE }
+		x = 8
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = SER }
+		}
+	}
+	focus = {
+		id = TUR_FINISH_BALKANS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_SERBIA }
+		x = 8
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = ALB }
+			create_wargoal = { type = annex_everything target = MNT }
+		}
+	}
+	focus = {
+		id = TUR_KEEP_RUMEILA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_FINISH_BALKANS }
+		mutually_exclusive = { focus = TUR_INCORPORATE_RUMEILA }
+		x = 7
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_INCORPORATE_RUMEILA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_FINISH_BALKANS }
+		mutually_exclusive = { focus = TUR_KEEP_RUMEILA }
+		x = 9
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			annex_country = { target = RUM transfer_troops = yes } 
+		}
+	}
+	focus = {
+		id = TUR_UNITE_ISLAM
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_WAR_PLANS }
+		mutually_exclusive = { focus = TUR_RECONQUEST_OF_RUMELIA }
+		x = 11
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = TUR_ARABIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_UNITE_ISLAM }
+		x = 10
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = SHM }
+			create_wargoal = { type = annex_everything target = NEJ }
+		}
+	}
+	focus = {
+		id = TUR_PERSIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_UNITE_ISLAM }
+		x = 12
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = PER }
+		}
+	}
+	focus = {
+		id = TUR_TURKESTAN
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_PERSIA }
+		prerequisite = { focus = TUR_ARABIA }
+		x = 11
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = KHI }
+			create_wargoal = { type = annex_everything target = BUK }
+			create_wargoal = { type = annex_everything target = KOK }
+		}
+	}
+	focus = {
+		id = TUR_CLAIM_THE_CAUCUS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_TURKESTAN }
+		x = 11
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			230 = { add_claim_by = TUR }
+			229 = { add_claim_by = TUR }
+			231 = { add_claim_by = TUR }
+			232 = { add_claim_by = TUR }
+			233 = { add_claim_by = TUR }
+			235 = { add_claim_by = TUR }
+			234 = { add_claim_by = TUR }
+			37 = { add_claim_by = TUR }
+		}
+	}
+	focus = {
+		id = TUR_ENFORCE_CLAIMS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_CLAIM_THE_CAUCUS }
+		x = 11
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_ISLAM
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_ENFORCE_CLAIMS }
+		x = 11
+		y = 8
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_RESTORE_ANDALUSIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_WAR_PLANS }
+		x = 14
+		y = 3
+		cost = 10
+		available = {
+			AND = {
+				NOT = { country_exists =  EGY }
+				NOT = { country_exists =  MOR }
+				NOT = { country_exists =  LBA }
+				NOT = { country_exists =  TUN }
+				NOT = { country_exists =  ALG }
+				controls_state = 461
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_DEMAND_SPANISH_COASTLINE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_RESTORE_ANDALUSIA }
+		x = 14
+		y = 4
+		cost = 10
+		available = {
+			SPR = { controls_state = 290 }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			GRA = { transfer_state = 290 }
+			puppet = GRA
+		}
+	}
+	focus = {
+		id = TUR_REVOLT_IN_GIBRALTAR
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_DEMAND_SPANISH_COASTLINE }
+		x = 14
+		y = 5
+		cost = 10
+		available = {
+			OR = {
+				GRA = { controls_state = 290 }
+				TUR = { controls_state = 290 }
+				ANL = { controls_state = 290 }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			GRA = { transfer_state = 118 }
+		}
+	}
+	focus = {
+		id = TUR_INVADE_SPAIN
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_REVOLT_IN_GIBRALTAR }
+		x = 14
+		y = 6
+		cost = 10
+		available = {
+			AND = {
+				country_exists = SPR
+				SPR = { has_war = yes }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = SPR }
+			ANL = { annex_country = { target = GRA transfer_troops = yes } }
+		}
+	}
+	
+	
+	
+	
+	focus = {
+		id = TUR_PASSIVE_FOCUS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_DIPLOMATIC_DIRECTION }
+		mutually_exclusive = { focus = TUR_AGGRESSION_FOCUS }
+		x = 20
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 15
+		}
+	}
+	focus = {
+		id = TUR_POWER_IN_NUMBERS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_PASSIVE_FOCUS }
+		mutually_exclusive = { focus = TUR_POWER_IN_GIANTS }
+		x = 25
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = TUR_BALKAN_PACT
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_POWER_IN_NUMBERS }
+		x = 25
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_faction = BALKAN_PACT
+		}
+	}
+	focus = {
+		id = TUR_WALLACHIAN_RELATIONS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_BALKAN_PACT }
+		x = 21
+		y = 4
+		cost = 10
+		bypass = {
+			NOT = { country_exists = WAL } 
+		}
+		available = {
+			country_exists = WAL
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = TUR_WALLACHIAN_ALLIANCE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_WALLACHIAN_RELATIONS }
+		x = 21
+		y = 5
+		cost = 10
+		bypass = {
+			NOT = { country_exists = WAL } 
+		}
+		available = {
+			country_exists = WAL
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_to_faction = WAL
+		}
+	}
+	focus = {
+		id = TUR_SERBIAN_RELATIONS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_BALKAN_PACT }
+		x = 23
+		y = 4
+		cost = 10
+		bypass = {
+			NOT = { country_exists = SER } 
+		}
+		available = {
+			country_exists = SER
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = TUR_SERBIAN_ALLIANCE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_SERBIAN_RELATIONS }
+		x = 23
+		y = 5
+		cost = 10
+		bypass = {
+			NOT = { country_exists = SER } 
+		}
+		available = {
+			country_exists = SER
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_to_faction = SER
+		}
+	}
+	focus = {
+		id = TUR_BULGARIAN_RELATIONS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_BALKAN_PACT }
+		x = 25
+		y = 4
+		cost = 10
+		bypass = {
+			NOT = { country_exists = BUL } 
+		}
+		available = {
+			country_exists = BUL
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = TUR_BULGARIAN_ALLIANCE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_BULGARIAN_RELATIONS }
+		x = 25
+		y = 5
+		cost = 10
+		bypass = {
+			NOT = { country_exists = BUL } 
+		}
+		available = {
+			country_exists = BUL
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_to_faction = BUL
+		}
+	}
+	focus = {
+		id = TUR_ALBANIAN_RELATIONS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_BALKAN_PACT }
+		x = 27
+		y = 4
+		cost = 10
+		bypass = {
+			NOT = { country_exists = ALB } 
+		}
+		available = {
+			country_exists = ALB
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = TUR_ALBANIAN_ALLIANCE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_ALBANIAN_RELATIONS }
+		x = 27
+		y = 5
+		cost = 10
+		bypass = {
+			NOT = { country_exists = ALB } 
+		}
+		available = {
+			country_exists = ALB
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_to_faction = ALB
+		}
+	}
+	focus = {
+		id = TUR_GREEK_RELATIONS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_BALKAN_PACT }
+		x = 29
+		y = 4
+		cost = 10
+		bypass = {
+			NOT = { country_exists = ATH } 
+		}
+		available = {
+			country_exists = ATH
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = TUR_GREEK_ALLIANCE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_GREEK_RELATIONS }
+		x = 29
+		y = 5
+		cost = 10
+		bypass = {
+			NOT = { country_exists = ATH } 
+		}
+		available = {
+			country_exists = ATH
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_to_faction = ATH
+		}
+	}
+	focus = {
+		id = TUR_ANNEX_ALLIES
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_WALLACHIAN_ALLIANCE }
+		prerequisite = { focus = TUR_SERBIAN_ALLIANCE }
+		prerequisite = { focus = TUR_BULGARIAN_ALLIANCE }
+		prerequisite = { focus = TUR_ALBANIAN_ALLIANCE }
+		prerequisite = { focus = TUR_GREEK_ALLIANCE }
+		mutually_exclusive = { focus = TUR_STRENGTHEN_ALLIANCE}
+		x = 24
+		y = 6
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			annex_country = { target = WAL transfer_troops = yes } 
+			annex_country = { target = SER transfer_troops = yes } 
+			annex_country = { target = BUL transfer_troops = yes } 
+			annex_country = { target = ALB transfer_troops = yes } 
+			annex_country = { target = ATH transfer_troops = yes } 
+		}
+	}
+	focus = {
+		id = TUR_STRENGTHEN_ALLIANCE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_WALLACHIAN_ALLIANCE }
+		prerequisite = { focus = TUR_SERBIAN_ALLIANCE }
+		prerequisite = { focus = TUR_BULGARIAN_ALLIANCE }
+		prerequisite = { focus = TUR_ALBANIAN_ALLIANCE }
+		prerequisite = { focus = TUR_GREEK_ALLIANCE }
+		mutually_exclusive = { focus = TUR_ANNEX_ALLIES }
+		x = 26
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			puppet = WAL
+			PUPPET = SER
+			puppet = BUL
+			puppet = ALB
+			puppet = ATH
+		}
+	}
+	focus = {
+		id = TUR_POWER_IN_GIANTS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_PASSIVE_FOCUS }
+		mutually_exclusive = { focus = TUR_POWER_IN_NUMBERS }
+		x = 18
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = TUR_PATH_OF_THE_BEAR
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_POWER_IN_GIANTS }
+		x = 17
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_faction = East_European_Bloc
+		}
+	}
+	focus = {
+		id = TUR_CONCEDE_NORTH_WEST_ANATOLIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_PATH_OF_THE_BEAR }
+		x = 17
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			RUS = {
+				transfer_state = 354
+				transfer_state = 353
+				transfer_state = 349
+				transfer_state = 355
+			}
+		}
+	}
+	focus = {
+		id = TUR_JOIN_THE_BEAR
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_CONCEDE_NORTH_WEST_ANATOLIA }
+		x = 17
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_to_faction = RUS
+		}
+	}
+	focus = {
+		id = TUR_PATH_OF_THE_LION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_POWER_IN_GIANTS }
+		x = 19
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_faction = Anglo-Turkish_Entente
+		}
+	}
+	focus = {
+		id = TUR_CONCEDE_SOUTH_EGYPT
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_PATH_OF_THE_LION }
+		x = 19
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			GBR = {
+				transfer_state = 551
+				transfer_state = 777
+			}
+		}
+	}
+	focus = {
+		id = TUR_JOIN_THE_LION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_CONCEDE_SOUTH_EGYPT }
+		x = 19
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_to_faction = GBR
+		}
+	}
+	
+	
+	focus = {
+		id = TUR_STATE_OF_THE_ECONOMY
+		icon = GFX_goal_generic_national_unity
+		x = 36
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_DEVELOP_OUR_HOMELAND
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_STATE_OF_THE_ECONOMY }
+		x = 33
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#WESTERN
+	focus = {
+		id = TUR_WESTERN_INFRUSTRUCURE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_DEVELOP_OUR_HOMELAND }
+		x = 31
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_INCREASE_WESTERN_CIVILIAN_PRODUCTION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_WESTERN_INFRUSTRUCURE }
+		x = 31
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_INCREASE_WESTERN_MILITARY_PRODUCTION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_INCREASE_WESTERN_CIVILIAN_PRODUCTION }
+		x = 31
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#CENTRAL
+	focus = {
+		id = TUR_CENTRAL_INFRUSTRUCURE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_DEVELOP_OUR_HOMELAND }
+		x = 33
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_INCREASE_CENTRAL_CIVILIAN_PRODUCTION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_CENTRAL_INFRUSTRUCURE }
+		x = 33
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_INCREASE_CENTRAL_MILITARY_PRODUCTION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_INCREASE_CENTRAL_CIVILIAN_PRODUCTION }
+		x = 33
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#EASTERN
+	focus = {
+		id = TUR_EASTERN_INFRUSTRUCURE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_DEVELOP_OUR_HOMELAND }
+		x = 35
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_INCREASE_EASTERN_CIVILIAN_PRODUCTION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_EASTERN_INFRUSTRUCURE }
+		x = 35
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_INCREASE_EASTERN_MILITARY_PRODUCTION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_INCREASE_EASTERN_CIVILIAN_PRODUCTION }
+		x = 35
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_MEDITERRANEAN_PORTS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_INCREASE_WESTERN_MILITARY_PRODUCTION }
+		prerequisite = { focus = TUR_INCREASE_CENTRAL_MILITARY_PRODUCTION }
+		prerequisite = { focus = TUR_INCREASE_EASTERN_MILITARY_PRODUCTION }
+		x = 32
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_BLACK_SEA_PORTS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_INCREASE_WESTERN_MILITARY_PRODUCTION }
+		prerequisite = { focus = TUR_INCREASE_CENTRAL_MILITARY_PRODUCTION }
+		prerequisite = { focus = TUR_INCREASE_EASTERN_MILITARY_PRODUCTION }
+		x = 34
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = TUR_FOCUS_ON_OUR_PUPPETS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_STATE_OF_THE_ECONOMY }
+		x = 42
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_BUILD_ARABIAN_ROADS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_FOCUS_ON_OUR_PUPPETS }
+		x = 40
+		y = 2
+		cost = 10
+		available = {
+			TUR = { has_completed_focus = TUR_APPEASE_EGYPT }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_INTEGRATE_SYRIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_BUILD_ARABIAN_ROADS }
+		x = 40
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			annex_country = { target = SYR transfer_troops = yes } 
+		}
+	}
+	focus = {
+		id = TUR_SEND_SETTLERS_TO_SYRIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_INTEGRATE_SYRIA }
+		x = 40
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_INTEGRATE_JORDAN
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_BUILD_ARABIAN_ROADS }
+		x = 38
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			annex_country = { target = JOR transfer_troops = yes } 
+		}
+	}
+	focus = {
+		id = TUR_SEND_SETTLERS_TO_JORDAN
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_INTEGRATE_JORDAN }
+		x = 38
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = TUR_INTEGRATE_LEBANON
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_BUILD_ARABIAN_ROADS }
+		x = 42
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			annex_country = { target = LEB transfer_troops = yes } 
+		}
+	}
+	focus = {
+		id = TUR_SEND_SETTLERS_TO_LEBANON
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_INTEGRATE_LEBANON }
+		x = 42
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_INTEGRATE_PALESTINE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_SEND_SETTLERS_TO_ISREAL focus = TUR_SEND_SETTLERS_TO_JORDAN focus = TUR_SEND_SETTLERS_TO_LEBANON }
+		mutually_exclusive = { focus = TUR_INTEGRATE_ISREAL }
+		x = 41
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			annex_country = { target = PAL transfer_troops = yes } 
+		}
+	}
+	focus = {
+		id = TUR_INTEGRATE_ISREAL
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_SEND_SETTLERS_TO_ISREAL focus = TUR_SEND_SETTLERS_TO_JORDAN focus = TUR_SEND_SETTLERS_TO_LEBANON }
+		mutually_exclusive = { focus = TUR_INTEGRATE_PALESTINE }
+		x = 39
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			annex_country = { target = ISR transfer_troops = yes } 
+		}
+	}
+	focus = {
+		id = TUR_SEND_SETTLERS_TO_ISREAL
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_INTEGRATE_ISREAL }
+		x = 39
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_SEND_SETTLERS_TO_PALESTINE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_INTEGRATE_PALESTINE }
+		x = 41
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_MEDITERRANEAN_SHIPYARD_PROJECT
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_SEND_SETTLERS_TO_PALESTINE focus = TUR_SEND_SETTLERS_TO_ISREAL }
+		x = 40
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_BUILD_AFRICAN_ROADS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_FOCUS_ON_OUR_PUPPETS }
+		x = 45
+		y = 2
+		cost = 10
+		available = {
+			TUR = { has_completed_focus = TUR_MEDITERRANEAN_SHIPYARD_PROJECT }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_BRIBE_EGYPTIAN_GOVERNMENT
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_BUILD_AFRICAN_ROADS }
+		x = 44
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_SUPPORT_EGPYTIAN_POLICE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_BRIBE_EGYPTIAN_GOVERNMENT }
+		x = 44
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_ANNEX_EGYPT
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_SUPPORT_EGPYTIAN_POLICE }
+		x = 44
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			annex_country = { target = EGY transfer_troops = yes } 
+		}
+	}
+	
+	focus = {
+		id = TUR_BRIBE_TRIPOLITANIA_GOVERNMENT
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_BUILD_AFRICAN_ROADS }
+		x = 46
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_SUPPORT_TRIPOLITANIA_POLICE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_BRIBE_TRIPOLITANIA_GOVERNMENT }
+		x = 46
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_ANNEX_TRIPOLITANIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_SUPPORT_TRIPOLITANIA_POLICE }
+		x = 46
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			annex_country = { target = LBA transfer_troops = yes } 
+		}
+	}
+	
+	focus = {
+		id = TUR_BRIBE_TUNISIA_GOVERNMENT
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_BUILD_AFRICAN_ROADS }
+		x = 48
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_SUPPORT_TUNISIA_POLICE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_BRIBE_TUNISIA_GOVERNMENT }
+		x = 48
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_ANNEX_TUNISIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_SUPPORT_TUNISIA_POLICE }
+		x = 48
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			annex_country = { target = TUN transfer_troops = yes } 
+		}
+	}
+	focus = {
+		id = TUR_BRIBE_ALGEIRS_GOVERNMENT
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_BUILD_AFRICAN_ROADS }
+		x = 50
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_SUPPORT_ALGEIRS_POLICE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_BRIBE_ALGEIRS_GOVERNMENT }
+		x = 50
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_ANNEX_ALGEIRS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_SUPPORT_ALGEIRS_POLICE }
+		x = 50
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			annex_country = { target = ALG transfer_troops = yes } 
+		}
+	}
+	

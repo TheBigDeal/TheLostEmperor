@@ -1,0 +1,28 @@
+state={
+	id=770
+	name="STATE_770"
+	
+	state_category = city
+	
+	history={
+		owner = HAN
+		victory_points = {
+			6524 5 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = HAN
+
+	}
+	
+	
+	provinces={
+		247 309 405 3234 
+	}
+	manpower=562526
+	buildings_max_level_factor=1.000
+}

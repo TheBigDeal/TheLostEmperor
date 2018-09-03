@@ -1,0 +1,104 @@
+﻿capital = 756
+
+OOB = "AAC_1928"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+
+	parties = {
+		liberalism = { 
+			popularity = 0
+		}
+
+		rexism = {
+			popularity = 0
+		}
+		
+		proletarianism = {
+			popularity = 0
+		}
+		
+		despotism = { 
+			popularity = 100
+		}
+	}
+	ruling_party = despotism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+create_faction = Holy_Roman_Empire
+add_to_faction = BAV
+add_to_faction = SAX
+add_to_faction = TRI
+add_to_faction = ULM
+add_to_faction = LUB
+add_to_faction = HAN
+add_to_faction = BAD
+add_to_faction = CLG
+add_to_faction = HES
+add_to_faction = FRN
+add_to_faction = WUR
+add_to_faction = HAM
+add_to_faction = BOH
+add_to_faction = BUR
+add_to_faction = BRE
+add_to_faction = BRU
+add_to_faction = ANH
+add_to_faction = WRZ
+add_to_faction = THU
+add_to_faction = KLE
+add_to_faction = LIE
+add_to_faction = MAI
+add_to_faction = NUR
+add_to_faction = AUG
+add_to_faction = ANS
+add_to_faction = PLT
+add_to_faction = OLD
+add_to_faction = PRS
+add_to_faction = AUS
+add_to_faction = MST
+add_to_faction = MCH
+add_to_faction = HLS
+add_to_faction = EFR
+add_to_faction = MUN
+add_to_faction = RAV
+add_to_faction = PAD
+add_to_faction = PYR
+add_to_faction = NAS
+add_to_faction = JUL
+add_to_faction = NSA
+add_to_faction = FUL
+add_to_faction = BAM
+add_to_faction = SLZ
+add_to_faction = SPY
+add_to_faction = OFF
+add_to_faction = HUL
+add_to_faction = MEM
+add_to_faction = LND
+add_to_faction = HNZ
+add_to_faction = FUS
+add_to_faction = PSU
+add_to_faction = WLN
+add_to_faction = FLA
+add_to_faction = ALS
+
+
+create_country_leader = {
+	name = "The Imperial Diet"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Prussia_Wilhelm.dds"
+	expire = "1942.4.6"
+	ideology = absolutism_ideology
+	traits = {
+		Political_Dancer
+		Warmonger
+	}
+}

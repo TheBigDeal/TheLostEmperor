@@ -1,0 +1,18 @@
+state={
+	id=855
+	name="STATE_855"
+	state_category = city
+	history={
+		owner = MAJ
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+	
+	provinces={
+		1966 10891 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

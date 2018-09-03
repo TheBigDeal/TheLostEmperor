@@ -1,0 +1,38 @@
+
+state={
+	id=186
+	name="STATE_186"
+
+	history={
+		owner = SPT
+		victory_points = {
+			7211 5 
+		}
+		victory_points = {
+			11965 3 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			11965 = {
+				naval_base = 1
+
+			}
+			4193 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = SPT
+
+	}
+
+	provinces={
+		1173 4078 4178 4193 7096 7211 11965 13218 13219 
+	}
+	manpower=945000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

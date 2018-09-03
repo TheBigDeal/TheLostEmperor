@@ -1,0 +1,27 @@
+
+state={
+	id=826
+	name="STATE_826"
+
+	history={
+		owner = HEL
+		victory_points = {
+			863 5 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+
+		}
+		add_core_of = HEL
+
+	}
+
+	provinces={
+		863 3864 3973 6930 11786 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+	state_category=town
+}

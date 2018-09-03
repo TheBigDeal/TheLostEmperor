@@ -1,0 +1,39 @@
+﻿capital = 325
+
+#OOB = "ALB_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+
+	parties = {
+		liberalism = { 
+			popularity = 5
+		}
+
+		rexism = {
+			popularity = 0
+		}
+		
+		proletarianism = {
+			popularity = 45
+		}
+		
+		absolutism = { 
+			popularity = 50
+		}
+	}
+	
+	ruling_party = absolutism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_convoys = 5
+
+

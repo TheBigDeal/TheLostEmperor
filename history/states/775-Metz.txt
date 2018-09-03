@@ -1,0 +1,34 @@
+
+state={
+	id=775
+	name="STATE_775"
+	resources={
+		steel=48.000
+	}
+
+	history={
+		owner = BUR
+		victory_points = {
+			9642 5 
+		}
+		victory_points = {
+			11516 5 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			air_base = 5
+
+		}
+		add_core_of = FRA
+		add_core_of = BUR
+
+	}
+
+	provinces={
+		9559 
+	}
+	manpower=532314
+	buildings_max_level_factor=1.000
+	state_category=city
+}

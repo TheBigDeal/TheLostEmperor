@@ -1,0 +1,25 @@
+
+state={
+	id=584
+	name="STATE_584"
+
+	history={
+		owner = KHI
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = KHI
+		add_core_of = RUS
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		1493 4563 4620 7477 7541 7563 7635 10348 10406 10485 12383 12454 
+	}
+	manpower=1064523
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

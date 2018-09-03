@@ -1,0 +1,29 @@
+﻿###########################
+# austrian Events
+###########################
+
+add_namespace = le_austria
+
+# The Kingdom Crumbles!
+country_event = {
+	id = le_austria.1
+	title = le_austria.1.t
+	desc = le_austria.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = { #Leave them be.
+		set_cosmetic_tag = Austrian_Empire
+	}
+	option = { #Attack!
+		set_cosmetic_tag = Austrian_Empire
+		declare_war_on = { target = HUN type = annex_everything } 
+		declare_war_on = { target = TRN type = annex_everything }
+		declare_war_on = { target = CRO type = annex_everything }
+	}
+}

@@ -1,0 +1,28 @@
+ideas = {
+
+country = {
+	FRA_crumbling_nation = {
+
+		picture = The_War_to_End_All_Wars
+
+		modifier = {
+			army_morale_factor = -0.4
+		}
+	}
+	FRA_ideological_surge = {
+
+		picture = FRA_scw_intervention_republicans_focus
+
+		modifier = {
+			drift_defence_factor = -0.25 
+		}
+	}
+	FRA_corrupt_government = {
+
+		picture = generic_constitutional_guarantee
+
+		modifier = {
+			army_org = -5 
+		}
+	}
+}

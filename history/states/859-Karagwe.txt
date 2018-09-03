@@ -1,0 +1,19 @@
+state={
+	id=859
+	name="STATE_859"
+	state_category = city
+	history={
+		owner = KAR
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = KAR
+	}
+	
+	provinces={
+		4171 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

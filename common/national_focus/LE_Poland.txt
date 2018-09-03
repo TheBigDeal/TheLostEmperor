@@ -1,0 +1,31 @@
+focus_tree = {
+	id = LE_polish_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 50 y = 3100 }
+	########################
+	#        OTHER         #
+	########################
+	focus = {
+		id = POL_BREAK_THE_CHAINS
+		icon = GFX_focus_rom_handle_king
+		x = 8
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+}

@@ -1,0 +1,481 @@
+focus_tree = {
+	id = greece_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 50 y = 3100 }
+	
+	focus = {
+		id = GRE_VICTORS_OF_THE_CIVIL_WAR
+		icon = GFX_goal_unknown
+		x = 12
+		y = 0
+		cost = 10
+		available = {
+			date > 1928.04.01
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GRE_RESTORE_BYZANTINE_THRONE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_VICTORS_OF_THE_CIVIL_WAR }
+		mutually_exclusive = { focus = GRE_A_GREEK_EMPIRE focus = GRE_A_GREEK_NATION focus = GRE_A_PEOPLES_NATION } 
+		x = 6
+		y = 1
+		cost = 10
+		available = {
+			GRE = {
+				OR = {
+					has_government = absolutism
+					has_government = royalism
+					has_government = rexism
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_cosmetic_tag = BYZ_UNIFIED
+		}
+	}
+	focus = {
+		id = GRE_A_NEW_BASILUS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_RESTORE_BYZANTINE_THRONE }
+		x = 6
+		y = 2
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GRE_A_GREEK_BASILUS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_A_NEW_BASILUS }
+		mutually_exclusive = { focus = GRE_AN_ITALIAN_BASILUS focus = GRE_A_DANUBIAN_BASILUS focus = GRE_A_PRUSSIAN_BASILUS focus = GRE_A_RUSSIAN_BASILUS }
+		x = 6
+		y = 3
+		cost = 6
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_country_flag = BASILUS_CHOSEN
+		}
+	}
+	focus = {
+		id = GRE_AN_ITALIAN_BASILUS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_A_NEW_BASILUS }
+		mutually_exclusive = { focus = GRE_A_DANUBIAN_BASILUS focus = GRE_A_GREEK_BASILUS focus = GRE_A_PRUSSIAN_BASILUS focus = GRE_A_RUSSIAN_BASILUS }
+		x = 4
+		y = 3
+		cost = 6
+		available = {
+			OR = {
+				SAR = {
+					AND = {
+						OR = {
+							has_government = absolutism
+							has_government = royalism
+							has_government = rexism
+						}
+						exists = yes
+					}
+				}
+				TWO = {
+					AND = {
+						OR = {
+							has_government = absolutism
+							has_government = royalism
+							has_government = rexism
+						}
+						exists = yes
+					}
+				}
+				TUS = {
+					AND = {
+						OR = {
+							has_government = absolutism
+							has_government = royalism
+							has_government = rexism
+						}
+						exists = yes
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_country_flag = BASILUS_CHOSEN
+		}
+	}
+	focus = {
+		id = GRE_A_PRUSSIAN_BASILUS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_A_NEW_BASILUS }
+		mutually_exclusive = { focus = GRE_AN_ITALIAN_BASILUS focus = GRE_A_GREEK_BASILUS focus = GRE_A_DANUBIAN_BASILUS focus = GRE_A_RUSSIAN_BASILUS }
+		x = 2
+		y = 3
+		cost = 6
+		available = {
+			PRS = {
+				AND = {
+					OR = {
+						has_government = absolutism
+						has_government = royalism
+						has_government = rexism
+					}
+					exists = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_country_flag = BASILUS_CHOSEN
+		}
+	}
+	focus = {
+		id = GRE_A_RUSSIAN_BASILUS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_A_NEW_BASILUS }
+		mutually_exclusive = { focus = GRE_AN_ITALIAN_BASILUS focus = GRE_A_GREEK_BASILUS focus = GRE_A_PRUSSIAN_BASILUS focus = GRE_A_DANUBIAN_BASILUS }
+		x = 8
+		y = 3
+		cost = 6
+		available = {
+			RUS = {
+				AND = {
+					OR = {
+						has_government = absolutism
+						has_government = royalism
+						has_government = rexism
+					}
+					exists = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_country_flag = BASILUS_CHOSEN
+		}
+	}
+	focus = {
+		id = GRE_A_DANUBIAN_BASILUS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_A_NEW_BASILUS }
+		mutually_exclusive = { focus = GRE_AN_ITALIAN_BASILUS focus = GRE_A_GREEK_BASILUS focus = GRE_A_PRUSSIAN_BASILUS focus = GRE_A_RUSSIAN_BASILUS }
+		x = 10
+		y = 3
+		cost = 6
+		available = {
+			DAN = {
+				AND = {
+					OR = {
+						has_government = absolutism
+						has_government = royalism
+						has_government = rexism
+					}
+					exists = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_country_flag = BASILUS_CHOSEN
+		}
+	}
+	focus = {
+		id = GRE_THE_GREVENA_CONFERENCE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_AN_ITALIAN_BASILUS focus = GRE_A_GREEK_BASILUS focus = GRE_A_PRUSSIAN_BASILUS focus = GRE_A_RUSSIAN_BASILUS focus = GRE_A_DANUBIAN_BASILUS}
+		x = 6
+		y = 4
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GRE_BALKAN_EXPANSION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_THE_GREVENA_CONFERENCE }
+		x = 4
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GRE_SPLIT_THE_BALKANS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_BALKAN_EXPANSION }
+		mutually_exclusive = { focus = GRE_DEMAND_MONTEREGRO }
+		x = 4
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GRE_DEMAND_MONTEREGRO
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_BALKAN_EXPANSION }
+		mutually_exclusive = { focus = GRE_SPLIT_THE_BALKANS }
+		x = 4
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GRE_TAKE_OUT_SERBIA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_DEMAND_MONTEREGRO }
+		x = 4
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GRE_INAVADE_BULGARIA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_TAKE_OUT_SERBIA }
+		x = 4
+		y = 8
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GRE_RETURN_TO_ROME
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_INAVADE_BULGARIA focus = GRE_SPLIT_THE_BALKANS }
+		x = 3
+		y = 9
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GRE_RENEWED_NATIONALISM
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_THE_GREVENA_CONFERENCE }
+		x = 6
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GRE_PUSH_BACK_THE_OTTOMANS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_THE_GREVENA_CONFERENCE }
+		x = 8
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GRE_DISSOLVE_RUMELIA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_PUSH_BACK_THE_OTTOMANS }
+		x = 8
+		y = 6
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GRE_DEMAND_WESTERN_CONSTANTINOPLE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_DISSOLVE_RUMELIA }
+		x = 8
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GRE_KICK_VENICE_OUT_OF_GREECE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_THE_GREVENA_CONFERENCE }
+		x = 10
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GRE_A_GREEK_EMPIRE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_VICTORS_OF_THE_CIVIL_WAR }
+		mutually_exclusive = { focus = GRE_RESTORE_BYZANTINE_THRONE focus = GRE_A_GREEK_NATION focus = GRE_A_PEOPLES_NATION } 
+		x = 10
+		y = 1
+		cost = 10
+		available = {
+			GRE = {
+				OR = {
+					has_government = absolutism
+					has_government = royalism
+					has_government = labryscism
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GRE_REBUILD_THE_NATION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_VICTORS_OF_THE_CIVIL_WAR }
+		x = 12
+		y = 2
+		cost = 10
+		available = {
+
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GRE_A_GREEK_NATION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_VICTORS_OF_THE_CIVIL_WAR }
+		mutually_exclusive = { focus = GRE_A_GREEK_EMPIRE focus = GRE_RESTORE_BYZANTINE_THRONE focus = GRE_A_PEOPLES_NATION } 
+		x = 16
+		y = 1
+		cost = 10
+		available = {
+			GRE = {
+				OR = {
+					has_government = conservatism
+					has_government = liberalism
+					has_government = socialism
+					has_government = royalism
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GRE_A_PEOPLES_NATION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_VICTORS_OF_THE_CIVIL_WAR }
+		mutually_exclusive = { focus = GRE_A_GREEK_EMPIRE focus = GRE_A_GREEK_NATION focus = GRE_RESTORE_BYZANTINE_THRONE } 
+		x = 20
+		y = 1
+		cost = 10
+		available = {
+			GRE = {
+				OR = {
+					has_government = naturalism
+					has_government = collectivism
+					has_government = proletarietism
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+}
+	

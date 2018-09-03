@@ -1,0 +1,27 @@
+state={
+	id=796
+	name="STATE_796"
+	
+	history={
+		owner = HUL
+		victory_points = {
+			9545 3
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+
+		}
+		add_core_of = HUL
+
+	}
+	
+	state_category=town
+	
+	provinces={
+		9545 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

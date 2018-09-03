@@ -1,0 +1,24 @@
+
+state={
+	id=776
+	name="STATE_776"
+
+	history={
+		add_core_of = BRI
+		owner = BRI
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		527 3523 9495 9510 11465 11616 
+	}
+	manpower=537367
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

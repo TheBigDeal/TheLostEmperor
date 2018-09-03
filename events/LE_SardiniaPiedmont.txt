@@ -1,0 +1,176 @@
+﻿###########################
+# sardiniapiedmontn Events
+###########################
+
+add_namespace = le_sardiniapiedmont
+
+# Kings Role In The Army
+country_event = {
+	id = le_sardiniapiedmont.1
+	title = le_sardiniapiedmont.1.t
+	desc = le_sardiniapiedmont.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Indirect Role
+		name = le_sardiniapiedmont.1.a
+		add_ideas = King_Army_Indirect
+	}
+	
+	option = { #Direct Role
+		name = le_sardiniapiedmont.1.b
+		add_ideas = King_Army_Direct
+	}
+}
+
+# Kings Role In Internal Policy
+country_event = {
+	id = le_sardiniapiedmont.2
+	title = le_sardiniapiedmont.2.t
+	desc = le_sardiniapiedmont.2.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Limited Interference
+		name = le_sardiniapiedmont.2.a
+		add_ideas = King_Internal_Limited
+	}
+	
+	option = { #Balanced Interference
+		name = le_sardiniapiedmont.2.a
+		add_ideas = King_Internal_Balanced
+	}
+	
+	option = { #Extensive Interference
+		name = le_sardiniapiedmont.2.b
+		add_ideas = King_Internal_Extensive
+	}
+}
+
+# Kings Role In Foreign Policy
+country_event = {
+	id = le_sardiniapiedmont.3
+	title = le_sardiniapiedmont.3.t
+	desc = le_sardiniapiedmont.3.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Limited Interference
+		name = le_sardiniapiedmont.3.a
+		add_ideas = King_Foriegn_Limited
+	}
+	
+	option = { #Balanced Interference
+		name = le_sardiniapiedmont.3.a
+		add_ideas = King_Internal_Balanced
+	}
+	
+	option = { #Extensive Interference
+		name = le_sardiniapiedmont.3.b
+		add_ideas = King_Foriegn_Extensive
+	}
+}
+# Kings Role In Government
+country_event = {
+	id = le_sardiniapiedmont.4
+	title = le_sardiniapiedmont.4.t
+	desc = le_sardiniapiedmont.4.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Nominate Senator and Prime Minister
+		name = le_sardiniapiedmont.4.a
+		add_popularity = {
+			ideology = royalism
+			popularity = 0.15
+		}
+	}
+	option = { #Nominates The Prime Minister
+		name = le_sardiniapiedmont.4.a
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.15
+		}
+	}
+	option = { #The King Signs Laws Into Effect
+		name = le_sardiniapiedmont.4.b
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.10
+		}
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.05
+		}
+	}
+}
+country_event = { #British - Sardinian Alliance
+	id = le_sardiniapiedmont.5
+	title = le_sardiniapiedmont.5.t
+	desc = le_sardiniapiedmont.5.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Accept
+		name = le_sardiniapiedmont.5.a
+		SAR = { give_guarantee = GBR }
+		GBR = { give_guarantee = SAR }
+	}
+	option = { #Decline
+		name = le_sardiniapiedmont.5.a
+	}
+}
+country_event = { #French - Sardinian Alliance
+	id = le_sardiniapiedmont.6
+	title = le_sardiniapiedmont.6.t
+	desc = le_sardiniapiedmont.6.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Accept
+		name = le_sardiniapiedmont.6.a
+		SAR = { give_guarantee = FRA }
+		FRA = { give_guarantee = SAR }
+	}
+	option = { #Decline
+		name = le_sardiniapiedmont.6.a
+	}
+}
+country_event = { #Prussian - Sardinian Alliance
+	id = le_sardiniapiedmont.7
+	title = le_sardiniapiedmont.7.t
+	desc = le_sardiniapiedmont.7.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Accept
+		name = le_sardiniapiedmont.7.a
+		SAR = { give_guarantee = PRS }
+		PRS = { give_guarantee = SAR }
+	}
+	option = { #Decline
+		name = le_sardiniapiedmont.7.a
+	}
+}
+country_event = { #Austrian - Sardinian Alliance
+	id = le_sardiniapiedmont.8
+	title = le_sardiniapiedmont.8.t
+	desc = le_sardiniapiedmont.8.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Accept
+		name = le_sardiniapiedmont.8.a
+		SAR = { give_guarantee = AUS }
+		AUS = { give_guarantee = SAR }
+	}
+	option = { #Decline
+		name = le_sardiniapiedmont.8.a
+	}
+}

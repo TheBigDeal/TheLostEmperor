@@ -1,0 +1,26 @@
+state={
+	id=840
+	name="STATE_840"
+	state_category = city
+	history={
+		owner = RIG
+		victory_points = {
+			13207 5 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+			13207 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = RIG
+
+	}
+	
+	provinces={
+		13207
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,22 @@
+
+state={
+	id=851
+	name="STATE_851"
+	state_category = city
+	history={
+		owner = DAR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = DAR
+
+	}
+
+	provinces={
+		1960 5060 8052 8103 10739 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

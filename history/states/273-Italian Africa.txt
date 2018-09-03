@@ -1,0 +1,22 @@
+
+state={
+	id=273
+	name="STATE_273"
+
+	history={
+		owner = AKU
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = AKU
+
+	}
+
+	provinces={
+		1057 4191 13212 13226 13228 
+	}
+	manpower=42633
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

@@ -1,0 +1,24 @@
+state={
+	id=821
+	name="STATE_821"
+	
+	history={
+		owner = JUL
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+
+		}
+		add_core_of = JUL
+
+	}
+	
+	state_category=town
+	
+	provinces={
+		9522 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,17 @@
+state={
+	id=927
+	name="STATE_927"
+	history={
+		owner = PLM
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = PLM
+	}
+	provinces={
+		1246 1274 1401 4211 4276 4364 4381 7384 7396 10150 10322 12268 12296 
+	}
+	manpower=435653
+	state_category = town
+	buildings_max_level_factor=1.000
+}

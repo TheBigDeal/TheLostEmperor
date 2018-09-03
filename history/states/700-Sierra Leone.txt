@@ -1,0 +1,28 @@
+
+state={
+	id=700
+	name="STATE_700"
+
+	history={
+		owner = LIB
+		victory_points = {
+			2038 1 
+		}
+		buildings = {
+			infrastructure = 3
+			2038 = {
+				naval_base = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1909 2038 2094 4957 8008 
+	}
+	manpower=1768500
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

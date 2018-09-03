@@ -1,0 +1,13 @@
+state={
+	id=898
+	name="STATE_898"
+	history={
+		owner = YEM
+	}
+	provinces={
+		4976 12894 
+	}
+	manpower=435653
+	state_category = wasteland
+	buildings_max_level_factor=1.000
+}

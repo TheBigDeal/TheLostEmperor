@@ -1,0 +1,24 @@
+
+state={
+	id=54
+	name="STATE_54"
+
+	history={
+		owner = MAI
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 1
+
+		}
+		add_core_of = MAI
+
+	}
+
+	provinces={
+		6555 
+	}
+	manpower=2508159
+	buildings_max_level_factor=1.000
+	state_category=city
+}

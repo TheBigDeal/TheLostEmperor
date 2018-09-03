@@ -1,0 +1,21 @@
+
+state={
+	id=902
+	name="STATE_902"
+	state_category = town
+	history={
+		owner = POR
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = POR
+
+	}
+
+	provinces={
+		191 1516 1817 1929 1968 4515 9986 12795 12907 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

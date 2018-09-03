@@ -1,0 +1,50 @@
+ideas = {
+
+country = {
+	#################
+	#HRE
+	#################
+	HRE_diet_relations = {
+
+		picture = generic_communist_army
+
+		modifier = {
+			conscription = 0.05
+		}
+	}
+	
+	HRE_Member = {
+
+		picture = ger_revive_the_kaiserreich
+
+		modifier = {
+			conscription = -1.00
+			MONTHLY_POPULATION = 0.1
+			absolutism_drift = 0.10 
+		}
+	}
+	
+	HRE_elector = {
+
+		picture = HUN_treaty_of_triannon
+
+		modifier = {
+			conscription = 0.1
+			MONTHLY_POPULATION = 0.5
+			absolutism_drift = 0.10 
+		}
+	}
+	
+	HRE_emperor = {
+
+		picture = Hungarian_Monarchy
+
+		modifier = {
+			conscription = 0.2
+			absolutism_drift = 0.10 
+			rexism_drift = 0.03
+		}
+	}
+	
+	
+}

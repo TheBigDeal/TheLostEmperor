@@ -1,0 +1,76 @@
+﻿###########################
+# Russian Events
+###########################
+
+add_namespace = le_latvia
+
+# Lithuania is asked to join United Baltic Duchys
+country_event = {
+	id = le_latvia.1
+	title = le_latvia.1.t
+	desc = le_latvia.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #JOIN THE UNITED BALTIC DUCHYS
+		name = le_latvia.1.a
+		ai_chance = { 
+			factor = 20
+		}
+		LAT = { annex_country = { target = LIT transfer_troops = yes }  }
+	}
+	option = { #DECLINE JOINING THE UNITED BALTIC DUCHYS
+		name = le_latvia.1.b
+		ai_chance = { 
+			factor = 10
+		}
+		LAT = { create_wargoal = { type = annex_everything target = LIT } }
+	}
+}
+
+country_event = {
+	id = le_latvia.2
+	title = le_latvia.2.t
+	desc = le_latvia.2.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		LAT = { add_popularity = { ideology = absolutism popularity = 1 } }
+		EST = { add_popularity = { ideology = absolutism popularity = 1 } }
+		random_list = {
+			60 = { 
+				LIT = { country_event = { id = le_latvia.1 } }
+				LAT = {
+					#transfer_state = 840
+					transfer_state = 12
+					transfer_state = 191
+					transfer_state = 13
+					set_cosmetic_tag = UNITED_BALTIC_DUCHYS
+					country_event = { id = le_randomideology.1 }
+				}
+			} 
+			40 = { 
+				EST = {
+					transfer_state = 191
+					transfer_state = 13
+					country_event = { id = le_randomideology.1 }
+				}
+				LAT = {
+					transfer_state = 840
+					transfer_state = 12
+					country_event = { id = le_randomideology.1 }
+				}
+			} 
+		}
+	}
+	
+	option = { #JOIN THE UNITED BALTIC DUCHYS
+		name = le_latvia.2.a
+		
+	}
+}

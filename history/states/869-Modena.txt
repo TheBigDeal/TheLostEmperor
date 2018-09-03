@@ -1,0 +1,22 @@
+state={
+	id=869
+	name="STATE_869"
+	history={
+		owner = MOD
+		victory_points = {
+			9752 4
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = MOD
+	}
+	provinces={
+		3976 6973 9752 
+	}
+	manpower=634262
+	state_category = city
+	buildings_max_level_factor=1.000
+}

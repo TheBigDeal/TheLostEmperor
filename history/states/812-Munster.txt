@@ -1,0 +1,27 @@
+
+state={
+	id=812
+	name="STATE_812"
+
+	history={
+		owner = MUN
+		victory_points = {
+			6622 3 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+
+		}
+		add_core_of = MUN
+
+	}
+
+	provinces={
+		6535 6622 11346 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+	state_category=town
+}

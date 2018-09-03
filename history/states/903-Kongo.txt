@@ -1,0 +1,21 @@
+
+state={
+	id=903
+	name="STATE_903"
+	state_category = town
+	history={
+		owner = COG
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = COG
+
+	}
+
+	provinces={
+		4128 7716 10025 10071 12775 12896 12945 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

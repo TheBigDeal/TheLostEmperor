@@ -1,0 +1,21 @@
+state={
+	id=780
+	name="STATE_780"
+	
+	history={
+		owner = SOM
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+
+		}
+
+	}
+	
+	provinces={
+		1964 2020 2063 
+	}
+	manpower=2341245
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

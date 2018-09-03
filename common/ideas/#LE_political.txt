@@ -1,0 +1,73 @@
+ideas = {
+
+country = {
+	#################
+	#Political
+	#################
+	Monarchist_Propaganda = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			absolutism_drift = 0.05 
+			royalism_drift = 0.02
+			rexism_drift = 0.01
+		}
+	}
+	Nationalist_Propaganda = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			rexism_drift = 0.02
+			labryscism_drift = 0.05
+		}
+	}
+	Religous_Zealots = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			theocracy_drift = 0.07
+			rexism_drift = 0.02
+			labryscism_drift = 0.01
+		}
+	}
+	Religious_Movements = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			theocracy_drift = 0.03
+		}
+	}
+	Monarchist_Drift = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			absolutism_drift = 0.03
+			royalism_drift = 0.03
+		}
+	}
+	Absolutist_Drift = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			absolutism_drift = 0.03
+		}
+	}
+	Royalist_Drift = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			royalism_drift = 0.03
+		}
+	}
+	Liberal_Drift = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			liberalism_drift = 0.03
+		}
+	}
+	Conservative_Drift = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			conservatism_drift = 0.03
+		}
+	}
+	Socialist_Drift = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			socialism_drift = 0.03
+		}
+	}
+}

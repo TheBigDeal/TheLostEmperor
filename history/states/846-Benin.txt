@@ -1,0 +1,22 @@
+
+state={
+	id=846
+	name="STATE_846"
+	state_category = city
+	history={
+		owner = BEN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = BEN
+
+	}
+
+	provinces={
+		4952 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

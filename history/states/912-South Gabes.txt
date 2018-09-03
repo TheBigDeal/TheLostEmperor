@@ -1,0 +1,22 @@
+
+state={
+	id=912
+	name="STATE_912"
+
+	history={
+		owner = TUN
+		add_core_of = TUN
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		8061 8077 
+	}
+	manpower=93256
+	state_category = town
+	buildings_max_level_factor=1.000
+}

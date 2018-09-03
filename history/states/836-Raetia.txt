@@ -1,0 +1,23 @@
+state={
+	id=836
+	name="STATE_836"
+	
+	history={
+		owner = LEA
+		victory_points = { 658 2 }
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+
+		}
+		add_core_of = LEA
+
+	}
+	
+	provinces={
+		658 3660 3662 
+	}
+	manpower=637475
+	state_category = city
+	buildings_max_level_factor=1.000
+}

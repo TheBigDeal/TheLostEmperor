@@ -1,0 +1,27 @@
+﻿capital = 126
+
+set_politics = {
+
+	parties = {
+		liberalism = { 
+			popularity = 0
+		}
+
+		rexism = {
+			popularity = 0
+		}
+		
+		proletarianism = {
+			popularity = 10
+		}
+		
+		absolutism = { 
+			popularity = 90
+		}
+	}
+	
+	ruling_party = absolutism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}

@@ -1,0 +1,35 @@
+state={
+	id=873
+	name="STATE_752"
+	
+	state_category = town
+	
+	resources={
+		steel=180
+		aluminium=10
+	}
+	history={
+		owner = POL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 8
+			air_base = 2
+			10337 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = POL
+		victory_points = {
+			10337 10
+		}
+		victory_points = {
+			3960 10 
+		}
+
+	}
+	provinces={
+		6435 6520 11543 
+	}
+	manpower=537735
+	buildings_max_level_factor=1.000
+}

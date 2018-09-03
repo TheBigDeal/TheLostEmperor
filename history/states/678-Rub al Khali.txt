@@ -1,0 +1,22 @@
+
+state={
+	id=678
+	name="STATE_678"
+
+	history={
+		owner = NEJ
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = NEJ
+
+	}
+
+	provinces={
+		4932 5024 7995 8004 8060 10791 10870 12702 12727 12870 
+	}
+	manpower=42
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

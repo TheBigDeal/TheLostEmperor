@@ -1,0 +1,22 @@
+
+state={
+	id=513
+	name="STATE_513"
+
+	history={
+		owner = MOR
+		add_core_of = MOR
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		1126 1967 3991 7008 12018 13074 
+	}
+	manpower=811486
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

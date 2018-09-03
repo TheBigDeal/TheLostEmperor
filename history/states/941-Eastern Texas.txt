@@ -1,0 +1,38 @@
+state={
+	id=941
+	name="STATE_749"
+	
+	state_category = metropolis
+	
+	resources={
+		oil=325
+		aluminium=52
+	}
+
+
+	history={
+		owner = TEX
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 8
+			air_base = 2
+			10337 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = TEX
+		victory_points = {
+			10337 10
+		}
+		victory_points = {
+			3960 10 
+		}
+
+	}
+	
+	provinces={
+		805 1500 2082 3960 4577 5001 5022 5085 6968 7628 7981 9829 9920 10337 10504 10778 10861 12341 12410 12486 
+	}
+	manpower=2646543
+	buildings_max_level_factor=1.000
+}

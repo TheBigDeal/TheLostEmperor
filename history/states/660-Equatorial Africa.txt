@@ -1,0 +1,24 @@
+
+state={
+	id=660
+	name="STATE_660"
+	resources={
+		rubber=4.000
+	}
+
+	history={
+		owner = SLV
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		1883 1974 3181 5084 7919 10857 
+	}
+	manpower=2572456
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

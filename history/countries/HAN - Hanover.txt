@@ -1,0 +1,55 @@
+﻿capital = 59
+
+OOB = "HAN_1928"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+
+	parties = {
+		liberalism = { 
+			popularity = 30
+		}
+
+		rexism = {
+			popularity = 0
+		}
+		
+		proletarianism = {
+			popularity = 10
+		}
+		
+		absolutism = { 
+			popularity = 60
+		}
+	}
+	
+	ruling_party = absolutism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_convoys = 5
+
+create_country_leader = {
+	name = "Ernest Augustus von Hannover"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Ernest_Augustus_von_Hannover.tga"
+	expire = "1965.1.1"
+	ideology = absolutism_ideology
+	traits = {
+		#
+	}
+}
+
+#create_field_marshal = {
+#	name = "Xhemal Aranitasi"
+#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+#	skill = 2
+#}
+

@@ -1,0 +1,517 @@
+﻿###########################
+# austrian Events
+###########################
+
+add_namespace = hre
+
+# HRE voting start
+
+news_event = {
+	id = hre_news.1
+	title = hre_news.1.title
+	desc = hre_news.1.desc
+	
+	picture = GFX_deluge_league_of_nations_entrance_large
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hre_news.1.a
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = hre.1
+	title = hre.1.t
+	desc = hre.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1928.7.6 
+		tag = PRS
+	}
+
+	immediate = {
+		set_global_flag = flag_hre_voting_started
+		BAV = { set_country_flag = flag_hre_elector }
+		BAV = { set_global_flag = flag_hre_prussia }
+		BAV = { set_global_flag = flag_hre_austria }
+		
+		MST = { set_country_flag = flag_hre_elector }
+		MST = { set_global_flag = flag_hre_prussia }
+		MST = { set_global_flag = flag_hre_austria }
+		
+		HES = { set_country_flag = flag_hre_elector }
+		HES = { set_global_flag = flag_hre_prussia }
+		HES = { set_global_flag = flag_hre_austria }
+		
+		SAX = { set_country_flag = flag_hre_elector }
+		SAX = { set_global_flag = flag_hre_prussia }
+		SAX = { set_global_flag = flag_hre_austria }
+		
+		BOH = { set_country_flag = flag_hre_elector }
+		BOH = { set_global_flag = flag_hre_prussia }
+		BOH = { set_global_flag = flag_hre_austria }
+		
+		BUR = { set_country_flag = flag_hre_elector }
+		BUR = { set_global_flag = flag_hre_prussia }
+		BUR = { set_global_flag = flag_hre_austria }
+		
+		HAN = { set_country_flag = flag_hre_elector }
+		HAN = { set_global_flag = flag_hre_prussia }
+		HAN = { set_global_flag = flag_hre_austria }
+		
+		PLT = { set_country_flag = flag_hre_elector }
+		PLT = { set_global_flag = flag_hre_prussia }
+		PLT = { set_global_flag = flag_hre_austria }
+		news_event = hre_news.1
+	}
+	
+	#mean_time_to_happen = {
+	#	days = 1
+	#}
+	
+	option = { 
+		name = hre.1.a
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+}
+
+#country_event = {
+#	id = hre.2
+#	title = hre.2.t
+#	desc = hre.2.d
+#	picture = GFX_report_event_spain_civil_war_soldiers
+#	
+#	trigger = {
+#		AND = {
+#			has_country_flag = flag_hre_elector
+#			NOT = { has_country_flag = flag_hre_voted }
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 1
+#	}
+#
+#	option = {
+#		name = hre_prussia
+#		
+#		set_country_flag = flag_hre_voted
+#		
+#		modify_global_flag = { 
+#			flag = flag_hre_prussia 
+#			value = 1 
+#		}
+#
+#		ai_chance = {
+#			factor = 2
+#		}
+#	}
+#	
+#	option = {
+#		name = hre_austria
+#		set_country_flag = flag_hre_voted
+#		modify_global_flag = { 
+#			flag = flag_hre_austria 
+#			value = 1 
+#		}
+#
+#		ai_chance = {
+#			factor = 6
+#		}
+#	}
+#}
+
+country_event = {
+	id = hre.3
+	title = hre.3.t
+	desc = hre.3.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	trigger = {
+		AND = {
+			BAV = { has_decision = flag_hre_voted }
+			BUR = { has_decision = flag_hre_voted }
+			PRS = { has_decision = flag_hre_voted }
+			DAN = { has_decision = flag_hre_voted }
+			BOH = { has_decision = flag_hre_voted }
+			SAX = { has_decision = flag_hre_voted }
+			HAN = { has_decision = flag_hre_voted }
+			PLT = { has_decision = flag_hre_voted }
+			NOT = { has_global_flag = flag_hre_vote_concluded }
+			tag = PRS
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	immediate = {
+		set_global_flag = flag_hre_vote_concluded
+	}
+	
+	
+	#8 ELECTORS
+	option = {
+		name = hre_conclude
+		#TIE
+		###############################################
+		if = {
+			limit = {
+				AND = {
+					has_global_flag = {
+						flag = flag_hre_prussia
+						value > 3
+					}
+					has_global_flag = {
+						flag = flag_hre_prussia
+						value < 5
+					}
+					has_global_flag = {
+						flag = flag_hre_austria
+						value > 3
+					}
+					has_global_flag = {
+						flag = flag_hre_austria
+						value < 5
+					}
+				}
+			}
+			set_global_flag = hre_tie
+		}
+		#AUSTRIA WINS
+		###############################################
+		if = {
+			limit = {
+				AND = {
+					has_global_flag = {
+						flag = flag_hre_austria
+						value > 4
+					}
+					NOT = {
+						has_global_flag = {
+							flag = flag_hre_prussia
+							value > 4
+						}
+					}
+				}
+			}
+			set_global_flag = hre_austria_wins
+		}
+		#PRUSSIA WINS
+		###############################################
+		if = {
+			limit = {
+				AND = {
+					has_global_flag = {
+						flag = flag_hre_prussia
+						value > 4
+					}
+					NOT = {
+						has_global_flag = {
+							flag = flag_hre_austria
+							value > 4
+						}
+					}
+				}
+			}
+			set_global_flag = hre_prussia_wins
+		}
+		#BREAK
+		################################################
+		if = {
+			limit = {
+				AND = {
+					NOT = { has_global_flag = hre_austria_wins }
+					NOT = { has_global_flag = hre_prussia_wins }
+					NOT = { has_global_flag = hre_tie }
+				}
+			}
+			set_global_flag = hre_break
+		}
+	}
+}
+
+
+
+
+
+
+
+#PRUSSIA WINS
+country_event = {
+	id = hre.4
+	title = hre.4.t
+	desc = hre.4.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	trigger = {
+		AND = {
+			has_global_flag = {
+				flag = hre_prussia_wins
+			}
+			NOT = {
+				has_global_flag = {
+					flag = prussia_germany
+				}
+			}
+			NOT = {
+				has_global_flag = {
+					flag = france_germany
+				}
+			}
+			NOT = {
+				has_global_flag = {
+					flag = prussia_reform
+				}
+			}
+			tag = PRS
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	#Form Germany
+	option = {
+		name = hre_prussia.1
+		
+		news_event = hre_news.prussia
+		set_global_flag = prussia_germany
+		
+		ai_chance = {
+			factor = 8
+		}
+	}
+}
+news_event = {
+	id = hre_news.prussia
+	title = hre_news.prussia.title
+	desc = hre_news.prussia.desc
+	
+	picture = GFX_deluge_league_of_nations_entrance_large
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hre_news.prussia.a
+	}
+}
+
+
+
+#AUSTRIA WINS
+country_event = {
+	id = hre.5
+	title = hre.5.t
+	desc = hre.5.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	trigger = {
+		AND = {
+			has_global_flag = {
+				flag = hre_austria_wins
+			}
+			NOT = {
+				has_global_flag = {
+					flag = danubian_reform
+				}
+			}
+			NOT = {
+				has_global_flag = {
+					flag = france_germany
+				}
+			}
+			NOT = {
+				has_global_flag = {
+					flag = danubian_consolidation
+				}
+			}
+			tag = PRS
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	#Reform HRE
+	option = {
+		name = hre_austria.1
+		
+		news_event = hre_news.prussia
+		set_global_flag = danubian_reform
+		
+		ai_chance = {
+			factor = 8
+		}
+	}
+	
+	#HRE Consolidation
+	option = {
+		name = hre_austria.2
+		
+		news_event = hre_news.prussia
+		set_global_flag = danubian_consolidation
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = {
+	id = hre_news.austria
+	title = hre_news.austria.title
+	desc = hre_news.austria.desc
+	
+	picture = GFX_deluge_league_of_nations_entrance_large
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hre_news.austria.a
+	}
+}
+
+#TIE
+country_event = {
+	id = hre.6
+	title = hre.6.t
+	desc = hre.6.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	trigger = {
+		AND = {
+			has_global_flag = {
+				flag = hre_tie
+			}
+			tag = PRS
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	#Form Germany
+	option = {
+		name = hre_tie.1
+		
+		PRS = { annex_country = { target = DAN transfer_troops = yes } }
+		news_event = hre_news.tie
+		
+		ai_chance = {
+			factor = 8
+		}
+	}
+	
+	#Vassal HRE
+	option = {
+		name = hre_tie.2
+		
+		puppet = DAN
+		news_event = hre_news.tie
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+news_event = {
+	id = hre_news.tie
+	title = hre_news.tie.title
+	desc = hre_news.tie.desc
+	
+	picture = GFX_deluge_league_of_nations_entrance_large
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hre_news.tie.a
+	}
+}
+
+
+country_event = {
+	id = hre.break
+	title = hre.break.t
+	desc = hre.break.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	trigger = {
+		AND = {
+			has_global_flag = {
+				flag = hre_break
+			}
+			tag = PRS
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	option = {
+		name = hre_break.a
+		ai_chance = {
+			factor = 8
+		}
+	}
+
+}
+
+
+#FRANCE WINS (ONLY BY PAPAL FOCUS)
+country_event = {
+	id = hre.7
+	title = hre.7.t
+	desc = hre.7.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	#TAKE THE CROWN
+	option = {
+		name = hre_france.1
+		
+		news_event = hre_news.prussia
+		set_global_flag = france_germany
+		set_global_flag = flag_hre_vote_concluded
+		
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	#REFUSE THE CROWN
+	option = {
+		name = hre_france.1
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,20 @@
+state={
+	id=850
+	name="STATE_850"
+	state_category = city
+	history={
+		owner = SON
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = SON
+
+	}
+	
+	provinces={
+		2068 7939 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

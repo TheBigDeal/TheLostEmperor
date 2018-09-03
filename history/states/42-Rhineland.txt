@@ -1,0 +1,38 @@
+
+state={
+	id=42
+	name="STATE_42"
+	resources={
+		steel=100.000
+		aluminium=24.000
+	}
+
+	history={
+		owner = TRI
+		victory_points = {
+			11435 10 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+
+		}
+		add_core_of = TRI
+		1939.1.1 = {
+			buildings = {
+				radar_station = 1
+				synthetic_refinery = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		3423 
+	}
+	manpower=3027739
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

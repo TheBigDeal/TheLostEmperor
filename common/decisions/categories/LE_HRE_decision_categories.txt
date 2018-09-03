@@ -1,0 +1,19 @@
+################
+##### USA ######
+################
+
+HRE_elections_category = {
+	icon = idea_ger_revive_the_kaiserreich
+	available = {
+		OR = {
+			original_tag = BAV
+			original_tag = MST
+			original_tag = WUR
+			original_tag = SAX
+			original_tag = BOH
+			original_tag = BUR
+			original_tag = HAN
+			original_tag = PLT
+		}
+	}
+}

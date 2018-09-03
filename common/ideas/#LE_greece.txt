@@ -1,0 +1,61 @@
+ideas = {
+
+country = {
+	#################
+	#COMMUNIST PATH
+	#################
+	#STALINISM
+	GRE_the_greek_red_army = {
+
+		picture = generic_communist_army
+
+		modifier = {
+			conscription = 0.1
+		}
+	}
+	GRE_stalin_wargoal = {
+
+		picture = SOV_scw_intervention_nationalists_focus
+
+		modifier = {
+			justify_war_goal_time = -0.25
+		}
+	}
+		
+	#LENIN
+	GRE_lenin_recuitable = {
+
+		picture = SOV_scw_intervention_nationalists_focus
+
+		modifier = {
+			conscription_factor = 0.5
+		}
+	}
+	
+	GRE_proletarianism_morale = {
+
+		picture = SOV_scw_intervention_nationalists_focus
+
+		modifier = {
+			army_morale_factor = 0.25
+		}
+	}
+		
+	GRE_lenin_army = {
+
+		picture = SOV_scw_intervention_nationalists_focus
+
+		modifier = {
+			training_time_army_factor = -0.1
+		}
+	}
+	
+	GRE_proletarianism_unity = {
+
+		picture = SOV_scw_intervention_nationalists_focus
+
+		modifier = {
+			stability_weekly = 0.02
+		}
+	}
+}

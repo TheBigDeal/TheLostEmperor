@@ -1,0 +1,27 @@
+state={
+	id=783
+	name="STATE_783"
+	
+	state_category = rural
+	
+	history={
+		owner = ATA
+		victory_points = {
+			12049 10 
+		}
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = ATA
+		add_core_of = TUR
+		add_core_of = GBR
+
+	}
+	
+	provinces={
+		4073 12049 
+	}
+	manpower=1236214
+	buildings_max_level_factor=1.000
+}

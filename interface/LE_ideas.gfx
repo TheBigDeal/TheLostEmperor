@@ -1,0 +1,44 @@
+
+
+spriteTypes = {
+
+	spriteType = {
+		name = "le_religion_catholic"
+		textureFile = "gfx/interface/ideas/idea_catholic.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_le_religion_protestant"
+		textureFile = "gfx/interface/ideas/idea_protestant.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_le_religion_sunni"
+		textureFile = "gfx/interface/ideas/idea_sunni.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_le_religion_shia"
+		textureFile = "gfx/interface/ideas/idea_shia.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_le_religion_secular"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_le_religion_athiest"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Prussian_Militarism"
+		textureFile = "gfx/interface/ideas/idea_Prussian_Militarism.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_German_Militarism"
+		textureFile = "gfx/interface/ideas/idea_German_Militarism.tga"
+	}
+}

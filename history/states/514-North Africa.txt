@@ -1,0 +1,21 @@
+
+state={
+	id=514
+	name="STATE_514"
+
+	history={
+		owner = AJJ
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = AJJ
+
+	}
+
+	provinces={
+		1043 5004 10884 
+	}
+	manpower=207733
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=797
+	name="STATE_797"
+
+	history={
+		owner = LND
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+
+		}
+		add_core_of = LND
+
+	}
+
+	provinces={
+		9655 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+	state_category=town
+}

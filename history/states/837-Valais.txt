@@ -1,0 +1,21 @@
+state={
+	id=837
+	name="STATE_837"
+	state_category = city
+	history={
+		owner = SVN
+		victory_points = { 3612 2 }
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+
+		}
+		add_core_of = SVN
+
+	}
+	provinces={
+		636 3612 9587 
+	}
+	manpower=253634
+	buildings_max_level_factor=1.000
+}

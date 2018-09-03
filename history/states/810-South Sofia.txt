@@ -1,0 +1,24 @@
+
+state={
+	id=810
+	name="STATE_810"
+
+	history={
+		owner = RUM
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+
+		}
+		add_core_of = RUM
+
+	}
+
+	provinces={
+		878 893 3937 6814 6923 6952 6982 9862 11813 
+	}
+	manpower=2647623
+	buildings_max_level_factor=1.000
+	state_category=town
+}

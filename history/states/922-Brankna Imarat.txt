@@ -1,0 +1,20 @@
+state={
+	id=922
+	name="STATE_922"
+	history={
+		owner = BKN
+		victory_points = {
+			1962 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = BKN
+	}
+	provinces={
+		1962 
+	}
+	manpower=435653
+	state_category = town
+	buildings_max_level_factor=1.000
+}

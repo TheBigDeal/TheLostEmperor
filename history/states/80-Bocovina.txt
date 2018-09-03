@@ -1,0 +1,23 @@
+
+state={
+	id=80
+	name="STATE_80"
+
+	history={
+		owner = MOL
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+
+		}
+		add_core_of = MOL
+
+	}
+
+	provinces={
+		577 3743 9548 
+	}
+	manpower=474600
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,47 @@
+
+state={
+	id=672
+	name="STATE_672"
+	resources={
+		rubber=268.000
+		oil=24.000
+		aluminium=50.000
+	}
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		victory_points = {
+			4652 1 
+		}
+		victory_points = {
+			12268 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 1
+			4652 = {
+				naval_base = 3
+
+			}
+			1648 = {
+				naval_base = 1
+
+			}
+			12268 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1277 1428 1460 1533 4446 7308 7327 7368 7440 7463 7673 10194 10209 10225 10294 10354 10382 10522 12126 12138 12168 12181 12184 12302 12343 12415 
+	}
+	manpower=8254900
+	buildings_max_level_factor=1.000
+	state_category=town
+}

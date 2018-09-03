@@ -1,0 +1,22 @@
+
+state={
+	id=848
+	name="STATE_848"
+	state_category = city
+	history={
+		owner = SOK
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = SOK
+
+	}
+
+	provinces={
+		1891 1932 1969 1975 1992 2025 2056 4889 4938 4972 5028 7950 7978 8021 8109 10820 11194 12707 12817 12900 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

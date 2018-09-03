@@ -1,0 +1,17 @@
+state={
+	id=935
+	name="STATE_935"
+	history={
+		owner = PRS
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = PRS
+	}
+	provinces={
+		1389 4393 5135 7365 7614 10251 10423 11004 11018 12154 12193 12237 12240 12400 12428 
+	}
+	manpower=435653
+	state_category = town
+	buildings_max_level_factor=1.000
+}

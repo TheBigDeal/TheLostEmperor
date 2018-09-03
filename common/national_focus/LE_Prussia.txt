@@ -1,0 +1,677 @@
+focus_tree = {
+	id = prussian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = PRS
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 50 y = 1800 }
+	
+	focus = {
+		id = PRS_OATHS_OF_LOYALTY
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = PRS_MEET_WITH_THE_KINGS }
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			#HRE = { dismantle_faction = yes }
+			hidden_effect = { transfer_state = 801 }
+		}
+	}
+	
+	focus = {
+		id = PRS_KING_OF_GERMANY
+		icon = GFX_focus_kaiserreich
+		prerequisite = { focus = PRS_OATHS_OF_LOYALTY }
+		x = 0
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					POL = { is_puppet_of = PRS }
+				}
+				GER = { puppet = POL }
+			}
+			GER = { 
+				create_country_leader = { name = "Fredrick Wilhelm II" desc = "POLITICS_PETER_II_DESC" picture = "Portrait_Prussia_Wilhelm.dds" expire = "1942.4.6" ideology = absolutism_ideology traits = { Political_Dancer Warmonger } } 
+				annex_country = { target = PRS transfer_troops = yes } 
+				change_tag_from = PRS
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_POLAND
+		icon = GFX_focus_poland
+		x = 19
+		y = 0
+		cost = 10
+		available = {
+			POL = { is_puppet_of = PRS }
+		}
+		bypass = {
+			POL = { is_puppet_of = PRS }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = PRS_CLAIM_POZNAN
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = PRS_POLAND }
+		x = 18
+		y = 1
+		cost = 10
+		available = {
+			POL = { is_puppet_of = PRS }
+		}
+		bypass = {
+			86 = { is_owned_by = PRS } 
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = PRS_BRIBE_LOCAL_GOVERNMENT
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = PRS_POLAND }
+		x = 20
+		y = 1
+		cost = 10
+		available = {
+			POL = { is_puppet_of = PRS }
+		}
+		bypass = {
+			86 = { is_owned_by = PRS } 
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = PRS_TAKE_CONTROL_OF_POZNAN
+		icon = GFX_goal_poland_goal
+		prerequisite = { focus = PRS_BRIBE_LOCAL_GOVERNMENT }
+		prerequisite = { focus = PRS_CLAIM_POZNAN }
+		x = 19
+		y = 2
+		cost = 10
+		available = {
+			POL = { is_puppet_of = PRS }
+		}
+		bypass = {
+			86 = { is_owned_by = PRS } 
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			transfer_state = 86
+		}
+	}
+	
+	focus = {
+		id = PRS_CLAIM_NORTHERN_PLOCK
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = PRS_TAKE_CONTROL_OF_POZNAN }
+		x = 18
+		y = 3
+		cost = 10
+		bypass = {
+			839 = { is_owned_by = PRS } 
+		}
+		available = {
+			POL = { is_puppet_of = PRS }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = PRS_BRIBE_LOCAL_GOVERNMENT_PLOCK
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = PRS_TAKE_CONTROL_OF_POZNAN }
+		x = 20
+		y = 3
+		cost = 10
+		available = {
+			POL = { is_puppet_of = PRS }
+		}
+		bypass = {
+			839 = { is_owned_by = PRS } 
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = PRS_TAKE_CONTROL_OF_NORTHERN_PLOCK
+		icon = GFX_goal_poland_goal
+		prerequisite = { focus = PRS_BRIBE_LOCAL_GOVERNMENT_PLOCK }
+		prerequisite = { focus = PRS_CLAIM_NORTHERN_PLOCK }
+		x = 19
+		y = 4
+		cost = 10
+		available = {
+			POL = { is_puppet_of = PRS }
+		}
+		bypass = {
+			839 = { is_owned_by = PRS } 
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			transfer_state = 839
+		}
+	}
+	focus = {
+		id = PRS_END_THE_CONDOMINIUM
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = PRS_TAKE_CONTROL_OF_NORTHERN_PLOCK }
+		x = 19
+		y = 5
+		cost = 10
+		available = {
+			AND = {
+				POL = { is_puppet_of = PRS }
+				has_global_flag = prussia_germany
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			POL = { 
+				set_country_flag = prussian_puppet 
+				set_cosmetic_tag = KINGDOM_OF_POLAND
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_EMPEROR_OF_THE_HOLY_ROMAN_EMPIRE
+		icon = GFX_focus_hun_elect_a_king
+		x = 0
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		available = {
+			has_global_flag = prussia_germany
+		}
+		completion_reward = {
+			custom_effect_tooltip = PRS_EMPEROR_OF_THE_HOLY_ROMAN_EMPIRE_tt
+		}
+	}
+	focus = {
+		id = PRS_INCREASE_MILITARY_SPENDING
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = PRS_EMPEROR_OF_THE_HOLY_ROMAN_EMPIRE }
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_TOUR_OF_GERMANY
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = PRS_INCREASE_MILITARY_SPENDING }
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_MEET_WITH_THE_KINGS
+		icon = GFX_gocus_generic_home_defense
+		prerequisite = { focus = PRS_TOUR_OF_GERMANY }
+		x = 0
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = PRS_SABOTAGE_AUSTRIA
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PRS_KING_OF_GERMANY }
+		mutually_exclusive = { focus = PRS_SWAY_ELECTORS_IN_FAVOR }
+		x = 10
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_RECRUIT_SPIES
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = PRS_SABOTAGE_AUSTRIA }
+		x = 11
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_ENCITE_REVOLT
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = PRS_RECRUIT_SPIES }
+		mutually_exclusive = {focus = PRS_PLAN_ASSASSINATION }
+		x = 10
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_MEET_WITH_TRANSYLVANIAN_REVOLUTIONARIES
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = PRS_MEET_WITH_HUNGARIAN_REVOLUTIONARIES }
+		x = 10
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_MEET_WITH_HUNGARIAN_REVOLUTIONARIES
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = PRS_MEET_WITH_CROATIAN_REVOLUTIONARIES }
+		x = 10
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_MEET_WITH_CROATIAN_REVOLUTIONARIES
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = PRS_ENCITE_REVOLT }
+		x = 10
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_TRANSFER_SUPPLIES
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = PRS_MEET_WITH_TRANSYLVANIAN_REVOLUTIONARIES }
+		x = 10
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_FINALIZE_REVOLT
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = PRS_TRANSFER_SUPPLIES }
+		x = 10
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+			DAN = {
+				release = CRO
+				release = TRN
+				release = HUN
+				country_event = le_austria.1
+			}
+		}
+	}
+	focus = {
+		id = PRS_PLAN_ASSASSINATION
+		icon = GFX_focus_generic_air_defense
+		prerequisite = { focus = PRS_RECRUIT_SPIES }
+		mutually_exclusive = {focus = PRS_ENCITE_REVOLT}
+		x = 12
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_HIRE_ASSASSINS
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = PRS_PLAN_ASSASSINATION }
+		x = 12
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_SAFE_HAVEN_IN_HUNGARY
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = PRS_HIRE_ASSASSINS }
+		x = 12
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_A_ROYAL_FESTIVAL
+		icon = GFX_focus_rom_parties_end
+		prerequisite = { focus = PRS_SAFE_HAVEN_IN_HUNGARY }
+		x = 12
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_ASSASSINATE_MAX
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = PRS_A_ROYAL_FESTIVAL }
+		x = 12
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_INFILTRATE_BOHEMIA
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = PRS_SABOTAGE_AUSTRIA }
+		x = 15
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_SEND_AMBASSADORS
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = { focus = PRS_INFILTRATE_BOHEMIA }
+		x = 15
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_SWAY_BOHEMIAN_VOTE
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = PRS_SEND_AMBASSADORS }
+		mutually_exclusive = { focus = PRS_PLAN_A_COUP }
+		x = 14
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_ALLY_BOHEMIA
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = PRS_SWAY_BOHEMIAN_VOTE }
+		x = 14
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_PLAN_A_COUP
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = PRS_SEND_AMBASSADORS }
+		x = 16
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_COUP_IN_BOHEMIA
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = PRS_PLAN_A_COUP }
+		x = 16
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_SWAY_ELECTORS_IN_FAVOR
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PRS_KING_OF_GERMANY }
+		mutually_exclusive = { focus = PRS_SABOTAGE_AUSTRIA }
+		x = 8
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = PRS_SWAY_BAVARIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PRS_SWAY_ELECTORS_IN_FAVOR }
+		x = 8
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_SWAY_BURGUNDY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PRS_SWAY_ELECTORS_IN_FAVOR }
+		x = 6
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_SWAY_BOHEMIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PRS_SWAY_ELECTORS_IN_FAVOR }
+		x = 4
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_SWAY_SAXONY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PRS_SWAY_BAVARIA }
+		x = 8
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_HANNOVER
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PRS_SWAY_ELECTORS_IN_FAVOR }
+		x = 6
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_SWAY_THE_PALATINATE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PRS_SWAY_ELECTORS_IN_FAVOR }
+		x = 4
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PRS_CALL_EARLY_ELECTION
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_SWAY_THE_PALATINATE }
+		prerequisite = { focus = PRS_HANNOVER }
+		prerequisite = { focus = PRS_SWAY_SAXONY }
+		x = 6
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 14
+		}
+		completion_reward = {
+
+		}
+	}

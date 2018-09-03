@@ -1,0 +1,18 @@
+state={
+	id=920
+	name="STATE_920"
+	history={
+		owner = BAH
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = BAH
+
+	}
+	provinces={
+		1953 2096 4033 7996 10764 10859 10877 10908 
+	}
+	manpower=1547754
+	state_category = town
+	buildings_max_level_factor=1.000
+}

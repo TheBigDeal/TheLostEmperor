@@ -1,0 +1,27 @@
+state={
+	id=795
+	name="STATE_795"
+	
+	history={
+		owner = BAM
+		victory_points = {
+			9416 1
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+
+		}
+		add_core_of = BAM
+
+	}
+	
+	state_category=town
+	
+	provinces={
+		3474 9416 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

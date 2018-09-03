@@ -1,0 +1,27 @@
+state={
+	id=820
+	name="STATE_820"
+	
+	history={
+		owner = FUL
+		victory_points = {
+			11445 1
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+
+		}
+		add_core_of = FUL
+
+	}
+	
+	state_category=town
+	
+	provinces={
+		11445 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

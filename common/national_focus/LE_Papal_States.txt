@@ -1,0 +1,382 @@
+focus_tree = {
+	id = LEpapal_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = PAP
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 50 y = 3100 }
+	
+	
+	#MAIN FOCUS PATH
+	#####################
+	focus = {
+		id = PAP_THE_PAPAL_STATES
+		icon = GFX_goal_generic_national_unity
+		x = 20
+		y = 0
+		cost = 10
+		bypass = {
+			tag = PAP
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_A_NEW_CRUSADE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_THE_PAPAL_STATES }
+		x = 6
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_RAISE_THE_HOLY_TRINITY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_A_NEW_CRUSADE }
+		x = 2
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_OFFER_THE_KNIGHTS_PROTECTION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_RAISE_THE_HOLY_TRINITY }
+		x = 0
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_LIVONIA_FOR_OTTOMAN_LANDS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_RAISE_THE_HOLY_TRINITY }
+		x = 2
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_TEUTON_LIBERATION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_RAISE_THE_HOLY_TRINITY }
+		x = 4
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_PROMISE_A_UNITED_GERMANY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_TEUTON_LIBERATION }
+		mutually_exclusive = { focus = PAP_SPARK_A_AUSTRO-PRUSSIAN_WAR }
+		x = 4
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_SPARK_A_AUSTRO-PRUSSIAN_WAR
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_TEUTON_LIBERATION }
+		mutually_exclusive = { focus = PAP_SPARK_A_AUSTRO-PRUSSIAN_WAR }
+		x = 6
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_THE_HOLY_TRINITY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_SPARK_A_AUSTRO-PRUSSIAN_WAR focus = PAP_PROMISE_A_UNITED_GERMANY }
+		prerequisite = { focus = PAP_LIVONIA_FOR_OTTOMAN_LANDS }
+		prerequisite = { focus = PAP_OFFER_THE_KNIGHTS_PROTECTION }
+		x = 2
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_INTERVENE_IN_THE_GREEK_CIVIL_WAR
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_A_NEW_CRUSADE }
+		x = 10
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_SUPPORT_MOUNT_ATHOS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_INTERVENE_IN_THE_GREEK_CIVIL_WAR }
+		mutually_exclusive = { focus = PAP_SUPPORT_ATHENS }
+		x = 9
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_SUPPORT_ATHENS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_INTERVENE_IN_THE_GREEK_CIVIL_WAR }
+		mutually_exclusive = { focus = PAP_SUPPORT_MOUNT_ATHOS }
+		x = 11
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PAP_THE_PHOENIX_RISES
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_SUPPORT_ATHENS focus = PAP_SUPPORT_MOUNT_ATHOS }
+		x = 10
+		y = 4
+		cost = 10
+		available = {
+			country_exists = GRE
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_DEMAND_A_CATHOLIC_BYZANTIUM
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_THE_PHOENIX_RISES }
+		x = 9
+		y = 5
+		cost = 10
+		available = {
+			country_exists = GRE
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_ALLOW_A_ORTHODOX_BYZANTIUM
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_THE_PHOENIX_RISES }
+		x = 11
+		y = 5
+		cost = 10
+		available = {
+			country_exists = GRE
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_UNITE_CHRISTENDOM
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_ALLOW_A_ORTHODOX_BYZANTIUM }
+		x = 11
+		y = 6
+		cost = 10
+		available = {
+			country_exists = GRE
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_DEAL_WITH_THE_SCHISM
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_UNITE_CHRISTENDOM }
+		x = 10
+		y = 7
+		cost = 10
+		available = {
+			country_exists = GRE
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_CONTACT_ORTHODOX_CHURCHES
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_DEAL_WITH_THE_SCHISM }
+		x = 10
+		y = 8
+		cost = 10
+		available = {
+			country_exists = GRE
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_DEAL_WITH_THE_REFORMATION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_UNITE_CHRISTENDOM }
+		x = 12
+		y = 7
+		cost = 10
+		available = {
+			country_exists = GRE
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_CONTACT_RIVAL_CHURCHES
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_DEAL_WITH_THE_REFORMATION }
+		x = 12
+		y = 8
+		cost = 10
+		available = {
+			country_exists = GRE
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_BEGIN_THE_CRUSADE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_ALLOW_A_ORTHODOX_BYZANTIUM focus = PAP_DEMAND_A_CATHOLIC_BYZANTIUM }
+		prerequisite = { focus = PAP_THE_HOLY_TRINITY }
+		x = 6
+		y = 6
+		cost = 10
+		available = {
+			country_exists = GRE
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_GIFT_BYZANTIUM_ANATOLIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_BEGIN_THE_CRUSADE }
+		x = 5
+		y = 7
+		cost = 10
+		available = {
+			country_exists = GRE
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = PAP_CREATE_AN_INDEPENDENT_ANATOLIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAP_BEGIN_THE_CRUSADE }
+		x = 7
+		y = 7
+		cost = 10
+		available = {
+			country_exists = GRE
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+		}
+	}

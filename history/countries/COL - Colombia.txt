@@ -1,0 +1,57 @@
+﻿capital = 306
+
+oob = "COL_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_destroyer = 1
+}
+
+set_convoys = 10
+
+set_convoys = 5
+set_politics = {
+
+	parties = {
+		despotism = { 
+			popularity = 85
+		}
+
+		rexism = {
+			popularity = 0
+		}
+		
+		proletarianism = {
+			popularity = 15
+		}
+	}
+	
+	ruling_party = despotism
+	last_election = "1934.2.11"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Gonzalo Queipo de Llano"
+	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
+	picture = "Portrait_Gonzalo_Queipo_de_Llano.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Gustavo Rojas Pinilla"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+	traits = {  trickster urban_assault_specialist }
+	skill = 3
+}

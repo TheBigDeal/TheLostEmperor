@@ -1,0 +1,19 @@
+state={
+	id=862
+	name="STATE_862"
+	state_category = city
+	history={
+		owner = BUG
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = BUG
+	}
+	
+	provinces={
+		12929 12989 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

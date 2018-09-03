@@ -1,0 +1,34 @@
+
+state={
+	id=763
+	name="STATE_763"
+
+	history={
+		owner = LUC
+		victory_points = {
+			925 1 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			925 = {
+				naval_base = 4
+
+			}
+			6831 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = LUC
+
+	}
+
+	provinces={
+		6946 
+	}
+	manpower=645123
+	buildings_max_level_factor=1.000
+	state_category=city
+}

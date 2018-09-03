@@ -1,0 +1,21 @@
+
+state={
+	id=904
+	name="STATE_904"
+	state_category = town
+	history={
+		owner = KAT
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = KAT
+
+	}
+
+	provinces={
+		1731 2024 7161 10858 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

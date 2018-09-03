@@ -1,0 +1,21 @@
+state={
+	id=829
+	name="STATE_829"
+	
+	history={
+		owner = PAT
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+		}
+		add_core_of = PAT
+	}
+	
+	state_category=town
+	
+	provinces={
+		5121 12920 
+	}
+	manpower=747456
+	buildings_max_level_factor=1.000
+}

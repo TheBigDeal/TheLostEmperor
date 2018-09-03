@@ -1,0 +1,22 @@
+
+state={
+	id=781
+	name="STATE_781"
+
+	history={
+		owner = TWO
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		8164 10928 
+	}
+	manpower=746542
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

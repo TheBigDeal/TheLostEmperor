@@ -1,0 +1,133 @@
+HRE_elections_category = {
+
+	HRE_vote_for_prussia = {
+
+		icon = idea_ger_revive_the_kaiserreich
+		
+		available = {
+			OR = {
+				original_tag = BAV
+				original_tag = MST
+				original_tag = WUR
+				original_tag = SAX
+				original_tag = BOH
+				original_tag = BUR
+				original_tag = HAN
+				original_tag = PLT
+			}
+		}
+		
+		available = {
+			AND = {
+				has_global_flag = flag_hre_voting_started
+				has_country_flag = flag_hre_elector
+			}
+		}
+		visible = {
+			AND = {
+				OR = {
+					original_tag = BAV
+					original_tag = MST
+					original_tag = WUR
+					original_tag = SAX
+					original_tag = BOH
+					original_tag = BUR
+					original_tag = HAN
+					original_tag = PLT
+				}
+				NOT = { has_country_flag = flag_hre_voted }
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			set_country_flag = flag_hre_voted
+		
+			modify_global_flag = { 
+				flag = flag_hre_prussia 
+				value = 1 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 3
+				tag = SAX
+			}
+			modifier = {
+				factor = -2
+				tag = BAV
+			}
+		}
+	}
+	
+	HRE_vote_for_austria = {
+
+		icon = idea_ger_revive_the_kaiserreich
+
+		available = {
+			OR = {
+				original_tag = BAV
+				original_tag = MST
+				original_tag = WUR
+				original_tag = SAX
+				original_tag = BOH
+				original_tag = BUR
+				original_tag = HAN
+				original_tag = PLT
+			}
+		}
+		
+		available = {
+			AND = {
+				has_global_flag = flag_hre_voting_started
+				has_country_flag = flag_hre_elector
+			}
+		}
+		visible = {
+			AND = {
+				OR = {
+					original_tag = BAV
+					original_tag = MST
+					original_tag = WUR
+					original_tag = SAX
+					original_tag = BOH
+					original_tag = BUR
+					original_tag = HAN
+					original_tag = PLT
+				}
+				NOT = { has_country_flag = flag_hre_voted }
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			set_country_flag = flag_hre_voted
+		
+			modify_global_flag = { 
+				flag = flag_hre_austria
+				value = 1 
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = -3
+				tag = SAX
+			}
+			modifier = {
+				factor = 2
+				tag = BAV
+			}
+		}
+	}
+}

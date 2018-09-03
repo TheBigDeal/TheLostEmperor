@@ -1,0 +1,43 @@
+#################
+#   POLITICAL   #
+#################
+labryscism_on_the_rise = {
+	available = {
+		always = yes
+	}
+}
+rexism_on_the_rise = {
+	available = {
+		always = yes
+	}
+}
+despotism_on_the_rise = {
+	available = {
+		always = yes
+	}
+}
+absolutism_on_the_rise = {
+	available = {
+		always = yes
+	}
+}
+royalism_on_the_rise = {
+	available = {
+		always = yes
+	}
+}
+theocracy_on_the_rise = {
+	available = {
+		always = yes
+	}
+}
+liberalism_on_the_rise = {
+	available = {
+		always = yes
+	}
+}
+collectivism_on_the_rise = {
+	available = {
+		always = yes
+	}
+}

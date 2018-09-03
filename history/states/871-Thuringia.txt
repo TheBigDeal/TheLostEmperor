@@ -1,0 +1,28 @@
+
+state={
+	id=871
+	name="STATE_757"
+
+	history={
+		owner = THU
+		victory_points = {
+			482 10
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 4
+			industrial_complex = 2
+			air_base = 3
+
+		}
+		add_core_of = THU
+
+	}
+
+	provinces={
+		482 3500 6421 9497 13116 
+	}
+	manpower=658764
+	buildings_max_level_factor=1.000
+	state_category=city
+}

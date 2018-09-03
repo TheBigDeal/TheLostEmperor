@@ -1,0 +1,39 @@
+
+state={
+	id=870
+	name="STATE_758"
+
+	history={
+		owner = WRZ
+		victory_points = {
+			6469 10 
+		}
+		victory_points = {
+			587 5 
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 4
+			industrial_complex = 2
+			air_base = 3
+
+		}
+		add_core_of = WRZ
+		1939.1.1 = {
+			buildings = {
+				air_base = 6
+				radar_station = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		9557 9572 11417 
+	}
+	manpower=234562
+	buildings_max_level_factor=1.000
+	state_category=city
+}

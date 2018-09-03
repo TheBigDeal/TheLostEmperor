@@ -1,0 +1,20 @@
+
+state={
+	id=860
+	name="STATE_860"
+	state_category = city
+	history={
+		owner = ANK
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = ANK
+	}
+	
+	provinces={
+		3854 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

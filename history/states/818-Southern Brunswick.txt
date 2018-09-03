@@ -1,0 +1,24 @@
+state={
+	id=818
+	name="STATE_818"
+	
+	history={
+		owner = BRU
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+
+		}
+		add_core_of = BRU
+
+	}
+	
+	state_category=town
+	
+	provinces={
+		3561 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

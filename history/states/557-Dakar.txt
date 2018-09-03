@@ -1,0 +1,23 @@
+
+state={
+	id=557
+	name="STATE_557"
+
+	history={
+		owner = TAG
+		victory_points = {
+			7943 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = TAG
+	}
+
+	provinces={
+		7943 10814 10838 
+	}
+	manpower=429200
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

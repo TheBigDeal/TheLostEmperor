@@ -1,0 +1,29 @@
+
+state={
+	id=425
+	name="STATE_425"
+	resources={
+		chromium=20.000
+		tungsten=128.000
+	}
+
+	history={
+		owner = RAJ
+		victory_points = {
+			8011 1 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		1412 4315 4344 5032 7244 7391 7395 7411 8011 8100 10190 10208 10259 10799 12146 12734 
+	}
+	manpower=12348200
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

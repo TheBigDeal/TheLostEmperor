@@ -1,0 +1,589 @@
+﻿###########################
+# Political Events
+###########################
+
+add_namespace = le_political
+
+
+# Class Conflicts Divide [Root.GetName]
+country_event = {
+	id = le_political.4
+	title = le_political.4.t
+	desc = le_political.4.d
+	picture = GFX_report_event_gathering_protest
+	
+	trigger = {
+		has_idea_with_trait = proletariet_revolutionary
+		NOT = { has_government = proletarianism }
+		proletarianism > 0.2
+	}
+
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.5
+			has_country_flag = proletarianism_popular_movement
+		}
+	}
+	
+	option = {
+		name = le_political.4.a
+		add_popularity = {
+			ideology = proletarianism
+			popularity = 0.15
+		}
+		add_stability = -0.02
+	}
+}
+
+# Soldiers Desert to proletariet Partisans
+country_event = {
+	id = le_political.5
+	title = le_political.5.t
+	desc = le_political.5.d
+	picture = GFX_report_event_desertion_poster
+	
+	trigger = {
+		has_idea_with_trait = proletariet_revolutionary
+		NOT = { has_government = proletarianism }
+		proletarianism > 0.3
+		NOT = { has_idea = proletariet_partisans_recruiting }
+	}
+
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.5
+			has_country_flag = proletarianism_popular_movement
+		}
+	}
+	
+	option = {
+		name = le_political.5.a
+		add_popularity = {
+			ideology = proletarianism
+			popularity = 0.15
+		}
+		add_ideas = proletariet_partisans_recruiting
+	}
+}
+
+# Labryscist Assault Divisions Form
+country_event = {
+	id = le_political.11
+	title = le_political.11.t
+	desc = le_political.11.d
+	picture = GFX_report_event_Labryscist_militia
+	
+	trigger = {
+		has_idea_with_trait = Labryscist_demagogue
+		NOT = { has_government = labryscism }
+		labryscism > 0.3
+		NOT = { has_idea = Labryscist_assault_divisions }
+	}
+
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.5
+			has_country_flag = labryscism_popular_movement
+		}
+	}
+	
+	option = {
+		name = le_political.11.a
+		add_popularity = {
+			ideology = labryscism
+			popularity = 0.05
+		}
+		add_ideas = Labryscist_assault_divisions
+	}
+}
+
+# The Threat of proletarianism
+country_event = {
+	id = le_political.12
+	title = le_political.12.t
+	desc = le_political.12.d
+	picture = GFX_report_event_worker_protests
+	
+	trigger = {
+		has_idea_with_trait = Labryscist_demagogue
+		NOT = { has_government = labryscism }
+		labryscism > 0.25
+		any_neighbor_country = {
+			has_government = proletarianism
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.5
+			has_country_flag = labryscism_popular_movement
+		}
+	}
+	
+	option = {
+		name = le_political.12.a
+		add_popularity = {
+			ideology = labryscism
+			popularity = 0.2
+		}
+	}
+}
+
+# liberalism Opposition Forming
+country_event = {
+	id = le_political.15
+	title = le_political.15.t
+	desc = le_political.15.d
+	picture = GFX_report_event_journalists_speech
+	
+	trigger = {
+		has_idea_with_trait = liberalism_reformer
+		NOT = { has_government = liberalism }
+		NOT = { has_country_flag = democracy_opposition_formed }
+		is_puppet = no
+	}
+	
+	mean_time_to_happen = {
+		days = 300
+		modifier = {
+			factor = 0.5
+			has_country_flag = democracy_popular_movement
+		}
+	}
+	
+	option = {
+		name = le_political.15.a
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.1
+		}
+		add_stability = -0.02
+		set_country_flag = democracy_opposition_formed
+	}
+}
+
+# Public Call for Elections
+country_event = {
+	id = le_political.16
+	title = le_political.16.t
+	desc = le_political.16.d
+	picture = GFX_report_event_election_vote
+	
+	trigger = {
+		has_idea_with_trait = liberalism_reformer
+		NOT = { has_government = liberalism }
+		has_country_flag = democracy_opposition_formed
+		NOT = { has_idea = liberalism_opposition_voicing_protests }
+	}
+	
+	mean_time_to_happen = {
+		days = 150
+	}
+	
+	option = {
+		name = le_political.16.a
+	}
+
+	option = {
+		name = le_political.16.b
+		add_le_political_power = -20
+		add_ideas = liberalism_opposition_voicing_protests
+	}
+}
+
+
+country_event = {
+	id = political.18
+	title = political.18.t
+	desc = political.18.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+
+	option = {
+		name = political.18.c
+		set_politics = {
+			ruling_party = labryscism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+country_event = {
+	id = political.19
+	title = political.19.t
+	desc = political.19.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+
+	option = {
+		name = political.19.c
+		set_politics = {
+			ruling_party = proletarianism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+country_event = {
+	id = political.20
+	title = political.20.t
+	desc = political.20.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+
+	option = {
+		name = political.20.c
+		set_politics = {
+			ruling_party = liberalism
+			elections_allowed = yes
+		}
+		add_stability = -0.05
+	}
+}
+### Revolution
+# le_political.21 Labryscist
+country_event = {
+	id = le_political.21
+	title = le_political.21.t
+	desc = le_political.21.d
+	picture = GFX_report_event_Labryscist_militia
+
+	trigger = {
+		labryscism > 0.7
+		#has_idea = fascist_revolutionaries
+		NOT = { has_government = labryscism }
+		has_civil_war = no
+		check_has_focus_tree_to_switch_to_fascism = yes
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		hidden_effect = { remove_ideas = Labryscist_revolutionaries }
+	}
+
+	option = {
+		name = le_political.21.a
+		ai_chance = {
+			factor = 0
+		}
+		start_civil_war = {
+			ideology = labryscism
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = le_political.21.b
+		if = {
+			limit = {
+				has_government = liberalism
+			}
+			start_civil_war = {
+				ruling_party = labryscism
+				ideology = liberalism
+				size = 0.5
+			}
+		}
+		if = {
+			limit = {
+				has_government = proletarianism
+			}
+			start_civil_war = {
+				ruling_party = labryscism
+				ideology = proletarianism
+				size = 0.5
+			}
+		}
+		if = {
+			limit = {
+				has_government = absolutism
+			}
+			start_civil_war = {
+				ruling_party = labryscism
+				ideology = absolutism
+				size = 0.5
+			}
+		}
+	}
+}
+# le_political.22 proletariet
+country_event = {
+	id = le_political.22
+	title = le_political.22.t
+	desc = le_political.22.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+		proletarianism > 0.7
+		has_idea = proletariet_revolutionaries
+		#Special case CHI PRC
+		OR = {
+			NOT = { tag = CHI }
+			AND = {
+				NOT = { country_exists = PRC }
+				tag = CHI
+			}			
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		hidden_effect = { remove_ideas = proletariet_revolutionaries }
+	}
+
+	option = {
+		name = le_political.22.a
+		start_civil_war = {
+			ideology = proletarianism
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = le_political.22.b
+		if = {
+			limit = {
+				has_government = liberalism
+			}
+			start_civil_war = {
+				ruling_party = proletarianism
+				ideology = liberalism
+				size = 0.5
+			}
+		}
+		if = {
+			limit = {
+				has_government = labryscism
+			}
+			start_civil_war = {
+				ruling_party = proletarianism
+				ideology = labryscism
+				size = 0.5
+			}
+		}
+		if = {
+			limit = {
+				has_government = absolutism
+			}
+			start_civil_war = {
+				ruling_party = proletarianism
+				ideology = absolutism
+				size = 0.5
+			}
+		}
+	}
+}
+# le_political.23 liberalism
+country_event = {
+	id = le_political.23
+	title = le_political.23.t
+	desc = le_political.23.d
+	picture = GFX_report_event_gathering_protest
+
+	trigger = {
+		liberalism > 0.7
+		has_idea = liberalism_revolutionaries
+		#Special case CHI PRC
+		OR = {
+			NOT = { tag = CHI }
+			AND = {
+				NOT = { country_exists = PRC }
+				tag = CHI
+			}			
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		hidden_effect = { remove_ideas = liberalism_revolutionaries }
+	}
+
+	option = {
+		name = le_political.23.a
+		start_civil_war = {
+			ideology = liberalism
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = le_political.23.b
+		if = {
+			limit = {
+				has_government = absolutism
+			}
+			start_civil_war = {
+				ruling_party = liberalism
+				ideology = absolutism
+				size = 0.5
+			}
+		}
+		if = {
+			limit = {
+				has_government = labryscism
+			}
+			add_timed_idea = { idea = labryscism_defeated days = 730 }			
+			start_civil_war = {
+				ruling_party = liberalism
+				ideology = labryscism
+				size = 0.5
+			}
+		}
+		if = {
+			limit = {
+				has_government = proletarianism
+			}
+			add_timed_idea = { idea = proletarianism_defeated days = 730 }
+			start_civil_war = {
+				ruling_party = liberalism
+				ideology = proletarianism
+				size = 0.5
+			}
+		}
+	}
+}
+
+### Suppressed
+# le_political.24 Labryscist
+country_event = {
+	id = le_political.24
+	title = le_political.24.t
+	desc = le_political.24.d
+	picture = GFX_report_event_Labryscists_posing
+
+	trigger = {
+		labryscism < 0.3
+		has_idea = Labryscist_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = le_political.24.a
+		remove_ideas = Labryscist_revolutionaries
+	}
+}
+# le_political.25 proletariet
+country_event = {
+	id = le_political.25
+	title = le_political.25.t
+	desc = le_political.25.d
+	picture = GFX_report_event_stalin_propaganda
+
+	trigger = {
+		proletarianism < 0.3
+		has_idea = proletariet_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = le_political.25.a
+		remove_ideas = proletariet_revolutionaries
+	}
+}
+# le_political.26 liberalism
+country_event = {
+	id = le_political.26
+	title = le_political.26.t
+	desc = le_political.26.d
+	picture = GFX_report_event_europe_funeral
+
+	trigger = {
+		liberalism < 0.3
+		has_idea = liberalism_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = le_political.26.a
+		remove_ideas = liberalism_revolutionaries
+	}
+}
+
+# Remove neutral foreign policy if Labryscist or commie
+country_event = {
+	id = le_political.27
+	title = le_political.27.t
+	desc = { 
+		text = le_political.27.d_labryscism
+	 	trigger = { has_government = labryscism }
+	}
+	desc = { 
+		text = le_political.27.d_proletarianism
+	 	trigger = { has_government = proletarianism }
+	}
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+		OR = {
+			has_government = labryscism
+			has_government = proletarianism
+		}
+		has_idea = absolutism_idea
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = le_political.27.a
+		remove_ideas = absolutism_idea
+	}
+}
+
+# Country has same ideology as revolter
+country_event = {
+	id = le_political.28
+	title = le_political.28.t
+	desc = le_political.28.d
+
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+		any_other_country = {
+			NOT = { tag = ROOT }
+			original_tag = ROOT
+			has_government = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = le_political.28.a
+		random_other_country = {
+			limit = {
+				original_tag = ROOT
+				NOT = { tag = ROOT }
+			}
+			ROOT = { annex_country = { target = PREV transfer_troops = yes } }
+		}
+	}
+}

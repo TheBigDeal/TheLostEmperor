@@ -1,0 +1,24 @@
+
+state={
+	id=548
+	name="STATE_548"
+	resources={
+		rubber=4.000
+	}
+
+	history={
+		owner = BUN
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		7133 8223
+	}
+	manpower=3515625
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

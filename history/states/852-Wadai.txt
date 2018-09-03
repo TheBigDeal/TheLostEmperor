@@ -1,0 +1,22 @@
+
+state={
+	id=852
+	name="STATE_852"
+	state_category = city
+	history={
+		owner = WAS
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = WAS
+
+	}
+
+	provinces={
+		1473 4897 4902 4978 5136 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,26 @@
+state={
+	id=767
+	name="STATE_767"
+	
+	state_category = city
+	
+	history={
+		owner = PLT
+		victory_points = {
+			11435 10 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+
+		}
+		add_core_of = PLT
+
+	}
+	
+	provinces={
+		549 
+	}
+	manpower=43476
+	buildings_max_level_factor=1.000
+}

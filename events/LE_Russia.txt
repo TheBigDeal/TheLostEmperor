@@ -1,0 +1,808 @@
+﻿###########################
+# Russian Events
+###########################
+
+add_namespace = le_russia
+
+# Introduction event
+country_event = {
+	id = le_russia.1
+	title = le_russia.1.t
+	desc = le_russia.1.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = le_russia.1.a
+	}
+}
+
+# Russian Civil War
+country_event = {
+	id = le_russia.2
+	title = le_russia.2.t
+	desc = le_russia.2.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	
+	trigger = {
+		AND = {
+			tag = RUS
+			proletarianism > 0.5
+		}		
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Russian_Civil_War
+			SOV = { 
+				transfer_state = 402
+				transfer_state = 404
+				transfer_state = 583
+				transfer_state = 590
+				transfer_state = 220
+				transfer_state = 240
+				transfer_state = 587
+				transfer_state = 220
+				transfer_state = 222
+				transfer_state = 223
+				transfer_state = 589
+				transfer_state = 654
+				transfer_state = 192
+				transfer_state = 227
+				transfer_state = 200
+				transfer_state = 196
+				transfer_state = 193
+				transfer_state = 191
+				transfer_state = 209
+				transfer_state = 210
+				transfer_state = 207
+				transfer_state = 219
+				transfer_state = 205
+				transfer_state = 242
+				transfer_state = 224
+				transfer_state = 243
+				transfer_state = 241
+				transfer_state = 13
+				transfer_state = 12
+				transfer_state = 137
+				transfer_state = 234
+				transfer_state = 40
+				transfer_state = 588
+				transfer_state = 263
+				transfer_state = 246
+				transfer_state = 208
+				transfer_state = 228
+				transfer_state = 221
+				transfer_state = 225
+				transfer_state = 259
+				transfer_state = 226
+				transfer_state = 197
+				transfer_state = 203
+				transfer_state = 226
+				transfer_state = 218
+				transfer_state = 560
+				transfer_state = 657
+				transfer_state = 561
+				transfer_state = 202
+				transfer_state = 194
+				transfer_state = 201
+				transfer_state = 198
+				transfer_state = 199
+				transfer_state = 873
+				transfer_state = 93
+				transfer_state = 94
+				transfer_state = 204
+				transfer_state = 95
+				transfer_state = 97
+				transfer_state = 206
+				transfer_state = 96
+				transfer_state = 258
+				transfer_state = 265
+				transfer_state = 245
+				transfer_state = 238
+				transfer_state = 217
+				transfer_state = 237
+				transfer_state = 235
+				transfer_state = 232
+				transfer_state = 233
+				transfer_state = 231
+				transfer_state = 229
+				transfer_state = 230
+				transfer_state = 260
+				####################
+				add_state_core = 405
+				add_state_core = 732
+				add_state_core = 586
+				add_state_core = 402
+				add_state_core = 404
+				add_state_core = 583
+				add_state_core = 590
+				add_state_core = 220
+				add_state_core = 240
+				add_state_core = 585
+				add_state_core = 587
+				add_state_core = 584
+				add_state_core = 742
+				add_state_core = 220
+				add_state_core = 222
+				add_state_core = 223
+				add_state_core = 589
+				add_state_core = 654
+				add_state_core = 192
+				add_state_core = 227
+				add_state_core = 200
+				add_state_core = 196
+				add_state_core = 193
+				add_state_core = 191
+				add_state_core = 209
+				add_state_core = 210
+				add_state_core = 207
+				add_state_core = 219
+				add_state_core = 205
+				add_state_core = 242
+				add_state_core = 224
+				add_state_core = 243
+				add_state_core = 241
+				add_state_core = 13
+				add_state_core = 12
+				add_state_core = 137
+				add_state_core = 234
+				add_state_core = 40
+				add_state_core = 588
+				add_state_core = 263
+				add_state_core = 246
+				add_state_core = 208
+				add_state_core = 228
+				add_state_core = 221
+				add_state_core = 225
+				add_state_core = 259
+				add_state_core = 226
+				add_state_core = 197
+				add_state_core = 203
+				add_state_core = 226
+				add_state_core = 218
+				add_state_core = 560
+				add_state_core = 657
+				add_state_core = 561
+				add_state_core = 202
+				add_state_core = 194
+				add_state_core = 201
+				add_state_core = 198
+				add_state_core = 199
+				add_state_core = 873
+				add_state_core = 93
+				add_state_core = 94
+				add_state_core = 204
+				add_state_core = 95
+				add_state_core = 97
+				add_state_core = 206
+				add_state_core = 96
+				add_state_core = 258
+				add_state_core = 265
+				add_state_core = 245
+				add_state_core = 238
+				add_state_core = 217
+				add_state_core = 237
+				add_state_core = 235
+				add_state_core = 232
+				add_state_core = 233
+				add_state_core = 231
+				add_state_core = 229
+				add_state_core = 230
+				add_state_core = 260
+			}
+			LAT = { add_popularity = { ideology = absolutism popularity = 1 } }
+			EST = { add_popularity = { ideology = absolutism popularity = 1 } }
+			LAT = { country_event = { id = le_latvia.2 } }
+		}
+	}
+	
+	option = { 
+		name = le_russia.2.a
+		ai_chance = { 
+			factor = 20
+		}
+		#RUS = { country_event = { days = 10 id = le_russia.8 } }
+		SOV = {
+			load_oob = "SOV_CIVIL_WAR"
+		}
+		random_list = {  #BELERUS
+			50 = {
+				if = {
+					limit = {
+						AND = {
+							SOV = { owns_state = 206 } #Minsk, Capital of Belerus
+						}
+					}
+					SOV = { 
+						country_event = { days = 1 id = le_belarus.1 }
+					} 
+				}
+				if = {
+					limit = {
+						AND = {
+							RUS = { owns_state = 206 } #Minsk, Capital of Belerus
+						}
+					}
+					RUS = { 
+						country_event = { days = 1 id = le_russia.1 }
+					} 
+				}
+			}
+			#50 = {
+			#
+			#}
+		}
+		random_list = { #RUTHENIA
+			50 = {
+				if = {
+					limit = {
+						AND = {
+							SOV = { owns_state = 202 } #Kiev, Capital of Ruthenia
+						}
+					}
+					SOV = { 
+						country_event = { days = 1 id = le_russia.5 }
+					} 
+				}
+				if = {
+					limit = {
+						AND = {
+							RUS = { owns_state = 202 } #Kiev, Capital of Ruthenia
+						}
+					}
+					RUS = { 
+						country_event = { days = 1 id = le_russia.5 }
+					} 
+				}
+			}
+			#50 = {
+			#
+			#}
+		}
+		random_list = { #CRIMEA
+			50 = {
+				if = {
+					limit = {
+						AND = {
+							SOV = { owns_state = 137 } #Crimea
+						}
+					}
+					SOV = { 
+						country_event = { days = 1 id = le_russia.6 }
+					} 
+				}
+				if = {
+					limit = {
+						AND = {
+							RUS = { owns_state = 137 } #Crimea
+						}
+					}
+					RUS = { 
+						country_event = { days = 1 id = le_russia.6 }
+					} 
+				}
+			}
+			#50 = {
+			#
+			#}
+		}
+		random_list = { #DON KUBAN
+			50 = {
+				if = {
+					limit = {
+						AND = {
+							SOV = { owns_state = 234 }
+						}
+					}
+					SOV = { 
+						country_event = { days = 1 id = le_russia.9 }
+					} 
+				}
+				if = {
+					limit = {
+						AND = {
+							RUS = { owns_state = 234 } 
+						}
+					}
+					RUS = { 
+						country_event = { days = 1 id = le_russia.9 }
+					} 
+				}
+			}
+			#50 = {
+			#
+			#}
+		}
+		random_list = { #ALASH_AUTONOMY
+			50 = {
+				BUK = { country_event = { days = 1 id = le_russia.7 } }
+			}
+			#50 = {
+			#
+			#}
+		}
+	}
+	option = { 
+		name = le_russia.2.b
+		ai_chance = { 
+			factor = 20
+		}
+		#RUS = { country_event = { days = 10 id = le_russia.8 } }
+		SOV = {
+			load_oob = "SOV_CIVIL_WAR"
+		}
+		SOV = { change_tag_from = RUS }
+		random_list = {  #BELERUS
+			50 = {
+				if = {
+					limit = {
+						AND = {
+							SOV = { owns_state = 206 } #Minsk, Capital of Belerus
+						}
+					}
+					SOV = { 
+						country_event = { days = 1 id = le_belarus.1 }
+					} 
+				}
+				if = {
+					limit = {
+						AND = {
+							RUS = { owns_state = 206 } #Minsk, Capital of Belerus
+						}
+					}
+					RUS = { 
+						country_event = { days = 1 id = le_russia.1 }
+					} 
+				}
+			}
+			#50 = {
+			#
+			#}
+		}
+		random_list = { #RUTHENIA
+			50 = {
+				if = {
+					limit = {
+						AND = {
+							SOV = { owns_state = 202 } #Kiev, Capital of Ruthenia
+						}
+					}
+					SOV = { 
+						country_event = { days = 1 id = le_russia.5 }
+					} 
+				}
+				if = {
+					limit = {
+						AND = {
+							RUS = { owns_state = 202 } #Kiev, Capital of Ruthenia
+						}
+					}
+					RUS = { 
+						country_event = { days = 1 id = le_russia.5 }
+					} 
+				}
+			}
+			#50 = {
+			#
+			#}
+		}
+		random_list = { #CRIMEA
+			50 = {
+				if = {
+					limit = {
+						AND = {
+							SOV = { owns_state = 137 } #Crimea
+						}
+					}
+					SOV = { 
+						country_event = { days = 1 id = le_russia.6 }
+					} 
+				}
+				if = {
+					limit = {
+						AND = {
+							RUS = { owns_state = 137 } #Crimea
+						}
+					}
+					RUS = { 
+						country_event = { days = 1 id = le_russia.6 }
+					} 
+				}
+			}
+			#50 = {
+			#
+			#}
+		}
+		random_list = { #DON KUBAN
+			50 = {
+				if = {
+					limit = {
+						AND = {
+							SOV = { owns_state = 234 }
+						}
+					}
+					SOV = { 
+						country_event = { days = 1 id = le_russia.9 }
+					} 
+				}
+				if = {
+					limit = {
+						AND = {
+							RUS = { owns_state = 234 } 
+						}
+					}
+					RUS = { 
+						country_event = { days = 1 id = le_russia.9 }
+					} 
+				}
+			}
+			#50 = {
+			#
+			#}
+		}
+		random_list = { #ALASH_AUTONOMY
+			50 = {
+				BUK = { country_event = { days = 1 id = le_russia.7 } }
+			}
+			#50 = {
+			#
+			#}
+		}
+		SOV = { change_tag_from = RUS }
+		RUS = { country_event = { days = 10 id = le_russia.8 } }
+		SOV = {
+			load_oob = "SOV_CIVIL_WAR"
+		}
+	}
+}
+	################################
+	# END OF THE RUSSIAN CIVIL WAR #
+	################################
+country_event = {
+	id = le_russia.3
+	title = le_russia.3.t
+	desc = le_russia.3.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	
+	trigger = {
+		AND = {
+			OR = {
+				tag = RUS
+				tag = SOV
+			}
+			has_global_flag = Russian_Civil_War
+			NOT = { has_global_flag = RUS_WAR_END }
+			OR = {
+				AND = {
+					country_exists = RUS
+					NOT = { country_exists = SOV }
+				}
+				AND = {
+					country_exists = SOV
+					NOT = { country_exists = RUS }
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	immediate = {
+		set_global_flag = RUS_WAR_END
+	}
+	
+	option = { #Attack Independent States
+		name = le_russia.3.a
+		ai_chance = { 
+			factor = 10
+		}
+		if = {
+			limit = {
+				country_exists = UKR
+			}
+			declare_war_on = {
+				target = UKR
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = {
+				country_exists = BLR
+			}
+			declare_war_on = {
+				target = BLR
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = {
+				country_exists = LAT
+			}
+			declare_war_on = {
+				target = LAT
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = {
+				country_exists = EST
+			}
+			declare_war_on = {
+				target = EST
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = {
+				country_exists = DON
+			}
+			declare_war_on = {
+				target = DON
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = {
+				country_exists = CRI
+			}
+			declare_war_on = {
+				target = CRI
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = {
+				country_exists = BUK
+			}
+			declare_war_on = {
+				target = BUK
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = {
+				country_exists = GEO
+			}
+			declare_war_on = {
+				target = GEO
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = {
+				country_exists = AZR
+			}
+			declare_war_on = {
+				target = AZR
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = {
+				country_exists = ARM
+			}
+			declare_war_on = {
+				target = ARM
+				type = annex_everything
+			}
+		}
+	}
+	option = { #Recognise Independence
+		name = le_russia.3.b
+		ai_chance = { 
+			factor = 5
+		}
+	}
+}
+
+#RUTHENIA DECLARES INDEPENDENCE
+country_event = {
+	id = le_russia.5
+	title = le_russia.5.t
+	desc = le_russia.5.d
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = le_russia.5.a
+		hidden_effect = {
+			UKR = { 
+				random_list = { 
+					60 = {
+						transfer_state = 93
+						transfer_state = 873
+						transfer_state = 199
+						transfer_state = 201
+						transfer_state = 202
+						transfer_state = 198
+						transfer_state = 203
+						transfer_state = 192
+						transfer_state = 197
+					}
+					40 = {
+						set_cosmetic_tag = GREATER_RUTHENIA
+						transfer_state = 93
+						transfer_state = 873
+						transfer_state = 199
+						transfer_state = 201
+						transfer_state = 202
+						transfer_state = 198
+						transfer_state = 203
+						transfer_state = 192
+						transfer_state = 197
+						transfer_state = 196
+						transfer_state = 226
+						transfer_state = 193
+						transfer_state = 225
+						transfer_state = 221
+						transfer_state = 259
+						transfer_state = 200
+						transfer_state = 227
+						transfer_state = 228
+					}
+				}
+				country_event = { id = le_randomideology.1 }
+			}	
+		}
+	}
+}
+
+#CRIMEA DECLARES INDEPENDENCE
+country_event = {
+	id = le_russia.6
+	title = le_russia.6.t
+	desc = le_russia.6.d
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = le_russia.6.a
+		CRI = { 
+			transfer_state = 137
+			country_event = { id = le_randomideology.1 }
+		}	
+	}
+}
+
+#ALASH AUTONOMY DECLARES UNION
+country_event = {
+	id = le_russia.7
+	title = le_russia.7.t
+	desc = le_russia.7.d
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	immediate = {
+		BUK = {
+			if = {
+				limit = {
+					KOK = {
+						is_ai = no
+					}
+				}
+				BUK = { change_tag_from = KOK }
+			}
+			if = {
+				limit = {
+					KHI = {
+						is_ai = no
+					}
+				}
+				BUK = { change_tag_from = KHI }
+			}
+			set_cosmetic_tag = ALASH_AUTONOMY
+			annex_country = { target = KHI transfer_troops = yes } 
+			annex_country = { target = KOK transfer_troops = yes } 
+			transfer_state = 587
+		}
+	}
+	option = {
+		name = le_russia.7.a
+		hidden_effect = {
+			country_event = { id = le_randomideology.1 }
+		}
+	}
+}
+#WAR!
+country_event = {
+	id = le_russia.8
+	title = le_russia.8.t
+	desc = le_russia.8.d
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	trigger = {
+		AND = {
+			tag = RUS
+			country_exists = RUS
+			country_exists = SOV
+			has_global_flag = Russian_Civil_War
+			NOT = { has_global_flag = RUS_WAR_END }
+		}
+	
+	}
+	
+	option = {
+		name = le_russia.8.a
+		RUS = { declare_war_on = { target = SOV type = annex_everything } }
+	}
+}
+
+#DON KUBAN DECLARES INDEPENDENCE
+country_event = {
+	id = le_russia.9
+	title = le_russia.9.t
+	desc = le_russia.9.d
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = le_russia.9.a
+		DON = { 
+			transfer_state = 234
+			transfer_state = 235
+			transfer_state = 218
+			transfer_state = 238
+			transfer_state = 237
+			transfer_state = 232
+			transfer_state = 233
+			transfer_state = 231
+			transfer_state = 229
+			transfer_state = 230
+			country_event = { id = le_randomideology.1 }
+			random_list = { 
+				25 = {
+					GEO = {
+						transfer_state = 231
+					}
+					ARM = {
+						transfer_state = 230
+					}
+					AZR = {
+						transfer_state = 229
+					}
+				}
+				25 = {
+					GEO = {
+						transfer_state = 231
+					}
+					ARM = {
+						transfer_state = 230
+					}
+					AZR = {
+						transfer_state = 229
+					}
+					DOM = {
+						puppet = GEO
+						puppet = ARM
+						puppet = AZR
+					}
+				}
+				50 = {
+				
+				}
+			}
+		}	
+	}
+}

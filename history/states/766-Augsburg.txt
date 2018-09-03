@@ -1,0 +1,36 @@
+state={
+	id=766
+	name="STATE_766"
+	
+	state_category = large_city
+	
+	history={
+		owner = AUG
+		victory_points = {
+			9517 5 
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 7
+			industrial_complex = 1
+			air_base = 3
+
+		}
+		add_core_of = WUR
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 11
+				industrial_complex = 3
+
+			}
+
+		}
+
+	}
+	
+	provinces={
+		708 9666 11638 
+	}
+	manpower=315156
+	buildings_max_level_factor=1.000
+}

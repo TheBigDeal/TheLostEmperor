@@ -1,0 +1,28 @@
+
+state={
+	id=274
+	name="STATE_274"
+
+	history={
+		owner = GBR
+		victory_points = {
+			10862 1 
+		}
+		buildings = {
+			infrastructure = 3
+			10862 = {
+				naval_base = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		4927 5013 5045 7983 8065 8116 8122 10803 12794 13136 
+	}
+	manpower=3163600
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

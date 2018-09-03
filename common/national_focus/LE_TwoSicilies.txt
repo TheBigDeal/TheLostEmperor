@@ -1,0 +1,1630 @@
+focus_tree = {
+	id = LE_TWOSICILIES_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = TWO
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 50 y = 3100 }
+	
+	
+	#MAIN FOCUS PATH
+	#####################
+	focus = {
+		id = TWO_ONE_FOOT_IN_THE_GRAVE
+		icon = GFX_goal_generic_secret_weapon
+		x = 12
+		y = 0
+		cost = 10
+		available = {
+			date > 1928.04.01
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_EXPAND_ARCHEOLOGICAL_MUSEUM_OF_NAPLES
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = TWO_ONE_FOOT_IN_THE_GRAVE }
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_EXPAND_THE_ACCADEMIA_DELLE_BELLE_ARTI
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = TWO_EXPAND_ARCHEOLOGICAL_MUSEUM_OF_NAPLES }
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_EXPAND_THE_MILITARY_COLLEGE_OF_NUNZIATELLA
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = TWO_EXPAND_THE_ACCADEMIA_DELLE_BELLE_ARTI }
+		x = 0
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_MODERNIZE_THE_ARTILLERY_AND_MILITARY_COMMAND_SCHOOL
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = TWO_EXPAND_THE_MILITARY_COLLEGE_OF_NUNZIATELLA }
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_AN_INDEPENDENT_AVIATION_SCHOOL
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = TWO_MODERNIZE_THE_ARTILLERY_AND_MILITARY_COMMAND_SCHOOL }
+		mutually_exclusive = { focus = TWO_EXPAND_THE_NAVAL_AND_AVIATION_COLLEGE }
+		x = 0
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_EXPAND_THE_NAVAL_AND_AVIATION_COLLEGE
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = TWO_MODERNIZE_THE_ARTILLERY_AND_MILITARY_COMMAND_SCHOOL }
+		mutually_exclusive = { focus = TWO_AN_INDEPENDENT_AVIATION_SCHOOL }
+		x = 2
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_DOCTRINE_EFFORT
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = TWO_EXPAND_THE_NAVAL_AND_AVIATION_COLLEGE focus = TWO_AN_INDEPENDENT_AVIATION_SCHOOL }
+		x = 1
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_CORPO_DI_CAVALLERIA_LEGGERA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_DOCTRINE_EFFORT }
+		mutually_exclusive = { focus = TWO_CORPO_ARTIGLIERI }
+		x = 0
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_CORPO_ARTIGLIERI
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_DOCTRINE_EFFORT }
+		mutually_exclusive = { focus = TWO_CORPO_DI_CAVALLERIA_LEGGERA }
+		x = 2
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_UNEARTH_POMPEII
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = TWO_EXPAND_ARCHEOLOGICAL_MUSEUM_OF_NAPLES }
+		x = 2
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_EXPAND_THE_LICEII
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_UNEARTH_POMPEII }
+		x = 2
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_SUBSIDIZE_THE_UNIVERSITIES
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = { focus = TWO_EXPAND_THE_LICEII }
+		x = 2
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_END_THE_YEAR-LONG_STRIKE
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = TWO_ONE_FOOT_IN_THE_GRAVE }
+		x = 12
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_INDUSTRIAL_RECOVERY
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = TWO_END_THE_YEAR-LONG_STRIKE }
+		x = 12
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_EXPAND_MILITARY_INDUSTRY
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = TWO_NATIONALIZE_THE_INDUSTRY focus = TWO_PROMOTE_PRIVATE_VENTURES }
+		x = 13
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_EXPAND_LINES_OF_PRODUCTION
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = TWO_EXPAND_MILITARY_INDUSTRY }
+		x = 13
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_CENTRALIZE_INDUSTRY
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = TWO_EXPAND_LINES_OF_PRODUCTION }
+		prerequisite = { focus = TWO_UP_THE_HILLS }
+		mutually_exclusive = {  focus = TWO_DECENTRALIZE_INDUSTRY }
+		x = 13
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_DECENTRALIZE_INDUSTRY
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = TWO_EXPAND_LINES_OF_PRODUCTION }
+		prerequisite = { focus = TWO_UP_THE_HILLS }
+		mutually_exclusive = { focus = TWO_CENTRALIZE_INDUSTRY }
+		x = 11
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	
+	focus = {
+		id = TWO_GOVERNMENT_FUNDED_DOCKYARDS
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = TWO_CENTRALIZE_INDUSTRY }
+		prerequisite = { focus = TWO_DECENTRALIZE_INDUSTRY }
+		mutually_exclusive = {  focus = TWO_PUBLIC_DOCKYARDS }
+		x = 13
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_PUBLIC_DOCKYARDS
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = TWO_CENTRALIZE_INDUSTRY }
+		prerequisite = { focus = TWO_DECENTRALIZE_INDUSTRY }
+		mutually_exclusive = { focus = TWO_GOVERNMENT_FUNDED_DOCKYARDS }
+		x = 11
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_THE_MEANS_OF_PRODUCTION
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = TWO_PUBLIC_DOCKYARDS focus = TWO_GOVERNMENT_FUNDED_DOCKYARDS }
+		x = 12
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_CLAIM_LYBIAN_RESOURCES
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TWO_THE_MEANS_OF_PRODUCTION }
+		x = 12
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	
+	focus = {
+		id = TWO_PROMOTE_PRIVATE_VENTURES
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = TWO_INDUSTRIAL_RECOVERY }
+		mutually_exclusive = { focus = TWO_NATIONALIZE_THE_INDUSTRY }
+		x = 11
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_THROUGH_THE_MOUNTAINS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_NATIONALIZE_THE_INDUSTRY focus = TWO_PROMOTE_PRIVATE_VENTURES }
+		x = 11
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_UP_THE_HILLS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_THROUGH_THE_MOUNTAINS }
+		x = 11
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_NATIONALIZE_THE_INDUSTRY
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = TWO_INDUSTRIAL_RECOVERY }
+		mutually_exclusive = { focus = TWO_PROMOTE_PRIVATE_VENTURES }
+		x = 13
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_THE_REDS_FOLD
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = TWO_END_THE_YEAR-LONG_STRIKE }
+		mutually_exclusive = { focus = TWO_THE_REDS_REFUSE }
+		x = 6
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_ABOLISH_THE_PARLIAMENT
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = TWO_THE_REDS_FOLD }
+		mutually_exclusive = { focus = TWO_CONSTITUTIONAL_EXPANSION }
+		x = 4
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_EXPAND_THE_KINGS_POWERS
+		icon = GFX_focus_hun_elect_a_king
+		prerequisite = { focus = TWO_ABOLISH_THE_PARLIAMENT }
+		x = 4
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_CONSTITUTIONAL_EXPANSION
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_THE_REDS_FOLD }
+		mutually_exclusive = { focus = TWO_ABOLISH_THE_PARLIAMENT }
+		x = 8
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_EXPAND_VOTING_RIGHTS
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = TWO_CONSTITUTIONAL_EXPANSION }
+		x = 8
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_DEVELOP_NAPLES
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = TWO_EXPAND_VOTING_RIGHTS focus = TWO_EXPAND_THE_KINGS_POWERS }
+		mutually_exclusive = { focus = TWO_DEVELOP_PALERMO }
+		x = 8
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_DEVELOP_PALERMO
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = TWO_EXPAND_VOTING_RIGHTS focus = TWO_EXPAND_THE_KINGS_POWERS }
+		mutually_exclusive = { focus = TWO_DEVELOP_NAPLES }
+		x = 4
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_RENOUNCE_TWO_SICILIES
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = TWO_EXPAND_VOTING_RIGHTS focus = TWO_EXPAND_THE_KINGS_POWERS }
+		x = 6
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_NAPLES
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_RENOUNCE_TWO_SICILIES }
+		prerequisite = { focus = TWO_DEVELOP_NAPLES }
+		mutually_exclusive = { focus = TWO_SICILY }
+		x = 8
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_SICILY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_DEVELOP_PALERMO }
+		prerequisite = { focus = TWO_RENOUNCE_TWO_SICILIES}
+		mutually_exclusive = { focus = TWO_NAPLES }
+		x = 4
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_CLAIM_ARAGON
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = TWO_SICILY }
+		x = 4
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_CLAIM_THE_ISLANDS
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = TWO_SICILY focus = TWO_NAPLES }
+		x = 6
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_CLAIM_PROVENCE
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = TWO_NAPLES }
+		x = 8
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_DEMAND_ARAGON
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = TWO_CLAIM_ARAGON }
+		x = 4
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_DEMAND_THE_ISLANDS
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = TWO_CLAIM_THE_ISLANDS }
+		x = 6
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_DEMAND_PROVENCE
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = TWO_CLAIM_PROVENCE }
+		x = 8
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_RETURN_FRENCH_TERRITORY
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = TWO_DEMAND_ARAGON }
+		mutually_exclusive = { focus = TWO_DEEPEN_TIES_WITH_THE_DANUBIAN_KINGDOMS }
+		x = 4
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_DEEPEN_TIES_WITH_FRANCE
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = TWO_RETURN_FRENCH_TERRITORY }
+		x = 4
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_DEEPEN_TIES_WITH_THE_DANUBIAN_KINGDOMS
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = TWO_DEMAND_ARAGON }
+		mutually_exclusive = { focus = TWO_RETURN_FRENCH_TERRITORY }
+		x = 2
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_DANUBIAN_INFLUENCE
+		icon = GFX_focus_proclaim_the_restauration_of_austria_hungary
+		prerequisite = { focus = TWO_DEEPEN_TIES_WITH_THE_DANUBIAN_KINGDOMS }
+		x = 2
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_CLAIM_SPAIN_PROPER
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = TWO_DEEPEN_TIES_WITH_FRANCE }
+		x = 4
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_WEST_MEDITERRANEAN_EMPIRE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_CLAIM_SPAIN_PROPER }
+		x = 4
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_OVERTHROW_SPAIN
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TWO_CLAIM_SPAIN_PROPER }
+		x = 2
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_PROPOSE_TUSCAN_REFERENDUM
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = TWO_DEMAND_PROVENCE focus = TWO_DEMAND_ARAGON }
+		x = 6
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_UNIFY_THE_DUCHIES
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TWO_PROPOSE_TUSCAN_REFERENDUM }
+		x = 6
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_PROTECT_THE_POPE
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = TWO_UNIFY_THE_DUCHIES }
+		x = 6
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_GET_RID_OF_SARDINIA-PIEDMONT
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = TWO_DEMAND_PROVENCE }
+		x = 8
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_CLAIM_MILAN
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = TWO_GET_RID_OF_SARDINIA-PIEDMONT }
+		x = 10
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_SEIZE_GENOA
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = TWO_CLAIM_MILAN }
+		x = 10
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_ARSENALE_NAPILETANO
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_SEIZE_GENOA }
+		x = 10
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_CROSS_THE_PO
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_ARSENALE_NAPILETANO }
+		x = 10
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_BURBON_ITALY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_CROSS_THE_PO }
+		x = 10
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_DEEPEN_TIES_WITH_SPAIN
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = TWO_GET_RID_OF_SARDINIA-PIEDMONT }
+		x = 8
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_CLAIM_FRENCH_PROPER
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = TWO_DEEPEN_TIES_WITH_SPAIN }
+		x = 8
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_OVERTHROW_FRANCE
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TWO_CLAIM_FRENCH_PROPER }
+		x = 8
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_THE_REDS_REFUSE
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = TWO_END_THE_YEAR-LONG_STRIKE }
+		mutually_exclusive = { focus = TWO_THE_REDS_FOLD }
+		x = 18
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_THE_BARI_CONFERENCE
+		icon = GFX_goal_support_fourth_int
+		prerequisite = { focus = TWO_THE_REDS_REFUSE }
+		mutually_exclusive = { focus = TWO_MAKE_THEM_FOLD }
+		x = 17
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_PAI_MAJORITY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_THE_BARI_CONFERENCE }
+		mutually_exclusive = { focus = TWO_PSU_MAJORITY focus = TWO_PSC_MAJORITY }
+		x = 15
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_ABOLISH_DEMOCRACY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_PAI_MAJORITY }
+		x = 15
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_PSU_MAJORITY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_THE_BARI_CONFERENCE }
+		mutually_exclusive = { focus = TWO_PSC_MAJORITY focus = TWO_PAI_MAJORITY }
+		x = 17
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_MASONIC_SOCIALISM
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = TWO_PSU_MAJORITY }
+		x = 17
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_RED_ARMY
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = TWO_MASONIC_SOCIALISM focus = TWO_ABOLISH_DEMOCRACY }
+		x = 16
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_REVOLUTION_IN_CENTRAL_ITALY
+		icon = GFX_focus_rom_abdicate
+		prerequisite = { focus = TWO_RED_ARMY }
+		mutually_exclusive = { focus = TWO_A_NEW_CATHOLICISM_FOR_CENTRAL_ITALY }
+		x = 16
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_PSC_MAJORITY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_THE_BARI_CONFERENCE }
+		mutually_exclusive = { focus = TWO_PSU_MAJORITY focus = TWO_PAI_MAJORITY }
+		x = 19
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_CHRISTIAN_SOCIALISM
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_PSC_MAJORITY }
+		x = 19
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_THE_PEOPLES_FRONT
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = TWO_CHRISTIAN_SOCIALISM }
+		x = 19
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_A_NEW_CATHOLICISM_FOR_CENTRAL_ITALY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_THE_PEOPLES_FRONT }
+		mutually_exclusive = { focus = TWO_REVOLUTION_IN_CENTRAL_ITALY }
+		x = 19
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_THE_VENETIAN_REVOLUTION
+		icon = GFX_goal_generic_support_communism
+		prerequisite = { focus = TWO_A_NEW_CATHOLICISM_FOR_CENTRAL_ITALY focus = TWO_REVOLUTION_IN_CENTRAL_ITALY }
+		x = 17
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_PLEBISCITE_FOR_MILAN
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = TWO_THE_VENETIAN_REVOLUTION }
+		mutually_exclusive = { focus = TWO_BREAK_IN_MILAN }
+		x = 18
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_BREAK_IN_MILAN
+		icon = GFX_focus_SAF_colonialist_crusade
+		prerequisite = { focus = TWO_THE_VENETIAN_REVOLUTION }
+		mutually_exclusive = { focus = TWO_PLEBISCITE_FOR_MILAN }
+		x = 16
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_WORK_WITH_GENOAN_PEOPLE
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = TWO_BREAK_IN_MILAN focus = TWO_PLEBISCITE_FOR_MILAN }
+		mutually_exclusive = { focus = TWO_GENOAN_REVOLUTION }
+		x = 18
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_GENOAN_REVOLUTION
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TWO_BREAK_IN_MILAN focus = TWO_PLEBISCITE_FOR_MILAN }
+		mutually_exclusive = { focus = TWO_WORK_WITH_GENOAN_PEOPLE }
+		x = 16
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_TAKE_DOWN_SARDINIA_PIEDMONT
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = TWO_GENOAN_REVOLUTION focus = TWO_WORK_WITH_GENOAN_PEOPLE }
+		x = 17
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_ITALIAN_COMMUNE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_TAKE_DOWN_SARDINIA_PIEDMONT }
+		x = 17
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_SEIZE_THE_VENITIAN_NAVY
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = TWO_EXPAND_THE_PEOPLES_NAVY }
+		x = 14
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_EXPAND_THE_PEOPLES_NAVY
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = TWO_THE_VENETIAN_REVOLUTION }
+		x = 14
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_STARVE_ISLANDS
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = TWO_EXPAND_THE_PEOPLES_NAVY }
+		x = 14
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_MAKE_THEM_FOLD
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = TWO_THE_REDS_REFUSE }
+		mutually_exclusive = { focus = TWO_THE_BARI_CONFERENCE }
+		x = 21
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_STORM_THE_PARLIAMENT
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = TWO_MAKE_THEM_FOLD }
+		x = 21
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_SUSPEND_THE_CONSTITUTION
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = TWO_STORM_THE_PARLIAMENT }
+		x = 21
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_STORM_ROME
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = TWO_SUSPEND_THE_CONSTITUTION }
+		x = 21
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_INTERVENE_IN_CENTRAL_ITALY
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = TWO_STORM_ROME }
+		x = 21
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_BUILD_UP_THE_NAVY
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = TWO_INTERVENE_IN_CENTRAL_ITALY }
+		x = 20
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_TAKE_GENOA
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = TWO_INTERVENE_IN_CENTRAL_ITALY}
+		x = 22
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_SEIZE_THE_GEONESE_FLEET
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = TWO_TAKE_GENOA }
+		x = 20
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_MARCH_ON_VENICE
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = TWO_SEIZE_THE_GEONESE_FLEET }
+		x = 20
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_ARMANDO_DIAZ_MARSHALL_OF_ITALY
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_MARCH_ON_VENICE }
+		prerequisite = { focus = TWO_TAKE_OUT_SAVOY }
+		x = 20
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_THE_ITALIAN_STATE
+		icon = GFX_focus_generic_italy_first
+		prerequisite = { focus = TWO_ARMANDO_DIAZ_MARSHALL_OF_ITALY }
+		x = 20
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_ASSAULT_MILAN
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = TWO_TAKE_GENOA }
+		x = 22
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_TAKE_OUT_SAVOY
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = TWO_ASSAULT_MILAN }
+		x = 22
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_INVADE_THE_ISLANDS
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = TWO_TAKE_OUT_SAVOY }
+		prerequisite = { focus = TWO_MARCH_ON_VENICE }
+		x = 22
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_ANTI-CORRUPTION_CAMPAIGN
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = TWO_ONE_FOOT_IN_THE_GRAVE }
+		x = 25
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_WAR_ON_TERRORISM
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = TWO_ANTI-CORRUPTION_CAMPAIGN }
+		x = 24
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_WAR_ON_ORGANIZED_CRIME
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TWO_ANTI-CORRUPTION_CAMPAIGN }
+		x = 26
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_EXPAND_THE_SECRET_POLICE
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = TWO_WAR_ON_TERRORISM }
+		x = 24
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_ANTI-FEUDAL_MEASURES
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = TWO_WAR_ON_ORGANIZED_CRIME }
+		x = 26
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_ARREST_ACHILLE_STARACE
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_EXPAND_THE_SECRET_POLICE }
+		x = 24
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_CRACK_DOWN_ON_HUMAN_TRAFFICKING
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_ANTI-FEUDAL_MEASURES }
+		x = 26
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_THE_LECCE_RIOTS
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = TWO_ARREST_ACHILLE_STARACE }
+		x = 24
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_CRACKDOWN_ON_DRUG_TRAFFICKING
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_CRACK_DOWN_ON_HUMAN_TRAFFICKING }
+		x = 26
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_MASS_ARRESTS
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_CRACKDOWN_ON_DRUG_TRAFFICKING focus = TWO_THE_LECCE_RIOTS }
+		x = 25
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_MAXIPROCESSO
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_MASS_ARRESTS }
+		x = 25
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_CARBONERIA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_MAXIPROCESSO }
+		x = 24
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_ONORATA_SOCIETA
+		icon = GFX_goal_unknown
+		prerequisite = { focus = TWO_MAXIPROCESSO }
+		x = 26
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = TWO_ROOT_OUT_HIGH_LEVEL_CORRUPTION
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = TWO_ONORATA_SOCIETA focus = TWO_CARBONERIA }
+		x = 25
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+}

@@ -1,0 +1,34 @@
+
+state={
+	id=586
+	name="STATE_586"
+	resources={
+		steel=48.000
+		chromium=44.000
+		tungsten=14.000
+		aluminium=32.000
+	}
+
+	history={
+		owner = KOK
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+
+		}
+		victory_points = {
+			1591 3 
+		}
+		add_core_of = KOK
+		add_core_of = RUS
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		1483 1825 4316 7706 10408 10488 10530 10603 10660 12370 12583 12640 
+	}
+	manpower=2563404
+	buildings_max_level_factor=1.000
+	state_category=city
+}

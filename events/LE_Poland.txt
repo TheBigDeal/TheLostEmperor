@@ -1,0 +1,185 @@
+﻿###########################
+# French Events
+###########################
+
+add_namespace = le_poland
+
+country_event = { #PRUSSIA GIVES POLAND TO DANUBIANS
+	id = le_poland.1
+	title = le_poland.1.t
+	desc = le_poland.1.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		AND = {
+			POL = { NOT = { has_country_flag = danubian_puppet } }
+			POL = { NOT = { has_country_flag = prussian_puppet } }
+			OR = {
+				AND = {
+					date > 1929.10.10 #START DATE
+					date < 1929.12.10
+				}
+				AND = {
+					date > 1931.10.10 
+					date < 1931.12.10
+				}
+				AND = {
+					date > 1933.10.10 
+					date < 1933.12.10
+				}
+				AND = {
+					date > 1935.10.10 
+					date < 1935.12.10
+				}
+				AND = {
+					date > 1935.10.10 
+					date < 1935.12.10
+				}
+				AND = {
+					date > 1937.10.10 
+					date < 1937.12.10
+				}
+				AND = {
+					date > 1939.10.10
+					date < 1939.12.10
+				}
+				AND = {
+					date > 1941.10.10
+					date < 1941.12.10
+				}
+				AND = {
+					date > 1943.10.10
+					date < 1943.12.10
+				}
+				AND = {
+					date > 1945.10.10 
+					date < 1945.12.10
+				}
+				AND = {
+					date > 1947.10.10
+					date < 1947.12.10
+				}
+				AND = {
+					date > 1949.10.10 
+					date < 1949.12.10
+				}
+			}
+			tag = PRS
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = { #Transfer Vassal
+		name = le_poland.1.a
+		PRS = { end_puppet = POL }
+		DAN = { puppet = POL }
+		
+		ai_chance = { 
+			factor = 10 
+		}
+    }
+	option = { #Refuse Transfer
+		name = le_poland.1.a
+		
+		DAN = {
+			create_wargoal = {
+				target = POL
+				type = puppet_wargoal_focus
+			}
+		}
+		
+		ai_chance = { 
+			factor = 2
+		}
+    }
+}
+
+country_event = {
+	id = le_poland.2
+	title = le_poland.2.t
+	desc = le_poland.2.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		AND = {
+			POL = { NOT = { has_country_flag = danubian_puppet } }
+			POL = { NOT = { has_country_flag = prussian_puppet } }
+			OR = {
+				AND = {
+					date > 1930.10.10 #START DATE
+					date < 1930.12.10
+				}
+				AND = {
+					date > 1932.10.10 
+					date < 1932.12.10
+				}
+				AND = {
+					date > 1934.10.10 
+					date < 1934.12.10
+				}
+				AND = {
+					date > 1936.10.10 
+					date < 1936.12.10
+				}
+				AND = {
+					date > 1938.10.10 
+					date < 1938.12.10
+				}
+				AND = {
+					date > 1940.10.10 
+					date < 1940.12.10
+				}
+				AND = {
+					date > 1942.10.10
+					date < 1942.12.10
+				}
+				AND = {
+					date > 1944.10.10
+					date < 1944.12.10
+				}
+				AND = {
+					date > 1946.10.10
+					date < 1946.12.10
+				}
+				AND = {
+					date > 1948.10.10 
+					date < 1948.12.10
+				}
+				AND = {
+					date > 1950.10.10
+					date < 1950.12.10
+				}
+			}
+			tag = DAN
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = { #Transfer Vassal to Prussia
+		name = le_poland.1.a
+		DAN = { end_puppet = POL }
+		PRS = { puppet = POL }
+		
+		ai_chance = { 
+			factor = 10 
+		}
+    }
+	option = { #Refuse Transfer
+		name = le_poland.1.a
+		
+		PRS = {
+			create_wargoal = {
+				target = POL
+				type = puppet_wargoal_focus
+			}
+		}
+		
+		ai_chance = { 
+			factor = 2
+		}
+    }
+}

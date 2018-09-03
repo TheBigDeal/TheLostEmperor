@@ -1,0 +1,27 @@
+
+state={
+	id=811
+	name="STATE_811"
+
+	history={
+		owner = ANH
+		victory_points = {
+			9560 1
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			air_base = 5
+
+		}
+		add_core_of = ANH
+
+	}
+
+	provinces={
+		9560 
+	}
+	manpower=435653
+	buildings_max_level_factor=1.000
+	state_category=town
+}
