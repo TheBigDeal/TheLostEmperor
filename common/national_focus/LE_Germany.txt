@@ -1,23 +1,36 @@
 focus_tree = {
 	id = prussian_focus
-	
 	country = {
 		factor = 0
-		
 		modifier = {
 			add = 10
 			tag = GER
 		}
 	}
-	
 	default = no
 	continuous_focus_position = { x = 50 y = 3100 }
-	
+	focus = {
+		id = GER_DEUTSCHES_KAISERREICH
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 38
+		y = 0
+		cost = 10
+		bypass = {
+			tag = GER
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+
+		}
+	}
 	focus = {
 		id = GER_FINALIZE_NATION
-		icon = GFX_focus_kaiserreich
-		x = 18
-		y = 0
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = GER_DEUTSCHES_KAISERREICH }
+		x = 38
+		y = 1
 		cost = 10
 		available = {
 			has_global_flag = prussia_germany
@@ -26,1147 +39,1103 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			custom_effect_tooltip = GER_KING_OF_GERMANY_tt
 			country_event = le_prussia.2
-			786 = { add_core_of = GER }
-			61 = { add_core_of = GER }
-			59 = { add_core_of = GER }
-			770 = { add_core_of = GER }
-			747 = { add_core_of = GER }
-			748 = { add_core_of = GER }
-			58 = { add_core_of = GER }
-			771 = { add_core_of = GER }
-			769 = { add_core_of = GER }
-			816 = { add_core_of = GER }
-			57 = { add_core_of = GER }
-			56 = { add_core_of = GER }
-			754 = { add_core_of = GER }
-			817 = { add_core_of = GER }
-			818 = { add_core_of = GER }
-			753 = { add_core_of = GER }
-			811 = { add_core_of = GER }
-			813 = { add_core_of = GER }
-			812 = { add_core_of = GER }
-			60 = { add_core_of = GER }
-			65 = { add_core_of = GER }
-			757 = { add_core_of = GER }
-			55 = { add_core_of = GER }
-			820 = { add_core_of = GER }
-			819 = { add_core_of = GER }
-			810 = { add_core_of = GER }
-			759 = { add_core_of = GER }
-			822 = { add_core_of = GER }
-			51 = { add_core_of = GER }
-			755 = { add_core_of = GER }
-			821 = { add_core_of = GER }
-			756 = { add_core_of = GER }
-			744 = { add_core_of = GER }
-			42 = { add_core_of = GER }
-			800 = { add_core_of = GER }
-			795 = { add_core_of = GER }
-			53 = { add_core_of = GER }
-			52 = { add_core_of = GER }
-			766 = { add_core_of = GER }
-			765 = { add_core_of = GER }
-			758 = { add_core_of = GER }
-			745 = { add_core_of = GER }
-			744 = { add_core_of = GER }
-			768 = { add_core_of = GER }
-			42 = { add_core_of = GER }
-			823 = { add_core_of = GER }
-			822 = { add_core_of = GER }
-			796 = { add_core_of = GER }
-			746 = { add_core_of = GER }
-			798 = { add_core_of = GER }
-			797 = { add_core_of = GER }
-			805 = { add_core_of = GER }
-			50 = { add_core_of = GER }
-			804 = { add_core_of = GER }
-			743 = { add_core_of = GER }
-			802 = { add_core_of = GER }
-			743 = { add_core_of = GER }
-			803 = { add_core_of = GER }
-			801 = { add_core_of = GER }
-			54 = { add_core_of = GER }
-			745 = { add_core_of = GER }
-			793 = { add_core_of = GER }
-			815 = { add_core_of = GER }
-			767 = { add_core_of = GER }
-			799 = { add_core_of = GER }
-			824 = { add_core_of = GER }
-			800 = { add_core_of = GER }
-		}
-	}
-	
-	focus = {
-		id = GER_MONARCHIST_GOVERNMENT
-		icon = GFX_focus_hun_elect_a_king
-		prerequisite = { focus = GER_FINALIZE_NATION }
-		mutually_exclusive = { focus = GER_DISPOSE_OF_THE_KAISER }
-		x = 10
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			custom_effect_tooltip = GER_KING_OF_GERMANY_tt
-		}
-	}
-	focus = {
-		id = GER_REXISM
-		icon = GFX_focus_hun_elect_a_king
-		prerequisite = { focus = GER_MONARCHIST_GOVERNMENT }
-		mutually_exclusive = { focus = GER_ROYALISM focus = GER_ABSOLUTISM }
-		x = 8
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			custom_effect_tooltip = GER_REXISM_tt
-		}
-	}
-	focus = {
-		id = GER_DISPOSE_OF_OLD_KINGS
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = GER_REXISM }
-		x = 8
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = GER_ABSOLUTISM
-		icon = GFX_focus_hun_elect_a_king
-		prerequisite = { focus = GER_MONARCHIST_GOVERNMENT }
-		mutually_exclusive = { focus = GER_ROYALISM focus = GER_REXISM }
-		x = 10
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			custom_effect_tooltip = GER_ABSOLUTISM_tt
-		}
-	}
-	focus = {
-		id = GER_APPEASE_OLD_KINGS
-		icon = GFX_focus_generic_concessions
-		prerequisite = { focus = GER_ABSOLUTISM }
-		x = 10
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = GER_ROYALISM
-		icon = GFX_focus_hun_elect_a_king
-		prerequisite = { focus = GER_MONARCHIST_GOVERNMENT }
-		mutually_exclusive = { focus = GER_ABSOLUTISM focus = GER_REXISM }
-		x = 12
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			custom_effect_tooltip = GER_ROYALISM_tt
-		}
-	}
-	focus = {
-		id = GER_CREATE_REICHSTAG
-		icon = GFX_focus_generic_self_management
-		prerequisite = { focus = GER_ROYALISM }
-		x = 12
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = GER_MISSION_TO_AFRICA
-		icon = GFX_focus_mission_to_africa
-		prerequisite = { focus = GER_DISPOSE_OF_OLD_KINGS focus = GER_APPEASE_OLD_KINGS focus = GER_CREATE_REICHSTAG }
-		x = 6
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = GER_EXPAND_COLONIAL_BORDERS
-		icon = GFX_goal_demand_sudetenland
-		prerequisite = { focus = GER_MISSION_TO_AFRICA }
-		x = 3
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = GER_CLAIM_KENYA
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = GER_EXPAND_COLONIAL_BORDERS }
-		x = 0
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_state_claim = 548
-			add_state_claim = 547
-			add_state_claim = 546
-		}
-	}
-	focus = {
-		id = GER_DEMAND_KENYA
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = GER_CLAIM_KENYA }
-		x = 0
-		y = 8
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			transfer_state = 548
-			transfer_state = 547
-			transfer_state = 546
-		}
-	}
-	focus = {
-		id = GER_CLAIM_ZIMBABWE
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = GER_EXPAND_COLONIAL_BORDERS }
-		x = 2
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_state_claim = 545
-		}
-	}
-	focus = {
-		id = GER_DEMAND_ZIMBABWE
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = GER_CLAIM_ZIMBABWE }
-		x = 2
-		y = 8
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			transfer_state = 545
-		}
-	}
-	focus = {
-		id = GER_CLAIM_MOZAMBIQUE
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = GER_EXPAND_COLONIAL_BORDERS }
-		x = 4
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_state_claim = 544
-		}
-	}
-	focus = {
-		id = GER_DEMAND_MOZAMBIQUE
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = GER_CLAIM_MOZAMBIQUE }
-		x = 4
-		y = 8
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			transfer_state = 544
-		}
-	}
-	focus = {
-		id = GER_CLAIM_ANGOLA
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = GER_EXPAND_COLONIAL_BORDERS }
-		x = 6
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_state_claim = 540
-		}
-	}
-	focus = {
-		id = GER_DEMAND_ANGOLA
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = GER_CLAIM_ANGOLA }
-		x = 6
-		y = 8
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			transfer_state = 540
-		}
-	}
-	focus = {
-		id = GER_DEVELOP_COLONIAL_HOLDINGS
-		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = GER_MISSION_TO_AFRICA }
-		x = 9
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = GER_DEVELOP_CONGO_INFRASTRUCTURE
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = GER_DEVELOP_COLONIAL_HOLDINGS }
-		x = 8
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = GER_DEVELOP_CONGO_RESOURCES
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = GER_DEVELOP_COLONIAL_HOLDINGS }
-		x = 10
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = GER_FAN_MILITARISM
-		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = GER_DISPOSE_OF_OLD_KINGS focus = GER_APPEASE_OLD_KINGS focus = GER_CREATE_REICHSTAG }
-		x = 10
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			swap_ideas = {
-				add_idea = PRS_GERMAN_MILITARISM
-				remove_idea = PRS_PRUSSIAN_MILITARISM
+			custom_effect_tooltip = GER_FINALIZE_NATION_tt
+			hidden_effect = {
+				786 = { add_core_of = GER }
+				61 = { add_core_of = GER }
+				59 = { add_core_of = GER }
+				770 = { add_core_of = GER }
+				747 = { add_core_of = GER }
+				748 = { add_core_of = GER }
+				58 = { add_core_of = GER }
+				771 = { add_core_of = GER }
+				769 = { add_core_of = GER }
+				816 = { add_core_of = GER }
+				57 = { add_core_of = GER }
+				56 = { add_core_of = GER }
+				754 = { add_core_of = GER }
+				817 = { add_core_of = GER }
+				818 = { add_core_of = GER }
+				753 = { add_core_of = GER }
+				811 = { add_core_of = GER }
+				813 = { add_core_of = GER }
+				812 = { add_core_of = GER }
+				60 = { add_core_of = GER }
+				65 = { add_core_of = GER }
+				757 = { add_core_of = GER }
+				55 = { add_core_of = GER }
+				820 = { add_core_of = GER }
+				819 = { add_core_of = GER }
+				810 = { add_core_of = GER }
+				759 = { add_core_of = GER }
+				822 = { add_core_of = GER }
+				51 = { add_core_of = GER }
+				755 = { add_core_of = GER }
+				821 = { add_core_of = GER }
+				756 = { add_core_of = GER }
+				744 = { add_core_of = GER }
+				42 = { add_core_of = GER }
+				800 = { add_core_of = GER }
+				795 = { add_core_of = GER }
+				53 = { add_core_of = GER }
+				52 = { add_core_of = GER }
+				766 = { add_core_of = GER }
+				765 = { add_core_of = GER }
+				758 = { add_core_of = GER }
+				745 = { add_core_of = GER }
+				744 = { add_core_of = GER }
+				768 = { add_core_of = GER }
+				42 = { add_core_of = GER }
+				823 = { add_core_of = GER }
+				822 = { add_core_of = GER }
+				796 = { add_core_of = GER }
+				746 = { add_core_of = GER }
+				798 = { add_core_of = GER }
+				797 = { add_core_of = GER }
+				805 = { add_core_of = GER }
+				50 = { add_core_of = GER }
+				804 = { add_core_of = GER }
+				743 = { add_core_of = GER }
+				802 = { add_core_of = GER }
+				743 = { add_core_of = GER }
+				803 = { add_core_of = GER }
+				801 = { add_core_of = GER }
+				54 = { add_core_of = GER }
+				745 = { add_core_of = GER }
+				793 = { add_core_of = GER }
+				815 = { add_core_of = GER }
+				767 = { add_core_of = GER }
+				799 = { add_core_of = GER }
+				824 = { add_core_of = GER }
+				800 = { add_core_of = GER }
 			}
 		}
 	}
-	
 	focus = {
-		id = GER_GROSSDEUTSCHLAND
-		icon = GFX_focus_grossdeutchland
-		prerequisite = { focus = GER_DISPOSE_OF_OLD_KINGS focus = GER_APPEASE_OLD_KINGS focus = GER_CREATE_REICHSTAG }
-		x = 14
+		id = GER_GERMAN_MILITARISM
+		icon = GFX_focus_ger_return_of_the_kaiser
+		prerequisite = { focus = GER_FINALIZE_NATION }
+		x = 38
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_BUILD_UP_THE_ECONOMY
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = GER_GERMAN_MILITARISM }
+		x = 38
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_RESEARCH_COMMITTEE
+		icon = GFX_focus_research
+		prerequisite = { focus = GER_BUILD_UP_THE_ECONOMY }
+		x = 38
 		y = 5
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			
+
 		}
 	}
 	focus = {
-		id = GER_DEMAND_ELSACE
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = GER_GROSSDEUTSCHLAND }
-		x = 12
+		id = GER_SAXON_MILITARY_INDUSTRY
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GER_BUILD_UP_THE_ECONOMY }
+		mutually_exclusive = { focus = GER_SAXON_CIVILIAN_INDUSTRY }
+		x = 40
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_SAXON_CIVILIAN_INDUSTRY
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = GER_BUILD_UP_THE_ECONOMY }
+		mutually_exclusive = { focus = GER_SAXON_MILITARY_INDUSTRY }
+		x = 42
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_BAVARIAN_MILITARY_INDUSTRY
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GER_SAXON_CIVILIAN_INDUSTRY focus = GER_SAXON_MILITARY_INDUSTRY }
+		mutually_exclusive = { focus = GER_BAVARIAN_CIVILIAN_INDUSTRY }
+		x = 40
 		y = 6
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			
+
 		}
 	}
 	focus = {
-		id = GER_COUP_IN_NETHERLANDS
-		icon = GFX_focus_generic_little_entente
-		prerequisite = { focus = GER_GROSSDEUTSCHLAND }
-		x = 14
+		id = GER_BAVARIAN_CIVILIAN_INDUSTRY
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = GER_SAXON_CIVILIAN_INDUSTRY focus = GER_SAXON_MILITARY_INDUSTRY }
+		mutually_exclusive = { focus = GER_BAVARIAN_MILITARY_INDUSTRY }
+		x = 42
 		y = 6
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			
+
 		}
 	}
 	focus = {
-		id = GER_ENVOY_TO_DUKE_HENRY_OF_MECKLENBURG
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_COUP_IN_NETHERLANDS }
-		x = 14
+		id = GER_HANNOVER_MILITARY_INDUSTRY
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GER_BAVARIAN_CIVILIAN_INDUSTRY focus = GER_BAVARIAN_MILITARY_INDUSTRY }
+		mutually_exclusive = { focus = GER_HANNOVER_CIVILIAN_INDUSTRY }
+		x = 40
 		y = 7
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			
+
 		}
 	}
 	focus = {
-		id = GER_PREPARE_COUP
-		icon = GFX_focus_generic_air_defense
-		prerequisite = { focus = GER_ENVOY_TO_DUKE_HENRY_OF_MECKLENBURG }
-		x = 14
+		id = GER_HANNOVER_CIVILIAN_INDUSTRY
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = GER_BAVARIAN_CIVILIAN_INDUSTRY focus = GER_BAVARIAN_MILITARY_INDUSTRY }
+		mutually_exclusive = { focus = GER_HANNOVER_MILITARY_INDUSTRY }
+		x = 42
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_RHINE_MILITARY_INDUSTRY
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GER_HANNOVER_CIVILIAN_INDUSTRY focus = GER_HANNOVER_MILITARY_INDUSTRY }
+		mutually_exclusive = { focus = GER_RHINE_CIVILIAN_INDUSTRY }
+		x = 40
 		y = 8
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			
+
 		}
 	}
 	focus = {
-		id = GER_SEND_SUPPLIES
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = GER_PREPARE_COUP }
-		x = 14
+		id = GER_RHINE_CIVILIAN_INDUSTRY
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = GER_HANNOVER_CIVILIAN_INDUSTRY focus = GER_HANNOVER_MILITARY_INDUSTRY }
+		mutually_exclusive = { focus = GER_RHINE_MILITARY_INDUSTRY }
+		x = 42
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_AUTOBAHN_CONSTRUCTION
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = GER_BUILD_UP_THE_ECONOMY }
+		x = 36
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_KONIGSBERG_AIRFIELDS
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = GER_AUTOBAHN_CONSTRUCTION }
+		x = 35
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_BADEN_AIRFIELDS
+		icon = GFX_focus_generic_air_defense
+		prerequisite = { focus = GER_AUTOBAHN_CONSTRUCTION }
+		x = 37
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_FRISIAN_PORTS
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GER_BADEN_AIRFIELDS }
+		prerequisite = { focus = GER_KONIGSBERG_AIRFIELDS }
+		x = 37
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_POMERANIAN_PORTS
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GER_BADEN_AIRFIELDS }
+		prerequisite = { focus = GER_KONIGSBERG_AIRFIELDS }
+		x = 35
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_FORTIFY_THE_RHINE
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = GER_POMERANIAN_PORTS }
+		prerequisite = { focus = GER_KONIGSBERG_AIRFIELDS }
+		x = 37
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_FORTIFY_THE_EAST
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = GER_POMERANIAN_PORTS }
+		prerequisite = { focus = GER_FRISIAN_PORTS }
+		x = 35
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_ECONOMIC_BOOM
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = GER_RHINE_CIVILIAN_INDUSTRY focus = GER_RHINE_MILITARY_INDUSTRY }
+		prerequisite = { focus = GER_FORTIFY_THE_EAST }
+		prerequisite = { focus = GER_FORTIFY_THE_RHINE }
+		x = 38
 		y = 9
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			
+
 		}
 	}
 	focus = {
-		id = GER_START_COUP
-		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = { focus = GER_SEND_SUPPLIES }
-		x = 14
-		y = 10
+		id = GER_LONG_LIVE_THE_KAISER
+		icon = GFX_focus_ger_return_of_the_kaiser
+		prerequisite = { focus = GER_FINALIZE_NATION }
+		mutually_exclusive = { focus = GER_EXPEL_THE_KAISER }
+		x = 20
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			HOL =  { country_event = { days = 1 id = dutchrevolt.1 } }
+
 		}
 	}
 	focus = {
-		id = GER_AUSTRIA
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = GER_GROSSDEUTSCHLAND }
+		id = GER_APPOINT_A_CHANCELLOR
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = GER_LONG_LIVE_THE_KAISER }
+		mutually_exclusive = { focus = GER_THE_KAISER_RULES_ALL focus = GER_THE_KAISER_STEPS_DOWN }
 		x = 17
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_ESTABLISH_REICHSTAG
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = GER_APPOINT_A_CHANCELLOR }
+		x = 17
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_THE_KAISER_RULES_ALL
+		icon = GFX_focus_hun_elect_a_king
+		prerequisite = { focus = GER_LONG_LIVE_THE_KAISER }
+		mutually_exclusive = { focus = GER_APPOINT_A_CHANCELLOR focus = GER_THE_KAISER_STEPS_DOWN }
+		x = 20
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_REWRITE_CONSTITUTION
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GER_THE_KAISER_RULES_ALL }
+		x = 20
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_GROSSDEUTCHLAND
+		icon = GFX_focus_grossdeutschland
+		prerequisite = { focus = GER_ESTABLISH_REICHSTAG focus = GER_REWRITE_CONSTITUTION }
+		mutually_exclusive = { focus = GER_KLIENDEUTCHLAND }
+		x = 17
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_ANSCHLUSS
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = GER_GROSSDEUTCHLAND }
+		mutually_exclusive = { focus = GER_PLOT_AGAINST_AUSTRIA }
+		x = 16
 		y = 6
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			
+
 		}
 	}
 	focus = {
-		id = GER_BREAK_UP_DANUBIAN_KINGDOMS
-		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = GER_AUSTRIA }
-		x = 17
+		id = GER_CLAIM_THE_SUDETENLAND
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GER_ANSCHLUSS }
+		x = 16
 		y = 7
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			
+
 		}
 	}
 	focus = {
-		id = GER_ANNEX_AUSTRIA
-		icon = GFX_goal_demand_sudetenland
-		prerequisite = { focus = GER_BREAK_UP_DANUBIAN_KINGDOMS }
+		id = GER_DEMAND_THE_CZECHS_TO_FOLD
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus = GER_CLAIM_THE_SUDETENLAND }
 		x = 16
 		y = 8
 		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_PLOT_AGAINST_AUSTRIA
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = GER_GROSSDEUTCHLAND }
+		mutually_exclusive = { focus = GER_ANSCHLUSS }
+		x = 18
+		y = 6
+		cost = 10
 		available = {
-			country_exists = AUS
+			AND = {
+				country_exists = AUS 
+				OR = {
+					AUS = {
+							owns_state = 43
+					}
+					HUN = {
+						is_puppet_of = AUS
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			
+
 		}
 	}
 	focus = {
-		id = GER_ANNEX_BOHEMIA
-		icon = GFX_goal_demand_sudetenland
-		prerequisite = { focus = GER_BREAK_UP_DANUBIAN_KINGDOMS }
+		id = GER_CONTACT_HUNGARIAN_REVOLUTIONARIES
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = GER_PLOT_AGAINST_AUSTRIA }
+		x = 18
+		y = 7
+		cost = 10
+		available = {
+			AND = {
+				country_exists = AUS 
+				OR = {
+					AUS = {
+							owns_state = 43
+					}
+					HUN = {
+						is_puppet_of = AUS
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_IGNITE_THE_FIRES_OF_REVOLUTION!
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GER_CONTACT_HUNGARIAN_REVOLUTIONARIES }
 		x = 18
 		y = 8
 		cost = 10
 		available = {
-			country_exists = BOH
-			GER = { has_completed_focus = GER_ANNEX_AUSTRIA }
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = GER_DISPOSE_OF_THE_KAISER
-		icon = GFX_focus_rom_handle_king
-		prerequisite = { focus = GER_FINALIZE_NATION }
-		mutually_exclusive = { focus = GER_MONARCHIST_GOVERNMENT }
-		x = 26
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = GER_GREEK_IDEALS
-		icon = GFX_focus_rom_handle_king
-		prerequisite = { focus = GER_DISPOSE_OF_THE_KAISER }
-		mutually_exclusive = { focus = GER_UNITE_THE_WORKERS focus = GER_ELECT_A_CHANCELLOR }
-		x = 32
-		y = 3
-		cost = 10
-		available = {
-			OR = {
-				country_exists = SPT
-				any_country = { has_government = labryscism }
+			AND = {
+				country_exists = AUS 
+				OR = {
+					AUS = {
+							owns_state = 43
+					}
+					HUN = {
+						is_puppet_of = AUS
+					}
+				}
 			}
 		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = GER_UNITE_THE_WORKERS
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = GER_DISPOSE_OF_THE_KAISER }
-		mutually_exclusive = { focus = GER_GREEK_IDEALS focus = GER_ELECT_A_CHANCELLOR }
-		x = 25
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
+
 		}
 	}
 	focus = {
-		id = GER_COLLECTIVISM
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = GER_UNITE_THE_WORKERS }
-		mutually_exclusive = { focus = GER_NATURALISM focus = GER_PROLETARIANISM }
-		x = 23
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_PROLETARIANISM
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = GER_UNITE_THE_WORKERS }
-		mutually_exclusive = { focus = GER_COLLECTIVISM focus = GER_NATURALISM }
-		x = 25
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_EXERT_INFLUENCE
-		icon = GFX_goal_generic_radar
-		prerequisite = { focus = GER_COLLECTIVISM }
-		x = 23
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_INCREASE_PROPAGANDA
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = GER_PROLETARIANISM }
-		x = 25
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_NATURALISM
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = GER_UNITE_THE_WORKERS }
-		mutually_exclusive = { focus = GER_COLLECTIVISM focus = GER_PROLETARIANISM }
-		x = 27
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_NEW_CONSTITUTION
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_NATURALISM }
-		x = 27
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_SPREAD_IDEOLOGY
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_NEW_CONSTITUTION focus = GER_INCREASE_PROPAGANDA focus = GER_EXERT_INFLUENCE }
-		x = 22
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_ANTI_IMPERIALISM
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_NEW_CONSTITUTION focus = GER_INCREASE_PROPAGANDA focus = GER_EXERT_INFLUENCE }
-		x = 28
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_CRUSH_FRENCH_IMPERIALISTS
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_ANTI_IMPERIALISM }
-		x = 28
-		y = 7
-		cost = 10
-		available = {
-			OR = {
-				FRA = { has_government = absolutism } 
-				FRA = { has_government = royalism } 
-				FRA = { has_government = theocracy } 
-				FRA = { has_government = rexism } 
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_INVADE_BURGUNDY
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_CRUSH_FRENCH_IMPERIALISTS }
-		x = 28
-		y = 8
-		cost = 10
-		bypass = {
-			NOT = { country_exists = BUR }
-		}
-		available = {
-			OR = {
-				FRA = { has_government = absolutism } 
-				FRA = { has_government = royalism } 
-				FRA = { has_government = theocracy } 
-				FRA = { has_government = rexism } 
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_INFLUENCE_FRENCH_MINORS
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_INVADE_BURGUNDY }
-		x = 28
+		id = GER_INTEGRATE_AUSTRIA
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = GER_DEMAND_THE_CZECHS_TO_FOLD focus = GER_IGNITE_THE_FIRES_OF_REVOLUTION }
+		x = 16
 		y = 9
 		cost = 10
-		bypass = {
-			NOT = { country_exists = BUR }
-		}
-		available = {
-			OR = {
-				FRA = { has_government = absolutism } 
-				FRA = { has_government = royalism } 
-				FRA = { has_government = theocracy } 
-				FRA = { has_government = rexism } 
-			}
-		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
+
 		}
 	}
 	focus = {
-		id = GER_INVADE_THE_SWISS_CONFEDERATION
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_INFLUENCE_FRENCH_MINORS }
-		x = 28
-		y = 9
-		cost = 10
-		bypass = {
-			NOT = { country_exists = BUR }
-		}
-		available = {
-			OR = {
-				FRA = { has_government = absolutism } 
-				FRA = { has_government = royalism } 
-				FRA = { has_government = theocracy } 
-				FRA = { has_government = rexism } 
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = GER_SUPPORT_FRENCH_MINORS
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_INVADE_THE_SWISS_CONFEDERATION }
-		x = 28
+		id = GER_AUSTRIAN_GOLD_MINES
+		icon = GFX_goldmines
+		prerequisite = { focus = GER_INTEGRATE_AUSTRIA }
+		x = 14
 		y = 10
 		cost = 10
-		bypass = {
-			NOT = { country_exists = NRM }
-			NOT = { country_exists = BRI }
+		ai_will_do = {
+			factor = 10
 		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_AUSTRIAN_STYLE_COURTS
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = GER_INTEGRATE_AUSTRIA }
+		x = 16
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INTEGRATE_BOHEMIA
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = GER_DEMAND_THE_CZECHS_TO_FOLD focus = GER_IGNITE_THE_FIRES_OF_REVOLUTION }
+		x = 18
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_BOHEMIAN_STEEL_MILLS
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = GER_INTEGRATE_BOHEMIA }
+		x = 18
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_BOHEMIAN_INDUSTRIALIZATION
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = GER_INTEGRATE_BOHEMIA }
+		x = 20
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_A_NEW_GERMANY
+		icon = GFX_focus_ger_return_of_the_kaiser
+		prerequisite = { focus = GER_AUSTRIAN_GOLD_MINES }
+		prerequisite = { focus = GER_AUSTRIAN_STYLE_COURTS }
+		prerequisite = { focus = GER_BOHEMIAN_INDUSTRIALIZATION }
+		prerequisite = { focus = GER_BOHEMIAN_STEEL_MILLS }
+		x = 17
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_COLONIALISM_EXPANSION
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = GER_ESTABLISH_REICHSTAG focus = GER_REWRITE_CONSTITUTION }
+		x = 11
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_EXPAND_THE_HANSA
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = GER_COLONIALISM_EXPANSION }
+		mutually_exclusive = { focus = GER_SEIZE_THE_HANSA }
+		x = 10
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_CONSOLIDATE_THE_HANSA
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = GER_EXPAND_THE_HANSA }
+		x = 10
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_THE_FREE_CITY_OF_LUBEK
+		icon = GFX_lubek
+		prerequisite = { focus = GER_CONSOLIDATE_THE_HANSA }
+		x = 10
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_THE_FREE_CITY_OF_DANZIG
+		icon = GFX_danzig
+		prerequisite = { focus = GER_THE_FREE_CITY_OF_LUBEK }
+		x = 10
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_SEIZE_THE_HANSA
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = GER_COLONIALISM_EXPANSION }
+		mutually_exclusive = { focus = GER_EXPAND_THE_HANSA }
+		x = 12
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_PUSH_FOR_MITTELAFRIKA
+		icon = GFX_focus_mission_to_africa
+		prerequisite = { focus = GER_SEIZE_THE_HANSA focus = GER_EXPAND_THE_HANSA }
+		x = 12
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_ASSERT_CLAIMS
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GER_PUSH_FOR_MITTELAFRIKA }
+		x = 12
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_PUSH_PORTUGAL_OUT_OF_AFRICA
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = GER_ASSERT_CLAIMS }
+		x = 12
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_EXPAND_INDONESIA
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = GER_SEIZE_THE_HANSA focus = GER_EXPAND_THE_HANSA }
+		x = 14
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_ATTACK_THE_ITALIAN_MARITIME_COMPANY
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = GER_EXPAND_INDONESIA }
+		x = 14
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_KLIENDEUTCHLAND
+		icon = GFX_kleindeutschland
+		prerequisite = { focus = GER_ESTABLISH_REICHSTAG focus = GER_REWRITE_CONSTITUTION }
+		mutually_exclusive = { focus = GER_GROSSDEUTCHLAND }
+		x = 4
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_CENTRAL_POWERS
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = GER_KLIENDEUTCHLAND }
+		mutually_exclusive = { focus = GER_MITTELEUROPA }
+		x = 2
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INVITE_AUSTRIA
+		icon = GFX_focus_support_austria
+		prerequisite = { focus = GER_CENTRAL_POWERS }
+		x = 1
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INVITE_THE_OTTOMANS
+		icon = GFX_focus_support_ottomans
+		prerequisite = { focus = GER_CENTRAL_POWERS }
+		x = 3
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INVITE_BULGARIA
+		icon = GFX_focus_support_bulgaria
+		prerequisite = { focus = GER_INVITE_AUSTRIA }
+		prerequisite = { focus = GER_INVITE_THE_OTTOMANS }
+		x = 2
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_THE_HEART_OF_EUROPE
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = GER_INVITE_BULGARIA focus = GER_SUBJUGATE_DENMARK }
+		x = 4
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INDUSTRIALIZATION_EFFORT_I
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = GER_THE_HEART_OF_EUROPE }
+		x = 3
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INDUSTRIALIZATION_EFFORT_II
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = GER_THE_HEART_OF_EUROPE }
+		x = 5
+		y = 10
+		cost = 10
 		available = {
-			OR = {
-				FRA = { has_government = absolutism } 
-				FRA = { has_government = royalism } 
-				FRA = { has_government = theocracy } 
-				FRA = { has_government = rexism } 
-			}
+			has_completed_focus = GER_INDUSTRIALIZATION_EFFORT_I
 		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
+
 		}
 	}
-	
+	focus = {
+		id = GER_INDUSTRIALIZATION_EFFORT_III
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = GER_INDUSTRIALIZATION_EFFORT_II }
+		prerequisite = { focus = GER_INDUSTRIALIZATION_EFFORT_I }
+		x = 4
+		y = 11
+		cost = 10
+		available = {
+			has_completed_focus = GER_INDUSTRIALIZATION_EFFORT_II
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_MITTELEUROPA
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = GER_KLIENDEUTCHLAND }
+		mutually_exclusive = { focus = GER_CENTRAL_POWERS }
+		x = 6
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_SUBJUGATE_BELGIUM
+		icon = GFX_focus_attack_belgium
+		prerequisite = { focus = GER_MITTELEUROPA }
+		x = 5
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_SUBJUGATE_THE_DUTCH
+		icon = GFX_focus_attack_netherlands
+		prerequisite = { focus = GER_MITTELEUROPA }
+		x = 7
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_SUBJUGATE_DENMARK
+		icon = GFX_focus_attack_denmark
+		prerequisite = { focus = GER_SUBJUGATE_THE_DUTCH }
+		prerequisite = { focus = GER_SUBJUGATE_BELGIUM }
+		x = 6
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_EUROPEAN_CAMPAIGN
+		icon = GFX_focus_ger_oppose_hitler
+		prerequisite = { focus = GER_INDUSTRIALIZATION_EFFORT_III focus = GER_A_NEW_GERMANY }
+		x = 12
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_WESTERN_CAMPAIGN
+		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+		prerequisite = { focus = GER_EUROPEAN_CAMPAIGN }
+		x = 8
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_DEMAND_ALCASE
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = GER_WESTERN_CAMPAIGN }
+		mutually_exclusive = { focus = GER_EASE_TENSIONS_WITH_FRANCE focus = GER_PLAN_FRENCH_INVASION}
+		x = 6
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_PLAN_FRENCH_INVASION
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = GER_WESTERN_CAMPAIGN }
+		mutually_exclusive = { focus = GER_EASE_TENSIONS_WITH_FRANCE focus = GER_DEMAND_ALCASE}
+		x = 8
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INVADE_THROUGH_BELGIUM
+		icon = GFX_focus_attack_belgium
+		prerequisite = { focus = GER_PLAN_FRENCH_INVASION }
+		mutually_exclusive = { focus = GER_INVADE_THROUGH_THE_SWISS focus = GER_INVADE_THROUGH_THE_BENELUX }
+		x = 8
+		y = 15
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
 	focus = {
 		id = GER_INVADE_FRANCE
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_SUPPORT_FRENCH_MINORS }
-		x = 28
-		y = 11
+		icon = GFX_focus_attack_france
+		prerequisite = { focus = GER_INVADE_THROUGH_BELGIUM focus = GER_INVADE_THROUGH_THE_BENELUX focus = GER_INVADE_THROUGH_THE_SWISS }
+		x = 8
+		y = 16
 		cost = 10
-		bypass = {
-			NOT = { country_exists = BUR }
-		}
-		available = {
-			OR = {
-				FRA = { has_government = absolutism } 
-				FRA = { has_government = royalism } 
-				FRA = { has_government = theocracy } 
-				FRA = { has_government = rexism } 
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = GER_CRUSH_BRITISH_IMPERIALISTS
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_ANTI_IMPERIALISM }
-		x = 26
-		y = 7
-		cost = 10
-		available = {
-			OR = {
-				GBR = { has_government = absolutism } 
-				GBR = { has_government = royalism } 
-				GBR = { has_government = theocracy } 
-				GBR = { has_government = rexism } 
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_INCREASE_SHIP_RESEARCH
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_CRUSH_BRITISH_IMPERIALISTS }
-		x = 26
-		y = 8
-		cost = 10
-		available = {
-			OR = {
-				GBR = { has_government = absolutism } 
-				GBR = { has_government = royalism } 
-				GBR = { has_government = theocracy } 
-				GBR = { has_government = rexism } 
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_INCREASE_SHIP_PRODUCTION
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_INCREASE_SHIP_RESEARCH }
-		x = 26
-		y = 9
-		cost = 10
-		available = {
-			OR = {
-				GBR = { has_government = absolutism } 
-				GBR = { has_government = royalism } 
-				GBR = { has_government = theocracy } 
-				GBR = { has_government = rexism } 
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_NEW_MARINES
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_INCREASE_SHIP_PRODUCTION }
-		x = 26
-		y = 10
-		cost = 10
-		available = {
-			OR = {
-				GBR = { has_government = absolutism } 
-				GBR = { has_government = royalism } 
-				GBR = { has_government = theocracy } 
-				GBR = { has_government = rexism } 
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_INVADE_BRITAIN
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_NEW_MARINES }
-		x = 26
-		y = 11
-		cost = 10
-		available = {
-			OR = {
-				GBR = { has_government = absolutism } 
-				GBR = { has_government = royalism } 
-				GBR = { has_government = theocracy } 
-				GBR = { has_government = rexism } 
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_CRUSH_SPANISH_IMPERIALISTS
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_ANTI_IMPERIALISM }
-		x = 30
-		y = 7
-		cost = 10
-		available = {
-			OR = {
-				SPR = { has_government = absolutism } 
-				SPR = { has_government = royalism } 
-				SPR = { has_government = theocracy } 
-				SPR = { has_government = rexism } 
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_INCREASE_SUPPORT_ON_SPANISH_COLONIES
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_CRUSH_SPANISH_IMPERIALISTS }
-		x = 30
-		y = 8
-		cost = 10
-		available = {
-			OR = {
-				SPR = { has_government = absolutism } 
-				SPR = { has_government = royalism } 
-				SPR = { has_government = theocracy } 
-				SPR = { has_government = rexism } 
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_INFLUENCE_CATALONIA
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_INCREASE_SUPPORT_ON_SPANISH_COLONIES }
-		x = 30
-		y = 9
-		cost = 10
-		available = {
-			OR = {
-				SPR = { has_government = absolutism } 
-				SPR = { has_government = royalism } 
-				SPR = { has_government = theocracy } 
-				SPR = { has_government = rexism } 
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_INFLUENCE_PORTUGAL
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_INFLUENCE_CATALONIA }
-		x = 30
-		y = 10
-		cost = 10
-		available = {
-			OR = {
-				SPR = { has_government = absolutism } 
-				SPR = { has_government = royalism } 
-				SPR = { has_government = theocracy } 
-				SPR = { has_government = rexism } 
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_INVADE_SPAIN
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_INFLUENCE_PORTUGAL }
-		x = 30
-		y = 11
-		cost = 10
-		available = {
-			OR = {
-				SPR = { has_government = absolutism } 
-				SPR = { has_government = royalism } 
-				SPR = { has_government = theocracy } 
-				SPR = { has_government = rexism } 
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = GER_SUPPORT_COMMUNISTS_IN_RUSSIA
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_SPREAD_IDEOLOGY }
-		x = 22
-		y = 7
-		cost = 10
-		available = {
-			AND = {
-				country_exists = RUS
-				NOT = { country_exists = SOV }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = GER_SUPPORT_COMMUNISTS_IN_DENMARK
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_SPREAD_IDEOLOGY }
-		x = 20
-		y = 7
-		cost = 10
-		available = {
-			AND = {
-				country_exists = RUS
-				NOT = { country_exists = SOV }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = GER_SUPPORT_COMMUNISTS_IN_FRANCE
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_SPREAD_IDEOLOGY }
-		x = 24
-		y = 7
-		cost = 10
-		available = {
-			AND = {
-				country_exists = RUS
-				NOT = { country_exists = SOV }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		
-		}
-	}
-	
-	focus = {
-		id = GER_EUROPEAN_COMMUNE
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_SUPPORT_COMMUNISTS_IN_DENMARK focus = GER_SUPPORT_COMMUNISTS_IN_FRANCE focus = GER_SUPPORT_COMMUNISTS_IN_RUSSIA }
-		x = 22
-		y = 8
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			create_faction = UNION_OF_EUROPEAN_SOCIALISTS
-		}
-	}
-	focus = {
-		id = GER_INVITE_FRANCE
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_EUROPEAN_COMMUNE }
-		x = 24
-		y = 9
-		cost = 10
-		available = { 
-			OR = {
-				FRA = { has_government = naturalism }
-				FRA = { has_government = collectivism }
-				FRA = { has_government = proletarianism }
-			}
-		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -1175,40 +1144,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_INVITE_RUSSIA
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_EUROPEAN_COMMUNE }
-		x = 22
-		y = 9
+		id = GER_INVADE_THROUGH_THE_BENELUX
+		icon = GFX_invade_benelux
+		prerequisite = { focus = GER_PLAN_FRENCH_INVASION }
+		mutually_exclusive = { focus = GER_INVADE_THROUGH_BELGIUM focus = GER_INVADE_THROUGH_THE_SWISS }
+		x = 6
+		y = 15
 		cost = 10
-		available = { 
-			OR = {
-				RUS = { has_government = naturalism }
-				RUS = { has_government = collectivism }
-				RUS = { has_government = proletarianism }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			create_faction = European_Commune
-		}
-	}
-	focus = {
-		id = GER_INVITE_DENMARK
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = GER_EUROPEAN_COMMUNE }
-		x = 20
-		y = 9
-		cost = 10
-		available = { 
-			OR = {
-				DAN = { has_government = naturalism }
-				DAN = { has_government = collectivism }
-				DAN = { has_government = proletarianism }
-			}
-		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -1216,41 +1158,145 @@ focus_tree = {
 
 		}
 	}
-	
-	
 	focus = {
-		id = GER_ELECT_A_CHANCELLOR
-		icon = GFX_focus_rom_handle_king
-		prerequisite = { focus = GER_DISPOSE_OF_THE_KAISER }
-		mutually_exclusive = { focus = GER_UNITE_THE_WORKERS focus = GER_GREEK_IDEALS }
-		x = 34
+		id = GER_INVADE_THROUGH_THE_SWISS
+		icon = GFX_focus_attack_switzerland
+		prerequisite = { focus = GER_PLAN_FRENCH_INVASION }
+		mutually_exclusive = { focus = GER_INVADE_THROUGH_BELGIUM focus = GER_INVADE_THROUGH_THE_BENELUX }
+		x = 10
+		y = 15
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_EASE_TENSIONS_WITH_FRANCE
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = GER_WESTERN_CAMPAIGN }
+		mutually_exclusive = { focus = GER_PLAN_FRENCH_INVASION focus = GER_DEMAND_ALCASE}
+		x = 10
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_SOUTHERN_CAMPAIGN
+		icon = GFX_focus_generic_italy_first
+		prerequisite = { focus = GER_EUROPEAN_CAMPAIGN }
+		x = 12
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INVADE_THE_SWISS
+		icon = GFX_focus_attack_switzerland
+		prerequisite = { focus = GER_SOUTHERN_CAMPAIGN }
+		x = 12
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_DECLARE_ON_ITALIAN_MINORS
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = GER_INVADE_THE_SWISS }
+		x = 12
+		y = 15
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_EASTERN_CAMPAIGN
+		icon = GFX_focus_ger_strike_at_the_source
+		prerequisite = { focus = GER_EUROPEAN_CAMPAIGN }
+		x = 16
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_DEMAND_POZNAN
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GER_EASTERN_CAMPAIGN }
+		mutually_exclusive = { focus = GER_DECLARE_WAR_ON_POLAND focus = GER_POZNAN_FOR_PROTECTION }
+		x = 14
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_DECLARE_WAR_ON_POLAND
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = GER_EASTERN_CAMPAIGN }
+		mutually_exclusive = { focus = GER_POZNAN_FOR_PROTECTION focus = GER_DEMAND_POZNAN }
+		x = 16
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_POZNAN_FOR_PROTECTION
+		icon =  GFX_focus_generic_polish_deal
+		prerequisite = { focus = GER_EASTERN_CAMPAIGN }
+		mutually_exclusive = { focus = GER_DECLARE_WAR_ON_POLAND focus = GER_DEMAND_POZNAN }
+		x = 18
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_THE_KAISER_STEPS_DOWN
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = GER_LONG_LIVE_THE_KAISER }
+		mutually_exclusive = { focus = GER_APPOINT_A_CHANCELLOR focus = GER_THE_KAISER_RULES_ALL }
+		x = 23
 		y = 3
 		cost = 10
-		available = {
-			OR = {
-				country_exists = SPT
-				any_country = { has_government = labryscism }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = GER_POLAND
-		icon = GFX_focus_poland
-		x = 40
-		y = 0
-		cost = 10
-		available = {
-			POL = { is_puppet_of = GER }
-		}
-		bypass = {
-			POL = { is_puppet_of = GER }
-		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -1258,156 +1304,1902 @@ focus_tree = {
 
 		}
 	}
-	
 	focus = {
-		id = GER_CLAIM_POZNAN
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = GER_POLAND }
-		x = 39
-		y = 1
-		cost = 10
-		available = {
-			POL = { is_puppet_of = GER }
-		}
-		bypass = {
-			86 = { is_owned_by = GER } 
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-
-		}
-	}
-	
-	focus = {
-		id = GER_BRIBE_LOCAL_GOVERNMENT
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = GER_POLAND }
-		x = 41
-		y = 1
-		cost = 10
-		available = {
-			POL = { is_puppet_of = GER }
-		}
-		bypass = {
-			86 = { is_owned_by = GER } 
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-
-		}
-	}
-	
-	focus = {
-		id = GER_TAKE_CONTROL_OF_POZNAN
-		icon = GFX_goal_poland_goal
-		prerequisite = { focus = GER_BRIBE_LOCAL_GOVERNMENT }
-		prerequisite = { focus = GER_CLAIM_POZNAN }
-		x = 40
-		y = 2
-		cost = 10
-		available = {
-			POL = { is_puppet_of = GER }
-		}
-		bypass = {
-			86 = { is_owned_by = GER } 
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			transfer_state = 86
-		}
-	}
-	
-	focus = {
-		id = GER_CLAIM_NORTHERN_PLOCK
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = GER_TAKE_CONTROL_OF_POZNAN }
-		x = 39
-		y = 3
-		cost = 10
-		bypass = {
-			839 = { is_owned_by = GER } 
-		}
-		available = {
-			POL = { is_puppet_of = GER }
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-
-		}
-	}
-	
-	focus = {
-		id = GER_BRIBE_LOCAL_GOVERNMENT_PLOCK
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = GER_TAKE_CONTROL_OF_POZNAN }
-		x = 41
-		y = 3
-		cost = 10
-		available = {
-			POL = { is_puppet_of = GER }
-		}
-		bypass = {
-			839 = { is_owned_by = GER } 
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-
-		}
-	}
-	
-	focus = {
-		id = GER_TAKE_CONTROL_OF_NORTHERN_PLOCK
-		icon = GFX_goal_poland_goal
-		prerequisite = { focus = GER_BRIBE_LOCAL_GOVERNMENT_PLOCK }
-		prerequisite = { focus = GER_CLAIM_NORTHERN_PLOCK }
-		x = 40
+		id = GER_A_GERMAN_REPUBLIC
+		icon = GFX_focus_german_republic
+		prerequisite = { focus = GER_THE_KAISER_STEPS_DOWN }
+		x = 23
 		y = 4
 		cost = 10
-		available = {
-			POL = { is_puppet_of = GER }
-		}
-		bypass = {
-			839 = { is_owned_by = GER } 
-		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			transfer_state = 839
+
 		}
 	}
 	focus = {
-		id = GER_END_THE_CONDOMINIUM
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = GER_TAKE_CONTROL_OF_NORTHERN_PLOCK }
-		x = 40
+		id = GER_CENTRAL_EUROPEAN_ALLIANCE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = GER_A_GERMAN_REPUBLIC }
+		x = 23
 		y = 5
 		cost = 10
-		available = {
-			AND = {
-				POL = { is_puppet_of = GER }
-				has_global_flag = prussia_germany
-			}
-		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			POL = { 
-				set_country_flag = prussian_puppet 
-				set_cosmetic_tag = KINGDOM_OF_POLAND
-			}
+
 		}
 	}
+	focus = {
+		id = GER_DENOUNCE_MONARCHIES
+		icon = GFX_focus_rom_handle_king
+		prerequisite = { focus = GER_CENTRAL_EUROPEAN_ALLIANCE }
+		mutually_exclusive = { focus = GER_BULWARK_AGAINST_RADICALS }
+		x = 22
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_PUSH_DEMOCRACY
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = GER_DENOUNCE_MONARCHIES }
+		mutually_exclusive = { focus = GER_REMOVE_RADICALS }
+		x = 22
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INFLUENCE_IN_CENTRAL_EUROPE
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GER_PUSH_DEMOCRACY }
+		x = 22
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INFLUENCE_IN_WESTERN_EUROPE
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GER_INFLUENCE_IN_CENTRAL_EUROPE }
+		x = 21
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INFLUENCE_IN_EASTERN_EUROPE
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GER_INFLUENCE_IN_CENTRAL_EUROPE }
+		x = 23
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INFLUENCE_IN_SOUTHERN_EUROPE
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GER_INFLUENCE_IN_WESTERN_EUROPE }
+		prerequisite = { focus = GER_INFLUENCE_IN_EASTERN_EUROPE }
+		x = 21
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INFLUENCE_IN_SCANDINAVIA
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GER_INFLUENCE_IN_WESTERN_EUROPE }
+		prerequisite = { focus = GER_INFLUENCE_IN_EASTERN_EUROPE }
+		x = 23
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INFLUENCE_IN_THE_BALKANS
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GER_INFLUENCE_IN_SCANDINAVIA }
+		prerequisite = { focus = GER_INFLUENCE_IN_SOUTHERN_EUROPE }
+		x = 22
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INFLUENCE_IN_RUSSIA
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GER_INFLUENCE_IN_THE_BALKANS }
+		x = 22
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_REMOVE_RADICALS
+		icon = GFX_focus_ger_great_red_menace
+		prerequisite = { focus = GER_BULWARK_AGAINST_RADICALS }
+		mutually_exclusive = { focus = GER_PUSH_DEMOCRACY }
+		x = 26
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	
+	focus = {
+		id = GER_REMOVE_RADICALS_IN_CENTRAL_EUROPE
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = GER_REMOVE_RADICALS }
+		x = 26
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_REMOVE_RADICALS_IN_WESTERN_EUROPE
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = GER_REMOVE_RADICALS_IN_CENTRAL_EUROPE }
+		x = 25
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_REMOVE_RADICALS_IN_EASTERN_EUROPE
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = GER_REMOVE_RADICALS_IN_CENTRAL_EUROPE }
+		x = 27
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_REMOVE_RADICALS_IN_SOUTHERN_EUROPE
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = GER_REMOVE_RADICALS_IN_WESTERN_EUROPE }
+		prerequisite = { focus = GER_REMOVE_RADICALS_IN_EASTERN_EUROPE }
+		x = 25
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_REMOVE_RADICALS_IN_SCANDINAVIA
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = GER_REMOVE_RADICALS_IN_WESTERN_EUROPE }
+		prerequisite = { focus = GER_REMOVE_RADICALS_IN_EASTERN_EUROPE }
+		x = 27
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_REMOVE_RADICALS_IN_THE_BALKANS
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = GER_REMOVE_RADICALS_IN_SCANDINAVIA }
+		prerequisite = { focus = GER_REMOVE_RADICALS_IN_SOUTHERN_EUROPE }
+		x = 26
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_REMOVE_RADICALS_IN_RUSSIA
+		icon = GFX_focus_ger_strike_at_the_source
+		prerequisite = { focus = GER_REMOVE_RADICALS_IN_THE_BALKANS }
+		x = 26
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_BULWARK_AGAINST_RADICALS
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		prerequisite = { focus = GER_CENTRAL_EUROPEAN_ALLIANCE }
+		mutually_exclusive = { focus = GER_DENOUNCE_MONARCHIES }
+		x = 26
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_SCANDINAVIAN_MEMBERSHIP
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = GER_DENOUNCE_MONARCHIES focus = GER_BULWARK_AGAINST_RADICALS }
+		x = 28
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_BALTIC_MEMBERSHIP
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = GER_SCANDINAVIAN_MEMBERSHIP }
+		x = 27
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_POLISH_MEMBERSHIP
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = GER_SCANDINAVIAN_MEMBERSHIP }
+		x = 29
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_BENELUX_MEMBERSHIP
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = GER_DENOUNCE_MONARCHIES focus = GER_BULWARK_AGAINST_RADICALS }
+		x = 24
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_BRITISH_MEMBERSHIP
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = GER_BENELUX_MEMBERSHIP }
+		mutually_exclusive = { focus = GER_FRENCH_MEMBERSHIP }
+		x = 23
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_FRENCH_MEMBERSHIP
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = GER_BENELUX_MEMBERSHIP }
+		mutually_exclusive = { focus = GER_BRITISH_MEMBERSHIP }
+		x = 25
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_DANUBIAN_MEMBERSHIP
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = GER_DENOUNCE_MONARCHIES focus = GER_BULWARK_AGAINST_RADICALS }
+		x = 21
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_DANUBIAN_EXPANSION
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = GER_DANUBIAN_MEMBERSHIP }
+		x = 21
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_THE_KAISER_AS_A_FIGUREHEAD
+		icon = GFX_focus_ger_return_of_the_kaiser
+		prerequisite = { focus = GER_A_GERMAN_REPUBLIC }
+		mutually_exclusive = { focus = GER_DISMANTLE_OLD_GOVERNMENT }
+		x = 26
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_DISMANTLE_OLD_GOVERNMENT
+		icon = GFX_focus_rom_abdicate
+		prerequisite = { focus = GER_A_GERMAN_REPUBLIC }
+		mutually_exclusive = { focus = GER_THE_KAISER_AS_A_FIGUREHEAD }
+		x = 28
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INTERNAL_FOCUS
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = GER_A_GERMAN_REPUBLIC }
+		x = 32
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_OPEN_THE_BORDERS
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_INTERNAL_FOCUS }
+		x = 32
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_EXPAND_INDUSTRIAL_FUNDS
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = GER_OPEN_THE_BORDERS }
+		x = 32
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INVEST_IN_THE_NATION
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = GER_EXPAND_INDUSTRIAL_FUNDS }
+		x = 32
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INVEST_IN_INDUSTRY
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = GER_INVEST_IN_THE_NATION }
+		x = 34
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_MILITARY_BUILD_UP_I
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GER_INVEST_IN_INDUSTRY }
+		x = 33
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_CIVILIAN_BUILD_UP_I
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = GER_INVEST_IN_INDUSTRY }
+		x = 35
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_MILITARY_BUILD_UP_II
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GER_MILITARY_BUILD_UP_I }
+		x = 33
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_CIVILIAN_BUILD_UP_II
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = GER_CIVILIAN_BUILD_UP_I }
+		x = 35
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INVEST_IN_INFRASTRUCTURE
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = GER_INVEST_IN_THE_NATION }
+		x = 30
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_NEW_ROADS
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = GER_INVEST_IN_INFRASTRUCTURE }
+		x = 29
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_NEW_BRIDGES
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = GER_INVEST_IN_INFRASTRUCTURE }
+		x = 31
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INVEST_IN_RURAL_AREAS
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = GER_NEW_ROADS }
+		x = 29
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_EXPAND_CITIES
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = GER_NEW_BRIDGES }
+		x = 31
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_ECONOMIC_POWERHAUS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = GER_MILITARY_BUILD_UP_II }
+		prerequisite = { focus = GER_CIVILIAN_BUILD_UP_II }
+		prerequisite = { focus = GER_INVEST_IN_RURAL_AREAS }
+		prerequisite = { focus = GER_EXPAND_CITIES }
+		x = 32
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_EXPEL_THE_KAISER
+		icon = GFX_focus_rom_abdicate
+		prerequisite = { focus = GER_FINALIZE_NATION }
+		mutually_exclusive = { focus = GER_LONG_LIVE_THE_KAISER }
+		x = 47
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_GERMAN_CIVIL_WAR
+		icon = GFX_focus_ger_oppose_hitler
+		prerequisite = { focus = GER_EXPEL_THE_KAISER }
+		mutually_exclusive = { focus = GER_A_SUCCESSFUL_COUP }
+		x = 47
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_A_SUCCESSFUL_COUP
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = GER_EXPEL_THE_KAISER }
+		mutually_exclusive = { focus = GER_GERMAN_CIVIL_WAR }
+		x = 49
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_A_GERMAN_UNION
+		icon = GFX_focus_german_union
+		prerequisite = { focus = GER_GERMAN_CIVIL_WAR focus = GER_A_SUCCESSFUL_COUP}
+		mutually_exclusive = { focus = GER_A_GERMAN_REICH }
+		x = 47
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_THE_CENTER_OF_EUROPE_TURNS_RED
+		icon = GFX_focus_ger_great_red_menace
+		prerequisite = { focus = GER_A_GERMAN_UNION }
+		x = 47
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_THE_NATURAL_WAY
+		icon = GFX_focus_prc_agrarian_socialism
+		prerequisite = { focus = GER_THE_CENTER_OF_EUROPE_TURNS_RED }
+		mutually_exclusive = { focus = GER_DICTATORIAL_SOCIALISM focus = GER_TRUE_MARXISM }
+		x = 45
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_A_WEAK_CONSTITUTION
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = GER_THE_NATURAL_WAY }
+		x = 45
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_AN_ELECTED_COUNCIL
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = GER_A_WEAK_CONSTITUTION }
+		x = 45
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_DICTATORIAL_SOCIALISM
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { focus = GER_THE_CENTER_OF_EUROPE_TURNS_RED }
+		mutually_exclusive = { focus = GER_THE_NATURAL_WAY focus = GER_TRUE_MARXISM }
+		x = 47
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_PURGE_POLITICAL_ENEMIES
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = GER_DICTATORIAL_SOCIALISM }
+		x = 47
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_LABOR_CAMPS
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = GER_PURGE_POLITICAL_ENEMIES }
+		x = 47
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_TRUE_MARXISM
+		icon = GFX_goal_support_fourth_int
+		prerequisite = { focus = GER_THE_CENTER_OF_EUROPE_TURNS_RED }
+		mutually_exclusive = { focus = GER_DICTATORIAL_SOCIALISM focus = GER_THE_NATURAL_WAY }
+		x = 49
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_FORM_WORKERS_UNIONS
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = GER_TRUE_MARXISM }
+		x = 49
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_THE_AUTONOMOUS_UNIONS
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = GER_FORM_WORKERS_UNIONS }
+		x = 49
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_EXPAND_OUR_INFLUENCE
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GER_THE_AUTONOMOUS_UNIONS focus = GER_AN_ELECTED_COUNCIL focus = GER_LABOR_CAMPS }
+		x = 43
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_POLISH_PROPAGANDA
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = GER_EXPAND_OUR_INFLUENCE }
+		x = 41
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_SCANDINAVIAN_PROPAGANDA
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = GER_EXPAND_OUR_INFLUENCE }
+		x = 43
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_BENELUX_PROPAGANDA
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = GER_EXPAND_OUR_INFLUENCE }
+		x = 45
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_BALKAN_PROPAGANDA
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = GER_POLISH_PROPAGANDA }
+		prerequisite = { focus = GER_SCANDINAVIAN_PROPAGANDA }
+		prerequisite = { focus = GER_BENELUX_PROPAGANDA }
+		x = 43
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_BRITISH_PROPAGANDA
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = GER_BALKAN_PROPAGANDA }
+		x = 42
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_FRENCH_PROPAGANDA
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = GER_BALKAN_PROPAGANDA }
+		x = 44
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_SUPPORT_NEW_STATES
+		icon = GFX_goal_support_fourth_int
+		prerequisite = { focus = GER_FRENCH_PROPAGANDA }
+		prerequisite = { focus = GER_BRITISH_PROPAGANDA }
+		x = 43
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_ITALIAN_WORKERS_UNION
+		icon = GFX_focus_italian_union
+		prerequisite = { focus = GER_SUPPORT_NEW_STATES }
+		x = 41
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_SCANDINAVIAN_UNION
+		icon = GFX_focus_scandinavian_union
+		prerequisite = { focus = GER_SUPPORT_NEW_STATES }
+		x = 43
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_IBERIAN_COMMUNE
+		icon = GFX_focus_iberian_union
+		prerequisite = { focus = GER_SUPPORT_NEW_STATES }
+		x = 45
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_WORLD_REVOLUTION
+		icon = GFX_goal_support_fourth_int
+		prerequisite = { focus = GER_FRENCH_PROPAGANDA }
+		prerequisite = { focus = GER_BRITISH_PROPAGANDA }
+		x = 38
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INFLUENCE_INDIA
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = GER_WORLD_REVOLUTION }
+		x = 37
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INFLUENCE_CHINA
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = GER_WORLD_REVOLUTION }
+		x = 39
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INFLUENCE_NORTHERN_AFRICA
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = GER_INFLUENCE_CHINA }
+		prerequisite = { focus = GER_INFLUENCE_INDIA }
+		x = 36
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INFLUENCE_CENTRAL_AFRICA
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = GER_INFLUENCE_CHINA }
+		prerequisite = { focus = GER_INFLUENCE_INDIA }
+		x = 38
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INFLUENCE_SOUTHERN_AFRICA
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = GER_INFLUENCE_CHINA }
+		prerequisite = { focus = GER_INFLUENCE_INDIA }
+		x = 40
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_AUSTRIAN_REFURENDUM
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = GER_THE_AUTONOMOUS_UNIONS focus = GER_AN_ELECTED_COUNCIL focus = GER_LABOR_CAMPS }
+		x = 51
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_BOHEMIAN_REFURDNDUM
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = GER_AUSTRIAN_REFURENDUM }
+		x = 51
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_COM_DEMAND_POZNAN
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GER_BOHEMIAN_REFURDNDUM }
+		mutually_exclusive = { focus = GER_INVADE_POLAND }
+		x = 50
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INVADE_POLAND
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = GER_BOHEMIAN_REFURDNDUM }
+		mutually_exclusive = { focus = GER_DEMAND_POZNAN }
+		x = 52
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_SUBJUGATE_THE_BENELUX
+		icon = GFX_invade_benelux
+		prerequisite = { focus = GER_INVADE_POLAND focus = GER_COM_DEMAND_POZNAN }
+		x = 51
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_SUBJUGATE_THE_SWISS
+		icon = GFX_focus_attack_switzerland
+		prerequisite = { focus = GER_SUBJUGATE_THE_BENELUX }
+		x = 51
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_OUR_TRUE_ENEMY
+		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+		prerequisite = { focus = GER_SUBJUGATE_THE_SWISS }
+		prerequisite = { focus = GER_WORKERS_PARADISE }
+		mutually_exclusive = { focus = GER_AN_ALLY_IN_FRANCE }
+		x = 48
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_AN_ALLY_IN_FRANCE
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = GER_SUBJUGATE_THE_SWISS }
+		prerequisite = { focus = GER_WORKERS_PARADISE }
+		mutually_exclusive = { focus = GER_OUR_TRUE_ENEMY }
+		x = 50
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_EXPAND_WORKERS_UNIONS
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = GER_THE_AUTONOMOUS_UNIONS focus = GER_AN_ELECTED_COUNCIL focus = GER_LABOR_CAMPS }
+		x = 47
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_SHARE_THE_BURDEN
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = GER_EXPAND_WORKERS_UNIONS }
+		x = 47
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_TOGETHER_WE_CAN
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = GER_SHARE_THE_BURDEN }
+		x = 47
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_GERMAN_QUALITY
+		icon = GFX_focus_generic_tank_production
+		prerequisite = { focus = GER_TOGETHER_WE_CAN }
+		mutually_exclusive = { focus = GER_MASS_PRODUCTION }
+		x = 46
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_MASS_PRODUCTION
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = GER_TOGETHER_WE_CAN }
+		mutually_exclusive = { focus = GER_GERMAN_QUALITY }
+		x = 48
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_WORKERS_PARADISE
+		icon = GFX_goal_support_fourth_int
+		prerequisite = { focus = GER_GERMAN_QUALITY focus = GER_MASS_PRODUCTION }
+		x = 47
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_A_GERMAN_REICH
+		icon = GFX_focus_german_reich
+		prerequisite = { focus = GER_GERMAN_CIVIL_WAR focus = GER_A_SUCCESSFUL_COUP}
+		mutually_exclusive = { focus = GER_A_GERMAN_REICH }
+		x = 56
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_A_MILITARY_RUN_STATE
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = GER_A_GERMAN_REICH }
+		mutually_exclusive = { focus = GER_WE_NEED_A_FUHRER }
+		x = 55
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_WE_NEED_A_FUHRER
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = GER_A_GERMAN_REICH }
+		mutually_exclusive = { focus = GER_A_MILITARY_RUN_STATE }
+		x = 57
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_A_GERMANY_FOR_GERMANS
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = GER_WE_NEED_A_FUHRER }
+		prerequisite = { focus = GER_A_MILITARY_RUN_STATE }
+		x = 56
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_CLOSE_BORDERS
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = GER_A_GERMANY_FOR_GERMANS }
+		x = 54
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_GIVE_THE_GOVERNMENT_TOTAL_CONTROL
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = GER_CLOSE_BORDERS }
+		x = 54
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_CONCENTRATION_CAMPS
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = GER_A_GERMANY_FOR_GERMANS }
+		mutually_exclusive = { focus = GER_DRAFT_FOREIGNERS }
+		x = 56
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_A_RACIAL_ARMY
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = GER_CONCENTRATION_CAMPS }
+		x = 56
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_DRAFT_FOREIGNERS
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = GER_A_GERMANY_FOR_GERMANS }
+		mutually_exclusive = { focus = GER_CONCENTRATION_CAMPS }
+		x = 58
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_FOREIGN_TOLERANCE
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = GER_DRAFT_FOREIGNERS }
+		x = 58
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_ENFORCE_A_RACE_HEIARCHY
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = GER_GIVE_THE_GOVERNMENT_TOTAL_CONTROL }
+		prerequisite = { focus = GER_A_RACIAL_ARMY focus = GER_FOREIGN_TOLERANCE }
+		x = 56
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_THE_NIGHT_OF_LONG_KNIFES
+		icon = GFX_focus_generic_air_defense
+		prerequisite = { focus = GER_ENFORCE_A_RACE_HEIARCHY }
+		x = 56
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_TECHNOLOGY_PUSH
+		icon = GFX_focus_research2
+		prerequisite = { focus = GER_THE_NIGHT_OF_LONG_KNIFES }
+		x = 54
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_NUCLEAR_RESEARCH
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = GER_TECHNOLOGY_PUSH }
+		mutually_exclusive = { focus = GER_SUPER_WEAPONS }
+		x = 53
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_SUPER_WEAPONS
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = GER_TECHNOLOGY_PUSH }
+		mutually_exclusive = { focus = GER_NUCLEAR_RESEARCH }
+		x = 55
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_AUSTRIAN_ANSCHLUSS
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = GER_THE_NIGHT_OF_LONG_KNIFES }
+		x = 57
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_THE_FATE_OF_BOHEMIA
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus = GER_AUSTRIAN_ANSCHLUSS }
+		x = 57
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_SUBJUGATE_ILLYRIA
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = GER_THE_FATE_OF_BOHEMIA }
+		x = 57
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_ALIGN_HUNGARY
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GER_AUSTRIAN_ANSCHLUSS }
+		x = 59
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_TRANSYLVANIA_IS_HUNGARIAN
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = GER_ALIGN_HUNGARY }
+		mutually_exclusive = { focus = GER_TRANSYLVANIA_IS_ROMANIAN } 
+		x = 59
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_ALIGN_THE_ROMANIAN_STATES
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = GER_AUSTRIAN_ANSCHLUSS }
+		x = 62
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_TRANSYLVANIA_IS_ROMANIAN
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = GER_ALIGN_THE_ROMANIAN_STATES }
+		mutually_exclusive = { focus = GER_TRANSYLVANIA_IS_HUNGARIAN } 
+		x = 61
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_PUSH_FOR_ROMANIAN_UNION
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = GER_ALIGN_THE_ROMANIAN_STATES }
+		x = 63
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_ALLIANCE_WITH_JAPAN
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = GER_AUSTRIAN_ANSCHLUSS }
+		mutually_exclusive = { focus = GER_SUPPORT_GUANG_DYNASTY }
+		x = 64
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_SUPPORT_GUANG_DYNASTY
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = GER_AUSTRIAN_ANSCHLUSS }
+		mutually_exclusive = { focus = GER_ALLIANCE_WITH_JAPAN }
+		x = 66
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_RESHAPE_EUROPE
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = GER_SUBJUGATE_ILLYIA }
+		prerequisite = { focus = GER_TRANSYLVANIA_IS_HUNGARIAN focus = GER_TRANSYLVANIA_IS_ROMANIAN }
+		prerequisite = { focus = GER_PUSH_FOR_ROMANIAN_UNION }
+		x = 60
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_FORM_REICHSKOMMISSARIATS
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = GER_RESHAPE_EUROPE }
+		x = 60
+		y = 15
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_LAB_ASSERT_WESTERN_CLAIMS
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = GER_RESHAPE_EUROPE }
+		x = 58
+		y = 15
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_LAB_PLAN_THE_INVASION_OF_FRANCE
+		icon = GFX_focus_attack_france
+		prerequisite = { focus = GER_LAB_ASSERT_WESTERN_CLAIMS }
+		x = 58
+		y = 16
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_LAB_INVADE_THROUGH_THE_BENELUX
+		icon = GFX_invade_benelux
+		prerequisite = { focus = GER_LAB_PLAN_THE_INVASION_OF_FRANCE }
+		mutually_exclusive = { focus = GER_LAB_INVADE_THROUGH_BELGIUM focus = GER_LAB_INVADE_THROUGH_THE_SWISS }
+		x = 56
+		y = 17
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_LAB_INVADE_THROUGH_BELGIUM
+		icon = GFX_focus_attack_belgium
+		prerequisite = { focus = GER_LAB_PLAN_THE_INVASION_OF_FRANCE }
+		mutually_exclusive = { focus = GER_LAB_INVADE_THROUGH_THE_BENELUX focus = GER_LAB_INVADE_THROUGH_THE_SWISS }
+		x = 58
+		y = 17
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_LAB_INVADE_THROUGH_THE_SWISS
+		icon = GFX_focus_attack_switzerland
+		prerequisite = { focus = GER_LAB_PLAN_THE_INVASION_OF_FRANCE }
+		mutually_exclusive = { focus = GER_LAB_INVADE_THROUGH_BELGIUM focus = GER_LAB_INVADE_THROUGH_THE_BENELUX }
+		x = 60
+		y = 17
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_LAB_INVADE_FRANCE
+		icon = GFX_focus_attack_france
+		prerequisite = { focus = GER_LAB_INVADE_THROUGH_THE_SWISS focus = GER_LAB_INVADE_THROUGH_BELGIUM focus = GER_LAB_INVADE_THROUGH_THE_BENELUX }
+		x = 58
+		y = 18
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_ASSERT_EASTERN_CLAIMS
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = GER_RESHAPE_EUROPE }
+		x = 62
+		y = 15
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_POZNAN_OR_WAR
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = GER_ASSERT_EASTERN_CLAIMS }
+		x = 62
+		y = 16
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_SUBJUGATE_THE_BALKANS
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = GER_POZNAN_OR_WAR }
+		x = 62
+		y = 17
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INVADE_RUSSIA
+		icon = GFX_focus_ger_strike_at_the_source
+		prerequisite = { focus = GER_SUBJUGATE_THE_BALKANS }
+		x = 62
+		y = 18
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_SOUTHERN_THRUST
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GER_RESHAPE_EUROPE }
+		x = 64
+		y = 15
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_CLAIM_NORTH_ITALY
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = GER_RESHAPE_EUROPE }
+		x = 64
+		y = 16
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_INVADE_ITALIAN_NATIONS
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = GER_RESHAPE_EUROPE }
+		x = 64
+		y = 18
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_THE_THOUSAND_YEAR_REICH
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = GER_LAB_INVADE_FRANCE }
+		prerequisite = { focus = GER_INVADE_RUSSIA }
+		prerequisite = { focus = GER_INVADE_ITALIAN_NATIONS }
+		x = 61
+		y = 19
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	
 	
 }

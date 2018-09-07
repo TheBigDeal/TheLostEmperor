@@ -2,19 +2,51 @@ spriteTypes = {
 
 	#### Mod
 
+	
 	SpriteType = {
-	name = "GFX_focus_kaiserreich"
-	texturefile = "gfx/interface/goals/focus_kaiserreich.tga"			
+	name = "GFX_goldmines"
+	texturefile = "gfx/interface/goals/goldmines.tga"			
+	}	
+	SpriteType = {
+	name = "GFX_invade_benelux"
+	texturefile = "gfx/interface/goals/focus_invade_benelux.tga"			
+	}
+	SpriteType = {
+	name = "GFX_kleindeutschland"
+	texturefile = "gfx/interface/goals/focus_kleindeutschland.tga"			
 	}	
 	
 	SpriteType = {
+	name = "GFX_focus_grossdeutschland"
+	texturefile = "gfx/interface/goals/focus_grossdeutschland.tga"			
+	}
+	SpriteType = {
+	name = "GFX_focus_prussia"
+	texturefile = "gfx/interface/goals/focus_prussia.tga"			
+	}
+	SpriteType = {
+	name = "GFX_focus_german_republic"
+	texturefile = "gfx/interface/goals/focus_german_republic.tga"			
+	}
+	SpriteType = {
+	name = "GFX_focus_german_union"
+	texturefile = "gfx/interface/goals/focus_german_union.tga"			
+	}
+	SpriteType = {
+	name = "GFX_focus_italian_union"
+	texturefile = "gfx/interface/goals/focus_italian_union.tga"			
+	}
+	SpriteType = {
+	name = "GFX_focus_iberian_union"
+	texturefile = "gfx/interface/goals/focus_iberian_union.tga"			
+	}
+	SpriteType = {
+	name = "GFX_focus_scandinavian_union"
+	texturefile = "gfx/interface/goals/focus_scandinavian_union.tga"			
+	}
+	SpriteType = {
 	name = "GFX_focus_poland"
 	texturefile = "gfx/interface/goals/focus_poland.tga"			
-	}
-	
-	SpriteType = {
-	name = "GFX_focus_grossdeutchland"
-	texturefile = "gfx/interface/goals/focus_grossdeutchland.tga"			
 	}
 	
 	SpriteType = {
@@ -29,8 +61,40 @@ spriteTypes = {
 	name = "GFX_focus_support_prussia"
 	texturefile = "gfx/interface/goals/focus_support_prussia.tga"			
 	}
-	
-SpriteType = {
+	SpriteType = {
+	name = "GFX_focus_support_ottomans"
+	texturefile = "gfx/interface/goals/focus_support_ottomans.tga"			
+	}	
+	SpriteType = {
+	name = "GFX_focus_support_bulgaria"
+	texturefile = "gfx/interface/goals/focus_support_bulgaria.tga"			
+	}
+	SpriteType = {
+	name = "GFX_focus_attack_belgium"
+	texturefile = "gfx/interface/goals/focus_attack_belgium.tga"			
+	}
+	SpriteType = {
+	name = "GFX_focus_attack_denmark"
+	texturefile = "gfx/interface/goals/focus_attack_denmark.tga"			
+	}
+	SpriteType = {
+	name = "GFX_focus_attack_netherlands"
+	texturefile = "gfx/interface/goals/focus_attack_netherlands.tga"			
+	}
+	SpriteType = {
+	name = "GFX_danzig"
+	texturefile = "gfx/interface/goals/danzig.tga"			
+	}
+	SpriteType = {
+	name = "GFX_lubek"
+	texturefile = "gfx/interface/goals/lubek.tga"			
+	}
+	SpriteType = {
+	name = "GFX_focus_attack_france"
+	texturefile = "gfx/interface/goals/focus_attack_france.tga"			
+	}
+	########################
+	SpriteType = {
 	name = "GFX_goal_continuous_air_production"
 	texturefile = "gfx/interface/goals/goal_continuous_air_production.dds"			
 	}	
@@ -597,8 +661,7 @@ SpriteType = {
 	
 	SpriteType = {
 	name = "GFX_goal_support_democracy"
-	texturefile = "gfx/interface/goals/goal_generic_support_democracy.dds"
-			
+	texturefile = "gfx/interface/goals/goal_generic_support_democracy.dds"	
 	}	
 	
 	SpriteType = {

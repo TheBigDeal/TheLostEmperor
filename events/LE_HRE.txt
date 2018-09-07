@@ -60,9 +60,9 @@ country_event = {
 		BOH = { set_global_flag = flag_hre_prussia }
 		BOH = { set_global_flag = flag_hre_austria }
 		
-		BUR = { set_country_flag = flag_hre_elector }
-		BUR = { set_global_flag = flag_hre_prussia }
-		BUR = { set_global_flag = flag_hre_austria }
+		KOL = { set_country_flag = flag_hre_elector }
+		KOL = { set_global_flag = flag_hre_prussia }
+		KOL = { set_global_flag = flag_hre_austria }
 		
 		HAN = { set_country_flag = flag_hre_elector }
 		HAN = { set_global_flag = flag_hre_prussia }
