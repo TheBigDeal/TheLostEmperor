@@ -73,7 +73,10 @@
  le_prussia.2.d:0 "We have declared that Geramny will be United under one flag, but what flag will it be?"
  le_prussia.2.a:0 "Use the German Eagle"
  le_prussia.2.b:0 "Adopt a Black-White-Red Tricolor"
- 
+ le_prussia.5.t:0 "The Berlin Conference"
+ le_prussia.5.d:0 "The Berlin Conference is about to begin. Here all of the nations in the Prussian sphere will be plan the formation of the German nation. In order to counter Austria the most popular idea is to form a North German Confereration to stand against the power of the Austrians. This may however anger the south and bring them towards Austria. We have been asked to support the so called North German Confederation. What shall we do?"
+ le_prussia.5.a:0 "Join The Confederation"
+ le_prussia.5.b:0 "Decline Membership"
  #Dutch Revolt
  ##############
  dutchrevolt.1.t:0 "Revolt in the Netherlands"

@@ -1,12 +1,11 @@
 ideas = {
-
 	political_advisor = {
 
 		MAN_megata_toshiro = {
 
 			picture = generic_political_advisor_asia_2
 			
-			available = {
+			allowed = {
 				original_tag = MAN
 			}
 			
@@ -17,7 +16,7 @@ ideas = {
 
 			picture = generic_political_advisor_asia_3
 				
-			available = {
+			allowed = {
 				original_tag = MAN
 			}
 			
@@ -28,7 +27,7 @@ ideas = {
 
 			picture = generic_political_advisor_asia_1
 			
-			available = {
+			allowed = {
 				original_tag = MAN
 			}
 			
@@ -42,7 +41,7 @@ ideas = {
 			
 			picture = generic_army_asia_4
 
-			available = {
+			allowed = {
 				original_tag = MAN
 			}
 			
@@ -60,11 +59,30 @@ ideas = {
 
 			picture = generic_air_asia_3
 			
-			available = {
+			allowed = {
 				original_tag = MAN
 			}
 			
 			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+		
+		MAN_yin_zuoqian = {
+
+			picture = generic_navy_asia_3
+			
+			allowed = {
+				original_tag = MAN
+			}
+			
+			traits = { navy_chief_decisive_battle_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -80,7 +98,7 @@ ideas = {
 
 			picture = generic_army_asia_3
 			
-			available = {
+			allowed = {
 				original_tag = MAN
 			}
 			
@@ -95,7 +113,7 @@ ideas = {
 
 			picture = generic_air_asia_2
 			
-			available = {
+			allowed = {
 				original_tag = MAN
 			}
 			
@@ -110,7 +128,7 @@ ideas = {
 
 			picture = generic_army_asia_1
 			
-			available = {
+			allowed = {
 				original_tag = MAN
 			}
 			
@@ -129,7 +147,7 @@ ideas = {
 
 			picture = generic_army_asia_1
 			
-			available = {
+			allowed = {
 				original_tag = MAN
 			}
 			
@@ -144,7 +162,7 @@ ideas = {
 
 			picture = generic_air_asia_2
 			
-			available = {
+			allowed = {
 				original_tag = MAN
 			}
 			
@@ -156,6 +174,121 @@ ideas = {
 		}
 	}
 
+	aircraft_manufacturer = {
+		designer = yes
+
+		MAN_manshu = {
+
+			picture = generic_air_manufacturer_1
+
+			available = {
+				controls_state = 714
+			}
+
+			allowed = {
+				original_tag = MAN
+				NOT = { has_dlc = "Waking the Tiger" }
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+						
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MAN_mamc_light = {
+
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+				original_tag = MAN
+				has_dlc = "Waking the Tiger"
+			}
+
+			cost = 75
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+						
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		MAN_mamc_medium = {
+
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+				original_tag = MAN
+				has_dlc = "Waking the Tiger"
+			}
+
+			cost = 75
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+						
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		MAN_mamc_heavy = {
+
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+				original_tag = MAN
+				has_dlc = "Waking the Tiger"
+			}
+
+			cost = 75
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+						
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+	industrial_concern = {
+		MAN_south_manchuria_railway_company = {
+
+			picture = generic_industrial_concern_2			
+			
+			available = {
+				
+			}
+
+			allowed = {
+				has_dlc = "Waking the Tiger"
+				original_tag = MAN
+			}
+
+			traits = {
+				construction_company
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 
 
 }

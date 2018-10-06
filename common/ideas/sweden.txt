@@ -3,7 +3,7 @@ ideas = {
 	
 		en_svensk_tiger = {
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -29,7 +29,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_5
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -40,7 +40,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -51,7 +51,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -64,7 +64,7 @@ ideas = {
 		SWE_helge_jung = {
 					
 					
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -80,7 +80,7 @@ ideas = {
 		SWE_erik_palmstierna = {
 					
 					
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -100,7 +100,7 @@ ideas = {
 			
 			picture = generic_army_europe_5
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -117,7 +117,7 @@ ideas = {
 			
 			picture = generic_army_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -134,7 +134,7 @@ ideas = {
 			
 			picture = generic_army_europe_6
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -151,7 +151,7 @@ ideas = {
 			
 			picture = generic_army_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -172,7 +172,7 @@ ideas = {
 			
 			picture = generic_air_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -189,7 +189,7 @@ ideas = {
 			
 			picture = generic_air_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -210,7 +210,7 @@ ideas = {
 			
 			picture = generic_navy_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -227,7 +227,7 @@ ideas = {
 			
 			picture = generic_navy_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -244,7 +244,7 @@ ideas = {
 			
 			picture = generic_navy_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -265,7 +265,7 @@ ideas = {
 			
 			picture = generic_army_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -282,7 +282,7 @@ ideas = {
 			
 			picture = generic_army_europe_2
 
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -299,7 +299,7 @@ ideas = {
 			
 			picture = generic_air_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -316,7 +316,7 @@ ideas = {
 			
 			picture = generic_navy_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -339,7 +339,7 @@ ideas = {
 			picture = generic_tank_manufacturer_2
 
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -365,7 +365,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -388,7 +388,7 @@ ideas = {
 			picture = generic_naval_manufacturer_2
 
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -411,7 +411,7 @@ ideas = {
 			picture = generic_naval_manufacturer_3
 
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -440,7 +440,7 @@ ideas = {
 			picture = generic_artillery_manufacturer_1
 
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -449,7 +449,7 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				category_artillery = {
+				artillery = {
 					reliability = 0.20
 				}
 			}
@@ -465,7 +465,7 @@ ideas = {
 			picture = generic_infantry_equipment_manufacturer_2
 
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			
@@ -486,7 +486,7 @@ ideas = {
 			
 
 			
-			available = {
+			allowed = {
 				original_tag = SWE
 			}
 			

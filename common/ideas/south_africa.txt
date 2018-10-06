@@ -4,12 +4,12 @@ ideas = {
 	country = {
 
 		SAF_ossewabrandwag = { 
-			available = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				 has_government = rexism
+				 has_government = labryscism
 			}
 
 			removal_cost = -1
@@ -17,19 +17,19 @@ ideas = {
 			picture = saf_ossewabrandwag
 
 			modifier = {
-				rexism_drift = 0.01
+				fascism_drift = 0.01
 				industrial_capacity_factory = -0.10
 				industrial_capacity_dockyard = -0.10
 			}
 		}		
 
 		SAF_ossewabrandwag_2 = {
-			available = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				 has_government = rexism
+				 has_government = labryscism
 			}
 
 			removal_cost = -1
@@ -42,28 +42,28 @@ ideas = {
 			}
 		}
 
-		SAF_ossewabrandwag_rexism = {
-			available = {
+		SAF_ossewabrandwag_fascism = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				 has_government = rexism
+				 has_government = labryscism
 			}
 
 			removal_cost = -1
 
-			picture = saf_ossewabrandwag_rexism
+			picture = saf_ossewabrandwag_fascism
 
 			modifier = {
-				rexism_drift = 0.01
+				fascism_drift = 0.01
 				enemy_partisan_effect = -0.1
 				foreign_subversive_activites = -0.4
 			}
 		}
 
 		SAF_history_of_segregation = { 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -82,7 +82,7 @@ ideas = {
 		}
 
 		SAF_history_of_segregation_2 = {
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -101,7 +101,7 @@ ideas = {
 		}
 
 		SAF_abandon_westminster = {
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -115,55 +115,55 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = 0.5
-				liberalism_drift = -0.03
+				democratic_drift = -0.03
 			}
 
 		}
 
-		SAF_abandon_westminster_rexism = {
-			available = {
+		SAF_abandon_westminster_fascism = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				 has_government = rexism
+				 has_government = labryscism
 			}
 
 			removal_cost = -1
 
-			picture = ast_abandon_the_westminster_system_rexism
+			picture = ast_abandon_the_westminster_system_fascism
 
 			modifier = {
 				autonomy_gain = 0.5
-				liberalism_drift = -0.03
-				rexism_drift = 0.03
+				democratic_drift = -0.03
+				fascism_drift = 0.03
 			}
 
 		}
 
-		SAF_abandon_westminster_proletarianism = {
-			available = {
+		SAF_abandon_westminster_communism = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				 has_government = proletarianism
+				 has_government = collectivism
 			}
 
 			removal_cost = -1
 
-			picture = ast_abandon_the_westminster_system_proletarianism
+			picture = ast_abandon_the_westminster_system_communism
 
 			modifier = {
 				autonomy_gain = 1
-				liberalism_drift = -0.03
-				proletarianism_drift = 0.03
+				democratic_drift = -0.03
+				communism_drift = 0.03
 			}
 
 		}
 
 		SAF_emergency_workers = {
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -184,7 +184,7 @@ ideas = {
 		}
 
 		SAF_cheap_labor_1 = {
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -205,7 +205,7 @@ ideas = {
 		}
 
 		SAF_cheap_labor_2 = {
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -227,7 +227,7 @@ ideas = {
 		}
 
 		SAF_cheap_labor_3 = {
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -249,12 +249,12 @@ ideas = {
 		}
 
 		SAF_voortrekker_monument = {
-			available = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				 has_government = rexism
+				 has_government = labryscism
 			}
 
 			removal_cost = -1
@@ -268,12 +268,12 @@ ideas = {
 		}
 
 		SAF_voortrekker_monument_2 = {
-			available = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				 has_government = rexism
+				 has_government = labryscism
 			}
 
 			removal_cost = -1
@@ -288,12 +288,12 @@ ideas = {
 		}
 
 		SAF_black_volunteers = {
-			available = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				 has_government = proletarianism
+				 has_government = collectivism
 			}
 
 			removal_cost = -1
@@ -302,16 +302,17 @@ ideas = {
 
 			modifier = {
 				conscription = 0.01
+				war_support_factor = 0.05
 			}
 		}
 
 		SAF_equal_opportunities = {
-			available = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				 has_government = proletarianism
+				 has_government = collectivism
 			}
 
 			removal_cost = -1
@@ -326,12 +327,12 @@ ideas = {
 		}
 
 		SAF_support_the_world_revolution = {
-			available = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				 has_government = proletarianism
+				 has_government = collectivism
 			}
 
 			removal_cost = -1
@@ -340,16 +341,17 @@ ideas = {
 
 			modifier = {
 				subversive_activites_upkeep = -0.5
+				war_support_factor = 0.05
 			}
 		}
 
 		SAF_soviet_advisers = {
-			available = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				 has_government = proletarianism
+				 has_government = collectivism
 			}
 
 			removal_cost = -1
@@ -363,12 +365,12 @@ ideas = {
 		}
 
 		SAF_scw_veterans = {
-			available = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				 has_government = proletarianism
+				 has_government = collectivism
 			}
 
 			removal_cost = -1
@@ -382,12 +384,12 @@ ideas = {
 
 		SAF_support_spain = {
 
-			available = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				 has_government = proletarianism
+				 has_government = collectivism
 			}
 
 			removal_cost = -1
@@ -406,7 +408,7 @@ ideas = {
 		}
 
 		SAF_desert_equipment = {
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -423,12 +425,12 @@ ideas = {
 					}
 		}
 		SAF_king_edward = {
-			available = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				has_government = rexism
+				has_government = labryscism
 			}
 
 			removal_cost = -1
@@ -443,7 +445,7 @@ ideas = {
 		}
 
 		SAF_gold_exports = {
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -463,7 +465,7 @@ ideas = {
 
 		SAF_joint_air_training_scheme = {
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -537,7 +539,7 @@ ideas = {
 
 		SAF_sir_patrick_duncan = {
 			
-			available = {
+			allowed = {
 				original_tag = SAF
 				
 			}
@@ -552,11 +554,7 @@ ideas = {
 			picture = generic_liberalism_reformer_western_european_2d
 			
 			traits = { liberalism_reformer }
-		
-			on_add = {
-				country_event = political.13
-			}
-		
+
 			do_effect = {
 				NOT = {
 					has_government = liberalism
@@ -571,7 +569,7 @@ ideas = {
 
 		SAF_abram_fischer = {
 
-			available = {
+			allowed = {
 				original_tag = SAF
 			}
 
@@ -582,17 +580,13 @@ ideas = {
 				}
 			}
 
-			picture = generic_communist_revolutionary_western_european_2d
+			picture = generic_collectivist_revolutionary_western_european_2d
 			
-			traits = { communist_revolutionary }
-			
-			on_add = {
-				country_event = political.1
-			}
-			
+			traits = { collectivist_revolutionary }
+
 			do_effect = {
 				NOT = {
-					has_government = proletarianism
+					has_government = collectivism
 				}
 			}
 			
@@ -604,7 +598,7 @@ ideas = {
 
 		SAF_j_f_van_rensburg_fascist = {
 			
-			available = {
+			allowed = {
 				original_tag = SAF
 				
 			}
@@ -620,13 +614,9 @@ ideas = {
 			
 			traits = { labryscist_demagogue }
 		
-			on_add = {
-				country_event = political.7
-			}
-		
 			do_effect = {
 				NOT = {
-					has_government = rexism
+					has_government = labryscism
 				}
 			}
 		
@@ -639,7 +629,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 
-			available = {
+			allowed = {
 				original_tag = SAF
 			}
 			
@@ -650,7 +640,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 				
-			available = {
+			allowed = {
 				original_tag = SAF
 			}
 			
@@ -664,7 +654,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = SAF
 			}
 			
@@ -677,7 +667,7 @@ ideas = {
 		SAF_james_mitchell_baker = {
 			picture = generic_army_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = SAF
 			}
 						
@@ -691,7 +681,7 @@ ideas = {
 		SAF_leonard_beyers = {
 			picture = generic_army_europe_4
 			
-			available = {
+			allowed = {
 				original_tag = SAF
 			}
 			
@@ -709,7 +699,7 @@ ideas = {
 		SAF_adolf_malan = {
 			picture = generic_air_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = SAF
 			}
 			
@@ -723,7 +713,7 @@ ideas = {
 		SAF_pierre_van_ryneveld = {
 			picture = generic_air_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = SAF
 			}
 			
@@ -741,7 +731,7 @@ ideas = {
 		SAF_pierre_oliver_knoll = {
 			picture = generic_navy_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = SAF
 			}
 			
@@ -755,7 +745,7 @@ ideas = {
 		SAF_cornelis_van_zuigenbrogge = {
 			picture = generic_navy_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = SAF
 			}
 			
@@ -773,7 +763,7 @@ ideas = {
 			
 			picture = generic_army_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = SAF
 			}
 			
@@ -788,7 +778,7 @@ ideas = {
 
 			picture = generic_army_europe_5
 			
-			available = {
+			allowed = {
 				original_tag = SAF
 			}
 			
@@ -803,7 +793,7 @@ ideas = {
 
 			picture = generic_air_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = SAF
 			}
 			
@@ -818,7 +808,7 @@ ideas = {
 
 			picture = generic_navy_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = SAF
 			}
 			
@@ -835,7 +825,7 @@ ideas = {
 			
 			picture = generic_army_europe_2
 
-			available = {
+			allowed = {
 				original_tag = SAF
 			}
 			
@@ -850,7 +840,7 @@ ideas = {
 			
 			picture = generic_air_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = SAF
 			}
 			
@@ -868,7 +858,7 @@ ideas = {
 			
 			picture = generic_tank_manufacturer_3
 
-			available = {
+			allowed = {
 				original_TAG = SAF
 				has_dlc = "Together for Victory"
 			}

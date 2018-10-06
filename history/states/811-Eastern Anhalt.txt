@@ -6,7 +6,7 @@ state={
 	history={
 		owner = ANH
 		victory_points = {
-			9560 1
+			9560 1 
 		}
 		buildings = {
 			infrastructure = 6
@@ -19,7 +19,7 @@ state={
 	}
 
 	provinces={
-		9560 
+		425 6582 
 	}
 	manpower=435653
 	buildings_max_level_factor=1.000

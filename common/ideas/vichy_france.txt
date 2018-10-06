@@ -5,9 +5,9 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = FRA
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 			traits = { backroom_backstabber }
@@ -20,9 +20,9 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 
-			available = {
+			allowed = {
 				original_tag = FRA
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 			traits = { popular_figurehead }
@@ -32,9 +32,9 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = FRA
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 			traits = { compassionate_gentleman }
@@ -46,9 +46,9 @@ ideas = {
 		VIC_charles_huntziger = {
 					
 					
-			available = {
+			allowed = {
 				original_tag = FRA
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 			picture = generic_army_europe_4
@@ -63,9 +63,9 @@ ideas = {
 		VIC_lucien_lacaze = {
 					
 					
-			available = {
+			allowed = {
 				original_tag = FRA
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 			picture = generic_navy_europe_1
@@ -84,9 +84,9 @@ ideas = {
 			
 			picture = generic_army_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = FRA
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 			traits = { army_chief_reform_2 }
@@ -100,9 +100,9 @@ ideas = {
 			
 			picture = generic_army_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = FRA
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 			traits = { army_chief_defensive_3 }
@@ -120,9 +120,9 @@ ideas = {
 			
 			picture = generic_air_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = FRA
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 
@@ -138,9 +138,9 @@ ideas = {
 			
 			picture = generic_air_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = FRA
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 
@@ -160,9 +160,9 @@ ideas = {
 			
 			picture = generic_navy_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = FRA
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 
@@ -178,9 +178,9 @@ ideas = {
 			
 			picture = generic_navy_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = FRA
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 
@@ -200,9 +200,9 @@ ideas = {
 			
 			picture = generic_air_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = FRA
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 
@@ -218,9 +218,9 @@ ideas = {
 			
 			picture = generic_navy_europe_2
 
-			available = {
+			allowed = {
 				original_tag = FRA
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 
@@ -236,9 +236,9 @@ ideas = {
 			
 			picture = generic_navy_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = FRA
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 
@@ -254,9 +254,9 @@ ideas = {
 			
 			picture = generic_air_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = FRA
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 

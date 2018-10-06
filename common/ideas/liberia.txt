@@ -8,7 +8,7 @@ ideas = {
 
 			picture = generic_political_advisor_african_2
 
-			available = {
+			allowed = {
 				original_tag = LIB
 			}
 			
@@ -19,7 +19,7 @@ ideas = {
 
 			picture = generic_political_advisor_african_1
 				
-			available = {
+			allowed = {
 				original_tag = LIB
 			}
 			
@@ -30,7 +30,7 @@ ideas = {
 
 			picture = generic_political_advisor_african_3
 			
-			available = {
+			allowed = {
 				original_tag = LIB
 			}
 			
@@ -44,7 +44,7 @@ ideas = {
 
 			picture = generic_army_african_4
 			
-			available = {
+			allowed = {
 				original_tag = LIB
 			}		
 			
@@ -59,7 +59,7 @@ ideas = {
 
 			picture = generic_army_african_5
 			
-			available = {
+			allowed = {
 				original_tag = LIB
 			}
 			
@@ -77,7 +77,7 @@ ideas = {
 
 			picture = generic_air_african_3
 			
-			available = {
+			allowed = {
 				original_tag = LIB
 			}
 			
@@ -92,7 +92,7 @@ ideas = {
 
 			picture = generic_air_african_3
 			
-			available = {
+			allowed = {
 				original_tag = LIB
 			}
 			
@@ -111,7 +111,7 @@ ideas = {
 
 			picture = generic_navy_african_2
 			
-			available = {
+			allowed = {
 				original_tag = LIB
 			}
 					
@@ -126,7 +126,7 @@ ideas = {
 
 			picture = generic_navy_african_3
 			
-			available = {
+			allowed = {
 				original_tag = LIB
 			}
 					
@@ -144,7 +144,7 @@ ideas = {
 			
 			picture = generic_army_african_1
 			
-			available = {
+			allowed = {
 				original_tag = LIB
 			}
 			
@@ -159,7 +159,7 @@ ideas = {
 
 			picture = generic_army_african_3
 			
-			available = {
+			allowed = {
 				original_tag = LIB
 			}
 			
@@ -174,7 +174,7 @@ ideas = {
 
 			picture = generic_army_african_2
 			
-			available = {
+			allowed = {
 				original_tag = LIB
 			}
 			
@@ -189,7 +189,7 @@ ideas = {
 
 			picture = generic_air_african_2
 			
-			available = {
+			allowed = {
 				original_tag = LIB
 			}
 			
@@ -204,7 +204,7 @@ ideas = {
 
 			picture = generic_navy_african_2
 			
-			available = {
+			allowed = {
 				original_tag = LIB
 			}
 			
@@ -221,7 +221,7 @@ ideas = {
 			
 			picture = generic_army_african_2
 
-			available = {
+			allowed = {
 				original_tag = LIB
 			}
 			
@@ -236,7 +236,7 @@ ideas = {
 
 			picture = generic_navy_african_3
 			
-			available = {
+			allowed = {
 				original_tag = LIB
 			}
 			
@@ -251,7 +251,7 @@ ideas = {
 
 			picture = generic_air_african_2
 			
-			available = {
+			allowed = {
 				original_tag = LIB
 			}
 			

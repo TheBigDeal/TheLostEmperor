@@ -6,7 +6,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = TAN
 			}
 			
@@ -17,7 +17,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 				
-			available = {
+			allowed = {
 				original_tag = TAN
 			}
 			
@@ -28,7 +28,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = TAN
 			}
 			
@@ -42,7 +42,7 @@ ideas = {
 					
 			picture = generic_army_asia_4
 
-			available = {
+			allowed = {
 				original_tag = TAN
 			}
 			
@@ -57,7 +57,7 @@ ideas = {
 					
 			picture = generic_air_asia_1
 				
-			available = {
+			allowed = {
 				original_tag = TAN
 			}
 			
@@ -75,7 +75,7 @@ ideas = {
 
 			picture = generic_army_asia_1
 			
-			available = {
+			allowed = {
 				original_tag = TAN
 			}
 			
@@ -90,7 +90,7 @@ ideas = {
 
 			picture = generic_army_asia_3
 			
-			available = {
+			allowed = {
 				original_tag = TAN
 			}
 			
@@ -105,7 +105,7 @@ ideas = {
 
 			picture = generic_army_asia_5
 			
-			available = {
+			allowed = {
 				original_tag = TAN
 			}
 			
@@ -120,7 +120,7 @@ ideas = {
 
 			picture = generic_air_asia_1
 			
-			available = {
+			allowed = {
 				original_tag = TAN
 			}
 			
@@ -138,7 +138,7 @@ ideas = {
 			
 			picture = generic_army_asia_2
 			
-			available = {
+			allowed = {
 				original_tag = TAN
 			}
 			
@@ -155,7 +155,7 @@ ideas = {
 			
 			picture = generic_army_asia_1
 			
-			available = {
+			allowed = {
 				original_tag = TAN
 			}
 			
@@ -175,7 +175,7 @@ ideas = {
 			
 			picture = generic_air_asia_1
 			
-			available = {
+			allowed = {
 				original_tag = TAN
 			}
 			
@@ -192,7 +192,7 @@ ideas = {
 			
 			picture = generic_air_asia_3
 			
-			available = {
+			allowed = {
 				original_tag = TAN
 			}
 			
@@ -212,7 +212,7 @@ ideas = {
 			
 			picture = generic_navy_asia_2
 			
-			available = {
+			allowed = {
 				original_tag = TAN
 			}
 			

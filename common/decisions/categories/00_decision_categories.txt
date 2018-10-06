@@ -53,7 +53,7 @@ fascism_on_the_rise = {
 	}
 	
 	#visible = {
-	#	NOT = { has_government = fascism }
+	#	NOT = { has_government = labryscism }
 	#	has_idea_with_trait = labryscist_demagogue
 	#}
 }
@@ -66,8 +66,8 @@ democratic_on_the_rise = {
 	}
 	
 	#visible = {
-	#	NOT = { has_government = democratic }
-	#	has_idea_with_trait = democratic_reformer
+	#	NOT = { has_government = liberalism }
+	#	has_idea_with_trait = liberalism_reformer
 	#}
 }
 
@@ -79,8 +79,8 @@ communism_on_the_rise = {
 	}
 	
 	#visible = {
-	#	NOT = { has_government = communism }
-	#	has_idea_with_trait = communist_revolutionary
+	#	NOT = { has_government = collectivism }
+	#	has_idea_with_trait = collectivist_revolutionary
 	#}
 }
 

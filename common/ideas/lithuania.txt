@@ -5,7 +5,7 @@ ideas = {
 
 		picture = generic_political_advisor_europe_1
 		
-		available = {
+		allowed = {
 			original_tag = LIT
 		}
 		
@@ -16,7 +16,7 @@ ideas = {
 
 		picture = generic_political_advisor_europe_2
 			
-		available = {
+		allowed = {
 			original_tag = LIT
 		}
 		
@@ -27,7 +27,7 @@ ideas = {
 
 		picture = generic_political_advisor_europe_3
 		
-		available = {
+		allowed = {
 			original_tag = LIT
 		}
 		
@@ -41,7 +41,7 @@ theorist = {
 				
 		picture = generic_army_europe_4
 
-		available = {
+		allowed = {
 			original_tag = LIT
 		}
 		
@@ -56,7 +56,7 @@ theorist = {
 				
 		picture = generic_air_europe_1
 			
-		available = {
+		allowed = {
 			original_tag = LIT
 		}
 		
@@ -74,7 +74,7 @@ high_command = {
 
 		picture = generic_army_europe_1
 		
-		available = {
+		allowed = {
 			original_tag = LIT
 		}
 		
@@ -89,7 +89,7 @@ high_command = {
 
 		picture = generic_army_europe_3
 		
-		available = {
+		allowed = {
 			original_tag = LIT
 		}
 		
@@ -104,7 +104,7 @@ high_command = {
 
 		picture = generic_army_europe_5
 		
-		available = {
+		allowed = {
 			original_tag = LIT
 		}
 		
@@ -119,7 +119,7 @@ high_command = {
 
 		picture = generic_army_europe_1
 		
-		available = {
+		allowed = {
 			original_tag = LIT
 		}
 		
@@ -137,7 +137,7 @@ high_command = {
 			
 			picture = generic_army_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = LIT
 			}
 			
@@ -154,7 +154,7 @@ high_command = {
 			
 			picture = generic_army_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = LIT
 			}
 			
@@ -174,7 +174,7 @@ high_command = {
 			
 			picture = generic_air_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = LIT
 			}
 			
@@ -191,7 +191,7 @@ high_command = {
 			
 			picture = generic_air_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = LIT
 			}
 			
@@ -212,7 +212,7 @@ high_command = {
 			
 			picture = generic_navy_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = LIT
 			}
 			
@@ -229,7 +229,7 @@ high_command = {
 			
 			picture = generic_navy_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = LIT
 			}
 			
@@ -253,7 +253,7 @@ high_command = {
 			picture = generic_air_manufacturer_3
 
 			
-			available = {
+			allowed = {
 				original_tag = LIT
 			}
 			

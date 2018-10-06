@@ -1,179 +1,26 @@
 ideas = {
-
-	country = {
-	
-	
-		state_shintoism = {
-			available = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = liberalism
-				}
-			}
-			
-			removal_cost = -1
-	
-			modifier = {
-				industry_air_damage_factor = -0.1
-				army_morale_factor = 0.1
-			}
-		}
-	
-	
-		# POLITICAL
-		student_mobilization_idea = {
-			
-			
-			available = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = liberalism
-				}
-			}
-			
-			removal_cost = -1
-
-			picture = generic_infantry_bonus
-			
-			research_bonus = {
-				land_doctrine = 0.05
-			}
-		}
-		imperial_austerity_idea = {
-			
-			
-			available = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = generic_goods_red_bonus
-			
-			modifier = {
-				consumer_goods_factor = -0.05
-			}
-		}
-		spiritual_mobilization_idea = {
-					
-			available = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = generic_manpower_bonus
-			
-			modifier = {
-				conscription = 0.025
-			}
-		}
-
-		the_long_lance = {
-			available = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-			
-			modifier = {
-				naval_torpedo_range_factor = 1 # double the range
-			}
-		}
-		
-		imperial_glory_idea = {
-			
-			available = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = rexism
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				political_power_gain = 1
-				stability_factor = 0.15
-			}
-		}
-		warrior_traditions_idea = {
-			
-			available = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				stability_factor = 0.15
-				army_morale_factor = 0.1
-			}			
-		}
-		
-		for_the_emperor_idea = {
-			available = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = rexism
-			}
-			
-			removal_cost = -1
-
-			picture = generic_morale_bonus
-			
-			modifier = {
-				army_org = 5
-				army_morale_factor = 0.1
-			}
-		}
-	}
-	
-	
 	political_advisor = {	
 		sanzo_nosaka = {
 			
-			
 			available = {
+				if = {
+					limit = {
+						has_DLC = "Waking the Tiger"
+					}
+					has_completed_focus = JAP_the_unthinkable_option
+				}
+			}
+			allowed = {
 				original_tag = "JAP"
 			}
 			
 
 			
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-	
+			traits = { collectivist_revolutionary }
+
 			do_effect = {
 				NOT = {
-					has_government = proletarianism
+					has_government = collectivism
 				}
 			}
 			
@@ -184,19 +31,23 @@ ideas = {
 			
 		kijuro_shidehara = {
 			
-			
 			available = {
+				if = {
+					limit = {
+						has_DLC = "Waking the Tiger"
+					}
+					has_completed_focus = JAP_strengthen_civilian_government
+				}
+			}
+			
+			allowed = {
 				original_tag = "JAP"
 			}
 			
 
 			
 			traits = { liberalism_reformer }
-	
-			on_add = {
-				country_event = political.13
-			}
-	
+
 			do_effect = {
 				NOT = {
 					has_government = liberalism
@@ -211,21 +62,17 @@ ideas = {
 		kingoro_hashimoto = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = "JAP"
 			}
 			
 
 			
 			traits = { labryscist_demagogue }
-	
-			on_add = {
-				country_event = political.7
-			}
-	
+
 			do_effect = {
 				NOT = {
-					has_government = rexism
+					has_government = labryscism
 				}
 			}
 			
@@ -238,7 +85,7 @@ ideas = {
 			
 			picture = generic_political_advisor_asia_2
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -249,7 +96,7 @@ ideas = {
 			
 			picture = generic_political_advisor_asia_1
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -260,7 +107,7 @@ ideas = {
 			
 			picture = generic_political_advisor_asia_3
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -269,9 +116,9 @@ ideas = {
 
 		takuo_godo = {
 
-			picture = GFX_idea_takuo_godo
+			picture = takuo_godo
 
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 
@@ -289,7 +136,7 @@ ideas = {
 		kanin_kotohito = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -305,13 +152,11 @@ ideas = {
 		hajime_sugiyama = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
-
-			
-			traits = { army_chief_drill_2 }
+			traits = { army_chief_drill_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -321,7 +166,7 @@ ideas = {
 		hideki_tojo = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -341,7 +186,7 @@ ideas = {
 		fushimi_hiroyasu = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -357,7 +202,7 @@ ideas = {
 		osami_nagano = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -373,7 +218,7 @@ ideas = {
 		shigetaro_shimada = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -392,7 +237,7 @@ ideas = {
 		torashiro_kawabe = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -408,7 +253,7 @@ ideas = {
 		korechika_anami = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -424,7 +269,7 @@ ideas = {
 		kenji_doihara = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -444,7 +289,7 @@ ideas = {
 		hitoshi_imamura = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -460,7 +305,7 @@ ideas = {
 		yasuji_okamura = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -482,7 +327,7 @@ ideas = {
 		shunroku_hata = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -498,7 +343,7 @@ ideas = {
 		mitsuo_fuchida = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -514,7 +359,7 @@ ideas = {
 		nishizo_tsukahara = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -530,7 +375,7 @@ ideas = {
 		tateo_kato = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -546,7 +391,7 @@ ideas = {
 		soemu_toyoda = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -562,7 +407,7 @@ ideas = {
 		matome_ugaki = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -578,7 +423,7 @@ ideas = {
 		chuichi_nagumo = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -600,21 +445,23 @@ ideas = {
 		kure_naval_arsenal = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
+
+			cost = 75
 						
 			research_bonus = {
 				naval_equipment = 0.10
 			}
 			
-			traits = { atlantic_fleet_naval_manufacturer } # built Yamato
+			traits = { battlefleet_designer } # built Yamato
 
 		}
 		
 		yokosuka_naval_arsenal = {
 						
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -631,7 +478,7 @@ ideas = {
 		
 		maizuru_naval_arsenal = {
 						
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 				
@@ -648,7 +495,7 @@ ideas = {
 		
 		sasebo_naval_arsenal = {
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -670,24 +517,24 @@ ideas = {
 		
 		mitsubishi = {
 						
-			available = {
-				original_tag = JAP
+			allowed = {
+				original_tag = JAP		
 			}
-			
 			
 			research_bonus = {
 				air_equipment = 0.10
 			}
 			
-			traits = { light_aircraft_manufacturer }
-			
+			traits = { light_aircraft_manufacturer_2 }
+
 			modifier = {
+
 			}
 		}
-		
+
 		aichi = {
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 						
@@ -695,12 +542,12 @@ ideas = {
 				air_equipment = 0.10
 			}
 			
-			traits = { medium_aircraft_manufacturer }
+			traits = { fuel_efficient_aircraft_manufacturer }
 		}
 		
 		nakajima = {
 						
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -714,7 +561,7 @@ ideas = {
 		
 		yokosuka = {
 						
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 						
@@ -731,7 +578,7 @@ ideas = {
 	
 		kawasaki = {
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -745,7 +592,7 @@ ideas = {
 		
 		sumitomo = {
 						
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 						
@@ -760,11 +607,8 @@ ideas = {
 						
 			picture = generic_industrial_concern_2
 			
-			available = {
+			allowed = {
 				original_tag = JAP
-			}
-			available = {
-				has_completed_focus = synth_oil_focus
 			}
 						
 			research_bonus = {
@@ -782,7 +626,7 @@ ideas = {
 		
 		tokyo_arsenal = {
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -795,7 +639,7 @@ ideas = {
 		
 		nissan = {
 						
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 						
@@ -814,7 +658,7 @@ ideas = {
 	
 		osaka_army_arsenal = {
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 				
@@ -830,7 +674,7 @@ ideas = {
 		
 		tomoyuki_yamashita = {
 						
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -845,7 +689,7 @@ ideas = {
 		
 		hisaichi_terauchi = {
 						
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 						
@@ -858,7 +702,7 @@ ideas = {
 		
 		isoroku_yamamoto = {
 						
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -873,7 +717,7 @@ ideas = {
 		
 		minoru_genda = {
 						
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 						
@@ -886,7 +730,7 @@ ideas = {
 		
 		yoshitoshi_tokugawa = {
 						
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -901,7 +745,7 @@ ideas = {
 		
 		hino_kumazo = {
 						
-			available = {
+			allowed = {
 				original_tag = JAP
 			}	
 			
@@ -915,7 +759,7 @@ ideas = {
 		yoshio_nishina = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			
@@ -931,7 +775,7 @@ ideas = {
 		hideo_itokawa = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = JAP
 			}
 			

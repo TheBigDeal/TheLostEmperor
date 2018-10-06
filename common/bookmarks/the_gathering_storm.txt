@@ -21,11 +21,7 @@ bookmarks = {
 			history = USA_BLITZKRIEG_DESC
 			ideology = absolutism
 			ideas = {
-				home_of_the_free
-				great_depression
-				air_war_plans_division_focus
-				bureau_of_ships_focus
-				escort_effort_focus
+
 			}
 			focuses = {
 
@@ -35,11 +31,7 @@ bookmarks = {
 			history = GBR_BLITZKRIEG_DESC
 			ideology = absolutism
 			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				ENG_george_vi
-				british_austerity_idea
-				ENG_colonial_elite
+
 			}
 			focuses = {
 
@@ -50,8 +42,7 @@ bookmarks = {
 			history = GER_BLITZKRIEG_DESC
 			ideology = absolutism
 			ideas = {
-				sour_loser
-				general_staff
+
 			}
 			focuses = {
 
@@ -61,8 +52,7 @@ bookmarks = {
 			history = GER_BLITZKRIEG_DESC
 			ideology = absolutism
 			ideas = {
-				sour_loser
-				general_staff
+
 			}
 			focuses = {
 
@@ -72,8 +62,7 @@ bookmarks = {
 			history = GER_BLITZKRIEG_DESC
 			ideology = absolutism
 			ideas = {
-				sour_loser
-				general_staff
+
 			}
 			focuses = {
 
@@ -83,10 +72,7 @@ bookmarks = {
 			history = SOV_BLITZKRIEG_DESC
 			ideology = absolutism
 			ideas = {
-				trotskyite_plot_purged
-				home_of_revolution
-				officers_purged
-				nkvd_2
+
 			}
 			focuses = {
 

@@ -6,7 +6,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_5
 
-			available = {
+			allowed = {
 				original_tag = TUR
 			}
 			
@@ -17,7 +17,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 				
-			available = {
+			allowed = {
 				original_tag = TUR
 			}
 			
@@ -28,7 +28,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = TUR
 			}
 			
@@ -42,7 +42,7 @@ ideas = {
 				
 		picture = generic_army_europe_2
 
-		available = {
+		allowed = {
 			original_tag = TUR
 		}
 		
@@ -57,7 +57,7 @@ ideas = {
 				
 		picture = generic_political_advisor_europe_1
 
-		available = {
+		allowed = {
 			original_tag = TUR
 		}
 		
@@ -75,7 +75,7 @@ ideas = {
 			
 			picture = generic_army_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = TUR
 			}
 			
@@ -92,7 +92,7 @@ ideas = {
 			
 			picture = generic_army_europe_5
 			
-			available = {
+			allowed = {
 				original_tag = TUR
 			}
 			
@@ -112,7 +112,7 @@ ideas = {
 			
 			picture = generic_air_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = TUR
 			}
 			
@@ -129,7 +129,7 @@ ideas = {
 			
 			picture = generic_air_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = TUR
 			}
 			
@@ -150,7 +150,7 @@ ideas = {
 			
 			picture = generic_navy_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = TUR
 			}
 			
@@ -167,7 +167,7 @@ ideas = {
 			
 			picture = generic_navy_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = TUR
 			}
 			
@@ -187,7 +187,7 @@ ideas = {
 			
 			picture = sabiha_gocen
 			
-			available = {
+			allowed = {
 				original_tag = TUR
 			}
 			
@@ -204,7 +204,7 @@ ideas = {
 			
 			picture = generic_army_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = TUR
 			}
 			
@@ -220,7 +220,7 @@ ideas = {
 			
 			picture = generic_navy_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = TUR
 			}
 
@@ -236,7 +236,7 @@ ideas = {
 			
 			picture = generic_navy_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = TUR
 			}
 
@@ -259,7 +259,7 @@ ideas = {
 			picture = generic_air_manufacturer_2
 
 			
-			available = {
+			allowed = {
 				original_tag = TUR
 			}
 			
@@ -283,7 +283,7 @@ ideas = {
 			picture = generic_air_manufacturer_1
 
 			
-			available = {
+			allowed = {
 				original_tag = TUR
 			}
 			
@@ -312,7 +312,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 
 			
-			available = {
+			allowed = {
 				original_tag = TUR
 			}
 			
@@ -333,7 +333,7 @@ ideas = {
 			picture = generic_infantry_equipment_manufacturer_3
 
 			
-			available = {
+			allowed = {
 				original_tag = TUR
 			}
 			

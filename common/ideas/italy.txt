@@ -3,18 +3,18 @@ ideas = {
 		victor_emmanuel = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = "ITA"
 			}
 
 			allowed_civil_war = {
 				NOT = {
-					has_government = proletarianism
+					has_government = collectivism
 				}
 				NOT = {
 					any_other_country = {
 						original_tag = ITA
-						has_government = rexism
+						has_government = labryscism
 					}
 				}
 			}
@@ -27,14 +27,14 @@ ideas = {
 		}
 		vittoria_mutilata = {			
 			
-			available = {
+			allowed = {
 				original_tag = "ITA"
 			}
 
 			allowed_civil_war = {
 				NOT = {
 					OR = {
-						has_government = proletarianism
+						has_government = collectivism
 						has_government = liberalism
 					}
 				}
@@ -43,9 +43,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				proletarianism_acceptance = -10
-				liberalism_acceptance = -10
-				rexism_acceptance = 10
+				communism_acceptance = -10
+				democratic_acceptance = -10
+				fascism_acceptance = 10
 				ai_focus_aggressive_factor = 0.5
 				justify_war_goal_time = -0.05
 			}
@@ -55,22 +55,22 @@ ideas = {
 
 			picture = german_advisors
 
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 
 			allowed_civil_war = {
 				OR = {
 					AND = {
-						has_government = rexism
+						has_government = labryscism
 						GER = {
-							has_government = rexism
+							has_government = labryscism
 						}
 					}
 					AND = {
-						has_government = communsim
+						has_government = collectivism
 						GER = {
-							has_government = communsim
+							has_government = collectivism
 						}
 					}
 					AND = {
@@ -97,21 +97,17 @@ ideas = {
 		amadeo_bordiga = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = "ITA"
 			}
 			
 
 			
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-	
+			traits = { collectivist_revolutionary }
+
 			do_effect = {
 				NOT = {
-					has_government = proletarianism
+					has_government = collectivism
 				}
 			}
 			
@@ -123,18 +119,14 @@ ideas = {
 		ivanoe_bonomi = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = "ITA"
 			}
 			
 
 			
 			traits = { liberalism_reformer }
-	
-			on_add = {
-				country_event = political.13
-			}
-	
+
 			do_effect = {
 				NOT = {
 					has_government = liberalism
@@ -149,21 +141,17 @@ ideas = {
 		carlo_scorza = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = "ITA"
 			}
 			
 
 			
 			traits = { labryscist_demagogue }
-	
-			on_add = {
-				country_event = political.7
-			}
-	
+
 			do_effect = {
 				NOT = {
-					has_government = rexism
+					has_government = labryscism
 				}
 			}
 			
@@ -174,7 +162,7 @@ ideas = {
 
 		ITA_giovanni_marinelli = {
 						
-			available = {
+			allowed = {
 				original_tag = "ITA"
 			}
 
@@ -193,7 +181,7 @@ ideas = {
 		ITA_gian_galeazzo_ciano = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = "ITA"
 			}
 
@@ -212,7 +200,7 @@ ideas = {
 		ITA_roberto_farinacci = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = "ITA"
 			}
 
@@ -228,7 +216,7 @@ ideas = {
 		ITA_dino_grandi = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = "ITA"
 			}
 
@@ -247,7 +235,7 @@ ideas = {
 		ITA_serafino_mazzolini = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = "ITA"
 			}
 
@@ -266,7 +254,7 @@ ideas = {
 		ITA_giacomo_acerbo = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = "ITA"
 			}
 
@@ -285,7 +273,7 @@ ideas = {
 		ITA_junio_valerio_borghese = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = "ITA"
 			}
 
@@ -304,7 +292,7 @@ ideas = {
 		ITA_luigi_einaudi = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = "ITA"
 			}
 
@@ -323,7 +311,7 @@ ideas = {
 		ITA_paolo_thaon_di_revel = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = "ITA"
 			}
 
@@ -347,7 +335,7 @@ ideas = {
 		pietro_badoglio = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -363,7 +351,7 @@ ideas = {
 		ugo_cavallero = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -379,7 +367,7 @@ ideas = {
 		emilio_de_bono = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -397,7 +385,7 @@ ideas = {
 		domenico_cavagnari = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -414,7 +402,7 @@ ideas = {
 		arturo_riccardi = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -430,7 +418,7 @@ ideas = {
 		inigo_campioni = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -449,7 +437,7 @@ ideas = {
 		italo_balbo = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -465,7 +453,7 @@ ideas = {
 		rino_corso_fougier = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -481,7 +469,7 @@ ideas = {
 		francesco_pricolo = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -500,7 +488,7 @@ ideas = {
 		mario_roatta = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -516,7 +504,7 @@ ideas = {
 		vittorio_ambrosio = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -532,7 +520,7 @@ ideas = {
 		alfredo_guzzoni = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -548,7 +536,7 @@ ideas = {
 		ettore_muti = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -564,7 +552,7 @@ ideas = {
 		marziale_cerutti = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -580,7 +568,7 @@ ideas = {
 		silvio_scaroni = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -596,7 +584,7 @@ ideas = {
 		alberto_da_zara = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -612,7 +600,7 @@ ideas = {
 		carlo_bergamini = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -628,7 +616,7 @@ ideas = {
 		luigi_mascherpa = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -650,7 +638,7 @@ ideas = {
 		fiat = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -672,7 +660,7 @@ ideas = {
 		beretta = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -688,7 +676,7 @@ ideas = {
 		lancia = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -703,7 +691,7 @@ ideas = {
 		breda = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -725,7 +713,7 @@ ideas = {
 		macchi = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -739,7 +727,7 @@ ideas = {
 		savoia_marchetti = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 
@@ -752,7 +740,7 @@ ideas = {
 		
 		caproni = {
 						
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 						
@@ -765,7 +753,7 @@ ideas = {
 		
 		piaggio = {
 						
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 						
@@ -781,7 +769,7 @@ ideas = {
 	
 		danieli = {
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -801,7 +789,7 @@ ideas = {
 		
 		crda = {
 						
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 						
@@ -816,7 +804,7 @@ ideas = {
 	theorist = {	
 		giovanni_messe = {
 						
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -831,7 +819,7 @@ ideas = {
 		
 		rodolfo_graziani = {
 						
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -850,7 +838,7 @@ ideas = {
 		
 		guiseppe_fioravanzo = {
 						
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -865,7 +853,7 @@ ideas = {
 		
 		angelo_iachino = {
 						
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 						
@@ -878,7 +866,7 @@ ideas = {
 		
 		amedeo_mecozzi = {
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 			
@@ -894,7 +882,7 @@ ideas = {
 		renato_sandalli = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 						
@@ -908,7 +896,7 @@ ideas = {
 		gaetano_crocco = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = ITA
 			}
 						

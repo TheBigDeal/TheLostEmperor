@@ -4,9 +4,9 @@ state={
 	name="STATE_753"
 
 	history={
-		owner = ANH
+		owner = RUM
 		victory_points = {
-			6524 5 
+			6524 5
 		}
 		buildings = {
 			infrastructure = 6
@@ -14,12 +14,12 @@ state={
 			industrial_complex = 1
 
 		}
-		add_core_of = ANH
+		add_core_of = RUM
 
 	}
 
 	provinces={
-		425 
+		849 922 3879 3893 6895 11842
 	}
 	manpower=62452
 	buildings_max_level_factor=1.000

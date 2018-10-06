@@ -12,9 +12,7 @@ country_event = {
 	title = stability.3.t	
 	desc = stability.3.desc	#
 	picture = GFX_					# 
-	
 	hidden = yes
-
 	trigger = {
 		has_war = yes
 		has_civil_war = no
@@ -34,12 +32,11 @@ country_event = {
 			has_country_flag = crisis_in_progress
 		}
 	}
-
 	mean_time_to_happen = { 
 		days = 360 
 		modifier = {
 			factor = 2
-			NOT = { has_government = democratic }
+			NOT = { has_government = liberalism }
 		}
 		modifier = {
 			factor = 0.75
@@ -56,7 +53,6 @@ country_event = {
 			}
 		}
 	}
-
 	immediate = { 
 		random_list = {
 			20 = { 
@@ -93,15 +89,12 @@ country_event = {
 			set_country_flag = crisis_in_progress
 		}
 	}
-	
 	option = { 
 		name = stability.3.a
 		ai_chance = {
 			
-		}
-		
+		}	
 	}
-
 }
 
 
@@ -123,11 +116,8 @@ country_event = {
 		text = stability.21.desc.c
 		trigger = { has_idea = draft_dodging_3 }
 	}
-
 	picture = GFX_report_event_desertion_poster					
-		
 	is_triggered_only = yes
-
 	immediate = { 
 		if = {
 			limit = {
@@ -785,14 +775,14 @@ country_event = {
 	option = { 
 		name = stability.33.a
 		if = {
-			limit = { has_government = democratic }
+			limit = { has_government = liberalism }
 			start_civil_war = { ideology = communism size = 0.35 }
 		}
 		if = {
 			limit = { 
 				OR = {
-					has_government = fascism
-					has_government = communism
+					has_government = labryscism
+					has_government = collectivism
 				} 
 			}
 			start_civil_war = { ideology = democratic size = 0.45 }

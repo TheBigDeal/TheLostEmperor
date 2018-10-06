@@ -17,10 +17,13 @@
   liberalism_on_the_rise:0 "Liberalism On The Rise"
   socialism_on_the_rise:0 "Democratic Socialism On The Rise"
   mod_options_cat:0 "The Lost Emperor Config"
+  HRE_control_catagory:0 "Holy Roman Elections"
+  HRE_control_catagory_desc:0 "The Elections are upon us, we must prepare for them so we may unite the Holy Roman Empire."
  #Decisions
   #HRE Decisions
    HRE_vote_for_prussia:0 "Vote for Prussia"
    HRE_vote_for_austria:0 "Vote for Austria"
+   HRE_control_tt:0 "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test"
   #Political Decisions
     #Labryscism
      hold_the_labryscist_national_referendum:0 "Hold The Labrycist National Referendum"

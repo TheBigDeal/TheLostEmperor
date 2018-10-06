@@ -2,111 +2,65 @@
 # Bavarian Events
 ###########################
 
-add_namespace = bavaria
+add_namespace = le_bavaria
 
-# Spanish Civil War
-country_event = {
-	id = bavaria.1
-	title = bavaria.1.t
-	desc = bavaria.1.d
-	picture = GFX_report_event_bavaria_civil_war_soldiers
+country_event = { #Formation of the North German Confederation
+	id = le_bavaria.1
+	title = le_bavaria.1.t
+	desc = le_bavaria.1.d
+	picture = GFX_report_event_hitler_parade
 	
 	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
 	
-	trigger = {
-		NOT = { has_global_flag = scw_over }
-		tag = BAV
-		has_defensive_war = no
-		NOT = { has_government = absolutism }
-		date > 1935.8.20 # Trigger at some point after 1936 elections
+	option = { #UNITE SOUTH GERMANY
+		name = le_bavaria.1.a
+		THU = { country_event = le_bavaria.2 }
+		FUL = { country_event = le_bavaria.2 }
+		HES = { country_event = le_bavaria.2 }
+		NAS = { country_event = le_bavaria.2 }
+		TRI = { country_event = le_bavaria.2 }
+		NSA = { country_event = le_bavaria.2 }
+		PLT = { country_event = le_bavaria.2 }
+		MAI = { country_event = le_bavaria.2 }
+		WRZ = { country_event = le_bavaria.2 }
+		BAM = { country_event = le_bavaria.2 }
+		HUL = { country_event = le_bavaria.2 }
+		ULM = { country_event = le_bavaria.2 }
+		WUR = { country_event = le_bavaria.2 }
+		SPY = { country_event = le_bavaria.2 }
+		BAD = { country_event = le_bavaria.2 }
+		ALS = { country_event = le_bavaria.2 }
+		HNZ = { country_event = le_bavaria.2 }
+		MEM = { country_event = le_bavaria.2 }
+		AUG = { country_event = le_bavaria.2 }
+		LND = { country_event = le_bavaria.2 }
+		PSU = { country_event = le_bavaria.2 }
+		set_cosmetic_tag = SOUTH_GERMAN
 	}
-
-	mean_time_to_happen = {
-		days = 40
+	option = { #DO NOTHING
+		name = le_bavaria.1.b
 	}
+}
+country_event = { #THE MUNICH CONFERENCE
+	id = le_bavaria.2
+	title = le_bavaria.2
+	desc = le_bavaria.2
+	picture = GFX_report_event_hitler_parade
 	
-	option = { # Support Nationalists
-		name = bavaria.1.a
-		trigger = { is_ai = no }
-		hidden_effect = {
-			set_capital = 54
-			start_civil_war = {
-				ruling_party = absolutism
-				ideology = proletarianism
-				size = 0.5
-				capital = 52
-				states = { 52 53 }
-			}
-			random_other_country = {
-				limit = {
-					original_tag = BAV
-					has_government = proletarianism
-				}
-				load_oob = "SPA_Civil_War"
-				set_equipment_fraction = 0.5
-				set_stability  = 0.9
-				#country_event = { id = bavaria.3 days = 1 }
-				add_popularity = {
-					ideology = liberalism
-					popularity = 0.35
-				}
-			}
-			news_event = { hours = 6 id = news.63 }
-			set_global_flag = spanish_civil_war
-			
-			load_oob = "SPA_Civil_War"
-			set_equipment_fraction = 0.5
-			set_stability  = 0.9
-			
-			add_popularity = {
-				ideology = absolutism
-				popularity = 1
-			}
-
-			#country_event = { id = bavaria.2 days = 7 }
-		}
-		custom_effect_tooltip = nationalists_chosen
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	
+	option = { #Join The Confederation
+		name = le_bavaria.2.a
+		ai_chance = { factor = 30 }
+		BAV = { annex_country = { target = FROM transfer_troops = yes } }
 	}
-	option = { # Support Republicans
-		name = bavaria.1.b
-		hidden_effect = {
-			start_civil_war = {
-				ideology = absolutism
-				size = 0.5
-				capital = 54
-				states = { 54 }
-			}
-			random_other_country = {
-				limit = {
-					original_tag = BAV
-					has_government = absolutism
-				}
-				set_equipment_fraction = 0.5
-				set_stability  = 0.9
-				#country_event = { id = bavaria.2 days = 1 }
-				load_oob = "BAV_Civil_War"
-			}
-			news_event = { hours = 6 id = news.63 }
-			set_global_flag = spanish_civil_war
-			
-			set_politics = {
-				ruling_party = proletarianism
-				elections_allowed = no
-			}
-			add_popularity = {
-				ideology = proletarianism
-				popularity = 0.5
-			}
-			add_popularity = {
-				ideology = absolutism
-				popularity = -1
-			}	
-			load_oob = "SPA_Civil_War"
-			set_equipment_fraction = 0.5
-			set_stability  = 0.9
-			
-			#country_event = { id = bavaria.3 days = 7 }
-		}
-		custom_effect_tooltip = republicans_chosen
+	option = { #Keep Independence
+		name = le_bavaria.2.b
+		ai_chance = { factor = 10 }
+		BAV = { add_opinion_modifier = { target = FROM modifier = DECLINED_BERLIN_CONFERENCE } }
 	}
 }

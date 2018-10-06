@@ -1661,7 +1661,7 @@ focus_tree = {
 						is_historical_focus_on = yes
 						has_government = absolutism
 					}
-					has_idea = absolutism_idea
+					has_idea = neutrality_idea
 				}
 			}
 		}
@@ -1814,8 +1814,8 @@ focus_tree = {
 
 		completion_reward = {
 			if = {
-				limit = { has_idea = absolutism_idea }
-				remove_ideas = absolutism_idea
+				limit = { has_idea = neutrality_idea }
+				remove_ideas = neutrality_idea
 			}			
 			add_ideas = militarism_focus
 			army_experience = 20
@@ -1835,8 +1835,8 @@ focus_tree = {
 
 		completion_reward = {
 			if = {
-				limit = { has_idea = absolutism_idea }
-				remove_ideas = absolutism_idea
+				limit = { has_idea = neutrality_idea }
+				remove_ideas = neutrality_idea
 			}		
 			add_political_power = 200
 			add_ideas = idea_political_correctness
@@ -1856,8 +1856,8 @@ focus_tree = {
 
 		completion_reward = {
 			if = {
-				limit = { NOT = { has_idea = absolutism_idea } }
-				add_ideas = absolutism_idea
+				limit = { NOT = { has_idea = neutrality_idea } }
+				add_ideas = neutrality_idea
 			}
 			add_political_power = 150
 		}
@@ -1879,14 +1879,14 @@ focus_tree = {
 			factor = 1
 			modifier = {
 				factor = 0
-				has_idea = absolutism_idea
+				has_idea = neutrality_idea
 			}
 		}
 
 		completion_reward = {
 			if = {
-				limit = { has_idea = absolutism_idea }
-				remove_ideas = absolutism_idea
+				limit = { has_idea = neutrality_idea }
+				remove_ideas = neutrality_idea
 			}	
 			set_rule = { can_send_volunteers = yes }
 			add_political_power = 150
@@ -2022,7 +2022,7 @@ focus_tree = {
 			custom_effect_tooltip = why_we_fight_effect
 			hidden_effect = {
 				if = {
-					limit = { NOT = { has_idea = absolutism_idea } }
+					limit = { NOT = { has_idea = neutrality_idea } }
 					set_rule = { can_create_factions = yes }
 				}			
 			}

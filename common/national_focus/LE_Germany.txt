@@ -2971,7 +2971,7 @@ focus_tree = {
 	focus = {
 		id = GER_RESHAPE_EUROPE
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = GER_SUBJUGATE_ILLYIA }
+		prerequisite = { focus = GER_SUBJUGATE_ILLYRIA }
 		prerequisite = { focus = GER_TRANSYLVANIA_IS_HUNGARIAN focus = GER_TRANSYLVANIA_IS_ROMANIAN }
 		prerequisite = { focus = GER_PUSH_FOR_ROMANIAN_UNION }
 		x = 60

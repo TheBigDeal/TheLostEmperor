@@ -6,7 +6,7 @@ ideas = {
 
 			picture = generic_political_advisor_south_america_1
 			
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -17,7 +17,7 @@ ideas = {
 
 			picture = generic_political_advisor_south_america_2
 				
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -28,7 +28,7 @@ ideas = {
 
 			picture = generic_political_advisor_south_america_1
 			
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -39,7 +39,7 @@ ideas = {
 
 			picture = generic_political_advisor_south_america_3
 			
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -53,7 +53,7 @@ ideas = {
 					
 			picture = generic_army_south_america_1
 
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -68,7 +68,7 @@ ideas = {
 					
 			picture = generic_air_south_america_1
 				
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -82,7 +82,7 @@ ideas = {
 		PRU_ernesto_scroth = {
 					
 					
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -102,7 +102,7 @@ ideas = {
 
 			picture = generic_army_south_america_1
 			
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -117,7 +117,7 @@ ideas = {
 
 			picture = generic_army_south_america_2
 			
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -132,7 +132,7 @@ ideas = {
 
 			picture = generic_army_south_america_4
 			
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -147,7 +147,7 @@ ideas = {
 
 			picture = generic_navy_south_america_1
 			
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -162,7 +162,7 @@ ideas = {
 
 			picture = generic_air_south_america_1
 			
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -177,7 +177,7 @@ ideas = {
 
 			picture = generic_air_south_america_1
 			
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -195,7 +195,7 @@ ideas = {
 			
 			picture = generic_army_south_america_2
 			
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -212,7 +212,7 @@ ideas = {
 			
 			picture = generic_army_south_america_5
 			
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -229,7 +229,7 @@ ideas = {
 			
 			picture = generic_army_south_america_3
 			
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -246,7 +246,7 @@ ideas = {
 			
 			picture = generic_army_south_america_2
 			
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -266,7 +266,7 @@ ideas = {
 			
 			picture = generic_air_south_america_3
 			
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -283,7 +283,7 @@ ideas = {
 			
 			picture = generic_air_south_america_2
 			
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -303,7 +303,7 @@ ideas = {
 			
 			picture = generic_navy_south_america_2
 			
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			
@@ -320,7 +320,7 @@ ideas = {
 			
 			picture = generic_navy_south_america_3
 			
-			available = {
+			allowed = {
 				original_tag = PRU
 			}
 			

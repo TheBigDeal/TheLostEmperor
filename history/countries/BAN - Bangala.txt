@@ -1,5 +1,5 @@
 ﻿capital = 910
-#OOB = "AAC_1928"
+##OOB = "AAC_1928"
 
 set_technology = {
 	infantry_weapons = 1

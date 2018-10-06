@@ -105,21 +105,40 @@ focus_tree = {
 		id = PRS_ALIGN_OUR_SPHERE
 		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = PRS_ROAD_TO_THE_CROWN }
-		x = 2
+		x = 1
 		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 60
 		}
 		completion_reward = {
-			add_political_power = 50
+			SAX = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			MCH = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			VRP = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			MST = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			HAN = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			HAM = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			LUB = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			HLS = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			BRE = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			OLD = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			EFR = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			BRU = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			ANH = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			RAV = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			MUN = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			PAD = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			PYR = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			KLE = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			JUL = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			CLG = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
 		}
 	}
 	focus = {
 		id = PRS_THE_BERLIN_CONFERENCE
 		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = PRS_ALIGN_OUR_SPHERE }
-		x = 2
+		x = 1
 		y = 3
 		cost = 30
 		ai_will_do = {
@@ -127,20 +146,41 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = TT_berlin_conference
+			SAX = { country_event = le_prussia.5 }
+			#MCH = { country_event = le_prussia.5 }
+			#VRP = { country_event = le_prussia.5 }
+			#MST = { country_event = le_prussia.5 }
+			#HAN = { country_event = le_prussia.5 }
+			#HAM = { country_event = le_prussia.5 }
+			#LUB = { country_event = le_prussia.5 }
+			#HLS = { country_event = le_prussia.5 }
+			#BRE = { country_event = le_prussia.5 }
+			#OLD = { country_event = le_prussia.5 }
+			#EFR = { country_event = le_prussia.5 }
+			#BRU = { country_event = le_prussia.5 }
+			#ANH = { country_event = le_prussia.5 }
+			#RAV = { country_event = le_prussia.5 }
+			#MUN = { country_event = le_prussia.5 }
+			#PAD = { country_event = le_prussia.5 }
+			#PYR = { country_event = le_prussia.5 }
+			#KLE = { country_event = le_prussia.5 }
+			#JUL = { country_event = le_prussia.5 }
+			#CLG = { country_event = le_prussia.5 }
 		}
 	}
 	focus = {
 		id = PRS_THE_NORTH_GERMAN_CONFEDERATION
 		icon = GFX_focus_hun_elect_a_king
 		prerequisite = { focus = PRS_THE_BERLIN_CONFERENCE }
-		x = 2
+		x = 1
 		y = 4
 		cost = 2
 		ai_will_do = {
 			factor = 60
 		}
 		completion_reward = {
-		
+			set_cosmetic_tag = NORTH_GERMAN_CONFEDERATION
+			BAV = { country_event = le_bavaria.1 }
 		}
 	}
 	focus = {
@@ -162,7 +202,7 @@ focus_tree = {
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = PRS_SECRET_DEALS }
 		mutually_exclusive = { focus = PRS_PLAN_AN_ASSASSINATION }
-		x = 6
+		x = 5
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -176,7 +216,7 @@ focus_tree = {
 		id = PRS_ENTICE_HUNGARIAN_REVOLUTIONARIES
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = PRS_SABOTAGE_AUSTRIA }
-		x = 6
+		x = 5
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -191,7 +231,7 @@ focus_tree = {
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = PRS_ENTICE_HUNGARIAN_REVOLUTIONARIES focus = PRS_THE_NORTH_GERMAN_CONFEDERATION }
 		mutually_exclusive = { focus = PRS_CALL_AN_EARLY_ELECTION }
-		x = 3
+		x = 2
 		y = 5
 		cost = 10
 		ai_will_do = {
@@ -206,7 +246,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = PRS_ENTICE_HUNGARIAN_REVOLUTIONARIES focus = PRS_THE_NORTH_GERMAN_CONFEDERATION }
 		mutually_exclusive = { focus = PRS_DEMAND_THE_CROWN }
-		x = 5
+		x = 4
 		y = 5
 		cost = 10
 		ai_will_do = {
@@ -382,7 +422,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		ai_will_do = {
-			factor = 60
+			factor = 0
 		}
 		completion_reward = {
 		

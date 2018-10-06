@@ -447,7 +447,7 @@ ideas = {
 
 			picture = generic_political_advisor_india_2
 			
-			traits = { communist_revolutionary }			
+			traits = { collectivist_revolutionary }			
 			
 			do_effect = {
 				NOT = {

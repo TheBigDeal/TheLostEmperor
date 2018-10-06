@@ -9,12 +9,17 @@ country_event = {
 	id = le_prussia.1
 	title = le_prussia.1.t
 	desc = le_prussia.1.d
-
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+	trigger = {
+		AND = {
+			tag = PRS
+			NOT = { has_country_flag = INTRO_DONE }
+		}
+	}
 	option = {
 		name = le_prussia.1.a
+		set_country_flag = INTRO_DONE
 	}
 }
 country_event = { #What flag should we use?
@@ -136,77 +141,25 @@ country_event = { #Country gets puppeted
 		name = le_prussia.4.a
 	}
 }
-country_event = {
-	id = dutchrevolt.1
-	title = dutchrevolt.1.t
-	desc = dutchrevolt.1.d
-	picture = GFX_report_event_SPR_civwar
+
+country_event = { #THE BERLIN CONFERENCE
+	id = le_prussia.5
+	title = le_prussia.5.t
+	desc = le_prussia.5.d
+	picture = GFX_report_event_hitler_parade
 	
 	fire_only_once = yes
-	
-	trigger = {
-		tag = SPR
-		date > 1937.05.15
-		NOT = { date > 1937.10.1 }
-		OR = {
-			176 = { is_owned_and_controlled_by = SPR } #Castilla la Vieja
-			172 = { is_owned_and_controlled_by = SPR } #Navarra
-			174 = { is_owned_and_controlled_by = SPR } #León
-			171 = { is_owned_and_controlled_by = SPR } #Galicia
-			793 = { is_owned_and_controlled_by = SPR } #Asturias
-		}
-		has_country_flag = SPR_carlists_will_rise
-		NOT = { has_global_flag = SPR_carlists_have_risen }
-		NOT = { has_country_flag = election_success }
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+
+	option = { #Join The Confederation
+		name = le_prussia.5.a
+		ai_chance = { factor = 30 }
+		PRS = { annex_country = { target = FROM transfer_troops = yes } }
 	}
-	
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	immediate = {
-		set_global_flag = DUTCH_REVOLT
-		every_state = {
-			limit = { is_core_of = HOL }
-			add_claim_by = GRV
-		}
-		every_owned_state = {
-			limit = {
-				is_controlled_by = ROOT
-				OR = {
-					state = 35 #Castilla la Vieja
-					state = 36 #Navarra
-				}
-			}
-			remove_claim_by = GRV
-			add_core_of = GRV
-			remove_core_of = HOL
-			add_claim_by = HOL
-			GRV = { transfer_state = PREV }
-		}
-		GRV = { transfer_technology = yes }
-	}
-	
-	option = {
-		name = dutchrevolt.1.a #We shall fight them!
-		if = {
-			limit = { is_ai = yes }
-			#load_oob = SCW_SPR_reinforce1
-		}
-		GRV = {
-			#country_event = { id = sprc.2 days = 7 }
-		}
-	}
-	option = {
-		name = dutchrevolt.1.b #Long live Javier I! (Play as the Carlists)
-		trigger = { is_ai = no }
-		if = {
-			limit = { is_ai = yes }
-			#load_oob = SCW_SPR_reinforce1
-		}
-		GRV = {
-			#country_event = { id = sprc.2 days = 7 }
-			change_tag_from = SPR
-		}
+	option = { #Keep Independence
+		name = le_prussia.5.b
+		ai_chance = { factor = 10 }
+		PRS = { add_opinion_modifier = { target = FROM modifier = DECLINED_BERLIN_CONFERENCE } }
 	}
 }

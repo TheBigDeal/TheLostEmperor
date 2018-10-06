@@ -4,15 +4,15 @@ ideas = {
 	
 		anti_german_military = {
 			
-			picture = generic_rexism_banned
+			picture = generic_fascism_banned
 
-			available = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
 				NOT = {
-					has_government = rexism
+					has_government = labryscism
 				}
 			}
 
@@ -27,7 +27,7 @@ ideas = {
 			
 			picture = YUG_serbian_general_staff
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -47,7 +47,7 @@ ideas = {
 			
 			picture = YUG_yugoslavian_general_staff
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -66,7 +66,7 @@ ideas = {
 			
 			picture = YUG_federal_defense_council
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -86,7 +86,7 @@ ideas = {
 			
 			picture = generic_exploit_mines
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -105,7 +105,7 @@ ideas = {
 			
 			picture = generic_local_self_management
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -124,7 +124,7 @@ ideas = {
 			
 			picture = generic_central_management
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -141,64 +141,64 @@ ideas = {
 		
 		YUG_idea_peasant_councils = {
 
-			picture = generic_proletarianism_drift_bonus
+			picture = generic_communism_drift_bonus
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				has_government = proletarianism
+				has_government = collectivism
 			}
 
 			removal_cost = -1
 
-			picture = generic_proletarianism_drift_bonus
+			picture = generic_communism_drift_bonus
 			
 			modifier = {
-				proletarianism_drift = 0.2
+				communism_drift = 0.2
 			}
 		}
 		
 		YUG_idea_empowered_peasant_councils = {
 			
-			picture = generic_proletarianism_drift_bonus
+			picture = generic_communism_drift_bonus
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				has_government = proletarianism
+				has_government = collectivism
 			}
 
 			removal_cost = -1
 
-			picture = generic_proletarianism_drift_bonus
+			picture = generic_communism_drift_bonus
 			
 			modifier = {
-				proletarianism_drift = 0.4
+				communism_drift = 0.4
 			}
 		}
 		
 		YUG_idea_very_empowered_peasant_councils = {
 			
-			picture = generic_proletarianism_drift_bonus
+			picture = generic_communism_drift_bonus
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				has_government = proletarianism
+				has_government = collectivism
 			}
 
 			removal_cost = -1
 
-			picture = generic_proletarianism_drift_bonus
+			picture = generic_communism_drift_bonus
 			
 			modifier = {
-				proletarianism_drift = 0.6
+				communism_drift = 0.6
 			}
 		}
 		
@@ -214,12 +214,12 @@ ideas = {
 				}
 			}
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				has_government = proletarianism
+				has_government = collectivism
 			}
 
 			removal_cost = -1
@@ -233,7 +233,7 @@ ideas = {
 			
 			picture = generic_artillery_regiments
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -259,7 +259,7 @@ ideas = {
 			
 			picture = generic_acquire_tanks
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -278,7 +278,7 @@ ideas = {
 			
 			picture = generic_foreign_capital
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -297,7 +297,7 @@ ideas = {
 			
 			picture = YUG_orthodox_church_support
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -308,7 +308,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_gain = 0.25
+				political_power_factor = 0.25
 			}
 		}
 		
@@ -316,7 +316,7 @@ ideas = {
 			
 			picture = YUG_all_yugoslavian_regiments
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -335,7 +335,7 @@ ideas = {
 			
 			picture = FRA_scw_intervention_republicans_focus
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -354,7 +354,7 @@ ideas = {
 			
 			picture = generic_volunteer_expedition_bonus
 
-			available = {
+			allowed = {
 				always = no
 				country_exists = BUL
 			}
@@ -377,7 +377,7 @@ ideas = {
 			
 			picture = generic_morale_bonus
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -396,7 +396,7 @@ ideas = {
 			
 			picture = generic_morale_bonus
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -415,7 +415,7 @@ ideas = {
 			
 			picture = generic_secret_police
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -434,7 +434,7 @@ ideas = {
 			
 			picture = generic_constitutional_guarantees
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -453,7 +453,7 @@ ideas = {
 			
 			picture = YUG_local_militias
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -472,7 +472,7 @@ ideas = {
 			
 			picture = generic_fighter_production_diverted
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -491,7 +491,7 @@ ideas = {
 			
 			picture = generic_fighter_production_diverted
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -516,7 +516,7 @@ ideas = {
 			
 			picture = generic_bomber_production_diverted
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -541,7 +541,7 @@ ideas = {
 
 			picture = generic_license_production
 
-			available = {
+			allowed = {
 				original_tag = YUG
 				has_dlc = "Death or Dishonor"
 			}
@@ -559,7 +559,7 @@ ideas = {
 			
 			picture = generic_artillery_manufacturer_2
 
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -581,7 +581,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -592,7 +592,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_5
 
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -603,7 +603,7 @@ ideas = {
 
 			picture = generic_army_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -614,18 +614,18 @@ ideas = {
 
 			picture = generic_communist_europe
 			
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
-			traits = { communist_revolutionary }
+			traits = { collectivist_revolutionary }
 		}
 
 		YUG_milovan_djilas = {
 
-			picture = generic_liberalism_europe
+			picture = generic_democratic_europe
 			
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -636,7 +636,7 @@ ideas = {
 
 			picture = generic_fascist_europe
 			
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -649,7 +649,7 @@ ideas = {
 		YUG_ljubomir_maric = {
 					
 					
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -665,7 +665,7 @@ ideas = {
 		YUG_marijan_polic = {
 					
 					
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -685,7 +685,7 @@ ideas = {
 			
 			picture = generic_army_europe_6
 			
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -702,7 +702,7 @@ ideas = {
 			
 			picture = generic_army_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -719,7 +719,7 @@ ideas = {
 			
 			picture = generic_army_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -740,7 +740,7 @@ ideas = {
 			
 			picture = generic_air_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -757,7 +757,7 @@ ideas = {
 			
 			picture = generic_air_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -777,7 +777,7 @@ ideas = {
 			
 			picture = generic_navy_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -794,7 +794,7 @@ ideas = {
 			
 			picture = generic_navy_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -814,7 +814,7 @@ ideas = {
 			
 			picture = generic_army_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -831,7 +831,7 @@ ideas = {
 			
 			picture = generic_army_europe_2
 
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -847,7 +847,7 @@ ideas = {
 			
 			picture = generic_army_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -863,7 +863,7 @@ ideas = {
 			
 			picture = generic_air_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -887,7 +887,7 @@ ideas = {
 			picture = generic_naval_manufacturer_2
 
 			
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			
@@ -914,7 +914,7 @@ ideas = {
 			
 			picture = generic_air_manufacturer_3
 
-			available = {
+			allowed = {
 				original_tag = YUG
 				NOT = { has_dlc = "Death or Dishonor" }		
 			}
@@ -942,7 +942,7 @@ ideas = {
 				has_completed_focus = YUG_ikarus
 			}
 
-			available = {
+			allowed = {
 				original_tag = YUG
 				has_dlc = "Death or Dishonor"
 			}
@@ -966,7 +966,7 @@ ideas = {
 			
 			picture = generic_air_manufacturer_2
 
-			available = {
+			allowed = {
 				original_tag = YUG
 				NOT = { has_dlc = "Death or Dishonor" }
 			}
@@ -994,7 +994,7 @@ ideas = {
 				has_completed_focus = YUG_rogozarski
 			}
 
-			available = {
+			allowed = {
 				original_tag = YUG
 				has_dlc = "Death or Dishonor"
 			}
@@ -1018,7 +1018,7 @@ ideas = {
 			
 			picture = generic_air_manufacturer_1
 
-			available = {
+			allowed = {
 				original_tag = YUG
 				NOT = { has_dlc = "Death or Dishonor" }
 			}
@@ -1046,7 +1046,7 @@ ideas = {
 				has_completed_focus = YUG_zmaj				
 			}			
 
-			available = {
+			allowed = {
 				original_tag = YUG
 				has_dlc = "Death or Dishonor"
 			}
@@ -1075,7 +1075,7 @@ ideas = {
 			picture = generic_infantry_equipment_manufacturer_3
 
 			
-			available = {
+			allowed = {
 				original_tag = YUG
 			}
 			

@@ -1,9 +1,9 @@
 ﻿capital = 608
 
-OOB = "CHI_1936"
-OOB = "MON_1936"
-OOB = "SIK_1936"
-OOB = "TIB_1936"
+#OOB = "CHI_1936"
+#OOB = "MON_1936"
+#OOB = "SIK_1936"
+#OOB = "TIB_1936"
 
 set_technology = {
 	infantry_weapons = 1

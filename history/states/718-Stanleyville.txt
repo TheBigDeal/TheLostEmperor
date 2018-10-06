@@ -7,17 +7,17 @@ state={
 	}
 
 	history={
-		owner = FRE
+		owner = MNG
 		buildings = {
 			infrastructure = 2
 
 		}
-		add_core_of = FRE
+		add_core_of = MNG
 
 	}
 
 	provinces={
-		1181 1950 2034 2154 4941 6027 7161 10766 11934 12783 12847 
+		12847 
 	}
 	manpower=6229078
 	buildings_max_level_factor=1.000

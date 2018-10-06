@@ -8,7 +8,7 @@ ideas = {
 
 			picture = generic_political_advisor_arab_2
 
-			available = {
+			allowed = {
 				original_tag = YEM
 			}
 			
@@ -19,7 +19,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 				
-			available = {
+			allowed = {
 				original_tag = YEM
 			}
 			
@@ -30,7 +30,7 @@ ideas = {
 
 			picture = generic_political_advisor_arab_1
 				
-			available = {
+			allowed = {
 				original_tag = YEM
 			}
 			
@@ -45,7 +45,7 @@ ideas = {
 
 			picture = generic_army_arab_2
 			
-			available = {
+			allowed = {
 				original_tag = YEM
 			}		
 			
@@ -60,7 +60,7 @@ ideas = {
 
 			picture = generic_army_arab_3
 			
-			available = {
+			allowed = {
 				original_tag = YEM
 			}
 			
@@ -78,7 +78,7 @@ ideas = {
 
 			picture = generic_air_arab_3
 			
-			available = {
+			allowed = {
 				original_tag = YEM
 			}
 			
@@ -93,7 +93,7 @@ ideas = {
 
 			picture = generic_air_arab_2
 			
-			available = {
+			allowed = {
 				original_tag = YEM
 			}
 			
@@ -112,7 +112,7 @@ ideas = {
 
 			picture = generic_navy_arab_2
 			
-			available = {
+			allowed = {
 				original_tag = YEM
 			}
 					
@@ -127,7 +127,7 @@ ideas = {
 
 			picture = generic_navy_arab_3
 			
-			available = {
+			allowed = {
 				original_tag = YEM
 			}
 					
@@ -145,7 +145,7 @@ ideas = {
 			
 			picture = generic_army_arab_1
 			
-			available = {
+			allowed = {
 				original_tag = YEM
 			}
 			
@@ -160,7 +160,7 @@ ideas = {
 
 			picture = generic_air_arab_3
 			
-			available = {
+			allowed = {
 				original_tag = YEM
 			}
 			
@@ -175,7 +175,7 @@ ideas = {
 			
 			picture = generic_army_arab_2
 			
-			available = {
+			allowed = {
 				original_tag = YEM
 			}
 			
@@ -190,7 +190,7 @@ ideas = {
 
 			picture = generic_navy_arab_3
 			
-			available = {
+			allowed = {
 				original_tag = YEM
 			}
 			
@@ -208,7 +208,7 @@ ideas = {
 			
 			picture = generic_army_arab_2
 
-			available = {
+			allowed = {
 				original_tag = YEM
 			}
 			
@@ -223,7 +223,7 @@ ideas = {
 
 			picture = generic_navy_arab_3
 			
-			available = {
+			allowed = {
 				original_tag = YEM
 			}
 			
@@ -238,7 +238,7 @@ ideas = {
 
 			picture = generic_air_arab_2
 			
-			available = {
+			allowed = {
 				original_tag = YEM
 			}
 			

@@ -2,24 +2,20 @@
 state={
 	id=875
 	name="STATE_754"
-
 	history={
-		owner = BRU
+		owner = HOL
 		victory_points = {
-			6524 5 
+			6524 5
 		}
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1
 			industrial_complex = 1
-
 		}
-		add_core_of = BRU
-
+		add_core_of = HOL
 	}
-
 	provinces={
-		526 11493 
+		6336 9309 9335 11318
 	}
 	manpower=867988
 	buildings_max_level_factor=1.000

@@ -4,6 +4,56 @@ country = {
 	#################
 	#Political
 	#################
+	labryscist_assault_divisions = {
+			
+			available = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_rexism_drift_bonus
+			
+			modifier = {
+				stability_factor = -0.05
+				conscription = 0.002
+				labryscism_drift = 0.04
+				rexism_drift = 0.01
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	proletariet_revolutionaries = {
+			
+			removal_cost = -1
+			
+			available = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_proletarianism_drift_bonus
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+	proletariet_partisans_recruiting = {
+			
+			available = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_proletarianism_drift_bonus
+			
+			modifier = {
+				conscription = -0.002
+				proletarianism_drift = 0.05
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
 	Monarchist_Propaganda = {
 		picture = Hungarian_Monarchy
 		modifier = {

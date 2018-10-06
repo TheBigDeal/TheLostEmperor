@@ -5,7 +5,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = LUX
 			}
 			
@@ -16,7 +16,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 				
-			available = {
+			allowed = {
 				original_tag = LUX
 			}
 			
@@ -27,7 +27,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = LUX
 			}
 			
@@ -41,7 +41,7 @@ ideas = {
 			
 			picture = generic_army_europe_4
 			
-			available = {
+			allowed = {
 				original_tag = LUX
 			}
 			
@@ -52,11 +52,11 @@ ideas = {
 			}
 		}
 		
-		LUX_alexander_von_falkenhausen = {
+		LUX_alexander_von_falkenhausen = { # Turned into generic guy because Luxemburg only had one commander RIP
 			
 			picture = generic_army_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = LUX
 			}
 			
@@ -74,7 +74,7 @@ ideas = {
 			
 			picture = generic_air_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = LUX
 			}
 			
@@ -89,7 +89,7 @@ ideas = {
 			
 			picture = generic_air_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = LUX
 			}
 			
@@ -108,7 +108,7 @@ ideas = {
 			
 			picture = generic_navy_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = LUX
 			}
 			
@@ -123,7 +123,7 @@ ideas = {
 			
 			picture = generic_navy_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = LUX
 			}
 			
@@ -141,7 +141,7 @@ ideas = {
 
 			picture = generic_army_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = LUX
 			}
 			
@@ -156,7 +156,7 @@ ideas = {
 
 			picture = generic_army_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = LUX
 			}
 			
@@ -171,7 +171,7 @@ ideas = {
 
 			picture = generic_air_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = LUX
 			}
 			
@@ -186,7 +186,7 @@ ideas = {
 
 			picture = generic_navy_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = LUX
 			}
 			
@@ -204,7 +204,7 @@ ideas = {
 					
 			picture = generic_army_europe_1
 
-			available = {
+			allowed = {
 				original_tag = LUX
 			}
 			
@@ -219,7 +219,7 @@ ideas = {
 					
 			picture = generic_air_europe_1
 				
-			available = {
+			allowed = {
 				original_tag = LUX
 			}
 			
@@ -234,7 +234,7 @@ ideas = {
 					
 			picture = generic_navy_europe_1
 				
-			available = {
+			allowed = {
 				original_tag = LUX
 			}
 			

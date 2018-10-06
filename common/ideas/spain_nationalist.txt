@@ -6,9 +6,9 @@ ideas = {
 
 			picture = FRA_matignon_agreements
 
-			available = {
+			allowed = {
 				original_tag = SPR
-				has_government = rexism
+				has_government = labryscism
 			}
 
 			allowed_civil_war = {
@@ -28,9 +28,9 @@ ideas = {
 
 			picture = generic_army_europe_2
 
-			available = {
+			allowed = {
 				original_tag = SPR
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 			traits = { prince_of_terror }
@@ -40,9 +40,9 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 
-			available = {
+			allowed = {
 				original_tag = SPR
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 			traits = { compassionate_gentleman }
@@ -52,9 +52,9 @@ ideas = {
 
 			picture = generic_army_europe_4
 
-			available = {
+			allowed = {
 				original_tag = SPR
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 			traits = { war_industrialist }
@@ -66,9 +66,9 @@ ideas = {
 	SPA_jose_enrique_varela = {
 				
 				
-		available = {
+		allowed = {
 			original_tag = SPR
-			has_government = rexism
+			has_government = labryscism
 		}
 		
 		picture = generic_army_europe_3
@@ -83,9 +83,9 @@ ideas = {
 	SPA_emilio_herrera = {
 				
 				
-		available = {
+		allowed = {
 			original_tag = SPR
-			has_government = rexism
+			has_government = labryscism
 		}
 		
 		picture = generic_air_europe_3
@@ -105,9 +105,9 @@ ideas = {
 			
 			picture = generic_army_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = SPR
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 
@@ -123,9 +123,9 @@ ideas = {
 			
 			picture = generic_army_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = SPR
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 
@@ -141,9 +141,9 @@ ideas = {
 			
 			picture = generic_army_europe_5
 			
-			available = {
+			allowed = {
 				original_tag = SPR
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 
@@ -162,9 +162,9 @@ ideas = {
 			
 			picture = generic_air_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = SPR
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 
@@ -180,9 +180,9 @@ ideas = {
 			
 			picture = generic_air_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = SPR
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 
@@ -202,9 +202,9 @@ ideas = {
 			
 			picture = generic_navy_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = SPR
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 
@@ -220,9 +220,9 @@ ideas = {
 			
 			picture = generic_navy_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = SPR
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 
@@ -238,9 +238,9 @@ ideas = {
 			
 			picture = generic_navy_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = SPR
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 
@@ -257,10 +257,10 @@ ideas = {
 	high_command = {
 		SPA_emilio_esteban_infantes = {
 			
-			
-			available = {
+			picture = generic_army_europe_5
+			allowed = {
 				original_tag = SPR
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 
@@ -274,10 +274,10 @@ ideas = {
 		
 		SPA_agustin_munoz_grandes = {
 			
-			
-			available = {
+			picture = generic_army_europe_3
+			allowed = {
 				original_tag = SPR
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 
@@ -291,10 +291,10 @@ ideas = {
 	
 		SPA_joaquin_garcia_morato = {
 			
-			
-			available = {
+			picture = generic_air_europe_2
+			allowed = {
 				original_tag = SPR
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 
@@ -308,10 +308,10 @@ ideas = {
 		
 		SPA_angel_salas_larrazabal = {
 			
-			
-			available = {
+			picture = generic_air_europe_1
+			allowed = {
 				original_tag = SPR
-				has_government = rexism
+				has_government = labryscism
 			}
 			
 

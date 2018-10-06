@@ -183,7 +183,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { communist_revolutionary }
+			traits = { collectivist_revolutionary }
 	
 			on_add = {
 				country_event = political.1

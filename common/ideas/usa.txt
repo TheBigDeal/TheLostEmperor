@@ -4,7 +4,7 @@ ideas = {
 		great_depression = {
 			
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -21,11 +21,29 @@ ideas = {
 				join_faction_tension = 0.20
 			}
 		}
+
+		USA_homeland_defense = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture = #WTT_TODO_CD: Art
+
+			modifier = {
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.2
+			}
+		}
 		
 		new_deal = {
 			
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -44,7 +62,7 @@ ideas = {
 		wilkies_new_deal = {
 			
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -64,7 +82,7 @@ ideas = {
 		full_employment = {
 			
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -83,7 +101,7 @@ ideas = {
 		
 		
 		wartime_industry_focus = {
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -103,7 +121,7 @@ ideas = {
 		bureau_of_ships_focus = {
 			
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -137,7 +155,7 @@ ideas = {
 		USA_prepare_intervention = {
 			
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -157,7 +175,7 @@ ideas = {
 		limited_interventionism = {
 			
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -178,7 +196,7 @@ ideas = {
 
 		combined_bomber_offensive = {
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -198,7 +216,7 @@ ideas = {
 		}
 
 		office_of_strategic_services = {
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -219,7 +237,7 @@ ideas = {
 		}
 
 		war_bonds_focus = {
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -237,7 +255,7 @@ ideas = {
 
 		liberty_ships_focus = {
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -254,7 +272,7 @@ ideas = {
 
 		air_war_plans_division_focus = {
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -276,7 +294,7 @@ ideas = {
 
 		air_support_focus = {
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -298,7 +316,7 @@ ideas = {
 
 		strategic_bombing_focus = {
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -317,7 +335,7 @@ ideas = {
 
 		escort_effort_focus = {
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -336,7 +354,7 @@ ideas = {
 		
 		home_of_the_free = {
 			
-			available = {
+			allowed = {
 				always = no
 			}
 
@@ -358,35 +376,35 @@ ideas = {
 			}
 		}
 
-		# idea for the protect Amercians focus - USA liberalism
-		american_influence_defence_liberalism = {
-			available = { always = no	}
+		# idea for the protect Amercians focus - USA democratic
+		american_influence_defence_democratic = {
+			allowed = { always = no	}
 
 			allowed_civil_war = {
 				has_government = liberalism
 			}
 
 			removal_cost = -1
-			picture = generic_liberalism_drift_bonus
+			picture = generic_democratic_drift_bonus
 			modifier = {
 				drift_defence_factor = 0.5
 			}
 		}
-		american_influence_drift_liberalism = {
-			available = { always = no	}
+		american_influence_drift_democratic = {
+			allowed = { always = no	}
 
 			allowed_civil_war = {
 				has_government = liberalism
 			}
 
 			removal_cost = -1
-			picture = generic_liberalism_drift_bonus
+			picture = generic_democratic_drift_bonus
 			modifier = {
-				liberalism_drift = 0.05
+				democratic_drift = 0.05
 			}
 		} 
-		american_protection_defence_liberalism = {
-			available = { always = no	}
+		american_protection_defence_democratic = {
+			allowed = { always = no	}
 
 			allowed_civil_war = {
 				has_government = liberalism
@@ -398,8 +416,8 @@ ideas = {
 				drift_defence_factor = 0.5
 			}
 		}
-		american_protection_drift_liberalism = {
-			available = { always = no	}
+		american_protection_drift_democratic = {
+			allowed = { always = no	}
 
 			allowed_civil_war = {
 				has_government = liberalism
@@ -408,41 +426,41 @@ ideas = {
 			removal_cost = -1
 			picture = generic_intel_bonus
 			modifier = {
-				liberalism_drift = 0.05
+				democratic_drift = 0.05
 			}			
 		}
 			# idea for the protect Amercians focus - USA communist
-		american_influence_defence_proletarianism = {
-			available = { always = no	}
+		american_influence_defence_communism = {
+			allowed = { always = no	}
 
 			allowed_civil_war = {
-				has_government = proletarianism
+				has_government = collectivism
 			}
 
 			removal_cost = -1
-			picture = generic_proletarianism_drift_bonus
+			picture = generic_communism_drift_bonus
 			modifier = {
 				drift_defence_factor = 0.5
 			}
 		}
-		american_influence_drift_proletarianism = {
-			available = { always = no	}
+		american_influence_drift_communism = {
+			allowed = { always = no	}
 
 			allowed_civil_war = {
-				has_government = proletarianism
+				has_government = collectivism
 			}
 
 			removal_cost = -1
-			picture = generic_proletarianism_drift_bonus
+			picture = generic_communism_drift_bonus
 			modifier = {
-				proletarianism_drift = 0.05
+				communism_drift = 0.05
 			}
 		} 
-		american_protection_defence_proletarianism = {
-			available = { always = no	}
+		american_protection_defence_communism = {
+			allowed = { always = no	}
 
 			allowed_civil_war = {
-				has_government = proletarianism
+				has_government = collectivism
 			}
 
 			removal_cost = -1
@@ -451,51 +469,51 @@ ideas = {
 				drift_defence_factor = 0.5
 			}
 		}
-		american_protection_drift_proletarianism = {
-			available = { always = no	}
+		american_protection_drift_communism = {
+			allowed = { always = no	}
 
 			allowed_civil_war = {
-				has_government = proletarianism
+				has_government = collectivism
 			}
 
 			removal_cost = -1
 			picture = generic_intel_bonus
 			modifier = {
-				proletarianism_drift = 0.05
+				communism_drift = 0.05
 			}			
 		}
 			# idea for the protect Amercians focus - USA fascist
-		american_influence_defence_rexism = {
-			available = { always = no	}
+		american_influence_defence_fascism = {
+			allowed = { always = no	}
 
 			allowed_civil_war = {
-				has_government = rexism
+				has_government = labryscism
 			}
 
 			removal_cost = -1
-			picture = generic_rexism_drift_bonus
+			picture = generic_fascism_drift_bonus
 			modifier = {
 				drift_defence_factor = 0.5
 			}
 		}
-		american_influence_drift_rexism = {
-			available = { always = no	}
+		american_influence_drift_fascism = {
+			allowed = { always = no	}
 
 			allowed_civil_war = {
-				has_government = rexism
+				has_government = labryscism
 			}
 
 			removal_cost = -1
-			picture = generic_rexism_drift_bonus
+			picture = generic_fascism_drift_bonus
 			modifier = {
-				rexism_drift = 0.05
+				fascism_drift = 0.05
 			}
 		} 
-		american_protection_defence_rexism = {
-			available = { always = no	}
+		american_protection_defence_fascism = {
+			allowed = { always = no	}
 
 			allowed_civil_war = {
-				has_government = rexism
+				has_government = labryscism
 			}
 
 			removal_cost = -1
@@ -504,21 +522,21 @@ ideas = {
 				drift_defence_factor = 0.5
 			}
 		}
-		american_protection_drift_rexism = {
-			available = { always = no	}
+		american_protection_drift_fascism = {
+			allowed = { always = no	}
 
 			allowed_civil_war = {
-				has_government = rexism
+				has_government = labryscism
 			}
 
 			removal_cost = -1
 			picture = generic_intel_bonus
 			modifier = {
-				rexism_drift = 0.05
+				fascism_drift = 0.05
 			}			
 		}
 		USA_world_police = {
-			available = { always = no	}
+			allowed = { always = no	}
 
 			allowed_civil_war = {
 				always = yes
@@ -540,21 +558,17 @@ ideas = {
 		earl_browder = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = "USA"
 			}
 			
 
 			
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-	
+			traits = { collectivist_revolutionary }
+
 			do_effect = {
 				NOT = {
-					has_government = proletarianism
+					has_government = collectivism
 				}
 			}
 			
@@ -566,17 +580,13 @@ ideas = {
 		harold_ickes = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = "USA"
 			}
 			
 
 			
 			traits = { liberalism_reformer }
-	
-			on_add = {
-				country_event = political.13
-			}
 	
 			do_effect = {
 				NOT = {
@@ -592,7 +602,7 @@ ideas = {
 		charles_coughlin = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = "USA"
 			}
 			
@@ -600,13 +610,9 @@ ideas = {
 			
 			traits = { labryscist_demagogue }
 	
-			on_add = {
-				country_event = political.7
-			}
-	
 			do_effect = {
 				NOT = {
-					has_government = rexism
+					has_government = labryscism
 				}
 			}
 			
@@ -619,7 +625,7 @@ ideas = {
 			
 			picture = generic_political_advisor_europe_1
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -630,7 +636,7 @@ ideas = {
 			
 			picture = generic_political_advisor_europe_5
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -641,7 +647,7 @@ ideas = {
 			
 			picture = generic_political_advisor_europe_6
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -652,7 +658,7 @@ ideas = {
 			
 			picture = generic_political_advisor_europe_2
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -663,7 +669,7 @@ ideas = {
 			
 			picture = generic_political_advisor_europe_3
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -678,7 +684,7 @@ ideas = {
 		douglas_macarthur = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -694,7 +700,7 @@ ideas = {
 		george_marshall = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -710,7 +716,7 @@ ideas = {
 		dwight_eisenhower = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -730,7 +736,7 @@ ideas = {
 		henry_arnold = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -746,7 +752,7 @@ ideas = {
 		carl_spaatz = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -763,7 +769,7 @@ ideas = {
 		george_kenney = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -782,7 +788,7 @@ ideas = {
 		ernest_king = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -798,7 +804,7 @@ ideas = {
 		chester_nimitz = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -814,7 +820,7 @@ ideas = {
 		william_halsey = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -833,7 +839,7 @@ ideas = {
 		courtney_hodges = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -849,10 +855,13 @@ ideas = {
 		joseph_stilwell = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
+			available = {
+				NOT = { has_country_flag = joseph_stilwell_sent_to_china }
+			}
 
 			
 			traits = { army_logistics_2 }
@@ -865,7 +874,7 @@ ideas = {
 		mark_clark = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -881,7 +890,7 @@ ideas = {
 		jimmy_doolittle = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -897,7 +906,7 @@ ideas = {
 		john_cannon = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -913,7 +922,7 @@ ideas = {
 		claire_lee_chennault = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -929,7 +938,7 @@ ideas = {
 		raymond_spruance = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -945,7 +954,7 @@ ideas = {
 		frank_jack_fletcher = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -961,7 +970,7 @@ ideas = {
 		thomas_kinkaid = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -982,7 +991,7 @@ ideas = {
 		marmon_herrington = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}			
 
@@ -1000,7 +1009,7 @@ ideas = {
 		chrysler = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1019,7 +1028,7 @@ ideas = {
 		army_ordnance_department = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1043,7 +1052,7 @@ ideas = {
 		norfolk_naval_yard = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1062,7 +1071,7 @@ ideas = {
 		electric_boat_company = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1081,7 +1090,7 @@ ideas = {
 		brooklyn_naval_yard = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1100,7 +1109,7 @@ ideas = {
 		newport_news_shipbuilding = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1124,7 +1133,7 @@ ideas = {
 		north_american_aviation = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1143,7 +1152,7 @@ ideas = {
 		#bell = {
 		#	
 		#	
-		#	available = {
+		#	allowed = {
 		#		original_tag = USA
 		#	}
 		#	
@@ -1162,7 +1171,7 @@ ideas = {
 		lockheed = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1181,7 +1190,7 @@ ideas = {
 		douglas_aircraft_company = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1201,7 +1210,7 @@ ideas = {
 		boeing = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1220,7 +1229,7 @@ ideas = {
 		#consolidated_aircraft = {
 		#	
 		#	
-		#	available = {
+		#	allowed = {
 		#		original_tag = USA
 		#	}
 		#	
@@ -1238,7 +1247,7 @@ ideas = {
 		grumman = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1263,7 +1272,7 @@ ideas = {
 		springfield_armory = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1282,7 +1291,7 @@ ideas = {
 		ford_motor_company = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1303,7 +1312,7 @@ ideas = {
 		rock_island_arsenal = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1327,7 +1336,7 @@ ideas = {
 		standard_oil_california = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1346,7 +1355,7 @@ ideas = {
 		general_electric = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1368,7 +1377,7 @@ ideas = {
 		omar_bradley = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1384,7 +1393,7 @@ ideas = {
 		george_patton = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1400,7 +1409,7 @@ ideas = {
 		dewitt_clinton_ramsey = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1416,7 +1425,7 @@ ideas = {
 		marc_mitscher = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1432,7 +1441,7 @@ ideas = {
 		curtis_lemay = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1448,7 +1457,7 @@ ideas = {
 		harold_mcclelland = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1464,7 +1473,7 @@ ideas = {
 		robert_oppenheimer = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			
@@ -1480,7 +1489,7 @@ ideas = {
 		robert_goddard = {
 			
 			
-			available = {
+			allowed = {
 				original_tag = USA
 			}
 			

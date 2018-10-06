@@ -176,7 +176,7 @@ country_event = {
 			has_government = conservatism
 			has_government = socialism
 		}
-		NOT = { has_idea = rexism_defeated }
+		#NOT = { has_idea = rexism_defeated }
 		rexism > 0.15
 	}
 	

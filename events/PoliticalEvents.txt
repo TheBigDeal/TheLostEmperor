@@ -2,18 +2,17 @@
 # Political Events
 ###########################
 
-add_namespace = le_political
+add_namespace = political
 
-
-# Class Conflicts Divide [Root.GetName]
+# Class Conflicts Divide [Root.GetName] Proletarianism
 country_event = {
-	id = le_political.4
-	title = le_political.4.t
-	desc = le_political.4.d
+	id = political.1
+	title = political.1.t
+	desc = political.1.d
 	picture = GFX_report_event_gathering_protest
 	
 	trigger = {
-		has_idea_with_trait = proletariet_revolutionary
+		has_idea_with_trait = proletariat_revolutionary
 		NOT = { has_government = proletarianism }
 		proletarianism > 0.2
 	}
@@ -22,32 +21,158 @@ country_event = {
 		days = 365
 		modifier = {
 			factor = 0.5
-			has_country_flag = proletarianism_popular_movement
+			has_country_flag = proletariat_popular_movement
 		}
 	}
 	
 	option = {
-		name = le_political.4.a
+		name = political.1.a
 		add_popularity = {
 			ideology = proletarianism
-			popularity = 0.15
+			popularity = 0.05
 		}
-		add_stability = -0.02
+		add_stability = -0.05
 	}
 }
 
-# Soldiers Desert to proletariet Partisans
+# Class Conflicts Divide [Root.GetName] Naturalism
 country_event = {
-	id = le_political.5
-	title = le_political.5.t
-	desc = le_political.5.d
+	id = political.2
+	title = political.2.t
+	desc = political.2.d
+	picture = GFX_report_event_gathering_protest
+	
+	trigger = {
+		has_idea_with_trait = naturalist_revolutionary
+		NOT = { has_government = naturalism }
+		naturalism > 0.2
+	}
+
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.5
+			has_country_flag = naturalism_popular_movement
+		}
+	}
+	
+	option = {
+		name = political.2.a
+		add_popularity = {
+			ideology = naturalism
+			popularity = 0.05
+		}
+		add_stability = -0.05
+	}
+}
+
+# Class Conflicts Divide [Root.GetName] Collectivism
+country_event = {
+	id = political.3
+	title = political.3.t
+	desc = political.3.d
+	picture = GFX_report_event_gathering_protest
+	
+	trigger = {
+		has_idea_with_trait = collectivist_revolutionary
+		NOT = { has_government = collectivism }
+		collectivism > 0.2
+	}
+
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.5
+			has_country_flag = collectivism_popular_movement
+		}
+	}
+	
+	option = {
+		name = political.3.a
+		add_popularity = {
+			ideology = collectivism
+			popularity = 0.05
+		}
+		add_stability = -0.05
+	}
+}
+
+# Soldiers Desert to Collectivist Partisans
+country_event = {
+	id = political.4
+	title = political.4.t
+	desc = political.4.d
 	picture = GFX_report_event_desertion_poster
 	
 	trigger = {
-		has_idea_with_trait = proletariet_revolutionary
+		has_idea_with_trait = collectivist_revolutionary
+		NOT = { has_government = collectivism }
+		collectivism > 0.3
+		NOT = { has_idea = collectivist_partisans_recruiting }
+	}
+
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.5
+			has_country_flag = collectivism_popular_movement
+		}
+	}
+	
+	option = {
+		name = political.4.a
+		add_popularity = {
+			ideology = collectivism
+			popularity = 0.05
+		}
+		add_ideas = collectivist_partisans_recruiting
+	}
+}
+
+# Soldiers Desert to Naturalist Partisans
+country_event = {
+	id = political.5
+	title = political.5.t
+	desc = political.5.d
+	picture = GFX_report_event_desertion_poster
+	
+	trigger = {
+		has_idea_with_trait = naturalist_revolutionary
+		NOT = { has_government = naturalism }
+		naturalism > 0.3
+		NOT = { has_idea = naturalist_partisans_recruiting }
+	}
+
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.5
+			has_country_flag = naturalist_popular_movement
+		}
+	}
+	
+	option = {
+		name = political.5.a
+		add_popularity = {
+			ideology = naturalism
+			popularity = 0.05
+		}
+		add_ideas = naturalist_partisans_recruiting
+	}
+}
+
+# Soldiers Desert to Proletariat Partisans
+country_event = {
+	id = political.6
+	title = political.6.t
+	desc = political.6.d
+	picture = GFX_report_event_desertion_poster
+	
+	trigger = {
+		has_idea_with_trait = proletariat_revolutionary
 		NOT = { has_government = proletarianism }
 		proletarianism > 0.3
-		NOT = { has_idea = proletariet_partisans_recruiting }
+		NOT = { has_idea = proletariat_partisans_recruiting }
 	}
 
 	mean_time_to_happen = {
@@ -59,27 +184,27 @@ country_event = {
 	}
 	
 	option = {
-		name = le_political.5.a
+		name = political.6.a
 		add_popularity = {
 			ideology = proletarianism
-			popularity = 0.15
+			popularity = 0.05
 		}
-		add_ideas = proletariet_partisans_recruiting
+		add_ideas = proletariat_partisans_recruiting
 	}
 }
 
 # Labryscist Assault Divisions Form
 country_event = {
-	id = le_political.11
-	title = le_political.11.t
-	desc = le_political.11.d
-	picture = GFX_report_event_Labryscist_militia
+	id = political.7
+	title = political.7.t
+	desc = political.7.d
+	picture = GFX_report_event_fascist_militia
 	
 	trigger = {
-		has_idea_with_trait = Labryscist_demagogue
+		has_idea_with_trait = labryscist_demagogue
 		NOT = { has_government = labryscism }
 		labryscism > 0.3
-		NOT = { has_idea = Labryscist_assault_divisions }
+		NOT = { has_idea = labryscist_assault_divisions }
 	}
 
 	mean_time_to_happen = {
@@ -91,59 +216,213 @@ country_event = {
 	}
 	
 	option = {
-		name = le_political.11.a
+		name = political.7.a
 		add_popularity = {
 			ideology = labryscism
 			popularity = 0.05
 		}
-		add_ideas = Labryscist_assault_divisions
+		add_ideas = labryscist_assault_divisions
 	}
 }
 
-# The Threat of proletarianism
+# Rexist Assault Divisions Form
 country_event = {
-	id = le_political.12
-	title = le_political.12.t
-	desc = le_political.12.d
-	picture = GFX_report_event_worker_protests
+	id = political.8
+	title = political.8.t
+	desc = political.8.d
+	picture = GFX_report_event_fascist_militia
 	
 	trigger = {
-		has_idea_with_trait = Labryscist_demagogue
-		NOT = { has_government = labryscism }
-		labryscism > 0.25
-		any_neighbor_country = {
-			has_government = proletarianism
-		}
+		has_idea_with_trait = rexist_demagogue
+		NOT = { has_government = rexism }
+		rexism > 0.3
+		NOT = { has_idea = rexist_assault_divisions }
 	}
 
 	mean_time_to_happen = {
 		days = 365
 		modifier = {
 			factor = 0.5
-			has_country_flag = labryscism_popular_movement
+			has_country_flag = rexist_popular_movement
 		}
 	}
 	
 	option = {
-		name = le_political.12.a
+		name = political.8.a
 		add_popularity = {
-			ideology = labryscism
-			popularity = 0.2
+			ideology = rexism
+			popularity = 0.05
+		}
+		add_ideas = rexist_assault_divisions
+	}
+}
+# The Threat of Collectivism
+country_event = {
+	id = political.9
+	title = political.9.t
+	desc = political.9.d
+	picture = GFX_report_event_worker_protests
+	trigger = {
+		OR = {
+			has_idea_with_trait = labryscist_demagogue
+			has_idea_with_trait = rexist_demagogue
+		}
+		AND = {
+			NOT = { has_government = labryscism }
+			NOT = { has_government = rexism }
+		}
+		OR = {
+			labryscism > 0.25
+			rexism > 0.25
+		}
+		any_neighbor_country = {
+			has_government = collectivism
+		}
+	}
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_country_flag = labryscism_popular_movement
+				has_country_flag = rexism_popular_movement
+			}
+		}
+	}
+	option = {
+		name = political.9.a
+		if = {
+			limit = {
+				labryscism > 0.25
+			}
+			add_popularity = {
+				ideology = labryscism
+				popularity = 0.1
+			}
+		}
+		if = {
+			limit = {
+				rexism > 0.25
+			}
+			add_popularity = { ideology = rexism popularity = 0.1 }
 		}
 	}
 }
-
-# liberalism Opposition Forming
+# The Threat of Naturalism
 country_event = {
-	id = le_political.15
-	title = le_political.15.t
-	desc = le_political.15.d
+	id = political.10
+	title = political.10.t
+	desc = political.10.d
+	picture = GFX_report_event_worker_protests
+	trigger = {
+		OR = {
+			has_idea_with_trait = labryscist_demagogue
+			has_idea_with_trait = rexist_demagogue
+		}
+		AND = {
+			NOT = { has_government = labryscism }
+			NOT = { has_government = rexism }
+		}
+		OR = {
+			labryscism > 0.25
+			rexism > 0.25
+		}
+		any_neighbor_country = {
+			has_government = naturalism
+		}
+	}
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_country_flag = labryscism_popular_movement
+				has_country_flag = rexism_popular_movement
+			}
+		}
+	}
+	option = {
+		name = political.10.a
+		if = {
+			limit = {
+				labryscism > 0.25
+			}
+			add_popularity = {
+				ideology = labryscism
+				popularity = 0.1
+			}
+		}
+		if = {
+			limit = {
+				rexism > 0.25
+			}
+			add_popularity = { ideology = rexism popularity = 0.1 }
+		}
+	}
+}
+# The Threat of Proletarianism
+country_event = {
+	id = political.11
+	title = political.11.t
+	desc = political.11.d
+	picture = GFX_report_event_worker_protests
+	trigger = {
+		OR = {
+			has_idea_with_trait = labryscist_demagogue
+			has_idea_with_trait = rexist_demagogue
+		}
+		AND = {
+			NOT = { has_government = labryscism }
+			NOT = { has_government = rexism }
+		}
+		OR = {
+			labryscism > 0.25
+			rexism > 0.25
+		}
+		any_neighbor_country = {
+			has_government = proletarianism
+		}
+	}
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_country_flag = labryscism_popular_movement
+				has_country_flag = rexism_popular_movement
+			}
+		}
+	}
+	option = {
+		name = political.11.a
+		if = {
+			limit = {
+				labryscism > 0.25
+			}
+			add_popularity = {
+				ideology = labryscism
+				popularity = 0.1
+			}
+		}
+		if = {
+			limit = {
+				rexism > 0.25
+			}
+			add_popularity = { ideology = rexism popularity = 0.1 }
+		}
+	}
+}
+# Liberal Opposition Forming
+country_event = {
+	id = political.12
+	title = political.12.t
+	desc = political.12.d
 	picture = GFX_report_event_journalists_speech
 	
 	trigger = {
 		has_idea_with_trait = liberalism_reformer
 		NOT = { has_government = liberalism }
-		NOT = { has_country_flag = democracy_opposition_formed }
+		NOT = { has_country_flag = liberal_opposition_formed }
 		is_puppet = no
 	}
 	
@@ -151,61 +430,151 @@ country_event = {
 		days = 300
 		modifier = {
 			factor = 0.5
-			has_country_flag = democracy_popular_movement
+			has_country_flag = liberal_popular_movement
 		}
 	}
 	
 	option = {
-		name = le_political.15.a
+		name = political.12.a
 		add_popularity = {
 			ideology = liberalism
-			popularity = 0.1
+			popularity = 0.05
 		}
-		add_stability = -0.02
-		set_country_flag = democracy_opposition_formed
+		add_stability = -0.05
+		set_country_flag = liberal_opposition_formed
+	}
+}
+# Conservatism Opposition Forming
+country_event = {
+	id = political.13
+	title = political.13.t
+	desc = political.13.d
+	picture = GFX_report_event_journalists_speech
+	
+	trigger = {
+		has_idea_with_trait = conservatism_reformer
+		NOT = { has_government = conservatism }
+		NOT = { has_country_flag = convervative_opposition_formed }
+		is_puppet = no
+	}
+	
+	mean_time_to_happen = {
+		days = 300
+		modifier = {
+			factor = 0.5
+			has_country_flag = convervative_popular_movement
+		}
+	}
+	
+	option = {
+		name = political.13.a
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.05
+		}
+		add_stability = -0.05
+		set_country_flag = convervative_opposition_formed
+	}
+}
+# Democratic-Socialist Opposition Forming
+country_event = {
+	id = political.14
+	title = political.14.t
+	desc = political.14.d
+	picture = GFX_report_event_journalists_speech
+	
+	trigger = {
+		has_idea_with_trait = socialism_reformer
+		NOT = { has_government = socialism }
+		NOT = { has_country_flag = socialist_opposition_formed }
+		is_puppet = no
+	}
+	
+	mean_time_to_happen = {
+		days = 300
+		modifier = {
+			factor = 0.5
+			has_country_flag = socialist_popular_movement
+		}
+	}
+	
+	option = {
+		name = political.14.a
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.05
+		}
+		add_stability = -0.05
+		set_country_flag = socialist_opposition_formed
 	}
 }
 
 # Public Call for Elections
 country_event = {
-	id = le_political.16
-	title = le_political.16.t
-	desc = le_political.16.d
+	id = political.15
+	title = political.15.t
+	desc = political.15.d
 	picture = GFX_report_event_election_vote
-	
 	trigger = {
-		has_idea_with_trait = liberalism_reformer
-		NOT = { has_government = liberalism }
-		has_country_flag = democracy_opposition_formed
-		NOT = { has_idea = liberalism_opposition_voicing_protests }
+		OR = {
+			has_idea_with_trait = liberalism_reformer
+			has_idea_with_trait = conservatism_reformer
+			has_idea_with_trait = socialism_reformer
+		}
+		OR = {
+			NOT = { has_government = liberalism }
+			NOT = { has_government = conservatism }
+			NOT = { has_government = socialism }
+		}
+		OR = {
+			has_country_flag = liberal_opposition_formed
+			has_country_flag = socialist_opposition_formed
+			has_country_flag = convervative_opposition_formed
+		}
+		AND = {
+			NOT = { has_idea = liberalism_opposition_voicing_protests }
+			NOT = { has_idea = socialism_opposition_voicing_protests }
+			NOT = { has_idea = conservatism_opposition_voicing_protests }
+		}
 	}
-	
 	mean_time_to_happen = {
 		days = 150
 	}
-	
 	option = {
-		name = le_political.16.a
+		name = political.15.a
 	}
-
 	option = {
-		name = le_political.16.b
-		add_le_political_power = -20
-		add_ideas = liberalism_opposition_voicing_protests
+		name = political.15.b
+		add_political_power = -20
+		if = {
+			limit = {
+				has_idea_with_trait = liberalism_reformer
+			}
+			add_ideas = liberalism_opposition_voicing_protests
+		}
+		if = {
+			limit = {
+				has_idea_with_trait = conservatism_reformer
+			}
+			add_ideas = conservatism_opposition_voicing_protests
+		}
+		if = {
+			limit = {
+				has_idea_with_trait = socialism_reformer
+			}
+			add_ideas = socialism_opposition_voicing_protests
+		}
 	}
 }
 
-
-country_event = {
-	id = political.18
-	title = political.18.t
-	desc = political.18.d
+country_event = { #Labryscist Coup <50% Support
+	id = political.16
+	title = political.16.t
+	desc = political.16.d
 	picture = GFX_report_event_fascist_gathering
-
 	is_triggered_only = yes
-
 	option = {
-		name = political.18.c
+		name = political.16.c
 		set_politics = {
 			ruling_party = labryscism
 			elections_allowed = no
@@ -213,16 +582,77 @@ country_event = {
 		add_stability = -0.05
 	}
 }
-country_event = {
+country_event = { #Rexist Coup <50% Support
+	id = political.17
+	title = political.17.t
+	desc = political.17.d
+	picture = GFX_report_event_fascist_gathering
+	is_triggered_only = yes
+	option = {
+		name = political.17.a
+		set_politics = {
+			ruling_party = rexism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+country_event = { #Despotic Coup <50% Support
+	id = political.18
+	title = political.18.t
+	desc = political.18.d
+	picture = GFX_report_event_fascist_gathering
+	is_triggered_only = yes
+	option = {
+		name = political.18.a
+		set_politics = {
+			ruling_party = despotism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+country_event = { #Collectivist Coup <50% Support
 	id = political.19
 	title = political.19.t
 	desc = political.19.d
-	picture = GFX_report_event_fascist_gathering
+	picture = GFX_report_event_worker_protests
 
 	is_triggered_only = yes
-
 	option = {
 		name = political.19.c
+		set_politics = {
+			ruling_party = collectivism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+country_event = { #Naturalist Coup <50% Support
+	id = political.20
+	title = political.20.t
+	desc = political.20.d
+	picture = GFX_report_event_worker_protests
+
+	is_triggered_only = yes
+	option = {
+		name = political.20.c
+		set_politics = {
+			ruling_party = naturalism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+country_event = { #Proletariat Coup <50% Support
+	id = political.21
+	title = political.21.t
+	desc = political.21.d
+	picture = GFX_report_event_worker_protests
+
+	is_triggered_only = yes
+	option = {
+		name = political.21.c
 		set_politics = {
 			ruling_party = proletarianism
 			elections_allowed = no
@@ -230,16 +660,14 @@ country_event = {
 		add_stability = -0.05
 	}
 }
-country_event = {
-	id = political.20
-	title = political.20.t
-	desc = political.20.d
-	picture = GFX_report_event_fascist_gathering
-
+country_event = { #Liberal Coup <50% Support
+	id = political.22
+	title = political.22.t
+	desc = political.22.d
+	picture = GFX_report_event_journalists_speech
 	is_triggered_only = yes
-
 	option = {
-		name = political.20.c
+		name = political.22.c
 		set_politics = {
 			ruling_party = liberalism
 			elections_allowed = yes
@@ -247,323 +675,1246 @@ country_event = {
 		add_stability = -0.05
 	}
 }
-### Revolution
-# le_political.21 Labryscist
-country_event = {
-	id = le_political.21
-	title = le_political.21.t
-	desc = le_political.21.d
-	picture = GFX_report_event_Labryscist_militia
-
+country_event = { #Conservative Coup <50% Support
+	id = political.23
+	title = political.23.t
+	desc = political.23.d
+	picture = GFX_report_event_journalists_speech
+	is_triggered_only = yes
+	option = {
+		name = political.23.a
+		set_politics = {
+			ruling_party = conservatism
+			elections_allowed = yes
+		}
+		add_stability = -0.05
+	}
+}
+country_event = { #Socialist Coup <50% Support
+	id = political.24
+	title = political.24.t
+	desc = political.24.d
+	picture = GFX_report_event_journalists_speech
+	is_triggered_only = yes
+	option = {
+		name = political.24.a
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = yes
+		}
+		add_stability = -0.05
+	}
+}
+#######################################################################################
+################################      Revolutions      ################################
+#######################################################################################
+#                                 Fascist Revolutions                                 #
+#######################################################################################
+country_event = { #Labryscist Revolution
+	id = political.25
+	title = political.25.t
+	desc = political.25.d
+	picture = GFX_report_event_fascist_militia
 	trigger = {
 		labryscism > 0.7
-		#has_idea = fascist_revolutionaries
+		#has_idea = labryscist_revolutionaries
 		NOT = { has_government = labryscism }
 		has_civil_war = no
-		check_has_focus_tree_to_switch_to_fascism = yes
+		#check_has_focus_tree_to_switch_to_labryscism = yes
 	}
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
+	mean_time_to_happen = { days = 2 }
 	immediate = {
-		hidden_effect = { remove_ideas = Labryscist_revolutionaries }
+		hidden_effect = { remove_ideas = labryscist_revolutionaries }
 	}
-
-	option = {
-		name = le_political.21.a
+	option = { #Stay with current government
+		name = political.25.a
 		ai_chance = {
 			factor = 0
 		}
-		start_civil_war = {
-			ideology = labryscism
-			size = 0.5
-		}
+		start_civil_war = { ideology = labryscism size = 0.5 }
 	}
-
-	option = {
-		name = le_political.21.b
+	option = { #Side with the Revolutionaries
+		name = political.25.b
+		#Democratic#
+		###################################
 		if = {
-			limit = {
-				has_government = liberalism
-			}
-			start_civil_war = {
-				ruling_party = labryscism
-				ideology = liberalism
-				size = 0.5
-			}
+			limit = { has_government = liberalism }
+			start_civil_war = { ruling_party = labryscism ideology = liberalism size = 0.5 }
 		}
 		if = {
-			limit = {
-				has_government = proletarianism
-			}
-			start_civil_war = {
-				ruling_party = labryscism
-				ideology = proletarianism
-				size = 0.5
-			}
+			limit = { has_government = conservatism }
+			start_civil_war = { ruling_party = labryscism ideology = conservatism size = 0.5 }
 		}
 		if = {
-			limit = {
-				has_government = absolutism
-			}
-			start_civil_war = {
-				ruling_party = labryscism
-				ideology = absolutism
-				size = 0.5
-			}
+			limit = { has_government = socialism }
+			start_civil_war = { ruling_party = labryscism ideology = socialism size = 0.5 }
+		}
+		#Communist#
+		###################################
+		if = {
+			limit = { has_government = collectivism }
+			start_civil_war = { ruling_party = labryscism ideology = collectivism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = naturalism }
+			start_civil_war = { ruling_party = labryscism ideology = naturalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = proletarianism }
+			start_civil_war = { ruling_party = labryscism ideology = proletarianism size = 0.5 }
+		}
+		#Monarchic#
+		###################################
+		if = { 
+			limit = { has_government = absolutism }
+			start_civil_war = { ruling_party = labryscism ideology = absolutism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = theocracy }
+			start_civil_war = { ruling_party = labryscism ideology = theocracy size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = royalism }
+			start_civil_war = { ruling_party = labryscism ideology = royalism size = 0.5 }
+		}
+		#Fascism#
+		###################################
+		if = { 
+			limit = { has_government = labryscism }
+			start_civil_war = { ruling_party = labryscism ideology = labryscism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = rexism }
+			start_civil_war = { ruling_party = labryscism ideology = rexism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = despotism }
+			start_civil_war = { ruling_party = labryscism ideology = despotism size = 0.5 }
 		}
 	}
 }
-# le_political.22 proletariet
-country_event = {
-	id = le_political.22
-	title = le_political.22.t
-	desc = le_political.22.d
+country_event = { #Rexist Revolution
+	id = political.26
+	title = political.26.t
+	desc = political.26.d
+	picture = GFX_report_event_fascist_militia
+	trigger = {
+		rexism > 0.7
+		#has_idea = labryscist_revolutionaries
+		NOT = { has_government = rexism }
+		has_civil_war = no
+		#check_has_focus_tree_to_switch_to_labryscism = yes
+	}
+	mean_time_to_happen = { days = 2 }
+	immediate = {
+		hidden_effect = { remove_ideas = rexist_revolutionaries }
+	}
+	option = { #Stay with current government
+		name = political.26.a
+		ai_chance = {
+			factor = 0
+		}
+		start_civil_war = { ideology = rexism size = 0.5 }
+	}
+	option = { #Side with the Revolutionaries
+		name = political.26.b
+		#Democratic#
+		###################################
+		if = {
+			limit = { has_government = liberalism }
+			start_civil_war = { ruling_party = rexism ideology = liberalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = conservatism }
+			start_civil_war = { ruling_party = rexism ideology = conservatism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = socialism }
+			start_civil_war = { ruling_party = rexism ideology = socialism size = 0.5 }
+		}
+		#Communist#
+		###################################
+		if = {
+			limit = { has_government = collectivism }
+			start_civil_war = { ruling_party = rexism ideology = collectivism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = naturalism }
+			start_civil_war = { ruling_party = rexism ideology = naturalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = proletarianism }
+			start_civil_war = { ruling_party = rexism ideology = proletarianism size = 0.5 }
+		}
+		#Monarchic#
+		###################################
+		if = { 
+			limit = { has_government = absolutism }
+			start_civil_war = { ruling_party = rexism ideology = absolutism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = theocracy }
+			start_civil_war = { ruling_party = rexism ideology = theocracy size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = royalism }
+			start_civil_war = { ruling_party = rexism ideology = royalism size = 0.5 }
+		}
+		#Fascism#
+		###################################
+		if = { 
+			limit = { has_government = labryscism }
+			start_civil_war = { ruling_party = rexism ideology = labryscism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = rexism }
+			start_civil_war = { ruling_party = rexism ideology = rexism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = despotism }
+			start_civil_war = { ruling_party = rexism ideology = despotism size = 0.5 }
+		}
+	}
+}
+country_event = { #Despotism Revolution
+	id = political.27
+	title = political.27.t
+	desc = political.27.d
+	picture = GFX_report_event_fascist_militia
+	trigger = {
+		despotism > 0.7
+		#has_idea = labryscist_revolutionaries
+		NOT = { has_government = despotism }
+		has_civil_war = no
+		#check_has_focus_tree_to_switch_to_despotism = yes
+	}
+	mean_time_to_happen = { days = 2 }
+	immediate = {
+		hidden_effect = { remove_ideas = despotic_revolutionaries }
+	}
+	option = { #Stay with current government
+		name = political.27.a
+		ai_chance = {
+			factor = 0
+		}
+		start_civil_war = { ideology = despotism size = 0.5 }
+	}
+	option = { #Side with the Revolutionaries
+		name = political.27.b
+		#Democratic#
+		###################################
+		if = {
+			limit = { has_government = liberalism }
+			start_civil_war = { ruling_party = despotism ideology = liberalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = conservatism }
+			start_civil_war = { ruling_party = despotism ideology = conservatism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = socialism }
+			start_civil_war = { ruling_party = despotism ideology = socialism size = 0.5 }
+		}
+		#Communist#
+		###################################
+		if = {
+			limit = { has_government = collectivism }
+			start_civil_war = { ruling_party = despotism ideology = collectivism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = naturalism }
+			start_civil_war = { ruling_party = despotism ideology = naturalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = proletarianism }
+			start_civil_war = { ruling_party = despotism ideology = proletarianism size = 0.5 }
+		}
+		#Monarchic#
+		###################################
+		if = { 
+			limit = { has_government = absolutism }
+			start_civil_war = { ruling_party = despotism ideology = absolutism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = theocracy }
+			start_civil_war = { ruling_party = despotism ideology = theocracy size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = royalism }
+			start_civil_war = { ruling_party = despotism ideology = royalism size = 0.5 }
+		}
+		#Fascism#
+		###################################
+		if = { 
+			limit = { has_government = labryscism }
+			start_civil_war = { ruling_party = despotism ideology = labryscism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = rexism }
+			start_civil_war = { ruling_party = despotism ideology = rexism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = despotism }
+			start_civil_war = { ruling_party = despotism ideology = despotism size = 0.5 }
+		}
+	}
+}
+#######################################################################################
+#                                Monarchic Revolutions                                #
+#######################################################################################
+country_event = { #Theocratic Revolution
+	id = political.28
+	title = political.28.t
+	desc = political.28.d
+	picture = GFX_report_event_fascist_militia
+	trigger = {
+		theocracy > 0.7
+		#has_idea = labryscist_revolutionaries
+		NOT = { has_government = theocracy }
+		has_civil_war = no
+		#check_has_focus_tree_to_switch_to_theocracy = yes
+	}
+	mean_time_to_happen = { days = 2 }
+	immediate = {
+		hidden_effect = { remove_ideas = theocratic_revolutionaries }
+	}
+	option = { #Stay with current government
+		name = political.28.a
+		ai_chance = {
+			factor = 0
+		}
+		start_civil_war = { ideology = theocracy size = 0.5 }
+	}
+	option = { #Side with the Revolutionaries
+		name = political.28.b
+		#Democratic#
+		###################################
+		if = {
+			limit = { has_government = liberalism }
+			start_civil_war = { ruling_party = theocracy ideology = liberalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = conservatism }
+			start_civil_war = { ruling_party = theocracy ideology = conservatism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = socialism }
+			start_civil_war = { ruling_party = theocracy ideology = socialism size = 0.5 }
+		}
+		#Communist#
+		###################################
+		if = {
+			limit = { has_government = collectivism }
+			start_civil_war = { ruling_party = theocracy ideology = collectivism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = naturalism }
+			start_civil_war = { ruling_party = theocracy ideology = naturalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = proletarianism }
+			start_civil_war = { ruling_party = theocracy ideology = proletarianism size = 0.5 }
+		}
+		#Monarchic#
+		###################################
+		if = { 
+			limit = { has_government = absolutism }
+			start_civil_war = { ruling_party = theocracy ideology = absolutism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = theocracy }
+			start_civil_war = { ruling_party = theocracy ideology = theocracy size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = royalism }
+			start_civil_war = { ruling_party = theocracy ideology = royalism size = 0.5 }
+		}
+		#Fascism#
+		###################################
+		if = { 
+			limit = { has_government = labryscism }
+			start_civil_war = { ruling_party = theocracy ideology = labryscism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = rexism }
+			start_civil_war = { ruling_party = theocracy ideology = rexism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = despotism }
+			start_civil_war = { ruling_party = theocracy ideology = despotism size = 0.5 }
+		}
+	}
+}
+country_event = { #Absolutist Revolution
+	id = political.29
+	title = political.29.t
+	desc = political.29.d
+	picture = GFX_report_event_fascist_militia
+	trigger = {
+		absolutism > 0.7
+		#has_idea = labryscist_revolutionaries
+		NOT = { has_government = absolutism }
+		has_civil_war = no
+		#check_has_focus_tree_to_switch_to_absolutism = yes
+	}
+	mean_time_to_happen = { days = 2 }
+	immediate = {
+		hidden_effect = { remove_ideas = absolutism_revolutionaries }
+	}
+	option = { #Stay with current government
+		name = political.29.a
+		ai_chance = {
+			factor = 0
+		}
+		start_civil_war = { ideology = absolutism size = 0.5 }
+	}
+	option = { #Side with the Revolutionaries
+		name = political.29.b
+		#Democratic#
+		###################################
+		if = {
+			limit = { has_government = liberalism }
+			start_civil_war = { ruling_party = absolutism ideology = liberalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = conservatism }
+			start_civil_war = { ruling_party = absolutism ideology = conservatism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = socialism }
+			start_civil_war = { ruling_party = absolutism ideology = socialism size = 0.5 }
+		}
+		#Communist#
+		###################################
+		if = {
+			limit = { has_government = collectivism }
+			start_civil_war = { ruling_party = absolutism ideology = collectivism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = naturalism }
+			start_civil_war = { ruling_party = absolutism ideology = naturalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = proletarianism }
+			start_civil_war = { ruling_party = absolutism ideology = proletarianism size = 0.5 }
+		}
+		#Monarchic#
+		###################################
+		if = { 
+			limit = { has_government = absolutism }
+			start_civil_war = { ruling_party = absolutism ideology = absolutism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = theocracy }
+			start_civil_war = { ruling_party = absolutism ideology = theocracy size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = royalism }
+			start_civil_war = { ruling_party = absolutism ideology = royalism size = 0.5 }
+		}
+		#Fascism#
+		###################################
+		if = { 
+			limit = { has_government = labryscism }
+			start_civil_war = { ruling_party = absolutism ideology = labryscism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = rexism }
+			start_civil_war = { ruling_party = absolutism ideology = rexism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = despotism }
+			start_civil_war = { ruling_party = absolutism ideology = despotism size = 0.5 }
+		}
+	}
+}
+country_event = { #Royalism Revolution
+	id = political.30
+	title = political.30.t
+	desc = political.30.d
+	picture = GFX_report_event_fascist_militia
+	trigger = {
+		royalism > 0.7
+		#has_idea = labryscist_revolutionaries
+		NOT = { has_government = royalism }
+		has_civil_war = no
+		#check_has_focus_tree_to_switch_to_royalism = yes
+	}
+	mean_time_to_happen = { days = 2 }
+	immediate = {
+		hidden_effect = { remove_ideas = royalism_revolutionaries }
+	}
+	option = { #Stay with current government
+		name = political.30.a
+		ai_chance = {
+			factor = 0
+		}
+		start_civil_war = { ideology = royalism size = 0.5 }
+	}
+	option = { #Side with the Revolutionaries
+		name = political.30.b
+		#Democratic#
+		###################################
+		if = {
+			limit = { has_government = liberalism }
+			start_civil_war = { ruling_party = royalism ideology = liberalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = conservatism }
+			start_civil_war = { ruling_party = royalism ideology = conservatism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = socialism }
+			start_civil_war = { ruling_party = royalism ideology = socialism size = 0.5 }
+		}
+		#Communist#
+		###################################
+		if = {
+			limit = { has_government = collectivism }
+			start_civil_war = { ruling_party = royalism ideology = collectivism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = naturalism }
+			start_civil_war = { ruling_party = royalism ideology = naturalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = proletarianism }
+			start_civil_war = { ruling_party = royalism ideology = proletarianism size = 0.5 }
+		}
+		#Monarchic#
+		###################################
+		if = { 
+			limit = { has_government = absolutism }
+			start_civil_war = { ruling_party = royalism ideology = absolutism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = theocracy }
+			start_civil_war = { ruling_party = royalism ideology = theocracy size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = royalism }
+			start_civil_war = { ruling_party = royalism ideology = royalism size = 0.5 }
+		}
+		#Fascism#
+		###################################
+		if = { 
+			limit = { has_government = labryscism }
+			start_civil_war = { ruling_party = royalism ideology = labryscism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = rexism }
+			start_civil_war = { ruling_party = royalism ideology = rexism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = despotism }
+			start_civil_war = { ruling_party = royalism ideology = despotism size = 0.5 }
+		}
+	}
+}
+#######################################################################################
+#                                Communist Revolutions                                #
+#######################################################################################
+country_event = { #Collectivist Revolution
+	id = political.31
+	title = political.31.t
+	desc = political.31.d
 	picture = GFX_report_event_worker_protests
-
+	trigger = {
+		collectivism > 0.7
+		#has_idea = collectivist_revolutionaries
+		NOT = { has_government = collectivism }
+		has_civil_war = no
+		#check_has_focus_tree_to_switch_to_collectivism = yes
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		hidden_effect = { remove_ideas = collectivist_revolutionaries }
+	}
+	option = { #Stay with current government
+		name = political.31.a
+		ai_chance = {
+			factor = 0
+		}
+		start_civil_war = { ideology = collectivism size = 0.5 }
+	}
+	option = { #Side with the Revolutionaries
+		name = political.31.b
+		#Democratic#
+		###################################
+		if = {
+			limit = { has_government = liberalism }
+			start_civil_war = { ruling_party = collectivism ideology = liberalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = conservatism }
+			start_civil_war = { ruling_party = collectivism ideology = conservatism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = socialism }
+			start_civil_war = { ruling_party = collectivism ideology = socialism size = 0.5 }
+		}
+		#Communist#
+		###################################
+		if = {
+			limit = { has_government = collectivism }
+			start_civil_war = { ruling_party = collectivism ideology = collectivism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = naturalism }
+			start_civil_war = { ruling_party = collectivism ideology = naturalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = proletarianism }
+			start_civil_war = { ruling_party = collectivism ideology = proletarianism size = 0.5 }
+		}
+		#Monarchic#
+		###################################
+		if = { 
+			limit = { has_government = absolutism }
+			start_civil_war = { ruling_party = collectivism ideology = absolutism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = theocracy }
+			start_civil_war = { ruling_party = collectivism ideology = theocracy size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = royalism }
+			start_civil_war = { ruling_party = collectivism ideology = royalism size = 0.5 }
+		}
+		#Fascism#
+		###################################
+		if = { 
+			limit = { has_government = labryscism }
+			start_civil_war = { ruling_party = collectivism ideology = labryscism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = rexism }
+			start_civil_war = { ruling_party = collectivism ideology = rexism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = despotism }
+			start_civil_war = { ruling_party = collectivism ideology = despotism size = 0.5 }
+		}
+	}
+}
+country_event = { #Naturalist Revolution
+	id = political.32
+	title = political.32.t
+	desc = political.32.d
+	picture = GFX_report_event_worker_protests
+	trigger = {
+		naturalism > 0.7
+		#has_idea = naturalist_revolutionaries
+		NOT = { has_government = naturalism }
+		has_civil_war = no
+		#check_has_focus_tree_to_switch_to_naturalism = yes
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		hidden_effect = { remove_ideas = naturalist_revolutionaries }
+	}
+	option = { #Stay with current government
+		name = political.32.a
+		ai_chance = {
+			factor = 0
+		}
+		start_civil_war = { ideology = naturalism size = 0.5 }
+	}
+	option = { #Side with the Revolutionaries
+		name = political.30.b
+		#Democratic#
+		###################################
+		if = {
+			limit = { has_government = liberalism }
+			start_civil_war = { ruling_party = naturalism ideology = liberalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = conservatism }
+			start_civil_war = { ruling_party = naturalism ideology = conservatism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = socialism }
+			start_civil_war = { ruling_party = naturalism ideology = socialism size = 0.5 }
+		}
+		#Communist#
+		###################################
+		if = {
+			limit = { has_government = collectivism }
+			start_civil_war = { ruling_party = naturalism ideology = collectivism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = naturalism }
+			start_civil_war = { ruling_party = naturalism ideology = naturalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = proletarianism }
+			start_civil_war = { ruling_party = naturalism ideology = proletarianism size = 0.5 }
+		}
+		#Monarchic#
+		###################################
+		if = { 
+			limit = { has_government = absolutism }
+			start_civil_war = { ruling_party = naturalism ideology = absolutism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = theocracy }
+			start_civil_war = { ruling_party = naturalism ideology = theocracy size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = royalism }
+			start_civil_war = { ruling_party = naturalism ideology = royalism size = 0.5 }
+		}
+		#Fascism#
+		###################################
+		if = { 
+			limit = { has_government = labryscism }
+			start_civil_war = { ruling_party = naturalism ideology = labryscism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = rexism }
+			start_civil_war = { ruling_party = naturalism ideology = rexism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = despotism }
+			start_civil_war = { ruling_party = naturalism ideology = despotism size = 0.5 }
+		}
+	}
+}
+country_event = { #Proletariat Revolution
+	id = political.33
+	title = political.33.t
+	desc = political.33.d
+	picture = GFX_report_event_worker_protests
 	trigger = {
 		proletarianism > 0.7
-		has_idea = proletariet_revolutionaries
-		#Special case CHI PRC
-		OR = {
-			NOT = { tag = CHI }
-			AND = {
-				NOT = { country_exists = PRC }
-				tag = CHI
-			}			
-		}
+		#has_idea = collectivist_revolutionaries
+		NOT = { has_government = proletarianism }
+		has_civil_war = no
+		#check_has_focus_tree_to_switch_to_proletarianism = yes
 	}
-
 	mean_time_to_happen = {
 		days = 2
 	}
-
 	immediate = {
-		hidden_effect = { remove_ideas = proletariet_revolutionaries }
+		hidden_effect = { remove_ideas = proletariat_revolutionaries }
 	}
-
-	option = {
-		name = le_political.22.a
-		start_civil_war = {
-			ideology = proletarianism
-			size = 0.5
+	option = { #Stay with current government
+		name = political.33.a
+		ai_chance = {
+			factor = 0
 		}
+		start_civil_war = { ideology = proletarianism size = 0.5 }
 	}
-
-	option = {
-		name = le_political.22.b
+	option = { #Side with the Revolutionaries
+		name = political.33.b
+		#Democratic#
+		###################################
 		if = {
-			limit = {
-				has_government = liberalism
-			}
-			start_civil_war = {
-				ruling_party = proletarianism
-				ideology = liberalism
-				size = 0.5
-			}
+			limit = { has_government = liberalism }
+			start_civil_war = { ruling_party = proletarianism ideology = liberalism size = 0.5 }
 		}
 		if = {
-			limit = {
-				has_government = labryscism
-			}
-			start_civil_war = {
-				ruling_party = proletarianism
-				ideology = labryscism
-				size = 0.5
-			}
+			limit = { has_government = conservatism }
+			start_civil_war = { ruling_party = proletarianism ideology = conservatism size = 0.5 }
 		}
 		if = {
-			limit = {
-				has_government = absolutism
-			}
-			start_civil_war = {
-				ruling_party = proletarianism
-				ideology = absolutism
-				size = 0.5
-			}
+			limit = { has_government = socialism }
+			start_civil_war = { ruling_party = proletarianism ideology = socialism size = 0.5 }
+		}
+		#Communist#
+		###################################
+		if = {
+			limit = { has_government = collectivism }
+			start_civil_war = { ruling_party = proletarianism ideology = collectivism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = naturalism }
+			start_civil_war = { ruling_party = proletarianism ideology = naturalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = proletarianism }
+			start_civil_war = { ruling_party = proletarianism ideology = proletarianism size = 0.5 }
+		}
+		#Monarchic#
+		###################################
+		if = { 
+			limit = { has_government = absolutism }
+			start_civil_war = { ruling_party = proletarianism ideology = absolutism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = theocracy }
+			start_civil_war = { ruling_party = proletarianism ideology = theocracy size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = royalism }
+			start_civil_war = { ruling_party = proletarianism ideology = royalism size = 0.5 }
+		}
+		#Fascism#
+		###################################
+		if = { 
+			limit = { has_government = labryscism }
+			start_civil_war = { ruling_party = proletarianism ideology = labryscism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = rexism }
+			start_civil_war = { ruling_party = proletarianism ideology = rexism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = despotism }
+			start_civil_war = { ruling_party = proletarianism ideology = despotism size = 0.5 }
 		}
 	}
 }
-# le_political.23 liberalism
-country_event = {
-	id = le_political.23
-	title = le_political.23.t
-	desc = le_political.23.d
+#######################################################################################
+#                               Democratic Revolutions                                #
+#######################################################################################
+country_event = { #Liberal Revolution
+	id = political.34
+	title = political.34.t
+	desc = political.34.d
 	picture = GFX_report_event_gathering_protest
-
 	trigger = {
 		liberalism > 0.7
-		has_idea = liberalism_revolutionaries
+		#has_idea = liberalism_revolutionaries
 		#Special case CHI PRC
-		OR = {
-			NOT = { tag = CHI }
-			AND = {
-				NOT = { country_exists = PRC }
-				tag = CHI
-			}			
-		}
+		NOT = { has_government = liberalism }
+		has_civil_war = no
+		#check_has_focus_tree_to_switch_to_liberalism = yes
 	}
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
+	mean_time_to_happen = { days = 2 }
 	immediate = {
 		hidden_effect = { remove_ideas = liberalism_revolutionaries }
 	}
-
-	option = {
-		name = le_political.23.a
-		start_civil_war = {
-			ideology = liberalism
-			size = 0.5
+	option = { #Stay with current government
+		name = political.34.a
+		ai_chance = {
+			factor = 0
 		}
+		start_civil_war = { ideology = liberalism size = 0.5 }
 	}
-
-	option = {
-		name = le_political.23.b
+	option = { #Side with the Revolutionaries
+		name = political.34.b
+		#Democratic#
+		###################################
 		if = {
-			limit = {
-				has_government = absolutism
-			}
-			start_civil_war = {
-				ruling_party = liberalism
-				ideology = absolutism
-				size = 0.5
-			}
+			limit = { has_government = liberalism }
+			start_civil_war = { ruling_party = liberalism ideology = liberalism size = 0.5 }
 		}
 		if = {
-			limit = {
-				has_government = labryscism
-			}
-			add_timed_idea = { idea = labryscism_defeated days = 730 }			
-			start_civil_war = {
-				ruling_party = liberalism
-				ideology = labryscism
-				size = 0.5
-			}
+			limit = { has_government = conservatism }
+			start_civil_war = { ruling_party = liberalism ideology = conservatism size = 0.5 }
 		}
 		if = {
-			limit = {
-				has_government = proletarianism
-			}
-			add_timed_idea = { idea = proletarianism_defeated days = 730 }
-			start_civil_war = {
-				ruling_party = liberalism
-				ideology = proletarianism
-				size = 0.5
-			}
+			limit = { has_government = socialism }
+			start_civil_war = { ruling_party = liberalism ideology = socialism size = 0.5 }
+		}
+		#Communist#
+		###################################
+		if = {
+			limit = { has_government = collectivism }
+			start_civil_war = { ruling_party = liberalism ideology = collectivism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = naturalism }
+			start_civil_war = { ruling_party = liberalism ideology = naturalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = proletarianism }
+			start_civil_war = { ruling_party = liberalism ideology = proletarianism size = 0.5 }
+		}
+		#Monarchic#
+		###################################
+		if = { 
+			limit = { has_government = absolutism }
+			start_civil_war = { ruling_party = liberalism ideology = absolutism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = theocracy }
+			start_civil_war = { ruling_party = liberalism ideology = theocracy size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = royalism }
+			start_civil_war = { ruling_party = liberalism ideology = royalism size = 0.5 }
+		}
+		#Fascism#
+		###################################
+		if = { 
+			limit = { has_government = labryscism }
+			start_civil_war = { ruling_party = liberalism ideology = labryscism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = rexism }
+			start_civil_war = { ruling_party = liberalism ideology = rexism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = despotism }
+			start_civil_war = { ruling_party = liberalism ideology = despotism size = 0.5 }
 		}
 	}
 }
-
-### Suppressed
-# le_political.24 Labryscist
-country_event = {
-	id = le_political.24
-	title = le_political.24.t
-	desc = le_political.24.d
-	picture = GFX_report_event_Labryscists_posing
-
+country_event = { #Conservative Revolution
+	id = political.35
+	title = political.35.t
+	desc = political.35.d
+	picture = GFX_report_event_gathering_protest
+	trigger = {
+		conservatism > 0.7
+		#has_idea = liberalism_revolutionaries
+		#Special case CHI PRC
+		NOT = { has_government = conservatism }
+		has_civil_war = no
+		#check_has_focus_tree_to_switch_to_conservatism = yes
+	}
+	mean_time_to_happen = { days = 2 }
+	immediate = {
+		hidden_effect = { remove_ideas = conservative_revolutionaries }
+	}
+	option = { #Stay with current government
+		name = political.35.a
+		ai_chance = {
+			factor = 0
+		}
+		start_civil_war = { ideology = conservatism size = 0.5 }
+	}
+	option = { #Side with the Revolutionaries
+		name = political.35.b
+		#Democratic#
+		###################################
+		if = {
+			limit = { has_government = liberalism }
+			start_civil_war = { ruling_party = conservatism ideology = liberalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = conservatism }
+			start_civil_war = { ruling_party = conservatism ideology = conservatism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = socialism }
+			start_civil_war = { ruling_party = conservatism ideology = socialism size = 0.5 }
+		}
+		#Communist#
+		###################################
+		if = {
+			limit = { has_government = collectivism }
+			start_civil_war = { ruling_party = conservatism ideology = collectivism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = naturalism }
+			start_civil_war = { ruling_party = conservatism ideology = naturalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = proletarianism }
+			start_civil_war = { ruling_party = conservatism ideology = proletarianism size = 0.5 }
+		}
+		#Monarchic#
+		###################################
+		if = { 
+			limit = { has_government = absolutism }
+			start_civil_war = { ruling_party = conservatism ideology = absolutism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = theocracy }
+			start_civil_war = { ruling_party = conservatism ideology = theocracy size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = royalism }
+			start_civil_war = { ruling_party = conservatism ideology = royalism size = 0.5 }
+		}
+		#Fascism#
+		###################################
+		if = { 
+			limit = { has_government = labryscism }
+			start_civil_war = { ruling_party = conservatism ideology = labryscism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = rexism }
+			start_civil_war = { ruling_party = conservatism ideology = rexism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = despotism }
+			start_civil_war = { ruling_party = conservatism ideology = despotism size = 0.5 }
+		}
+	}
+}
+country_event = { #Democratic-Socialist Revolution
+	id = political.36
+	title = political.36.t
+	desc = political.36.d
+	picture = GFX_report_event_gathering_protest
+	trigger = {
+		socialism > 0.7
+		#has_idea = liberalism_revolutionaries
+		#Special case CHI PRC
+		NOT = { has_government = socialism }
+		has_civil_war = no
+		#check_has_focus_tree_to_switch_to_socialism = yes
+	}
+	mean_time_to_happen = { days = 2 }
+	immediate = {
+		hidden_effect = { remove_ideas = socialism_revolutionaries }
+	}
+	option = { #Stay with current government
+		name = political.36.a
+		ai_chance = {
+			factor = 0
+		}
+		start_civil_war = { ideology = socialism size = 0.5 }
+	}
+	option = { #Side with the Revolutionaries
+		name = political.36.b
+		#Democratic#
+		###################################
+		if = {
+			limit = { has_government = liberalism }
+			start_civil_war = { ruling_party = socialism ideology = liberalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = conservatism }
+			start_civil_war = { ruling_party = socialism ideology = conservatism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = socialism }
+			start_civil_war = { ruling_party = socialism ideology = socialism size = 0.5 }
+		}
+		#Communist#
+		###################################
+		if = {
+			limit = { has_government = collectivism }
+			start_civil_war = { ruling_party = socialism ideology = collectivism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = naturalism }
+			start_civil_war = { ruling_party = socialism ideology = naturalism size = 0.5 }
+		}
+		if = {
+			limit = { has_government = proletarianism }
+			start_civil_war = { ruling_party = socialism ideology = proletarianism size = 0.5 }
+		}
+		#Monarchic#
+		###################################
+		if = { 
+			limit = { has_government = absolutism }
+			start_civil_war = { ruling_party = socialism ideology = absolutism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = theocracy }
+			start_civil_war = { ruling_party = socialism ideology = theocracy size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = royalism }
+			start_civil_war = { ruling_party = socialism ideology = royalism size = 0.5 }
+		}
+		#Fascism#
+		###################################
+		if = { 
+			limit = { has_government = labryscism }
+			start_civil_war = { ruling_party = socialism ideology = labryscism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = rexism }
+			start_civil_war = { ruling_party = socialism ideology = rexism size = 0.5 }
+		}
+		if = { 
+			limit = { has_government = despotism }
+			start_civil_war = { ruling_party = socialism ideology = despotism size = 0.5 }
+		}
+	}
+}
+##########################################################################
+##########################################################################
+##								Suppressed								##
+##########################################################################
+##########################################################################
+country_event = { #Labryscists Suppressed
+	id = political.37
+	title = political.37.t
+	desc = political.37.d
+	picture = GFX_report_event_fascists_posing
 	trigger = {
 		labryscism < 0.3
-		has_idea = Labryscist_revolutionaries
+		has_idea = labryscist_revolutionaries
 	}
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
+	mean_time_to_happen = { days = 2 }
 	option = {
-		name = le_political.24.a
-		remove_ideas = Labryscist_revolutionaries
+		name = political.37.a
+		remove_ideas = labryscist_revolutionaries
 	}
 }
-# le_political.25 proletariet
+country_event = { #Rexists Suppressed
+	id = political.38
+	title = political.38.t
+	desc = political.38.d
+	picture = GFX_report_event_fascists_posing
+	trigger = {
+		labryscism < 0.3
+		has_idea = rexist_revolutionaries
+	}
+	mean_time_to_happen = { days = 2 }
+	option = {
+		name = political.38.a
+		remove_ideas = rexist_revolutionaries
+	}
+}
+country_event = { #Despots Suppressed
+	id = political.39
+	title = political.39.t
+	desc = political.39.d
+	picture = GFX_report_event_fascists_posing
+	trigger = {
+		labryscism < 0.3
+		has_idea = despotic_revolutionaries
+	}
+	mean_time_to_happen = { days = 2 }
+	option = {
+		name = political.39.a
+		remove_ideas = despotic_revolutionaries
+	}
+}
 country_event = {
-	id = le_political.25
-	title = le_political.25.t
-	desc = le_political.25.d
+	id = political.40
+	title = political.40.t
+	desc = political.40.d
 	picture = GFX_report_event_stalin_propaganda
-
+	trigger = {
+		collectivism < 0.3
+		has_idea = collectivist_revolutionaries
+	}
+	mean_time_to_happen = { days = 2 }
+	option = {
+		name = political.40.a
+		remove_ideas = collectivist_revolutionaries
+	}
+}
+country_event = {
+	id = political.41
+	title = political.41.t
+	desc = political.41.d
+	picture = GFX_report_event_stalin_propaganda
+	trigger = {
+		naturalism < 0.3
+		has_idea = naturalist_revolutionaries
+	}
+	mean_time_to_happen = { days = 2 }
+	option = {
+		name = political.41.a
+		remove_ideas = naturalist_revolutionaries
+	}
+}
+country_event = {
+	id = political.42
+	title = political.42.t
+	desc = political.42.d
+	picture = GFX_report_event_stalin_propaganda
 	trigger = {
 		proletarianism < 0.3
-		has_idea = proletariet_revolutionaries
+		has_idea = proletariat_revolutionaries
 	}
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
+	mean_time_to_happen = { days = 2 }
 	option = {
-		name = le_political.25.a
-		remove_ideas = proletariet_revolutionaries
+		name = political.42.a
+		remove_ideas = proletariat_revolutionaries
 	}
 }
-# le_political.26 liberalism
 country_event = {
-	id = le_political.26
-	title = le_political.26.t
-	desc = le_political.26.d
+	id = political.43
+	title = political.43.t
+	desc = political.43.d
 	picture = GFX_report_event_europe_funeral
-
 	trigger = {
 		liberalism < 0.3
 		has_idea = liberalism_revolutionaries
 	}
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
+	mean_time_to_happen = {	days = 2 }
 	option = {
-		name = le_political.26.a
+		name = political.43.a
 		remove_ideas = liberalism_revolutionaries
 	}
 }
-
-# Remove neutral foreign policy if Labryscist or commie
 country_event = {
-	id = le_political.27
-	title = le_political.27.t
-	desc = { 
-		text = le_political.27.d_labryscism
-	 	trigger = { has_government = labryscism }
-	}
-	desc = { 
-		text = le_political.27.d_proletarianism
-	 	trigger = { has_government = proletarianism }
-	}
-	picture = GFX_report_event_journalists_speech
-
+	id = political.44
+	title = political.44.t
+	desc = political.44.d
+	picture = GFX_report_event_europe_funeral
 	trigger = {
-		OR = {
-			has_government = labryscism
-			has_government = proletarianism
-		}
-		has_idea = absolutism_idea
+		conservatism < 0.3
+		has_idea = conservative_revolutionaries
 	}
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
+	mean_time_to_happen = {	days = 2 }
 	option = {
-		name = le_political.27.a
-		remove_ideas = absolutism_idea
+		name = political.44.a
+		remove_ideas = conservative_revolutionaries
 	}
 }
-
+country_event = {
+	id = political.45
+	title = political.45.t
+	desc = political.45.d
+	picture = GFX_report_event_europe_funeral
+	trigger = {
+		socialism < 0.3
+		has_idea = socialism_revolutionaries
+	}
+	mean_time_to_happen = {	days = 2 }
+	option = {
+		name = political.45.a
+		remove_ideas = socialism_revolutionaries
+	}
+}
+country_event = {
+	id = political.46
+	title = political.46.t
+	desc = political.46.d
+	picture = GFX_report_event_europe_funeral
+	trigger = {
+		absolutism < 0.3
+		has_idea = absolutism_revolutionaries
+	}
+	mean_time_to_happen = {	days = 2 }
+	option = {
+		name = political.46.a
+		remove_ideas = absolutism_revolutionaries
+	}
+}
+country_event = {
+	id = political.47
+	title = political.47.t
+	desc = political.47.d
+	picture = GFX_report_event_europe_funeral
+	trigger = {
+		royalism < 0.3
+		has_idea = royalism_revolutionaries
+	}
+	mean_time_to_happen = {	days = 2 }
+	option = {
+		name = political.47.a
+		remove_ideas = royalism_revolutionaries
+	}
+}
+country_event = {
+	id = political.48
+	title = political.48.t
+	desc = political.48.d
+	picture = GFX_report_event_europe_funeral
+	trigger = {
+		theocracy < 0.3
+		has_idea = theocratic_revolutionaries
+	}
+	mean_time_to_happen = {	days = 2 }
+	option = {
+		name = political.48.a
+		remove_ideas = theocratic_revolutionaries
+	}
+}
 # Country has same ideology as revolter
 country_event = {
-	id = le_political.28
-	title = le_political.28.t
-	desc = le_political.28.d
-
+	id = political.49
+	title = political.49.t
+	desc = political.49.d
 	picture = GFX_report_event_journalists_speech
-
 	trigger = {
 		any_other_country = {
 			NOT = { tag = ROOT }
@@ -571,13 +1922,9 @@ country_event = {
 			has_government = ROOT
 		}
 	}
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
+	mean_time_to_happen = { days = 2 }
 	option = {
-		name = le_political.28.a
+		name = political.49.a
 		random_other_country = {
 			limit = {
 				original_tag = ROOT
