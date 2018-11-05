@@ -1,8 +1,10 @@
 ﻿l_english:
 ###########
 #   MOD   #
-########### 
+###########
  #Categories
+  SOV_ATTACK_COUNTRIES:0 "Integrate Former Territory"
+  SOV_CREATE_SOCIALIST_REPUBLICS:0 "Form Soviet Republics"
   HRE_elections_category:0 "Holy Roman Electons"
   labryscism_on_the_rise:0 "Labrycism On The Rise"
   rexism_on_the_rise:0 "Rexism On The Rise"
@@ -20,10 +22,35 @@
   HRE_control_catagory:0 "Holy Roman Elections"
   HRE_control_catagory_desc:0 "The Elections are upon us, we must prepare for them so we may unite the Holy Roman Empire."
  #Decisions
+  #Soviet Decisions
+  ATTACK_UKRAINE:0 "Subjugate [UKR.GetName]"
+  ATTACK_BELERUS:0 "Subjugate [BLR.GetName]"
+  ATTACK_ESTONIA:0 "Subjugate [EST.GetName]"``
+  ATTACK_LATVIA:0 "Subjugate [LAT.GetName]"
+  ATTACK_DON_KUBAN:0 "Subjugate [DON.GetName]"
+  ATTACK_CRIMEA:0 "Subjugate [CRI.GetName]"
+  ATTACK_TURKESTAN:0 "Subjugate [SIK.GetName]"
+  ATTACK_ALASH_AUTONOMY:0 "Subjugate [ALH.GetName]"
+  CREATE_UKRAINIAN_SOCIALIST_REPUBLIC:0 "Create The Ukrainian Soviet Socialist Republic"
+  CREATE_BELERUS_SOCIALIST_REPUBLIC:0 "Create Belorussian Soviet Socialist Republic"
+  CREATE_LATVIAN_SOCIALIST_REPUBLIC:0 "Create Latvian Soviet Socialist Republic"
+  CREATE_LITHUANIAN_SOCIALIST_REPUBLIC:0 "Create Lithuanian Soviet Socialist Republic"
+  CREATE_ESTONIAN_SOCIALIST_REPUBLIC:0 "Create Estonian Soviet Socialist Republic"
+  CREATE_BALTIC_SOCIALIST_REPUBLIC:0 "Create Baltic Soviet Socialist Republic"
+  CREATE_KAZAKH_SOCIALIST_REPUBLIC:0 "Create Kazakh Soviet Socialist Republic"
+  CREATE_TURKESTAN_SOCIALIST_REPUBLIC:0 "Create Turkestan Soviet Socialist Republic"
+  CREATE_GEORGIAN_SOCIALIST_REPUBLIC:0 "Create Georgian Soviet Socialist Republic"
+  CREATE_ARMENIAN_SOCIALIST_REPUBLIC:0 "Create Armenian Soviet Socialist Republic"
+  CREATE_AZERBAIJAN_SOCIALIST_REPUBLIC:0 "Create Azerbaijan Soviet Socialist Republic"
+  CREATE_TRANSCAUCASIAN_SOCIALIST_REPUBLIC:0 "Create Transcaucasian Soviet Socialist Republic"
+  FATE_OF_THE_CAUCASUS:0 "Fate Of The Caucasus"
+  FATE_OF_THE_BALTICS:0 "Fate Of The Baltics"
+  THE_FATE_OF_CRIMEA:0 "The Fate Of Crimea"
+  THE_FATE_OF_BESSABERRA:0 "The Fate Of Bessaberra"
   #HRE Decisions
-   HRE_vote_for_prussia:0 "Vote for Prussia"
-   HRE_vote_for_austria:0 "Vote for Austria"
-   HRE_control_tt:0 "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test"
+  HRE_vote_for_prussia:0 "Vote for Prussia"
+  HRE_vote_for_austria:0 "Vote for Austria"
+  HRE_control_tt:0 "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test"
   #Political Decisions
     #Labryscism
      hold_the_labryscist_national_referendum:0 "Hold The Labrycist National Referendum"

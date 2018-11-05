@@ -74,21 +74,21 @@ country_event = {
 	title = hre.3.t
 	desc = hre.3.d
 	picture = GFX_report_event_spain_civil_war_soldiers
-	
-	#trigger = {
-	#	AND = {
-	#		BAV = { has_decision = flag_hre_voted }
-	#		BUR = { has_decision = flag_hre_voted }
-	#		PRS = { has_decision = flag_hre_voted }
-	#		DAN = { has_decision = flag_hre_voted }
-	#		BOH = { has_decision = flag_hre_voted }
-	#		SAX = { has_decision = flag_hre_voted }
-	#		HAN = { has_decision = flag_hre_voted }
-	#		PLT = { has_decision = flag_hre_voted }
-	#		NOT = { has_global_flag = flag_hre_vote_concluded }
-	#		tag = PRS
-	#	}
-	#}
+
+	trigger = {
+		AND = {
+			BAV = { has_decision = flag_hre_voted }
+			BUR = { has_decision = flag_hre_voted }
+			PRS = { has_decision = flag_hre_voted }
+			DAN = { has_decision = flag_hre_voted }
+			BOH = { has_decision = flag_hre_voted }
+			SAX = { has_decision = flag_hre_voted }
+			HAN = { has_decision = flag_hre_voted }
+			PLT = { has_decision = flag_hre_voted }
+			NOT = { has_global_flag = flag_hre_vote_concluded }
+			tag = PRS
+		}
+	}
 
 	mean_time_to_happen = {
 		days = 7

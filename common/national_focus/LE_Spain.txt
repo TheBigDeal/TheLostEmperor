@@ -1,28 +1,38 @@
 focus_tree = {
 	id = spanish_focus
-	
 	country = {
 		factor = 0
-		
 		modifier = {
 			add = 10
 			tag = SPR
 		}
 	}
-	
 	default = no
 	continuous_focus_position = { x = 50 y = 3100 }
-	
 	focus = {
-		id = SPR_QUELL_THE_REVOLUTION
+		id = SPR_THE_SPANISH_SUCCESSION_CRISIS
 		icon = GFX_goal_generic_national_unity
-		x = 4
+		x = 6
 		y = 0
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = SPR_NAME_A_HEIR
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = SPR_THE_SPANISH_SUCCESSION_CRISIS }
+		x = 6
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100
 		}
 	}

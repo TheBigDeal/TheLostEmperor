@@ -1,6 +1,6 @@
 ﻿capital = 41
 
-oob = "SPR_1936"
+oob = "SPR_1928"
 
 set_research_slots = 3
 
@@ -8,7 +8,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	gw_artillery = 1
@@ -28,23 +28,23 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		absolutism = { 
+		absolutism = {
 			popularity = 57
 		}
 
 		rexism = {
 			popularity = 13
 		}
-		
+
 		liberalism = {
 			popularity = 13
 		}
-		
+
 		proletarianism = {
 			popularity = 27
 		}
 	}
-	
+
 	ruling_party = absolutism
 	last_election = "1933.2.16"
 	election_frequency = 36

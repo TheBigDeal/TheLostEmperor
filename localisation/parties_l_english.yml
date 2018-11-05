@@ -7,54 +7,54 @@
  rexism:0 "Rexism"
  rexism_noun:0 "Rexist"
  rexism_ideology_desc:0 "Rexism is the belief that the king should be absolute in his entirety, being able to take any action regardless of laws and checks on his power to ensure the safety/success of his subjects."
- 
+
  despotism:0 "Despotism"
  despotism_noun:0 "Despotic"
  despotism_ideology_desc:0 "Despotism is the beleif that one person, or group of people should be in total control of one state, this can come in the form of an ogligarchy, or a dictatorship. This leader is not a king, and cannot be of royalty."
- 
+
  labryscism:0 "Labryscism"
  labryscism_noun:0 "Labryscist"
  labryscism_ideology_desc:0 "Labryscism is an idea that originated in Greece that there needs to be an absolute leader with popular sovereignty from the common class to exercise absolute power to bring their people/country success and prosperity."
- 
+
  #Democracy 
- socialism:0 "Demoratic Socialism"
- socialism_noun:0 "Demoratic Socialist"
- socialism_ideology_desc:0 "Demoratic Socialism is the mixture of democracy and communism, being a sort of lite form of communism. Socialism beleives in the equality of all people to a certain degree, which is not as extreme as communism."
- 
+ socialism:0 "Democratic Socialism"
+ socialism_noun:0 "Democratic Socialist"
+ socialism_ideology_desc:0 "Democratic Socialism is the mixture of democracy and communism, being a sort of lite form of communism. Socialism beleives in the equality of all people to a certain degree, which is not as extreme as communism."
+
  conservatism: "Conservatism"
  conservatism_noun: "Conservative"
- 
+
  liberalism: "Liberalism"
  liberalism_noun: "Liberal"
- 
+
  #Monarchy
  theocracy:0 "Theocracy"
  theocracy_noun:0 "Theocratic"
  theocracy_ideology_desc:0 "Theocracy is the belief in a person invested with representation or power from a religion who rules over the nation in accordance with the beliefs and rules of the religion in question."
- 
+
  absolutism:0 "Absolutism"
  absolutism_noun:0 "Absolutist"
  absolutism_ideology_desc:0 "Absolutism is the idea that a single person rules a country with all power over every aspect of the nation from the type of food grown to the army equipment. Any other power in the country is often invested in other royal family members."
- 
+
  royalism:0 "Royalism"
  royalism_noun:0 "Royalist"
  royalism_ideology_desc:0 "Royalism is the idea wherein a monarch rules a nation as head of state but in which a Constitution lays down the laws and boundaries of the powers that be in the nation often at times investing in more power to the people."
- 
+
  #Communism
  naturalism:0 "Naturalism"
  naturalism_noun:0 "Naturalist"
  naturalism_ideology_desc:0 "Naturalism is the idea that humanity should be left in their natural state. This is close to Anarchism in OTL. Government powers are limited or non existant, with usually only a basic set of rules."
- 
+
  collectivism:0 "Collectivism"
  collectivism_noun:0 "Collectivist"
  collectivism_ideology_desc:0 "Collectivism Description"
- 
+
  proletarianism:0 "Proletarianism"
  proletarianism_noun:0 "Proletarian"
  proletarianism_ideology_desc:0 "Proletarianism Description"
- 
+
  PRS_absolutism_party:0 "House of Hohenzollern"
- 
+
 #SUBCATS
  #absolutism_desc:0 "Monarchist Regime"
  #rexism_desc:0 "Totalitarian Regime"
@@ -490,22 +490,22 @@
  ISR_liberalism_party:0 "Mapai"
  ISR_rexism_party:0 "Helpam"
  ISR_absolutism_party:0 "Central Council"
- VIN_rexism_party:0 "Vietnamese Restoration League" #or Reformation Society   
+ VIN_rexism_party:0 "Vietnamese Restoration League" #or Reformation Society
  VIN_liberalism_party:0 "Can Lao Party" #formed in early 50s
  VIN_proletarianism_party:0 "Communist Party of Vietnam" #Viet Minh was more important in early years
  VIN_absolutism_party:0 "Viêt Nam Quoc Dân Đang"
  CAM_rexism_party:0 "Khmerite Party"
- CAM_liberalism_party:0 "Democratic Party" #formed in 1946 
+ CAM_liberalism_party:0 "Democratic Party" #formed in 1946
  CAM_proletarianism_party:0 "Communist Party of Kampuchea" # aka Khmer Communist Party or a different party Krom Pracheachon aka Krom
  CAM_absolutism_party:0 "Sangkum Reastr Niyum" # or just Sangkum 1955, liberalism but right leaning and anti communist
  INS_rexism_party:0 "New Order" #inspired by right wingers from 1960s
  INS_liberalism_party:0 "PNI" #Indonesian National Party founded by Sukarno
  INS_proletarianism_party:0 "PKI" #Partai Komunis Indonesia
- INS_absolutism_party:0 "Democrats" #made up, in reality this guy was a member of PNI 
+ INS_absolutism_party:0 "Democrats" #made up, in reality this guy was a member of PNI
  MAL_rexism_party:0 "Panoceanic Unionists"
  MAL_liberalism_party:0 "United Malays National Organisation" #or UMNO or PEKEMBAR
  MAL_proletarianism_party:0 "Malayan Communist Party" #or MCP
- MAL_absolutism_party:0 "Kesatuan Melayu Muda" #or KMM 
+ MAL_absolutism_party:0 "Kesatuan Melayu Muda" #or KMM
  LAO_rexism_party:0 "Tribal Centralization Party"
  LAO_liberalism_party:0 "Democratic Party"
  LAO_proletarianism_party:0 "Pathet Lao"
@@ -531,7 +531,7 @@
  AZR_proletarianism_party:0 "Communist Party of Azerbaijan"
  AZR_absolutism_party:0 "Ittihad"
  ARM_rexism_party:0 "Armenian Legion"
- ARM_liberalism_party:0 "Armenian Revolutionary Federation" #or ARF 
+ ARM_liberalism_party:0 "Armenian Revolutionary Federation" #or ARF
  ARM_proletarianism_party:0 "Communist Party of Armenia"
  ARM_absolutism_party:0 "Central Authority"
  BLR_rexism_party:0 "Belarusian Central Council"

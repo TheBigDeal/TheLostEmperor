@@ -27,12 +27,12 @@ country_event = { #What flag should we use?
 	title = le_prussia.2.t
 	desc = le_prussia.2.d
 	picture = GFX_report_event_hitler_parade
-	
+
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	option = { #Traditional Eagle
 		name = le_prussia.2.a
 		set_cosmetic_tag = GERMAN_EMPIRE_OLD
@@ -47,7 +47,7 @@ country_event = { #Annex by Germany
 	title = le_prussia.3.t
 	desc = le_prussia.3.d
 	picture = GFX_report_event_hitler_parade
-	
+
 	trigger = {
 		AND = {
 			PRS = { focus_progress = { focus = PRS_OATHS_OF_LOYALTY progress > 0.0 } }
@@ -101,9 +101,9 @@ country_event = { #Annex by Germany
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 40 }
-	
+
 	option = { #Accept (Get Annexed)
 		name = le_prussia.3.1
 		ai_chance = { factor = 50 }
@@ -132,11 +132,11 @@ country_event = { #Country gets puppeted
 	title = le_prussia.4.t
 	desc = le_prussia.4.d
 	picture = GFX_report_event_hitler_parade
-	
+
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
-	
+
 	option = { #START THE WAR
 		name = le_prussia.4.a
 	}
@@ -147,7 +147,7 @@ country_event = { #THE BERLIN CONFERENCE
 	title = le_prussia.5.t
 	desc = le_prussia.5.d
 	picture = GFX_report_event_hitler_parade
-	
+
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -155,11 +155,11 @@ country_event = { #THE BERLIN CONFERENCE
 	option = { #Join The Confederation
 		name = le_prussia.5.a
 		ai_chance = { factor = 30 }
-		PRS = { annex_country = { target = FROM transfer_troops = yes } }
+		PRS = { annex_country = { target = ROOT transfer_troops = yes } }
 	}
 	option = { #Keep Independence
 		name = le_prussia.5.b
 		ai_chance = { factor = 10 }
-		PRS = { add_opinion_modifier = { target = FROM modifier = DECLINED_BERLIN_CONFERENCE } }
+		PRS = { add_opinion_modifier = { target = ROOT modifier = DECLINED_BERLIN_CONFERENCE } }
 	}
 }

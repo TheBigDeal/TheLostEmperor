@@ -3,13 +3,13 @@ state=
 	id=182
 	name="STATE_182"
 	manpower = 387900
-	
+
 	state_category = rural
 	history=
 	{
-		owner = ATH
+		owner = GRE
 		victory_points = {
-			9940 1 
+			9940 1
 		}
 		buildings = {
 			infrastructure = 4
@@ -22,7 +22,7 @@ state=
 				naval_base = 3
 			}
 		}
-		add_core_of = ATH
+		add_core_of = GRE
 	}
 	provinces=
 	{

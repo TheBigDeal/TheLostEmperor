@@ -1,4 +1,4 @@
-﻿capital = 47
+﻿capital = 4109
 
 oob = "GRE_1936"
 
@@ -6,13 +6,13 @@ set_research_slots = 3
 
 add_ideas = {
 	limited_conscription
+	extreme_civil_unrest
 }
 
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
 	tech_mountaineers = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_recon = 1
 	early_submarine = 1
 	early_destroyer = 1
@@ -21,37 +21,31 @@ set_technology = {
 	early_battleship = 1
 	transport = 1
 }
-
-set_convoys = 10
-
-
+set_convoys = 17
 set_politics = {
-
 	parties = {
-		liberalism = { 
-			popularity = 2
-		}
+		conservatism = { popularity = 5 }
+		liberalism = { popularity = 1	}
+		socialism = { popularity = 4 }
 
-		rexism = {
-			popularity = 23
-		}
-		
-		proletarianism = {
-			popularity = 10
-		}
-		
-		absolutism = { 
-			popularity = 65
-		}
+		labryscism = { popularity = 20	}
+		rexism = { popularity = 9 }
+		despotism = { popularity = 6 }
+
+		royalism = {popularity = 15 }
+		theocracy = { popularity = 8 }
+		absolutism = { popularity = 7 }
+
+		proletarianism = {popularity = 3 }
+		collectivism = { popularity = 15 }
+		naturalism = { popularity = 7 }
 	}
-	
 	ruling_party = absolutism
-	last_election = "1935.6.9"
-	election_frequency = 12
-	elections_allowed = no # none after offset 1
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
 }
-set_stability = 0.9
-
+set_stability = 0.05
 create_country_leader = {
 	name = "King George II"
 	desc = "POLITICS_IOANNIS_METAXAS_DESC"

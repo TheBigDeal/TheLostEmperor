@@ -1,0 +1,636 @@
+SOV_ATTACK_COUNTRIES = {
+	ATTACK_UKRAINE = {
+		icon = GFX_icon_communism
+		available = {
+			country_exists = UKR
+			NOT = { UKR = { is_puppet_of = SOV } }
+			NOT = { has_global_flag = Russian_Civil_War }
+		}
+		visible = {
+			country_exists = UKR
+			UKR = { NOT = { is_puppet_of = SOV }}
+			NOT = { has_war_with = UKR }
+		}
+		cost = 20
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			declare_war_on = {
+				target = UKR
+				type = annex_everything
+			}
+			every_state = {
+				limit = { is_owned_by = UKR }
+				add_claim_by = SOV
+			}
+		}
+	}
+	ATTACK_BELERUS = {
+		icon = GFX_icon_communism
+		available = {
+			country_exists = BLR
+			NOT = { BLR = { is_puppet_of = SOV } }
+			NOT = { has_global_flag = Russian_Civil_War }
+		}
+		visible = {
+			country_exists = BLR
+			BLR = { NOT = { is_puppet_of = SOV }}
+			NOT = { has_war_with = BLR }
+		}
+		cost = 20
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			declare_war_on = {
+				target = BLR
+				type = annex_everything
+			}
+			every_state = {
+				limit = { is_owned_by = BLR }
+				add_claim_by = SOV
+			}
+		}
+	}
+	ATTACK_ESTONIA = {
+		icon = GFX_icon_communism
+		available = {
+			country_exists = EST
+			NOT = { EST = { is_puppet_of = SOV } }
+			NOT = { has_global_flag = Russian_Civil_War }
+		}
+		visible = {
+			country_exists = EST
+			EST = { NOT = { is_puppet_of = SOV }}
+			NOT = { has_war_with = EST }
+		}
+		cost = 20
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			declare_war_on = {
+				target = EST
+				type = annex_everything
+			}
+			every_state = {
+				limit = { is_owned_by = EST }
+				add_claim_by = SOV
+			}
+		}
+	}
+	ATTACK_LATVIA = {
+		icon = GFX_icon_communism
+		available = {
+			country_exists = LAT
+			NOT = { LAT = { is_puppet_of = SOV } }
+			NOT = { has_global_flag = Russian_Civil_War }
+		}
+		visible = {
+			country_exists = LAT
+			LAT = { NOT = { is_puppet_of = SOV }}
+			NOT = { has_war_with = LAT }
+		}
+		cost = 20
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			declare_war_on = {
+				target = LAT
+				type = annex_everything
+			}
+			every_state = {
+				limit = { is_owned_by = LAT }
+				add_claim_by = SOV
+			}
+		}
+	}
+	ATTACK_DON_KUBAN = {
+		icon = GFX_icon_communism
+		available = {
+			country_exists = DON
+			NOT = { DON = { is_puppet_of = SOV } }
+			NOT = { has_global_flag = Russian_Civil_War }
+		}
+		visible = {
+			country_exists = DON
+			DON = { NOT = { is_puppet_of = SOV }}
+			NOT = { has_war_with = DON }
+		}
+		cost = 20
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			declare_war_on = {
+				target = DON
+				type = annex_everything
+			}
+			every_state = {
+				limit = { is_owned_by = DON }
+				add_claim_by = SOV
+			}
+		}
+	}
+	ATTACK_CRIMEA = {
+		icon = GFX_icon_communism
+		available = {
+			country_exists = CRI
+			NOT = { CRI = { is_puppet_of = SOV } }
+			NOT = { has_global_flag = Russian_Civil_War }
+		}
+		visible = {
+			country_exists = CRI
+			CRI = { NOT = { is_puppet_of = SOV }}
+			NOT = { has_war_with = CRI }
+		}
+		cost = 20
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			declare_war_on = {
+				target = CRI
+				type = annex_everything
+			}
+			every_state = {
+				limit = { is_owned_by = CRI }
+				add_claim_by = SOV
+			}
+		}
+	}
+	ATTACK_TURKESTAN = {
+		icon = GFX_icon_communism
+		available = {
+			country_exists = SIK
+			NOT = { SIK = { is_puppet_of = SOV } }
+			NOT = { has_global_flag = Russian_Civil_War }
+		}
+		visible = {
+			country_exists = SIK
+			NOT = { has_war_with = SIK }
+			SIK = { NOT = { is_puppet_of = SOV }}
+		}
+		cost = 20
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			declare_war_on = {
+				target = SIK
+				type = annex_everything
+			}
+			every_state = {
+				limit = { is_owned_by = SIK }
+				add_claim_by = SOV
+			}
+		}
+	}
+	ATTACK_ALASH_AUTONOMY = {
+		icon = GFX_icon_communism
+		available = {
+			country_exists = ALH
+			NOT = { ALH = { is_puppet_of = SOV } }
+			NOT = { has_global_flag = Russian_Civil_War }
+		}
+		visible = {
+			country_exists = ALH
+			ALH = { NOT = { is_puppet_of = SOV }}
+			NOT = { has_war_with = UKR }
+		}
+		cost = 20
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			declare_war_on = {
+				target = ALH
+				type = annex_everything
+			}
+			every_state = {
+				limit = { is_owned_by = ALH }
+				add_claim_by = SOV
+			}
+		}
+	}
+}
+SOV_CREATE_SOCIALIST_REPUBLICS = {
+	CREATE_UKRAINIAN_SOCIALIST_REPUBLIC = {
+		cost = 10
+		available = {
+
+		}
+		visible = {
+			NOT = { country_exists = UKR }
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			puppet = UKR
+			UKR = {
+				set_cosmetic_tag = SOV_COLOR_UKR
+				if = { limit = { SOV = { owns_state = 228 } }
+					transfer_state = 228
+				}
+				if = { limit = { SOV = { owns_state = 227 } }
+					transfer_state = 227
+				}
+				if = { limit = { SOV = { owns_state = 221 } }
+					transfer_state = 221
+				}
+				if = { limit = { SOV = { owns_state = 226 } }
+					transfer_state = 226
+				}
+				if = { limit = { SOV = { owns_state = 200 } }
+					transfer_state = 200
+				}
+				if = { limit = { SOV = { owns_state = 196 } }
+					transfer_state = 196
+				}
+				if = { limit = { SOV = { owns_state = 259 } }
+					transfer_state = 259
+				}
+				if = { limit = { SOV = { owns_state = 225 } }
+					transfer_state = 225
+				}
+				if = { limit = { SOV = { owns_state = 193 } }
+					transfer_state = 193
+				}
+				if = { limit = { SOV = { owns_state = 203 } }
+					transfer_state = 203
+				}
+				if = { limit = { SOV = { owns_state = 197 } }
+					transfer_state = 197
+				}
+				if = { limit = { SOV = { owns_state = 192 } }
+					transfer_state = 192
+				}
+				if = { limit = { SOV = { owns_state = 198 } }
+					transfer_state = 198
+				}
+				if = { limit = { SOV = { owns_state = 199 } }
+					transfer_state = 199
+				}
+				if = { limit = { SOV = { owns_state = 201 } }
+					transfer_state = 201
+				}
+				if = { limit = { SOV = { owns_state = 202 } }
+					transfer_state = 202
+				}
+			}
+		}
+	}
+	FATE_OF_THE_BALTICS = {
+		cost = 10
+		available = {
+
+		}
+		visible = {
+			AND = {
+				owns_state = 191
+				owns_state = 13
+				owns_state = 12
+				OR = {
+					NOT = { has_country_flag = FLAG_BSSR }
+					NOT = { has_country_flag = FLAG_SEPERATE_BALTICS }
+				}
+			}
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			country_event = { id = le_russia.9 }
+		}
+	}
+	CREATE_ESTONIAN_SOCIALIST_REPUBLIC = {
+		cost = 10
+		available = { }
+		visible = {
+			NOT = { country_exists = EST }
+			has_country_flag = FLAG_SEPERATE_BALTICS
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			puppet = EST
+			EST = {
+				set_cosmetic_tag = SOV_COLOR_EST
+				transfer_state = 191
+				transfer_state = 13
+			}
+		}
+	}
+	CREATE_LATVIAN_SOCIALIST_REPUBLIC = {
+		cost = 10
+		available = { }
+		visible = {
+			NOT = { country_exists = LAT }
+			has_country_flag = FLAG_SEPERATE_BALTICS
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			puppet = LAT
+			LAT = {
+				set_cosmetic_tag = SOV_COLOR_LAT
+				if = { limit = { SOV = { owns_state = 12 }}
+					transfer_state = 12
+				}
+				if = { limit = { SOV = { owns_state = 190 }}
+					transfer_state = 190
+				}
+			}
+		}
+	}
+	CREATE_LITHUANIAN_SOCIALIST_REPUBLIC = {
+		cost = 10
+		available = { }
+		ai_will_do = { factor = 10 }
+		visible = {
+			NOT = { country_exists = LIT }
+			SOV = { owns_state = 11 }
+			SOV = { owns_state = 96 }
+			SOV = { owns_state = 807 }
+			SOV = { owns_state = 189 }
+			OR = {
+				has_country_flag = FLAG_SEPERATE_BALTICS
+				AND = {
+					NOT = { LAT = { has_cosmetic_tag = SOV_COLOR_BSSR } }
+					country_exists = LAT
+				}
+			}
+		}
+		complete_effect = {
+			puppet = LIT
+			LIT = {
+				set_cosmetic_tag = SOV_COLOR_LIT
+				transfer_state = 189
+				transfer_state = 11
+				transfer_state = 807
+				transfer_state = 96
+			}
+		}
+	}
+	CREATE_BALTIC_SOVIET_SOCIALIST_REPUBLIC = {
+		cost = 10
+		available = { }
+		visible = {
+			SOV = { owns_state = 12 }
+			SOV = { owns_state = 13 }
+			SOV = { owns_state = 191 }
+			NOT = { country_exists = EST }
+			NOT = { country_exists = LAT }
+			has_country_flag = FLAG_BSSR
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			puppet = LAT
+			LAT = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = SOV_COLOR_BSSR
+				transfer_state = 12
+				transfer_state = 190
+				transfer_state = 191
+				transfer_state = 13
+			}
+			if = {
+				limit = { SOV = { owns_state = 189 } }
+				LAT = { transfer_state = 189 }
+			}
+			if = {
+				limit = { SOV = { owns_state = 11 } }
+				LAT = { transfer_state = 11 }
+			}
+			if = {
+				limit = { SOV = { owns_state = 807 } }
+				LAT = { transfer_state = 807 }
+			}
+			if = {
+				limit = { SOV = { owns_state = 96 } }
+				LAT = { transfer_state = 96 }
+			}
+		}
+	}
+	CREATE_KAZAKH_SOCIALIST_REPUBLIC = {
+		cost = 10
+		available = {
+			SOV = { owns_state = 407 }
+			SOV = { owns_state = 406 }
+			SOV = { owns_state = 402 }
+			SOV = { owns_state = 587 }
+			SOV = { owns_state = 404 }
+			SOV = { owns_state = 588 }
+			SOV = { owns_state = 590 }
+			SOV = { owns_state = 583 }
+		}
+		ai_will_do = { factor = 10 }
+		visible = {
+			OR = {
+				SOV = { owns_state = 407 }
+				SOV = { owns_state = 406 }
+				SOV = { owns_state = 402 }
+				SOV = { owns_state = 587 }
+				SOV = { owns_state = 404 }
+				SOV = { owns_state = 588 }
+				SOV = { owns_state = 590 }
+				SOV = { owns_state = 583 }
+			}
+		}
+		complete_effect = {
+			puppet = KAZ
+			KAZ = {
+				set_cosmetic_tag = SOV_COLOR_KAZ
+				transfer_state = 407
+				transfer_state = 406
+				transfer_state = 402
+				transfer_state = 587
+				transfer_state = 404
+				transfer_state = 588
+				transfer_state = 590
+				transfer_state = 583
+			}
+		}
+	}
+	CREATE_TURKESTAN_SOCIALIST_REPUBLIC = {
+		cost = 10
+		available = {
+			SOV = { owns_state = 584 }
+			SOV = { owns_state = 585 }
+			SOV = { owns_state = 405 }
+			SOV = { owns_state = 586 }
+			SOV = { owns_state = 589 }
+			SOV = { owns_state = 742 }
+		}
+		ai_will_do = { factor = 10 }
+		visible = {
+			OR = {
+				SOV = { owns_state = 584 }
+				SOV = { owns_state = 585 }
+				SOV = { owns_state = 405 }
+				SOV = { owns_state = 586 }
+				SOV = { owns_state = 589 }
+				SOV = { owns_state = 742 }
+			}
+		}
+		complete_effect = {
+			puppet = SIK
+			SIK = {
+				set_cosmetic_tag = SOV_COLOR_SIK
+				transfer_state = 584
+				transfer_state = 585
+				transfer_state = 405
+				transfer_state = 586
+				transfer_state = 589
+				transfer_state = 742
+			}
+		}
+	}
+	CREATE_BELERUS_SOCIALIST_REPUBLIC = {
+		cost = 10
+		available = {
+
+		}
+		visible = {
+			NOT = { country_exists = BLR }
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			puppet = BLR
+			BLR = {
+				set_cosmetic_tag = SOV_COLOR_BLR
+				transfer_state = 194
+				transfer_state = 204
+				transfer_state = 206
+				transfer_state = 207
+				transfer_state = 241
+			}
+		}
+	}
+	THE_FATE_OF_CRIMEA = {
+		cost = 10
+		available = {
+			UKR = { NOT = { owns_state = 137 }}
+			SOV = { owns_state = 137 }
+		}
+		visible = {
+			country_exists = UKR
+			NOT = { country_exists = CRI }
+			UKR = { NOT = { owns_state = 137 }}
+			NOT = { has_country_flag = FLAG_FATE_OF_CRIMEA }
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			country_event = { id = le_russia.7 }
+			set_country_flag = FLAG_FATE_OF_CRIMEA
+		}
+	}
+	THE_FATE_OF_BESSABERRA = {
+		cost = 10
+		available = {
+			UKR = { NOT = { owns_state = 78 }}
+			SOV = { owns_state = 78 }
+		}
+		visible = {
+			country_exists = UKR
+			country_exists = MOL
+			NOT = { country_exists = CRI }
+			UKR = { NOT = { owns_state = 78 }}
+			NOT = { has_country_flag = FLAG_FATE_OF_BESSABERRA }
+		}
+		complete_effect = {
+			country_event = { id = le_russia.6 }
+			set_country_flag = FLAG_FATE_OF_BESSABERRA
+		}
+	}
+	FATE_OF_THE_CAUCASUS = {
+		cost = 10
+		available = {
+			owns_state = 231
+			owns_state = 230
+			owns_state = 229
+		}
+		visible = {
+			OR = {
+				owns_state = 231
+				owns_state = 230
+				owns_state = 229
+			}
+			OR = {
+				NOT = { has_country_flag = FLAG_TCSSR }
+				NOT = { has_country_flag = FLAG_SEPERATE_CAUCASUS }
+			}
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			country_event = { id = le_russia.10 }
+		}
+	}
+	CREATE_TRANSCAUCASIAN_SOCIALIST_REPUBLIC = {
+		cost = 10
+		available = {
+			owns_state = 231
+			owns_state = 230
+			owns_state = 229
+		}
+		visible = {
+			OR = {
+				owns_state = 231
+				owns_state = 230
+				owns_state = 229
+			}
+			has_country_flag = FLAG_TCSSR
+			NOT = { country_exists = GEO }
+			NOT = { country_exists = ARM }
+			NOT = { country_exists = AZR }
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			puppet = GEO
+			GEO = {
+				set_cosmetic_tag = SOV_COLOR_TCSSR
+				transfer_state = 229
+				transfer_state = 230
+				transfer_state = 231
+			}
+		}
+	}
+	CREATE_GEORGIAN_SOCIALIST_REPUBLIC = {
+		cost = 10
+		available = {
+			owns_state = 231
+		}
+		visible = {
+			owns_state = 231
+			has_country_flag = FLAG_SEPERATE_CAUCASUS
+			NOT = { country_exists = GEO }
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			puppet = GEO
+			GEO = {
+				set_cosmetic_tag = SOV_COLOR_GSSR
+				transfer_state = 231
+			}
+		}
+	}
+	CREATE_ARMENIAN_SOCIALIST_REPUBLIC = {
+		cost = 10
+		available = {
+			owns_state = 230
+		}
+		visible = {
+			owns_state = 230
+			has_country_flag = FLAG_SEPERATE_CAUCASUS
+			NOT = { country_exists = ARM }
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			puppet = ARM
+			ARM = {
+				set_cosmetic_tag = SOV_COLOR_ASSR
+				transfer_state = 230
+			}
+		}
+	}
+	CREATE_AZERBAIJAN_SOCIALIST_REPUBLIC = {
+		cost = 10
+		available = {
+			owns_state = 229
+		}
+		visible = {
+			owns_state = 229
+			has_country_flag = FLAG_SEPERATE_CAUCASUS
+			NOT = { country_exists = AZR }
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			puppet = AZR
+			AZR = {
+				set_cosmetic_tag = SOV_COLOR_AZSSR
+				transfer_state = 229
+			}
+		}
+	}
+}

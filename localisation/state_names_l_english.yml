@@ -45,7 +45,7 @@
  STATE_44:0 "Albania"
  STATE_45:0 "Vojvodina"
  STATE_46:0 "Muntenia"
- STATE_47:0 "Athens"
+ STATE_47:0 "Greater Athens"
  STATE_48:0 "Sofia"
  STATE_49:0 "Ankara"
  STATE_50:0 "Württemberg"
@@ -58,7 +58,7 @@
  STATE_57:0 "Westfalen"
  STATE_58:0 "Schleswig-Holstein"
  STATE_59:0 "Hannover"
- STATE_60:0 "Thüringen"
+ STATE_60:0 "Erfurt"
  STATE_61:0 "Mecklenburg"
  STATE_62:0 "Pommern"
  STATE_63:0 "Hinterpommern"
@@ -209,7 +209,7 @@
  STATE_208:0 "Luga"
  STATE_209:0 "Pskov"
  STATE_210:0 "Nevel"
- STATE_211:0 "Burgas"
+ STATE_211:0 "Varna"
  STATE_212:0 "Plovdiv"
  STATE_213:0 "Murmansk"
  STATE_214:0 "Arkhangelsk"
@@ -776,11 +776,11 @@
  STATE_775:0 "Metz"
  STATE_776:0 "East Brittany"
  STATE_776:0 "Southern Desert"
- 
+
  STATE_783:0 "East Faud"
  STATE_784:0 "Port Said"
- 
- 
+
+
  STATE_786:0 "Mecklenburg-Strelitz"
  STATE_787:0 "Connecticut"
  STATE_788:0 "Massachusetts"
@@ -788,13 +788,22 @@
  STATE_790:0 "New Hampshire"
  STATE_791:0 "Maine"
  STATE_792:0 "West Virginia"
- 
+ STATE_797:0 "Lindau"
+ STATE_789:0 "Memmingen"
+ STATE_808:0 "Dobruja"
+ STATE_810:0 "Plovdiv"
+ STATE_811:0 "Anhalt"
+ STATE_818:0 "Brunswick"
+
+ STATE_820:0 "Fulda"
+
  STATE_825:0 "Grevena"
  STATE_826:0 "Thessaly"
  STATE_827:0 "Euboea"
  STATE_828:0 "Corfu"
  STATE_832:0 "Blagoevgrad"
- 
+ STATE_833:0 "Dijon"
+
  STATE_836:0 "Raetia"
  STATE_837:0 "Valais"
  STATE_838:0 "Parma"
@@ -812,10 +821,16 @@
  STATE_850:0 "Dendi"
  STATE_851:0 "Darfur"
  STATE_852:0 "Wadai"
- 
+
+ STATE_871:0 "Thuringia"
+
+ STATE_874:0 "Edirne"
+ STATE_882:0 "Hamburg"
  STATE_886:0 "Versailles"
+ STATE_940:0 "Lubek"
  STATE_943:0 "Napoli"
- STATE_948:0 "Vorpommern"
- 
+ STATE_949:0 "Vorpommern"
  STATE_950:0 "Ionian Islands"
  STATE_951:0 "Agrinio"
+ STATE_952:0 "North Epirus"
+ STATE_954:0 "Athens"

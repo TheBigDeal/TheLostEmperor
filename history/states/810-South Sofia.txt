@@ -5,6 +5,9 @@ state={
 
 	history={
 		owner = RUM
+		victory_points = {
+			6923 5
+		}
 		buildings = {
 			infrastructure = 6
 			arms_factory = 2
@@ -16,7 +19,7 @@ state={
 	}
 
 	provinces={
-		878 893 3937 6814 6923 6952 6982 9862 11813 
+		878 893 3937 6814 6923 6952 6982 9862 11813
 	}
 	manpower=2647623
 	buildings_max_level_factor=1.000

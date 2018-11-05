@@ -6,10 +6,7 @@ state={
 	history={
 		owner = PRS
 		victory_points = {
-			6332 10 
-		}
-		victory_points = {
-			3380 5 
+			3380 5
 		}
 		buildings = {
 			infrastructure = 6
@@ -31,7 +28,7 @@ state={
 	}
 
 	provinces={
-		266 281 348 395 3351 3380 3384 6332 6347 6375 6402 9327 9346 9372 9398 11245 11265 11386 
+		266 3351 3380 6347 6375 6402 9327 9346 9372 9398 11245 11386
 	}
 	manpower=3378108
 	buildings_max_level_factor=1.000

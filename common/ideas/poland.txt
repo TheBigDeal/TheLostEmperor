@@ -62,8 +62,8 @@ country = {
 		picture = generic_intel_bonus
 		
 		modifier = {
-			democratic_drift = -0.1
-			democratic_acceptance = -100
+			liberalism_drift = -0.1
+			liberalism_acceptance = -100
 		}
 	}
 

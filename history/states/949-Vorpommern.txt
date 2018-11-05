@@ -1,0 +1,18 @@
+state={
+	id=949
+	name="STATE_949"
+	history={
+		owner = VRP
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+		}
+		add_core_of = VRP
+	}
+	provinces={
+		3340 9388
+	}
+	manpower=367385
+	state_category=city
+	buildings_max_level_factor=1.000
+}

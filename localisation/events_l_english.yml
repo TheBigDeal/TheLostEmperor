@@ -22,6 +22,12 @@
  le_political.18.a:0 "Suppress this hateful movement!"
  le_political.18.b:0 "Don't pay any attention to them."
  le_political.18.c:0 "If the people want it, we'll hold the referendum."
+ #Spain
+ #############################
+ le_spain.1.t:0 "Spanish War For The Throne"
+ le_spain.1.d:0 "With the recent death of the king, pretenders have claimed our throne. The original Boubon house still remains with INSERT HEIR HERE, but INSERT RIVAL HERE Habsburg also has valid claims to our country."
+ le_spain.1.a:0 "Fight For House Bourbon"
+ le_spain.1.b:0 "Fight For House Habsburg"
  #Sardinia
  #############################
  le_sardiniapiedmont.1.t:0 "The Kings Role In The Army"
@@ -90,80 +96,102 @@
  LE_greece.1.t:0 "Greek Civil War"
  LE_greece.1.d:0 "Two years ago on March 16th, 1926 Greece broke up into many smaller states, most following extreme ideologies the world has never seen before. Today War has been declared and preperations have been made to retake all of Greece and reunite the area. Many factions are warring and the outcome can be anything."
  LE_greece.1.a:0 "To War!"
- 
+
  LE_greece.2.t:0 "End of the Civil War"
  LE_greece.2.d:0 "We have won the war, now to finalize our victory."
  LE_greece.2.a:0 "Finally."
- 
+
  bavaria.1.t:0 "Bavarian Civil War"
  bavaria.1.d:0 "Communism is on the rise in Bavaria, today is the day they rise up. The communists have high support and the king has already abdicated. Most historians predict a communist victory."
  bavaria.1.a:0 "For the King!"
  bavaria.1.b:0 "Time to ignite the flames of Revolution!"
- 
+
  occupation.1.t: "The fate of the Papacy"
  occupation.1.d: "Enemy forces have taken over Rome. This leaves the world wondering, "What will become of the Papacy?" There is two options, either to leave them be in Rome  or for the enemy to take full control and abolish the Papal State once and for all."
  occupation.1.a: "Liberate Them!"
  occupation.1.b: "Annex Them."
- 
+
  #Russia
  le_russia.1.t:0 "The Russian Empire"
  le_russia.1.d:0 "Russia has just gotten out of a war with Japan and Qing, losing some territory in eastern Asia. On top of this the Tsardom has been barely holding together under Soviet pressure. The Tsar has become more popular, turning Russia into a industrial and modern country, however for some people the monarchy is doomed to fail and the only salvation is in Proletarietism."
  le_russia.1.a:0 "Long Live the Tsar!"
- le_russia.2.t:0 "The  Russian Civil War"
+ le_russia.2.t:0 "The Russian Civil War"
  le_russia.2.d:0 "Over the last decade the Russian Empire has been under a great threat of the proletariets uprising. Today is the day that they make their move. The tsar is in great danger and has already fled to Prussia, this revolution will be a bloody one."
- le_russia.2.a:0 "For the Tsar!"
- le_russia.2.b:0 "The Workers rise!"
- le_russia.4.t:0 "Belerus Declares Independence!"
- le_russia.4.d:0 "Today demands were sent to Moscow declaring that the former Russian Territory of Belerus has declared independence. "
- le_russia.4.1:0 "Damn Them!"
- le_russia.5.t:0 "Ruthenia Declares Independence!"
- le_russia.5.d:0 "Today demands were sent to Moscow declaring that the former Russian Territory of Ruthenia has declared independence. "
- le_russia.5.1:0 "Damn Them!"
- 
+ le_russia.2.a:0 "Long Live The Tsar!"
+ le_russia.2.b:0 "The Workers Rise!"
+ le_russia.2.c:0 "Play A Released Country"
+
+ le_russia.3.t:0 "End Of The Russian Civil War"
+ le_russia.3.d:0 "Finally the revolution is over."
+ le_russia.3.a:0 "No More Blood Will be Shed."
+
+ le_russia.4.t:0 "Pick A Country"
+ le_russia.4.d:0 "Pick a country, if the country does not exist you will stay as Russia."
+ le_russia.4.I:0 "Play As [UKR.GetName]"
+ le_russia.4.II:0 "Play As [BLR.GetName]"
+ le_russia.4.III:0 "Play As [DON.GetName]"
+ le_russia.4.IV:0 "Next Page"
+
+ le_russia.5.t:0 "Country Picker - Page II"
+ le_russia.5.d:0 "Pick a country, if the country does not exist you will stay as Russia."
+ le_russia.5.I:0 "Play As [KHI.GetName]"
+ le_russia.5.II:0 "Play As [CRI.GetName]"
+ le_russia.5.III:0 "Play As [LAT.GetName]"
+ le_russia.5.IV:0 "Play As [EST.GetName]"
+
+ le_russia.9.t:0 "The Fate Of The Baltics"
+ le_russia.9.d:0 "We have Conquered the Baltics, how shall we divide the newly conquered land?"
+ le_russia.9.a:0 "Form Seperate Baltic States"
+ le_russia.9.b:0 "Form The Baltic Soviet Socialist Republic"
+
+ le_russia.10.t:0 "The Fate Of The Caucasus"
+ le_russia.10.d:0 "We have Conquered the Caucasus, how shall we divide the newly conquered land?"
+ le_russia.10.a:0 "Form Seperate Caucasus States"
+ le_russia.10.b:0 "Form The Transcaucasian Soviet Socialist Republic"
  #POLAND
  le_poland.1.t:0 "The Polish Condominium"
  le_poland.1.d:0 "After the Partitions of Poland, the the eventual release of Polish lands, Poland has become a Condominium between Austria and Prussia. It is our turn to transfer lordship of Poland over to the Danubians. We can also refuse to transfer the subject this time, but this will greatly anger the Danubians and most likely lead to war."
  le_poland.1.a:0 "Transfer Lordship"
  le_poland.1.b:0 "Refuse"
- 
+
  le_poland.2.t:0 "The Polish Condominium"
  le_poland.2.d:0 "After the Partitions of Poland, the the eventual release of Polish lands, Poland has become a Condominium between Austria and Prussia. It is our turn to transfer lordship of Poland over to the Prussians. We can also refuse to transfer the subject this time, but this will greatly anger the Prussians and most likely lead to war."
  le_poland.2.a:0 "Transfer Lordship"
  le_poland.2.b:0 "Refuse"
- 
+
  #HRE ELECTIONS
  hre.1.t:0 "Holy Roman Elections"
  hre.1.d:0 "The Holy Roman Empire has gone into their long awaited election cycle. In 1853 the last Emperor died. The HRE  having only six electors could not decide on a new Emperor, resulting in a tie.  This caused the creation of an Imperial Diet state, located in Aachen.  Today is the day that will decide the fate of the Holy Roman Empire, and  possibly the rest or Europe, or the World."
  hre.1.a:0 "Begin the Elections!"
- 
+
  hre.2.t:0 "Vote for the Holy Roman Emperor"
  hre.2.d:0 "We are an electorate of the Holy Roman Empire, therefore we get a vote in who shall become the new emperor. The choices are clearly Prussia or Austria as those are the most powerful countries, and the only ones with legitimate claims to the throne. It is time to vote and decide the fate of Europe."
  hre_prussia:0 "Vote for Prussia"
  hre_austria:0 "Vote for Austria"
- 
+
  hre.3.t:0 "Finalize Voting"
  hre.3.d:0 "The electorates have cast their votes, it is now time to count them up and announce the new emperor."
  hre_conclude:0 "Finalize Voting"
- 
+
  hre.4.t:0 "Prussian Victory"
  hre.4.d:0 "The Prussian's superior military might has swayed over the electorates votes. Emperor Frederick Wilhelm II has been crowned in Aachen and will make his announcement for the Holy Roman Empire Soon. The fate of Europe is in his hands."
  hre_prussia.1:0 "Announce the formation of a German Nation"
  hre_prussia.2:0 "Announce the reconstruction of the Empire"
- 
+
  hre.5.t:0 "Danubian Victory"
  hre.5.d:0 "The Danubians superior diplomacy has swayed over the electorates votes. Emperor Maximillion von Habsburg-Lothringen I has been crowned in Aachen and will make his announcement for the Holy Roman Empire Soon. The fate of Europe is in his hands."
  hre_austria.1:0 "Announce the centralization of the Empire"
  hre_austria.2:0 "Announce the expansion of the Empire"
- 
+
  hre.6.t:0 "Another Tie for Emperor"
  hre.6.d:0 "The recent election for the Emperor of the Holy Roman Empire has once again concluded in a tie. Frederick Wilhelm II and Maximillion von Habsburg-Lothringen I have met in Aachen to discuss the next steps, whether there will be another vote or some sort of compromise is yet to be seen."
  hre_tie.1:0 "Suggest Splitting Germany"
  hre_tie.2:0 "Another Vote"
- 
+
  hre.break.t:0 "It's Broken Idiot"
  hre.break.d:0 "The vote didnt not work, contact developer if you ever see this event. K Thanks Bye...."
  hre_break.a:0 "Fuck this event"
- 
+
  germany.4.t:0 "Anschluss"
  germany.4.d:0 "Repeated uprisings in Austria clearly show that the people there long to be united with our Reich. It is now time to take action and allow the will of the people to be made manifest."
  germany.4.a:0 "How can anyone say that Austria is not German?!"

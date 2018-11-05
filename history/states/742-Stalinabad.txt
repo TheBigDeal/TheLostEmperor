@@ -4,17 +4,17 @@ state={
 	name="STATE_742"
 
 	history={
-		owner = KOK
+		owner = SIK
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = KOK
+		add_core_of = SIK
 
 	}
 
 	provinces={
-		1766 2058 4467 4542 4923 5087 8027 10417 12581 12805 
+		2058 4467 4542 4923 8027 10417 12581 12805
 	}
 	manpower=230000
 	buildings_max_level_factor=1.000

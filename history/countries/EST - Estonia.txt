@@ -14,89 +14,24 @@ set_technology = {
 	early_fighter = 1
 	early_submarine = 1
 }
-
 set_convoys = 5
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "EST_1939"
-	set_technology = {
-		tech_recon = 1
-		tech_support = 1		
-		tech_engineers = 1
-		fighter1 = 1
-		early_bomber = 1
-		CAS1 = 1
-		naval_bomber1 = 1
-		gw_artillery = 1
-		interwar_artillery = 1
-		interwar_antiair = 1
-		support_weapons = 1
-		basic_submarine = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
-
 set_politics = {
 
 	parties = {
-		liberalism = { 
-			popularity = 20
-		}
-
-		rexism = {
-			popularity = 15
-		}
-		
-		proletarianism = {
-			popularity = 5
-			#banned = no #default is no
-		}
-		
-		absolutism = { 
-			popularity = 60
-		}
+		conservatism = { popularity = 15 }
+		liberalism = { popularity = 4	}
+		socialism = { popularity = 7 }
+		labryscism = { popularity = 10 }
+		rexism = { popularity = 11 }
+		despotism = { popularity = 2 }
+		royalism = {popularity = 4 }
+		theocracy = { popularity = 7 }
+		absolutism = { popularity = 30 }
+		proletarianism = {popularity = 3 }
+		collectivism = { popularity = 7 }
+		naturalism = { popularity = 5 }
 	}
-	
+
 	ruling_party = absolutism
 	last_election = "1932.5.21"
 	election_frequency = 48
@@ -107,24 +42,24 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			liberalism = { 
+			liberalism = {
 				popularity = 20
 			}
 
 			rexism = {
 				popularity = 15
 			}
-			
+
 			proletarianism = {
 				popularity = 5
 				#banned = no #default is no
 			}
-			
-			absolutism = { 
+
+			absolutism = {
 				popularity = 60
 			}
 		}
-		
+
 		ruling_party = absolutism
 		last_election = "1938.2.25"
 		election_frequency = 48

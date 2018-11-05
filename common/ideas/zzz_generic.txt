@@ -114,7 +114,7 @@ ideas = {
 
 			
 			modifier = {
-				fascism_drift = 0.1
+				labryscism_drift = 0.1
 			}
 		}
 
@@ -134,7 +134,7 @@ ideas = {
 			
 			modifier = {
 				#justify_war_goal_time = -0.25
-				communism_drift = 0.1
+				collectivism_drift = 0.1
 			}
 		}
 
@@ -150,11 +150,11 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_fascism_drift_bonus
+			picture = generic_labryscism_drift_bonus
 			
 			modifier = {
-				fascism_drift = 0.1
-				fascism_acceptance = 85
+				labryscism_drift = 0.1
+				labryscism_acceptance = 85
 			}
 		}
 		
@@ -171,11 +171,11 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_communism_drift_bonus
+			picture = generic_collectivism_drift_bonus
 			
 			modifier = {
-				communism_drift = 0.1
-				communism_acceptance = 85
+				collectivism_drift = 0.1
+				collectivism_acceptance = 85
 			}
 		}
 		democratic_influence = {
@@ -191,11 +191,11 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_democratic_drift_bonus
+			picture = generic_liberalism_drift_bonus
 			
 			modifier = {
-				democratic_drift = 0.1
-				democratic_acceptance = 85
+				liberalism_drift = 0.1
+				liberalism_acceptance = 85
 			}
 		}
 		
@@ -226,8 +226,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				communism_acceptance = 100
-				fascism_acceptance = 100
+				collectivism_acceptance = 100
+				labryscism_acceptance = 100
 			}
 		}
 		
@@ -244,10 +244,10 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_communism_drift_bonus
+			picture = generic_collectivism_drift_bonus
 			
 			modifier = {
-				communism_drift = 0.1
+				collectivism_drift = 0.1
 			}
 		}
 		
@@ -288,7 +288,7 @@ ideas = {
 			picture = generic_pp_unity_bonus
 
 			modifier = {
-				democratic_drift = -0.02
+				liberalism_drift = -0.02
 			}
 		}
 	
@@ -305,7 +305,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = generic_democratic_drift_bonus
+			picture = generic_liberalism_drift_bonus
 	
 			modifier = {
 				trade_opinion_factor = 0.2
@@ -585,7 +585,7 @@ ideas = {
 			}
 
 			modifier = {
-				communism_drift = -0.05
+				collectivism_drift = -0.05
 			}
 		}
 
@@ -604,7 +604,7 @@ ideas = {
 			}
 
 			modifier = {
-				fascism_drift = -0.05
+				labryscism_drift = -0.05
 			}
 		}
 

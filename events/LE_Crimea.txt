@@ -1,0 +1,23 @@
+﻿###########################
+# austrian Events
+###########################
+
+add_namespace = le_crimea
+
+#CRIMEA DECLARES INDEPENDENCE
+country_event = {
+	id = le_crimea.1
+	title = le_crimea.1.t
+	desc = le_crimea.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		transfer_state = 137
+	}
+	option = {
+		name = le_crimea.1.a
+		CRI = {
+			country_event = { id = le_chooseideology.1 }
+		}
+	}
+}

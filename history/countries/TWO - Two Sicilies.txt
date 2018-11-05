@@ -1,4 +1,4 @@
-﻿capital = 762
+﻿capital = 115
 
 #OOB = "TWO_1928"
 

@@ -1,0 +1,16 @@
+################
+##### USA ######
+################
+
+SOV_ATTACK_COUNTRIES = {
+	icon = idea_communism
+	allowed = {
+		tag = SOV
+	}
+}
+SOV_CREATE_SOCIALIST_REPUBLICS = {
+	icon = idea_communism
+	allowed = {
+		tag = SOV
+	}
+}

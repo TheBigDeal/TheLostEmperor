@@ -4,17 +4,17 @@ state={
 	name="STATE_732"
 
 	history={
-		owner = SIK
+		owner = XSM
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = SIK
+		add_core_of = XSM
 
 	}
 
 	provinces={
-		1591 1675 1840 4224 4391 4768 5062 12511 13147 
+		1591 1675 1840 4391 4768 4845 5062 10547 12511 13147
 	}
 	manpower=230000
 	buildings_max_level_factor=1.000

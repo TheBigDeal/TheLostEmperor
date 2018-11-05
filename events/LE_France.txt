@@ -4,26 +4,43 @@
 
 add_namespace = le_france
 
-country_event = {
+country_event = { #FRANCE DEMANDS THE CROWN
 	id = le_france.1
 	title = le_france.1.t
 	desc = le_france.1.d
-	
 	fire_only_once = yes
 	is_triggered_only = yes
-	
-	mean_time_to_happen = { days = 1 }
-	
-	option = { # Start War
+	option = { # GIVE FRANCE THE CROWN
 		name = le_france.1.a
-		FRA = {
-			start_civil_war = {
-				ruling_party = labryscism
-				ideology = absolutism
-				size = 0.35
-				capital = 21
-				states = { 21 735 22 32 20 31 25}
-			}
-		}
-    }
+		FRA = { add_ideas = HOLY_ROMAN_PRETENDER }
+		FRA = { country_event = { id = le_france.2 days = 1 } }
+  }
+	option = { # DENY THE CROWN
+		name = le_france.1.b
+		FRA = { add_opinion_modifier = { target = PAP modifier = denied_crown } }
+		FRA = { country_event = { id = le_france.3 days = 1 } }
+  }
+}
+
+country_event = { #THE POPE DENIES OUR CROWN
+	id = le_france.2
+	title = le_france.2.t
+	desc = le_france.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { # DAMN THEM!
+		name = le_france.2.a
+		FRA = { complete_national_focus = FRA_THE_POPE_DENIES_OUR_CROWN }
+  }
+}
+country_event = { #THE POPE DENIES OUR CROWN
+	id = le_france.3
+	title = le_france.3.t
+	desc = le_france.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { # DAMN THEM!
+		name = le_france.3.a
+		FRA = { complete_national_focus = FRA_A_FRIEND_IN_ROME }
+  }
 }

@@ -45,7 +45,7 @@
  PRS_naturalism_ADJ:1 "Prussian"
  PRS_collectivism_ADJ:1 "Prussian"
  PRS_proletarianism_ADJ:1 "Prussian"
- 
+
  #Fascism
  GRE_rexism:0 "Greek Empire"
  GRE_rexism_DEF:0 "The Greek Empire"
@@ -130,8 +130,8 @@
  TEU_naturalism_ADJ:1 "Teutonic"
  TEU_collectivism_ADJ:1 "Teutonic"
  TEU_proletarianism_ADJ:1 "Teutonic"
- 
- 
+
+
  #Livonian Order
  #Fascism
  LIV_rexism:0 "Livonian Empire"
@@ -174,8 +174,8 @@
  LIV_naturalism_ADJ:1 "Livonian"
  LIV_collectivism_ADJ:1 "Livonian"
  LIV_proletarianism_ADJ:1 "Livonian"
- 
- 
+
+
  #Knights of Saint John
  #Fascism
  KNI_rexism:0 "Templar Order"
@@ -218,8 +218,8 @@
  KNI_naturalism_ADJ:1 "Rhodes"
  KNI_collectivism_ADJ:1 "Rhodes"
  KNI_proletarianism_ADJ:1 "Rhodes"
- 
- 
+
+
 #USA
  #Fascism
  USA_rexism:0 "American Empire"
@@ -262,231 +262,231 @@
  USA_naturalism_ADJ:1 "American"
  USA_collectivism_ADJ:1 "American"
  USA_proletarianism_ADJ:1 "American"
- 
+
  XAA_absolutism:0 "Xaaso"
  XAA_absolutism_DEF:0 "Xaaso"
  XAA_absolutism_ADJ:0 "Xaaso"
- 
+
  BKN_absolutism:0 "Brankna Imarat"
  BKN_absolutism_DEF:0 "Brankna Imarat"
  BKN_absolutism_ADJ:0 "Brankna Imarat"
- 
+
  TAG_absolutism:0 "Tagant Imarat"
  TAG_absolutism_DEF:0 "Tagant Imarat"
  TAG_absolutism_ADJ:0 "Tagant Imarat"
- 
+
  CNG_absolutism:0 "Chingubtti"
  CNG_absolutism_DEF:0 "Chingubtti"
  CNG_absolutism_ADJ:0 "Chingubtti"
- 
+
  WLT_absolutism:0 "Walata"
  WLT_absolutism_DEF:0 "Walata"
  WLT_absolutism_ADJ:0 "Walata"
 
- 
+
  NOU_conservatism:0 "New Orleans"
  NOU_conservatism_DEF:0 "New Orleans"
  NOU_conservatism_ADJ:0 "New Orleans"
- 
+
  TEX_absolutism:0 "Texas"
  TEX_absolutism_DEF:0 "Texas"
  TEX_absolutism_ADJ:0 "Texan"
- 
+
  CFE_conservatism:0 "Caribbean Federation"
  CFE_conservatism_DEF:0 "Caribbean Federation"
  CFE_conservatism_ADJ:0 "Caribbean"
- 
+
  TEX_absolutism:0 "Texas"
  TEX_absolutism_DEF:0 "Texas"
  TEX_absolutism_ADJ:0 "Texan"
- 
+
  CLM_absolutism:0 "Columbia"
  CLM_absolutism_DEF:0 "Columbian"
  CLM_absolutism_ADJ:0 "Columbia"
- 
+
  ALK_absolutism:0 "Alaska"
  ALK_absolutism_DEF:0 "Alaska"
  ALK_absolutism_ADJ:0 "Alaska"
- 
+
  CAT_absolutism:0 "Catalonia"
  CAT_absolutism_DEF:0 "Kingdom of Catalonia"
  CAT_absolutism_ADJ:0 "Catalonia"
- 
+
  CAT_rexism:0 "Catalonia"
  CAT_rexism_DEF:0 "Kingdom of Catalonia"
  CAT_rexism_ADJ:0 "Catalonia"
- 
+
  CAT_labryscism:0 "Catalonian State"
  CAT_labryscism_DEF:0 "State of Catalonia"
  CAT_labryscism_ADJ:0 "Catalonia"
- 
+
  AQU_absolutism:0 "Aquitaine"
  AQU_absolutism_DEF:0 "Kingdom of Aquitaine"
  AQU_absolutism_ADJ:0 "Aquitaine"
- 
+
  GUY_despotism:0 "Guyana"
  GUY_despotism_DEF:0 "Guyana"
  GUY_despotism_ADJ:0 "Guyanan"
- 
+
  BRM_absolutism:0 "Burma"
  BRM_absolutism_DEF:0 "Burma"
  BRM_absolutism_ADJ:0 "Burma"
- 
+
  WAR_absolutism:0 "Warsangali"
  WAR_absolutism_DEF:0 "Kingdom of Warsangali"
  WAR_absolutism_ADJ:0 "Warsangali"
- 
+
  MAJ_absolutism:0 "Majerteen Sultanate"
  MAJ_absolutism_DEF:0 "Majerteen Sultanate"
  MAJ_absolutism_ADJ:0 "Majerteen"
- 
+
  WIT_absolutism:0 "Wittuland Communes"
  WIT_absolutism_DEF:0 "Wittuland Communes"
  WIT_absolutism_ADJ:0 "Wituland"
- 
+
  MOD_absolutism:0 "Modena"
  MOD_absolutism_DEF:0 "Modena"
  MOD_absolutism_ADJ:0 "Modenan"
- 
+
  PRM_absolutism:0 "Parma"
  PRM_absolutism_DEF:0 "Parma"
  PRM_absolutism_ADJ:0 "Parmian"
- 
+
  WIT_absolutism:0 "Wittuland Communes"
  WIT_absolutism_DEF:0 "Wittuland Communes"
  WIT_absolutism_ADJ:0 "Wituland"
- 
+
  ZAN_absolutism:0 "Freistaat Zanzibar"
  ZAN_absolutism_DEF:0 "Kingdom of Freistaat Zanzibar"
  ZAN_absolutism_ADJ:0 "Freistaat Zanzibar"
- 
+
  SOK_absolutism:0 "Sokoto"
  SOK_absolutism_DEF:0 "Kingdom of Sokoto"
  SOK_absolutism_ADJ:0 "Sokoto"
- 
+
  ARO_absolutism:0 "Aro Confederacy"
  ARO_absolutism_DEF:0 "Aro Confederacy"
  ARO_absolutism_ADJ:0 "Aro"
- 
+
  WSL_absolutism:0 "Wassalou Empire"
  WSL_absolutism_DEF:0 "Empire of Wallalou"
  WSL_absolutism_ADJ:0 "Wassalou"
- 
+
  KEL_absolutism:0 "Kel Ahaggar"
  KEL_absolutism_DEF:0 "Kingdom of Kel Ahaggar"
  KEL_absolutism_ADJ:0 "Kel Ahaggar"
- 
+
  KAR_absolutism:0 "Karagwe"
  KAR_absolutism_DEF:0 "Kingdom of Karagwe"
  KAR_absolutism_ADJ:0 "Karagwe"
- 
+
  ANK_absolutism:0 "Ankole"
  ANK_absolutism_DEF:0 "Kingdom of Ankole"
  ANK_absolutism_ADJ:0 "Ankole"
- 
+
  VOJ_absolutism:0 "Vojvodina"
  VOJ_absolutism_DEF:0 "Kingdom of Vojvodina"
  VOJ_absolutism_ADJ:0 "Vojvodina"
- 
+
  TOR_absolutism:0 "Toro"
  TOR_absolutism_DEF:0 "Kingdom of Toro"
  TOR_absolutism_ADJ:0 "Toro"
- 
+
  BUG_absolutism:0 "Buganda"
  BUG_absolutism_DEF:0 "Kingdom of Buganda"
  BUG_absolutism_ADJ:0 "Buganda"
- 
+
  BUN_absolutism:0 "Bunyoro"
  BUN_absolutism_DEF:0 "Kingdom of Bunyoro"
  BUN_absolutism_ADJ:0 "Bunyoro"
- 
+
  BAG_absolutism:0 "Bagirmi Kingdom"
  BAG_absolutism_DEF:0 "Kingdom of Bagirmi"
  BAG_absolutism_ADJ:0 "Bagirmi"
- 
+
  DAM_absolutism:0 "Damagaram Sultanate"
  DAM_absolutism_DEF:0 "Kingdom of Damagaram"
  DAM_absolutism_ADJ:0 "Damagaram"
- 
+
  KZM_absolutism:0 "Kazembeland"
  KZM_absolutism_DEF:0 "Kazembeland"
  KZM_absolutism_ADJ:0 "Kazembeland"
- 
+
  SLV_absolutism:0 "Central African Slavers"
  SLV_absolutism_DEF:0 "The Central African Slavers"
  SLV_absolutism_ADJ:0 "Central African"
- 
+
  HNT_absolutism:0 "East African Hinterlands"
  HNT_absolutism_DEF:0 "The East African Hinterlands"
  HNT_absolutism_ADJ:0 "East African"
- 
+
  MUG_absolutism:0 "Mughals"
  MUG_absolutism_DEF:0 "Mughals"
  MUG_absolutism_ADJ:0 "Mughal"
- 
+
  MAR_despotism:0 "Maratha"
  MAR_despotism_DEF:0 "Maratha"
  MAR_despotism_ADJ:0 "Marathan"
- 
+
  RJP_absolutism:0 "Rajput"
  RJP_absolutism_DEF:0 "Rajput"
  RJP_absolutism_ADJ:0 "Rajput"
- 
+
  BHA_absolutism:0 "Bahawalpur"
  BHA_absolutism_DEF:0 "Bahawalpur"
  BHA_absolutism_ADJ:0 "Bahawalpur"
- 
+
  SKH_absolutism:0 "Sikh"
  SKH_absolutism_DEF:0 "Sikh"
  SKH_absolutism_ADJ:0 "Sikh"
- 
- 
+
+
  ZUL_absolutism:0 "Zulu Protectorate"
  ZUL_absolutism_DEF:0 "Zulu Protectorate"
  ZUL_absolutism_ADJ:0 "Zulu Protectorate"
- 
+
  BEU_absolutism:0 "Berau"
  BEU_absolutism_DEF:0 "Berau"
  BEU_absolutism_ADJ:0 "Berau"
- 
+
  YOG_absolutism:0 "Yogyakarta"
  YOG_absolutism_DEF:0 "Yogyakarta"
  YOG_absolutism_ADJ:0 "Yogyakarta"
- 
+
  KUT_absolutism:0 "Kutai"
  KUT_absolutism_DEF:0 "Kutai"
  KUT_absolutism_ADJ:0 "Kutai"
- 
+
  SUL_absolutism:0 "Sulu"
  SUL_absolutism_DEF:0 "Sulu"
  SUL_absolutism_ADJ:0 "Sulu"
- 
+
  SAN_absolutism:0 "Sanbas"
  SAN_absolutism_DEF:0 "Sanbas"
  SAN_absolutism_ADJ:0 "Sanbas"
- 
+
  BNI_absolutism:0 "Brunei"
  BNI_absolutism_DEF:0 "Brunei"
  BNI_absolutism_ADJ:0 "Brunei"
- 
+
  PLM_absolutism:0 "Palembang"
  PLM_absolutism_DEF:0 "Palembang"
  PLM_absolutism_ADJ:0 "Palembang"
- 
+
  JOH_absolutism:0 "Johor"
  JOH_absolutism_DEF:0 "Johor"
  JOH_absolutism_ADJ:0 "Johor"
- 
+
  JAM_absolutism:0 "Jambi"
  JAM_absolutism_DEF:0 "Jambi"
  JAM_absolutism_ADJ:0 "Jambi"
- 
+
  AEH_absolutism:0 "Aceh"
  AEH_absolutism_DEF:0 "Aceh"
  AEH_absolutism_ADJ:0 "Aceh"
- 
- 
- 
+
+
+
  HNG_despotism:0 "Honingmannland"
  HNG_despotism_DEF:0 "Honingmannland"
  HNG_despotism_ADJ:0 "Honingmannland"
@@ -494,51 +494,51 @@
  BND_absolutism:0 "Burundi"
  BND_absolutism_DEF:0 "Kingdom of Burundi"
  BND_absolutism_ADJ:0 "Burundi"
- 
+
  RWA_absolutism:0 "Rwanda"
  RWA_absolutism_DEF:0 "Kingdom of Rwanda"
  RWA_absolutism_ADJ:0 "Rwanda"
- 
+
  MER_absolutism:0 "Merina"
  MER_absolutism_DEF:0 "Kingdom of Merina"
  MER_absolutism_ADJ:0 "Merina"
- 
+
  WAS_absolutism:0 "Waddai"
  WAS_absolutism_DEF:0 "Kingdom of Waddai"
  WAS_absolutism_ADJ:0 "Waddai"
- 
+
  DAR_absolutism:0 "Darfur"
  DAR_absolutism_DEF:0 "Kingdom of Darfur"
  DAR_absolutism_ADJ:0 "Darfur"
- 
+
  ASH_absolutism:0 "Ashanti"
  ASH_absolutism_DEF:0 "Kingdom of Ashanti"
  ASH_absolutism_ADJ:0 "Ashanti"
- 
+
  DAH_absolutism:0 "Dahomy"
  DAH_absolutism_DEF:0 "Dahomy"
  DAH_absolutism_ADJ:0 "Dahomian"
- 
+
  OYO_absolutism:0 "Oyo"
  OYO_absolutism_DEF:0 "Kingdom of Oyo"
  OYO_absolutism_ADJ:0 "Oyo"
- 
+
  BEN_absolutism:0 "Benin"
  BEN_absolutism_DEF:0 "Kingdom of Benin"
  BEN_absolutism_ADJ:0 "Benin"
- 
+
  SON_absolutism:0 "Songhai"
  SON_absolutism_DEF:0 "Kingdom of Songhai"
  SON_absolutism_ADJ:0 "Songhai"
- 
+
  HAU_absolutism:0 "Hausa"
  HAU_absolutism_DEF:0 "Hausa"
  HAU_absolutism_ADJ:0 "Hausa"
- 
+
  BOR_absolutism:0 "Kanem-Bornu"
  BOR_absolutism_DEF:0 "Kanem-Bornu"
  BOR_absolutism_ADJ:0 "Kanem-Bornu"
- 
+
  DND_absolutism:0 "Dendi"
  DND_absolutism_DEF:0 "Kingdom of Dendi"
  DND_absolutism_ADJ:0 "Dendian"
@@ -546,39 +546,39 @@
  RIG_despotism:0 "Riga"
  RIG_despotism_DEF:0 "Riga"
  RIG_despotism_ADJ:0 "Riga"
- 
+
  FRE_despotism:0 "Freistaat Kongo"
  FRE_despotism_DEF:0 "Freistaat Kongo"
  FRE_despotism_ADJ:0 "Freistaat Kongo"
- 
+
  TOG_despotism:0 "Freistaat Togoland"
  TOG_despotism_DEF:0 "Freistaat Togoland"
  TOG_despotism_ADJ:0 "Freistaat Togoland"
- 
+
  MLI_absolutism:0 "Kingdom of Mali"
  MLI_absolutism_DEF:0 "Kingdom of Mali"
  MLI_absolutism_ADJ:0 "Malian"
- 
+
  GRV_absolutism:0 "Dutch Revolt"
  GRV_absolutism_DEF:0 "Dutch Revolt"
  GRV_absolutism_ADJ:0 "Dutch"
- 
+
  ALS_absolutism:0 "Alsace"
  ALS_absolutism_DEF:0 "Duchy of Alsace"
  ALS_absolutism_ADJ:0 "Alsace"
- 
+
  HLS_absolutism:0 "Holstein"
  HLS_absolutism_DEF:0 "Holstein"
  HLS_absolutism_ADJ:0 "Holstein"
- 
+
  EFR_absolutism:0 "East Frisia"
  EFR_absolutism_DEF:0 "East Frisia"
  EFR_absolutism_ADJ:0 "East Frisian"
- 
+
  MUN_absolutism:0 "Munster"
  MUN_absolutism_DEF:0 "Munster"
  MUN_absolutism_ADJ:0 "Munster"
- 
+
  LEA_theocracy:0 "Three Leagues"
  LEA_theocracy_DEF:0 "The Three Leagues"
  LEA_theocracy_ADJ:0 "Three Leagues"
@@ -588,244 +588,247 @@
  LEA_conservatism:0 "Three Leagues"
  LEA_conservatism_DEF:0 "The Three Leagues"
  LEA_conservatism_ADJ:0 "Three Leagues"
- 
+
  SVN_theocracy:0 "Sion"
  SVN_theocracy_DEF:0 "Price-Bishopic of Sion"
  SVN_theocracy_ADJ:0 "Sion"
  SVN_conservatism:0 "Republic of Seven Tithings"
  SVN_conservatism_DEF:0 "The Republic of Seven Tithings"
  SVN_conservatism_ADJ:0 "Republic of Seven Tithings"
- 
+
  AEG_liberalism:0 "Aegean Republic"
  AEG_liberalism_DEF:0 "The Aegean Republic"
  AEG_liberalism_ADJ:0 "Aegean"
- 
+
  MOU_theocracy:0 "Mount Athos"
  MOU_theocracy_DEF:0 "Mount Athos"
  MOU_theocracy_ADJ:0 "Mount Athos"
- 
+
  SPT_labryscism:0 "Spartan State"
  SPT_labryscism_DEF:0 "Spartan State"
  SPT_labryscism_ADJ:0 "Spartan"
- 
+
  ATH_royalism:0 "Athens"
  ATH_royalism_DEF:0 "Athens"
  ATH_royalism_ADJ:0 "Athenian"
- 
- 
- 
- 
- 
+
+
+
+
+
  AJJ_absolutism:0 "Ajjer"
  AJJ_absolutism_DEF:0 "Ajjer"
  AJJ_absolutism_ADJ:0 "Ajjer"
- 
+
  AIR_absolutism:0 "Air"
  AIR_absolutism_DEF:0 "Air"
  AIR_absolutism_ADJ:0 "Air"
- 
+
  FAZ_absolutism:0 "Fazzan"
  FAZ_absolutism_DEF:0 "Fazzan"
  FAZ_absolutism_ADJ:0 "Fazzan"
- 
+
  ADA_absolutism:0 "Adagh"
  ADA_absolutism_DEF:0 "Adagh"
  ADA_absolutism_ADJ:0 "Adagh"
- 
+
  AKU_absolutism:0 "Al-Kufrah"
  AKU_absolutism_DEF:0 "Al-Kufrah"
  AKU_absolutism_ADJ:0 "Al-Kufrah"
- 
+
  TBE_absolutism:0 "Tibesti"
  TBE_absolutism_DEF:0 "Tibesti"
  TBE_absolutism_ADJ:0 "Tibesti"
- 
+
  GRS_absolutism:0 "Gress"
  GRS_absolutism_DEF:0 "Gress"
  GRS_absolutism_ADJ:0 "Gress"
- 
+
  BAH_absolutism:0 "Bahr El Gjazal"
  BAH_absolutism_DEF:0 "Bahr El Gjazal"
  BAH_absolutism_ADJ:0 "Bahr El Gjazal"
- 
+
  THS_proletarianism:0 "Peoples State of Thessaly"
  THS_proletarianism_DEF:0 "Peoples State of Thessaly"
  THS_proletarianism_ADJ:0 "Thessaly"
- 
+
  HEL_collectivism:0 "Hellenic Commune"
  HEL_collectivism_DEF:0 "Hellenic Commune"
  HEL_collectivism_ADJ:0 "Hellenic"
- 
+
  PAT_absolutism:0 "Patagonia"
  PAT_absolutism_DEF:0 "Patagonia"
  PAT_absolutism_ADJ:0 "Patagonian"
- 
+
  NFL_despotism:0 "Newfoundland"
  NFL_despotism_DEF:0 "Newfoundland"
  NFL_despotism_ADJ:0 "Newfoundland"
- 
+
  GRA_absolutism:0 "Granada"
  GRA_absolutism_DEF:0 "Granada"
  GRA_absolutism_ADJ:0 "Granada"
- 
+
  ANL_absolutism:0 "Andalusia"
  ANL_absolutism_DEF:0 "Andalusia"
  ANL_absolutism_ADJ:0 "Andalusia"
- 
+
  MAC_naturalism:0 "Macedonia"
  MAC_naturalism_DEF:0 "Macedonia"
  MAC_naturalism_ADJ:0 "Macedonia"
- 
+
  UPP_absolutism:0 "Upper Luisiana"
  UPP_absolutism_DEF:0 "Upper Luisiana"
  UPP_absolutism_ADJ:0 "Upper Luisiana"
- 
+ UPP_royalism:0 "Upper Luisiana"
+ UPP_royalism_DEF:0 "Upper Luisiana"
+ UPP_royalism_ADJ:0 "Upper Luisiana"
+
  RUM_absolutism:0 "Eastern Rumelia"
  RUM_absolutism_DEF:0 "Eastern Rumelia"
  RUM_absolutism_ADJ:0 "Eastern Rumelian"
  RUM_royalism:0 "Eastern Rumelia"
  RUM_royalism_DEF:0 "Eastern Rumelia"
  RUM_royalism_ADJ:0 "Eastern Rumelian"
- 
+
  WAL_absolutism:0 "Wallachia"
  WAL_absolutism_DEF:0 "Wallachia"
  WAL_absolutism_ADJ:0 "Wallachian"
  WAL_royalism:0 "Wallachia"
  WAL_royalism_DEF:0 "Wallachia"
  WAL_royalism_ADJ:0 "Wallachian"
- 
+
  BRN_absolutism:0 "Brandenburg"
  BRN_absolutism_DEF:0 "Brandenburg"
  BRN_absolutism_ADJ:0 "Brandenburgian"
  BRN_royalism:0 "Brandenburg"
  BRN_royalism_DEF:0 "Brandenburg"
  BRN_royalism_ADJ:0 "Brandenburgian"
- 
+
  POM_absolutism:0 "Pommerania"
  POM_absolutism_DEF:0 "Pommerania"
  POM_absolutism_ADJ:0 "Pommeranian"
  POM_royalism:0 "Pommerania"
  POM_royalism_DEF:0 "Pommerania"
  POM_royalism_ADJ:0 "Pommeranian"
- 
+
  SIL_absolutism:0 "Silesia"
  SIL_absolutism_DEF:0 "Silesia"
  SIL_absolutism_ADJ:0 "Silesian"
  SIL_royalism:0 "Silesia"
  SIL_royalism_DEF:0 "Silesia"
  SIL_royalism_ADJ:0 "Silesian"
- 
+
  MOL_absolutism:0 "Moldovia"
  MOL_absolutism_DEF:0 "Moldovia"
  MOL_absolutism_ADJ:0 "Moldovian"
  MOL_royalism:0 "Moldovia"
  MOL_royalism_DEF:0 "Moldovia"
  MOL_royalism_ADJ:0 "Moldovian"
- 
+
  KHI_absolutism:0 "Khiva"
  KHI_absolutism_DEF:0 "Khiva"
  KHI_absolutism_ADJ:0 "Khivan"
- 
+
  BUK_absolutism:0 "Bukhara"
  BUK_absolutism_DEF:0 "Bukhara"
  BUK_absolutism_ADJ:0 "Bukharan"
- 
+
  KOK_absolutism:0 "Kokand"
  KOK_absolutism_DEF:0 "Kokand"
  KOK_absolutism_ADJ:0 "Kokandian"
- 
+
  GUI_absolutism:0 "Guizhou"
  GUI_absolutism_DEF:0 "Guizhou"
  GUI_absolutism_ADJ:0 "Guizhou"
- 
+
  GNG_absolutism:0 "Guang Dynasty"
  GNG_absolutism_DEF:0 "Guang Dynasty"
  GNG_absolutism_ADJ:0 "Guang"
- 
+
  ZHU_absolutism:0 "Lianshan Zhuang"
  ZHU_absolutism_DEF:0 "Lianshan Zhuang"
  ZHU_absolutism_ADJ:0 "Lianshan"
- 
+
  MCH_absolutism:0 "Mecklenburg-Strelitz"
  MCH_absolutism_DEF:0 "Mecklenburg-Strelitz"
  MCG_absolutism_ADJ:0 "Mecklenburg-Strelitz"
- 
+
  MST_absolutism:0 "Mecklenburg-Schwerin"
  MST_absolutism_DEF:0 "Mecklenburg-Schwerin"
  MST_absolutism_ADJ:0 "Mecklenburg-Schwerin"
- 
+
  NEJ_absolutism:0 "Emirate of Nejd"
  NEJ_absolutism_DEF:0 "The Emirate of Nejd"
  NEJ_absolutism_ADJ:0 "Nejd"
- 
+
  ATA_absolutism:0 "Anglo-Turkish Administration"
  ATA_absolutism_DEF:0 "The Anglo-Turkish Administration"
  ATA_absolutism_ADJ:0 "Anglo-Turkish"
- 
+
  SHM_absolutism:0 "Emirate of Jabal Shammar"
  SHM_absolutism_DEF:0 "The Emirate of Jabal Shammar"
  SHM_absolutism_ADJ:0 "Jabal Shammar"
- 
+
  GAL_absolutism:0 "Galicia-Lodomeria"
  GAL_absolutism_DEF:0 "The Kingdom Of Galicia-Lodomeria"
  GAL_absolutism_ADJ:0 "Galician"
- 
+
  HEJ_absolutism:0 "Sharifate of Hejaz"
  HEJ_absolutism_DEF:0 "The Sharifate of Hejaz"
  HEJ_absolutism_ADJ:0 "Hejaz"
- 
+
  ASR_absolutism:0 "Emirate of Asir"
  ASR_absolutism_DEF:0 "The Emirate of Asir"
  ASR_absolutism_ADJ:0 "Hejaz"
- 
+
  KUB_absolutism:0 "Kuba"
  ASR_absolutism_DEF:0 "Kuba"
  ASR_absolutism_ADJ:0 "Kuba"
- 
+
  KAT_absolutism:0 "Katanga"
  KAT_absolutism_DEF:0 "Katanga"
  KAT_absolutism_ADJ:0 "Katanga"
- 
+
  BAS_absolutism:0 "Basongye"
  BAS_absolutism_DEF:0 "Basongye"
  BAS_absolutism_ADJ:0 "Basongye"
- 
+
  BAK_absolutism:0 "Bakomo"
  BAK_absolutism_DEF:0 "Bakomo"
  BAK_absolutism_ADJ:0 "Bakomo"
- 
+
  MNG_absolutism:0 "Mangbetu"
  MNG_absolutism_DEF:0 "Mangbetu"
  MNG_absolutism_ADJ:0 "Mangbetu"
- 
+
  BAN_absolutism:0 "Bangala"
  BAN_absolutism_DEF:0 "Bangala"
  BAN_absolutism_ADJ:0 "Bangala"
- 
+
  AZA_absolutism:0 "Azande"
  AZA_absolutism_DEF:0 "Azande"
  AZA_absolutism_ADJ:0 "Azande"
- 
+
  DBA_absolutism:0 "Dar Banda"
  DBA_absolutism_DEF:0 "Dar Banda"
  DBA_absolutism_ADJ:0 "Dar Banda"
- 
+
  ############
- 
+
  FLA_absolutism:0 "Flanders"
  FLA_absolutism_DEF:0 "Flanders"
  FLA_absolutism_ADJ:0 "Flanders"
  FLA_royalism:0 "Flanders"
  FLA_royalism_DEF:0 "Flanders"
  FLA_royalism_ADJ:0 "Flanders"
- 
+
  WLN_absolutism:0 "Wallonia"
  WLN_absolutism_DEF:0 "Wallonia"
  WLN_absolutism_ADJ:0 "Wallonia"
  WLN_royalism:0 "Wallonia"
  WLN_royalism_DEF:0 "Wallonia"
  WLN_royalism_ADJ:0 "Wallonia"
- 
+
  MOR_rexism:0 "Maghrebi State"
  MOR_rexism_DEF:0 "The State of Maghreb"
  MOR_liberalism:0 "Maghrebi Republic"
@@ -838,7 +841,7 @@
  MOR_liberalism_ADJ:0 "Maghrebi"
  MOR_absolutism_ADJ:0 "Maghrebi"
  MOR_naturalism_ADJ:0 "Maghrebi"
- 
+
  TUN_rexism:0 "State of Tunisia"
  TUN_rexism_DEF:0 "The State of Tunisia"
  TUN_liberalism:0 "Tunisian Republic"
@@ -851,7 +854,7 @@
  TUN_liberalism_ADJ:0 "Tunisian"
  TUN_absolutism_ADJ:0 "Tunisian"
  TUN_naturalism_ADJ:0 "Tunisian"
- 
+
  ANS_rexism:0 "Ansbach Empire"
  ANS_rexism_DEF:0 "The Ansbach Empire"
  ANS_liberalism:0 "Ansbach Republic"
@@ -864,7 +867,7 @@
  ANS_liberalism_ADJ:0 "Ansbach"
  ANS_absolutism_ADJ:0 "Ansbach"
  ANS_naturalism_ADJ:0 "Ansbach"
- 
+
  OLD_rexism:0 "Oldenberg Empire"
  OLD_rexism_DEF:0 "The Oldenberg Empire"
  OLD_liberalism:0 "Oldenberg Republic"
@@ -878,7 +881,7 @@
  OLD_absolutism_ADJ:0 "Oldenberg"
  OLD_naturalism_ADJ:0 "Oldenberg"
 
- 
+
  PLT_rexism:0 "Palatinate State"
  PLT_rexism_DEF:0 "The Palatinate State"
  PLT_liberalism:0 "Palatinate Republic"
@@ -891,7 +894,7 @@
  PLT_liberalism_ADJ:0 "Palatinate"
  PLT_absolutism_ADJ:0 "Palatinate"
  PLT_naturalism_ADJ:0 "Palatinate"
- 
+
  HES_rexism:0 "State of Hesse"
  HES_rexism_DEF:0 "The State of Hesse"
  HES_liberalism:0 "Hesse Republic"
@@ -904,7 +907,7 @@
  HES_liberalism_ADJ:0 "Hesse"
  HES_absolutism_ADJ:0 "Hesse"
  HES_naturalism_ADJ:0 "Hesse"
- 
+
  AAC_rexism:0 "State of Aachen"
  AAC_rexism_DEF:0 "The State of Aachen"
  AAC_liberalism:0 "Aachen Republic"
@@ -917,9 +920,9 @@
  AAC_liberalism_ADJ:0 "Aachen"
  AAC_absolutism_ADJ:0 "Aachen"
  AAC_naturalism_ADJ:0 "Aachen"
- 
 
- 
+
+
  KLE_rexism:0 "State of Kleves"
  KLE_rexism_DEF:0 "The State of Kleves"
  KLE_liberalism:0 "Kleves Republic"
@@ -945,7 +948,7 @@
  BRU_liberalism_ADJ:0 "Brunswickian"
  BRU_absolutism_ADJ:0 "Brunswickian"
  BRU_naturalism_ADJ:0 "Brunswickian"
- 
+
  QNG_rexism:0 "The Dragon Empire"
  QNG_rexism_DEF:0 "The Dragon Empire"
  QNG_liberalism:0 "China"
@@ -959,7 +962,7 @@
  QNG_liberalism_ADJ:0 "Chinese"
  QNG_absolutism_ADJ:0 "Qing"
  QNG_naturalism_ADJ:0 "Chinese"
- 
+
  VNC_rexism:0 "Imperial Venice"
  VNC_rexism_DEF:0 "The Empire of Venice"
  VNC_liberalism:0 "Venice"
@@ -972,7 +975,7 @@
  VNC_liberalism_ADJ:0 "Venetian"
  VNC_absolutism_ADJ:0 "Venetian"
  VNC_naturalism_ADJ:0 "Venetian"
- 
+
  TWO_rexism:0 "Two Sicilies"
  TWO_rexism_DEF:0 "The Kingdom of Two Sicilies"
  TWO_liberalism:0 "Two Sicilies"
@@ -985,7 +988,7 @@
  TWO_liberalism_ADJ:0 "Sicilian"
  TWO_absolutism_ADJ:0 "Sicilian"
  TWO_naturalism_ADJ:0 "Sicilian"
- 
+
  ARA_rexism:0 "Aragon"
  ARA_rexism_DEF:0 "The Empire of Aragon"
  ARA_liberalism:0 "Aragon"
@@ -998,7 +1001,7 @@
  ARA_liberalism_ADJ:0 "Aragonian"
  ARA_absolutism_ADJ:0 "Aragonian"
  ARA_naturalism_ADJ:0 "Aragonian"
- 
+
  SOM_rexism:0 "Dervish Empire"
  SOM_rexism_DEF:0 "The Dervish Empire"
  SOM_liberalism:0 "Somalia"
@@ -1013,7 +1016,7 @@
  SOM_liberalism_ADJ:0 "Somalian"
  SOM_absolutism_ADJ:0 "Dervish"
  SOM_naturalism_ADJ:0 "Somalian"
- 
+
  GEN_rexism:0 "Genoa"
  GEN_rexism_DEF:0 "The Empire of Genoa"
  GEN_liberalism:0 "Genoa"
@@ -1026,7 +1029,7 @@
  GEN_liberalism_ADJ:0 "Genoese"
  GEN_absolutism_ADJ:0 "Genoese"
  GEN_naturalism_ADJ:0 "Genoese"
- 
+
  LUC_rexism:0 "Lucca"
  LUC_rexism_DEF:0 "The Empire of Lucca"
  LUC_liberalism:0 "Lucca"
@@ -1039,7 +1042,7 @@
  LUC_liberalism_ADJ:0 "Luccan"
  LUC_absolutism_ADJ:0 "Luccan"
  LUC_naturalism_ADJ:0 "Luccan"
- 
+
  MIL_rexism:0 "Milanese Empire"
  MIL_rexism_DEF:0 "The Empire of Milan"
  MIL_liberalism:0 "Milan"
@@ -1052,7 +1055,7 @@
  MIL_liberalism_ADJ:0 "Milanese"
  MIL_absolutism_ADJ:0 "Milanese"
  MIL_naturalism_ADJ:0 "Milanese"
- 
+
  SAR_rexism:0 "Sardinia-Piedmont"
  SAR_rexism_DEF:0 "The Empire of Sardinia-Piedmont"
  SAR_liberalism:0 "Sardinia-Piedmont"
@@ -1067,7 +1070,7 @@
  SAR_liberalism_ADJ:0 "Sardinian"
  SAR_absolutism_ADJ:0 "Sardinian"
  SAR_naturalism_ADJ:0 "Sardinian"
- 
+
  THU_rexism:0 "Thuringia"
  THU_rexism_DEF:0 "The Empire of Thuringia"
  THU_liberalism:0 "Thuringia"
@@ -1080,7 +1083,7 @@
  THU_liberalism_ADJ:0 "Thuringian"
  THU_absolutism_ADJ:0 "Thuringian"
  THU_naturalism_ADJ:0 "Thuringian"
- 
+
  PAP_rexism:0 "Empire of God"
  PAP_rexism_DEF:0 "The Empire of God"
  PAP_liberalism:0 "Papal States"
@@ -1096,7 +1099,7 @@
  PAP_liberalism_ADJ:0 "Papal"
  PAP_absolutism_ADJ:0 "Papal"
  PAP_naturalism_ADJ:0 "Papal"
- 
+
  TUS_rexism:0 "Tuscan Empire"
  TUS_rexism_DEF:0 "The Empire of Tuscany"
  TUS_liberalism:0 "Tuscany"
@@ -1109,7 +1112,7 @@
  TUS_liberalism_ADJ:0 "Tuscan"
  TUS_absolutism_ADJ:0 "Tuscan"
  TUS_naturalism_ADJ:0 "Tuscan"
- 
+
  BRI_rexism:0 "Breton Empire"
  BRI_rexism_DEF:0 "The Empire of Brittany"
  BRI_liberalism:0 "Brittany"
@@ -1122,7 +1125,7 @@
  BRI_liberalism_ADJ:0 "Breton"
  BRI_absolutism_ADJ:0 "Breton"
  BRI_naturalism_ADJ:0 "Breton"
- 
+
  NRM_rexism:0 "Norman Empire"
  NRM_rexism_DEF:0 "The Empire of Normandy"
  NRM_liberalism:0 "Normandy"
@@ -1137,7 +1140,7 @@
  NRM_liberalism_ADJ:0 "Norman"
  NRM_absolutism_ADJ:0 "Norman"
  NRM_naturalism_ADJ:0 "Norman"
- 
+
  ANH_rexism:0 "Anhaltian State"
  ANH_rexism_DEF:0 "The Anhaltian State"
  ANH_liberalism:0 "Anhalt"
@@ -1150,13 +1153,15 @@
  ANH_liberalism_ADJ:0 "Anhaltian"
  ANH_absolutism_ADJ:0 "Anhaltian"
  ANH_naturalism_ADJ:0 "Anhaltian"
- 
+
  LOU_rexism:0 "Luisianian Empire"
  LOU_rexism_DEF:0 "The Luisianian Empire"
  LOU_liberalism:0 "Luisiana"
  LOU_liberalism_DEF:0 "The Republic of Luisiana"
  LOU_absolutism:0 "Luisiana"
  LOU_absolutism_DEF:0 "Luisiana"
+ LOU_royalism:0 "Luisiana"
+ LOU_royalism_DEF:0 "Luisiana"
  LOU_despotism:0 "Luisiana"
  LOU_despotism_DEF:0 "Luisiana"
  LOU_naturalism:1 "Luisianian Socialist Republic"
@@ -1165,7 +1170,7 @@
  LOU_liberalism_ADJ:0 "Luisianian"
  LOU_absolutism_ADJ:0 "Luisianian"
  LOU_naturalism_ADJ:0 "Luisianian"
- 
+
  BOS_rexism:0 "Bosnian State"
  BOS_rexism_DEF:0 "The Bosnian State"
  BOS_liberalism:0 "Bosnian Republic"
@@ -1178,7 +1183,7 @@
  BOS_liberalism_ADJ:0 "Bosnian"
  BOS_absolutism_ADJ:0 "Bosnian"
  BOS_naturalism_ADJ:0 "Bosnian"
- 
+
  HRE_rexism:0 "Imperial Diet"
  HRE_rexism_DEF:0 "The Imperial Diet of the Holy Roman Empire"
  HRE_liberalism:0 "Imperial Diet"
@@ -1194,7 +1199,7 @@
  HRE_liberalism_ADJ:0 "Imperial"
  HRE_absolutism_ADJ:0 "Imperial"
  HRE_naturalism_ADJ:0 "Imperial"
- 
+
  NORTH_GERMAN_CONFEDERATION_rexism:0 "North German State"
  NORTH_GERMAN_CONFEDERATION_rexism_DEF:0 "The Northern German State"
  NORTH_GERMAN_CONFEDERATION_liberalism:0 "German Republic"
@@ -1207,7 +1212,7 @@
  NORTH_GERMAN_CONFEDERATION_liberalism_ADJ:0 "German"
  NORTH_GERMAN_CONFEDERATION_absolutism_ADJ:0 "German"
  NORTH_GERMAN_CONFEDERATION_naturalism_ADJ:0 "German"
- 
+
  SOUTH_GERMAN_CONFEDERATION_rexism:0 "South German State"
  SOUTH_GERMAN_CONFEDERATION_rexism_DEF:0 "The Southern German State"
  SOUTH_GERMAN_CONFEDERATION_liberalism:0 "German Republic"
@@ -1220,7 +1225,7 @@
  SOUTH_GERMAN_CONFEDERATION_liberalism_ADJ:0 "German"
  SOUTH_GERMAN_CONFEDERATION_absolutism_ADJ:0 "German"
  SOUTH_GERMAN_CONFEDERATION_naturalism_ADJ:0 "German"
- 
+
  GER_EMPIRE_rexism:0 "German Reich"
  GER_EMPIRE_rexism_DEF:0 "The German Reich"
  GER_EMPIRE_liberalism:0 "German Republic"
@@ -1233,7 +1238,7 @@
  GER_EMPIRE_liberalism_ADJ:0 "German"
  GER_EMPIRE_absolutism_ADJ:0 "German"
  GER_EMPIRE_naturalism_ADJ:0 "German"
- 
+
  SAX_rexism:0 "Saxon State"
  SAX_rexism_DEF:0 "The Saxon State"
  SAX_liberalism:0 "Saxony"
@@ -1246,9 +1251,9 @@
  SAX_liberalism_ADJ:0 "Saxon"
  SAX_absolutism_ADJ:0 "Saxon"
  SAX_naturalism_ADJ:0 "Saxon"
- 
 
- 
+
+
  BAV_rexism:0 "Bavarian State"
  BAV_rexism_DEF:0 "The Bavarian State"
  BAV_liberalism:0 "Bavarian Republic"
@@ -1264,7 +1269,7 @@
  BAV_absolutism_ADJ:0 "Bavarian"
  BAV_absolutism_ADJ:0 "Bavarian"
  BAV_naturalism_ADJ:0 "Bavarian"
- 
+
  BAD_rexism:0 "State of Baden"
  BAD_rexism_DEF:0 "The State of Baden"
  BAD_liberalism:0 "Baden"
@@ -1277,7 +1282,7 @@
  BAD_liberalism_ADJ:0 "Badenese"
  BAD_absolutism_ADJ:0 "Badenese"
  BAD_naturalism_ADJ:0 "Badenese"
- 
+
  CLG_rexism:0 "Colognian State"
  CLG_rexism_DEF:0 "Colognian State"
  CLG_liberalism:0 "Cologne"
@@ -1290,7 +1295,7 @@
  CLG_liberalism_ADJ:0 "Colognian"
  CLG_absolutism_ADJ:0 "Colognian"
  CLG_naturalism_ADJ:0 "Colognian"
- 
+
  WUR_rexism:0 "WurrtemBerg"
  WUR_rexism_DEF:0 "The State of WurrtemBerg"
  WUR_liberalism:0 "WurrtemBerg"
@@ -1303,7 +1308,7 @@
  WUR_liberalism_ADJ:0 "WurrtemBerg"
  WUR_absolutism_ADJ:0 "WurrtemBerg"
  WUR_naturalism_ADJ:0 "WurrtemBerg"
- 
+
 ###############################
  GER_rexism:0 "German Reich"
  GER_rexism_DEF:0 "The German Reich"
@@ -1320,8 +1325,8 @@
  GER_absolutism_ADJ:0 "German"
  GER_absolutism_ADJ:0 "German"
  GER_naturalism_ADJ:0 "German"
- 
- 
+
+
  GBR_rexism:0 "British Empire"
  GBR_rexism_DEF:0 "The British Empire"
  GBR_liberalism:0 "United Kingdom"
@@ -1337,7 +1342,7 @@
  GBR_absolutism_ADJ:0 "British"
  GBR_royalism_ADJ:0 "British"
  GBR_naturalism_ADJ:0 "British"
- 
+
  SOV_rexism:0 "Slavic Empire"
  SOV_rexism_DEF:0 "The Slavic Empire"
  SOV_liberalism:0 "Russian Federation"
@@ -1358,7 +1363,7 @@
  SOV_naturalism_ADJ:0 "Soviet"
  SOV_collectivism_ADJ:0 "Soviet"
  SOV_proletarianism_ADJ:0 "Soviet"
- 
+
  RUS_rexism:0 "Slavic Empire"
  RUS_rexism_DEF:0 "The Slavic Empire"
  RUS_liberalism:0 "Russian Federation"
@@ -1373,7 +1378,7 @@
  RUS_liberalism_ADJ:0 "Russian"
  RUS_absolutism_ADJ:0 "Russian"
  RUS_naturalism_ADJ:0 "Soviet"
- 
+
  ########################################
  #REVOLTS
  ########################################
@@ -1411,7 +1416,7 @@
  SWE_liberalism_ADJ:0 "Swedish"
  SWE_absolutism_ADJ:0 "Swedish"
  SWE_naturalism_ADJ:0 "Swedish"
- 
+
  FRA_rexism:1 "French Empire"
  FRA_rexism_DEF:1 "The French Empire"
  FRA_theocracy:1 "Frankish Empire"
@@ -1432,7 +1437,7 @@
  FRA_liberalism_ADJ:0 "French"
  FRA_absolutism_ADJ:0 "French"
  FRA_naturalism_ADJ:0 "French"
- 
+
  LUX_rexism:0 "Luxembourg"
  LUX_rexism_DEF:0 "Luxembourg"
  LUX_liberalism:0 "Luxembourg"
@@ -1481,7 +1486,7 @@
  CZE_liberalism_ADJ:0 "Czechoslovakian"
  CZE_absolutism_ADJ:0 "Czechoslovakian"
  CZE_naturalism_ADJ:0 "Czechoslovakian"
- 
+
  POL_rexism:0 "Falangist Poland"
  POL_rexism_DEF:0 "Falangist Poland"
  POL_liberalism:0 "Polish Republic"
@@ -1497,7 +1502,7 @@
  POL_naturalism_ADJ:0 "Polish"
  POL_absolutism_ADJ:0 "Polish"
  POL_royalism_ADJ:0 "Polish"
- 
+
  AUS_rexism:0 "Deutschsozialen Austria"
  AUS_rexism_DEF:0 "Deutschsozialen Austria"
  AUS_absolutism:0 "Austrian Empire"
@@ -1515,7 +1520,7 @@
  AUS_royalism_ADJ:0 "Austrian"
  AUS_liberalism_ADJ:0 "Austrian"
  AUS_naturalism_ADJ:0 "Austrian"
- 
+
  LIT_rexism:0 "Iron Wolf Lithuania"
  LIT_rexism_DEF:0 "Iron Wolf Lithuania"
  LIT_absolutism:0 "Kingdom of Lithuania"
@@ -1530,7 +1535,7 @@
  LIT_absolutism_ADJ:0 "Lithuanian"
  LIT_liberalism_ADJ:0 "Lithuanian"
  LIT_naturalism_ADJ:0 "Lithuanian"
- 
+
  EST_rexism:0 "Terra Mariana"
  EST_rexism_DEF:0 "Terra Mariana"
  EST_absolutism:0 "Estonia"
@@ -1543,7 +1548,7 @@
  EST_liberalism_ADJ:0 "Estonian"
  EST_absolutism_ADJ:0 "Estonian"
  EST_naturalism_ADJ:0 "Estonian"
- 
+
  LAT_rexism:0 "Latvia"
  LAT_rexism_DEF:0 "Latvia"
  LAT_despotism:0 "Latvian State"
@@ -1574,7 +1579,7 @@
  LAT_naturalism_ADJ:1 "Latvian"
  LAT_collectivism_ADJ:1 "Latvian"
  LAT_proletarianism_ADJ:1 "Latvian"
- 
+
  SPR_rexism:0 "Nationalist Spain"
  SPR_rexism_DEF:0 "Nationalist Spain"
  SPR_liberalism:0 "Spain"
@@ -1740,13 +1745,15 @@
  IRE_liberalism_ADJ:0 "Irish"
  IRE_absolutism_ADJ:0 "Irish"
  IRE_naturalism_ADJ:0 "Irish"
- 
+
  HUN_rexism:0 "Hungary"
  HUN_rexism_DEF:0 "Hungary"
  HUN_liberalism:0 "Republic of Hungary"
  HUN_liberalism_DEF:0 "The Republic of Hungary"
  HUN_absolutism:0 "Kingdom of Hungary"
  HUN_absolutism_DEF:0 "Kingdom of Hungary"
+ HUN_royalism:0 "Kingdom of Hungary"
+ HUN_royalism_DEF:0 "Kingdom of Hungary"
  HUN_naturalism:0 "Hungarian Naturalist State"
  HUN_naturalism_DEF:0 "The Hungarian Naturalist State"
  HUN_proletarianism:0 "Hungarian People's Republic"
@@ -1757,7 +1764,7 @@
  HUN_liberalism_ADJ:0 "Hungarian"
  HUN_absolutism_ADJ:0 "Hungarian"
  HUN_naturalism_ADJ:0 "Hungarian"
- 
+
  TRN_rexism:0 "Transylvania"
  TRN_rexism_DEF:0 "Transylvania"
  TRN_liberalism:0 "Transylvania"
@@ -1776,7 +1783,7 @@
  TRN_liberalism_ADJ:0 "Transylvanian"
  TRN_absolutism_ADJ:0 "Transylvanian"
  TRN_naturalism_ADJ:0 "Transylvanian"
- 
+
  AFG_rexism:0 "New Afghan Khanate"
  AFG_rexism_DEF:0 "The New Afghan Khanate"
  AFG_liberalism:0 "Republic of Afghanistan"
@@ -1795,6 +1802,8 @@
  ARG_liberalism_DEF:0 "The Argentine Republic"
  ARG_absolutism:0 "Argentina"
  ARG_absolutism_DEF:0 "Argentina"
+ ARG_royalism:0 "Argentina"
+ ARG_royalism_DEF:0 "Argentina"
  ARG_naturalism:0 "Argentina Populares"
  ARG_naturalism_DEF:0 "Argentina Populares"
  ARG_rexism_ADJ:0 "Argentinean"
@@ -1879,8 +1888,10 @@
  COL_rexism_DEF:0 "Nueva Gran Colombia"
  COL_liberalism:0 "Colombia"
  COL_liberalism_DEF:0 "Colombia"
- COL_absolutism:0 "Nueva Constitución"
- COL_absolutism_DEF:0 "Nueva Constitución"
+ COL_absolutism:0 "Gran Colombia"
+ COL_absolutism_DEF:0 "Gran Colombia"
+ COL_royalism:0 "Gran Colombia"
+ COL_royalism_DEF:0 "Gran Colombia"
  COL_naturalism:0 "Colombian Socialist Republic"
  COL_naturalism_DEF:0 "The Colombian Socialist Republic"
  COL_rexism_ADJ:0 "Colombian"
@@ -1979,6 +1990,8 @@
  MEX_liberalism_DEF:0 "The Mexican Opposition"
  MEX_absolutism:0 "Mexico"
  MEX_absolutism_DEF:0 "Mexico"
+ MEX_royalism:0 "Mexico"
+ MEX_royalism_DEF:0 "Mexico"
  MEX_naturalism:0 "Mexican Socialist Republic"
  MEX_naturalism_DEF:0 "The Mexican Socialist Republic"
  MEX_rexism_ADJ:0 "Mexican"
@@ -2045,7 +2058,7 @@
  PAR_liberalism_ADJ:0 "Paraguayan"
  PAR_absolutism_ADJ:0 "Paraguayan"
  PAR_naturalism_ADJ:0 "Paraguayan"
- 
+
  PER_rexism:0 "Iranian Nationalist Union"
  PER_rexism_DEF:0 "The Iranian Nationalist Union"
  PER_absolutism:0 "Persian Empire"
@@ -2060,7 +2073,7 @@
  PER_liberalism_ADJ:0 "Iranian"
  PER_absolutism_ADJ:0 "Iranian"
  PER_naturalism_ADJ:0 "Iranian"
- 
+
  PHI_rexism:0 "Ganap Philippines"
  PHI_rexism_DEF:0 "Ganap Philippines"
  PHI_liberalism:0 "Philippines"
@@ -2073,19 +2086,22 @@
  PHI_liberalism_ADJ:0 "Philippines"
  PHI_absolutism_ADJ:0 "Philippines"
  PHI_naturalism_ADJ:0 "Philippines"
+
  PRU_rexism:0 "Peru"
  PRU_rexism_DEF:0 "Peru"
  PRU_liberalism:0 "Republic of Peru"
  PRU_liberalism_DEF:0 "The Republic of Peru"
  PRU_absolutism:0 "Peruvian Independent State"
  PRU_absolutism_DEF:0 "The Peruvian Independent State"
+ PRU_royalism:0 "Peruvian Independent State"
+ PRU_royalism_DEF:0 "The Peruvian Independent State"
  PRU_naturalism:0 "Revolutionary Peru"
  PRU_naturalism_DEF:0 "Revolutionary Peru"
  PRU_rexism_ADJ:0 "Peruvian"
  PRU_liberalism_ADJ:0 "Peruvian"
  PRU_absolutism_ADJ:0 "Peruvian"
  PRU_naturalism_ADJ:0 "Peruvian"
- 
+
  SAF_rexism:0 "Nationalist South Africa"
  SAF_rexism_DEF:0 "Nationalist South Africa"
  SAF_liberalism:0 "South Africa"
@@ -2098,7 +2114,7 @@
  SAF_liberalism_ADJ:0 "South African"
  SAF_absolutism_ADJ:0 "South African"
  SAF_naturalism_ADJ:0 "South African"
- 
+
  SAU_rexism:0 "Arabic Empire"
  SAU_rexism_DEF:0 "The Arabic Empire"
  SAU_liberalism:0 "Arabian Republic"
@@ -2123,12 +2139,12 @@
  SIA_liberalism_ADJ:0 "Siamese"
  SIA_absolutism_ADJ:0 "Siamese"
  SIA_naturalism_ADJ:0 "Siamese"
- SIK_rexism:0 "Dictatorial Turkestan"
- SIK_rexism_DEF:0 "Dictatorial Turkestan"
+ SIK_rexism:0 "Turkestan Khanate"
+ SIK_rexism_DEF:0 "Turkestan Khanate"
  SIK_liberalism:0 "Turkestan Independent Republic"
  SIK_liberalism_DEF:0 "The Turkestan Independent Republic"
- SIK_absolutism:0 "Turkestan"
- SIK_absolutism_DEF:0 "Turkestan"
+ SIK_absolutism:0 "Turkestan Khanate"
+ SIK_absolutism_DEF:0 "Turkestan Khanate"
  SIK_despotism:0 "Turkestan"
  SIK_despotism_DEF:0 "Turkestan"
  SIK_naturalism:0 "Turkestan"
@@ -2227,8 +2243,8 @@
  CUB_liberalism_DEF:0 "Cuba"
  CUB_absolutism:0 "Anarcho-republic of Cuba"
  CUB_absolutism_DEF:0 "Anarcho-republic of Cuba"
- CUB_naturalism:0 "Revolutionary Cuba"
- CUB_naturalism_DEF:0 "Revolutionary Cuba"
+ CUB_naturalism:0 "Havana Free State"
+ CUB_naturalism_DEF:0 "Havana Free State"
  CUB_rexism_ADJ:0 "Cuban"
  CUB_liberalism_ADJ:0 "Cuban"
  CUB_absolutism_ADJ:0 "Cuban"
@@ -2398,7 +2414,7 @@
  XSM_socialism_ADJ:0 "Hui"
  XSM_naturalism_ADJ:0 "Hui"
  XSM_absolutism_ADJ:0 "Ma"
- 
+
  MEN_rexism:0 "Mengkukuo"
  MEN_rexism_DEF:0 "Mengkukuo"
  MEN_liberalism:0 "Republic of Mengjiang"
@@ -2630,9 +2646,9 @@
  MNT_liberalism_ADJ:0 "Montenegrin"
  MNT_absolutism_ADJ:0 "Montenegrin"
  MNT_naturalism_ADJ:0 "Montenegrin"
- 
- 
- 
+
+
+
  GEO_rexism:0 "Caucasus Authority"
  GEO_rexism_DEF:0 "The Caucasus Authority"
  GEO_liberalism:0 "Republic of Georgia"
@@ -2681,7 +2697,7 @@
  ARM_liberalism_ADJ:0 "Armenian"
  ARM_absolutism_ADJ:0 "Armenian"
  ARM_naturalism_ADJ:0 "Armenian"
- 
+
  #Belerus
  #Fascism
  BLR_rexism:0 "Belerusian Empire"
@@ -2724,7 +2740,7 @@
  BLR_naturalism_ADJ:1 "Belerusian"
  BLR_collectivism_ADJ:1 "Belerusian"
  BLR_proletarianism_ADJ:1 "Belerusian"
- 
+
  #DON KUBAN
  #Fascism
  DON_rexism:0 "Golden Empire"
@@ -2767,7 +2783,7 @@
  DON_naturalism_ADJ:1 "Don Kuban"
  DON_collectivism_ADJ:1 "Don Kuban"
  DON_proletarianism_ADJ:1 "Don Kuban"
- 
+
  #CRIMEA
  #Fascism
  CRI_rexism:0 "Crimea"
@@ -2810,7 +2826,7 @@
  CRI_naturalism_ADJ:1 "Crimean"
  CRI_collectivism_ADJ:1 "Crimean"
  CRI_proletarianism_ADJ:1 "Crimean"
- 
+
  #Ruthenia
  #Fascism
  UKR_rexism:0 "Ruthenian Empire"
@@ -2853,7 +2869,7 @@
  UKR_naturalism_ADJ:1 "Ruthenian"
  UKR_collectivism_ADJ:1 "Ruthenian"
  UKR_proletarianism_ADJ:1 "Ruthenian"
- 
+
  ANG_rexism:1 "Angolan Empire"
  ANG_rexism_DEF:1 "The Angolan Empire"
  ANG_liberalism:0 "Republic of Angola"
@@ -2890,7 +2906,7 @@
  ZIM_liberalism_ADJ:0 "Zimbabwean"
  ZIM_absolutism_ADJ:0 "Zimbabwean"
  ZIM_naturalism_ADJ:0 "Zimbabwean"
- 
+
  COG_rexism:1 "Central African Empire"
  COG_rexism_DEF:2 "The Central African Empire"
  COG_liberalism:0 "Republic of the Kongo"
@@ -2903,7 +2919,7 @@
  COG_liberalism_ADJ:0 "Kongolese"
  COG_absolutism_ADJ:0 "Kongolese"
  COG_naturalism_ADJ:0 "Kongolese"
- 
+
  KEN_rexism:1 "Greater Kenyan Empire"
  KEN_rexism_DEF:1 "The Greater Kenyan Empire"
  KEN_liberalism:0 "Republic of Kenya"
@@ -2940,7 +2956,7 @@
  BOT_liberalism_ADJ:0 "Batswana"
  BOT_absolutism_ADJ:0 "Batswana"
  BOT_naturalism_ADJ:0 "Batswana"
- 
+
  MAN_rexism:0 "Manchukuo"
  MAN_rexism_DEF:0 "Manchukuo"
  MAN_liberalism:0 "Manchu Republic"
@@ -2977,4 +2993,3 @@
  FACTION_NAME_NONALIGNED_3:0 "The $CONTINENT$ Alliance"
  FACTION_NAME_NONALIGNED_4:0 "Confederate $CONTINENT_ADJ$ Nations"
  FACTION_NAME_NONALIGNED_5:0 "The $LEADER_COUNTRY$ Coalition"
- 

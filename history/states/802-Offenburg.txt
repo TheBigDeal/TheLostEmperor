@@ -4,19 +4,19 @@ state={
 	name="STATE_802"
 
 	history={
-		owner = OFF
+		owner = BAD
 		buildings = {
 			infrastructure = 6
 			arms_factory = 2
 			air_base = 5
 
 		}
-		add_core_of = OFF
+		add_core_of = BAD
 
 	}
 
 	provinces={
-		6712 
+		6712
 	}
 	manpower=435653
 	buildings_max_level_factor=1.000

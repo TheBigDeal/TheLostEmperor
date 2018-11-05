@@ -1,6 +1,62 @@
-Burma = {
-	color = rgb { 201 56 93 }
-    color_ui = rgb { 255 73 121 }
+SOV_COLOR_UKR = {
+	color = rgb { 165 38 38 }
+	color_ui = rgb { 165 38 38 }
+}
+SOV_COLOR_BLR = {
+	color = rgb { 165 38 38 }
+	color_ui = rgb { 165 38 38 }
+}
+SOV_COLOR_BSSR = {
+	color = rgb { 165 38 38 }
+	color_ui = rgb { 165 38 38 }
+}
+SOV_COLOR_EST = {
+	color = rgb { 165 38 38 }
+	color_ui = rgb { 165 38 38 }
+}
+SOV_COLOR_LIT = {
+	color = rgb { 165 38 38 }
+	color_ui = rgb { 165 38 38 }
+}
+SOV_COLOR_LAT = {
+	color = rgb { 165 38 38 }
+	color_ui = rgb { 165 38 38 }
+}
+SOV_COLOR_SIK = {
+	color = rgb { 165 38 38 }
+	color_ui = rgb { 165 38 38 }
+}
+SOV_COLOR_KAZ = {
+	color = rgb { 165 38 38 }
+	color_ui = rgb { 165 38 38 }
+}
+SOV_COLOR_TCSSR = {
+	color = rgb { 165 38 38 }
+	color_ui = rgb { 165 38 38 }
+}
+SOV_COLOR_GSSR = {
+	color = rgb { 165 38 38 }
+	color_ui = rgb { 165 38 38 }
+}
+SOV_COLOR_ASSR = {
+	color = rgb { 165 38 38 }
+	color_ui = rgb { 165 38 38 }
+}
+SOV_COLOR_AZSSR = {
+	color = rgb { 165 38 38 }
+	color_ui = rgb { 165 38 38 }
+}
+SOV_COLOR_CRI = {
+	color = rgb { 165 38 38 }
+	color_ui = rgb { 165 38 38 }
+}
+NORTH_GERMAN_CONFEDERATION = {
+	color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
+HABSBURG_SPAIN = {
+	color = rgb { 255 239 183 }
+	color_ui = rgb { 255 239 183 }
 }
 MAL_UK = {
     color = rgb { 201 56 93 }
@@ -9,6 +65,10 @@ MAL_UK = {
 UNITED_BALTIC_DUCHYS = {
 	color = rgb { 73 89 114 }
 	color_ui = rgb { 73 89 114 }
+}
+Bukovina = {
+	color = rgb { 198 177 113 }
+	color_ui = rgb { 198 177 113 }
 }
 ANGEVIN_EMPIRE = {
 	color = rgb { 178 43 19 }
@@ -22,8 +82,11 @@ HUN_EMPIRE = {
 	color = rgb { 194 198 215 }
 	color_ui = rgb { 255 255 255 }
 }
-
-AUS_NOT_WHITE = {	
+Centroamerica = {
+	color = rgb { 198 177 113 }
+	color_ui = rgb { 198 177 113 }
+}
+AUS_NOT_WHITE = {
 	color = rgb { 249 126 98 }
 	color_ui = rgb { 255 164 127 }
 }

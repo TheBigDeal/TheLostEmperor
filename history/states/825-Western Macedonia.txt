@@ -4,9 +4,9 @@ state={
 	name="STATE_825"
 
 	history={
-		owner = HEL
+		owner = GRE
 		victory_points = {
-			3980 3 
+			3980 3
 		}
 		buildings = {
 			infrastructure = 6
@@ -14,12 +14,12 @@ state={
 			air_base = 5
 
 		}
-		add_core_of = HEL
+		add_core_of = GRE
 
 	}
 
 	provinces={
-		841 3980 
+		841 3980
 	}
 	manpower=435653
 	buildings_max_level_factor=1.000

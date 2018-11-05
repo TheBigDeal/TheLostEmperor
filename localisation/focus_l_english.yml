@@ -2,7 +2,63 @@
 ############################
 #           MODS           #
 ############################
-
+#GENERIC HRE FOCUS TREE
+############################
+HRE_HOLY_ROMAN_STATE:0 "Imperial State of [Root.GetName]"
+HRE_LOYAL_TO_THE_EMPIRE:0 "Loyal To The Empire"
+HRE_PATH_TO_THE_ELECTION:0 "Path To The Elections"
+HRE_INTERNAL_FOCUS:0 "Internal Focus"
+HRE_SUPPORT_PRUSSIA:0 "Support Prussia"
+HRE_SUPPORT_AUSTRIA:0 "Support Austria"
+HRE_ENVOY_TO_PRUSSIA:0 "Envoy To Prussia"
+HRE_ENVOY_TO_AUSTRIA:0 "Envoy To Austria"
+HRE_KEEP_THE_OLD_WAYS:0 "Keep The Old Ways"
+HRE_SUPPORT_A_GERMAN_EMPIRE:0 "Support A German Nation"
+HRE_SUPPORT_CONSOLIDATION:0 "Support Consolidation"
+HRE_CAST_OUR_VOTE:0 "Cast Our Vote"
+HRE_BUILD_MORE_ROADS:0 "Build More Roads"
+HRE_ECONOMIC_BUILDUP_I:0 "Economic Buildup I"
+HRE_ECONOMIC_BUILDUP_II:0 "Economic Buildup II"
+HRE_ECONOMIC_BUILDUP_III:0 "Economic Buildup III"
+HRE_EXPAND_THE_CAPITAL:0 "Expand The Capital"
+HRE_DIPLOMATIC_EFFORT:0 "Diplomatic Effort"
+HRE_SEND_AN_ENVOY_TO_OUR_NEIGHBORS:0 "Send An Envoy To Our Neighbors"
+HRE_FREE_MARKETS:0 "Free Markets"
+HRE_TECHNOLOGY_EFFORT:0 "Technology Effort"
+HRE_IMPERIAL_ENVOYS:0 "Imperial Envoys"
+HRE_RENEWED_MILITARISM:0 "Renewed Militarism"
+HRE_REVOKE_ENTMILITARISIERUNG:0 "Revoke Entmilitarisierung"
+HRE_BEGIN_MOBILIZATION:0 "Begin Mobilization"
+HRE_OUR_OWN_PATH:0 "Our Own Path"
+HRE_GAIN_FORIEGN_SUPPORT:0 "Gain Foreign Support"
+HRE_GAIN_SUPPORT_FROM_SPAIN:0 "Gain Support From Spain"
+HRE_GAIN_SUPPORT_FROM_FRANCE:0 "Gain Support From France"
+HRE_GAIN_SUPPORT_FROM_BRITAIN:0 "Gain Support From Britain"
+HRE_GAIN_SUPPORT_FROM_POLAND:0 "Gain Support From Poland"
+HRE_GAIN_SUPPORT_FROM_RUSSIA:0 "Gain Support From Russia"
+HRE_NEGOTIATIONS_HAVE_FAILED:0 "Negotiations Have Failed"
+HRE_NEGOTIATIONS_HAVE_SUCCEEDED:0 "Negotiations Have Succeeded"
+HRE_BRITISH_NAVAL_IDEALS:0 "British Naval Ideals"
+HRE_FRENCH_DEFENSIVE_TACTICS:0 "French Defensive Tactics"
+HRE_RUSSIAN_CONSCRIPTION:0 "Russian Conscription"
+HRE_POLISH_CALVALRY:0 "Polian Calvalry"
+HRE_SPANISH_DIPLOMACY:0 "Spanish Diplomacy"
+HRE_DEFENSIVE_FOCUS:0 "Defensive Focus"
+HRE_AGGRESSIVE_FOCUS:0 "Aggressive Focus"
+HRE_CLAIM_NEARBY_TERRITORIES:0 "Claim Neighboring Territories"
+HRE_DEFENSIVE_TRAINING:0 "Defensive Training"
+HRE_DEMAND_OUR_CLAIMS:0 "Demand Our Claims"
+HRE_A_NATION_REBORN:0 "A Nation Reborn"
+HRE_CLAIM_THE_CROWN:0 "Claim The Crown"
+HRE_SUPPORT_CAMPAIGN_I:0 "Support Campaign I"
+HRE_SUPPORT_CAMPAIGN_II:0 "Support Campaign II"
+HRE_SUPPORT_CAMPAIGN_III:0 "Support Campaign III"
+HRE_SUPPORT_CAMPAIGN_IV:0 "Support Campaign IV"
+HRE_SUPPORT_CAMPAIGN_V:0 "Support Campaign V"
+HRE_DECLARE_AMBITIONS:0 "Declare Ambitions"
+HRE_A_SUCCESSFUL_CAMPAIGN:0 "A Successful Campaign"
+HRE_THE_CROWN_IS_LOST:0 "The Crown Is Lost"
+HRE_COUNTRY_LINE:0 "The [Root.GetAdjective] Line"
 #TUSCAN FOCUS TREE
 ############################
  TUS_ASSASSINATION_OF_THE_ARCHDUKE:0 "Assassination of the Archduke"
@@ -186,7 +242,9 @@
  TWO_ROOT_OUT_HIGH_LEVEL_CORRUPTION:0 "Root out High Level Corruption"
 #FRANCE FOCUS TREE
 ############################
- FRA_THE_FOURTH_REVOLUTION:0 "The Fourth Revolution" 
+ FRA_A_SECULAR_STATE:0 "A Secular State"
+ FRA_APPROACH_THE_CHURCH:0 "Approach The Papal States"
+ FRA_THE_FOURTH_REVOLUTION:0 "The Fourth Revolution"
  FRA_ARMEE_POPULAIRE:0 "Armee Popularire"
  FRA_FOCUS_ON_INFANTRY:0 "Focus on Infantry"
  FRA_FOCUS_ON_ARMOR:0 "Focus on Armor"
@@ -788,7 +846,7 @@
  POL_GREATER_POLAND:0 "Greater Poland"
  POL_REFORM_THE_COMMONWEALTH:0 "Reform the Commonwealth"
  POL_GATHER_INTERNAL_SUPPORT:0 "Gather Internal Support"
- POL_ULTIMATIUM_TO_OUR_OVERLORD:0 "Ultimatium to our Overlords" 
+ POL_ULTIMATIUM_TO_OUR_OVERLORD:0 "Ultimatium to our Overlords"
  POL_ASSERT_PRUSSIAN_CLAIMS:0 "Assert Prussian Claims"
  POL_PRUSSIAN_COMMONWEALTH_PACT:0 "Berlin-Warsaw Pact"
  POL_DEMAND_SILESIA:0 "Demand Silesia"
@@ -921,7 +979,7 @@
  ENG_ALLY_THE_AUSTRIANS:0 "Ally The Austrians"
  ENG_SUPPORT_A_UNIFIED_GERMANY:0 "Support A Unified Germany"
  ENG_SUPPORT_A_UNITED_HRE:0 "Support a Consolidated Holy Roman Empire"
- 
+
  #FRANCE FOCUS TREE
  #######################
  FRA_POLITICAL_DIRECTION:0 "Political Direction"
@@ -966,30 +1024,11 @@
  FRA_EUROPEAN_EXPANSION:0 "European Expansion"
  FRA_SWISS_EXPANSION:0 "Invade Switzerland"
  FRA_HRE_EXPANSION:0 "Holy Roman Expansion"
- 
+
  #Soviet Russia
  ################
- SOV_SOVIETS:0 "Establish Soviets"
- SOV_POLAND_SOVIET_1:0 "Found the Polish People's Republic"
- SOV_POLAND_SOVIET_2:0 "Expand Poland"
- SOV_UKRAINE_SOVIET:0 "Establish the Ukrainian Socialist Republic" 
- SOV_BELERUS_SOVIET:0 "Establish the Belarusian Socialist Republic" 
- SOV_ESTONIA_SOVIET:0 "Establish the Estonian People's Republic" 
- SOV_LATVIA_SOVIET:0 "Establish the Latvian People's Republic" 
- SOV_GEORGIA_SOVIET:0 "Establish the Georgian People's Republic"
- SOV_LITHUANIA_SOVIET:0 "Establish the Lithuanian People's Republic"
- SOV_MARXISM:0 "The Path of Karl Marx"
- SOV_LENINISM:0 "The Path of Lenin"
- SOV_STALINISM:0 "The Path of Stalin"
- SOV_EXPANSION:0 "Plan Expansion's"
- SOV_SPREAD_COMMUNISM:0 "Spread the Revolution"
- SOV_POLAND_EXPANSION_PREPARE:0 "Prepare to Invade Poland"
- SOV_POLAND_ASSERT_CLAIMS:0 "Assert Claims on Poland"
- SOV_POLAND_INVADE:0 "Invade Poland"
- SOV_LITHUANIA_EXPANSION_PREPARE:0 "Prepare to Invade Lithuania"
- SOV_LITHUANIA_ASSERT_CLAIMS:0 "Assert Claims on Lithuania"
- SOV_LITHUANIA_INVADE:0 "Invade Lithuania"
- 
+ SOV_THE_RUSSIAN_SOVIET_FEDERATIVE_SOCIALIST_REPUBLIC:0 "The R.S.F.S.R"
+
  #GREECE FOCUS TREE
  ######################
  GRE_political_path:0 "Political Path"
@@ -1023,13 +1062,13 @@
  GRE_RECLAIM_ANATOLIA:0 "Reclaim Anatolia"
  GRE_ENCITE_REVOLT:0 "Plan a Revolt"
  GRE_START_REVOLT:0 "Start the Revolt"
- 
- 
+
+
 #Russia
 #########################
  RUS_THE_TSAR_IS_SICK:0 "The Tsar Is Sick"
  RUS_TRUST_THE_ROMANOVS:0 "Trust The Romanovs"
- 
+
  WHILE_FOCUSING:0 "While focusing on this, there will be the following effects:\n$EFF$"
  generic_focus:0 "National Focus"
  army_effort:0 "Army Effort"

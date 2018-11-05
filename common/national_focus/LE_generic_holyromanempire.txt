@@ -1,0 +1,772 @@
+focus_tree = {
+	id = hre_focus
+	country = {
+		factor = 0
+		modifier = { add = 20 tag = MST }
+		modifier = { add = 20 tag = HAN }
+		#modifier = { add = 20 tag = HAM }
+		#modifier = { add = 20 tag = LUB }
+		modifier = { add = 20 tag = CLG }
+		modifier = { add = 20 tag = FRN }
+		modifier = { add = 20 tag = VRP }
+		modifier = { add = 20 tag = FRN }
+		modifier = { add = 20 tag = BRE }
+		modifier = { add = 20 tag = HLS }
+		modifier = { add = 20 tag = OLD }
+		modifier = { add = 20 tag = EFR }
+		modifier = { add = 20 tag = MUN }
+		modifier = { add = 20 tag = RAV }
+		modifier = { add = 20 tag = PAD }
+		modifier = { add = 20 tag = BRU }
+		modifier = { add = 20 tag = ANH }
+		modifier = { add = 20 tag = SAX }
+		modifier = { add = 20 tag = THU }
+		modifier = { add = 20 tag = PYR }
+		modifier = { add = 20 tag = KLE }
+		modifier = { add = 20 tag = JUL }
+		modifier = { add = 20 tag = LIE }
+		modifier = { add = 20 tag = NAS }
+		modifier = { add = 20 tag = NSA }
+		modifier = { add = 20 tag = TRI }
+		modifier = { add = 20 tag = FUL }
+		modifier = { add = 20 tag = WRZ }
+		modifier = { add = 20 tag = MAI }
+		modifier = { add = 20 tag = NUR }
+		modifier = { add = 20 tag = HUL }
+		modifier = { add = 20 tag = ULM }
+		modifier = { add = 20 tag = AUG }
+		modifier = { add = 20 tag = MEM }
+		modifier = { add = 20 tag = LND }
+		modifier = { add = 20 tag = HNZ }
+		modifier = { add = 20 tag = FUS }
+		modifier = { add = 20 tag = BAD }
+		modifier = { add = 20 tag = WUR }
+		modifier = { add = 20 tag = PLT }
+		modifier = { add = 20 tag = SPY }
+		modifier = { add = 20 tag = TRI }
+		modifier = { add = 20 tag = WLN }
+		modifier = { add = 20 tag = FLA }
+		modifier = { add = 20 tag = PSU }
+		modifier = { add = 20 tag = ALS }
+		modifier = { add = 20 tag = BUR }
+		modifier = { add = 20 tag = HES }
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 1100 }
+	focus = {
+		id = HRE_HOLY_ROMAN_STATE
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 16
+		y = 0
+		cost = 3
+		ai_will_do = { factor = 12 }
+		bypass = {
+			exists = yes
+		}
+		completion_reward = {}
+	}
+	focus = {
+		id = HRE_LOYAL_TO_THE_EMPIRE
+		icon = GFX_focus_ger_return_of_the_kaiser
+		prerequisite = { focus = HRE_HOLY_ROMAN_STATE }
+		mutually_exclusive = { focus = focus = HRE_CLAIM_THE_CROWN focus = HRE_OUR_OWN_PATH }
+		x = 4
+		y = 1
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = HRE_PATH_TO_THE_ELECTION
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = HRE_LOYAL_TO_THE_EMPIRE }
+		mutually_exclusive = { focus = HRE_INTERNAL_FOCUS }
+		x = 3
+		y = 2
+		cost = 3
+		ai_will_do = { factor = 12 }
+		available = {
+			has_idea = HRE_elector
+		}
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = HRE_SUPPORT_PRUSSIA
+		icon = GFX_focus_support_prussia
+		prerequisite = { focus = HRE_PATH_TO_THE_ELECTION }
+		mutually_exclusive = { focus = HRE_SUPPORT_AUSTRIA }
+		x = 2
+		y = 3
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HRE_ENVOY_TO_PRUSSIA
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = HRE_SUPPORT_PRUSSIA }
+		x = 2
+		y = 4
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_opinion_modifier = { target = PRS	modifier = sent_envoy }
+		}
+	}
+	focus = {
+		id = HRE_KEEP_THE_OLD_WAYS
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = HRE_ENVOY_TO_PRUSSIA focus = HRE_ENVOY_TO_AUSTRIA }
+		mutually_exclusive = { focus = HRE_SUPPORT_A_GERMAN_EMPIRE focus = HRE_SUPPORT_CONSOLIDATION}
+		x = 0
+		y = 5
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+				add_political_power = 50
+				set_country_flag = HRE_VOTE_OLD_WAYS
+		}
+	}
+	focus = {
+		id = HRE_SUPPORT_A_GERMAN_EMPIRE
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = HRE_ENVOY_TO_PRUSSIA focus = HRE_ENVOY_TO_AUSTRIA }
+		mutually_exclusive = { focus = HRE_SUPPORT_CONSOLIDATION focus = HRE_KEEP_THE_OLD_WAYS}
+		x = 2
+		y = 5
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_political_power = 50
+			set_country_flag = HRE_SUPPORT_GERMAN_NATION
+		}
+	}
+	focus = {
+		id = HRE_SUPPORT_CONSOLIDATION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HRE_ENVOY_TO_PRUSSIA focus = HRE_ENVOY_TO_AUSTRIA }
+		mutually_exclusive = { focus = HRE_SUPPORT_A_GERMAN_EMPIRE focus = HRE_KEEP_THE_OLD_WAYS}
+		x = 4
+		y = 5
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_political_power = 50
+			set_country_flag = HRE_VOTE_CONSOLIDATION
+		}
+	}
+	focus = {
+		id = HRE_CAST_OUR_VOTE
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = HRE_SUPPORT_CONSOLIDATION focus = HRE_SUPPORT_A_GERMAN_EMPIRE focus = HRE_KEEP_THE_OLD_WAYS }
+		x = 2
+		y = 6
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_SUPPORT_AUSTRIA
+		icon = GFX_focus_support_austria
+		prerequisite = { focus = HRE_PATH_TO_THE_ELECTION }
+		mutually_exclusive = { focus HRE_SUPPORT_PRUSSIA }
+		x = 4
+		y = 3
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_ENVOY_TO_AUSTRIA
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = HRE_SUPPORT_AUSTRIA }
+		x = 4
+		y = 4
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_INTERNAL_FOCUS
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = HRE_LOYAL_TO_THE_EMPIRE }
+		mutually_exclusive = { focus = HRE_PATH_TO_THE_ELECTION }
+		x = 6
+		y = 2
+		cost = 3
+		ai_will_do = { factor = 12 }
+		available = {
+			NOT = { has_idea = HRE_elector }
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_DIPLOMATIC_EFFORT
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = HRE_INTERNAL_FOCUS }
+		mutually_exclusive = { focus = HRE_RENEWED_MILITARISM }
+		x = 8
+		y = 3
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_SEND_AN_ENVOY_TO_OUR_NEIGHBORS
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = HRE_DIPLOMATIC_EFFORT }
+		x = 8
+		y = 4
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_FREE_MARKETS
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HRE_SEND_AN_ENVOY_TO_OUR_NEIGHBORS }
+		x = 8
+		y = 5
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_TECHNOLOGY_EFFORT
+		icon = GFX_focus_research
+		prerequisite = { focus = HRE_FREE_MARKETS }
+		x = 8
+		y = 6
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_IMPERIAL_ENVOYS
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = HRE_TECHNOLOGY_EFFORT }
+		x = 8
+		y = 7
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_RENEWED_MILITARISM
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = HRE_INTERNAL_FOCUS }
+		mutually_exclusive = { focus = HRE_DIPLOMATIC_EFFORT }
+		x = 10
+		y = 3
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_REVOKE_ENTMILITARISIERUNG
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = HRE_RENEWED_MILITARISM }
+		x = 10
+		y = 4
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_BEGIN_MOBILIZATION
+		icon = GFX_focus_ger_oppose_hitler
+		prerequisite = { focus = HRE_REVOKE_ENTMILITARISIERUNG }
+		x = 10
+		y = 5
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_DEFENSIVE_FOCUS
+		icon = GFX_goal_generic_defence
+		prerequisite = {
+			focus = HRE_BEGIN_MOBILIZATION
+			focus = HRE_BEGIN_MOBILIZATION
+			focus = HRE_BRITISH_NAVAL_IDEALS
+			focus = HRE_FRENCH_DEFENSIVE_TACTICS
+			focus = HRE_POLISH_CALVALRY
+			focus = HRE_RUSSIAN_CONSCRIPTION
+			focus = HRE_SPANISH_DIPLOMACY
+		}
+		mutually_exclusive = { focus = HRE_AGGRESSIVE_FOCUS }
+		x = 13
+		y = 6
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_COUNTRY_LINE
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = HRE_DEFENSIVE_FOCUS }
+		mutually_exclusive = { focus = HRE_AGGRESSIVE_FOCUS }
+		x = 13
+		y = 7
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_DEFENSIVE_TRAINING
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = HRE_COUNTRY_LINE }
+		mutually_exclusive = { focus = HRE_AGGRESSIVE_FOCUS }
+		x = 13
+		y = 8
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_AGGRESSIVE_FOCUS
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = {
+			focus = HRE_BEGIN_MOBILIZATION
+			focus = HRE_BEGIN_MOBILIZATION
+			focus = HRE_BRITISH_NAVAL_IDEALS
+			focus = HRE_FRENCH_DEFENSIVE_TACTICS
+			focus = HRE_POLISH_CALVALRY
+			focus = HRE_RUSSIAN_CONSCRIPTION
+			focus = HRE_SPANISH_DIPLOMACY
+		}
+		mutually_exclusive = { focus = HRE_DEFENSIVE_FOCUS }
+		x = 15
+		y = 6
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_CLAIM_NEARBY_TERRITORIES
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = HRE_AGGRESSIVE_FOCUS }
+		x = 15
+		y = 7
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_DEMAND_OUR_CLAIMS
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = HRE_CLAIM_NEARBY_TERRITORIES }
+		x = 15
+		y = 8
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_A_NATION_REBORN
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = HRE_DEMAND_OUR_CLAIMS focus = HRE_DEFENSIVE_TRAINING }
+		x = 14
+		y = 9
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_BUILD_MORE_ROADS
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = HRE_INTERNAL_FOCUS }
+		x = 6
+		y = 3
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_ECONOMIC_BUILDUP_I
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = HRE_BUILD_MORE_ROADS }
+		x = 6
+		y = 4
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_ECONOMIC_BUILDUP_II
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = HRE_ECONOMIC_BUILDUP_I }
+		x = 6
+		y = 5
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_ECONOMIC_BUILDUP_III
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = HRE_ECONOMIC_BUILDUP_II }
+		x = 6
+		y = 6
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_EXPAND_THE_CAPITAL
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = HRE_ECONOMIC_BUILDUP_III }
+		x = 6
+		y = 7
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_OUR_OWN_PATH
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = HRE_HOLY_ROMAN_STATE }
+		mutually_exclusive = { focus = focus = HRE_LOYAL_TO_THE_EMPIRE focus = HRE_CLAIM_THE_CROWN }
+		x = 16
+		y = 1
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_GAIN_FORIEGN_SUPPORT
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HRE_OUR_OWN_PATH }
+		x = 16
+		y = 2
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_GAIN_SUPPORT_FROM_BRITAIN
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = HRE_GAIN_FORIEGN_SUPPORT }
+		x = 12
+		y = 3
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_GAIN_SUPPORT_FROM_FRANCE
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = HRE_GAIN_FORIEGN_SUPPORT }
+		x = 14
+		y = 3
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_GAIN_SUPPORT_FROM_RUSSIA
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = HRE_GAIN_FORIEGN_SUPPORT }
+		x = 16
+		y = 3
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_GAIN_SUPPORT_FROM_POLAND
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = HRE_GAIN_FORIEGN_SUPPORT }
+		x = 18
+		y = 3
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_GAIN_SUPPORT_FROM_SPAIN
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = HRE_GAIN_FORIEGN_SUPPORT }
+		x = 20
+		y = 3
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_NEGOTIATIONS_HAVE_FAILED
+		icon = GFX_focus_rom_abdicate
+		prerequisite = {
+			focus = HRE_GAIN_SUPPORT_FROM_SPAIN
+			focus = HRE_GAIN_SUPPORT_FROM_FRANCE
+			focus = HRE_GAIN_SUPPORT_FROM_POLAND
+			focus = HRE_GAIN_SUPPORT_FROM_RUSSIA
+			focus = HRE_GAIN_SUPPORT_FROM_BRITAIN
+		}
+		mutually_exclusive = { focus = HRE_NEGOTIATIONS_HAVE_SUCCEEDED }
+		x = 17
+		y = 4
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_NEGOTIATIONS_HAVE_SUCCEEDED
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = {
+			focus = HRE_GAIN_SUPPORT_FROM_SPAIN
+			focus = HRE_GAIN_SUPPORT_FROM_FRANCE
+			focus = HRE_GAIN_SUPPORT_FROM_POLAND
+			focus = HRE_GAIN_SUPPORT_FROM_RUSSIA
+			focus = HRE_GAIN_SUPPORT_FROM_BRITAIN
+		}
+		mutually_exclusive = { focus = HRE_NEGOTIATIONS_HAVE_FAILED }
+		x = 15
+		y = 4
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_BRITISH_NAVAL_IDEALS
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = HRE_NEGOTIATIONS_HAVE_SUCCEEDED focus = HRE_GAIN_SUPPORT_FROM_BRITAIN }
+		x = 12
+		y = 5
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_FRENCH_DEFENSIVE_TACTICS
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = HRE_NEGOTIATIONS_HAVE_SUCCEEDED focus = HRE_GAIN_SUPPORT_FROM_FRANCE }
+		x = 14
+		y = 5
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_RUSSIAN_CONSCRIPTION
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = HRE_NEGOTIATIONS_HAVE_SUCCEEDED focus = HRE_GAIN_SUPPORT_FROM_RUSSIA }
+		x = 16
+		y = 5
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_POLISH_CALVALRY
+		icon = GFX_focus_generic_polish_deal
+		prerequisite = { focus = HRE_NEGOTIATIONS_HAVE_SUCCEEDED focus = HRE_GAIN_SUPPORT_FROM_POLAND }
+		x = 18
+		y = 5
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_SPANISH_DIPLOMACY
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = HRE_NEGOTIATIONS_HAVE_SUCCEEDED focus = HRE_GAIN_SUPPORT_FROM_SPAIN }
+		x = 20
+		y = 5
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_CLAIM_THE_CROWN
+		icon = GFX_focus_ger_return_of_the_kaiser
+		prerequisite = { focus = HRE_HOLY_ROMAN_STATE }
+		mutually_exclusive = { focus = HRE_OUR_OWN_PATH focus = HRE_LOYAL_TO_THE_EMPIRE }
+		x = 23
+		y = 1
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_SUPPORT_CAMPAIGN_I
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = HRE_CLAIM_THE_CROWN }
+		x = 22
+		y = 2
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_SUPPORT_CAMPAIGN_II
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = HRE_CLAIM_THE_CROWN }
+		x = 24
+		y = 2
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_SUPPORT_CAMPAIGN_III
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = HRE_SUPPORT_CAMPAIGN_I focus = HRE_SUPPORT_CAMPAIGN_II }
+		x = 22
+		y = 3
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_SUPPORT_CAMPAIGN_IV
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = HRE_SUPPORT_CAMPAIGN_I focus = HRE_SUPPORT_CAMPAIGN_II }
+		x = 24
+		y = 3
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_SUPPORT_CAMPAIGN_V
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = HRE_SUPPORT_CAMPAIGN_III focus = HRE_SUPPORT_CAMPAIGN_IV }
+		x = 23
+		y = 4
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_DECLARE_AMBITIONS
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = HRE_SUPPORT_CAMPAIGN_V }
+		x = 23
+		y = 5
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_THE_CROWN_IS_LOST
+		icon = GFX_focus_rom_handle_king
+		prerequisite = { focus = HRE_DECLARE_AMBITIONS }
+		mutually_exclusive = { focus = HRE_A_SUCCESSFUL_CAMPAIGN }
+		x = 24
+		y = 6
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HRE_A_SUCCESSFUL_CAMPAIGN
+		icon = GFX_focus_rom_parties_end
+		prerequisite = { focus = HRE_DECLARE_AMBITIONS }
+		mutually_exclusive = { focus = HRE_THE_CROWN_IS_LOST }
+		x = 22
+		y = 6
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}

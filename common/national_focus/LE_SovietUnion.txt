@@ -1,659 +1,1234 @@
 focus_tree = {
-	id = LEsoviet_focus
-	
+	id = LE_soviet_focus
 	country = {
 		factor = 0
-		
 		modifier = {
 			add = 10
 			tag = SOV
 		}
 	}
-	
 	default = no
 	continuous_focus_position = { x = 50 y = 3100 }
-	
-	focus = {
-		id = SOV_LENINISM
-		icon = GFX_goal_support_proletarianism
-		mutually_exclusive = { focus = SOV_STALINISM focus = SOV_MARXISM}
-		x = 4
-		y = 0
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
 
-		}
-	}
 	focus = {
-		id = SOV_LENINISM_1
-		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = SOV_LENINISM }
-		x = 4
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_ideas = SOV_lenin_recruitable
-		}
-	}
-	focus = {
-		id = SOV_LENINISM_2
-		icon = GFX_focus_YUG_pan_slavic_congress
-		prerequisite = { focus = SOV_LENINISM_1 }
-		x = 4
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_ideas = SOV_lenin_morale
-		}
-	}
-	focus = {
-		id = SOV_LENINISM_3
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = SOV_LENINISM_2 }
-		x = 4
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_ideas = SOV_lenin_army
-		}
-	}
-	focus = {
-		id = SOV_LENINISM_4
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = SOV_LENINISM_2 }
-		x = 4
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_ideas = SOV_lenin_unity
-		}
-	}
-	focus = {
-		id = SOV_LENINISM_5
-		icon = GFX_goal_support_fourth_int
-		prerequisite = { focus = SOV_LENINISM_3 }
-		x = 4
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			set_politics = { ruling_party = proletarianism elections_allowed = no }		
-		}
-	}
-	focus = {
-		id = SOV_STALINISM
-		icon = GFX_goal_support_proletarianism
-		mutually_exclusive = { focus = SOV_LENINISM focus = SOV_MARXISM}
-		x = 6
-		y = 0
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = SOV_STALINISM_1
-		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = SOV_STALINISM }
-		x = 6
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_ideas = SOV_stalin_wargoal	
-		}
-	}
-	focus = {
-		id = SOV_STALINISM_2
-		icon = GFX_focus_generic_little_entente
-		prerequisite = { focus = SOV_STALINISM_1 }
-		x = 6
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_ideas = SOV_stalin_conscription
-		}
-	}
-	focus = {
-		id = SOV_STALINISM_3
-		icon = GFX_focus_secret_rearmament
-		prerequisite = { focus = SOV_STALINISM_2 }
-		x = 6
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_ideas = SOV_stalin_army
-		}
-	}
-	focus = {
-		id = SOV_STALINISM_4
-		icon = GFX_focus_generic_soviet_politics
-		prerequisite = { focus = SOV_STALINISM_2 }
-		x = 6
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_ideas = SOV_stalin_drift
-		}
-	}
-	focus = {
-		id = SOV_STALINISM_5
-		icon = GFX_focus_generic_join_comintern
-		prerequisite = { focus = SOV_STALINISM_3 }
-		x = 6
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			set_politics = { ruling_party = proletarianism elections_allowed = no }
-			add_political_power = 100		
-		}
-	}
-	focus = {
-		id = SOV_MARXISM
-		icon = GFX_goal_support_proletarianism
-		mutually_exclusive = { focus = SOV_LENINISM focus = SOV_STALINISM}
-		x = 2
-		y = 0
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = SOV_MARXISM_1
-		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = SOV_MARXISM }
-		x = 2
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_ideas = SOV_marx_political		
-		}
-	}
-	focus = {
-		id = SOV_MARXISM_2
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = SOV_MARXISM_1}
-		x = 2
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_ideas = SOV_marx_subversive
-		}
-	}
-	focus = {
-		id = SOV_MARXISM_3
-		icon = GFX_focus_generic_socialist_science
-		prerequisite = { focus = SOV_MARXISM_2 }
-		x = 2
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-	focus = {
-		id = SOV_MARXISM_4
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = SOV_MARXISM_3 }
-		x = 2
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_stability = 0.05	
-		}
-	}
-	focus = {
-		id = SOV_MARXISM_5
-		icon = GFX_goal_generic_war_with_comintern
-		prerequisite = { focus = SOV_MARXISM_3 }
-		x = 2
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			set_politics = { ruling_party = proletarianism elections_allowed = no }
-			add_political_power = 100		
-		}
-	}
-	focus = {
-		id = SOV_SOVIETS
-		icon = GFX_goal_support_proletarianism
-		x = 11
-		y = 0
-		cost = 10
-		available = {
-			OR = {
-				SOV = { has_government = proletarianism }
-				SOV = { has_government = proletarianism }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		
-		}
-	}
-	focus = {
-		id = SOV_UKRAINE_SOVIET
-		icon = GFX_goal_support_proletarianism
-		prerequisite = { focus = SOV_SOVIETS }
-		x = 10
-		y = 1
-		cost = 10
-		available = {
-			NOT = { country_exists = UKR }
-			SOV = {
-				228 = { is_owned_by = SOV }
-				227 = { is_owned_by = SOV }
-				221 = { is_owned_by = SOV }
-				226 = { is_owned_by = SOV }
-				200 = { is_owned_by = SOV }
-				196 = { is_owned_by = SOV }
-				225 = { is_owned_by = SOV }
-				259 = { is_owned_by = SOV }
-				193 = { is_owned_by = SOV }
-				197 = { is_owned_by = SOV }
-				203 = { is_owned_by = SOV }
-				192 = { is_owned_by = SOV }
-				202 = { is_owned_by = SOV }
-				201 = { is_owned_by = SOV }
-				198 = { is_owned_by = SOV }
-				199 = { is_owned_by = SOV }
-				752 = { is_owned_by = SOV }
-				93 = { is_owned_by = SOV }
-				91 = { is_owned_by = SOV }
-				89 = { is_owned_by = SOV }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			release = UKR
-			puppet = UKR
-			UKR = { transfer_state = 137 }
-			UKR = { set_cosmetic_tag = SOV1 }
-		}
-	}
-	focus = {
-		id = SOV_BELERUS_SOVIET
-		icon = GFX_goal_support_proletarianism
-		prerequisite = { focus = SOV_SOVIETS }
+		id = SOV_THE_RUSSIAN_SOVIET_FEDERATIVE_SOCIALIST_REPUBLIC
+		icon = GFX_goal_support_communism
 		x = 12
-		y = 1
+		y = 0
 		cost = 10
-		available = {
-			NOT = { country_exists = BLR }
-			SOV = {
-				241 = { is_owned_by = SOV }
-				207 = { is_owned_by = SOV }
-				206 = { is_owned_by = SOV }
-				96 = { is_owned_by = SOV }
-				204 = { is_owned_by = SOV }
-				194 = { is_owned_by = SOV }
-				94 = { is_owned_by = SOV }
-				95 = { is_owned_by = SOV }
-				97 = { is_owned_by = SOV }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
+		ai_will_do = { factor = 10 }
 		completion_reward = {
-			release = BLR
-			puppet = BLR
-			BLR = { set_cosmetic_tag = SOV0 }
+
 		}
 	}
 	focus = {
-		id = SOV_GEORGIA_SOVIET
-		icon = GFX_goal_support_proletarianism
-		prerequisite = { focus = SOV_SOVIETS }
-		x = 10
-		y = 2
-		cost = 10
-		available = {
-			NOT = { country_exists = GEO }
-			SOV = {
-				231 = { is_owned_by = SOV }
-				229 = { is_owned_by = SOV }
-				230 = { is_owned_by = SOV }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			release = GEO
-			puppet = GEO
-			GEO = { set_cosmetic_tag = SOV2 }
-			GEO = {
-				transfer_state = 231
-				transfer_state = 229
-				transfer_state = 230
-			}
-		}
-	}
-	focus = {
-		id = SOV_ESTONIA_SOVIET
-		icon = GFX_goal_support_proletarianism
-		prerequisite = { focus = SOV_SOVIETS }
-		x = 14
-		y = 1
-		cost = 10
-		available = {
-			NOT = { country_exists = EST }
-			SOV = {
-				13 = { is_owned_by = SOV }
-				191 = { is_owned_by = SOV }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			release = EST
-			puppet = EST
-			EST = { set_cosmetic_tag = SOV2 }
-		}
-	}
-	focus = {
-		id = SOV_LATVIA_SOVIET
-		icon = GFX_goal_support_proletarianism
-		prerequisite = { focus = SOV_SOVIETS }
-		x = 14
-		y = 2
-		cost = 10
-		available = {
-			NOT = { country_exists = LAT }
-			SOV = {
-				12 = { is_owned_by = SOV }
-				190 = { is_owned_by = SOV }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			release = LAT
-			puppet = LAT
-			LAT = { set_cosmetic_tag = SOV3 }
-		}
-	}
-	focus = {
-		id = SOV_LITHUANIA_SOVIET
-		icon = GFX_goal_support_proletarianism
-		prerequisite = { focus = SOV_SOVIETS }
-		x = 12
-		y = 2
-		cost = 10
-		available = {
-			NOT = { country_exists = LIT }
-			SOV = {
-				11 = { is_owned_by = SOV }
-				189 = { is_owned_by = SOV }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			LIT = {
-				transfer_state = 11
-				transfer_state = 189
-			}
-			puppet = LIT
-			#LIT = { set_cosmetic_tag = SOV3 }
-		}
-	}
-	focus = {
-		id = SOV_POLAND_SOVIET_1
-		icon = GFX_goal_support_proletarianism
-		prerequisite = { focus = SOV_SOVIETS }
+		id = SOV_INFRASTRUCTURAL_EXPANSION
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_RUSSIAN_SOVIET_FEDERATIVE_SOCIALIST_REPUBLIC }
 		x = 8
 		y = 1
 		cost = 10
-		available = {
-			NOT = { country_exists = POL }
-			SOV = {
-				10 = { is_owned_by = SOV }
-				98 = { is_owned_by = SOV }
-				87 = { is_owned_by = SOV }
-				90 = { is_owned_by = SOV }
-				88 = { is_owned_by = SOV }
-				72 = { is_owned_by = SOV }
-				92 = { is_owned_by = SOV }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
+		ai_will_do = { factor = 10 }
 		completion_reward = {
-			POL = {
-				transfer_state = 10
-				transfer_state = 98
-				transfer_state = 87
-				transfer_state = 90
-				transfer_state = 88
-				transfer_state = 72
-				transfer_state = 92
-			}
-			puppet = POL
-			#POL = { set_cosmetic_tag = SOV2 }
+
 		}
 	}
 	focus = {
-		id = SOV_POLAND_SOVIET_2
-		icon = GFX_goal_support_proletarianism
-		prerequisite = { focus = SOV_POLAND_SOVIET_1 }
+		id = SOV_NEW_CIVILIAN_COMPLEXES
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_INFRASTRUCTURAL_EXPANSION }
+		mutually_exclusive = { focus = SOV_NEW_MILITARY_COMPLEXES }
+		x = 7
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_NEW_MILITARY_COMPLEXES
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_INFRASTRUCTURAL_EXPANSION }
+		mutually_exclusive = { focus = SOV_NEW_CIVILIAN_COMPLEXES }
+		x = 9
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_EXPAND_CIVILIAN_COMPLEXES
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_NEW_CIVILIAN_COMPLEXES }
+		x = 7
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_EXPAND_MILITARY_COMPLEXES
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_NEW_MILITARY_COMPLEXES }
+		x = 9
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_SIBERIAN_PROCESSING_PLANTS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_EXPAND_MILITARY_COMPLEXES focus = SOV_EXPAND_CIVILIAN_COMPLEXES }
+		x = 6
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_SIBERIAN_IRON_MINES
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_SIBERIAN_PROCESSING_PLANTS }
+		x = 5
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_DIG_FOR_ALUMINIUM
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_SIBERIAN_IRON_MINES }
+		x = 4
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_DIG_FOR_TUNGSTEN
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_SIBERIAN_IRON_MINES }
+		x = 6
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_THE_SIBERIAN_INDUSTRIALIZATION_PLAN
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_SIBERIAN_PROCESSING_PLANTS }
+		x = 1
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_INVEST_IN_HEAVY_INDUSTRY
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_SIBERIAN_INDUSTRIALIZATION_PLAN }
+		x = 0
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_INVEST_IN_CIVILIAN_ECONOMY
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_SIBERIAN_INDUSTRIALIZATION_PLAN }
+		x = 2
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_SYNTHETIC_RESEARCH
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_SIBERIAN_PROCESSING_PLANTS }
+		prerequisite = { focus = SOV_BATTLE_FOR_LITERACY }
+		x = 7
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_BATTLE_FOR_LITERACY
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_EXPAND_MILITARY_COMPLEXES focus = SOV_EXPAND_CIVILIAN_COMPLEXES }
 		x = 8
-		y = 2
+		y = 4
 		cost = 10
-		available = {
-			SOV = {
-				5 = { is_owned_by = SOV }
-				85 = { is_owned_by = SOV }
-				86 = { is_owned_by = SOV }
-				66 = { is_owned_by = SOV }
-				67 = { is_owned_by = SOV }
-				751 = { is_owned_by = SOV }
-				63 = { is_owned_by = SOV }
-				750 = { is_owned_by = SOV }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			POL = {
-				transfer_state = 5
-				transfer_state = 85
-				transfer_state = 86
-				transfer_state = 66
-				transfer_state = 67
-				transfer_state = 751
-				transfer_state = 63
-				transfer_state = 750
-			}
-		}
-	}
-	focus = {
-		id = SOV_EXPANSION
-		icon = GFX_goal_support_proletarianism
-		mutually_exclusive = { focus = SOV_SPREAD_COMMUNISM}
-		x = 17
-		y = 0
-		cost = 10
-		available = {
-			SOV = {
-				OR = {
-					has_government = proletarianism
-					has_government = proletarianism
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
+		ai_will_do = { factor = 10 }
 		completion_reward = {
 
 		}
 	}
 	focus = {
-		id = SOV_POLAND_EXPANSION_PREPARE
-		icon = GFX_goal_support_proletarianism
-		prerequisite = { focus = SOV_EXPANSION }
-		x = 16
+		id = SOV_RAILWAY_EXPANSION
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_EXPAND_MILITARY_COMPLEXES focus = SOV_EXPAND_CIVILIAN_COMPLEXES }
+		x = 10
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_EXPAND_URALIC_RAILWAYS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_RAILWAY_EXPANSION }
+		x = 10
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_CENTRAL_ASIAN_DEVELOPMENT_PROGRAM
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_EXPAND_URALIC_RAILWAYS }
+		x = 10
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_A_MASS_ARMY
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_RUSSIAN_SOVIET_FEDERATIVE_SOCIALIST_REPUBLIC }
+		mutually_exclusive = { focus = SOV_A_MODERN_ARMY }
+		x = 20
 		y = 1
 		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
+		ai_will_do = { factor = 10 }
 		completion_reward = {
 
 		}
 	}
 	focus = {
-		id = SOV_POLAND_ASSERT_CLAIMS
-		icon = GFX_goal_support_proletarianism
-		prerequisite = { focus = SOV_POLAND_EXPANSION_PREPARE }
-		x = 16
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = SOV_POLAND_INVADE
-		icon = GFX_goal_support_proletarianism
-		prerequisite = { focus = SOV_POLAND_ASSERT_CLAIMS }
-		x = 16
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			declare_war_on = { target = POL type = annex_everything }
-		}
-	}
-	focus = {
-		id = SOV_LITHUANIA_EXPANSION_PREPARE
-		icon = GFX_goal_support_proletarianism
-		prerequisite = { focus = SOV_EXPANSION }
-		x = 18
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = SOV_LITHUANIA_ASSERT_CLAIMS
-		icon = GFX_goal_support_proletarianism
-		prerequisite = { focus = SOV_LITHUANIA_EXPANSION_PREPARE }
-		x = 18
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = SOV_LITHUANIA_INVADE
-		icon = GFX_goal_support_proletarianism
-		prerequisite = { focus = SOV_LITHUANIA_ASSERT_CLAIMS }
-		x = 18
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			declare_war_on = { target = LIT type = annex_everything }
-		}
-	}
-	focus = {
-		id = SOV_SPREAD_COMMUNISM
-		icon = GFX_goal_support_proletarianism
-		mutually_exclusive = { focus = SOV_EXPANSION}
+		id = SOV_A_MODERN_ARMY
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_RUSSIAN_SOVIET_FEDERATIVE_SOCIALIST_REPUBLIC }
+		mutually_exclusive = { focus = SOV_A_MASS_ARMY }
 		x = 23
-		y = 0
+		y = 1
 		cost = 10
-		available = {
-			SOV = {
-				OR = {
-					has_government = proletarianism
-					has_government = proletarianism
-				}
-			}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
 		}
-		ai_will_do = {
-			factor = 10
+	}
+	focus = {
+		id = SOV_REBUILD_THE_NATION
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_RUSSIAN_SOVIET_FEDERATIVE_SOCIALIST_REPUBLIC }
+		x = 13
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
 		}
+	}
+	focus = {
+		id = SOV_RUSSIA_REBUILT
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_REBUILD_THE_NATION }
+		x = 13
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_country_flag =
+		}
+	}
+	focus = {
+		id = SOV_PREPARE_THE_FIRST_CONGRESS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_RUSSIA_REBUILT }
+		x = 13
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_THE_FACTIONS_OF_THE_UNION
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_PREPARE_THE_FIRST_CONGRESS }
+		x = 12
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_CONDEMN_THE_ROMANOVS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_PREPARE_THE_FIRST_CONGRESS }
+		x = 14
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_BERIAS_SPEECH
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_CONDEMN_THE_ROMANOVS }
+		prerequisite = { focus = SOV_THE_FACTIONS_OF_THE_UNION }
+		x = 13
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_INVITE_THE_CONSTITUENT_REPUBLICS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_CONDEMN_THE_ROMANOVS }
+		prerequisite = { focus = SOV_THE_FACTIONS_OF_THE_UNION }
+		x = 13
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_THE_FIRST_CONGRESS_OF_THE_SOVIET_UNION
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_INVITE_THE_CONSTITUENT_REPUBLICS }
+		x = 13
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_THE_LEFTIST_COALITION
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_FIRST_CONGRESS_OF_THE_SOVIET_UNION }
+		mutually_exclusive = { focus = SOV_THE_RIGHTIST_COALITION }
+		x = 5
+		y = 7
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_ESTABLISH_THE_NKVD
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_LEFTIST_COALITION }
+		x = 5
+		y = 8
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_POLITICAL_CORRECTNESS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_ESTABLISH_THE_NKVD }
+		x = 4
+		y = 9
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_PURGE_THE_KULAKS_AND_SEP
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_ESTABLISH_THE_NKVD }
+		x = 6
+		y = 9
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_CULT_OF_PERSONALITY
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_PURGE_THE_KULAKS_AND_SEP }
+		prerequisite = { focus = SOV_POLITICAL_CORRECTNESS }
+		x = 5
+		y = 10
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_SET_UP_THE_TROIKAS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_CULT_OF_PERSONALITY }
+		x = 5
+		y = 11
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_EXPAND_THE_BUREACRACY
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_SET_UP_THE_TROIKAS }
+		x = 3
+		y = 12
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_A_SOVIET_CONSTITUTION
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_EXPAND_THE_BUREACRACY }
+		mutually_exclusive = { focus = SOV_THE_PEOPLES_UNION }
+		x = 1
+		y = 13
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_THE_PEOPLES_UNION
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_A_SOVIET_CONSTITUTION }
+		mutually_exclusive = { focus = SOV_A_SOVIET_CONSTITUTION }
+		x = 2
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_SOCIALIST_REALISM
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_PEOPLES_UNION }
+		x = 2
+		y = 15
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_RESEARCH_CITIES
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_SOCIALIST_REALISM }
+		x = 2
+		y = 16
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_A_MILITARIZED_UNION
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_A_SOVIET_CONSTITUTION }
+		x = 0
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_EXPEL_THE_NATURALISTS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_A_MILITARIZED_UNION }
+		x = 0
+		y = 15
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_THE_NIGHT_WITCHES
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_EXPEL_THE_NATURALISTS }
+		x = 0
+		y = 16
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_EXPAND_OUR_INDUSTRY
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_EXPAND_THE_BUREACRACY }
+		x = 4
+		y = 13
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_THE_FIRST_FIVE_YEAR_PLAN
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_EXPAND_OUR_INDUSTRY }
+		x = 4
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_THE_SECOND_FIVE_YEAR_PLAN
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_FIRST_FIVE_YEAR_PLAN }
+		x = 4
+		y = 15
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_THE_THIRD_FIVE_YEAR_PLAN
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_SECOND_FIVE_YEAR_PLAN }
+		x = 4
+		y = 16
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_THE_BERIA_AFFAIR
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_SET_UP_THE_TROIKAS }
+		x = 9
+		y = 12
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_PARTIAL_PROCESS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_BERIA_AFFAIR }
+		mutually_exclusive = { focus = SOV_IMPARTIAL_PROCESS }
+		x = 7
+		y = 13
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_ELIMINATE_THE_LEFTISTS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_PARTIAL_PROCESS }
+		x = 7
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_BERIA_IS_THE_ONLY_GUIDE
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_ELIMINATE_THE_LEFTISTS }
+		x = 7
+		y = 15
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_IMPARTIAL_PROCESS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_BERIA_AFFAIR }
+		mutually_exclusive = { focus = SOV_PARTIAL_PROCESS }
+		x = 10
+		y = 13
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_A_NEW_LEADER
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_IMPARTIAL_PROCESS }
+		x = 10
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_COUNTINUE_WITH_THE_CIRCLE
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_A_NEW_LEADER }
+		x = 9
+		y = 15
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_LEFTISTS_IN_POWER
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_A_NEW_LEADER }
+		x = 11
+		y = 15
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_THE_GREAT_PURGE
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_BERIA_IS_THE_ONLY_GUIDE focus = SOV_COUNTINUE_WITH_THE_CIRCLE }
+		mutually_exclusive = { focus = SOV_EXILE_BERIA_LOYALISTS }
+		x = 8
+		y = 16
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_NEW_OFFICERS_OF_THE_UNION
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_GREAT_PURGE }
+		x = 8
+		y = 18
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_EXILE_BERIA_LOYALISTS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_LEFTISTS_IN_POWER focus = SOV_COUNTINUE_WITH_THE_CIRCLE }
+		mutually_exclusive = { focus = SOV_THE_GREAT_PURGE }
+		x = 10
+		y = 16
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_FRESH_BLOOD_FOR_THE_REVOLUTION
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_EXILE_BERIA_LOYALISTS }
+		x = 10
+		y = 18
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_THE_NEW_REGIME
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_LEFTISTS_IN_POWER }
+		x = 11
+		y = 17
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_MOVE_OUT_OF_MOSCOW
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_COUNTINUE_WITH_THE_CIRCLE }
+		x = 9
+		y = 17
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_LENINGRAD_IS_THE_NEW_PROLETARIAT_CITY
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_MOVE_OUT_OF_MOSCOW }
+		prerequisite = { focus = SOV_NEW_OFFICERS_OF_THE_UNION focus = SOV_FRESH_BLOOD_FOR_THE_REVOLUTION }
+		x = 9
+		y = 19
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_THE_HARDLINE_UNION
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_LENINGRAD_IS_THE_NEW_PROLETARIAT_CITY }
+		x = 9
+		y = 20
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_PUNISH_THE_PRAVDA
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_BERIA_IS_THE_ONLY_GUIDE }
+		x = 7
+		y = 17
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_TRUST_NO_ONE
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_NEW_OFFICERS_OF_THE_UNION }
+		prerequisite = { focus = SOV_PUNISH_THE_PRAVDA }
+		x = 7
+		y = 19
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_NOT_EVEN_YOURSELF
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_TRUST_NO_ONE }
+		mutually_exclusive = { focus = SOV_ONLY_BERIA }
+		x = 6
+		y = 20
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_ONLY_BERIA
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_TRUST_NO_ONE }
+		mutually_exclusive = { focus = SOV_NOT_EVEN_YOURSELF }
+		x = 8
+		y = 20
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_CLEANSE_MOSCOW
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_NEW_REGIME }
+		prerequisite = { focus = SOV_FRESH_BLOOD_FOR_THE_REVOLUTION }
+		x = 11
+		y = 19
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_THE_REVOLUTION_NEVER_ENDS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_CLEANSE_MOSCOW }
+		x = 11
+		y = 20
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_THE_RIGHTIST_COALITION
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_FIRST_CONGRESS_OF_THE_SOVIET_UNION }
+		x = 21
+		y = 7
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_OUT_WITH_BERIA
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_RIGHTIST_COALITION }
+		x = 21
+		y = 8
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_LIMIT_THE_PROLETARIAN_INFLUENCE
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_OUT_WITH_BERIA }
+		x = 22
+		y = 9
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_PROMOTE_FREE_SPEECH
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_LIMIT_THE_PROLETARIAN_INFLUENCE }
+		x = 22
+		y = 10
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_GRANT_NON_PARTY_WORKER_REPRESENTATION
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_OUT_WITH_BERIA }
+		x = 20
+		y = 9
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_INTEGRATE_THE_PROFSOYUZY
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_GRANT_NON_PARTY_WORKER_REPRESENTATION }
+		x = 20
+		y = 10
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_ASSERT_THE_REPUBLICS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_INTEGRATE_THE_PROFSOYUZY }
+		prerequisite = { focus = SOV_PROMOTE_FREE_SPEECH }
+		x = 21
+		y = 11
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_A_CENTRALIZED_GOVERNMENT
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_ASSERT_THE_REPUBLICS }
+		mutually_exclusive = { focus = SOV_A_DECENTRALIZED_UNION }
+		x = 19
+		y = 12
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_CENTRALIZE_THE_PROFSOYUZY
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_A_CENTRALIZED_GOVERNMENT }
+		x = 18
+		y = 13
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_PROMOTE_THE_SEP_MEN
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_A_CENTRALIZED_GOVERNMENT }
+		x = 20
+		y = 13
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_SELL_THE_FARMLAND
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_PROMOTE_THE_SEP_MEN }
+		prerequisite = { focus = SOV_CENTRALIZE_THE_PROFSOYUZY }
+		x = 19
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_INTERNAL_RESTRUCTURING
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_PROMOTE_THE_SEP_MEN }
+		prerequisite = { focus = SOV_CENTRALIZE_THE_PROFSOYUZY }
+		x = 17
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_EXILE_THE_NATURALISTS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_INTERNAL_RESTRUCTURING }
+		prerequisite = { focus = SOV_SELL_THE_FARMLAND }
+		x = 16
+		y = 15
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_CENTRALIZE_THE_BUREACRACY
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_INTERNAL_RESTRUCTURING }
+		prerequisite = { focus = SOV_SELL_THE_FARMLAND }
+		x = 18
+		y = 15
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_EXPAND_THE_ELECTORATE
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_CENTRALIZE_THE_BUREACRACY }
+		prerequisite = { focus = SOV_EXILE_THE_NATURALISTS }
+		x = 17
+		y = 16
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_SOCIALISM_IN_ONE_COUNTRY
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_CENTRALIZE_THE_BUREACRACY }
+		prerequisite = { focus = SOV_EXILE_THE_NATURALISTS }
+		x = 19
+		y = 16
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_THE_NEW_RUSSIAN_RULING_CLASS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_SOCIALISM_IN_ONE_COUNTRY }
+		prerequisite = { focus = SOV_EXPAND_THE_ELECTORATE }
+		x = 19
+		y = 17
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_THEY_WILL_GROW_INTO_COMMUNISM
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_NEW_RUSSIAN_RULING_CLASS }
+		x = 18
+		y = 18
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_EXPAND_CURRENCY_PRINTING
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_THE_NEW_RUSSIAN_RULING_CLASS }
+		x = 20
+		y = 18
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_COMMUNISM_WITH_RUSSIAN_CHARACTERISTIC
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_EXPAND_CURRENCY_PRINTING }
+		x = 20
+		y = 19
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_A_DECENTRALIZED_UNION
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_ASSERT_THE_REPUBLICS }
+		mutually_exclusive = { focus = SOV_A_CENTRALIZED_GOVERNMENT }
+		x = 23
+		y = 12
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_GRANT_FREEDOM_OF_ASSOCIATION
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_A_DECENTRALIZED_UNION }
+		x = 24
+		y = 13
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_GRANT_THE_PROFSOYUZY_RIGHTS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_GRANT_FREEDOM_OF_ASSOCIATION focus = SOV_PROMOTE_THE_SEP_MEN }
+		x = 22
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_NEW_INDUSTRIAL_GRANTS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_GRANT_THE_PROFSOYUZY_RIGHTS }
+		mutually_exclusive = { focus = SOV_COLLECTIVE_FARMS }
+		x = 21
+		y = 15
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_COLLECTIVE_FARMS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_GRANT_THE_PROFSOYUZY_RIGHTS }
+		mutually_exclusive = { focus = SOV_NEW_INDUSTRIAL_GRANTS }
+		x = 23
+		y = 15
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_PRIORITIZE_THE_INDUSTRY
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_COLLECTIVE_FARMS focus = SOV_NEW_INDUSTRIAL_GRANTS }
+		mutually_exclusive = { focus = SOV_PRIORITIZE_THE_FARMERS }
+		x = 21
+		y = 16
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_PRIORITIZE_THE_FARMERS
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_COLLECTIVE_FARMS focus = SOV_NEW_INDUSTRIAL_GRANTS }
+		mutually_exclusive = { focus = SOV_PRIORITIZE_THE_INDUSTRY }
+		x = 23
+		y = 16
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_DECOLLECTIVIZE_THE_INDUSTRY
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_PRIORITIZE_THE_FARMERS focus = SOV_PRIORITIZE_THE_INDUSTRY }
+		mutually_exclusive = { focus = SOV_COLLECTIVIZE_THE_INDUSTRY }
+		x = 21
+		y = 17
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_COLLECTIVIZE_THE_INDUSTRY
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_PRIORITIZE_THE_FARMERS focus = SOV_PRIORITIZE_THE_INDUSTRY }
+		mutually_exclusive = { focus = SOV_DECOLLECTIVIZE_THE_INDUSTRY }
+		x = 23
+		y = 17
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_ABSORB_THE_SEP_MEN
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_GRANT_FREEDOM_OF_ASSOCIATION }
+		x = 24
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_REORGANIZE_THE_BUREAUCRACY
+		icon = GFX_unknown
+		prerequisite = { focus = SOV_GRANT_FREEDOM_OF_ASSOCIATION }
+		x = 26
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 10 }
 		completion_reward = {
 
 		}

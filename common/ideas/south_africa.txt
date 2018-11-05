@@ -17,7 +17,7 @@ ideas = {
 			picture = saf_ossewabrandwag
 
 			modifier = {
-				fascism_drift = 0.01
+				labryscism_drift = 0.01
 				industrial_capacity_factory = -0.10
 				industrial_capacity_dockyard = -0.10
 			}
@@ -56,7 +56,7 @@ ideas = {
 			picture = saf_ossewabrandwag_fascism
 
 			modifier = {
-				fascism_drift = 0.01
+				labryscism_drift = 0.01
 				enemy_partisan_effect = -0.1
 				foreign_subversive_activites = -0.4
 			}
@@ -115,7 +115,7 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = 0.5
-				democratic_drift = -0.03
+				liberalism_drift = -0.03
 			}
 
 		}
@@ -135,8 +135,8 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = 0.5
-				democratic_drift = -0.03
-				fascism_drift = 0.03
+				liberalism_drift = -0.03
+				labryscism_drift = 0.03
 			}
 
 		}
@@ -156,8 +156,8 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = 1
-				democratic_drift = -0.03
-				communism_drift = 0.03
+				liberalism_drift = -0.03
+				collectivism_drift = 0.03
 			}
 
 		}

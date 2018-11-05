@@ -1,6 +1,6 @@
 ﻿capital = 59
 
-#OOB = "HAN_1928"
+##OOB = "HAN_1928"
 
 set_technology = {
 	infantry_weapons = 1
@@ -12,23 +12,23 @@ set_politics = {
 
 	parties = {
 		liberalism = { 
-			popularity = 30
+			popularity = 10
 		}
 
 		rexism = {
-			popularity = 0
+			popularity = 20
 		}
 		
 		proletarianism = {
 			popularity = 10
 		}
 		
-		absolutism = { 
+		royalism = { 
 			popularity = 60
 		}
 	}
 	
-	ruling_party = absolutism
+	ruling_party = royalism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no

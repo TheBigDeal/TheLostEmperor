@@ -1,4 +1,4 @@
-﻿capital = 489
+﻿capital = 402
 
 ##OOB = "AAC_1928"
 
@@ -11,23 +11,20 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		liberalism = { 
-			popularity = 0
-		}
-
-		rexism = {
-			popularity = 0
-		}
-		
-		proletarianism = {
-			popularity = 10
-		}
-		
-		absolutism = { 
-			popularity = 90
-		}
+		conservatism = { popularity = 2 }
+		liberalism = { popularity = 3	}
+		socialism = { popularity = 12 }
+		labryscism = { popularity = 7	}
+		rexism = { popularity = 11 }
+		despotism = { popularity = 7 }
+		royalism = {popularity = 2 }
+		theocracy = { popularity = 8 }
+		absolutism = { popularity = 30 }
+		proletarianism = {popularity = 1 }
+		collectivism = { popularity = 14 }
+		naturalism = { popularity = 3 }
 	}
-	
+
 	ruling_party = absolutism
 	last_election = "1933.3.5"
 	election_frequency = 48
@@ -53,4 +50,3 @@ set_convoys = 5
 #	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 #	skill = 2
 #}
-

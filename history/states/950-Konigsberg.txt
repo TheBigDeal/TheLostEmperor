@@ -1,0 +1,21 @@
+state={
+	id=950
+	name="STATE_950"
+	history={
+		victory_points = {
+			6332 10
+		}
+		owner = PRS
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+		}
+		add_core_of = PRS
+	}
+	provinces={
+		281 348 395 3384 6332 11265
+	}
+	manpower=5643830
+	state_category=megalopolis
+	buildings_max_level_factor=1.000
+}

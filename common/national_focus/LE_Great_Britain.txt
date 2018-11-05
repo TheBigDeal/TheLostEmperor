@@ -1,18 +1,18 @@
 focus_tree = {
 	id = LEdanish_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = GBR
 		}
 	}
-	
+
 	default = no
 	continuous_focus_position = { x = 50 y = 3100 }
-	
+
 	focus = {
 		id = ENG_GREAT_BRITAIN
 		icon = GFX_goal_generic_national_unity
@@ -26,7 +26,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -41,7 +41,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -56,7 +56,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -71,7 +71,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -86,7 +86,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -101,7 +101,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -116,7 +116,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -131,7 +131,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -146,7 +146,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -164,7 +164,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -178,7 +178,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -192,7 +192,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -206,7 +206,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -220,7 +220,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -235,7 +235,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -250,7 +250,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -264,7 +264,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -278,7 +278,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -292,7 +292,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -307,7 +307,22 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			annex_country = {
+				target = FRA
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = BRI
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = NRM
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = AQU
+				transfer_troops = yes
+			}
 		}
 	}
 	focus = {
@@ -336,7 +351,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -350,7 +365,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -365,7 +380,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -379,7 +394,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -394,7 +409,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -408,7 +423,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -422,7 +437,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -437,7 +452,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -452,7 +467,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -467,7 +482,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -482,7 +497,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -496,7 +511,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -511,6 +526,6 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}

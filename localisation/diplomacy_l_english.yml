@@ -1,6 +1,7 @@
 ﻿l_english:
  #MOD
  HRE_relations:0 "Member of the Holy Roman Empire"
+ sent_envoy:0 "Diplomatic Connections"
  #############
  DIPLO_POSITIVE:0 "Positive: $VAL|G$"
  DIPLO_NEGATIVE:0 "Negative: $VAL|R$"

@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 20
 			tag = GER
 		}
 	}
@@ -533,7 +533,7 @@ focus_tree = {
 		cost = 10
 		available = {
 			AND = {
-				country_exists = AUS 
+				country_exists = AUS
 				OR = {
 					AUS = {
 							owns_state = 43
@@ -560,7 +560,7 @@ focus_tree = {
 		cost = 10
 		available = {
 			AND = {
-				country_exists = AUS 
+				country_exists = AUS
 				OR = {
 					AUS = {
 							owns_state = 43
@@ -587,7 +587,7 @@ focus_tree = {
 		cost = 10
 		available = {
 			AND = {
-				country_exists = AUS 
+				country_exists = AUS
 				OR = {
 					AUS = {
 							owns_state = 43
@@ -1478,8 +1478,8 @@ focus_tree = {
 
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = GER_REMOVE_RADICALS_IN_CENTRAL_EUROPE
 		icon = GFX_goal_generic_attack_allies
@@ -2884,7 +2884,7 @@ focus_tree = {
 		id = GER_TRANSYLVANIA_IS_HUNGARIAN
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = GER_ALIGN_HUNGARY }
-		mutually_exclusive = { focus = GER_TRANSYLVANIA_IS_ROMANIAN } 
+		mutually_exclusive = { focus = GER_TRANSYLVANIA_IS_ROMANIAN }
 		x = 59
 		y = 13
 		cost = 10
@@ -2913,7 +2913,7 @@ focus_tree = {
 		id = GER_TRANSYLVANIA_IS_ROMANIAN
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = GER_ALIGN_THE_ROMANIAN_STATES }
-		mutually_exclusive = { focus = GER_TRANSYLVANIA_IS_HUNGARIAN } 
+		mutually_exclusive = { focus = GER_TRANSYLVANIA_IS_HUNGARIAN }
 		x = 61
 		y = 13
 		cost = 10
@@ -3199,7 +3199,7 @@ focus_tree = {
 
 		}
 	}
-	
-	
-	
+
+
+
 }

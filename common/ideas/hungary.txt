@@ -59,7 +59,7 @@ ideas = {
 			}
 			
 			modifier = {
-				neutrality_drift = 0.02
+				absolutism_drift = 0.02
 			}
 		}
 
@@ -72,7 +72,7 @@ ideas = {
 			}
 			
 			modifier = {
-				neutrality_drift = 0.02
+				absolutism_drift = 0.02
 				stability_factor = 0.1
 			}
 		}
@@ -84,7 +84,7 @@ ideas = {
 			}
 			
 			modifier = {
-				democratic_drift = 0.02
+				liberalism_drift = 0.02
 				stability_factor = 0.1
 			}
 		}
@@ -96,7 +96,7 @@ ideas = {
 			}
 			
 			modifier = {
-				fascism_drift = 0.034
+				labryscism_drift = 0.034
 				stability_factor = 0.1
 			}
 		}
@@ -110,9 +110,9 @@ ideas = {
 			}
 			
 			modifier = {
-				democratic_drift = 0.02
-				fascism_drift = -0.01
-				communism_drift = -0.01
+				liberalism_drift = 0.02
+				labryscism_drift = -0.01
+				collectivism_drift = -0.01
 				stability_factor = 0.1
 			}
 		}
@@ -126,7 +126,7 @@ ideas = {
 			}
 			
 			modifier = {
-				neutrality_drift = 0.02
+				absolutism_drift = 0.02
 				stability_factor = 0.1
 				political_power_factor = 0.2
 				generate_wargoal_tension = -0.25
@@ -140,7 +140,7 @@ ideas = {
 			}
 			
 			modifier = {
-				democratic_drift = 0.02
+				liberalism_drift = 0.02
 			}
 		}
 
@@ -157,10 +157,10 @@ ideas = {
 
 		HUN_strengthen_fascists = {
 
-			picture = generic_fascism_drift_2
+			picture = generic_labryscism_drift_2
 			
 			modifier = {
-				fascism_drift = 0.03
+				labryscism_drift = 0.03
 			}
 		}
 
@@ -189,7 +189,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.05
-				communism_drift = 0.02
+				collectivism_drift = 0.02
 			}
 		}
 

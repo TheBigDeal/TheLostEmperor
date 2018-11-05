@@ -385,7 +385,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			picture = generic_democratic_drift_bonus
+			picture = generic_liberalism_drift_bonus
 			modifier = {
 				drift_defence_factor = 0.5
 			}
@@ -398,9 +398,9 @@ ideas = {
 			}
 
 			removal_cost = -1
-			picture = generic_democratic_drift_bonus
+			picture = generic_liberalism_drift_bonus
 			modifier = {
-				democratic_drift = 0.05
+				liberalism_drift = 0.05
 			}
 		} 
 		american_protection_defence_democratic = {
@@ -426,7 +426,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_intel_bonus
 			modifier = {
-				democratic_drift = 0.05
+				liberalism_drift = 0.05
 			}			
 		}
 			# idea for the protect Amercians focus - USA communist
@@ -438,7 +438,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			picture = generic_communism_drift_bonus
+			picture = generic_collectivism_drift_bonus
 			modifier = {
 				drift_defence_factor = 0.5
 			}
@@ -451,9 +451,9 @@ ideas = {
 			}
 
 			removal_cost = -1
-			picture = generic_communism_drift_bonus
+			picture = generic_collectivism_drift_bonus
 			modifier = {
-				communism_drift = 0.05
+				collectivism_drift = 0.05
 			}
 		} 
 		american_protection_defence_communism = {
@@ -479,7 +479,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_intel_bonus
 			modifier = {
-				communism_drift = 0.05
+				collectivism_drift = 0.05
 			}			
 		}
 			# idea for the protect Amercians focus - USA fascist
@@ -491,7 +491,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			picture = generic_fascism_drift_bonus
+			picture = generic_labryscism_drift_bonus
 			modifier = {
 				drift_defence_factor = 0.5
 			}
@@ -504,9 +504,9 @@ ideas = {
 			}
 
 			removal_cost = -1
-			picture = generic_fascism_drift_bonus
+			picture = generic_labryscism_drift_bonus
 			modifier = {
-				fascism_drift = 0.05
+				labryscism_drift = 0.05
 			}
 		} 
 		american_protection_defence_fascism = {
@@ -532,7 +532,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_intel_bonus
 			modifier = {
-				fascism_drift = 0.05
+				labryscism_drift = 0.05
 			}			
 		}
 		USA_world_police = {

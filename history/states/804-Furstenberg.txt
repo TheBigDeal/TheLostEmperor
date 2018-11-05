@@ -6,7 +6,7 @@ state={
 	history={
 		owner = FUS
 		victory_points = {
-			3679 1
+			3679 1 
 		}
 		buildings = {
 			infrastructure = 6
@@ -19,7 +19,7 @@ state={
 	}
 
 	provinces={
-		3679 
+		694 
 	}
 	manpower=235163
 	buildings_max_level_factor=1.000

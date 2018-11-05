@@ -8,8 +8,8 @@ state={
 	}
 
 	history={
-		owner = SIK
-		add_core_of = SIK
+		owner = XSM
+		add_core_of = XSM
 		buildings = {
 			infrastructure = 3
 
@@ -18,7 +18,7 @@ state={
 	}
 
 	provinces={
-		1970 2015 4828 5016 7790 7949 8112 12119 
+		1766 1970 2015 4828 5016 5087 7790 7949 8112 12119
 	}
 	manpower=1430700
 	buildings_max_level_factor=1.000

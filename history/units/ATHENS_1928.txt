@@ -33,42 +33,35 @@ units = {
 	division = {
 		name = "Trigonikó Pezikoú"
 		location = 4109
-		division_template = "Trigonikó Pezikoú" 
+		division_template = "Trigonikó Pezikoú"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "Merarchía Ippikoú"
 		location = 4109
-		division_template = "Merarchía Ippikoú" 
+		division_template = "Merarchía Ippikoú"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "Trigonikó Pezikoú"
-		location = 4109
-		division_template = "Trigonikó Pezikoú" 
+		location = 3988
+		division_template = "Trigonikó Pezikoú"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "Trigonikó Pezikoú"
-		location = 976
-		division_template = "Trigonikó Pezikoú" 
+		location = 13222
+		division_template = "Trigonikó Pezikoú"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "Trigonikó Pezikoú"
-		location = 976
-		division_template = "Trigonikó Pezikoú" 
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division = {
-		name = "Trigonikó Pezikoú"
-		location = 976
-		division_template = "Trigonikó Pezikoú" 
+		location = 13222
+		division_template = "Trigonikó Pezikoú"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}

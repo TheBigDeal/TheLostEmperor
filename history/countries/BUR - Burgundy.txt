@@ -16,19 +16,19 @@ set_politics = {
 		}
 
 		rexism = {
-			popularity = 0
+			popularity = 100
 		}
 		
 		proletarianism = {
-			popularity = 10
+			popularity = 0
 		}
 		
 		absolutism = { 
-			popularity = 90
+			popularity = 0
 		}
 	}
 	
-	ruling_party = absolutism
+	ruling_party = rexism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no

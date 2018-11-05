@@ -12,6 +12,10 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/focus_invade_benelux.tga"			
 	}
 	SpriteType = {
+	name = "GFX_francia"
+	texturefile = "gfx/interface/goals/focus_francia.tga"			
+	}	
+	SpriteType = {
 	name = "GFX_kleindeutschland"
 	texturefile = "gfx/interface/goals/focus_kleindeutschland.tga"			
 	}	

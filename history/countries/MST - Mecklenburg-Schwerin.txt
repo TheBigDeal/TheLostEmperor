@@ -10,21 +10,9 @@ set_technology = {
 
 set_politics = {
 
-	parties = {
-		liberalism = { 
-			popularity = 5
-		}
-
-		rexism = {
-			popularity = 0
-		}
-		
-		proletarianism = {
-			popularity = 45
-		}
-		
+	parties = {	
 		absolutism = { 
-			popularity = 50
+			popularity = 100
 		}
 	}
 	

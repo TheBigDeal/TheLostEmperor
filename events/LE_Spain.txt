@@ -1,0 +1,230 @@
+﻿###########################
+# German Events
+###########################
+
+add_namespace = le_spain
+
+# SPANISH CIVIL WAR
+country_event = {
+	id = le_spain.1
+	title = le_spain.1.t
+	desc = le_spain.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	fire_only_once = yes
+	immediate = {
+		if = {
+			limit = {
+				MEX = { is_subject_of = SPR }
+			}
+			MEX = { country_event = { id = le_spain.2 days = 10 } }
+		}
+		if = {
+			limit = {
+				TEX = { is_subject_of = SPR }
+			}
+			TEX = { country_event = { id = le_spain.2 days = 10 } }
+		}
+		if = {
+			limit = {
+				UPP = { is_subject_of = SPR }
+			}
+			UPP = { country_event = { id = le_spain.2 days = 10 } }
+		}
+		if = {
+			limit = {
+				LOU = { is_subject_of = SPR }
+			}
+			LOU = { country_event = { id = le_spain.2 days = 10 } }
+		}
+		if = {
+			limit = {
+				GUA = { is_subject_of = SPR }
+			}
+			GUA = { country_event = { id = le_spain.2 days = 10 } }
+		}
+		if = {
+			limit = {
+				COL = { is_subject_of = SPR }
+			}
+			COL = { country_event = { id = le_spain.2 days = 10 } }
+		}
+		if = {
+			limit = {
+				PRU = { is_subject_of = SPR }
+			}
+			PRU = { country_event = { id = le_spain.2 days = 10 } }
+		}
+		if = {
+			limit = {
+				ARG = { is_subject_of = SPR }
+			}
+			ARG = { country_event = { id = le_spain.2 days = 10 } }
+		}
+		if = {
+			limit = {
+				PAT = { is_subject_of = SPR }
+			}
+			PAT = { country_event = { id = le_spain.2 days = 10 } }
+		}
+		load_oob = SPR_Civil_War
+		HAB = { transfer_state = 165 }
+	}
+	trigger = {
+		tag = SPR
+		has_defensive_war = no
+		date > 1937.2.16
+	}
+	mean_time_to_happen = {
+		days = 160
+	}
+	option = { # Support Bourbons
+		name = le_spain.1.a
+		SPR = { transfer_state = 165 }
+		hidden_effect = {
+			start_civil_war = {
+				ruling_party = absolutism
+				ideology = royalism
+				size = 0.5
+				capital = 865
+				states = { 865 165 866 166 167 172 176 174 171 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = royalism
+				}
+				HAB = { transfer_state = 865 }
+				HAB = { annex_country = { target = PREV transfer_troops = yes } }
+			}
+			HAB = {
+				set_capital = 865
+				set_equipment_fraction = 0.5
+				set_stability = 0.9
+				set_war_support = 0.8
+				add_popularity = { ideology = royalism popularity = 1 }
+				add_popularity = { ideology = collectivism popularity = 0.3 }
+				add_popularity = { ideology = socialism popularity = 0.1 }
+				add_popularity = { ideology = conservatism popularity = 0.15 }
+				add_popularity = { ideology = liberalism popularity = 0.15 }
+				set_cosmetic_tag = HABSBURG_SPAIN
+			}
+			set_cosmetic_tag = BOURBON_SPAIN
+			set_equipment_fraction = 0.5
+			set_stability = 0.9
+			set_war_support = 0.8
+			add_popularity = { ideology = absolutism popularity = 1 }
+			add_popularity = { ideology = rexism popularity = 0.4 }
+			HAB = { declare_war_on = { target = SPR type = annex_everything } }
+		}
+	}
+	option = { # Support Habsburgs
+		name = le_spain.1.b
+		hidden_effect = {
+			load_oob = SPR_Civil_War
+			set_capital = 41
+			start_civil_war = {
+				ruling_party = absolutism
+				ideology = royalism
+				size = 0.5
+				capital = 865
+				states = { 865 165 866 166 167 172 176 174 171 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = royalism
+				}
+				HAB = { annex_country = { target = PREV transfer_troops = yes } }
+			}
+			HAB = {
+				set_capital = 865
+				set_equipment_fraction = 0.5
+				set_stability = 0.9
+				set_war_support = 0.8
+				add_popularity = { ideology = royalism popularity = 1 }
+				add_popularity = { ideology = collectivism popularity = 0.3 }
+				add_popularity = { ideology = socialism popularity = 0.1 }
+				add_popularity = { ideology = conservatism popularity = 0.15 }
+				add_popularity = { ideology = liberalism popularity = 0.15 }
+			}
+			set_cosmetic_tag = BOURBON_SPAIN
+			set_equipment_fraction = 0.5
+			set_stability = 0.9
+			set_war_support = 0.8
+			add_popularity = { ideology = absolutism popularity = 1 }
+			add_popularity = { ideology = rexism popularity = 0.4 }
+			HAB = { change_tag_from = SPR }
+			HAB = { declare_war_on = { target = SPR type = annex_everything } }
+		}
+	}
+}
+
+country_event = { #COLONIES
+	id = le_spain.2
+	title = le_spain.2.t
+	desc = le_spain.2.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	fire_only_once = no
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 160
+	}
+	option = { # Support Bourbon Spain
+		name = le_spain.2.a
+		SPR = {
+			puppet = ROOT
+			#set_country_flag = SUPPORTING_BOURBONS
+			#country_event = { id = le_spain.3 days = 1 }
+		}
+	}
+	option = { # Support Habsburgs
+		name = le_spain.2.b
+		HAB = {
+			puppet = ROOT
+			#set_country_flag = SUPPORTING_HABSBURGS
+			#country_event = { id = le_spain.3 days = 1 }
+		}
+	}
+	option = { # Declare Independence
+		name = le_spain.2.c
+		end_puppet = ROOT
+	}
+}
+
+
+country_event = { #CALL_TO_WAR
+	id = le_spain.3
+	title = le_spain.3.t
+	desc = le_spain.3.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = le_spain.3.a
+		if = {
+			limit = {
+				FROM = { has_country_flag = SUPPORTING_HABSBURGS }
+			}
+			FROM = {
+				add_to_war = {
+					targeted_alliance = HAB
+					enemy = SPR
+					hostility_reason = asked_to_join
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = { has_country_flag = SUPPORTING_BOURBONS }
+			}
+			FROM = {
+				add_to_war = {
+					targeted_alliance = SPR
+					enemy = HAB
+					hostility_reason = asked_to_join
+				}
+			}
+		}
+	}
+}

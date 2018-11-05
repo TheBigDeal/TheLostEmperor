@@ -7,7 +7,7 @@ ideas = {
 				always = no # Triggered via event
 			}
 
-			picture = generic_fascism_drift_bonus
+			picture = generic_labryscism_drift_bonus
 			
 			modifier = {
 				stability_factor = -0.05
@@ -26,7 +26,7 @@ ideas = {
 				always = no # Triggered via event
 			}
 
-			picture = generic_communism_drift_bonus
+			picture = generic_collectivism_drift_bonus
 			
 			modifier = {
 				conscription = -0.002
@@ -43,7 +43,7 @@ ideas = {
 				always = no # Triggered via event
 			}
 
-			picture = generic_communism_drift_bonus
+			picture = generic_collectivism_drift_bonus
 			
 			modifier = {
 				conscription = -0.002
@@ -60,7 +60,7 @@ ideas = {
 				always = no # Triggered via event
 			}
 
-			picture = generic_communism_drift_bonus
+			picture = generic_collectivism_drift_bonus
 			
 			modifier = {
 				conscription = -0.002
@@ -130,7 +130,7 @@ ideas = {
 			available = {
 				always = no # Triggered via event
 			}
-			picture = generic_fascism_drift_bonus
+			picture = generic_labryscism_drift_bonus
 			modifier = {
 				stability_factor = -0.1
 			}
@@ -140,7 +140,7 @@ ideas = {
 			available = {
 				always = no # Triggered via event
 			}
-			picture = generic_communism_drift_bonus
+			picture = generic_collectivism_drift_bonus
 			modifier = {
 				stability_factor = -0.1
 			}
@@ -150,7 +150,7 @@ ideas = {
 			available = {
 				always = no # Triggered via event
 			}
-			picture = generic_communism_drift_bonus
+			picture = generic_collectivism_drift_bonus
 			modifier = {
 				stability_factor = -0.1
 			}
@@ -160,7 +160,7 @@ ideas = {
 			available = {
 				always = no # Triggered via event
 			}
-			picture = generic_communism_drift_bonus
+			picture = generic_collectivism_drift_bonus
 			modifier = {
 				stability_factor = -0.1
 			}
@@ -220,7 +220,7 @@ ideas = {
 			available = {
 				always = no # Triggered via event
 			}
-			picture = generic_fascism_drift_bonus
+			picture = generic_labryscism_drift_bonus
 			modifier = {
 				stability_factor = -0.1
 			}
@@ -230,7 +230,7 @@ ideas = {
 			available = {
 				always = no # Triggered via event
 			}
-			picture = generic_fascism_drift_bonus
+			picture = generic_labryscism_drift_bonus
 			modifier = {
 				stability_factor = -0.1
 			}
@@ -309,7 +309,7 @@ ideas = {
 
 		anti_soviet_pact_refused_call = {
 
-			picture = generic_communism_drift_bonus
+			picture = generic_collectivism_drift_bonus
 			
 			removal_cost = -1 # Or make removable, with high cost?
 			

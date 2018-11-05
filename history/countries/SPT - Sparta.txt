@@ -1,34 +1,38 @@
 ﻿capital = 186
 
-##OOB = "SPARTA_1928"
+OOB = "SPARTA_1928"
 
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1
 	tech_recon = 1
 }
-
+add_ideas = {
+	scraping_the_barrel
+	war_economy
+	brutal_civil_war
+	SPT_legacy_of_leonidas
+}
 set_politics = {
 
 	parties = {
-		
-		absolutism = {
-			popularity = 5
-		}
-		
-		rexism = {
-			popularity = 25
-		}
-		
-		labryscism = { 
-			popularity = 70
-		}
+		conservatism = { popularity = 3 }
+		liberalism = { popularity = 2	}
+		socialism = { popularity = 1 }
+		labryscism = { popularity = 50 }
+		rexism = { popularity = 20 }
+		despotism = { popularity = 10 }
+		royalism = {popularity = 5 }
+		theocracy = { popularity = 1 }
+		absolutism = { popularity = 5 }
+		proletarianism = {popularity = 1 }
+		collectivism = { popularity = 1 }
+		naturalism = { popularity = 1 }
 	}
-	
+
 	ruling_party = labryscism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
-
 set_convoys = 5

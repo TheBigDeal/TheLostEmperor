@@ -34,13 +34,8 @@ if = {
 		target = SAF
 		autonomous_state = autonomy_dominion
 	}
-	set_autonomy = {
-		target = MST
-		autonomous_state = autonomy_personal_union
-	}
 	else = {
 		puppet = INS
-		puppet = MST
 		puppet = SAF
 	}
 }

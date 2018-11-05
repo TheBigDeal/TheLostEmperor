@@ -1,13 +1,17 @@
 ﻿capital = 185
 
-##OOB = "HELLENIC_COMMUNE_1928"
+OOB = "HELLENIC_COMMUNE_1928"
 
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1
 	tech_recon = 1
 }
-
+add_ideas = {
+	scraping_the_barrel
+	war_economy
+	brutal_civil_war
+}
 set_politics = {
 
 	parties = {
@@ -15,16 +19,15 @@ set_politics = {
 		proletarianism = {
 			popularity = 8
 		}
-		
-		collectivism = { 
+
+		collectivism = {
 			popularity = 92
 		}
 	}
-	
+
 	ruling_party = collectivism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
-
 set_convoys = 5

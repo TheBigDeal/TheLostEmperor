@@ -16,23 +16,20 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		liberalism = { 
-			popularity = 20
-		}
-
-		rexism = {
-			popularity = 15
-		}
-		
-		proletarianism = {
-			popularity = 15
-		}
-		
-		absolutism = { 
-			popularity = 50
-		}
+		conservatism = { popularity = 10 }
+		liberalism = { popularity = 4	}
+		socialism = { popularity = 2 }
+		labryscism = { popularity = 5	}
+		rexism = { popularity = 11 }
+		despotism = { popularity = 2 }
+		royalism = {popularity = 8 }
+		theocracy = { popularity = 12 }
+		absolutism = { popularity = 35 }
+		proletarianism = {popularity = 3 }
+		collectivism = { popularity = 3 }
+		naturalism = { popularity = 5 }
 	}
-	
+
 	ruling_party = absolutism
 	last_election = "1931.10.3"
 	election_frequency = 108

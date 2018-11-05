@@ -4,18 +4,17 @@ state={
 	name="STATE_80"
 
 	history={
-		owner = MOL
+		owner = GAL
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1
 
 		}
-		add_core_of = MOL
-
+		add_core_of = GAL
 	}
 
 	provinces={
-		577 3743 9548 
+		577 3743 9548
 	}
 	manpower=474600
 	buildings_max_level_factor=1.000

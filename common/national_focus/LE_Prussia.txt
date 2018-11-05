@@ -1,18 +1,18 @@
 focus_tree = {
 	id = prussian_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = PRS
 		}
 	}
-	
+
 	default = no
 	continuous_focus_position = { x = 50 y = 1800 }
-	
+
 	focus = {
 		id = PRS_HOLY_ROMAN_EMPEROR
 		icon = GFX_focus_hun_elect_a_king
@@ -29,7 +29,7 @@ focus_tree = {
 
 		}
 	}
-	
+
 	focus = {
 		id = PRS_OATHS_OF_LOYALTY
 		icon = GFX_focus_renounce_the_treaty_of_trianon
@@ -45,7 +45,7 @@ focus_tree = {
 			hidden_effect = { transfer_state = 801 }
 		}
 	}
-	
+
 	focus = {
 		id = PRS_UNITE_THE_KAISERREICH
 		icon = GFX_focus_ger_revive_kaiserreich
@@ -63,9 +63,9 @@ focus_tree = {
 				}
 				GER = { puppet = POL }
 			}
-			GER = { 
-				create_country_leader = { name = "Fredrick Wilhelm II" desc = "POLITICS_PETER_II_DESC" picture = "Portrait_Prussia_Wilhelm.dds" expire = "1942.4.6" ideology = absolutism_ideology traits = { Political_Dancer Warmonger } } 
-				annex_country = { target = PRS transfer_troops = yes } 
+			GER = {
+				create_country_leader = { name = "Fredrick Wilhelm II" desc = "POLITICS_PETER_II_DESC" picture = "Portrait_Prussia_Wilhelm.dds" expire = "1942.4.6" ideology = absolutism_ideology traits = { Political_Dancer Warmonger } }
+				annex_country = { target = PRS transfer_troops = yes }
 				change_tag_from = PRS
 			}
 		}
@@ -83,7 +83,7 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-		
+
 		}
 	}
 	focus = {
@@ -147,25 +147,25 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = TT_berlin_conference
 			SAX = { country_event = le_prussia.5 }
-			#MCH = { country_event = le_prussia.5 }
-			#VRP = { country_event = le_prussia.5 }
-			#MST = { country_event = le_prussia.5 }
-			#HAN = { country_event = le_prussia.5 }
-			#HAM = { country_event = le_prussia.5 }
-			#LUB = { country_event = le_prussia.5 }
-			#HLS = { country_event = le_prussia.5 }
-			#BRE = { country_event = le_prussia.5 }
-			#OLD = { country_event = le_prussia.5 }
-			#EFR = { country_event = le_prussia.5 }
-			#BRU = { country_event = le_prussia.5 }
-			#ANH = { country_event = le_prussia.5 }
-			#RAV = { country_event = le_prussia.5 }
-			#MUN = { country_event = le_prussia.5 }
-			#PAD = { country_event = le_prussia.5 }
-			#PYR = { country_event = le_prussia.5 }
-			#KLE = { country_event = le_prussia.5 }
-			#JUL = { country_event = le_prussia.5 }
-			#CLG = { country_event = le_prussia.5 }
+			MCH = { country_event = le_prussia.5 }
+			VRP = { country_event = le_prussia.5 }
+			MST = { country_event = le_prussia.5 }
+			HAN = { country_event = le_prussia.5 }
+			HAM = { country_event = le_prussia.5 }
+			LUB = { country_event = le_prussia.5 }
+			HLS = { country_event = le_prussia.5 }
+			BRE = { country_event = le_prussia.5 }
+			OLD = { country_event = le_prussia.5 }
+			EFR = { country_event = le_prussia.5 }
+			BRU = { country_event = le_prussia.5 }
+			ANH = { country_event = le_prussia.5 }
+			RAV = { country_event = le_prussia.5 }
+			MUN = { country_event = le_prussia.5 }
+			PAD = { country_event = le_prussia.5 }
+			PYR = { country_event = le_prussia.5 }
+			KLE = { country_event = le_prussia.5 }
+			JUL = { country_event = le_prussia.5 }
+			CLG = { country_event = le_prussia.5 }
 		}
 	}
 	focus = {
@@ -194,7 +194,7 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-		
+
 		}
 	}
 	focus = {
@@ -209,7 +209,7 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-		
+
 		}
 	}
 	focus = {
@@ -223,7 +223,7 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-		
+
 		}
 	}
 	focus = {
@@ -238,7 +238,7 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-		
+
 		}
 	}
 	focus = {
@@ -253,7 +253,7 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-		
+
 		}
 	}
 	focus = {
@@ -268,7 +268,7 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-		
+
 		}
 	}
 	focus = {
@@ -282,7 +282,7 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-		
+
 		}
 	}
 	focus = {
@@ -297,7 +297,7 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-		
+
 		}
 	}
 	focus = {
@@ -312,7 +312,7 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-		
+
 		}
 	}
 	focus = {
@@ -326,7 +326,7 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-		
+
 		}
 	}
 	focus = {
@@ -340,7 +340,7 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-		
+
 		}
 	}
 	focus = {
@@ -354,7 +354,7 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-		
+
 		}
 	}
 	focus = {
@@ -368,7 +368,7 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-		
+
 		}
 	}
 	focus = {
@@ -382,7 +382,7 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-		
+
 		}
 	}
 	focus = {
@@ -396,7 +396,7 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-		
+
 		}
 	}
 	focus = {
@@ -410,7 +410,7 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-		
+
 		}
 	}
 	focus = {
@@ -425,7 +425,6 @@ focus_tree = {
 			factor = 0
 		}
 		completion_reward = {
-		
+
 		}
 	}
-	

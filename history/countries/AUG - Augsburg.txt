@@ -1,4 +1,4 @@
-﻿capital = 747
+﻿capital = 766
 
 ##OOB = "ALB_1936"
 
@@ -11,24 +11,12 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		liberalism = { 
-			popularity = 60
-		}
-
-		rexism = {
-			popularity = 0
-		}
-		
-		proletarianism = {
-			popularity = 5
-		}
-		
-		absolutism = { 
-			popularity = 35
+		despotism = { 
+			popularity = 100
 		}
 	}
 	
-	ruling_party = absolutism
+	ruling_party = despotism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no

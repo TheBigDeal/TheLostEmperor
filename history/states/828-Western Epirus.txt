@@ -3,20 +3,20 @@ state={
 	name="STATE_828"
 	
 	history={
-		owner = HEL
+		owner = GRE
 		buildings = {
 			infrastructure = 6
 			arms_factory = 2
 			air_base = 5
 
 		}
-		add_core_of = HEL
+		add_core_of = GRE
 	}
-	
+
 	state_category=town
-	
+
 	provinces={
-		1106 10203 
+		1106 10203
 	}
 	manpower=435653
 	buildings_max_level_factor=1.000

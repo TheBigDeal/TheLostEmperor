@@ -1,0 +1,31 @@
+﻿###########################
+# austrian Events
+###########################
+
+add_namespace = le_alash
+
+#ALASH AUTONOMY DECLARES UNION
+country_event = {
+	id = le_alash.1
+	title = le_alash.1.t
+	desc = le_alash.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			ALH = {
+				transfer_state = 587
+				transfer_state = 402
+				transfer_state = 407
+				transfer_state = 406
+				transfer_state = 404
+				transfer_state = 588
+				set_cosmetic_tag = ALASH_AUTONOMY
+			}
+		}
+	}
+	option = {
+		name = le_alash.1.a
+		country_event = { id = le_chooseideology.1 }
+	}
+}

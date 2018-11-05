@@ -1,5 +1,20 @@
 ﻿l_english:
 #MOD
+ SOV_COLOR_UKR_collectivism:0 "Ukrainian Soviet Socialist Republic"
+ SOV_COLOR_BLR_collectivism:0 "Byelorussian Soviet Socialist Republic"
+ SOV_COLOR_BSSR_collectivism:0 "Baltic Soviet Socialist Republic"
+ SOV_COLOR_LAT_collectivism:0 "Latvian Soviet Socialist Republic"
+ SOV_COLOR_EST_collectivism:0 "Estonian Soviet Socialist Republic"
+ SOV_COLOR_LIT_collectivism:0 "Lithuanian Soviet Socialist Republic"
+ SOV_COLOR_SIK_collectivism:0 "Turkestan Soviet Socialist Republic"
+ SOV_COLOR_KAZ_collectivism:0 "Kazakh Soviet Socialist Republic"
+ SOV_COLOR_CRI_collectivism:0 "Crimean Soviet Socialist Republic"
+
+ SOV_COLOR_TCSSR_collectivism:0 "Transcaucasian Soviet Socialist Republic"
+ SOV_COLOR_GSSR_collectivism:0 "Georgian Soviet Socialist Republic"
+ SOV_COLOR_ASSR_collectivism:0 "Armenian Soviet Socialist Republic"
+ SOV_COLOR_AZSSR_collectivism:0 "Azerbaijan Soviet Socialist Republic"
+
  UNITED_BALTIC_DUCHYS_royalism:0 "United Baltic Duchys"
  UNITED_BALTIC_DUCHYS_absolutism:0 "United Baltic Duchys"
  UNITED_BALTIC_DUCHYS_proletarianism:0 "Baltic Communes"
@@ -9,22 +24,38 @@
  UNITED_BALTIC_DUCHYS_rexism:0 "Baltic Kingdom"
  UNITED_BALTIC_DUCHYS_conservatism:0 "United Baltic States"
  UNITED_BALTIC_DUCHYS_lliberalism:0 "United Baltic States"
- 
- ALASH_AUTONOMY_royalism:0 "Alash Autonomy"
- ALASH_AUTONOMY_absolutism:0 "Alash Autonomy"
+
+ ALASH_AUTONOMY_royalism:0 "Alash Orda"
+ ALASH_AUTONOMY_absolutism:0 "Alash Orda"
  ALASH_AUTONOMY_proletarianism:0 "Alash Socialist Republic"
  ALASH_AUTONOMY_naturalism:0 "Alash Free States"
  ALASH_AUTONOMY_collectivism:0 "Alash Commune"
  ALASH_AUTONOMY_labryscism:0 "Alash Autonomy"
  ALASH_AUTONOMY_rexism:0 "Alash Autonomy"
  ALASH_AUTONOMY_conservatism:0 "Alash Autonomy"
- UALASH_AUTONOMY_liberlaism:0 "Alash Autonomy"
- 
+ ALASH_AUTONOMY_liberlaism:0 "Alash Autonomy"
+
+ Centroamerica_absolutism:0 "Viceroyality of Centroamerica"
+ Centroamerica_royalism:0 "Viceroyality of Centroamerica"
+ Centroamerica_rexism:0 "Viceroyality of Centroamerica"
+
+ ANGEVIN_EMPIRE:0 "Angevin Empire"
  ANGEVIN_EMPIRE_royalism:0 "Angevin Empire"
  ANGEVIN_EMPIRE_absolutism:0 "Angevin Empire"
  ANGEVIN_EMPIRE_rexism:0 "Angevin Empire"
- 
- 
+
+ FRANCIA_theocracy:0 "Francia"
+ FRANCIA_absolutism:0 "Francia"
+ FRANCIA_royalism:0 "Francia"
+
+ HABSBURG_SPAIN_royalism:0 "Habsburg Spain"
+ HABSBURG_SPAIN_absolutism:0 "Habsburg Spain"
+ HABSBURG_SPAIN_rexism:0 "Habsburg Spain"
+
+ BOURBON_SPAIN_royalism:0 "Bourbon Spain"
+ BOURBON_SPAIN_absolutism:0 "Bourbon Spain"
+ BOURBON_SPAIN_rexism:0 "Bourbon Spain"
+
  GREATER_RUTHENIA_royalism:0 "Greater Ruthenia"
  GREATER_RUTHENIA_absolutism:0 "Greater Ruthenia"
  GREATER_RUTHENIA_proletarianism:0 "Greater Ruthenia Union"
@@ -34,27 +65,27 @@
  GREATER_RUTHENIA_rexism:0 "Greater Ruthenia"
  GREATER_RUTHENIA_conservatism:0 "Greater Ruthenian States"
  GREATER_RUTHENIA_liberlaism:0 "Greater Ruthenian States"
- 
+
  HUN_AUS_autonomy_dominion:0 "Hungary"
  HUN_AUS_autonomy_colony:0 "Hungary"
  HUN_AUS_autonomy_puppet:1 "Hungary"
  HUN_AUS_autonomy_integrated_puppet:0 "Hungary"
- 
+
  CRO_AUS_autonomy_dominion:0 "Illyria"
  CRO_AUS_autonomy_colony:0 "Illyria"
  CRO_AUS_autonomy_puppet:1 "Illyria"
  CRO_AUS_autonomy_integrated_puppet:0 "Illyria"
- 
+
  LIT_RUS_autonomy_dominion:0 "Grand Duchy of Lithuania"
  LIT_RUS_autonomy_colony:0 "Grand Duchy of Lithuania"
  LIT_RUS_autonomy_puppet:1 "Grand Duchy of Lithuania"
  LIT_RUS_autonomy_integrated_puppet:0 "Grand Duchy of Lithuania"
- 
+
  SAF_HOL_autonomy_dominion:0 "Kaapkolonie"
  SAF_HOL_autonomy_colony:0 "Kaapkolonie"
  SAF_HOL_autonomy_puppet:1 "Kaapkolonie"
  SAF_HOL_autonomy_integrated_puppet:0 "Kaapkolonie"
- 
+
  SPQR_UNIFIED_absolutism:0 "Roman Empire"
  SPQR_UNIFIED_royalism:0 "Roman Empire"
  SPQR_UNIFIED_conservatism:0 "Roman Republic"
@@ -63,7 +94,7 @@
  SPQR_UNIFIED_royalism_ADJ:0 "Roman"
  SPQR_UNIFIED_conservatism_ADJ:0 "Roman"
  SPQR_UNIFIED_liberalism_ADJ:0 "Roman"
- 
+
  BYZ_UNIFIED_absolutism:0 "Byzantium"
  BYZ_UNIFIED_rexism:0 "Byzantium"
  BYZ_UNIFIED_liberal:0 "Byzantine Republic"
@@ -72,7 +103,7 @@
  BYZ_UNIFIED_rexism_DEF:0 "the Byzantine Empire"
  BYZ_UNIFIED_liberal_DEF:0 "the Byzantine Republic"
  BYZ_UNIFIED_collectivist_DEF:0 "the Byzantine Commune"
- 
+
  HRE_UNIFIED_neutrality:0 "Holy Roman Empire"
  HRE_UNIFIED_fascism:0 "United Roman State"
  HRE_UNIFIED_democratic:0 "United Roman Republic"
@@ -81,15 +112,15 @@
  HRE_UNIFIED_fascism_DEF:0 "Imperial"
  HRE_UNIFIED_democratic_DEF:0 "Imperial"
  HRE_UNIFIED_communism_DEF:0 "Imperial"
- 
- 
+
+
  UKR_RUS_autonomy_dominion:0 "Grand Duchy of Ruthenia"
  UKR_RUS_autonomy_colony:0 "Grand Duchy of Ruthenia"
  UKR_RUS_autonomy_puppet:1 "Grand Duchy of Ruthenia"
  UKR_RUS_autonomy_integrated_puppet:0 "Grand Duchy of Ruthenia"
- 
+
  PRUSSIAN_NETHERLANDS_absolutism:0 "Kingdom of the Netherlands"
- 
+
  ALG_TUR_autonomy_dominion:0 "Regency of Algiers"
  ALG_TUR_autonomy_colony:0 "Regency of Algiers"
  ALG_TUR_autonomy_puppet:1 "Regency of Algiers"
@@ -104,92 +135,150 @@
  EGY_TUR_autonomy_colony:0 "Khedivate of Egypt"
  EGY_TUR_autonomy_puppet:1 "Khedivate of Egypt"
  EGY_TUR_autonomy_integrated_puppet:0 "Khedivate of Egypt"
- 
+
  IRQ_TUR_autonomy_dominion:0 "Khedivate of Iraq"
  IRQ_TUR_autonomy_colony:0 "Khedivate of Iraq"
  IRQ_TUR_autonomy_puppet:1 "Khedivate of Iraq"
  IRQ_TUR_autonomy_integrated_puppet:0 "Khedivate of Iraq"
- 
+
  TUN_TUR_autonomy_dominion:0 "Vilayet of Tunis"
  TUN_TUR_autonomy_colony:0 "Vilayet of Tunis"
  TUN_TUR_autonomy_puppet:1 "Vilayet of Tunis"
  TUN_TUR_autonomy_integrated_puppet:0 "Vilayet of Tunis"
- 
+
  BRA_POR_autonomy_dominion:0 "State of Brazil"
  BRA_POR_autonomy_colony:0 "State of Brazil"
  BRA_POR_autonomy_puppet:1 "State of Brazil"
  BRA_POR_autonomy_integrated_puppet:0 "State of Brazil"
- 
+
  GUA_SPR_autonomy_dominion:0 "Guatemala"
  GUA_SPR_autonomy_colony:0 "Guatemala"
  GUA_SPR_autonomy_puppet:1 "Guatemala"
  GUA_SPR_autonomy_integrated_puppet:0 "Guatemala"
- 
+
  MEX_SPR_autonomy_dominion:0 "Viceroyality of New Spain"
  MEX_SPR_autonomy_colony:0 "Viceroyality of New Spain"
  MEX_SPR_autonomy_puppet:1 "Viceroyality of New Spain"
  MEX_SPR_autonomy_integrated_puppet:0 "Viceroyality of New Spain"
- 
+
  TEX_SPR_autonomy_dominion:0 "Governship of Texas"
  TEX_SPR_autonomy_colony:0 "Governship of Texas"
  TEX_SPR_autonomy_puppet:1 "Governship of Texas"
  TEX_SPR_autonomy_integrated_puppet:0 "Governship of Texas"
- 
+
+ GUA_HAB_autonomy_dominion:0 "Guatemala"
+ GUA_HAB_autonomy_colony:0 "Guatemala"
+ GUA_HAB_autonomy_puppet:1 "Guatemala"
+ GUA_HAB_autonomy_integrated_puppet:0 "Guatemala"
+
+ MEX_HAB_autonomy_dominion:0 "Viceroyality of New Spain"
+ MEX_HAB_autonomy_colony:0 "Viceroyality of New Spain"
+ MEX_HAB_autonomy_puppet:1 "Viceroyality of New Spain"
+ MEX_HAB_autonomy_integrated_puppet:0 "Viceroyality of New Spain"
+
+ TEX_HAB_autonomy_dominion:0 "Governship of Texas"
+ TEX_HAB_autonomy_colony:0 "Governship of Texas"
+ TEX_HAB_autonomy_puppet:1 "Governship of Texas"
+ TEX_HAB_autonomy_integrated_puppet:0 "Governship of Texas"
+
  CLM_GBR_autonomy_dominion:0 "Dominion of Columbia"
  CLM_GBR_autonomy_colony:0 "Dominion of Columbia"
  CLM_GBR_autonomy_puppet:1 "Dominion of Columbia"
  CLM_GBR_autonomy_integrated_puppet:0 "Dominion of Columbia"
- 
+
  ALK_GBR_autonomy_dominion:0 "Dominion of Alaska"
  ALK_GBR_autonomy_colony:0 "Dominion of Alaska"
  ALK_GBR_autonomy_puppet:1 "Dominion of Alaska"
  ALK_GBR_autonomy_integrated_puppet:0 "Dominion of Alaska"
- 
+
  LOU_SPR_autonomy_dominion:0 "Vice Royality of Lower Luisiana"
  LOU_SPR_autonomy_colony:0 "Vice Royality of Lower Luisiana"
  LOU_SPR_autonomy_puppet:1 "Vice Royality of Lower Luisiana"
  LOU_SPR_autonomy_integrated_puppet:0 "Vice Royality of Lower Luisiana"
- 
+
  UPP_SPR_autonomy_dominion:0 "Governship Of Upper Luisiana"
  UPP_SPR_autonomy_colony:0 "Governship Of Upper Luisiana"
  UPP_SPR_autonomy_puppet:1 "Governship Of Upper Luisiana"
  UPP_SPR_autonomy_integrated_puppet:0 "Governship Of Upper Luisiana"
- 
+
  ARG_SPR_autonomy_dominion:0 "Rio de La Plata"
  ARG_SPR_autonomy_colony:0 "Rio de La Plata"
  ARG_SPR_autonomy_puppet:1 "Rio de La Plata"
  ARG_SPR_autonomy_integrated_puppet:0 "Rio de La Plata"
- 
+
  PAT_SPR_autonomy_dominion:0 "Patagonia"
  PAT_SPR_autonomy_colony:0 "Patagonia"
  PAT_SPR_autonomy_puppet:1 "Patagonia"
  PAT_SPR_autonomy_integrated_puppet:0 "Patagonia"
- 
+
  CHL_SPR_autonomy_dominion:0 "Chile"
  CHL_SPR_autonomy_colony:0 "Chile"
  CHL_SPR_autonomy_puppet:1 "Chile"
  CHL_SPR_autonomy_integrated_puppet:0 "Chile"
- 
+
  COL_SPR_autonomy_dominion:0 "New Granada"
  COL_SPR_autonomy_colony:0 "New Granada"
  COL_SPR_autonomy_puppet:1 "New Granada"
  COL_SPR_autonomy_integrated_puppet:0 "New Granada"
- 
+
  PRU_SPR_autonomy_dominion:0 "Peru"
  PRU_SPR_autonomy_colony:0 "Peru"
  PRU_SPR_autonomy_puppet:1 "Peru"
  PRU_SPR_autonomy_integrated_puppet:0 "Peru"
- 
+
  VEN_SPR_autonomy_dominion:0 "Venezuela"
  VEN_SPR_autonomy_colony:0 "Venezuela"
  VEN_SPR_autonomy_puppet:1 "Venezuela"
  VEN_SPR_autonomy_integrated_puppet:0 "Venezuela"
- 
+
+
+
+ LOU_HAB_autonomy_dominion:0 "Vice Royality of Lower Luisiana"
+ LOU_HAB_autonomy_colony:0 "Vice Royality of Lower Luisiana"
+ LOU_HAB_autonomy_puppet:1 "Vice Royality of Lower Luisiana"
+ LOU_HAB_autonomy_integrated_puppet:0 "Vice Royality of Lower Luisiana"
+
+ UPP_HAB_autonomy_dominion:0 "Governship Of Upper Luisiana"
+ UPP_HAB_autonomy_colony:0 "Governship Of Upper Luisiana"
+ UPP_HAB_autonomy_puppet:1 "Governship Of Upper Luisiana"
+ UPP_HAB_autonomy_integrated_puppet:0 "Governship Of Upper Luisiana"
+
+ ARG_HAB_autonomy_dominion:0 "Rio de La Plata"
+ ARG_HAB_autonomy_colony:0 "Rio de La Plata"
+ ARG_HAB_autonomy_puppet:1 "Rio de La Plata"
+ ARG_HAB_autonomy_integrated_puppet:0 "Rio de La Plata"
+
+ PAT_HAB_autonomy_dominion:0 "Patagonia"
+ PAT_HAB_autonomy_colony:0 "Patagonia"
+ PAT_HAB_autonomy_puppet:1 "Patagonia"
+ PAT_HAB_autonomy_integrated_puppet:0 "Patagonia"
+
+ CHL_HAB_autonomy_dominion:0 "Chile"
+ CHL_HAB_autonomy_colony:0 "Chile"
+ CHL_HAB_autonomy_puppet:1 "Chile"
+ CHL_HAB_autonomy_integrated_puppet:0 "Chile"
+
+ COL_HAB_autonomy_dominion:0 "New Granada"
+ COL_HAB_autonomy_colony:0 "New Granada"
+ COL_HAB_autonomy_puppet:1 "New Granada"
+ COL_HAB_autonomy_integrated_puppet:0 "New Granada"
+
+ PRU_HAB_autonomy_dominion:0 "Peru"
+ PRU_HAB_autonomy_colony:0 "Peru"
+ PRU_HAB_autonomy_puppet:1 "Peru"
+ PRU_HAB_autonomy_integrated_puppet:0 "Peru"
+
+ VEN_HAB_autonomy_dominion:0 "Venezuela"
+ VEN_HAB_autonomy_colony:0 "Venezuela"
+ VEN_HAB_autonomy_puppet:1 "Venezuela"
+ VEN_HAB_autonomy_integrated_puppet:0 "Venezuela"
+
+
  IRE_GBR_autonomy_dominion:0 "Dominion of Ireland"
  IRE_GBR_autonomy_colony:0 "Dominion of Ireland"
  IRE_GBR_autonomy_puppet:1 "Dominion of Ireland"
  IRE_GBR_autonomy_integrated_puppet:0 "Dominion of Ireland"
- 
+
  NORTH_GERMAN_CONFEDERATION_rexism:0 "North German State"
  NORTH_GERMAN_CONFEDERATION_rexism_DEF:0 "The Northern German State"
  NORTH_GERMAN_CONFEDERATION_liberalism:0 "German Republic"
@@ -202,7 +291,7 @@
  NORTH_GERMAN_CONFEDERATION_liberalism_ADJ:0 "German"
  NORTH_GERMAN_CONFEDERATION_absolutism_ADJ:0 "German"
  NORTH_GERMAN_CONFEDERATION_proletarianism_ADJ:0 "German"
- 
+
  SOUTH_GERMAN_CONFEDERATION_rexism:0 "South German State"
  SOUTH_GERMAN_CONFEDERATION_rexism_DEF:0 "The Southern German State"
  SOUTH_GERMAN_CONFEDERATION_liberalism:0 "German Republic"
@@ -215,7 +304,7 @@
  SOUTH_GERMAN_CONFEDERATION_liberalism_ADJ:0 "German"
  SOUTH_GERMAN_CONFEDERATION_absolutism_ADJ:0 "German"
  SOUTH_GERMAN_CONFEDERATION_proletarianism_ADJ:0 "German"
- 
+
  GERMAN_EMPIRE_rexism:0 "German Reich"
  GERMAN_EMPIRE_rexism_DEF:0 "The German Reich"
  GERMAN_EMPIRE_liberalism:0 "German Republic"
@@ -229,7 +318,7 @@
  GERMAN_EMPIRE_liberalism_ADJ:0 "German"
  GERMAN_EMPIRE_absolutism_ADJ:0 "German"
  GERMAN_EMPIRE_proletarianism_ADJ:0 "German"
- 
+
  GERMAN_EMPIRE_OLD_rexism:0 "German Reich"
  GERMAN_EMPIRE_OLD_rexism_DEF:0 "The German Reich"
  GERMAN_EMPIRE_OLD_liberalism:0 "German Republic"
@@ -243,7 +332,7 @@
  GERMAN_EMPIRE_OLD_liberalism_ADJ:0 "German"
  GERMAN_EMPIRE_OLD_absolutism_ADJ:0 "German"
  GERMAN_EMPIRE_OLD_proletarianism_ADJ:0 "German"
- 
+
  GDeutschland_rexism:0 "Großdeutschland"
  GDeutschland_rexism_DEF:0 "Großdeutschland"
  GDeutschland_rexism_ADJ:0 "German"
@@ -256,7 +345,7 @@
  GDeutschland_proletarianism:0 "Großdeutschland"
  GDeutschland_proletarianism_DEF:0 "Großdeutschland"
  GDeutschland_proletarianism_ADJ:0 "German"
- 
+
  Austrian_Empire_absolutism:0 "Austrian Empire"
  Austrian_Empire_absolutism_DEF:0 "The Austrian Empire"
  Austrian_Empire_absolutism_ADJ:0 "Austrian"
@@ -266,7 +355,7 @@
  Austrian_Empire_rexism:0 "Austrian Empire"
  Austrian_Empire_rexism_DEF:0 "The Austrian Empire"
  Austrian_Empire_rexism_ADJ:0 "Austrian"
- 
+
  KINGDOM_OF_POLAND_rexism:0 "Polish State"
  KINGDOM_OF_POLAND_rexism_DEF:0 "The Polish State"
  KINGDOM_OF_POLAND_liberalism:0 "Poland"
@@ -283,7 +372,7 @@
  KINGDOM_OF_POLAND_liberalism_ADJ:0 "Polish"
  KINGDOM_OF_POLAND_absolutism_ADJ:0 "Polish"
  KINGDOM_OF_POLAND_proletarianism_ADJ:0 "Polish"
- 
+
 #REVOLTS
  GREEK_REVOLT_absolutism: "Greek Revolt Revolt"
  GREEK_REVOLT_absolutism_DEF: "Greek Revolt"
@@ -321,7 +410,7 @@
  GREEKEMPIRE_absolutism:0 "Greek Empire"
  GREEKEMPIRE_absolutism_DEF:0 "The Greek Empire"
  GREEKEMPIRE_absolutism_ADJ:0 "Greek"
- 
+
  White_Movement_absolutism:0 "Russian Royalists"
  White_Movement_absolutism_DEF:0 "Russian Royalists"
  White_Movement_absolutism_ADJ:0 "Russian"
@@ -329,7 +418,7 @@
  Bolsheviks_proletarianism:0 "Bolsheviks"
  Bolsheviks_proletarianism_DEF:0 "Bolsheviks"
  Bolsheviks_proletarianism_ADJ:0 "Bolshevik"
- 
+
  BYZANTIUM_rexism:0 "Byzantine Empire"
  BYZANTIUM_rexism_DEF:0 "The Byzantine Empire"
  BYZANTIUM_liberalism:0 "Byzantine Republic"
@@ -345,7 +434,7 @@
  BYZANTIUM_absolutism_ADJ:0 "Byzantine"
  BYZANTIUM_royalism_ADJ:0 "Byzantine"
  BYZANTIUM_proletarianism_ADJ:0 "Byzantine"
- 
+
  INS_HOL_liberalism:0 "Dutch East Indies"
  INS_HOL_liberalism_DEF:0 "The Dutch East Indies"
  INS_subject:0 "$OVERLORDADJ$ East Indies"

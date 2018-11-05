@@ -1,28 +1,31 @@
 ideas = {
 
 country = {
+	FRANKISH_IDEALS = {
+		picture = GFX_idea_YUG_orthodox_church_support
+		modifier = {
+			army_morale_factor = -0.4
+		}
+	}
 	FRA_crumbling_nation = {
-
-		picture = The_War_to_End_All_Wars
-
+		picture = GFX_idea_ENG_the_war_to_end_all_wars
 		modifier = {
 			army_morale_factor = -0.4
 		}
 	}
 	FRA_ideological_surge = {
-
-		picture = FRA_scw_intervention_republicans_focus
-
+		picture = GFX_idea_trotskyite_plot_purged
 		modifier = {
-			drift_defence_factor = -0.25 
+			drift_defence_factor = -0.25
 		}
 	}
 	FRA_corrupt_government = {
-
-		picture = generic_constitutional_guarantee
-
+		picture = GFX_idea_chi_hyper_inflation5
 		modifier = {
-			army_org = -5 
+			army_org = -5
 		}
+	}
+	HOLY_ROMAN_PRETENDER = {
+		picture = GFX_idea_ger_revive_the_kaiserreich
 	}
 }

@@ -2,61 +2,61 @@ ideas = {
 	le_religions = {
 		Religion_Protestant = {
 
-			picture = le_religion_catholic
+			picture = GFX_idea_le_religion_protestant
 
 			modifier = {
 				political_power_gain = 0.3
-				offence = 0.1 
+				offence = 0.1
 			}
 		}
-		
+
 		Religion_Catholic = {
 
 			picture = GFX_le_religion_catholic
 
 			modifier = {
-				political_power_gain = 0.5 
-				drift_defence_factor = 0.25 
+				political_power_gain = 0.5
+				drift_defence_factor = 0.25
 			}
 		}
-		
+
 		Religion_Orthodox = {
 
 			picture = GFX_le_religion_catholic
 
 			modifier = {
-				political_power_gain = 0.5 
-				drift_defence_factor = 0.25 
+				political_power_gain = 0.5
+				drift_defence_factor = 0.25
 			}
 		}
-		
+
 		Religion_Sunni = {
 
 			picture = GFX_le_religion_catholic
 
 			modifier = {
-				political_power_gain = 0.5 
-				drift_defence_factor = 0.25 
+				political_power_gain = 0.5
+				drift_defence_factor = 0.25
 			}
 		}
-		
+
 		Religion_Shia = {
 
 			picture = GFX_le_religion_catholic
 
 			modifier = {
-				political_power_gain = 0.5 
-				drift_defence_factor = 0.25 
+				political_power_gain = 0.5
+				drift_defence_factor = 0.25
 			}
 		}
-		
+
 		Religion_Secular = {
 
 			picture = GFX_le_religion_catholic
 
 			modifier = {
-				political_power_gain = 0.5 
-				drift_defence_factor = 0.25 
+				political_power_gain = 0.5
+				drift_defence_factor = 0.25
 			}
 		}
 		Religion_Athiest = {
@@ -64,8 +64,8 @@ ideas = {
 			picture = GFX_le_religion_catholic
 
 			modifier = {
-				political_power_gain = 0.5 
-				drift_defence_factor = 0.25 
+				political_power_gain = 0.5
+				drift_defence_factor = 0.25
 			}
 		}
 	}

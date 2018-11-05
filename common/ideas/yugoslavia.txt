@@ -141,7 +141,7 @@ ideas = {
 		
 		YUG_idea_peasant_councils = {
 
-			picture = generic_communism_drift_bonus
+			picture = generic_collectivism_drift_bonus
 			
 			allowed = {
 				always = no
@@ -153,16 +153,16 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_communism_drift_bonus
+			picture = generic_collectivism_drift_bonus
 			
 			modifier = {
-				communism_drift = 0.2
+				collectivism_drift = 0.2
 			}
 		}
 		
 		YUG_idea_empowered_peasant_councils = {
 			
-			picture = generic_communism_drift_bonus
+			picture = generic_collectivism_drift_bonus
 			
 			allowed = {
 				always = no
@@ -174,16 +174,16 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_communism_drift_bonus
+			picture = generic_collectivism_drift_bonus
 			
 			modifier = {
-				communism_drift = 0.4
+				collectivism_drift = 0.4
 			}
 		}
 		
 		YUG_idea_very_empowered_peasant_councils = {
 			
-			picture = generic_communism_drift_bonus
+			picture = generic_collectivism_drift_bonus
 			
 			allowed = {
 				always = no
@@ -195,10 +195,10 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_communism_drift_bonus
+			picture = generic_collectivism_drift_bonus
 			
 			modifier = {
-				communism_drift = 0.6
+				collectivism_drift = 0.6
 			}
 		}
 		
