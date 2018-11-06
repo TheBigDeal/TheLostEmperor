@@ -21,7 +21,23 @@
   mod_options_cat:0 "The Lost Emperor Config"
   HRE_control_catagory:0 "Holy Roman Elections"
   HRE_control_catagory_desc:0 "The Elections are upon us, we must prepare for them so we may unite the Holy Roman Empire."
+  GRE_SPARTAN_PUSH:0 "Spartan War Tactics"
+  GRE_SPARTAN_PUSH_desc:0 "The Spartans are all traitors and shall be executed before the crown. They claim their ideology prevails the standard monarchism, but it is one of only Bloodshed and Hate.\n\nCurrent Spartan Strength:[Root.GetSpartanStrengthLevel] ([?GRE.SPARTAN_STRENGTH|-0])\n"
+  GRE_HELLENIC_PUSH:0 "Hellenic War Tactics"
+  GRE_HELLENIC_PUSH_desc:0 "The Hellenic Commune is a corrupt and twisted nation. Their ideas of equality is disgusting, a peasent the same as a nobleman? Preposterous! We must take them down before more of our people support them, or it may become too late.\n\nCurrent Hellenic Strength:[Root.GetHellenicStrengthLevel] ([?GRE.HELLENIC_STRENGTH|-0])\n"
+  GRE_ATHOS_PUSH:0 "Athos War Tactics"
+  GRE_ATHOS_PUSH_desc:0 "The nation of Mount Athos is quite an insult, not just to us but to the world! Here they stand preching Orthodox views, and claiming they are the new Byzantium. News for them is they are false, and while their Orthodox views are nice, the rest of the world will surely hate that.\n\nCurrent Athos Strength:[Root.GetAthosStrengthLevel] ([?GRE.ATHOS_STRENGTH|-0])\n"
  #Decisions
+  #Greek Decisions
+  SPT_ORDER_AN_ATTACK:0 "Order An Attack"
+  SPT_ORDER_AN_ASSASSINATION:0 "Order An Assassination"
+  SPT_DECLARE_ALL_OUT_WAR:0 "Declare All Out War"
+  HEL_ORDER_AN_ATTACK:0 "Order An Attack"
+  HEL_ORDER_AN_ASSASSINATION:0 "Order An Assassination"
+  HEL_DECLARE_ALL_OUT_WAR:0 "Declare All Out War"
+  MOU_ORDER_AN_ATTACK:0 "Order An Attack"
+  MOU_ORDER_AN_ASSASSINATION:0 "Order An Assassination"
+  MOU_DECLARE_ALL_OUT_WAR:0 "Declare All Out War"
   #Soviet Decisions
   ATTACK_UKRAINE:0 "Subjugate [UKR.GetName]"
   ATTACK_BELERUS:0 "Subjugate [BLR.GetName]"

@@ -1,0 +1,29 @@
+state={
+	id=955
+	name="STATE_955"
+	history={
+		owner = MOU
+		victory_points = {
+			11818 5
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 2
+			11818 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = MOU
+		add_claim_by = GRE
+		add_claim_by = MAC
+
+	}
+	provinces={
+		895 3936 11818
+	}
+	manpower=653636
+	buildings_max_level_factor=1.000
+	state_category=city
+}

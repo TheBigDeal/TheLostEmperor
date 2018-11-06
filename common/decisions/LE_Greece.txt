@@ -1,0 +1,188 @@
+GRE_SPARTAN_PUSH = {
+	SPT_ORDER_AN_ATTACK = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = {
+			GRE = { has_country_flag = GRE_SPARTAN_PUSH }
+			tag = GRE
+			country_exists = SPT
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			random_list = {
+				40 = { #Attack Hugely Successful
+					country_event = { id = le_greek_civil_war.1 }
+				}
+				50 = { #Attack Mildly Successful
+					country_event = { id = le_greek_civil_war.2 }
+				}
+				10 = { #Attack Failed
+					country_event = { id = le_greek_civil_war.3 }
+				}
+			}
+		}
+	}
+	SPT_ORDER_AN_ASSASSINATION = {
+		cost = 50
+		icon = GFX_icon_communism
+		days_re_enable = 20
+		visible = {
+			GRE = { has_country_flag = GRE_SPARTAN_PUSH }
+			tag = GRE
+			country_exists = SPT
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			random_list = {
+				30 = { #Assassination Succeeded
+					country_event = { id = le_greek_civil_war.7 }
+				}
+				70 = { #Assassination Failed
+					country_event = { id = le_greek_civil_war.6 }
+				}
+			}
+		}
+	}
+	SPT_DECLARE_ALL_OUT_WAR = {
+		cost = 200
+		icon = GFX_icon_communism
+		fire_only_once = yes
+		visible = {
+			GRE = { has_country_flag = GRE_SPARTAN_PUSH }
+			tag = GRE
+			country_exists = SPT
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			add_stability = -0.20
+			declare_war_on = { target = SPT type = annex_everything }
+		}
+	}
+}
+#####################################
+GRE_HELLENIC_PUSH = {
+	HEL_ORDER_AN_ATTACK = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = {
+			GRE = { has_country_flag = GRE_HELLENIC_PUSH }
+			tag = GRE
+			country_exists = HEL
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			random_list = {
+				40 = { #Attack Hugely Successful
+					country_event = { id = le_greek_civil_war.8 }
+				}
+				50 = { #Attack Mildly Successful
+					country_event = { id = le_greek_civil_war.9 }
+				}
+				10 = { #Attack Failed
+					country_event = { id = le_greek_civil_war.10 }
+				}
+			}
+		}
+	}
+	HEL_ORDER_AN_ASSASSINATION = {
+		cost = 50
+		icon = GFX_icon_communism
+		days_re_enable = 20
+		visible = {
+			GRE = { has_country_flag = GRE_HELLENIC_PUSH }
+			tag = GRE
+			country_exists = HEL
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			random_list = {
+				30 = { #Assassination Succeeded
+					country_event = { id = le_greek_civil_war.14 }
+				}
+				70 = { #Assassination Failed
+					country_event = { id = le_greek_civil_war.13 }
+				}
+			}
+		}
+	}
+	HEL_DECLARE_ALL_OUT_WAR = {
+		cost = 200
+		icon = GFX_icon_communism
+		fire_only_once = yes
+		visible = {
+			GRE = { has_country_flag = GRE_HELLENIC_PUSH }
+			tag = GRE
+			country_exists = HEL
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			add_stability = -0.20
+			declare_war_on = { target = HEL type = annex_everything }
+		}
+	}
+}
+#####################################
+GRE_ATHOS_PUSH = {
+	MOU_ORDER_AN_ATTACK = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = {
+			GRE = { has_country_flag = GRE_ATHOS_PUSH }
+			tag = GRE
+			country_exists = MOU
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			random_list = {
+				40 = { #Attack Hugely Successful
+					country_event = { id = le_greek_civil_war.15 }
+				}
+				50 = { #Attack Mildly Successful
+					country_event = { id = le_greek_civil_war.16 }
+				}
+				10 = { #Attack Failed
+					country_event = { id = le_greek_civil_war.17 }
+				}
+			}
+		}
+	}
+	MOU_ORDER_AN_ASSASSINATION = {
+		cost = 50
+		icon = GFX_icon_communism
+		days_re_enable = 20
+		visible = {
+			GRE = { has_country_flag = GRE_ATHOS_PUSH }
+			tag = GRE
+			country_exists = MOU
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			random_list = {
+				30 = { #Assassination Succeeded
+					country_event = { id = le_greek_civil_war.21 }
+				}
+				70 = { #Assassination Failed
+					country_event = { id = le_greek_civil_war.20 }
+				}
+			}
+		}
+	}
+	MOU_DECLARE_ALL_OUT_WAR = {
+		cost = 200
+		icon = GFX_icon_communism
+		fire_only_once = yes
+		visible = {
+			GRE = { has_country_flag = GRE_ATHOS_PUSH }
+			tag = GRE
+			country_exists = MOU
+		}
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			add_stability = -0.20
+			declare_war_on = { target = MOU type = annex_everything }
+		}
+	}
+}

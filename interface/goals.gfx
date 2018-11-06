@@ -1,7 +1,45 @@
 spriteTypes = {	
 
 	#### Mod
-
+	
+	SpriteType = {
+	name = "GFX_goal_new_treaty"
+	texturefile = "gfx/interface/goals/goal_new_treaty.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_stamp_out_corruption"
+	texturefile = "gfx/interface/goals/Stamp_out_corruption.tga"			
+	}
+	SpriteType = {
+	name = "GFX_religion_orthodox"
+	texturefile = "gfx/interface/goals/Religion_Orthodox.tga"			
+	}
+	SpriteType = {
+	name = "GFX_focus_purge_bureaucracy"
+	texturefile = "gfx/interface/goals/focus_purge_bureaucracy.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_death_or_dishonor"
+	texturefile = "gfx/interface/goals/Death_or_Dishonor.tga"			
+	}
+	SpriteType = {
+	name = "GFX_GRE_monarchy"
+	texturefile = "gfx/interface/goals/GRE_monarchy.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_GRE_new_expansionism"
+	texturefile = "gfx/interface/goals/GRE_new_expansionism.dds"			
+	}	
+	
+	
+	SpriteType = {
+	name = "GFX_goal_revolution"
+	texturefile = "gfx/interface/goals/goal_revolution.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_revolution_tools"
+	texturefile = "gfx/interface/goals/goal_revolution_tools.dds"			
+	}	
 	
 	SpriteType = {
 	name = "GFX_goldmines"

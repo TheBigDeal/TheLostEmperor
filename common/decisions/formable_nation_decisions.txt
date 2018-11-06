@@ -577,6 +577,7 @@ form_byzantine_empire_category = {
 		visible = {
 			original_tag = GRE
 			NOT = { has_global_flag = form_byzantine_empire_flag }
+			has_country_flag = able_to_form_byzantium
 		}
 
 		complete_effect = {
@@ -586,7 +587,7 @@ form_byzantine_empire_category = {
 				set_global_flag = form_byzantine_empire_flag
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 200
 		}
@@ -624,6 +625,7 @@ form_byzantine_empire_category = {
 
 		visible = {
 			original_tag = GRE
+			has_country_flag = able_to_form_byzantium
 		}
 
 		complete_effect = {
@@ -682,12 +684,13 @@ form_byzantine_empire_category = {
 
 		visible = {
 			original_tag = GRE
+			has_country_flag = able_to_form_byzantium
 		}
 
 		complete_effect = {
 			677 = { add_core_of = ROOT }
 			680 = { add_core_of = ROOT }
-			553 = { add_core_of = ROOT } 
+			553 = { add_core_of = ROOT }
 			554 = { add_core_of = ROOT }
 			164 = { add_core_of = ROOT }
 			453 = { add_core_of = ROOT }
@@ -737,6 +740,7 @@ form_byzantine_empire_category = {
 
 		visible = {
 			original_tag = GRE
+			has_country_flag = able_to_form_byzantium
 		}
 
 		complete_effect = {

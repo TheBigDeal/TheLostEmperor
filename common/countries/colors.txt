@@ -838,8 +838,8 @@ TUR = {
 	color_ui = rgb { 222 247 198 }
 }
 GRE = {
-	color = rgb { 9  9  103 }
-	color_ui = rgb { 9  9  103 }
+	color = rgb { 0 94 147 }
+	color_ui = rgb { 0 94 147 }
 }
 ALB = {
 	color = rgb { 149 45 102 }

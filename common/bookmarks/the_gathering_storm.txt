@@ -6,7 +6,7 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 		default_country = "PRS"
 		default = yes
-	
+
 		FRA = {
 			history = FRA_BLITZKRIEG_DESC
 			ideology = absolutism
@@ -19,7 +19,7 @@ bookmarks = {
 		}
 		USA = {
 			history = USA_BLITZKRIEG_DESC
-			ideology = absolutism
+			ideology = liberalism
 			ideas = {
 
 			}
@@ -29,14 +29,14 @@ bookmarks = {
 		}
 		GBR = {
 			history = GBR_BLITZKRIEG_DESC
-			ideology = absolutism
+			ideology = royalism
 			ideas = {
 
 			}
 			focuses = {
 
 			}
-			
+
 		}
 		PRS = {
 			history = GER_BLITZKRIEG_DESC
@@ -50,7 +50,7 @@ bookmarks = {
 		}
 		AUS = {
 			history = GER_BLITZKRIEG_DESC
-			ideology = absolutism
+			ideology = royalism
 			ideas = {
 
 			}
@@ -58,7 +58,7 @@ bookmarks = {
 
 			}
 		}
-		SPR = {
+		GRE = {
 			history = GER_BLITZKRIEG_DESC
 			ideology = absolutism
 			ideas = {
@@ -84,8 +84,8 @@ bookmarks = {
 		}
 
 		# minors from DLC ####
-		
-		"PAP"={
+
+		"SPR"={
 			minor = yes
 			history = "ROM_BLITZKRIEG_DESC"
 			ideology = absolutism
@@ -96,7 +96,7 @@ bookmarks = {
 
 			}
 		}
-		
+
 		"TUR"={
 			minor = yes
 			history = "ROM_BLITZKRIEG_DESC"
@@ -108,7 +108,7 @@ bookmarks = {
 
 			}
 		}
-		
+
 		"QNG"={
 			minor = yes
 			history = "ROM_BLITZKRIEG_DESC"
@@ -120,7 +120,7 @@ bookmarks = {
 
 			}
 		}
-		
+
 		"PER"={
 			minor = yes
 			history = "ROM_BLITZKRIEG_DESC"
@@ -132,56 +132,67 @@ bookmarks = {
 
 			}
 		}
-		
-		"ATH"={
+
+		"JAP"={
 			minor = yes
 			history = "ROM_BLITZKRIEG_DESC"
-			ideology = absolutism
+			ideology = rexism
 			ideas = {
-				
+
 			}
 			focuses = {
 
 			}
 		}
-		
+
 		"SAR"={
 			minor = yes
 			history = "ROM_BLITZKRIEG_DESC"
 			ideology = absolutism
 			ideas = {
-				
+
 			}
 			focuses = {
 
 			}
 		}
-		
-		"SPT"={
+
+		"MEX"={
+			minor = yes
+			history = "ROM_BLITZKRIEG_DESC"
+			ideology = despotism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"POL"={
 			minor = yes
 			history = "ROM_BLITZKRIEG_DESC"
 			ideology = absolutism
 			ideas = {
-				
+
 			}
 			focuses = {
 
 			}
 		}
-		
-		"DEN"={
+
+		"MON"={
 			minor = yes
 			history = "ROM_BLITZKRIEG_DESC"
 			ideology = absolutism
 			ideas = {
-				
+
 			}
 			focuses = {
 
 			}
 		}
-		
-		
+
 
 		effect = {
 			randomize_weather = 12345 # <- Obligatory in every bookmark !

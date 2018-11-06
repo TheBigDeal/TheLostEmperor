@@ -19,7 +19,7 @@ opinion_modifiers = {
 	denied_crown = { value = -100 }
   claimed_HRE_crown = { value = -100 }
 	french_shadow_puppet = { value = 100 }
-
+  GRE_civil_war_support = { value = 50 }
 
 	#VANILLA
 	hostile_status = { #special used for civil wars that are on hold and blocks faction stuff

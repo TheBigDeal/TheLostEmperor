@@ -4,9 +4,9 @@ state={
 	name="STATE_743"
 
 	history={
-		owner = BAD
+		owner = GRE
 		victory_points = {
-			6542 3 
+			6542 3
 		}
 		buildings = {
 			infrastructure = 8
@@ -15,12 +15,12 @@ state={
 			air_base = 3
 
 		}
-		add_core_of = BAD
+		add_core_of = GRE
 
 	}
 
 	provinces={
-		3679 6542 11640 
+		1106
 	}
 	manpower=546542
 	buildings_max_level_factor=1.000
