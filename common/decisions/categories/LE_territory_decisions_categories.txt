@@ -1,0 +1,11 @@
+######################
+##### Formables ######
+######################
+
+Fate_Of_Rome = {
+	icon = idea_ger_revive_the_kaiserreich
+	visible = {
+		owns_state = 2
+		NOT = { tag = PAP }
+	}
+}

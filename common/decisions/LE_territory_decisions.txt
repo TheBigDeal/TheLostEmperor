@@ -1,0 +1,27 @@
+Fate_Of_Rome = {
+	Return_To_The_Pope = {
+		icon = generic_army_support
+		cost = 0
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			PAP = { transfer_state = 2}
+		}
+	}
+	Puppet_The_Pope = {
+		icon = generic_army_support
+		cost = 0
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			puppet = PAP
+			PAP = { transfer_state = 2}
+		}
+	}
+	Annex_The_Pope = {
+		icon = generic_army_support
+		cost = 0
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			PAP = { transfer_state = 2}
+		}
+	}
+}

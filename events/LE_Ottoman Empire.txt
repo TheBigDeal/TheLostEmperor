@@ -1,0 +1,255 @@
+﻿###########################
+# German Events
+###########################
+
+add_namespace = ottoman
+
+country_event = { #SYRIANS DEALT WITH
+	id = ottoman.1
+	title = ottoman.1.t
+	desc = ottoman.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	trigger = {
+		tag = TUR
+		NOT = { country_existis = SYR }
+		OR = {
+			check_variable = {
+			    var = SYRIAN_REBEL_STRENGH
+			    value = -100
+			    compare = less_than_or_equals
+			}
+			check_variable = {
+			    var = SYRIAN_TURKIFICATION
+			    value = 80
+			    compare = greater_than_or_equals
+			}
+		}
+	}
+	option = {
+		name = ottoman.1.a
+		clr_country_flag = TUR_syrian_rebellions
+	}
+}
+country_event = { #SYRIANS REBEL
+	id = ottoman.2
+	title = ottoman.2.t
+	desc = ottoman.2.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	trigger = {
+		tag = TUR
+		NOT = { country_existis = SYR }
+		OR = {
+			AND = {
+				TUR = {	has_war = yes }
+				has_ideas = TUR_internal_instability
+			}
+			check_variable = {
+			    var = SYRIAN_REBEL_STRENGH
+			    value = 100
+			    compare = greater_than_or_equals
+			}
+			check_variable = {
+			    var = SYRIAN_TURKIFICATION
+			    value = 10
+			    compare = less_than_or_equals
+			}
+		}
+	}
+	option = {
+		name = ottoman.1.a
+		clr_country_flag = TUR_syrian_rebellions
+		SYR = {
+			transfer_state = 680
+			transfer_state = 677
+			transfer_state = 554
+		}
+		declare_war_on = { target = SYR type = annex_everything }
+	}
+}
+country_event = { #LEVANT DEALT WITH
+	id = ottoman.3
+	title = ottoman.3.t
+	desc = ottoman.3.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	trigger = {
+		tag = TUR
+		NOT = { country_existis = LEV }
+		OR = {
+			check_variable = {
+			    var = LEVANT_REBEL_STRENGH
+			    value = -100
+			    compare = less_than_or_equals
+			}
+			check_variable = {
+			    var = LEVANT_TURKIFICATION
+			    value = 80
+			    compare = greater_than_or_equals
+			}
+		}
+	}
+	option = {
+		name = ottoman.3.a
+		clr_country_flag = TUR_levant_rebellions
+	}
+}
+country_event = { #LEVANT REBEL
+	id = ottoman.4
+	title = ottoman.4.t
+	desc = ottoman.4.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	trigger = {
+		tag = TUR
+		NOT = { country_existis = LEV }
+		OR = {
+			AND = {
+				TUR = {	has_war = yes }
+				has_ideas = TUR_internal_instability
+			}
+			check_variable = {
+			    var = LEVANT_REBEL_STRENGH
+			    value = 100
+			    compare = greater_than_or_equals
+			}
+			check_variable = {
+			    var = LEVANT_TURKIFICATION
+			    value = 10
+			    compare = less_than_or_equals
+			}
+		}
+	}
+	option = {
+		name = ottoman.4.a
+		clr_country_flag = TUR_levant_rebellions
+		LEV = {
+			transfer_state = 453
+			transfer_state = 454
+			transfer_state = 553
+		}
+		declare_war_on = { target = LEV type = annex_everything }
+	}
+}
+country_event = { #LEVANT DEALT WITH
+	id = ottoman.5
+	title = ottoman.5.t
+	desc = ottoman.5.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	trigger = {
+		tag = TUR
+		NOT = { country_existis = KUR }
+		OR = {
+			check_variable = {
+			    var = KURDISH_REBEL_STRENGH
+			    value = -100
+			    compare = less_than_or_equals
+			}
+			check_variable = {
+			    var = KURDISH_TURKIFICATION
+			    value = 80
+			    compare = greater_than_or_equals
+			}
+		}
+	}
+	option = {
+		name = ottoman.5.a
+		clr_country_flag = TUR_kurdish_rebellions
+	}
+}
+country_event = { #LEVANT REBEL
+	id = ottoman.6
+	title = ottoman.6.t
+	desc = ottoman.6.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	trigger = {
+		tag = TUR
+		NOT = { country_existis = KUR }
+		OR = {
+			AND = {
+				TUR = {	has_war = yes }
+				has_ideas = TUR_internal_instability
+			}
+			check_variable = {
+			    var = KURDISH_REBEL_STRENGH
+			    value = 100
+			    compare = greater_than_or_equals
+			}
+			check_variable = {
+			    var = KURDISH_TURKIFICATION
+			    value = 10
+			    compare = less_than_or_equals
+			}
+		}
+	}
+	option = {
+		name = ottoman.6.a
+		clr_country_flag = TUR_kurdish_rebellions
+		KUR = {
+			transfer_state = 959
+			transfer_state = 957
+			transfer_state = 352
+			transfer_state = 350
+			transfer_state = 353
+		}
+		declare_war_on = { target = KUR type = annex_everything }
+	}
+}
+country_event = { #JORDAN DEALT WITH
+	id = ottoman.7
+	title = ottoman.7.t
+	desc = ottoman.7.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	trigger = {
+		tag = TUR
+		NOT = { country_existis = JOR }
+		OR = {
+			check_variable = {
+			    var = JORDAN_REBEL_STRENGH
+			    value = -100
+			    compare = less_than_or_equals
+			}
+			check_variable = {
+			    var = JORDAN_TURKIFICATION
+			    value = 80
+			    compare = greater_than_or_equals
+			}
+		}
+	}
+	option = {
+		name = ottoman.7.a
+		clr_country_flag = TUR_jordan_rebellions
+	}
+}
+country_event = { #JORDAN REBEL
+	id = ottoman.8
+	title = ottoman.8.t
+	desc = ottoman.8.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	trigger = {
+		tag = TUR
+		NOT = { country_existis = JOR }
+		OR = {
+			AND = {
+				TUR = {	has_war = yes }
+				has_ideas = TUR_internal_instability
+			}
+			check_variable = {
+			    var = JORDAN_REBEL_STRENGH
+			    value = 100
+			    compare = greater_than_or_equals
+			}
+			check_variable = {
+			    var = JORDAN_TURKIFICATION
+			    value = 10
+			    compare = less_than_or_equals
+			}
+		}
+	}
+	option = {
+		name = ottoman.8.a
+		clr_country_flag = TUR_jordan_rebellions
+		JOR = {
+			transfer_state = 455
+			transfer_state = 890
+		}
+		declare_war_on = { target = JOR type = annex_everything }
+	}
+}

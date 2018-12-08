@@ -5,31 +5,14 @@
 add_namespace = news
 
 # Voting Started
-news_event = {
+news_event = { #Second Arabian War of Unification
 	id = news.1
 	title = news.1.t
 	desc = news.1.d
 	picture = GFX_news_event_001
-	
 	major = yes
-	
 	is_triggered_only = yes
-	
-	option = {
+	option = { #Good For Them.
 		name = news.1.a
-		trigger = {
-			NOT = {
-				TAG = JAP
-				TAG = CHI
-			}
-		}
-	}
-	option = {
-		name = news.1.b
-		trigger = { TAG = JAP }
-	}
-	option = {
-		name = news.1.c
-		trigger = { TAG = CHI }
 	}
 }

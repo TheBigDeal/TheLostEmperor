@@ -1,0 +1,11 @@
+####################
+##### GENERIC ######
+####################
+
+bavarian_civil_war_cat = {
+	icon = idea_communism
+	visible = {
+		original_tag = BAV
+		#has_ideas = { rooted_collectivists }
+	}
+}

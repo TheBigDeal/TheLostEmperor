@@ -1,5 +1,12 @@
 ﻿l_english:
 #MOD
+ BAV_COMMUNIST_collectivism:1 "Bavarian Socialist Republic"
+ BAV_COMMUNIST_collectivism_DEF:1 "The Bavarian Socialist Republic"
+ BAV_COMMUNIST_proletarianism:1 "Bavarian Socialist Republic"
+ BAV_COMMUNIST_proletarianism_DEF:1 "The Bavarian Socialist Republic"
+ BAV_COMMUNIST_naturalism:1 "Bavarian Naturalist Republic"
+ BAV_COMMUNIST_naturalism_DEF:1 "The Bavarian Naturalist Republic"
+ 
  SOV_COLOR_UKR_collectivism:0 "Ukrainian Soviet Socialist Republic"
  SOV_COLOR_BLR_collectivism:0 "Byelorussian Soviet Socialist Republic"
  SOV_COLOR_BSSR_collectivism:0 "Baltic Soviet Socialist Republic"
@@ -9,6 +16,8 @@
  SOV_COLOR_SIK_collectivism:0 "Turkestan Soviet Socialist Republic"
  SOV_COLOR_KAZ_collectivism:0 "Kazakh Soviet Socialist Republic"
  SOV_COLOR_CRI_collectivism:0 "Crimean Soviet Socialist Republic"
+ 
+
 
  SOV_COLOR_TCSSR_collectivism:0 "Transcaucasian Soviet Socialist Republic"
  SOV_COLOR_GSSR_collectivism:0 "Georgian Soviet Socialist Republic"
@@ -104,14 +113,14 @@
  BYZ_UNIFIED_liberal_DEF:0 "the Byzantine Republic"
  BYZ_UNIFIED_collectivist_DEF:0 "the Byzantine Commune"
 
- HRE_UNIFIED_neutrality:0 "Holy Roman Empire"
- HRE_UNIFIED_fascism:0 "United Roman State"
- HRE_UNIFIED_democratic:0 "United Roman Republic"
- HRE_UNIFIED_communism:0 "United Socialist Roman States"
- HRE_UNIFIED_neutrality_DEF:0 "Imperial"
- HRE_UNIFIED_fascism_DEF:0 "Imperial"
- HRE_UNIFIED_democratic_DEF:0 "Imperial"
- HRE_UNIFIED_communism_DEF:0 "Imperial"
+ HRE_UNIFIED_absolutism:0 "Holy Roman Empire"
+ HRE_UNIFIED_labryscism:0 "United German States"
+ HRE_UNIFIED_liberalism:0 "Holy Roman Republic"
+ HRE_UNIFIED_collectivism:0 "United Socialist Roman States"
+ HRE_UNIFIED_absolutism_DEF:0 "Imperial"
+ HRE_UNIFIED_labryscism_DEF:0 "Imperial"
+ HRE_UNIFIED_liberalism_DEF:0 "Imperial"
+ HRE_UNIFIED_collectivism_DEF:0 "German"
 
 
  UKR_RUS_autonomy_dominion:0 "Grand Duchy of Ruthenia"

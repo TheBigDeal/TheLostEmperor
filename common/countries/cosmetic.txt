@@ -1,3 +1,7 @@
+BAV_COMMUNIST = {
+	color = rgb { 91 15 0 }
+	color_ui = rgb { 91 15 0 }
+}
 SOV_COLOR_UKR = {
 	color = rgb { 165 38 38 }
 	color_ui = rgb { 165 38 38 }
@@ -45,6 +49,14 @@ SOV_COLOR_ASSR = {
 SOV_COLOR_AZSSR = {
 	color = rgb { 165 38 38 }
 	color_ui = rgb { 165 38 38 }
+}
+GERMAN_EMPIRE_OLD = {
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 128 128 128 }
+}
+GERMAN_EMPIRE = {
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 128 128 128 }
 }
 SOV_COLOR_CRI = {
 	color = rgb { 165 38 38 }
@@ -172,8 +184,8 @@ RAT_UNIFIED = {
 }
 
 HRE_UNIFIED = {
-	color = rgb { 128 128 128 }
-	color_ui = rgb { 128 128 128 }
+	color = rgb { 178 152 48 }
+	color_ui = rgb { 178 152 48 }
 }
 
 NOR_reichskommissariat = {

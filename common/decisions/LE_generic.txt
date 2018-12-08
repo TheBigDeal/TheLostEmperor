@@ -1,0 +1,39 @@
+demand_state_claim = {
+	demand_poznan = {
+		icon = generic_army_support
+		available = {
+			86 = { is_claimed_by = PRS }
+		}
+		visible = {
+			tag = PRS
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+
+		}
+	}
+}
+
+write_constitution_cat = {
+	state_religion = {
+
+		icon = generic_army_support
+
+		available = {
+
+		}
+		visible = {
+			has_country_flag = write_constitution
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			
+		}
+	}
+}

@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = RUM
+		owner = TUR
 		victory_points = {
 			9930 1
 		}
@@ -21,9 +21,8 @@ state={
 		buildings = {
 			infrastructure = 4
 		}
-		add_core_of = RUM
 		add_core_of = TUR
-		add_claim_by = MOU
+		add_claim_by = GRE
 	}
 
 	provinces={

@@ -1,0 +1,20 @@
+WAR_WITH_JABAL_SHAMMER_CAT = {
+	ATTACK_JABAL_SHAMMER = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = { tag = NEJ }
+		ai_will_do = { factor = 10 }
+		cost = 200
+		complete_effect = {
+			create_wargoal = {
+  		 		type = annex_everything
+   				target = SHM
+			}
+			news_event = {
+		    	id = news.1
+		    	days = 1
+			}
+		}
+	}
+}

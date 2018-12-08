@@ -1,6 +1,9 @@
 ﻿l_english:
+ #GENERIC
+ #######################################
+ closed_borders:0 "Closed Borders"
  #RELIGION
- ######################################
+ #######################################
  Religion_Protestant:0 "Protestant"
  Religion_Catholic:0 "Catholic"
  Religion_Orthodox:0 "Orthodox"
@@ -8,6 +11,9 @@
  Religion_Shia:0 "Shia"
  Religion_Secular:0 "Secular"
  Religion_Athiest:0 "Athiest"
+ #GREECE
+ #OTTOMAN EMPIRE
+ TUR_internal_instability:0 "Internal Instability"
  #FRANCE
  ########################################
  FRA_rexism_drift:0 "Extreme Monarch"
@@ -15,12 +21,19 @@
  FRA_corrupt_government:0 "Corrupt Government"
  FRA_ideological_surge:0 "Idological Surge"
  FRA_crumbling_nation:0 "Crumbling Nation"
- 
+ FRANKISH_IDEALS:0 "Frankish Legacy"
+ FRA_pure_army:0 "Pure Religous Army"
+ FRA_deport_political_opposition:0 "Deported Political Opposition"
+ FRA_deport_minorities:0 "Deporting Minorities"
+ FRA_deport_immigrants:0 "Deporting Immigrants"
+ #IDEOLOGY STUFF
+ ########################################`
+ Religious_Movements:0 "Religous Movements"
+ Rexist_Drift:0 "Rexism Drift"
  #HRE
  HRE_Member:0 "Holy Roman Duchy"
  HRE_elector:0 "Holy Roman Elector"
  HRE_emperor:0 "Holy Roman Emperor"
- 
  PRUSSIAN_SPHERE:0 "Prussian Sphere"
  PRS_PRUSSIAN_MILITARISM:0 "Prussian Militarism"
  PRS_GERMAN_MILITARISM:0 "German Militarism"

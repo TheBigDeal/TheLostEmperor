@@ -1,5 +1,25 @@
 ﻿###########################
 # German Events
 ###########################
-
 add_namespace = le_germany
+
+country_event = { #German Civil War
+	id = le_germany.1
+	title = le_germany.1.t
+	desc = le_germany.1.d
+	is_triggered_only = yes
+	option = {
+		name = le_germany.1.a
+		complete_national_focus = GER_GERMAN_CIVIL_WAR
+	}
+}
+country_event = { #German Coup
+	id = le_germany.2
+	title = le_germany.2.t
+	desc = le_germany.2.d
+	is_triggered_only = yes
+	option = { 
+		name = le_germany.2.a
+		complete_national_focus = GER_A_SUCCESSFUL_COUP
+	}
+}

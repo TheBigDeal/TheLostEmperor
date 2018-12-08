@@ -1,0 +1,55 @@
+﻿###########################
+# Greek Events
+###########################
+add_namespace = le_greece
+
+
+
+###########################
+#Council Elections of 1928#
+###########################
+country_event = { #The Elections Begin!
+	id = le_greece.1
+	title = le_greece.1.t
+	desc = le_greece.1.d
+	is_triggered_only = yes
+	option = { 
+		name = le_greece.1.a
+		country_event = { id = le_greece.2 days = 10 }
+	}
+}
+
+country_event = { #Prime Minister Election
+	id = le_greece.2
+	title = le_greece.2.t
+	desc = le_greece.2.d
+	is_triggered_only = yes
+	option = { #The Communist Nikos Zachariadis
+		name = le_greece.2.I
+		country_event = { id = le_greece.2 days = 10 }
+		add_popularity = { ideology = collectivism popularity = 0.1 }
+		complete_national_focus = GRE_NIKOS_WINS
+		set_country_flag = NIKOS_WINS
+	}
+	option = { #The Nationalist Georgios Tsolakoglou
+		name = le_greece.2.II
+		country_event = { id = le_greece.2 days = 10 }
+		add_popularity = { ideology = labryscism popularity = 0.1 }
+		complete_national_focus = GRE_GEORGIOS_WINS
+		set_country_flag = GEORGIOS_WINS
+	}
+	option = { #The Monarchist Eleftherios Venizelos
+		name = le_greece.2.III
+		country_event = { id = le_greece.2 days = 10 }
+		add_popularity = { ideology = absolutism popularity = 0.1 }
+		complete_national_focus = GRE_ELEFTHERIOS_WINS
+		set_country_flag = ELEFTHERIOS_WINS
+	}
+	option = { #The Religious Charles Zervas
+		name = le_greece.2.IV
+		country_event = { id = le_greece.2 days = 10 }
+		add_popularity = { ideology = theocracy popularity = 0.1 }
+		complete_national_focus = GRE_DAMASKINOS_WINS
+		set_country_flag = DAMASKINOS_WINS
+	}
+}

@@ -31,3 +31,13 @@ set_politics = {
 	elections_allowed = no
 }
 set_convoys = 5
+
+create_country_leader = {
+	name = "Charles Zervas"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_GRE_Napoleon_Zervas.tga"
+	expire = "1950.4.6"
+	ideology = radical_theocracy
+	traits = {
+	}
+}

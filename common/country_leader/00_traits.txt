@@ -240,7 +240,39 @@ leader_traits = {
 			id = "GER"			
 			value = 200
 		}
-		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dislikes_prussia = {
+		random = no
+		ai_strategy = {
+			type = antagonize
+			id = "PRS"			
+			value = 200
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dislikes_great_britain = {
+		random = no
+		ai_strategy = {
+			type = antagonize
+			id = "GBR"			
+			value = 200
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dislikes_austria = {
+		random = no
+		ai_strategy = {
+			type = antagonize
+			id = "AUS"			
+			value = 200
+		}
 		ai_will_do = {
 			factor = 1
 		}

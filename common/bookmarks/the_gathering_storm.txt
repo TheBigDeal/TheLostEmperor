@@ -181,18 +181,6 @@ bookmarks = {
 			}
 		}
 
-		"MON"={
-			minor = yes
-			history = "ROM_BLITZKRIEG_DESC"
-			ideology = absolutism
-			ideas = {
-
-			}
-			focuses = {
-
-			}
-		}
-
 
 		effect = {
 			randomize_weather = 12345 # <- Obligatory in every bookmark !

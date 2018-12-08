@@ -14,24 +14,60 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 3100 }
 
 	focus = {
-		id = GRE_GREECE_IN_CHAOS
+		id = GRE_THE_ELECTIONS_OF_1928
 		icon = GFX_goal_revolution
 		x = 12
 		y = 0
-		cost = 10
+		cost = 1
 		ai_will_do = { factor = 10 }
-		bypass = { tag = GRE }
-		completion_reward = {}
+		completion_reward = { country_event = { id = le_greece.1 } }
 	}
 	focus = {
-		id = GRE_PICK_A_SIDE
+		id = GRE_GEORGIOS_WINS
 		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = GRE_GREECE_IN_CHAOS }
-		mutually_exclusive = { focus = GRE_PROTECT_THE_CURRENT_GOVERNMENT }
+		prerequisite = { focus = GRE_THE_ELECTIONS_OF_1928 }
+		mutually_exclusive = { focus = GRE_NIKOS_WINS focus = GRE_ELEFTHERIOS_WINS focus = GRE_DAMASKINOS_WINS }
 		x = 10
 		y = 1
-		cost = 10
+		cost = 1
 		ai_will_do = { factor = 10 }
+		available = {
+			has_country_flag = GEORGIOS_WINS
+		}
+		completion_reward = {
+			add_stability = -0.10
+			add_war_support = -0.20
+		}
+	}
+	focus = {
+		id = GRE_DAMASKINOS_WINS
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = GRE_THE_ELECTIONS_OF_1928 }
+		mutually_exclusive = { focus = GRE_NIKOS_WINS focus = GRE_GEORGIOS_WINS focus = GRE_ELEFTHERIOS_WINS }
+		x = 8
+		y = 1
+		cost = 1
+		ai_will_do = { factor = 10 }
+		available = {
+			has_country_flag = DAMASKINOS_WINS
+		}
+		completion_reward = {
+			add_stability = -0.10
+			add_war_support = -0.20
+		}
+	}
+	focus = {
+		id = GRE_NIKOS_WINS
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = GRE_THE_ELECTIONS_OF_1928 }
+		mutually_exclusive = { focus = GRE_ELEFTHERIOS_WINS focus = GRE_GEORGIOS_WINS focus = GRE_DAMASKINOS_WINS }
+		x = 6
+		y = 1
+		cost = 1
+		ai_will_do = { factor = 10 }
+		available = {
+			has_country_flag = NIKOS_WINS
+		}
 		completion_reward = {
 			add_stability = -0.10
 			add_war_support = -0.20
@@ -40,40 +76,43 @@ focus_tree = {
 	focus = {
 		id = GRE_SUPPORT_THE_SPARTAN_STATE
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = GRE_PICK_A_SIDE }
+		prerequisite = { focus = GRE_GEORGIOS_WINS }
 		mutually_exclusive = { focus = GRE_SUPPORT_MOUNT_ATHOS focus = GRE_SUPPORT_THE_HELLENIC_COMMUNE }
 		x = 10
 		y = 2
-		cost = 10
+		cost = 1
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			SPT = { add_opinion_modifier = { target = GRE modifier = GRE_civil_war_support } }
+			add_popularity = { ideology = labryscism popularity = 0.08 }
 		}
 	}
 	focus = {
 		id = GRE_SUPPORT_MOUNT_ATHOS
 		icon = GFX_religion_orthodox
-		prerequisite = { focus = GRE_PICK_A_SIDE }
+		prerequisite = { focus = GRE_DAMASKINOS_WINS }
 		mutually_exclusive = { focus = GRE_SUPPORT_THE_HELLENIC_COMMUNE focus = GRE_SUPPORT_THE_SPARTAN_STATE }
 		x = 8
 		y = 2
-		cost = 10
+		cost = 1
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			MOU = { add_opinion_modifier = { target = GRE modifier = GRE_civil_war_support } }
+			add_popularity = { ideology = theocracy popularity = 0.08 }
 		}
 	}
 	focus = {
 		id = GRE_SUPPORT_THE_HELLENIC_COMMUNE
 		icon = GFX_goal_revolution_tools
-		prerequisite = { focus = GRE_PICK_A_SIDE }
+		prerequisite = { focus = GRE_NIKOS_WINS }
 		mutually_exclusive = { focus = GRE_SUPPORT_MOUNT_ATHOS focus = GRE_SUPPORT_THE_SPARTAN_STATE }
 		x = 6
 		y = 2
-		cost = 10
+		cost = 1
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			HEL = { add_opinion_modifier = { target = GRE modifier = GRE_civil_war_support } }
+			add_popularity = { ideology = collectivism popularity = 0.08 }
 		}
 	}
 	focus = {
@@ -82,7 +121,7 @@ focus_tree = {
 		prerequisite = { focus = GRE_SUPPORT_THE_SPARTAN_STATE focus = GRE_SUPPORT_THE_HELLENIC_COMMUNE focus = GRE_SUPPORT_MOUNT_ATHOS }
 		x = 8
 		y = 3
-		cost = 10
+		cost = 1
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_stability = -0.20
@@ -95,21 +134,24 @@ focus_tree = {
 		prerequisite = { focus = GRE_INVITE_NEW_LEADERS }
 		x = 8
 		y = 4
-		cost = 10
+		cost = 1
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			set_country_flag = GRE_WRITE_CONSTITUTION
+			set_country_flag = write_constitution
 		}
 	}
 	focus = {
-		id = GRE_PROTECT_THE_CURRENT_GOVERNMENT
+		id = GRE_ELEFTHERIOS_WINS
 		icon = GFX_goal_generic_defence
-		prerequisite = { focus = GRE_GREECE_IN_CHAOS }
-		mutually_exclusive = { focus = GRE_PICK_A_SIDE }
-		x = 14
+		prerequisite = { focus = GRE_THE_ELECTIONS_OF_1928 }
+		mutually_exclusive = { focus = GRE_NIKOS_WINS focus = GRE_GEORGIOS_WINS focus = GRE_DAMASKINOS_WINS }
+		x = 16
 		y = 1
-		cost = 10
+		cost = 1
 		ai_will_do = { factor = 10 }
+		available = {
+			has_country_flag = ELEFTHERIOS_WINS
+		}
 		completion_reward = {
 			add_stability = 0.10
 		}
@@ -117,10 +159,10 @@ focus_tree = {
 	focus = {
 		id = GRE_PUSH_AGAINST_THE_SPARTANS
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = GRE_PROTECT_THE_CURRENT_GOVERNMENT }
+		prerequisite = { focus = GRE_ELEFTHERIOS_WINS }
 		x = 14
 		y = 2
-		cost = 10
+		cost = 1
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			set_country_flag = GRE_SPARTAN_PUSH
@@ -130,10 +172,10 @@ focus_tree = {
 	focus = {
 		id = GRE_PUSH_AGAINST_MOUNT_ATHOS
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = GRE_PROTECT_THE_CURRENT_GOVERNMENT }
+		prerequisite = { focus = GRE_ELEFTHERIOS_WINS }
 		x = 16
 		y = 2
-		cost = 10
+		cost = 1
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			set_country_flag = GRE_ATHOS_PUSH
@@ -143,10 +185,10 @@ focus_tree = {
 	focus = {
 		id = GRE_PUSH_AGAINST_THE_HELLENIC_COMMUNE
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = GRE_PROTECT_THE_CURRENT_GOVERNMENT }
+		prerequisite = { focus = GRE_ELEFTHERIOS_WINS }
 		x = 18
 		y = 2
-		cost = 10
+		cost = 1
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			set_country_flag = GRE_HELLENIC_PUSH
@@ -161,7 +203,7 @@ focus_tree = {
 		prerequisite = { focus = GRE_PUSH_AGAINST_THE_SPARTANS }
 		x = 15
 		y = 3
-		cost = 10
+		cost = 1
 		ai_will_do = { factor = 10 }
 		available = {
 			NOT = {
@@ -183,7 +225,7 @@ focus_tree = {
 		prerequisite = { focus = GRE_PUSH_AGAINST_THE_SPARTANS }
 		x = 17
 		y = 3
-		cost = 10
+		cost = 1
 		ai_will_do = { factor = 10 }
 		available = {
 			NOT = {
@@ -203,7 +245,7 @@ focus_tree = {
 		prerequisite = { focus = GRE_ROOT_OUT_INTERNAL_SUPPORT }
 		x = 16
 		y = 4
-		cost = 10
+		cost = 1
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_stability = 0.20
@@ -216,7 +258,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GRE_PROCLAIM_NEW_GOVERNMENT }
 		x = 13
 		y = 5
-		cost = 10
+		cost = 1
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 
@@ -229,7 +271,75 @@ focus_tree = {
 		mutually_exclusive = { focus = GRE_PROCLAIM_END_TO_CIVIL_WAR }
 		x = 11
 		y = 5
-		cost = 10
+		cost = 1
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = GRE_PROCLAIM_NEW_GOVERNMENT_tt
+			if = {
+				limit = {
+					has_country_flag = NIKOS_WINS
+				}
+				add_to_variable = {
+				    var = GLOBAL_COMMUNIST_INFLUENCE
+				    value = 1
+				}
+				add_popularity = { ideology = collectivism popularity = 0.08 }
+				set_politics = { ruling_party = collectivism }
+				annex_country = { target = HEL }
+				annex_country = { target = SPT }
+				annex_country = { target = MOU }
+			}
+			if = {
+				limit = {
+					has_country_flag = GEORGIOS_WINS
+				}
+				add_to_variable = {
+				    var = GLOBAL_FASCIST_INFLUENCE
+				    value = 1
+				}
+				add_popularity = { ideology = labryscism popularity = 0.08 }
+				set_politics = { ruling_party = labryscism }
+				annex_country = { target = HEL }
+				annex_country = { target = SPT }
+				annex_country = { target = MOU }
+			}
+			if = {
+				limit = {
+					has_country_flag = DAMASKINOS_WINS
+				}
+				add_to_variable = {
+				    var = GLOBAL_THEOCRATIC_INFLUENCE
+				    value = 1
+				}
+				add_popularity = { ideology = theocracy popularity = 0.08 }
+				set_politics = { ruling_party = theocracy }
+				annex_country = { target = HEL }
+				annex_country = { target = SPT }
+				annex_country = { target = MOU }
+			}
+		}
+		
+
+	}
+	focus = {
+		id = GRE_A_PEOPLES_GREECE
+		icon = GFX_goal_new_treaty
+		prerequisite = { focus = GRE_PROCLAIM_NEW_GOVERNMENT }
+		x = 5
+		y = 6
+		cost = 1
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GRE_THE_GREEK_STATE
+		icon = GFX_goal_new_treaty
+		prerequisite = { focus = GRE_PROCLAIM_NEW_GOVERNMENT }
+		x = 11
+		y = 6
+		cost = 1
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 

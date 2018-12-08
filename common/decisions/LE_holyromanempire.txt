@@ -1,0 +1,964 @@
+HRE_elections_category = {
+	support_prussia = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = BAV has_country_flag = supporting_austria }
+				AND = { tag = MST has_country_flag = supporting_austria }
+				AND = { tag = WUR has_country_flag = supporting_austria }
+				AND = { tag = SAX has_country_flag = supporting_austria }
+				AND = { tag = BOH has_country_flag = supporting_austria }
+				AND = { tag = BUR has_country_flag = supporting_austria }
+				AND = { tag = HAN has_country_flag = supporting_austria }
+				AND = { tag = PLT has_country_flag = supporting_austria }
+			}
+		}
+		visible = {
+			OR = {
+				original_tag = BAV
+				original_tag = MST
+				original_tag = WUR
+				original_tag = SAX
+				original_tag = BOH
+				original_tag = BUR
+				original_tag = HAN
+				original_tag = PLT
+			}
+		}
+		cost = 10
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 HES = { has_opinion = { target = PRS value > 0 }}}
+			modifier = { factor = 4 HES = { has_opinion = { target = PRS value > 25 }}}
+			modifier = { factor = 6 HES = { has_opinion = { target = PRS value > 50 }}}
+			modifier = { factor = 8 HES = { has_opinion = { target = PRS value > 75 }}}
+			modifier = { factor = 10 HES = { has_opinion = { target = PRS value > 100 }}}
+			modifier = { factor = 12 HES = { has_opinion = { target = PRS value > 125 }}}
+			modifier = { factor = 14 HES = { has_opinion = { target = PRS value > 150 }}}
+			modifier = { factor = 16 HES = { has_opinion = { target = PRS value > 175 }}}
+			modifier = { factor = 20 HES = { has_opinion = { target = PRS value > 190 }}}
+			modifier = { factor = 2 tag = SAX }
+			modifier = { factor = 2 tag = HES }
+			modifier = { factor = 2 tag = HAN }
+			modifier = { factor = 2 tag = MST }
+			modifier = { factor = -2 tag = BAV }
+			modifier = { factor = -2 tag = BOH }
+			modifier = { factor = -2 tag = THU }
+			modifier = { factor = -2 tag = PLT }
+		}
+		complete_effect = {
+			set_country_flag = supporting_prussia
+			clr_country_flag = supporting_austria
+			#SAXONY
+			#####################################
+			if = {
+				limit = { tag = SAX }
+				PRS = { set_variable = { var = PRS_SAXONY_SUPPORT value = -100 } }
+				PRS = { set_variable = { var = AUS_SAXONY_SUPPORT value = 100 } }
+			}
+			#BOHEMIA
+			#####################################
+			if = {
+				limit = { tag = BOH }
+				PRS = { set_variable = { var = PRS_BOHEMIAN_SUPPORT value = 100 } }
+				PRS = { set_variable = { var = AUS_BOHEMIAN_SUPPORT value = -100 } }
+			}
+			#HANNOVER
+			#####################################
+			if = {
+				limit = { tag = HAN }
+				PRS = { set_variable = { var = PRS_HANNOVER_SUPPORT value = 100 } }
+				PRS = { set_variable = { var = AUS_HANNOVER_SUPPORT value = -100 } }
+			}
+			#MECKELENBURG
+			#####################################
+			if = {
+				limit = { tag = MST }
+				PRS = { set_variable = { var = PRS_MECKELENBURG_SUPPORT value = 100 } }
+				PRS = { set_variable = { var = AUS_MECKELENBURG_SUPPORT value = -100 } }
+			}
+			#BAVARIAN
+			#####################################
+			if = {
+				limit = { tag = BAV }
+				PRS = { set_variable = { var = PRS_BAVARIAN_SUPPORT value = 100 } }
+				PRS = { set_variable = { var = AUS_BAVARIAN_SUPPORT value = -100 } }
+			}
+			#PALATINATE
+			#####################################
+			if = {
+				limit = { tag = PLT }
+				PRS = { set_variable = { var = PRS_PALATINATE_SUPPORT value = 100 } }
+				PRS = { set_variable = { var = AUS_PALATINATE_SUPPORT value = -100 } }
+			}
+			#WURZBURG
+			#####################################
+			if = {
+				limit = { tag = WRZ }
+				PRS = { set_variable = { var = PRS_WURZBURG_SUPPORT value = 100 } }
+				PRS = { set_variable = { var = AUS_WURZBURG_SUPPORT value = -100 } }
+			}
+			#BURGUNDY
+			#####################################
+			if = {
+				limit = { tag = BUN }
+				PRS = { set_variable = { var = PRS_BURGUNDY_SUPPORT value = 100 } }
+				PRS = { set_variable = { var = AUS_BURGUNDY_SUPPORT value = -100 } }
+			}
+		}
+	}
+	support_austria = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = BAV has_country_flag = supporting_prussia }
+				AND = { tag = MST has_country_flag = supporting_prussia }
+				AND = { tag = WUR has_country_flag = supporting_prussia }
+				AND = { tag = SAX has_country_flag = supporting_prussia }
+				AND = { tag = BOH has_country_flag = supporting_prussia }
+				AND = { tag = BUR has_country_flag = supporting_prussia }
+				AND = { tag = HAN has_country_flag = supporting_prussia }
+				AND = { tag = PLT has_country_flag = supporting_prussia }
+			}
+		}
+		visible = {
+			OR = {
+				original_tag = BAV
+				original_tag = MST
+				original_tag = WUR
+				original_tag = SAX
+				original_tag = BOH
+				original_tag = BUR
+				original_tag = HAN
+				original_tag = PLT
+			}
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 0
+			modifier = { factor = 2 HES = { has_opinion = { target = AUS value > 0 }}}
+			modifier = { factor = 4 HES = { has_opinion = { target = AUS value > 25 }}}
+			modifier = { factor = 6 HES = { has_opinion = { target = AUS value > 50 }}}
+			modifier = { factor = 8 HES = { has_opinion = { target = AUS value > 75 }}}
+			modifier = { factor = 10 HES = { has_opinion = { target = AUS value > 100 }}}
+			modifier = { factor = 12 HES = { has_opinion = { target = AUS value > 125 }}}
+			modifier = { factor = 14 HES = { has_opinion = { target = AUS value > 150 }}}
+			modifier = { factor = 16 HES = { has_opinion = { target = AUS value > 175 }}}
+			modifier = { factor = 20 HES = { has_opinion = { target = AUS value > 190 }}}
+			modifier = { factor = -2 tag = SAX }
+			modifier = { factor = -2 tag = HES }
+			modifier = { factor = -2 tag = HAN }
+			modifier = { factor = -2 tag = MST }
+			modifier = { factor = 2 tag = BAV }
+			modifier = { factor = 2 tag = BOH }
+			modifier = { factor = 2 tag = THU }
+			modifier = { factor = 2 tag = PLT }
+		}
+		complete_effect = {
+			set_country_flag = supporting_austria
+			clr_country_flag = supporting_prussia
+			#SAXONY
+			#####################################
+			if = {
+				limit = { tag = SAX }
+				PRS = { set_variable = { var = PRS_SAXONY_SUPPORT value = -100 } }
+				PRS = { set_variable = { var = AUS_SAXONY_SUPPORT value = 100 } }
+			}
+			#BOHEMIA
+			#####################################
+			if = {
+				limit = { tag = BOH }
+				PRS = { set_variable = { var = PRS_BOHEMIAN_SUPPORT value = -100 } }
+				PRS = { set_variable = { var = AUS_BOHEMIAN_SUPPORT value = 100 } }
+			}
+			#HANNOVER
+			#####################################
+			if = {
+				limit = { tag = HAN }
+				PRS = { set_variable = { var = PRS_HANNOVER_SUPPORT value = -100 } }
+				PRS = { set_variable = { var = AUS_HANNOVER_SUPPORT value = 100 } }
+			}
+			#MECKELENBURG
+			#####################################
+			if = {
+				limit = { tag = MST }
+				PRS = { set_variable = { var = PRS_MECKELENBURG_SUPPORT value = -100 } }
+				PRS = { set_variable = { var = AUS_MECKELENBURG_SUPPORT value = 100 } }
+			}
+			#BAVARIAN
+			#####################################
+			if = {
+				limit = { tag = BAV }
+				PRS = { set_variable = { var = PRS_BAVARIAN_SUPPORT value = -100 } }
+				PRS = { set_variable = { var = AUS_BAVARIAN_SUPPORT value = 100 } }
+			}
+			#PALATINATE
+			#####################################
+			if = {
+				limit = { tag = PLT }
+				PRS = { set_variable = { var = PRS_PALATINATE_SUPPORT value = -100 } }
+				PRS = { set_variable = { var = AUS_PALATINATE_SUPPORT value = 100 } }
+			}
+			#WURZBURG
+			#####################################
+			if = {
+				limit = { tag = WRZ }
+				PRS = { set_variable = { var = PRS_WURZBURG_SUPPORT value = -100 } }
+				PRS = { set_variable = { var = AUS_WURZBURG_SUPPORT value = 100 } }
+			}
+			#BURGUNDY
+			#####################################
+			if = {
+				limit = { tag = BUN }
+				PRS = { set_variable = { var = PRS_BURGUNDY_SUPPORT value = -100 } }
+				PRS = { set_variable = { var = AUS_BURGUNDY_SUPPORT value = 100 } }
+			}
+		}
+	}
+}
+
+HRE_control_catagory = {
+	#SAXONY
+	#################################
+	envoy_to_saxony = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS PLT = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS PLT = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } NOT = { SAX = { has_opinion_modifier = HRE_send_envoy } } }
+		cost = 10
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 SAX = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 SAX = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 SAX = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { SAX = { add_opinion_modifier = { target = PRS modifier = HRE_send_envoy } } }
+	}
+	embassy_in_saxony = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS PLT = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS PLT = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { AND = { OR = { tag = PRS tag = AUS } SAX = { has_opinion_modifier = HRE_send_envoy } NOT = { SAX = { has_opinion_modifier = HRE_establish_embassy }}}}
+		cost = 30
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 SAX = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 SAX = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 SAX = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { SAX = { add_opinion_modifier = { target = PRS modifier = HRE_establish_embassy } } }
+	}
+	alliance_with_saxony = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS PLT = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS PLT = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } SAX = { has_opinion_modifier = HRE_establish_embassy } NOT = { SAX = { has_opinion_modifier = HRE_declare_alliance } }}
+		cost = 50
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 SAX = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 SAX = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 SAX = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { 
+			SAX = { add_opinion_modifier = { target = PRS modifier = HRE_declare_alliance } } 
+			give_guarantee = SAX
+			SAX = { give_guarantee = PRS }
+		}
+	}
+	#HANNOVER
+	#################################
+	envoy_to_hannover = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS PLT = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS PLT = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { AND = { OR = { tag = PRS tag = AUS } NOT = { HAN = { has_opinion_modifier = HRE_send_envoy } } } }
+		cost = 10
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 HAN = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 HAN = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 HAN = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { HAN = { add_opinion_modifier = { target = PRS modifier = HRE_send_envoy } } }
+	}
+	embassy_in_hannover = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS PLT = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS PLT = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } HAN = { has_opinion_modifier = HRE_send_envoy } NOT = { HAN = { has_opinion_modifier = HRE_establish_embassy } }}
+		cost = 30
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 HAN = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 HAN = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 HAN = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { HAN = { add_opinion_modifier = { target = PRS modifier = HRE_establish_embassy } } }
+	}
+	alliance_with_hannover = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS PLT = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS PLT = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } HAN = { has_opinion_modifier = HRE_establish_embassy } NOT = { HAN = { has_opinion_modifier = HRE_declare_alliance } }}
+		cost = 50
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 HAN = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 HAN = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 HAN = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { 
+			HAN = { add_opinion_modifier = { target = PRS modifier = HRE_declare_alliance } } 
+			give_guarantee = HAN
+			HAN = { give_guarantee = PRS }
+		}
+	}
+	#MECKELENBURG
+	#################################
+	envoy_to_meckelenburg = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS PLT = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS PLT = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } NOT = { MST = { has_opinion_modifier = HRE_send_envoy } } }
+		cost = 10
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 MST = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 MST = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 MST = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { MST = { add_opinion_modifier = { target = PRS modifier = HRE_send_envoy } } }
+	}
+	embassy_in_meckelenburg = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS PLT = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS PLT = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } MST = { has_opinion_modifier = HRE_send_envoy } NOT = { MST = { has_opinion_modifier = HRE_establish_embassy } }}
+		cost = 30
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 MST = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 MST = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 MST = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { MST = { add_opinion_modifier = { target = PRS modifier = HRE_establish_embassy } } }
+	}
+	alliance_with_meckelenburg = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS PLT = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS PLT = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } MST = { has_opinion_modifier = HRE_establish_embassy } NOT = { MST = { has_opinion_modifier = HRE_declare_alliance } }}
+		cost = 50
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 MST = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 MST = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 MST = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { 
+			MST = { add_opinion_modifier = { target = PRS modifier = HRE_declare_alliance } } 
+			give_guarantee = MST
+			MST = { give_guarantee = PRS }
+		}
+	}
+	#BAVARIA
+	#################################
+	envoy_to_bavaria = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS PLT = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS PLT = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } NOT = { BAV = { has_opinion_modifier = HRE_send_envoy } } }
+		cost = 10
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 BAV = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 BAV = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 BAV = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { BAV = { add_opinion_modifier = { target = PRS modifier = HRE_send_envoy } } }
+	}
+	embassy_in_bavaria = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS PLT = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS PLT = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } BAV = { has_opinion_modifier = HRE_send_envoy } NOT = { BAV = { has_opinion_modifier = HRE_establish_embassy } }}
+		cost = 30
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 BAV = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 BAV = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 BAV = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { BAV = { add_opinion_modifier = { target = PRS modifier = HRE_establish_embassy } } }
+	}
+	alliance_with_bavaria = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS PLT = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS PLT = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } BAV = { has_opinion_modifier = HRE_establish_embassy } NOT = { BAV = { has_opinion_modifier = HRE_declare_alliance } }}
+		cost = 50
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 BAV = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 BAV = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 BAV = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { 
+			BAV = { add_opinion_modifier = { target = PRS modifier = HRE_declare_alliance } } 
+			give_guarantee = BAV
+			BAV = { give_guarantee = PRS }
+		}
+	}
+	#BOHEMIA
+	#################################
+	envoy_to_bohemia = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS PLT = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS PLT = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } NOT = { BOH = { has_opinion_modifier = HRE_send_envoy } } }
+		cost = 10
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 BOH = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 BOH = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 BOH = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { BOH = { add_opinion_modifier = { target = PRS modifier = HRE_send_envoy } } }
+	}
+	embassy_in_bohemia = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS PLT = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS PLT = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } BOH = { has_opinion_modifier = HRE_send_envoy } NOT = { BOH = { has_opinion_modifier = HRE_establish_embassy } }}
+		cost = 30
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 BOH = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 BOH = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 BOH = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { BOH = { add_opinion_modifier = { target = PRS modifier = HRE_establish_embassy } } }
+	}
+	alliance_with_bohemia = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS PLT = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS PLT = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } BOH = { has_opinion_modifier = HRE_establish_embassy } NOT = { BOH = { has_opinion_modifier = HRE_declare_alliance } }}
+		cost = 50
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 BOH = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 BOH = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 BOH = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { 
+			BOH = { add_opinion_modifier = { target = PRS modifier = HRE_declare_alliance } } 
+			give_guarantee = BOH
+			BOH = { give_guarantee = PRS }
+		}
+	}
+	#PALATINATE
+	#################################
+	envoy_to_the_palatinate = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS PLT = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS PLT = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } NOT = { PLT = { has_opinion_modifier = HRE_send_envoy } } }
+		cost = 10
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 PLT = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 PLT = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 PLT = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { PLT = { add_opinion_modifier = { target = PRS modifier = HRE_send_envoy } } }
+	}
+	embassy_in_the_palatinate = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS PLT = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS PLT = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } PLT = { has_opinion_modifier = HRE_send_envoy } NOT = { PLT = { has_opinion_modifier = HRE_establish_embassy } }}
+		cost = 30
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 PLT = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 PLT = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 PLT = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { PLT = { add_opinion_modifier = { target = PRS modifier = HRE_establish_embassy } } }
+	}
+	alliance_with_the_palatinate = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS PLT = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS PLT = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } PLT = { has_opinion_modifier = HRE_establish_embassy } NOT = { PLT = { has_opinion_modifier = HRE_declare_alliance } }}
+		cost = 50
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 PLT = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 PLT = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 PLT = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { 
+			PLT = { add_opinion_modifier = { target = PRS modifier = HRE_declare_alliance } } 
+			give_guarantee = PLT
+			PLT = { give_guarantee = PRS }
+		}
+	}
+	#HESSE
+	#################################
+	envoy_to_hesse = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS HES = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS HES = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } NOT = { HES = { has_opinion_modifier = HRE_send_envoy } } }
+		cost = 10
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 HES = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 HES = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 HES = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { HES = { add_opinion_modifier = { target = PRS modifier = HRE_send_envoy } } }
+	}
+	embassy_in_hesse = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS HES = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS HES = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } HES = { has_opinion_modifier = HRE_send_envoy } NOT = { HES = { has_opinion_modifier = HRE_establish_embassy } }}
+		cost = 30
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 HES = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 HES = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 HES = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { HES = { add_opinion_modifier = { target = PRS modifier = HRE_establish_embassy } } }
+	}
+	alliance_with_hesse = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS HES = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS HES = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } HES = { has_opinion_modifier = HRE_establish_embassy } NOT = { HES = { has_opinion_modifier = HRE_declare_alliance } }}
+		cost = 50
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 HES = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 HES = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 HES = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { 
+			HES = { add_opinion_modifier = { target = PRS modifier = HRE_declare_alliance } } 
+			give_guarantee = HES
+			HES = { give_guarantee = PRS }
+		}
+	}
+	#THURINGIA
+	#################################
+	envoy_to_thuringia = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS THU = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS THU = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } NOT = { THU = { has_opinion_modifier = HRE_send_envoy } } }
+		cost = 10
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 THU = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 THU = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 THU = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { THU = { add_opinion_modifier = { target = PRS modifier = HRE_send_envoy } } }
+	}
+	embassy_in_thuringia = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS THU = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS THU = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } THU = { has_opinion_modifier = HRE_send_envoy } NOT = { THU = { has_opinion_modifier = HRE_establish_embassy } }}
+		cost = 30
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 THU = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 THU = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 THU = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { THU = { add_opinion_modifier = { target = PRS modifier = HRE_establish_embassy } } }
+	}
+	alliance_with_thuringia = {
+		icon = generic_army_support
+		available = {
+			OR = {
+				AND = { tag = PRS THU = { has_country_flag = supporting_austria } }
+				AND = { tag = AUS THU = { has_country_flag = supporting_prussia } }
+			}
+		}
+		visible = { OR = { tag = PRS tag = AUS } THU = { has_opinion_modifier = HRE_establish_embassy } NOT = { THU = { has_opinion_modifier = HRE_declare_alliance } }}
+		cost = 50
+		ai_will_do = { 
+			factor = 0
+			modifier = { factor = 2 THU = { has_opinion = { target = PRS value < 150 }}}
+			modifier = { factor = 5 THU = { has_opinion = { target = PRS value < 100 }}}
+			modifier = { factor = 10 THU = { has_opinion = { target = PRS value < 0 }}}
+		}
+		complete_effect = { 
+			THU = { add_opinion_modifier = { target = PRS modifier = HRE_declare_alliance } } 
+			give_guarantee = THU
+			THU = { give_guarantee = PRS }
+		}
+	}
+}
+HRE_emperor_decisions = {
+	consolidate_hre = {
+		icon = generic_army_support
+		available = { has_country_flag = holy_roman_emperor }
+		visible = {
+			OR = {
+				tag = PRS
+				tag = AUS
+			}
+		}
+		cost = 50
+		ai_will_do = { factor = 0 }
+		complete_effect = {
+			BAV = { country_event = { id = hre.3 } }
+			SAX = { country_event = { id = hre.3 } }
+			TRI = { country_event = { id = hre.3 } }
+			ULM = { country_event = { id = hre.3 } }
+			LUB = { country_event = { id = hre.3 } }
+			HAN = { country_event = { id = hre.3 } }
+			BAD = { country_event = { id = hre.3 } }
+			CLG = { country_event = { id = hre.3 } }
+			HES = { country_event = { id = hre.3 } }
+			FRN = { country_event = { id = hre.3 } }
+			WUR = { country_event = { id = hre.3 } }
+			HAM = { country_event = { id = hre.3 } }
+			BOH = { country_event = { id = hre.3 } }
+			BUR = { country_event = { id = hre.3 } }
+			BRE = { country_event = { id = hre.3 } }
+			BRU = { country_event = { id = hre.3 } }
+			ANH = { country_event = { id = hre.3 } }
+			WRZ = { country_event = { id = hre.3 } }
+			THU = { country_event = { id = hre.3 } }
+			KLE = { country_event = { id = hre.3 } }
+			LIE = { country_event = { id = hre.3 } }
+			MAI = { country_event = { id = hre.3 } }
+			NUR = { country_event = { id = hre.3 } }
+			AUG = { country_event = { id = hre.3 } }
+			ANS = { country_event = { id = hre.3 } }
+			PLT = { country_event = { id = hre.3 } }
+			OLD = { country_event = { id = hre.3 } }
+			MST = { country_event = { id = hre.3 } }
+			MCH = { country_event = { id = hre.3 } }
+			HLS = { country_event = { id = hre.3 } }
+			EFR = { country_event = { id = hre.3 } }
+			MUN = { country_event = { id = hre.3 } }
+			RAV = { country_event = { id = hre.3 } }
+			PAD = { country_event = { id = hre.3 } }
+			PYR = { country_event = { id = hre.3 } }
+			NAS = { country_event = { id = hre.3 } }
+			JUL = { country_event = { id = hre.3 } }
+			NSA = { country_event = { id = hre.3 } }
+			FUL = { country_event = { id = hre.3 } }
+			BAM = { country_event = { id = hre.3 } }
+			SLZ = { country_event = { id = hre.3 } }
+			SPY = { country_event = { id = hre.3 } }
+			OFF = { country_event = { id = hre.3 } }
+			HUL = { country_event = { id = hre.3 } }
+			MEM = { country_event = { id = hre.3 } }
+			LND = { country_event = { id = hre.3 } }
+			HNZ = { country_event = { id = hre.3 } }
+			FUS = { country_event = { id = hre.3 } }
+			PSU = { country_event = { id = hre.3 } }
+			WLN = { country_event = { id = hre.3 } }
+			FLA = { country_event = { id = hre.3 } }
+			ALS = { country_event = { id = hre.3 } }
+		}
+	}
+	form_german_nation = {
+		icon = generic_army_support
+		available = { has_country_flag = holy_roman_emperor }
+		visible = {
+			OR = {
+				tag = PRS
+				tag = AUS
+			}
+		}
+		cost = 50
+		ai_will_do = { factor = 0 }
+		complete_effect = {
+			BAV = { country_event = { id = hre.4 } }
+			SAX = { country_event = { id = hre.4 } }
+			TRI = { country_event = { id = hre.4 } }
+			ULM = { country_event = { id = hre.4 } }
+			LUB = { country_event = { id = hre.4 } }
+			HAN = { country_event = { id = hre.4 } }
+			BAD = { country_event = { id = hre.4 } }
+			CLG = { country_event = { id = hre.4 } }
+			HES = { country_event = { id = hre.4 } }
+			FRN = { country_event = { id = hre.4 } }
+			WUR = { country_event = { id = hre.4 } }
+			HAM = { country_event = { id = hre.4 } }
+			BOH = { country_event = { id = hre.4 } }
+			if = {
+				limit = { AUS = { is_ai = no } }
+				GER = { change_tag_from = AUS }
+				GER = { annex_country = { target = AUS transfer_troops = yes } }
+			}
+			if = {
+				limit = { PRS = { is_ai = no } }
+				GER = { change_tag_from = PRS }
+				GER = { annex_country = { target = PRS transfer_troops = yes } }
+			}
+			BUR = { country_event = { id = hre.6 } }
+			BRE = { country_event = { id = hre.4 } }
+			BRU = { country_event = { id = hre.4 } }
+			ANH = { country_event = { id = hre.4 } }
+			WRZ = { country_event = { id = hre.4 } }
+			THU = { country_event = { id = hre.4 } }
+			KLE = { country_event = { id = hre.4 } }
+			LIE = { country_event = { id = hre.4 } }
+			MAI = { country_event = { id = hre.4 } }
+			NUR = { country_event = { id = hre.4 } }
+			AUG = { country_event = { id = hre.4 } }
+			ANS = { country_event = { id = hre.4 } }
+			PLT = { country_event = { id = hre.4 } }
+			OLD = { country_event = { id = hre.4 } }
+			MST = { country_event = { id = hre.4 } }
+			MCH = { country_event = { id = hre.4 } }
+			HLS = { country_event = { id = hre.4 } }
+			EFR = { country_event = { id = hre.4 } }
+			MUN = { country_event = { id = hre.4 } }
+			RAV = { country_event = { id = hre.4 } }
+			PAD = { country_event = { id = hre.4 } }
+			PYR = { country_event = { id = hre.4 } }
+			NAS = { country_event = { id = hre.4 } }
+			JUL = { country_event = { id = hre.4 } }
+			NSA = { country_event = { id = hre.4 } }
+			FUL = { country_event = { id = hre.4 } }
+			BAM = { country_event = { id = hre.4 } }
+			SLZ = { country_event = { id = hre.4 } }
+			SPY = { country_event = { id = hre.4 } }
+			OFF = { country_event = { id = hre.4 } }
+			HUL = { country_event = { id = hre.4 } }
+			MEM = { country_event = { id = hre.4 } }
+			LND = { country_event = { id = hre.4 } }
+			HNZ = { country_event = { id = hre.4 } }
+			FUS = { country_event = { id = hre.4 } }
+			PSU = { country_event = { id = hre.4 } }
+			WLN = { country_event = { id = hre.6 } }
+			FLA = { country_event = { id = hre.6 } }
+			ALS = { country_event = { id = hre.4 } }
+			if = {
+				limit = {
+					tag = PRS
+				}
+				GER = { set_cosmetic_tag = GERMAN_EMPIRE_OLD }
+				AUS = { country_event = { id = hre.4 } }
+			}
+			if = {
+				limit = {
+					tag = AUS
+				}
+				GER = { set_cosmetic_tag = GERMAN_EMPIRE_OLD }
+				PRS = { country_event = { id = hre.4 } }
+			}
+		}
+	}
+	an_imperial_state = {
+		icon = generic_army_support
+		available = { has_country_flag = holy_roman_emperor }
+		visible = {
+			OR = {
+				tag = PRS
+				tag = AUS
+			}
+		}
+		cost = 50
+		ai_will_do = { factor = 0 }
+		complete_effect = {
+			BAV = { country_event = { id = hre.5 } }
+			SAX = { country_event = { id = hre.5 } }
+			TRI = { country_event = { id = hre.5 } }
+			ULM = { country_event = { id = hre.5 } }
+			LUB = { country_event = { id = hre.5 } }
+			HAN = { country_event = { id = hre.5 } }
+			BAD = { country_event = { id = hre.5 } }
+			CLG = { country_event = { id = hre.5 } }
+			HES = { country_event = { id = hre.5 } }
+			FRN = { country_event = { id = hre.5 } }
+			WUR = { country_event = { id = hre.5 } }
+			HAM = { country_event = { id = hre.5 } }
+			BOH = { country_event = { id = hre.5 } }
+			if = {
+				limit = { AUS = { is_ai = no } }
+				GER = { change_tag_from = AUS }
+				GER = { annex_country = { target = AUS transfer_troops = yes } }
+			}
+			if = {
+				limit = { PRS = { is_ai = no } }
+				GER = { change_tag_from = PRS }
+				GER = { annex_country = { target = PRS transfer_troops = yes } }
+			}
+			BUR = { country_event = { id = hre.5 } }
+			BRE = { country_event = { id = hre.5 } }
+			BRU = { country_event = { id = hre.5 } }
+			ANH = { country_event = { id = hre.5 } }
+			WRZ = { country_event = { id = hre.5 } }
+			THU = { country_event = { id = hre.5 } }
+			KLE = { country_event = { id = hre.5 } }
+			LIE = { country_event = { id = hre.5 } }
+			MAI = { country_event = { id = hre.5 } }
+			NUR = { country_event = { id = hre.5 } }
+			AUG = { country_event = { id = hre.5 } }
+			ANS = { country_event = { id = hre.5 } }
+			PLT = { country_event = { id = hre.5 } }
+			OLD = { country_event = { id = hre.5 } }
+			MST = { country_event = { id = hre.5 } }
+			MCH = { country_event = { id = hre.5 } }
+			HLS = { country_event = { id = hre.5 } }
+			EFR = { country_event = { id = hre.5 } }
+			MUN = { country_event = { id = hre.5 } }
+			RAV = { country_event = { id = hre.5 } }
+			PAD = { country_event = { id = hre.5 } }
+			PYR = { country_event = { id = hre.5 } }
+			NAS = { country_event = { id = hre.5 } }
+			JUL = { country_event = { id = hre.5 } }
+			NSA = { country_event = { id = hre.5 } }
+			FUL = { country_event = { id = hre.5 } }
+			BAM = { country_event = { id = hre.5 } }
+			SLZ = { country_event = { id = hre.5 } }
+			SPY = { country_event = { id = hre.5 } }
+			OFF = { country_event = { id = hre.5 } }
+			HUL = { country_event = { id = hre.5 } }
+			MEM = { country_event = { id = hre.5 } }
+			LND = { country_event = { id = hre.5 } }
+			HNZ = { country_event = { id = hre.5 } }
+			FUS = { country_event = { id = hre.5 } }
+			PSU = { country_event = { id = hre.5 } }
+			WLN = { country_event = { id = hre.5 } }
+			FLA = { country_event = { id = hre.5 } }
+			ALS = { country_event = { id = hre.5 } }
+			if = {
+				limit = {
+					tag = PRS
+				}
+				GER = { set_cosmetic_tag = HRE_UNIFIED }
+				AUS = { country_event = { id = hre.5 } }
+			}
+			if = {
+				limit = {
+					tag = AUS
+				}
+				GER = { set_cosmetic_tag = HRE_UNIFIED }
+				PRS = { country_event = { id = hre.5 } }
+			}
+		}
+	}
+	the_same_ways = {
+		icon = generic_army_support
+		available = { has_country_flag = holy_roman_emperor }
+		visible = {
+			OR = {
+				tag = PRS
+				tag = AUS
+			}
+		}
+		cost = 50
+		ai_will_do = { factor = 0 }
+		complete_effect = {
+			
+		}
+	}
+}

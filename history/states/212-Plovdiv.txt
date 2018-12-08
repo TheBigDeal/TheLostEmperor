@@ -6,7 +6,7 @@ state={
 	history={
 		owner = BUL
 		victory_points = {
-			3819 5
+			3796 5
 		}
 		
 		buildings = {

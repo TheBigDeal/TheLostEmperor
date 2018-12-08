@@ -1,406 +1,418 @@
-﻿###########################
+###########################
 # austrian Events
 ###########################
 
 add_namespace = hre
-
 country_event = {
 	id = hre.1
 	title = hre.1.t
 	desc = hre.1.d
 	picture = GFX_report_event_spain_civil_war_soldiers
-
 	fire_only_once = yes
-
 	trigger = {
-		date > 1928.7.6
-		tag = PRS
+		date > 1929.1.1
+		tag = HRE
 	}
-
 	immediate = {
-		set_global_flag = flag_hre_voting_started
-		BAV = { set_country_flag = flag_hre_elector }
-		BAV = { set_global_flag = flag_hre_prussia }
-		BAV = { set_global_flag = flag_hre_austria }
-
-		MST = { set_country_flag = flag_hre_elector }
-		MST = { set_global_flag = flag_hre_prussia }
-		MST = { set_global_flag = flag_hre_austria }
-
-		HES = { set_country_flag = flag_hre_elector }
-		HES = { set_global_flag = flag_hre_prussia }
-		HES = { set_global_flag = flag_hre_austria }
-
-		SAX = { set_country_flag = flag_hre_elector }
-		SAX = { set_global_flag = flag_hre_prussia }
-		SAX = { set_global_flag = flag_hre_austria }
-
-		BOH = { set_country_flag = flag_hre_elector }
-		BOH = { set_global_flag = flag_hre_prussia }
-		BOH = { set_global_flag = flag_hre_austria }
-
-		CLG = { set_country_flag = flag_hre_elector }
-		CLG = { set_global_flag = flag_hre_prussia }
-		CLG = { set_global_flag = flag_hre_austria }
-
-		HAN = { set_country_flag = flag_hre_elector }
-		HAN = { set_global_flag = flag_hre_prussia }
-		HAN = { set_global_flag = flag_hre_austria }
-
-		PLT = { set_country_flag = flag_hre_elector }
-		PLT = { set_global_flag = flag_hre_prussia }
-		PLT = { set_global_flag = flag_hre_austria }
-		news_event = hre_news.1
+		set_variable = { var = Prussian_Votes value = 0 }
+		set_variable = { var = Austrian_Votes value = 0 }
+		#AUSTRIAN COUNTING VOTES
+		########################################################
+		if = {
+			limit = { check_variable = { AUS_SAXONY_SUPPORT = 100 }}
+			add_to_variable = { var = Austrian_Votes value = 1 }
+		}
+		if = {
+			limit = { check_variable = { AUS_HANNOVER_SUPPORT = 100 }}
+			add_to_variable = { var = Austrian_Votes value = 1 }
+		}
+		if = {
+			limit = { check_variable = { AUS_MECKELENBURG_SUPPORT = 100 }}
+			add_to_variable = { var = Austrian_Votes value = 1 }
+		}
+		if = {
+			limit = { check_variable = { AUS_BAVARIAN_SUPPORT = 100 }}
+			add_to_variable = { var = Austrian_Votes value = 1 }
+		}
+		if = {
+			limit = { check_variable = { AUS_BOHEMIAN_SUPPORT = 100 }}
+			add_to_variable = { var = Austrian_Votes value = 1 }
+		}
+		if = {
+			limit = { check_variable = { AUS_PALATINATE_SUPPORT = 100 }}
+			add_to_variable = { var = Austrian_Votes value = 1 }
+		}
+		if = {
+			limit = { check_variable = { AUS_HESSE_SUPPORT = 100 }}
+			add_to_variable = { var = Austrian_Votes value = 1 }
+		}
+		if = {
+			limit = { check_variable = { AUS_THURINGIA_SUPPORT = 100 }}
+			add_to_variable = { var = Austrian_Votes value = 1 }
+		}
+		#PRUSSIAN COUNTING VOTES
+		########################################################
+		if = {
+			limit = { check_variable = { PRS_SAXONY_SUPPORT = 100 }}
+			add_to_variable = { var = Prussian_Votes value = 1 }
+		}
+		if = {
+			limit = { check_variable = { PRS_HANNOVER_SUPPORT = 100 }}
+			add_to_variable = { var = Prussian_Votes value = 1 }
+		}
+		if = {
+			limit = { check_variable = { PRS_MECKELENBURG_SUPPORT = 100 }}
+			add_to_variable = { var = Prussian_Votes value = 1 }
+		}
+		if = {
+			limit = { check_variable = { PRS_BAVARIAN_SUPPORT = 100 }}
+			add_to_variable = { var = Prussian_Votes value = 1 }
+		}
+		if = {
+			limit = { check_variable = { PRS_BOHEMIAN_SUPPORT = 100 }}
+			add_to_variable = { var = Prussian_Votes value = 1 }
+		}
+		if = {
+			limit = { check_variable = { PRS_PALATINATE_SUPPORT = 100 }}
+			add_to_variable = { var = Prussian_Votes value = 1 }
+		}
+		if = {
+			limit = { check_variable = { PRS_HESSE_SUPPORT = 100 }}
+			add_to_variable = { var = Prussian_Votes value = 1 }
+		}
+		if = {
+			limit = { check_variable = { AUS_THURINGIA_SUPPORT = 100 }}
+			add_to_variable = { var = Austrian_Votes value = 1 }
+		}
+		if = {
+			limit = { #Austrian Victory
+				check_variable = {
+				    var = Prussian_Votes
+				    value = Austrian_Votes
+				    compare = less_than
+				}
+			}
+			AUS = { country_event = { id = hre.2 } }
+		}
+		if = { #Prussian Victory
+			limit = {
+				check_variable = {
+				    var = Prussian_Votes
+				    value = Austrian_Votes
+				    compare = greater_than
+				}
+			}
+			PRS = { country_event = { id = hre.2 } }
+		}
+		if = { #TIE!
+			limit = {
+				check_variable = {
+				    var = Prussian_Votes
+				    value = Austrian_Votes
+				    compare = equals
+				}
+			}
+		}
+		set_global_flag = HRE_VOTING_OVER
 	}
-
-	#mean_time_to_happen = {
-	#	days = 1
-	#}
-
 	option = {
 		name = hre.1.a
 		ai_chance = {
 			factor = 10
 		}
-		hidden_effect = {
-			news_event = { hours = 6 id = news.1 }
-		}
 	}
-
+}
+#CROWN THE EMPEROR
+country_event = {
+	id = hre.2
+	title = hre.2.t
+	desc = hre.2.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	option = {
+		name = hre.2.a
+		set_country_flag = holy_roman_emperor
+	}
 }
 
+#CONSILIDATE THE HRE
 country_event = {
 	id = hre.3
 	title = hre.3.t
 	desc = hre.3.d
 	picture = GFX_report_event_spain_civil_war_soldiers
-
-	trigger = {
-		AND = {
-			BAV = { has_decision = flag_hre_voted }
-			BUR = { has_decision = flag_hre_voted }
-			PRS = { has_decision = flag_hre_voted }
-			DAN = { has_decision = flag_hre_voted }
-			BOH = { has_decision = flag_hre_voted }
-			SAX = { has_decision = flag_hre_voted }
-			HAN = { has_decision = flag_hre_voted }
-			PLT = { has_decision = flag_hre_voted }
-			NOT = { has_global_flag = flag_hre_vote_concluded }
-			tag = PRS
+	is_triggered_only = yes
+	option = { #Accept
+		name = hre.3.a
+		if = { limit = { tag = VRP }
+			PRS = { annex_country = { target = VRP transfer_troops = yes } }
 		}
+		if = { limit = { tag = MCH }
+			PRS = { annex_country = { target = MCH transfer_troops = yes } }
+		}
+		PRS = { transfer_state = 949 }
+
+		if = { limit = { tag = HAM }
+			HLS = { annex_country = { target = HAM transfer_troops = yes } }
+		}
+		if = { limit = { tag = LUB }
+			HLS = { annex_country = { target = LUB transfer_troops = yes } }
+		}
+		if = { limit = { tag = BRU }
+			HAN = { annex_country = { target = BRU transfer_troops = yes } }
+		}
+		if = { limit = { tag = BRE }
+			HAN = { annex_country = { target = BRE transfer_troops = yes } }
+		}
+		if = { limit = { tag = OLD }
+			HAN = { annex_country = { target = OLD transfer_troops = yes } }
+		}
+		if = { limit = { tag = EFR }
+			HAN = { annex_country = { target = EFR transfer_troops = yes } }
+		}
+		if = { limit = { tag = RAV }
+			HAN = { annex_country = { target = RAV transfer_troops = yes } }
+		}
+		if = { limit = { tag = MUN }
+			HAN = { annex_country = { target = MUN transfer_troops = yes } }
+		}
+		#HAN = { set_cosmetic_tag = Niedersachen}
+
+		if = { limit = { tag = JUL }
+			CLG = { annex_country = { target = JUL transfer_troops = yes } }
+		}
+		if = { limit = { tag = FUL }
+			CLG = { annex_country = { target = FUL transfer_troops = yes } }
+		}
+		if = { limit = { tag = KLE }
+			CLG = { annex_country = { target = KLE transfer_troops = yes } }
+		}
+		if = { limit = { tag = HES }
+			CLG = { annex_country = { target = HES transfer_troops = yes } }
+		}
+		if = { limit = { tag = HRE }
+			CLG = { annex_country = { target = HRE transfer_troops = yes } }
+		}
+		if = { limit = { tag = NAS }
+			CLG = { annex_country = { target = NAS transfer_troops = yes } }
+		}
+		if = { limit = { tag = PYR }
+			CLG = { annex_country = { target = PYR transfer_troops = yes } }
+		}
+		if = { limit = { tag = PAD }
+			CLG = { annex_country = { target = PAD transfer_troops = yes } }
+		}
+		if = { limit = { tag = FRN }
+			CLG = { annex_country = { target = FRN transfer_troops = yes } }
+		}
+		CLG = { transfer_state = 877 }
+		#CLG = { set_cosmetic_tag = Westfalen }
+
+		if = { limit = { tag = NSA }
+			PLT = { annex_country = { target = NSA transfer_troops = yes } }
+		}
+		if = { limit = { tag = TRI }
+			PLT = { annex_country = { target = TRI transfer_troops = yes } }
+		}
+		if = { limit = { tag = SPY }
+			PLT = { annex_country = { target = SPY transfer_troops = yes } }
+		}
+		if = { limit = { tag = MAI }
+			PLT = { annex_country = { target = MAI transfer_troops = yes } }
+		}
+		PLT = { transfer_state = 824 }
+
+		if = { limit = { tag = ANH }
+			SAX = { annex_country = { target = ANH transfer_troops = yes } }
+		}
+
+		if = { limit = { tag = BAM }
+			THU = { annex_country = { target = BAM transfer_troops = yes } }
+		}
+		THU = { transfer_state = 800}
+
+
+		if = { limit = { tag = BAD }
+			WUR = { annex_country = { target = BAD transfer_troops = yes } }
+		}
+		if = { limit = { tag = FUS }
+			WUR = { annex_country = { target = FUS transfer_troops = yes } }
+		}
+		if = { limit = { tag = HNZ }
+			WUR = { annex_country = { target = HNZ transfer_troops = yes } }
+		}
+		if = { limit = { tag = MEM }
+			WUR = { annex_country = { target = MEM transfer_troops = yes } }
+		}
+		if = { limit = { tag = LND }
+			WUR = { annex_country = { target = LND transfer_troops = yes } }
+		}
+		if = { limit = { tag = ULM }
+			WUR = { annex_country = { target = ULM transfer_troops = yes } }
+		}
+		if = { limit = { tag = HUL }
+			WUR = { annex_country = { target = HUL transfer_troops = yes } }
+		}
+		WUR = { transfer_state = 54 }
+
+		if = { limit = { tag = AUG }
+			BAV = { annex_country = { target = AUG transfer_troops = yes } }
+		}
+		if = { limit = { tag = NUR }
+			BAV = { annex_country = { target = NUR transfer_troops = yes } }
+		}
+		if = { limit = { tag = WRZ }
+			BAV = { annex_country = { target = WRZ transfer_troops = yes } }
+		}
+		if = { limit = { tag = PSU }
+			BAV = { annex_country = { target = PSU transfer_troops = yes } }
+		}
+		BAV = { transfer_state = 799 }
+
+		if = { limit = { tag = ALS }
+			BUR = { annex_country = { target = ALS transfer_troops = yes } }
+		}
+		BUR = { transfer_state = 775 }
+		BUR = { transfer_state = 28 }
+
 	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-
-	immediate = {
-		set_global_flag = flag_hre_vote_concluded
-	}
-
-
-	#8 ELECTORS
-	option = {
-		name = hre_conclude
-		#TIE
-		###############################################
-		if = {
-			limit = {
-				AND = {
-					has_global_flag = {
-						flag = flag_hre_prussia
-						value > 3
-					}
-					has_global_flag = {
-						flag = flag_hre_prussia
-						value < 5
-					}
-					has_global_flag = {
-						flag = flag_hre_austria
-						value > 3
-					}
-					has_global_flag = {
-						flag = flag_hre_austria
-						value < 5
-					}
-				}
-			}
-			set_global_flag = hre_tie
-		}
-		#AUSTRIA WINS
-		###############################################
-		if = {
-			limit = {
-				AND = {
-					has_global_flag = {
-						flag = flag_hre_austria
-						value > 4
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_hre_prussia
-							value > 4
-						}
-					}
-				}
-			}
-			set_global_flag = hre_austria_wins
-		}
-		#PRUSSIA WINS
-		###############################################
-		if = {
-			limit = {
-				AND = {
-					has_global_flag = {
-						flag = flag_hre_prussia
-						value > 4
-					}
-					NOT = {
-						has_global_flag = {
-							flag = flag_hre_austria
-							value > 4
-						}
-					}
-				}
-			}
-			set_global_flag = hre_prussia_wins
-		}
-		#BREAK
-		################################################
-		if = {
-			limit = {
-				AND = {
-					NOT = { has_global_flag = hre_austria_wins }
-					NOT = { has_global_flag = hre_prussia_wins }
-					NOT = { has_global_flag = hre_tie }
-				}
-			}
-			set_global_flag = hre_break
-		}
-	}
+	#option = { #Decline
+	#	name = hre.3.b
+	#	if = {
+	#		limit = {
+	#			PRS = { has_country_flag = holy_roman_emperor }
+	#		}
+	#		create_wargoal = {
+	#		    type = annex_everything
+	#		    target = ROOT
+	#		}
+	#	}
+	#}
 }
-
-
-
-
-
-
-
-#PRUSSIA WINS
+#FORM GERMANY
 country_event = {
 	id = hre.4
 	title = hre.4.t
 	desc = hre.4.d
 	picture = GFX_report_event_spain_civil_war_soldiers
-
-	trigger = {
-		AND = {
-			has_global_flag = {
-				flag = hre_prussia_wins
-			}
-			NOT = {
-				has_global_flag = {
-					flag = prussia_germany
-				}
-			}
-			NOT = {
-				has_global_flag = {
-					flag = france_germany
-				}
-			}
-			NOT = {
-				has_global_flag = {
-					flag = prussia_reform
-				}
-			}
-			tag = PRS
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 3
-	}
-
-	#Form Germany
+	is_triggered_only = yes
 	option = {
-		name = hre_prussia.1
-
-		news_event = hre_news.prussia
-		set_global_flag = prussia_germany
-
+		ai_chance = { factor = 10 }
+		name = hre.4.a
+		GER = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = { #Decline
+		name = hre.4.b
 		ai_chance = {
-			factor = 8
+			factor = 0 
+			modifier = {
+				factor = 20
+				strength_ratio = {
+					tag = GER
+					ratio > 0.75
+				}
+			}
+			modifier = {
+				factor = 6
+				tag = BAV
+			}
+			modifier = {
+				factor = 6
+				tag = AUS
+			}
+			modifier = {
+				factor = 6
+				tag = WLN
+			}
+			modifier = {
+				factor = 6
+				tag = FLA
+			}
+			modifier = {
+				factor = 6
+				tag = BUR
+			}
+		}
+		GER = {
+			create_wargoal = {
+			    type = annex_everything
+			    target = ROOT
+			}
 		}
 	}
 }
-
-
-
-#AUSTRIA WINS
+#FORM HOLY ROMAN STATE
 country_event = {
 	id = hre.5
 	title = hre.5.t
 	desc = hre.5.d
 	picture = GFX_report_event_spain_civil_war_soldiers
-
-	trigger = {
-		AND = {
-			has_global_flag = {
-				flag = hre_austria_wins
-			}
-			NOT = {
-				has_global_flag = {
-					flag = danubian_reform
-				}
-			}
-			NOT = {
-				has_global_flag = {
-					flag = france_germany
-				}
-			}
-			NOT = {
-				has_global_flag = {
-					flag = danubian_consolidation
-				}
-			}
-			tag = PRS
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 3
-	}
-
-	#Reform HRE
+	is_triggered_only = yes
 	option = {
-		name = hre_austria.1
-
-		news_event = hre_news.prussia
-		set_global_flag = danubian_reform
-
-		ai_chance = {
-			factor = 8
-		}
+		name = hre.5.a
+		GER = { annex_country = { target = ROOT transfer_troops = yes } }
 	}
-
-	#HRE Consolidation
-	option = {
-		name = hre_austria.2
-
-		news_event = hre_news.prussia
-		set_global_flag = danubian_consolidation
-
+	option = { #Decline
+		name = hre.5.b
 		ai_chance = {
-			factor = 1
+			factor = 0 
+			modifier = {
+				factor = 20
+				strength_ratio = {
+					tag = GER
+					ratio > 0.75
+				}
+			}
+			modifier = {
+				factor = 6
+				tag = BAV
+			}
+			modifier = {
+				factor = 6
+				tag = AUS
+			}
+			modifier = {
+				factor = 6
+				tag = WLN
+			}
+			modifier = {
+				factor = 6
+				tag = FLA
+			}
+			modifier = {
+				factor = 6
+				tag = BUR
+			}
+		}
+		GER = {
+			create_wargoal = {
+			    type = annex_everything
+			    target = ROOT
+			}
 		}
 	}
 }
-
-#TIE
+#EMPEROR DEMANDS SUBJUGATION
 country_event = {
 	id = hre.6
 	title = hre.6.t
 	desc = hre.6.d
 	picture = GFX_report_event_spain_civil_war_soldiers
-
-	trigger = {
-		AND = {
-			has_global_flag = {
-				flag = hre_tie
-			}
-			tag = PRS
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 3
-	}
-
-	#Form Germany
+	is_triggered_only = yes
 	option = {
-		name = hre_tie.1
-
-		PRS = { annex_country = { target = DAN transfer_troops = yes } }
-		news_event = hre_news.tie
-
-		ai_chance = {
-			factor = 8
-		}
+		name = hre.6.a
+		GER = { puppet = ROOT } }
 	}
-
-	#Vassal HRE
-	option = {
-		name = hre_tie.2
-
-		puppet = DAN
-		news_event = hre_news.tie
-
-		ai_chance = {
-			factor = 1
-		}
-	}
+	#option = { #Decline
+	#	name = hre.6.b
+	#	if = {
+	#		limit = {
+	#			PRS = { has_country_flag = holy_roman_emperor }
+	#		}
+	#		create_wargoal = {
+	#		    type = annex_everything
+	#		    target = ROOT
+	#		}
+	#	}
+	#}
 }
-
-country_event = {
-	id = hre.break
-	title = hre.break.t
-	desc = hre.break.d
-	picture = GFX_report_event_spain_civil_war_soldiers
-
-	trigger = {
-		AND = {
-			has_global_flag = {
-				flag = hre_break
-			}
-			tag = PRS
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 3
-	}
-
-	option = {
-		name = hre_break.a
-		ai_chance = {
-			factor = 8
-		}
-	}
-
-}
-
-
-#FRANCE WINS (ONLY BY PAPAL FOCUS)
-#country_event = {
-#	id = hre.7
-#	title = hre.7.t
-#	desc = hre.7.d
-#	picture = GFX_report_event_spain_civil_war_soldiers
-#	is_triggered_only = yes
-#
-#	mean_time_to_happen = {
-#		days = 3
-#	}
-#
-#	#TAKE THE CROWN
-#	option = {
-#		name = hre_france.1
-#
-#		news_event = hre_news.prussia
-#		set_global_flag = france_germany
-#		set_global_flag = flag_hre_vote_concluded
-#
-#		ai_chance = {
-#			factor = 20
-#		}
-#	}
-#
-#	#REFUSE THE CROWN
-#	option = {
-#		name = hre_france.1
-#
-#		ai_chance = {
-#			factor = 1
-#		}
-#	}
-#}

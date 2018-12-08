@@ -1,7 +1,54 @@
 spriteTypes = {	
 
 	#### Mod
-	
+	SpriteType = {
+	name = "GFX_goal_purge_dissenters"
+	texturefile = "gfx/interface/goals/Purge_Dissenters.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_planned_economy"
+	texturefile = "gfx/interface/goals/Planned_Economy.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_generic_isolation"
+	texturefile = "gfx/interface/goals/goal_generic_isolation.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_empower_monarchy"
+	texturefile = "gfx/interface/goals/goal_empower_monarchy.tga"			
+	}
+	SpriteType = {
+	name = "GFX_goal_army_guy_2"
+	texturefile = "gfx/interface/goals/goal_army_guy_2.tga"			
+	}
+	SpriteType = {
+	name = "GFX_goal_france_monarchy"
+	texturefile = "gfx/interface/goals/France_Monarchy_2.tga"			
+	}
+	SpriteType = {
+	name = "GFX_goal_flag_spain"
+	texturefile = "gfx/interface/goals/goal_flag_spain.dds"			
+	}
+	SpriteType = {
+	name = "GFX_march_to_rome"
+	texturefile = "gfx/interface/goals/reclaiming_rome.tga"			
+	}
+	SpriteType = {
+	name = "GFX_the_new_millennium"
+	texturefile = "gfx/interface/goals/the_new_millennium.tga"			
+	}
+	SpriteType = {
+	name = "GFX_goal_purge_opposition"
+	texturefile = "gfx/interface/goals/goal_purge_opposition.dds"			
+	}
+	SpriteType = {
+	name = "GFX_Enshrine_Secularism"
+	texturefile = "gfx/interface/goals/Enshrine_Secularism.tga"			
+	}
+	SpriteType = {
+	name = "GFX_religion_catholic_2"
+	texturefile = "gfx/interface/goals/Religion_Catholic_2.tga"			
+	}
 	SpriteType = {
 	name = "GFX_goal_new_treaty"
 	texturefile = "gfx/interface/goals/goal_new_treaty.dds"			

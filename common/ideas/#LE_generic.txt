@@ -1,0 +1,12 @@
+ideas = {
+
+country = {
+	closed_borders = {
+		picture = GFX_idea_YUG_orthodox_church_support
+		modifier = {
+			MONTHLY_POPULATION = -0.1
+			industrial_capacity_factory = 0.1
+			consumer_goods_factor = -0.05
+		}
+	}
+}

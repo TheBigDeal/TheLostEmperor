@@ -3,9 +3,21 @@ MUG = {
 	color = rgb { 33 96 48 }
 	color_ui = rgb { 33 96 48 }
 }
+LEV = {
+	color = rgb { 193 71 71 }
+	color_ui = rgb { 193 71 71 }
+}
 ZUL = {
 	color = rgb { 200 200 200 }
 	color_ui = rgb { 240 240 240 }
+}
+PRM = {
+	color = rgb { 158 131 124 }
+	color_ui = rgb { 158 131 124 }
+}
+KUR = {
+	color = rgb { 73 161 183 }
+	color_ui = rgb { 73 161 183 }
 }
 PRC = {
 	color = rgb { 174 61 61 }
@@ -997,9 +1009,13 @@ ALH = {
 	color = rgb { 97 148 168 }
 	color_ui = rgb { 97 148 168 }
 }
+TRK = {
+	color = rgb { 107 191 57 }
+	color_ui = rgb { 107 191 57 }
+}
 SIK = {
-	color = rgb { 73 178 118 }
-	color_ui = rgb { 73 178 118 }
+	color = rgb { 112 134 140 }
+	color_ui = rgb { 112 134 140 }
 }
 TIB = {
 	color = rgb { 80 115 45}
@@ -1080,8 +1096,8 @@ SHX = {
 }
 
 XSM = {
-	color = rgb { 105 90 132 }
-	color_ui = rgb { 105 90 132 }
+	color = rgb { 86 160 175 }
+	color_ui = rgb { 86 160 175 }
 }
 
 LBA = {

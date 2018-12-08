@@ -8,8 +8,8 @@ state={
 	}
 
 	history={
-		owner = XSM
-		add_core_of = XSM
+		owner = SIK
+		add_core_of = SIK
 		buildings = {
 			infrastructure = 3
 

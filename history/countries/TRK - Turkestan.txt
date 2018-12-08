@@ -1,0 +1,30 @@
+﻿capital = 617
+
+###OOB = "AAC_1928"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+set_politics = {
+	parties = {
+		conservatism = { popularity = 12 }
+		liberalism = { popularity = 3	}
+		socialism = { popularity = 1 }
+		labryscism = { popularity = 8	}
+		rexism = { popularity = 11 }
+		despotism = { popularity = 7 }
+		royalism = {popularity = 2 }
+		theocracy = { popularity = 10 }
+		absolutism = { popularity = 33 }
+		proletarianism = {popularity = 6 }
+		collectivism = { popularity = 4 }
+		naturalism = { popularity = 3 }
+	}
+	ruling_party = absolutism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_convoys = 5

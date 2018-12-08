@@ -1,0 +1,108 @@
+bavarian_civil_war_cat = {
+	arrest_protesters = {
+		icon = generic_army_support
+		visible = {
+			tag = BAV
+			has_country_flag = BAV_PROTESTERS
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			subtract_from_variable = { BAV_COMMUNIST_STRENGTH = 5 } 
+		}
+	}
+	execute_protesters = {
+		icon = generic_army_support
+		visible = {
+			tag = BAV
+			has_country_flag = BAV_PROTESTERS
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			subtract_from_variable = { BAV_COMMUNIST_STRENGTH = 10 } 
+			add_stability = -0.1
+		}
+	}
+	request_foreign_aid = {
+		icon = generic_army_support
+		visible = {
+			tag = BAV
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			subtract_from_variable = { BAV_COMMUNIST_STRENGTH = 5 } 
+		}
+	}
+	hire_more_police = {
+		icon = generic_army_support
+		visible = {
+			tag = BAV
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			add_to_variable = { BAV_COMMUNIST_STRENGTH = 2 } 
+			add_stability = 0.1
+		}
+	}
+	strike_at_rebel_stronghold = {
+		icon = generic_army_support
+		visible = {
+			tag = BAV
+			has_country_flag = BAV_REBEL_STRONGHOLD
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			subtract_from_variable = { BAV_COMMUNIST_STRENGTH = 20 } 
+		}
+	}
+	plan_rebel_leader_assassination = {
+		icon = generic_army_support
+		fixed_random_seed = no
+		visible = {
+			tag = BAV
+			has_country_flag = BAV_REBEL_LEADER
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			random_list = {
+				70 = {
+					subtract_from_variable = { BAV_COMMUNIST_STRENGTH = 30 }
+					country_event = { id = le_bavaria.10 }
+				}
+				30 = {
+					country_event = { id = le_bavaria.11 }
+				}
+			}
+		}
+	}
+	meet_with_revolutionary_leaders = {
+		icon = generic_army_support
+		visible = {
+			tag = BAV
+		}
+		cost = 200
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			subtract_from_variable = { BAV_COMMUNIST_STRENGTH = 5 } 
+		}
+	}
+}

@@ -31,3 +31,12 @@ set_politics = {
 	elections_allowed = no
 }
 set_convoys = 5
+create_country_leader = {
+	name = "Nikos Zachariadis"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_GRE_Nikos_Zachariadis.tga"
+	expire = "1950.4.6"
+	ideology = collectivism_ideology
+	traits = {
+	}
+}

@@ -21,7 +21,7 @@ focus_tree = {
 	focus = {
 		id = FRA_THE_FOURTH_REVOLUTION
 		icon = GFX_goal_support_fourth_int
-		mutually_exclusive = { focus = FRA_PLEASE_THE_PEOPLE focus = FRA_LE_ORLENISTE_COUP }
+		mutually_exclusive = { focus = FRA_PLEASE_THE_PEOPLE focus = FRA_PRESERVE_THE_MONARCHY }
 		x = 11
 		y = 0
 		cost = 6
@@ -1379,7 +1379,7 @@ focus_tree = {
 	focus = {
 		id = FRA_PLEASE_THE_PEOPLE
 		icon = GFX_goal_unknown
-		mutually_exclusive = { focus = FRA_LE_ORLENISTE_COUP focus = FRA_THE_FOURTH_REVOLUTION }
+		mutually_exclusive = { focus = FRA_PRESERVE_THE_MONARCHY focus = FRA_THE_FOURTH_REVOLUTION }
 		x = 28
 		y = 0
 		cost = 6
@@ -2370,8 +2370,8 @@ focus_tree = {
 	}
 	#Extremeist
 	focus = {
-		id = FRA_LE_ORLENISTE_COUP
-		icon = GFX_goal_unknown
+		id = FRA_PRESERVE_THE_MONARCHY
+		icon = GFX_goal_france_monarchy
 		mutually_exclusive = { focus = FRA_PLEASE_THE_PEOPLE focus = FRA_THE_FOURTH_REVOLUTION }
 		x = 40
 		y = 0
@@ -2386,7 +2386,7 @@ focus_tree = {
 	focus = {
 		id = FRA_ARMEE_NOUVELLE
 		icon = GFX_goal_unknown
-		prerequisite = { focus = FRA_LE_ORLENISTE_COUP }
+		prerequisite = { focus = FRA_PRESERVE_THE_MONARCHY }
 		x = 50
 		y = 1
 		cost = 6
@@ -2543,7 +2543,7 @@ focus_tree = {
 	focus = {
 		id = FRA_STRONGER_THAN_A_KING
 		icon = GFX_goal_unknown
-		prerequisite = { focus = FRA_LE_ORLENISTE_COUP }
+		prerequisite = { focus = FRA_PRESERVE_THE_MONARCHY }
 		mutually_exclusive = { focus = FRA_EMPOWER_THE_KING focus = FRA_CAROLINGIAN_IDENTITY }
 		x = 44
 		y = 1
@@ -2727,8 +2727,8 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_EMPOWER_THE_KING
-		icon = GFX_goal_unknown
-		prerequisite = { focus = FRA_LE_ORLENISTE_COUP }
+		icon = GFX_goal_empower_monarchy
+		prerequisite = { focus = FRA_PRESERVE_THE_MONARCHY }
 		mutually_exclusive = { focus = FRA_STRONGER_THAN_A_KING focus = FRA_CAROLINGIAN_IDENTITY }
 		x = 40
 		y = 1
@@ -2737,12 +2737,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = Rexist_Drift
 		}
 	}
 	focus = {
 		id = FRA_ELIMINATE_MONARCH_RESTRICTIONS
-		icon = GFX_goal_unknown
+		icon = GFX_goal_new_treaty
 		prerequisite = { focus = FRA_EMPOWER_THE_KING }
 		x = 40
 		y = 2
@@ -2756,7 +2756,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_CLOSE_BORDERS
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_isolation
 		prerequisite = { focus = FRA_ELIMINATE_MONARCH_RESTRICTIONS }
 		x = 39
 		y = 3
@@ -2765,12 +2765,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = closed_borders
 		}
 	}
 	focus = {
 		id = FRA_DEPORT_IMMIGRANTS
-		icon = GFX_goal_unknown
+		icon = GFX_goal_purge_opposition
 		prerequisite = { focus = FRA_ELIMINATE_MONARCH_RESTRICTIONS }
 		x = 41
 		y = 3
@@ -2779,12 +2779,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = FRA_deport_immigrants
 		}
 	}
 	focus = {
 		id = FRA_LIMIT_IMPORTS
-		icon = GFX_goal_unknown
+		icon = GFX_goal_planned_economy
 		prerequisite = { focus = FRA_CLOSE_BORDERS }
 		x = 39
 		y = 5
@@ -2793,12 +2793,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = limited_exports
 		}
 	}
 	focus = {
 		id = FRA_DEPORT_MINORITIES
-		icon = GFX_goal_unknown
+		icon = GFX_goal_purge_dissenters
 		prerequisite = { focus = FRA_DEPORT_IMMIGRANTS }
 		x = 41
 		y = 4
@@ -2807,12 +2807,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = FRA_deport_minorities
 		}
 	}
 	focus = {
 		id = FRA_DEPORT_POLITICAL_OPPOSITION
-		icon = GFX_goal_unknown
+		icon = GFX_focus_purge_bureaucracy
 		prerequisite = { focus = FRA_DEPORT_MINORITIES }
 		x = 41
 		y = 5
@@ -2821,7 +2821,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = FRA_deport_political_opposition
 		}
 	}
 	focus = {
@@ -2914,7 +2914,7 @@ focus_tree = {
 	focus = {
 		id = FRA_CAROLINGIAN_IDENTITY
 		icon = GFX_francia
-		prerequisite = { focus = FRA_LE_ORLENISTE_COUP}
+		prerequisite = { focus = FRA_PRESERVE_THE_MONARCHY}
 		mutually_exclusive = { focus = FRA_EMPOWER_THE_KING focus = FRA_STRONGER_THAN_A_KING }
 		x = 36
 		y = 1
@@ -2923,7 +2923,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_idea = FRANKISH_IDEALS
+			add_ideas = Religious_Movements
 		}
 	}
 	focus = {
@@ -3083,7 +3083,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_ENFORCE_CATHOLICISM
-		icon = GFX_goal_unknown
+		icon = GFX_religion_catholic_2
 		prerequisite = { focus = FRA_THE_FRANKISH_CORONATION }
 		mutually_exclusive = { focus = FRA_A_SECULAR_STATE }
 		x = 35
@@ -3093,12 +3093,17 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_stability = -0.15
+			add_popularity = {
+				ideology = theocracy
+				popularity = 0.1
+			}
+			add_war_support = 0.05
 		}
 	}
 	focus = {
 		id = FRA_A_SECULAR_STATE
-		icon = GFX_goal_unknown
+		icon = GFX_Enshrine_Secularism
 		prerequisite = { focus = FRA_THE_FRANKISH_CORONATION }
 		mutually_exclusive = { focus = FRA_ENFORCE_CATHOLICISM }
 		x = 37
@@ -3108,12 +3113,15 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_stability = 0.10
+			add_popularity = { ideology = theocracy popularity = -0.1 }
+			add_popularity = { ideology = liberalism popularity = 0.05 }
+			add_popularity = { ideology = conservatism popularity = 0.05 }
 		}
 	}
 	focus = {
 		id = FRA_STRIKE_AT_THE_HERETICS
-		icon = GFX_goal_unknown
+		icon = GFX_goal_purge_opposition
 		prerequisite = { focus = FRA_ENFORCE_CATHOLICISM }
 		x = 34
 		y = 6
@@ -3122,12 +3130,14 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_stability = -0.10
+			add_popularity = { ideology = theocracy popularity = 0.1 }
+			add_war_support = 0.05
 		}
 	}
 	focus = {
 		id = FRA_STRIKE_AT_THE_HEATHENS
-		icon = GFX_goal_unknown
+		icon = GFX_goal_purge_opposition
 		prerequisite = { focus = FRA_ENFORCE_CATHOLICISM }
 		x = 36
 		y = 6
@@ -3136,12 +3146,28 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_stability = -0.1
+			add_popularity = { ideology = theocracy popularity = 0.1 }
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = FRA_A_PURE_ARMY
+		icon = GFX_goal_army_guy_2
+		prerequisite = { focus = FRA_STRIKE_AT_THE_HEATHENS focus = FRA_STRIKE_AT_THE_HERETICS }
+		x = 35
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = FRA_pure_army
 		}
 	}
 	focus = {
 		id = FRA_FRANCE_NO_MORE
-		icon = GFX_goal_unknown
+		icon = GFX_the_new_millennium
 		prerequisite = { focus = FRA_STRIKE_AT_THE_HEATHENS focus = FRA_A_SECULAR_STATE }
 		prerequisite = { focus = FRA_STRIKE_AT_THE_HERETICS focus = FRA_A_SECULAR_STATE }
 		x = 37
@@ -3151,12 +3177,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = FRANKISH_IDEALS
 		}
 	}
 	focus = {
 		id = FRA_ASSERT_OUR_CLAIMS
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = FRA_FRANCE_NO_MORE }
 		x = 36
 		y = 8
@@ -3165,16 +3191,96 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			custom_effect_tooltip = FRA_ASSERT_OUR_CLAIMS_TT
+			hidden_effect = {
+				add_state_claim = 15
+				add_state_claim = 19
+				add_state_claim = 833
+				add_state_claim = 17
+				add_state_claim = 28
+				add_state_claim = 775
+				add_state_claim = 942
+				add_state_claim = 6
+				add_state_claim = 34
+				add_state_claim = 8
+				add_state_claim = 881
+				add_state_claim = 35
+				add_state_claim = 36
+				add_state_claim = 875
+				add_state_claim = 7
+				add_state_claim = 821
+				add_state_claim = 772
+				add_state_claim = 773
+				add_state_claim = 158
+				add_state_claim = 774
+				add_state_claim = 764
+				add_state_claim = 868
+				add_state_claim = 869
+				add_state_claim = 161
+				add_state_claim = 162
+				add_state_claim = 763
+				add_state_claim = 838
+				add_state_claim = 39
+				add_state_claim = 794
+				add_state_claim = 153
+				add_state_claim = 152
+				add_state_claim = 4
+				add_state_claim = 102
+				add_state_claim = 3
+				add_state_claim = 151
+				add_state_claim = 837
+				add_state_claim = 836
+				add_state_claim = 801
+				add_state_claim = 804
+				add_state_claim = 50
+				add_state_claim = 803
+				add_state_claim = 768
+				add_state_claim = 767
+				add_state_claim = 823
+				add_state_claim = 42
+				add_state_claim = 822
+				add_state_claim = 877
+				add_state_claim = 821
+				add_state_claim = 876
+				add_state_claim = 815
+				add_state_claim = 816
+				add_state_claim = 769
+				add_state_claim = 770
+				add_state_claim = 56
+				add_state_claim = 813
+				add_state_claim = 819
+				add_state_claim = 55
+				add_state_claim = 871
+				add_state_claim = 800
+				add_state_claim = 795
+				add_state_claim = 865
+				add_state_claim = 870
+				add_state_claim = 884
+				add_state_claim = 54
+				add_state_claim = 53
+				add_state_claim = 52
+				add_state_claim = 793
+				add_state_claim = 765
+				add_state_claim = 799
+				add_state_claim = 766
+				add_state_claim = 798
+				add_state_claim = 797
+				add_state_claim = 805
+				add_state_claim = 883
+				add_state_claim = 796
+			}
 		}
 	}
 	focus = {
 		id = FRA_THE_PROMISED_WEDDING
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = FRA_FRANCE_NO_MORE }
 		x = 38
 		y = 8
 		cost = 6
+		available = {
+			GRE = { has_cosmetic_tag = BYZANTIUM }
+		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -3184,7 +3290,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_ALLIANCE_WITH_SPAIN
-		icon = GFX_goal_unknown
+		icon = GFX_goal_flag_spain
 		prerequisite = { focus = FRA_ASSERT_OUR_CLAIMS }
 		x = 34
 		y = 9
@@ -3198,7 +3304,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_MARCH_TO_ROME
-		icon = GFX_goal_unknown
+		icon = GFX_march_to_rome
 		prerequisite = { focus = FRA_ASSERT_OUR_CLAIMS }
 		x = 36
 		y = 9
@@ -3212,21 +3318,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_INTEGRATE_AQUITAINE
-		icon = GFX_goal_unknown
-		prerequisite = { focus = FRA_ASSERT_OUR_CLAIMS }
-		x = 38
-		y = 9
-		cost = 6
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = FRA_INCORPORATE_AQUITAINE
-		icon = GFX_goal_unknown
+		icon = GFX_focus_CZE_german_puppet
 		prerequisite = { focus = FRA_ASSERT_OUR_CLAIMS }
 		x = 38
 		y = 9
@@ -3240,7 +3332,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_REVOLT_IN_NORMANDY
-		icon = GFX_goal_unknown
+		icon = GFX_goal_revolution
 		prerequisite = { focus = FRA_ALLIANCE_WITH_SPAIN focus = FRA_MARCH_TO_ROME focus = FRA_INCORPORATE_AQUITAINE }
 		x = 35
 		y = 10

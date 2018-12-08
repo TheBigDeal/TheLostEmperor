@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		TUR_internal_instability = {
+			picture = GFX_idea_Prussian_Militarism
+			available = {
+				always = yes
+			}
+			modifier = {
+				conscription = 0.02
+				justify_war_goal_time = 0.75
+				army_org_Factor = -0.5
+				army_attack_factor = -0.1
+			}
+		}
+	}

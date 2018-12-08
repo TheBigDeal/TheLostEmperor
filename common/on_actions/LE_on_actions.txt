@@ -1,0 +1,9 @@
+on_startup = {
+		effect = {
+			set_variable = { var = GLOBAL_COMMUNIST_INFLUENCE var_name value = 0 }
+			set_variable = { var = GLOBAL_FASCIST_INFLUENCE var_name value = 0 }
+			set_variable = { var = GLOBAL_THEOCRATIC_INFLUENCE var_name value = 0 }
+			set_variable = { var = GLOBAL_DEMOCRATIC_INFLUENCE var_name value = 0 }
+		}
+		}
+	}

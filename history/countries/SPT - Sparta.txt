@@ -36,3 +36,12 @@ set_politics = {
 	elections_allowed = no
 }
 set_convoys = 5
+create_country_leader = {
+	name = "Georgios Kondylis"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_GRE_Kondylis.tga"
+	expire = "1950.4.6"
+	ideology = labryscism_ideology
+	traits = {
+	}
+}

@@ -1,0 +1,15 @@
+ideas = {
+
+country = {
+	##################
+	#     SPAIN      #
+	##################
+	rooted_collectivists = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			collectivism_drift = 0.03
+			foreign_subversive_activites = 0.25
+			collectivism_acceptance = -50
+		}
+	}
+}

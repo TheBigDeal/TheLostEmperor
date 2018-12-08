@@ -233,6 +233,9 @@ ideologies = {
 			theocratic = {
 
 			}
+			radical_theocracy = {
+			
+			}
 		}
 
 		dynamic_faction_names = {

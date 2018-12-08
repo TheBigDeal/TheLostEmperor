@@ -152,24 +152,24 @@ SOV_ATTACK_COUNTRIES = {
 	ATTACK_TURKESTAN = {
 		icon = GFX_icon_communism
 		available = {
-			country_exists = SIK
-			NOT = { SIK = { is_puppet_of = SOV } }
+			country_exists = TRK
+			NOT = { TRK = { is_puppet_of = SOV } }
 			NOT = { has_global_flag = Russian_Civil_War }
 		}
 		visible = {
-			country_exists = SIK
-			NOT = { has_war_with = SIK }
-			SIK = { NOT = { is_puppet_of = SOV }}
+			country_exists = TRK
+			NOT = { has_war_with = TRK }
+			TRK = { NOT = { is_puppet_of = SOV }}
 		}
 		cost = 20
 		ai_will_do = { factor = 10 }
 		complete_effect = {
 			declare_war_on = {
-				target = SIK
+				target = TRK
 				type = annex_everything
 			}
 			every_state = {
-				limit = { is_owned_by = SIK }
+				limit = { is_owned_by = TRK }
 				add_claim_by = SOV
 			}
 		}
@@ -455,8 +455,8 @@ SOV_CREATE_SOCIALIST_REPUBLICS = {
 			}
 		}
 		complete_effect = {
-			puppet = SIK
-			SIK = {
+			puppet = TRK
+			TRK = {
 				set_cosmetic_tag = SOV_COLOR_SIK
 				transfer_state = 584
 				transfer_state = 585

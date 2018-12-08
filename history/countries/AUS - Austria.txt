@@ -13,6 +13,15 @@ set_technology = {
 	tech_mountaineers = 1
 	early_fighter = 1
 }
+#1 = Prussia 2 = Austria
+set_variable = { var = AUS_SAXONY_SUPPORT value = -100 }
+set_variable = { var = AUS_HANNOVER_SUPPORT value = -100 }
+set_variable = { var = AUS_MECKELENBURG_SUPPORT value = -100 }
+set_variable = { var = AUS_BAVARIAN_SUPPORT value = 100 }
+set_variable = { var = AUS_BOHEMIAN_SUPPORT value = 100 }
+set_variable = { var = AUS_PALATINATE_SUPPORT value = 100 }
+set_variable = { var = AUS_HESSE_SUPPORT value = -100 }
+set_variable = { var = AUS_THURINGIA_SUPPORT value = -100 }
 
 set_politics = {
 
@@ -67,12 +76,22 @@ if = {
 		target = BOS
 		autonomous_state = autonomy_integrated_puppet
 	}
+	set_autonomy = {
+		target = GAL
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = VOJ
+		autonomous_state = autonomy_integrated_puppet
+	}
 	else = {
 		puppet = BOS
 		puppet = HUN
 		puppet = SLO
 		puppet = TRN
 		puppet = CRO
+		puppet = GAL
+		puppet = VOJ
 	}
 }
 

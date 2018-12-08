@@ -889,7 +889,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			create_faction = Central_Powers
 		}
 	}
 	focus = {
@@ -1965,7 +1965,14 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			random_list = {
+				60 = {
+					country_event = { id = le_germany.1 }
+				}
+				40 = {
+					country_event = { id = le_germany.2 }
+				}
+			}
 		}
 	}
 	focus = {

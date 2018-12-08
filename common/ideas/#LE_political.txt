@@ -90,6 +90,12 @@ country = {
 			royalism_drift = 0.03
 		}
 	}
+	Rexist_Drift = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			rexism_drift = 0.03
+		}
+	}
 	Absolutist_Drift = {
 		picture = Hungarian_Monarchy
 		modifier = {

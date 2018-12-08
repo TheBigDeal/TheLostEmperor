@@ -1,0 +1,361 @@
+SYRIAN_REBELLIONS = {
+	syr_send_turkish_settlers = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = { tag = TUR has_country_flag = TUR_syrian_rebellions }
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			custom_effect_tooltip = syr_send_turkish_settlers_tt
+			add_to_variable = {
+			    var = SYRIAN_TURKIFICATION
+			    value = 10
+			}
+		}
+	}
+	syr_propaganda_effort = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = { tag = TUR has_country_flag = TUR_syrian_rebellions }
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			custom_effect_tooltip = syr_propaganda_effort_tt
+			add_to_variable = {
+			    var = SYRIAN_TURKIFICATION
+			    value = 5
+			}
+			subtract_from_variable = {
+			    var = SYRIAN_REBEL_STRENGH
+			    value = 5
+			}
+		}
+	}
+	syr_military_strike = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = { tag = TUR has_country_flag = TUR_syrian_rebellions }
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			custom_effect_tooltip = syr_military_strike_tt
+			hidden_effect = {
+				random_list = {
+					20 = { #FAILED STRIKE
+
+					}
+					30 = {
+						subtract_from_variable = {
+						    var = SYRIAN_REBEL_STRENGH
+						    value = 10
+						}
+					}
+					20 = {
+						subtract_from_variable = {
+						    var = SYRIAN_REBEL_STRENGH
+						    value = 15
+						}
+					}
+					10 = {
+						subtract_from_variable = {
+						    var = SYRIAN_REBEL_STRENGH
+						    value = 20
+						}
+					}
+				}
+			}
+		}
+	}
+	syr_assassinate_rebel_leaders = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = { tag = TUR has_country_flag = TUR_syrian_rebellions }
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			custom_effect_tooltip = syr_assassinate_rebel_leaders_tt
+			hidden_effect = {
+				random_list = {
+					40 = {
+						subtract_from_variable = {
+						    var = SYRIAN_REBEL_STRENGH
+						    value = 50
+						}
+					}
+					60 = {}
+				}
+			}
+		}
+	}
+}
+KURDISH_REBELLIONS = {
+	kur_send_turkish_settlers = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = { tag = TUR has_country_flag = TUR_kurdish_rebellions }
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			custom_effect_tooltip = kur_send_turkish_settlers_tt
+			add_to_variable = {
+			    var = KURDISH_TURKIFICATION
+			    value = 10
+			}
+		}
+	}
+	kur_propaganda_effort = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = { tag = TUR has_country_flag = TUR_kurdish_rebellions }
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			custom_effect_tooltip = kur_propaganda_effort_tt
+			add_to_variable = {
+			    var = KURDISH_TURKIFICATION
+			    value = 5
+			}
+			subtract_from_variable = {
+			    var = KURDISH_REBEL_STRENGH
+			    value = 5
+			}
+		}
+	}
+	kur_military_strike = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = { tag = TUR has_country_flag = TUR_kurdish_rebellions }
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			custom_effect_tooltip = kur_military_strike_tt
+			hidden_effect = {
+				random_list = {
+					20 = { #FAILED STRIKE
+
+					}
+					30 = {
+						subtract_from_variable = {
+						    var = KURDISH_REBEL_STRENGH
+						    value = 10
+						}
+					}
+					20 = {
+						subtract_from_variable = {
+						    var = KURDISH_REBEL_STRENGH
+						    value = 15
+						}
+					}
+					10 = {
+						subtract_from_variable = {
+						    var = KURDISH_REBEL_STRENGH
+						    value = 20
+						}
+					}
+				}
+			}
+		}
+	}
+	kur_assassinate_rebel_leaders = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = { tag = TUR has_country_flag = TUR_kurdish_rebellions }
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			custom_effect_tooltip = kur_assassinate_rebel_leaders_tt
+			hidden_effect = {
+				random_list = {
+					40 = {
+						subtract_from_variable = {
+						    var = KURDISH_REBEL_STRENGH
+						    value = 50
+						}
+					}
+					60 = {}
+				}
+			}
+		}
+	}
+}
+
+LEVANT_REBELLIONS = {
+	lev_send_turkish_settlers = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = { tag = TUR has_country_flag = TUR_levant_rebellions }
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			custom_effect_tooltip = lev_send_turkish_settlers_tt
+			add_to_variable = {
+			    var = LEVANT_TURKIFICATION
+			    value = 10
+			}
+		}
+	}
+	lev_propaganda_effort = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = { tag = TUR has_country_flag = TUR_levant_rebellions }
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			custom_effect_tooltip = lev_propaganda_effort_tt
+			add_to_variable = {
+			    var = LEVANT_TURKIFICATION
+			    value = 5
+			}
+			subtract_from_variable = {
+			    var = LEVANT_REBEL_STRENGH
+			    value = 5
+			}
+		}
+	}
+	lev_military_strike = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = { tag = TUR has_country_flag = TUR_levant_rebellions }
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			custom_effect_tooltip = lev_military_strike_tt
+			hidden_effect = {
+				random_list = {
+					20 = { #FAILED STRIKE
+
+					}
+					30 = {
+						subtract_from_variable = {
+						    var = LEVANT_REBEL_STRENGH
+						    value = 10
+						}
+					}
+					20 = {
+						subtract_from_variable = {
+						    var = LEVANT_REBEL_STRENGH
+						    value = 15
+						}
+					}
+					10 = {
+						subtract_from_variable = {
+						    var = LEVANT_REBEL_STRENGH
+						    value = 20
+						}
+					}
+				}
+			}
+		}
+	}
+	lev_assassinate_rebel_leaders = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = { tag = TUR has_country_flag = TUR_levant_rebellions }
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			custom_effect_tooltip = lev_assassinate_rebel_leaders_tt
+			hidden_effect = {
+				random_list = {
+					40 = {
+						subtract_from_variable = {
+						    var = LEVANT_REBEL_STRENGH
+						    value = 50
+						}
+					}
+					60 = {}
+				}
+			}
+		}
+	}
+}
+JORDAN_REBELLIONS = {
+	jor_send_turkish_settlers = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = { tag = TUR has_country_flag = TUR_jordan_rebellions }
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			custom_effect_tooltip = jor_send_turkish_settlers_tt
+			add_to_variable = {
+			    var = JORDAN_TURKIFICATION
+			    value = 10
+			}
+		}
+	}
+	jor_propaganda_effort = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = { tag = TUR has_country_flag = TUR_jordan_rebellions }
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			custom_effect_tooltip = jor_propaganda_effort_tt
+			add_to_variable = {
+			    var = JORDAN_TURKIFICATION
+			    value = 5
+			}
+			subtract_from_variable = {
+			    var = JORDAN_REBEL_STRENGH
+			    value = 5
+			}
+		}
+	}
+	jor_military_strike = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = { tag = TUR has_country_flag = TUR_jordan_rebellions }
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			custom_effect_tooltip = jor_military_strike_tt
+			hidden_effect = {
+				random_list = {
+					20 = { #FAILED STRIKE
+
+					}
+					30 = {
+						subtract_from_variable = {
+						    var = JORDAN_REBEL_STRENGH
+						    value = 10
+						}
+					}
+					20 = {
+						subtract_from_variable = {
+						    var = JORDAN_REBEL_STRENGH
+						    value = 15
+						}
+					}
+					10 = {
+						subtract_from_variable = {
+						    var = JORDAN_REBEL_STRENGH
+						    value = 20
+						}
+					}
+				}
+			}
+		}
+	}
+	jor_assassinate_rebel_leaders = {
+		cost = 20
+		icon = GFX_icon_communism
+		days_re_enable = 3
+		visible = { tag = TUR has_country_flag = TUR_jordan_rebellions }
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			custom_effect_tooltip = jor_assassinate_rebel_leaders_tt
+			hidden_effect = {
+				random_list = {
+					40 = {
+						subtract_from_variable = {
+						    var = JORDAN_REBEL_STRENGH
+						    value = 50
+						}
+					}
+					60 = {}
+				}
+			}
+		}
+	}
+}

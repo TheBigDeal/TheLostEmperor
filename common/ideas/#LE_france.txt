@@ -4,7 +4,19 @@ country = {
 	FRANKISH_IDEALS = {
 		picture = GFX_idea_YUG_orthodox_church_support
 		modifier = {
-			army_morale_factor = -0.4
+			army_morale_factor = 0.2
+			mobilization_laws_cost_factor = -0.1
+			send_volunteer_size = 2
+			conscription_factor = 0.15
+		}
+	}
+	FRA_pure_army = {
+		picture = GFX_idea_YUG_orthodox_church_support
+		modifier = {
+			army_morale_factor = 0.2
+			conscription_factor = -0.2
+			army_org_Factor = 0.05
+			army_attack_factor = 0.15
 		}
 	}
 	FRA_crumbling_nation = {
@@ -27,5 +39,32 @@ country = {
 	}
 	HOLY_ROMAN_PRETENDER = {
 		picture = GFX_idea_ger_revive_the_kaiserreich
+	}
+	FRA_deport_immigrants = {
+		picture = GFX_idea_ger_revive_the_kaiserreich
+		modifier = {
+			MONTHLY_POPULATION = -0.1
+			stability_factor = -0.05
+			political_power_gain = 0.2
+			foreign_subversive_activites = -0.1
+		}
+	}
+	FRA_deport_minorities = {
+		picture = GFX_idea_ger_revive_the_kaiserreich
+		modifier = {
+			MONTHLY_POPULATION = -0.1
+			stability_factor = -0.05
+			political_power_gain = 0.2
+			foreign_subversive_activites = -0.1
+		}
+	}
+	FRA_deport_political_opposition = {
+		picture = GFX_idea_ger_revive_the_kaiserreich
+		modifier = {
+			stability_factor = -0.05
+			political_power_gain = 0.5
+			political_advisor_cost_factor = -0.25
+			drift_defence_factor = 0.15
+		}
 	}
 }

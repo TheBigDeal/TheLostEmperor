@@ -19,10 +19,19 @@ HRE_elections_category = {
 }
 HRE_control_catagory = {
 	icon = idea_ger_revive_the_kaiserreich
-	available = {
+	visible = {
 		OR = {
 			original_tag = PRS
 			original_tag = AUS
 		}
+		NOT = { has_global_flag = HRE_VOTING_OVER }
+		AUS = { NOT = { has_country_flag = holy_roman_emperor }}
+		PRS = { NOT = { has_country_flag = holy_roman_emperor }}
+	}
+}
+HRE_emperor_decisions = {
+	icon = idea_ger_revive_the_kaiserreich
+	visible = {
+		has_country_flag = holy_roman_emperor
 	}
 }

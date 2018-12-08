@@ -7,8 +7,8 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = XSM
-		add_core_of = XSM
+		owner = SIK
+		add_core_of = SIK
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1

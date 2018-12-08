@@ -83,12 +83,39 @@ set_politics = {
 puppet = AQU
 
 #Order matters here Daladier will start as leaders because added last
+
+create_country_leader = {
+	name = "Jamie de Borbon III"
+	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+	picture = "Portrait_Jaime_De_Bourbon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism_ideology
+	traits = {
+		warmonger
+		dislikes_prussia
+		dislikes_great_britain
+		dislikes_austria
+	}
+}
+create_country_leader = {
+	name = "Jamie de Borbon III"
+	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+	picture = "Portrait_Jaime_De_Bourbon.tga"
+	expire = "1965.1.1"
+	ideology = royalism_ideology
+	traits = {
+		warmonger
+		dislikes_prussia
+		dislikes_great_britain
+		dislikes_austria
+	}
+}
 create_country_leader = {
 	name = "Jean d'Orleans III"
 	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
 	picture = "Portrait_FRA_Jean_dOrleans.tga"
 	expire = "1965.1.1"
-	ideology = absolutism_ideology
+	ideology = theocratic
 	traits = {
 		
 	}

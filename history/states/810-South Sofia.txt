@@ -4,7 +4,7 @@ state={
 	name="STATE_810"
 
 	history={
-		owner = RUM
+		owner = TUR
 		victory_points = {
 			6923 5
 		}
@@ -14,7 +14,7 @@ state={
 			air_base = 5
 
 		}
-		add_core_of = RUM
+		add_core_of = TUR
 
 	}
 

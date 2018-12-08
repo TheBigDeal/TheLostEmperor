@@ -1,0 +1,10 @@
+####################
+##### GENERIC ######
+####################
+
+WAR_WITH_JABAL_SHAMMER_CAT = {
+	icon = idea_communism
+	visible = {
+		tag = NEJ
+	}
+}

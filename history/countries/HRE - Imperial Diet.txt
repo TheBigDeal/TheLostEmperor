@@ -23,6 +23,7 @@ set_politics = {
 
 
 create_faction = Holy_Roman_Empire
+add_to_faction = VRP
 add_to_faction = BAV
 add_to_faction = SAX
 add_to_faction = TRI
