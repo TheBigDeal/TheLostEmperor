@@ -1,0 +1,19 @@
+state={
+	id=961
+	name="STATE_961"
+	history={
+		owner = LIE
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		add_core_of = LIE
+	}
+	provinces={
+		11562 
+	}
+	manpower=145153
+	state_category=large_town
+	buildings_max_level_factor=1.000
+}

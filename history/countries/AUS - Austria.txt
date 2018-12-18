@@ -111,16 +111,6 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Maximilian I von Habsburg-Lothringen"
-	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
-	picture = "Portrait_Maximilian_I.tga"
-	expire = "2011.1.1"
-	ideology = royalism_ideology
-	traits = {
-		#
-	}
-}
 
 create_country_leader = {
 	name = "Kurt Schuschnigg"

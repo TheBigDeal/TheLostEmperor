@@ -1,15 +1,17 @@
+
 state={
 	id=831
 	name="STATE_831"
-	
+
 	history={
 		owner = NEJ
+
 	}
-	
+
 	provinces={
-		5081 5093 8030 8118 12740 12768 
+		5081 5093 8030 8118 12740 12768 13234 13235 
 	}
 	manpower=52626
-	state_category = city
 	buildings_max_level_factor=1.000
+	state_category=city
 }

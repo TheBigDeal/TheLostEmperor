@@ -37,6 +37,7 @@ country_event = { #SYRIANS REBEL
 	picture = GFX_report_event_spain_civil_war_soldiers
 	trigger = {
 		tag = TUR
+		has_country_flag = TUR_syrian_rebellions
 		NOT = { country_existis = SYR }
 		OR = {
 			AND = {
@@ -100,6 +101,7 @@ country_event = { #LEVANT REBEL
 	trigger = {
 		tag = TUR
 		NOT = { country_existis = LEV }
+		has_country_flag = TUR_levant_rebellions
 		OR = {
 			AND = {
 				TUR = {	has_war = yes }
@@ -162,6 +164,7 @@ country_event = { #LEVANT REBEL
 	trigger = {
 		tag = TUR
 		NOT = { country_existis = KUR }
+		has_country_flag = TUR_kurdish_rebellions
 		OR = {
 			AND = {
 				TUR = {	has_war = yes }
@@ -226,6 +229,7 @@ country_event = { #JORDAN REBEL
 	trigger = {
 		tag = TUR
 		NOT = { country_existis = JOR }
+		has_country_flag = TUR_jordan_rebellions
 		OR = {
 			AND = {
 				TUR = {	has_war = yes }

@@ -1,0 +1,19 @@
+state={
+	id=960
+	name="STATE_960"
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		add_core_of = RUS
+
+	}
+	provinces={
+		3701 3704 6727 
+	}
+	manpower=1215323
+	buildings_max_level_factor=1.000
+}

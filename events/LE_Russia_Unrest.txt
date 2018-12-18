@@ -1,0 +1,229 @@
+﻿###########################
+# Russian Events
+###########################
+
+add_namespace = le_russia_unrest
+
+country_event = { #PROTESTS IN UKRAINE
+	id = le_russia_unrest.1
+	title = le_russia_unrest.1.t
+	desc = le_russia_unrest.1.d
+	mean_time_to_happen = { days = 90 }
+	trigger = {
+		tag = RUS
+		NOT = { 
+			has_country_flag = UKRAINIAN_PROTESTS 
+			has_country_flag = LATVIAN_PROTESTS 
+			has_country_flag = ESTONIAN_PROTESTS 
+			has_country_flag = GEORGIAN_PROTESTS 
+			has_country_flag = AZERBIJAN_PROTESTS 
+			has_country_flag = ARMENIAN_PROTESTS 
+			has_country_flag = DON_KUBAN_PROTESTS 
+			has_country_flag = ALASH_ORDA_PROTESTS 
+		}
+	}
+	option = {
+		name = le_russia_unrest.1.a
+		set_country_flag = UKRAINIAN_PROTESTS
+	}
+}
+country_event = { #PROTESTS IN LATVIA
+	id = le_russia_unrest.2
+	title = le_russia_unrest.2.t
+	desc = le_russia_unrest.2.d
+	mean_time_to_happen = { days = 150 }
+	trigger = {
+		tag = RUS
+		NOT = { 
+			has_country_flag = UKRAINIAN_PROTESTS 
+			has_country_flag = LATVIAN_PROTESTS 
+			has_country_flag = ESTONIAN_PROTESTS 
+			has_country_flag = GEORGIAN_PROTESTS 
+			has_country_flag = AZERBIJAN_PROTESTS 
+			has_country_flag = ARMENIAN_PROTESTS 
+			has_country_flag = DON_KUBAN_PROTESTS 
+			has_country_flag = ALASH_ORDA_PROTESTS 
+		}
+	}
+	option = {
+		name = le_russia_unrest.2.a
+		set_country_flag = LATVIAN_PROTESTS
+	}
+}
+country_event = { #PROTESTS IN ESTONIA
+	id = le_russia_unrest.3
+	title = le_russia_unrest.3.t
+	desc = le_russia_unrest.3.d
+	mean_time_to_happen = { days = 150 }
+	trigger = {
+		tag = RUS
+		NOT = { 
+			has_country_flag = UKRAINIAN_PROTESTS 
+			has_country_flag = LATVIAN_PROTESTS 
+			has_country_flag = ESTONIAN_PROTESTS 
+			has_country_flag = GEORGIAN_PROTESTS 
+			has_country_flag = AZERBIJAN_PROTESTS 
+			has_country_flag = ARMENIAN_PROTESTS 
+			has_country_flag = DON_KUBAN_PROTESTS 
+			has_country_flag = ALASH_ORDA_PROTESTS 
+		}
+	}
+	option = {
+		name = le_russia_unrest.3.a
+		set_country_flag = ESTONIAN_PROTESTS
+	}
+}
+country_event = { #PROTESTS IN ESTONIA
+	id = le_russia_unrest.4
+	title = le_russia_unrest.4.t
+	desc = le_russia_unrest.4.d
+	mean_time_to_happen = { days = 150 }
+	trigger = {
+		tag = RUS
+		NOT = { 
+			has_country_flag = UKRAINIAN_PROTESTS 
+			has_country_flag = LATVIAN_PROTESTS 
+			has_country_flag = ESTONIAN_PROTESTS 
+			has_country_flag = GEORGIAN_PROTESTS 
+			has_country_flag = AZERBIJAN_PROTESTS 
+			has_country_flag = ARMENIAN_PROTESTS 
+			has_country_flag = DON_KUBAN_PROTESTS 
+			has_country_flag = ALASH_ORDA_PROTESTS 
+		}
+	}
+	option = {
+		name = le_russia_unrest.4.a
+		set_country_flag = ESTONIAN_PROTESTS
+	}
+}
+country_event = { #PROTESTS IN GEORGIA
+	id = le_russia_unrest.5
+	title = le_russia_unrest.5.t
+	desc = le_russia_unrest.5.d
+	mean_time_to_happen = { days = 80 }
+	trigger = {
+		tag = RUS
+		NOT = { 
+			has_country_flag = UKRAINIAN_PROTESTS 
+			has_country_flag = LATVIAN_PROTESTS 
+			has_country_flag = ESTONIAN_PROTESTS 
+			has_country_flag = GEORGIAN_PROTESTS 
+			has_country_flag = AZERBIJAN_PROTESTS 
+			has_country_flag = ARMENIAN_PROTESTS 
+			has_country_flag = DON_KUBAN_PROTESTS 
+			has_country_flag = ALASH_ORDA_PROTESTS 
+		}
+	}
+	option = {
+		name = le_russia_unrest.5.a
+		set_country_flag = GEORGIAN_PROTESTS
+	}
+}
+country_event = { #PROTESTS IN AZERBIJAN
+	id = le_russia_unrest.6
+	title = le_russia_unrest.6.t
+	desc = le_russia_unrest.6.d
+	mean_time_to_happen = { days = 150 }
+	trigger = {
+		tag = RUS
+		NOT = { 
+			has_country_flag = UKRAINIAN_PROTESTS 
+			has_country_flag = LATVIAN_PROTESTS 
+			has_country_flag = ESTONIAN_PROTESTS 
+			has_country_flag = GEORGIAN_PROTESTS 
+			has_country_flag = AZERBIJAN_PROTESTS 
+			has_country_flag = ARMENIAN_PROTESTS 
+			has_country_flag = DON_KUBAN_PROTESTS 
+			has_country_flag = ALASH_ORDA_PROTESTS 
+		}
+	}
+	option = {
+		name = le_russia_unrest.6.a
+		set_country_flag = AZERBIJAN_PROTESTS
+	}
+}
+country_event = { #PROTESTS IN ARMENIA
+	id = le_russia_unrest.7
+	title = le_russia_unrest.7.t
+	desc = le_russia_unrest.7.d
+	mean_time_to_happen = { days = 150 }
+	trigger = {
+		tag = RUS
+		NOT = { 
+			has_country_flag = UKRAINIAN_PROTESTS 
+			has_country_flag = LATVIAN_PROTESTS 
+			has_country_flag = ESTONIAN_PROTESTS 
+			has_country_flag = GEORGIAN_PROTESTS 
+			has_country_flag = AZERBIJAN_PROTESTS 
+			has_country_flag = ARMENIAN_PROTESTS 
+			has_country_flag = DON_KUBAN_PROTESTS 
+			has_country_flag = ALASH_ORDA_PROTESTS 
+		}
+	}
+	option = {
+		name = le_russia_unrest.7.a
+		set_country_flag = ARMENIAN_PROTESTS
+	}
+}
+country_event = { #PROTESTS IN DON KUBAN
+	id = le_russia_unrest.8
+	title = le_russia_unrest.8.t
+	desc = le_russia_unrest.8.d
+	mean_time_to_happen = { days = 150 }
+	trigger = {
+		tag = RUS
+		NOT = { 
+			has_country_flag = UKRAINIAN_PROTESTS 
+			has_country_flag = LATVIAN_PROTESTS 
+			has_country_flag = ESTONIAN_PROTESTS 
+			has_country_flag = GEORGIAN_PROTESTS 
+			has_country_flag = AZERBIJAN_PROTESTS 
+			has_country_flag = ARMENIAN_PROTESTS 
+			has_country_flag = DON_KUBAN_PROTESTS 
+			has_country_flag = ALASH_ORDA_PROTESTS 
+		}
+	}
+	option = {
+		name = le_russia_unrest.8.a
+		set_country_flag = DON_KUBAN_PROTESTS
+	}
+}
+country_event = { #PROTESTS IN ALASH ORDA
+	id = le_russia_unrest.9
+	title = le_russia_unrest.9.t
+	desc = le_russia_unrest.9.d
+	mean_time_to_happen = { days = 150 }
+	trigger = {
+		tag = RUS
+		NOT = { 
+			has_country_flag = UKRAINIAN_PROTESTS 
+			has_country_flag = LATVIAN_PROTESTS 
+			has_country_flag = ESTONIAN_PROTESTS 
+			has_country_flag = GEORGIAN_PROTESTS 
+			has_country_flag = AZERBIJAN_PROTESTS 
+			has_country_flag = ARMENIAN_PROTESTS 
+			has_country_flag = DON_KUBAN_PROTESTS 
+			has_country_flag = ALASH_ORDA_PROTESTS 
+		}
+	}
+	option = {
+		name = le_russia_unrest.9.a
+		set_country_flag = ALASH_ORDA_PROTESTS
+	}
+}
+country_event = { #TERROR ATTACK IN GEORGIA
+	id = le_russia_unrest.10
+	title = le_russia_unrest.10.t
+	desc = le_russia_unrest.10.d
+	mean_time_to_happen = { days = 80 }
+	trigger = {
+		tag = RUS
+	}
+	option = {
+		name = le_russia_unrest.10.a
+		add_to_variable = {
+		    var = RUS_GEORGIAN_STRENGTH
+		    value = 10
+		}
+	}
+}

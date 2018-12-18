@@ -126,4 +126,11 @@ country = {
 			socialism_drift = 0.03
 		}
 	}
+	Democratic_Drift = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			liberalism_drift = 0.01
+			conservatism_drift = 0.01
+		}
+	}
 }

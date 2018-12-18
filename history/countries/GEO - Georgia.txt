@@ -38,26 +38,34 @@ set_technology = {
 }
 
 set_politics = {
-
 	parties = {
-		liberalism = { 
-			popularity = 25
-		}
-		
-		collectivism = {
-			popularity = 75
-		}
+		conservatism = { popularity = 3 }
+		liberalism = { popularity = 2 }
+		socialism = { popularity = 0 }
+		labryscism = { popularity = 5 }
+		rexism = { popularity = 0 }
+		despotism = { popularity = 4 }
+		royalism = {popularity = 1 }
+		theocracy = { popularity = 2 }
+		absolutism = { popularity = 3 }
+		proletarianism = { popularity = 78 }
+		collectivism = { popularity = 1 }
+		naturalism = { popularity = 1 }
 	}
+	ruling_party = proletarianism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Noe Zhordania"
+	name = "Joseph Stalin"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = liberalism
+	picture = "Stalin.tga"
+	expire = "1956.3.1"
+	ideology = proletarianism
 	traits = {
-		
+		terror_of_the_caucus
 	}
 }
 

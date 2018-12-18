@@ -5,20 +5,18 @@ state={
 
 	history={
 		owner = HOL
+		victory_points = {
+			9363 3
+		}
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 2
-			6336 = {
-				naval_base = 3
-
-			}
-
 		}
 
 	}
 
 	provinces={
-		6241 6286 9363 9403 
+		6286 9363 9403 
 	}
 	manpower=2364000
 	buildings_max_level_factor=1.000

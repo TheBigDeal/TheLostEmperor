@@ -791,16 +791,7 @@ HRE_emperor_decisions = {
 			WUR = { country_event = { id = hre.4 } }
 			HAM = { country_event = { id = hre.4 } }
 			BOH = { country_event = { id = hre.4 } }
-			if = {
-				limit = { AUS = { is_ai = no } }
-				GER = { change_tag_from = AUS }
-				GER = { annex_country = { target = AUS transfer_troops = yes } }
-			}
-			if = {
-				limit = { PRS = { is_ai = no } }
-				GER = { change_tag_from = PRS }
-				GER = { annex_country = { target = PRS transfer_troops = yes } }
-			}
+			AUS = { country_event = { id = hre.4 } }
 			BUR = { country_event = { id = hre.6 } }
 			BRE = { country_event = { id = hre.4 } }
 			BRU = { country_event = { id = hre.4 } }
@@ -808,7 +799,7 @@ HRE_emperor_decisions = {
 			WRZ = { country_event = { id = hre.4 } }
 			THU = { country_event = { id = hre.4 } }
 			KLE = { country_event = { id = hre.4 } }
-			LIE = { country_event = { id = hre.4 } }
+			LIE = { country_event = { id = hre.6 } }
 			MAI = { country_event = { id = hre.4 } }
 			NUR = { country_event = { id = hre.4 } }
 			AUG = { country_event = { id = hre.4 } }
@@ -817,6 +808,8 @@ HRE_emperor_decisions = {
 			OLD = { country_event = { id = hre.4 } }
 			MST = { country_event = { id = hre.4 } }
 			MCH = { country_event = { id = hre.4 } }
+			HRE = { country_event = { id = hre.4 } }
+			VRP = { country_event = { id = hre.4 } }
 			HLS = { country_event = { id = hre.4 } }
 			EFR = { country_event = { id = hre.4 } }
 			MUN = { country_event = { id = hre.4 } }
@@ -844,6 +837,41 @@ HRE_emperor_decisions = {
 				limit = {
 					tag = PRS
 				}
+				GER = {
+					create_country_leader = {
+						name = "Fredrick Wilhelm II"
+						desc = "POLITICS_KING_ZOG_DESC"
+						picture = "Portrait_Prussia_Wilhelm_II.tga"
+						expire = "1942.4.6"
+						ideology = absolutism_ideology
+						traits = {
+							Political_Dancer
+							Warmonger
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = AUS
+				}
+				GER = {
+					create_country_leader = {
+						name = "Franz Ferdinand von Habsburg-Lothringen"
+						desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+						picture = "Portrait_Franz_Ferdinand.tga"
+						expire = "2011.1.1"
+						ideology = royalism_ideology
+						traits = {
+							#
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = PRS
+				}
 				GER = { set_cosmetic_tag = GERMAN_EMPIRE_OLD }
 				AUS = { country_event = { id = hre.4 } }
 			}
@@ -854,6 +882,8 @@ HRE_emperor_decisions = {
 				GER = { set_cosmetic_tag = GERMAN_EMPIRE_OLD }
 				PRS = { country_event = { id = hre.4 } }
 			}
+			GER = { change_tag_from = ROOT }
+			GER = { annex_country = { target = PRS transfer_troops = yes } }
 		}
 	}
 	an_imperial_state = {

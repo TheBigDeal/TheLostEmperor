@@ -1,0 +1,75 @@
+form_belgium_cat = {
+	form_belgium = {
+		icon = generic_army_support
+		visible = {
+			OR = {
+				tag = LIE
+				tag = FLA
+				tag = WLN
+			}
+			NOT = { has_cosmetic_tag = BELGIUM }
+		}
+		available = {
+			all_country = {
+				NOT = { has_cosmetic_tag = BELGIUM }
+			}
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			set_cosmetic_tag = BELGIUM
+		}
+	}
+	join_belgium = {
+		icon = generic_army_support
+		visible = {
+			OR = {
+				tag = LIE
+				tag = FLA
+				tag = WLN
+			}
+			NOT = { has_cosmetic_tag = BELGIUM }
+		}
+		available = {
+			any_country = {
+				limit = { has_cosmetic_tag = BELGIUM }
+			}
+			NOT = { has_cosmetic_tag = BELGIUM }
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			if = {
+				limit = { FLA = { has_cosmetic_tag = BELGIUM } }
+				FLA = { annex_country = { target = FROM transfer_troops = yes } }
+			}
+			if = {
+				limit = { LIE = { has_cosmetic_tag = BELGIUM } }
+				LIE = { annex_country = { target = FROM transfer_troops = yes } }
+			}
+			if = {
+				limit = { WLN = { has_cosmetic_tag = BELGIUM } }
+				WLN = { annex_country = { target = FROM transfer_troops = yes } }
+			}
+		}
+	}
+	move_capital_to_brussels = {
+		icon = generic_army_support
+		visible = {
+			6 = {
+				is_capital = no
+			}
+		}
+		cost = 20
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			set_capital = 6
+		}
+	}
+}

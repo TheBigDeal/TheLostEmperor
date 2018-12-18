@@ -21,5 +21,42 @@ country_event = { #German Coup
 	option = { 
 		name = le_germany.2.a
 		complete_national_focus = GER_A_SUCCESSFUL_COUP
+		country_event = { id = le_germany.3 }
+	}
+}
+country_event = { #What Side Do We Support?
+	id = le_germany.3
+	title = le_germany.3.t
+	desc = le_germany.3.d
+	is_triggered_only = yes
+	option = { #The Collectivists Of Germany
+		name = le_germany.3.a
+		complete_national_focus = GER_A_GERMAN_UNION
+		set_capital = 52
+		start_civil_war = {
+		    ruling_party = collectivism
+		    ideology = absolutism
+		    size = 0.45
+		    only_own_territory = yes
+		    capital = 52
+		    states = { 
+		        64 61 786 59 58 882 940 65 68 879 66 67 62 872 63 85 953 5 950 188 770 771 769 816 57 812 815 871 55 818 811 762 60 813 56 819 949 820 822 51 878 814 876 821 877
+		    }
+		    keep_unit_leaders = {
+
+		    }
+		}
+		hidden_effect = { set_cosmetic_tag = GER_COMMUNIST }
+		random_other_country = {
+			limit = {
+				original_tag = GER
+				has_government = absolutism
+			}
+			set_cosmetic_tag = GERMAN_EMPIRE_OLD
+		}
+	}
+	option = { #The Labryscists Of Germany
+		name = le_germany.3.a
+		complete_national_focus = GER_A_GERMAN_REICH
 	}
 }

@@ -1,0 +1,19 @@
+state={
+	id=963
+	name="STATE_963"
+	history={
+		owner = HOL
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		add_core_of = HOL
+	}
+	provinces={
+		3211 9498 
+	}
+	manpower=659324
+	state_category=city
+	buildings_max_level_factor=1.000
+}

@@ -313,23 +313,27 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor = 6
+				factor = 40
 				tag = BAV
 			}
 			modifier = {
-				factor = 6
+				factor = 4000
 				tag = AUS
 			}
 			modifier = {
-				factor = 6
+				factor = 40
+				tag = BOH
+			}
+			modifier = {
+				factor = 4000
 				tag = WLN
 			}
 			modifier = {
-				factor = 6
+				factor = 4000
 				tag = FLA
 			}
 			modifier = {
-				factor = 6
+				factor = 4000
 				tag = BUR
 			}
 		}

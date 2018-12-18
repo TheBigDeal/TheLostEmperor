@@ -32,9 +32,6 @@ focus_tree = {
 		x = 38
 		y = 1
 		cost = 10
-		available = {
-			has_global_flag = prussia_germany
-		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -112,7 +109,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+		focus = {
 		id = GER_GERMAN_MILITARISM
 		icon = GFX_focus_ger_return_of_the_kaiser
 		prerequisite = { focus = GER_FINALIZE_NATION }
@@ -123,7 +120,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+		add_ideas = { GER_German_Militarism }
 		}
 	}
 	focus = {
@@ -137,7 +134,32 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+					random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+						random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -151,7 +173,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+				add_research_slot = 1
 		}
 	}
 	focus = {
@@ -166,7 +188,20 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			65 = {
+			    add_building_construction = {
+			        type = arms_factory
+			        level = 2
+			        instant_build = yes
+			    }
+		    }
+		    65 = {
+			    add_building_construction = {
+			        type = infrastructure
+			        level = 2
+			        instant_build = yes
+			    }
+			}
 		}
 	}
 	focus = {
@@ -181,7 +216,20 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			65 = {
+		    	add_building_construction = {
+		       		type = industrial_complex
+		      		level = 2
+		      		instant_build = yes
+		    	}
+			}
+			65 = {
+			    add_building_construction = {
+			        type = infrastructure
+			        level = 2
+			        instant_build = yes
+			    }
+			}
 		}
 	}
 	focus = {
@@ -196,7 +244,34 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			52 = {
+			    add_building_construction = {
+			        type = arms_factory
+			        level = 2
+			        instant_build = yes
+			    }
+	    	}
+		    53 = {
+			    add_building_construction = {
+			        type = arms_factory
+			        level = 1
+			        instant_build = yes
+			    }
+			}
+			52 = {
+	    		add_building_construction = {
+	        		type = infrastructure
+	        		level = 2
+	        		instant_build = yes
+	    		}
+			}
+			53 = {
+	   			add_building_construction = {
+	        		type = infrastructure
+	        		level = 1
+	        		instant_build = yes
+	    		}
+			}
 		}
 	}
 	focus = {
@@ -211,7 +286,34 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			52 = {
+    			add_building_construction = {
+        			type = industrial_complex
+        			level = 2
+        			instant_build = yes
+	    		}
+			}
+			53 = {
+    			add_building_construction = {
+        			type = industrial_complex
+        			level = 1
+        			instant_build = yes
+    			}
+			}
+			52 = {
+    			add_building_construction = {
+        			type = infrastructure
+        			level = 2
+        			instant_build = yes
+    			}
+			}
+			52 = {
+	    		add_building_construction = {
+	       			type = infrastructure
+	        		level = 1
+	        		instant_build = yes
+	    		}
+			}	
 		}
 	}
 	focus = {
@@ -226,7 +328,34 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+		    59 = {
+			    add_building_construction = {
+			        type = arms_factory
+			        level = 1
+			        instant_build = yes
+				}
+			}
+			770 = {
+		    	add_building_construction = {
+		        	type = arms_factory
+		        	level = 1
+		        	instant_build = yes
+		    	}
+			}
+			59 = {
+		    	add_building_construction = {
+		        	type = infrastructure
+		       		level = 1
+		       		instant_build = yes
+		    	}
+			}
+			770 = {
+		    	add_building_construction = {
+		        	type = infrastructure
+		        	level = 1
+		        	instant_build = yes
+		    	}
+			}
 		}
 	}
 	focus = {
@@ -241,7 +370,34 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			59 = {
+			    add_building_construction = {
+			        type = industrial_complex
+			        level = 1
+			        instant_build = yes
+			    }
+			}
+		    770 = {
+			    add_building_construction = {
+			        type = industrial_complex
+			        level = 1
+			        instant_build = yes
+			    }
+			}
+			59 = {
+			    add_building_construction = {
+			        type = infrastructure
+			        level = 1
+			        instant_build = yes
+			    }
+			}
+			770 = {
+	    		add_building_construction = {
+			        type = infrastructure
+			        level = 1
+			        instant_build = yes
+	    		}
+			}
 		}
 	}
 	focus = {
@@ -256,7 +412,34 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+ 			878 = {
+			    add_building_construction = {
+			        type = arms_factory
+			        level = 1
+			        instant_build = yes
+			    }
+			}
+		    822 = {
+			    add_building_construction = {
+			        type = arms_factory
+			        level = 1
+			        instant_build = yes
+			    }
+			}
+			878 = {
+			    add_building_construction = {
+			        type = infrastructure
+			        level = 1
+			        instant_build = yes
+			    }
+			}
+			822 = {
+			    add_building_construction = {
+			        type = infrastructure
+			        level = 1
+			        instant_build = yes
+			    }
+			}
 		}
 	}
 	focus = {
@@ -271,7 +454,34 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			878 = {
+			    add_building_construction = {
+			        type = industrial_complex
+			        level = 1
+			        instant_build = yes
+			    }
+			}
+		    822 = {
+			    add_building_construction = {
+			        type = industrial_complex
+			        level = 1
+			        instant_build = yes
+			    }
+			}
+			878 = {
+			    add_building_construction = {
+			        type = infrastructure
+			        level = 1
+			        instant_build = yes
+			    }
+			}
+			822 = {
+			    add_building_construction = {
+			        type = infrastructure
+			        level = 1
+			        instant_build = yes
+			    }
+			}
 		}
 	}
 	focus = {
@@ -285,7 +495,34 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			64 = {
+			    add_building_construction = {
+			        type = infrastructure
+			        level = 10
+			        instant_build = yes
+			    }
+			}
+			817 = {
+			    add_building_construction = {
+			        type = infrastructure
+			        level = 10
+			        instant_build = yes
+			    }
+			}
+			55 = {
+			    add_building_construction = {
+			        type = infrastructure
+			        level = 10
+			        instant_build = yes
+			    }
+			}
+			885 = {
+			    add_building_construction = {
+			        type = infrastructure
+			        level = 10
+			        instant_build = yes
+			    }
+			}
 		}
 	}
 	focus = {
@@ -299,7 +536,13 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			5 = {
+			    add_building_construction = {
+			        type = air_base
+			        level = 3
+			        instant_build = yes
+			    }
+			}
 		}
 	}
 	focus = {
@@ -313,7 +556,13 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			880 = {
+			    add_building_construction = {
+			        type = air_base
+			        level = 3
+			        instant_build = yes
+			    }
+			}
 		}
 	}
 	focus = {
@@ -328,7 +577,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_building_construction = {
+			    type = naval_base
+			    level = 4
+			    instant_build = yes
+			    province = 6282
+			}
 		}
 	}
 	focus = {
@@ -343,22 +597,99 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_building_construction = {
+			    type = naval_base
+			    level = 4
+			    instant_build = yes
+			    province = 6282
+			}
 		}
 	}
+
 	focus = {
 		id = GER_FORTIFY_THE_RHINE
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = GER_POMERANIAN_PORTS }
 		prerequisite = { focus = GER_KONIGSBERG_AIRFIELDS }
-		x = 37
+		x = 36
 		y = 8
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_building_construction = {
+			    type = bunker
+			    level = 4
+			    instant_build = yes
+			    province = 3512
+			}
+			add_building_construction = {
+			    type = bunker
+			    level = 4
+			    instant_build = yes
+			    province = 6469
+			}
+			add_building_construction = {
+			    type = bunker
+			    level = 4
+			    instant_build = yes
+			    province = 6570
+			}
+			add_building_construction = {
+			    type = bunker
+			    level = 4
+			    instant_build = yes
+			    province = 529
+			}
+			add_building_construction = {
+			    type = bunker
+			    level = 4
+			    instant_build = yes
+			    province = 6444
+			}
+			add_building_construction = {
+			    type = bunker
+			    level = 4
+			    instant_build = yes
+			    province = 6488
+			}
+			add_building_construction = {
+			    type = bunker
+			    level = 4
+			    instant_build = yes
+			    province = 589
+			}
+			add_building_construction = {
+			    type = bunker
+			    level = 4
+			    instant_build = yes
+			    province = 6568
+			}
+			add_building_construction = {
+			    type = bunker
+			    level = 4
+			    instant_build = yes
+			    province = 3530
+			}
+			add_building_construction = {
+			    type = bunker
+			    level = 4
+			    instant_build = yes
+			    province = 6542
+			}
+			add_building_construction = {
+			    type = bunker
+			    level = 4
+			    instant_build = yes
+			    province = 6712
+			}
+			add_building_construction = {
+			    type = bunker
+			    level = 4
+			    instant_build = yes
+			    province = 11640
+			}
 		}
 	}
 	focus = {
@@ -366,14 +697,41 @@ focus_tree = {
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = GER_POMERANIAN_PORTS }
 		prerequisite = { focus = GER_FRISIAN_PORTS }
-		x = 35
+		x = 34
 		y = 8
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_building_construction = {
+			    type = bunker
+			    level = 4
+			    instant_build = yes
+			    province = 11640
+			}
+		}
+	}
+	focus = {
+		id = GER_FORTIFY_POZNAN
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = GER_POMERANIAN_PORTS }
+		prerequisite = { focus = GER_FRISIAN_PORTS }
+		x = 38
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			owns_state = 86
+		}
+		completion_reward = {
+			add_building_construction = { type = bunker level = 4 instant_build = yes province = 243 }
+			add_building_construction = { type = bunker level = 4 instant_build = yes province = 3381 }
+			add_building_construction = { type = bunker level = 4 instant_build = yes province = 17 }
+			add_building_construction = { type = bunker level = 4 instant_build = yes province = 9532 }
+			add_building_construction = { type = bunker level = 4 instant_build = yes province = 11558 }
 		}
 	}
 	focus = {
@@ -404,7 +762,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_political_power = 20
 		}
 	}
 	focus = {
@@ -1294,6 +1652,7 @@ focus_tree = {
 		icon = GFX_focus_generic_the_giant_wakes
 		prerequisite = { focus = GER_LONG_LIVE_THE_KAISER }
 		mutually_exclusive = { focus = GER_APPOINT_A_CHANCELLOR focus = GER_THE_KAISER_RULES_ALL }
+		fixed_random_seed = no
 		x = 23
 		y = 3
 		cost = 10
@@ -1301,7 +1660,9 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = Democratic_Drift
+			add_popularity = { ideology = liberalism popularity = 0.1 }
+			add_popularity = { ideology = conservatism popularity = 0.1 }
 		}
 	}
 	focus = {
@@ -1315,7 +1676,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			set_politics = { ruling_party = conservatism }
 		}
 	}
 	focus = {
@@ -1329,7 +1690,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			create_faction = CENTRAL_EUROPEAN_ALLIANCE
 		}
 	}
 	focus = {
@@ -1344,7 +1705,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+		
 		}
 	}
 	focus = {
@@ -1800,7 +2161,7 @@ focus_tree = {
 		id = GER_INVEST_IN_INDUSTRY
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = GER_INVEST_IN_THE_NATION }
-		x = 34
+		x = 33
 		y = 9
 		cost = 10
 		ai_will_do = {
@@ -1987,7 +2348,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			country_event = { id = le_germany.3 }
 		}
 	}
 	focus = {

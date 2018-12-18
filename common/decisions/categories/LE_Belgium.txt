@@ -1,0 +1,14 @@
+####################
+##### GENERIC ######
+####################
+
+form_belgium_cat = {
+	icon = idea_communism
+	visible = {
+		OR = {
+			original_tag = FLA
+			original_tag = LIE
+			original_tag = WLN
+		}
+	}
+}

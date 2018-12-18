@@ -1,8 +1,0 @@
-#################
-#   POLITICAL   #
-#################
-mod_options_cat = {
-	available = {
-		always = yes
-	}
-}
