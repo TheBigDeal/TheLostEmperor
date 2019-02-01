@@ -8,40 +8,26 @@ set_stability = 0.6
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_support = 1
-	tech_engineers = 1
-	tech_recon = 1
-	motorised_infantry = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	gwtank = 1
-	basic_light_tank = 1
-	#improved_light_tank = 1  # PLACEHOLDER
-	#basic_heavy_tank = 1  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
-	early_fighter = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
-	naval_bomber1 = 1
-	early_bomber = 1
-	CAS1 = 1
-	early_submarine = 1
-	early_destroyer = 1
-	basic_destroyer = 1
-	early_light_cruiser = 1
-	early_heavy_cruiser = 1
-	early_battleship = 1
-	early_battlecruiser = 1
-	early_carrier = 1
-	trench_warfare = 1
-
-	transport = 1
-	fleet_in_being = 1
-	electronic_mechanical_engineering = 1
-	radio = 1
-	radio_detection = 1
+	#Industrial Techs
+	basic_machine_tools = 1
+	agriculture1 = 1
+	agriculture2 = 1
+	city_planning = 1
+	increased_urbanization1 = 1
+	industrial_realisation = 1
+	industrial_expansion = 1
+	industrial_factories = 1
+	factory_works = 1
+	early_automobile_industry = 1
+	automobile_industry = 1
+	resource_excavation = 1
+	#oil_extraction = 1
+	heavy_machinery = 1
+	basic_infrastructure = 1
+	advanced_infrastructure = 1
+	basic_ship_building = 1
+	advanced_ship_building = 1
+	modern_ship_building = 1
 }
 
 add_ideas = {
