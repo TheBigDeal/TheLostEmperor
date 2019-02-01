@@ -1,0 +1,22 @@
+state={
+	id=973
+	name="STATE_973"
+	history={
+		owner = BUR
+		victory_points = {
+			11516 5 
+		}
+		buildings = {
+			infrastructure = 73
+			industrial_complex = 1
+		}
+		add_core_of = FRA
+		add_core_of = BUR
+	}
+	provinces={
+		521 11516 
+	}
+	manpower=451563
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

@@ -1,7 +1,7 @@
 
 state={
 	id=881
-	name="STATE_761"
+	name="STATE_881"
 
 	history={
 		owner = LIE
@@ -31,7 +31,7 @@ state={
 	}
 
 	provinces={
-		6537 9574 11519 
+		9574 11519 
 	}
 	manpower=451532
 	buildings_max_level_factor=1.000

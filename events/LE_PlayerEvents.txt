@@ -22,7 +22,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { #HRE COLORS
 	id = playerevents.2
 	title = playerevents.2.t
 	desc = playerevents.2.d
@@ -32,10 +32,119 @@ country_event = {
 	
 	option = { #FILL IN NO MANS LAND
 		name = playerevents.2.a
-		country_event = playerevents.3
+		VRP = { set_cosmetic_tag = HRE_MEMBER }
+		BAV = { set_cosmetic_tag = HRE_MEMBER }
+		SAX = { set_cosmetic_tag = HRE_MEMBER }
+		TRI = { set_cosmetic_tag = HRE_MEMBER }
+		ULM = { set_cosmetic_tag = HRE_MEMBER }
+		LUB = { set_cosmetic_tag = HRE_MEMBER }
+		HAN = { set_cosmetic_tag = HRE_MEMBER }
+		BAD = { set_cosmetic_tag = HRE_MEMBER }
+		CLG = { set_cosmetic_tag = HRE_MEMBER }
+		HES = { set_cosmetic_tag = HRE_MEMBER }
+		FRN = { set_cosmetic_tag = HRE_MEMBER }
+		WUR = { set_cosmetic_tag = HRE_MEMBER }
+		HAM = { set_cosmetic_tag = HRE_MEMBER }
+		BOH = { set_cosmetic_tag = HRE_MEMBER }
+		BUR = { set_cosmetic_tag = HRE_MEMBER }
+		BRE = { set_cosmetic_tag = HRE_MEMBER }
+		BRU = { set_cosmetic_tag = HRE_MEMBER }
+		ANH = { set_cosmetic_tag = HRE_MEMBER }
+		WRZ = { set_cosmetic_tag = HRE_MEMBER }
+		THU = { set_cosmetic_tag = HRE_MEMBER }
+		KLE = { set_cosmetic_tag = HRE_MEMBER }
+		LIE = { set_cosmetic_tag = HRE_MEMBER }
+		MAI = { set_cosmetic_tag = HRE_MEMBER }
+		NUR = { set_cosmetic_tag = HRE_MEMBER }
+		AUG = { set_cosmetic_tag = HRE_MEMBER }
+		ANS = { set_cosmetic_tag = HRE_MEMBER }
+		PLT = { set_cosmetic_tag = HRE_MEMBER }
+		OLD = { set_cosmetic_tag = HRE_MEMBER }
+		PRS = { set_cosmetic_tag = HRE_MEMBER }
+		AUS = { set_cosmetic_tag = HRE_MEMBER }
+		MST = { set_cosmetic_tag = HRE_MEMBER }
+		MCH = { set_cosmetic_tag = HRE_MEMBER }
+		HLS = { set_cosmetic_tag = HRE_MEMBER }
+		EFR = { set_cosmetic_tag = HRE_MEMBER }
+		MUN = { set_cosmetic_tag = HRE_MEMBER }
+		RAV = { set_cosmetic_tag = HRE_MEMBER }
+		PAD = { set_cosmetic_tag = HRE_MEMBER }
+		PYR = { set_cosmetic_tag = HRE_MEMBER }
+		NAS = { set_cosmetic_tag = HRE_MEMBER }
+		JUL = { set_cosmetic_tag = HRE_MEMBER }
+		NSA = { set_cosmetic_tag = HRE_MEMBER }
+		FUL = { set_cosmetic_tag = HRE_MEMBER }
+		BAM = { set_cosmetic_tag = HRE_MEMBER }
+		SLZ = { set_cosmetic_tag = HRE_MEMBER }
+		SPY = { set_cosmetic_tag = HRE_MEMBER }
+		OFF = { set_cosmetic_tag = HRE_MEMBER }
+		HUL = { set_cosmetic_tag = HRE_MEMBER }
+		MEM = { set_cosmetic_tag = HRE_MEMBER }
+		LND = { set_cosmetic_tag = HRE_MEMBER }
+		HNZ = { set_cosmetic_tag = HRE_MEMBER }
+		FUS = { set_cosmetic_tag = HRE_MEMBER }
+		PSU = { set_cosmetic_tag = HRE_MEMBER }
+		WLN = { set_cosmetic_tag = HRE_MEMBER }
+		FLA = { set_cosmetic_tag = HRE_MEMBER }
+		ALS = { set_cosmetic_tag = HRE_MEMBER }
 	}
 	option = { #EXIT
 		name = playerevents.2.b
+		VRP = { set_cosmetic_tag = HRE_MEMBER }
+		BAV = { set_cosmetic_tag = HRE_MEMBER }
+		SAX = { set_cosmetic_tag = HRE_MEMBER }
+		TRI = { set_cosmetic_tag = HRE_MEMBER }
+		ULM = { set_cosmetic_tag = HRE_MEMBER }
+		LUB = { set_cosmetic_tag = HRE_MEMBER }
+		HAN = { set_cosmetic_tag = HRE_MEMBER }
+		BAD = { set_cosmetic_tag = HRE_MEMBER }
+		CLG = { set_cosmetic_tag = HRE_MEMBER }
+		HES = { set_cosmetic_tag = HRE_MEMBER }
+		FRN = { set_cosmetic_tag = HRE_MEMBER }
+		WUR = { set_cosmetic_tag = HRE_MEMBER }
+		HAM = { set_cosmetic_tag = HRE_MEMBER }
+		BOH = { set_cosmetic_tag = HRE_MEMBER }
+		BUR = { set_cosmetic_tag = HRE_MEMBER }
+		BRE = { set_cosmetic_tag = HRE_MEMBER }
+		BRU = { set_cosmetic_tag = HRE_MEMBER }
+		ANH = { set_cosmetic_tag = HRE_MEMBER }
+		WRZ = { set_cosmetic_tag = HRE_MEMBER }
+		THU = { set_cosmetic_tag = HRE_MEMBER }
+		KLE = { set_cosmetic_tag = HRE_MEMBER }
+		LIE = { set_cosmetic_tag = HRE_MEMBER }
+		MAI = { set_cosmetic_tag = HRE_MEMBER }
+		NUR = { set_cosmetic_tag = HRE_MEMBER }
+		AUG = { set_cosmetic_tag = HRE_MEMBER }
+		ANS = { set_cosmetic_tag = HRE_MEMBER }
+		PLT = { set_cosmetic_tag = HRE_MEMBER }
+		OLD = { set_cosmetic_tag = HRE_MEMBER }
+		PRS = { set_cosmetic_tag = HRE_MEMBER }
+		AUS = { set_cosmetic_tag = HRE_MEMBER }
+		MST = { set_cosmetic_tag = HRE_MEMBER }
+		MCH = { set_cosmetic_tag = HRE_MEMBER }
+		HLS = { set_cosmetic_tag = HRE_MEMBER }
+		EFR = { set_cosmetic_tag = HRE_MEMBER }
+		MUN = { set_cosmetic_tag = HRE_MEMBER }
+		RAV = { set_cosmetic_tag = HRE_MEMBER }
+		PAD = { set_cosmetic_tag = HRE_MEMBER }
+		PYR = { set_cosmetic_tag = HRE_MEMBER }
+		NAS = { set_cosmetic_tag = HRE_MEMBER }
+		JUL = { set_cosmetic_tag = HRE_MEMBER }
+		NSA = { set_cosmetic_tag = HRE_MEMBER }
+		FUL = { set_cosmetic_tag = HRE_MEMBER }
+		BAM = { set_cosmetic_tag = HRE_MEMBER }
+		SLZ = { set_cosmetic_tag = HRE_MEMBER }
+		SPY = { set_cosmetic_tag = HRE_MEMBER }
+		OFF = { set_cosmetic_tag = HRE_MEMBER }
+		HUL = { set_cosmetic_tag = HRE_MEMBER }
+		MEM = { set_cosmetic_tag = HRE_MEMBER }
+		LND = { set_cosmetic_tag = HRE_MEMBER }
+		HNZ = { set_cosmetic_tag = HRE_MEMBER }
+		FUS = { set_cosmetic_tag = HRE_MEMBER }
+		PSU = { set_cosmetic_tag = HRE_MEMBER }
+		WLN = { set_cosmetic_tag = HRE_MEMBER }
+		FLA = { set_cosmetic_tag = HRE_MEMBER }
+		ALS = { set_cosmetic_tag = HRE_MEMBER }
 	}
 }
 

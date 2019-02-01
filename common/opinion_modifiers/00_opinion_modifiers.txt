@@ -23,7 +23,7 @@ opinion_modifiers = {
   	HRE_send_envoy = { value = 20 }
   	HRE_establish_embassy = { value = 50 }
   	HRE_declare_alliance = { value = 100 }
-
+  	
 	#VANILLA
 	hostile_status = { #special used for civil wars that are on hold and blocks faction stuff
 		value = -100

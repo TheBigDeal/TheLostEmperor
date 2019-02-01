@@ -1,12 +1,12 @@
 state={
 	id=940
-	name="STATE_748"
+	name="STATE_940"
 	state_category = city
-	
-	history=
-	{
+	history = {
 		owner = LUB
-		controller = LUB
+		victory_points = {
+			11331 5
+		}
 		buildings = {
 			infrastructure = 6
 			arms_factory = 2

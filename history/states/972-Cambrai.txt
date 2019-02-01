@@ -1,0 +1,22 @@
+state={
+	id=972
+	name="STATE_972"
+	history={
+		owner = WLN
+		victory_points = {
+			11606 2 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		add_core_of = WLN
+	}
+	provinces={
+		11606 
+	}
+	manpower=241512
+	state_category=large_town
+	buildings_max_level_factor=1.000
+}

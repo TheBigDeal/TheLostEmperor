@@ -1,7 +1,7 @@
 
 state={
 	id=942
-	name="STATE_760"
+	name="STATE_942"
 
 	history={
 		owner = FLA
@@ -31,7 +31,7 @@ state={
 	}
 
 	provinces={
-		575 3536 6504 11483 11606 
+		575 3536 6504 11483 
 	}
 	manpower=370594
 	buildings_max_level_factor=1.000

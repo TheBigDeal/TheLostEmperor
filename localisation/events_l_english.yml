@@ -271,11 +271,13 @@
 
  #HRE ELECTIONS
  hre.1.t:0 "Holy Roman Elections"
- hre.1.d:0 "The Holy Roman Empire has gone into their long awaited election cycle. In 1853 the last Emperor died. The HRE  having only six electors could not decide on a new Emperor, resulting in a tie.  This caused the creation of an Imperial Diet state, located in Aachen.  Today is the day that will decide the fate of the Holy Roman Empire, and  possibly the rest or Europe, or the World."
- hre.1.a:0 "Begin the Elections!"
+ hre.1.d:0 "The Holy Roman Empire has gone into their long awaited election cycle. In 1912 the last Emperor died. The HRE having eight electors after the release of Bohemia could not decide on a new Emperor, resulting in a tie. This caused the creation of an Imperial Diet state, located in Aachen acting as a council for the empire. Today is the day that will decide the fate of the Holy Roman Empire, and possibly the rest or Europe, or the World."
+ hre.1.a:0 "Finalize the Votes!"
 
- hre.2.t:0 "Vote for the Holy Roman Emperor"
- hre.2.d:0 "We are an electorate of the Holy Roman Empire, therefore we get a vote in who shall become the new emperor. The choices are clearly Prussia or Austria as those are the most powerful countries, and the only ones with legitimate claims to the throne. It is time to vote and decide the fate of Europe."
+ hre.2.t:0 "The Crown Has Been Won"
+ hre.2.d:0 "After the votes have been counted we have won the crown. We now have control."
+ hre.2.a:0 "Victory is sweet."
+
  hre_prussia:0 "Vote for Prussia"
  hre_austria:0 "Vote for Austria"
 

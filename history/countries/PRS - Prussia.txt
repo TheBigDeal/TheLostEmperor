@@ -8,7 +8,7 @@ set_technology = {
 add_ideas = {
 	PRS_PRUSSIAN_MILITARISM
 	Religion_Protestant
-	HRE_elector
+	HRE_candidate
 }
 #1 = Prussia 2 = Austria
 set_variable = { var = PRS_SAXONY_SUPPORT value = 100 }

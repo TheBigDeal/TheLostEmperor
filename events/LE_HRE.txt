@@ -132,6 +132,7 @@ country_event = {
 	option = {
 		name = hre.2.a
 		set_country_flag = holy_roman_emperor
+		add_ideas = HRE_emperor
 	}
 }
 
@@ -419,4 +420,27 @@ country_event = {
 	#		}
 	#	}
 	#}
+}
+country_event = { #GERMANY IS FORMED
+	id = hre.6
+	title = hre.6.t
+	desc = hre.6.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	option = {
+		name = hre.6.a
+		GER = { puppet = ROOT }
+	}
+	option = { #Decline
+		name = hre.6.b
+		if = {
+			limit = {
+				PRS = { has_country_flag = holy_roman_emperor }
+			}
+			create_wargoal = {
+			    type = annex_everything
+			    target = ROOT
+			}
+		}
+	}
 }

@@ -2,6 +2,10 @@ BELGIUM = {
 	color = rgb { 193 171 8 }
 	color_ui = rgb { 193 171 8 }
 }
+HRE_MEMBER = {
+	color = rgb { 178 152 48 }
+	color_ui = rgb { 178 152 48 }
+}
 BAV_COMMUNIST = {
 	color = rgb { 91 15 0 }
 	color_ui = rgb { 91 15 0 }

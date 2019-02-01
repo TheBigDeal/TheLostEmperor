@@ -31,8 +31,10 @@
  Religious_Movements:0 "Religous Movements"
  Rexist_Drift:0 "Rexism Drift"
  #HRE
- HRE_Member:0 "Holy Roman Duchy"
- HRE_elector:0 "Holy Roman Elector"
+ HRE_member:0 "Holy Roman Duchy"
+ HRE_elector:0 "Holy Roman Elector
+ HRE_candidate:0 "Holy Roman Imperial Canidate"
+ HRE_imperial_diet:0 "Holy Roman Imperial Diet"
  HRE_emperor:0 "Holy Roman Emperor"
  PRUSSIAN_SPHERE:0 "Prussian Sphere"
  PRS_PRUSSIAN_MILITARISM:0 "Prussian Militarism"

@@ -699,6 +699,118 @@ HRE_control_catagory = {
 		}
 	}
 }
+HRE_imperial_reforms = {
+	Institute_Reichsregiment = { #Bolster The Army
+		icon = generic_decision
+		visible = { has_country_flag = holy_roman_emperor NOT = { has_country_flag = Institute_Reichsregiment } }
+		cost = 100
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			set_country_flag = Institute_Reichsregiment
+			add_ideas = REFORM_REICHSREGIMENT
+		}
+	}
+	Call_for_Reichsreform = { #Bolster The Army
+		icon = generic_decision
+		visible = { has_country_flag = holy_roman_emperor NOT = { has_country_flag = Call_for_Reichsreform } }
+		available = { has_country_flag = Wähler_Ausrichten }
+		cost = 100
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			set_country_flag = Call_for_Reichsreform
+			add_ideas = REFORM_REICHSREFORM
+		}
+	}
+	Wahler_Ausrichten = { #Align The Electors
+		icon = generic_prepare_civil_war
+		visible = { has_country_flag = holy_roman_emperor NOT = { has_country_flag = Wähler_Ausrichten } }
+		available = { has_country_flag = Call_for_Reichsreform }
+		cost = 100
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			set_country_flag = Wähler_Ausrichten
+			all_countries = {
+				limit = {
+					has_ideas = { HRE_elector }
+				}
+				add_opinion_modifier = { target = ROOT modifier = sent_envoy }
+			}
+		}
+	}
+	Confederate_The_Northern_States = { #Align The Electors
+		icon = generic_prepare_civil_war
+		visible = { has_country_flag = holy_roman_emperor NOT = { has_country_flag = Wähler_Ausrichten } }
+		available = { has_country_flag = Call_for_Reichsreform }
+		cost = 100
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			set_country_flag = Wähler_Ausrichten
+			SAX = { country_event = le_prussia.5 }
+			MCH = { country_event = le_prussia.5 }
+			VRP = { country_event = le_prussia.5 }
+			MST = { country_event = le_prussia.5 }
+			HAN = { country_event = le_prussia.5 }
+			HAM = { country_event = le_prussia.5 }
+			LUB = { country_event = le_prussia.5 }
+			HLS = { country_event = le_prussia.5 }
+			BRE = { country_event = le_prussia.5 }
+			OLD = { country_event = le_prussia.5 }
+			EFR = { country_event = le_prussia.5 }
+			BRU = { country_event = le_prussia.5 }
+			ANH = { country_event = le_prussia.5 }
+			RAV = { country_event = le_prussia.5 }
+			MUN = { country_event = le_prussia.5 }
+			PAD = { country_event = le_prussia.5 }
+			PYR = { country_event = le_prussia.5 }
+			KLE = { country_event = le_prussia.5 }
+			JUL = { country_event = le_prussia.5 }
+			CLG = { country_event = le_prussia.5 }
+		}
+	}
+	Enact_Gemeiner_Pfennig = { #Align The Electors
+		icon = generic_prepare_civil_war
+		visible = { has_country_flag = holy_roman_emperor NOT = { has_country_flag = Enact_Gemeiner_Pfennig } }
+		available = { has_country_flag = Wähler_Ausrichten }
+		cost = 100
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			set_country_flag = Enact_Gemeiner_Pfennig
+		}
+	}
+	Proclaim_Erbkaisertum = { #Align The Electors
+		icon = generic_prepare_civil_war
+		visible = { has_country_flag = holy_roman_emperor NOT = { has_country_flag = Proclaim_Erbkaisertum } }
+		available = { has_country_flag = Enact_Gemeiner_Pfennig }
+		cost = 100
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			set_country_flag = Proclaim_Erbkaisertum
+		}
+	}
+	Revoke_The_Privilegia = { #Align The Electors
+		icon = generic_prepare_civil_war
+		visible = { has_country_flag = holy_roman_emperor NOT = { has_country_flag = Revoke_The_Privilegia } }
+		available = { has_country_flag = Proclaim_Erbkaisertum }
+		cost = 100
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			set_country_flag = Revoke_The_Privilegia
+		}
+	}
+	Renovatio_Imperii = { #Subjugate The Empire
+		icon = generic_prepare_civil_war
+		visible = { has_country_flag = holy_roman_emperor NOT = { has_country_flag = Renovatio_Imperii } }
+		available = { has_country_flag = Revoke_The_Privilegia }
+		cost = 100
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			set_country_flag = Renovatio_Imperii
+		}
+	}
+}
+
+
+
 HRE_emperor_decisions = {
 	consolidate_hre = {
 		icon = generic_army_support
@@ -790,8 +902,8 @@ HRE_emperor_decisions = {
 			FRN = { country_event = { id = hre.4 } }
 			WUR = { country_event = { id = hre.4 } }
 			HAM = { country_event = { id = hre.4 } }
-			BOH = { country_event = { id = hre.4 } }
-			AUS = { country_event = { id = hre.4 } }
+			#BOH = { country_event = { id = hre.4 } }
+			#AUS = { country_event = { id = hre.4 } }
 			BUR = { country_event = { id = hre.6 } }
 			BRE = { country_event = { id = hre.4 } }
 			BRU = { country_event = { id = hre.4 } }
@@ -799,7 +911,6 @@ HRE_emperor_decisions = {
 			WRZ = { country_event = { id = hre.4 } }
 			THU = { country_event = { id = hre.4 } }
 			KLE = { country_event = { id = hre.4 } }
-			LIE = { country_event = { id = hre.6 } }
 			MAI = { country_event = { id = hre.4 } }
 			NUR = { country_event = { id = hre.4 } }
 			AUG = { country_event = { id = hre.4 } }
@@ -830,9 +941,8 @@ HRE_emperor_decisions = {
 			HNZ = { country_event = { id = hre.4 } }
 			FUS = { country_event = { id = hre.4 } }
 			PSU = { country_event = { id = hre.4 } }
-			WLN = { country_event = { id = hre.6 } }
-			FLA = { country_event = { id = hre.6 } }
 			ALS = { country_event = { id = hre.4 } }
+			HRE = { country_event = { id = hre.4 } }
 			if = {
 				limit = {
 					tag = PRS

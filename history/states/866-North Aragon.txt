@@ -2,13 +2,13 @@ state={
 	id=866
 	name="STATE_866"
 	history={
-		owner = SPR
+		owner = ARA
 		buildings = {
 			infrastructure = 7
 			arms_factory = 1
 			industrial_complex = 1
 		}
-		add_core_of = SPR
+		add_core_of = ARA
 	}
 	provinces={
 		899 915 3931 9840 9842 11819 11821 11838 

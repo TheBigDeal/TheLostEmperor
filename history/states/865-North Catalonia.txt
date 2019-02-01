@@ -1,11 +1,12 @@
+
 state={
 	id=865
 	name="STATE_865"
-	state_category = city
+
 	history={
-		owner = SPR
+		owner = ARA
 		victory_points = {
-			9764 15
+			9764 15 
 		}
 		buildings = {
 			infrastructure = 7
@@ -16,11 +17,13 @@ state={
 				naval_base = 4
 			}
 		}
-		add_core_of = SPR
+		add_core_of = ARA
 	}
+
 	provinces={
-		854 872 897 3898 3899 6865 6927 9764 9797 9824 11779 
+		854 9764
 	}
 	manpower=435653
 	buildings_max_level_factor=1.000
+	state_category=city
 }

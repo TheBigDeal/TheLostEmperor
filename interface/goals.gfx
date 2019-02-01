@@ -2,6 +2,10 @@ spriteTypes = {
 
 	#### Mod
 	SpriteType = {
+	name = "GFX_greatergermany"
+	texturefile = "gfx/interface/goals/Germany_Pan.dds"			
+	}
+	SpriteType = {
 	name = "GFX_goal_purge_dissenters"
 	texturefile = "gfx/interface/goals/Purge_Dissenters.dds"			
 	}

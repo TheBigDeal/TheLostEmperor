@@ -1,5 +1,5 @@
 focus_tree = {
-	id = prussian_focus
+	id = german_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -118,9 +118,9 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 10
-		}
+		}S
 		completion_reward = {
-		add_ideas = { GER_German_Militarism }
+			add_ideas = { GER_German_Militarism }
 		}
 	}
 	focus = {
@@ -762,7 +762,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 20
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -777,7 +777,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			country_event = { id = le_germany.13 }
 		}
 	}
 	focus = {
@@ -825,12 +825,30 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_GROSSDEUTCHLAND
-		icon = GFX_focus_grossdeutschland
+		icon = GFX_greatergermany
 		prerequisite = { focus = GER_ESTABLISH_REICHSTAG focus = GER_REWRITE_CONSTITUTION }
 		mutually_exclusive = { focus = GER_KLIENDEUTCHLAND }
 		x = 17
 		y = 5
 		cost = 10
+		bypass = {
+			NOT = { country_exists = AUS }
+			NOT = { country_exists = BOH }
+			OR = {
+				owns_state = 152
+				owns_state = 794
+				owns_state = 153
+				owns_state = 102
+				owns_state = 4
+				owns_state = 39
+			}
+			OR = {
+				owns_state = 69
+				owns_state = 9
+				owns_state = 75
+				owns_state = 74
+			}
+		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -843,124 +861,44 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = GER_GROSSDEUTCHLAND }
 		mutually_exclusive = { focus = GER_PLOT_AGAINST_AUSTRIA }
-		x = 16
+		x = 17
 		y = 6
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-
+			AUS = { country_event = { id = le_germany.4 } }
 		}
 	}
 	focus = {
 		id = GER_CLAIM_THE_SUDETENLAND
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_ANSCHLUSS }
-		x = 16
+		x = 17
 		y = 7
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-
+			69 = {
+				add_claim_by = GER
+			}
 		}
 	}
 	focus = {
 		id = GER_DEMAND_THE_CZECHS_TO_FOLD
 		icon = GFX_focus_CZE_german_puppet
 		prerequisite = { focus = GER_CLAIM_THE_SUDETENLAND }
-		x = 16
+		x = 17
 		y = 8
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = GER_PLOT_AGAINST_AUSTRIA
-		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = GER_GROSSDEUTCHLAND }
-		mutually_exclusive = { focus = GER_ANSCHLUSS }
-		x = 18
-		y = 6
-		cost = 10
-		available = {
-			AND = {
-				country_exists = AUS
-				OR = {
-					AUS = {
-							owns_state = 43
-					}
-					HUN = {
-						is_puppet_of = AUS
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = GER_CONTACT_HUNGARIAN_REVOLUTIONARIES
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = GER_PLOT_AGAINST_AUSTRIA }
-		x = 18
-		y = 7
-		cost = 10
-		available = {
-			AND = {
-				country_exists = AUS
-				OR = {
-					AUS = {
-							owns_state = 43
-					}
-					HUN = {
-						is_puppet_of = AUS
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = GER_IGNITE_THE_FIRES_OF_REVOLUTION!
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = GER_CONTACT_HUNGARIAN_REVOLUTIONARIES }
-		x = 18
-		y = 8
-		cost = 10
-		available = {
-			AND = {
-				country_exists = AUS
-				OR = {
-					AUS = {
-							owns_state = 43
-					}
-					HUN = {
-						is_puppet_of = AUS
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-
+			BOH = { country_event = { id = le_germany.4 } }
 		}
 	}
 	focus = {
@@ -974,7 +912,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_state_core = 794
+			add_state_core = 152
+			add_state_core = 4
+			add_state_core = 153
+			add_state_core = 39
+			add_state_core = 102
 		}
 	}
 	focus = {
@@ -988,7 +931,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = { austrian_gold_mines }
 		}
 	}
 	focus = {
@@ -1002,7 +945,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = { austrian_style_courts }
 		}
 	}
 	focus = {
@@ -1016,7 +959,10 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_state_core = 69
+			add_state_core = 9
+			add_state_core = 74
+			add_state_core = 75
 		}
 	}
 	focus = {
@@ -1030,7 +976,16 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_resource = {
+    			type = steel
+    			amount = 35
+    			state = 9
+			}
+			add_resource = {
+    			type = steel
+    			amount = 15
+    			state = 74
+			}
 		}
 	}
 	focus = {
@@ -1261,7 +1216,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			AUS = { country_event = { id = le_germany.7 } }
 		}
 	}
 	focus = {
@@ -1275,7 +1230,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			TUR = { country_event = { id = le_germany.7 } }
 		}
 	}
 	focus = {
@@ -1290,7 +1245,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			BUL = { country_event = { id = le_germany.7 } }
 		}
 	}
 	focus = {
@@ -1368,7 +1323,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			create_faction = Mitteleuropa
 		}
 	}
 	focus = {
@@ -1382,7 +1337,9 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			FLA = { country_event = { id = le_germany.7 } }
+			LIE = { country_event = { id = le_germany.7 } }
+			WLN = { country_event = { id = le_germany.7 } }
 		}
 	}
 	focus = {
@@ -1396,7 +1353,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			HOL = { country_event = { id = le_germany.7 } }
 		}
 	}
 	focus = {
@@ -1411,7 +1368,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			DEN = { country_event = { id = le_germany.7 } }
 		}
 	}
 	focus = {
