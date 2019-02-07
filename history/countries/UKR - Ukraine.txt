@@ -61,36 +61,20 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Kost Levytsky"
+	name = "Volodymyr Vynnchenko"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "Portrait_Ukraine_Pavlo_Skoropadsky.tga"
 	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-
-	}
+	ideology = absolutism
+	traits = {}
 }
-
 create_country_leader = {
-	name = "Nikita Sergeyevich Khrushchev"
+	name = "Volodymyr Vynnchenko"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	picture = "Portrait_Ukraine_Pavlo_Skoropadsky.tga"
 	expire = "1953.3.1"
-	ideology = proletarianism
-	traits = {
-
-	}
-}
-
-create_country_leader = {
-	name = "Stepan Bandera"
-	desc = ""
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
-	expire = "1953.3.1"
-	ideology = rexism
-	traits = {
-
-	}
+	ideology = royalism
+	traits = {}
 }
 
 #create_country_leader = {

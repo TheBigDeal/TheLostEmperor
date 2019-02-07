@@ -1,0 +1,22 @@
+
+state={
+	id=970
+	name="STATE_970"
+
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = RUS
+		add_core_of = AZR
+
+	}
+
+	provinces={
+		1536 4473 4477 4614 11704 12434 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

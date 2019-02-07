@@ -227,9 +227,9 @@
  STATE_226:0 "Dnipropetrovsk"
  STATE_227:0 "Donetsk" #Stalino
  STATE_228:0 "Luhansk" #Voroshilovgrad
- STATE_229:1 "Azerbaijan"
+ STATE_229:1 "Absheron"
  STATE_230:0 "Armenia"
- STATE_231:0 "Georgia"
+ STATE_231:0 "Imereti"
  STATE_232:0 "Grozny"
  STATE_233:0 "Caucasus Mountains"
  STATE_234:0 "Krasnodar"
@@ -954,3 +954,8 @@
  STATE_973:0 "Nancy"
  STATE_974:0 "Gerona"
  STATE_975:0 "Lerida"
+ STATE_967:0 "Kartli"
+ STATE_968:0 "Nachitjevan"
+ STATE_969:0 "Syuik"
+ STATE_970:0 "Aran"
+ STATE_971:0 "Nagorno-Karabakh"
