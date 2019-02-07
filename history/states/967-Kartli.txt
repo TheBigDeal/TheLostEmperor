@@ -1,0 +1,18 @@
+state={
+	id=967
+	name="STATE_967"
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = RUS
+		add_core_of = GEO
+	}
+	provinces={
+		1530 1599 3667 4534 4605 6436 6671 9626 9702 11609 12309 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

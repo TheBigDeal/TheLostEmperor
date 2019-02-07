@@ -8,6 +8,523 @@
 # localization_key -> points to the localization key
 # that'll be used if trigger passes
 
+
+##########################################
+# M O D
+##########################################
+
+# COMMUNIST PARTY
+######################
+defined_text = {
+	name = GetCommunistLevel
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_SOVIET_STRENGTH value = 0 compare = less_than }
+		}
+		localization_key = RUS_nonexistant
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_SOVIET_STRENGTH value = 0 compare = greater_than_or_equals }
+			check_variable = { var = RUS_SOVIET_STRENGTH value = 10 compare = less_than }
+		}
+		localization_key = RUS_low
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_SOVIET_STRENGTH value = 10 compare = greater_than_or_equals }
+			check_variable = { var = RUS_SOVIET_STRENGTH value = 20 compare = less_than }
+		}
+		localization_key = RUS_medium
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_SOVIET_STRENGTH value = 20 compare = greater_than_or_equals }
+			check_variable = { var = RUS_SOVIET_STRENGTH value = 30 compare = less_than }
+		}
+		localization_key = RUS_high
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_SOVIET_STRENGTH value = 30 compare = greater_than_or_equals }
+			check_variable = { var = RUS_SOVIET_STRENGTH value = 40 compare = less_than }
+		}
+		localization_key = RUS_veryhigh
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_SOVIET_STRENGTH value = 40 compare = greater_than_or_equals }
+		}
+		localization_key = RUS_extreme
+	}
+}
+
+# Ukrainian Revolt Risk
+######################
+defined_text = {
+	name = GetUkranianLevel
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_UKRAINIAN_STRENGTH value = 0 compare = less_than }
+		}
+		localization_key = RUS_nonexistant
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_UKRAINIAN_STRENGTH value = 0 compare = greater_than_or_equals }
+			check_variable = { var = RUS_UKRAINIAN_STRENGTH value = 10 compare = less_than }
+		}
+		localization_key = RUS_low
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_UKRAINIAN_STRENGTH value = 10 compare = greater_than_or_equals }
+			check_variable = { var = RUS_UKRAINIAN_STRENGTH value = 20 compare = less_than }
+		}
+		localization_key = RUS_medium
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_UKRAINIAN_STRENGTH value = 20 compare = greater_than_or_equals }
+			check_variable = { var = RUS_UKRAINIAN_STRENGTH value = 30 compare = less_than }
+		}
+		localization_key = RUS_high
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_UKRAINIAN_STRENGTH value = 30 compare = greater_than_or_equals }
+			check_variable = { var = RUS_UKRAINIAN_STRENGTH value = 40 compare = less_than }
+		}
+		localization_key = RUS_veryhigh
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_UKRAINIAN_STRENGTH value = 40 compare = greater_than_or_equals }
+		}
+		localization_key = RUS_extreme
+	}
+}
+# Latvian Revolt Risk
+######################
+defined_text = {
+	name = GetLatvianLevel
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_LATVIAN_STRENGTH value = 0 compare = less_than }
+		}
+		localization_key = RUS_nonexistant
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_LATVIAN_STRENGTH value = 0 compare = greater_than_or_equals }
+			check_variable = { var = RUS_LATVIAN_STRENGTH value = 10 compare = less_than }
+		}
+		localization_key = RUS_low
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_LATVIAN_STRENGTH value = 10 compare = greater_than_or_equals }
+			check_variable = { var = RUS_LATVIAN_STRENGTH value = 20 compare = less_than }
+		}
+		localization_key = RUS_medium
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_LATVIAN_STRENGTH value = 20 compare = greater_than_or_equals }
+			check_variable = { var = RUS_LATVIAN_STRENGTH value = 30 compare = less_than }
+		}
+		localization_key = RUS_high
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_LATVIAN_STRENGTH value = 30 compare = greater_than_or_equals }
+			check_variable = { var = RUS_LATVIAN_STRENGTH value = 40 compare = less_than }
+		}
+		localization_key = RUS_veryhigh
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_LATVIAN_STRENGTH value = 40 compare = greater_than_or_equals }
+		}
+		localization_key = RUS_extreme
+	}
+}
+# Estonian Revolt Risk
+######################
+defined_text = {
+	name = GetEstonianLevel
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ESTONIAN_STRENGTH value = 0 compare = less_than }
+		}
+		localization_key = RUS_nonexistant
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ESTONIAN_STRENGTH value = 0 compare = greater_than_or_equals }
+			check_variable = { var = RUS_ESTONIAN_STRENGTH value = 10 compare = less_than }
+		}
+		localization_key = RUS_low
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ESTONIAN_STRENGTH value = 10 compare = greater_than_or_equals }
+			check_variable = { var = RUS_ESTONIAN_STRENGTH value = 20 compare = less_than }
+		}
+		localization_key = RUS_medium
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ESTONIAN_STRENGTH value = 20 compare = greater_than_or_equals }
+			check_variable = { var = RUS_ESTONIAN_STRENGTH value = 30 compare = less_than }
+		}
+		localization_key = RUS_high
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ESTONIAN_STRENGTH value = 30 compare = greater_than_or_equals }
+			check_variable = { var = RUS_ESTONIAN_STRENGTH value = 40 compare = less_than }
+		}
+		localization_key = RUS_veryhigh
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ESTONIAN_STRENGTH value = 40 compare = greater_than_or_equals }
+		}
+		localization_key = RUS_extreme
+	}
+}
+# Georgian Revolt Risk
+######################
+defined_text = {
+	name = GetGeorgianLevel
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_GEORGIAN_STRENGTH value = 0 compare = less_than }
+		}
+		localization_key = RUS_nonexistant
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_GEORGIAN_STRENGTH value = 0 compare = greater_than_or_equals }
+			check_variable = { var = RUS_GEORGIAN_STRENGTH value = 10 compare = less_than }
+		}
+		localization_key = RUS_low
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_GEORGIAN_STRENGTH value = 10 compare = greater_than_or_equals }
+			check_variable = { var = RUS_GEORGIAN_STRENGTH value = 20 compare = less_than }
+		}
+		localization_key = RUS_medium
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_GEORGIAN_STRENGTH value = 20 compare = greater_than_or_equals }
+			check_variable = { var = RUS_GEORGIAN_STRENGTH value = 30 compare = less_than }
+		}
+		localization_key = RUS_high
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_GEORGIAN_STRENGTH value = 30 compare = greater_than_or_equals }
+			check_variable = { var = RUS_GEORGIAN_STRENGTH value = 40 compare = less_than }
+		}
+		localization_key = RUS_veryhigh
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_GEORGIAN_STRENGTH value = 40 compare = greater_than_or_equals }
+		}
+		localization_key = RUS_extreme
+	}
+}
+# Georgian Revolt Risk
+######################
+defined_text = {
+	name = GetAzerbijanLevel
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_AZERBIJAN_STRENGTH value = 0 compare = less_than }
+		}
+		localization_key = RUS_nonexistant
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_AZERBIJAN_STRENGTH value = 0 compare = greater_than_or_equals }
+			check_variable = { var = RUS_AZERBIJAN_STRENGTH value = 10 compare = less_than }
+		}
+		localization_key = RUS_low
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_AZERBIJAN_STRENGTH value = 10 compare = greater_than_or_equals }
+			check_variable = { var = RUS_AZERBIJAN_STRENGTH value = 20 compare = less_than }
+		}
+		localization_key = RUS_medium
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_AZERBIJAN_STRENGTH value = 20 compare = greater_than_or_equals }
+			check_variable = { var = RUS_AZERBIJAN_STRENGTH value = 30 compare = less_than }
+		}
+		localization_key = RUS_high
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_AZERBIJAN_STRENGTH value = 30 compare = greater_than_or_equals }
+			check_variable = { var = RUS_AZERBIJAN_STRENGTH value = 40 compare = less_than }
+		}
+		localization_key = RUS_veryhigh
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_AZERBIJAN_STRENGTH value = 40 compare = greater_than_or_equals }
+		}
+		localization_key = RUS_extreme
+	}
+}
+# Armenian Revolt Risk
+######################
+defined_text = {
+	name = GetArmenianLevel
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ARMENIAN_STRENGTH value = 0 compare = less_than }
+		}
+		localization_key = RUS_nonexistant
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ARMENIAN_STRENGTH value = 0 compare = greater_than_or_equals }
+			check_variable = { var = RUS_ARMENIAN_STRENGTH value = 10 compare = less_than }
+		}
+		localization_key = RUS_low
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ARMENIAN_STRENGTH value = 10 compare = greater_than_or_equals }
+			check_variable = { var = RUS_ARMENIAN_STRENGTH value = 20 compare = less_than }
+		}
+		localization_key = RUS_medium
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ARMENIAN_STRENGTH value = 20 compare = greater_than_or_equals }
+			check_variable = { var = RUS_ARMENIAN_STRENGTH value = 30 compare = less_than }
+		}
+		localization_key = RUS_high
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ARMENIAN_STRENGTH value = 30 compare = greater_than_or_equals }
+			check_variable = { var = RUS_ARMENIAN_STRENGTH value = 40 compare = less_than }
+		}
+		localization_key = RUS_veryhigh
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ARMENIAN_STRENGTH value = 40 compare = greater_than_or_equals }
+		}
+		localization_key = RUS_extreme
+	}
+}
+# Armenian Revolt Risk
+######################
+defined_text = {
+	name = GetDonKubanLevel
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_DON_KUBAN_STRENGTH value = 0 compare = less_than }
+		}
+		localization_key = RUS_nonexistant
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_DON_KUBAN_STRENGTH value = 0 compare = greater_than_or_equals }
+			check_variable = { var = RUS_DON_KUBAN_STRENGTH value = 10 compare = less_than }
+		}
+		localization_key = RUS_low
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_DON_KUBAN_STRENGTH value = 10 compare = greater_than_or_equals }
+			check_variable = { var = RUS_DON_KUBAN_STRENGTH value = 20 compare = less_than }
+		}
+		localization_key = RUS_medium
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_DON_KUBAN_STRENGTH value = 20 compare = greater_than_or_equals }
+			check_variable = { var = RUS_DON_KUBAN_STRENGTH value = 30 compare = less_than }
+		}
+		localization_key = RUS_high
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_DON_KUBAN_STRENGTH value = 30 compare = greater_than_or_equals }
+			check_variable = { var = RUS_DON_KUBAN_STRENGTH value = 40 compare = less_than }
+		}
+		localization_key = RUS_veryhigh
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_DON_KUBAN_STRENGTH value = 40 compare = greater_than_or_equals }
+		}
+		localization_key = RUS_extreme
+	}
+}
+# Alash Orda Revolt Risk
+######################
+defined_text = {
+	name = GetAlashOrdaLevel
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ALASH_ORDA_STRENGTH value = 0 compare = less_than }
+		}
+		localization_key = RUS_nonexistant
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ALASH_ORDA_STRENGTH value = 0 compare = greater_than_or_equals }
+			check_variable = { var = RUS_ALASH_ORDA_STRENGTH value = 10 compare = less_than }
+		}
+		localization_key = RUS_low
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ALASH_ORDA_STRENGTH value = 10 compare = greater_than_or_equals }
+			check_variable = { var = RUS_ALASH_ORDA_STRENGTH value = 20 compare = less_than }
+		}
+		localization_key = RUS_medium
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ALASH_ORDA_STRENGTH value = 20 compare = greater_than_or_equals }
+			check_variable = { var = RUS_ALASH_ORDA_STRENGTH value = 30 compare = less_than }
+		}
+		localization_key = RUS_high
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ALASH_ORDA_STRENGTH value = 30 compare = greater_than_or_equals }
+			check_variable = { var = RUS_ALASH_ORDA_STRENGTH value = 40 compare = less_than }
+		}
+		localization_key = RUS_veryhigh
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ALASH_ORDA_STRENGTH value = 40 compare = greater_than_or_equals }
+		}
+		localization_key = RUS_extreme
+	}
+}
+# Alash Orda Revolt Risk
+######################
+defined_text = {
+	name = GetBelerusLevel
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_BELERUS_STRENGTH value = 0 compare = less_than }
+		}
+		localization_key = RUS_nonexistant
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_BELERUS_STRENGTH value = 0 compare = greater_than_or_equals }
+			check_variable = { var = RUS_BELERUS_STRENGTH value = 10 compare = less_than }
+		}
+		localization_key = RUS_low
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_BELERUS_STRENGTH value = 10 compare = greater_than_or_equals }
+			check_variable = { var = RUS_BELERUS_STRENGTH value = 20 compare = less_than }
+		}
+		localization_key = RUS_medium
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_BELERUS_STRENGTH value = 20 compare = greater_than_or_equals }
+			check_variable = { var = RUS_BELERUS_STRENGTH value = 30 compare = less_than }
+		}
+		localization_key = RUS_high
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_BELERUS_STRENGTH value = 30 compare = greater_than_or_equals }
+			check_variable = { var = RUS_BELERUS_STRENGTH value = 40 compare = less_than }
+		}
+		localization_key = RUS_veryhigh
+	}
+	text = {
+		trigger = {
+			original_tag = RUS
+			check_variable = { var = RUS_ALASH_ORDA_STRENGTH value = 40 compare = greater_than_or_equals }
+		}
+		localization_key = RUS_extreme
+	}
+}
+##########################################
 defined_text = { # Country
 	name = GetKdfWagenName
 	text = {
