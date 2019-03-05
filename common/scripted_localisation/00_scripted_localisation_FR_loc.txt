@@ -7536,7 +7536,7 @@ defined_text = {
 #################################
 ###  Ideologies / Idéologies  ###
 #################################
-### Ex. "The ruling ideology in (Country) is Fascism/Communism/Democracy/Neutrality" => "L'idéologie au pouvoir en NP est le [fascisme/communisme]/la [démocratie/neutralité]." (lower case / minuscule)
+### Ex. "The ruling ideology in (Country) is Fascism/Communism/Democracy/Neutrality" => "L'idéologie au pouvoir en NP est le [labryscisme/collectivisme]/la [démocratie/neutralité]." (lower case / minuscule)
 defined_text = {
 	name = GetIdeologie
 	text = {
@@ -7579,7 +7579,7 @@ defined_text = {
 
 
 
-### Ex. "The ruling ideology in (Country) is Fascism/Communism/Democracy/Neutrality" => "L'idéologie au pouvoir en NP est le [fascisme/communisme]/la [démocratie/neutralité]." (lower case / minuscule)
+### Ex. "The ruling ideology in (Country) is Fascism/Communism/Democracy/Neutrality" => "L'idéologie au pouvoir en NP est le [labryscisme/collectivisme]/la [démocratie/neutralité]." (lower case / minuscule)
 defined_text = {
 	name = GetLeLaLIdeo
 	text = {
@@ -7601,7 +7601,7 @@ defined_text = {
 		localization_key = FRLOC_LA
 	}
 }
-### Ex. "[Fascism/Communism/Democracy/Neutrality] is the ruling ideology in (Country)." => "[Le] fascisme/communisme / [La] démocratie/neutralité est l'idéologie au pouvoir en NP." (upper case / majuscule)
+### Ex. "[Fascism/Communism/Democracy/Neutrality] is the ruling ideology in (Country)." => "[Le] labryscisme/collectivisme / [La] démocratie/neutralité est l'idéologie au pouvoir en NP." (upper case / majuscule)
 defined_text = {
 	name = GetLeLaLIdeoCap
 	text = {
@@ -7626,7 +7626,7 @@ defined_text = {
 
 
 
-### Ex. "This is the most obvious evidence of the validy [of] Fascism/Communism/Democracy/Neutrality." => "C'est là la meilleure preuve qui soit de la validité [du] fascisme/communisme / [de la] démocratie/neutralité." (lower case / minuscule)
+### Ex. "This is the most obvious evidence of the validy [of] Fascism/Communism/Democracy/Neutrality." => "C'est là la meilleure preuve qui soit de la validité [du] labryscisme/collectivisme / [de la] démocratie/neutralité." (lower case / minuscule)
 defined_text = {
 	name = GetDuDelaIdeo
 	text = {
@@ -7648,7 +7648,7 @@ defined_text = {
 		localization_key = FRLOC_DELA
 	}
 }
-### Ex. "[Of] Fascism/Communism/Democracy/Neutrality nothing will remain in the future." => "[Du] fascisme/communisme / [De la] démocratie/neutralité rien ne subistera à l'avenir ." (upper case / majuscule)
+### Ex. "[Of] Fascism/Communism/Democracy/Neutrality nothing will remain in the future." => "[Du] labryscisme/collectivisme / [De la] démocratie/neutralité rien ne subistera à l'avenir ." (upper case / majuscule)
 defined_text = {
 	name = GetDuDelaIdeoCap
 	text = {

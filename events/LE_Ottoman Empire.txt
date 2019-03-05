@@ -11,7 +11,8 @@ country_event = { #SYRIANS DEALT WITH
 	picture = GFX_report_event_spain_civil_war_soldiers
 	trigger = {
 		tag = TUR
-		NOT = { country_existis = SYR }
+		NOT = { country_exists = SYR }
+		has_country_flag = TUR_syrian_rebellions
 		OR = {
 			check_variable = {
 			    var = SYRIAN_REBEL_STRENGH
@@ -38,11 +39,11 @@ country_event = { #SYRIANS REBEL
 	trigger = {
 		tag = TUR
 		has_country_flag = TUR_syrian_rebellions
-		NOT = { country_existis = SYR }
+		NOT = { country_exists = SYR }
 		OR = {
 			AND = {
 				TUR = {	has_war = yes }
-				has_ideas = TUR_internal_instability
+				has_idea = TUR_internal_instability
 			}
 			check_variable = {
 			    var = SYRIAN_REBEL_STRENGH
@@ -74,7 +75,8 @@ country_event = { #LEVANT DEALT WITH
 	picture = GFX_report_event_spain_civil_war_soldiers
 	trigger = {
 		tag = TUR
-		NOT = { country_existis = LEV }
+		NOT = { country_exists = LEV }
+		has_country_flag = TUR_levant_rebellions
 		OR = {
 			check_variable = {
 			    var = LEVANT_REBEL_STRENGH
@@ -100,12 +102,12 @@ country_event = { #LEVANT REBEL
 	picture = GFX_report_event_spain_civil_war_soldiers
 	trigger = {
 		tag = TUR
-		NOT = { country_existis = LEV }
+		NOT = { country_exists = LEV }
 		has_country_flag = TUR_levant_rebellions
 		OR = {
 			AND = {
 				TUR = {	has_war = yes }
-				has_ideas = TUR_internal_instability
+				has_idea = TUR_internal_instability
 			}
 			check_variable = {
 			    var = LEVANT_REBEL_STRENGH
@@ -137,7 +139,8 @@ country_event = { #LEVANT DEALT WITH
 	picture = GFX_report_event_spain_civil_war_soldiers
 	trigger = {
 		tag = TUR
-		NOT = { country_existis = KUR }
+		NOT = { country_exists = KUR }
+		has_country_flag = TUR_kurdish_rebellions
 		OR = {
 			check_variable = {
 			    var = KURDISH_REBEL_STRENGH
@@ -163,12 +166,12 @@ country_event = { #LEVANT REBEL
 	picture = GFX_report_event_spain_civil_war_soldiers
 	trigger = {
 		tag = TUR
-		NOT = { country_existis = KUR }
+		NOT = { country_exists = KUR }
 		has_country_flag = TUR_kurdish_rebellions
 		OR = {
 			AND = {
 				TUR = {	has_war = yes }
-				has_ideas = TUR_internal_instability
+				has_idea = TUR_internal_instability
 			}
 			check_variable = {
 			    var = KURDISH_REBEL_STRENGH
@@ -202,7 +205,8 @@ country_event = { #JORDAN DEALT WITH
 	picture = GFX_report_event_spain_civil_war_soldiers
 	trigger = {
 		tag = TUR
-		NOT = { country_existis = JOR }
+		NOT = { country_exists = JOR }
+		has_country_flag = TUR_jordan_rebellions
 		OR = {
 			check_variable = {
 			    var = JORDAN_REBEL_STRENGH
@@ -228,12 +232,12 @@ country_event = { #JORDAN REBEL
 	picture = GFX_report_event_spain_civil_war_soldiers
 	trigger = {
 		tag = TUR
-		NOT = { country_existis = JOR }
+		NOT = { country_exists = JOR }
 		has_country_flag = TUR_jordan_rebellions
 		OR = {
 			AND = {
 				TUR = {	has_war = yes }
-				has_ideas = TUR_internal_instability
+				has_idea = TUR_internal_instability
 			}
 			check_variable = {
 			    var = JORDAN_REBEL_STRENGH

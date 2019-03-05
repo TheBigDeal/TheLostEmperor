@@ -13,11 +13,6 @@ set_technology = {
 	tech_mountaineers = 1
 	early_fighter = 1
 }
-
-add_ideas = {
-	HRE_candidate
-}
-
 #1 = Prussia 2 = Austria
 set_variable = { var = AUS_SAXONY_SUPPORT value = -100 }
 set_variable = { var = AUS_HANNOVER_SUPPORT value = -100 }

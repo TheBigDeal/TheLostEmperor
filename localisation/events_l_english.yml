@@ -18,7 +18,7 @@
  playerevents.3.c:0 "Exit Menu"
  #Russia Unrest
  le_russia_unrest.1.t:0 "[GEO.GetName] Declares Independence"
- le_russia_unrest.1.d:0 "Today a letter has received from [GEO.GetLeader], The so called "Terror of the Caucus" he has declared independence from us, and is claiming to be the leader of this newly founded rebellion. He always knew he was trouble and has been terrorizing the region for months, advocating against the soviets for his special form of communism, so called "Stalinism". How pathetic, naming a whole ideology after yourself. He demands a one year truce is signed to assure we do not attack his newly found country."
+ le_russia_unrest.1.d:0 "Today a letter has received from [GEO.GetLeader], The so called "Terror of the Caucus" he has declared independence from us, and is claiming to be the leader of this newly founded rebellion. He always knew he was trouble and has been terrorizing the region for months, advocating against the soviets for his special form of collectivism, so called "Stalinism". How pathetic, naming a whole ideology after yourself. He demands a one year truce is signed to assure we do not attack his newly found country."
  le_russia_unrest.1.a:0 "Sign the Truce"
  le_russia_unrest.1.b:0 "Damn Rebels! Declare War! (§RIncreases revolt risk tremendously!§!)"
  le_russia_unrest.1.c:0 "Stalin may have the right idea. (§gPlay As [GEO.GetName]!)"
@@ -163,6 +163,13 @@
  le_prussia.5.d:0 "The Berlin Conference is about to begin. Here all of the nations in the Prussian sphere will be plan the formation of the German nation. In order to counter Austria the most popular idea is to form a North German Confereration to stand against the power of the Austrians. This may however anger the south and bring them towards Austria. We have been asked to support the so called North German Confederation. What shall we do?"
  le_prussia.5.a:0 "Join The Confederation"
  le_prussia.5.b:0 "Decline Membership"
+ le_prussia.8.t:0 "The Berlin Military Parade"
+ le_prussia.8.d:0 "Today our army demonstrated our strength in a military parade. Our Airforce, armored divisions and infantry were all present. Officials from many german minors were there to see the event as well. Surprisingly an Austrian official was there as well. This will show the world our strength, and that we are a major player in the european game."
+ le_prussia.8.a:0 "Onwards!"
+ le_prussia.9.t:0 "Prussia Offers Protection"
+ le_prussia.9.d:0 "Prussia has decided to take a diplomatic approach to us. They will protect us against the rising Russian Threat if we cede them Poznan. Poznan is rightfully polish as they are mostly Polish peoples there, but there are a few germans that the prussians will use for their claim. There is no doubt that if we decline they may take a more direct approach and take it from us. The Prussians make much better friends than enemies."
+ le_prussia.9.a:0 "Accept"
+ le_prussia.9.b:0 "Decline"
  #Dutch Revolt
  ##############
  dutchrevolt.1.t:0 "Revolt in the Netherlands"
@@ -321,13 +328,11 @@
 
  #HRE ELECTIONS
  hre.1.t:0 "Holy Roman Elections"
- hre.1.d:0 "The Holy Roman Empire has gone into their long awaited election cycle. In 1912 the last Emperor died. The HRE having eight electors after the release of Bohemia could not decide on a new Emperor, resulting in a tie. This caused the creation of an Imperial Diet state, located in Aachen acting as a council for the empire. Today is the day that will decide the fate of the Holy Roman Empire, and possibly the rest or Europe, or the World."
- hre.1.a:0 "Finalize the Votes!"
+ hre.1.d:0 "The Holy Roman Empire has gone into their long awaited election cycle. In 1853 the last Emperor died. The HRE  having only six electors could not decide on a new Emperor, resulting in a tie.  This caused the creation of an Imperial Diet state, located in Aachen.  Today is the day that will decide the fate of the Holy Roman Empire, and  possibly the rest or Europe, or the World."
+ hre.1.a:0 "Begin the Elections!"
 
- hre.2.t:0 "The Crown Has Been Won"
- hre.2.d:0 "After the votes have been counted we have won the crown. We now have control."
- hre.2.a:0 "Victory is sweet."
-
+ hre.2.t:0 "Vote for the Holy Roman Emperor"
+ hre.2.d:0 "We are an electorate of the Holy Roman Empire, therefore we get a vote in who shall become the new emperor. The choices are clearly Prussia or Austria as those are the most powerful countries, and the only ones with legitimate claims to the throne. It is time to vote and decide the fate of Europe."
  hre_prussia:0 "Vote for Prussia"
  hre_austria:0 "Vote for Austria"
 

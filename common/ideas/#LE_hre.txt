@@ -4,52 +4,47 @@ country = {
 	#################
 	#HRE
 	#################
-	HRE_member = {
+	HRE_diet_relations = {
+
+		picture = generic_communist_army
+
+		modifier = {
+			conscription = 0.05
+		}
+	}
+	
+	HRE_Member = {
+
 		picture = ger_revive_the_kaiserreich
+
 		modifier = {
 			conscription = -1.00
-			MONTHLY_POPULATION = 0.05
-		}
-	}
-	HRE_elector = {
-		picture = ger_revive_the_kaiserreich
-		modifier = {
-			conscription = 0.05
 			MONTHLY_POPULATION = 0.1
+			absolutism_drift = 0.10 
 		}
 	}
-	HRE_candidate = {
-		picture = ger_revive_the_kaiserreich
-		modifier = {
-			conscription = 0.05
-			MONTHLY_POPULATION = 0.2
-		}
-	}
-	HRE_imperial_diet = {
-		picture = ger_revive_the_kaiserreich
-		modifier = {
-			conscription = 0.05
-			MONTHLY_POPULATION = 0.2
-		}
-	}
-	HRE_emperor = {
-		picture = ger_revive_the_kaiserreich
+	
+	HRE_elector = {
+
+		picture = HUN_treaty_of_triannon
+
 		modifier = {
 			conscription = 0.1
-			MONTHLY_POPULATION = 0.25
+			MONTHLY_POPULATION = 0.5
+			absolutism_drift = 0.10 
 		}
 	}
-	REFORM_REICHSREGIMENT = {
-		picture = ger_revive_the_kaiserreich
+	
+	HRE_emperor = {
+
+		picture = Hungarian_Monarchy
+
 		modifier = {
 			conscription = 0.2
+			absolutism_drift = 0.10 
+			rexism_drift = 0.03
 		}
 	}
-	REFORM_REICHSREFORM = {
-		picture = ger_revive_the_kaiserreich
-		modifier = {
-			consumer_goods_factor = -0.05
-			production_speed_buildings_factor = 0.1
-		}
-	}
+	
+	
 }

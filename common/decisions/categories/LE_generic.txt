@@ -3,13 +3,13 @@
 ####################
 
 write_constitution_cat = {
-	icon = idea_communism
+	icon = idea_collectivism
 	allowed = {
 		has_country_flag = write_consitution
 	}
 }
 demand_state_claim = {
-	icon = idea_communism
+	icon = idea_collectivism
 	allowed = {
 
 	}

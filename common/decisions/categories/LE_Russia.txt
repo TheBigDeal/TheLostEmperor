@@ -3,7 +3,7 @@
 ##############################
 
 RUS_REVOLT_RISK_CAT = {
-	icon = idea_communism
+	icon = idea_collectivism
 	visible = {
 		tag = RUS
 	}

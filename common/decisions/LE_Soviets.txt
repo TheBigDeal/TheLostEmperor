@@ -1,6 +1,6 @@
 SOV_ATTACK_COUNTRIES = {
 	ATTACK_UKRAINE = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		available = {
 			country_exists = UKR
 			NOT = { UKR = { is_puppet_of = SOV } }
@@ -25,7 +25,7 @@ SOV_ATTACK_COUNTRIES = {
 		}
 	}
 	ATTACK_BELERUS = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		available = {
 			country_exists = BLR
 			NOT = { BLR = { is_puppet_of = SOV } }
@@ -50,7 +50,7 @@ SOV_ATTACK_COUNTRIES = {
 		}
 	}
 	ATTACK_ESTONIA = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		available = {
 			country_exists = EST
 			NOT = { EST = { is_puppet_of = SOV } }
@@ -75,7 +75,7 @@ SOV_ATTACK_COUNTRIES = {
 		}
 	}
 	ATTACK_LATVIA = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		available = {
 			country_exists = LAT
 			NOT = { LAT = { is_puppet_of = SOV } }
@@ -100,7 +100,7 @@ SOV_ATTACK_COUNTRIES = {
 		}
 	}
 	ATTACK_DON_KUBAN = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		available = {
 			country_exists = DON
 			NOT = { DON = { is_puppet_of = SOV } }
@@ -125,7 +125,7 @@ SOV_ATTACK_COUNTRIES = {
 		}
 	}
 	ATTACK_CRIMEA = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		available = {
 			country_exists = CRI
 			NOT = { CRI = { is_puppet_of = SOV } }
@@ -150,7 +150,7 @@ SOV_ATTACK_COUNTRIES = {
 		}
 	}
 	ATTACK_TURKESTAN = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		available = {
 			country_exists = TRK
 			NOT = { TRK = { is_puppet_of = SOV } }
@@ -175,7 +175,7 @@ SOV_ATTACK_COUNTRIES = {
 		}
 	}
 	ATTACK_ALASH_AUTONOMY = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		available = {
 			country_exists = ALH
 			NOT = { ALH = { is_puppet_of = SOV } }

@@ -8,19 +8,10 @@ form_belgium_cat = {
 				tag = WLN
 			}
 			NOT = { has_cosmetic_tag = BELGIUM }
-			all_country = {
-				NOT = { has_cosmetic_tag = BELGIUM }
-			}
 		}
 		available = {
-			OR = {
-				country_exists = GER
-				FRA = { has_government = labryscism }
-				FRA = { has_government = rexism }
-				FRA = { has_government = theocracy }
-				FRA = { has_government = collectivism }
-				FRA = { has_government = proletarianism }
-				FRA = { has_government = naturalism }
+			all_country = {
+				NOT = { has_cosmetic_tag = BELGIUM }
 			}
 		}
 		cost = 20
@@ -40,14 +31,8 @@ form_belgium_cat = {
 				tag = WLN
 			}
 			NOT = { has_cosmetic_tag = BELGIUM }
-			any_country = {
-				has_cosmetic_tag = BELGIUM
-			}
 		}
 		available = {
-			any_country = {
-				limit = { has_cosmetic_tag = BELGIUM }
-			}
 			NOT = { has_cosmetic_tag = BELGIUM }
 		}
 		cost = 20
@@ -72,15 +57,7 @@ form_belgium_cat = {
 	move_capital_to_brussels = {
 		icon = generic_army_support
 		visible = {
-			OR = {
-				tag = WLN
-				tag = LIE
-				tag = FLA
-			}
-			has_cosmetic_tag = BELGIUM
-		}
-		available = {
-			968 = {
+			6 = {
 				is_capital = no
 			}
 		}
@@ -90,157 +67,6 @@ form_belgium_cat = {
 		}
 		complete_effect = {
 			set_capital = 6
-		}
-	}
-	diplomatic_stance = {
-		icon = generic_army_support
-		visible = {
-			OR = {
-				tag = WLN
-				tag = LIE
-				tag = FLA
-			}
-			has_cosmetic_tag = BELGIUM
-			NOT = { has_country_flag = diplomatic_stance }
-			NOT = { has_country_flag = defensive_stance }
-		}
-		available = {
-
-		}
-		cost = 50
-		ai_will_do = {
-			factor = 5
-		}
-		complete_effect = {
-			set_country_flag = diplomatic_stance
-		}
-	}
-	defensive_stance = {
-		icon = generic_army_support
-		visible = {
-			OR = {
-				tag = WLN
-				tag = LIE
-				tag = FLA
-			}
-			has_cosmetic_tag = BELGIUM
-			NOT = { has_country_flag = diplomatic_stance }
-			NOT = { has_country_flag = defensive_stance }
-		}
-		available = {
-
-		}
-		cost = 50
-		ai_will_do = {
-			factor = 5
-		}
-		complete_effect = {
-			set_country_flag = defensive_stance
-		}
-	}
-	gift_limburg_to_the_netherlands = {
-		icon = generic_army_support
-		visible = {
-			OR = {
-				tag = WLN
-				tag = LIE
-				tag = FLA
-			}
-			has_cosmetic_tag = BELGIUM
-			has_country_flag = diplomatic_stance
-		}
-		available = {
-			country_exists = HOL
-			owns_state = 961
-		}
-		cost = 20
-		ai_will_do = {
-			factor = 5
-		}
-		complete_effect = {
-			HOL = {
-				transfer_state = 961
-			}
-		}
-	}
-	release_luxemburg = {
-		icon = generic_army_support
-		visible = {
-			OR = {
-				tag = WLN
-				tag = LIE
-				tag = FLA
-			}
-			has_cosmetic_tag = BELGIUM
-			has_country_flag = diplomatic_stance
-		}
-		available = {
-			NOT = { country_exists = LUX }
-			owns_state = 8
-			owns_state = 34
-		}
-		cost = 20
-		ai_will_do = {
-			factor = 5
-		}
-		complete_effect = {
-			LUX = {
-				transfer_state = 8
-			}
-			puppet = LUX
-		}
-	}
-	return_nord_pas_de_calais = {
-		icon = generic_army_support
-		visible = {
-			OR = {
-				tag = WLN
-				tag = LIE
-				tag = FLA
-			}
-			has_cosmetic_tag = BELGIUM
-			has_country_flag = diplomatic_stance
-		}
-		available = {
-			country_exists = FRA
-			owns_state = 942
-			owns_state = 972
-		}
-		cost = 20
-		ai_will_do = {
-			factor = 5
-		}
-		complete_effect = {
-			FRA = {
-				transfer_state = 942
-				transfer_state = 972
-			}
-		}
-	}
-	apply_for_dutch_membership = {
-		icon = generic_army_support
-		visible = {
-			OR = {
-				tag = WLN
-				tag = LIE
-				tag = FLA
-			}
-			has_cosmetic_tag = BELGIUM
-			has_country_flag = defensive_stance
-		}
-		available = {
-			country_exists = HOL
-		}
-		cost = 20
-		ai_will_do = {
-			factor = 5
-		}
-		complete_effect = {
-			HOL = { 
-				annex_country = { target = FROM transfer_troops = yes 
-				set_cosmetic_tag = UNL_UNIFIED
-			}
-
 		}
 	}
 }

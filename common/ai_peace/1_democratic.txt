@@ -3,11 +3,11 @@
 # Written by Henrik "Groogy" Hansson
 
 #Adjustments
-#The generic democratic AI will generally prefer liberation and will mostly seek to install government. 
-#Major democratic nations and minors with overseas colonies can take colonies in peace deals and will prefer to do so after taking cores.
+#The generic liberalism AI will generally prefer liberation and will mostly seek to install government. 
+#Major liberalism nations and minors with overseas colonies can take colonies in peace deals and will prefer to do so after taking cores.
 #Democracies will never annex.
 
-democratic_peace = {
+liberalism_peace = {
 	enable = {
 		has_government = liberalism
 	}

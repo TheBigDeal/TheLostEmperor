@@ -166,10 +166,6 @@ country_event = { #COLONIES
 	picture = GFX_report_event_spain_civil_war_soldiers
 	fire_only_once = no
 	is_triggered_only = yes
-
-	mean_time_to_happen = {
-		days = 160
-	}
 	option = { # Support Bourbon Spain
 		name = le_spain.2.a
 		SPR = {

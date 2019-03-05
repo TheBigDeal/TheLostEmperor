@@ -1,0 +1,20 @@
+state={
+	id=974
+	name="STATE_974"
+	history={
+		owner = NRM
+		victory_points = { 11521 5 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = NRM
+		add_core_of = FRA
+	}
+	provinces={
+		553 3534 11521 
+	}
+	manpower=293523
+	state_category=large_town
+	buildings_max_level_factor=1.000
+}

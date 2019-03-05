@@ -60,13 +60,13 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_raj_all_india_forward_bloc_communism"
-		texturefile = "gfx/interface/ideas/idea_raj_all_india_forward_bloc_communism.dds"
+		name = "GFX_idea_raj_all_india_forward_bloc_collectivism"
+		texturefile = "gfx/interface/ideas/idea_raj_all_india_forward_bloc_collectivism.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_raj_all_india_forward_bloc_fascism"
-		texturefile = "gfx/interface/ideas/idea_raj_all_india_forward_bloc_fascism.dds"
+		name = "GFX_idea_raj_all_india_forward_bloc_labryscism"
+		texturefile = "gfx/interface/ideas/idea_raj_all_india_forward_bloc_labryscism.dds"
 	}
 
 	spriteType = {
@@ -110,13 +110,13 @@ spriteTypes = {
 	}	
 	
 	spriteType = {
-		name = "GFX_idea_ast_abandon_the_westminster_system_communism"
-		texturefile = "gfx/interface/ideas/idea_ast_abandon_the_westminster_system_communism.dds"
+		name = "GFX_idea_ast_abandon_the_westminster_system_collectivism"
+		texturefile = "gfx/interface/ideas/idea_ast_abandon_the_westminster_system_collectivism.dds"
 	}	
 	
 	spriteType = {
-		name = "GFX_idea_ast_abandon_the_westminster_system_fascism"
-		texturefile = "gfx/interface/ideas/idea_ast_abandon_the_westminster_system_fascism.dds"
+		name = "GFX_idea_ast_abandon_the_westminster_system_labryscism"
+		texturefile = "gfx/interface/ideas/idea_ast_abandon_the_westminster_system_labryscism.dds"
 	}	
 	
 	spriteType = {
@@ -140,18 +140,18 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_can_defence_of_canada_regulations_communism"
-		texturefile = "gfx/interface/ideas/idea_can_defence_of_canada_regulations_communism.dds"
+		name = "GFX_idea_can_defence_of_canada_regulations_collectivism"
+		texturefile = "gfx/interface/ideas/idea_can_defence_of_canada_regulations_collectivism.dds"
 	}	
 	
 	spriteType = {
-		name = "GFX_idea_can_defence_of_canada_regulations_democratic"
-		texturefile = "gfx/interface/ideas/idea_can_defence_of_canada_regulations_democratic.dds"
+		name = "GFX_idea_can_defence_of_canada_regulations_liberalism"
+		texturefile = "gfx/interface/ideas/idea_can_defence_of_canada_regulations_liberalism.dds"
 	}	
 	
 	spriteType = {
-		name = "GFX_idea_can_defence_of_canada_regulations_fascism"
-		texturefile = "gfx/interface/ideas/idea_can_defence_of_canada_regulations_fascism.dds"
+		name = "GFX_idea_can_defence_of_canada_regulations_labryscism"
+		texturefile = "gfx/interface/ideas/idea_can_defence_of_canada_regulations_labryscism.dds"
 	}	
 	
 	spriteType = {
@@ -190,8 +190,8 @@ spriteTypes = {
 	}	
 	
 	spriteType = {
-		name = "GFX_idea_saf_ossewabrandwag_fascism"
-		texturefile = "gfx/interface/ideas/idea_saf_ossewabrandwag_fascism.dds"
+		name = "GFX_idea_saf_ossewabrandwag_labryscism"
+		texturefile = "gfx/interface/ideas/idea_saf_ossewabrandwag_labryscism.dds"
 	}	
 	
 	spriteType = {
@@ -366,8 +366,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_neutrality_idea"
-		texturefile = "gfx/interface/ideas/neutrality_idea.dds"
+		name = "GFX_idea_absolutism_idea"
+		texturefile = "gfx/interface/ideas/absolutism_idea.dds"
 	}		
 	
 	spriteType = {
@@ -433,8 +433,8 @@ spriteTypes = {
 	### GENERIC national focus icons	
 
 	spriteType = {
-		name = "GFX_idea_generic_neutrality_drift_bonus"
-		texturefile = "gfx/interface/ideas/idea_generic_neutrality_drift_bonus.dds"
+		name = "GFX_idea_generic_absolutism_drift_bonus"
+		texturefile = "gfx/interface/ideas/idea_generic_absolutism_drift_bonus.dds"
 	}
 	
 	spriteType = {
@@ -453,8 +453,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_generic_fascism_banned"
-		texturefile = "gfx/interface/ideas/idea_generic_fascism_banned.dds"
+		name = "GFX_idea_generic_labryscism_banned"
+		texturefile = "gfx/interface/ideas/idea_generic_labryscism_banned.dds"
 	}
 	
 	spriteType = {
@@ -478,8 +478,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_generic_fascism_drift_2"
-		texturefile = "gfx/interface/ideas/idea_generic_fascism_drift_2.dds"
+		name = "GFX_idea_generic_labryscism_drift_2"
+		texturefile = "gfx/interface/ideas/idea_generic_labryscism_drift_2.dds"
 	}
 	
 	spriteType = {
@@ -623,18 +623,18 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_generic_democratic_drift_bonus"
-		texturefile = "gfx/interface/ideas/generic_democratic_drift_bonus.dds"
+		name = "GFX_idea_generic_liberalism_drift_bonus"
+		texturefile = "gfx/interface/ideas/generic_liberalism_drift_bonus.dds"
 	}	
 	
 	spriteType = {
-		name = "GFX_idea_generic_fascism_drift_bonus"
-		texturefile = "gfx/interface/ideas/generic_fascism_drift_bonus.dds"
+		name = "GFX_idea_generic_labryscism_drift_bonus"
+		texturefile = "gfx/interface/ideas/generic_labryscism_drift_bonus.dds"
 	}	
 	
 	spriteType = {
-		name = "GFX_idea_generic_communism_drift_bonus"
-		texturefile = "gfx/interface/ideas/generic_communism_drift_bonus.dds"
+		name = "GFX_idea_generic_collectivism_drift_bonus"
+		texturefile = "gfx/interface/ideas/generic_collectivism_drift_bonus.dds"
 	}	
 	
 	spriteType = {
@@ -742,8 +742,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_communist_europe.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_democratic_reformer_western_european_2d"
-		texturefile = "gfx/interface/ideas/idea_generic_democratic_europe.dds"
+		name = "GFX_idea_generic_liberalism_reformer_western_european_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_liberalism_europe.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_generic_fascist_demagogue_western_european_2d"
@@ -823,8 +823,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_communist_europe.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_democratic_reformer_commonwealth_2d"
-		texturefile = "gfx/interface/ideas/idea_generic_democratic_europe.dds"
+		name = "GFX_idea_generic_liberalism_reformer_commonwealth_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_liberalism_europe.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_generic_fascist_demagogue_commonwealth_2d"
@@ -903,8 +903,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_communist_europe.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_democratic_reformer_eastern_european_2d"
-		texturefile = "gfx/interface/ideas/idea_generic_democratic_europe.dds"
+		name = "GFX_idea_generic_liberalism_reformer_eastern_european_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_liberalism_europe.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_generic_fascist_demagogue_eastern_european_2d"
@@ -2457,13 +2457,13 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_HUN_hungarian_monarchy_democratic"
-		texturefile = "gfx/interface/ideas/idea_hun_hungarian_monarchy_democratic.dds"
+		name = "GFX_idea_HUN_hungarian_monarchy_liberalism"
+		texturefile = "gfx/interface/ideas/idea_hun_hungarian_monarchy_liberalism.dds"
 	}
 
 	spriteType = {
-		name = "GFX_idea_HUN_hungarian_monarchy_fascism"
-		texturefile = "gfx/interface/ideas/idea_hun_hungarian_monarchy_fascism.dds"
+		name = "GFX_idea_HUN_hungarian_monarchy_labryscism"
+		texturefile = "gfx/interface/ideas/idea_hun_hungarian_monarchy_labryscism.dds"
 	}
 
 	spriteType = {
@@ -2762,8 +2762,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_communist_asia.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_democratic_reformer_asian_2d"
-		texturefile = "gfx/interface/ideas/idea_generic_democratic_asia.dds"
+		name = "GFX_idea_generic_liberalism_reformer_asian_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_liberalism_asia.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_generic_fascist_demagogue_asian_2d"
@@ -2909,8 +2909,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_communist_south_america.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_democratic_reformer_southamerican_2d"
-		texturefile = "gfx/interface/ideas/idea_generic_democratic_south_america.dds"
+		name = "GFX_idea_generic_liberalism_reformer_southamerican_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_liberalism_south_america.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_generic_fascist_demagogue_southamerican_2d"
@@ -3048,8 +3048,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_communist_arab.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_democratic_reformer_middle_eastern_2d"
-		texturefile = "gfx/interface/ideas/idea_generic_democratic_arab.dds"
+		name = "GFX_idea_generic_liberalism_reformer_middle_eastern_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_liberalism_arab.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_generic_fascist_demagogue_middle_eastern_2d"
@@ -3181,8 +3181,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_communist_africa.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_democratic_reformer_african_2d"
-		texturefile = "gfx/interface/ideas/idea_generic_democratic_africa.dds"
+		name = "GFX_idea_generic_liberalism_reformer_african_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_liberalism_africa.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_generic_fascist_demagogue_african_2d"
@@ -3662,7 +3662,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_ROM_iuliu_maniu"
-		texturefile = "gfx/interface/ideas/idea_generic_democratic_europe.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_liberalism_europe.dds"
 	}
 	
 }

@@ -47,15 +47,15 @@ set_country_flag = monroe_doctrine
 		mechanical_computing = 1
 
 		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }
 

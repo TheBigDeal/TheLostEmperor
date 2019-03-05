@@ -3,7 +3,7 @@
 ####################
 
 form_belgium_cat = {
-	icon = idea_communism
+	icon = idea_collectivism
 	visible = {
 		OR = {
 			original_tag = FLA

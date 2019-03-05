@@ -44,3 +44,178 @@ country_event = { #THE POPE DENIES OUR CROWN
 		FRA = { complete_national_focus = FRA_A_FRIEND_IN_ROME }
   }
 }
+country_event = { #ALLIANCE WITH SPAIN
+	id = le_france.4
+	title = le_france.4.t
+	desc = le_france.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #ACCEPT
+		name = le_france.4.a
+		give_guarantee = FRA
+  	}
+  	option = { #DECLINE
+  		name = le_france.4.b
+  	}
+}
+country_event = { #SPAIN ACCEPTS
+	id = le_france.5
+	title = le_france.5.t
+	desc = le_france.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #GOOD
+		name = le_france.5.a
+		give_guarantee = SPR
+  	}
+}
+country_event = { #SPAIN DECLINES
+	id = le_france.6
+	title = le_france.6.t
+	desc = le_france.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #DAMN
+		name = le_france.6.a
+  	}
+}
+country_event = { #INTEGRATE AQUITAINE
+	id = le_france.7
+	title = le_france.7.t
+	desc = le_france.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #ACCEPT
+		name = le_france.7.a
+		FRA = {
+			annex_country = {
+ 		  		target = ROOT
+  		 		transfer_troops = yes
+			}
+		}
+  	}
+  	option = { #RESIST
+		name = le_france.7.a
+		declare_war_on = {
+    		target = FRA
+    		type = annex_everything
+		}
+  	}
+}
+country_event = { #Revolt In Normandy
+	id = le_france.8
+	title = le_france.8.t
+	desc = le_france.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+  	option = {
+		name = le_france.8.a
+		FR0 = {
+			transfer_state = 982
+		}
+		start_civil_war = {
+			ruling_party = despotism
+			ideology = theocracy
+			size = 0.6
+			capital = 981
+			states = { 981 }
+		}
+		random_other_country = {
+			limit = {
+				original_tag = NRM
+				has_government = theocracy
+			}
+			FR0 = { annex_country = { target = PREV transfer_troops = yes } }
+		}
+		declare_war_on = {
+    		target = FR0
+    		type = annex_everything
+		}
+  	}
+}
+country_event = { #Revolt Successful
+	id = le_france.9
+	title = le_france.9.t
+	desc = le_france.9.d
+	fire_only_once = yes
+	trigger = {
+		country_exists = FR0
+		country_exists = FRA
+		NOT = { country_exists = NRM }
+		tag = FRA
+	}
+  	option = { #RESIST
+		name = le_france.9.a
+		annex_country = {
+    		target = FR0
+   		 	transfer_troops = no
+		}
+  	}	
+}
+
+country_event = { #The State of France
+	id = le_france.10
+	title = le_france.10.t
+	desc = le_france.10.d
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+	}
+  	option = { #The King Steps Down
+		name = le_france.10.a
+		add_stability = 0.1
+		country_event = { id = le_france.11 days = 10 }
+  	}
+  	option = { #Put our faith in the king
+		name = le_france.10.b
+		add_stability = -0.1
+		country_event = { id = le_france.12 days = 10 }
+		set_country_flag = FRA_COMMUNIST
+  	}
+}
+
+country_event = { #The King steps down
+	id = le_france.11
+	title = le_france.11.t
+	desc = le_france.11.d
+	fire_only_once = yes
+	trigger = { tag = FRA }
+  	option = { #Elect Marcel Cachin [Communist]
+		name = le_france.11.a
+		add_stability = 0.1
+		set_country_flag = FRA_COMMUNIST
+  	}
+  	option = { #Elect Auguste Champetier De Ribes [Democracy]
+		name = le_france.11.b
+		add_stability = -0.1
+		set_country_flag = FRA_DEMOCRACY
+  	}
+  	option = { #Elect Jacques Doriot [Fascist]
+		name = le_france.11.c
+		add_stability = 0.1
+		set_country_flag = FRA_FASCIST
+  	}
+}
+
+country_event = { #Revisiting The Kings Powers
+	id = le_france.12
+	title = le_france.12.t
+	desc = le_france.12.d
+	fire_only_once = yes
+	trigger = { tag = FRA }
+  	option = { #A Figurehead King
+		name = le_france.12.a
+		add_stability = -0.1
+		set_country_flag = FIGUREHEAD
+  	}
+  	option = { #A Religous Figure
+		name = le_france.12.b
+		add_stability = -0.15
+		set_country_flag = RELIGOUS_FIGURE
+  	}
+  	option = { #Give The Monarchy Free Reign
+		name = le_france.12.c
+		add_stability = -0.15
+		set_country_flag = FREE_REIGN
+  	}
+}

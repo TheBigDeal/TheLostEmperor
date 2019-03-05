@@ -1005,7 +1005,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_THE_RONA_AND_THE_STATE
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_support_labryscism
 		prerequisite = { focus = RUS_ELECT_A_NEW_DUMA }
 		mutually_exclusive = { focus = RUS_TRUDOVIKS_IN_THE_GOVERNMENT focus = RUS_THE_KADET_ARISTOCRACY focus = RUS_THE_UNTHINKABLE_OUTCOME }
 		x = 22

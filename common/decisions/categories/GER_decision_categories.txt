@@ -55,7 +55,7 @@ GER_military_buildup = {
 	}
 }
 
-GER_aid_hun_rom_democratic_civil_war = {
+GER_aid_hun_rom_liberalism_civil_war = {
 	available = {
 		original_tag = GER
 	}

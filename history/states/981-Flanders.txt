@@ -1,0 +1,18 @@
+state={
+	id=981
+	name="STATE_981"
+	history={
+		owner = FLA
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		add_core_of = FLA
+	}
+	provinces={
+		3576 6446 6560 
+	}
+	manpower=1331608
+	state_category = metropolis
+	buildings_max_level_factor=1.000
+}

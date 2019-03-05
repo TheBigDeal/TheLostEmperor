@@ -42,15 +42,15 @@ add_ideas = {
 		mechanical_computing = 1
 
 		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }
 

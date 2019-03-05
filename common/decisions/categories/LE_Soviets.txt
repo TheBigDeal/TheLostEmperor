@@ -3,13 +3,13 @@
 ################
 
 SOV_ATTACK_COUNTRIES = {
-	icon = idea_communism
+	icon = idea_collectivism
 	allowed = {
 		tag = SOV
 	}
 }
 SOV_CREATE_SOCIALIST_REPUBLICS = {
-	icon = idea_communism
+	icon = idea_collectivism
 	allowed = {
 		tag = SOV
 	}

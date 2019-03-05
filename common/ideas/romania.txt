@@ -4,7 +4,7 @@ ideas = {
 
 		ROM_iuliu_maniu = {
 
-			picture = generic_democratic_europe
+			picture = generic_liberalism_europe
 
 			allowed = {
 				original_tag = ROM
@@ -428,94 +428,6 @@ ideas = {
 			
 			equipment_bonus = {
 				# cant find enough info 
-			}
-			
-			traits = { naval_manufacturer }
-			
-			modifier = {
-			}
-		}
-
-		ROM_coastal_defense_navy_designer = {
-			
-			picture = generic_coastal_navy
-
-			cost = 75
-
-			allowed = {
-				original_tag = ROM
-			}
-
-			available = {
-				has_completed_focus = ROM_coastal_defense_navy
-			}
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			equipment_bonus = {
-				destroyer = {
-					attack = 0.1
-					naval_range = -0.5
-					build_cost_ic = -0.20
-				}
-				light_cruiser = {
-					attack = 0.1
-					naval_range = -0.5
-					build_cost_ic = -0.20
-				}
-				heavy_cruiser = {					
-					shore_bombardment = 0.1
-				}
-				battle_cruiser = {					
-					shore_bombardment = 0.1
-				}
-				battleship = { 					
-					shore_bombardment = 0.1
-				}
-			}
-			
-			traits = { naval_manufacturer }
-			
-			modifier = {
-			}
-		}
-
-		ROM_black_sea_dominance_designer = {
-			
-			picture = generic_sea_focused_navy
-
-			cost = 75
-
-			allowed = {		
-				original_tag = ROM
-			}
-
-			available = {
-				has_completed_focus = ROM_black_sea_dominance
-			}
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			equipment_bonus = {
-				heavy_cruiser = {
-					attack = 0.2
-					naval_range = -0.5
-					armor_value = 0.2
-				}
-				battle_cruiser = {
-					attack = 0.2
-					naval_range = -0.5
-					armor_value = 0.2
-				}
-				battleship = {
-					attack = 0.2
-					naval_range = -0.5
-					armor_value = 0.2
-				}
 			}
 			
 			traits = { naval_manufacturer }

@@ -1,20 +1,20 @@
 RUS_REVOLT_RISK_CAT = {
 	PROPAGANDA_MOVEMENT = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		visible = { tag = RUS }
 		cost = 20
 		ai_will_do = { factor = 10 }
 		complete_effect = {
 			custom_effect_tooltip = PROPAGANDA_MOVEMENT_tt
 			add_stability = 0.05
-			subtract_to_variable = {
+			subtract_from_variable = {
 			    var = RUS_SOVIET_STRENGTH
 			    value = 5
 			}
 		}
 	}
 	ARREST_PROTESTERS_IN_UKRAINE = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		visible = { tag = RUS has_country_flag = UKRAINIAN_PROTESTS }
 		cost = 20
 		ai_will_do = { factor = 10 }
@@ -22,11 +22,11 @@ RUS_REVOLT_RISK_CAT = {
 			custom_effect_tooltip = ARREST_PROTESTERS_IN_UKRAINE_tt
 			clr_country_flag = UKRAINIAN_PROTESTS
 			add_stability = -0.05
-			subtract_to_variable = { var = RUS_UKRAINIAN_STRENGTH value = 5 }
+			subtract_from_variable = { var = RUS_UKRAINIAN_STRENGTH value = 5 }
 		}
 	}
 	PACIFY_PROTESTERS_IN_UKRAINE = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		visible = { tag = RUS has_country_flag = UKRAINIAN_PROTESTS }
 		cost = 20
 		ai_will_do = { factor = 4 }
@@ -34,183 +34,161 @@ RUS_REVOLT_RISK_CAT = {
 			custom_effect_tooltip = PACIFY_PROTESTERS_IN_UKRAINE_tt
 			clr_country_flag = UKRAINIAN_PROTESTS
 			add_stability = -0.1
-			subtract_to_variable = { var = RUS_UKRAINIAN_STRENGTH value = 10 }
+			subtract_from_variable = { var = RUS_UKRAINIAN_STRENGTH value = 10 }
 		}
 	}
 	ARREST_PROTESTERS_IN_LATVIA = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		visible = { tag = RUS has_country_flag = LATVIAN_PROTESTS }
 		cost = 20
 		ai_will_do = { factor = 10 }
 		complete_effect = {
 			clr_country_flag = LATVIAN_PROTESTS
 			add_stability = -0.05
-			subtract_to_variable = { var = RUS_LATVIAN_STRENGTH value = 5 }
+			subtract_from_variable = { var = RUS_LATVIAN_STRENGTH value = 5 }
 		}
 	}
 	PACIFY_PROTESTERS_IN_LATVIA = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		visible = { tag = RUS has_country_flag = LATVIAN_PROTESTS }
 		cost = 20
 		ai_will_do = { factor = 4 }
 		complete_effect = {
 			clr_country_flag = LATVIAN_PROTESTS
 			add_stability = -0.1
-			subtract_to_variable = { var = RUS_LATVIAN_STRENGTH value = 10 }
+			subtract_from_variable = { var = RUS_LATVIAN_STRENGTH value = 10 }
 		}
 	}
 	ARREST_PROTESTERS_IN_ESTONIA = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		visible = { tag = RUS has_country_flag = ESTONIAN_PROTESTS }
 		cost = 20
 		ai_will_do = { factor = 10 }
 		complete_effect = {
 			clr_country_flag = ESTONIAN_PROTESTS
 			add_stability = -0.05
-			subtract_to_variable = { var = RUS_ESTONIAN_STRENGTH value = 5 }
+			subtract_from_variable = { var = RUS_ESTONIAN_STRENGTH value = 5 }
 		}
 	}
 	PACIFY_PROTESTERS_IN_ESTONIA = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		visible = { tag = RUS has_country_flag = ESTONIAN_PROTESTS }
 		cost = 20
 		ai_will_do = { factor = 4 }
 		complete_effect = {
 			clr_country_flag = ESTONIAN_PROTESTS
 			add_stability = -0.1
-			subtract_to_variable = { var = RUS_ESTONIAN_STRENGTH value = 10 }
-		}
-	}
-	ARREST_PROTESTERS_IN_ESTONIA = {
-		icon = GFX_icon_communism
-		visible = { tag = RUS has_country_flag = ESTONIAN_PROTESTS }
-		cost = 20
-		ai_will_do = { factor = 10 }
-		complete_effect = {
-			clr_country_flag = ESTONIAN_PROTESTS
-			add_stability = -0.05
-			subtract_to_variable = { var = RUS_ESTONIAN_STRENGTH value = 5 }
-		}
-	}
-	PACIFY_PROTESTERS_IN_ESTONIA = {
-		icon = GFX_icon_communism
-		visible = { tag = RUS has_country_flag = ESTONIAN_PROTESTS }
-		cost = 20
-		ai_will_do = { factor = 4 }
-		complete_effect = {
-			clr_country_flag = ESTONIAN_PROTESTS
-			add_stability = -0.1
-			subtract_to_variable = { var = RUS_ESTONIAN_STRENGTH value = 10 }
+			subtract_from_variable = { var = RUS_ESTONIAN_STRENGTH value = 10 }
 		}
 	}
 	ARREST_PROTESTERS_IN_GEORGIA = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		visible = { tag = RUS has_country_flag = GEORGIAN_PROTESTS }
 		cost = 20
 		ai_will_do = { factor = 10 }
 		complete_effect = {
 			clr_country_flag = GEORGIAN_PROTESTS
 			add_stability = -0.05
-			subtract_to_variable = { var = RUS_GEORGIAN_STRENGTH value = 5 }
+			subtract_from_variable = { var = RUS_GEORGIAN_STRENGTH value = 5 }
 		}
 	}
 	PACIFY_PROTESTERS_IN_GEORGIA = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		visible = { tag = RUS has_country_flag = GEORGIAN_PROTESTS }
 		cost = 20
 		ai_will_do = { factor = 4 }
 		complete_effect = {
 			clr_country_flag = GEORGIAN_PROTESTS
 			add_stability = -0.1
-			subtract_to_variable = { var = RUS_GEORGIAN_STRENGTH value = 10 }
+			subtract_from_variable = { var = RUS_GEORGIAN_STRENGTH value = 10 }
 		}
 	}
 	ARREST_PROTESTERS_IN_AZERBIJAN = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		visible = { tag = RUS has_country_flag = AZERBIJAN_PROTESTS }
 		cost = 20
 		ai_will_do = { factor = 10 }
 		complete_effect = {
 			clr_country_flag = AZERBIJAN_PROTESTS
 			add_stability = -0.05
-			subtract_to_variable = { var = RUS_AZERBIJAN_STRENGTH value = 5 }
+			subtract_from_variable = { var = RUS_AZERBIJAN_STRENGTH value = 5 }
 		}
 	}
 	PACIFY_PROTESTERS_IN_AZERBIJAN = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		visible = { tag = RUS has_country_flag = AZERBIJAN_PROTESTS }
 		cost = 20
 		ai_will_do = { factor = 4 }
 		complete_effect = {
 			clr_country_flag = AZERBIJAN_PROTESTS
 			add_stability = -0.1
-			subtract_to_variable = { var = RUS_AZERBIJAN_STRENGTH value = 10 }
+			subtract_from_variable = { var = RUS_AZERBIJAN_STRENGTH value = 10 }
 		}
 	}
 	ARREST_PROTESTERS_IN_ARMENIA = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		visible = { tag = RUS has_country_flag = ARMENIAN_PROTESTS }
 		cost = 20
 		ai_will_do = { factor = 10 }
 		complete_effect = {
 			clr_country_flag = ARMENIAN_PROTESTS
 			add_stability = -0.05
-			subtract_to_variable = { var = RUS_ARMENIAN_STRENGTH value = 5 }
+			subtract_from_variable = { var = RUS_ARMENIAN_STRENGTH value = 5 }
 		}
 	}
 	PACIFY_PROTESTERS_IN_ARMENIA = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		visible = { tag = RUS has_country_flag = ARMENIAN_PROTESTS }
 		cost = 20
 		ai_will_do = { factor = 4 }
 		complete_effect = {
 			clr_country_flag = ARMENIAN_PROTESTS
 			add_stability = -0.1
-			subtract_to_variable = { var = RUS_ARMENIAN_STRENGTH value = 10 }
+			subtract_from_variable = { var = RUS_ARMENIAN_STRENGTH value = 10 }
 		}
 	}
 	ARREST_PROTESTERS_IN_DON_KUBAN = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		visible = { tag = RUS has_country_flag = DON_KUBAN_PROTESTS }
 		cost = 20
 		ai_will_do = { factor = 10 }
 		complete_effect = {
 			clr_country_flag = DON_KUBAN_PROTESTS
 			add_stability = -0.05
-			subtract_to_variable = { var = RUS_DON_KUBAN_STRENGTH value = 5 }
+			subtract_from_variable = { var = RUS_DON_KUBAN_STRENGTH value = 5 }
 		}
 	}
 	PACIFY_PROTESTERS_IN_DON_KUBAN = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		visible = { tag = RUS has_country_flag = DON_KUBAN_PROTESTS }
 		cost = 20
 		ai_will_do = { factor = 4 }
 		complete_effect = {
 			clr_country_flag = DON_KUBAN_PROTESTS
 			add_stability = -0.1
-			subtract_to_variable = { var = RUS_DON_KUBAN_STRENGTH value = 10 }
+			subtract_from_variable = { var = RUS_DON_KUBAN_STRENGTH value = 10 }
 		}
 	}
 	ARREST_PROTESTERS_IN_ALASH_ORDA = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		visible = { tag = RUS has_country_flag = ALASH_ORDA_PROTESTS }
 		cost = 20
 		ai_will_do = { factor = 10 }
 		complete_effect = {
 			clr_country_flag = ALASH_ORDA_PROTESTS
 			add_stability = -0.05
-			subtract_to_variable = { var = RUS_ALASH_ORDA_STRENGTH value = 5 }
+			subtract_from_variable = { var = RUS_ALASH_ORDA_STRENGTH value = 5 }
 		}
 	}
 	PACIFY_PROTESTERS_IN_ALASH_ORDA = {
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		visible = { tag = RUS has_country_flag = ALASH_ORDA_PROTESTS }
 		cost = 20
 		ai_will_do = { factor = 4 }
 		complete_effect = {
 			clr_country_flag = ALASH_ORDA_PROTESTS
 			add_stability = -0.1
-			subtract_to_variable = { var = RUS_ALASH_ORDA_STRENGTH value = 10 }
+			subtract_from_variable = { var = RUS_ALASH_ORDA_STRENGTH value = 10 }
 		}
 	}
 }

@@ -7,9 +7,7 @@ set_technology = {
 	tech_support = 1
 	tech_recon = 1
 }
-add_ideas = {
-	HRE_member
-}
+
 set_politics = {
 
 	parties = {

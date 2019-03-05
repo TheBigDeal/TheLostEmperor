@@ -356,7 +356,7 @@ focus_tree = {
 	
 	focus = {
 		id = TWO_PROMOTE_PRIVATE_VENTURES
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_generic_absolutism_focus
 		prerequisite = { focus = TWO_INDUSTRIAL_RECOVERY }
 		mutually_exclusive = { focus = TWO_NATIONALIZE_THE_INDUSTRY }
 		x = 11
@@ -1090,7 +1090,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TWO_THE_VENETIAN_REVOLUTION
-		icon = GFX_goal_generic_support_communism
+		icon = GFX_goal_generic_support_collectivism
 		prerequisite = { focus = TWO_A_NEW_CATHOLICISM_FOR_CENTRAL_ITALY focus = TWO_REVOLUTION_IN_CENTRAL_ITALY }
 		x = 17
 		y = 8

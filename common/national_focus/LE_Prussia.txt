@@ -14,84 +14,153 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1800 }
 
 	focus = {
-		id = PRS_HOLY_ROMAN_EMPEROR
-		icon = GFX_focus_hun_elect_a_king
-		x = 7
-		y = 6
-		cost = 10
-		available = {
-			has_global_flag = prussia_germany
-		}
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = PRS_OATHS_OF_LOYALTY
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = PRS_HOLY_ROMAN_EMPEROR }
-		x = 7
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			#HRE = { dismantle_faction = yes }
-			hidden_effect = { transfer_state = 801 }
-		}
-	}
-
-	focus = {
-		id = PRS_UNITE_THE_KAISERREICH
-		icon = GFX_focus_ger_revive_kaiserreich
-		prerequisite = { focus = PRS_OATHS_OF_LOYALTY }
-		x = 7
-		y = 8
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					POL = { is_puppet_of = PRS }
-				}
-				GER = { puppet = POL }
-			}
-			GER = {
-				create_country_leader = { name = "Fredrick Wilhelm II" desc = "POLITICS_PETER_II_DESC" picture = "Portrait_Prussia_Wilhelm.dds" expire = "1942.4.6" ideology = absolutism_ideology traits = { Political_Dancer Warmonger } }
-				annex_country = { target = PRS transfer_troops = yes }
-				change_tag_from = PRS
-			}
-		}
-	}
-	focus = {
 		id = PRS_THE_KINGDOM_OF_PRUSSIA
 		icon = GFX_focus_prussia
-		x = 14
+		x = 5
 		y = 0
 		cost = 10
-		bypass = {
-			tag = PRS
-		}
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-
-		}
+		bypass = { tag = PRS }
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
 	}
 	focus = {
 		id = PRS_ROAD_TO_THE_CROWN
-		icon = GFX_focus_ger_return_of_the_kaiser
+		icon = GFX_unknown
 		prerequisite = { focus = PRS_THE_KINGDOM_OF_PRUSSIA }
-		mutually_exclusive = { focus = PRS_ABANDON_GERMAN_AMBITIONS }
-		x = 7
+		mutually_exclusive = { focus = PRS_PERSUE_DIRECT_GERMAN_UNIFICATION }
+		x = 2
+		y = 1
+		cost = 7
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PRS_WEAKEN_AUSTRIA
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_ROAD_TO_THE_CROWN }
+		x = 2
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			AUS = {
+				add_opinion_modifier = {
+				    target = ROOT
+				    modifier = covert_missions_against_us
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRS_ENTICE_TYROL_TO_REVOLT
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_WEAKEN_AUSTRIA }
+		x = 2
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			random_list = {
+				60 = {
+					AUS = { country_event = { id = le_prussia.6 days = 10 } }
+				}
+				40 = {
+					#NOTHING HAPPENS
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRS_PROVOKE_SLOVENIAN_NATIONALISTS
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_ENTICE_TYROL_TO_REVOLT }
+		x = 2
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			random_list = {
+				60 = {
+					AUS = { country_event = { id = le_prussia.7 days = 10 } }
+				}
+				40 = {
+					#NOTHING HAPPENS
+				}
+			}
+		}
+	}
+	focus = {
+		id = PRS_ALLIANCE_WITH_VENICE
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_PROVOKE_SLOVENIAN_NATIONALISTS }
+		x = 0
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PRS_MEET_WITH_HUNGARIAN_REVOLUTIONARIES
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_PROVOKE_SLOVENIAN_NATIONALISTS }
+		x = 2
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PRS_ALLIANCE_WITH_SERBIA
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_PROVOKE_SLOVENIAN_NATIONALISTS }
+		x = 4
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PRS_DENOUNCE_BAVARIAN_COMMUNISTS
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_THE_KINGDOM_OF_PRUSSIA }
+		x = 5
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PRS_PERSUE_DIRECT_GERMAN_UNIFICATION
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_THE_KINGDOM_OF_PRUSSIA }
+		mutually_exclusive = { focus = PRS_ROAD_TO_THE_CROWN }
+		x = 8
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -102,194 +171,74 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRS_ALIGN_OUR_SPHERE
-		icon = GFX_goal_molotov_ribbentrop_pact
-		prerequisite = { focus = PRS_ROAD_TO_THE_CROWN }
-		x = 1
+		id = PRS_SHOW_OUR_STRENGTH
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_PERSUE_DIRECT_GERMAN_UNIFICATION }
+		x = 8
 		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 60
 		}
 		completion_reward = {
-			SAX = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			MCH = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			VRP = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			MST = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			HAN = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			HAM = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			LUB = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			HLS = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			BRE = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			OLD = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			EFR = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			BRU = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			ANH = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			RAV = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			MUN = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			PAD = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			PYR = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			KLE = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			JUL = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
-			CLG = { add_opinion_modifier = { target = ROOT modifier = PRUSSIAN_SPHERE } }
+			country_event = { id = le_prussia.8 days = 2 }
 		}
 	}
 	focus = {
-		id = PRS_THE_BERLIN_CONFERENCE
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = PRS_ALIGN_OUR_SPHERE }
-		x = 1
-		y = 3
-		cost = 30
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			custom_effect_tooltip = TT_berlin_conference
-			SAX = { country_event = le_prussia.5 }
-			MCH = { country_event = le_prussia.5 }
-			VRP = { country_event = le_prussia.5 }
-			MST = { country_event = le_prussia.5 }
-			HAN = { country_event = le_prussia.5 }
-			HAM = { country_event = le_prussia.5 }
-			LUB = { country_event = le_prussia.5 }
-			HLS = { country_event = le_prussia.5 }
-			BRE = { country_event = le_prussia.5 }
-			OLD = { country_event = le_prussia.5 }
-			EFR = { country_event = le_prussia.5 }
-			BRU = { country_event = le_prussia.5 }
-			ANH = { country_event = le_prussia.5 }
-			RAV = { country_event = le_prussia.5 }
-			MUN = { country_event = le_prussia.5 }
-			PAD = { country_event = le_prussia.5 }
-			PYR = { country_event = le_prussia.5 }
-			KLE = { country_event = le_prussia.5 }
-			JUL = { country_event = le_prussia.5 }
-			CLG = { country_event = le_prussia.5 }
-		}
-	}
-	focus = {
-		id = PRS_THE_NORTH_GERMAN_CONFEDERATION
-		icon = GFX_focus_hun_elect_a_king
-		prerequisite = { focus = PRS_THE_BERLIN_CONFERENCE }
-		x = 1
-		y = 4
-		cost = 2
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			set_cosmetic_tag = NORTH_GERMAN_CONFEDERATION
-			BAV = { country_event = le_bavaria.1 }
-		}
-	}
-	focus = {
-		id = PRS_SECRET_DEALS
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = PRS_ROAD_TO_THE_CROWN }
-		x = 7
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = PRS_SABOTAGE_AUSTRIA
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = PRS_SECRET_DEALS }
-		mutually_exclusive = { focus = PRS_PLAN_AN_ASSASSINATION }
-		x = 5
+		id = PRS_DEMAND_POZNAN
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_SHOW_OUR_STRENGTH }
+		x = 12
 		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 60
 		}
 		completion_reward = {
-
+			POL = { country_event = { id = le_prussia.16 days = 3 }}
 		}
 	}
 	focus = {
-		id = PRS_ENTICE_HUNGARIAN_REVOLUTIONARIES
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = PRS_SABOTAGE_AUSTRIA }
-		x = 5
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = PRS_DEMAND_THE_CROWN
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = PRS_ENTICE_HUNGARIAN_REVOLUTIONARIES focus = PRS_THE_NORTH_GERMAN_CONFEDERATION }
-		mutually_exclusive = { focus = PRS_CALL_AN_EARLY_ELECTION }
-		x = 2
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = PRS_CALL_AN_EARLY_ELECTION
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = PRS_ENTICE_HUNGARIAN_REVOLUTIONARIES focus = PRS_THE_NORTH_GERMAN_CONFEDERATION }
-		mutually_exclusive = { focus = PRS_DEMAND_THE_CROWN }
-		x = 4
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = PRS_PLAN_AN_ASSASSINATION
-		icon = GFX_focus_prc_infiltration
-		prerequisite = { focus = PRS_SECRET_DEALS }
-		mutually_exclusive = { focus = PRS_SABOTAGE_AUSTRIA }
-		x = 9
+		id = PRS_OFFER_POLAND_PROTECTION_FOR_POZNAN
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_SHOW_OUR_STRENGTH }
+		x = 10
 		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 60
 		}
+		available = {
+			NOT = { has_country_flag = PRS_POL_ENEMIES }
+		}
 		completion_reward = {
-
+			POL = { country_event = { id = le_prussia.9 days = 3}}
 		}
 	}
 	focus = {
-		id = PRS_MEET_WITH_REBEL_LEADERS
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = PRS_PLAN_AN_ASSASSINATION }
-		x = 9
+		id = PRS_THREATEN_SMALLER_NATIONS
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_SHOW_OUR_STRENGTH }
+		x = 8
 		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 60
 		}
 		completion_reward = {
-
+			VRP = {country_event = { id = le_prussia.11 days = 3}}
+			ANH = {country_event = { id = le_prussia.11 days = 3}}
+			MCH = {country_event = { id = le_prussia.11 days = 3}}
+			HLS = {country_event = { id = le_prussia.11 days = 3}}
+			BRE = {country_event = { id = le_prussia.11 days = 3}}
+			RAV = {country_event = { id = le_prussia.11 days = 3}}
+			PAD = {country_event = { id = le_prussia.11 days = 3}}
 		}
 	}
 	focus = {
-		id = PRS_A_HUNGARIAN_ASSASSIN
-		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = PRS_MEET_WITH_REBEL_LEADERS }
-		mutually_exclusive = { focus = PRS_A_PRUSSIAN_ASSASSIN }
+		id = PRS_DANISH_PRUSSIAN_WAR
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_THREATEN_SMALLER_NATIONS }
 		x = 8
 		y = 5
 		cost = 10
@@ -297,56 +246,53 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-
+			add_state_claim = 785
+			create_wargoal = {
+			    type = annex_everything
+			    target = DEN
+			}
 		}
 	}
 	focus = {
-		id = PRS_A_PRUSSIAN_ASSASSIN
-		icon = GFX_focus_ger_oppose_hitler
-		prerequisite = { focus = PRS_MEET_WITH_REBEL_LEADERS }
-		mutually_exclusive = { focus = PRS_A_HUNGARIAN_ASSASSIN }
+		id = PRS_BEFRIEND_POLAND
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_OFFER_POLAND_PROTECTION_FOR_POZNAN }
+		mutually_exclusive = { focus = PRS_DEMAND_LOWER_PRUSSIAN_STRIP }
+		x = 10
+		y = 4
+		cost = 10
+		available = {
+			NOT = { has_country_flag = PRS_POL_ENEMIES }
+		}
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PRS_SUPPORT_A_NEW_COMMONWEALTH
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_BEFRIEND_POLAND }
 		x = 10
 		y = 5
 		cost = 10
 		ai_will_do = {
 			factor = 60
 		}
+		available = {
+			NOT = { has_country_flag = PRS_POL_ENEMIES }
+		}
 		completion_reward = {
-
+			LIT = { country_event = { id = le_prussia.13 days = 5 }}
 		}
 	}
 	focus = {
-		id = PRS_SWAY_ELECTORS
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = PRS_ROAD_TO_THE_CROWN }
-		x = 13
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = PRS_INFILTRATE_BOHEMIA
-		icon = GFX_focus_generic_strike_at_democracy1
-		prerequisite = { focus = PRS_SWAY_ELECTORS }
-		x = 12
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = PRS_SEND_AMBASSADORS_TO_BOHEMIA
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = PRS_INFILTRATE_BOHEMIA }
+		id = PRS_DEMAND_LOWER_PRUSSIAN_STRIP
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_DEMAND_POZNAN }
+		mutually_exclusive = { focus = PRS_BEFRIEND_POLAND }
 		x = 12
 		y = 4
 		cost = 10
@@ -354,55 +300,13 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-
+			POL = { country_event = { id = le_prussia.17 days = 3 }}
 		}
 	}
 	focus = {
-		id = PRS_INFILTRATE_BAVARIA
-		icon = GFX_focus_ger_revive_kaiserreich
-		prerequisite = { focus = PRS_SWAY_ELECTORS }
-		x = 14
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = PRS_SEND_AMBASSADORS_TO_BAVARIA
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = PRS_INFILTRATE_BAVARIA }
-		x = 14
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = PRS_SWAY_BAVARIAN_VOTE
-		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = PRS_SEND_AMBASSADORS_TO_BAVARIA }
-		x = 14
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = PRS_SWAY_BOHEMIAN_VOTE
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = PRS_SEND_AMBASSADORS_TO_BOHEMIA }
+		id = PRS_DEMAND_LITHUANIAN_SUBJUGATION
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_DEMAND_LOWER_PRUSSIAN_STRIP }
 		x = 12
 		y = 5
 		cost = 10
@@ -410,21 +314,65 @@ focus_tree = {
 			factor = 60
 		}
 		completion_reward = {
-
+			LIT = { country_event = { id = le_prussia.18 days = 3 }}
 		}
 	}
 	focus = {
-		id = PRS_ABANDON_GERMAN_AMBITIONS
-		icon = GFX_focus_ger_revive_kaiserreich
-		prerequisite = { focus = PRS_THE_KINGDOM_OF_PRUSSIA }
-		mutually_exclusive = { focus = PRS_ROAD_TO_THE_CROWN }
-		x = 20
-		y = 1
+		id = PRS_THE_BERLIN_CONFERENCE
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_DANISH_PRUSSIAN_WAR }
+		prerequisite = { focus = PRS_DEMAND_LITHUANIAN_SUBJUGATION focus = PRS_SUPPORT_A_NEW_COMMONWEALTH }
+		x = 10
+		y = 6
 		cost = 10
 		ai_will_do = {
-			factor = 0
+			factor = 60
 		}
 		completion_reward = {
-
+			country_event = { id = le_prussia.5 }
+		}
+	}
+	focus = {
+		id = PRS_THE_NORTH_GERMAN_CONFEDERATION
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_THE_BERLIN_CONFERENCE }
+		x = 9
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PRS_THE_GERMAN_KAISERREICH
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_THE_BERLIN_CONFERENCE }
+		x = 11
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PRS_THE_AUSTRO-PRUSSIAN_WAR
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_THE_NORTH_GERMAN_CONFEDERATION focus = PRS_ALLIANCE_WITH_SERBIA }
+		prerequisite = { focus = PRS_THE_NORTH_GERMAN_CONFEDERATION focus = PRS_MEET_WITH_HUNGARIAN_REVOLUTIONARIES}
+		prerequisite = { focus = PRS_THE_NORTH_GERMAN_CONFEDERATION focus = PRS_ALLIANCE_WITH_VENICE}
+		x = 2
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			add_political_power = 50
 		}
 	}

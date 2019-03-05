@@ -1,5 +1,7 @@
 ﻿capital = 8
+
 oob = "LUX_1936"
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -9,45 +11,71 @@ set_technology = {
 	tech_engineers = 1
 	early_fighter = 1
 }
+
 set_politics = {
+
 	parties = {
 		liberalism = { 
-			popularity = 30
+			popularity = 92
 		}
-		absolutism = {
-			popularity = 68
+
+		rexism = {
+			popularity = 3
 		}
+		
 		proletarianism = {
-			popularity = 2
+			popularity = 5
 		}
 	}
 	
-	ruling_party = absolutism
+	ruling_party = liberalism
 	last_election = "1934.6.3"
 	election_frequency = 36
 	elections_allowed = yes
 }
-create_country_leader = {
-	name = "Marie-Adelaide Wassau-Weilburg"
-	desc = "POLITICS_JOSEPH_BECH_DESC"
-	picture = "GFX_Portrait_LUX_Marie_Adelaide.tga"
-	expire = "1965.1.1"
-	ideology = absolutism
-	traits = {}
+
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+			liberalism = { 
+				popularity = 92
+			}
+
+			rexism = {
+				popularity = 3
+			}
+			
+			proletarianism = {
+				popularity = 5
+			}
+		}
+		
+		ruling_party = liberalism
+		last_election = "1937.6.6"
+		election_frequency = 36
+		elections_allowed = yes
+	}
+
+	create_country_leader = {
+		name = "Pierre Dupong"
+		desc = "POLITICS_PIERRE_DUPONG_DESC"
+		picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+		expire = "1965.1.1"
+		ideology = conservatism
+		traits = {
+			#
+		}
+	}
 }
+#Pierre Dupong from 37
 create_country_leader = {
-	name = "Marie-Adelaide Wassau-Weilburg"
+	name = "Joseph Bech"
 	desc = "POLITICS_JOSEPH_BECH_DESC"
-	picture = "GFX_Portrait_LUX_Marie_Adelaide"
+	picture = "GFX_portrait_luxembourg_joseph_bech"
 	expire = "1965.1.1"
-	ideology = royalism
-	traits = {}
-}
-create_country_leader = {
-	name = "Marie-Adelaide Wassau-Weilburg"
-	desc = "POLITICS_JOSEPH_BECH_DESC"
-	picture = "GFX_Portrait_LUX_Marie_Adelaide"
-	expire = "1965.1.1"
-	ideology = rexism
-	traits = {}
+	ideology = conservatism
+	traits = {
+		#
+	}
 }

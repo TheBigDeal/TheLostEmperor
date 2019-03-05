@@ -1,7 +1,7 @@
 SYRIAN_REBELLIONS = {
 	syr_send_turkish_settlers = {
 		cost = 20
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		days_re_enable = 3
 		visible = { tag = TUR has_country_flag = TUR_syrian_rebellions }
 		ai_will_do = { factor = 10 }
@@ -15,7 +15,7 @@ SYRIAN_REBELLIONS = {
 	}
 	syr_propaganda_effort = {
 		cost = 20
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		days_re_enable = 3
 		visible = { tag = TUR has_country_flag = TUR_syrian_rebellions }
 		ai_will_do = { factor = 10 }
@@ -33,7 +33,7 @@ SYRIAN_REBELLIONS = {
 	}
 	syr_military_strike = {
 		cost = 20
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		days_re_enable = 3
 		visible = { tag = TUR has_country_flag = TUR_syrian_rebellions }
 		ai_will_do = { factor = 10 }
@@ -68,7 +68,7 @@ SYRIAN_REBELLIONS = {
 	}
 	syr_assassinate_rebel_leaders = {
 		cost = 20
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		days_re_enable = 3
 		visible = { tag = TUR has_country_flag = TUR_syrian_rebellions }
 		ai_will_do = { factor = 10 }
@@ -91,7 +91,7 @@ SYRIAN_REBELLIONS = {
 KURDISH_REBELLIONS = {
 	kur_send_turkish_settlers = {
 		cost = 20
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		days_re_enable = 3
 		visible = { tag = TUR has_country_flag = TUR_kurdish_rebellions }
 		ai_will_do = { factor = 10 }
@@ -105,7 +105,7 @@ KURDISH_REBELLIONS = {
 	}
 	kur_propaganda_effort = {
 		cost = 20
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		days_re_enable = 3
 		visible = { tag = TUR has_country_flag = TUR_kurdish_rebellions }
 		ai_will_do = { factor = 10 }
@@ -123,7 +123,7 @@ KURDISH_REBELLIONS = {
 	}
 	kur_military_strike = {
 		cost = 20
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		days_re_enable = 3
 		visible = { tag = TUR has_country_flag = TUR_kurdish_rebellions }
 		ai_will_do = { factor = 10 }
@@ -158,7 +158,7 @@ KURDISH_REBELLIONS = {
 	}
 	kur_assassinate_rebel_leaders = {
 		cost = 20
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		days_re_enable = 3
 		visible = { tag = TUR has_country_flag = TUR_kurdish_rebellions }
 		ai_will_do = { factor = 10 }
@@ -182,7 +182,7 @@ KURDISH_REBELLIONS = {
 LEVANT_REBELLIONS = {
 	lev_send_turkish_settlers = {
 		cost = 20
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		days_re_enable = 3
 		visible = { tag = TUR has_country_flag = TUR_levant_rebellions }
 		ai_will_do = { factor = 10 }
@@ -196,7 +196,7 @@ LEVANT_REBELLIONS = {
 	}
 	lev_propaganda_effort = {
 		cost = 20
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		days_re_enable = 3
 		visible = { tag = TUR has_country_flag = TUR_levant_rebellions }
 		ai_will_do = { factor = 10 }
@@ -214,7 +214,7 @@ LEVANT_REBELLIONS = {
 	}
 	lev_military_strike = {
 		cost = 20
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		days_re_enable = 3
 		visible = { tag = TUR has_country_flag = TUR_levant_rebellions }
 		ai_will_do = { factor = 10 }
@@ -249,7 +249,7 @@ LEVANT_REBELLIONS = {
 	}
 	lev_assassinate_rebel_leaders = {
 		cost = 20
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		days_re_enable = 3
 		visible = { tag = TUR has_country_flag = TUR_levant_rebellions }
 		ai_will_do = { factor = 10 }
@@ -272,7 +272,7 @@ LEVANT_REBELLIONS = {
 JORDAN_REBELLIONS = {
 	jor_send_turkish_settlers = {
 		cost = 20
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		days_re_enable = 3
 		visible = { tag = TUR has_country_flag = TUR_jordan_rebellions }
 		ai_will_do = { factor = 10 }
@@ -286,7 +286,7 @@ JORDAN_REBELLIONS = {
 	}
 	jor_propaganda_effort = {
 		cost = 20
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		days_re_enable = 3
 		visible = { tag = TUR has_country_flag = TUR_jordan_rebellions }
 		ai_will_do = { factor = 10 }
@@ -304,7 +304,7 @@ JORDAN_REBELLIONS = {
 	}
 	jor_military_strike = {
 		cost = 20
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		days_re_enable = 3
 		visible = { tag = TUR has_country_flag = TUR_jordan_rebellions }
 		ai_will_do = { factor = 10 }
@@ -339,7 +339,7 @@ JORDAN_REBELLIONS = {
 	}
 	jor_assassinate_rebel_leaders = {
 		cost = 20
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		days_re_enable = 3
 		visible = { tag = TUR has_country_flag = TUR_jordan_rebellions }
 		ai_will_do = { factor = 10 }

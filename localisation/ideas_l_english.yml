@@ -31,10 +31,8 @@
  Religious_Movements:0 "Religous Movements"
  Rexist_Drift:0 "Rexism Drift"
  #HRE
- HRE_member:0 "Holy Roman Duchy"
- HRE_elector:0 "Holy Roman Elector
- HRE_candidate:0 "Holy Roman Imperial Canidate"
- HRE_imperial_diet:0 "Holy Roman Imperial Diet"
+ HRE_Member:0 "Holy Roman Duchy"
+ HRE_elector:0 "Holy Roman Elector"
  HRE_emperor:0 "Holy Roman Emperor"
  PRUSSIAN_SPHERE:0 "Prussian Sphere"
  PRS_PRUSSIAN_MILITARISM:0 "Prussian Militarism"
@@ -641,8 +639,8 @@
  militarism_focus:0 "Militarism"
  military_youth_focus:0 "Military Youth"
  paramilitarism_focus:0 "Paramilitarism"
- neutrality_idea:0 "Neutral Foreign Policy"
- neutrality_idea_desc:0 "absolutism is sometimes viewed as a craven stance, but this nation trusts that when the dust settles, those who didn't take sides may be better off than those who did."
+ absolutism_idea:0 "Neutral Foreign Policy"
+ absolutism_idea_desc:0 "absolutism is sometimes viewed as a craven stance, but this nation trusts that when the dust settles, those who didn't take sides may be better off than those who did."
  anti_soviet_pact:0 "Anti-Soviet Pact"
  anti_soviet_pact_refused_call:0 "Refused To Honor Anti-Soviet Pact"
  anti_soviet_pact_refused_call_desc:0 "This nation did not honor the Anti-Soviet Pact when called to war. This has caused the people to doubt the current government and spurred a rise in communist supporters."

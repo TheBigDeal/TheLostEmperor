@@ -1,0 +1,78 @@
+﻿capital = 361
+oob = "USA_1936"
+set_research_slots = 3
+set_stability = 0.75
+set_war_support = 0.5
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	early_bomber = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	basic_carrier = 1
+	transport = 1
+	superior_firepower = 1
+	base_strike = 1
+}
+set_convoys = 400
+set_politics = {
+	parties = {
+		liberalism = { 
+			popularity = 0
+		}
+		absolutism = {
+			popularity = 99
+		}
+		labryscism = {
+			popularity = 0
+		}
+		collectivism = {
+			popularity = 1
+			#banned = no #default is no
+		}
+	}
+	ruling_party = liberalism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+add_ideas = {
+	civilian_economy
+	limited_conscription
+	free_trade
+	home_of_the_free
+	absolutism_idea
+}
+
+	# 1941
+	#create_equipment_variant = {
+	#	name = "South Dakota Class"
+	#	type = battleship_2
+	#	upgrades = {
+	#		ship_reliability_upgrade = 3
+	#		ship_engine_upgrade = 3
+	#		ship_armor_upgrade = 3
+	#		ship_gun_upgrade = 3
+	#	}
+	#}
+}

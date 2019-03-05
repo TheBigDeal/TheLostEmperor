@@ -2,24 +2,7 @@
 ###########
 #   MOD   #
 ###########
-  HRE_imperial_reforms:0 "Imperial Reforms"
-  Institute_Reichsregiment:0 "Institute Reichsregiment"
-  Call_for_Reichsreform:0 "Call For Reichsreform"
-  Wahler_Ausrichten:0 "Wähler Ausrichten"
-  Proclaim_Erbkaisertum:0 "Proclaim Erbkaisertum"
-  Revoke_The_Privilegia:0 "Revoke The Privilegia"
-  Renovatio_Imperii:0 "Renovatio Imperii"
-  Enact_Gemeiner_Pfennig:0 "Enact Gemeiner Pfennig"
-  form_belgium_cat:0 "Lowlands Diplomacy"
-  form_belgium:0 "Form Belgium"
-  release_luxemburg:0 "Release Luxemburg"
-  return_nord_pas_de_calais:0 "Return Nord Pas de Calais"
-  move_capital_to_brussels:0 "Move Capital To Brussels"
-  diplomatic_stance:0 "Diplomatic Stance"
-  defensive_stance:0 "Defensive Stance"
-  join_belgium:0 "Join Belgium"
-  apply_for_dutch_membership:0 "Apply For Dutch Membership"
-  gift_limburg_to_the_netherlands:0 "Gift Limburg to the Netherlands"
+ #Categories
   SOV_ATTACK_COUNTRIES:0 "Integrate Former Territory"
   SOV_CREATE_SOCIALIST_REPUBLICS:0 "Form Soviet Republics"
   RUS_REVOLT_RISK_CAT:0 "Civil Unrest"

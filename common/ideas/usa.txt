@@ -376,8 +376,8 @@ ideas = {
 			}
 		}
 
-		# idea for the protect Amercians focus - USA democratic
-		american_influence_defence_democratic = {
+		# idea for the protect Amercians focus - USA liberalism
+		american_influence_defence_liberalism = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
@@ -390,7 +390,7 @@ ideas = {
 				drift_defence_factor = 0.5
 			}
 		}
-		american_influence_drift_democratic = {
+		american_influence_drift_liberalism = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
@@ -403,7 +403,7 @@ ideas = {
 				liberalism_drift = 0.05
 			}
 		} 
-		american_protection_defence_democratic = {
+		american_protection_defence_liberalism = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
@@ -416,7 +416,7 @@ ideas = {
 				drift_defence_factor = 0.5
 			}
 		}
-		american_protection_drift_democratic = {
+		american_protection_drift_liberalism = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
@@ -430,7 +430,7 @@ ideas = {
 			}			
 		}
 			# idea for the protect Amercians focus - USA communist
-		american_influence_defence_communism = {
+		american_influence_defence_collectivism = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
@@ -443,7 +443,7 @@ ideas = {
 				drift_defence_factor = 0.5
 			}
 		}
-		american_influence_drift_communism = {
+		american_influence_drift_collectivism = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
@@ -456,7 +456,7 @@ ideas = {
 				collectivism_drift = 0.05
 			}
 		} 
-		american_protection_defence_communism = {
+		american_protection_defence_collectivism = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
@@ -469,7 +469,7 @@ ideas = {
 				drift_defence_factor = 0.5
 			}
 		}
-		american_protection_drift_communism = {
+		american_protection_drift_collectivism = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
@@ -483,7 +483,7 @@ ideas = {
 			}			
 		}
 			# idea for the protect Amercians focus - USA fascist
-		american_influence_defence_fascism = {
+		american_influence_defence_labryscism = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
@@ -496,7 +496,7 @@ ideas = {
 				drift_defence_factor = 0.5
 			}
 		}
-		american_influence_drift_fascism = {
+		american_influence_drift_labryscism = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
@@ -509,7 +509,7 @@ ideas = {
 				labryscism_drift = 0.05
 			}
 		} 
-		american_protection_defence_fascism = {
+		american_protection_defence_labryscism = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {
@@ -522,7 +522,7 @@ ideas = {
 				drift_defence_factor = 0.5
 			}
 		}
-		american_protection_drift_fascism = {
+		american_protection_drift_labryscism = {
 			allowed = { always = no	}
 
 			allowed_civil_war = {

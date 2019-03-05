@@ -77,7 +77,7 @@ ideas = {
 			}
 		}
 
-		HUN_hungarian_monarchy_democratic = {			
+		HUN_hungarian_monarchy_liberalism = {			
 
 			allowed_civil_war = {
 				has_government = liberalism
@@ -89,7 +89,7 @@ ideas = {
 			}
 		}
 
-		HUN_hungarian_monarchy_fascism = {			
+		HUN_hungarian_monarchy_labryscism = {			
 
 			allowed_civil_war = {
 				has_government = labryscism
@@ -103,7 +103,7 @@ ideas = {
 
 		HUN_his_majestys_government = {
 
-			picture = HUN_hungarian_monarchy_democratic
+			picture = HUN_hungarian_monarchy_liberalism
 
 			allowed_civil_war = {
 				has_government = liberalism
@@ -183,7 +183,7 @@ ideas = {
 			}
 		}
 
-		HUN_interventionism_communism = {
+		HUN_interventionism_collectivism = {
 
 			picture = FRA_scw_intervention_nationalists_focus
 
@@ -379,7 +379,7 @@ ideas = {
 
 		HUN_jozsef_szell = {
 
-			picture = generic_democratic_europe
+			picture = generic_liberalism_europe
 			
 			allowed = {
 				original_tag = HUN

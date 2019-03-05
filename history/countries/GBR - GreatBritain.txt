@@ -9,7 +9,7 @@ set_stability = 0.6
 # Starting tech
 set_technology = {
 	#Industrial Techs
-	basic_machine_tools = 1
+	
 	agriculture1 = 1
 	agriculture2 = 1
 	city_planning = 1
@@ -21,13 +21,9 @@ set_technology = {
 	early_automobile_industry = 1
 	automobile_industry = 1
 	resource_excavation = 1
-	#oil_extraction = 1
 	heavy_machinery = 1
 	basic_infrastructure = 1
 	advanced_infrastructure = 1
-	basic_ship_building = 1
-	advanced_ship_building = 1
-	modern_ship_building = 1
 }
 
 add_ideas = {

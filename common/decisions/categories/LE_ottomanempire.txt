@@ -3,41 +3,41 @@
 ####################
 
 SYRIAN_REBELLIONS = {
-	icon = idea_communism
+	icon = idea_collectivism
 	visible = {
 		tag = TUR
-		has_ideas = TUR_internal_instability
+		has_idea = TUR_internal_instability
 		NOT = { country_exists = SYR }
 	}
 }
 LEVANT_REBELLIONS = {
-	icon = idea_communism
+	icon = idea_collectivism
 	visible = {
 		tag = TUR
-		has_ideas = TUR_internal_instability
+		has_idea = TUR_internal_instability
 		NOT = { country_exists = LEV }
 	}
 }
 JORDAN_REBELLIONS = {
-	icon = idea_communism
+	icon = idea_collectivism
 	visible = {
 		tag = TUR
-		has_ideas = TUR_internal_instability
+		has_idea = TUR_internal_instability
 		NOT = { country_exists = JOR }
 	}
 }
 KURDISH_REBELLIONS = {
-	icon = idea_communism
+	icon = idea_collectivism
 	visible = {
 		tag = TUR
-		has_ideas = TUR_internal_instability
+		has_idea = TUR_internal_instability
 		NOT = { country_exists = KUR }
 	}
 }
 rebellious_vilayets = {
-	icon = idea_communism
+	icon = idea_collectivism
 	visible = {
 		tag = TUR
-		has_ideas = TUR_internal_instability
+		has_idea = TUR_internal_instability
 	}
 }

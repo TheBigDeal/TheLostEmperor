@@ -12,7 +12,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_THE_RUSSIAN_SOVIET_FEDERATIVE_SOCIALIST_REPUBLIC
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_support_collectivism
 		x = 12
 		y = 0
 		cost = 10

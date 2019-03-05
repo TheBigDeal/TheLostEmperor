@@ -1,0 +1,31 @@
+
+state={
+	id=975
+	name="STATE_975"
+
+	history={
+		owner = NRM
+		victory_points = { 13241 3 }
+		victory_points = { 6449 10 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			6449 = {
+				naval_base = 5
+				coastal_bunker = 1
+
+			}
+
+		}
+		add_core_of = NRM
+		add_core_of = FRA
+
+	}
+
+	provinces={
+		539 3579 6449 9550 13241 
+	}
+	manpower=452275
+	buildings_max_level_factor=1.000
+	state_category=city
+}

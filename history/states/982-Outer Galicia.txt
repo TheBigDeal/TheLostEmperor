@@ -1,0 +1,20 @@
+state={
+	id=982
+	name="STATE_982"
+	history={
+		owner = GLC
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = GLC
+		add_core_of = SPR
+	}
+	provinces={
+		3725 3744 9719 11843 
+	}
+	manpower=232513
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

@@ -917,7 +917,7 @@ technologies = {
 	automobile_industry = {
 
 		#allows production of tanks & heavy equipment
-		custom_effect_tooltip = IND_RES_AUTOMOBILE_INDUSTRY
+		#custom_effect_tooltip = IND_RES_AUTOMOBILE_INDUSTRY
 
 		on_research_complete = {
 			custom_effect_tooltip = IND_RES_AUTOMOBILE_INDUSTRY

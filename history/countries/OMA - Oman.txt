@@ -29,7 +29,7 @@ set_convoys = 10
 		#doctrines
 		grand_battle_plan = 1
 		trench_warfare = 1
-		fleet_in_being = 1
+		
 		battlefleet_concentration = 1
 
 		#electronics
@@ -40,15 +40,15 @@ set_convoys = 10
 		computing_machine = 1
 
 		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }
 

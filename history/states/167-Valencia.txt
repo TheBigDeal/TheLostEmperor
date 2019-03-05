@@ -23,6 +23,7 @@ state={
 			}
 		}
 		add_core_of = ARA
+		add_core_of = SPR
 	}
 
 	provinces={

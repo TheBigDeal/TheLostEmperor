@@ -3,25 +3,25 @@
 ################
 
 GRE_ATHOS_PUSH = {
-	icon = idea_communism
+	icon = idea_collectivism
 	allowed = {
 		tag = GRE
 	}
 }
 GRE_SPARTAN_PUSH = {
-	icon = idea_communism
+	icon = idea_collectivism
 	allowed = {
 		tag = GRE
 	}
 }
 GRE_HELLENIC_PUSH = {
-	icon = idea_communism
+	icon = idea_collectivism
 	allowed = {
 		tag = GRE
 	}
 }
 GRE_WRITE_CONSTITUTION = {
-	icon = idea_communism
+	icon = idea_collectivism
 	allowed = {
 		tag = GRE
 	}

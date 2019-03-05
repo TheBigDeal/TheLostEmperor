@@ -42,7 +42,7 @@ ideas = {
 			}
 		}
 
-		SAF_ossewabrandwag_fascism = {
+		SAF_ossewabrandwag_labryscism = {
 			allowed = {
 				always = no
 			}
@@ -53,7 +53,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = saf_ossewabrandwag_fascism
+			picture = saf_ossewabrandwag_labryscism
 
 			modifier = {
 				labryscism_drift = 0.01
@@ -120,7 +120,7 @@ ideas = {
 
 		}
 
-		SAF_abandon_westminster_fascism = {
+		SAF_abandon_westminster_labryscism = {
 			allowed = {
 				always = no
 			}
@@ -131,7 +131,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = ast_abandon_the_westminster_system_fascism
+			picture = ast_abandon_the_westminster_system_labryscism
 
 			modifier = {
 				autonomy_gain = 0.5
@@ -141,7 +141,7 @@ ideas = {
 
 		}
 
-		SAF_abandon_westminster_communism = {
+		SAF_abandon_westminster_collectivism = {
 			allowed = {
 				always = no
 			}
@@ -152,7 +152,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = ast_abandon_the_westminster_system_communism
+			picture = ast_abandon_the_westminster_system_collectivism
 
 			modifier = {
 				autonomy_gain = 1

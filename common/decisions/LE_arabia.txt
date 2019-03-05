@@ -1,7 +1,7 @@
 WAR_WITH_JABAL_SHAMMER_CAT = {
 	ATTACK_JABAL_SHAMMER = {
 		cost = 20
-		icon = GFX_icon_communism
+		icon = GFX_icon_collectivism
 		days_re_enable = 3
 		visible = { tag = NEJ }
 		ai_will_do = { factor = 10 }

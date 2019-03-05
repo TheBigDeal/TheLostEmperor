@@ -178,7 +178,7 @@ ideas = {
 				collectivism_acceptance = 85
 			}
 		}
-		democratic_influence = {
+		liberalism_influence = {
 			
 			
 			allowed = {
@@ -448,7 +448,7 @@ ideas = {
 			}
 		}
 	
-		neutrality_idea = {
+		absolutism_idea = {
 			
 			
 			allowed = {
@@ -572,7 +572,7 @@ ideas = {
 			}			
 		}
 
-		communism_banned = {
+		collectivism_banned = {
 			picture = anti_soviet_pact
 			allowed = {
 				always = no
@@ -589,9 +589,9 @@ ideas = {
 			}
 		}
 
-		fascism_banned = {
+		labryscism_banned = {
 
-			picture = generic_fascism_banned
+			picture = generic_labryscism_banned
 
 			allowed = {
 				always = no

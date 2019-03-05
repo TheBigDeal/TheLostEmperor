@@ -1,0 +1,18 @@
+state={
+	id=979
+	name="STATE_979"
+	history={
+		owner = WLN
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		add_core_of = WLN
+	}
+	provinces={
+		9444 9536 13081 
+	}
+	manpower=1699263
+	state_category = city
+	buildings_max_level_factor=1.000
+}

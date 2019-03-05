@@ -3,7 +3,7 @@
 ####################
 
 bavarian_civil_war_cat = {
-	icon = idea_communism
+	icon = idea_collectivism
 	visible = {
 		original_tag = BAV
 		#has_ideas = { rooted_collectivists }

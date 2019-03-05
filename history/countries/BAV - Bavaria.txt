@@ -10,7 +10,6 @@ set_technology = {
 	tech_recon = 1
 }
 add_ideas = {
-	HRE_elector
 	rooted_collectivists
 }
 set_politics = {

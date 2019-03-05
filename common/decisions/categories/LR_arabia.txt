@@ -3,7 +3,7 @@
 ####################
 
 WAR_WITH_JABAL_SHAMMER_CAT = {
-	icon = idea_communism
+	icon = idea_collectivism
 	visible = {
 		tag = NEJ
 	}

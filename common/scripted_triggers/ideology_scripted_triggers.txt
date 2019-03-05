@@ -1,0 +1,32 @@
+
+is_enemy_ideology = {
+	OR = {
+		AND = {
+			has_government = collectivism
+			ROOT = {
+				OR = {
+					has_government = labryscism
+					has_government = liberalism
+				}
+			}
+		}
+		AND = {
+			has_government = liberalism
+			ROOT = {
+				OR = {
+					has_government = collectivism
+					has_government = labryscism
+				}
+			}
+		}
+		AND = {
+			has_government = labryscism
+			ROOT = {
+				OR = {
+					has_government = liberalism
+					has_government = collectivism
+				}
+			}
+		}
+	}
+}

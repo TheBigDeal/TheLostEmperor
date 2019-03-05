@@ -15,11 +15,11 @@ set_technology = {
 	tech_recon = 1
 	early_fighter = 1
 	naval_bomber1 = 1
-	early_destroyer = 1
-	early_light_cruiser = 1
-	transport = 1
+	
+	
+	
 	trench_warfare = 1
-	fleet_in_being = 1
+	
 }
 
 if = {
@@ -70,8 +70,8 @@ if = {
 		fighter1 = 1
 		early_bomber = 1
 		tactical_bomber1 = 1
-		basic_light_tank = 1
-		improved_light_tank = 1
+		
+		
 		basic_medium_tank = 1
 		basic_heavy_tank = 1
 		interwar_artillery = 1
@@ -79,13 +79,13 @@ if = {
 		infantry_weapons2 = 1
 		support_weapons = 1
 		support_weapons2 = 1
-		basic_destroyer = 1
+		
 
 		#doctrines
 		air_superiority = 1
 		grand_battle_plan = 1
 		trench_warfare = 1
-		fleet_in_being = 1
+		
 		battlefleet_concentration = 1
 		submarine_operations = 1
 
@@ -97,16 +97,16 @@ if = {
 		computing_machine = 1
 
 		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }
 set_politics = {

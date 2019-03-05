@@ -1,35 +1,95 @@
 ###########################
 # France Focus Tree
 ###########################
-
 focus_tree = {
 	id = french_focus
-
 	country = {
 		factor = 0
-
 		modifier = {
 			add = 10
 			tag = FRA
 		}
 	}
-
 	default = no
-
 	continuous_focus_position = { x = 50 y = 2600 }
-
 	focus = {
 		id = FRA_THE_FOURTH_REVOLUTION
 		icon = GFX_goal_support_fourth_int
-		mutually_exclusive = { focus = FRA_PLEASE_THE_PEOPLE focus = FRA_PRESERVE_THE_MONARCHY }
+		mutually_exclusive = { focus = FRA_PLEASE_THE_PEOPLE focus = FRA_PRESERVE_THE_MONARCHY focus = FRA_NATIONALISTIC_SURGE }
 		x = 11
 		y = 0
 		cost = 6
+		available = {
+			has_country_flag = FRA_COMMUNIST
+		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
+			set_capital = 20
+			random_list = {
+				75 = { #Civil War
+					start_civil_war = {
+						ruling_party = collectivism
+						ideology = absolutism
+						size = 0.2
+						capital = 16
+						states = { 16 29 18 }
+					}
+					random_other_country = {
+						limit = {
+							original_tag = FRA
+							has_government = absolutism
+						}
+						FR1 = { annex_country = { target = PREV transfer_troops = yes } }
+					}
+					start_civil_war = {
+						ruling_party = collectivism
+						ideology = labryscism
+						size = 0.2
+						capital = 886
+						states = { 886 27 24 30 23 }
+					}
+					random_other_country = {
+						limit = {
+							original_tag = FRA
+							has_government = labryscism
+						}
+						FR2 = { annex_country = { target = PREV transfer_troops = yes } }
+					}
+					start_civil_war = {
+						ruling_party = collectivism
+						ideology = theocracy
+						size = 0.2
+						capital = 25
+						states = { 25 33 26 }
+					}
+					random_other_country = {
+						limit = {
+							original_tag = FRA
+							has_government = theocracy
+						}
+						FR3 = { annex_country = { target = PREV transfer_troops = yes } }
+					}
+					start_civil_war = {
+						ruling_party = collectivism
+						ideology = liberalism
+						size = 0.2
+						capital = 31
+						states = { 31 22 }
+					}
+					random_other_country = {
+						limit = {
+							original_tag = FRA
+							has_government = liberalism
+						}
+						FR4 = { annex_country = { target = PREV transfer_troops = yes } }
+					}
+				}
+				25 = { #Successful Coup
 
+				}
+			}
 		}
 	}
 
@@ -1378,8 +1438,8 @@ focus_tree = {
 	#MONARCHIST/DEMOCRATIC PATH
 	focus = {
 		id = FRA_PLEASE_THE_PEOPLE
-		icon = GFX_goal_unknown
-		mutually_exclusive = { focus = FRA_PRESERVE_THE_MONARCHY focus = FRA_THE_FOURTH_REVOLUTION }
+		icon = GFX_goal_generic_support_democracy
+		mutually_exclusive = { focus = FRA_PRESERVE_THE_MONARCHY focus = FRA_THE_FOURTH_REVOLUTION focus = FRA_NATIONALISTIC_SURGE }
 		x = 28
 		y = 0
 		cost = 6
@@ -1550,7 +1610,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_STRIKE_AT_THE_NATIONALISTS
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_anti_fascist_diplomacy
 		prerequisite = { focus = FRA_PLEASE_THE_PEOPLE }
 		x = 27
 		y = 1
@@ -1564,7 +1624,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_STRIKE_AT_THE_COMMUNISTS
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_war_with_comintern
 		prerequisite = { focus = FRA_PLEASE_THE_PEOPLE }
 		x = 29
 		y = 1
@@ -2372,8 +2432,22 @@ focus_tree = {
 	focus = {
 		id = FRA_PRESERVE_THE_MONARCHY
 		icon = GFX_goal_france_monarchy
-		mutually_exclusive = { focus = FRA_PLEASE_THE_PEOPLE focus = FRA_THE_FOURTH_REVOLUTION }
-		x = 40
+		mutually_exclusive = { focus = FRA_PLEASE_THE_PEOPLE focus = FRA_THE_FOURTH_REVOLUTION focus = FRA_NATIONALISTIC_SURGE }
+		x = 38
+		y = 0
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = FRA_NATIONALISTIC_SURGE
+		icon = GFX_goal_france_monarchy
+		mutually_exclusive = { focus = FRA_PLEASE_THE_PEOPLE focus = FRA_THE_FOURTH_REVOLUTION focus = FRA_PRESERVE_THE_MONARCHY }
+		x = 44
 		y = 0
 		cost = 6
 		ai_will_do = {
@@ -2543,8 +2617,7 @@ focus_tree = {
 	focus = {
 		id = FRA_STRONGER_THAN_A_KING
 		icon = GFX_goal_unknown
-		prerequisite = { focus = FRA_PRESERVE_THE_MONARCHY }
-		mutually_exclusive = { focus = FRA_EMPOWER_THE_KING focus = FRA_CAROLINGIAN_IDENTITY }
+		prerequisite = { focus = FRA_NATIONALISTIC_SURGE }
 		x = 44
 		y = 1
 		cost = 6
@@ -3064,6 +3137,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			PAP = { add_opinion_modifier = { target = FRA modifier = french_shadow_puppet } }
+			puppet = PAP
 		}
 	}
 	focus = {
@@ -3295,11 +3369,20 @@ focus_tree = {
 		x = 34
 		y = 9
 		cost = 6
+		available = {
+			SPR = {
+				OR = {
+					has_government = theocracy
+					has_government = absolutism
+					has_government = royalism
+				}
+			}
+		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-
+			SPR = { country_event = { id = le_france.4 days = 3 } }
 		}
 	}
 	focus = {
@@ -3313,7 +3396,17 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			create_wargoal = { type = annex_everything  target = SAR }
+			create_wargoal = { type = annex_everything  target = GEN }
+			create_wargoal = { type = annex_everything  target = PRM }
+			create_wargoal = { type = annex_everything  target = TUS }
+			create_wargoal = { type = annex_everything  target = LUC }
+			SAR = {
+				create_faction = North_Italian_Confederation
+				add_to_faction = GEN
+				add_to_faction = PRM
+				add_to_faction = TUS
+			}
 		}
 	}
 	focus = {
@@ -3327,13 +3420,13 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			AQU = { country_event = { id = le_france.7 } }
 		}
 	}
 	focus = {
 		id = FRA_REVOLT_IN_NORMANDY
 		icon = GFX_goal_revolution
-		prerequisite = { focus = FRA_ALLIANCE_WITH_SPAIN focus = FRA_MARCH_TO_ROME focus = FRA_INCORPORATE_AQUITAINE }
+		prerequisite = { focus = FRA_ALLIANCE_WITH_SPAIN focus = FRA_MARCH_TO_ROME focus = FRA_INTEGRATE_AQUITAINE }
 		x = 35
 		y = 10
 		cost = 6
@@ -3341,13 +3434,13 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			NRM = { country_event = { id = le_france.8 }}
 		}
 	}
 	focus = {
 		id = FRA_SUBJUGATE_BRITTANY
 		icon = GFX_goal_unknown
-		prerequisite = { focus = FRA_ALLIANCE_WITH_SPAIN focus = FRA_MARCH_TO_ROME focus = FRA_INCORPORATE_AQUITAINE }
+		prerequisite = { focus = FRA_ALLIANCE_WITH_SPAIN focus = FRA_MARCH_TO_ROME focus = FRA_INTEGRATE_AQUITAINE }
 		x = 37
 		y = 10
 		cost = 6

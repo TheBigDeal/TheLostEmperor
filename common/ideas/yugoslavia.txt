@@ -4,7 +4,7 @@ ideas = {
 	
 		anti_german_military = {
 			
-			picture = generic_fascism_banned
+			picture = generic_labryscism_banned
 
 			allowed = {
 				always = no
@@ -623,7 +623,7 @@ ideas = {
 
 		YUG_milovan_djilas = {
 
-			picture = generic_democratic_europe
+			picture = generic_liberalism_europe
 			
 			allowed = {
 				original_tag = YUG

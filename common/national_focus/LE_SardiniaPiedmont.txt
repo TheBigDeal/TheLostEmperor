@@ -174,7 +174,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SAR_DEAL_WITH_THE_POPE
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_generic_absolutism_focus
 		prerequisite = { focus = SAR_INVADE_THE_SOUTH focus = SAR_PEACE_WITH_THE_SOUTH }
 		prerequisite = { focus = SAR_SEIZE_VENICE }
 		x = 6

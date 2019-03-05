@@ -163,3 +163,327 @@ country_event = { #THE BERLIN CONFERENCE
 		PRS = { add_opinion_modifier = { target = ROOT modifier = DECLINED_BERLIN_CONFERENCE } }
 	}
 }
+country_event = { #TRYOL REVOLT TO VENICE
+	id = le_prussia.6
+	title = le_prussia.6.t
+	desc = le_prussia.6.d
+	picture = GFX_report_event_hitler_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		VNC = { transfer_state = 39 }
+	}
+	option = { #Damn!
+		name = le_prussia.6.a
+		ai_chance = { factor = 30 }
+	}
+	option = { #Attack Venice!
+		name = le_prussia.6.b
+		ai_chance = { factor = 20 }
+		declare_war_on = {
+		    target = VNC
+		    type = annex_everything
+		}
+	}
+}
+country_event = { #TRYOL REVOLT TO VENICE
+	id = le_prussia.7
+	title = le_prussia.7.t
+	desc = le_prussia.7.d
+	picture = GFX_report_event_hitler_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		CRO = { transfer_state = 39 }
+		release_puppet = CRO
+	}
+	option = { #Damn!
+		name = le_prussia.6.a
+		ai_chance = { factor = 30 }
+	}
+	option = { #Attack Venice!
+		name = le_prussia.6.b
+		ai_chance = { factor = 20 }
+		declare_war_on = {
+		    target = CRO
+		    type = annex_everything
+		}
+		set_country_flag = ILLYRIAN_REVOLT
+	}
+}
+country_event = { #TRYOL REVOLT TO VENICE
+	id = le_prussia.7
+	title = le_prussia.7.t
+	desc = le_prussia.7.d
+	picture = GFX_report_event_hitler_parade
+	fire_only_once = yes
+	trigger = {
+		tag = AUS
+		AUS = { has_country_flag = ILLYRIAN_REVOLT }
+		NOT = { country_exists = CRO }
+		AUS = {
+			owns_state = 109
+			owns_state = 102
+			owns_state = 103
+			owns_state = 104
+		}
+	}
+	option = { #Relese Illyria
+		name = le_prussia.7.a
+		ai_chance = { factor = 30 }
+		CRO = {
+			transfer_state = 104
+			transfer_state = 109
+			transfer_state = 103
+		}
+		puppet = CRO
+	}
+	option = { #Attack Venice!
+		name = le_prussia.7.b
+		ai_chance = { factor = 20 }
+	}
+}
+country_event = { #Military Paride in Berlin
+	id = le_prussia.8
+	title = le_prussia.8.t
+	desc = le_prussia.8.d
+	picture = GFX_report_event_hitler_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Good
+		name = le_prussia.8.a
+		ai_chance = { factor = 20 }
+		add_stability = 0.1
+		add_war_support = 0.25
+	}
+}
+country_event = { #Protection for Poznan
+	id = le_prussia.9
+	title = le_prussia.9.t
+	desc = le_prussia.9.d
+	picture = GFX_report_event_hitler_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Accept
+		name = le_prussia.9.a
+		ai_chance = { factor = 20 }
+		PRS = {
+			transfer_state = 86
+			give_guarantee = POL
+		}
+	}
+	option = { #Decline
+		name = le_prussia.9.b
+		ai_chance = { factor = 20 }
+		PRS = { country_event = { id = le_prussia.10 days = 2}}
+	}
+}
+country_event = { #Poland Denies Poznan Trade
+	id = le_prussia.10
+	title = le_prussia.10.t
+	desc = le_prussia.10.d
+	picture = GFX_report_event_hitler_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Countinue improving relations
+		name = le_prussia.10.a
+		ai_chance = { factor = 20 }
+	}
+	option = { #Demand Poznan
+		name = le_prussia.10.b
+		ai_chance = { factor = 20 }
+		set_country_flag = PRS_POL_ENEMIES
+		complete_national_focus = PRS_DEMAND_POZNAN
+	}
+}
+country_event = { #Prussia Demands Annexation
+	id = le_prussia.11
+	title = le_prussia.11.t
+	desc = le_prussia.11.d
+	picture = GFX_report_event_hitler_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Accept
+		name = le_prussia.11.a
+		ai_chance = { factor = 20 }
+		PRS = {
+			annex_country = {
+    			target = ROOT
+    			transfer_troops = yes
+			}
+		}
+	}
+	option = { #Deny
+		name = le_prussia.11.b
+		ai_chance = { factor = 2 }
+		PRS = {
+			create_wargoal = {
+			    type = annex_everything
+			    target = ROOT
+			}
+		}
+	}
+}
+country_event = { #Prussia Asks for Alliance
+	id = le_prussia.12
+	title = le_prussia.12.t
+	desc = le_prussia.12.d
+	picture = GFX_report_event_hitler_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Accept
+		name = le_prussia.12.a
+		ai_chance = { factor = 20 }
+		give_guarantee = PRS
+		PRS = { give_guarantee = ROOT }
+	}
+	option = { #Deny
+		name = le_prussia.12.b
+		ai_chance = { factor = 2 }
+	}
+}
+country_event = { #Prussian Sponsored Commonwealth
+	id = le_prussia.13
+	title = le_prussia.13.t
+	desc = le_prussia.13.d
+	picture = GFX_report_event_hitler_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Accept
+		name = le_prussia.13.a
+		ai_chance = { factor = 10 }
+		POL = {
+			annex_country = {
+			    target = ROOT
+			    transfer_troops = yes
+			}
+		}
+	}
+	option = { #Compromise with alliance
+		name = le_prussia.13.b
+		ai_chance = { factor = 10 }
+		give_guarantee = PRS
+		give_guarantee = POL
+		PRS = { country_event = { id = le_prussia.14 days = 3 } }
+	}
+	option = { #Deny
+		name = le_prussia.13.c
+		ai_chance = { factor = 10 }
+		PRS = { country_event = { id = le_prussia.15 days = 3 } }
+	}
+}
+country_event = { #Lithuania Compromises
+	id = le_prussia.14
+	title = le_prussia.14.t
+	desc = le_prussia.14.d
+	picture = GFX_report_event_hitler_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Accept their compromise
+		name = le_prussia.14.a
+		ai_chance = { factor = 10 }
+		give_guarantee = LIT
+		POL = { give_guarantee = LIT }
+	}
+	option = { #Give Poland the Order to Invade
+		name = le_prussia.13.b
+		ai_chance = { factor = 5 }
+		POL = {
+			create_wargoal = {
+			    type = annex_everything
+			    target = LIT
+			}
+		}
+	}
+}
+country_event = { #Lithuania Denies
+	id = le_prussia.15
+	title = le_prussia.15.t
+	desc = le_prussia.15.d
+	picture = GFX_report_event_hitler_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Accept This
+		name = le_prussia.15.a
+		ai_chance = { factor = 20 }
+	}
+	option = { #Give Poland the Order to Invade
+		name = le_prussia.15.b
+		ai_chance = { factor = 10 }
+		POL = {
+			create_wargoal = {
+			    type = annex_everything
+			    target = LIT
+			}
+		}
+	}
+}
+country_event = { #Prussia Demands Poznan
+	id = le_prussia.16
+	title = le_prussia.16.t
+	desc = le_prussia.16.d
+	picture = GFX_report_event_hitler_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Cede Poznan
+		name = le_prussia.16.a
+		ai_chance = { factor = 20 }
+		PRS = { transfer_state = 86 }
+	}
+	option = { #Prepare for War
+		name = le_prussia.16.b
+		ai_chance = { factor = 5 }
+		PRS = {
+			create_wargoal = {
+			    type = annex_everything
+			    target = POL
+			}
+		}
+	}
+}
+country_event = { #Prussia Demands Lower Strip
+	id = le_prussia.17
+	title = le_prussia.17.t
+	desc = le_prussia.17.d
+	picture = GFX_report_event_hitler_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Cede Poznan
+		name = le_prussia.17.a
+		ai_chance = { factor = 20 }
+		PRS = { transfer_state = 839 }
+	}
+	option = { #Prepare for War
+		name = le_prussia.17.b
+		ai_chance = { factor = 10 }
+		PRS = {
+			create_wargoal = {
+			    type = annex_everything
+			    target = POL
+			}
+		}
+	}
+}
+country_event = { #Prussia Demands Subjugation
+	id = le_prussia.18
+	title = le_prussia.18.t
+	desc = le_prussia.18.d
+	picture = GFX_report_event_hitler_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Cede Poznan
+		name = le_prussia.18.a
+		ai_chance = { factor = 20 }
+		PRS = { puppet = ROOT }
+	}
+	option = { #Prepare for War
+		name = le_prussia.18.b
+		ai_chance = { factor = 10 }
+		PRS = {
+			create_wargoal = {
+			    type = annex_everything
+			    target = LIT
+			}
+		}
+	}
+}

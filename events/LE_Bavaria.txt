@@ -128,7 +128,7 @@ country_event = { #PROTESTS IN THE CAPITAL
 	trigger = {
 		NOT = { has_country_flag = BAV_PROTESTERS }
 		tag = BAV
-		has_ideas = rooted_collectivists
+		has_idea = rooted_collectivists
 	}
 	option = { #Great
 		name = le_bavaria.4.a
@@ -145,7 +145,7 @@ country_event = { #REBEL STRONGHOLD FOUND
 	trigger = {
 		NOT = { has_country_flag = BAV_REBEL_STRONGHOLD }
 		tag = BAV
-		has_ideas = rooted_collectivists
+		has_idea = rooted_collectivists
 	}
 	option = { #Great
 		name = le_bavaria.5.a
@@ -162,7 +162,7 @@ country_event = { #REBEL LEADER FOUND
 	trigger = {
 		NOT = { has_country_flag = BAV_REBEL_LEADER }
 		tag = BAV
-		has_ideas = rooted_collectivists
+		has_idea = rooted_collectivists
 	}
 	option = { #Great
 		name = le_bavaria.6.a
@@ -184,7 +184,7 @@ country_event = { #REBEL ATTACK
 		name = le_bavaria.7.a
 		ai_chance = { factor = 30 }
 		add_to_variable = { BAV_COMMUNIST_STRENGTH = 10 } 
-		manpower = -500
+		add_manpower = -500
 	}
 }
 country_event = { #DESERTERS IN THE ARMY
@@ -203,19 +203,19 @@ country_event = { #DESERTERS IN THE ARMY
 		random_list = {
 			20 = {
 				add_to_variable = { BAV_COMMUNIST_STRENGTH = 5 } 
-				manpower = -1000
+				add_manpower = -1000
 			}
 			20 = {
 				add_to_variable = { BAV_COMMUNIST_STRENGTH = 10 } 
-				manpower = -2000
+				add_manpower = -2000
 			}
 			20 = {
 				add_to_variable = { BAV_COMMUNIST_STRENGTH = 15 } 
-				manpower = -3000
+				add_manpower = -3000
 			}
 			20 = {
 				add_to_variable = { BAV_COMMUNIST_STRENGTH = 20 } 
-				manpower = -4000
+				add_manpower = -4000
 			}
 		}
 	}
@@ -273,7 +273,6 @@ country_event = { #Successful Assassination
 	title = le_bavaria.10.t
 	desc = le_bavaria.10.d
 	picture = GFX_report_event_hitler_parade
-	mean_time_to_happen = { days = 100 }
 	is_triggered_only = yes
 	option = { #Yay!
 		name = le_bavaria.10.a
@@ -285,7 +284,6 @@ country_event = { #Failed Assassination
 	title = le_bavaria.11.t
 	desc = le_bavaria.11.d
 	picture = GFX_report_event_hitler_parade
-	mean_time_to_happen = { days = 100 }
 	is_triggered_only = yes
 	option = { #Damn!
 		name = le_bavaria.10.a

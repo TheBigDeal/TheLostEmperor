@@ -8,8 +8,10 @@ set_technology = {
 add_ideas = {
 	PRS_PRUSSIAN_MILITARISM
 	Religion_Protestant
-	HRE_candidate
+	HRE_elector
 }
+complete_national_focus = PRS_THE_KINGDOM_OF_PRUSSIA
+
 #1 = Prussia 2 = Austria
 set_variable = { var = PRS_SAXONY_SUPPORT value = 100 }
 set_variable = { var = PRS_HANNOVER_SUPPORT value = 100 }
@@ -70,7 +72,7 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Paul Von Hindenburg"
 	portrait_path = "gfx/leaders/PRS/Portrait_Paul_Von_Hidenburg.tga"
-	traits = {  offensive_doctrine great_war_hero }
+	traits = { offensive_doctrine }
 	id = 1
 	skill = 6
 	attack_skill = 5
@@ -81,7 +83,7 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Wilhelm Von Hohenzollern III"
 	portrait_path = "gfx/leaders/PRS/portrait_ger_wilhelm_iii.tga"
-	traits = {  offensive_doctrine great_war_hero }
+	traits = { offensive_doctrine }
 	id = 1
 	skill = 3
 	attack_skill = 3
@@ -92,7 +94,7 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "August von Mackensen"
 	portrait_path = "gfx/leaders/PRS/portrait_ger_august_von_mackensen.dds"
-	traits = {  offensive_doctrine great_war_hero }
+	traits = { offensive_doctrine }
 	id = 1
 	skill = 6
 	attack_skill = 5
