@@ -219,3 +219,107 @@ country_event = { #Revisiting The Kings Powers
 		set_country_flag = FREE_REIGN
   	}
 }
+
+country_event = { #Revisiting The Kings Powers
+	id = le_france.13
+	title = le_france.13.t
+	desc = le_france.13.d
+	fire_only_once = yes
+	is_triggered_only = yes
+  	option = { #A Figurehead King
+		name = le_france.13.a
+			random_list = {
+				75 = { #Civil War
+					set_capital = 20
+					set_cosmetic_tag = FRA_COMMUNIST
+					start_civil_war = {
+						ruling_party = collectivism
+						ideology = absolutism
+						size = 0.2
+						capital = 16
+						states = { 16 29 18 }
+					}
+					random_other_country = {
+						limit = {
+							original_tag = FRA
+							has_government = absolutism
+						}
+						FR1 = { 
+							annex_country = { target = PREV transfer_troops = yes } 
+							set_cosmetic_tag = FRA_ROYALIST
+							declare_war_on = { target = FRA type = annex_everything }
+							declare_war_on = { target = FR2 type = annex_everything }
+							declare_war_on = { target = FR3 type = annex_everything }
+							declare_war_on = { target = FR4 type = annex_everything }
+						}
+					}
+					start_civil_war = {
+						ruling_party = collectivism
+						ideology = labryscism
+						size = 0.2
+						capital = 886
+						states = { 886 27 24 30 23 }
+					}
+					random_other_country = {
+						limit = {
+							original_tag = FRA
+							has_government = labryscism
+						}
+						FR2 = { 
+							annex_country = { target = PREV transfer_troops = yes } 
+							set_cosmetic_tag = FRA_FASCIST
+							declare_war_on = { target = FRA type = annex_everything }
+							declare_war_on = { target = FR1 type = annex_everything }
+							declare_war_on = { target = FR3 type = annex_everything }
+							declare_war_on = { target = FR4 type = annex_everything }
+						}
+					}
+					start_civil_war = {
+						ruling_party = collectivism
+						ideology = theocracy
+						size = 0.2
+						capital = 25
+						states = { 25 33 26 }
+					}
+					random_other_country = {
+						limit = {
+							original_tag = FRA
+							has_government = theocracy
+						}
+						FR3 = { 
+							annex_country = { target = PREV transfer_troops = yes } 
+							set_cosmetic_tag = FRA_THEOCRACY
+							declare_war_on = { target = FRA type = annex_everything }
+							declare_war_on = { target = FR2 type = annex_everything }
+							declare_war_on = { target = FR1 type = annex_everything }
+							declare_war_on = { target = FR4 type = annex_everything }
+						}
+					}
+					start_civil_war = {
+						ruling_party = collectivism
+						ideology = liberalism
+						size = 0.2
+						capital = 31
+						states = { 31 22 }
+					}
+					random_other_country = {
+						limit = {
+							original_tag = FRA
+							has_government = liberalism
+						}
+						FR4 = { 
+							annex_country = { target = PREV transfer_troops = yes } 
+							set_cosmetic_tag = FRA_REPUBLIC
+							declare_war_on = { target = FRA type = annex_everything }
+							declare_war_on = { target = FR2 type = annex_everything }
+							declare_war_on = { target = FR3 type = annex_everything }
+							declare_war_on = { target = FR1 type = annex_everything }
+						}
+					}
+				}
+				25 = { #Successful Coup
+
+				}
+			}
+  	}
+}

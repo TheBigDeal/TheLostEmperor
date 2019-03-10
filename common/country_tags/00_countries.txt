@@ -1,5 +1,7 @@
 ##MOD
 ##########################################
+TYR = "countries/Tyrol.txt"
+NAV = "countries/Navarra.txt"
 ARA = "countries/Aragon.txt"
 GLC = "countries/Galica.txt"
 VRP = "countries/Vorpommern.txt"

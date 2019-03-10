@@ -7,7 +7,9 @@ set_technology = {
 	tech_support = 1
 	tech_recon = 1
 }
-
+add_idea = {
+	african_tribe
+}
 set_politics = {
 
 	parties = {

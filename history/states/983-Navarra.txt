@@ -1,0 +1,19 @@
+state={
+	id=983
+	name="STATE_983"
+	history={
+		owner = NAV
+		victory_points = { 3933 8 }
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		add_core_of = NAV
+	}
+	provinces={
+		932 3737 3931 3933 9857 
+	}
+	manpower=647519
+	buildings_max_level_factor=1.000
+}

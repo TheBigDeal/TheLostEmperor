@@ -292,6 +292,10 @@
  CNG_absolutism_DEF:0 "Chingubtti"
  CNG_absolutism_ADJ:0 "Chingubtti"
 
+ TYR_absolutism:0 "Trent"
+ TYR_absolutism_DEF:0 "Trent"
+ TYR_absolutism_ADJ:0 "Trent"
+  
  WLT_absolutism:0 "Walata"
  WLT_absolutism_DEF:0 "Walata"
  WLT_absolutism_ADJ:0 "Walata"
@@ -458,9 +462,19 @@
  KZM_absolutism_DEF:0 "Kazembeland"
  KZM_absolutism_ADJ:0 "Kazembeland"
 
- SLV_absolutism:0 "Central African Slavers"
- SLV_absolutism_DEF:0 "The Central African Slavers"
- SLV_absolutism_ADJ:0 "Central African"
+ CNS_absolutism:0 "Central African Slavers"
+ CNS_absolutism_DEF:0 "The Central African Slavers"
+ CNS_absolutism_ADJ:0 "Central African"
+ CNS_despotism:0 "Central African Slavers"
+ CNS_despotism_DEF:0 "The Central African Slavers"
+ CNS_despotism_ADJ:0 "Central African"
+
+ SLV_absolutism:0 "Slovenia"
+ SLV_absolutism_DEF:0 "Slovenia"
+ SLV_absolutism_ADJ:0 "Slovenia"
+ SLV_royalism:0 "Slovenia"
+ SLV_royalism_DEF:0 "Slovenia"
+ SLV_royalism_ADJ:0 "Slovenia"
 
  HNT_absolutism:0 "East African Hinterlands"
  HNT_absolutism_DEF:0 "The East African Hinterlands"
@@ -523,15 +537,20 @@
  JOH_absolutism_DEF:0 "Johor"
  JOH_absolutism_ADJ:0 "Johor"
 
- JAM_absolutism:0 "Jambi"
- JAM_absolutism_DEF:0 "Jambi"
- JAM_absolutism_ADJ:0 "Jambi"
+ JBI_absolutism:0 "Jambi"
+ JBI_absolutism_DEF:0 "Jambi"
+ JBI_absolutism_ADJ:0 "Jambi"
 
  AEH_absolutism:0 "Aceh"
  AEH_absolutism_DEF:0 "Aceh"
  AEH_absolutism_ADJ:0 "Aceh"
 
-
+ NAV_conservatism:0 "Navarra"
+ NAV_conservatism_DEF:0 "Navarra"
+ NAV_conservatism_ADJ:0 "Navarran"
+ NAV_liberalism:0 "Navarra"
+ NAV_liberalism_DEF:0 "Navarra"
+ NAV_liberalism_ADJ:0 "Navarran"
 
  HNG_despotism:0 "Honingmannland"
  HNG_despotism_DEF:0 "Honingmannland"
@@ -690,9 +709,9 @@
  GRS_absolutism_DEF:0 "Gress"
  GRS_absolutism_ADJ:0 "Gress"
 
- BAH_absolutism:0 "Bahr El Gjazal"
- BAH_absolutism_DEF:0 "Bahr El Gjazal"
- BAH_absolutism_ADJ:0 "Bahr El Gjazal"
+ BHR_absolutism:0 "Bahr El Gjazal"
+ BHR_absolutism_DEF:0 "Bahr El Gjazal"
+ BHR_absolutism_ADJ:0 "Bahr El Gjazal"
 
  THS_proletarianism:0 "Peoples State of Thessaly"
  THS_proletarianism_DEF:0 "Peoples State of Thessaly"
@@ -838,9 +857,9 @@
  KAT_absolutism_DEF:0 "Katanga"
  KAT_absolutism_ADJ:0 "Katanga"
 
- BAS_absolutism:0 "Basongye"
- BAS_absolutism_DEF:0 "Basongye"
- BAS_absolutism_ADJ:0 "Basongye"
+ BSN_absolutism:0 "Basongye"
+ BSN_absolutism_DEF:0 "Basongye"
+ BSN_absolutism_ADJ:0 "Basongye"
 
  BAK_absolutism:0 "Bakomo"
  BAK_absolutism_DEF:0 "Bakomo"
@@ -850,9 +869,9 @@
  MNG_absolutism_DEF:0 "Mangbetu"
  MNG_absolutism_ADJ:0 "Mangbetu"
 
- BAN_absolutism:0 "Bangala"
- BAN_absolutism_DEF:0 "Bangala"
- BAN_absolutism_ADJ:0 "Bangala"
+ BGL_absolutism:0 "Bangala"
+ BGL_absolutism_DEF:0 "Bangala"
+ BGL_absolutism_ADJ:0 "Bangala"
 
  AZA_absolutism:0 "Azande"
  AZA_absolutism_DEF:0 "Azande"

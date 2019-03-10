@@ -26,70 +26,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			set_capital = 20
-			random_list = {
-				75 = { #Civil War
-					start_civil_war = {
-						ruling_party = collectivism
-						ideology = absolutism
-						size = 0.2
-						capital = 16
-						states = { 16 29 18 }
-					}
-					random_other_country = {
-						limit = {
-							original_tag = FRA
-							has_government = absolutism
-						}
-						FR1 = { annex_country = { target = PREV transfer_troops = yes } }
-					}
-					start_civil_war = {
-						ruling_party = collectivism
-						ideology = labryscism
-						size = 0.2
-						capital = 886
-						states = { 886 27 24 30 23 }
-					}
-					random_other_country = {
-						limit = {
-							original_tag = FRA
-							has_government = labryscism
-						}
-						FR2 = { annex_country = { target = PREV transfer_troops = yes } }
-					}
-					start_civil_war = {
-						ruling_party = collectivism
-						ideology = theocracy
-						size = 0.2
-						capital = 25
-						states = { 25 33 26 }
-					}
-					random_other_country = {
-						limit = {
-							original_tag = FRA
-							has_government = theocracy
-						}
-						FR3 = { annex_country = { target = PREV transfer_troops = yes } }
-					}
-					start_civil_war = {
-						ruling_party = collectivism
-						ideology = liberalism
-						size = 0.2
-						capital = 31
-						states = { 31 22 }
-					}
-					random_other_country = {
-						limit = {
-							original_tag = FRA
-							has_government = liberalism
-						}
-						FR4 = { annex_country = { target = PREV transfer_troops = yes } }
-					}
-				}
-				25 = { #Successful Coup
 
-				}
-			}
 		}
 	}
 

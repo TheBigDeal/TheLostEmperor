@@ -25,12 +25,16 @@ set_politics = {
 			popularity = 33
 		}
 		absolutism = { 
-			popularity = 33
+			popularity = 34
 		}		
 		collectivism = {
-			popularity = 34
+			popularity = 33
 		}
 	}
+	ruling_party = absolutism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
 }
 
 

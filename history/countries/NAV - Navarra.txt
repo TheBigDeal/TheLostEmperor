@@ -1,0 +1,51 @@
+﻿capital = 983
+
+##OOB = "ANH_1928"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+	parties = {
+		conservatism = { popularity = 35 }
+		liberalism = { popularity = 12 }
+		socialism = { popularity = 12 }
+		labryscism = { popularity = 7 }
+		rexism = { popularity = 11 }
+		despotism = { popularity = 2 }
+		royalism = {popularity = 3 }
+		theocracy = { popularity = 8 }
+		absolutism = { popularity = 2 }
+		proletarianism = {popularity = 1 }
+		collectivism = { popularity = 4 }
+		naturalism = { popularity = 3 }
+	}
+	ruling_party = conservatism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_convoys = 5
+
+#Victor Emmanuel III of Italy after 39
+#create_country_leader = {
+#	name = "King Zog"
+#	desc = "POLITICS_KING_ZOG_DESC"
+#	picture = "Portrait_Albania_King_Zog.dds"
+#	expire = "1965.1.1"
+#	ideology = absolutism_ideology
+#	traits = {
+#		#
+#	}
+#}
+
+#create_field_marshal = {
+#	name = "Xhemal Aranitasi"
+#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+#	skill = 2
+#}
+

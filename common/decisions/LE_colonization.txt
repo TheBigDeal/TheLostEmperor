@@ -1,0 +1,23 @@
+LE_colonization_cat = {
+
+	LE_declare_colonial_war = {
+		icon = generic_army_support
+		available = {
+	
+		}
+		visible = {
+			any_neighbor_country = {
+				limit = {
+					has_idea = african_tribe
+				}
+				is_neighbor_of = PREV
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		complete_effect = {
+
+		}
+	}
+}

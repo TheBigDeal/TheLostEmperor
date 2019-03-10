@@ -1,0 +1,14 @@
+################
+##### USA ######
+################
+
+LE_colonization_cat = {
+	icon = idea_ger_revive_the_kaiserreich
+	#visible = {
+	#	is_neighbor_of = any_country = {
+	#		limit = {
+	#			has_idea = african_tribe
+	#		}
+	#	}
+	#}
+}

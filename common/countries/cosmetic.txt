@@ -1,3 +1,26 @@
+FRA_COMMUNIST = {
+	color = rgb { 178 99 99 }
+	color_ui = rgb { 178 99 99 }
+}
+FRA_REPUBLIC = {
+	color = rgb { 89 148 175 }
+	color_ui = rgb { 89 148 175 }
+}
+FRA_THEOCRACY = {
+	color = rgb { 148 172 183 }
+	color_ui = rgb { 148 172 183 }
+}
+FRA_FASCIST = {
+	color = rgb { 147 129 97 }
+	color_ui = rgb { 147 129 97 }
+}
+FRA_ROYALIST = {
+	color = rgb { 129 94 158 }
+	color_ui = rgb { 129 94 158 }
+}
+
+
+
 BELGIUM = {
 	color = rgb { 193 171 8 }
 	color_ui = rgb { 193 171 8 }

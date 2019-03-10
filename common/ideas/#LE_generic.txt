@@ -9,4 +9,7 @@ country = {
 			consumer_goods_factor = -0.05
 		}
 	}
+	african_tribe = {
+		picture = GFX_idea_YUG_orthodox_church_support
+	}
 }
