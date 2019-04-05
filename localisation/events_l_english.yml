@@ -16,6 +16,12 @@
  playerevents.3.a:0 "Toggle Africa"
  playerevents.3.b:0 "Toggle Arabia"
  playerevents.3.c:0 "Exit Menu"
+ #France Events
+ le_france.11.t:0 "The French Elections"
+ le_france.11.d:0 "The king has stepped down, we must appoint a new government leader.
+ le_france.11.a:0 "Elect the Communist"
+ le_france.11.b:0 ""
+ le_france.11.c:0 ""
  #Russia Unrest
  le_russia_unrest.1.t:0 "[GEO.GetName] Declares Independence"
  le_russia_unrest.1.d:0 "Today a letter has received from [GEO.GetLeader], The so called "Terror of the Caucus" he has declared independence from us, and is claiming to be the leader of this newly founded rebellion. He always knew he was trouble and has been terrorizing the region for months, advocating against the soviets for his special form of collectivism, so called "Stalinism". How pathetic, naming a whole ideology after yourself. He demands a one year truce is signed to assure we do not attack his newly found country."

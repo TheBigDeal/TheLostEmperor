@@ -242,7 +242,10 @@ HRE_COUNTRY_LINE:0 "The [Root.GetAdjective] Line"
  TWO_ROOT_OUT_HIGH_LEVEL_CORRUPTION:0 "Root out High Level Corruption"
 #FRANCE FOCUS TREE
 ############################
+ FRA_THE_KINGDOM_OF_FRANCE:0 "The Kingdom of France"
  FRA_A_PURE_ARMY:0 "A Pure Army"
+ FRA_EXPEL_THE_KING:0 "Expel the King"
+ FRA_CONTINUE_THE_MONARCHY:0 "Continue The Monarchy"
  FRA_NATIONALISTIC_SURGE:0 "Nationalistic Surge"
  FRA_PRESERVE_THE_MONARCHY:0 "Preserve The Monarchy"
  FRA_A_SECULAR_STATE:0 "A Secular State"

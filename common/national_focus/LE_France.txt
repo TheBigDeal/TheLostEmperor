@@ -32,8 +32,8 @@ focus_tree = {
 		id = FRA_EXPEL_THE_KING
 		icon = GFX_goal_generic_support_democracy
 		prerequisite = { focus = FRA_THE_KINGDOM_OF_FRANCE }
-		mutually_exclusive = { focus = FRA_COUNTINUE_THE_MONARCHY }
-		x = 29
+		mutually_exclusive = { focus = FRA_CONTINUE_THE_MONARCHY }
+		x = 27
 		y = 1
 		cost = 2
 		ai_will_do = {
@@ -44,11 +44,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_COUNTINUE_THE_MONARCHY
+		id = FRA_CONTINUE_THE_MONARCHY
 		icon = GFX_goal_generic_support_democracy
 		prerequisite = { focus = FRA_THE_KINGDOM_OF_FRANCE }
 		mutually_exclusive = { focus = FRA_EXPEL_THE_KING }
-		x = 27
+		x = 29
 		y = 1
 		cost = 2
 		ai_will_do = {
@@ -2432,7 +2432,7 @@ focus_tree = {
 	focus = {
 		id = FRA_PRESERVE_THE_MONARCHY
 		icon = GFX_goal_france_monarchy
-		prerequisite = { focus = FRA_COUNTINUE_THE_MONARCHY }
+		prerequisite = { focus = FRA_CONTINUE_THE_MONARCHY }
 		mutually_exclusive = { focus = FRA_PLEASE_THE_PEOPLE focus = FRA_THE_FOURTH_REVOLUTION focus = FRA_NATIONALISTIC_SURGE }
 		x = 38
 		y = 2
