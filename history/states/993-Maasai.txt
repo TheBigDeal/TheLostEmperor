@@ -1,0 +1,17 @@
+state={
+	id=993
+	name="STATE_993"
+	history={
+		owner = MAA
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		add_core_of = MAA
+	}
+	provinces={
+		2206 5196 5224 10860 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

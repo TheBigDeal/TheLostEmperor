@@ -2,7 +2,7 @@
 state={
 	id=858
 	name="STATE_858"
-	state_category = city
+
 	history={
 		owner = ZAN
 		buildings = {
@@ -10,11 +10,13 @@ state={
 
 		}
 		add_core_of = ZAN
+
 	}
-	
+
 	provinces={
-		2196 8182 8183 12944 
+		2196 8182 8205 12944 
 	}
 	manpower=435653
 	buildings_max_level_factor=1.000
+	state_category=city
 }

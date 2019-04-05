@@ -276,6 +276,61 @@
  USA_collectivism_ADJ:1 "American"
  USA_proletarianism_ADJ:1 "American"
 
+ AJU_absolutism:0 "Ajuuraan Sultanate"
+ AJU_absolutism_DEF:0 "Ajuuraan Sultanate"
+ AJU_absolutism_ADJ:0 "Ajuuraan"
+ 
+ BRO_absolutism:0 "Borana Oromo"
+ BRO_absolutism_DEF:0 "Borana Oromo"
+ BRO_absolutism_ADJ:0 "Borana"
+ 
+ SAM_absolutism:0 "Samburu Turkana"
+ SAM_absolutism_DEF:0 "Samburu Turkana"
+ SAM_absolutism_ADJ:0 "Samburu"
+ 
+ AGA_absolutism:0 "Agakuyu"
+ AGA_absolutism_DEF:0 "Agakuyu"
+ AGA_absolutism_ADJ:0 "Agakuyu"
+ 
+ NAN_absolutism:0 "Nandi"
+ NAN_absolutism_DEF:0 "Nandi"
+ NAN_absolutism_ADJ:0 "Nandi"
+ 
+ KIS_absolutism:0 "Kisumu"
+ KIS_absolutism_DEF:0 "Kisumu"
+ KIS_absolutism_ADJ:0 "Kisumu"
+ 
+ MAA_absolutism:0 "Maasai"
+ MAA_absolutism_DEF:0 "Maasai"
+ MAA_absolutism_ADJ:0 "Maasai"
+ 
+ UNY_absolutism:0 "Unyamwezi"
+ UNY_absolutism_DEF:0 "Unyamwezi"
+ UNY_absolutism_ADJ:0 "Unyamwezi"
+ 
+ UGO_absolutism:0 "Ugogo"
+ UGO_absolutism_DEF:0 "Ugogo"
+ UGO_absolutism_ADJ:0 "Ugogo"
+ 
+ UHE_absolutism:0 "Uhehe"
+ UHE_absolutism_DEF:0 "Uhehe"
+ UHE_absolutism_ADJ:0 "Uhehe"
+ 
+ UFI_absolutism:0 "Ufipa"
+ UFI_absolutism_DEF:0 "Ufipa"
+ UFI_absolutism_ADJ:0 "Ufipa"
+ 
+ RUN_absolutism:0 "Rundi"
+ RUN_absolutism_DEF:0 "Rundi"
+ RUN_absolutism_ADJ:0 "Rundi"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  XAA_absolutism:0 "Xaaso"
  XAA_absolutism_DEF:0 "Xaaso"
  XAA_absolutism_ADJ:0 "Xaaso"
@@ -332,6 +387,20 @@
  CAT_absolutism_DEF:0 "Kingdom of Catalonia"
  CAT_absolutism_ADJ:0 "Catalonia"
 
+ IM1_absolutism:0 "Colonia Tanganica"
+ IM1_absolutism_DEF:0 "Colonia Tanganica"
+ IM1_absolutism_ADJ:0 "Italian"
+ IM2_absolutism:0 "Colonia Papua"
+ IM2_absolutism_DEF:0 "Colonia Papua"
+ IM2_absolutism_ADJ:0 "Italian"
+ IM3_absolutism:0 "Colonia Orientale Italiana"
+ IM3_absolutism_DEF:0 "Colonia Orientale Italiana"
+ IM3_absolutism_ADJ:0 "Italian"
+ PNG_despotism:0 "Hansestaat Papua"
+ PNG_despotism_DEF:0 "Hansastaat Papua"
+ PNG_despotism_ADJ:0 "Hansa"
+  
+  
  CAT_rexism:0 "Catalonia"
  CAT_rexism_DEF:0 "Kingdom of Catalonia"
  CAT_rexism_ADJ:0 "Catalonia"

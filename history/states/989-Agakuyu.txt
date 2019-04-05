@@ -1,0 +1,17 @@
+state={
+	id=989
+	name="STATE_989"
+	history={
+		owner = AGA
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		add_core_of = AGA
+	}
+	provinces={
+		1939 10962 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

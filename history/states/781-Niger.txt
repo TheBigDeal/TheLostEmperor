@@ -4,17 +4,17 @@ state={
 	name="STATE_781"
 
 	history={
-		owner = TWO
+		owner = AJU
 		buildings = {
 			infrastructure = 3
 			air_base = 1
 
 		}
-
+		add_core_of = AJU
 	}
 
 	provinces={
-		8164 10928 
+		8164 10928 11014 12941 
 	}
 	manpower=746542
 	buildings_max_level_factor=1.000

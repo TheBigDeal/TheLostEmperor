@@ -1,0 +1,17 @@
+state={
+	id=991
+	name="STATE_991"
+	history={
+		owner = UGO
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		add_core_of = UGO
+	}
+	provinces={
+		5180 12911 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

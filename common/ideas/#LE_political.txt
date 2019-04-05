@@ -53,7 +53,13 @@ country = {
 			ai_will_do = {
 				factor = 0
 			}
+	}
+	Proletariet_Influence = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			proletarianism_drift_drift = 0.02
 		}
+	}
 	Monarchist_Propaganda = {
 		picture = Hungarian_Monarchy
 		modifier = {

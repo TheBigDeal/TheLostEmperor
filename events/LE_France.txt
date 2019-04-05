@@ -179,7 +179,7 @@ country_event = { #The King steps down
 	title = le_france.11.t
 	desc = le_france.11.d
 	fire_only_once = yes
-	trigger = { tag = FRA }
+	is_triggered_onl= yes
   	option = { #Elect Marcel Cachin [Communist]
 		name = le_france.11.a
 		add_stability = 0.1
@@ -202,7 +202,7 @@ country_event = { #Revisiting The Kings Powers
 	title = le_france.12.t
 	desc = le_france.12.d
 	fire_only_once = yes
-	trigger = { tag = FRA }
+	is_triggered_onl= yes
   	option = { #A Figurehead King
 		name = le_france.12.a
 		add_stability = -0.1

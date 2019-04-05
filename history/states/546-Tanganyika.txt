@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = HNT
+		owner = UFI
 		victory_points = {
 			2196 1 
 		}
@@ -19,11 +19,11 @@ state={
 			}
 
 		}
-
+		add_core_of = UFI
 	}
 
 	provinces={
-		2176 5180 8144 8201 10845 10988 12967 
+		13246 13247 13249 
 	}
 	manpower=5299000
 	buildings_max_level_factor=1.000

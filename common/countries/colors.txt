@@ -1,4 +1,69 @@
 #reload countrycolors
+AJU = {
+	color = rgb { 198 171 83 }
+	color_ui = rgb { 198 171 83 }
+}
+BRO = {
+	color = rgb { 178 125 57 }
+	color_ui = rgb { 178 125 57 }
+}
+SAM = {
+	color = rgb { 103 178 57 }
+	color_ui = rgb { 103 178 57 }
+}
+NAN = {
+	color = rgb { 58 119 84 }
+	color_ui = rgb { 58 119 84 }
+}
+AGA = {
+	color = rgb { 207 219 116 }
+	color_ui = rgb { 207 219 116 }
+}
+KIS = {
+	color = rgb { 173 175 154 }
+	color_ui = rgb { 173 175 154 }
+}
+MAA = {
+	color = rgb { 141 187 198 }
+	color_ui = rgb { 141 187 198 }
+}
+UNY = {
+	color = rgb { 158 173 71 }
+	color_ui = rgb { 158 173 71 }
+}
+UGO = {
+	color = rgb { 102 68 59 }
+	color_ui = rgb { 102 68 59 }
+}
+UHE = {
+	color = rgb { 165 109 53 }
+	color_ui = rgb { 165 109 53 }
+}
+UFI = {
+	color = rgb { 101 66 112 }
+	color_ui = rgb { 101 66 112 }
+}
+RUN = {
+	color = rgb { 66 112 73 }
+	color_ui = rgb { 66 112 73 }
+}
+
+
+
+
+
+IM1 = {
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 67 127 63 }
+}
+IM2 = {
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 67 127 63 }
+}
+IM3 = {
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 67 127 63 }
+}
 FR1 = {
 	color = rgb { 198 147 71 }
 	color_ui = rgb { 198 147 71 }
@@ -994,8 +1059,12 @@ FRA = {
 	color_ui = rgb { 74 147 255 }
 }
 AQU = {
-	color = rgb { 112 165 178 }
-	color_ui = rgb { 112 165 178 }
+	color = rgb { 158 94 79 }
+	color_ui = rgb { 158 94 79 }
+}
+PNG = {
+	color = rgb { 80 74 86 }
+	color_ui = rgb { 80 74 86 }
 }
 LUX = {
 	color = rgb { 65 175 179 }

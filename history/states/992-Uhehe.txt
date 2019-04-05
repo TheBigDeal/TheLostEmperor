@@ -1,0 +1,17 @@
+state={
+	id=992
+	name="STATE_992"
+	history={
+		owner = UHE
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		add_core_of = UHE
+	}
+	provinces={
+		12967 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

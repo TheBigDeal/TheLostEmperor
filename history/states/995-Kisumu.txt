@@ -1,0 +1,17 @@
+state={
+	id=995
+	name="STATE_995"
+	history={
+		owner = KIS
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		add_core_of = KIS
+	}
+	provinces={
+		13250 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

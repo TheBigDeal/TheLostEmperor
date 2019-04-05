@@ -59,12 +59,12 @@ set_politics = {
 			#banned = no #default is no
 		}
 		
-		absolutism = { 
+		despotism = { 
 			popularity = 23
 		}
 	}
 	
-	ruling_party = liberalism
+	ruling_party = despotism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes

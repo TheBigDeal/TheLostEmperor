@@ -7,7 +7,7 @@ state={
 	state_category = enclave
 
 	history={
-		owner = ETH
+		owner = IM3
 		buildings = {
 			infrastructure = 3
 			air_base = 2
@@ -15,7 +15,7 @@ state={
 				naval_base = 2
 			}
 		}
-
+		add_core_of = IM3
 	}
 	provinces={
 		4985 8124

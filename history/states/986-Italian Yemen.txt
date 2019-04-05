@@ -1,0 +1,19 @@
+state={
+	id=986
+	name="STATE_986"
+	history={
+		owner = IM1
+		buildings = {
+			infrastructure = 3
+			10752 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = IM1
+	}
+	provinces={
+		10752 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

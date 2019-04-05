@@ -1,0 +1,17 @@
+state={
+	id=988
+	name="STATE_988"
+	history={
+		owner = BRO
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		add_core_of = BRO
+	}
+	provinces={
+		2066 8062 8133 10761 12927 
+	}
+	manpower=242152
+	buildings_max_level_factor=1.000
+}

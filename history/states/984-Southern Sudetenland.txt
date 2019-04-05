@@ -1,0 +1,16 @@
+state={
+	id=984
+	name="STATE_984"
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 2		
+		}
+		add_core_of = AUS	
+	}
+	provinces={
+		543 557 11525 
+	}
+	manpower=5436324
+	buildings_max_level_factor=1.000
+}

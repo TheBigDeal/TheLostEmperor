@@ -4,7 +4,7 @@ state={
 	name="STATE_547"
 
 	history={
-		owner = HNT
+		owner = RUN
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -17,11 +17,11 @@ state={
 		victory_points = {
 			5210 1 
 		}
-
+		add_core_of = RUN
 	}
 
 	provinces={
-		2206 5224 8205 10932 11017 12911 
+		13248 
 	}
 	manpower=3392000
 	buildings_max_level_factor=1.000

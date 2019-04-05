@@ -1,0 +1,17 @@
+state={
+	id=994
+	name="STATE_994"
+	history={
+		owner = NAN
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		add_core_of = NAN
+	}
+	provinces={
+		5160 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

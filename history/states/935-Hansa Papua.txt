@@ -2,11 +2,11 @@ state={
 	id=935
 	name="STATE_935"
 	history={
-		owner = PRS
+		owner = PNG
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = PRS
+		add_core_of = PNG
 	}
 	provinces={
 		1389 4393 5135 7365 7614 10251 10423 11004 11018 12154 12193 12237 12240 12400 12428 

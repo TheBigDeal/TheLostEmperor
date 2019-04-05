@@ -1,19 +1,18 @@
+
 state={
 	id=780
 	name="STATE_780"
-	
+
 	history={
-		owner = SOM
+		owner = AJU
 		buildings = {
 			infrastructure = 3
-			air_base = 1
-
 		}
-
+		add_core_of = AJU
 	}
-	
+
 	provinces={
-		1964 2020 2063 
+		1964 2020 2063 4995 10775 
 	}
 	manpower=2341245
 	buildings_max_level_factor=1.000

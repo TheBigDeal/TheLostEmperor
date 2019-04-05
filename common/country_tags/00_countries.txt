@@ -1,5 +1,24 @@
 ##MOD
 ##########################################
+#ITALIAN MARITIME COMPANY
+IM1 = "countries/ColoniaTanganica.txt"
+IM2 = "countries/ColoniaPapua.txt"
+IM3 = "countries/ColoniaOrientaleItaliana.txt"
+#AFRICA
+AJU = "countries/Ajuuraan Sultanate.txt"
+BRO = "countries/Borana Oromo.txt"
+SAM = "countries/Samburu Turkana.txt"
+AGA = "countries/Agakuyu.txt"
+UKA = "countries/Ukambani.txt"
+MAA = "countries/Maasai.txt"
+UNY = "countries/Unyamwezi.txt"
+UGO = "countries/Ugogo.txt"
+UHE = "countries/Uhehe.txt"
+UFI = "countries/Ufipa.txt"
+RUN = "countries/Rundi.txt"
+KIS = "countries/Kisumu.txt"
+NAN = "countries/Nandi.txt"
+
 TYR = "countries/Tyrol.txt"
 NAV = "countries/Navarra.txt"
 ARA = "countries/Aragon.txt"
