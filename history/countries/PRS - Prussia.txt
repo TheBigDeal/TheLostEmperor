@@ -58,11 +58,23 @@ give_guarantee = HRE
 #add_relation_modifier = { target = HRE modifier = part_of_hre }
 
 create_country_leader = {
+	name = "Heinrich von Hohenzollern"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Heinrich.tga"
+	expire = "1950.4.6"
+	ideology = absolutism_ideology
+	traits = {
+		Political_Dancer
+		Warmonger
+	}
+}
+
+create_country_leader = {
 	name = "Fredrick Wilhelm II"
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "Portrait_Prussia_Wilhelm_II.tga"
 	expire = "1942.4.6"
-	ideology = absolutism_ideology
+	ideology = royalism_ideology
 	traits = {
 		Political_Dancer
 		Warmonger

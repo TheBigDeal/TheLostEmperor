@@ -40,6 +40,7 @@ country_event = { #DEFEATED SPARTANS
 	  trigger = {
 		tag = GRE
 		country_exists = SPT
+		NOT = { has_country_flag = defeated_spartans }
 		check_variable = {
 		  var = SPARTAN_STRENGTH
 		  value = 0
@@ -49,6 +50,7 @@ country_event = { #DEFEATED SPARTANS
 	option = { #Great!
 		name = le_greek_civil_war.4.a
 		SPT = { country_event = { id = le_greek_civil_war.5 } }
+		set_country_flag = defeated_spartans
 	}
 }
 country_event = { #WE HAVE BEEN DEFEATED [Spartan Event]
@@ -59,6 +61,7 @@ country_event = { #WE HAVE BEEN DEFEATED [Spartan Event]
 	option = { #Damn!
 		name = le_greek_civil_war.5.a
 		GRE = { annex_country = { target = SPT transfer_troops = no } }
+		
 	}
 }
 country_event = { #FAILED_ASSASSINATION
@@ -75,7 +78,7 @@ country_event = { #Successful ASSASSINATION
 	is_triggered_only = yes
 	option = {
     name = le_greek_civil_war.7.a
-	ai_will_do = { factor = 100 }
+	# ai_will_do = { factor = 100 }
     country_event = { id = le_greek_civil_war.5 }
   }
 }
@@ -117,6 +120,7 @@ country_event = { #DEFEATED HELLENIC COMMUNE
 	trigger = {
 		tag = GRE
 		country_exists = HEL
+		NOT = { has_country_flag = defeated_hellenic }
 		check_variable = {
 			var = HELLENIC_STRENGTH
 			value = 0
@@ -126,6 +130,7 @@ country_event = { #DEFEATED HELLENIC COMMUNE
 	option = { #Great!
 		name = le_greek_civil_war.11.a
 		HEL = { country_event = { id = le_greek_civil_war.12 } }
+		set_country_flag = defeated_hellenic
 	}
 }
 country_event = { #WE HAVE BEEN DEFEATED [Hellenic Event]
@@ -164,8 +169,8 @@ country_event = { #Hugely Successful Attack
 	is_triggered_only = yes
 	option = { #Great!
 		name = le_greek_civil_war.15.a
-    subtract_from_variable = { var = ATHOS_STRENGTH value = 50 }
-    add_political_power = 50
+		subtract_from_variable = { var = ATHOS_STRENGTH value = 50 }
+		add_political_power = 50
 	}
 }
 country_event = { #Mildly Successful Attack
@@ -175,8 +180,8 @@ country_event = { #Mildly Successful Attack
 	is_triggered_only = yes
 	option = { #Great!
 		name = le_greek_civil_war.16.a
-    subtract_from_variable = { var = ATHOS_STRENGTH value = 20 }
-    add_political_power = 25
+		subtract_from_variable = { var = ATHOS_STRENGTH value = 20 }
+		add_political_power = 25
 	}
 }
 country_event = { #Failed Attack
@@ -190,17 +195,20 @@ country_event = { #DEFEATED MOUNT ATHOS
 	id = le_greek_civil_war.18
 	title = le_greek_civil_war.18.t
 	desc = le_greek_civil_war.18.d
-  trigger = {
-	 	tag = GRE
-    check_variable = {
-      var = ATHOS_STRENGTH
-      value = 0
-      compare = less_than_or_equals
-    }
+	  trigger = {
+		tag = GRE
+		country_exists = MOU
+		NOT = { has_country_flag = defeated_athos }
+		check_variable = {
+		  var = ATHOS_STRENGTH
+		  value = 0
+		  compare = less_than_or_equals
+		}
   }
 	option = { #Great!
 		name = le_greek_civil_war.18.a
 		MOU = { country_event = { id = le_greek_civil_war.19 } }
+		set_country_flag = defeated_athos
 	}
 }
 country_event = { #WE HAVE BEEN DEFEATED [Athos Event]

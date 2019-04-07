@@ -192,31 +192,6 @@ country_event = { #TRYOL REVOLT TO VENICE
 	desc = le_prussia.7.d
 	picture = GFX_report_event_hitler_parade
 	fire_only_once = yes
-	is_triggered_only = yes
-	immediate = {
-		CRO = { transfer_state = 39 }
-		release_puppet = CRO
-	}
-	option = { #Damn!
-		name = le_prussia.6.a
-		ai_chance = { factor = 30 }
-	}
-	option = { #Attack Venice!
-		name = le_prussia.6.b
-		ai_chance = { factor = 20 }
-		declare_war_on = {
-		    target = CRO
-		    type = annex_everything
-		}
-		set_country_flag = ILLYRIAN_REVOLT
-	}
-}
-country_event = { #TRYOL REVOLT TO VENICE
-	id = le_prussia.7
-	title = le_prussia.7.t
-	desc = le_prussia.7.d
-	picture = GFX_report_event_hitler_parade
-	fire_only_once = yes
 	trigger = {
 		tag = AUS
 		AUS = { has_country_flag = ILLYRIAN_REVOLT }
@@ -485,5 +460,30 @@ country_event = { #Prussia Demands Subjugation
 			    target = LIT
 			}
 		}
+	}
+}
+country_event = { #TRYOL REVOLT TO VENICE
+	id = le_prussia.19
+	title = le_prussia.19.t
+	desc = le_prussia.19.d
+	picture = GFX_report_event_hitler_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		CRO = { transfer_state = 39 }
+		release_puppet = CRO
+	}
+	option = { #Damn!
+		name = le_prussia.19.a
+		ai_chance = { factor = 30 }
+	}
+	option = { #Attack Venice!
+		name = le_prussia.1.b
+		ai_chance = { factor = 20 }
+		declare_war_on = {
+		    target = CRO
+		    type = annex_everything
+		}
+		set_country_flag = ILLYRIAN_REVOLT
 	}
 }

@@ -568,8 +568,8 @@ form_byzantine_empire_category = {
 		available = {
 			GRE = {
 				AND = {
-					has_completed_focus = GRE_RESTORE_BYZANTINE_THRONE
-					has_country_flag = BASILUS_CHOSEN
+					#has_completed_focus = GRE_RESTORE_BYZANTINE_THRONE
+					#has_country_flag = BASILUS_CHOSEN
 				}
 			}
 		}

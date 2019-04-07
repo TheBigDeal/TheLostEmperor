@@ -1937,6 +1937,9 @@
  AFG_liberalism_ADJ:0 "Afghan"
  AFG_absolutism_ADJ:0 "Afghan"
  AFG_naturalism_ADJ:0 "Afghan"
+ 
+ ARG_labryscism:0 "La Plata"
+ ARG_despotism:0 "La Plata"
  ARG_rexism:0 "Argentine League"
  ARG_rexism_DEF:0 "The Argentine League"
  ARG_liberalism:0 "Argentine Republic"
@@ -1951,6 +1954,7 @@
  ARG_liberalism_ADJ:0 "Argentinean"
  ARG_absolutism_ADJ:0 "Argentinean"
  ARG_naturalism_ADJ:0 "Argentinean"
+ 
  BOL_rexism:0 "Falangist Bolivia"
  BOL_rexism_DEF:0 "Falangist Bolivia"
  BOL_liberalism:0 "Plurinational Bolivia"
@@ -2013,8 +2017,11 @@
  PRC_liberalism_ADJ:0 "Chinese"
  PRC_absolutism_ADJ:0 "Chinese"
  PRC_naturalism_ADJ:0 "Chinese"
+ 
  CHL_rexism:0 "Vanguard Chile"
  CHL_rexism_DEF:0 "Vanguard Chile"
+ CHL_despotism:0 "Chile"
+ CHL_despotism_DEF:0 "Chile"
  CHL_liberalism:0 "Chile"
  CHL_liberalism_DEF:0 "Chile"
  CHL_absolutism:0 "Atacama-Patagonian Free State"
@@ -2025,6 +2032,7 @@
  CHL_liberalism_ADJ:0 "Chilean"
  CHL_absolutism_ADJ:0 "Chilean"
  CHL_naturalism_ADJ:0 "Chilean"
+ 
  COL_rexism:0 "Nueva Gran Colombia"
  COL_rexism_DEF:0 "Nueva Gran Colombia"
  COL_liberalism:0 "Colombia"
@@ -2234,6 +2242,8 @@
 
  PRU_rexism:0 "Peru"
  PRU_rexism_DEF:0 "Peru"
+ PRU_despotism:0 "Peru"
+ PRU_despotism_DEF:0 "Peru"
  PRU_liberalism:0 "Republic of Peru"
  PRU_liberalism_DEF:0 "The Republic of Peru"
  PRU_absolutism:0 "Peruvian Independent State"

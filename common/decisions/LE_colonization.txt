@@ -6,12 +6,12 @@ LE_colonization_cat = {
 	
 		}
 		visible = {
-			any_neighbor_country = {
-				limit = {
-					has_idea = african_tribe
-				}
-				is_neighbor_of = PREV
-			}
+			# any_neighbor_country = {
+				# limit = {
+					# has_idea = african_tribe
+				# }
+				# is_neighbor_of = PREV
+			# }
 		}
 		ai_will_do = {
 			factor = 20

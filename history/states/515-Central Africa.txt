@@ -7,14 +7,13 @@ state={
 		owner = TBE
 		buildings = {
 			infrastructure = 2
-
 		}
 		add_core_of = TBE
 
 	}
 
 	provinces={
-		10893 13209 13209 13209 13209 13210 
+		10893 13209 13210 
 	}
 	manpower=1482744
 	buildings_max_level_factor=1.000

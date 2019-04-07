@@ -22,12 +22,21 @@ set_convoys = 120
 set_politics = {
 
 	parties = {	
-		despotism = { 
-			popularity = 100
-		}
+		conservatism = { popularity = 7 }
+		liberalism = { popularity = 5 }
+		socialism = { popularity = 3 }
+		labryscism = { popularity = 50 }
+		rexism = { popularity = 5 }
+		despotism = { popularity = 15 }
+		royalism = {popularity = 1 }
+		theocracy = { popularity = 8 }
+		absolutism = { popularity = 1 }
+		proletarianism = {popularity = 3 }
+		collectivism = { popularity = 1 }
+		naturalism = { popularity = 1 }
 	}
 	
-	ruling_party = despotism
+	ruling_party = labryscism
 	last_election = "1931.11.8"
 	election_frequency = 72
 	elections_allowed = yes

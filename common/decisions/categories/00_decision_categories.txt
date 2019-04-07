@@ -63,63 +63,6 @@ foreign_influence = {
 	icon = generic_political_actions
 }
 
-labryscism_on_the_rise = {
-	icon = generic_labryscism
-
-	allowed = {
-		NOT = {
-			AND = {
-				has_dlc = "Man the Guns"
-				OR = {
-					original_tag = USA
-					original_tag = MEX
-					original_tag = ENG
-				}
-			}
-		}
-	}
-	
-	#visible = {
-	#	NOT = { has_government = labryscism }
-	#	has_idea_with_trait = fascist_demagogue
-	#}
-}
-
-liberalism_on_the_rise = {
-	icon = generic_democracy
-
-	allowed = {
-		always = yes
-	}
-	
-	#visible = {
-	#	NOT = { has_government = liberalism }
-	#	has_idea_with_trait = liberalism_reformer
-	#}
-}
-
-collectivism_on_the_rise = {
-	icon = generic_collectivism
-
-	allowed = {
-		NOT = {
-			AND = {
-				has_dlc = "Man the Guns"
-				OR = {
-					original_tag = USA
-					original_tag = MEX
-					original_tag = ENG
-				}
-			}
-		}
-	}
-	
-	#visible = {
-	#	NOT = { has_government = collectivism }
-	#	has_idea_with_trait = communist_revolutionary
-	#}
-}
-
 crisis = {
 	icon = generic_crisis
 	priority = 100

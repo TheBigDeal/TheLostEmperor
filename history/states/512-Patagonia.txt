@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = PAT
+		owner = ARG
 		buildings = {
 			infrastructure = 3
 			10953 = {
@@ -16,7 +16,7 @@ state={
 			}
 
 		}
-		add_core_of = PAT
+		add_core_of = ARG
 
 	}
 

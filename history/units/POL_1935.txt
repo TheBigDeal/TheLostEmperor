@@ -1,0 +1,181 @@
+division_template = {
+	name = "Infantry Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Calvary Brigade"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+	    recon = { x = 0 y = 0 }
+	    artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Motorized Division"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		
+		motorized = { x = 2 y = 0 }
+	    motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+units = {
+	#WARSAW
+	############
+	division= {	
+		name = "Infantry Division" 
+		location = 3544
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Calvary Brigade" 
+		location = 3544
+		division_template = "Calvary Brigade"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Infantry Division" 
+		location = 3544
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Infantry Diviision" 
+		location = 3544
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Calvary Brigade" 
+		location = 3544
+		division_template = "Calvary Brigade"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Infantry Diviision" 
+		location = 9508
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Infantry Diviision" 
+		location = 9508
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Infantry Diviision" 
+		location = 9508
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	#LODS
+	############
+	division= {	
+		name = "Infantry Diviision" 
+		location = 9508
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Calvary Brigade" 
+		location = 9508
+		division_template = "Calvary Brigade"
+		start_experience_factor = 0.3
+	}
+	
+	#LWOW
+	############
+	division= {	
+		name = "Infantry Diviision" 
+		location = 11479
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Calvary Brigade" 
+		location = 11479
+		division_template = "Calvary Brigade"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Infantry Diviision" 
+		location = 9508
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	#KRAKOW
+	###########
+	division= {	
+		name = "Infantry Diviision" 
+		location = 9427
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Infantry Diviision" 
+		location = 9427
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Calvary Brigade" 
+		location = 9427
+		division_template = "Calvary Brigade"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Calvary Brigade" 
+		location = 9427
+		division_template = "Calvary Brigade"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Infantry Diviision" 
+		location = 9508
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Infantry Diviision" 
+		location = 9508
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+}
