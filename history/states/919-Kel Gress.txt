@@ -1,18 +1,22 @@
+
 state={
 	id=919
 	name="STATE_919"
+
 	history={
 		owner = GRS
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = GRS
 
 	}
+
 	provinces={
-		13217 
+		13254 
 	}
 	manpower=435653
-	state_category = town
 	buildings_max_level_factor=1.000
+	state_category=town
 }

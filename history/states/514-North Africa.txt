@@ -7,13 +7,14 @@ state={
 		owner = AJJ
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = AJJ
 
 	}
 
 	provinces={
-		1043 5004 10884 
+		1043 5004 10884 13217 
 	}
 	manpower=207733
 	buildings_max_level_factor=1.000

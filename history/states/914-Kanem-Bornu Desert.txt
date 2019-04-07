@@ -1,20 +1,22 @@
+
 state={
 	id=914
 	name="STATE_914"
-	
+
 	history={
 		owner = BOR
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = BOR
 
 	}
-	
+
 	provinces={
-		1956 8128 
+		1956 8128 13207 13213 
 	}
 	manpower=363732
-	state_category = town
 	buildings_max_level_factor=1.000
+	state_category=town
 }

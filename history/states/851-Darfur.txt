@@ -2,7 +2,7 @@
 state={
 	id=851
 	name="STATE_851"
-	state_category = city
+
 	history={
 		owner = DAR
 		buildings = {
@@ -15,8 +15,9 @@ state={
 	}
 
 	provinces={
-		1960 5060 8052 8103 10739 
+		1960 5060 8052 8103 10739 13211 
 	}
 	manpower=435653
 	buildings_max_level_factor=1.000
+	state_category=city
 }

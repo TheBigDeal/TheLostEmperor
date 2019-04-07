@@ -12,6 +12,7 @@ state={
 	provinces={
 		5160 
 	}
-	manpower=0
+	manpower=453534
+	state_category = town
 	buildings_max_level_factor=1.000
 }

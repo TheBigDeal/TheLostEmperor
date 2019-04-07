@@ -5,12 +5,12 @@ state={
 	history={
 		owner = RIG
 		victory_points = {
-			13207 5 
+			13257 5 
 		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 3
-			13207 = {
+			13257 = {
 				naval_base = 3
 			}
 		}
@@ -19,7 +19,7 @@ state={
 	}
 	
 	provinces={
-		13207
+		13257
 	}
 	manpower=435653
 	buildings_max_level_factor=1.000

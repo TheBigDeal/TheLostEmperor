@@ -2,7 +2,7 @@
 state={
 	id=903
 	name="STATE_903"
-	state_category = town
+
 	history={
 		owner = COG
 		buildings = {
@@ -14,8 +14,9 @@ state={
 	}
 
 	provinces={
-		4128 7716 10025 12775 12896 12945 
+		4128 7716 10025 12896 12945 
 	}
 	manpower=435653
 	buildings_max_level_factor=1.000
+	state_category=town
 }

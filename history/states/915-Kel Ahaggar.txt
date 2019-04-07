@@ -2,18 +2,21 @@
 state={
 	id=915
 	name="STATE_915"
+
 	history={
 		owner = KEL
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = KEL
 
 	}
+
 	provinces={
-		10749 
+		10749 13212 
 	}
 	manpower=435653
-	state_category = town
 	buildings_max_level_factor=1.000
+	state_category=town
 }

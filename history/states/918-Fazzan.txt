@@ -17,6 +17,6 @@ state={
 		1994 12022 12082 
 	}
 	manpower=435653
-	state_category = town
 	buildings_max_level_factor=1.000
+	state_category=town
 }

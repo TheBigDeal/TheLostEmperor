@@ -4,9 +4,9 @@ state={
 	name="STATE_899"
 
 	history={
-		owner = NOU
+		owner = LOU
 		victory_points = {
-			13213 10 
+			13259 10 
 		}
 		buildings = {
 			infrastructure = 3
@@ -14,12 +14,12 @@ state={
 			industrial_complex = 3
 
 		}
-		add_core_of = NOU
+		add_core_of = LOU
 
 	}
 
 	provinces={
-		13213 13214 
+		13259 13258 12398 7552
 	}
 	manpower=230000
 	buildings_max_level_factor=1.000
