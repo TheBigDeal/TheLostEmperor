@@ -120,7 +120,6 @@ create_country_leader = {
 		
 	}
 }
-
 create_country_leader = {
 	name = "Édouard Daladier"
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
@@ -133,24 +132,39 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Maurice Thorez"
+	name = "Benoit Frachon"
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
-	picture = "Portrait_France_Generic_3.dds"
+	picture = "Portrait_France_Benoit_Frachon.tga"
 	expire = "1965.1.1"
 	ideology = 	proletarianism
 	traits = {
-		
 	}
 }
-
 create_country_leader = {
-	name = "Philippe Pétain"
+	name = "Jacques Duclos"
+	desc = "POLITICS_MAURICE_THOREZ_DESC"
+	picture = "Portrait_France_Jacques_Duclos.tga"
+	expire = "1965.1.1"
+	ideology = 	collectivism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Sebastien Faure"
+	desc = "POLITICS_MAURICE_THOREZ_DESC"
+	picture = "Portrait_France_Sebastien_Faure.tga"
+	expire = "1965.1.1"
+	ideology = 	naturalism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Jacques Doriot"
 	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
-	picture = "Portrait_France_Philippe_Petain.dds"
+	picture = "Portrait_France_Jacques_Doriot.tga"
 	expire = "1965.1.1"
 	ideology = labryscism
 	traits = {
-		
 	}
 }
 

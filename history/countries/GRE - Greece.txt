@@ -1,4 +1,4 @@
-﻿capital = 4109
+﻿capital = 954
 
 oob = "GRE_1936"
 
@@ -45,11 +45,31 @@ set_politics = {
 set_stability = 0.40
 set_war_support = 0.95
 create_country_leader = {
-	name = "King George II"
+	name = "King Albert von Saxe-Coburg-Gotha"
 	desc = "POLITICS_IOANNIS_METAXAS_DESC"
-	picture = "Portrait_Greece_George_II.tga"
+	picture = "King_Albert.tga"
 	expire = "1965.1.1"
 	ideology = absolutism_ideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "King Albert von Saxe-Coburg-Gotha"
+	desc = "POLITICS_IOANNIS_METAXAS_DESC"
+	picture = "King_Albert.tga"
+	expire = "1965.1.1"
+	ideology = royalism_ideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "King Albert von Saxe-Coburg-Gotha"
+	desc = "POLITICS_IOANNIS_METAXAS_DESC"
+	picture = "King_Albert.tga"
+	expire = "1965.1.1"
+	ideology = rexism_ideology
 	traits = {
 		#
 	}

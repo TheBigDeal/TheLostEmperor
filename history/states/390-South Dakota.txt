@@ -4,13 +4,13 @@ state={
 	name="STATE_390"
 
 	history={
-		owner = UPP
+		owner = LOU
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 
 		}
-		add_core_of = UPP
+		add_core_of = LOU
 		victory_points = {
 			1747 1 
 		}

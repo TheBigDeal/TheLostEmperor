@@ -5,7 +5,7 @@ GRE_SPARTAN_PUSH = {
 		days_re_enable = 3
 		fixed_random_seed = no
 		visible = {
-			GRE = { has_country_flag = GRE_SPARTAN_PUSH }
+			#GRE = { has_country_flag = GRE_SPARTAN_PUSH }
 			tag = GRE
 			country_exists = SPT
 		}
@@ -30,7 +30,7 @@ GRE_SPARTAN_PUSH = {
 		days_re_enable = 20
 		fixed_random_seed = no
 		visible = {
-			GRE = { has_country_flag = GRE_SPARTAN_PUSH }
+			#GRE = { has_country_flag = GRE_SPARTAN_PUSH }
 			tag = GRE
 			country_exists = SPT
 		}
@@ -52,7 +52,7 @@ GRE_SPARTAN_PUSH = {
 		fire_only_once = yes
 		fixed_random_seed = no
 		visible = {
-			GRE = { has_country_flag = GRE_SPARTAN_PUSH }
+			#GRE = { has_country_flag = GRE_SPARTAN_PUSH }
 			tag = GRE
 			country_exists = SPT
 		}
@@ -71,7 +71,7 @@ GRE_HELLENIC_PUSH = {
 		days_re_enable = 3
 		fixed_random_seed = no
 		visible = {
-			GRE = { has_country_flag = GRE_HELLENIC_PUSH }
+			#GRE = { has_country_flag = GRE_HELLENIC_PUSH }
 			tag = GRE
 			country_exists = HEL
 		}
@@ -137,7 +137,7 @@ GRE_ATHOS_PUSH = {
 		days_re_enable = 3
 		fixed_random_seed = no
 		visible = {
-			GRE = { has_country_flag = GRE_ATHOS_PUSH }
+			#GRE = { has_country_flag = GRE_ATHOS_PUSH }
 			tag = GRE
 			country_exists = MOU
 		}

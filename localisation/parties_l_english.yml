@@ -55,6 +55,19 @@
 
  PRS_absolutism_party:0 "House of Hohenzollern"
 
+ #GREEK PARTIES
+ GRE_absolutism_party:0 "The Legitimists"
+ GRE_royalism_party:0 "Enosis Party"
+ GRE_rexism_party:0 "Greek National Party"
+ GRE_despotism_party:0 "National Salvation Council"
+ GRE_conservatism_party:0 "Enosis Party (Moderates)"
+ GRE_liberalism_party:0 "Democratic Liberal Party"
+ GRE_socialism_party:0 "Peoples Party of Greece"
+ GRE_theocracy_party:0 "Hands of God"
+ GRE_labryscism_party:0 "Spartan League"
+ GRE_naturalism_party:0 "Greek Workers Front"
+ GRE_collectivism_party:0 "Greek Workers Front"
+ GRE_proletarianism_party:0 "Greek Workers Front"
 #SUBCATS
  #absolutism_desc:0 "Monarchist Regime"
  #rexism_desc:0 "Totalitarian Regime"
@@ -150,13 +163,6 @@
  POR_liberalism_party_long:0 "Partido Democrático"
  POR_rexism_party:0 "MNS"
  POR_rexism_party_long:0 "Movimento Nacional-Sindicalista"
- GRE_absolutism_party:0 "Metaxá"
- GRE_absolutism_party_long:0 "Kathestós Metaxá"
- GRE_proletarianism_party:0 "KKE"
- GRE_proletarianism_party_long:0 "Kommounistikó Kómma Elládas"
- GRE_liberalism_party:0 "Laïkòn Kómma"
- GRE_rexism_party:0 "EEE"
- GRE_rexism_party_long:0 "Ethniki Enosis Ellados"
  LIT_absolutism_party:0 "LTS"
  LIT_absolutism_party_long:0 "Lietuviu Tautininku Sajunga"
  LIT_rexism_party:0 "Geležinis Vilkas"

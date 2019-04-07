@@ -1059,8 +1059,8 @@ FRA = {
 	color_ui = rgb { 74 147 255 }
 }
 AQU = {
-	color = rgb { 158 94 79 }
-	color_ui = rgb { 158 94 79 }
+	color = rgb { 90 115 137 }
+	color_ui = rgb { 90 115 137 }
 }
 PNG = {
 	color = rgb { 80 74 86 }

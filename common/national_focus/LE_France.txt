@@ -14,7 +14,7 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 2600 }
 	focus = {
 		id = FRA_THE_KINGDOM_OF_FRANCE
-		icon = GFX_goal_generic_support_democracy
+		icon = GFX_goal_france_monarchy
 		x = 28
 		y = 0
 		cost = 1
@@ -40,7 +40,17 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			country_event = { id = le_france.11 }
+			if = {
+				limit = {
+					tag = FRA
+					OR = {
+						has_government = absolutism
+						has_government = royalism
+						has_government = rexism
+					}
+				}
+				retire_country_leader = yes
+			}
 		}
 	}
 	focus = {
@@ -66,32 +76,20 @@ focus_tree = {
 		x = 13
 		y = 2
 		cost = 6
-		available = {
-			has_country_flag = FRA_COMMUNIST
-		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			random_list = {
-				0 = {
-					country_event = { id = le_france.13 days = 3 }
-				}
-				100 = {
-					set_politics = { ruling_party = collectivism }
-					set_political_party = {
-						ideology = collectivism
-						popularity = 50
-					}
-					set_cosmetic_tag = FRA_COMMUNE
-				}
+			country_event = { id = le_france.14 }
+			remove_ideas = {
+				FRA_ideological_surge
 			}
 		}
 	}
 
 	focus = {
 		id = FRA_ARMEE_POPULAIRE
-		icon = GFX_goal_unknown
+		icon = GFX_focus_red_army
 		prerequisite = { focus = FRA_THE_FOURTH_REVOLUTION }
 		x = 3
 		y = 3
@@ -100,12 +98,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = FRA_armee_populaire
 		}
 	}
 	focus = {
 		id = FRA_FOCUS_ON_INFANTRY
-		icon = GFX_goal_unknown
+		icon = GFX_goal_army_guy_2
 		prerequisite = { focus = FRA_ARMEE_POPULAIRE }
 		mutually_exclusive = { focus = FRA_FOCUS_ON_ARMOR }
 		x = 2
@@ -115,12 +113,16 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 	focus = {
 		id = FRA_INCREASE_SMALL_ARM_PRODUCTION
-		icon = GFX_goal_unknown
+		icon = GFX_Renewed_Arms
 		prerequisite = { focus = FRA_FOCUS_ON_INFANTRY }
 		x = 2
 		y = 5
@@ -129,12 +131,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = FRA_infantry_quantity
 		}
 	}
 	focus = {
 		id = FRA_IMPROVE_COMMAND_STRUCTURE
-		icon = GFX_goal_unknown
+		icon = GFX_goal_officers
 		prerequisite = { focus = FRA_FOCUS_ON_INFANTRY }
 		x = 0
 		y = 5
@@ -143,12 +145,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = FRA_improved_command_structure
 		}
 	}
 	focus = {
 		id = FRA_CONSCRIPTION_CAMPAIGN
-		icon = GFX_goal_unknown
+		icon = GFX_Focus_Conscription_Act
 		prerequisite = { focus = FRA_IMPROVE_COMMAND_STRUCTURE }
 		prerequisite = { focus = FRA_INCREASE_SMALL_ARM_PRODUCTION }
 		x = 2
@@ -158,12 +160,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = FRA_conscription_campaign
 		}
 	}
 	focus = {
 		id = FRA_MOBILIZE_THE_INFANTRY
-		icon = GFX_goal_unknown
+		icon = GFX_goal_national_mobilization
 		prerequisite = { focus = FRA_CONSCRIPTION_CAMPAIGN }
 		x = 2
 		y = 7
@@ -172,12 +174,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = FRA_mobilize_the_infantry
 		}
 	}
 	focus = {
 		id = FRA_FOCUS_ON_ARMOR
-		icon = GFX_goal_unknown
+		icon = GFX_Tanks_Across_the_Border
 		prerequisite = { focus = FRA_ARMEE_POPULAIRE }
 		mutually_exclusive = { focus = FRA_FOCUS_ON_INFANTRY }
 		x = 4
@@ -187,12 +189,16 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = armor
+			}
 		}
 	}
 	focus = {
 		id = FRA_MASS_PRODUCTION
-		icon = GFX_goal_unknown
+		icon = GFX_Mass_Production
 		prerequisite = { focus = FRA_FOCUS_ON_ARMOR }
 		mutually_exclusive = { focus = FRA_QUALITY_OVER_QUANTITY }
 		x = 4
@@ -202,12 +208,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = FRA_tank_quantity
 		}
 	}
 	focus = {
 		id = FRA_INCREASE_ARMOR_RESEARCH_SPENDING
-		icon = GFX_goal_unknown
+		icon = GFX_Focus_Military_Mobilisation
 		prerequisite = { focus = FRA_MASS_PRODUCTION focus = FRA_QUALITY_OVER_QUANTITY }
 		x = 4
 		y = 6
@@ -216,12 +222,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = FRA_increased_armor_spending
 		}
 	}
 	focus = {
 		id = FRA_INVEST_IN_OIL
-		icon = GFX_goal_unknown
+		icon = GFX_goal_further_oil
 		prerequisite = { focus = FRA_MASS_PRODUCTION focus = FRA_QUALITY_OVER_QUANTITY }
 		x = 6
 		y = 6
@@ -230,12 +236,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = FRA_invest_in_oil
 		}
 	}
 	focus = {
 		id = FRA_ELITE_ARMOR_SQUADS
-		icon = GFX_goal_unknown
+		icon = GFX_Peoples_Guard
 		prerequisite = { focus = FRA_INVEST_IN_OIL }
 		prerequisite = { focus = FRA_INCREASE_ARMOR_RESEARCH_SPENDING }
 		x = 4
@@ -245,12 +251,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = FRA_elite_armor_squads
 		}
 	}
 	focus = {
 		id = FRA_QUALITY_OVER_QUANTITY
-		icon = GFX_goal_unknown
+		icon = GFX_Officers_Command
 		prerequisite = { focus = FRA_FOCUS_ON_ARMOR }
 		mutually_exclusive = { focus = FRA_MASS_PRODUCTION }
 		x = 6
@@ -260,7 +266,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = FRA_improved_armor
 		}
 	}
 
@@ -269,24 +275,28 @@ focus_tree = {
 	#########################
 	focus = {
 		id = FRA_DOMINANCE_OF_THE_PARTY
-		icon = GFX_goal_unknown
+		icon = GFX_focus_proletarianism
 		prerequisite = { focus = FRA_THE_FOURTH_REVOLUTION }
 		mutually_exclusive = { focus = FRA_THE_INDEPENDENT_COMMUNES focus = FRA_DEMOCRACY_IN_THE_WORKPLACE }
 		x = 13
 		y = 3
 		cost = 6
+		available = {
+			has_government = proletarianism
+		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			add_ideas = {
-				Proletariet_Influence
+			add_timed_idea = {
+				idea = rise_of_the_proletariat_party
+				days = 365
 			}
 		}
 	}
 	focus = {
 		id = FRA_RED_TERROR
-		icon = GFX_goal_unknown
+		icon = GFX_red_terror
 		prerequisite = { focus = FRA_DOMINANCE_OF_THE_PARTY }
 		x = 12
 		y = 4
@@ -295,12 +305,14 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = {
+				FRA_red_terror
+			}
 		}
 	}
 	focus = {
 		id = FRA_THE_NATIONAL_CONVENTION
-		icon = GFX_goal_unknown
+		icon = GFX_goal_government_icon
 		prerequisite = { focus = FRA_DOMINANCE_OF_THE_PARTY }
 		x = 14
 		y = 4
@@ -309,12 +321,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_stability = 0.10
+			remove_ideas = FRA_crumbling_nation
 		}
 	}
 	focus = {
 		id = FRA_CATCH_THE_NOBLES
-		icon = GFX_goal_unknown
+		icon = GFX_Crush_the_Rebellion
 		prerequisite = { focus = FRA_RED_TERROR }
 		x = 12
 		y = 5
@@ -323,12 +335,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			remove_ideas = FRA_corrupt_government
 		}
 	}
 	focus = {
 		id = FRA_THE_COMMITEE_OF_PUBLIC_SAFETY
-		icon = GFX_goal_unknown
+		icon = GFX_focus_trade_unions
 		prerequisite = { focus = FRA_THE_NATIONAL_CONVENTION }
 		x = 14
 		y = 5
@@ -337,13 +349,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_stability = 0.10
-			add_manpower = 5
+			add_ideas = FRA_COMMITEE_OF_PUBLIC_SAFETY
 		}
 	}
 	focus = {
 		id = FRA_THE_KINGS_PROCESS
-		icon = GFX_goal_unknown
+		icon = GFX_Purge_the_Monarchy
 		prerequisite = { focus = FRA_THE_COMMITEE_OF_PUBLIC_SAFETY }
 		prerequisite = { focus = FRA_CATCH_THE_NOBLES }
 		x = 13
@@ -353,7 +364,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = FRA_monarchism_banned
 		}
 	}
 	focus = {
@@ -416,7 +427,7 @@ focus_tree = {
 		id = FRA_DEPOSE_OF_BURGUNDY
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_MARCH_TROOPS_INTO_NORMANDY }
-		prerequisite = { focus = FRA_INTEGRATE_AQUITAINE }
+		prerequisite = { focus = FRA_ANNEX_AQUITAINE }
 		x = 13
 		y = 10
 		cost = 6
@@ -664,22 +675,28 @@ focus_tree = {
 	#########################
 	focus = {
 		id = FRA_THE_INDEPENDENT_COMMUNES
-		icon = GFX_goal_unknown
+		icon = GFX_focus_collectivism
 		prerequisite = { focus = FRA_THE_FOURTH_REVOLUTION }
 		mutually_exclusive = { focus = FRA_DEMOCRACY_IN_THE_WORKPLACE focus = FRA_DOMINANCE_OF_THE_PARTY }
 		x = 9
 		y = 3
 		cost = 6
+		available = {
+			has_government = collectivism
+		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_timed_idea = {
+				idea = rise_of_the_collectivist_party
+				days = 365
+			}
 		}
 	}
 	focus = {
 		id = FRA_THE_ASSEMBLY_OF_THE_COMMUNES
-		icon = GFX_goal_unknown
+		icon = GFX_goal_commune_politics
 		prerequisite = { focus = FRA_THE_INDEPENDENT_COMMUNES }
 		x = 9
 		y = 4
@@ -688,12 +705,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			remove_ideas = FRA_corrupt_government
 		}
 	}
 	focus = {
 		id = FRA_LAND_REDISTRIBUTION
-		icon = GFX_goal_unknown
+		icon = GFX_focus_farms
 		prerequisite = { focus = FRA_THE_ASSEMBLY_OF_THE_COMMUNES }
 		x = 8
 		y = 5
@@ -702,12 +719,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = FRA_land_redistrubution
 		}
 	}
 	focus = {
 		id = FRA_THE_END_OF_OPPRESSION
-		icon = GFX_goal_unknown
+		icon = GFX_goal_revolution_tools
 		prerequisite = { focus = FRA_THE_ASSEMBLY_OF_THE_COMMUNES }
 		x = 10
 		y = 5
@@ -716,12 +733,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = FRA_freed_the_workers
 		}
 	}
 	focus = {
 		id = FRA_COLLECTIVE_OWNERSHIP
-		icon = GFX_goal_unknown
+		icon = GFX_focus_trade_unions
 		prerequisite = { focus = FRA_THE_END_OF_OPPRESSION }
 		prerequisite = { focus = FRA_LAND_REDISTRIBUTION }
 		x = 9
@@ -731,12 +748,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			remove_ideas = FRA_crumbling_nation
 		}
 	}
 	focus = {
 		id = FRA_LABOR_VOUCHERS
-		icon = GFX_goal_unknown
+		icon = GFX_labour_voucher_focus
 		prerequisite = { focus = FRA_COLLECTIVE_OWNERSHIP }
 		x = 9
 		y = 7
@@ -745,12 +762,15 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_timed_idea = {
+				idea = FRA_labor_vouchers
+				days = 182
+			}
 		}
 	}
 	focus = {
 		id = FRA_PREPARE_THE_INSURECTIONS
-		icon = GFX_goal_unknown
+		icon = GFX_ROM_strikes
 		prerequisite = { focus = FRA_LABOR_VOUCHERS }
 		x = 9
 		y = 8
@@ -759,7 +779,11 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_political_power = 50
+			add_timed_idea = {
+				idea = FRA_preparing_insurections
+				days = 90
+			}
 		}
 	}
 	focus = {
@@ -1150,22 +1174,28 @@ focus_tree = {
 	#Naturalism
 	focus = {
 		id = FRA_DEMOCRACY_IN_THE_WORKPLACE
-		icon = GFX_goal_unknown
+		icon = GFX_focus_naturalism
 		prerequisite = { focus = FRA_THE_FOURTH_REVOLUTION }
 		mutually_exclusive = { focus = FRA_THE_INDEPENDENT_COMMUNES focus = FRA_DOMINANCE_OF_THE_PARTY }
 		x = 17
 		y = 3
 		cost = 6
+		available = {
+			has_government = naturalism
+		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_timed_idea = {
+				idea = rise_of_the_naturalist_party
+				days = 365
+			}
 		}
 	}
 	focus = {
 		id = FRA_STRIP_THE_TITLES
-		icon = GFX_goal_unknown
+		icon = GFX_goal_new_treaty
 		prerequisite = { focus = FRA_DEMOCRACY_IN_THE_WORKPLACE }
 		x = 16
 		y = 4
@@ -1174,12 +1204,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			remove_ideas = FRA_corrupt_government
 		}
 	}
 	focus = {
 		id = FRA_DISTRIBUTE_LAND
-		icon = GFX_goal_unknown
+		icon = GFX_focus_farms
 		prerequisite = { focus = FRA_STRIP_THE_TITLES }
 		x = 16
 		y = 5
@@ -1188,12 +1218,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			add_ideas = FRA_land_redistrubution
 		}
 	}
 	focus = {
 		id = FRA_LEGALIZE_THE_CGT
-		icon = GFX_goal_unknown
+		icon = GFX_focus_red_constitution
 		prerequisite = { focus = FRA_DEMOCRACY_IN_THE_WORKPLACE }
 		x = 18
 		y = 4
@@ -1202,12 +1232,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			remove_ideas = FRA_crumbling_nation
 		}
 	}
 	focus = {
 		id = FRA_EXPAND_UNIONS
-		icon = GFX_goal_unknown
+		icon = GFX_Workers_Paradise
 		prerequisite = { focus = FRA_LEGALIZE_THE_CGT }
 		x = 18
 		y = 5
@@ -1221,25 +1251,11 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_AGRARIAN_UNIONS
-		icon = GFX_goal_unknown
+		icon = GFX_goal_agriculture
 		prerequisite = { focus = FRA_DISTRIBUTE_LAND }
 		prerequisite = { focus = FRA_EXPAND_UNIONS }
 		x = 17
 		y = 6
-		cost = 6
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = FRA_CONTACT_OTHER_SYNDICATES
-		icon = GFX_goal_unknown
-		prerequisite = { focus = FRA_AGRARIAN_UNIONS }
-		x = 17
-		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2431,7 +2447,7 @@ focus_tree = {
 	#Extremeist
 	focus = {
 		id = FRA_PRESERVE_THE_MONARCHY
-		icon = GFX_goal_france_monarchy
+		icon = GFX_focus_monarchy
 		prerequisite = { focus = FRA_CONTINUE_THE_MONARCHY }
 		mutually_exclusive = { focus = FRA_PLEASE_THE_PEOPLE focus = FRA_THE_FOURTH_REVOLUTION focus = FRA_NATIONALISTIC_SURGE }
 		x = 38
@@ -2446,7 +2462,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_NATIONALISTIC_SURGE
-		icon = GFX_goal_france_monarchy
+		icon = GFX_nationalist_victory
 		prerequisite = { focus = FRA_EXPEL_THE_KING }
 		mutually_exclusive = { focus = FRA_PLEASE_THE_PEOPLE focus = FRA_THE_FOURTH_REVOLUTION focus = FRA_PRESERVE_THE_MONARCHY }
 		x = 44
@@ -2618,7 +2634,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_STRONGER_THAN_A_KING
-		icon = GFX_goal_unknown
+		icon = GFX_focus_FRA_eagle
 		prerequisite = { focus = FRA_NATIONALISTIC_SURGE }
 		x = 44
 		y = 3

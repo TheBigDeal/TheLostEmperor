@@ -1,6 +1,114 @@
 ideas = {
 
 country = {
+	FRA_infantry_quantity = {
+        on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_infantry_quantity"}
+        picture = country_focus_efficency
+        equipment_bonus = {
+            infantry_equipment = {
+                build_cost_ic = -0.1
+                instant = yes
+            }
+        }
+    }
+	FRA_tank_quantity = {
+        on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_tank_quantity"}
+        picture = country_focus_efficency
+        equipment_bonus = {
+            armor = {
+                build_cost_ic = -0.1
+                instant = yes
+            }
+        }
+    }
+	FRA_conscription_campaign = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_conscription_campaign"}
+		picture = GFX_idea_YUG_orthodox_church_support
+		modifier = {
+			conscription_factor = 0.2
+		}
+	}
+	FRA_improved_command_structure = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_improved_command_structure"}
+		picture = GFX_idea_YUG_orthodox_church_support
+		modifier = {
+			max_command_power = 20
+			command_power_gain_mult = 0.15
+			army_org_factor = 0.1
+		}
+	}
+	FRA_increased_armor_spending = {
+        FRA_increased_armor_spending = {log = "[GetDateText]: [Root.GetName]: add idea FRA_tank_quantity"}
+        picture = country_focus_efficency
+        equipment_bonus = {
+            armor = {
+                build_cost_ic = -0.05
+                instant = yes
+            }
+        }
+    }
+	FRA_mobilize_the_infantry = {
+        FRA_increased_armor_spending = {log = "[GetDateText]: [Root.GetName]: add idea FRA_mobilize_the_infantry"}
+        picture = country_focus_efficency
+        equipment_bonus = {
+            motorized_equipment = {
+                build_cost_ic = -0.15
+                instant = yes
+            }
+        }
+		modifier = {
+			army_speed_factor = 0.05
+		}
+    }
+	FRA_elite_armor_squads = {
+        FRA_increased_armor_spending = {log = "[GetDateText]: [Root.GetName]: add idea FRA_mobilize_the_infantry"}
+        picture = country_focus_efficency
+		modifier = {
+			army_armor_speed_factor = 0.1
+			army_armor_attack_factor = 0.15
+			army_armor_defence_factor = 0.1
+		}
+    }
+	FRA_labor_vouchers = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_invest_in_oil"}
+		picture = GFX_idea_YUG_orthodox_church_support
+		modifier = {
+			production_speed_buildings_factor = 0.1
+			consumer_goods_factor = -0.05
+			industry_repair_factor = 0.25
+		}
+	}
+	FRA_monarchism_banned = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_invest_in_oil"}
+		picture = GFX_idea_YUG_orthodox_church_support
+		modifier = {
+			absolutism_drift = -0.10
+			royalism_drift = -0.10
+			rexism_drift = -0.10
+		}
+	}
+	FRA_preparing_insurections = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_invest_in_oil"}
+		picture = GFX_idea_YUG_orthodox_church_support
+		modifier = {
+			subversive_activites_upkeep = -0.1
+		}
+	}
+	FRA_invest_in_oil = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_invest_in_oil"}
+		picture = GFX_idea_YUG_orthodox_church_support
+		modifier = {
+			production_oil_factor = 0.1
+			fuel_gain_factor = 0.15
+		}
+	}
+	FRA_improved_armor = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_state_of_the_art_armor"}
+		picture = GFX_idea_YUG_orthodox_church_support
+		modifier = {
+			army_armor_attack_factor = 0.1
+		}
+	}
 	FRANKISH_IDEALS = {
 		picture = GFX_idea_YUG_orthodox_church_support
 		modifier = {
@@ -8,6 +116,44 @@ country = {
 			#mobilization_laws_cost_factor = -0.1
 			send_volunteer_size = 2
 			conscription_factor = 0.15
+		}
+	}
+	FRA_armee_populaire = {
+		picture = GFX_idea_YUG_orthodox_church_support
+		modifier = {
+			conscription_factor = 0.05
+			army_morale_factor = 0.1
+		}
+	}
+	FRA_land_redistrubution = {
+		picture = GFX_idea_YUG_orthodox_church_support
+		modifier = {
+			monthly_population = 0.1
+		}
+	}
+	FRA_COMMITEE_OF_PUBLIC_SAFETY = {
+		picture = GFX_idea_YUG_orthodox_church_support
+		modifier = {
+			monthly_population = 0.12
+			conscription_factor = 0.1
+			industrial_capacity_factory = 0.1
+			local_resources_factor = 0.10
+		}
+	}
+	FRA_freed_the_workers = {
+		picture = GFX_idea_YUG_orthodox_church_support
+		modifier = {
+			production_factory_max_efficiency_factor = 0.1
+			consumer_goods_factor = -0.05
+			industrial_capacity_factory = 0.1
+		}
+	}
+	FRA_red_terror = {
+		picture = GFX_idea_YUG_orthodox_church_support
+		modifier = {
+			drift_defence_factor = 0.25
+			political_power_factor = 0.1
+			political_advisor_cost_factor = -0.1
 		}
 	}
 	FRA_pure_army = {
@@ -23,18 +169,29 @@ country = {
 		picture = GFX_idea_ENG_the_war_to_end_all_wars
 		modifier = {
 			army_morale_factor = -0.4
+			encryption_factor = -0.2
+			conscription = -0.2
 		}
 	}
 	FRA_ideological_surge = {
 		picture = GFX_idea_trotskyite_plot_purged
 		modifier = {
 			drift_defence_factor = -0.25
+			collectivism_drift = 0.01
+			proletarianism_drift = 0.01
+			naturalism_drift = 0.01
+			labryscism_drift = 0.01
+			liberalism_drift = 0.01
+			conservatism_drift = 0.01
 		}
 	}
 	FRA_corrupt_government = {
 		picture = GFX_idea_chi_hyper_inflation5
 		modifier = {
 			army_org = -5
+			economy_cost_factor = 0.25
+			political_power_gain = -0.5
+			subversive_activites_upkeep = 0.2
 		}
 	}
 	HOLY_ROMAN_PRETENDER = {

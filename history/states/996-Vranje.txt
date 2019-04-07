@@ -1,0 +1,25 @@
+state={
+	id=996
+	name="STATE_996"
+	
+	history={
+		owner = SER
+		victory_points = {
+			11857 2 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 3
+		}
+		add_core_of = SER
+
+	}
+	
+	provinces={
+		11857 11868 
+	}
+	manpower=235132
+	state_category = city
+	buildings_max_level_factor=1.000
+}

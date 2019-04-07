@@ -54,10 +54,22 @@ country = {
 				factor = 0
 			}
 	}
-	Proletariet_Influence = {
+	rise_of_the_collectivist_party = {
 		picture = Hungarian_Monarchy
 		modifier = {
-			proletarianism_drift_drift = 0.02
+			collectivism_drift = 0.02
+		}
+	}
+	rise_of_the_naturalist_party = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			naturalism_drift = 0.02
+		}
+	}
+	rise_of_the_proletariat_party = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			proletarianism_drift = 0.02
 		}
 	}
 	Monarchist_Propaganda = {

@@ -898,7 +898,6 @@
  STATE_982:0 "Outer Galicia"
  STATE_983:0 "Navarra"
  STATE_984:0 "Lower Sudetenland"
- 
  STATE_985:0 "Italian Tanganica"
  STATE_986:0 "Italian Yemen"
  STATE_987:0 "Italian Horn"
@@ -910,3 +909,4 @@
  STATE_993:0 "Maasai"
  STATE_994:0 "Nandi"
  STATE_995:0 "Kisumu"
+ STATE_996:0 "Vranje"

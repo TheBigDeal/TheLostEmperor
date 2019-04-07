@@ -1,6 +1,127 @@
 spriteTypes = {	
 
-	#### Mod
+	###########################
+	#########   Mod   #########
+	###########################
+	SpriteType = {
+	name = "GFX_focus_FRA_eagle"
+	texturefile = "gfx/interface/goals/focus_FRA_eagle.tga"			
+	}
+	SpriteType = {
+	name = "GFX_focus_monarchy"
+	texturefile = "gfx/interface/goals/focus_monarchy.tga"			
+	}
+	SpriteType = {
+	name = "GFX_nationalist_victory"
+	texturefile = "gfx/interface/goals/nationalist_victory.tga"			
+	}
+	
+	SpriteType = {
+	name = "GFX_Peoples_Guard"
+	texturefile = "gfx/interface/goals/Peoples_Guard.tga"			
+	}
+	SpriteType = {
+	name = "GFX_goal_national_mobilization"
+	texturefile = "gfx/interface/goals/goal_national_mobilization.tga"			
+	}
+	SpriteType = {
+	name = "GFX_labour_voucher_focus"
+	texturefile = "gfx/interface/goals/labour_voucher_focus.tga"			
+	}
+	SpriteType = {
+	name = "GFX_ROM_strikes"
+	texturefile = "gfx/interface/goals/ROM_strikes.tga"			
+	}
+	SpriteType = {
+	name = "GFX_Purge_the_Monarchy"
+	texturefile = "gfx/interface/goals/Purge_the_Monarchy.tga"			
+	}
+	
+	
+	SpriteType = {
+	name = "GFX_goal_further_oil"
+	texturefile = "gfx/interface/goals/goal_Further_Oil.tga"			
+	}
+	SpriteType = {
+	name = "GFX_Focus_Military_Mobilisation"
+	texturefile = "gfx/interface/goals/Focus_Military_Mobilisation.tga"			
+	}
+	SpriteType = {
+	name = "GFX_goal_officers"
+	texturefile = "gfx/interface/goals/goal_officers.tga"			
+	}
+	SpriteType = {
+	name = "GFX_Focus_Conscription_Act"
+	texturefile = "gfx/interface/goals/Focus_Conscription_Act.tga"			
+	}
+	SpriteType = {
+	name = "GFX_Renewed_Arms"
+	texturefile = "gfx/interface/goals/Renewed_Arms.tga"			
+	}
+	SpriteType = {
+	name = "GFX_Officers_Command"
+	texturefile = "gfx/interface/goals/Officers_Command.tga"			
+	}
+	SpriteType = {
+	name = "GFX_Mass_Production"
+	texturefile = "gfx/interface/goals/Mass_Production.tga"			
+	}
+	SpriteType = {
+	name = "GFX_Tanks_Across_the_Border"
+	texturefile = "gfx/interface/goals/Tanks_Across_the_Border.tga"			
+	}
+	SpriteType = {
+	name = "GFX_focus_red_army"
+	texturefile = "gfx/interface/goals/focus_red_army.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_agriculture"
+	texturefile = "gfx/interface/goals/goal_agriculture.dds"			
+	}
+	SpriteType = {
+	name = "GFX_Workers_Paradise"
+	texturefile = "gfx/interface/goals/Workers_Paradise.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_red_constitution"
+	texturefile = "gfx/interface/goals/focus_red_constitution.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_trade_unions"
+	texturefile = "gfx/interface/goals/focus_trade_unions.dds"			
+	}
+	SpriteType = {
+	name = "GFX_Crush_the_Rebellion"
+	texturefile = "gfx/interface/goals/Crush_the_Rebellion.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_commune_politics"
+	texturefile = "gfx/interface/goals/goal_commune_politics.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_government_icon"
+	texturefile = "gfx/interface/goals/goal_government_icon.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_farms"
+	texturefile = "gfx/interface/goals/focus_farms.tga"			
+	}
+	SpriteType = {
+	name = "GFX_red_terror"
+	texturefile = "gfx/interface/goals/red_terror.tga"			
+	}
+	SpriteType = {
+	name = "GFX_focus_collectivism"
+	texturefile = "gfx/interface/goals/focus_collectivism.tga"			
+	}
+	SpriteType = {
+	name = "GFX_focus_proletarianism"
+	texturefile = "gfx/interface/goals/focus_proletarianism.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_naturalism"
+	texturefile = "gfx/interface/goals/focus_naturalism.tga"			
+	}
 	SpriteType = {
 	name = "GFX_goal_purge_dissenters"
 	texturefile = "gfx/interface/goals/Purge_Dissenters.dds"			

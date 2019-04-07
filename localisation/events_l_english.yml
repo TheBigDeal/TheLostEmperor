@@ -5,7 +5,7 @@
  #Mod Options
  playerevents.1.t:0 "The Lost Emperor"
  playerevents.1.d:0 "Make a Mod Description."
- playerevents.1.a:0 "You Lazy Fuck"
+ playerevents.1.a:0 "Ok"
  playerevents.1.b:0 "Mod Options (You May Do This Later Via Decision)"
  playerevents.2.t:0 "Mod Options"
  playerevents.2.d:0 "Edit Options."
@@ -19,9 +19,15 @@
  #France Events
  le_france.11.t:0 "The French Elections"
  le_france.11.d:0 "The king has stepped down, we must appoint a new government leader.
- le_france.11.a:0 "Elect the Communist"
- le_france.11.b:0 ""
- le_france.11.c:0 ""
+ le_france.11.a:0 "Elect Marcel Cachin (Collectivist)"
+ le_france.11.b:0 "Elect Auguste Champetier De Ribes (Liberal)"
+ le_france.11.c:0 "Elect Jacques Doriot (Labryscist)"
+ le_france.14.t:0 "Peoples Party of France Elections"
+ le_france.14.d:0 "The people have chosen a socialist revolution! It is now our duty to represent them properly. Many workers beleive in very limited government interaction, while other beleive the state should control all. Should we follow the ways of Marx or make our own path?"
+ le_france.14.1:0 "Elect Jacques Duclos (Collectivist)"
+ le_france.14.2:0 "Elect Benoît Frachon (Proletariat)"
+ le_france.14.3:0 "Elect Sebastien Faure (Naturalist)"
+ 
  #Russia Unrest
  le_russia_unrest.1.t:0 "[GEO.GetName] Declares Independence"
  le_russia_unrest.1.d:0 "Today a letter has received from [GEO.GetLeader], The so called "Terror of the Caucus" he has declared independence from us, and is claiming to be the leader of this newly founded rebellion. He always knew he was trouble and has been terrorizing the region for months, advocating against the soviets for his special form of collectivism, so called "Stalinism". How pathetic, naming a whole ideology after yourself. He demands a one year truce is signed to assure we do not attack his newly found country."

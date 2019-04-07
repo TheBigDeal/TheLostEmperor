@@ -44,10 +44,13 @@
  ALASH_AUTONOMY_conservatism:0 "Alash Autonomy"
  ALASH_AUTONOMY_liberlaism:0 "Alash Autonomy"
 
- Centroamerica_absolutism:0 "Viceroyality of Centroamerica"
- Centroamerica_royalism:0 "Viceroyality of Centroamerica"
- Centroamerica_rexism:0 "Viceroyality of Centroamerica"
-
+ Centroamerica_absolutism:0 "Kingdom of Centroamerica"
+ Centroamerica_royalism:0 "Kingdom of Centroamerica"
+ Centroamerica_rexism:0 "Kingdom of Centroamerica"
+ Centroamerica_liberalism:0 "United States of Centroamerica"
+ Centroamerica_conservatism:0 "United States of Centroamerica"
+ Centroamerica_socialism:0 "United States of Centroamerica"
+ 
  ANGEVIN_EMPIRE:0 "Angevin Empire"
  ANGEVIN_EMPIRE_royalism:0 "Angevin Empire"
  ANGEVIN_EMPIRE_absolutism:0 "Angevin Empire"

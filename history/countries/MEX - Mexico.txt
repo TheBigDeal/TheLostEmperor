@@ -16,12 +16,12 @@ set_convoys = 45
 set_politics = {
 
 	parties = {
-		despotism = { 
+		absolutism = { 
 			popularity = 100
 		}
 	}
 	
-	ruling_party = despotism
+	ruling_party = absolutism
 	last_election = "1934.7.1"
 	election_frequency = 72
 	elections_allowed = no

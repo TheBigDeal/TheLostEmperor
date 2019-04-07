@@ -1,4 +1,7 @@
 ﻿l_english:
+ #TRAITS
+ #######################################
+ terror_of_the_caucus:0 "Terror Of The Caucus"
  #GENERIC
  #######################################
  closed_borders:0 "Closed Borders"
@@ -16,6 +19,9 @@
  TUR_internal_instability:0 "Internal Instability"
  #FRANCE
  ########################################
+ FRA_COMMITEE_OF_PUBLIC_SAFETY:0 "Commitee Of Public Safety"
+ FRA_land_redistrubution:0 "Land Redistribution"
+ FRA_freed_the_workers:0 "Freed The Workers"
  FRA_rexism_drift:0 "Extreme Monarch"
  FRA_labryscist_drift:0 "Labryscist Leader"
  FRA_corrupt_government:0 "Corrupt Government"
@@ -26,8 +32,24 @@
  FRA_deport_political_opposition:0 "Deported Political Opposition"
  FRA_deport_minorities:0 "Deporting Minorities"
  FRA_deport_immigrants:0 "Deporting Immigrants"
+ FRA_red_terror:0 "Proletariat Party Dominance"
+ FRA_armee_populaire:0 "Armee Populaire"
+ FRA_tank_quantity:0 "Increased Tank Production"
+ FRA_infantry_quantity:0 "Increased Small Arms Production"
+ FRA_conscription_campaign:0 "Conscription Campaign"
+ FRA_labor_vouchers:0 "Labor Vouchers"
+ FRA_monarchism_banned:0 "Monarchism Banned"
+ FRA_elite_armor_squads:0 "Elite Armor Squads"
+ FRA_mobilize_the_infantry:0 "Mobilized Infantry"
+ FRA_increased_armor_spending:0 "Increased Armor Spending"
+ FRA_improved_command_structure:0 "Improved Command Structure"
+ FRA_invest_in_oil:0 "Invested In Oil"
+ FRA_preparing_insurections:0 "Preparing Insurrections"
  #IDEOLOGY STUFF
- ########################################`
+ ########################################
+ rise_of_the_collectivist_party:0 "Rise of the Collectivist Party"
+ rise_of_the_naturalist_party:0 "Rise of the Naturalist Party"
+ rise_of_the_proletariat_party:0 "Rise of the Proletariat Party"
  Religious_Movements:0 "Religous Movements"
  Rexist_Drift:0 "Rexism Drift"
  #HRE

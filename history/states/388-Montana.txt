@@ -7,12 +7,12 @@ state={
 	}
 
 	history={
-		owner = UPP
+		owner = LOU
 		buildings = {
 			infrastructure = 4
 
 		}
-		add_core_of = UPP
+		add_core_of = LOU
 		victory_points = {
 			4860 1 
 		}
