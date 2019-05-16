@@ -1,0 +1,26 @@
+
+state={
+	id=999
+	name="STATE_999"
+
+	history={
+		owner = VOJ
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			614 2 
+		}
+		add_core_of = VOJ
+
+	}
+
+	provinces={
+		614 3614 6643 11787 
+	}
+	manpower=2153432
+	buildings_max_level_factor=1.000
+}

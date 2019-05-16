@@ -735,7 +735,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_GROSSDEUTCHLAND
-		icon = GFX_focus_grossdeutschland
+		icon = GFX_unknown
 		prerequisite = { focus = GER_ESTABLISH_REICHSTAG focus = GER_REWRITE_CONSTITUTION }
 		mutually_exclusive = { focus = GER_KLIENDEUTCHLAND }
 		x = 17
@@ -847,7 +847,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_IGNITE_THE_FIRES_OF_REVOLUTION!
+		id = GER_IGNITE_THE_FIRES_OF_REVOLUTION
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_CONTACT_HUNGARIAN_REVOLUTIONARIES }
 		x = 18

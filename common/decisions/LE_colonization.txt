@@ -2,22 +2,37 @@ LE_colonization_cat = {
 
 	LE_declare_colonial_war = {
 		icon = generic_army_support
+		cost = 30
 		available = {
 	
 		}
+		target_trigger = {
+            FROM = {
+                AND = {
+                    any_neighbor_country = {
+						tag = ROOT
+					}
+					has_idea = african_tribe
+                }
+            }
+        }
 		visible = {
-			# any_neighbor_country = {
-				# limit = {
-					# has_idea = african_tribe
-				# }
-				# is_neighbor_of = PREV
-			# }
+			any_state = {
+				is_owned_by = ROOT
+				is_on_continent = africa
+				is_coastal = yes
+			}
+			NOT = { has_idea = african_tribe }
 		}
 		ai_will_do = {
 			factor = 20
 		}
-		complete_effect = {
-
+		days_remove = 7
+		remove_effect = {
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}
 		}
 	}
 }

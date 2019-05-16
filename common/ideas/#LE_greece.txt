@@ -1,20 +1,200 @@
 ideas = {
 
 country = {
-	brutal_civil_war = {
-		picture = generic_communist_army
+	gre_alexanders_legacy = {
+		picture = chi_hyper_inflation5
 		modifier = {
-			conscription = 0.4
-			political_power_gain = -0.8
-			offence = 99
-			max_dig_in = 0.2
+			justify_war_goal_time = -0.50
+			generate_wargoal_tension = -0.50
+			war_support_factor = 0.10
+			conscription = 0.01
 		}
 	}
-	SPT_legacy_of_leonidas = {
-		picture = generic_communist_army
+	gre_young_hoplite_association = {
+		picture = chi_hyper_inflation5
 		modifier = {
-			army_org = 5
-			offence = 0.5
+			conscription = 0.02
+		}
+	}
+	gre_children_of_ares = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			army_attack_factor = 0.05
+			army_defence_factor = 0.05
+			war_support_factor = 0.10
+		}
+	}
+	gre_centralization = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			political_power_gain = 0.10
+			stability_factor = -0.05
+		}
+	}
+	gre_abolished_parliament = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			political_power_gain = 0.05
+			stability_factor = 0.05
+		}
+	}
+	gre_devolution = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			political_power_gain = -0.1
+			stability_factor = 0.10
+			partisan_effect = 0.1
+		}
+	}
+	gre_big_brother = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			encryption_factor = 1
+			decryption_factor = 1
+			stability_factor = -0.05
+		}
+	}
+	gre_greek_socialism = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			stability_factor = 0.05
+			political_power_gain = -0.05
+		}
+	}
+	gre_hellenic_socialist_republic = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			war_support_factor = 0.10
+			industrial_capacity_factory = 0.1
+		}
+	}
+	gre_workers_militias = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			conscription = 0.02
+			army_morale_factor = 0.1
+			max_planning = -0.10
+			army_org_factor = -0.10
+		}
+	}
+	gre_secularization = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			political_power_gain = 0.10
+			war_support_factor = -0.05
+		}
+	}
+	gre_nationalization = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			production_speed_buildings_factor = -0.1
+			production_speed_buildings_factor = 0.1
+			consumer_goods_factor = -0.10
+		}
+	}
+	gre_peoples_congress = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			stability_factor = 0.05
+			political_power_gain = 0.10
+		}
+	}
+	gre_a_free_greece = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			stability_factor = 0.10
+			political_power_gain = 0.15
+		}
+	}
+	gre_laissez_faire_economy = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			min_export = 0.1
+			consumer_goods_factor = -0.10
+			stability_factor = -0.10
+		}
+	}
+	gre_education_reform = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			research_speed_factor = 0.05
+		}
+	}
+	gre_restrict_unions = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			political_power_gain = 0.1
+			production_factory_efficiency_gain_factor = 0.1
+		}
+	}
+	gre_depoliticized_military = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			stability_factor = 0.10
+			war_support_factor = -0.10
+		}
+	}
+	gre_captalism_civilized = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			stability_factor = 0.05
+			production_speed_buildings_factor = 0.1
+			political_power_gain = -0.05
+		}
+	}
+	gre_welfare_state = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			MONTHLY_POPULATION = 0.05
+			production_factory_efficiency_gain_factor = 0.1
+			political_power_gain = -0.1
+			consumer_goods_factor = -0.05
+		}
+	}
+	gre_social_security = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			MONTHLY_POPULATION = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+			political_power_gain = -0.05
+		}
+	}
+	gre_womens_suffurage = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			stability_factor = 0.05
+			consumer_goods_factor = -0.05
+		}
+	}
+	GRE_failed_economy = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			consumer_goods_factor = 0.20
+			industrial_capacity_factory = -0.15
+			industrial_capacity_dockyard = -0.15
+			production_speed_buildings_factor = -0.3
+		}
+	}
+	GRE_unpopular_monarchy = {
+		picture = HUN_hungarian_monarchy
+		modifier = {
+			stability_factor = -0.10
+			royalism_drift = -0.01
+		}
+	}
+	GRE_exiled_prince_constantine = {
+		picture = prince_constantine
+		modifier = {
+			war_support_weekly = -0.02
+		}
+	}
+	GRE_unreliable_military = {
+		picture = chi_incompetent_officers
+		modifier = {
+			experience_gain_army = -0.1
+			max_command_power = -25
+			land_reinforce_rate = -0.10
+			army_org_factor = -0.1
 		}
 	}
 }

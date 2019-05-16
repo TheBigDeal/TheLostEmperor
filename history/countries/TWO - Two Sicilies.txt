@@ -50,6 +50,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+
+
 set_convoys = 5
 
 create_country_leader = {

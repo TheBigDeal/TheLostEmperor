@@ -3,3 +3,94 @@
 ###########################
 
 add_namespace = le_austria
+
+country_event = { #INVITE TO GERMAN CONFEDERATION
+	id = le_austria.1
+	title = le_austria.1.t
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { #ACCEPT
+		name = le_austria.1.a
+		if = {
+			limit = {
+				NOT = {
+					any_country = {
+						has_cosmetic_tag = South_German_Confederation
+					}
+				}
+			}
+			set_cosmetic_tag = South_German_Confederation
+		}
+		if = {
+			limit = {
+				any_country = {
+					has_cosmetic_tag = South_German_Confederation
+				}
+			}
+			any_country = {
+				annex_country = { target = PREV transfer_troops = yes }
+			}
+		}
+	}
+	option = { #DECLINE
+		name = le_austria.1.b
+		AUS = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ROOT
+			}
+		}
+	}
+}
+
+country_event = { #INVITE TO DANUBIAN FEDERATION
+	id = le_austria.2
+	title = le_austria.2.t
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { #ACCEPT
+		name = le_austria.2.a
+		ai_chance = {
+			factor = 100
+		}
+		AUS = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = { #DECLINE
+		name = le_austria.2.b
+		ai_chance = {
+			factor = 10
+		}
+		AUS = {
+			create_wargoal = {
+				type = annex_everything
+				target = ROOT
+			}
+		}
+	}
+}
+
+country_event = { #BOHEMIAN REFURENDUM
+	id = le_austria.3
+	title = le_austria.3.t
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { #ACCEPT
+		name = le_austria.3.a
+		ai_chance = {
+			factor = 100
+		}
+		AUS = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = { #DECLINE
+		name = le_austria.3.b
+		ai_chance = {
+			factor = 10
+		}
+		AUS = {
+			create_wargoal = {
+				type = annex_everything
+				target = ROOT
+			}
+		}
+	}
+}

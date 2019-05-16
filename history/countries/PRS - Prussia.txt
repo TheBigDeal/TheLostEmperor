@@ -9,6 +9,36 @@ add_ideas = {
 	PRS_PRUSSIAN_MILITARISM
 	Religion_Protestant
 	HRE_elector
+	
+	##POLITICAL LAWS##
+	tno_political_parties_controlled_opposition
+	tno_religious_rights_state_religion
+	tno_trade_unions_illegal
+	tno_immigration_quota_immigration
+	tno_slavery_outlawed
+	tno_public_meetings_allowed
+	##MILITARY LAWS###
+	tno_conscription_volunteer_only
+	tno_women_banned
+	tno_military_supervision_military_policing
+	tno_military_spending_medium_spending
+	tno_training_basic_training
+	tno_racial_integration_segregated_regiments
+	##SOCIAL LAWS##
+	tno_safety_minimal_regulations
+	tno_health_care_private_health_care
+	tno_pollution_no_controls
+	tno_education_elite_only
+	tno_penal_system_capital_punishment
+	tno_lgbt_rights_lgbt_outlawed
+	tno_security_police
+	##ECONOMIC LAWS##
+	tno_trade_laws_limited_exports
+	tno_economic_focus_civilian_economy
+	tno_tax_rate_medium_taxation
+	tno_income_taxation_elite_tax_exemptions
+	tno_minimum_wage_low_minimum_wage
+	tno_max_workhours_unlimited_work_day
 }
 complete_national_focus = PRS_THE_KINGDOM_OF_PRUSSIA
 
@@ -30,7 +60,6 @@ BOH = { set_country_flag = supporting_austria }
 PLT = { set_country_flag = supporting_austria }
 HES = { set_country_flag = supporting_austria }
 THU = { set_country_flag = supporting_prussia }
-
 
 set_politics = {
 	parties = {

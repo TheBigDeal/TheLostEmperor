@@ -1,0 +1,62 @@
+ideas = {
+
+country = {
+	##################
+	#     SPAIN      #
+	##################
+	aus_aeiou = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			justify_war_goal_time = -0.20
+			war_support_factor = 0.05
+		}
+	}
+	AUS_INCREASED_AUTONOMY = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			consumer_goods_factor = 0.10
+		}
+	}
+	AUS_MINISTRY_OF_CULTURE = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			stability_factor = 0.05
+		}
+	}
+	aus_ethnic_tensions = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			
+		}
+	}
+	AUS_austrian_occupation = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			consumer_goods_factor = 0.20
+			stability_factor = 0.20
+		}
+	}
+	AUS_new_order = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			consumer_goods_factor = -0.05
+			political_power_factor = 0.1
+		}
+	}
+	AUS_germanization_programs = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			consumer_goods_factor = 0.10
+			political_power_factor = -0.05
+			stability_factor = -0.10
+		}
+	}
+	aus_danubia = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			stability_factor = 0.10
+			non_core_manpower = 0.05
+			army_org_factor = 0.05
+			consumer_goods_factor = 0.05
+		}
+	}

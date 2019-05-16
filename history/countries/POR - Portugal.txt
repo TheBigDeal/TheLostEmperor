@@ -20,6 +20,8 @@ set_technology = {
 }
 
 set_convoys = 50
+
+
 set_politics = {
 
 	parties = {

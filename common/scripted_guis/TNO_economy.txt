@@ -1,0 +1,189 @@
+scripted_gui = {
+    TNO_economy = {
+	    window_name = "economy_view"
+	    context_type = player_context
+	    parent_window_token = top_bar
+	     
+	    visible = {
+			OR = {
+				#is_ai = yes
+				AND = {
+					has_country_flag = econ_view_visible
+					econ_can_use_economy_system = yes
+				}
+			}
+	    }
+
+	    effects = {
+	    	increase_construction_budget_click = {
+	    		increase_construction_budget = yes
+	    		hidden_effect = { add_political_power = -50 }
+	    		update_economy_tab = yes
+	    	}
+	    	decrease_construction_budget_click = {
+	    		decrease_construction_budget = yes
+	    		hidden_effect = { add_political_power = -50 }
+	    		update_economy_tab = yes
+	    	}
+
+	    	increase_military_budget_click = {
+	    		if = {
+	    			limit = {
+	    				econ_can_add_modifier_military = yes
+	    			}
+		    		hidden_effect = { country_event = { id = econ.4 days = 120 } }
+		    		add_ideas = military_budget_boost
+		    		update_economy_tab = yes
+	    		}
+	    		else = {
+	    			custom_effect_tooltip = econ_wait_for_expiration
+	    		}
+	    		hidden_effect = {
+	    			update_economy_tab = yes
+	    		}
+	    	}
+	    	decrease_military_budget_click = {
+	    		if = {
+	    			limit = {
+	    				econ_can_add_modifier_military = yes
+	    			}
+		    		hidden_effect = { country_event = { id = econ.3 days = 120 } }
+		    		add_ideas = military_budget_cuts
+		    		update_economy_tab = yes
+		    	}
+	    		else = {
+	    			custom_effect_tooltip = econ_wait_for_expiration
+	    		}
+	    		hidden_effect = {
+	    			update_economy_tab = yes
+	    		}
+	    	}
+
+	    	increase_civilian_budget_click = {
+	    		if = {
+	    			limit = {
+	    				econ_can_add_modifier_civilian = yes
+	    			}
+		    		hidden_effect = { country_event = { id = econ.6 days = 120 } }
+		    		add_ideas = civilian_budget_boost
+		    		update_economy_tab = yes
+	    		}
+	    		else = {
+	    			custom_effect_tooltip = econ_wait_for_expiration
+	    		}
+	    		hidden_effect = {
+	    			update_economy_tab = yes
+	    		}
+	    	}
+	    	decrease_civilian_budget_click = {
+	    		if = {
+	    			limit = {
+	    				econ_can_add_modifier_civilian = yes
+	    			}
+		    		hidden_effect = { country_event = { id = econ.5 days = 120 } }
+		    		add_ideas = civilian_budget_cuts
+		    		update_economy_tab = yes
+	    		}
+	    		else = {
+	    			custom_effect_tooltip = econ_wait_for_expiration
+	    		}
+	    	}
+	    	dump_liquid_reserves_click = {
+	    		if = {
+	    			limit = { 
+	    				check_variable = { money_reserves > 0 }
+	    				check_variable = { national_debt > 0 }
+	    			}
+	    			money_reserves_to_debt = yes
+	    			custom_effect_tooltip = econ_dump_reserves_money_tt
+	    		}
+	    		else_if = {
+	    			limit = { check_variable = { money_reserves > 0 } }
+	    			custom_effect_tooltip = econ_dump_reserves_no_debt_tt
+	    		}
+	    		else = {
+	    			custom_effect_tooltip = econ_dump_reserves_no_money_tt
+	    		}
+	    		hidden_effect = {
+	    			update_economy_tab = yes
+	    		}
+	    	}
+	    	invest_liquid_reserves_click = {
+	    		if = {
+	    			limit = { check_variable = { money_reserves > 0 } }
+	    			invest_money_reserves = yes
+	    			custom_effect_tooltip = econ_invest_money_tt
+	    		}
+	    		else = {
+	    			custom_effect_tooltip = econ_invest_money_no_money_tt
+	    		}
+	    		hidden_effect = {
+	    			update_economy_tab = yes
+	    		}
+	    	}
+	    }
+
+	    triggers = {
+	    	increase_construction_budget_click_enabled = {
+	    		has_political_power > 49
+	    		NOT = { has_idea = construction_level_9 }
+	    	}
+	    	decrease_construction_budget_click_enabled = {
+	    		has_political_power > 49
+	    		NOT = { has_idea = construction_level_0 }
+	    	}
+
+
+	    	increase_military_budget_click_enabled = {
+	    		econ_can_add_modifier_military = yes
+	    	}
+	    	decrease_military_budget_click_enabled = {
+	    		econ_can_add_modifier_military = yes
+	    	}
+
+	    	increase_civilian_budget_click_enabled = {
+	    		econ_can_add_modifier_civilian = yes
+	    	}
+	    	decrease_civilian_budget_click_enabled = {
+	    		econ_can_add_modifier_civilian = yes
+	    	}
+
+	    	invest_liquid_reserves_click_enabled = {
+	    		check_variable = { money_reserves > 0 }
+	    	}
+	    	dump_liquid_reserves_click_enabled = {
+	    		check_variable = { money_reserves > 0 }
+	    		check_variable = { national_debt > 0 }
+	    	}
+	    }
+	}
+
+	TNO_economy_top_bar = {
+	    window_name = "topbar_economy"
+	    context_type = player_context
+	    parent_window_token = top_bar
+	     
+	    visible = {
+	        always = yes
+	    }
+
+	    effects = {
+	    	economy_button_click = {
+	    		if = { 
+	    			limit = { NOT = { has_country_flag = econ_view_visible } } 
+	    			set_country_flag = econ_view_visible
+	    		}
+	    		else = {
+	    			clr_country_flag = econ_view_visible
+	    		}
+	    		update_economy_tab = yes
+	    	}
+	    }
+
+	    triggers = {
+	    	economy_button_click_enabled = {
+				econ_can_use_economy_system = yes
+			}
+	    }
+	}
+}

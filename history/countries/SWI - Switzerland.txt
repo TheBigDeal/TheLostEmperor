@@ -41,7 +41,6 @@ set_politics = {
 	elections_allowed = yes
 }
 
-
 add_ideas = {	
 	limited_conscription
 }

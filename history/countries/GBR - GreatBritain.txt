@@ -29,13 +29,16 @@ set_technology = {
 add_ideas = {
 
 }
-
 set_convoys = 800
 
 # DIPLOMACY
 if = {
 	limit = {
 		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = GUY
+		autonomous_state = autonomy_colony
 	}
 	set_autonomy = {
 		target = IRE
@@ -52,6 +55,11 @@ if = {
 	}
 	set_autonomy = {
 		target = CAN
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = MAR
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
 	}
@@ -90,6 +98,11 @@ if = {
 		autonomous_state = autonomy_puppet
 		freedom_level = 0.4
 	}
+	set_autonomy = {
+		target = NFL
+		autonomous_state = autonomy_puppet
+		freedom_level = 0.4
+	}
 	else = {
 		puppet = MAL
 		puppet = RAJ
@@ -101,6 +114,8 @@ if = {
 		puppet = NRM
 		puppet = CLM
 		puppet = ALK
+		puppet = GUY
+		puppet = NFL
 	}
 }
 

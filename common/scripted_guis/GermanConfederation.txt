@@ -1,0 +1,55 @@
+scripted_gui = {
+	gc_open = {
+		context_type = player_context
+
+		window_name = "gc_open_container"
+
+		visible = {
+			tag = PRS
+		}
+
+		effects = {
+			open_ST_click = {
+				if = {
+					limit = { NOT = { has_global_flag = open_gc } }
+					set_global_flag = open_gc
+				}
+				else = {
+					clr_global_flag = open_gc
+				}
+				if = {
+					limit = { has_state_flag = German_Confederation }
+					set_global_flag = show_gc
+				}
+				
+			}
+		}
+		triggers = {
+			always = yes
+		}
+	}
+	gc_hide = {
+		context_type = player_context
+
+		window_name = "gc_hide_container"
+
+		visible = {
+			NOT = { tag = PRS }
+		}
+
+		effects = {
+			hide_ST_click = {
+				if = {
+					limit = { NOT = { has_global_flag = hide_gc } }
+					set_global_flag = hide_gc
+				}
+				else = {
+					clr_global_flag = hide_gc
+				}
+			}
+		}
+		triggers = {
+			always = yes
+		}
+	}
+}

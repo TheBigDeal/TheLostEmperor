@@ -22,7 +22,9 @@ set_variable = { var = AUS_BOHEMIAN_SUPPORT value = 100 }
 set_variable = { var = AUS_PALATINATE_SUPPORT value = 100 }
 set_variable = { var = AUS_HESSE_SUPPORT value = -100 }
 set_variable = { var = AUS_THURINGIA_SUPPORT value = -100 }
-
+add_ideas = {
+	aus_ethnic_tensions
+}
 set_politics = {
 
 	parties = {
@@ -107,7 +109,9 @@ create_country_leader = {
 	expire = "2011.1.1"
 	ideology = royalism_ideology
 	traits = {
-		#
+		dislikes_prussia
+		stout_defender
+		autocratic_imperialist
 	}
 }
 

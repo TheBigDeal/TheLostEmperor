@@ -11,10 +11,11 @@ state={
 
 		}
 		add_core_of = GAL
+
 	}
 
 	provinces={
-		577 3743 9548
+		577 6761 9548 11689 
 	}
 	manpower=474600
 	buildings_max_level_factor=1.000

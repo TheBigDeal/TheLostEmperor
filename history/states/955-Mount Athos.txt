@@ -2,7 +2,7 @@ state={
 	id=955
 	name="STATE_955"
 	history={
-		owner = MOU
+		owner = GRE
 		victory_points = {
 			11818 5
 		}
@@ -15,10 +15,7 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = MOU
 		add_claim_by = GRE
-		add_claim_by = MAC
-
 	}
 	provinces={
 		895 3936 11818

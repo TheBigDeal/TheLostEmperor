@@ -1,0 +1,18 @@
+state={
+	id=1001
+	name="STATE_1001"
+	history={
+		owner = TRN
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = TRN
+	}
+	provinces={
+		646 
+	}
+	manpower=347856
+	buildings_max_level_factor=1.000
+}

@@ -62,10 +62,15 @@ bookmarks = {
 			history = GER_BLITZKRIEG_DESC
 			ideology = absolutism
 			ideas = {
-
+				GRE_exiled_prince_constantine
+				GRE_unreliable_military
+				GRE_failed_economy
+				GRE_unpopular_monarchy
 			}
 			focuses = {
-
+				GRE_BYZANTIUM_RESTORED
+				GRE_SPARTAN_MILITARY_STATE
+				GRE_THE_BASTARD_PRINCE
 			}
 		}
 		RUS = {

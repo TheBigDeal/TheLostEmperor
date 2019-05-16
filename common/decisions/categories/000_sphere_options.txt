@@ -1,0 +1,8 @@
+#################
+#   POLITICAL   #
+#################
+sphere_options_cat = {
+	visible = {
+		is_faction_leader = yes
+	}
+}

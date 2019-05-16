@@ -4,7 +4,7 @@ state={
 	name="STATE_186"
 
 	history={
-		owner = SPT
+		owner = GRE
 		victory_points = {
 			4178 10
 		}
@@ -28,7 +28,6 @@ state={
 			}
 
 		}
-		add_core_of = SPT
 		add_core_of = GRE
 	}
 

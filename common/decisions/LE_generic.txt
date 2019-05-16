@@ -1,39 +1,67 @@
-demand_state_claim = {
-	demand_poznan = {
+labor_vouchers_cat = {
+	labor_vouchers = {
 		icon = generic_army_support
-		available = {
-			86 = { is_claimed_by = PRS }
-		}
 		visible = {
-			tag = PRS
+			has_government = collectivism
 		}
-		cost = 0
+		available = {
+			has_country_flag = labor_vouchers
+			OR = {
+				has_government = collectivism
+				has_government = proletarianism
+				has_government = naturalism
+			}
+		}
+		cost = 50
+		days_remove = 60
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		complete_effect = {
-
+			add_timed_idea = {
+				idea = FRA_labor_vouchers
+				days = 90
+			}
 		}
 	}
 }
 
-write_constitution_cat = {
-	state_religion = {
+# demand_state_claim = {
+	# demand_poznan = {
+		# icon = generic_army_support
+		# available = {
+			# 86 = { is_claimed_by = PRS }
+		# }
+		# visible = {
+			# tag = PRS
+		# }
+		# cost = 0
+		# ai_will_do = {
+			# factor = 0
+		# }
+		# complete_effect = {
 
-		icon = generic_army_support
+		# }
+	# }
+# }
 
-		available = {
+# write_constitution_cat = {
+	# state_religion = {
 
-		}
-		visible = {
-			has_country_flag = write_constitution
-		}
-		cost = 0
-		ai_will_do = {
-			factor = 0
-		}
-		complete_effect = {
+		# icon = generic_army_support
+
+		# available = {
+
+		# }
+		# visible = {
+			# has_country_flag = write_constitution
+		# }
+		# cost = 0
+		# ai_will_do = {
+			# factor = 0
+		# }
+		# complete_effect = {
 			
-		}
-	}
-}
+		# }
+	# }
+# }

@@ -1,7 +1,12 @@
 ####################
 ##### GENERIC ######
 ####################
-
+labor_vouchers_cat = {
+	icon = idea_collectivism
+	visible = {
+		has_country_flag = labor_vouchers
+	}
+}
 write_constitution_cat = {
 	icon = idea_collectivism
 	allowed = {

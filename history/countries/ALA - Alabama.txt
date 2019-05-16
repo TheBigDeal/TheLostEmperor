@@ -9,26 +9,11 @@ set_technology = {
 }
 
 set_politics = {
-
 	parties = {
-		liberalism = { 
-			popularity = 90
-		}
-
-		rexism = {
-			popularity = 0
-		}
-		
-		proletarianism = {
-			popularity = 10
-		}
-		
-		absolutism = { 
-			popularity = 0
-		}
+		conservatism = { popularity = 50 }
+		liberalism = { popularity = 50 }
 	}
-	
-	ruling_party = liberalism
+	ruling_party = conservatism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no

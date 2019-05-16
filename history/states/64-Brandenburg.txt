@@ -1,9 +1,7 @@
-
 state={
 	id=64
 	name="STATE_64"
-
-	history={
+	history = {
 		owner = PRS
 		victory_points = {
 			6521 50 
@@ -13,21 +11,16 @@ state={
 		}
 		buildings = {
 			infrastructure = 8
-			arms_factory = 7
-			industrial_complex = 4
-			anti_air_building = 2
-			air_base = 6
-
+			arms_factory = 4
+			industrial_complex = 2
 		}
 		add_core_of = PRS
-		add_core_of = BRN
-
 	}
-
 	provinces={
 		375 3367 3499 3522 6487 6521 9238 9375 9428 9456 9560 11219 11359 11444 11468 11505 
 	}
 	manpower=7265029
 	buildings_max_level_factor=1.000
 	state_category=megalopolis
+	set_state_flag = German_Confederation_State
 }

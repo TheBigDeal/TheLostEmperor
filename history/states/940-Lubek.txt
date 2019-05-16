@@ -1,6 +1,6 @@
 state={
 	id=940
-	name="STATE_748"
+	name="STATE_940"
 	state_category = city
 	
 	history=

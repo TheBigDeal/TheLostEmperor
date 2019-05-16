@@ -1,0 +1,41 @@
+sphere_options_cat = {
+	expand_influence = {
+		cost = 20
+		icon = GFX_icon_collectivism
+		ai_will_do = { factor = 10 }
+		cost = 200
+		target_trigger = {
+            FROM = {
+                AND = {
+                    any_neighbor_country = {
+						OR = {
+							tag = ROOT
+							is_puppet_of = ROOT
+							is_in_faction_with = ROOT
+						}
+					}
+					is_faction_leader = no
+					is_in_faction = yes
+					NOT = { is_in_faction_with = ROOT }
+					NOT = { is_subject = yes }
+                }
+            }
+        }
+		visible = {
+			any_neighbor_country = {
+				NOT = { is_in_faction_with = ROOT }
+				is_in_faction = yes
+			}
+		}
+		available = {
+			any_neighbor_country = {
+				NOT = { is_in_faction_with = ROOT }
+				is_in_faction = yes
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = sphere_infuence_tt
+			declare_war_on = { target = FROM type = annex_everything }
+		}
+	}
+}

@@ -369,22 +369,51 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_END_THE_CACHIN_DICTATORSHIP
-		icon = GFX_goal_unknown
+		icon = GFX_focus_purge_bureaucracy
 		prerequisite = { focus = FRA_THE_KINGS_PROCESS }
-		x = 13
+		mutually_exclusive = { focus = FRA_CACHIN_IS_THE_MAN }
+		x = 12
 		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Benoit Frachon"
+				desc = "POLITICS_MAURICE_THOREZ_DESC"
+				picture = "Portrait_France_Benoit_Frachon.tga"
+				expire = "1965.1.1"
+				ideology = 	proletarianism
+				traits = {
+					headstrong
+					indomitable_perseverance
+					dislikes_germany
+					proletariat_revolutionary
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_CACHIN_IS_THE_MAN
+		icon = GFX_commie_council
+		prerequisite = { focus = FRA_THE_KINGS_PROCESS }
+		mutually_exclusive = { focus = FRA_END_THE_CACHIN_DICTATORSHIP }
+		x = 14
+		y = 7
+		cost = 6
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100
 		}
 	}
 	focus = {
 		id = FRA_THE_DIRECTORATE
 		icon = GFX_goal_unknown
-		prerequisite = { focus = FRA_END_THE_CACHIN_DICTATORSHIP }
+		prerequisite = { focus = FRA_END_THE_CACHIN_DICTATORSHIP focus = FRA_CACHIN_IS_THE_MAN }
 		x = 13
 		y = 8
 		cost = 6
@@ -762,10 +791,8 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_timed_idea = {
-				idea = FRA_labor_vouchers
-				days = 182
-			}
+			custom_effect_tooltip = LABOR_VOUCHERS_TT
+			set_country_flag = labor_vouchers
 		}
 	}
 	focus = {
@@ -788,49 +815,94 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_REVOLT_IN_BRITANNY
-		icon = GFX_goal_unknown
+		icon = GFX_focus_fires_of_revolution
 		prerequisite = { focus = FRA_PREPARE_THE_INSURECTIONS }
 		x = 8
 		y = 9
 		cost = 6
+		available = {
+			NOT = { has_country_flag = funding_rebellion }
+		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-
+			FR5 = {
+				transfer_state = 776
+				hidden_effect = { load_OOB = FRA_COM_SUPPORT_BRI }
+				create_wargoal = {
+					type = annex_everything
+					target = BRI
+				}
+				add_state_core = 14
+				add_state_core = 776
+			}
+			set_country_flag = funding_rebellion
 		}
 	}
 	focus = {
 		id = FRA_WEAPONS_IN_BURGUNDY
-		icon = GFX_goal_unknown
+		icon = GFX_focus_red_army
 		prerequisite = { focus = FRA_PREPARE_THE_INSURECTIONS }
 		x = 10
 		y = 9
 		cost = 6
+		available = {
+			NOT = { has_country_flag = funding_rebellion }
+		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-
+			FR5 = {
+				transfer_state = 833
+				hidden_effect = { load_OOB = FRA_COM_SUPPORT_BUR }
+				create_wargoal = {
+					type = annex_everything
+					target = BUR
+				}
+				add_state_core = 833
+				add_state_core = 17
+				add_state_core = 28
+				add_state_core = 775
+			}
+			set_country_flag = funding_rebellion
 		}
 	}
 	focus = {
 		id = FRA_RAISE_THE_NORMAN_WORKERS
-		icon = GFX_goal_unknown
+		icon = GFX_goal_revolution
 		prerequisite = { focus = FRA_REVOLT_IN_BRITANNY }
 		x = 8
 		y = 10
 		cost = 6
+		available = {
+			NOT = { has_country_flag = funding_rebellion }
+		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-
+			FR5 = {
+				transfer_state = 973
+				transfer_state = 972
+				hidden_effect = { load_OOB = FRA_COM_SUPPORT_NRM }
+				create_wargoal = {
+					type = annex_everything
+					target = NRM
+				}
+				add_state_core = 972
+				add_state_core = 973
+				add_state_core = 974
+				add_state_core = 15
+				add_state_core = 976
+			}
+			set_country_flag = funding_rebellion
 		}
 	}
 	focus = {
 		id = FRA_THE_END_OF_AQUITAINE
-		icon = GFX_goal_unknown
+		icon = GFX_focus_naturalism
 		prerequisite = { focus = FRA_WEAPONS_IN_BURGUNDY }
 		x = 10
 		y = 10
@@ -839,12 +911,15 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
+			AQU = {
+				country_event = { id = le_france.18 }
+			}
+			
 		}
 	}
 	focus = {
 		id = FRA_LIBERATE_OUR_FOREIGN_COMRADES
-		icon = GFX_goal_unknown
+		icon = GFX_focus_purge_bureaucracy
 		prerequisite = { focus = FRA_THE_END_OF_AQUITAINE focus = FRA_RAISE_THE_NORMAN_WORKERS }
 		x = 9
 		y = 11
@@ -858,7 +933,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_WEAPONS_IN_NORTHERN_ITALY
-		icon = GFX_goal_unknown
+		icon = GFX_focus_death_or_dishonor
 		prerequisite = { focus = FRA_LIBERATE_OUR_FOREIGN_COMRADES }
 		x = 4
 		y = 12
@@ -900,7 +975,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_WEAPONS_IN_CATALONIA
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = FRA_LIBERATE_OUR_FOREIGN_COMRADES }
 		x = 2
 		y = 12
@@ -985,7 +1060,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_WEAPONS_OVER_THE_RHINE
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = { focus = FRA_LIBERATE_OUR_FOREIGN_COMRADES }
 		x = 7
 		y = 12

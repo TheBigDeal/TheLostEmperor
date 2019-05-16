@@ -59,15 +59,26 @@ set_politics = {
 
 
 create_country_leader = {
-	name = "Juliusz Poniatowski"
+	name = "Olbracht von Habsburg"
 	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
-	picture = "Portrait_Poland_Juliusz_Poniatowski.tga"
+	picture = "Portrait_Poland_Olbracht_von_Habsburg.tga"
 	expire = "1965.1.1"
 	ideology = royalism_ideology
 	traits = {
 		#
 	}
 }
+
+# create_country_leader = {
+	# name = "Juliusz Poniatowski"
+	# desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
+	# picture = "Portrait_Poland_Juliusz_Poniatowski.tga"
+	# expire = "1965.1.1"
+	# ideology = royalism_ideology
+	# traits = {
+		
+	# }
+# }
 
 create_country_leader = {
 	name = "Władysław Sikorski"

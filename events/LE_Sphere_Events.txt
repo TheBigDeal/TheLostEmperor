@@ -1,0 +1,16 @@
+﻿###########################
+# Arabia Events
+###########################
+add_namespace = sphere
+
+country_event = {
+	id = sphere.1
+	title = sphere.1.t
+	desc = sphere.1.d
+	picture = GFX_report_event_hitler_parade
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		set_faction_name = "[Root.GetAdjective] Sphere"
+	}
+}

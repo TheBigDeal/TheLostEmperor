@@ -13,9 +13,17 @@ country_event = { #The Elections Begin!
 	title = le_greece.1.t
 	desc = le_greece.1.d
 	is_triggered_only = yes
-	option = { 
+	option = { #The Communists win the election
 		name = le_greece.1.a
-		country_event = { id = le_greece.2 days = 10 }
+		complete_national_focus = GRE_A_PEOPLES_GREECE
+	}
+	option = { #The Center holds
+		name = le_greece.1.b
+		complete_national_focus = GRE_THE_CENTER_HOLDS
+	}
+	option = { #The Spartans win the election`
+		name = le_greece.1.c
+		complete_national_focus = GRE_A_PROUD_GREECE
 	}
 }
 
@@ -24,32 +32,182 @@ country_event = { #Prime Minister Election
 	title = le_greece.2.t
 	desc = le_greece.2.d
 	is_triggered_only = yes
-	option = { #The Communist Nikos Zachariadis
-		name = le_greece.2.I
-		country_event = { id = le_greece.2 days = 10 }
-		add_popularity = { ideology = collectivism popularity = 0.1 }
-		complete_national_focus = GRE_NIKOS_WINS
-		set_country_flag = NIKOS_WINS
+	option = { #PP/DLP COALITION
+		name = le_greece.2.a
+		complete_national_focus = GRE_PP_DLP_COALITION
 	}
-	option = { #The Nationalist Georgios Tsolakoglou
-		name = le_greece.2.II
-		country_event = { id = le_greece.2 days = 10 }
-		add_popularity = { ideology = labryscism popularity = 0.1 }
-		complete_national_focus = GRE_GEORGIOS_WINS
-		set_country_flag = GEORGIOS_WINS
+	option = { #DLP/EP COALITION
+		name = le_greece.2.b
+		complete_national_focus = GRE_DLP_EP_COALITION
 	}
-	option = { #The Monarchist Eleftherios Venizelos
-		name = le_greece.2.III
-		country_event = { id = le_greece.2 days = 10 }
-		add_popularity = { ideology = absolutism popularity = 0.1 }
-		complete_national_focus = GRE_ELEFTHERIOS_WINS
-		set_country_flag = ELEFTHERIOS_WINS
+	option = { #EP/NP COALITION
+		name = le_greece.2.c
+		complete_national_focus = GRE_EP_NP_COALITION
 	}
-	option = { #The Religious Charles Zervas
-		name = le_greece.2.IV
-		country_event = { id = le_greece.2 days = 10 }
-		add_popularity = { ideology = theocracy popularity = 0.1 }
-		complete_national_focus = GRE_DAMASKINOS_WINS
-		set_country_flag = DAMASKINOS_WINS
+}
+
+country_event = { #Deal With The King
+	id = le_greece.3
+	title = le_greece.3.t
+	desc = le_greece.3.d
+	is_triggered_only = yes
+	option = { #Kill The King
+		name = le_greece.3.a
+		
+	}
+	option = { #Exile The King
+		name = le_greece.3.b
+		
+	}
+}
+country_event = { #Demand Thrace
+	id = le_greece.4
+	title = le_greece.4.t
+	desc = le_greece.4.d
+	is_triggered_only = yes
+	option = { #Cede Thrace
+		name = le_greece.4.a
+		country_event = { id = le_greece.5 }
+	}
+	option = { #Refuse
+		name = le_greece.4.b
+		country_event = { id = le_greece.6 }
+	}
+}
+country_event = { #Turks Cede Thrace
+	id = le_greece.5
+	title = le_greece.5.t
+	desc = le_greece.5.d
+	is_triggered_only = yes
+	option = { #Cede Thrace
+		name = le_greece.4.a
+		transfer_state = 184
+	}
+}
+country_event = { #The Turks Refused Thrace
+	id = le_greece.6
+	title = le_greece.6.t
+	desc = le_greece.6.d
+	is_triggered_only = yes
+	option = { #Cede Thrace
+		name = le_greece.6.a
+		create_wargoal = { type = annex_everything target = TUR }
+	}
+}
+country_event = { #PRINCE CONSTANTINE RETURNS
+	id = le_greece.7
+	title = le_greece.7.t
+	desc = le_greece.7.d
+	fire_only_once = yes
+	trigger = {
+		tag = GRE
+		royalism < 20
+		has_stability < 0.2
+	}
+	immediate = {
+		hidden_effect = {
+			set_country_flag = constantines_return
+		}
+	}
+	option = { #Cede Thrace
+		name = le_greece.7.a
+		add_stability = -0.5
+	}
+}
+country_event = { #PRINCE CONSTANTINES MAKES A MOVE
+	id = le_greece.8
+	title = le_greece.8.t
+	desc = le_greece.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Constantine Gains the Throne
+		name = le_greece.8.a
+		set_politics = { ruling_party = absolutism }
+		create_country_leader = {
+			name = "King Constantine"
+			desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			picture = "Portrait_Greece_Constnatine.tga"
+			expire = "1965.1.1"
+			ideology = absolutism
+			traits = {
+				
+			}
+		}
+		start_civil_war = {
+			ruling_party = royalism
+			ideology = ROOT
+			size = 0.4
+			only_own_territory = no
+			capital = 185
+			states = { 
+				185 825 826
+			}
+			#keep_unit_leaders = {
+			#	750 751 752 731 955
+			#}
+		}
+		set_country_flag = GRE_ROYAL_WAR
+	}
+	option = { #Constantine has failed
+		name = le_greece.8.a
+		country_event = { id = le_greece.1 days = 5 } 
+	}
+}
+country_event = { #CONSTANTINE VICTORY
+	id = le_greece.9
+	title = le_greece.9.t
+	desc = le_greece.9.d
+	fire_only_once = yes
+	trigger = {
+		original_tag = GRE
+		has_country_flag = GRE_ROYAL_WAR
+		has_civil_war = no
+		has_country_leader = { name = "King Constantine" ruling_only = yes }
+		has_government = absolutism
+	}
+	option = {
+		name = le_greece.9.a
+		add_stability = 0.25
+	}
+}
+country_event = { #ROYALIST VICTORY
+	id = le_greece.9
+	title = le_greece.9.t
+	desc = le_greece.9.d
+	fire_only_once = yes
+	trigger = {
+		original_tag = GRE
+		has_country_flag = GRE_ROYAL_WAR
+		has_civil_war = no
+		has_country_leader = { name = "King Albert von Saxe-Coburg-Gotha" ruling_only = yes }
+		has_government = royalism
+	}
+	option = {
+		name = le_greece.9.a
+		country_event = { id = le_greece.1 days = 5 } 
+		country_event = { id = le_greece.10 days = 5 random = 60 } 
+	}
+}
+country_event = { #CONSTANTINE CAPTURED
+	id = le_greece.10
+	title = le_greece.10.t
+	desc = le_greece.10.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Kill
+		name = le_greece.10.a
+		add_stability = -0.20
+	}
+	option = { #Exile
+		name = le_greece.10.b
+		add_stability = -0.15
+	}
+	option = { #Inprison
+		name = le_greece.10.c
+		add_stability = -0.10
+	}
+	option = { #Pardon
+		name = le_greece.10.c
+		
 	}
 }

@@ -5,8 +5,10 @@
  #GENERIC
  #######################################
  closed_borders:0 "Closed Borders"
+ african_tribe:0 "African Tribe"
  #RELIGION
  #######################################
+ LE_ideas:0 "Head Of State"
  Religion_Protestant:0 "Protestant"
  Religion_Catholic:0 "Catholic"
  Religion_Orthodox:0 "Orthodox"
@@ -14,7 +16,41 @@
  Religion_Shia:0 "Shia"
  Religion_Secular:0 "Secular"
  Religion_Athiest:0 "Athiest"
+ #Austria
+ aus_aeiou:0 "A.E.I.O.U"
+ AUS_INCREASED_AUTONOMY:0 "Increased Autonomy"
+ AUS_MINISTRY_OF_CULTURE:0 "Ministry Of Culture"
+ aus_danubia:0 "Danubian Nation"
+ AUS_austrian_occupation:0 "§RAustrian Occupation§!"
+ AUS_new_order:0 "A New Order"
+ AUS_germanization_programs:0 "Germanization Programs"
  #GREECE
+ gre_alexanders_legacy:0 "Alexanders Legacy"
+ gre_young_hoplite_association:0 "Young Hoplites Association"
+ gre_children_of_ares:0 "Ares' Children"
+ gre_centralization:0 "Centralization"
+ gre_abolished_parliament:0 "Abolished Parliament"
+ GRE_failed_economy:0 "Failed Economy"
+ GRE_unpopular_monarchy:0 "Upopular Monarchy"
+ GRE_exiled_prince_constantine:0 "Exiled Prince Constantine"
+ GRE_unreliable_military:0 "Unreliable Military"
+ gre_welfare_state:0 "Welfare State"
+ gre_social_security:0 "Social Security"
+ gre_womens_suffurage:0 "Women's Suffurage"
+ gre_captalism_civilized:0 "Capitalism Civilized"
+ gre_depoliticized_military:0 "Depoliticized Military"
+ gre_restrict_unions:0 "Restrict Unions"
+ gre_education_reform:0 "Education Reform"
+ gre_laissez_faire_economy:0 "Laissez Faire Economy"
+ gre_a_free_greece:0 "A Free Greece"
+ gre_devolution:0 "Devolution"
+ gre_big_brother:0 "Big Brother"
+ gre_greek_socialism:0 "Greek Socialism"
+ gre_hellenic_socialist_republic:0 "Hellenic Socialist Republic"
+ gre_workers_militias:0 "Workers Militias"
+ gre_secularization:0 "Secularization"
+ gre_nationalization:0 "Nationalization"
+ gre_peoples_congress:0 "Peoples Congress"
  #OTTOMAN EMPIRE
  TUR_internal_instability:0 "Internal Instability"
  #FRANCE

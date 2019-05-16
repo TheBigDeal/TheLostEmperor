@@ -1,5 +1,21 @@
 ﻿l_english:
 #MOD
+ DANUBIAN_FEDERATION_royalism:0 "Danubian Federation"
+ DANUBIAN_FEDERATION_absolutism:0 "Crownlands of Danubia"
+ DANUBIAN_FEDERATION_rexism:0 "Danubian Empire"
+ 
+ AUSTRIAN_EMPIRE_royalism:0 "Austrian Empire"
+ AUSTRIAN_EMPIRE_absolutism:0 "Austrian Empire"
+ AUSTRIAN_EMPIRE_rexism:0 "Austrian Empire"
+ 
+ AUSTRO_HUNGARY_royalism:0 "Austria-Hungary"
+ AUSTRO_HUNGARY_absolutism:0 "Austro-Hungarian Empire"
+ AUSTRO_HUNGARY_rexism:0 "Austro-Hungarian Empire"
+ 
+ UNITED_CROWNS_royalism:0 "United Crowns of Greater Austria"
+ UNITED_CROWNS_absolutism:0 "United Crowns of Greater Austria"
+ UNITED_CROWNS_rexism:0 "United Crowns of Greater Austria"
+
  BAV_COMMUNIST_collectivism:1 "Bavarian Socialist Republic"
  BAV_COMMUNIST_collectivism_DEF:1 "The Bavarian Socialist Republic"
  BAV_COMMUNIST_proletarianism:1 "Bavarian Socialist Republic"

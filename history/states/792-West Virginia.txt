@@ -1,27 +1,27 @@
+
 state={
 	id=792
 	name="STATE_792"
-	
+
 	history={
 		owner = USA
-		
 		buildings = {
 			infrastructure = 4
 			arms_factory = 2
 			industrial_complex = 3
 
 		}
-		
 		victory_points = {
 			7588 3 
 		}
-		
 		add_core_of = USA
+
 	}
-	state_category=large_city
+
 	provinces={
-		801 3941 3975 4627 6958 6971 7466 7588 7646 9923 10441 11888 
+		801 3941 3975 4627 6850 6958 6971 7466 7588 7646 9923 10441 11888 
 	}
 	manpower=1733000
 	buildings_max_level_factor=1.000
+	state_category=large_city
 }

@@ -36,6 +36,7 @@ add_ideas = {
 set_convoys = 300
 set_stability = 0.6
 
+
 set_politics = {
 
 	parties = {
@@ -130,14 +131,26 @@ create_country_leader = {
 		stout_defender
 	}
 }
-
 create_country_leader = {
-	name = "Benoit Frachon"
+	name = "Marcel Cachin"
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
 	picture = "Portrait_France_Benoit_Frachon.tga"
 	expire = "1965.1.1"
 	ideology = 	proletarianism
 	traits = {
+	}
+}
+create_country_leader = {
+	name = "Marcel Cachin"
+	desc = "POLITICS_MAURICE_THOREZ_DESC"
+	picture = "Portrait_France_Marcel_Cachin.tga"
+	expire = "1965.1.1"
+	ideology = 	proletarianism
+	traits = {
+		dictator
+		warmonger
+		headstrong
+		dislikes_britain
 	}
 }
 create_country_leader = {

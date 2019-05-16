@@ -1,9 +1,7 @@
 focus_tree = {
 	id = prussian_focus
-
 	country = {
 		factor = 0
-
 		modifier = {
 			add = 10
 			tag = PRS
@@ -11,368 +9,411 @@ focus_tree = {
 	}
 
 	default = no
-	continuous_focus_position = { x = 50 y = 1800 }
+	continuous_focus_position = { x = 50 y = 1900 }
 
 	focus = {
 		id = PRS_THE_KINGDOM_OF_PRUSSIA
-		icon = GFX_focus_prussia
-		x = 5
+		icon = GFX_crown_of_prussia
+		x = 6
 		y = 0
 		cost = 10
-		bypass = { tag = PRS }
+		
 		ai_will_do = { factor = 100 }
 		completion_reward = {}
 	}
 	focus = {
-		id = PRS_ROAD_TO_THE_CROWN
+		id = PRS_COUNTINUE_GERMAN_AMBITIONS
 		icon = GFX_unknown
 		prerequisite = { focus = PRS_THE_KINGDOM_OF_PRUSSIA }
-		mutually_exclusive = { focus = PRS_PERSUE_DIRECT_GERMAN_UNIFICATION }
-		x = 2
+		x = 6
 		y = 1
-		cost = 7
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-	focus = {
-		id = PRS_WEAKEN_AUSTRIA
-		icon = GFX_unknown
-		prerequisite = { focus = PRS_ROAD_TO_THE_CROWN }
-		x = 2
-		y = 2
 		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			AUS = {
-				add_opinion_modifier = {
-				    target = ROOT
-				    modifier = covert_missions_against_us
-				}
-			}
-		}
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
 	}
 	focus = {
-		id = PRS_ENTICE_TYROL_TO_REVOLT
+		id = PRS_TIGHTEN_CONTROL_OF_OUR_SPHERE
 		icon = GFX_unknown
-		prerequisite = { focus = PRS_WEAKEN_AUSTRIA }
-		x = 2
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			random_list = {
-				60 = {
-					AUS = { country_event = { id = le_prussia.6 days = 10 } }
-				}
-				40 = {
-					#NOTHING HAPPENS
-				}
-			}
-		}
-	}
-	focus = {
-		id = PRS_PROVOKE_SLOVENIAN_NATIONALISTS
-		icon = GFX_unknown
-		prerequisite = { focus = PRS_ENTICE_TYROL_TO_REVOLT }
-		x = 2
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			random_list = {
-				60 = {
-					AUS = { country_event = { id = le_prussia.7 days = 10 } }
-				}
-				40 = {
-					#NOTHING HAPPENS
-				}
-			}
-		}
-	}
-	focus = {
-		id = PRS_ALLIANCE_WITH_VENICE
-		icon = GFX_unknown
-		prerequisite = { focus = PRS_PROVOKE_SLOVENIAN_NATIONALISTS }
-		x = 0
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-	focus = {
-		id = PRS_MEET_WITH_HUNGARIAN_REVOLUTIONARIES
-		icon = GFX_unknown
-		prerequisite = { focus = PRS_PROVOKE_SLOVENIAN_NATIONALISTS }
-		x = 2
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-	focus = {
-		id = PRS_ALLIANCE_WITH_SERBIA
-		icon = GFX_unknown
-		prerequisite = { focus = PRS_PROVOKE_SLOVENIAN_NATIONALISTS }
-		x = 4
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-	focus = {
-		id = PRS_DENOUNCE_BAVARIAN_COMMUNISTS
-		icon = GFX_unknown
-		prerequisite = { focus = PRS_THE_KINGDOM_OF_PRUSSIA }
+		prerequisite = { focus = PRS_COUNTINUE_GERMAN_AMBITIONS }
 		x = 5
 		y = 2
 		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			add_political_power = 50
-		}
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
 	}
 	focus = {
-		id = PRS_PERSUE_DIRECT_GERMAN_UNIFICATION
+		id = PRS_PRUSSIAN_PROPAGANDA
 		icon = GFX_unknown
-		prerequisite = { focus = PRS_THE_KINGDOM_OF_PRUSSIA }
-		mutually_exclusive = { focus = PRS_ROAD_TO_THE_CROWN }
-		x = 8
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-	focus = {
-		id = PRS_SHOW_OUR_STRENGTH
-		icon = GFX_unknown
-		prerequisite = { focus = PRS_PERSUE_DIRECT_GERMAN_UNIFICATION }
-		x = 8
+		prerequisite = { focus = PRS_COUNTINUE_GERMAN_AMBITIONS }
+		x = 7
 		y = 2
 		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			country_event = { id = le_prussia.8 days = 2 }
-		}
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
 	}
 	focus = {
-		id = PRS_DEMAND_POZNAN
+		id = PRS_THE_DANISH_PROBLEM
 		icon = GFX_unknown
-		prerequisite = { focus = PRS_SHOW_OUR_STRENGTH }
-		x = 12
+		prerequisite = { focus = PRS_TIGHTEN_CONTROL_OF_OUR_SPHERE }
+		prerequisite = { focus = PRS_PRUSSIAN_PROPAGANDA }
+		x = 6
 		y = 3
 		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			POL = { country_event = { id = le_prussia.16 days = 3 }}
-		}
-	}
-	focus = {
-		id = PRS_OFFER_POLAND_PROTECTION_FOR_POZNAN
-		icon = GFX_unknown
-		prerequisite = { focus = PRS_SHOW_OUR_STRENGTH }
-		x = 10
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		available = {
-			NOT = { has_country_flag = PRS_POL_ENEMIES }
-		}
-		completion_reward = {
-			POL = { country_event = { id = le_prussia.9 days = 3}}
-		}
-	}
-	focus = {
-		id = PRS_THREATEN_SMALLER_NATIONS
-		icon = GFX_unknown
-		prerequisite = { focus = PRS_SHOW_OUR_STRENGTH }
-		x = 8
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			VRP = {country_event = { id = le_prussia.11 days = 3}}
-			ANH = {country_event = { id = le_prussia.11 days = 3}}
-			MCH = {country_event = { id = le_prussia.11 days = 3}}
-			HLS = {country_event = { id = le_prussia.11 days = 3}}
-			BRE = {country_event = { id = le_prussia.11 days = 3}}
-			RAV = {country_event = { id = le_prussia.11 days = 3}}
-			PAD = {country_event = { id = le_prussia.11 days = 3}}
-		}
-	}
-	focus = {
-		id = PRS_DANISH_PRUSSIAN_WAR
-		icon = GFX_unknown
-		prerequisite = { focus = PRS_THREATEN_SMALLER_NATIONS }
-		x = 8
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			add_state_claim = 785
-			create_wargoal = {
-			    type = annex_everything
-			    target = DEN
-			}
-		}
-	}
-	focus = {
-		id = PRS_BEFRIEND_POLAND
-		icon = GFX_unknown
-		prerequisite = { focus = PRS_OFFER_POLAND_PROTECTION_FOR_POZNAN }
-		mutually_exclusive = { focus = PRS_DEMAND_LOWER_PRUSSIAN_STRIP }
-		x = 10
-		y = 4
-		cost = 10
-		available = {
-			NOT = { has_country_flag = PRS_POL_ENEMIES }
-		}
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-	focus = {
-		id = PRS_SUPPORT_A_NEW_COMMONWEALTH
-		icon = GFX_unknown
-		prerequisite = { focus = PRS_BEFRIEND_POLAND }
-		x = 10
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		available = {
-			NOT = { has_country_flag = PRS_POL_ENEMIES }
-		}
-		completion_reward = {
-			LIT = { country_event = { id = le_prussia.13 days = 5 }}
-		}
-	}
-	focus = {
-		id = PRS_DEMAND_LOWER_PRUSSIAN_STRIP
-		icon = GFX_unknown
-		prerequisite = { focus = PRS_DEMAND_POZNAN }
-		mutually_exclusive = { focus = PRS_BEFRIEND_POLAND }
-		x = 12
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			POL = { country_event = { id = le_prussia.17 days = 3 }}
-		}
-	}
-	focus = {
-		id = PRS_DEMAND_LITHUANIAN_SUBJUGATION
-		icon = GFX_unknown
-		prerequisite = { focus = PRS_DEMAND_LOWER_PRUSSIAN_STRIP }
-		x = 12
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			LIT = { country_event = { id = le_prussia.18 days = 3 }}
-		}
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
 	}
 	focus = {
 		id = PRS_THE_BERLIN_CONFERENCE
 		icon = GFX_unknown
-		prerequisite = { focus = PRS_DANISH_PRUSSIAN_WAR }
-		prerequisite = { focus = PRS_DEMAND_LITHUANIAN_SUBJUGATION focus = PRS_SUPPORT_A_NEW_COMMONWEALTH }
-		x = 10
+		prerequisite = { focus = PRS_THE_DANISH_PROBLEM }
+		x = 6
+		y = 4
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_NEGOTIATIONS_SUCCEEDED
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_THE_BERLIN_CONFERENCE }
+		mutually_exclusive = { focus = PRS_NEGOTIATIONS_FAILED }
+		x = 4
+		y = 5
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_STRENGTHEN_THE_CONSTITUTION
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_NEGOTIATIONS_SUCCEEDED }
+		x = 4
 		y = 6
 		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			country_event = { id = le_prussia.5 }
-		}
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
 	}
 	focus = {
 		id = PRS_THE_NORTH_GERMAN_CONFEDERATION
 		icon = GFX_unknown
-		prerequisite = { focus = PRS_THE_BERLIN_CONFERENCE }
-		x = 9
+		prerequisite = { focus = PRS_STRENGTHEN_THE_CONSTITUTION }
+		x = 4
 		y = 7
 		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			add_political_power = 50
-		}
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
 	}
 	focus = {
-		id = PRS_THE_GERMAN_KAISERREICH
+		id = PRS_HIRE_NEW_GENERALS
 		icon = GFX_unknown
-		prerequisite = { focus = PRS_THE_BERLIN_CONFERENCE }
-		x = 11
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-	focus = {
-		id = PRS_THE_AUSTRO-PRUSSIAN_WAR
-		icon = GFX_unknown
-		prerequisite = { focus = PRS_THE_NORTH_GERMAN_CONFEDERATION focus = PRS_ALLIANCE_WITH_SERBIA }
-		prerequisite = { focus = PRS_THE_NORTH_GERMAN_CONFEDERATION focus = PRS_MEET_WITH_HUNGARIAN_REVOLUTIONARIES}
-		prerequisite = { focus = PRS_THE_NORTH_GERMAN_CONFEDERATION focus = PRS_ALLIANCE_WITH_VENICE}
-		x = 2
+		prerequisite = { focus = PRS_THE_NORTH_GERMAN_CONFEDERATION }
+		x = 5
 		y = 8
 		cost = 10
-		ai_will_do = {
-			factor = 60
-		}
-		completion_reward = {
-			add_political_power = 50
-		}
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_INCORPORATE_NEW_LANDS
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_THE_NORTH_GERMAN_CONFEDERATION }
+		x = 3
+		y = 8
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_ASSERT_EASTERN_CLAIMS
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_INCORPORATE_NEW_LANDS }
+		prerequisite = { focus = PRS_HIRE_NEW_GENERALS }
+		x = 4
+		y = 9
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_PARTITION_POLAND_WITH_RUSSIA
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_ASSERT_EASTERN_CLAIMS }
+		mutually_exclusive = { focus = PRS_PROTECTION_FOR_POZNAN focus = PRS_DEMAND_POZNAN }
+		x = 1
+		y = 10
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_DEMAND_POZNAN
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_ASSERT_EASTERN_CLAIMS }
+		mutually_exclusive = { focus = PRS_PROTECTION_FOR_POZNAN focus = PRS_ALLIANCE_WITH_THE_BEAR }
+		x = 3
+		y = 10
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_PROTECTION_FOR_POZNAN
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_ASSERT_EASTERN_CLAIMS }
+		mutually_exclusive = { focus = PRS_DEMAND_POZNAN focus = PRS_PROTECTION_FOR_POZNAN }
+		x = 5
+		y = 10
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_DOMINANCE_OVER_AUSTRIA
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_PROTECTION_FOR_POZNAN focus = PRS_DEMAND_POZNAN focus = PRS_PARTITION_POLAND_WITH_RUSSIA }
+		x = 3
+		y = 11
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_THE_AUSTRO_PRUSSIAN_WAR
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_DOMINANCE_OVER_AUSTRIA focus = PRS_REVENGE_AGAINST_AUSTRIA }
+		x = 7
+		y = 12
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_THE_KAISERREICH_OF_GERMANY
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_THE_AUSTRO_PRUSSIAN_WAR }
+		mutually_exclusive = { focus = PRS_FAILURE_AGAINST_AUSTRIA }
+		x = 6
+		y = 13
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_FAILURE_AGAINST_AUSTRIA
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_THE_AUSTRO_PRUSSIAN_WAR }
+		mutually_exclusive = { focus = PRS_THE_KAISERREICH_OF_GERMANY }
+		x = 8
+		y = 13
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_NEGOTIATIONS_FAILED
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_THE_BERLIN_CONFERENCE }
+		mutually_exclusive = { focus = PRS_NEGOTIATIONS_SUCCEEDED }
+		x = 8
+		y = 5
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_WILHELM_II_COUP
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_NEGOTIATIONS_FAILED }
+		x = 8
+		y = 6
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_PRUSSIAS_GLORY
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_WILHELM_II_COUP }
+		x = 8
+		y = 7
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_A_MILITARY_WITH_A_STATE
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_PRUSSIAS_GLORY }
+		x = 8
+		y = 8
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_NATIONALISTIC_SURGE
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_PRUSSIAS_GLORY }
+		x = 10
+		y = 8
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_THE_KING_IS_ABSOLUTE
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_PRUSSIAS_GLORY }
+		x = 12
+		y = 8
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_STRIKE_AGAINST_POLAND
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_NATIONALISTIC_SURGE }
+		prerequisite = { focus = PRS_A_MILITARY_WITH_A_STATE }
+		prerequisite = { focus = PRS_THE_KING_IS_ABSOLUTE }
+		x = 9
+		y = 9
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_GERMANIZE_POZNAN
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_STRIKE_AGAINST_POLAND }
+		x = 9
+		y = 10
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_SUBJUGATE_LITHUANIA
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_NATIONALISTIC_SURGE }
+		prerequisite = { focus = PRS_A_MILITARY_WITH_A_STATE }
+		prerequisite = { focus = PRS_THE_KING_IS_ABSOLUTE }
+		x = 11
+		y = 9
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_ESTABLISH_LIVONIA
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_SUBJUGATE_LITHUANIA }
+		x = 11
+		y = 10
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_REVENGE_AGAINST_AUSTRIA
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_ESTABLISH_LIVONIA }
+		prerequisite = { focus = PRS_GERMANIZE_POZNAN }
+		x = 10
+		y = 11
+		cost = 10
+		
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_MILITARY_COUP
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_NEGOTIATIONS_FAILED }
+		x = 16
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_A_MILITARY_JUNTA
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_MILITARY_COUP }
+		mutually_exclusive = { focus = PRS_HAND_OFF_THE_GOVERNMENT }
+		x = 15
+		y = 7
+		cost = 10 
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_INCREASE_POLICE_PRESENCE
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_A_MILITARY_JUNTA }
+		x = 15
+		y = 8
+		cost = 10 
+		ai_will_do = { factor = 100 }
+		completion_reward = { add_ideas = tno_security_security_service }
+	}
+	focus = {
+		id = PRS_HAND_OFF_THE_GOVERNMENT
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_MILITARY_COUP }
+		mutually_exclusive = { focus = PRS_A_MILITARY_JUNTA }
+		x = 17
+		y = 7
+		cost = 10
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_NATIONALISTS_IN_CONTROL
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_MILITARY_COUP }
+		mutually_exclusive = { focus = PRS_A_MILITARY_JUNTA }
+		x = 17
+		y = 7
+		cost = 10
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
+	}
+	focus = {
+		id = PRS_COMMUNIST_COUP
+		icon = GFX_unknown
+		prerequisite = { focus = PRS_NEGOTIATIONS_FAILED }
+		x = 20
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 100 }
+		completion_reward = {}
 	}

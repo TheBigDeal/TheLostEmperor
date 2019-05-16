@@ -11,6 +11,8 @@ set_technology = {
 	CAS1 = 1
 }
 
+
+
 set_convoys = 10
 set_politics = {
 

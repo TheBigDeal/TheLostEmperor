@@ -1,6 +1,6 @@
 ﻿capital = 14
 
-##OOB = "ALB_1936"
+OOB = "BRI_1928"
 
 set_technology = {
 	infantry_weapons = 1
@@ -12,11 +12,11 @@ set_politics = {
 
 	parties = {
 		liberalism = { 
-			popularity = 0
+			popularity = 10
 		}
 
 		rexism = {
-			popularity = 0
+			popularity = 10
 		}
 		
 		proletarianism = {
@@ -24,7 +24,7 @@ set_politics = {
 		}
 		
 		absolutism = { 
-			popularity = 90
+			popularity = 70
 		}
 	}
 	

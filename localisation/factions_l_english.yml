@@ -1,4 +1,11 @@
 ﻿l_english:
+#MOD
+ THE_HANSA:0 "Hanseatic League"
+ ITALIAN_MARITIME_COMPANY:0 "Italian Maritime Company"
+ ROOT_SPHERE:0 "[Root.Nation_ADJ] Sphere"
+ Nation_ADJ:0 "$COUNTRY$"
+ 
+ 
  FACTION_LEADER:0 "Faction leader: §Y$COUNTRY$§!"
  FACTION_MEMBER:0 "Faction member: §Y$COUNTRY$§!"
  FACTION_NAME_GER_rexism:0 "Axis"
@@ -33,4 +40,4 @@
  CZE_little_entente:0 "Czech Entente"
  holy_prussian_empire:0 "Prussian Confederation"
  PolishLithuaniaFederation:0 "Polish-Lithuanian Federation"
- Polish_Union_of_Soviet_Socialist_Republics:0 "Polish Union of SOviet Socialist Republics"
+ Polish_Union_of_Soviet_Socialist_Republics:0 "Polish Union of Soviet Socialist Republics"

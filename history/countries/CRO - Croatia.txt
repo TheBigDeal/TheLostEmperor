@@ -17,16 +17,14 @@ set_technology = {
 	
 	
 }
-
 set_convoys = 5
 set_politics = {
-
 	parties = {
 		liberalism = { 
 			popularity = 15
 		}
 
-		rexism = {
+		royalism = {
 			popularity = 75
 		}
 		
@@ -35,7 +33,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = rexism
+	ruling_party = royalism
 	last_election = "1935.6.9"
 	election_frequency = 12
 	elections_allowed = no # none after offset 1
@@ -44,12 +42,14 @@ set_politics = {
 set_cosmetic_tag = CRO_AUS_PUPPET
 
 create_country_leader = {
-	name = "Ante Pavelic"
-	desc = "ANTE_PAVELIC_DESC"
-	picture = "Portrait_Croatia_Ante_Pavelic.dds"
-	expire = "1965.1.1"
-	ideology = rexism
+	name = "Franz Ferdinand von Habsburg-Lothringen"
+	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+	picture = "Portrait_Franz_Ferdinand.tga"
+	expire = "2011.1.1"
+	ideology = royalism_ideology
 	traits = {
-		#
+		dislikes_prussia
+		stout_defender
+		autocratic_imperialist
 	}
 }

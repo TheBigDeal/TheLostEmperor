@@ -1,0 +1,22 @@
+guiTypes = {
+	containerWindowType = {
+		name = "gc_open_container"
+		position = { x = 100 y = 2 }
+		iconType ={
+			name ="german_confederation_ic"
+			spriteType = "GFX_german_confederation_ic"
+			position = { x = 100 y = -100 }
+		}
+
+	}
+	
+	containerWindowType = {
+		name = "gc_hide_container"
+		position = { x = 10000 y = 2 }
+		iconType ={
+			name ="german_confederation_ic"
+			spriteType = "GFX_german_confederation_ic"
+			position = { x = 0 y = 0 }
+		}
+	}
+}

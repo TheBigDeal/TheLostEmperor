@@ -1,21 +1,19 @@
 
 state={
 	id=880
-	name="STATE_743"
+	name="STATE_880"
 
 	history={
-		owner = GRE
+		owner = VNC
 		victory_points = {
-			6542 3
+			1106 2
 		}
 		buildings = {
-			infrastructure = 8
-			arms_factory = 7
+			infrastructure = 4
+			arms_factory = 2
 			industrial_complex = 1
-			air_base = 3
-
 		}
-		add_core_of = GRE
+		add_core_of = VNC
 
 	}
 

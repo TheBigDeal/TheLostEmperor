@@ -355,7 +355,7 @@
  STATE_354:0 "Trabzon"
  STATE_355:0 "Samsun"
  STATE_356:0 "Kastamonu"
- STATE_357:0 "New England"
+ STATE_357:0 "New York"
  STATE_358:0 "New York"
  STATE_359:0 "New Jersey"
  STATE_360:0 "Pennsylvania"
@@ -789,7 +789,6 @@
  STATE_791:0 "Maine"
  STATE_792:0 "West Virginia"
  STATE_797:0 "Lindau"
- STATE_789:0 "Memmingen"
  STATE_807:0 "Marijampole"
  STATE_808:0 "Dobruja"
  STATE_809:0 "South Burgas"
@@ -798,10 +797,13 @@
  STATE_809:0 "Burgas"
  STATE_810:0 "Plovdiv"
  STATE_811:0 "Anhalt"
+ 
+ STATE_817:0 "Superior"
  STATE_818:0 "Brunswick"
 
  STATE_820:0 "Fulda"
-
+ STATE_822:0 "Bitburg"
+ 
  STATE_825:0 "Grevena"
  STATE_826:0 "Thessaly"
  STATE_827:0 "Euboea"
@@ -841,10 +843,13 @@
  STATE_872:0 "Stettin"
  STATE_874:0 "Edirne"
  STATE_875:0 "Groningen"
+ STATE_877:0 "Aachen"
  STATE_880:0 "Ionian Islands"
  STATE_882:0 "Hamburg"
  STATE_886:0 "Versailles"
 
+ STATE_900:0 "South Michigan"
+ 
  STATE_925:0 "Johor"
  STATE_926:0 "Jambi"
  STATE_927:0 "Palembang"
@@ -910,3 +915,8 @@
  STATE_994:0 "Nandi"
  STATE_995:0 "Kisumu"
  STATE_996:0 "Vranje"
+ 
+ STATE_998:0 "Rhode Island"
+ STATE_999:0 "West Banat"
+ STATE_1000:0 "Srem"
+ STATE_1001:0 "North West Banat"

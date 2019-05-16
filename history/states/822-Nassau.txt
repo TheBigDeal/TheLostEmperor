@@ -6,10 +6,10 @@ state={
 	history={
 		owner = NAS
 		victory_points = {
-			11435 3
+			11435 3 
 		}
 		victory_points = {
-			6444 1
+			6444 1 
 		}
 		buildings = {
 			infrastructure = 6
@@ -22,7 +22,7 @@ state={
 	}
 
 	provinces={
-		3398 6444 9486 9547 11435 11470 11494 
+		11435 11470 11494 
 	}
 	manpower=435653
 	buildings_max_level_factor=1.000

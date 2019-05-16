@@ -12,6 +12,56 @@
 ##########################################
 # M O D
 ##########################################
+defined_text = {
+	name = GetNationAdjective
+	text = {
+		trigger = {
+			any_country = {
+				is_faction_leader = yes
+				is_in_faction_with = PREV
+			}
+		}
+		localization_key = GetSphereController
+	}
+}
+defined_text = {
+	name = GetNationAdjective
+	text = {
+		trigger = {
+			ROOT = {
+				is_faction_leader = yes
+			}
+		}
+		localization_key = Nation_ADJ
+	}
+}
+defined_text = {
+	name = GetPowerLevel
+	text = {
+		trigger = {
+			check_variable = { var = ROOT.power_rating value = 26 compare = less_than }
+		}
+		localization_key = PWR_local_power
+	}
+	text = {
+		trigger = {
+			check_variable = { var = ROOT.power_rating value = 101 compare = less_than }
+		}
+		localization_key = PWR_regional_power
+	}
+	text = {
+		trigger = {
+			check_variable = { var = ROOT.power_rating value = 251 compare = less_than }
+		}
+		localization_key = PWR_secondary_power
+	}
+	text = {
+		trigger = {
+			check_variable = { var = ROOT.power_rating value = 250 compare = greater_than }
+		}
+		localization_key = PWR_great_power
+	}
+}
 
 # COMMUNIST PARTY
 ######################

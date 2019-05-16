@@ -6,3 +6,43 @@ add_namespace = le_USA
 
 # American Civil War
 ########################
+country_event = { #TERROR ATTACK IN GEORGIA
+	id = le_USA.1
+	title = le_USA.1.t
+	desc = le_USA.1.d
+	is_triggered_only = yes
+	option = {
+		name = le_USA.10.a
+		NCL = { transfer_state = 363 }
+		NEW = { transfer_state = 358 }
+		NEW = { transfer_state = 357 }
+		OHI = { transfer_state = 261 }
+		PEN = { transfer_state = 360 }
+		SCL = { transfer_state = 364 }
+		TEN = { transfer_state = 368 }
+		VIR = { transfer_state = 362 }
+		ALA = { transfer_state = 367 }
+		GRG = { transfer_state = 365 }
+		IND = { transfer_state = 396 }
+		JER = { transfer_state = 359 }
+		KNT = { transfer_state = 369 }
+		MIS = { transfer_state = 370 }
+		MIC = { transfer_state = 900 }
+		WVR = { transfer_state = 792 }
+		MAS = { transfer_state = 788 }
+		MRY = { transfer_state = 361 }
+		CNT = { transfer_state = 787 }
+		VRM = { transfer_state = 789 }
+		NHS = { transfer_state = 790 }
+		MNE = { transfer_state = 791 }
+		ILL = { transfer_state = 395 }
+		MIN = { transfer_state = 391 }
+		DAK = { transfer_state = 893 }
+		DAK = { transfer_state = 894 }
+		WIS = { transfer_state = 394 }
+		WIS = { transfer_state = 817 }
+		IWA = { transfer_state = 392 }
+		FLO = { transfer_state = 366 }
+		RIS = { transfer_state = 998 }
+	}
+}

@@ -27,7 +27,13 @@
  le_france.14.1:0 "Elect Jacques Duclos (Collectivist)"
  le_france.14.2:0 "Elect Benoît Frachon (Proletariat)"
  le_france.14.3:0 "Elect Sebastien Faure (Naturalist)"
- 
+ #Austria
+ le_austria.1.t:0 "Invitation To The South German Confederation"
+ le_austria.1.d:0 "Austria has announced a new German confederation to be formed in the name of keeping peace in the German Region. Prussia has shown to be a very large threat in the region and a rival to Austria's power. This confederation will act as a detorrent for Prussia."
+ le_austria.1.a:0 "Join the Confederation"
+ le_austria.1.b:0 "Refuse"
+ le_austria.2.t:0 "The Danubian Federation"
+ le_austria.3.t:0 "Bohemian Referendum"
  #Russia Unrest
  le_russia_unrest.1.t:0 "[GEO.GetName] Declares Independence"
  le_russia_unrest.1.d:0 "Today a letter has received from [GEO.GetLeader], The so called "Terror of the Caucus" he has declared independence from us, and is claiming to be the leader of this newly founded rebellion. He always knew he was trouble and has been terrorizing the region for months, advocating against the soviets for his special form of collectivism, so called "Stalinism". How pathetic, naming a whole ideology after yourself. He demands a one year truce is signed to assure we do not attack his newly found country."
@@ -195,7 +201,7 @@
  le_greece.1.t:0 "The Greek Elections of 1928"
  le_greece.1.d:0 "Elections have been a recent addition to the Greek Government. Ever since the Parliament was created in 1923 The Greeks elected a Prime minister, as well as representatives from each part of Greece. Even though they are still mostly all puppets to the King, the Prime Minister still has a say in government and what happens in the country. Today a new prime minister will be elected."
  le_greece.1.a:0 "Election Time!"
- le_greece.2.t:0 "Prime Minister Elections"
+ le_greece.2.t:0 "Forming A Coalition Government"
  le_greece.2.d:0 "The day has come to elect a Prime Minister. There are four canidates. Firstly there is Eleftherios Venizelos, he is a liberal monarchist and supporter of the new parliament. He advocates for a stronger democracy, but still with a king. Secondly there is Nikos Zachariadis, he is the leader of the Hellenic Commune, and a symbol for many Greeks. Thirdly there is Georgios Tsolakoglou, he is part of the newly formed labryscist party, and the leader of the Spartan State. Lastly there is Charles Zervas, he is named after the French figurehead Charlemange, a current nationalist symbol in France. He beleives that the state should adopt a orthodox state religion and follow the old ways of the Byzantines. He still supports the monarchy, but only as hiself as the king."
  le_greece.2.I:0 "The Communist Nikos Zachariadis Wins"
  le_greece.2.II:0 "The Nationalist Georgios Tsolakoglou Wins"

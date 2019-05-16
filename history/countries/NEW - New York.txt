@@ -1,4 +1,4 @@
-﻿capital = 358
+﻿capital = 357
 
 ##OOB = "YUG_1936"
 

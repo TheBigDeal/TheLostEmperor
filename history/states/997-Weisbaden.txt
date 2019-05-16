@@ -1,0 +1,19 @@
+state={
+	id=997
+	name="STATE_997"
+	history={
+		owner = NAS
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 1
+		}
+		add_core_of = NAS
+
+	}
+	provinces={
+		3398 6444 9486 9547 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

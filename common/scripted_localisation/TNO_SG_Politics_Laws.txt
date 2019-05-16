@@ -1,0 +1,2786 @@
+defined_text = {
+	name = GetCategory2Lawtno_conscription
+	text = {
+		trigger = {
+			has_idea = tno_conscription_scraping_the_barrel
+		}
+		localization_key = tno_conscription_scraping_the_barrel
+	}
+	text = {
+		trigger = {
+			has_idea = tno_conscription_all_adults_serve
+		}
+		localization_key = tno_conscription_all_adults_serve
+	}
+	text = {
+		trigger = {
+			has_idea = tno_conscription_service_by_requirement
+		}
+		localization_key = tno_conscription_service_by_requirement
+	}
+	text = {
+		trigger = {
+			has_idea = tno_conscription_four_year_draft
+		}
+		localization_key = tno_conscription_four_year_draft
+	}
+	text = {
+		trigger = {
+			has_idea = tno_conscription_two_year_draft
+		}
+		localization_key = tno_conscription_two_year_draft
+	}
+	text = {
+		trigger = {
+			has_idea = tno_conscription_one_year_draft
+		}
+		localization_key = tno_conscription_one_year_draft
+	}
+	text = {
+		trigger = {
+			has_idea = tno_conscription_volunteer_only
+		}
+		localization_key = tno_conscription_volunteer_only
+	}
+	text = {
+		trigger = {
+			has_idea = tno_conscription_disarmed_nation
+		}
+		localization_key = tno_conscription_disarmed_nation
+	}
+}
+
+defined_text = {
+	name = GetCategory2Lawtno_conscriptionTT
+	text = {
+		trigger = {
+			has_idea = tno_conscription_scraping_the_barrel
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_conscription_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_conscription_all_adults_serve
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_conscription_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_conscription_service_by_requirement
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_conscription_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_conscription_four_year_draft
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_conscription_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_conscription_two_year_draft
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_conscription_5_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_conscription_one_year_draft
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_conscription_6_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_conscription_volunteer_only
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_conscription_7_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_conscription_disarmed_nation
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_conscription_8_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory2Lawtno_women
+	text = {
+		trigger = {
+			has_idea = tno_women_banned
+		}
+		localization_key = tno_women_banned
+	}
+	text = {
+		trigger = {
+			has_idea = tno_women_military_assistance
+		}
+		localization_key = tno_women_military_assistance
+	}
+	text = {
+		trigger = {
+			has_idea = tno_women_noncombat_only
+		}
+		localization_key = tno_women_noncombat_only
+	}
+	text = {
+		trigger = {
+			has_idea = tno_women_combat_roles
+		}
+		localization_key = tno_women_combat_roles
+	}
+	text = {
+		trigger = {
+			has_idea = tno_women_total_equality
+		}
+		localization_key = tno_women_total_equality
+	}
+}
+
+defined_text = {
+	name = GetCategory2Lawtno_womenTT
+	text = {
+		trigger = {
+			has_idea = tno_women_banned
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_women_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_women_military_assistance
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_women_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_women_noncombat_only
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_women_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_women_combat_roles
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_women_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_women_total_equality
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_women_5_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory2Lawtno_military_supervision
+	text = {
+		trigger = {
+			has_idea = tno_military_supervision_kill_em_all
+		}
+		localization_key = tno_military_supervision_kill_em_all
+	}
+	text = {
+		trigger = {
+			has_idea = tno_military_supervision_no_supervision
+		}
+		localization_key = tno_military_supervision_no_supervision
+	}
+	text = {
+		trigger = {
+			has_idea = tno_military_supervision_military_policing
+		}
+		localization_key = tno_military_supervision_military_policing
+	}
+	text = {
+		trigger = {
+			has_idea = tno_military_supervision_rules_of_engagement
+		}
+		localization_key = tno_military_supervision_rules_of_engagement
+	}
+	text = {
+		trigger = {
+			has_idea = tno_military_supervision_watchdog_groups
+		}
+		localization_key = tno_military_supervision_watchdog_groups
+	}
+	text = {
+		trigger = {
+			has_idea = tno_military_supervision_total_supervision
+		}
+		localization_key = tno_military_supervision_total_supervision
+	}
+}
+
+defined_text = {
+	name = GetCategory2Lawtno_military_supervisionTT
+	text = {
+		trigger = {
+			has_idea = tno_military_supervision_kill_em_all
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_military_supervision_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_military_supervision_no_supervision
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_military_supervision_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_military_supervision_military_policing
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_military_supervision_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_military_supervision_rules_of_engagement
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_military_supervision_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_military_supervision_watchdog_groups
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_military_supervision_5_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_military_supervision_total_supervision
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_military_supervision_6_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory2Lawtno_military_spending
+	text = {
+		trigger = {
+			has_idea = tno_military_spending_demilitarized
+		}
+		localization_key = tno_military_spending_demilitarized
+	}
+	text = {
+		trigger = {
+			has_idea = tno_military_spending_low_spending
+		}
+		localization_key = tno_military_spending_low_spending
+	}
+	text = {
+		trigger = {
+			has_idea = tno_military_spending_medium_spending
+		}
+		localization_key = tno_military_spending_medium_spending
+	}
+	text = {
+		trigger = {
+			has_idea = tno_military_spending_large_spending
+		}
+		localization_key = tno_military_spending_large_spending
+	}
+	text = {
+		trigger = {
+			has_idea = tno_military_spending_militarycentric_budget
+		}
+		localization_key = tno_military_spending_militarycentric_budget
+	}
+	text = {
+		trigger = {
+			has_idea = tno_military_spending_total_war_economy
+		}
+		localization_key = tno_military_spending_total_war_economy
+	}
+}
+
+defined_text = {
+	name = GetCategory2Lawtno_training
+	text = {
+		trigger = {
+			has_idea = tno_training_none
+		}
+		localization_key = tno_training_none
+	}
+	text = {
+		trigger = {
+			has_idea = tno_training_minimal_training
+		}
+		localization_key = tno_training_minimal_training
+	}
+	text = {
+		trigger = {
+			has_idea = tno_training_basic_training
+		}
+		localization_key = tno_training_basic_training
+	}
+	text = {
+		trigger = {
+			has_idea = tno_training_combat_schooling
+		}
+		localization_key = tno_training_combat_schooling
+	}
+	text = {
+		trigger = {
+			has_idea = tno_training_advanced_training_methods
+		}
+		localization_key = tno_training_advanced_training_methods
+	}
+}
+
+defined_text = {
+	name = GetCategory2Lawtno_trainingTT
+	text = {
+		trigger = {
+			has_idea = tno_training_none
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_training_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_training_minimal_training
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_training_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_training_basic_training
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_training_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_training_combat_schooling
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_training_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_training_advanced_training_methods
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_training_5_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory2Lawtno_racial_integration
+	text = {
+		trigger = {
+			has_idea = tno_racial_integration_none
+		}
+		localization_key = tno_racial_integration_none
+	}
+	text = {
+		trigger = {
+			has_idea = tno_racial_integration_segregated_regiments
+		}
+		localization_key = tno_racial_integration_segregated_regiments
+	}
+	text = {
+		trigger = {
+			has_idea = tno_racial_integration_integrated_military
+		}
+		localization_key = tno_racial_integration_integrated_military
+	}
+	text = {
+		trigger = {
+			has_idea = tno_racial_integration_enforced_integration
+		}
+		localization_key = tno_racial_integration_enforced_integration
+	}
+}
+
+defined_text = {
+	name = GetCategory2Lawtno_racial_integrationTT
+	text = {
+		trigger = {
+			has_idea = tno_racial_integration_none
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_racial_integration_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_racial_integration_segregated_regiments
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_racial_integration_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_racial_integration_integrated_military
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_racial_integration_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_racial_integration_enforced_integration
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_racial_integration_4_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory2Lawtno_draft_exemptions
+	text = {
+		trigger = {
+			has_idea = tno_draft_exemptions_none
+		}
+		localization_key = tno_draft_exemptions_none
+	}
+	text = {
+		trigger = {
+			has_idea = tno_draft_exemptions_educational_deferment
+		}
+		localization_key = tno_draft_exemptions_educational_deferment
+	}
+	text = {
+		trigger = {
+			has_idea = tno_draft_exemptions_civil_service_deferment
+		}
+		localization_key = tno_draft_exemptions_civil_service_deferment
+	}
+}
+
+defined_text = {
+	name = GetCategory2Lawtno_draft_exemptionsTT
+	text = {
+		trigger = {
+			has_idea = tno_draft_exemptions_none
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_draft_exemptions_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_draft_exemptions_educational_deferment
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_draft_exemptions_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_draft_exemptions_civil_service_deferment
+		}
+		localization_key = TNO_POLITICS_CATEGORY_2_LAW_tno_draft_exemptions_3_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory3Lawtno_trade_laws
+	text = {
+		trigger = {
+			has_idea = tno_trade_laws_free_trade
+		}
+		localization_key = tno_trade_laws_free_trade
+	}
+	text = {
+		trigger = {
+			has_idea = tno_trade_laws_export_focus
+		}
+		localization_key = tno_trade_laws_export_focus
+	}
+	text = {
+		trigger = {
+			has_idea = tno_trade_laws_limited_exports
+		}
+		localization_key = tno_trade_laws_limited_exports
+	}
+	text = {
+		trigger = {
+			has_idea = tno_trade_laws_closed_economy
+		}
+		localization_key = tno_trade_laws_closed_economy
+	}
+}
+
+defined_text = {
+	name = GetCategory3Lawtno_trade_lawsTT
+	text = {
+		trigger = {
+			has_idea = tno_trade_laws_free_trade
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_trade_laws_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_trade_laws_export_focus
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_trade_laws_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_trade_laws_limited_exports
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_trade_laws_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_trade_laws_closed_economy
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_trade_laws_4_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory3Lawtno_economic_focus
+	text = {
+		trigger = {
+			has_idea = tno_economic_focus_demilitarized_economy
+		}
+		localization_key = tno_economic_focus_demilitarized_economy
+	}
+	text = {
+		trigger = {
+			has_idea = tno_economic_focus_civilian_economy
+		}
+		localization_key = tno_economic_focus_civilian_economy
+	}
+	text = {
+		trigger = {
+			has_idea = tno_economic_focus_early_mobilization
+		}
+		localization_key = tno_economic_focus_early_mobilization
+	}
+	text = {
+		trigger = {
+			has_idea = tno_economic_focus_partial_mobilization
+		}
+		localization_key = tno_economic_focus_partial_mobilization
+	}
+	text = {
+		trigger = {
+			has_idea = tno_economic_focus_war_economy
+		}
+		localization_key = tno_economic_focus_war_economy
+	}
+	text = {
+		trigger = {
+			has_idea = tno_economic_focus_total_mobilization
+		}
+		localization_key = tno_economic_focus_total_mobilization
+	}
+}
+
+defined_text = {
+	name = GetCategory3Lawtno_economic_focusTT
+	text = {
+		trigger = {
+			has_idea = tno_economic_focus_demilitarized_economy
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_economic_focus_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_economic_focus_civilian_economy
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_economic_focus_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_economic_focus_early_mobilization
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_economic_focus_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_economic_focus_partial_mobilization
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_economic_focus_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_economic_focus_war_economy
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_economic_focus_5_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_economic_focus_total_mobilization
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_economic_focus_6_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory3Lawtno_tax_rate
+	text = {
+		trigger = {
+			has_idea = tno_tax_rate_not_applicable
+		}
+		localization_key = tno_tax_rate_not_applicable
+	}
+	text = {
+		trigger = {
+			has_idea = tno_tax_rate_no_taxation
+		}
+		localization_key = tno_tax_rate_no_taxation
+	}
+	text = {
+		trigger = {
+			has_idea = tno_tax_rate_low_taxation
+		}
+		localization_key = tno_tax_rate_low_taxation
+	}
+	text = {
+		trigger = {
+			has_idea = tno_tax_rate_medium_taxation
+		}
+		localization_key = tno_tax_rate_medium_taxation
+	}
+	text = {
+		trigger = {
+			has_idea = tno_tax_rate_high_taxes
+		}
+		localization_key = tno_tax_rate_high_taxes
+	}
+	text = {
+		trigger = {
+			has_idea = tno_tax_rate_exploitative_taxation
+		}
+		localization_key = tno_tax_rate_exploitative_taxation
+	}
+}
+
+defined_text = {
+	name = GetCategory3Lawtno_tax_rateTT
+	text = {
+		trigger = {
+			has_idea = tno_tax_rate_no_taxation
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_tax_rate_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_tax_rate_low_taxation
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_tax_rate_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_tax_rate_medium_taxation
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_tax_rate_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_tax_rate_high_taxes
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_tax_rate_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_tax_rate_exploitative_taxation
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_tax_rate_5_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory3Lawtno_income_taxation
+	text = {
+		trigger = {
+			has_idea = tno_income_taxation_not_applicable
+		}
+		localization_key = tno_income_taxation_not_applicable
+	}
+	text = {
+		trigger = {
+			has_idea = tno_income_taxation_elite_tax_exemptions
+		}
+		localization_key = tno_income_taxation_elite_tax_exemptions
+	}
+	text = {
+		trigger = {
+			has_idea = tno_income_taxation_tax_havens
+		}
+		localization_key = tno_income_taxation_tax_havens
+	}
+	text = {
+		trigger = {
+			has_idea = tno_income_taxation_low_income_weighted
+		}
+		localization_key = tno_income_taxation_low_income_weighted
+	}
+	text = {
+		trigger = {
+			has_idea = tno_income_taxation_flat_taxes
+		}
+		localization_key = tno_income_taxation_flat_taxes
+	}
+	text = {
+		trigger = {
+			has_idea = tno_income_taxation_high_income_weighted
+		}
+		localization_key = tno_income_taxation_high_income_weighted
+	}
+}
+
+defined_text = {
+	name = GetCategory3Lawtno_income_taxationTT
+	text = {
+		trigger = {
+			has_idea = tno_income_taxation_elite_tax_exemptions
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_income_taxation_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_income_taxation_tax_havens
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_income_taxation_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_income_taxation_low_income_weighted
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_income_taxation_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_income_taxation_flat_taxes
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_income_taxation_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_income_taxation_high_income_weighted
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_income_taxation_5_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory3Lawtno_minimum_wage
+	text = {
+		trigger = {
+			has_idea = tno_minimum_wage_no_minimum_wage
+		}
+		localization_key = tno_minimum_wage_no_minimum_wage
+	}
+	text = {
+		trigger = {
+			has_idea = tno_minimum_wage_trinket_minimum_wage
+		}
+		localization_key = tno_minimum_wage_trinket_minimum_wage
+	}
+	text = {
+		trigger = {
+			has_idea = tno_minimum_wage_low_minimum_wage
+		}
+		localization_key = tno_minimum_wage_low_minimum_wage
+	}
+	text = {
+		trigger = {
+			has_idea = tno_minimum_wage_acceptable_minimum
+		}
+		localization_key = tno_minimum_wage_acceptable_minimum
+	}
+	text = {
+		trigger = {
+			has_idea = tno_minimum_wage_good_minimum_wage
+		}
+		localization_key = tno_minimum_wage_good_minimum_wage
+	}
+}
+
+defined_text = {
+	name = GetCategory3Lawtno_minimum_wageTT
+	text = {
+		trigger = {
+			has_idea = tno_minimum_wage_no_minimum_wage
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_minimum_wage_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_minimum_wage_trinket_minimum_wage
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_minimum_wage_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_minimum_wage_low_minimum_wage
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_minimum_wage_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_minimum_wage_acceptable_minimum
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_minimum_wage_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_minimum_wage_good_minimum_wage
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_minimum_wage_5_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory3Lawtno_max_workhours
+	text = {
+		trigger = {
+			has_idea = tno_max_workhours_unlimited_work_day
+		}
+		localization_key = tno_max_workhours_unlimited_work_day
+	}
+	text = {
+		trigger = {
+			has_idea = tno_max_workhours_14_hour_work_day
+		}
+		localization_key = tno_max_workhours_14_hour_work_day
+	}
+	text = {
+		trigger = {
+			has_idea = tno_max_workhours_12_hour_work_day
+		}
+		localization_key = tno_max_workhours_12_hour_work_day
+	}
+	text = {
+		trigger = {
+			has_idea = tno_max_workhours_8_hour_work_day
+		}
+		localization_key = tno_max_workhours_8_hour_work_day
+	}
+	text = {
+		trigger = {
+			has_idea = tno_max_workhours_6_hour_work_day
+		}
+		localization_key = tno_max_workhours_6_hour_work_day
+	}
+}
+
+defined_text = {
+	name = GetCategory3Lawtno_max_workhoursTT
+	text = {
+		trigger = {
+			has_idea = tno_max_workhours_unlimited_work_day
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_max_workhours_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_max_workhours_14_hour_work_day
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_max_workhours_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_max_workhours_12_hour_work_day
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_max_workhours_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_max_workhours_8_hour_work_day
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_max_workhours_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_max_workhours_6_hour_work_day
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_max_workhours_5_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory3Lawtno_child_labor
+	text = {
+		trigger = {
+			has_idea = tno_child_labor_legal
+		}
+		localization_key = tno_child_labor_legal
+	}
+	text = {
+		trigger = {
+			has_idea = tno_child_labor_restricted
+		}
+		localization_key = tno_child_labor_restricted
+	}
+	text = {
+		trigger = {
+			has_idea = tno_child_labor_illegal
+		}
+		localization_key = tno_child_labor_illegal
+	}
+}
+
+defined_text = {
+	name = GetCategory3Lawtno_child_laborTT
+	text = {
+		trigger = {
+			has_idea = tno_child_labor_legal
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_child_labor_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_child_labor_restricted
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_child_labor_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_child_labor_illegal
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_child_labor_3_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory3Lawtno_pensions
+	text = {
+		trigger = {
+			has_idea = tno_pensions_no_pensions
+		}
+		localization_key = tno_pensions_no_pensions
+	}
+	text = {
+		trigger = {
+			has_idea = tno_pensions_trinket_pensions
+		}
+		localization_key = tno_pensions_trinket_pensions
+	}
+	text = {
+		trigger = {
+			has_idea = tno_pensions_low_pensions
+		}
+		localization_key = tno_pensions_low_pensions
+	}
+	text = {
+		trigger = {
+			has_idea = tno_pensions_acceptable_pensions
+		}
+		localization_key = tno_pensions_acceptable_pensions
+	}
+	text = {
+		trigger = {
+			has_idea = tno_pensions_good_pensions
+		}
+		localization_key = tno_pensions_good_pensions
+	}
+}
+
+defined_text = {
+	name = GetCategory3Lawtno_pensionsTT
+	text = {
+		trigger = {
+			has_idea = tno_pensions_no_pensions
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_pensions_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_pensions_trinket_pensions
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_pensions_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_pensions_low_pensions
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_pensions_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_pensions_acceptable_pensions
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_pensions_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_pensions_good_pensions
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_pensions_5_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory3Lawtno_unemployment
+	text = {
+		trigger = {
+			has_idea = tno_unemployment_no_subsidies
+		}
+		localization_key = tno_unemployment_no_subsidies
+	}
+	text = {
+		trigger = {
+			has_idea = tno_unemployment_trinket_subsidies
+		}
+		localization_key = tno_unemployment_trinket_subsidies
+	}
+	text = {
+		trigger = {
+			has_idea = tno_unemployment_low_subsidies
+		}
+		localization_key = tno_unemployment_low_subsidies
+	}
+	text = {
+		trigger = {
+			has_idea = tno_unemployment_generous_subsidies
+		}
+		localization_key = tno_unemployment_generous_subsidies
+	}
+	text = {
+		trigger = {
+			has_idea = tno_unemployment_basic_income
+		}
+		localization_key = tno_unemployment_basic_income
+	}
+}
+
+defined_text = {
+	name = GetCategory3Lawtno_unemploymentTT
+	text = {
+		trigger = {
+			has_idea = tno_unemployment_no_subsidies
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_unemployment_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_unemployment_trinket_subsidies
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_unemployment_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_unemployment_low_subsidies
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_unemployment_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_unemployment_generous_subsidies
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_unemployment_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_unemployment_basic_income
+		}
+		localization_key = TNO_POLITICS_CATEGORY_3_LAW_tno_unemployment_5_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory4Lawtno_safety
+	text = {
+		trigger = {
+			has_idea = tno_safety_no_regulations
+		}
+		localization_key = tno_safety_no_regulations
+	}
+	text = {
+		trigger = {
+			has_idea = tno_safety_minimal_regulations
+		}
+		localization_key = tno_safety_minimal_regulations
+	}
+	text = {
+		trigger = {
+			has_idea = tno_safety_limited_regulations
+		}
+		localization_key = tno_safety_limited_regulations
+	}
+	text = {
+		trigger = {
+			has_idea = tno_safety_acceptable_regulations
+		}
+		localization_key = tno_safety_acceptable_regulations
+	}
+	text = {
+		trigger = {
+			has_idea = tno_safety_excellent_regulations
+		}
+		localization_key = tno_safety_excellent_regulations
+	}
+}
+
+defined_text = {
+	name = GetCategory4Lawtno_safetyTT
+	text = {
+		trigger = {
+			has_idea = tno_safety_no_regulations
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_safety_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_safety_minimal_regulations
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_safety_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_safety_limited_regulations
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_safety_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_safety_acceptable_regulations
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_safety_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_safety_excellent_regulations
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_safety_5_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory4Lawtno_health_care
+	text = {
+		trigger = {
+			has_idea = tno_health_care_no_health_care
+		}
+		localization_key = tno_health_care_no_health_care
+	}
+	text = {
+		trigger = {
+			has_idea = tno_health_care_private_health_care
+		}
+		localization_key = tno_health_care_private_health_care
+	}
+	text = {
+		trigger = {
+			has_idea = tno_health_care_public_health_care
+		}
+		localization_key = tno_health_care_public_health_care
+	}
+	text = {
+		trigger = {
+			has_idea = tno_health_care_universal_health_care
+		}
+		localization_key = tno_health_care_universal_health_care
+	}
+	text = {
+		trigger = {
+			has_idea = tno_health_care_free_universal_care
+		}
+		localization_key = tno_health_care_free_universal_care
+	}
+}
+
+defined_text = {
+	name = GetCategory4Lawtno_health_careTT
+	text = {
+		trigger = {
+			has_idea = tno_health_care_no_health_care
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_health_care_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_health_care_private_health_care
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_health_care_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_health_care_public_health_care
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_health_care_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_health_care_universal_health_care
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_health_care_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_health_care_free_universal_care
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_health_care_5_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory4Lawtno_pollution
+	text = {
+		trigger = {
+			has_idea = tno_pollution_no_controls
+		}
+		localization_key = tno_pollution_no_controls
+	}
+	text = {
+		trigger = {
+			has_idea = tno_pollution_few_regulations
+		}
+		localization_key = tno_pollution_few_regulations
+	}
+	text = {
+		trigger = {
+			has_idea = tno_pollution_some_regulations
+		}
+		localization_key = tno_pollution_some_regulations
+	}
+	text = {
+		trigger = {
+			has_idea = tno_pollution_good_regulations
+		}
+		localization_key = tno_pollution_good_regulations
+	}
+	text = {
+		trigger = {
+			has_idea = tno_pollution_strict_regulations
+		}
+		localization_key = tno_pollution_strict_regulations
+	}
+}
+
+defined_text = {
+	name = GetCategory4Lawtno_pollutionTT
+	text = {
+		trigger = {
+			has_idea = tno_pollution_no_controls
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_pollution_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_pollution_few_regulations
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_pollution_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_pollution_some_regulations
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_pollution_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_pollution_good_regulations
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_pollution_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_pollution_strict_regulations
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_pollution_5_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory4Lawtno_education
+	text = {
+		trigger = {
+			has_idea = tno_education_elite_only
+		}
+		localization_key = tno_education_elite_only
+	}
+	text = {
+		trigger = {
+			has_idea = tno_education_public_education
+		}
+		localization_key = tno_education_public_education
+	}
+	text = {
+		trigger = {
+			has_idea = tno_education_subsidised_higher_education
+		}
+		localization_key = tno_education_subsidised_higher_education
+	}
+	text = {
+		trigger = {
+			has_idea = tno_education_public_higher_education
+		}
+		localization_key = tno_education_public_higher_education
+	}
+	text = {
+		trigger = {
+			has_idea = tno_education_free_education
+		}
+		localization_key = tno_education_free_education
+	}
+}
+
+defined_text = {
+	name = GetCategory4Lawtno_educationTT
+	text = {
+		trigger = {
+			has_idea = tno_education_elite_only
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_education_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_education_public_education
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_education_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_education_subsidised_higher_education
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_education_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_education_public_higher_education
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_education_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_education_free_education
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_education_5_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory4Lawtno_penal_system
+	text = {
+		trigger = {
+			has_idea = tno_penal_system_penal_slavery
+		}
+		localization_key = tno_penal_system_penal_slavery
+	}
+	text = {
+		trigger = {
+			has_idea = tno_penal_system_capital_punishment
+		}
+		localization_key = tno_penal_system_capital_punishment
+	}
+	text = {
+		trigger = {
+			has_idea = tno_penal_system_penal_labor
+		}
+		localization_key = tno_penal_system_penal_labor
+	}
+	text = {
+		trigger = {
+			has_idea = tno_penal_system_incarceration
+		}
+		localization_key = tno_penal_system_incarceration
+	}
+	text = {
+		trigger = {
+			has_idea = tno_penal_system_rehabilitation
+		}
+		localization_key = tno_penal_system_rehabilitation
+	}
+}
+
+defined_text = {
+	name = GetCategory4Lawtno_penal_systemTT
+	text = {
+		trigger = {
+			has_idea = tno_penal_system_penal_slavery
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_penal_system_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_penal_system_capital_punishment
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_penal_system_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_penal_system_penal_labor
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_penal_system_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_penal_system_incarceration
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_penal_system_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_penal_system_rehabilitation
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_penal_system_5_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory4Lawtno_lgbt_rights
+	text = {
+		trigger = {
+			has_idea = tno_lgbt_rights_lgbt_outlawed
+		}
+		localization_key = tno_lgbt_rights_lgbt_outlawed
+	}
+	text = {
+		trigger = {
+			has_idea = tno_lgbt_rights_lgbt_allowed
+		}
+		localization_key = tno_lgbt_rights_lgbt_allowed
+	}
+	text = {
+		trigger = {
+			has_idea = tno_lgbt_rights_equal_rights
+		}
+		localization_key = tno_lgbt_rights_equal_rights
+	}
+	text = {
+		trigger = {
+			has_idea = tno_lgbt_rights_lgbt_normality
+		}
+		localization_key = tno_lgbt_rights_lgbt_normality
+	}
+}
+
+defined_text = {
+	name = GetCategory4Lawtno_lgbt_rightsTT
+	text = {
+		trigger = {
+			has_idea = tno_lgbt_rights_lgbt_outlawed
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_lgbt_rights_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_lgbt_rights_lgbt_allowed
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_lgbt_rights_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_lgbt_rights_equal_rights
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_lgbt_rights_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_lgbt_rights_lgbt_normality
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_lgbt_rights_4_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory4Lawtno_gender_rights
+	text = {
+		trigger = {
+			has_idea = tno_gender_rights_traditional_roles
+		}
+		localization_key = tno_gender_rights_traditional_roles
+	}
+	text = {
+		trigger = {
+			has_idea = tno_gender_rights_women_in_the_workplace
+		}
+		localization_key = tno_gender_rights_women_in_the_workplace
+	}
+	text = {
+		trigger = {
+			has_idea = tno_gender_rights_gender_equality
+		}
+		localization_key = tno_gender_rights_gender_equality
+	}
+	text = {
+		trigger = {
+			has_idea = tno_gender_rights_promoted_equality
+		}
+		localization_key = tno_gender_rights_promoted_equality
+	}
+}
+
+defined_text = {
+	name = GetCategory4Lawtno_gender_rightsTT
+	text = {
+		trigger = {
+			has_idea = tno_gender_rights_traditional_roles
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_gender_rights_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_gender_rights_women_in_the_workplace
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_gender_rights_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_gender_rights_gender_equality
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_gender_rights_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_gender_rights_promoted_equality
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_gender_rights_4_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory4Lawtno_minorities
+	text = {
+		trigger = {
+			has_idea = tno_minorities_oppression
+		}
+		localization_key = tno_minorities_oppression
+	}
+	text = {
+		trigger = {
+			has_idea = tno_minorities_segregation
+		}
+		localization_key = tno_minorities_segregation
+	}
+	text = {
+		trigger = {
+			has_idea = tno_minorities_equal_rights
+		}
+		localization_key = tno_minorities_equal_rights
+	}
+	text = {
+		trigger = {
+			has_idea = tno_minorities_affirmative_action
+		}
+		localization_key = tno_minorities_affirmative_action
+	}
+}
+
+defined_text = {
+	name = GetCategory4Lawtno_minoritiesTT
+	text = {
+		trigger = {
+			has_idea = tno_minorities_oppression
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_minorities_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_minorities_segregation
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_minorities_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_minorities_equal_rights
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_minorities_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_minorities_affirmative_action
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_minorities_4_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory4Lawtno_security
+	text = {
+		trigger = {
+			has_idea = tno_security_anarchic
+		}
+		localization_key = tno_security_anarchic
+	}
+	text = {
+		trigger = {
+			has_idea = tno_security_police
+		}
+		localization_key = tno_security_police
+	}
+	text = {
+		trigger = {
+			has_idea = tno_security_security_service
+		}
+		localization_key = tno_security_security_service
+	}
+	text = {
+		trigger = {
+			has_idea = tno_security_data_cohesion
+		}
+		localization_key = tno_security_data_cohesion
+	}
+	text = {
+		trigger = {
+			has_idea = tno_security_wire_tapping
+		}
+		localization_key = tno_security_wire_tapping
+	}
+	text = {
+		trigger = {
+			has_idea = tno_security_preemptive_security
+		}
+		localization_key = tno_security_preemptive_security
+	}
+}
+
+defined_text = {
+	name = GetCategory4Lawtno_securityTT
+	text = {
+		trigger = {
+			has_idea = tno_security_anarchic
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_security_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_security_police
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_security_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_security_security_service
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_security_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_security_data_cohesion
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_security_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_security_wire_tapping
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_security_5_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_security_preemptive_security
+		}
+		localization_key = TNO_POLITICS_CATEGORY_4_LAW_tno_security_6_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetCategory1Lawtno_political_parties
+	text = {
+		trigger = {
+			has_idea = tno_political_parties_one_party_state
+		}
+		localization_key = tno_political_parties_one_party_state
+	}
+	text = {
+		trigger = {
+			has_idea = tno_political_parties_controlled_opposition
+		}
+		localization_key = tno_political_parties_controlled_opposition
+	}
+	text = {
+		trigger = {
+			has_idea = tno_political_parties_multiparty_system
+		}
+		localization_key = tno_political_parties_multiparty_system
+	}
+}
+defined_text = {
+	name = GetCategory1Lawtno_political_partiesTT
+	text = {
+		trigger = {
+			has_idea = tno_political_parties_one_party_state
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_political_parties_controlled_opposition
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_political_parties_multiparty_system
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_4_MODIFIER_COMBINED
+	}
+}
+defined_text = {
+	name = GetCategory1Lawtno_religious_rights
+	text = {
+		trigger = {
+			has_idea = tno_religious_rights_state_religion
+		}
+		localization_key = tno_religious_rights_state_religion
+	}
+	text = {
+		trigger = {
+			has_idea = tno_religious_rights_pluralism
+		}
+		localization_key = tno_religious_rights_pluralism
+	}
+	text = {
+		trigger = {
+			has_idea = tno_religious_rights_secularism
+		}
+		localization_key = tno_religious_rights_secularism
+	}
+	text = {
+		trigger = {
+			has_idea = tno_religious_rights_state_atheism
+		}
+		localization_key = tno_religious_rights_state_atheism
+	}
+}
+defined_text = {
+	name = GetCategory1Lawtno_religious_rightsTT
+	text = {
+		trigger = {
+			has_idea = tno_religious_rights_state_religion
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_religious_rights_pluralism
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_religious_rights_secularism
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_religious_rights_state_atheism
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_4_MODIFIER_COMBINED
+	}
+}
+defined_text = {
+	name = GetCategory1Lawtno_trade_unions
+	text = {
+		trigger = {
+			has_idea = tno_trade_unions_illegal
+		}
+		localization_key = tno_trade_unions_illegal
+	}
+	text = {
+		trigger = {
+			has_idea = tno_trade_unions_state_controlled
+		}
+		localization_key = tno_trade_unions_state_controlled
+	}
+	text = {
+		trigger = {
+			has_idea = tno_trade_unions_nonsocialist_allowed
+		}
+		localization_key = tno_trade_unions_nonsocialist_allowed
+	}
+	text = {
+		trigger = {
+			has_idea = tno_trade_unions_all_allowed
+		}
+		localization_key = tno_trade_unions_all_allowed
+	}
+}
+defined_text = {
+	name = GetCategory1Lawtno_trade_unionsTT
+	text = {
+		trigger = {
+			has_idea = tno_trade_unions_illegal
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_trade_unions_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_trade_unions_state_controlled
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_trade_unions_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_trade_unions_nonsocialist_allowed
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_trade_unions_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_trade_unions_all_allowed
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_trade_unions_4_MODIFIER_COMBINED
+	}
+}
+defined_text = {
+	name = GetCategory1Lawtno_immigration
+	text = {
+		trigger = {
+			has_idea = tno_immigration_closed_borders
+		}
+		localization_key = tno_immigration_closed_borders
+	}
+	text = {
+		trigger = {
+			has_idea = tno_immigration_quota_immigration
+		}
+		localization_key = tno_immigration_quota_immigration
+	}
+	text = {
+		trigger = {
+			has_idea = tno_immigration_open_immigration
+		}
+		localization_key = tno_immigration_open_immigration
+	}
+	text = {
+		trigger = {
+			has_idea = tno_immigration_naturalization
+		}
+		localization_key = tno_immigration_naturalization
+	}
+	text = {
+		trigger = {
+			has_idea = tno_immigration_encouraged_immigration
+		}
+		localization_key = tno_immigration_encouraged_immigration
+	}
+}
+defined_text = {
+	name = GetCategory1Lawtno_immigrationTT
+	text = {
+		trigger = {
+			has_idea = tno_immigration_closed_borders
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_immigration_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_immigration_quota_immigration
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_immigration_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_immigration_open_immigration
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_immigration_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_immigration_naturalization
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_immigration_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_immigration_encouraged_immigration
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_immigration_5_MODIFIER_COMBINED
+	}
+}
+defined_text = {
+	name = GetCategory1Lawtno_slavery
+	text = {
+		trigger = {
+			has_idea = tno_slavery_allowed
+		}
+		localization_key = tno_slavery_allowed
+	}
+	text = {
+		trigger = {
+			has_idea = tno_slavery_corvee
+		}
+		localization_key = tno_slavery_corvee
+	}
+	text = {
+		trigger = {
+			has_idea = tno_slavery_outlawed
+		}
+		localization_key = tno_slavery_outlawed
+	}
+}
+defined_text = {
+	name = GetCategory1Lawtno_slaveryTT
+	text = {
+		trigger = {
+			has_idea = tno_slavery_allowed
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_slavery_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_slavery_corvee
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_slavery_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_slavery_outlawed
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_slavery_3_MODIFIER_COMBINED
+	}
+}
+defined_text = {
+	name = GetCategory1Lawtno_public_meetings
+	text = {
+		trigger = {
+			has_idea = tno_public_meetings_outlawed
+		}
+		localization_key = tno_public_meetings_outlawed
+	}
+	text = {
+		trigger = {
+			has_idea = tno_public_meetings_regulated
+		}
+		localization_key = tno_public_meetings_regulated
+	}
+	text = {
+		trigger = {
+			has_idea = tno_public_meetings_allowed
+		}
+		localization_key = tno_public_meetings_allowed
+	}
+}
+defined_text = {
+	name = GetCategory1Lawtno_public_meetingsTT
+	text = {
+		trigger = {
+			has_idea = tno_public_meetings_outlawed
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_public_meetings_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_public_meetings_regulated
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_public_meetings_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_public_meetings_allowed
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_public_meetings_3_MODIFIER_COMBINED
+	}
+}
+defined_text = {
+	name = GetCategory1Lawtno_press_rights
+	text = {
+		trigger = {
+			has_idea = tno_press_rights_state_press_only
+		}
+		localization_key = tno_press_rights_state_press_only
+	}
+	text = {
+		trigger = {
+			has_idea = tno_press_rights_censored_press
+		}
+		localization_key = tno_press_rights_censored_press
+	}
+	text = {
+		trigger = {
+			has_idea = tno_press_rights_free_press
+		}
+		localization_key = tno_press_rights_free_press
+	}
+}
+defined_text = {
+	name = GetCategory1Lawtno_press_rightsTT
+	text = {
+		trigger = {
+			has_idea = tno_press_rights_state_press_only
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_press_rights_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_press_rights_censored_press
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_press_rights_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_press_rights_free_press
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_press_rights_3_MODIFIER_COMBINED
+	}
+}
+defined_text = {
+	name = GetCategory1Lawtno_vote_franchise
+	text = {
+		trigger = {
+			has_idea = tno_vote_franchise_no_voting
+		}
+		localization_key = tno_vote_franchise_no_voting
+	}
+	text = {
+		trigger = {
+			has_idea = tno_vote_franchise_elite_voting
+		}
+		localization_key = tno_vote_franchise_elite_voting
+	}
+	text = {
+		trigger = {
+			has_idea = tno_vote_franchise_registered_voting
+		}
+		localization_key = tno_vote_franchise_registered_voting
+	}
+	text = {
+		trigger = {
+			has_idea = tno_vote_franchise_universal
+		}
+		localization_key = tno_vote_franchise_universal
+	}
+	text = {
+		trigger = {
+			has_idea = tno_vote_franchise_support_disenfranchised
+		}
+		localization_key = tno_vote_franchise_support_disenfranchised
+	}
+}
+defined_text = {
+	name = GetCategory1Lawtno_vote_franchiseTT
+	text = {
+		trigger = {
+			has_idea = tno_vote_franchise_no_voting
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_vote_franchise_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_vote_franchise_elite_voting
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_vote_franchise_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_vote_franchise_registered_voting
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_vote_franchise_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_vote_franchise_universal
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_vote_franchise_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_vote_franchise_support_disenfranchised
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_vote_franchise_5_MODIFIER_COMBINED
+	}
+}
+defined_text = {
+	name = GetCategory1Lawtno_refugees
+	text = {
+		trigger = {
+			has_idea = tno_refugees_banned
+		}
+		localization_key = tno_refugees_banned
+	}
+	text = {
+		trigger = {
+			has_idea = tno_refugees_skilled
+		}
+		localization_key = tno_refugees_skilled
+	}
+	text = {
+		trigger = {
+			has_idea = tno_refugees_vetted_entry
+		}
+		localization_key = tno_refugees_vetted_entry
+	}
+	text = {
+		trigger = {
+			has_idea = tno_refugees_open
+		}
+		localization_key = tno_refugees_open
+	}
+	text = {
+		trigger = {
+			has_idea = tno_refugees_give_me_your_poor
+		}
+		localization_key = tno_refugees_give_me_your_poor
+	}
+}
+defined_text = {
+	name = GetCategory1Lawtno_refugeesTT
+	text = {
+		trigger = {
+			has_idea = tno_refugees_banned
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_refugees_1_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_refugees_skilled
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_refugees_2_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_refugees_vetted_entry
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_refugees_3_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_refugees_open
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_refugees_4_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_refugees_give_me_your_poor
+		}
+		localization_key = TNO_POLITICS_CATEGORY_1_LAW_tno_refugees_5_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetSocietyDevelopment_AcademicBase
+	text = {
+		trigger = {
+			has_idea = tno_academic_base_mass_illiteracy
+		}
+		localization_key = tno_academic_base_mass_illiteracy
+	}
+	text = {
+		trigger = {
+			has_idea = tno_academic_base_basic_literacy
+		}
+		localization_key = tno_academic_base_basic_literacy
+	}
+	text = {
+		trigger = {
+			has_idea = tno_academic_base_primary_schooling
+		}
+		localization_key = tno_academic_base_primary_schooling
+	}
+	text = {
+		trigger = {
+			has_idea = tno_academic_base_secondary_schooling
+		}
+		localization_key = tno_academic_base_secondary_schooling
+	}
+	text = {
+		trigger = {
+			has_idea = tno_academic_base_tertiary_schooling
+		}
+		localization_key = tno_academic_base_tertiary_schooling
+	}
+	text = {
+		trigger = {
+			has_idea = tno_academic_base_golden_age
+		}
+		localization_key = tno_academic_base_golden_age
+	}
+}
+
+defined_text = {
+	name = GetSocietyDevelopment_AcademicBase_TT
+	text = {
+		trigger = {
+			has_idea = tno_academic_base_mass_illiteracy
+		}
+		localization_key = tno_academic_base_mass_illiteracy_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_academic_base_basic_literacy
+		}
+		localization_key = tno_academic_base_basic_literacy_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_academic_base_primary_schooling
+		}
+		localization_key = tno_academic_base_primary_schooling_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_academic_base_secondary_schooling
+		}
+		localization_key = tno_academic_base_secondary_schooling_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_academic_base_tertiary_schooling
+		}
+		localization_key = tno_academic_base_tertiary_schooling_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_academic_base_golden_age
+		}
+		localization_key = tno_academic_base_golden_age_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetSocietyDevelopment_ResearchFacilities
+	text = {
+		trigger = {
+			has_idea = tno_research_facilities_makeshift
+		}
+		localization_key = tno_research_facilities_makeshift
+	}
+	text = {
+		trigger = {
+			has_idea = tno_research_facilities_basic
+		}
+		localization_key = tno_research_facilities_basic
+	}
+	text = {
+		trigger = {
+			has_idea = tno_research_facilities_outdated
+		}
+		localization_key = tno_research_facilities_outdated
+	}
+	text = {
+		trigger = {
+			has_idea = tno_research_facilities_modern
+		}
+		localization_key = tno_research_facilities_modern
+	}
+	text = {
+		trigger = {
+			has_idea = tno_research_facilities_politicized
+		}
+		localization_key = tno_research_facilities_politicized
+	}
+	text = {
+		trigger = {
+			has_idea = tno_research_facilities_militarized
+		}
+		localization_key = tno_research_facilities_militarized
+	}
+	text = {
+		trigger = {
+			has_idea = tno_research_facilities_cutting_edge
+		}
+		localization_key = tno_research_facilities_cutting_edge
+	}
+}
+
+defined_text = {
+	name = GetSocietyDevelopment_ResearchFacilities_TT
+	text = {
+		trigger = {
+			has_idea = tno_research_facilities_makeshift
+		}
+		localization_key = tno_research_facilities_makeshift_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_research_facilities_basic
+		}
+		localization_key = tno_research_facilities_basic_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_research_facilities_outdated
+		}
+		localization_key = tno_research_facilities_outdated_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_research_facilities_modern
+		}
+		localization_key = tno_research_facilities_modern_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_research_facilities_politicized
+		}
+		localization_key = tno_research_facilities_politicized_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_research_facilities_militarized
+		}
+		localization_key = tno_research_facilities_militarized_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_research_facilities_cutting_edge
+		}
+		localization_key = tno_research_facilities_cutting_edge_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetSocietyDevelopment_Agriculture
+	text = {
+		trigger = {
+			has_idea = tno_agriculture_subsistence
+		}
+		localization_key = tno_agriculture_subsistence
+	}
+	text = {
+		trigger = {
+			has_idea = tno_agriculture_centralized
+		}
+		localization_key = tno_agriculture_centralized
+	}
+	text = {
+		trigger = {
+			has_idea = tno_agriculture_basic_mechanized
+		}
+		localization_key = tno_agriculture_basic_mechanized
+	}
+	text = {
+		trigger = {
+			has_idea = tno_agriculture_mass_mechanized
+		}
+		localization_key = tno_agriculture_mass_mechanized
+	}
+	text = {
+		trigger = {
+			has_idea = tno_agriculture_modern
+		}
+		localization_key = tno_agriculture_modern
+	}
+}
+
+defined_text = {
+	name = GetSocietyDevelopment_Agriculture_TT
+	text = {
+		trigger = {
+			has_idea = tno_agriculture_subsistence
+		}
+		localization_key = tno_agriculture_subsistence_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_agriculture_centralized
+		}
+		localization_key = tno_agriculture_centralized_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_agriculture_basic_mechanized
+		}
+		localization_key = tno_agriculture_basic_mechanized_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_agriculture_mass_mechanized
+		}
+		localization_key = tno_agriculture_mass_mechanized_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_agriculture_modern
+		}
+		localization_key = tno_agriculture_modern_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetSocietyDevelopment_PovertyRate
+	text = {
+		trigger = {
+			has_idea = tno_poverty_rate_spartan_ideal
+		}
+		localization_key = tno_poverty_rate_spartan_ideal
+	}
+	text = {
+		trigger = {
+			has_idea = tno_poverty_rate_80
+		}
+		localization_key = tno_poverty_rate_80
+	}
+	text = {
+		trigger = {
+			has_idea = tno_poverty_rate_50
+		}
+		localization_key = tno_poverty_rate_50
+	}
+	text = {
+		trigger = {
+			has_idea = tno_poverty_rate_25
+		}
+		localization_key = tno_poverty_rate_25
+	}
+	text = {
+		trigger = {
+			has_idea = tno_poverty_rate_15
+		}
+		localization_key = tno_poverty_rate_15
+	}
+	text = {
+		trigger = {
+			has_idea = tno_poverty_rate_10
+		}
+		localization_key = tno_poverty_rate_10
+	}
+	text = {
+		trigger = {
+			has_idea = tno_poverty_rate_5
+		}
+		localization_key = tno_poverty_rate_5
+	}
+	text = {
+		trigger = {
+			has_idea = tno_poverty_rate_0
+		}
+		localization_key = tno_poverty_rate_0
+	}
+}
+
+defined_text = {
+	name = GetSocietyDevelopment_PovertyRate_TT
+	text = {
+		trigger = {
+			has_idea = tno_poverty_rate_spartan_ideal
+		}
+		localization_key = tno_poverty_rate_spartan_ideal_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_poverty_rate_80
+		}
+		localization_key = tno_poverty_rate_80_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_poverty_rate_50
+		}
+		localization_key = tno_poverty_rate_50_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_poverty_rate_25
+		}
+		localization_key = tno_poverty_rate_25_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_poverty_rate_15
+		}
+		localization_key = tno_poverty_rate_15_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_poverty_rate_10
+		}
+		localization_key = tno_poverty_rate_10_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_poverty_rate_5
+		}
+		localization_key = tno_poverty_rate_5_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_poverty_rate_0
+		}
+		localization_key = tno_poverty_rate_0_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetSocietyDevelopment_IndustrialEquipment
+	text = {
+		trigger = {
+			has_idea = tno_industrial_equipment_hand_tools
+		}
+		localization_key = tno_industrial_equipment_hand_tools
+	}
+	text = {
+		trigger = {
+			has_idea = tno_industrial_equipment_power_tools
+		}
+		localization_key = tno_industrial_equipment_power_tools
+	}
+	text = {
+		trigger = {
+			has_idea = tno_industrial_equipment_manufacturing_lines
+		}
+		localization_key = tno_industrial_equipment_manufacturing_lines
+	}
+	text = {
+		trigger = {
+			has_idea = tno_industrial_equipment_factory_complexes
+		}
+		localization_key = tno_industrial_equipment_factory_complexes
+	}
+	text = {
+		trigger = {
+			has_idea = tno_industrial_equipment_modern
+		}
+		localization_key = tno_industrial_equipment_modern
+	}
+	text = {
+		trigger = {
+			has_idea = tno_industrial_equipment_cutting_edge
+		}
+		localization_key = tno_industrial_equipment_cutting_edge
+	}
+}
+
+defined_text = {
+	name = GetSocietyDevelopment_IndustrialEquipment_TT
+	text = {
+		trigger = {
+			has_idea = tno_industrial_equipment_hand_tools
+		}
+		localization_key = tno_industrial_equipment_hand_tools_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_industrial_equipment_power_tools
+		}
+		localization_key = tno_industrial_equipment_power_tools_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_industrial_equipment_manufacturing_lines
+		}
+		localization_key = tno_industrial_equipment_manufacturing_lines_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_industrial_equipment_factory_complexes
+		}
+		localization_key = tno_industrial_equipment_factory_complexes_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_industrial_equipment_modern
+		}
+		localization_key = tno_industrial_equipment_modern_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_industrial_equipment_cutting_edge
+		}
+		localization_key = tno_industrial_equipment_cutting_edge_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetSocietyDevelopment_IndustrialExpertise
+	text = {
+		trigger = {
+			has_idea = tno_industrial_expertise_pre_industrial
+		}
+		localization_key = tno_industrial_expertise_pre_industrial
+	}
+	text = {
+		trigger = {
+			has_idea = tno_industrial_expertise_incompetent
+		}
+		localization_key = tno_industrial_expertise_incompetent
+	}
+	text = {
+		trigger = {
+			has_idea = tno_industrial_expertise_nascent
+		}
+		localization_key = tno_industrial_expertise_nascent
+	}
+	text = {
+		trigger = {
+			has_idea = tno_industrial_expertise_experienced
+		}
+		localization_key = tno_industrial_expertise_experienced
+	}
+	text = {
+		trigger = {
+			has_idea = tno_industrial_expertise_innovative
+		}
+		localization_key = tno_industrial_expertise_innovative
+	}
+}
+
+defined_text = {
+	name = GetSocietyDevelopment_IndustrialExpertise_TT
+	text = {
+		trigger = {
+			has_idea = tno_industrial_expertise_pre_industrial
+		}
+		localization_key = tno_industrial_expertise_pre_industrial_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_industrial_expertise_incompetent
+		}
+		localization_key = tno_industrial_expertise_incompetent_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_industrial_expertise_nascent
+		}
+		localization_key = tno_industrial_expertise_nascent_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_industrial_expertise_experienced
+		}
+		localization_key = tno_industrial_expertise_experienced_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_industrial_expertise_innovative
+		}
+		localization_key = tno_industrial_expertise_innovative_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetSocietyDevelopment_ArmyProfessionalism
+	text = {
+		trigger = {
+			has_idea = tno_army_professionalism_untrained
+		}
+		localization_key = tno_army_professionalism_untrained
+	}
+	text = {
+		trigger = {
+			has_idea = tno_army_professionalism_reluctant_conscripts
+		}
+		localization_key = tno_army_professionalism_reluctant_conscripts
+	}
+	text = {
+		trigger = {
+			has_idea = tno_army_professionalism_disgruntled_veterans
+		}
+		localization_key = tno_army_professionalism_disgruntled_veterans
+	}
+	text = {
+		trigger = {
+			has_idea = tno_army_professionalism_cronyism
+		}
+		localization_key = tno_army_professionalism_cronyism
+	}
+	text = {
+		trigger = {
+			has_idea = tno_army_professionalism_political_interference
+		}
+		localization_key = tno_army_professionalism_political_interference
+	}
+	text = {
+		trigger = {
+			has_idea = tno_army_professionalism_professional
+		}
+		localization_key = tno_army_professionalism_professional
+	}
+	text = {
+		trigger = {
+			has_idea = tno_army_professionalism_spartan_discipline
+		}
+		localization_key = tno_army_professionalism_spartan_discipline
+	}
+}
+
+defined_text = {
+	name = GetSocietyDevelopment_ArmyProfessionalism_TT
+	text = {
+		trigger = {
+			has_idea = tno_army_professionalism_untrained
+		}
+		localization_key = tno_army_professionalism_untrained_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_army_professionalism_reluctant_conscripts
+		}
+		localization_key = tno_army_professionalism_reluctant_conscripts_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_army_professionalism_disgruntled_veterans
+		}
+		localization_key = tno_army_professionalism_disgruntled_veterans_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_army_professionalism_cronyism
+		}
+		localization_key = tno_army_professionalism_cronyism_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_army_professionalism_political_interference
+		}
+		localization_key = tno_army_professionalism_political_interference_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_army_professionalism_professional
+		}
+		localization_key = tno_army_professionalism_professional_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_army_professionalism_spartan_discipline
+		}
+		localization_key = tno_army_professionalism_spartan_discipline_MODIFIER_COMBINED
+	}
+}
+
+defined_text = {
+	name = GetSocietyDevelopment_NuclearStockpile
+	text = {
+		trigger = {
+			has_idea = tno_nuclear_stockpile_none
+		}
+		localization_key = tno_nuclear_stockpile_none
+	}
+	text = {
+		trigger = {
+			has_idea = tno_nuclear_stockpile_one
+		}
+		localization_key = tno_nuclear_stockpile_one
+	}
+	text = {
+		trigger = {
+			has_idea = tno_nuclear_stockpile_few
+		}
+		localization_key = tno_nuclear_stockpile_few
+	}
+	text = {
+		trigger = {
+			has_idea = tno_nuclear_stockpile_many
+		}
+		localization_key = tno_nuclear_stockpile_many
+	}
+	text = {
+		trigger = {
+			has_idea = tno_nuclear_stockpile_massive
+		}
+		localization_key = tno_nuclear_stockpile_massive
+	}
+	text = {
+		trigger = {
+			has_idea = tno_nuclear_stockpile_apocalyptic
+		}
+		localization_key = tno_nuclear_stockpile_apocalyptic
+	}
+}
+
+defined_text = {
+	name = GetSocietyDevelopment_NuclearStockpile_TT
+	text = {
+		trigger = {
+			has_idea = tno_nuclear_stockpile_none
+		}
+		localization_key = tno_nuclear_stockpile_none_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_nuclear_stockpile_one
+		}
+		localization_key = tno_nuclear_stockpile_one_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_nuclear_stockpile_few
+		}
+		localization_key = tno_nuclear_stockpile_few_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_nuclear_stockpile_many
+		}
+		localization_key = tno_nuclear_stockpile_many_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_nuclear_stockpile_massive
+		}
+		localization_key = tno_nuclear_stockpile_massive_MODIFIER_COMBINED
+	}
+	text = {
+		trigger = {
+			has_idea = tno_nuclear_stockpile_apocalyptic
+		}
+		localization_key = tno_nuclear_stockpile_apocalyptic_MODIFIER_COMBINED
+	}
+}

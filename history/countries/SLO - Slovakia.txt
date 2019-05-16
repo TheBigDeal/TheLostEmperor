@@ -29,7 +29,7 @@ set_politics = {
 			popularity = 5
 		}
 
-		rexism = {
+		royalism = {
 			popularity = 90
 		}
 		
@@ -38,7 +38,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = rexism
+	ruling_party = royalism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -47,12 +47,14 @@ set_politics = {
 set_cosmetic_tag = SLO_AUS_PUPPET
 
 create_country_leader = {
-	name = "Jozef Tiso"
-	desc = "POLITICS_JOZEF_TISO_DESC"
-	picture = "Portrait_Slovakia_Jozef_Tiso.dds"
-	expire = "1965.1.1"
-	ideology = rexism
+	name = "Franz Ferdinand von Habsburg-Lothringen"
+	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+	picture = "Portrait_Franz_Ferdinand.tga"
+	expire = "2011.1.1"
+	ideology = royalism_ideology
 	traits = {
-		#
+		dislikes_prussia
+		stout_defender
+		autocratic_imperialist
 	}
 }

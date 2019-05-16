@@ -8,6 +8,22 @@ set_technology = {
 	tech_recon = 1
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = { target = FRE autonomous_state = autonomy_integrated_puppet }
+	set_autonomy = { target = PNG autonomous_state = autonomy_integrated_puppet }
+	set_autonomy = { target = ZAN autonomous_state = autonomy_integrated_puppet }
+	set_autonomy = { target = TOG autonomous_state = autonomy_integrated_puppet }
+	else = {
+		puppet = FRE
+		puppet = PNG
+		puppet = ZAN
+		puppet = TOG
+	}
+}
+
 set_politics = {
 
 	parties = {

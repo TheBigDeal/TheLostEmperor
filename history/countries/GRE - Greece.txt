@@ -3,10 +3,13 @@
 oob = "GRE_1936"
 
 set_research_slots = 3
-
+complete_national_focus = GRE_A_NATION_ON_THE_BRINK
 add_ideas = {
 	limited_conscription
-	extreme_civil_unrest
+	GRE_failed_economy
+	GRE_unpopular_monarchy
+	GRE_exiled_prince_constantine
+	GRE_unreliable_military
 }
 set_variable = { var = SPARTAN_STRENGTH value = 100 }
 set_variable = { var = HELLENIC_STRENGTH value = 100 }

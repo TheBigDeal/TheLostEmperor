@@ -1,0 +1,922 @@
+scripted_gui = {
+
+	TNO_SG_politics = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_SG_politics_faction_leader_container"
+
+		visible = {
+			always = yes
+		}
+
+		triggers = {
+			faction_leader_member_visible = {
+				is_in_faction = yes
+				is_subject = no
+			}
+			faction_subject_visible = {
+				is_in_faction = yes
+				is_subject = yes
+			}
+			faction_icon_unity_pakt_visible = {
+				is_in_faction = yes
+				is_subject = no
+				GER = { is_faction_leader = yes }
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+			}
+			faction_icon_as_visible = {
+				is_in_faction = yes
+				is_subject = no
+				COG = { is_faction_leader = yes }
+				OR = {
+					tag = COG
+					is_in_faction_with = COG
+				}
+			}
+			faction_icon_coprosperity_visible = {
+				is_in_faction = yes
+				is_subject = no
+				JAP = { is_faction_leader = yes }
+				OR = {
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+			faction_icon_OFN_visible = {
+				is_in_faction = yes
+				is_subject = no
+				USA = { is_faction_leader = yes }
+				OR = {
+					tag = USA
+					is_in_faction_with = USA
+				}
+			}
+			faction_icon_triumvirate_visible = {
+				is_in_faction = yes
+				is_subject = no
+				ITA = { is_faction_leader = yes }
+				OR = {
+					tag = ITA
+					is_in_faction_with = ITA
+				}
+			}
+			faction_icon_generic_visible = {
+				is_in_faction = yes
+				is_subject = no
+				NOT = { OR = {
+					AND = {
+						GER = { is_faction_leader = yes }
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+					}
+					AND = {
+						COG = { is_faction_leader = yes }
+						OR = {
+							tag = COG
+							is_in_faction_with = COG
+						}
+					}
+					AND = {
+						JAP = { is_faction_leader = yes }
+						OR = {
+							tag = JAP
+							is_in_faction_with = JAP
+						}
+					}
+					AND = {
+						USA = { is_faction_leader = yes }
+						OR = {
+							tag = USA
+							is_in_faction_with = USA
+						}
+					}
+					AND = {
+						ITA = { is_faction_leader = yes }
+						OR = {
+							tag = ITA
+							is_in_faction_with = ITA
+						}
+					}
+				} }
+			}
+		}
+	}
+	TNO_SG_politics_law_emergency_close = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_emergency_close"
+
+		visible = {
+			OR = {
+				has_variable = tno_opened_laws_category
+				has_country_flag = US_voting_gui_open
+			}
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+				clr_country_flag = US_voting_gui_open
+			}
+			close_2_click = {
+				clear_variable = tno_opened_laws_category
+				clr_country_flag = US_voting_gui_open
+			}
+		}
+	}
+	################
+	TNO_SG_politics_laws = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_SG_politics_laws"
+
+		visible = {
+			always = yes
+		}
+
+		properties = {
+			category_5_academic_base_trend = {
+				image = "[get_academic_base_trend]"
+			}
+			category_5_research_facilities_trend = {
+				image = "[get_research_facilities_trend]"
+			}
+			category_5_agriculture_trend = {
+				image = "[get_agriculture_trend]"
+			}
+			category_5_poverty_rate_trend = {
+				image = "[get_poverty_rate_trend]"
+			}
+			category_5_industrial_equipment_trend = {
+				image = "[get_industrial_equipment_trend]"
+			}
+			category_5_industrial_expertise_trend = {
+				image = "[get_industrial_expertise_trend]"
+			}
+			category_5_army_professionalism_trend = {
+				image = "[get_army_professionalism_trend]"
+			}
+			category_5_nuclear_stockpile_trend = {
+				image = "[get_nuclear_stockpile_trend]"
+			}
+		}
+
+		effects = {
+			category_1_law_tno_political_parties_btn_click = {
+				set_variable = { tno_opened_laws_category = 10 }
+			}
+			category_1_law_tno_religious_rights_btn_click = {
+				set_variable = { tno_opened_laws_category = 11 }
+			}
+			category_1_law_tno_trade_unions_btn_click = {
+				set_variable = { tno_opened_laws_category = 12 }
+			}
+			category_1_law_tno_immigration_btn_click = {
+				set_variable = { tno_opened_laws_category = 13 }
+			}
+			category_1_law_tno_slavery_btn_click = {
+				set_variable = { tno_opened_laws_category = 14 }
+			}
+			category_1_law_tno_public_meetings_btn_click = {
+				set_variable = { tno_opened_laws_category = 15 }
+			}
+			category_1_law_tno_press_rights_btn_click = {
+				set_variable = { tno_opened_laws_category = 16 }
+			}
+			category_1_law_tno_vote_franchise_btn_click = {
+				set_variable = { tno_opened_laws_category = 17 }
+			}
+			category_1_law_tno_refugees_btn_click = {
+				set_variable = { tno_opened_laws_category = 18 }
+			}
+			category_2_law_tno_conscription_btn_click = {
+				set_variable = { tno_opened_laws_category = 20 }
+			}
+			category_2_law_tno_women_btn_click = {
+				set_variable = { tno_opened_laws_category = 21 }
+			}
+			category_2_law_tno_military_supervision_btn_click = {
+				set_variable = { tno_opened_laws_category = 22 }
+			}
+			category_2_law_tno_training_btn_click = {
+				set_variable = { tno_opened_laws_category = 24 }
+			}
+			category_2_law_tno_racial_integration_btn_click = {
+				set_variable = { tno_opened_laws_category = 25 }
+			}
+			category_2_law_tno_draft_exemptions_btn_click = {
+				set_variable = { tno_opened_laws_category = 26 }
+			}
+			category_3_law_tno_trade_laws_btn_click = {
+				set_variable = { tno_opened_laws_category = 30 }
+			}
+			category_3_law_tno_economic_focus_btn_click = {
+				set_variable = { tno_opened_laws_category = 31 }
+			}
+			category_3_law_tno_tax_rate_btn_click = {
+				set_variable = { tno_opened_laws_category = 32 }
+			}
+			category_3_law_tno_income_taxation_btn_click = {
+				set_variable = { tno_opened_laws_category = 33 }
+			}
+			category_3_law_tno_minimum_wage_btn_click = {
+				set_variable = { tno_opened_laws_category = 34 }
+			}
+			category_3_law_tno_max_workhours_btn_click = {
+				set_variable = { tno_opened_laws_category = 35 }
+			}
+			category_3_law_tno_child_labor_btn_click = {
+				set_variable = { tno_opened_laws_category = 36 }
+			}
+			category_3_law_tno_pensions_btn_click = {
+				set_variable = { tno_opened_laws_category = 37 }
+			}
+			category_3_law_tno_unemployment_btn_click = {
+				set_variable = { tno_opened_laws_category = 38 }
+			}
+			category_4_law_tno_safety_btn_click = {
+				set_variable = { tno_opened_laws_category = 40 }
+			}
+			category_4_law_tno_health_care_btn_click = {
+				set_variable = { tno_opened_laws_category = 41 }
+			}
+			category_4_law_tno_pollution_btn_click = {
+				set_variable = { tno_opened_laws_category = 42 }
+			}
+			category_4_law_tno_education_btn_click = {
+				set_variable = { tno_opened_laws_category = 43 }
+			}
+			category_4_law_tno_penal_system_btn_click = {
+				set_variable = { tno_opened_laws_category = 44 }
+			}
+			category_4_law_tno_lgbt_rights_btn_click = {
+				set_variable = { tno_opened_laws_category = 45 }
+			}
+			category_4_law_tno_gender_rights_btn_click = {
+				set_variable = { tno_opened_laws_category = 46 }
+			}
+			category_4_law_tno_minorities_btn_click = {
+				set_variable = { tno_opened_laws_category = 47 }
+			}
+			category_4_law_tno_security_btn_click = {
+				set_variable = { tno_opened_laws_category = 48 }
+			}
+
+
+			category_5_sd_tno_research_facilities_btn_click = {
+				set_variable = { tno_opened_laws_category = 49 }
+			}
+			category_5_sd_tno_agriculture_btn_click = {
+				set_variable = { tno_opened_laws_category = 50 }
+			}
+			category_5_sd_tno_industrial_equipment_btn_click = {
+				set_variable = { tno_opened_laws_category = 51 }
+			}
+			category_5_sd_tno_industrial_expertise_btn_click = {
+				set_variable = { tno_opened_laws_category = 52 }
+			}
+			category_5_sd_tno_army_professionalism_btn_click = {
+				set_variable = { tno_opened_laws_category = 53 }
+			}
+			category_5_sd_tno_nuclear_stockpile_btn_click = {
+				set_variable = { tno_opened_laws_category = 54 }
+			}
+			category_5_sd_tno_academic_base_btn_click = {
+				set_variable = { tno_opened_laws_category = 55 }
+			}
+			category_5_sd_tno_poverty_rate_btn_click = {
+				set_variable = { tno_opened_laws_category = 56 }
+			}
+		}
+	}
+
+	TNO_SG_SD_category_tno_academic_base = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_sd_category_tno_academic_base_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 55 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+
+	TNO_SG_SD_category_tno_poverty_rate = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_sd_category_tno_poverty_rate_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 56 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+
+	TNO_SG_SD_category_tno_research_facilities = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_SD_category_tno_research_facilities_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 49 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+
+	TNO_SG_SD_category_tno_agriculture = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_sd_category_tno_agriculture_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 50 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+
+	TNO_SG_SD_category_tno_industrial_equipment = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_sd_category_tno_industrial_equipment_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 51 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+
+	TNO_SG_SD_category_tno_industrial_expertise = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_sd_category_tno_industrial_expertise_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 52 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+
+	TNO_SG_SD_category_tno_army_professionalism = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_sd_category_tno_army_professionalism_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 53 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+
+	TNO_SG_SD_category_tno_nuclear_stockpile = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_sd_category_tno_nuclear_stockpile_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 54 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+
+	TNO_SG_politics_laws_category_tno_political_parties = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_political_parties_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 10 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_religious_rights = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_religious_rights_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 11 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_trade_unions = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_trade_unions_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 12 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_immigration = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_immigration_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 13 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_slavery = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_slavery_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 14 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_public_meetings = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_public_meetings_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 15 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_press_rights = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_press_rights_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 16 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_vote_franchise = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_vote_franchise_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 17 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_refugees = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_refugees_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 18 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_conscription = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_conscription_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 20 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_women = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_women_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 21 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_military_supervision = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_military_supervision_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 22 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_training = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_training_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 24 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_racial_integration = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_racial_integration_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 25 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_draft_exemptions = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_draft_exemptions_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 26 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_trade_laws = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_trade_laws_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 30 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_economic_focus = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_economic_focus_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 31 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_tax_rate = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_tax_rate_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 32 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_income_taxation = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_income_taxation_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 33 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_minimum_wage = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_minimum_wage_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 34 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_max_workhours = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_max_workhours_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 35 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_child_labor = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_child_labor_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 36 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_pensions = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_pensions_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 37 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_unemployment = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_unemployment_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 38 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_safety = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_safety_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 40 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_health_care = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_health_care_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 41 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_pollution = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_pollution_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 42 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_education = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_education_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 43 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_penal_system = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_penal_system_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 44 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_lgbt_rights = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_lgbt_rights_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 45 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_gender_rights = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_gender_rights_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 46 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_minorities = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_minorities_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 47 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+	TNO_SG_politics_laws_category_tno_security = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_laws_category_tno_security_window"
+
+		visible = {
+			check_variable = { tno_opened_laws_category = 48 }
+		}
+
+		effects = {
+			close_click = {
+				clear_variable = tno_opened_laws_category
+			}
+		}
+	}
+
+}
