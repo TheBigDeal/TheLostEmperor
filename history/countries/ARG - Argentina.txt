@@ -19,27 +19,26 @@ set_technology = {
 set_country_flag = monroe_doctrine
 
 set_convoys = 120
-set_politics = {
-
-	parties = {	
-		conservatism = { popularity = 7 }
-		liberalism = { popularity = 5 }
-		socialism = { popularity = 3 }
-		labryscism = { popularity = 50 }
-		rexism = { popularity = 5 }
-		despotism = { popularity = 15 }
-		royalism = {popularity = 1 }
-		theocracy = { popularity = 8 }
-		absolutism = { popularity = 1 }
-		proletarianism = {popularity = 3 }
-		collectivism = { popularity = 1 }
-		naturalism = { popularity = 1 }
-	}
-	
+set_politics = {	
 	ruling_party = labryscism
 	last_election = "1931.11.8"
 	election_frequency = 72
 	elections_allowed = yes
+}
+
+set_popularities = {
+    conservatism = 7
+    liberalism = 5
+    socialism = 3
+    labryscism = 50
+    rexism = 5
+    despotism = 15
+    royalism = 1
+    theocracy = 8
+    absolutism = 1
+    proletarianism = 3
+    collectivism = 1
+    mutualism = 1
 }
 
 create_country_leader = {
@@ -54,31 +53,19 @@ create_country_leader = {
 }
 
 1939.1.1 = {
-	set_politics = {
-
-		parties = {
-		liberalism = { 
-			popularity = 5
-		}
-
-		rexism = {
-			popularity = 5
-		}
-		
-		proletarianism = {
-			popularity = 12
-		}
-		
-		absolutism = { 
-			popularity = 78
-		}
-	}
-	
+	set_politics = {	
 	ruling_party = absolutism
 		last_election = "1937.9.5"
 		election_frequency = 108
 		elections_allowed = yes
-	}
+}
+
+    set_popularities = {
+        liberalism = 5
+        rexism = 5
+        proletarianism = 12
+        absolutism = 78
+    }
 
 	create_country_leader = {
 		name = "Roberto María Ortiz"

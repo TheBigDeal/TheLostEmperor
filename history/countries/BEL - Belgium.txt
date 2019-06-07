@@ -17,50 +17,32 @@ set_technology = {
 
 }
 
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 83
-		}
-
-		rexism = {
-			popularity = 11
-		}
-		
-		proletarianism = {
-			popularity = 6
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberalism
 	last_election = "1932.11.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
+set_popularities = {
+    liberalism = 83
+    rexism = 11
+    proletarianism = 6
+}
+
 1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			liberalism = { 
-				popularity = 87
-			}
-
-			rexism = {
-				popularity = 8
-			}
-			
-			proletarianism = {
-				popularity = 5
-			}
-		}
-		
+	set_politics = {		
 		ruling_party = liberalism
 		last_election = "1939.4.2"
 		election_frequency = 48
 		elections_allowed = yes
-	}
+}
+
+    set_popularities = {
+        liberalism = 87
+        rexism = 8
+        proletarianism = 5
+    }
 }
 
 set_convoys = 80

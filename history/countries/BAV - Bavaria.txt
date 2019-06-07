@@ -13,25 +13,25 @@ add_ideas = {
 	rooted_collectivists
 }
 set_politics = {
-
-	parties = {
-		conservatism = { popularity = 1 }
-		liberalism = { popularity = 1 }
-		socialism = { popularity = 8 }
-		labryscism = { popularity = 3 }
-		rexism = { popularity = 2 }
-		despotism = { popularity = 5 }
-		royalism = {popularity = 3 }
-		theocracy = { popularity = 2 }
-		absolutism = { popularity = 30 }
-		proletarianism = {popularity = 0 }
-		collectivism = { popularity = 40 }
-		naturalism = { popularity = 10 }
-	}
 	ruling_party = absolutism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    conservatism = 1
+    liberalism = 1
+    socialism = 8
+    labryscism = 3
+    rexism = 2
+    despotism = 5
+    royalism = 3
+    theocracy = 2
+    absolutism = 30
+    proletarianism = 0
+    collectivism = 40
+    mutualism = 10
 }
 
 set_convoys = 5

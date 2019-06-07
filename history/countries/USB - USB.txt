@@ -35,25 +35,17 @@ set_technology = {
 }
 set_convoys = 400
 set_politics = {
-	parties = {
-		liberalism = { 
-			popularity = 0
-		}
-		absolutism = {
-			popularity = 99
-		}
-		labryscism = {
-			popularity = 0
-		}
-		collectivism = {
-			popularity = 1
-			#banned = no #default is no
-		}
-	}
 	ruling_party = liberalism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    liberalism = 0
+    absolutism = 99
+    labryscism = 0
+    collectivism = 1
 }
 
 add_ideas = {

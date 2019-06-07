@@ -8,24 +8,16 @@ set_technology = {
 	tech_recon = 1
 }
 
-set_politics = {
-
-	parties = {
-		
-		naturalism = {
-			popularity = 80
-		}
-		
-		rexism = {
-			popularity = 20
-		}
-		
-	}
-	
-	ruling_party = naturalism
+set_politics = {	
+	ruling_party = mutualism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    mutualism = 80
+    rexism = 20
 }
 
 set_convoys = 5

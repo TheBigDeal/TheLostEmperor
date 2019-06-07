@@ -14,26 +14,24 @@ add_ideas = {
 	SPT_legacy_of_leonidas
 }
 set_politics = {
-
-	parties = {
-		conservatism = { popularity = 3 }
-		liberalism = { popularity = 2	}
-		socialism = { popularity = 1 }
-		labryscism = { popularity = 50 }
-		rexism = { popularity = 20 }
-		despotism = { popularity = 10 }
-		royalism = {popularity = 5 }
-		theocracy = { popularity = 1 }
-		absolutism = { popularity = 5 }
-		proletarianism = {popularity = 1 }
-		collectivism = { popularity = 1 }
-		naturalism = { popularity = 1 }
-	}
-
 	ruling_party = labryscism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    conservatism = 3
+    liberalism = 1
+    socialism = 50
+    labryscism = 20
+    rexism = 10
+    despotism = 5
+    royalism = 1
+    theocracy = 5
+    absolutism = 1
+    proletarianism = 1
+    collectivism = 1
 }
 set_convoys = 5
 create_country_leader = {

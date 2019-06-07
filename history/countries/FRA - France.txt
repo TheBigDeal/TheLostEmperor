@@ -37,34 +37,19 @@ set_convoys = 300
 set_stability = 0.6
 
 
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 5
-		}
-
-		rexism = {
-			popularity = 25
-		}
-		
-		proletarianism = {
-			popularity = 20
-		}
-		
-		absolutism = {
-			popularity = 25
-		}
-
-		labryscism = {
-			popularity = 25
-		}
-	}
-	
+set_politics = {	
 	ruling_party = absolutism
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    liberalism = 5
+    rexism = 25
+    proletarianism = 20
+    absolutism = 25
+    labryscism = 25
 }
 
 puppet = AQU
@@ -167,7 +152,7 @@ create_country_leader = {
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
 	picture = "Portrait_France_Sebastien_Faure.tga"
 	expire = "1965.1.1"
-	ideology = 	naturalism
+	ideology = 	mutualism
 	traits = {
 	}
 }

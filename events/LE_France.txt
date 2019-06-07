@@ -204,10 +204,10 @@ country_event = { #Revisiting The Kings Powers
   	option = { #NATURALISM SEBASTIEN FAURE
 		name = le_france.14.c
 		set_politics = {
-			ruling_party = naturalism
+			ruling_party = mutualism
 		}
 		add_popularity = {
-			ideology = naturalism
+			ideology = mutualism
 			popularity = 0.1
 		}
   	}

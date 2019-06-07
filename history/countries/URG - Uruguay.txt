@@ -61,27 +61,17 @@ set_convoys = 5
 	}
 }
 
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 97
-		}
-
-		rexism = {
-			popularity = 0
-		}
-		
-		proletarianism = {
-			popularity = 3
-			#banned = no #default is no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberalism
 	last_election = "1934.4.19"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    liberalism = 97
+    rexism = 0
+    proletarianism = 3
 }
 
 create_country_leader = {
@@ -96,28 +86,18 @@ create_country_leader = {
 }
 
 1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			liberalism = { 
-				popularity = 97
-			}
-
-			rexism = {
-				popularity = 0
-			}
-			
-			proletarianism = {
-				popularity = 2
-				#banned = no #default is no
-			}
-		}
-		
+	set_politics = {		
 		ruling_party = liberalism
 		last_election = "1938.3.28"
 		election_frequency = 48
 		elections_allowed = yes
-	}
+}
+
+    set_popularities = {
+        liberalism = 97
+        rexism = 0
+        proletarianism = 2
+    }
 
 	create_country_leader = {
 		name = "Alfredo Baldomir Ferrari"

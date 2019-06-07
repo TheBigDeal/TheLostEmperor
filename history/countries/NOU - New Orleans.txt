@@ -7,27 +7,18 @@ set_technology = {
 	tech_recon = 1
 }
 
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 30
-		}
-		conservatism = { 
-			popularity = 35
-		}
-		socialism = {
-			popularity = 25
-		}
-		despotism = { 
-			popularity = 10
-		}
-	}
-	
+set_politics = {	
 	ruling_party = conservatism
 	last_election = "1926.3.5"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    liberalism = 30
+    conservatism = 35
+    socialism = 25
+    despotism = 10
 }
 
 set_convoys = 20

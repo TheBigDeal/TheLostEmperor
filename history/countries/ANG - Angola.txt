@@ -9,31 +9,18 @@ set_technology = {
 }
 
 set_convoys = 5
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 0
-		}
-
-		rexism = {
-			popularity = 0
-		}
-		
-		proletarianism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-		
-		absolutism = { 
-			popularity = 100
-		}
-	}
-	
+set_politics = {	
 	ruling_party = absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    liberalism = 0
+    rexism = 0
+    proletarianism = 0
+    absolutism = 100
 }
 
 create_country_leader = {
@@ -53,31 +40,18 @@ create_country_leader = {
 
 #Now a colony of Italy  However, if independent it would have
 1939.1.1 = {
-	set_politics = {
-
-		parties = {
-		liberalism = { 
-			popularity = 0
-		}
-
-		rexism = {
-			popularity = 0
-		}
-		
-		proletarianism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-		
-		absolutism = { 
-			popularity = 100
-		}
-	}
-		
+	set_politics = {		
 		ruling_party = absolutism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
-	}
+}
+
+    set_popularities = {
+        liberalism = 0
+        rexism = 0
+        proletarianism = 0
+        absolutism = 100
+    }
 }
 

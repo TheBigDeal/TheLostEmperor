@@ -16,6 +16,10 @@
  Religion_Shia:0 "Shia"
  Religion_Secular:0 "Secular"
  Religion_Athiest:0 "Athiest"
+ #USA
+ usa_sluggish_economy:0 "Sluggish Economy"
+ usa_american_militarism:0 "American Militarism"
+ usa_popular_discontent:0 "Popular Discontent"
  #Austria
  aus_aeiou:0 "A.E.I.O.U"
  AUS_INCREASED_AUTONOMY:0 "Increased Autonomy"
@@ -84,7 +88,7 @@
  #IDEOLOGY STUFF
  ########################################
  rise_of_the_collectivist_party:0 "Rise of the Collectivist Party"
- rise_of_the_naturalist_party:0 "Rise of the Naturalist Party"
+ rise_of_the_mutualist_party:0 "Rise of the Mutualist Party"
  rise_of_the_proletariat_party:0 "Rise of the Proletariat Party"
  Religious_Movements:0 "Religous Movements"
  Rexist_Drift:0 "Rexism Drift"

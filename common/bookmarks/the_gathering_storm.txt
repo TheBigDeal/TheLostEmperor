@@ -11,20 +11,22 @@ bookmarks = {
 			history = FRA_BLITZKRIEG_DESC
 			ideology = absolutism
 			ideas={
-
+				
 			}
 			focuses = {
-
+				
 			}
 		}
 		USA = {
 			history = USA_BLITZKRIEG_DESC
 			ideology = liberalism
 			ideas = {
-
+				usa_sluggish_economy
+				usa_american_militarism
+				usa_popular_discontent
 			}
 			focuses = {
-
+				USA_THE_FATEFUL_DAY
 			}
 		}
 		GBR = {

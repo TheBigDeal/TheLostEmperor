@@ -16,6 +16,17 @@
  playerevents.3.a:0 "Toggle Africa"
  playerevents.3.b:0 "Toggle Arabia"
  playerevents.3.c:0 "Exit Menu"
+ #News
+ news.2.t:0 "President Coolidge Not Running For A Second Term"
+ news.2.d:0 "Coolidge Not Running For A Second Term"
+ news.2.a:0 "Messy Business"
+ #USA
+ le_USA.1.t:0 "The Nations Fractures"
+ le_USA.1.d:0 ""
+ le_USA.1.a:0 ""
+ le_USA.2.t:0 "The Democratic National Convention"
+ le_USA.2.d:0 "The Democratic National Convention"
+ le_USA.3.t:0 "The Republican National Convention"
  #France Events
  le_france.11.t:0 "The French Elections"
  le_france.11.d:0 "The king has stepped down, we must appoint a new government leader.
@@ -26,7 +37,7 @@
  le_france.14.d:0 "The people have chosen a socialist revolution! It is now our duty to represent them properly. Many workers beleive in very limited government interaction, while other beleive the state should control all. Should we follow the ways of Marx or make our own path?"
  le_france.14.1:0 "Elect Jacques Duclos (Collectivist)"
  le_france.14.2:0 "Elect Benoît Frachon (Proletariat)"
- le_france.14.3:0 "Elect Sebastien Faure (Naturalist)"
+ le_france.14.3:0 "Elect Sebastien Faure (Mutualist)"
  #Austria
  le_austria.1.t:0 "Invitation To The South German Confederation"
  le_austria.1.d:0 "Austria has announced a new German confederation to be formed in the name of keeping peace in the German Region. Prussia has shown to be a very large threat in the region and a rival to Austria's power. This confederation will act as a detorrent for Prussia."
@@ -207,6 +218,33 @@
  le_greece.2.II:0 "The Nationalist Georgios Tsolakoglou Wins"
  le_greece.2.III:0 "The Liberal Monarchist Eleftherios Venizelos Wins"
  le_greece.2.IV:0 "The Radical Charles Zervas Wins"
+ le_greece.14.t:0 "Military Coup"
+ le_greece.14.d:0 "Today high ranking Generals have been seen running around in haste, the military is on high alert and poised to launch a coup. While there are some loyal to the government still, a overwhelming majority have joined up in arms to overthrow the government. We must act quickly to crush the officers and hope the army isnt as loyal as them seem."
+ le_greece.14.a:0 "The Coup Succeeds \n( §gDespotism§! Becomes The Ruling Party )"
+ le_greece.14.b:0 "The Coup Fails"
+ le_greece.15.t:0 "Theocratic Coup"
+ le_greece.15.d:0 "The political party "The Hands Of God" has been a thorn in Greece's side for years. Starting as a minor party they have grown popular with the religous of the state. They have sensed weakness in the government, and hoping to gain Constantines support have launched a secret coup. A meeting is currently being held between the Theocrats and the King about the future of the State. Will Constantine cave under the pressure of the faith, or will be countinue ruling as a king, and be the one and only ruler of Greece?"
+ le_greece.15.a:0 "Constantine Submits/n( §gTheocratic§! Becomes The Ruling Party )"
+ le_greece.15.b:0 "Constantine Kicks Out The Theocrats"\
+ le_greece.16.t:0 "Labor Strikes"
+ le_greece.16.d:0 "Today in Athens a large portion of workers demanding better pay and working conditions have gone on strike and are refusing to work. Unfortunately, this initially peaceful demonstration has spiralled out of control with certain far-left elements becoming increasingly prevalent. With violence rising by the hour, we were forced to send in the police who forcibly broke the strike."
+ le_greece.16.a:0 "How Unfortunate"
+ le_greece.17.t:0 "The Loyal Legion"
+ le_greece.17.d:0 "As of late a long-time subversive organization called the 'Loyal Legion' has been conducting more and more attacks on police, military, and government buildings. The Legion pushes for Prince Constantine to become the King of Greece. Yesterday, numreous pro-Constantine slogans were painted across Athens and some of our senior intelligence analysts warn that a significant number of military officers are secretly pro-Constantine. The most notable Loyal Legion activity was a bombing at the Police HQ in Athens just last week which killed seven officers and wounded thirteen more. In the rubble a picture of Constantine was found along with a slogan saying 'Long live the true King'."
+ le_greece.17.a:0 "Damn Traitors"
+ le_greece.18.t:0 "The King's Secert"
+ le_greece.18.d:0 "It is well known that King Constantine has had many...adventures of the romantic kind. He once spent a hedonistic and well-documented weekend in Nice with several female relations of some very powerful individuals. However, as Constantine is now King his personal life is far less secretive and certain reports have reached the press that the King, in addition to his love of women has a certain...taste, so to speak, for men. While this is obviously just some silly rumor both the populace and the powerful orthodox church are worried about their King's indecent ways."
+ le_greece.18.a:0 "How did this get out?!"
+ 
+ le_greece.19.t:0 "Gyaros Island"
+ le_greece.19.d:0 "Gyaros Island sits in the western part of the Aegean Sea and has hosted a small prison since the reign of Leopold II. However, by expanding the installation we can hold more dissidents and treasons citizens with a very low chance of escaping. However some are concerned that the expense will not be worth the possible public backlash."
+ le_greece.19.a:0 "Expand The Prison"
+ le_greece.19.b:0 "It’s Not Worth it"
+ 
+ le_greece.20.t:0 "The Gyaros Report"
+ le_greece.20.d:0 "Since our expansion of the prison complex on Gyaros island certain rumors have been circulating among our population that the prison is host to grave violations of people’s rights. Some time ago several foreign newspapers published a scathing article titled the ‘Gyaros Report’ which details what goes on at the island prison. Stories of prisoners being forced into tubs of human vomit or reports of dissidents being herded into crowded cells with cattle prods have outraged the population."
+ le_greece.20.a:0 "A Small Price To Pay For Salvation"
+ 
  #GREEK CIVIL WAR
  le_greek_civil_war.1.t:0 "Hugely Successful Attack"
  le_greek_civil_war.1.d:0 "Our attack has crippled their nation! It is very unlikely they will recover from this."

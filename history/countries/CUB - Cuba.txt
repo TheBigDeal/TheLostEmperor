@@ -10,18 +10,15 @@ set_technology = {
 
 set_convoys = 20
 
-set_politics = {
-
-	parties = {	
-		naturalism = {
-			popularity = 100
-		}
-	}
-	
-	ruling_party = naturalism
+set_politics = {	
+	ruling_party = mutualism
 	last_election = "1936.1.10"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    mutualism = 100
 }
 
 set_cosmetic_tag = CUB_HAVANA

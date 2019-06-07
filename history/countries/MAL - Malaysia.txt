@@ -50,23 +50,12 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
-set_politics = {
+set_politics = {}
 
-	parties = {
-		liberalism = { 
-			popularity = 33
-		}
-
-#		rexism = {
-#		}
-		
-		proletarianism = {
-			popularity = 33
-		}
-		absolutism = {
-			popularity = 34
-		}
-	}
+set_popularities = {
+    liberalism = 33
+    proletarianism = 33
+    absolutism = 34
 }
 
 create_country_leader = {

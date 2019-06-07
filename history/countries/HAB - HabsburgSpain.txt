@@ -26,28 +26,17 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		royalism = {
-			popularity = 57
-		}
-		rexism = {
-			popularity = 13
-		}
-
-		liberalism = {
-			popularity = 13
-		}
-
-		proletarianism = {
-			popularity = 27
-		}
-	}
-
 	ruling_party = royalism
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
+}
+
+set_popularities = {
+    royalism = 57
+    rexism = 13
+    liberalism = 13
+    proletarianism = 27
 }
 
 set_convoys = 150

@@ -62,24 +62,25 @@ HES = { set_country_flag = supporting_austria }
 THU = { set_country_flag = supporting_prussia }
 
 set_politics = {
-	parties = {
-		conservatism = { popularity = 12 }
-		liberalism = { popularity = 3 }
-		socialism = { popularity = 2 }
-		labryscism = { popularity = 7 }
-		rexism = { popularity = 11 }
-		despotism = { popularity = 2 }
-		royalism = {popularity = 12 }
-		theocracy = { popularity = 8 }
-		absolutism = { popularity = 35 }
-		proletarianism = {popularity = 1 }
-		collectivism = { popularity = 4 }
-		naturalism = { popularity = 3 }
-	}
 	ruling_party = absolutism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    conservatism = 12
+    liberalism = 3
+    socialism = 2
+    labryscism = 7
+    rexism = 11
+    despotism = 2
+    royalism = 12
+    theocracy = 8
+    absolutism = 35
+    proletarianism = 1
+    collectivism = 4
+    mutualism = 3
 }
 
 set_convoys = 200

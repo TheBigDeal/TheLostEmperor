@@ -27,7 +27,7 @@ can_lose_democracy_support = {
 	OR = {
 		proletarianism < 0.18
 		collectivism < 0.18
-		naturalism < 0.18
+		mutualism < 0.18
 	}
 	OR = {
 		rexism < 0.18

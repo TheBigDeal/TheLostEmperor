@@ -13,26 +13,15 @@ add_ideas = {
 	brutal_civil_war
 }
 set_politics = {
-
-	parties = {
-
-		rexism = {
-			popularity = 35
-		}
-
-		royalism = {
-			popularity = 42
-		}
-
-		absolutism = {
-			popularity = 23
-		}
-
-	}
-
 	ruling_party = royalism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    rexism = 35
+    royalism = 42
+    absolutism = 23
 }
 set_convoys = 5

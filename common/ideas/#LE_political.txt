@@ -60,10 +60,10 @@ country = {
 			collectivism_drift = 0.02
 		}
 	}
-	rise_of_the_naturalist_party = {
+	rise_of_the_mutualist_party = {
 		picture = Hungarian_Monarchy
 		modifier = {
-			naturalism_drift = 0.02
+			mutualism_drift = 0.02
 		}
 	}
 	rise_of_the_proletariat_party = {

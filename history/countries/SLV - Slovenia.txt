@@ -19,22 +19,16 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		labryscism = { 
-			popularity = 33
-		}
-		absolutism = { 
-			popularity = 34
-		}		
-		collectivism = {
-			popularity = 33
-		}
-	}
 	ruling_party = absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    labryscism = 33
+    absolutism = 34
+    collectivism = 33
 }
 
 

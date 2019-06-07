@@ -15,30 +15,18 @@ set_technology = {
 	CAS1 = 1
 }
 
-set_politics = {
-
-	parties = {
-		conservatism = { 
-			popularity = 56
-		}
-		
-		liberalism = { 
-			popularity = 28
-		}
-
-		rexism = {
-			popularity = 4
-		}
-		
-		theocracy = {
-			popularity = 12
-		}
-	}
-	
+set_politics = {	
 	ruling_party = conservatism
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    conservatism = 56
+    liberalism = 28
+    rexism = 4
+    theocracy = 12
 }
 
 add_ideas = {	

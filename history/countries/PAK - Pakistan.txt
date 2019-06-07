@@ -91,30 +91,18 @@ set_convoys = 20
 	}
 }
 
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 17
-		}
-
-		rexism = {
-			popularity = 2
-		}
-		
-		collectivism = {
-			popularity = 1
-		}
-
-		absolutism = {
-			popularity = 80
-		}
-	}
-	
+set_politics = {	
 	ruling_party = absolutism
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    liberalism = 17
+    rexism = 2
+    collectivism = 1
+    absolutism = 80
 }
 
 

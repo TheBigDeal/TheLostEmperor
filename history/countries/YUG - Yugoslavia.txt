@@ -134,60 +134,34 @@ set_technology = {
 }
 
 set_convoys = 10
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 15
-		}
-
-		rexism = {
-			popularity = 10
-		}
-		
-		proletarianism = {
-			popularity = 15
-			#banned = no #default is no
-		}
-		
-		absolutism = { 
-			popularity = 60
-		}
-	}
-	
+set_politics = {	
 	ruling_party = absolutism
 	last_election = "1935.5.3"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
+set_popularities = {
+    liberalism = 15
+    rexism = 10
+    proletarianism = 15
+    absolutism = 60
+}
+
 1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			liberalism = { 
-				popularity = 5
-			}
-
-			rexism = {
-				popularity = 20
-			}
-			
-			proletarianism = {
-				popularity = 5
-				#banned = no #default is no
-			}
-			
-			absolutism = { 
-				popularity = 60
-			}
-		}
-		
+	set_politics = {		
 		ruling_party = absolutism
 		last_election = "1938.12.1"
 		election_frequency = 36
 		elections_allowed = yes
-	}
+}
+
+    set_popularities = {
+        liberalism = 5
+        rexism = 20
+        proletarianism = 5
+        absolutism = 60
+    }
 
 }
 set_stability = 0.6

@@ -59,27 +59,17 @@ set_convoys = 5
 }
 
 
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 40
-		}
-
-		rexism = {
-			popularity = 30
-		}
-		
-		proletarianism = {
-			popularity = 30
-			#banned = no #default is no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberalism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    liberalism = 40
+    rexism = 30
+    proletarianism = 30
 }
 
 create_country_leader = {

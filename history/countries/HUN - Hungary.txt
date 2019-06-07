@@ -25,26 +25,18 @@ if = {
 	}
 }
 
-set_politics = {
-	parties = {
-		liberalism = { 
-			popularity = 5
-		}
-		rexism = {
-			popularity = 0
-		}
-		absolutism = {
-			popularity = 15
-		}
-		royalism = {
-			popularity = 80
-		}
-	}
-	
+set_politics = {	
 	ruling_party = royalism
 	last_election = "1935.3.31"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    liberalism = 5
+    rexism = 0
+    absolutism = 15
+    royalism = 80
 }
 
 set_cosmetic_tag = HUN_AUS_PUPPET
@@ -139,27 +131,18 @@ create_country_leader = {
 		}
 	}
 
-	set_politics = {
-
-		parties = {
-			liberalism = { 
-				popularity = 27
-			}
-
-			rexism = {
-				popularity = 70
-			}
-			
-			proletarianism = {
-				popularity = 3
-			}
-		}
-		
+	set_politics = {		
 		ruling_party = rexism
 		last_election = "1939.5.29"
 		election_frequency = 48
 		elections_allowed = yes
-	}
+}
+
+    set_popularities = {
+        liberalism = 27
+        rexism = 70
+        proletarianism = 3
+    }
 
 }
 

@@ -61,7 +61,7 @@
  tno_political_parties_banned_socialists:0 "Banned Socialists"
  tno_political_parties_multiparty_system:0 "Multi-Party System"
  tno_political_parties_banned_fascists:0 "Banned Fascists"
- tno_religious_rights:0 "Religious Rights"
+ tno_religious_rights:0 "State Religion"
  EFFECT_CHANGE_LAW_tno_religious_rights:0 "Change Religious Rights Law to '$NAME|Y$' which grants ($DESC$)."
  tno_religious_rights_state_religion:0 "State Religion"
  tno_religious_rights_pluralism:0 "Pluralism"

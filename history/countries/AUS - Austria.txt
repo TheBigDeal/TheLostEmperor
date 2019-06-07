@@ -25,33 +25,19 @@ set_variable = { var = AUS_THURINGIA_SUPPORT value = -100 }
 add_ideas = {
 	aus_ethnic_tensions
 }
-set_politics = {
-
-	parties = {
-
-		rexism = {
-			popularity = 15
-		}
-
-		liberalism = {
-			popularity = 25
-		}
-		
-		collectivism = {
-			popularity = 5
-		}
-		absolutism = {
-			popularity = 20
-		}
-		royalism = {
-			popularity = 35
-		}
-	}
-	
+set_politics = {	
 	ruling_party = royalism
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    rexism = 15
+    liberalism = 25
+    collectivism = 5
+    absolutism = 20
+    royalism = 35
 }
 
 if = {

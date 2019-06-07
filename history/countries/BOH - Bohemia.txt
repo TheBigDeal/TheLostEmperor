@@ -6,15 +6,14 @@ set_technology = {
 	tech_recon = 1
 }
 set_politics = {
-	parties = {
-		royalism = { 
-			popularity = 100
-		}
-	}
 	ruling_party = royalism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    royalism = 100
 }
 create_country_leader = {
 	name = "Charles I von Habsburg"

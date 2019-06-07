@@ -41,20 +41,15 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		absolutism = {
-			popularity = 15
-		}
-		rexism = {
-			popularity = 80
-		}
-	}
-
 	ruling_party = rexism
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
+}
+
+set_popularities = {
+    absolutism = 15
+    rexism = 80
 }
 
 #NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!

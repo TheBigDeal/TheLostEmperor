@@ -37,21 +37,12 @@ set_technology = {
 	
 }
 
-set_politics = {
+set_politics = {}
 
-	parties = {
-		liberalism = { 
-			popularity = 30
-		}
-		
-		proletarianism = {
-			popularity = 40
-		}
-		
-		absolutism = {
-			popularity = 30
-		}		
-	}
+set_popularities = {
+    liberalism = 30
+    proletarianism = 40
+    absolutism = 30
 }
 
 create_country_leader = {

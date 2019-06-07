@@ -11,30 +11,17 @@ set_technology = {
 set_cosmetic_tag = Centroamerica
 set_convoys = 5
 set_politics = {
-
-	parties = {
-		liberalism = {
-			popularity = 30
-		}
-
-		rexism = {
-			popularity = 0
-		}
-
-		proletarianism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-
-		absolutism = {
-			popularity = 70
-		}
-	}
-
 	ruling_party = absolutism
 	last_election = "1931.2.8"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    liberalism = 30
+    rexism = 0
+    proletarianism = 0
+    absolutism = 70
 }
 
 create_country_leader = {
@@ -50,29 +37,16 @@ create_country_leader = {
 
 1939.1.1 = {
 	set_politics = {
-
-		parties = {
-			liberalism = {
-				popularity = 30
-			}
-
-			rexism = {
-				popularity = 0
-			}
-
-			proletarianism = {
-				popularity = 0
-				#banned = no #default is no
-			}
-
-			absolutism = {
-				popularity = 70
-			}
-		}
-
 		ruling_party = absolutism
 		last_election = "1931.2.8"
 		election_frequency = 48
 		elections_allowed = no
-	}
+}
+
+    set_popularities = {
+        liberalism = 30
+        rexism = 0
+        proletarianism = 0
+        absolutism = 70
+    }
 }

@@ -16,55 +16,40 @@ set_technology = {
 }
 set_convoys = 5
 set_politics = {
-
-	parties = {
-		conservatism = { popularity = 15 }
-		liberalism = { popularity = 4	}
-		socialism = { popularity = 7 }
-		labryscism = { popularity = 10 }
-		rexism = { popularity = 11 }
-		despotism = { popularity = 2 }
-		royalism = {popularity = 4 }
-		theocracy = { popularity = 7 }
-		absolutism = { popularity = 30 }
-		proletarianism = {popularity = 3 }
-		collectivism = { popularity = 7 }
-		naturalism = { popularity = 5 }
-	}
-
 	ruling_party = absolutism
 	last_election = "1932.5.21"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+set_popularities = {
+    conservatism = 15
+    liberalism = 7
+    socialism = 10
+    labryscism = 11
+    rexism = 2
+    despotism = 4
+    royalism = 7
+    theocracy = 30
+    absolutism = 3
+    proletarianism = 7
+    collectivism = 5
+}
+
 1939.1.1 = {
 	set_politics = {
-
-		parties = {
-			liberalism = {
-				popularity = 20
-			}
-
-			rexism = {
-				popularity = 15
-			}
-
-			proletarianism = {
-				popularity = 5
-				#banned = no #default is no
-			}
-
-			absolutism = {
-				popularity = 60
-			}
-		}
-
 		ruling_party = absolutism
 		last_election = "1938.2.25"
 		election_frequency = 48
 		elections_allowed = no
-	}
+}
+
+    set_popularities = {
+        liberalism = 20
+        rexism = 15
+        proletarianism = 5
+        absolutism = 60
+    }
 }
 
 create_country_leader = {

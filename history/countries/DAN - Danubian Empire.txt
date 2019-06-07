@@ -14,30 +14,18 @@ set_technology = {
 	early_fighter = 1
 }
 
-set_politics = {
-
-	parties = {
-
-		rexism = {
-			popularity = 2
-		}
-
-		absolutism = {
-			popularity = 21
-		}
-		
-		liberalism = {
-			popularity = 8
-		}
-		royalism = {
-			popularity = 69
-		}
-	}
-	
+set_politics = {	
 	ruling_party = royalism
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    rexism = 2
+    absolutism = 21
+    liberalism = 8
+    royalism = 69
 }
 
 set_stability = 0.50

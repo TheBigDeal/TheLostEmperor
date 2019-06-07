@@ -14,26 +14,23 @@ set_research_slots = 3
 set_convoys = 10
 
 set_politics = {
-
-	parties = {
-		conservatism = { popularity = 10 }
-		liberalism = { popularity = 4	}
-		socialism = { popularity = 2 }
-		labryscism = { popularity = 5	}
-		rexism = { popularity = 11 }
-		despotism = { popularity = 2 }
-		royalism = {popularity = 8 }
-		theocracy = { popularity = 12 }
-		absolutism = { popularity = 35 }
-		proletarianism = {popularity = 3 }
-		collectivism = { popularity = 3 }
-		naturalism = { popularity = 5 }
-	}
-
 	ruling_party = absolutism
 	last_election = "1931.10.3"
 	election_frequency = 108
 	elections_allowed = no
+}
+
+set_popularities = {
+    conservatism = 10
+    liberalism = 2
+    socialism = 11
+    labryscism = 2
+    rexism = 8
+    despotism = 12
+    royalism = 35
+    theocracy = 3
+    absolutism = 3
+    proletarianism = 5
 }
 
 create_country_leader = {

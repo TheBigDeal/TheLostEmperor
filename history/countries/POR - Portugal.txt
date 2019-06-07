@@ -22,30 +22,18 @@ set_technology = {
 set_convoys = 50
 
 
-set_politics = {
-
-	parties = {
-		liberalism = {
-			popularity = 0
-		}
-
-		rexism = {
-			popularity = 5
-		}
-		
-		proletarianism = {
-			popularity = 5
-		}
-		
-		absolutism = {
-			popularity = 90
-		}
-	}
-	
+set_politics = {	
 	ruling_party = absolutism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    liberalism = 0
+    rexism = 5
+    proletarianism = 5
+    absolutism = 90
 }
 
 set_convoys = 100

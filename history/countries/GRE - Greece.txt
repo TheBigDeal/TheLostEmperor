@@ -23,33 +23,29 @@ set_technology = {
 }
 set_convoys = 17
 set_politics = {
-	parties = {
-		conservatism = { popularity = 5 }
-		liberalism = { popularity = 1	}
-		socialism = { popularity = 4 }
-
-		labryscism = { popularity = 20	}
-		rexism = { popularity = 9 }
-		despotism = { popularity = 6 }
-
-		royalism = {popularity = 20 }
-		theocracy = { popularity = 2 }
-		absolutism = { popularity = 8 }
-
-		proletarianism = {popularity = 3 }
-		collectivism = { popularity = 15 }
-		naturalism = { popularity = 7 }
-	}
 	ruling_party = royalism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
+
+set_popularities = {
+    conservatism = 5
+    liberalism = 4
+    socialism = 9
+    labryscism = 6
+    rexism = 20
+    despotism = 2
+    royalism = 8
+    theocracy = 3
+    absolutism = 15
+    proletarianism = 7
+}
 set_stability = 0.40
 set_war_support = 0.95
 create_country_leader = {
-	name = "King Albert von Saxe-Coburg-Gotha"
-	desc = "POLITICS_IOANNIS_METAXAS_DESC"
+	name = "King Alvertos von Saxe-Coburg-Gotha"
+	desc = "gre_description_king_albert"
 	picture = "King_Albert.tga"
 	expire = "1965.1.1"
 	ideology = absolutism_ideology
@@ -58,23 +54,23 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "King Albert von Saxe-Coburg-Gotha"
-	desc = "POLITICS_IOANNIS_METAXAS_DESC"
+	name = "King Alvertos von Saxe-Coburg-Gotha"
+	desc = "gre_description_king_albert"
 	picture = "King_Albert.tga"
 	expire = "1965.1.1"
 	ideology = royalism_ideology
 	traits = {
-		#
+		staunch_democrat
 	}
 }
 create_country_leader = {
-	name = "King Albert von Saxe-Coburg-Gotha"
-	desc = "POLITICS_IOANNIS_METAXAS_DESC"
+	name = "King Alvertos I von Saxe-Coburg-Gotha"
+	desc = "gre_description_king_albert"
 	picture = "King_Albert.tga"
 	expire = "1965.1.1"
 	ideology = rexism_ideology
 	traits = {
-		#
+		staunch_democrat
 	}
 }
 
@@ -85,7 +81,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = proletarianism
 	traits = {
-		#
+		staunch_democrat
 	}
 }
 

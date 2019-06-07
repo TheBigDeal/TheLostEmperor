@@ -22,58 +22,34 @@ set_technology = {
 
 set_convoys = 10
 
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 20
-		}
-
-		rexism = {
-			popularity = 18
-		}
-		
-		proletarianism = {
-			popularity = 2
-		}
-		
-		absolutism = { 
-			popularity = 60
-		}
-	}
-	
+set_politics = {	
 	ruling_party = absolutism
 	last_election = "1933.12.20"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
+set_popularities = {
+    liberalism = 20
+    rexism = 18
+    proletarianism = 2
+    absolutism = 60
+}
+
 1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			liberalism = { 
-				popularity = 20
-			}
-
-			rexism = {
-				popularity = 35
-			}
-			
-			proletarianism = {
-				popularity = 2
-			}
-			
-			absolutism = { 
-				popularity = 43
-			}
-		}
-		
+	set_politics = {		
 		ruling_party = absolutism
 		last_election = "1939.7.15"
 		election_frequency = 48
 		elections_allowed = no
-	}
+}
+
+    set_popularities = {
+        liberalism = 20
+        rexism = 35
+        proletarianism = 2
+        absolutism = 43
+    }
 }
 
 create_country_leader = {

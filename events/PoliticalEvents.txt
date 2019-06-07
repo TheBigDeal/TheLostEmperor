@@ -35,7 +35,7 @@ country_event = {
 	}
 }
 
-# Class Conflicts Divide [Root.GetName] Naturalism
+# Class Conflicts Divide [Root.GetName] Mutualism
 country_event = {
 	id = political.2
 	title = political.2.t
@@ -43,23 +43,23 @@ country_event = {
 	picture = GFX_report_event_gathering_protest
 	
 	trigger = {
-		has_idea_with_trait = naturalist_revolutionary
-		NOT = { has_government = naturalism }
-		naturalism > 0.2
+		has_idea_with_trait = mutualist_revolutionary
+		NOT = { has_government = mutualism }
+		mutualism > 0.2
 	}
 
 	mean_time_to_happen = {
 		days = 365
 		modifier = {
 			factor = 0.5
-			has_country_flag = naturalism_popular_movement
+			has_country_flag = mutualism_popular_movement
 		}
 	}
 	
 	option = {
 		name = political.2.a
 		add_popularity = {
-			ideology = naturalism
+			ideology = mutualism
 			popularity = 0.05
 		}
 		add_stability = -0.05
@@ -129,7 +129,7 @@ country_event = {
 	}
 }
 
-# Soldiers Desert to Naturalist Partisans
+# Soldiers Desert to Mutualist Partisans
 country_event = {
 	id = political.5
 	title = political.5.t
@@ -137,27 +137,27 @@ country_event = {
 	picture = GFX_report_event_desertion_poster
 	
 	trigger = {
-		has_idea_with_trait = naturalist_revolutionary
-		NOT = { has_government = naturalism }
-		naturalism > 0.3
-		NOT = { has_idea = naturalist_partisans_recruiting }
+		has_idea_with_trait = mutualist_revolutionary
+		NOT = { has_government = mutualism }
+		mutualism > 0.3
+		NOT = { has_idea = mutualist_partisans_recruiting }
 	}
 
 	mean_time_to_happen = {
 		days = 365
 		modifier = {
 			factor = 0.5
-			has_country_flag = naturalist_popular_movement
+			has_country_flag = mutualist_popular_movement
 		}
 	}
 	
 	option = {
 		name = political.5.a
 		add_popularity = {
-			ideology = naturalism
+			ideology = mutualism
 			popularity = 0.05
 		}
-		add_ideas = naturalist_partisans_recruiting
+		add_ideas = mutualist_partisans_recruiting
 	}
 }
 
@@ -308,7 +308,7 @@ country_event = {
 		}
 	}
 }
-# The Threat of Naturalism
+# The Threat of Mutualism
 country_event = {
 	id = political.10
 	title = political.10.t
@@ -328,7 +328,7 @@ country_event = {
 			rexism > 0.25
 		}
 		any_neighbor_country = {
-			has_government = naturalism
+			has_government = mutualism
 		}
 	}
 	mean_time_to_happen = {
@@ -628,7 +628,7 @@ country_event = { #Collectivist Coup <50% Support
 		add_stability = -0.05
 	}
 }
-country_event = { #Naturalist Coup <50% Support
+country_event = { #Mutualist Coup <50% Support
 	id = political.20
 	title = political.20.t
 	desc = political.20.d
@@ -638,7 +638,7 @@ country_event = { #Naturalist Coup <50% Support
 	option = {
 		name = political.20.c
 		set_politics = {
-			ruling_party = naturalism
+			ruling_party = mutualism
 			elections_allowed = no
 		}
 		add_stability = -0.05
@@ -756,8 +756,8 @@ country_event = { #Labryscist Revolution
 			start_civil_war = { ruling_party = labryscism ideology = collectivism size = 0.5 }
 		}
 		if = {
-			limit = { has_government = naturalism }
-			start_civil_war = { ruling_party = labryscism ideology = naturalism size = 0.5 }
+			limit = { has_government = mutualism }
+			start_civil_war = { ruling_party = labryscism ideology = mutualism size = 0.5 }
 		}
 		if = {
 			limit = { has_government = proletarianism }
@@ -839,8 +839,8 @@ country_event = { #Rexist Revolution
 			start_civil_war = { ruling_party = rexism ideology = collectivism size = 0.5 }
 		}
 		if = {
-			limit = { has_government = naturalism }
-			start_civil_war = { ruling_party = rexism ideology = naturalism size = 0.5 }
+			limit = { has_government = mutualism }
+			start_civil_war = { ruling_party = rexism ideology = mutualism size = 0.5 }
 		}
 		if = {
 			limit = { has_government = proletarianism }
@@ -922,8 +922,8 @@ country_event = { #Despotism Revolution
 			start_civil_war = { ruling_party = despotism ideology = collectivism size = 0.5 }
 		}
 		if = {
-			limit = { has_government = naturalism }
-			start_civil_war = { ruling_party = despotism ideology = naturalism size = 0.5 }
+			limit = { has_government = mutualism }
+			start_civil_war = { ruling_party = despotism ideology = mutualism size = 0.5 }
 		}
 		if = {
 			limit = { has_government = proletarianism }
@@ -1008,8 +1008,8 @@ country_event = { #Theocratic Revolution
 			start_civil_war = { ruling_party = theocracy ideology = collectivism size = 0.5 }
 		}
 		if = {
-			limit = { has_government = naturalism }
-			start_civil_war = { ruling_party = theocracy ideology = naturalism size = 0.5 }
+			limit = { has_government = mutualism }
+			start_civil_war = { ruling_party = theocracy ideology = mutualism size = 0.5 }
 		}
 		if = {
 			limit = { has_government = proletarianism }
@@ -1091,8 +1091,8 @@ country_event = { #Absolutist Revolution
 			start_civil_war = { ruling_party = absolutism ideology = collectivism size = 0.5 }
 		}
 		if = {
-			limit = { has_government = naturalism }
-			start_civil_war = { ruling_party = absolutism ideology = naturalism size = 0.5 }
+			limit = { has_government = mutualism }
+			start_civil_war = { ruling_party = absolutism ideology = mutualism size = 0.5 }
 		}
 		if = {
 			limit = { has_government = proletarianism }
@@ -1174,8 +1174,8 @@ country_event = { #Royalism Revolution
 			start_civil_war = { ruling_party = royalism ideology = collectivism size = 0.5 }
 		}
 		if = {
-			limit = { has_government = naturalism }
-			start_civil_war = { ruling_party = royalism ideology = naturalism size = 0.5 }
+			limit = { has_government = mutualism }
+			start_civil_war = { ruling_party = royalism ideology = mutualism size = 0.5 }
 		}
 		if = {
 			limit = { has_government = proletarianism }
@@ -1262,8 +1262,8 @@ country_event = { #Collectivist Revolution
 			start_civil_war = { ruling_party = collectivism ideology = collectivism size = 0.5 }
 		}
 		if = {
-			limit = { has_government = naturalism }
-			start_civil_war = { ruling_party = collectivism ideology = naturalism size = 0.5 }
+			limit = { has_government = mutualism }
+			start_civil_war = { ruling_party = collectivism ideology = mutualism size = 0.5 }
 		}
 		if = {
 			limit = { has_government = proletarianism }
@@ -1299,30 +1299,30 @@ country_event = { #Collectivist Revolution
 		}
 	}
 }
-country_event = { #Naturalist Revolution
+country_event = { #Mutualist Revolution
 	id = political.32
 	title = political.32.t
 	desc = political.32.d
 	picture = GFX_report_event_worker_protests
 	trigger = {
-		naturalism > 0.7
-		#has_idea = naturalist_revolutionaries
-		NOT = { has_government = naturalism }
+		mutualism > 0.7
+		#has_idea = mutualist_revolutionaries
+		NOT = { has_government = mutualism }
 		has_civil_war = no
-		#check_has_focus_tree_to_switch_to_naturalism = yes
+		#check_has_focus_tree_to_switch_to_mutualism = yes
 	}
 	mean_time_to_happen = {
 		days = 2
 	}
 	immediate = {
-		hidden_effect = { remove_ideas = naturalist_revolutionaries }
+		hidden_effect = { remove_ideas = mutualist_revolutionaries }
 	}
 	option = { #Stay with current government
 		name = political.32.a
 		ai_chance = {
 			factor = 0
 		}
-		start_civil_war = { ideology = naturalism size = 0.5 }
+		start_civil_war = { ideology = mutualism size = 0.5 }
 	}
 	option = { #Side with the Revolutionaries
 		name = political.30.b
@@ -1330,57 +1330,57 @@ country_event = { #Naturalist Revolution
 		###################################
 		if = {
 			limit = { has_government = liberalism }
-			start_civil_war = { ruling_party = naturalism ideology = liberalism size = 0.5 }
+			start_civil_war = { ruling_party = mutualism ideology = liberalism size = 0.5 }
 		}
 		if = {
 			limit = { has_government = conservatism }
-			start_civil_war = { ruling_party = naturalism ideology = conservatism size = 0.5 }
+			start_civil_war = { ruling_party = mutualism ideology = conservatism size = 0.5 }
 		}
 		if = {
 			limit = { has_government = socialism }
-			start_civil_war = { ruling_party = naturalism ideology = socialism size = 0.5 }
+			start_civil_war = { ruling_party = mutualism ideology = socialism size = 0.5 }
 		}
 		#Communist#
 		###################################
 		if = {
 			limit = { has_government = collectivism }
-			start_civil_war = { ruling_party = naturalism ideology = collectivism size = 0.5 }
+			start_civil_war = { ruling_party = mutualism ideology = collectivism size = 0.5 }
 		}
 		if = {
-			limit = { has_government = naturalism }
-			start_civil_war = { ruling_party = naturalism ideology = naturalism size = 0.5 }
+			limit = { has_government = mutualism }
+			start_civil_war = { ruling_party = mutualism ideology = mutualism size = 0.5 }
 		}
 		if = {
 			limit = { has_government = proletarianism }
-			start_civil_war = { ruling_party = naturalism ideology = proletarianism size = 0.5 }
+			start_civil_war = { ruling_party = mutualism ideology = proletarianism size = 0.5 }
 		}
 		#Monarchic#
 		###################################
 		if = { 
 			limit = { has_government = absolutism }
-			start_civil_war = { ruling_party = naturalism ideology = absolutism size = 0.5 }
+			start_civil_war = { ruling_party = mutualism ideology = absolutism size = 0.5 }
 		}
 		if = { 
 			limit = { has_government = theocracy }
-			start_civil_war = { ruling_party = naturalism ideology = theocracy size = 0.5 }
+			start_civil_war = { ruling_party = mutualism ideology = theocracy size = 0.5 }
 		}
 		if = { 
 			limit = { has_government = royalism }
-			start_civil_war = { ruling_party = naturalism ideology = royalism size = 0.5 }
+			start_civil_war = { ruling_party = mutualism ideology = royalism size = 0.5 }
 		}
 		#Fascism#
 		###################################
 		if = { 
 			limit = { has_government = labryscism }
-			start_civil_war = { ruling_party = naturalism ideology = labryscism size = 0.5 }
+			start_civil_war = { ruling_party = mutualism ideology = labryscism size = 0.5 }
 		}
 		if = { 
 			limit = { has_government = rexism }
-			start_civil_war = { ruling_party = naturalism ideology = rexism size = 0.5 }
+			start_civil_war = { ruling_party = mutualism ideology = rexism size = 0.5 }
 		}
 		if = { 
 			limit = { has_government = despotism }
-			start_civil_war = { ruling_party = naturalism ideology = despotism size = 0.5 }
+			start_civil_war = { ruling_party = mutualism ideology = despotism size = 0.5 }
 		}
 	}
 }
@@ -1432,8 +1432,8 @@ country_event = { #Proletariat Revolution
 			start_civil_war = { ruling_party = proletarianism ideology = collectivism size = 0.5 }
 		}
 		if = {
-			limit = { has_government = naturalism }
-			start_civil_war = { ruling_party = proletarianism ideology = naturalism size = 0.5 }
+			limit = { has_government = mutualism }
+			start_civil_war = { ruling_party = proletarianism ideology = mutualism size = 0.5 }
 		}
 		if = {
 			limit = { has_government = proletarianism }
@@ -1519,8 +1519,8 @@ country_event = { #Liberal Revolution
 			start_civil_war = { ruling_party = liberalism ideology = collectivism size = 0.5 }
 		}
 		if = {
-			limit = { has_government = naturalism }
-			start_civil_war = { ruling_party = liberalism ideology = naturalism size = 0.5 }
+			limit = { has_government = mutualism }
+			start_civil_war = { ruling_party = liberalism ideology = mutualism size = 0.5 }
 		}
 		if = {
 			limit = { has_government = proletarianism }
@@ -1603,8 +1603,8 @@ country_event = { #Conservative Revolution
 			start_civil_war = { ruling_party = conservatism ideology = collectivism size = 0.5 }
 		}
 		if = {
-			limit = { has_government = naturalism }
-			start_civil_war = { ruling_party = conservatism ideology = naturalism size = 0.5 }
+			limit = { has_government = mutualism }
+			start_civil_war = { ruling_party = conservatism ideology = mutualism size = 0.5 }
 		}
 		if = {
 			limit = { has_government = proletarianism }
@@ -1687,8 +1687,8 @@ country_event = { #Democratic-Socialist Revolution
 			start_civil_war = { ruling_party = socialism ideology = collectivism size = 0.5 }
 		}
 		if = {
-			limit = { has_government = naturalism }
-			start_civil_war = { ruling_party = socialism ideology = naturalism size = 0.5 }
+			limit = { has_government = mutualism }
+			start_civil_war = { ruling_party = socialism ideology = mutualism size = 0.5 }
 		}
 		if = {
 			limit = { has_government = proletarianism }
@@ -1795,13 +1795,13 @@ country_event = {
 	desc = political.41.d
 	picture = GFX_report_event_stalin_propaganda
 	trigger = {
-		naturalism < 0.3
-		has_idea = naturalist_revolutionaries
+		mutualism < 0.3
+		has_idea = mutualist_revolutionaries
 	}
 	mean_time_to_happen = { days = 2 }
 	option = {
 		name = political.41.a
-		remove_ideas = naturalist_revolutionaries
+		remove_ideas = mutualist_revolutionaries
 	}
 }
 country_event = {

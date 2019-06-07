@@ -42,9 +42,9 @@
  royalism_ideology_desc:0 "Royalism is the idea wherein a monarch rules a nation as head of state but in which a Constitution lays down the laws and boundaries of the powers that be in the nation often at times investing in more power to the people."
 
  #Communism
- naturalism:0 "Naturalism"
- naturalism_noun:0 "Naturalist"
- naturalism_ideology_desc:0 "Naturalism is the idea that humanity should be left in their natural state. This is close to Anarchism in OTL. Government powers are limited or non existant, with usually only a basic set of rules."
+ mutualism:0 "Mutualism"
+ mutualism_noun:0 "Mutualist"
+ mutualism_ideology_desc:0 "Mutualism is the idea that humanity should be left in their natural state. This is close to Anarchism in OTL. Government powers are limited or non existant, with usually only a basic set of rules."
 
  collectivism:0 "Collectivism"
  collectivism_noun:0 "Collectivist"
@@ -66,7 +66,7 @@
  GRE_socialism_party:0 "Peoples Party of Greece"
  GRE_theocracy_party:0 "Hands of God"
  GRE_labryscism_party:0 "Spartan League"
- GRE_naturalism_party:0 "Greek Workers Front"
+ GRE_mutualism_party:0 "Greek Workers Front"
  GRE_collectivism_party:0 "Greek Workers Front"
  GRE_proletarianism_party:0 "Greek Workers Front"
 #SUBCATS

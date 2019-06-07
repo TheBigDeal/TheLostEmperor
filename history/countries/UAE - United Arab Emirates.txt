@@ -43,31 +43,18 @@ set_convoys = 5
 		
 	}
 }
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 23
-		}
-
-		labryscism = {
-			popularity = 1
-		}
-		
-		collectivism = {
-			popularity = 1
-			#banned = no #default is no
-		}
-		
-		absolutism = { 
-			popularity = 75
-		}
-	}
-	
+set_politics = {	
 	ruling_party = absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    liberalism = 23
+    labryscism = 1
+    collectivism = 1
+    absolutism = 75
 }
 
 #create_country_leader = {
@@ -86,30 +73,17 @@ set_politics = {
 
 
 1939.1.1 = {
-	set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 23
-		}
-
-		labryscism = {
-			popularity = 1
-		}
-		
-		collectivism = {
-			popularity = 1
-			#banned = no #default is no
-		}
-		
-		absolutism = { 
-			popularity = 75
-		}
-	}
-	
+	set_politics = {	
 	ruling_party = absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    liberalism = 23
+    labryscism = 1
+    collectivism = 1
+    absolutism = 75
 }
 

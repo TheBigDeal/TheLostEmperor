@@ -24,18 +24,15 @@ if = {
 	}
 }
 
-set_politics = {
-
-	parties = {
-		despotism = { 
-			popularity = 100
-		}
-	}
-	
+set_politics = {	
 	ruling_party = despotism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    despotism = 100
 }
 
 set_convoys = 5

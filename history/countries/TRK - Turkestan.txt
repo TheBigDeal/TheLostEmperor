@@ -8,23 +8,22 @@ set_technology = {
 	tech_recon = 1
 }
 set_politics = {
-	parties = {
-		conservatism = { popularity = 12 }
-		liberalism = { popularity = 3	}
-		socialism = { popularity = 1 }
-		labryscism = { popularity = 8	}
-		rexism = { popularity = 11 }
-		despotism = { popularity = 7 }
-		royalism = {popularity = 2 }
-		theocracy = { popularity = 10 }
-		absolutism = { popularity = 33 }
-		proletarianism = {popularity = 6 }
-		collectivism = { popularity = 4 }
-		naturalism = { popularity = 3 }
-	}
 	ruling_party = absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    conservatism = 12
+    liberalism = 1
+    socialism = 11
+    labryscism = 7
+    rexism = 2
+    despotism = 10
+    royalism = 33
+    theocracy = 6
+    absolutism = 4
+    proletarianism = 3
 }
 set_convoys = 5

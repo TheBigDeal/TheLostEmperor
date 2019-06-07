@@ -12,50 +12,32 @@ set_technology = {
 	early_fighter = 1
 }
 
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 92
-		}
-
-		rexism = {
-			popularity = 3
-		}
-		
-		proletarianism = {
-			popularity = 5
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberalism
 	last_election = "1934.6.3"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
+set_popularities = {
+    liberalism = 92
+    rexism = 3
+    proletarianism = 5
+}
+
 1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			liberalism = { 
-				popularity = 92
-			}
-
-			rexism = {
-				popularity = 3
-			}
-			
-			proletarianism = {
-				popularity = 5
-			}
-		}
-		
+	set_politics = {		
 		ruling_party = liberalism
 		last_election = "1937.6.6"
 		election_frequency = 36
 		elections_allowed = yes
-	}
+}
+
+    set_popularities = {
+        liberalism = 92
+        rexism = 3
+        proletarianism = 5
+    }
 
 	create_country_leader = {
 		name = "Pierre Dupong"

@@ -10,23 +10,16 @@ set_technology = {
 }
 
 set_convoys = 10
-set_politics = {
-
-	parties = {
-		despotism = { 
-			popularity = 55
-		}
-		
-		proletarianism = {
-			popularity = 45
-			#banned = no #default is no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = despotism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    despotism = 55
+    proletarianism = 45
 }
 
 create_country_leader = {
@@ -63,26 +56,16 @@ create_country_leader = {
 }
 
 1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			liberalism = { 
-				popularity = 5
-			}
-
-			rexism = {
-				popularity = 80
-			}
-			
-			proletarianism = {
-				popularity = 15
-				#banned = no #default is no
-			}
-		}
-		
+	set_politics = {		
 		ruling_party = rexism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
-	}
+}
+
+    set_popularities = {
+        liberalism = 5
+        rexism = 80
+        proletarianism = 15
+    }
 }

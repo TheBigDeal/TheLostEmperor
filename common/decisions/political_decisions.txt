@@ -281,11 +281,11 @@ labryscism_on_the_rise = {
 			}
 			if = {
 				limit = {
-					has_government = naturalism
+					has_government = mutualism
 				}
 				set_variable = {
 					var = civil_war_size_var
-					value = party_popularity@naturalism
+					value = party_popularity@mutualism
 				}
 			}
 			if = {
@@ -395,7 +395,7 @@ labryscism_on_the_rise = {
 			labryscism < 0.9
 			rexism < 0.9
 			despotism < 0.9
-			naturalism < 0.9
+			mutualism < 0.9
 			collectivism < 0.9
 			proletarianism < 0.9
 			conservatism < 0.9
@@ -438,7 +438,7 @@ labryscism_on_the_rise = {
 			labryscism < 0.8
 			rexism < 0.8
 			despotism < 0.8
-			naturalism < 0.8
+			mutualism < 0.8
 			collectivism < 0.8
 			proletarianism < 0.8
 			conservatism < 0.8
@@ -513,10 +513,10 @@ labryscism_on_the_rise = {
 			}
 			if = {
 				limit = {
-					has_government = naturalism
+					has_government = mutualism
 				}
 				add_popularity = {
-					ideology = naturalism
+					ideology = mutualism
 					popularity = -0.1
 				}
 			}

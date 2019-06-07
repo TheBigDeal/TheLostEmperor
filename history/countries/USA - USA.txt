@@ -1,4 +1,4 @@
-﻿capital = 361
+﻿capital = 1003
 
 #oob = "USA_1936"
 
@@ -20,62 +20,37 @@ set_technology = {
 	naval_bomber1 = 1
 	CAS1 = 1
 	early_bomber = 1
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	basic_carrier = 1
-	
 	superior_firepower = 1
 	base_strike = 1
 }
 
-
-
 set_convoys = 400
 set_stability = 0.6
 
-set_politics = {
+add_ideas = {
+	usa_sluggish_economy
+	usa_american_militarism
+	usa_popular_discontent
+}
 
-	parties = {
-		conservatism = { 
-			popularity = 15
-		}
-		liberalism = { 
-			popularity = 15
-		}
-		
-		absolutism = { 
-			popularity = 2
-		}
-		
-		socialism = { 
-			popularity = 4
-		}
-		
-		despotism = { 
-			popularity = 4
-		}
-		
-		labryscism = {
-			popularity = 30
-		}
-		
-		proletarianism = {
-			popularity = 30
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberalism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
+
+set_popularities = {
+    conservatism = 15
+    liberalism = 15
+    absolutism = 2
+    socialism = 4
+    despotism = 4
+    labryscism = 30
+    proletarianism = 30
+}
+
 
 add_ideas = {
 
@@ -108,37 +83,18 @@ NOU = {
 }
 
 create_country_leader = {
-	name = "James Farley"
+	name = "Calvin Coolidge"
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-	picture = "Portrait_USA_James_Farley.tga"
+	picture = "Portrait_Coolidge.tga"
 	expire = "1947.1.1"
-	ideology = liberalism_ideology
+	ideology = liberalism
 	traits = {
 
 	}
 }
 
-create_country_leader = {
-	name = "William Dudley Pelley"
-	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
-	picture = "Portrait_USA_William_Dudley_Pelley.dds"
-	expire = "1965.1.1"
-	ideology = rexism
-	traits = {
-		
-	}
-}
 
-create_country_leader = {
-	name = "Earl Browder"
-	desc = "POLITICS_EARL_BROWDER_DESC"
-	picture = "Portrait_USA_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = proletarianism
-	traits = {
-		
-	}
-}
+
 
 create_corps_commander = {
 	name = "George S. Patton"

@@ -9,7 +9,7 @@ state=
 
 	history=
 	{
-		owner = IRE
+		owner = GBR
 		buildings = {
 			infrastructure = 6
 		}

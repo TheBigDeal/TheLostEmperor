@@ -44,59 +44,33 @@ set_convoys = 5
 		
 	}
 }
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 60
-		}
-
-		labryscism = {
-			popularity = 8
-		}
-		
-		collectivism = {
-			popularity = 15
-			#banned = no #default is no
-		}
-		
-		absolutism = { 
-			popularity = 27
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberalism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
+set_popularities = {
+    liberalism = 60
+    labryscism = 8
+    collectivism = 15
+    absolutism = 27
+}
+
 
 1939.1.1 = {
-	set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 60
-		}
-
-		labryscism = {
-			popularity = 8
-		}
-		
-		collectivism = {
-			popularity = 15
-			#banned = no #default is no
-		}
-		
-		absolutism = { 
-			popularity = 27
-		}
-	}
-	
+	set_politics = {	
 	ruling_party = liberalism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    liberalism = 60
+    labryscism = 8
+    collectivism = 15
+    absolutism = 27
 }
 

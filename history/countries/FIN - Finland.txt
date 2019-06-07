@@ -25,58 +25,34 @@ add_ideas = {
 	limited_conscription
 }
 
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 10
-		}
-
-		rexism = {
-			popularity = 10
-		}
-		
-		proletarianism = {
-			popularity = 1
-		}
-
-		absolutism = {
-			popularity = 79
-		}
-	}
-	
+set_politics = {	
 	ruling_party = absolutism
 	last_election = "1933.7.1"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
+set_popularities = {
+    liberalism = 10
+    rexism = 10
+    proletarianism = 1
+    absolutism = 79
+}
+
 1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			liberalism = { 
-				popularity = 10
-			}
-
-			rexism = {
-				popularity = 10
-			}
-			
-			proletarianism = {
-				popularity = 1
-			}
-
-			absolutism = {
-				popularity = 79
-			}
-		}
-		
+	set_politics = {		
 		ruling_party = absolutism
 		last_election = "1939.7.1"
 		election_frequency = 36
 		elections_allowed = yes
-	}
+}
+
+    set_popularities = {
+        liberalism = 10
+        rexism = 10
+        proletarianism = 1
+        absolutism = 79
+    }
 }
 create_country_leader = {
 	name = "Risto Heikki Ryti"

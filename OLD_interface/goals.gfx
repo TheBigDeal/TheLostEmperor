@@ -241,8 +241,8 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/focus_proletarianism.dds"			
 	}
 	SpriteType = {
-	name = "GFX_focus_naturalism"
-	texturefile = "gfx/interface/goals/focus_naturalism.tga"			
+	name = "GFX_focus_mutualism"
+	texturefile = "gfx/interface/goals/focus_mutualism.tga"			
 	}
 	SpriteType = {
 	name = "GFX_goal_purge_dissenters"

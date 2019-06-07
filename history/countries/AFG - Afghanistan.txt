@@ -8,31 +8,18 @@ set_technology = {
 	
 }
 
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 0
-		}
-
-		rexism = {
-			popularity = 15
-		}
-		
-		proletarianism = {
-			popularity = 10
-			#banned = no #default is no
-		}
-		
-		absolutism = { 
-			popularity = 75
-		}
-	}
-	
+set_politics = {	
 	ruling_party = absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    liberalism = 0
+    rexism = 15
+    proletarianism = 10
+    absolutism = 75
 }
 
 # Mohammad Hashim Khan (Prime Minister) other potential candidate
@@ -48,32 +35,19 @@ create_country_leader = {
 }
 
 1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			liberalism = { 
-				popularity = 0
-			}
-
-			rexism = {
-				popularity = 20
-			}
-			
-			proletarianism = {
-				popularity = 10
-				#banned = no #default is no
-			}
-		
-			absolutism = { 
-				popularity = 75
-			}
-		}
-	
+	set_politics = {	
 		ruling_party = absolutism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
-	}
+}
+
+    set_popularities = {
+        liberalism = 0
+        rexism = 20
+        proletarianism = 10
+        absolutism = 75
+    }
 }
 
 create_corps_commander = {

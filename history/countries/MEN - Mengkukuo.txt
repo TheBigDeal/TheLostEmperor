@@ -49,32 +49,18 @@ set_technology = {
 	}
 }
 
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 0
-			banned = yes
-		}
-
-		rexism = {
-			popularity = 80
-		}
-		
-		proletarianism = {
-			popularity = 0
-			banned = yes
-		}
-
-		absolutism = {
-			popularity = 20
-		}
-	}
-	
+set_politics = {	
 	ruling_party = rexism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    liberalism = 0
+    rexism = 80
+    proletarianism = 0
+    absolutism = 20
 }
 
 create_country_leader = {

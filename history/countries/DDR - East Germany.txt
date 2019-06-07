@@ -46,28 +46,18 @@ set_research_slots = 4
 set_convoys = 50
 set_stability = 0.75
 
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 30
-		}
-
-		rexism = {
-			popularity = 10
-		}
-		
-		collectivism = {
-			popularity = 60
-			banned = no #default is no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = collectivism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 
+}
+
+set_popularities = {
+    liberalism = 30
+    rexism = 10
+    collectivism = 60
 }
 
 

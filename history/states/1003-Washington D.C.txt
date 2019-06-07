@@ -1,0 +1,19 @@
+state={
+	id=1003
+	name="STATE_1003"
+	history={
+		owner = USA
+		victory_points = { 13263 40 }
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = USA
+	}
+	provinces={
+		13263 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

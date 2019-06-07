@@ -18,29 +18,17 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		absolutism = {
-			popularity = 57
-		}
-
-		rexism = {
-			popularity = 13
-		}
-
-		liberalism = {
-			popularity = 13
-		}
-
-		proletarianism = {
-			popularity = 27
-		}
-	}
-
 	ruling_party = absolutism
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
+}
+
+set_popularities = {
+    absolutism = 47
+    rexism = 13
+    liberalism = 13
+    proletarianism = 27
 }
 
 set_convoys = 150

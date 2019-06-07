@@ -24,23 +24,16 @@ set_technology = {
 }
 
 
-set_politics = {
-
-	parties = {
-		theocracy = { 
-			popularity = 93
-		}
-
-		rexism = {
-			popularity = 7
-		}
-		
-	}
-	
+set_politics = {	
 	ruling_party = theocracy
 	last_election = "1935.10.14"
 	election_frequency = 60
 	elections_allowed = no
+}
+
+set_popularities = {
+    theocracy = 93
+    rexism = 7
 }
 
 give_military_access = TUR

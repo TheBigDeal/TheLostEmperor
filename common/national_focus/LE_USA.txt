@@ -17,102 +17,103 @@ focus_tree = {
 	###############################
 	focus = {
 		id = USA_THE_PRESIDENTS_ANNOUNCEMENT
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_generic_propaganda
 		x = 2
 		y = 0
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			news_event = { id = news.2 }	
 		}
 	}
 	focus = {
 		id = USA_THE_LONG_ROAD_AHEAD
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_USA_advisors
 		prerequisite = { focus = USA_THE_PRESIDENTS_ANNOUNCEMENT }
 		x = 2
 		y = 1
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_popularity = { ideology = liberalism popularity = 0.05 }
+			add_popularity = { ideology = conservatism popularity = 0.05 }
 		}
 	}
 	focus = {
 		id = USA_1928_DEMOCRATIC_CONVENTION
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_democrat
 		prerequisite = { focus = USA_THE_LONG_ROAD_AHEAD }
 		#mutually_exclusive = { focus = USA_1928_REPUBLICAN_CONVENTION }
 		x = 0
 		y = 2
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			country_event = { id = le_USA.2 }	
 		}
 	}
 	focus = {
 		id = USA_1928_REPUBLICAN_CONVENTION
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_republican
 		prerequisite = { focus = USA_THE_LONG_ROAD_AHEAD }
 		#mutually_exclusive = { focus = USA_1928_DEMOCRATIC_CONVENTION }
 		x = 4
 		y = 2
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			country_event = { id = le_USA.3 }		
 		}
 	}
 	focus = {
 		id = USA_ON_THE_CAMPAIGN_TRAIL
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_focus_usa_guarantee_the_american_dream
 		prerequisite = { focus = USA_1928_REPUBLICAN_CONVENTION }
 		prerequisite = { focus = USA_1928_DEMOCRATIC_CONVENTION }
 		x = 2
 		y = 3
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 50	
 		}
 	}
 	focus = {
 		id = USA_TARGET_SWING_STATES
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_focus_usa_recruit_the_free_corps
 		prerequisite = { focus = USA_ON_THE_CAMPAIGN_TRAIL }
 		x = 0
 		y = 4
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			country_event = { id = le_USA.4 }	
 		}
 	}
 	focus = {
 		id = USA_FUNDRAISING_CHARGE
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_focus_usa_reestablish_the_gold_standard
 		prerequisite = { focus = USA_ON_THE_CAMPAIGN_TRAIL }
 		x = 4
 		y = 4
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			country_event = { id = le_USA.5 }	
 		}
 	}
 	focus = {
@@ -121,70 +122,76 @@ focus_tree = {
 		prerequisite = { focus = USA_ON_THE_CAMPAIGN_TRAIL }
 		x = 2
 		y = 5
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_stability = 0.05
 		}
 	}
 	focus = {
 		id = USA_FIRST_RADIO_DEBATE
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_radio
 		prerequisite = { focus = USA_TARGET_SWING_STATES }
 		prerequisite = { focus = USA_CONNECT_WITH_VOTERS }
 		prerequisite = { focus = USA_FUNDRAISING_CHARGE }
 		x = 2
 		y = 6
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			country_event = { id = le_USA.6 }	
 		}
 	}
 	focus = {
 		id = USA_FIGHTING_EXTREMISM
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_generic_espionage
 		prerequisite = { focus = USA_FIRST_RADIO_DEBATE }
 		x = 2
 		y = 7
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_popularity = { ideology = labryscism popularity = -0.05 }
+			add_popularity = { ideology = despotism popularity = -0.05 }
+			add_popularity = { ideology = theocracy popularity = -0.05 }
+			add_popularity = { ideology = mutualism popularity = -0.05 }
+			add_popularity = { ideology = collectivism popularity = -0.05 }
+			add_popularity = { ideology = proletarianism popularity = -0.05 }
 		}
 	}
 	focus = {
 		id = USA_THE_FINAL_STRETCH
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_generic_revolution
 		prerequisite = { focus = USA_FIGHTING_EXTREMISM }
 		x = 2
 		y = 8
-		cost = 10
+		cost = 3
 		ai_will_do = {
-			factor = 12
+			factor = 912
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 50	
 		}
 	}
 	focus = {
 		id = USA_THE_FATEFUL_DAY
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = USA_THE_FINAL_STRETCH }
+		icon = GFX_goal_generic_elections
+		#prerequisite = { focus = USA_THE_FINAL_STRETCH }
 		x = 2
 		y = 9
-		cost = 10
-		ai_will_do = {
-			factor = 12
+		cost = 0
+		ai_will_do = { factor = 999 }
+		available = {
+			date = 1928.11.20
 		}
 		completion_reward = {
-			add_political_power = 120		
+			country_event = { id = le_USA.7 }
 		}
 	}
 	focus = {
@@ -300,7 +307,48 @@ focus_tree = {
 			add_political_power = 120		
 		}
 	}
-	
+	focus = {
+		id = USA_DOMINOS_BEGIN_TO_FALL
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_FROM_BAD_TO_WORSE }
+		x = 10
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_FEDERALIZE_NATIONAL_GUARDS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_DOMINOS_BEGIN_TO_FALL }
+		x = 10
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_DECLARE_MARTIAL_LAW
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_FEDERALIZE_NATIONAL_GUARDS }
+		x = 10
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
 	
 	focus = {
 		id = USA_THE_PRAGMATIST
@@ -415,7 +463,48 @@ focus_tree = {
 			add_political_power = 120		
 		}
 	}
-	
+	focus = {
+		id = USA_COVER_OUR_TRACKS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_THE_STORY_BREAKS }
+		x = 16
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_STACK_THE_COURT
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_COVER_OUR_TRACKS }
+		x = 16
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_PUNISH_THE_PRESS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_STACK_THE_COURT }
+		x = 16
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
 	focus = {
 		id = USA_THE_HEIR
 		icon = GFX_goal_generic_national_unity
@@ -529,21 +618,48 @@ focus_tree = {
 			add_political_power = 120		
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	focus = {
+		id = USA_CHAOS_IN_THE_CAPITAL
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_A_NATIONAL_TRAGEDY }
+		x = 22
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_THE_SUCCESSION_QUESTION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_CHAOS_IN_THE_CAPITAL }
+		x = 22
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_THE_CRACKS_BEGIN_TO_SHOW
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_THE_SUCCESSION_QUESTION }
+		x = 22
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
 	focus = {
 		id = USA_THE_UNDERDOG
 		icon = GFX_goal_generic_national_unity
@@ -649,6 +765,829 @@ focus_tree = {
 		prerequisite = { focus = USA_A_RESPONSIBLE_ADMINISTRATION }
 		x = 28
 		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_ECONOMIC_INTERVENTION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_A_STORM_APPROACHES }
+		x = 28
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_EXTEMISTS_MAKE_THEIR_MOVE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_ECONOMIC_INTERVENTION }
+		x = 28
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_TALKS_IN_CHICAGO
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_EXTEMISTS_MAKE_THEIR_MOVE }
+		x = 28
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_HOUR_OF_RECKONING
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_DECLARE_MARTIAL_LAW focus = USA_PUNISH_THE_PRESS focus = USA_THE_CRACKS_BEGIN_TO_SHOW focus = USA_TALKS_IN_CHICAGO }
+		x = 19
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_AN_AMERICA_TO_LAST
+		icon = GFX_goal_generic_national_unity
+		x = 38
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_THREE_PRINCEIPLES_OF_THE_NATION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_AN_AMERICA_TO_LAST }
+		x = 38
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_PATRIOTISM
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_THREE_PRINCEIPLES_OF_THE_NATION }
+		x = 35
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_PLEDGE_OF_ALLEGIANCE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_PATRIOTISM }
+		x = 35
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_FLAG_PROTOCOLS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_PLEDGE_OF_ALLEGIANCE }
+		x = 35
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_USE_THE_AMERICAN_LEGION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_PATRIOTISM }
+		x = 34
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_VETERANS_BENEFITS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_USE_THE_AMERICAN_LEGION }
+		x = 34
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_CAPITALISM
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_THREE_PRINCEIPLES_OF_THE_NATION }
+		x = 38
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_BETTER_BUSINESS_BUREAU
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_CAPITALISM }
+		x = 37
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_ECONOMIC_FREEDOM_ACT
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_CAPITALISM }
+		x = 39
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_DEREGULATION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_CAPITALISM }
+		x = 38
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_MILITARY-INDUSTRIAL_COMPLEX
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_BETTER_BUSINESS_BUREAU }
+		prerequisite = { focus = USA_DEREGULATION }
+		prerequisite = { focus = USA_ECONOMIC_FREEDOM_ACT }
+		x = 38
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_LIBERTY
+		icon = GFX_peace
+		prerequisite = { focus = USA_THREE_PRINCEIPLES_OF_THE_NATION }
+		x = 41
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_LOWER_IMMIGRATION_RESTRICTIONS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_LIBERTY }
+		x = 41
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_CONGRESSIONAL_SUPREMACY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_LOWER_IMMIGRATION_RESTRICTIONS }
+		x = 41
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_CHECKS_AND_BALANCES
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_LIBERTY }
+		x = 42
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_DEAL_WITH_SEGREGATION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_CHECKS_AND_BALANCES }
+		x = 42
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_GOD_BLESS_AMERICA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_VETERANS_BENEFITS }
+		prerequisite = { focus = USA_MILITARY-INDUSTRIAL_COMPLEX }
+		prerequisite = { focus = USA_DEAL_WITH_SEGREGATION }
+		x = 38
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_A_MIRACLE
+		icon = GFX_goal_generic_national_unity
+		x = 47
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_AMERICA_STILL_STANDS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_A_MIRACLE }
+		x = 47
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_THE_SQUARE_DEAL
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_AMERICA_STILL_STANDS }
+		x = 47
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_MASSIVE_PUBLIC_WORKS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_THE_SQUARE_DEAL }
+		x = 46
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_NATIONAL_RECOVERY_ADMINISTRATION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_THE_SQUARE_DEAL }
+		x = 46
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_RURAL_INFRASTRUCTURE_DEVELOPMENT
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_THE_SQUARE_DEAL }
+		x = 46
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_SOCIAL_SECURITY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_RURAL_INFRASTRUCTURE_DEVELOPMENT }
+		x = 46
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_ELECTRIFY_THE_COUNTRYSIDE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_THE_SQUARE_DEAL }
+		x = 48
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_OHIO_VALLEY_AUTHORITY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_ELECTRIFY_THE_COUNTRYSIDE }
+		x = 48
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_REASSURE_WALL_STREET
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_OHIO_VALLEY_AUTHORITY }
+		x = 48
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_MEND_POLITICAL_WOUNDS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_REASSURE_WALL_STREET }
+		x = 48
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_COMBAT_INFLATION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_MEND_POLITICAL_WOUNDS }
+		prerequisite = { focus = USA_SOCIAL_SECURITY }
+		x = 47
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_A_MIRACULOUS_ECONOMY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_COMBAT_INFLATION }
+		x = 47
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_MANIFEST_DESTINY
+		icon = GFX_goal_generic_national_unity
+		x = 55
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_DEALING_WITH_THE_BRITISH
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_MANIFEST_DESTINY }
+		x = 53
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_EMBARGO_THE_EMPIRE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_DEALING_WITH_THE_BRITISH }
+		mutually_exclusive = { focus = USA_TRADE_WITH_THE_BRITS }
+		x = 52
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_ANTI_IMPERIALIST_PROPAGANDA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_EMBARGO_THE_EMPIRE }
+		x = 52
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_THE_SUN_WILL_SET
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_ANTI_IMPERIALIST_PROPAGANDA }
+		x = 52
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_TRADE_WITH_THE_BRITS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_DEALING_WITH_THE_BRITISH }
+		mutually_exclusive = { focus = USA_EMBARGO_THE_EMPIRE }
+		x = 54
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_INVEST_IN_CANADA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_TRADE_WITH_THE_BRITS }
+		x = 54
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_THE_TREATY_OF_BOSTON
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_INVEST_IN_CANADA }
+		x = 54
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_THE_TEXAS_QUESTION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_MANIFEST_DESTINY }
+		x = 55
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 12 }
+		available = {
+			OR = {
+				has_completed_focus = USA_THE_TREATY_OF_BOSTON
+			}
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_PLEBESCITE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_THE_TEXAS_QUESTION }
+		mutually_exclusive = { focus = USA_ANNEXATION }
+		x = 54
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_ANNEXATION
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_THE_TEXAS_QUESTION }
+		mutually_exclusive = { focus = USA_PLEBESCITE }
+		x = 56
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_STATEHOOD_FOR_TEXAS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_ANNEXATION focus = USA_PLEBESCITE }
+		x = 55
+		y = 7
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_THE_NORTHWEST_TERRITORY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_STATEHOOD_FOR_TEXAS }
+		x = 53
+		y = 9
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_THE_SOUTHWEST_TERRITORY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_STATEHOOD_FOR_TEXAS }
+		x = 57
+		y = 9
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_THE_FATE_OF_CALIFORNIA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_STATEHOOD_FOR_TEXAS }
+		x = 55
+		y = 8
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_NEW_STATES
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_THE_NORTHWEST_TERRITORY }
+		prerequisite = { focus = USA_THE_SOUTHWEST_TERRITORY }
+		prerequisite = { focus = USA_THE_FATE_OF_CALIFORNIA }
+		x = 55
+		y = 10
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_FROM_SEA_TO_SHINING_SEA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_NEW_STATES }
+		x = 55
+		y = 11
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_DEALING_WITH_LOUISIANA
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_MANIFEST_DESTINY }
+		x = 57
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_NEGOTIATE_WITH_FRENCH_LEADERS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_DEALING_WITH_LOUISIANA }
+		mutually_exclusive = { focus = USA_THE_PLIGHT_OF_THE_SETTLERS }
+		x = 56
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_CALM_AMERICAN_SETTLERS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_NEGOTIATE_WITH_FRENCH_LEADERS }
+		x = 56
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_THE_LOUISIANA_PURCHASE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_CALM_AMERICAN_SETTLERS }
+		x = 56
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_THE_PLIGHT_OF_THE_SETTLERS
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_DEALING_WITH_LOUISIANA }
+		mutually_exclusive = { focus = USA_NEGOTIATE_WITH_FRENCH_LEADERS }
+		x = 58
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_ISOLATE_LOUSIANA_DIPLOMATICALLY
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_THE_PLIGHT_OF_THE_SETTLERS }
+		x = 58
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_political_power = 120		
+		}
+	}
+	focus = {
+		id = USA_EXECUTE_WAR_PLAN_BLUE
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_ISOLATE_LOUSIANA_DIPLOMATICALLY }
+		x = 58
+		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 12

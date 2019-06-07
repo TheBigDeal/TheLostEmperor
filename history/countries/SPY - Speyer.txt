@@ -7,18 +7,15 @@ set_technology = {
 	tech_recon = 1
 }
 
-set_politics = {
-
-	parties = {
-		theocracy = { 
-			popularity = 100
-		}
-	}
-	
+set_politics = {	
 	ruling_party = theocracy
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    theocracy = 100
 }
 
 set_convoys = 5

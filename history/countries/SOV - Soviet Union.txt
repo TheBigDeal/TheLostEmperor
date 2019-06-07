@@ -34,26 +34,23 @@ set_convoys = 50
 set_stability = 0.7
 
 set_politics = {
-
-parties = {
-	conservatism = { popularity = 1 }
-	liberalism = { popularity = 1	}
-	socialism = { popularity = 1 }
-	labryscism = { popularity = 12	}
-	rexism = { popularity = 6 }
-	despotism = { popularity = 2 }
-	royalism = {popularity = 5 }
-	theocracy = { popularity = 3 }
-	absolutism = { popularity = 5 }
-	proletarianism = {popularity = 15 }
-	collectivism = { popularity = 40 }
-	naturalism = { popularity = 9 }
-}
-
 	ruling_party = collectivism
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+conservatism = 1
+liberalism = 1
+socialism = 6
+labryscism = 2
+rexism = 5
+despotism = 3
+royalism = 5
+theocracy = 15
+absolutism = 40
+proletarianism = 9
 }
 
 create_country_leader = {

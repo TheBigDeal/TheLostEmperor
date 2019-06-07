@@ -12,30 +12,18 @@ add_ideas = {
 	PRS_PRUSSIAN_MILITARISM
 }
 
-set_politics = {
-
-	parties = {
-		conservatism = { 
-			popularity = 10
-		}
-
-		rexism = {
-			popularity = 20
-		}
-		
-		royalism = {
-			popularity = 5
-		}
-		
-		absolutism = { 
-			popularity = 75
-		}
-	}
-	
+set_politics = {	
 	ruling_party = absolutism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    conservatism = 10
+    rexism = 20
+    royalism = 5
+    absolutism = 75
 }
 
 create_field_marshal = {

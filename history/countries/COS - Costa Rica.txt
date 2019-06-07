@@ -10,27 +10,17 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 10
 
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 98
-		}
-
-		rexism = {
-			popularity = 2
-		}
-		
-		proletarianism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberalism
 	last_election = "1932.2.14"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    liberalism = 98
+    rexism = 2
+    proletarianism = 0
 }
 
 create_country_leader = {
@@ -45,28 +35,18 @@ create_country_leader = {
 }
 
 1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			liberalism = { 
-				popularity = 95
-			}
-
-			rexism = {
-				popularity = 0
-			}
-			
-			proletarianism = {
-				popularity = 5
-				#banned = no #default is no
-			}
-		}
-		
+	set_politics = {		
 		ruling_party = liberalism
 		last_election = "1936.2.9"
 		election_frequency = 48
 		elections_allowed = yes
-	}
+}
+
+    set_popularities = {
+        liberalism = 95
+        rexism = 0
+        proletarianism = 5
+    }
 
 	create_country_leader = {
 		name = "León Cortés Castro"

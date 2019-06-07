@@ -2,14 +2,14 @@ ideologies = {
 
 #COMMUNIST
 ##########################################################################################################################################
-	naturalism = {
+	mutualism = {
 
 		types = {
 
 
-			naturalism_ideology = {
+			mutualism_ideology = {
 			}
-			naturalism = {
+			mutualism = {
 			}
 
 		}

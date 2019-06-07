@@ -59,27 +59,17 @@ set_country_flag = monroe_doctrine
 	}
 }
 
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 25
-		}
-
-		rexism = {
-			popularity = 0
-		}
-		
-		proletarianism = {
-			popularity = 75
-			#banned = no #default is no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = proletarianism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    liberalism = 25
+    rexism = 0
+    proletarianism = 75
 }
 
 #create_country_leader = {
@@ -107,31 +97,18 @@ create_country_leader = {
 
 1939.1.1 = {
 	set_politics = {
-
-		parties = {
-			liberalism = { 
-				popularity = 20
-			}
-
-			rexism = {
-				popularity = 0
-			}
-			
-			proletarianism = {
-				popularity = 30
-				#banned = no #default is no
-			}
-
-			absolutism = {
-				popularity = 50
-			}
-		}
-
 		ruling_party = absolutism
 		last_election = "1938.1.1"
 		election_frequency = 48
 		elections_allowed = no
-	}
+}
+
+    set_popularities = {
+        liberalism = 20
+        rexism = 0
+        proletarianism = 30
+        absolutism = 50
+    }
 
 
 	create_country_leader = {

@@ -8,16 +8,13 @@ set_technology = {
 	tech_recon = 1
 }
 
-set_politics = {
-
-	parties = {
-		absolutism = { 
-			popularity = 100
-		}
-	}
-	
+set_politics = {	
 	ruling_party = absolutism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    absolutism = 100
 }

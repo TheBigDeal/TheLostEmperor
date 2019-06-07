@@ -23,24 +23,13 @@ set_technology = {
 
 set_convoys = 25
 
-set_politics = {
+set_politics = {}
 
-	parties = {
-		liberalism = { 
-			popularity = 10
-		}
-
-		rexism = {
-			popularity = 10
-		}
-		
-		proletarianism = {
-			popularity = 30
-		}
-		absolutism = {
-			popularity = 50
-		}
-	}
+set_popularities = {
+    liberalism = 10
+    rexism = 10
+    proletarianism = 30
+    absolutism = 50
 }
 
 create_country_leader = {

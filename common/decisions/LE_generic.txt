@@ -9,7 +9,7 @@ labor_vouchers_cat = {
 			OR = {
 				has_government = collectivism
 				has_government = proletarianism
-				has_government = naturalism
+				has_government = mutualism
 			}
 		}
 		cost = 50

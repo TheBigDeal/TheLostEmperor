@@ -9,39 +9,21 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		absolutism = { 
-			popularity = 15
-		}
-
-		despotism = {
-			popularity = 20
-		}
-		conservatism = {
-			popularity = 30
-		}
-		socialism = {
-			popularity = 5
-		}
-		naturalism = {
-			popularity = 5
-		}
-		liberalism = {
-			popularity = 20
-		}
-		rexism = {
-			popularity = 5
-		}
-		
-		naturalism = { 
-			popularity = 20
-		}
-	}
 	ruling_party = conservatism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    absolutism = 15
+    despotism = 20
+    conservatism = 30
+    socialism = 5
+    mutualism = 5
+    liberalism = 20
+    rexism = 5
+    mutualism = 20
 }
 
 create_country_leader = {

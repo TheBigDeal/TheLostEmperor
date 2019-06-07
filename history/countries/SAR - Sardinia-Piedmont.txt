@@ -8,32 +8,19 @@ set_technology = {
 	tech_recon = 1
 }
 
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 15
-		}
-
-		rexism = {
-			popularity = 10
-		}
-		
-		collectivism = {
-			popularity = 10
-		}
-		royalism = { 
-			popularity = 25
-		}
-		absolutism = { 
-			popularity = 40
-		}
-	}
-	
+set_politics = {	
 	ruling_party = absolutism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    liberalism = 15
+    rexism = 10
+    collectivism = 10
+    royalism = 25
+    absolutism = 40
 }
 
 set_convoys = 5

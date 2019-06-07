@@ -54,7 +54,7 @@ ideas = {
 				factor = 0
 			}
 		}
-		naturalist_partisans_recruiting = {
+		mutualist_partisans_recruiting = {
 			
 			available = {
 				always = no # Triggered via event
@@ -64,7 +64,7 @@ ideas = {
 			
 			modifier = {
 				conscription = -0.002
-				naturalism_drift = 0.05
+				mutualism_drift = 0.05
 			}
 	
 			ai_will_do = {
@@ -145,7 +145,7 @@ ideas = {
 				stability_factor = -0.1
 			}
 		}
-		naturalist_revolutionaries = {
+		mutualist_revolutionaries = {
 			removal_cost = -1
 			available = {
 				always = no # Triggered via event

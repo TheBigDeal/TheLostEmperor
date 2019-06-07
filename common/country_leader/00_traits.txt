@@ -4,6 +4,43 @@ leader_traits = {
 	##												MOD													##
 	######################################################################################################
 	######################################################################################################
+	usa_the_lawman = {
+		random = no
+		sprite = 13
+		drift_defence_factor = 0.05
+	}
+	usa_the_pragmatist = {
+		random = no
+		sprite = 13
+		stability_factor = 0.05
+	}
+	usa_the_heir = {
+		random = no
+		sprite = 13
+		political_advisor_cost_factor = -0.10
+	}
+	usa_the_underdog = {
+		random = no
+		sprite = 13
+		political_power_gain = 0.5
+	}
+	gre_nationalist_symbol = {
+		random = no
+		sprite = 13
+		surrender_limit = 0.1
+		war_support_factor = 0.10
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	gre_the_peoples_king = {
+		random = no
+		sprite = 13
+		stability_factor = 0.15
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	dislikes_britain = {
 		random = no
 		ai_strategy = {
@@ -34,6 +71,19 @@ leader_traits = {
 		sprite = 13
 		absolutism_drift = 0.05
 		royalism_drift = 0.05
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	staunch_democrat = {
+		random = no
+		# Boosts Monarchist
+		sprite = 13
+		mutualism_acceptance = -50
+		proletarianism_acceptance = -50
+		collectivism_acceptance = -50
+		despotism_acceptance = -50
+		labryscist_acceptance = -50
 		ai_will_do = {
 			factor = 0
 		}
@@ -94,10 +144,10 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	naturalist_revolutionary = {
+	mutualist_revolutionary = {
 		random = no
 		sprite = 13
-		naturalism_drift = 0.1
+		mutualism_drift = 0.1
 		ai_will_do = {
 			factor = 0
 		}

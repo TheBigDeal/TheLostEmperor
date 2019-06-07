@@ -38,27 +38,17 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
-set_politics = {
-
-	parties = {
-		absolutism = { 
-			popularity = 98
-		}
-
-		rexism = {
-			popularity = 1
-		}
-		
-		proletarianism = {
-			popularity = 1
-			#banned = no #default is no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = absolutism
 	last_election = "1935.10.14"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    absolutism = 98
+    rexism = 1
+    proletarianism = 1
 }
 
 create_country_leader = {
@@ -109,28 +99,18 @@ set_convoys = 100
 set_stability = 0.9
 
 1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			liberalism = { 
-				popularity = 98
-			}
-
-			rexism = {
-				popularity = 1
-			}
-			
-			proletarianism = {
-				popularity = 1
-				#banned = no #default is no
-			}
-		}
-		
+	set_politics = {		
 		ruling_party = liberalism
 		last_election = "1935.10.14"
 		election_frequency = 60
 		elections_allowed = yes
-	}
+}
+
+    set_popularities = {
+        liberalism = 98
+        rexism = 1
+        proletarianism = 1
+    }
 }
 
 create_corps_commander = {

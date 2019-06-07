@@ -16,26 +16,17 @@ set_technology = {
 set_convoys = 10
 
 set_convoys = 5
-set_politics = {
-
-	parties = {
-		despotism = { 
-			popularity = 85
-		}
-
-		rexism = {
-			popularity = 0
-		}
-		
-		proletarianism = {
-			popularity = 15
-		}
-	}
-	
+set_politics = {	
 	ruling_party = despotism
 	last_election = "1934.2.11"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    despotism = 85
+    rexism = 0
+    proletarianism = 15
 }
 
 create_country_leader = {

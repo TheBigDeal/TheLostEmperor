@@ -9,24 +9,25 @@ set_technology = {
 }
 
 set_politics = {
-	parties = {
-		conservatism = { popularity = 35 }
-		liberalism = { popularity = 12 }
-		socialism = { popularity = 12 }
-		labryscism = { popularity = 7 }
-		rexism = { popularity = 11 }
-		despotism = { popularity = 2 }
-		royalism = {popularity = 3 }
-		theocracy = { popularity = 8 }
-		absolutism = { popularity = 2 }
-		proletarianism = {popularity = 1 }
-		collectivism = { popularity = 4 }
-		naturalism = { popularity = 3 }
-	}
 	ruling_party = conservatism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    conservatism = 35
+    liberalism = 12
+    socialism = 12
+    labryscism = 7
+    rexism = 11
+    despotism = 2
+    royalism = 3
+    theocracy = 8
+    absolutism = 2
+    proletarianism = 1
+    collectivism = 4
+    mutualism = 3
 }
 
 set_convoys = 5

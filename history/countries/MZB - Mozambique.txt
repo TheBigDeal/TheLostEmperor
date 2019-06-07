@@ -46,31 +46,18 @@ set_convoys = 5
 		
 	}
 }
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 0
-		}
-
-		rexism = {
-			popularity = 0
-		}
-		
-		collectivism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-		
-		absolutism = { 
-			popularity = 100
-		}
-	}
-	
+set_politics = {	
 	ruling_party = absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    liberalism = 0
+    rexism = 0
+    collectivism = 0
+    absolutism = 100
 }
 
 create_country_leader = {
@@ -91,31 +78,18 @@ create_country_leader = {
 
 
 1939.1.1 = {
-	set_politics = {
-
-		parties = {
-		liberalism = { 
-			popularity = 0
-		}
-
-		rexism = {
-			popularity = 0
-		}
-		
-		collectivism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-		
-		absolutism = { 
-			popularity = 100
-		}
-	}
-		
+	set_politics = {		
 		ruling_party = absolutism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
-	}
+}
+
+    set_popularities = {
+        liberalism = 0
+        rexism = 0
+        collectivism = 0
+        absolutism = 100
+    }
 }
 

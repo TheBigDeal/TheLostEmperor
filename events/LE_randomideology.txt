@@ -68,7 +68,7 @@ country_event = {
 		}
 		add_popularity = { ideology = collectivism popularity = 0.25 }
 		add_popularity = { ideology = proletarianism popularity = 0.1 }
-		add_popularity = { ideology = naturalism popularity = 0.1 }
+		add_popularity = { ideology = mutualism popularity = 0.1 }
 	}
 	option = { #PROLETARIANISM
 		name = le_chooseideology.2.b
@@ -78,17 +78,17 @@ country_event = {
 		}
 		add_popularity = { ideology = collectivism popularity = 0.1 }
 		add_popularity = { ideology = proletarianism popularity = 0.25 }
-		add_popularity = { ideology = naturalism popularity = 0.1 }
+		add_popularity = { ideology = mutualism popularity = 0.1 }
 	}
 	option = { #NATURALISM
 		name = le_chooseideology.2.c
 		set_politics = {
-			ruling_party = naturalism
+			ruling_party = mutualism
 			elections_allowed = no
 		}
 		add_popularity = { ideology = collectivism popularity = 0.1 }
 		add_popularity = { ideology = proletarianism popularity = 0.1 }
-		add_popularity = { ideology = naturalism popularity = 0.25 }
+		add_popularity = { ideology = mutualism popularity = 0.25 }
 	}
 }
 country_event = {

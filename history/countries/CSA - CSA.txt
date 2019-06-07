@@ -126,27 +126,17 @@ set_technology = {
 set_convoys = 100
 
 
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 80
-		}
-
-		labryscism = {
-			popularity = 10
-		}
-		
-		collectivism = {
-			popularity = 10
-			#banned = no #default is no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberalism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    liberalism = 80
+    labryscism = 10
+    collectivism = 10
 }
 
 add_ideas = {
@@ -158,28 +148,18 @@ add_ideas = {
 
 1939.1.1 = {
 
-	set_politics = {
-
-		parties = {
-			liberalism = { 
-				popularity = 99
-			}
-
-			labryscism = {
-				popularity = 0
-			}
-			
-			collectivism = {
-				popularity = 1
-				#banned = no #default is no
-			}
-		}
-		
+	set_politics = {		
 		ruling_party = liberalism
 		last_election = "1936.11.3"
 		election_frequency = 48
 		elections_allowed = yes
-	}
+}
+
+    set_popularities = {
+        liberalism = 99
+        labryscism = 0
+        collectivism = 1
+    }
 }
 
 create_country_leader = {

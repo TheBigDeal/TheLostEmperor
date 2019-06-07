@@ -1,6 +1,182 @@
 ideas = {
 
 country = {
+	gre_unemployment_benefits = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			consumer_goods_factor = 0.05
+			stability_factor = 0.10
+		}
+	}
+	gre_war_on_poverty = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			political_power_gain = -0.05
+			industrial_capacity_factory = 0.1
+			industrial_capacity_dockyard = 0.1
+		}
+	}
+	gre_bank_reform = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			political_power_gain = 0.05
+			consumer_goods_factor = -0.05
+		}
+	}
+	gre_greek_capitalism = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			production_speed_industrial_complex_factor = 0.05
+			production_speed_arms_factory_factor = 0.05
+			industrial_capacity_factory = 0.1
+		}
+	}
+	gre_benefits_cut = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			stability_factor = -0.05
+			consumer_goods_factor = -0.05
+			political_power_gain = 0.05
+		}
+	}
+	gre_christian_austerity = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			consumer_goods_factor = -0.05
+			production_factory_max_efficiency_factor = 0.05
+		}
+	}
+	gre_funding_universities = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			research_speed_factor = 0.03
+		}
+	}
+	gre_a_socialist_economy = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			political_power_gain = -0.1
+			MONTHLY_POPULATION = 0.10
+			production_factory_max_efficiency_factor = 0.05
+			production_speed_dockyard_factor = 0.1
+		}
+	}
+	gre_labor_divisions = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			production_speed_infrastructure_factor = 0.1
+			production_speed_arms_factory_factor = 0.1
+			production_speed_industrial_complex_factor = 0.1
+		}
+	}
+	gre_redisribution_of_wealth = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			stability_factor = -0.05
+			production_factory_max_efficiency_factor = 0.1
+			consumer_goods_factor = -0.05
+		}
+	}
+
+
+	gre_political_protests = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			stability_factor = -0.10
+			political_power_gain = -0.25
+		}
+	}
+	gre_royal_cadets = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			conscription_factor = 0.02
+			army_morale_factor = 0.05
+		}
+	}
+	gre_absolute_monarchy = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			political_power_gain = 0.15
+			absolutism_drift = 0.02
+			stability_factor = 0.05
+		}
+	}
+	gre_freedom_isnt_free = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			enemy_justify_war_goal_time = 0.10
+			drift_defence_factor = 0.10
+			political_power_gain = 0.05
+		}
+	}
+	gre_expanded_conscription = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			conscription_factor = 0.02
+			army_morale_factor = -0.10
+		}
+	}
+	gre_suspended_the_constitution = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			stability_factor = 0.05
+			despotism_drift = 0.03
+			political_power_gain = 0.10
+		}
+	}
+	gre_state_of_emergency = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			stability_factor = 0.05
+			despotism_drift = 0.03
+		}
+	}
+	gre_bulwark_of_christiandom = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			army_core_defence_factor = 0.10
+			generate_wargoal_tension = -0.25
+			war_support_factor = 0.10
+		}
+	}
+	gre_monastic_dominance = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			conscription_factor = -0.02
+			theocracy_drift = 0.02
+			stability_factor = 0.05
+		}
+	}
+	gre_church_schools = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			research_speed_factor = -0.05
+			theocracy_drift = 0.05
+			political_power_gain = 0.15
+		}
+	}
+	gre_orthodox_teachings = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			stability_factor = 0.10
+			consumer_goods_factor = -0.10
+		}
+	}
+	gre_kingdom_of_the_faithful = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			war_support_factor = 0.10
+			surrender_limit = 0.10
+		}
+	}
+	gre_divine_right_of_kings = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			political_power_gain = 0.10
+			theocracy_drift = 0.02
+			drift_defence_factor = 0.10
+		}
+	}
 	gre_alexanders_legacy = {
 		picture = chi_hyper_inflation5
 		modifier = {
@@ -87,7 +263,6 @@ country = {
 	gre_nationalization = {
 		picture = chi_hyper_inflation5
 		modifier = {
-			production_speed_buildings_factor = -0.1
 			production_speed_buildings_factor = 0.1
 			consumer_goods_factor = -0.10
 		}

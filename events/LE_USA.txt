@@ -4,15 +4,15 @@
 
 add_namespace = le_USA
 
-# American Civil War
+# American 
 ########################
-country_event = { #TERROR ATTACK IN GEORGIA
+country_event = { 
 	id = le_USA.1
 	title = le_USA.1.t
 	desc = le_USA.1.d
 	is_triggered_only = yes
 	option = {
-		name = le_USA.10.a
+		name = le_USA.1.a
 		NCL = { transfer_state = 363 }
 		NEW = { transfer_state = 358 }
 		NEW = { transfer_state = 357 }
@@ -28,7 +28,9 @@ country_event = { #TERROR ATTACK IN GEORGIA
 		KNT = { transfer_state = 369 }
 		MIS = { transfer_state = 370 }
 		MIC = { transfer_state = 900 }
-		WVR = { transfer_state = 792 }
+		MIC = { transfer_state = 817 }
+		MIC = { transfer_state = 393 }
+		VIR = { transfer_state = 792 }
 		MAS = { transfer_state = 788 }
 		MRY = { transfer_state = 361 }
 		CNT = { transfer_state = 787 }
@@ -40,9 +42,182 @@ country_event = { #TERROR ATTACK IN GEORGIA
 		DAK = { transfer_state = 893 }
 		DAK = { transfer_state = 894 }
 		WIS = { transfer_state = 394 }
-		WIS = { transfer_state = 817 }
 		IWA = { transfer_state = 392 }
 		FLO = { transfer_state = 366 }
 		RIS = { transfer_state = 998 }
+	}
+}
+country_event = { 
+	id = le_USA.2 #Choose Democratic Canidate
+	title = le_USA.2.t
+	desc = le_USA.2.d
+	is_triggered_only = yes
+	option = { #REED
+		name = le_USA.2.a
+		set_country_flag = USA_D_ELECT_REED
+	}
+	option = { #HULL
+		name = le_USA.2.b
+		set_country_flag = USA_D_ELECT_HULL
+	}
+}
+country_event = { 
+	id = le_USA.3 #Choose Republican Canidate
+	title = le_USA.3.t
+	desc = le_USA.3.d
+	is_triggered_only = yes
+	option = { #LOWDEN
+		name = le_USA.3.a
+		set_country_flag = USA_R_ELECT_LOWDEN
+	}
+	option = { #ROOSEVELT
+		name = le_USA.3.b
+		set_country_flag = USA_R_ELECT_ROOSEVELT
+	}
+}
+country_event = { 
+	id = le_USA.4 #Target Swing States
+	title = le_USA.4.t
+	desc = le_USA.4.d
+	is_triggered_only = yes
+	option = { #Ohio
+		name = le_USA.4.a
+		add_political_power = 50
+	}
+	option = { #Kentucky
+		name = le_USA.4.b
+		add_political_power = 50
+	}
+}
+country_event = { 
+	id = le_USA.5 #Which Party s more successful?
+	title = le_USA.5.t
+	desc = le_USA.5.d
+	is_triggered_only = yes
+	option = { #Democrats
+		name = le_USA.5.a
+		add_popularity = { ideology = liberalism popularity = 0.05 }
+	}
+	option = { #Republicans
+		name = le_USA.5.b
+		add_popularity = { ideology = liberalism popularity = 0.05 }
+	}
+}
+country_event = { 
+	id = le_USA.6 #Target Swing States
+	title = le_USA.6.t
+	desc = le_USA.6.d
+	is_triggered_only = yes
+	option = { #Democrats
+		name = le_USA.6.a
+		add_political_power = 20
+	}
+	option = { #Republicans
+		name = le_USA.6.b
+		add_political_power = 20
+	}
+}
+
+country_event = { 
+	id = le_USA.7 #The Fateful Day
+	title = le_USA.7.t
+	desc = le_USA.7.d
+	fire_only_once = yes
+	trigger = {
+		date > 11.20.1928
+	}
+	option = { #Democrats
+		name = le_USA.7.a
+		retire_country_leader = yes
+		set_politics = { ruling_party = conservatism }
+		if = {
+			limit = {
+				has_country_flag = USA_D_ELECT_HULL
+			}
+			create_country_leader = {
+				name = "Cordell Hull"
+				desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+				picture = "Portrait_USA_Cordel_Hull.tga"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					usa_the_pragmatist
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = USA_D_ELECT_REED
+			}
+			create_country_leader = {
+				name = "James Reed"
+				desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+				picture = "Reed.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					usa_the_lawman
+				}
+			}
+		}
+		else = {
+			create_country_leader = {
+				name = "James Reed"
+				desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+				picture = "Reed.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					usa_the_lawman
+				}
+			}
+		}
+	}
+	option = { #Republicans
+		name = le_USA.7.b
+		retire_country_leader = yes
+		set_politics = { ruling_party = liberalism }
+		if = {
+			limit = {
+				has_country_flag = USA_R_ELECT_LOWDEN
+			}
+			create_country_leader = {
+				name = "Frank Lowden"
+				desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+				picture = "Lowden.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					usa_the_heir
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = USA_R_ELECT_ROOSEVELT
+			}
+			create_country_leader = {
+				name = "Quentin Roosevelt"
+				desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+				picture = "Portrait_USA_quentin_roosevelt.tga"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					usa_the_underdog
+				}
+			}
+		}
+		else = {
+			create_country_leader = {
+				name = "Quentin Roosevelt"
+				desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+				picture = "Portrait_USA_quentin_roosevelt.tga"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					usa_the_underdog
+				}
+			}
+		}
 	}
 }

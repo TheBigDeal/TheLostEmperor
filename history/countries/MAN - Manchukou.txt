@@ -11,18 +11,13 @@ set_technology = {
 
 set_convoys = 5
 
-set_politics = {
-
-	parties = {
-		
-		despotism = {
-			popularity = 1000
-		}
-
-	}
-	
+set_politics = {	
 	ruling_party = despotism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    despotism = 1000
 }

@@ -13,22 +13,15 @@ add_ideas = {
 	brutal_civil_war
 }
 set_politics = {
-
-	parties = {
-
-		proletarianism = {
-			popularity = 8
-		}
-
-		collectivism = {
-			popularity = 92
-		}
-	}
-
 	ruling_party = collectivism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    proletarianism = 8
+    collectivism = 92
 }
 set_convoys = 5
 create_country_leader = {

@@ -24,27 +24,17 @@ set_technology = {
 }
 
 
-set_politics = {
-
-	parties = {
-		absolutism = { 
-			popularity = 98
-		}
-
-		rexism = {
-			popularity = 1
-		}
-		
-		proletarianism = {
-			popularity = 1
-			#banned = no #default is no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = absolutism
 	last_election = "1935.10.14"
 	election_frequency = 60
 	elections_allowed = no
+}
+
+set_popularities = {
+    absolutism = 98
+    rexism = 1
+    proletarianism = 1
 }
 
 give_military_access = TUR

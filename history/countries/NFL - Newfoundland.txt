@@ -8,24 +8,17 @@ set_technology = {
 	tech_recon = 1
 }
 
-set_politics = {
-
-	parties = {
-		despotism = { 
-			popularity = 67
-		}
-		rexism = { 
-			popularity = 5
-		}
-		labryscism = { 
-			popularity = 28
-		}
-	}
-	
+set_politics = {	
 	ruling_party = despotism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    despotism = 67
+    rexism = 5
+    labryscism = 28
 }
 
 set_convoys = 5

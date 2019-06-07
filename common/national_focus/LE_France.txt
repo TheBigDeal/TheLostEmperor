@@ -902,7 +902,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_THE_END_OF_AQUITAINE
-		icon = GFX_focus_naturalism
+		icon = GFX_focus_mutualism
 		prerequisite = { focus = FRA_WEAPONS_IN_BURGUNDY }
 		x = 10
 		y = 10
@@ -1246,24 +1246,24 @@ focus_tree = {
 
 		}
 	}
-	#Naturalism
+	#Mutualism
 	focus = {
 		id = FRA_DEMOCRACY_IN_THE_WORKPLACE
-		icon = GFX_focus_naturalism
+		icon = GFX_focus_mutualism
 		prerequisite = { focus = FRA_THE_FOURTH_REVOLUTION }
 		mutually_exclusive = { focus = FRA_THE_INDEPENDENT_COMMUNES focus = FRA_DOMINANCE_OF_THE_PARTY }
 		x = 17
 		y = 3
 		cost = 6
 		available = {
-			has_government = naturalism
+			has_government = mutualism
 		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
 			add_timed_idea = {
-				idea = rise_of_the_naturalist_party
+				idea = rise_of_the_mutualist_party
 				days = 365
 			}
 		}

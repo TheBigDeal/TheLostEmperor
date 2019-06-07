@@ -126,28 +126,17 @@ if = {
 }
 
 set_politics = {
-
-	parties = {
-		liberalism = {
-			popularity = 20
-		}
-
-		rexism = {
-			popularity = 10
-		}
-
-		proletarianism = {
-			popularity = 0
-		}
-		royalism = {
-			popularity = 70
-		}
-	}
-
 	ruling_party = royalism
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    liberalism = 20
+    rexism = 10
+    proletarianism = 0
+    royalism = 70
 }
 
 

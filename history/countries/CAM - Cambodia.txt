@@ -41,28 +41,16 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 40
-		}
-
-#		rexism = {
-#		
-#		}
-		
-		proletarianism = {
-			popularity = 25
-		}
-		absolutism = {
-			popularity = 35
-		}
-	}
-
 	ruling_party = liberalism
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
+}
+
+set_popularities = {
+    liberalism = 40
+    proletarianism = 25
+    absolutism = 35
 }
 
 create_country_leader = {

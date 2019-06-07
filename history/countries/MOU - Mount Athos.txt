@@ -13,22 +13,15 @@ add_ideas = {
 	brutal_civil_war
 }
 set_politics = {
-
-	parties = {
-
-		labryscism = {
-			popularity = 40
-		}
-
-		theocracy = {
-			popularity = 60
-		}
-	}
-
 	ruling_party = theocracy
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    labryscism = 40
+    theocracy = 60
 }
 set_convoys = 5
 

@@ -22,26 +22,17 @@ set_technology = {
 }
 
 
-set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 5
-		}
-
-		royalism = {
-			popularity = 90
-		}
-		
-		proletarianism = {
-			popularity = 5
-		}
-	}
-	
+set_politics = {	
 	ruling_party = royalism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    liberalism = 5
+    royalism = 90
+    proletarianism = 5
 }
 
 set_cosmetic_tag = SLO_AUS_PUPPET

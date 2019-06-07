@@ -38,26 +38,23 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		conservatism = { popularity = 4 }
-		liberalism = { popularity = 8	}
-		socialism = { popularity = 4 }
-		labryscism = { popularity = 6	}
-		rexism = { popularity = 2 }
-		despotism = { popularity = 8 }
-		royalism = {popularity = 2 }
-		theocracy = { popularity = 12 }
-		absolutism = { popularity = 25 }
-		proletarianism = {popularity = 9 }
-		collectivism = { popularity = 13 }
-		naturalism = { popularity = 7 }
-	}
-
 	ruling_party = absolutism
 	last_election = "1931.10.3"
 	election_frequency = 108
 	elections_allowed = no
+}
+
+set_popularities = {
+    conservatism = 4
+    liberalism = 4
+    socialism = 2
+    labryscism = 8
+    rexism = 2
+    despotism = 12
+    royalism = 25
+    theocracy = 9
+    absolutism = 13
+    proletarianism = 7
 }
 
 create_country_leader = {

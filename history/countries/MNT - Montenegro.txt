@@ -21,20 +21,14 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		rexism = { 
-			popularity = 15
-		}
-		absolutism = { 
-			popularity = 80
-		}		
-		proletarianism = {
-			popularity = 5
-		}
-	}
 	ruling_party = absolutism
 	elections_allowed = no
+}
+
+set_popularities = {
+    rexism = 15
+    absolutism = 80
+    proletarianism = 5
 }
 
 create_country_leader = {

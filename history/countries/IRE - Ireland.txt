@@ -12,33 +12,20 @@ set_technology = {
 set_convoys = 10
 
 
-set_politics = {
-
-	parties = {
-		despotism = { 
-			popularity = 55
-		}
-		liberalism = { 
-			popularity = 5
-		}
-		conservatism = { 
-			popularity = 10
-		}
-		proletarianism = {
-			popularity = 15
-		}
-		naturalism = {
-			popularity = 5
-		}
-		collectivism = {
-			popularity = 10
-		}
-	}
-	
+set_politics = {	
 	ruling_party = despotism
 	last_election = "1933.1.24"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    despotism = 55
+    liberalism = 5
+    conservatism = 10
+    proletarianism = 15
+    mutualism = 5
+    collectivism = 10
 }
 
 

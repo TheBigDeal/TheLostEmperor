@@ -24,58 +24,34 @@ set_technology = {
 set_convoys = 80		# biggest merchant marine in the world
 set_stability = 0.7
 
-set_politics = {
-
-	parties = {
-		absolutism = { 
-			popularity = 91
-		}
-		
-		socialism = {
-			popularity = 5
-		}
-		
-		rexism = {
-			popularity = 2
-		}
-		
-		proletarianism = {
-			popularity = 2
-		}
-	}
-	
+set_politics = {	
 	ruling_party = absolutism
 	last_election = "1933.10.16"
 	election_frequency = 36
 	elections_allowed = no
 }
 
+set_popularities = {
+    absolutism = 91
+    socialism = 5
+    rexism = 2
+    proletarianism = 2
+}
+
 1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			liberalism = { 
-				popularity = 84
-			}
-
-			rexism = {
-				popularity = 2
-			}
-			
-			proletarianism = {
-				popularity = 2
-			}
-
-			absolutism = {
-				popularity = 12
-			}
-		}
-		
+	set_politics = {		
 		ruling_party = liberalism
 		last_election = "1936.10.19"
 		election_frequency = 36
 		elections_allowed = yes
-	}
+}
+
+    set_popularities = {
+        liberalism = 84
+        rexism = 2
+        proletarianism = 2
+        absolutism = 12
+    }
 }
 
 create_country_leader = {
