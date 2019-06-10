@@ -85,6 +85,9 @@
  FRA_improved_command_structure:0 "Improved Command Structure"
  FRA_invest_in_oil:0 "Invested In Oil"
  FRA_preparing_insurections:0 "Preparing Insurrections"
+ FRA_a_divisive_choice_A:0 "A Divisive Choice"
+ FRA_a_divisive_choice_B:0 "A Divisive Choice"
+ FRA_the_directorate:0 "The Directorate"
  #IDEOLOGY STUFF
  ########################################
  rise_of_the_collectivist_party:0 "Rise of the Collectivist Party"

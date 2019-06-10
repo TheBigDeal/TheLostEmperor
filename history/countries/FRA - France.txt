@@ -65,6 +65,7 @@ create_country_leader = {
 	traits = {
 		warmonger
 	}
+	id = 2
 }
 create_country_leader = {
 	name = "Jamie de Borbon III"
@@ -75,6 +76,7 @@ create_country_leader = {
 	traits = {
 		warmonger
 	}
+	id = 2
 }
 create_country_leader = {
 	name = "Jean d'Orleans III"
@@ -119,15 +121,6 @@ create_country_leader = {
 create_country_leader = {
 	name = "Marcel Cachin"
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
-	picture = "Portrait_France_Benoit_Frachon.tga"
-	expire = "1965.1.1"
-	ideology = 	proletarianism
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "Marcel Cachin"
-	desc = "POLITICS_MAURICE_THOREZ_DESC"
 	picture = "Portrait_France_Marcel_Cachin.tga"
 	expire = "1965.1.1"
 	ideology = 	proletarianism
@@ -137,6 +130,7 @@ create_country_leader = {
 		headstrong
 		dislikes_britain
 	}
+	id = 1
 }
 create_country_leader = {
 	name = "Jacques Duclos"

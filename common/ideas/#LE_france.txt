@@ -1,6 +1,30 @@
 ideas = {
 
 country = {
+	FRA_the_directorate = {
+        on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_the_directorate"}
+        picture = country_focus_efficency
+		modifier = {
+			political_power_gain = -0.05
+			stability_weekly = -0.03
+		}
+    }	
+	FRA_a_divisive_choice_B = { #KEEP CACHIN
+        on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_a_divisive_choice"}
+        picture = country_focus_efficency
+		modifier = {
+			stability_weekly = -0.07
+			production_speed_buildings_factor = -0.1
+		}
+    }
+	FRA_a_divisive_choice_A = { #COUP
+        on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_a_divisive_choice"}
+		modifier = {
+			picture = country_focus_efficency
+			political_power_gain =-0.10
+			production_speed_buildings_factor = -0.1
+		}
+    }	
 	FRA_infantry_quantity = {
         on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_infantry_quantity"}
         picture = country_focus_efficency
