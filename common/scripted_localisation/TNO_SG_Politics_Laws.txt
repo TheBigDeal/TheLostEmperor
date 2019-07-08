@@ -1692,15 +1692,75 @@ defined_text = {
 	name = GetCategory1Lawtno_religious_rights
 	text = {
 		trigger = {
-			has_idea = tno_religious_rights_state_religion
+			has_idea = tno_religious_rights_catholicism
 		}
-		localization_key = tno_religious_rights_state_religion
+		localization_key = tno_religious_rights_catholicism
 	}
 	text = {
 		trigger = {
-			has_idea = tno_religious_rights_pluralism
+			has_idea = tno_religious_rights_protestantism
 		}
-		localization_key = tno_religious_rights_pluralism
+		localization_key = tno_religious_rights_protestantism
+	}
+	text = {
+		trigger = {
+			has_idea = tno_religious_rights_orthodox
+		}
+		localization_key = tno_religious_rights_orthodox
+	}
+	text = {
+		trigger = {
+			has_idea = tno_religious_rights_judism
+		}
+		localization_key = tno_religious_rights_judism
+	}
+	text = {
+		trigger = {
+			has_idea = tno_religious_rights_shia
+		}
+		localization_key = tno_religious_rights_shia
+	}
+	text = {
+		trigger = {
+			has_idea = tno_religious_rights_sunni
+		}
+		localization_key = tno_religious_rights_sunni
+	}
+	text = {
+		trigger = {
+			has_idea = tno_religious_rights_mormonism
+		}
+		localization_key = tno_religious_rights_mormonism
+	}
+	text = {
+		trigger = {
+			has_idea = tno_religious_rights_sikhism
+		}
+		localization_key = tno_religious_rights_sikhism
+	}
+	text = {
+		trigger = {
+			has_idea = tno_religious_rights_hinduism
+		}
+		localization_key = tno_religious_rights_hinduism
+	}
+	text = {
+		trigger = {
+			has_idea = tno_religious_rights_buddhism
+		}
+		localization_key = tno_religious_rights_buddhism
+	}
+	text = {
+		trigger = {
+			has_idea = tno_religious_rights_shintoism
+		}
+		localization_key = tno_religious_rights_shintoism
+	}
+	text = {
+		trigger = {
+			has_idea = tno_religious_rights_confucianism
+		}
+		localization_key = tno_religious_rights_confucianism
 	}
 	text = {
 		trigger = {

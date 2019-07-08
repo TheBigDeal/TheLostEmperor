@@ -1,4 +1,12 @@
 #reload countrycolors
+AND = {
+	color = rgb { 255 113 22 }
+	color_ui = rgb { 224 133 22 }
+}
+CAT = {
+	color = rgb { 224 133 22 }
+	color_ui = rgb { 224 133 22 }
+}
 AJU = {
 	color = rgb { 198 171 83 }
 	color_ui = rgb { 198 171 83 }
@@ -329,8 +337,8 @@ TWO = {
 	color_ui = rgb { 226 206 74 }
 }
 TNS = {
-	color = rgb { 173 46 29 }
-	color_ui = rgb { 173 46 29 }
+	color = rgb { 96 153 145 }
+	color_ui = rgb { 96 153 145 }
 }
 CFE = {
 	color = rgb { 163 87 214 }
@@ -675,13 +683,13 @@ SLZ = {
 }
 
 WAL = {
-	color = rgb { 255 104 104 }
-	color_ui = rgb { 255 104 104 }
+	color = rgb { 161 126 128 }
+	color_ui = rgb { 161 126 128 }
 }
 
 MOL = {
-	color = rgb { 252 194 128 }
-	color_ui = rgb { 252 194 128 }
+	color = rgb { 188 199 107 }
+	color_ui = rgb { 188 199 107 }
 }
 
 RUM = {
@@ -792,16 +800,16 @@ ALG = {
 }
 
 HEJ = {
-	color = rgb { 181 150 0 }
-	color_ui = rgb { 181 150 0 }
+	color = rgb { 143 121 17 }
+	color_ui = rgb { 143 121 17 }
 }
 SHM = {
-	color = rgb { 38 127 0 }
-	color_ui = rgb { 38 127 0 }
+	color = rgb { 204 169 120 }
+	color_ui = rgb { 204 169 120 }
 }
 NEJ = {
-	color = rgb { 147 71 30 }
-	color_ui = rgb { 147 71 30 }
+	color = rgb { 99 135 64 }
+	color_ui = rgb { 99 135 64 }
 }
 ASR = {
 	color = rgb { 63 174 211 }

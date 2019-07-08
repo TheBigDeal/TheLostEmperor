@@ -153,6 +153,7 @@ country_event = {
 				name = "James Reed"
 				desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 				picture = "Reed.dds"
+				id = 2
 				expire = "1965.1.1"
 				ideology = conservatism
 				traits = {
@@ -219,5 +220,71 @@ country_event = {
 				}
 			}
 		}
+	}
+}
+country_event = { #General Strike
+	id = le_USA.8 
+	title = le_USA.8.t
+	desc = le_USA.8.d
+	is_triggered_only = yes
+	picture = GFX_report_event_generic_strike
+	option = {
+		name = le_USA.8.a
+		add_ideas = usa_general_strike
+		complete_national_focus = USA_FROM_BAD_TO_WORSE
+	}
+}
+country_event = { #The Presidents Address
+	id = le_USA.9
+	title = le_USA.9.t
+	desc = le_USA.9.d
+	is_triggered_only = yes
+	picture = GFX_report_event_journalists_speech
+	option = { 
+		name = le_USA.9.a
+		custom_effect_tooltip = presidents_address_tt
+		add_stability = -0.05
+		hidden_effect = { country_event = { id = le_USA.10 days = 7 } }
+	}
+	option = { 
+		name = le_USA.9.b
+		custom_effect_tooltip = presidents_address_tt
+		add_stability = -0.05
+		hidden_effect = { country_event = { id = le_USA.12 days = 7 } }
+	}
+}
+country_event = { #A March In Chicago
+	id = le_USA.10
+	title = le_USA.10.t
+	desc = le_USA.10.d
+	is_triggered_only = yes
+	picture = GFX_report_event_american_hunger_march
+	option = { 
+		name = le_USA.10.a
+		add_stability = -0.05
+		hidden_effect = { country_event = { id = le_USA.11 days = 7 } }
+	}
+}
+country_event = { #A March In Chicago
+	id = le_USA.11
+	title = le_USA.11.t
+	desc = le_USA.11.d
+	is_triggered_only = yes
+	picture = GFX_report_event_american_hunger_march
+	option = { 
+		name = le_USA.11.a
+		
+		add_stability = -0.05
+	}
+}
+country_event = { #Democrats Protest
+	id = le_USA.12
+	title = le_USA.12.t
+	desc = le_USA.12.d
+	is_triggered_only = yes
+	picture = GFX_report_event_american_hunger_march
+	option = { 
+		name = le_USA.12.a
+		add_stability = -0.05
 	}
 }

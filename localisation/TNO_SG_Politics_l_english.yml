@@ -37,7 +37,7 @@
  TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_5_EFFECT:0 "[!set_law_tno_political_parties_5_click]\n\n[!set_law_tno_political_parties_5_click_enabled]\nCost (£pol_power ): §R[?law_tno_political_parties_cost|0]§!"
  TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_5_COST:0 "£pol_power §R[?law_tno_political_parties_cost|0]§!"
  TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_TT:0 "[This.GetCategory1Lawtno_religious_rightsTT]"
- TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER:0 "Stability: §G+10.00%§!\nWar Support: §G+5.00%§!\nIdeology Drift Defense: §G+50.00%§!\nDaily Political Power Gain: §R-0.10§!"
+ TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER:0 "Stability: §G+10.00%§!\nWar Support: §G+5.00%§!"
  TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER_2:0 ""
  TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER_COMBINED:0 "§Y[This.GetCategory1Lawtno_religious_rights]§!\nStability: §G+10.00%§!\nWar Support: §G+5.00%§!\nIdeology Drift Defense: §G+50.00%§!\nDaily Political Power Gain: §R-0.10§!"
  TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_EFFECT:0 "[!set_law_tno_religious_rights_1_click]\nCost (£pol_power ): §R[?law_tno_religious_rights_cost|0]§!"

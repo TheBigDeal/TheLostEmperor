@@ -2,7 +2,7 @@
 state={
 	id=894
 	name="STATE_894"
-	state_category = city
+
 	history={
 		owner = USA
 		buildings = {
@@ -18,8 +18,9 @@ state={
 	}
 
 	provinces={
-		1752 1848 1870 3719 4790 10685 12145 12685 
+		1752 1870 3719 10685 12685 
 	}
 	manpower=435653
 	buildings_max_level_factor=1.000
+	state_category=city
 }

@@ -337,7 +337,7 @@ ideas = {
 		law = yes
 		tno_income_taxation_not_applicable = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_tax_rate_not_applicable"}
-			default = yes
+			default = no
 			available = { always = no } #TODO CHANGEME
 			cancel = { econ_can_use_economy_system = yes }
 
@@ -550,9 +550,7 @@ ideas = {
 		law = yes
 		tno_child_labor_legal = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_child_labor_legal"}
-			default = yes
 			available = { always = no } #TODO CHANGEME
-			
 			removal_cost = -1
 			modifier = {
 				production_speed_buildings_factor = 0.25
@@ -566,7 +564,6 @@ ideas = {
 		tno_child_labor_restricted = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_child_labor_restricted"}
 			available = { always = no } #TODO CHANGEME
-			
 			removal_cost = -1
 			modifier = {
 				production_speed_buildings_factor = 0.10
@@ -580,7 +577,7 @@ ideas = {
 		tno_child_labor_illegal = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_child_labor_illegal"}
 			available = { always = no } #TODO CHANGEME
-			
+			default = yes
 			removal_cost = -1
 			modifier = {}
 			cancel_if_invalid = no

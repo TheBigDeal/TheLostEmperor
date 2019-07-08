@@ -1,5 +1,72 @@
 ideas = {
-
+	#MOD
+	head_of_government = {
+		generic_communist_revolutionary = {	
+			traits = { communist_revolutionary }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	secondary_head = {
+		generic_communist_revolutionary = {	
+			traits = { communist_revolutionary }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	foreign_minister = {
+		generic_foreign_minister = {
+			traits = { army_chief_planning_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	defence_minister = {
+		generic_defence_minister = {
+			traits = { army_chief_planning_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	economy_minister = {
+		generic_economy_minister = {
+			traits = { army_chief_planning_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	security_minister = {
+		generic_security_minister = {
+			traits = { army_chief_planning_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	intel_minister = {
+		generic_intel_minister = {
+			traits = { army_chief_planning_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	theorist = {
+		generic_theorist = {
+			traits = { army_chief_planning_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	
+	
+	#VANILLA
 	hidden_ideas = {
 
 		continuous_naval_production = {

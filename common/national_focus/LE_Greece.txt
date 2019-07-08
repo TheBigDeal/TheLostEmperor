@@ -675,7 +675,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_CHILDREN_OF_ARES
-		icon = GFX_junta_youth
+		icon = GFX_gre_children_of_ares
 		prerequisite = { focus = GRE_WEAKEN_THE_CHURCH }
 		x = 18
 		y = 5
@@ -880,7 +880,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_MONASTIC_DOMINANCE
-		icon = GFX_goal_revolution
+		icon = GFX_gre_monastic_dominance
 		prerequisite = { focus = GRE_A_THEOCRATIC_STATE }
 		x = 23
 		y = 3
@@ -970,7 +970,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_DIVINE_RIGHT_OF_KINGS
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_gre_divine_right
 		prerequisite = { focus = GRE_A_THEOCRATIC_MONARCHY }
 		x = 27
 		y = 3
@@ -1813,7 +1813,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GRE_MILITARY_INDUSTRIAL_COMPLEX
-		icon = GFX_goal_unknown
+		icon = GFX_Generic_Crossed_Rifles
 		prerequisite = { focus = GRE_THE_GREEK_ECONOMY }
 		mutually_exclusive = { focus = GRE_LAISSEZ_FAIRE_POLICY focus = GRE_INTERVENTIONISM focus = GRE_REDISTRIBUTION_OF_WEALTH focus = GRE_THE_KINGS_ENONOMY }
 		x = 50
@@ -1826,92 +1826,161 @@ focus_tree = {
 				has_government = labryscism
 			}
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_ideas = { gre_military_industrial_complex }
+		}
 	}
 	focus = {
 		id = GRE_MINING_EXPANSION
-		icon = GFX_goal_unknown
+		icon = GFX_Generic_exploit_mines
 		prerequisite = { focus = GRE_MILITARY_INDUSTRIAL_COMPLEX }
 		x = 50
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
-		completion_reward = { }
+		completion_reward = { 
+			custom_effect_tooltip = GRE_MINING_EXPANSION_TT
+			add_to_variable = {
+				var = current_money
+				value = 3000
+			}
+			random_state = {
+				limit = { is_owned_by = GRE}
+				add_resource = {
+					type = steel
+					amount = 8
+					state = PREV
+				}
+				add_resource = {
+					type = tungsten
+					amount = 3
+					state = PREV
+				}
+			}
+		}
 	}
 	focus = {
 		id = GRE_CONSCRIPT_THE_UNEMPLOYED
-		icon = GFX_goal_unknown
+		icon = GFX_Focus_Conscription_Act
 		prerequisite = { focus = GRE_MINING_EXPANSION }
 		x = 49
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 10 }
-		completion_reward = { }
+		completion_reward = { add_ideas = {gre_conscript_the_unemployed }}
 	}
 	focus = {
 		id = GRE_MILITARIZE_INDUSTRIES
-		icon = GFX_goal_unknown
+		icon = GFX_Generic_Industry_Tanks
 		prerequisite = { focus = GRE_CONSCRIPT_THE_UNEMPLOYED }
 		x = 49
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 10 }
-		completion_reward = { }
+		completion_reward = { 
+			random_state = {
+				limit = { is_owned_by = GRE industrial_complex  > 1 }
+				remove_building = { type = industrial_complex level = 1 }
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_owned_by = GRE industrial_complex  > 1 }
+				remove_building = { type = industrial_complex level = 1 }
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = GRE_NATIONAL_AUSTERITY
-		icon = GFX_goal_unknown
+		icon = GFX_Nurture_Heavy_Industry
 		prerequisite = { focus = GRE_MILITARIZE_INDUSTRIES }
 		x = 49
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 10 }
-		completion_reward = { }
+		completion_reward = { add_ideas = {gre_national_austerity_plan }}
 	}
 	focus = {
 		id = GRE_MILITARY_ENGINEERING_TECHNIQUES
-		icon = GFX_goal_unknown
+		icon = GFX_science
 		prerequisite = { focus = GRE_MINING_EXPANSION }
 		x = 51
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 10 }
-		completion_reward = { }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = construction_tech
+			}
+		}
 	}
 	focus = {
 		id = GRE_STATES_CORPORATISM 
-		icon = GFX_goal_unknown
+		icon = GFX_USA_workers_for_business
 		prerequisite = { focus = GRE_MILITARY_ENGINEERING_TECHNIQUES }
 		x = 51
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 10 }
-		completion_reward = { }
+		completion_reward = { 
+			add_political_power = -100
+			random_state = {
+				limit = { is_owned_by = GRE NOT = {has_state_flag = gre_bailing_buisness } }
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
 	}
 	focus = {
 		id = GRE_PUBLIC_LABOR_BATALIONS
-		icon = GFX_goal_unknown
+		icon = GFX_Soldiers_for_Workers
 		prerequisite = { focus = GRE_STATES_CORPORATISM }
 		x = 51
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 10 }
-		completion_reward = { }
+		completion_reward = { 
+			add_manpower = 10000
+			add_stability = -0.02
+			add_political_power = 50
+		}
 	}
 	focus = {
 		id = GRE_READY_FOR_WAR
-		icon = GFX_goal_unknown
+		icon = GFX_Generic_Army_Officers
 		prerequisite = { focus = GRE_PUBLIC_LABOR_BATALIONS }
 		prerequisite = { focus = GRE_NATIONAL_AUSTERITY }
 		x = 50
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 10 }
-		completion_reward = { }
+		completion_reward = {
+			add_ideas = war_economy
+			remove_ideas = gre_failed_economy
+		}
 	}	
 	focus = {
 		id = GRE_THE_KINGS_ENONOMY
-		icon = GFX_goal_unknown
+		icon = GFX_goal_empower_monarchy
 		prerequisite = { focus = GRE_THE_GREEK_ECONOMY }
 		mutually_exclusive = { focus = GRE_LAISSEZ_FAIRE_POLICY focus = GRE_INTERVENTIONISM focus = GRE_REDISTRIBUTION_OF_WEALTH focus = GRE_MILITARY_INDUSTRIAL_COMPLEX }
 		x = 54
@@ -1924,86 +1993,157 @@ focus_tree = {
 				has_government = rexism
 			}
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
 	}
 	focus = {
 		id = GRE_ENCOURAGE_FOREIGN_INVESTORS
-		icon = GFX_goal_unknown
+		icon = GFX_planned_economy
 		prerequisite = { focus = GRE_THE_KINGS_ENONOMY }
 		x = 54
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
-		completion_reward = { }
+		completion_reward = {add_ideas = gre_foreign_investment}
 	}
 	focus = {
 		id = GRE_EXPAND_ROYAL_ESTATES
-		icon = GFX_goal_unknown
+		icon = GFX_education_reform
 		prerequisite = { focus = GRE_ENCOURAGE_FOREIGN_INVESTORS }
 		x = 53
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 10 }
-		completion_reward = { }
+		completion_reward = { 
+			random_state = {
+				limit = { is_owned_by = GRE }
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
 	}
 	focus = {
 		id = GRE_RESPECT_CHURCH_AUTHORITY
-		icon = GFX_goal_unknown
+		icon = GFX_goal_orthodox_state
 		prerequisite = { focus = GRE_EXPAND_ROYAL_ESTATES }
 		x = 53
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 10 }
-		completion_reward = { }
+		completion_reward = { add_ideas = gre_church_assets_protected}
 	}
 	focus = {
 		id = GRE_FUND_THE_MILITARY
-		icon = GFX_goal_unknown
+		icon = GFX_goal_army_guy_2
 		prerequisite = { focus = GRE_RESPECT_CHURCH_AUTHORITY }
 		x = 53
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 10 }
-		completion_reward = { }
+		completion_reward = { 
+			add_ideas = gre_raised_military_spending
+			#ADD LOSS PER MONTH OF MONEY
+		}
 	}
 	focus = {
 		id = GRE_SUPPORT_BIG_BUSINESS
-		icon = GFX_goal_unknown
+		icon = GFX_Nurture_Heavy_Industry
 		prerequisite = { focus = GRE_ENCOURAGE_FOREIGN_INVESTORS }
 		x = 55
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 10 }
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = -100
+			random_state = {
+				limit = { is_owned_by = GRE is_coastal = yes}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_state = {
+				limit = { is_owned_by = GRE }
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
 	}
 	focus = {
 		id = GRE_SLASH_CORPORATE_TAXES
-		icon = GFX_goal_unknown
+		icon = GFX_Cash_and_Carry
 		prerequisite = { focus = GRE_SUPPORT_BIG_BUSINESS }
 		x = 55
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 10 }
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = -50
+			#LOSE MONEY
+			add_stability = 0.05
+			random_state = {
+				limit = { is_owned_by = GRE }
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_state = {
+				limit = { is_owned_by = GRE }
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
 	}
 	focus = {
 		id = GRE_DESTROY_UNION_POWER
-		icon = GFX_goal_unknown
+		icon = GFX_focus_trade_unions
 		prerequisite = { focus = GRE_SLASH_CORPORATE_TAXES }
 		x = 55
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 10 }
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = -100
+			add_popularity = { ideology = absolutism popularity = 0.10 }
+		}
 	}
 	focus = {
 		id = GRE_THE_ROYAL_MIRACLE
-		icon = GFX_goal_unknown
+		icon = GFX_focus_monarchy
 		prerequisite = { focus = GRE_FUND_THE_MILITARY }
 		prerequisite = { focus = GRE_DESTROY_UNION_POWER }
 		x = 54
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 10 }
-		completion_reward = { }
+		completion_reward = {
+			every_state = {
+				limit = { is_owned_by = GRE }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			remove_ideas = gre_failed_economy
+		}
 	}

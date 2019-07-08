@@ -18,26 +18,37 @@ set_technology = {
 	early_fighter = 1
 	early_bomber = 1
 	CAS1 = 1
-	
-		
 	trench_warfare = 1
 }
-
+add_ideas = {
+	pol_de_facto_government
+	pol_surrounded_on_all_sides
+	pol_revolutionary_generals
+}
 set_convoys = 10
 
 set_politics = {	
-	ruling_party = royalism
+	ruling_party = despotism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    liberalism = 0
-    rexism = 0
-    royalism = 60
-    absolutism = 40
+    conservatism = 12
+    liberalism = 3
+    socialism = 2
+    labryscism = 18
+    rexism = 5
+    despotism = 24
+    royalism = 2
+    theocracy = 16
+    absolutism = 8
+    proletarianism = 1
+    collectivism = 3
+    mutualism = 6
 }
+
 
 
 
@@ -69,9 +80,9 @@ create_country_leader = {
 # }
 
 create_country_leader = {
-	name = "Władysław Sikorski"
+	name = "Wladyslaw Sikorski"
 	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
-	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
+	picture = "Portrait_Poland_Sikorski.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -79,16 +90,6 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Ignacy Mościcki"
-	desc = "POLITICS_IGNACY_MOSCICKI_DESC"
-	picture = "Portrait_Poland_Ignacy_Moscicki.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
 
 create_country_leader = {
 	name = "Władysław Gomułka"
@@ -117,7 +118,7 @@ create_country_leader = {
 	desc = "POLITICS_BOLESLAW_PIASECKI_DESC"
 	picture = "GFX_POL_boleslaw_piasecki"
 	expire = "1965.1.1"
-	ideology = rexism
+	ideology = labryscism
 	traits = {
 		#
 	}

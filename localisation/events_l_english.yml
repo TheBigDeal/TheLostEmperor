@@ -27,6 +27,24 @@
  le_USA.2.t:0 "The Democratic National Convention"
  le_USA.2.d:0 "The Democratic National Convention"
  le_USA.3.t:0 "The Republican National Convention"
+ le_USA.8.t:0 "General Strike"
+ le_USA.8.d:0 "They came out in droves. Anger at President Reed’s crackdown on organized labor amidst the current economic downturn both the International Workers of the World (IWW) and the American Federation of Labor (AFL), two of the largest labor organizations in the United States have set aside their differences and called a general strike in opposition to the President’s policies. From Minneapolis to Norfolk, hundreds of thousands, maybe even millions, of blue-collar Americans have taken to the streets of their cities to protest the failures of the current administration. The economy is slowly grinding to halt especially in the north where the labor unions are the strongest. In the south, however, where organized labor is weak, most people curse the ‘Yankee Reds’. Meanwhile, in Washington, the President has called an emergency meeting of the cabinet."
+ le_USA.8.a:0 "So it begins..."
+ 
+ le_USA.9.t:0 "The President's Address"
+ le_USA.9.d:0 "Today, President James Reed made an address to both congress and the people over radio. ‘My fellow Americans, our nation is beset by an internal fifth column, that of the communist rabble rousers. They wish to destroy the America we hold dear, to turn it into a socialist dictatorship. They want to take away our businesses, our homes, and our livelihood. These communists wish nothing more than death and destruction for all. And I will not let this happen. America will be a beacon of liberty and the most steadfast foe of communist tyranny...’ As the President finishes his speech he comes to his final remarks. The whole nation leans in to their radios..."
+ le_USA.9.a:0 "'If these socialists want a fight, I’ll give them hell.'"
+ le_USA.9.b:0 "'It is important not to lose sight of the values which made our nation great.'"
+ le_USA.10.t:0 "A March in Chicago"
+ le_USA.10.d:0 "Shortly after the President’s announcement of a hardline stance towards the striking workers new protests were called by union leaders all across the country. The largest of which were in the left-wing stronghold of Chicago. All along Michigan Avenue, thousands of workers marched for better pay, better working conditions, and an end to the ‘War on the Working Class’ as they put it. Several notable socialists spoke at the protest, including IWW leaders Big Bill Haywood and Lucy Parsons. Socialist Party leader Eugene Debs also made a fiery speech decrying the President’s policies. However a speech by Emma Goldman calling for an effective revolution and ‘an end to capitalist exploitation’ worried even some of the protesters. A response by the authorities is awaited."
+ le_USA.10.a:0 "Send in the boys in blue."
+ presidents_address_tt:0 "§RTHIS ACTION WILL HAVE CONSEQUENCES§!\n"
+ le_USA.11.t:0 "The Chicago Riots"
+ le_USA.11.d:0 "Following the government’s decision to send in police to forcibly disperse the protesters in Chicago, violence ensued. Protesters grabbed bottles, canes, umbrellas, street signs, baseball bats, and even cobblestones to repulse the police officers. Mass riots gripped the second largest city in the United States and lasted over three days before a stalemate was reached. While law enforcement holds most of the city, the rioters maintain control of the downtown area. There, Lucy Parsons declared the creation of the Chicago Commune. This has sent shockwaves throughout the US but the Republican Governor of Illinois, Leo Small, has so far refused federal calls to send in the National Guard."
+ le_USA.11.a:0 "We may need to federalize it"
+ le_USA.12.t:0 "Democrats Protest"
+ le_USA.12.d:0 "Following the President’s surprise turnaround on his campaign promises of being hard on unions, numerous Democrats have come out in open criticism of his policies. An open letter, signed by various high-ranking Democrats and even a few more conservative Republicans sharply criticized the the administration’s policies. Even a few fire-eater Democrats from the Deep South have called the President ‘A communist agent’ and named him as perhaps one of America’s worst leaders. President Reed has dismissed these allegations as ‘mere slander’ but already in the Capitol there are rumors of several high-profile resignations from the cabinet and some protests have broken out in the south."
+ le_USA.12.a:0 "Can we negotiate at least with the socialists?"
  #France Events
  le_france.11.t:0 "The French Elections"
  le_france.11.d:0 "The king has stepped down, we must appoint a new government leader.
@@ -372,15 +390,18 @@
  le_russia.10.a:0 "Form Seperate Caucasus States"
  le_russia.10.b:0 "Form The Transcaucasian Soviet Socialist Republic"
  #POLAND
- le_poland.1.t:0 "The Polish Condominium"
- le_poland.1.d:0 "After the Partitions of Poland, the the eventual release of Polish lands, Poland has become a Condominium between Austria and Prussia. It is our turn to transfer lordship of Poland over to the Danubians. We can also refuse to transfer the subject this time, but this will greatly anger the Danubians and most likely lead to war."
- le_poland.1.a:0 "Transfer Lordship"
- le_poland.1.b:0 "Refuse"
+ le_poland.1.t:0 "Prussia Occupies Our Land!"
+ le_poland.1.d:0 "In our time of weakness Prussia has exploited us and moved their army into our nation. We can resist, but will easily be defeated. Our future seems to be in the Prussians hands now."
+ le_poland.1.a:0 "Damn!"
 
- le_poland.2.t:0 "The Polish Condominium"
- le_poland.2.d:0 "After the Partitions of Poland, the the eventual release of Polish lands, Poland has become a Condominium between Austria and Prussia. It is our turn to transfer lordship of Poland over to the Prussians. We can also refuse to transfer the subject this time, but this will greatly anger the Prussians and most likely lead to war."
- le_poland.2.a:0 "Transfer Lordship"
- le_poland.2.b:0 "Refuse"
+ le_poland.2.t:0 "Russia Occupies Our Land!"
+ le_poland.2.d:0 "In our time of weakness Russia has exploited us and moved their army into our nation. We can resist, but will easily be defeated. Our future seems to be in the Prussians hands now."
+ le_poland.2.a:0 "Damn!"
+ 
+ le_poland.3.t:0 "Poland Offers An Alliance"
+ le_poland.3.d:0 "Poland remembers the days of old, then we have been in a union. Since they the Lithuanian people have established their identity more than ever before, and returning to these ways may not be popular any more with the populace. However their are many in the government that see the threat to the Polish government and ours, an alliance may be a good idea to protect both of our nations."
+ le_poland.3.a:0 "Agree"
+ le_poland.3.b:0 "Deny"
 
  #HRE ELECTIONS
  hre.1.t:0 "Holy Roman Elections"
@@ -1160,6 +1181,7 @@
  usa.1.d:0 "It has been known that there is a lot of civil unrest un the United States. A weakening economy and loss of land has caused many people to lose hope in the American dream, turning to proletarianism. \n Today is the day they rise up in riots, take to the streets, and declare war."
  usa.1.a:0 "For Democracy!"
  usa.1.b:0 "America will turn red."
+ 
  ace_promoted.1.t:0 "Ace Pilot Promoted"
  ace_promoted.2.t:0 "A Wild Ace Appears"
  ace_promoted.1.d:0 "Few take as many risks as the brave pilots of the [Root.GetAdjective] air force. [From.GetName] [From.GetSurname], a skilled pilot known under the callsign [From.GetCallsign], has distinguished [From.GetHerselfHimself] in not only returning alive from the recent mission over [From.GetMissionRegion], but living through significant victories in many critical encounters.\n\nHeld up as a shining example of [Root.GetAdjective] courage, [From.GetName]'s recent promotion has been highly publicized. Although the people may view war as more hell than glory, many are glad to see that there are still heroes to rally behind."

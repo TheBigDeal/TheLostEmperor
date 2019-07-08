@@ -1,5 +1,10 @@
 spriteTypes = {
 
+	spriteType = {
+		name = "GFX_economic_button"
+		texturefile = "gfx/interface/economic_button.dds"	
+	}	
+
 	#Autonomy Stuff
 
 	spriteType = {
@@ -258,7 +263,17 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_slot_secondary_head"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_slot_foreign_minister"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_slot_defence_minister"
 		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
 	}
 	
@@ -588,7 +603,7 @@ spriteTypes = {
 	
 	pieChartType = {
 		name = "GFX_political_chart"
-		size = 71
+		size = 62
 	}
 	
 	pieChartType = {

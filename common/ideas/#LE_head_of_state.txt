@@ -1,11 +1,11 @@
-ideas = {
-	head_of_government = {
-		Religion_Protestant = {
-			picture = GFX_idea_le_religion_protestant
-			modifier = {
-				political_power_gain = 0.3
-				offence = 0.1
-			}
-		}
-	}
-}
+# ideas = {
+	# head_of_government = {
+		# Religion_Protestant = {
+			# picture = GFX_idea_le_religion_protestant
+			# modifier = {
+				# political_power_gain = 0.3
+				# offence = 0.1
+			# }
+		# }
+	# }
+# }

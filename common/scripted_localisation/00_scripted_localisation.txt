@@ -13,6 +13,38 @@
 # M O D
 ##########################################
 defined_text = {
+	name = GetSecondaryHeadTitle
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					has_government = absolutism
+					has_government = royalism
+					has_government = theocracy
+					has_government = rexism
+				}
+			}
+		}
+		localization_key = SecondaryHeadHeir
+	}
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					has_government = conservatism
+					has_government = liberalism
+					has_government = socialism
+					has_government = despotism
+				}
+			}
+		}
+		localization_key = SecondaryHeadVicePresident
+	}
+}
+
+
+
+defined_text = {
 	name = GetNationAdjective
 	text = {
 		trigger = {

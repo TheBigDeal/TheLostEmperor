@@ -1,0 +1,18 @@
+scripted_gui = {
+	current_money = {
+		context_type = player_context
+		
+		window_name = "current_money_container"
+		
+		visible = {
+            always = yes
+		}
+		
+		effects = {
+			current_money_bg_right_click = {
+				add_to_variable = { current_money = 10000 }
+			}
+		}
+	}
+}
+

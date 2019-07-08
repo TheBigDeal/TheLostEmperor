@@ -1,0 +1,52 @@
+scripted_gui = {
+	economic_tab = {
+		context_type = player_context
+		
+		window_name = "countryeconomicview"
+		
+		visible = {
+            is_ai = no
+			has_country_flag = {
+				flag = show_economic_tab
+				value = 0
+			}
+		}
+		
+		effects = {
+			economic_button_click = {
+				log = "test"
+				#set_temp_variable = { show = 1 }
+				#subtract_from_temp_variable = { show = show_economic_tab }
+				set_country_flag = show_economic_tab
+				if = {
+					limit = {
+						has_country_flag = {
+							flag = show_economic_tab
+							value = 0
+						}
+						modify_country_flag = { flag = show_economic_tab value = 1 }
+					}
+				}
+			}
+		}
+	}
+	economic_tab_close = {
+		context_type = player_context
+		
+		window_name = "countryeconomicview"
+		
+		visible = {
+            OR = {
+				check_variable = { show_economic_tab > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+			econ_close_button_click = {
+				set_variable = { show_economic_tab = 0 }
+			}
+		}
+	}
+}
+

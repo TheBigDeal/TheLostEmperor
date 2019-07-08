@@ -3,7 +3,7 @@ spriteTypes = {
 	#########   Mod   #########
 	###########################
 	
-	## IDEOLOGIES
+	# IDEOLOGIES
 	##############################################################
 	SpriteType = {
 	name = "GFX_ideology_conservatism"
@@ -22,9 +22,119 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/ideology_socialism.tga"			
 	}
 	
-	## OTHER
+	# THE LOST EMPEROR
+	#############################################################
+	SpriteType = {
+		name = "GFX_gre_divine_right"
+		texturefile = "gfx/interface/goals/Mod/gre_divine_right.dds"
+	}
+	SpriteType = {
+		name = "GFX_gre_monastic_dominance"
+		texturefile = "gfx/interface/goals/Mod/gre_monastic_dominance.dds"
+	}
+	SpriteType = {
+		name = "GFX_gre_children_of_ares"
+		texturefile = "gfx/interface/goals/Mod/gre_children_of_ares.dds"
+	}
+	SpriteType = {
+		name = "GFX_usa_connect_with_the_voters"
+		texturefile = "gfx/interface/goals/Mod/usa_connect_with_the_voters.dds"
+	}
+	SpriteType = {
+		name = "GFX_pol_elections"
+		texturefile = "gfx/interface/goals/Mod/pol_elections.dds"
+	}
+	SpriteType = {
+		name = "GFX_pol_surrounded"
+		texturefile = "gfx/interface/goals/Mod/pol_surrounded.dds"
+	}
+	SpriteType = {
+		name = "GFX_pol_athiest_state"
+		texturefile = "gfx/interface/goals/Mod/pol_athiest_state.dds"
+	}
+	SpriteType = {
+		name = "GFX_pol_state_religion"
+		texturefile = "gfx/interface/goals/Mod/pol_state_religion.dds"
+	}
+	SpriteType = {
+		name = "GFX_pol_deterrence"
+		texturefile = "gfx/interface/goals/Mod/pol_deterrence.dds"
+	}
+	SpriteType = {
+		name = "GFX_pol_austrian_pact"
+		texturefile = "gfx/interface/goals/Mod/pol_austrian_pact.dds"
+	}
+	SpriteType = {
+		name = "GFX_pol_empower_the_king"
+		texturefile = "gfx/interface/goals/Mod/pol_empower_the_king.dds"
+	}
+	SpriteType = {
+		name = "GFX_pol_capitalist_society"
+		texturefile = "gfx/interface/goals/Mod/pol_capitalist_society.dds"
+	}
+	SpriteType = {
+		name = "GFX_pol_free_market"
+		texturefile = "gfx/interface/goals/Mod/pol_free_market.dds"
+	}
+	SpriteType = {
+		name = "GFX_pol_limit_conscription"
+		texturefile = "gfx/interface/goals/Mod/pol_limit_conscription.dds"
+	}
+	SpriteType = {
+		name = "GFX_usa_reed"
+		texturefile = "gfx/interface/goals/Mod/usa_reed.dds"
+	}
+	# OTHER MOD GFX
 	#############################################################
 	
+	SpriteType = {
+	name = "GFX_befriend_lithuania"
+	texturefile = "gfx/interface/goals/Befriend_Lithuania.tga"
+	}
+	SpriteType = {
+	name = "GFX_prison_camps"
+	texturefile = "gfx/interface/goals/Prison_Camps.tga"
+	}
+	SpriteType = {
+	name = "GFX_goal_foreign_diplomacy"
+	texturefile = "gfx/interface/goals/goal_foreign_diplomacy.dds"
+	}
+	SpriteType = {
+	name = "GFX_generic_bad_expansionism"
+	texturefile = "gfx/interface/goals/generic_bad_expansionism.dds"
+	}
+	SpriteType = {
+	name = "GFX_generic_army_focus_red"
+	texturefile = "gfx/interface/goals/Generic_Army_Focus_Red.dds"
+	}
+	SpriteType = {
+	name = "GFX_Generic_Army_Officers"
+	texturefile = "gfx/interface/goals/Generic_Army_Officers.dds"
+	}
+	SpriteType = {
+	name = "GFX_Soldiers_for_Workers"
+	texturefile = "gfx/interface/goals/Soldiers_for_Workers.tga"
+	}
+	SpriteType = {
+	name = "GFX_USA_workers_for_business"
+	texturefile = "gfx/interface/goals/USA_workers_for_business.dds"
+	}
+	SpriteType = {
+	name = "GFX_science"
+	texturefile = "gfx/interface/goals/science.dds"
+	}
+	SpriteType = {
+	name = "GFX_Generic_Industry_Tanks"
+	texturefile = "gfx/interface/goals/Generic_Industry_Tanks.dds"
+	}
+	SpriteType = {
+	name = "GFX_Generic_Crossed_Rifles"
+	texturefile = "gfx/interface/goals/Generic_Crossed_Rifles.dds"
+	}
+	SpriteType = {
+	name = "GFX_Generic_exploit_mines"
+	texturefile = "gfx/interface/goals/Generic_exploit_mines.tga"
+	}
 	SpriteType = {
 	name = "GFX_Unite_the_People"
 	texturefile = "gfx/interface/goals/Unite_the_People.dds"

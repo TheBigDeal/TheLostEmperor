@@ -16,6 +16,7 @@ idea_categories = {
 
 	top_level = {
 		slot = head_of_government
+		slot = secondary_head
 		slot = dummy_idea_category_1
 		slot = tno_hog_dummy_1
 
@@ -25,6 +26,7 @@ idea_categories = {
 
 	minister = {
 		slot = foreign_minister
+		slot = defence_minister
 		slot = economy_minister
 		slot = security_minister
 		slot = intel_minister

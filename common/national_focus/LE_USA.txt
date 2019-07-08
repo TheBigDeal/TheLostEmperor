@@ -118,7 +118,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_CONNECT_WITH_VOTERS
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_usa_connect_with_the_voters
 		prerequisite = { focus = USA_ON_THE_CAMPAIGN_TRAIL }
 		x = 2
 		y = 5
@@ -196,24 +196,30 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_THE_LAWMAN
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_usa_reed
 		x = 10
 		y = 0
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
+		available = {
+			has_country_leader = {
+				name = "James Reed"
+				ruling_only = yes
+			}
+		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 50		
 		}
 	}
 	focus = {
 		id = USA_REEDS_JUSTICE
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_unknown
 		prerequisite = { focus = USA_THE_LAWMAN }
 		x = 10
 		y = 1
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -223,72 +229,81 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_IMMINGRATION_QUOTAS
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_unknown
 		prerequisite = { focus = USA_REEDS_JUSTICE }
 		x = 8
 		y = 2
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_ideas = usa_immigration_quotas
 		}
 	}
 	focus = {
 		id = USA_LOCK_THEM_UP
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_prison_camps
 		prerequisite = { focus = USA_REEDS_JUSTICE }
 		x = 12
 		y = 2
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 100
+			add_stability = -0.03
 		}
 	}
 	focus = {
 		id = USA_BANKING_REFORM
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_Cash_and_Carry
 		prerequisite = { focus = USA_REEDS_JUSTICE }
 		x = 10
 		y = 3
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			swap_ideas = {
+				remove_idea = usa_sluggish_economy
+				add_idea = usa_sluggish_economy_2
+			}
 		}
 	}
 	focus = {
 		id = USA_ALIEN_AND_SEDITION_ACT
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_foreign_diplomacy
 		prerequisite = { focus = USA_IMMINGRATION_QUOTAS }
 		x = 8
 		y = 4
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_ideas = usa_alien_and_sedition_act
 		}
 	}
 	focus = {
 		id = USA_CRUSH_STRIKES
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_ROM_strikes
 		prerequisite = { focus = USA_LOCK_THEM_UP }
 		x = 12
 		y = 4
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			custom_effect_tooltip = crush_strikes_tt
+			hidden_effect = { country_event = { id = le_USA.8 days = 40 } }
+			add_popularity = { ideology = mutualism popularity = -0.05 }	
+			add_popularity = { ideology = proletarianism popularity = -0.05 }
+			add_popularity = { ideology = collectivism popularity = -0.05 }	
+			
 		}
 	}
 	focus = {
@@ -299,12 +314,14 @@ focus_tree = {
 		prerequisite = { focus = USA_CRUSH_STRIKES }
 		x = 10
 		y = 5
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
-		completion_reward = {
-			add_political_power = 120		
+		completion_reward = { 
+			custom_effect_tooltip = bad_to_worse_tt
+			hidden_effect = { country_event = { id = le_USA.9 days = 10 } }
+			add_stability = -0.02 
 		}
 	}
 	focus = {
@@ -313,7 +330,7 @@ focus_tree = {
 		prerequisite = { focus = USA_FROM_BAD_TO_WORSE }
 		x = 10
 		y = 6
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -327,7 +344,7 @@ focus_tree = {
 		prerequisite = { focus = USA_DOMINOS_BEGIN_TO_FALL }
 		x = 10
 		y = 7
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -341,7 +358,7 @@ focus_tree = {
 		prerequisite = { focus = USA_FEDERALIZE_NATIONAL_GUARDS }
 		x = 10
 		y = 8
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -355,12 +372,12 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		x = 16
 		y = 0
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -369,7 +386,7 @@ focus_tree = {
 		prerequisite = { focus = USA_THE_PRAGMATIST }
 		x = 16
 		y = 1
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -383,7 +400,7 @@ focus_tree = {
 		prerequisite = { focus = USA_HULLS_IDEALS }
 		x = 14
 		y = 2
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -397,7 +414,7 @@ focus_tree = {
 		prerequisite = { focus = USA_HULLS_IDEALS }
 		x = 18
 		y = 2
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -411,7 +428,7 @@ focus_tree = {
 		prerequisite = { focus = USA_HULLS_IDEALS }
 		x = 16
 		y = 3
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -425,7 +442,7 @@ focus_tree = {
 		prerequisite = { focus = USA_NEGOTIATE_WITH_THE_FAR_RIGHT }
 		x = 14
 		y = 4
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -439,7 +456,7 @@ focus_tree = {
 		prerequisite = { focus = USA_NEGOTIATE_WITH_THE_FAR_LEFT }
 		x = 18
 		y = 4
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -455,7 +472,7 @@ focus_tree = {
 		prerequisite = { focus = USA_TALKS_WITH_INDUSTRIALISTS }
 		x = 16
 		y = 5
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -469,7 +486,7 @@ focus_tree = {
 		prerequisite = { focus = USA_THE_STORY_BREAKS }
 		x = 16
 		y = 6
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -483,7 +500,7 @@ focus_tree = {
 		prerequisite = { focus = USA_COVER_OUR_TRACKS }
 		x = 16
 		y = 7
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -497,7 +514,7 @@ focus_tree = {
 		prerequisite = { focus = USA_STACK_THE_COURT }
 		x = 16
 		y = 8
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -510,12 +527,12 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		x = 22
 		y = 0
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -524,7 +541,7 @@ focus_tree = {
 		prerequisite = { focus = USA_THE_HEIR }
 		x = 22
 		y = 1
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -538,7 +555,7 @@ focus_tree = {
 		prerequisite = { focus = USA_LOWDENS_PLAN }
 		x = 20
 		y = 2
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -552,7 +569,7 @@ focus_tree = {
 		prerequisite = { focus = USA_LOWDENS_PLAN }
 		x = 24
 		y = 2
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -566,7 +583,7 @@ focus_tree = {
 		prerequisite = { focus = USA_LOWDENS_PLAN }
 		x = 22
 		y = 3
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -580,7 +597,7 @@ focus_tree = {
 		prerequisite = { focus = USA_DEAL_WITH_THE_REDS }
 		x = 20
 		y = 4
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -594,7 +611,7 @@ focus_tree = {
 		prerequisite = { focus = USA_SUPPRESS_THE_FAR_RIGHT_RADICALS }
 		x = 24
 		y = 4
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -610,7 +627,7 @@ focus_tree = {
 		prerequisite = { focus = USA_CRACK_DOWN_ON_CORRUPTION }
 		x = 22
 		y = 5
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -624,7 +641,7 @@ focus_tree = {
 		prerequisite = { focus = USA_A_NATIONAL_TRAGEDY }
 		x = 22
 		y = 6
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -638,7 +655,7 @@ focus_tree = {
 		prerequisite = { focus = USA_CHAOS_IN_THE_CAPITAL }
 		x = 22
 		y = 7
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -652,7 +669,7 @@ focus_tree = {
 		prerequisite = { focus = USA_THE_SUCCESSION_QUESTION }
 		x = 22
 		y = 8
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -665,12 +682,12 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		x = 28
 		y = 0
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -679,7 +696,7 @@ focus_tree = {
 		prerequisite = { focus = USA_THE_UNDERDOG }
 		x = 28
 		y = 1
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -693,7 +710,7 @@ focus_tree = {
 		prerequisite = { focus = USA_ROOSEVELTS_VISION }
 		x = 26
 		y = 2
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -707,7 +724,7 @@ focus_tree = {
 		prerequisite = { focus = USA_ROOSEVELTS_VISION }
 		x = 30
 		y = 2
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -721,7 +738,7 @@ focus_tree = {
 		prerequisite = { focus = USA_ROOSEVELTS_VISION }
 		x = 28
 		y = 3
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -735,7 +752,7 @@ focus_tree = {
 		prerequisite = { focus = USA_DISCREDIT_NATIVISTS }
 		x = 26
 		y = 4
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -749,7 +766,7 @@ focus_tree = {
 		prerequisite = { focus = USA_SIT_DOWN_WITH_UNIONS }
 		x = 30
 		y = 4
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -765,7 +782,7 @@ focus_tree = {
 		prerequisite = { focus = USA_A_RESPONSIBLE_ADMINISTRATION }
 		x = 28
 		y = 5
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -779,7 +796,7 @@ focus_tree = {
 		prerequisite = { focus = USA_A_STORM_APPROACHES }
 		x = 28
 		y = 6
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -793,7 +810,7 @@ focus_tree = {
 		prerequisite = { focus = USA_ECONOMIC_INTERVENTION }
 		x = 28
 		y = 7
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -807,7 +824,7 @@ focus_tree = {
 		prerequisite = { focus = USA_EXTEMISTS_MAKE_THEIR_MOVE }
 		x = 28
 		y = 8
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -821,7 +838,7 @@ focus_tree = {
 		prerequisite = { focus = USA_DECLARE_MARTIAL_LAW focus = USA_PUNISH_THE_PRESS focus = USA_THE_CRACKS_BEGIN_TO_SHOW focus = USA_TALKS_IN_CHICAGO }
 		x = 19
 		y = 9
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -834,7 +851,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		x = 38
 		y = 0
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -848,7 +865,7 @@ focus_tree = {
 		prerequisite = { focus = USA_AN_AMERICA_TO_LAST }
 		x = 38
 		y = 1
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -862,7 +879,7 @@ focus_tree = {
 		prerequisite = { focus = USA_THREE_PRINCEIPLES_OF_THE_NATION }
 		x = 35
 		y = 2
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -876,7 +893,7 @@ focus_tree = {
 		prerequisite = { focus = USA_PATRIOTISM }
 		x = 35
 		y = 3
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -890,7 +907,7 @@ focus_tree = {
 		prerequisite = { focus = USA_PLEDGE_OF_ALLEGIANCE }
 		x = 35
 		y = 5
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -904,7 +921,7 @@ focus_tree = {
 		prerequisite = { focus = USA_PATRIOTISM }
 		x = 34
 		y = 4
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -918,7 +935,7 @@ focus_tree = {
 		prerequisite = { focus = USA_USE_THE_AMERICAN_LEGION }
 		x = 34
 		y = 6
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -932,7 +949,7 @@ focus_tree = {
 		prerequisite = { focus = USA_THREE_PRINCEIPLES_OF_THE_NATION }
 		x = 38
 		y = 2
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -946,7 +963,7 @@ focus_tree = {
 		prerequisite = { focus = USA_CAPITALISM }
 		x = 37
 		y = 4
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -960,7 +977,7 @@ focus_tree = {
 		prerequisite = { focus = USA_CAPITALISM }
 		x = 39
 		y = 4
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -974,7 +991,7 @@ focus_tree = {
 		prerequisite = { focus = USA_CAPITALISM }
 		x = 38
 		y = 3
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -990,7 +1007,7 @@ focus_tree = {
 		prerequisite = { focus = USA_ECONOMIC_FREEDOM_ACT }
 		x = 38
 		y = 5
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1004,7 +1021,7 @@ focus_tree = {
 		prerequisite = { focus = USA_THREE_PRINCEIPLES_OF_THE_NATION }
 		x = 41
 		y = 2
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1018,7 +1035,7 @@ focus_tree = {
 		prerequisite = { focus = USA_LIBERTY }
 		x = 41
 		y = 3
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1032,7 +1049,7 @@ focus_tree = {
 		prerequisite = { focus = USA_LOWER_IMMIGRATION_RESTRICTIONS }
 		x = 41
 		y = 5
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1046,7 +1063,7 @@ focus_tree = {
 		prerequisite = { focus = USA_LIBERTY }
 		x = 42
 		y = 4
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1060,7 +1077,7 @@ focus_tree = {
 		prerequisite = { focus = USA_CHECKS_AND_BALANCES }
 		x = 42
 		y = 6
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1076,7 +1093,7 @@ focus_tree = {
 		prerequisite = { focus = USA_DEAL_WITH_SEGREGATION }
 		x = 38
 		y = 7
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1089,7 +1106,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		x = 47
 		y = 0
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1103,7 +1120,7 @@ focus_tree = {
 		prerequisite = { focus = USA_A_MIRACLE }
 		x = 47
 		y = 1
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1117,7 +1134,7 @@ focus_tree = {
 		prerequisite = { focus = USA_AMERICA_STILL_STANDS }
 		x = 47
 		y = 2
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1131,7 +1148,7 @@ focus_tree = {
 		prerequisite = { focus = USA_THE_SQUARE_DEAL }
 		x = 46
 		y = 3
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1145,7 +1162,7 @@ focus_tree = {
 		prerequisite = { focus = USA_THE_SQUARE_DEAL }
 		x = 46
 		y = 4
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1159,7 +1176,7 @@ focus_tree = {
 		prerequisite = { focus = USA_THE_SQUARE_DEAL }
 		x = 46
 		y = 5
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1173,7 +1190,7 @@ focus_tree = {
 		prerequisite = { focus = USA_RURAL_INFRASTRUCTURE_DEVELOPMENT }
 		x = 46
 		y = 6
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1187,7 +1204,7 @@ focus_tree = {
 		prerequisite = { focus = USA_THE_SQUARE_DEAL }
 		x = 48
 		y = 3
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1201,7 +1218,7 @@ focus_tree = {
 		prerequisite = { focus = USA_ELECTRIFY_THE_COUNTRYSIDE }
 		x = 48
 		y = 4
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1215,7 +1232,7 @@ focus_tree = {
 		prerequisite = { focus = USA_OHIO_VALLEY_AUTHORITY }
 		x = 48
 		y = 5
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1229,7 +1246,7 @@ focus_tree = {
 		prerequisite = { focus = USA_REASSURE_WALL_STREET }
 		x = 48
 		y = 6
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1244,7 +1261,7 @@ focus_tree = {
 		prerequisite = { focus = USA_SOCIAL_SECURITY }
 		x = 47
 		y = 7
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1258,7 +1275,7 @@ focus_tree = {
 		prerequisite = { focus = USA_COMBAT_INFLATION }
 		x = 47
 		y = 8
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1271,7 +1288,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		x = 55
 		y = 0
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1285,7 +1302,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MANIFEST_DESTINY }
 		x = 53
 		y = 1
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1300,7 +1317,7 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_TRADE_WITH_THE_BRITS }
 		x = 52
 		y = 2
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1314,7 +1331,7 @@ focus_tree = {
 		prerequisite = { focus = USA_EMBARGO_THE_EMPIRE }
 		x = 52
 		y = 3
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1328,7 +1345,7 @@ focus_tree = {
 		prerequisite = { focus = USA_ANTI_IMPERIALIST_PROPAGANDA }
 		x = 52
 		y = 4
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1343,7 +1360,7 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_EMBARGO_THE_EMPIRE }
 		x = 54
 		y = 2
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1357,7 +1374,7 @@ focus_tree = {
 		prerequisite = { focus = USA_TRADE_WITH_THE_BRITS }
 		x = 54
 		y = 3
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1371,7 +1388,7 @@ focus_tree = {
 		prerequisite = { focus = USA_INVEST_IN_CANADA }
 		x = 54
 		y = 4
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1385,7 +1402,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MANIFEST_DESTINY }
 		x = 55
 		y = 5
-		cost = 10
+		cost = 6
 		ai_will_do = { factor = 12 }
 		available = {
 			OR = {
@@ -1403,7 +1420,7 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_ANNEXATION }
 		x = 54
 		y = 6
-		cost = 10
+		cost = 6
 		ai_will_do = { factor = 12 }
 		completion_reward = {
 			add_political_power = 120		
@@ -1416,7 +1433,7 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_PLEBESCITE }
 		x = 56
 		y = 6
-		cost = 10
+		cost = 6
 		ai_will_do = { factor = 12 }
 		completion_reward = {
 			add_political_power = 120		
@@ -1428,7 +1445,7 @@ focus_tree = {
 		prerequisite = { focus = USA_ANNEXATION focus = USA_PLEBESCITE }
 		x = 55
 		y = 7
-		cost = 10
+		cost = 6
 		ai_will_do = { factor = 12 }
 		completion_reward = {
 			add_political_power = 120		
@@ -1440,7 +1457,7 @@ focus_tree = {
 		prerequisite = { focus = USA_STATEHOOD_FOR_TEXAS }
 		x = 53
 		y = 9
-		cost = 10
+		cost = 6
 		ai_will_do = { factor = 12 }
 		completion_reward = {
 			add_political_power = 120		
@@ -1452,7 +1469,7 @@ focus_tree = {
 		prerequisite = { focus = USA_STATEHOOD_FOR_TEXAS }
 		x = 57
 		y = 9
-		cost = 10
+		cost = 6
 		ai_will_do = { factor = 12 }
 		completion_reward = {
 			add_political_power = 120		
@@ -1464,7 +1481,7 @@ focus_tree = {
 		prerequisite = { focus = USA_STATEHOOD_FOR_TEXAS }
 		x = 55
 		y = 8
-		cost = 10
+		cost = 6
 		ai_will_do = { factor = 12 }
 		completion_reward = {
 			add_political_power = 120		
@@ -1478,7 +1495,7 @@ focus_tree = {
 		prerequisite = { focus = USA_THE_FATE_OF_CALIFORNIA }
 		x = 55
 		y = 10
-		cost = 10
+		cost = 6
 		ai_will_do = { factor = 12 }
 		completion_reward = {
 			add_political_power = 120		
@@ -1490,7 +1507,7 @@ focus_tree = {
 		prerequisite = { focus = USA_NEW_STATES }
 		x = 55
 		y = 11
-		cost = 10
+		cost = 6
 		ai_will_do = { factor = 12 }
 		completion_reward = {
 			add_political_power = 120		
@@ -1502,7 +1519,7 @@ focus_tree = {
 		prerequisite = { focus = USA_MANIFEST_DESTINY }
 		x = 57
 		y = 1
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1517,7 +1534,7 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_THE_PLIGHT_OF_THE_SETTLERS }
 		x = 56
 		y = 2
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1531,7 +1548,7 @@ focus_tree = {
 		prerequisite = { focus = USA_NEGOTIATE_WITH_FRENCH_LEADERS }
 		x = 56
 		y = 3
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1545,7 +1562,7 @@ focus_tree = {
 		prerequisite = { focus = USA_CALM_AMERICAN_SETTLERS }
 		x = 56
 		y = 4
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1560,7 +1577,7 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_NEGOTIATE_WITH_FRENCH_LEADERS }
 		x = 58
 		y = 2
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1574,7 +1591,7 @@ focus_tree = {
 		prerequisite = { focus = USA_THE_PLIGHT_OF_THE_SETTLERS }
 		x = 58
 		y = 3
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}
@@ -1588,7 +1605,7 @@ focus_tree = {
 		prerequisite = { focus = USA_ISOLATE_LOUSIANA_DIPLOMATICALLY }
 		x = 58
 		y = 4
-		cost = 10
+		cost = 6
 		ai_will_do = {
 			factor = 12
 		}

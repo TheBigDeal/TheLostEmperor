@@ -1,0 +1,39 @@
+scripted_gui = {
+	economic_window = {
+		context_type = player_context
+		
+		window_name = "countryeconomicview"
+		
+		visible = {
+			OR = {
+				check_variable = { show_economic_tab > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+		
+		}
+		
+		triggers = {
+
+		}
+		
+		ai_test_interval = 24
+		ai_test_variance = 0.1
+		ai_max_weight_taken_per_test = 2
+		
+		ai_enabled = {
+            always = yes
+		}
+		
+		ai_check = {
+
+		}
+		
+		ai_weights = {
+			
+		}
+	}
+}
+

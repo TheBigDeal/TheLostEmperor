@@ -4,7 +4,20 @@ buildings = {
 	#    if provincial = yes, then show_on_map = X is amount per each province
 	#    if provincial = no, then show_on_map = X is amount per state
 
-
+	#MOD
+	farm = {
+		base_cost = 1000               # Cost in CIC to build.
+		per_level_extra_cost = 1000    # Added cost per building level.
+		max_level = 10               # The maximum level that can be built.
+		value = 1                   # The base health of the building. Is multiplied by the level of the building built.
+		icon_frame = 15             # Which icon frame in GFX_buildings_strip to use for the building.
+		shares_slots = yes                          # Determines if this building uses building slots.
+		infrastructure_construction_effect = yes    # Determines if this building benefits from infrastructure boosting construction speed.
+		provincial = no                            # Determines if this building is a province building.
+		local_resources_food = 1  # Adds resources to state.
+	}
+	
+	#VANILLA
 	infrastructure = {
 		base_cost = 3000
 		icon_frame = 3

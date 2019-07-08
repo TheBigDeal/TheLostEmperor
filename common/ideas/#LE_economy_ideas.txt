@@ -156,7 +156,7 @@ ideas = {
 			default = yes
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = 1.00
+				consumer_goods_factor = 0.10 #CHANGEME
 			}
 			cancel_if_invalid = no
 			ai_will_do = { } #TODO CHANGEME

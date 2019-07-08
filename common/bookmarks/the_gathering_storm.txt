@@ -44,10 +44,12 @@ bookmarks = {
 			history = GER_BLITZKRIEG_DESC
 			ideology = absolutism
 			ideas = {
-
+				PRS_PRUSSIAN_MILITARISM
+				PRS_political_opposition
+				PRS_unmaintained_navy
 			}
 			focuses = {
-
+				
 			}
 		}
 		AUS = {

@@ -1,0 +1,58 @@
+scripted_gui = {
+	current_money_focus_tree = {
+		context_type = player_context
+		
+		window_name = "current_money_focus_tree"
+		parent_window_token = national_focus
+		
+		visible = {
+            has_current_money = yes
+		}
+		
+		effects = {
+			fuhrer_focus_boost_rate_click = {
+				set_variable = { fuhrer_focus_research = 1 }
+				set_variable = { fuhrer_focus_research_day = 1 }
+			}
+			fuhrer_focus_boost_max_click = {
+				set_variable = { fuhrer_focus_research = 2 }
+				set_variable = { fuhrer_focus_research_day = 1 }
+			}
+		}
+		triggers = {
+			fuhrer_focus_desc_visible = {
+				check_variable = { fuhrer_focus_research > 0 }
+			}
+			fuhrer_focus_boost_rate_click_enabled = {
+				check_variable = { fuhrer_focus_research = 0 }
+			}
+			fuhrer_focus_boost_max_click_enabled = {
+				check_variable = { fuhrer_focus_research = 0 }
+			}
+		}
+		
+		ai_test_interval = 48
+		
+		ai_enabled = {
+            has_current_money = yes
+		}
+		
+		ai_check = {
+			check_variable = { fuhrer_focus_research = 0 }
+		}
+		
+		ai_weights = {
+			fuhrer_focus_boost_rate_click = {
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			fuhrer_focus_boost_max_click = {
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		}
+	}
+}
+

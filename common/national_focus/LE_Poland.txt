@@ -16,8 +16,8 @@ focus_tree = {
 	#        OTHER         #
 	########################
 	focus = {
-		id = POL_BREAK_THE_CHAINS
-		icon = GFX_focus_rom_handle_king
+		id = POL_A_NATION_SURROUNDED
+		icon = GFX_pol_surrounded
 		x = 8
 		y = 0
 		cost = 10
@@ -25,7 +25,1640 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 30
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = POL_APPEASEMENT
+		icon = GFX_focus_CZE_german_puppet
+		mutually_exclusive = { focus = POL_DETERRENCE }
+		prerequisite = { focus = POL_A_NATION_SURROUNDED }
+		x = 4
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_stability = -0.15
+			add_war_support = -0.2
+		}
+	}
+	focus = {
+		id = POL_FOLD_TO_PRUSSIA
+		icon = GFX_unknown
+		prerequisite = { focus = POL_APPEASEMENT }
+		mutually_exclusive = { focus = POL_ALIGN_WITH_AUSTRIA focus = POL_FOLD_TO_RUSSIA }
+		x = 2
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			PRS = {
+				add_opinion_modifier = {
+					target = PRS
+					modifier = prussia_dominated
+				}
+			}
+		}
+	}
+	focus = {
+		id = POL_CEDE_POZNAN
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = POL_FOLD_TO_PRUSSIA }
+		x = 2
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {	
+			PRS = { transfer_state = 86 }
+			random_list = {
+				20 = {
+					country_event = { id = le_poland.1 random = 50 }
+				}
+				80 = {}
+			}
+		}
+	}
+	focus = {
+		id = POL_PRUSSIAN_MILITARY_MISSION
+		icon = GFX_generic_army_focus_red
+		prerequisite = { focus = POL_CEDE_POZNAN }
+		x = 2
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_manpower = -25000
+			random_list = {
+				20 = {
+					country_event = { id = le_poland.1 random = 50 }
+				}
+				80 = {}
+			}
+		}
+	}
+	focus = {
+		id = POL_CEDE_LOWER_PRUSSIA
+		icon = GFX_generic_bad_expansionism
+		prerequisite = { focus = POL_PRUSSIAN_MILITARY_MISSION }
+		x = 2
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			PRS ={ transfer_state = 839 }
+			random_list = {
+				20 = {
+					country_event = { id = le_poland.1 random = 50 }
+				}
+				80 = {}
+			}
+		}
+	}
+	focus = {
+		id = POL_PRUSSIAN_DEFENSIVE_PACT
+		icon = GFX_unknown
+		prerequisite = { focus = POL_CEDE_LOWER_PRUSSIA }
+		mutually_exclusive = { focus = POL_PRUSSIAN_VASSAL }
+		x = 2
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			PRS = { give_guarantee = POL }
+			add_ideas = pol_prussian_sponsored_military
+		}
+	}
+	focus = {
+		id = POL_PRUSSIAN_VASSAL
+		icon = GFX_unknown
+		prerequisite = { focus = POL_CEDE_LOWER_PRUSSIA }
+		mutually_exclusive = { focus = POL_PRUSSIAN_DEFENSIVE_PACT }
+		x = 0
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			PRS = { puppet = POL }	
+		}
+	}
+	focus = {
+		id = POL_ALIGN_WITH_AUSTRIA
+		icon = GFX_unknown
+		prerequisite = { focus = POL_APPEASEMENT }
+		mutually_exclusive = { focus = POL_FOLD_TO_RUSSIA focus = POL_FOLD_TO_PRUSSIA }
+		x = 4
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			AUS = {
+				add_opinion_modifier = {
+					target = POL
+					modifier = aligned_austria
+				}
+			}
+		}
+	}
+	focus = {
+		id = POL_PAYMENTS_TO_AUSTRIA
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = POL_ALIGN_WITH_AUSTRIA }
+		x = 4
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_RELINQUISH_CLAIMS_ON_GALICIA
+		icon = GFX_focus_red_constitution
+		prerequisite = { focus = POL_PAYMENTS_TO_AUSTRIA }
+		x = 4
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			remove_state_claim = 72
+			remove_state_claim = 88
+			remove_state_claim = 91
+			remove_state_claim = 89
+		}
+	}
+	focus = {
+		id = POL_DIPLOMATS_TO_AUSTRIA
+		icon = GFX_goal_foreign_diplomacy
+		prerequisite = { focus = POL_RELINQUISH_CLAIMS_ON_GALICIA }
+		x = 4
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			AUS = {
+				add_opinion_modifier = {
+					target = POL
+					modifier = sent_diplomats
+				}
+			}
+		}
+	}
+	focus = {
+		id = POL_AUSTRIAN_DEFENSIVE_PACT
+		icon = GFX_pol_austrian_pact
+		prerequisite = { focus = POL_DIPLOMATS_TO_AUSTRIA }
+		x = 4
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			AUS = { give_guarantee = POL }
+			add_ideas = pol_austrian_sponsored_military
+		}
+	}
+	focus = {
+		id = POL_FOLD_TO_RUSSIA
+		icon = GFX_unknown
+		prerequisite = { focus = POL_APPEASEMENT }
+		mutually_exclusive = { focus = POL_ALIGN_WITH_AUSTRIA focus = POL_FOLD_TO_PRUSSIA }
+		x = 6
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			RUS = {
+				add_opinion_modifier = {
+					target = POL
+					modifier = russia_dominated
+				}
+			}
+		}
+	}
+	focus = {
+		id = POL_CEDE_EASTERN_POLAND
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = POL_FOLD_TO_RUSSIA }
+		x = 6
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			RUS = {
+				transfer_state = 95
+				transfer_state = 94
+				transfer_state = 97
+				transfer_state = 873
+				transfer_state = 93
+			}
+			random_list = {
+				20 = {
+					country_event = { id = le_poland.2 random = 50 }
+				}
+				80 = {}
+			}
+		}
+	}
+	focus = {
+		id = POL_PROTECT_ORTHODOX_CHRISTIANS
+		icon = GFX_goal_GRE_orthodoxy
+		prerequisite = { focus = POL_CEDE_EASTERN_POLAND }
+		x = 6
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_ideas = pol_protect_orthodox_christians
+			random_list = {
+				20 = {
+					country_event = { id = le_poland.2 random = 50 }
+				}
+				80 = {}
+			}
+		}
+	}
+	focus = {
+		id = POL_RELINQUISH_CLAIMS_ON_EASTERN_POLAND
+		icon = GFX_generic_bad_expansionism
+		prerequisite = { focus = POL_PROTECT_ORTHODOX_CHRISTIANS }
+		x = 6
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			remove_state_claim = 95
+			remove_state_claim = 97
+			remove_state_claim = 94
+			remove_state_claim = 873
+			remove_state_claim = 93
+			random_list = {
+				20 = {
+					country_event = { id = le_poland.2 random = 50 }
+				}
+				80 = {}
+			}
+		}
+	}
+	focus = {
+		id = POL_RUSSIAN_DEFENSIVE_PACT
+		icon = GFX_unknown
+		prerequisite = { focus = POL_RELINQUISH_CLAIMS_ON_EASTERN_POLAND }
+		mutually_exclusive = { focus = POL_RUSSIAN_PUPPET }
+		x = 6
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			RUS = { give_guarantee = POL }
+			add_ideas = pol_russian_sponsored_military
+		}
+	}
+	focus = {
+		id = POL_RUSSIAN_PUPPET
+		icon = GFX_unknown
+		prerequisite = { focus = POL_RELINQUISH_CLAIMS_ON_EASTERN_POLAND }
+		mutually_exclusive = { focus = POL_RUSSIAN_DEFENSIVE_PACT }
+		x = 8
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			RUS = { puppet = POL }	
+		}
+	}
+	focus = {
+		id = POL_DETERRENCE
+		icon = GFX_pol_deterrence
+		mutually_exclusive = { focus = POL_APPEASEMENT }
+		prerequisite = { focus = POL_A_NATION_SURROUNDED }
+		x = 12
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			PRS = {
+				add_opinion_modifier = {
+					target = POL
+					modifier = polish_deterrence
+				}
+			}
+			RUS = {
+				add_opinion_modifier = {
+					target = POL
+					modifier = polish_deterrence
+				}
+			}
+		}
+	}
+	focus = {
+		id = POL_EASTWALL
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = POL_DETERRENCE }
+		x = 10
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_building_construction = { type = bunker level = 2 instant_build = yes province = 11357 }
+			add_building_construction = { type = bunker level = 2 instant_build = yes province = 11301 }
+			add_building_construction = { type = bunker level = 2 instant_build = yes province = 290 }
+			add_building_construction = { type = bunker level = 2 instant_build = yes province = 9544 }
+			add_building_construction = { type = bunker level = 2 instant_build = yes province = 11466 }
+			add_building_construction = { type = bunker level = 2 instant_build = yes province = 9452 }
+			add_building_construction = { type = bunker level = 2 instant_build = yes province = 6580 }
+		}
+	}
+	focus = {
+		id = POL_WARSAW_LINE
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = POL_DETERRENCE }
+		x = 12
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_building_construction = { type = bunker level = 6 instant_build = yes province = 3544 }
+			add_building_construction = { type = bunker level = 2 instant_build = yes province = 6511 }
+			add_building_construction = { type = bunker level = 2 instant_build = yes province = 3482 }
+			add_building_construction = { type = bunker level = 2 instant_build = yes province = 9508 }
+			add_building_construction = { type = bunker level = 2 instant_build = yes province = 11492 }
+			add_building_construction = { type = bunker level = 2 instant_build = yes province = 9400 }
+		}
+	}
+	focus = {
+		id = POL_WESTWALL
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = POL_DETERRENCE }
+		x = 14
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_building_construction = { type = bunker level = 2 instant_build = yes province = 3586 }
+			add_building_construction = { type = bunker level = 2 instant_build = yes province = 584 }
+			add_building_construction = { type = bunker level = 2 instant_build = yes province = 9546 }
+			add_building_construction = { type = bunker level = 2 instant_build = yes province = 9439 }
+			add_building_construction = { type = bunker level = 2 instant_build = yes province = 11515 }
+			add_building_construction = { type = bunker level = 2 instant_build = yes province = 6401 }
+		}
+	}
+	focus = {
+		id = POL_AIR_DEFENCES
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = POL_EASTWALL }
+		prerequisite = { focus = POL_WARSAW_LINE }
+		prerequisite = { focus = POL_WESTWALL }
+		x = 12
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			10 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = POL_POLISH_LITHUANIAN_DEFENSIVE_PACT
+		icon = GFX_befriend_lithuania
+		prerequisite = { focus = POL_AIR_DEFENCES }
+		x = 12
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			LIT = { country_event = { id = le_poland.3 } }
+		}
+	}
+	focus = {
+		id = POL_ASK_FOR_AUSTRIAN_SUPPORT
+		icon = GFX_focus_red_constitution
+		prerequisite = { focus = POL_POLISH_LITHUANIAN_DEFENSIVE_PACT }
+		mutually_exclusive = { focus = POL_APPEAL_TO_POLES_IN_GALICIA }
+		x = 10
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			AUS = { country_event = { id = le_poland.3 } }	
+		}
+	}
+	focus = {
+		id = POL_APPEAL_TO_POLES_IN_GALICIA
+		icon = GFX_generic_revolution
+		prerequisite = { focus = POL_POLISH_LITHUANIAN_DEFENSIVE_PACT }
+		mutually_exclusive = { focus = POL_ASK_FOR_AUSTRIAN_SUPPORT }
+		x = 14
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			GAL = { country_event = { id = le_poland.3 } }	
+		}
+	}
+	focus = {
+		id = POL_FUND_THE_SOVIETS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_APPEAL_TO_POLES_IN_GALICIA focus = POL_ASK_FOR_AUSTRIAN_SUPPORT }
+		x = 13
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_FUND_BAVARIAN_SOCIALISTS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_APPEAL_TO_POLES_IN_GALICIA focus = POL_ASK_FOR_AUSTRIAN_SUPPORT }
+		x = 11
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_PROPOSE_LITHUANIAN_COMMONWEALTH
+		icon = GFX_unknown
+		prerequisite = { focus = POL_FUND_BAVARIAN_SOCIALISTS }
+		prerequisite = { focus = POL_FUND_THE_SOVIETS }
+		x = 12
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_BREAK_THE_CHAINS
+		icon = GFX_unknown
+		x = 18
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_SECRET_REARMAMENT
+		icon = GFX_unknown
+		prerequisite = { focus = POL_BREAK_THE_CHAINS }
+		x = 18
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_MILITARY_BUILD_UP_I
+		icon = GFX_unknown
+		prerequisite = { focus = POL_SECRET_REARMAMENT }
+		x = 17
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_MILITARY_BUILD_UP_II
+		icon = GFX_unknown
+		prerequisite = { focus = POL_MILITARY_BUILD_UP_I }
+		x = 17
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_MILITARY_BUILD_UP_III
+		icon = GFX_unknown
+		prerequisite = { focus = POL_MILITARY_BUILD_UP_II }
+		x = 17
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_REORGANIZE_COMMAND_STRUCTURE
+		icon = GFX_unknown
+		prerequisite = { focus = POL_SECRET_REARMAMENT }
+		x = 19
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_IMPROVE_AIRFIELDS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_REORGANIZE_COMMAND_STRUCTURE }
+		x = 19
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_IMPROVE_SUPPLY_CHAIN
+		icon = GFX_unknown
+		prerequisite = { focus = POL_IMPROVE_AIRFIELDS }
+		x = 19
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_EQUIPMENT_FOCUS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_MILITARY_BUILD_UP_III }
+		prerequisite = { focus = POL_IMPROVE_SUPPLY_CHAIN }
+		mutually_exclusive = { focus = POL_INFANTRY_FOCUS focus = POL_ARMORED_FOCUS }
+		x = 18
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_INFANTRY_FOCUS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_MILITARY_BUILD_UP_III }
+		prerequisite = { focus = POL_IMPROVE_SUPPLY_CHAIN }
+		mutually_exclusive = { focus = POL_EQUIPMENT_FOCUS focus = POL_ARMORED_FOCUS }
+		x = 16
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_ARMORED_FOCUS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_MILITARY_BUILD_UP_III }
+		prerequisite = { focus = POL_IMPROVE_SUPPLY_CHAIN }
+		mutually_exclusive = { focus = POL_INFANTRY_FOCUS focus = POL_EQUIPMENT_FOCUS }
+		x = 20
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_QUALITY_AT_ANY_COST
+		icon = GFX_unknown
+		prerequisite = { focus = POL_ARMORED_FOCUS focus = POL_INFANTRY_FOCUS focus = POL_EQUIPMENT_FOCUS }
+		mutually_exclusive = { focus = POL_MASS_QUANTITY }
+		x = 17
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_MASS_QUANTITY
+		icon = GFX_unknown
+		prerequisite = { focus = POL_ARMORED_FOCUS focus = POL_INFANTRY_FOCUS focus = POL_EQUIPMENT_FOCUS }
+		mutually_exclusive = { focus = POL_QUALITY_AT_ANY_COST }
+		x = 19
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_A_REVITALIZED_MILITARY
+		icon = GFX_unknown
+		prerequisite = { focus = POL_MASS_QUANTITY focus = POL_QUALITY_AT_ANY_COST }
+		x = 18
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_STRIKE_AT_THE_MASTERS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_A_REVITALIZED_MILITARY }
+		x = 18
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_ORGANIZE_THE_GOVERNMENT
+		icon = GFX_unknown
+		x = 33
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_THE_FIRST_POLISH_ELECTIONS
+		icon = GFX_pol_elections
+		prerequisite = { focus = POL_ORGANIZE_THE_GOVERNMENT }
+		x = 33
+		y = 1
+		cost = 20
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_APPEAL_TO_SOCIALISTS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_THE_FIRST_POLISH_ELECTIONS }
+		mutually_exclusive = { focus = POL_APPEAL_TO_NATIONALISTS focus = POL_APPEAL_TO_MONARCHISTS focus = POL_APPEAL_TO_THE_RELIGIOUS focus = POL_APPEAL_TO_DEMOCRATS focus = POL_APPEAL_TO_THE_MILITARY }
+		x = 23
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_UNIVERSAL_HEALTH_CARE
+		icon = GFX_unknown
+		prerequisite = { focus = POL_APPEAL_TO_SOCIALISTS }
+		x = 22
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_LABOR_VOUCHERS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_APPEAL_TO_SOCIALISTS }
+		x = 24
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_UNIVERSAL_INCOME
+		icon = GFX_unknown
+		prerequisite = { focus = POL_UNIVERSAL_HEALTH_CARE focus = POL_LABOR_VOUCHERS }
+		x = 22
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_PUBLIC_HOUSING
+		icon = GFX_unknown
+		prerequisite = { focus = POL_LABOR_VOUCHERS focus = POL_UNIVERSAL_HEALTH_CARE }
+		x = 24
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_SECULAR_STATE
+		icon = GFX_unknown
+		prerequisite = { focus = POL_UNIVERSAL_INCOME focus = POL_PUBLIC_HOUSING }
+		mutually_exclusive = { focus = POL_ATHIEST_STATE }
+		x = 22
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_ATHIEST_STATE
+		icon = GFX_pol_athiest_state
+		prerequisite = { focus = POL_PUBLIC_HOUSING focus = POL_UNIVERSAL_INCOME }
+		mutually_exclusive = { focus = POL_SECULAR_STATE }
+		x = 24
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_INVITE_RELIGIOUS_REFUGEES
+		icon = GFX_unknown
+		prerequisite = { focus = POL_SECULAR_STATE }
+		x = 22
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_SEIZE_CHURCH_ASSETS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_ATHIEST_STATE }
+		x = 24
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_BAN_POLITICAL_OPPOSITION
+		icon = GFX_unknown
+		prerequisite = { focus = POL_INVITE_RELIGIOUS_REFUGEES focus = POL_SEIZE_CHURCH_ASSETS }
+		x = 23
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_APPEAL_TO_MONARCHISTS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_THE_FIRST_POLISH_ELECTIONS }
+		mutually_exclusive = { focus = POL_APPEAL_TO_SOCIALISTS focus = POL_APPEAL_TO_NATIONALISTS focus = POL_APPEAL_TO_THE_RELIGIOUS focus = POL_APPEAL_TO_DEMOCRATS focus = POL_APPEAL_TO_THE_MILITARY }
+		x = 27
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_FOUND_A_PARLIAMENT
+		icon = GFX_unknown
+		prerequisite = { focus = POL_APPEAL_TO_MONARCHISTS }
+		mutually_exclusive = { focus = POL_EMPOWER_THE_KING }
+		x = 26
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_EMPOWER_THE_KING
+		icon = GFX_pol_empower_the_king
+		prerequisite = { focus = POL_APPEAL_TO_MONARCHISTS }
+		mutually_exclusive = { focus = POL_FOUND_A_PARLIAMENT }
+		x = 28
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_FOREIGN_MARRIAGES
+		icon = GFX_unknown
+		prerequisite = { focus = POL_EMPOWER_THE_KING focus = POL_FOUND_A_PARLIAMENT }
+		x = 26
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_THE_KINGS_ARMY
+		icon = GFX_unknown
+		prerequisite = { focus = POL_EMPOWER_THE_KING focus = POL_FOUND_A_PARLIAMENT }
+		x = 28
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_THE_ROYAL_COURT
+		icon = GFX_unknown
+		prerequisite = { focus = POL_FOREIGN_MARRIAGES focus = POL_THE_KINGS_ARMY }
+		x = 26
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_SUCCESSION_LAWS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_FOREIGN_MARRIAGES focus = POL_THE_KINGS_ARMY }
+		x = 28
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_POLISH_IMPERIALISM
+		icon = GFX_unknown
+		prerequisite = { focus = POL_THE_ROYAL_COURT focus = POL_SUCCESSION_LAWS }
+		x = 26
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_THE_WINGED_HUSSARS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_THE_ROYAL_COURT focus = POL_SUCCESSION_LAWS }
+		x = 28
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_GOD_SAVE_THE_KING
+		icon = GFX_unknown
+		prerequisite = { focus = POL_THE_WINGED_HUSSARS }
+		prerequisite = { focus = POL_POLISH_IMPERIALISM }
+		x = 27
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_APPEAL_TO_THE_RELIGIOUS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_THE_FIRST_POLISH_ELECTIONS }
+		mutually_exclusive = { focus = POL_APPEAL_TO_SOCIALISTS focus = POL_APPEAL_TO_MONARCHISTS focus = POL_APPEAL_TO_NATIONALISTS focus = POL_APPEAL_TO_DEMOCRATS focus = POL_APPEAL_TO_THE_MILITARY }
+		x = 31
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_A_STATE-RELIGION
+		icon = GFX_pol_state_religion
+		prerequisite = { focus = POL_APPEAL_TO_THE_RELIGIOUS }
+		mutually_exclusive = { focus = POL_PLURALISM }
+		x = 30
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_PLURALISM
+		icon = GFX_unknown
+		prerequisite = { focus = POL_APPEAL_TO_THE_RELIGIOUS }
+		mutually_exclusive = { focus = POL_STATE-RELIGION }
+		x = 32
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_FUND_CHURCHES
+		icon = GFX_unknown
+		prerequisite = { focus = POL_A_STATE-RELIGION focus = POL_PLURALISM  }
+		x = 30
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_RELIGOUS_TEACHINGS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_A_STATE-RELIGION focus = POL_PLURALISM  }
+		x = 32
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_ABOLISH_LABOR_ON_SUNDAYS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_FUND_CHURCHES focus = POL_RELIGOUS_TEACHINGS  }
+		x = 30
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_CONVERSION_MISSIONS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_FUND_CHURCHES focus = POL_RELIGOUS_TEACHINGS  }
+		x = 32
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_GIVE_THE_CHURCH_A_SEAT_IN_GOVERNMENT
+		icon = GFX_unknown
+		prerequisite = { focus = POL_ABOLISH_LABOR_ON_SUNDAYS focus = POL_CONVERSION_MISSIONS  }
+		x = 30
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_DEAL_WITH_THE_SINNERS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_ABOLISH_LABOR_ON_SUNDAYS focus = POL_CONVERSION_MISSIONS  }
+		x = 32
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_DEFENDER_OF_THE_FAITH
+		icon = GFX_unknown
+		prerequisite = { focus = POL_GIVE_THE_CHURCH_A_SEAT_IN_GOVERNMENT }
+		prerequisite = { focus = POL_DEAL_WITH_THE_SINNERS }
+		x = 31
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_APPEAL_TO_DEMOCRATS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_THE_FIRST_POLISH_ELECTIONS }
+		mutually_exclusive = { focus = POL_APPEAL_TO_SOCIALISTS focus = POL_APPEAL_TO_MONARCHISTS focus = POL_APPEAL_TO_THE_RELIGIOUS focus = POL_APPEAL_TO_NATIONALISTS focus = POL_APPEAL_TO_THE_MILITARY }
+		x = 35
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_CENTROLEW_LEADS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_APPEAL_TO_DEMOCRATS }
+		mutually_exclusive = { focus = POL_ALLIANCE_OF_DEMOCRATS_LEADS }
+		x = 34
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_ALLIANCE_OF_DEMOCRATS_LEADS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_APPEAL_TO_DEMOCRATS }
+		mutually_exclusive = { focus = POL_CENTROLEW_LEADS }
+		x = 36
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_ENCOURAGE_FREE_MARKET
+		icon = GFX_pol_free_market
+		prerequisite = { focus = POL_CENTROLEW_LEADS focus = POL_ALLIANCE_OF_DEMOCRATS_LEADS }
+		x = 34
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_A_CAPITALIST_SOCIETY
+		icon = GFX_pol_capitalist_society
+		prerequisite = { focus = POL_CENTROLEW_LEADS focus = POL_ALLIANCE_OF_DEMOCRATS_LEADS }
+		x = 36
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_BAN_CHILD_LABOR
+		icon = GFX_unknown
+		prerequisite = { focus = POL_ENCOURAGE_FREE_MARKET focus = POL_A_CAPITALIST_SOCIETY }
+		x = 34
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_EQUAL_VOTING_RIGHTS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_ENCOURAGE_FREE_MARKET focus = POL_A_CAPITALIST_SOCIETY }
+		x = 36
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_FREE_PRESS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_BAN_CHILD_LABOR focus = POL_EQUAL_VOTING_RIGHTS }
+		x = 34
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_LIMIT_CONSCRIPTION
+		icon = GFX_pol_limit_conscription
+		prerequisite = { focus = POL_BAN_CHILD_LABOR focus = POL_EQUAL_VOTING_RIGHTS }
+		x = 36
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_BEACON_OF_LIBERTY
+		icon = GFX_unknown
+		prerequisite = { focus = POL_FREE_PRESS }
+		prerequisite = { focus = POL_LIMIT_CONSCRIPTION }
+		x = 35
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_APPEAL_TO_THE_MILITARY
+		icon = GFX_unknown
+		prerequisite = { focus = POL_THE_FIRST_POLISH_ELECTIONS }
+		mutually_exclusive = { focus = POL_APPEAL_TO_SOCIALISTS focus = POL_APPEAL_TO_MONARCHISTS focus = POL_APPEAL_TO_THE_RELIGIOUS focus = POL_APPEAL_TO_DEMOCRATS focus = POL_APPEAL_TO_NATIONALISTS }
+		x = 39
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_PUBLIC_ELECTIONS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_APPEAL_TO_THE_MILITARY }
+		mutually_exclusive = { focus = POL_MILITARY_ELECTIONS }
+		x = 38
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_MILITARY_ELECTIONS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_APPEAL_TO_THE_MILITARY }
+		mutually_exclusive = { focus = POL_PUBLIC_ELECTIONS }
+		x = 40
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_EXPAND_THE_DRAFT
+		icon = GFX_unknown
+		prerequisite = { focus = POL_MILITARY_ELECTIONS focus = POL_PUBLIC_ELECTIONS }
+		x = 38
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_A_MILITARY_GOVERNMENT
+		icon = GFX_unknown
+		prerequisite = { focus = POL_MILITARY_ELECTIONS focus = POL_PUBLIC_ELECTIONS }
+		x = 40
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_ARM_THE_PEOPLE
+		icon = GFX_unknown
+		prerequisite = { focus = POL_EXPAND_THE_DRAFT focus = POL_A_MILITARY_GOVERNMENT }
+		x = 38
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_MILITARY_POLICE
+		icon = GFX_unknown
+		prerequisite = { focus = POL_EXPAND_THE_DRAFT focus = POL_A_MILITARY_GOVERNMENT }
+		x = 40
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_FUND_MILITARY_PRODUCTION
+		icon = GFX_unknown
+		prerequisite = { focus = POL_ARM_THE_PEOPLE focus = POL_MILITARY_POLICE }
+		x = 38
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = POL_MILITARY_SCHOOLS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_ARM_THE_PEOPLE focus = POL_MILITARY_POLICE }
+		x = 40
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_THE_UNBREAKABLE_NATION
+		icon = GFX_unknown
+		prerequisite = { focus = POL_FUND_MILITARY_PRODUCTION }
+		prerequisite = { focus = POL_MILITARY_SCHOOLS }
+		x = 39
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_APPEAL_TO_NATIONALISTS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_THE_FIRST_POLISH_ELECTIONS }
+		mutually_exclusive = { focus = POL_APPEAL_TO_SOCIALISTS focus = POL_APPEAL_TO_MONARCHISTS focus = POL_APPEAL_TO_THE_RELIGIOUS focus = POL_APPEAL_TO_DEMOCRATS focus = POL_APPEAL_TO_THE_MILITARY }
+		x = 43
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_MANDATORY_MILITARY_SERVICE
+		icon = GFX_unknown
+		prerequisite = { focus = POL_APPEAL_TO_NATIONALISTS }
+		x = 42
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_POLISH_HEROISM
+		icon = GFX_unknown
+		prerequisite = { focus = POL_APPEAL_TO_NATIONALISTS }
+		x = 44
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_YOUTH_ORGANIZATIONS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_MANDATORY_MILITARY_SERVICE focus = POL_POLISH_HEROISM }
+		x = 42
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_CLOSE_BORDERS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_MANDATORY_MILITARY_SERVICE focus = POL_POLISH_HEROISM }
+		x = 44
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_EXILE_FOREIGNERS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_YOUTH_ORGANIZATIONS focus = POL_CLOSE_BORDERS }
+		mutually_exclusive = { focus = POL_CONSCRIPT_FOREIGNERS }
+		x = 42
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_CONSCRIPT_FOREIGNERS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_YOUTH_ORGANIZATIONS focus = POL_CLOSE_BORDERS }
+		mutually_exclusive = { focus = POL_EXILE_FOREIGNERS }
+		x = 44
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_CULTURAL_UNITY
+		icon = GFX_unknown
+		prerequisite = { focus = POL_EXILE_FOREIGNERS }
+		x = 42
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_FOREIGN_DIVISIONS
+		icon = GFX_unknown
+		prerequisite = { focus = POL_CONSCRIPT_FOREIGNERS }
+		x = 44
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_STRONGER_THAN_EVER
+		icon = GFX_unknown
+		prerequisite = { focus = POL_CULTURAL_UNITY focus = POL_FOREIGN_DIVISIONS }
+		x = 43
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
 		}
 	}
 }

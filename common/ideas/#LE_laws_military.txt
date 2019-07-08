@@ -478,7 +478,6 @@ ideas = {
 		law = yes
 		tno_racial_integration_not_applicable = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_racial_integration_not_applicable"}
-			default = yes
 			available = { always = no }
 			
 			removal_cost = -1
@@ -489,7 +488,7 @@ ideas = {
 		tno_racial_integration_none = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_racial_integration_none"}
 			available = { always = no } #TODO CHANGEME
-			
+			default = yes
 			removal_cost = -1
 			modifier = {
 				conscription_factor = -0.20

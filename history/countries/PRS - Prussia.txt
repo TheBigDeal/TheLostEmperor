@@ -7,8 +7,8 @@ set_technology = {
 }
 add_ideas = {
 	PRS_PRUSSIAN_MILITARISM
-	Religion_Protestant
-	HRE_elector
+	PRS_political_opposition
+	PRS_unmaintained_navy
 	
 	##POLITICAL LAWS##
 	tno_political_parties_controlled_opposition

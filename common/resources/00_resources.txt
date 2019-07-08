@@ -1,37 +1,45 @@
 resources = {
-
-	oil = {
+	
+	#MOD
+	food = {
 		icon_frame = 1
 		cic = 0.125
-		convoys = 0.1
+		convoys = 0.05
 	}
-
-	aluminium = {
+	
+	#Vanilla	
+	oil = {
 		icon_frame = 2
 		cic = 0.125
 		convoys = 0.1
 	}
 
-	rubber = {
+	aluminium = {
 		icon_frame = 3
 		cic = 0.125
 		convoys = 0.1
 	}
-	
-	tungsten = {
+
+	rubber = {
 		icon_frame = 4
 		cic = 0.125
 		convoys = 0.1
 	}
 	
-	steel = {
+	tungsten = {
 		icon_frame = 5
 		cic = 0.125
 		convoys = 0.1
 	}
 	
-	chromium = {
+	steel = {
 		icon_frame = 6
+		cic = 0.125
+		convoys = 0.1
+	}
+	
+	chromium = {
+		icon_frame = 7
 		cic = 0.125
 		convoys = 0.1
 	}

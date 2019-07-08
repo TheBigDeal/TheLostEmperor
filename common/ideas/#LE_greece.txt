@@ -1,6 +1,52 @@
 ideas = {
 
 country = {
+	gre_raised_military_spending = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			army_org_factor = 0.05
+			army_morale_factor = 0.05
+			training_time_factor = -0.05
+			supply_consumption_factor = -0.10
+		}
+	}
+	gre_church_assets_protected = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			stability_factor = 0.05
+			political_power_gain = -0.05
+		}
+	}
+	gre_foreign_investment = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			consumer_goods_factor = -0.10
+			political_power_gain = -0.05
+			line_change_production_efficiency_factor = 0.05
+		}
+	}
+	gre_national_austerity_plan = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			consumer_goods_factor = -0.10
+			stability_factor = -0.05
+		}
+	}
+	gre_conscript_the_unemployed = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			conscription = 0.02
+			army_morale_factor = -0.1
+		}
+	}
+	gre_military_industrial_complex = {
+		picture = chi_hyper_inflation5
+		modifier = {
+			production_speed_arms_factory_factor = 0.1
+			conversion_cost_civ_to_mil_factor = -0.1
+			production_speed_bunker_factor = 0.20
+		}
+	}
 	gre_unemployment_benefits = {
 		picture = chi_hyper_inflation5
 		modifier = {

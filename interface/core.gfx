@@ -1463,7 +1463,7 @@ bitmapfonts = {
 
 	bitmapfont = {
 		name = "cg_16b"				####### GENERAL TOOLTIP FONT ########
-		path = "gfx/fonts/vt323_18"
+		path = "gfx/fonts/hoi_18"
 		color = 0xff2f8a87
 		textcolors = {
 			M = { 35 206 255 }
@@ -1490,7 +1490,7 @@ bitmapfonts = {
 	
 	bitmapfont = {
 		name = "cg_18b"
-		path = "gfx/fonts/vt323_20"
+		path = "gfx/fonts/hoi_20"
 		color = 0xff2f8a87
 		textcolors = {
 			M = { 35 206 255 }

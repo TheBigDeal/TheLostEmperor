@@ -7,17 +7,14 @@ state={
 		add_core_of = TNS
 		add_core_of = NEJ
 		victory_points = {
-			7960 1 
+			8051 10 
 		}
 		buildings = {
 			infrastructure = 2
-			7960 = {
-				naval_base = 3
-
-			}
+			arms_factory = 1
+			industrial_complex = 1
 			8051 = {
 				naval_base = 2
-
 			}
 
 		}

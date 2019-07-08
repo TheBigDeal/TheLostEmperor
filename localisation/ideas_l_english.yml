@@ -1,4 +1,12 @@
 ﻿l_english:
+ minister:0 "Political Advisors"
+ head_of_government:0 "Head Of Government"
+ secondary_head:0 "[Root.GetSecondaryHeadTitle]"
+ foreign_minister:0 "Foreign Minister"
+ defence_minister:0 "Minister Of Defence"
+ economy_minister:0 "Economic Minister"
+ security_minister:0 "Minister Of The Interior"
+ intel_minister:0 "Minister Of Intelligence"
  #TRAITS
  #######################################
  terror_of_the_caucus:0 "Terror Of The Caucus"
@@ -16,10 +24,28 @@
  Religion_Shia:0 "Shia"
  Religion_Secular:0 "Secular"
  Religion_Athiest:0 "Athiest"
+ #Prussia
+ PRS_political_opposition:0 "Political Opposition"
+ PRS_unmaintained_navy:0 "Unmaintained Navy"
+ PRUSSIAN_SPHERE:0 "Prussian Sphere"
+ PRS_PRUSSIAN_MILITARISM:0 "Prussian Militarism"
+ PRS_GERMAN_MILITARISM:0 "German Militarism"
+ #POLAND
+ pol_austrian_sponsored_military:0 "Austrian Sponsored Military"
+ pol_prussian_sponsored_military:0 "Prussian Sponsored Military"
+ pol_russian_sponsored_military:0 "Russian Sponsored Military"
+ pol_de_facto_government:0 "De Facto Government"
+ pol_de_facto_government_desc:0 "After our revolution from Russia and Prussia in 1926, we have been working to building our defences. The revolutionary government still holds power as survival comes before politics. Once we are sure that we are safe from our former masters we can have a legitimate government."
+ pol_surrounded_on_all_sides:0 "Surrounded On All Sides"
+ pol_surrounded_on_all_sides_desc:0 "Prussia and Russia have always sought to control our land. After being mostly absorbed into the Russian Empire we have recently freed ourselves, but our old enemies still remain."
+ pol_revolutionary_generals:0 "Revolutionary Generals"
+ pol_revolutionary_generals_desc:0 "We have retained our talented generals from the Revolution, they are experienced in combat, expecially against the Prussians and Russians."
  #USA
  usa_sluggish_economy:0 "Sluggish Economy"
+ usa_sluggish_economy_2:0 "Sluggish Economy"
  usa_american_militarism:0 "American Militarism"
  usa_popular_discontent:0 "Popular Discontent"
+ usa_general_strike:0 "General Strike"
  #Austria
  aus_aeiou:0 "A.E.I.O.U"
  AUS_INCREASED_AUTONOMY:0 "Increased Autonomy"
@@ -99,9 +125,6 @@
  HRE_Member:0 "Holy Roman Duchy"
  HRE_elector:0 "Holy Roman Elector"
  HRE_emperor:0 "Holy Roman Emperor"
- PRUSSIAN_SPHERE:0 "Prussian Sphere"
- PRS_PRUSSIAN_MILITARISM:0 "Prussian Militarism"
- PRS_GERMAN_MILITARISM:0 "German Militarism"
  absolutism_influence:0 "Monarchist Influence"
  absolutism_influence_desc:0 "Pressure from the Monarchy."
  fascist_influence:0 "Fascist Influence"

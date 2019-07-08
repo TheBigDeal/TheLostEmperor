@@ -1,0 +1,19 @@
+state={
+	id=1006
+	name="STATE_1006"
+	history={
+		owner = AND
+		victory_points = { 13265 2 }
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = AND
+	}
+	provinces={
+		13265 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

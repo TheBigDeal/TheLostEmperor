@@ -347,7 +347,7 @@ ideas = {
 		law = yes
 		tno_lgbt_rights_lgbt_outlawed = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_lgbt_rights_lgbt_outlawed"}
-			default = yes
+			default = no
 			available = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1

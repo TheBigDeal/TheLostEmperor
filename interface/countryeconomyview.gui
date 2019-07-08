@@ -1,0 +1,77 @@
+guiTypes = {
+	containerWindowType = {
+		name = "countryeconomicview"
+		position = { x=-6 y=78}
+		size = { width=550 height=100%% }
+		containerWindowType = { #Background
+			name = "test"
+			size = { width=550 height=100%% }
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_plain_bg"
+			}
+		}
+		
+		iconType ={
+			name ="production_header_bg"
+			spriteType = "GFX_header_bg"
+			position = { x= 5 y = 07 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		containerWindowType = {
+			name = "econ_economic_tab"
+			position = { x= 235 y = 6 }
+			clipping = no
+			buttonType = {
+				name = "econ_economic_button"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_economic_button"
+				clicksound = click_default
+			}
+			instantTextboxType = {
+				name = "econ_economic_title"
+				position = { x = 60 y = 4 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = -10 y = 0}
+				text = "Economic"
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+		}
+		containerWindowType = {
+			name = "political_tab"
+			position = { x= 15 y = 6 }
+			clipping = no
+			buttonType = {
+				name = "political_button"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_economic_button"
+				clicksound = click_default
+			}
+			instantTextboxType = {
+				name = "political_title"
+				position = { x = 38 y = 4 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "POLITICAL_POLITICAL"
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+		}
+		buttonType = {
+			name = "econ_close_button"
+			position = { x = -43 y = 9 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+}

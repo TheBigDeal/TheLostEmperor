@@ -1,0 +1,107 @@
+scripted_gui = {
+
+	current_money_powers = {
+		context_type = player_context
+		
+		window_name = "current_money_country_powers_container"
+		
+		visible = {
+            has_current_money = yes
+			OR = {
+				check_variable = { show_fuhrer_powers > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+			current_money_power_gain_manpower_click = {
+				add_manpower = 10000
+				subtract_from_variable = { current_money = 5 }
+			}
+			current_money_power_gain_pp_click = {
+				add_political_power = 15
+				subtract_from_variable = { current_money = 5 }
+			}
+			current_money_power_gain_cp_click = {
+				add_command_power = 10
+				subtract_from_variable = { current_money = 5 }
+			}
+			
+			current_money_power_gain_xp_click = {
+				army_experience = 5
+				navy_experience = 5
+				air_experience = 5
+				subtract_from_variable = { current_money = 5 }
+			}
+		}
+		
+		triggers = {
+			current_money_power_gain_manpower_click_enabled = {
+				check_variable = { current_money > 4.99 }
+			}
+			current_money_power_gain_pp_click_enabled = {
+				check_variable = { current_money > 4.99 }
+			}
+			current_money_power_gain_cp_click_enabled = {
+				check_variable = { current_money > 4.99 }
+			}
+			current_money_power_gain_xp_click_enabled = {
+				check_variable = { current_money > 4.99 }
+			}
+		}
+		
+		ai_test_interval = 24
+		ai_test_variance = 0.1
+		ai_max_weight_taken_per_test = 2
+		
+		ai_enabled = {
+            has_current_money = yes
+		}
+		ai_check = {
+			check_variable = { ROOT.current_money > 14.99 }
+			check_variable = { ai_random > 0.4 }
+		}
+		
+		ai_weights = {
+			current_money_power_gain_manpower_click = {
+				weight = 2.0
+				ai_will_do = {
+					factor = -1
+					modifier = {
+						check_variable = { ai_random > 0.7 }
+						add = 3
+					}
+				}
+			}
+			current_money_power_gain_pp_click = {
+				ai_will_do = {
+					factor = -1
+					modifier = {
+						check_variable = { ai_random > 0.7 }
+						add = 2
+					}
+				}
+			}
+			current_money_power_gain_cp_click = {
+				ai_will_do = {
+					factor = -1
+					modifier = {
+						check_variable = { ai_random > 0.7 }
+						add = 2
+					}
+				}
+			}
+			current_money_power_gain_xp_click = {
+				ai_will_do = {
+					factor = -1
+					modifier = {
+						check_variable = { ai_random > 0.8 }
+						add = 2
+					}
+				}
+			}
+		}
+	}
+	
+}
+

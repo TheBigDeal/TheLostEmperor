@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+
+		fuhrer_boost_research = {
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+                research_time_factor = -0.3
+			}
+		}
+    }
+}

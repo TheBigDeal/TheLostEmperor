@@ -75,7 +75,7 @@ guiTypes = {
 		name = "ToolTip"
 		#textureFile = "gfx\\interface\\transparency.tga"
 		textureFile = "gfx\\interface\\tiles\\tiles_dialog.tga"
-		font = "vt323_18"
+		font = "hoi_18"
 		borderSize = { x=18 y=18 }
 		position = { x= 560 y=10 }
 		maxWidth = 400 #320
@@ -322,32 +322,65 @@ guiTypes = {
 		position = { x = 0 y = -6 }
 		size = { width = 18 height = 18 }
 		tileSize = { width = 12 height = 12}
+		horizontal = yes
 		maxValue =1
 		minValue =0
 		stepSize =0.01
 		startValue = 0
-		horizontal = yes
-		orientation = lower_left
-		origo = lower_left
-
 		background = {
 			name = "Background"	
 			quadTextureSprite = "GFX_scrollbar_horisontal_bg"
 		}
-		
 		slider = {
 			name = "Slider"	
 			quadTextureSprite = "GFX_scroll_drager"
 			position = { x=0 y = -2 }			
 		}
-
 		track = {
 			name = "Track"
 			quadTextureSprite = "GFX_scroll_track_horisontal"
 			position = { x=0 y = 3 }
 			alwaystransparent = yes
 		}	
+		decreaseButton = {
+			name = "Decrease"
+			quadTextureSprite = "GFX_scroll_left"
+			position = { x=3 y = 1 }
+		}
+		increaseButton = {
+			name = "Increase"
+			quadTextureSprite = "GFX_scroll_right"
+			position = { x=-19 y = -17 }
+		}
+	}
 
+	extendedScrollbarType = {
+		name = "bottom_horizontal_slider_parties"
+		position = { x = 0 y = -5 }
+		size = { width = 10 height = 18 }
+		tileSize = { width = 10 height = 12 }
+		maxValue =10
+		minValue =1
+		stepSize =1
+		startValue = 1
+		horizontal = yes
+		orientation = lower_left
+		origo = lower_left
+		background = {
+			name = "Background"	
+			quadTextureSprite = "GFX_scrollbar_horisontal_bg"
+		}
+		slider = {
+			name = "Slider"	
+			quadTextureSprite = "GFX_scroll_drager"
+			position = { x=0 y = -2 }			
+		}
+		track = {
+			name = "Track"
+			quadTextureSprite = "GFX_scroll_track_horisontal"
+			position = { x=0 y = 3 }
+			alwaystransparent = yes
+		}	
 		decreaseButton = {
 			name = "Decrease"
 			quadTextureSprite = "GFX_scroll_left"

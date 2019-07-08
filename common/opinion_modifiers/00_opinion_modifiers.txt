@@ -25,6 +25,12 @@ opinion_modifiers = {
   	HRE_declare_alliance = { value = 100 }
   	covert_missions_against_us = { value = -100 }
 	friendly_relations = { value = 40 }
+	prussia_dominated = { value = 40 }
+	russia_dominated = { value = 40 }
+	aligned_austria = { value = 40 }
+	sent_diplomats = { value = 50 }
+	polish_deterrence = { value = -100 }
+	declined_alliance = { value = -40 }
 	#VANILLA
 	hostile_status = { #special used for civil wars that are on hold and blocks faction stuff
 		value = -100
