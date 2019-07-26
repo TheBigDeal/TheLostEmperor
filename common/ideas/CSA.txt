@@ -8,7 +8,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			
@@ -19,7 +19,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 				
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			
@@ -30,7 +30,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			
@@ -43,7 +43,7 @@ ideas = {
 		CSA_victor_strydonck_burkel = {
 			picture = generic_army_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			
@@ -59,7 +59,7 @@ ideas = {
 		CSA_leon_degrelle = {
 			picture = generic_army_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			
@@ -75,7 +75,7 @@ ideas = {
 		CSA_charles_bastin = {
 			picture = generic_army_europe_4
 			
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			
@@ -94,7 +94,7 @@ ideas = {
 		CSA_jules_iserentant = {
 			picture = generic_air_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			
@@ -110,7 +110,7 @@ ideas = {
 		CSA_raoul_overstraeten = {
 			picture = generic_air_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			
@@ -130,7 +130,7 @@ ideas = {
 		CSA_fritz_conrad = {
 			picture = generic_navy_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			
@@ -146,7 +146,7 @@ ideas = {
 		CSA_georges_vereecken = {
 			picture = generic_navy_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			
@@ -166,7 +166,7 @@ ideas = {
 			
 			picture = generic_army_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			
@@ -181,7 +181,7 @@ ideas = {
 
 			picture = generic_army_europe_5
 			
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			
@@ -196,7 +196,7 @@ ideas = {
 
 			picture = generic_air_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			
@@ -211,7 +211,7 @@ ideas = {
 
 			picture = generic_navy_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			
@@ -228,7 +228,7 @@ ideas = {
 			
 			picture = generic_army_europe_6
 
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			
@@ -243,7 +243,7 @@ ideas = {
 			
 			picture = generic_air_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			
@@ -258,7 +258,7 @@ ideas = {
 
 			picture = generic_navy_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			
@@ -279,7 +279,7 @@ ideas = {
 			picture = generic_air_manufacturer_2
 
 			
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			
@@ -302,7 +302,7 @@ ideas = {
 			picture = generic_air_manufacturer_2
 
 			
-			allowed = {
+			visible = {
 				original_tag = CSA
 			}
 			

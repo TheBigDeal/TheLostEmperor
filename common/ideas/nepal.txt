@@ -6,7 +6,7 @@ ideas = {
 
 			picture = generic_political_advisor_asia_1
 			
-			allowed = {
+			visible = {
 				original_tag = NEP
 			}
 			
@@ -17,7 +17,7 @@ ideas = {
 
 			picture = generic_political_advisor_asia_2
 				
-			allowed = {
+			visible = {
 				original_tag = NEP
 			}
 			
@@ -31,7 +31,7 @@ ideas = {
 
 			picture = generic_political_advisor_asia_3
 			
-			allowed = {
+			visible = {
 				original_tag = NEP
 			}
 			
@@ -44,7 +44,7 @@ ideas = {
 
 			picture = generic_army_asia_4
 			
-			allowed = {
+			visible = {
 				original_tag = NEP
 			}
 			
@@ -59,7 +59,7 @@ ideas = {
 
 			picture = generic_air_asia_2
 			
-			allowed = {
+			visible = {
 				original_tag = NEP
 			}
 			
@@ -73,7 +73,7 @@ ideas = {
 		NEP_h_t_s_collins = {
 					
 					
-			allowed = {
+			visible = {
 				original_tag = NEP
 			}
 			
@@ -93,7 +93,7 @@ ideas = {
 
 			picture = generic_army_asia_1 #there are no pictures of women in that are suitable
 			
-			allowed = {
+			visible = {
 				original_tag = NEP
 			}
 			
@@ -108,7 +108,7 @@ ideas = {
 
 			picture = generic_army_asia_3 #there are no pictures of women in that are suitable
 			
-			allowed = {
+			visible = {
 				original_tag = NEP
 			}
 			
@@ -123,7 +123,7 @@ ideas = {
 
 			picture = generic_army_asia_5
 			
-			allowed = {
+			visible = {
 				original_tag = NEP
 			}
 			
@@ -138,7 +138,7 @@ ideas = {
 
 			picture = generic_navy_asia_2
 			
-			allowed = {
+			visible = {
 				original_tag = NEP
 			}
 			
@@ -156,7 +156,7 @@ ideas = {
 
 			picture = generic_army_asia_3
 			
-			allowed = {
+			visible = {
 				original_tag = NEP
 			}
 			
@@ -171,7 +171,7 @@ ideas = {
 
 			picture = generic_army_asia_1
 			
-			allowed = {
+			visible = {
 				original_tag = NEP
 			}
 			
@@ -186,7 +186,7 @@ ideas = {
 
 			picture = generic_army_asia_2
 			
-			allowed = {
+			visible = {
 				original_tag = NEP
 			}
 			
@@ -204,7 +204,7 @@ ideas = {
 			
 			picture = generic_air_asia_1
 			
-			allowed = {
+			visible = {
 				original_tag = NEP
 			}
 			
@@ -221,7 +221,7 @@ ideas = {
 			
 			picture = generic_air_asia_2
 			
-			allowed = {
+			visible = {
 				original_tag = NEP
 			}
 			
@@ -241,7 +241,7 @@ ideas = {
 			
 			picture = generic_navy_asia_1
 
-			allowed = {
+			visible = {
 				original_tag = NEP
 			}
 					
@@ -256,7 +256,7 @@ ideas = {
 			
 			picture = generic_navy_asia_3
 
-			allowed = {
+			visible = {
 				original_tag = NEP
 			}
 					

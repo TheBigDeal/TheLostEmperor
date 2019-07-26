@@ -6,7 +6,7 @@ ideas = {
 
 			picture = generic_liberalism_europe
 
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -17,7 +17,7 @@ ideas = {
 
 			picture = generic_communist_europe
 
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -28,7 +28,7 @@ ideas = {
 
 			picture = generic_army_europe_4
 
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -39,7 +39,7 @@ ideas = {
 
 			picture = idea_nicolae_malaxa
 
-			allowed = {
+			visible = {
 				original_tag = ROM
 				has_dlc = "Death or Dishonor"
 			}
@@ -51,7 +51,7 @@ ideas = {
 
 			picture = generic_army_europe_5
 				
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -62,7 +62,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -76,7 +76,7 @@ ideas = {
 
 			picture = generic_labryscist_demagogue_eastern_european_2d
 
-			available = {
+			visible = {
 				if = {
 					limit = {
 						has_dlc = "Death or Dishonor"
@@ -85,7 +85,7 @@ ideas = {
 				}
 			}			
 
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -101,7 +101,7 @@ ideas = {
 		ROM_gheorghe_potopeanu = {
 					
 					
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -117,7 +117,7 @@ ideas = {
 		ROM_emanoil_ionescu = {
 					
 					
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -137,7 +137,7 @@ ideas = {
 			
 			picture = generic_army_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -154,7 +154,7 @@ ideas = {
 			
 			picture = generic_army_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -174,7 +174,7 @@ ideas = {
 			
 			picture = generic_air_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -191,7 +191,7 @@ ideas = {
 			
 			picture = generic_air_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -211,7 +211,7 @@ ideas = {
 			
 			picture = generic_navy_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -228,7 +228,7 @@ ideas = {
 			
 			picture = generic_navy_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -247,7 +247,7 @@ ideas = {
 		ROM_gheorghe_avramescu = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -263,7 +263,7 @@ ideas = {
 		ROM_gheorghe_mihail = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -279,7 +279,7 @@ ideas = {
 		ROM_paul_teodorescu = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -295,7 +295,7 @@ ideas = {
 		ROM_gheorghe_vasiliu = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -319,7 +319,7 @@ ideas = {
 			picture = generic_tank_manufacturer_3
 
 			
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -347,11 +347,11 @@ ideas = {
 
 			cost = 50
 
-			available = {
+			visible = {
 				has_completed_focus = ROM_mobile_tank_destroyers
 			}
 			
-			allowed = {
+			visible = {
 				original_tag = ROM
 				has_dlc = "Death or Dishonor"
 			}
@@ -393,7 +393,7 @@ ideas = {
 		
 			picture = industrial_concern_1
 			
-			allowed = {
+			visible = {
 				original_tag = ROM
 				has_dlc = "Death or Dishonor"
 			}
@@ -418,7 +418,7 @@ ideas = {
 			picture = generic_naval_manufacturer_2
 
 			
-			allowed = {
+			visible = {
 				original_tag = ROM
 			}
 			
@@ -446,13 +446,13 @@ ideas = {
 			
 			picture = vauxhall
 
-			allowed = {
+			visible = {
 				original_TAG = ROM
 				has_dlc = "Death or Dishonor"
 			}
 			cost = 75
 
-			available = {
+			visible = {
 				has_country_flag = ENG_mot_chosen
 			}
 			
@@ -479,13 +479,13 @@ ideas = {
 
 			cost = 75
 
-			allowed = {
+			visible = {
 				original_TAG = ROM
 				has_dlc = "Death or Dishonor"
 			}
 			
 
-			available = {
+			visible = {
 				has_country_flag = USA_mot_chosen
 			}
 			
@@ -515,7 +515,7 @@ ideas = {
 			picture = generic_motorized_equipment_manufacturer_1
 
 
-			allowed = {
+			visible = {
 				original_TAG = ROM
 			}
 			
@@ -532,7 +532,7 @@ ideas = {
 			picture = idea_ROM_cugir #used with permission from Turning Point mod
 
 
-			allowed = {
+			visible = {
 				original_TAG = ROM
 			}
 			
@@ -549,7 +549,7 @@ ideas = {
 			picture = generic_artillery_manufacturer_1
 
 
-			allowed = {
+			visible = {
 				original_TAG = ROM
 			}
 			
@@ -567,12 +567,12 @@ ideas = {
 
 			cost = 75
 
-			allowed = {
+			visible = {
 				original_tag = ROM
 				has_dlc = "Death or Dishonor"
 			}
 
-			available = {
+			visible = {
 				has_country_flag = GER_mot_chosen
 			}
 			
@@ -603,7 +603,7 @@ ideas = {
 
 			cost = 150
 
-			allowed = {
+			visible = {
 				original_tag = ROM
 				NOT = {
 					has_dlc = "Death or Dishonor"
@@ -629,7 +629,7 @@ ideas = {
 			
 			picture = generic_air_manufacturer_2
 
-			available = {
+			visible = {
 				if = {
 					limit = {
 						has_dlc = "Death or Dishonor"
@@ -640,7 +640,7 @@ ideas = {
 
 			cost = 50
 
-			allowed = {
+			visible = {
 				original_tag = ROM
 				has_dlc = "Death or Dishonor"
 			}
@@ -674,7 +674,7 @@ ideas = {
 			
 			picture = generic_air_manufacturer_1
 
-			allowed = {
+			visible = {
 				original_tag = ROM
 				has_dlc = "Death or Dishonor"
 			}
@@ -705,7 +705,7 @@ ideas = {
 			
 			picture = generic_air_manufacturer_2
 
-			allowed = {
+			visible = {
 				original_tag = ROM
 				has_dlc = "Death or Dishonor"
 			}

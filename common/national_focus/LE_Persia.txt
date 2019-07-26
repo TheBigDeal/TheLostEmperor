@@ -135,7 +135,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PER_COMMUNISM
+		id = PER_collectivism
 		icon = GFX_goal_support_proletarianism
 		prerequisite = { focus = PER_POLITICAL_PATH }
 		x = 9
@@ -177,7 +177,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PER_FASCISM
+		id = PER_labryscism
 		icon = GFX_goal_support_rexism
 		prerequisite = { focus = PER_POLITICAL_PATH }
 		x = 15

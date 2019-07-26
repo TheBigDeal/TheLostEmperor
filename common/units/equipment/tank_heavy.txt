@@ -48,7 +48,17 @@ equipments = {
 		
 		fuel_consumption = 4.4
 	}
+	
+	early_heavy_tank_equipment = {
+		year = 1934
 
+		archetype = heavy_tank_equipment		
+		priority = 90
+		visual_level = 0
+		is_convertable = yes
+	}
+	
+	
 	# 1934
 	heavy_tank_equipment_1 = {
 		year = 1934

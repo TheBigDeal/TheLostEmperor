@@ -7,6 +7,7 @@ add_namespace = le_austria
 country_event = { #INVITE TO GERMAN CONFEDERATION
 	id = le_austria.1
 	title = le_austria.1.t
+	desc = le_austria.1.d
 	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
 	option = { #ACCEPT
@@ -27,9 +28,7 @@ country_event = { #INVITE TO GERMAN CONFEDERATION
 					has_cosmetic_tag = South_German_Confederation
 				}
 			}
-			any_country = {
-				annex_country = { target = PREV transfer_troops = yes }
-			}
+			annex_country = { target = PREV transfer_troops = yes }
 		}
 	}
 	option = { #DECLINE
@@ -46,6 +45,7 @@ country_event = { #INVITE TO GERMAN CONFEDERATION
 country_event = { #INVITE TO DANUBIAN FEDERATION
 	id = le_austria.2
 	title = le_austria.2.t
+	desc = le_austria.2.d
 	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
 	option = { #ACCEPT
@@ -72,6 +72,7 @@ country_event = { #INVITE TO DANUBIAN FEDERATION
 country_event = { #BOHEMIAN REFURENDUM
 	id = le_austria.3
 	title = le_austria.3.t
+	desc = le_austria.3.d
 	picture = GFX_report_event_generic_read_write
 	is_triggered_only = yes
 	option = { #ACCEPT

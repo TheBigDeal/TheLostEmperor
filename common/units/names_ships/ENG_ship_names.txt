@@ -507,7 +507,7 @@ ENG_MYTHOLOGY = {
 }
 
 
-##### Britain NAME LISTS COMMUNISM #####
+##### Britain NAME LISTS collectivism #####
 ### REGULAR DESTROYER NAMES###
 ENG_DD_COMMUNIST = {
 	name = NAME_THEME_HISTORICAL_DESTROYERS
@@ -567,7 +567,7 @@ ENG_DD_COMMUNIST = {
 }
 
 ### DESTROYER ESCORT NAMES###
-ENG_DE_COMMUNISM = {
+ENG_DE_collectivism = {
 	name = NAME_THEME_HISTORICAL_DE
 
 	for_countries = { ENG }
@@ -605,7 +605,7 @@ ENG_DE_COMMUNISM = {
 }
 
 ### LIGHT CRUISER NAMES###
-ENG_CL_COMMUNISM = {
+ENG_CL_collectivism = {
 	name = NAME_THEME_HISTORICAL_CL
 
 	for_countries = { ENG }
@@ -636,7 +636,7 @@ ENG_CL_COMMUNISM = {
 }
 
 ### A-A LIGHT CRUISER NAMES###
-ENG_CLAA_COMMUNISM = {
+ENG_CLAA_collectivism = {
 	name = NAME_THEME_HISTORICAL_CLAA
 
 	for_countries = { ENG }
@@ -663,7 +663,7 @@ ENG_CLAA_COMMUNISM = {
 }
 
 ### HEAVY CRUISER NAMES###
-ENG_CA_COMMUNISM = {
+ENG_CA_collectivism = {
 	name = NAME_THEME_HISTORICAL_CA
 
 	for_countries = { ENG }
@@ -690,7 +690,7 @@ ENG_CA_COMMUNISM = {
 
 
 ### MINELAYER NAMES###
-ENG_MINELAYERS_COMMUNISM = {
+ENG_MINELAYERS_collectivism = {
 	name = NAME_THEME_HISTORICAL_MINELAYERS
 
 	for_countries = { ENG }
@@ -714,7 +714,7 @@ ENG_MINELAYERS_COMMUNISM = {
 }
 
 ### BATTLESHIP NAMES ###
-ENG_BB_COMMUNISM = {
+ENG_BB_collectivism = {
 	name = NAME_THEME_HISTORICAL_BB
 
 	for_countries = { ENG }
@@ -738,7 +738,7 @@ ENG_BB_COMMUNISM = {
 }
 
 ### BATTLECRUISER NAMES ###
-ENG_BC_COMMUNISM = {
+ENG_BC_collectivism = {
 	name = NAME_THEME_HISTORICAL_BC
 
 	for_countries = { ENG }
@@ -760,7 +760,7 @@ ENG_BC_COMMUNISM = {
 }
 
 ### AIRCRAFT CARRIER NAMES ###
-ENG_CV_COMMUNISM = {
+ENG_CV_collectivism = {
 	name = NAME_THEME_HISTORICAL_CARRIERS
 
 	for_countries = { ENG }
@@ -784,7 +784,7 @@ ENG_CV_COMMUNISM = {
 }
 
 ### LIGHT CARRIER NAMES ###
-ENG_CVL_COMMUNISM = {
+ENG_CVL_collectivism = {
 	name = NAME_THEME_HISTORICAL_CVL
 
 	for_countries = { ENG }
@@ -809,7 +809,7 @@ ENG_CVL_COMMUNISM = {
 }
 
 ### SUBMARINES ###
-ENG_SS_COMMUNISM= {
+ENG_SS_collectivism= {
 	name = NAME_THEME_HISTORICAL_SUBMARINES
 
 	for_countries = { ENG }

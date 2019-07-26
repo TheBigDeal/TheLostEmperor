@@ -131,17 +131,6 @@ guiTypes = {
 			fixedsize = yes
 		}
 		
-		instantTextBoxType = {
-			name ="pol_power"
-			position = { x= 120 y = 9§§ }
-			font = "hoi_18mbs"
-			text = "999"
-			format = center
-			maxWidth = 52
-			maxHeight = 24
-			fixedsize = yes
-		}
-		
 		iconType ={
 			name ="manpower_value_bg"
 			spriteType = "GFX_generic_box_96"

@@ -6,7 +6,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 			
-			available = {
+			visible = {
 				original_tag = BUL
 			}
 			
@@ -17,7 +17,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 				
-			available = {
+			visible = {
 				original_tag = BUL
 			}
 			
@@ -28,7 +28,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			available = {
+			visible = {
 				original_tag = BUL
 			}
 			
@@ -46,7 +46,7 @@ ideas = {
 		BUL_nikola_hadzipetkov = {
 			picture = generic_army_europe_3
 			
-			available = {
+			visible = {
 				original_tag = BUL
 			}
 			
@@ -62,7 +62,7 @@ ideas = {
 		BUL_hristo_lukov = {
 			picture = generic_army_europe_2
 			
-			available = {
+			visible = {
 				original_tag = BUL
 			}
 			
@@ -81,7 +81,7 @@ ideas = {
 		BUL_vasil_boydev = {
 			picture = generic_air_europe_3
 
-			available = {
+			visible = {
 				original_tag = BUL
 			}
 						
@@ -95,7 +95,7 @@ ideas = {
 		BUL_asen_dobrev_nikolov = {
 			picture = generic_air_europe_2
 
-			available = {
+			visible = {
 				original_tag = BUL
 			}
 			
@@ -112,7 +112,7 @@ ideas = {
 		BUL_nikola_totev_markov = {
 			picture = generic_navy_europe_1
 
-			available = {
+			visible = {
 				original_tag = BUL
 			}
 						
@@ -126,7 +126,7 @@ ideas = {
 		BUL_bonyu_stoev_pironkov = {
 			picture = generic_navy_europe_2
 
-			available = {
+			visible = {
 				original_tag = BUL
 			}
 						
@@ -144,7 +144,7 @@ ideas = {
 			
 			picture = generic_air_europe_2
 
-			available = {
+			visible = {
 				original_tag = BUL
 			}
 			
@@ -159,7 +159,7 @@ ideas = {
 
 			picture = generic_army_europe_4
 			
-			available = {
+			visible = {
 				original_tag = BUL
 			}
 					
@@ -174,7 +174,7 @@ ideas = {
 
 			picture = generic_army_europe_2
 			
-			available = {
+			visible = {
 				original_tag = BUL
 			}
 					
@@ -189,7 +189,7 @@ ideas = {
 
 			picture = generic_army_europe_5
 			
-			available = {
+			visible = {
 				original_tag = BUL
 			}
 					
@@ -209,7 +209,7 @@ ideas = {
 			picture = generic_air_manufacturer_1
 
 			
-			available = {
+			visible = {
 				original_tag = BUL
 			}
 						
@@ -233,7 +233,7 @@ ideas = {
 			
 			picture = generic_army_europe_1
 
-			available = {
+			visible = {
 				original_tag = BUL
 			}
 			
@@ -248,7 +248,7 @@ ideas = {
 			
 			picture = generic_air_europe_1
 			
-			available = {
+			visible = {
 				original_tag = BUL
 			}
 			
@@ -263,7 +263,7 @@ ideas = {
 
 			picture = generic_navy_europe_1
 			
-			available = {
+			visible = {
 				original_tag = BUL
 			}
 			

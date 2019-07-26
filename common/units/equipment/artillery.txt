@@ -1,5 +1,59 @@
 equipments = {
 
+	seige_cannon = {
+		year = 1800
+		priority = 50
+		visual_level = 0
+	}
+	
+	experimental_artillery = {
+		year = 1915
+		priority = 50
+		visual_level = 0
+	}
+	
+	light_artillery_equipment_1 = {
+		year = 1930
+		priority = 50
+		visual_level = 0
+	}
+	
+	light_artillery_equipment_2 = {
+		year = 1930
+		priority = 50
+		visual_level = 0
+	}
+	
+	light_artillery_equipment_3 = {
+		year = 1930
+		priority = 50
+		visual_level = 0
+	}
+	
+	heavy_artillery_equipment_1 = {
+		year = 1930
+		priority = 50
+		visual_level = 0
+	}
+	
+	heavy_artillery_equipment_2 = {
+		year = 1935
+		priority = 50
+		visual_level = 0
+	}
+	
+	heavy_artillery_equipment_3 = {
+		year = 1935
+		priority = 50
+		visual_level = 0
+	}
+	
+	railway_gun = {
+		year = 1936
+		priority = 50
+		visual_level = 0
+	}
+	
 	artillery_equipment = {
 		year = 1934
 

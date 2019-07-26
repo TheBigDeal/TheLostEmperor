@@ -4,7 +4,7 @@ ideas = {
 	country = {
 
 		SAF_ossewabrandwag = { 
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -24,7 +24,7 @@ ideas = {
 		}		
 
 		SAF_ossewabrandwag_2 = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -43,7 +43,7 @@ ideas = {
 		}
 
 		SAF_ossewabrandwag_labryscism = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -63,7 +63,7 @@ ideas = {
 		}
 
 		SAF_history_of_segregation = { 
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -82,7 +82,7 @@ ideas = {
 		}
 
 		SAF_history_of_segregation_2 = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -101,7 +101,7 @@ ideas = {
 		}
 
 		SAF_abandon_westminster = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -121,7 +121,7 @@ ideas = {
 		}
 
 		SAF_abandon_westminster_labryscism = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -142,7 +142,7 @@ ideas = {
 		}
 
 		SAF_abandon_westminster_collectivism = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -163,7 +163,7 @@ ideas = {
 		}
 
 		SAF_emergency_workers = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -184,7 +184,7 @@ ideas = {
 		}
 
 		SAF_cheap_labor_1 = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -205,7 +205,7 @@ ideas = {
 		}
 
 		SAF_cheap_labor_2 = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -227,7 +227,7 @@ ideas = {
 		}
 
 		SAF_cheap_labor_3 = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -249,7 +249,7 @@ ideas = {
 		}
 
 		SAF_voortrekker_monument = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -268,7 +268,7 @@ ideas = {
 		}
 
 		SAF_voortrekker_monument_2 = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -288,7 +288,7 @@ ideas = {
 		}
 
 		SAF_black_volunteers = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -307,7 +307,7 @@ ideas = {
 		}
 
 		SAF_equal_opportunities = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -327,7 +327,7 @@ ideas = {
 		}
 
 		SAF_support_the_world_revolution = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -346,7 +346,7 @@ ideas = {
 		}
 
 		SAF_soviet_advisers = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -365,7 +365,7 @@ ideas = {
 		}
 
 		SAF_scw_veterans = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -384,7 +384,7 @@ ideas = {
 
 		SAF_support_spain = {
 
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -408,7 +408,7 @@ ideas = {
 		}
 
 		SAF_desert_equipment = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -425,7 +425,7 @@ ideas = {
 					}
 		}
 		SAF_king_edward = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -445,7 +445,7 @@ ideas = {
 		}
 
 		SAF_gold_exports = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -465,7 +465,7 @@ ideas = {
 
 		SAF_joint_air_training_scheme = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -539,12 +539,12 @@ ideas = {
 
 		SAF_sir_patrick_duncan = {
 			
-			allowed = {
+			visible = {
 				original_tag = SAF
 				
 			}
 
-			available = {
+			visible = {
 				if = {
 					limit = { has_dlc = "Together for Victory"}
 					has_completed_focus = SAF_support_the_policy_of_appeasement
@@ -569,11 +569,11 @@ ideas = {
 
 		SAF_abram_fischer = {
 
-			allowed = {
+			visible = {
 				original_tag = SAF
 			}
 
-			available = {
+			visible = {
 			if = {
 					limit = { has_dlc = "Together for Victory"}
 					has_completed_focus = SAF_empower_the_workers
@@ -598,12 +598,12 @@ ideas = {
 
 		SAF_j_f_van_rensburg_fascist = {
 			
-			allowed = {
+			visible = {
 				original_tag = SAF
 				
 			}
 
-			available = {
+			visible = {
 				if = {
 					limit = { has_dlc = "Together for Victory"}
 					has_completed_focus = SAF_support_the_afrikaner_broederbond
@@ -629,7 +629,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 
-			allowed = {
+			visible = {
 				original_tag = SAF
 			}
 			
@@ -640,7 +640,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 				
-			allowed = {
+			visible = {
 				original_tag = SAF
 			}
 			
@@ -654,7 +654,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = SAF
 			}
 			
@@ -667,7 +667,7 @@ ideas = {
 		SAF_james_mitchell_baker = {
 			picture = generic_army_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = SAF
 			}
 						
@@ -681,7 +681,7 @@ ideas = {
 		SAF_leonard_beyers = {
 			picture = generic_army_europe_4
 			
-			allowed = {
+			visible = {
 				original_tag = SAF
 			}
 			
@@ -699,7 +699,7 @@ ideas = {
 		SAF_adolf_malan = {
 			picture = generic_air_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = SAF
 			}
 			
@@ -713,7 +713,7 @@ ideas = {
 		SAF_pierre_van_ryneveld = {
 			picture = generic_air_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = SAF
 			}
 			
@@ -731,7 +731,7 @@ ideas = {
 		SAF_pierre_oliver_knoll = {
 			picture = generic_navy_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = SAF
 			}
 			
@@ -745,7 +745,7 @@ ideas = {
 		SAF_cornelis_van_zuigenbrogge = {
 			picture = generic_navy_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = SAF
 			}
 			
@@ -763,7 +763,7 @@ ideas = {
 			
 			picture = generic_army_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = SAF
 			}
 			
@@ -778,7 +778,7 @@ ideas = {
 
 			picture = generic_army_europe_5
 			
-			allowed = {
+			visible = {
 				original_tag = SAF
 			}
 			
@@ -793,7 +793,7 @@ ideas = {
 
 			picture = generic_air_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = SAF
 			}
 			
@@ -808,7 +808,7 @@ ideas = {
 
 			picture = generic_navy_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = SAF
 			}
 			
@@ -825,7 +825,7 @@ ideas = {
 			
 			picture = generic_army_europe_2
 
-			allowed = {
+			visible = {
 				original_tag = SAF
 			}
 			
@@ -840,7 +840,7 @@ ideas = {
 			
 			picture = generic_air_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = SAF
 			}
 			
@@ -858,7 +858,7 @@ ideas = {
 			
 			picture = generic_tank_manufacturer_3
 
-			allowed = {
+			visible = {
 				original_TAG = SAF
 				has_dlc = "Together for Victory"
 			}

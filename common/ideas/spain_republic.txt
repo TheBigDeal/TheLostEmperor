@@ -6,7 +6,7 @@ ideas = {
 
 			picture = generic_army_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = SPR
 				NOT = { has_government = labryscism }
 			}
@@ -18,7 +18,7 @@ ideas = {
 
 			picture = generic_air_europe_1
 				
-			allowed = {
+			visible = {
 				original_tag = SPR
 				NOT = { has_government = labryscism }
 			}
@@ -30,7 +30,7 @@ ideas = {
 
 			picture = dolores_ibarruri
 				
-			allowed = {
+			visible = {
 				original_tag = SPR				
 				NOT = { has_government = labryscism }
 			}
@@ -42,7 +42,7 @@ ideas = {
 
 			picture = generic_navy_europe_1
 
-			allowed = {
+			visible = {
 				original_tag = SPR
 				NOT = { has_government = labryscism }
 			}
@@ -59,7 +59,7 @@ ideas = {
 		SPR_nicolas_molero = {
 					
 					
-			allowed = {
+			visible = {
 				original_tag = SPR
 				NOT = { has_government = labryscism }
 			}
@@ -76,7 +76,7 @@ ideas = {
 		SPR_andres_saborit_colomer = {
 					
 					
-			allowed = {
+			visible = {
 				original_tag = SPR
 				NOT = { has_government = labryscism }
 			}
@@ -97,7 +97,7 @@ ideas = {
 			
 			picture = generic_army_europe_4
 			
-			allowed = {
+			visible = {
 				original_tag = SPR
 				NOT = { has_government = labryscism }
 			}
@@ -116,7 +116,7 @@ ideas = {
 			
 			picture = generic_army_europe_5
 			
-			allowed = {
+			visible = {
 				original_tag = SPR
 				NOT = { has_government = labryscism }
 			}
@@ -134,13 +134,13 @@ ideas = {
 			
 			picture = francisco_franco
 			
-			allowed = {
+			visible = {
 				original_tag = SPR
 			}
 			
-			available = {
+			visible = {
 				custom_trigger_tooltip = {
-					tooltip = spr_franco_unavailable_tooltip
+					tooltip = spr_franco_unvisible_tooltip
 					OR = {
 						has_government = labryscism
 						AND = {
@@ -174,7 +174,7 @@ ideas = {
 			
 			picture = generic_air_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = SPR
 				NOT = { has_government = labryscism }
 			}
@@ -192,7 +192,7 @@ ideas = {
 			
 			picture = generic_air_europe_3
 
-			allowed = {
+			visible = {
 				original_tag = SPR
 				NOT = { has_government = labryscism }
 			}
@@ -213,7 +213,7 @@ ideas = {
 			
 			picture = generic_navy_europe_1
 
-			allowed = {
+			visible = {
 				original_tag = SPR
 				NOT = { has_government = labryscism }
 			}
@@ -231,7 +231,7 @@ ideas = {
 			
 			picture = generic_navy_europe_2
 
-			allowed = {
+			visible = {
 				original_tag = SPR
 				NOT = { has_government = labryscism }
 			}
@@ -252,7 +252,7 @@ ideas = {
 			
 			picture = generic_army_europe_2
 
-			allowed = {
+			visible = {
 				original_tag = SPR
 				NOT = { has_government = labryscism }
 			}
@@ -270,7 +270,7 @@ ideas = {
 			
 			picture = generic_army_europe_3
 
-			allowed = {
+			visible = {
 				original_tag = SPR
 				NOT = { has_government = labryscism }
 			}
@@ -288,7 +288,7 @@ ideas = {
 			
 			picture = generic_navy_europe_2
 
-			allowed = {
+			visible = {
 				original_tag = SPR
 				NOT = { has_government = labryscism }
 			}
@@ -306,7 +306,7 @@ ideas = {
 			
 			picture = generic_navy_europe_2
 
-			allowed = {
+			visible = {
 				original_tag = SPR
 				NOT = { has_government = labryscism }
 			}
@@ -331,7 +331,7 @@ ideas = {
 			picture = generic_naval_manufacturer_3
 
 			
-			allowed = {
+			visible = {
 				original_tag = SPR
 			}
 			
@@ -360,7 +360,7 @@ ideas = {
 			picture = generic_air_manufacturer_2
 
 			
-			allowed = {
+			visible = {
 				original_tag = SPR
 			}
 			

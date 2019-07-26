@@ -1,18 +1,40 @@
 technologies = {
-
-	gw_artillery = {
-
+	
+	seige_cannon = {
 		enable_equipments = {
-			artillery_equipment_1
+			seige_cannon
 		}
-		
+
 		path = {
-			leads_to_tech = interwar_artillery 
+			leads_to_tech = experimental_artillery 
 			research_cost_coeff = 1
 		}
 
+		research_cost = 1.0
+		
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 0 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	experimental_artillery = {
+
+		enable_equipments = {
+			experimental_artillery
+		}
+		
 		path = {
-			leads_to_tech = interwar_antitank
+			leads_to_tech = gw_artillery 
 			research_cost_coeff = 1
 		}
 		
@@ -20,21 +42,36 @@ technologies = {
 			leads_to_tech = interwar_antiair 
 			research_cost_coeff = 1
 		}
+		
+		path = {
+			leads_to_tech = interwar_antitank
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = light_artillery_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = heavy_artillery
+			research_cost_coeff = 1
+		}
+		
 		enable_equipment_modules = { 
 			ship_anti_air_1
 		}
 		
 		research_cost = 1.5
-		
+		start_year = 1910
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 0 }
+			position = { x = 3 y = 2 }
 		}
 		
 		categories = {
 			artillery
 		}
-		
 		ai_will_do = {
 			factor = 2
 			
@@ -55,7 +92,64 @@ technologies = {
 		}
 	}
 	
-	interwar_artillery = {
+	gw_artillery = {
+
+		enable_equipments = {
+			artillery_equipment_1
+		}
+		
+		
+		path = {
+			leads_to_tech = improved_velocity
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = improved_firing_mechanisms
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = artillery1 
+			research_cost_coeff = 1
+		}
+		
+		enable_equipment_modules = { 
+			ship_anti_air_1
+		}
+		
+		research_cost = 1.5
+		start_year = 1928
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 4 }
+		}
+		
+		categories = {
+			artillery
+		}
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+	}
+	
+	
+	improved_velocity = {
 
 		artillery = {
 			soft_attack = 0.1
@@ -67,18 +161,13 @@ technologies = {
 			soft_attack = 0.1
 		}
 		
-		path = {
-			leads_to_tech = artillery1
-			research_cost_coeff = 1
-		}
-		
 		research_cost = 1.5
 
 		start_year = 1936
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 2 }
+			position = { x = 3 y = 6 }
 		}
 		
 		categories = {
@@ -102,6 +191,387 @@ technologies = {
 				factor = 5
 				date > "1939.1.1"
 			}
+		}
+	}
+	
+	improved_firing_mechanisms = {
+
+		artillery = {
+			soft_attack = 0.1
+		}
+		artillery_brigade = {
+			soft_attack = 0.1
+		}
+		mot_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1936
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 9 y = 6 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+	}
+	
+	
+	light_artillery_1 = {
+	
+		enable_equipments = {
+			light_artillery_equipment_1
+		}
+		
+		research_cost = 1
+
+		start_year = 1939
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		path = {
+			leads_to_tech = improved_velocity
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = improved_firing_mechanisms
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = light_artillery_2
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1939.1.6"
+			}
+		}
+	}
+	
+	light_artillery_2 = {
+	
+		enable_equipments = {
+			light_artillery_equipment_2
+		}
+		
+		research_cost = 1
+
+		start_year = 1930
+		
+		path = {
+			leads_to_tech = light_artillery_3
+			research_cost_coeff = 1
+		}
+		
+		dependencies = {
+            improved_firing_mechanisms = 1
+			improved_velocity = 1
+        }
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1939.1.6"
+			}
+		}
+	}
+	
+	light_artillery_3 = {
+	
+		enable_equipments = {
+			light_artillery_equipment_3
+		}
+		
+		research_cost = 1
+
+		start_year = 1930
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1939.1.6"
+			}
+		}
+	}
+	
+	heavy_artillery = {
+	
+		enable_equipments = {
+			heavy_artillery_equipment_1
+		}
+		
+		research_cost = 1
+
+		start_year = 1939
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 12 y = 4 }
+		}
+		
+		path = {
+			leads_to_tech = improved_velocity
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = improved_firing_mechanisms
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = heavy_artillery_2
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1939.1.6"
+			}
+		}
+	}
+	
+	heavy_artillery_2 = {
+	
+		enable_equipments = {
+			heavy_artillery_equipment_2
+		}
+		
+		research_cost = 1
+
+		start_year = 1939
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 12 y = 8 }
+		}
+		
+		
+		path = {
+            leads_to_tech = heavy_artillery_3
+            research_cost_coeff = 1
+        }
+		
+		dependencies = {
+            improved_firing_mechanisms = 1
+			improved_velocity = 1
+        }
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1939.1.6"
+			}
+		}
+	}
+	
+	heavy_artillery_3 = {
+	
+		enable_equipments = {
+			heavy_artillery_equipment_3
+		}
+		
+		research_cost = 1
+
+		start_year = 1939
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 12 y = 14 }
+		}
+		
+		path = {
+            leads_to_tech = railway_gun
+            research_cost_coeff = 0.9
+        }
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1939.1.6"
+			}
+		}
+	}
+	
+	railway_gun = {
+	
+		enable_equipments = {
+			railway_gun
+		}
+		
+		research_cost = 1
+
+		start_year = 1939
+		
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 16 y = 14 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1939.1.6"
+			}
+		}
+		categories = {
+			railway_gun_cat
 		}
 	}
 	
@@ -123,13 +593,18 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		dependencies = {
+            improved_firing_mechanisms = 1
+			improved_velocity = 1
+        }
+		
 		research_cost = 1
 
 		start_year = 1939
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 4 }
+			position = { x = 6 y = 8 }
 		}
 		
 		categories = {
@@ -184,7 +659,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 6 }
+			position = { x = 6 y = 10 }
 		}
 		
 		categories = {
@@ -234,7 +709,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 8 }
+			position = { x = 6 y = 12 }
 		}
 		
 		categories = {
@@ -280,7 +755,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 10 }
+			position = { x = 6 y = 14 }
 		}
 		
 		categories = {
@@ -325,7 +800,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 12 }
+			position = { x = 6 y = 16 }
 		}
 		
 		categories = {
@@ -394,7 +869,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 3 y = 6 }
+			position = { x = 9 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -437,7 +912,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 3 y = 8 }
+			position = { x = 9 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -480,7 +955,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 3 y = 10 }
+			position = { x = 9 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -519,7 +994,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 3 y = 12 }
+			position = { x = 9 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -562,7 +1037,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 2 }
+			position = { x = -8 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -627,7 +1102,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 4 }
+			position = { x = -8 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -675,7 +1150,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 6 }
+			position = { x = -8 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -725,7 +1200,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 8 }
+			position = { x = -8 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -775,7 +1250,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 10 }
+			position = { x = -8 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -818,7 +1293,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 12 }
+			position = { x = -8 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -860,7 +1335,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 2 }
+			position = { x = -4 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -948,7 +1423,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 4 }
+			position = { x = -4 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -1017,7 +1492,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 6 }
+			position = { x = -4 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -1095,7 +1570,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 8 }
+			position = { x = -4 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -1169,7 +1644,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 10 }
+			position = { x = -4 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -1233,7 +1708,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 12 }
+			position = { x = -4 y = 14 }
 		}
 		
 		ai_will_do = {

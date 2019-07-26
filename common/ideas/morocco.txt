@@ -8,7 +8,7 @@ ideas = {
 
 			picture = generic_political_advisor_arab_2
 
-			allowed = {
+			visible = {
 				original_tag = MOR
 			}
 			
@@ -19,7 +19,7 @@ ideas = {
 
 			picture = generic_political_advisor_arab_1
 				
-			allowed = {
+			visible = {
 				original_tag = MOR
 			}
 			
@@ -30,7 +30,7 @@ ideas = {
 
 			picture = generic_political_advisor_arab_3
 			
-			allowed = {
+			visible = {
 				original_tag = MOR
 			}
 			
@@ -44,7 +44,7 @@ ideas = {
 
 			picture = generic_army_arab_2
 			
-			allowed = {
+			visible = {
 				original_tag = MOR
 			}		
 			
@@ -59,7 +59,7 @@ ideas = {
 
 			picture = generic_army_arab_1
 			
-			allowed = {
+			visible = {
 				original_tag = MOR
 			}
 			
@@ -77,7 +77,7 @@ ideas = {
 
 			picture = generic_air_arab_3
 			
-			allowed = {
+			visible = {
 				original_tag = MOR
 			}
 			
@@ -92,7 +92,7 @@ ideas = {
 
 			picture = generic_air_arab_3
 			
-			allowed = {
+			visible = {
 				original_tag = MOR
 			}
 			
@@ -111,7 +111,7 @@ ideas = {
 
 			picture = generic_navy_arab_2
 			
-			allowed = {
+			visible = {
 				original_tag = MOR
 			}
 					
@@ -126,7 +126,7 @@ ideas = {
 
 			picture = generic_navy_arab_3
 			
-			allowed = {
+			visible = {
 				original_tag = MOR
 			}
 					
@@ -144,7 +144,7 @@ ideas = {
 			
 			picture = generic_army_arab_1
 			
-			allowed = {
+			visible = {
 				original_tag = MOR
 			}
 			
@@ -159,7 +159,7 @@ ideas = {
 
 			picture = generic_army_arab_3
 			
-			allowed = {
+			visible = {
 				original_tag = MOR
 			}
 			
@@ -174,7 +174,7 @@ ideas = {
 
 			picture = generic_army_arab_2
 			
-			allowed = {
+			visible = {
 				original_tag = MOR
 			}
 			
@@ -189,7 +189,7 @@ ideas = {
 
 			picture = generic_air_arab_2
 			
-			allowed = {
+			visible = {
 				original_tag = MOR
 			}
 			
@@ -204,7 +204,7 @@ ideas = {
 
 			picture = generic_navy_arab_2
 			
-			allowed = {
+			visible = {
 				original_tag = MOR
 			}
 			
@@ -221,7 +221,7 @@ ideas = {
 			
 			picture = generic_army_arab_1
 
-			allowed = {
+			visible = {
 				original_tag = MOR
 			}
 			
@@ -236,7 +236,7 @@ ideas = {
 
 			picture = generic_navy_arab_3
 			
-			allowed = {
+			visible = {
 				original_tag = MOR
 			}
 			
@@ -251,7 +251,7 @@ ideas = {
 
 			picture = generic_air_arab_2
 			
-			allowed = {
+			visible = {
 				original_tag = MOR
 			}
 			

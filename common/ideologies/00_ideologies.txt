@@ -282,7 +282,7 @@ ideologies = {
 	}
 
 
-#DEMOCRATIC
+#liberalism
 ##########################################################################################################################################
 	conservatism = {
 		types = {
@@ -292,12 +292,12 @@ ideologies = {
 			}
 		}
 		dynamic_faction_names = {
-			"FACTION_NAME_DEMOCRATIC_1"
-			"FACTION_NAME_DEMOCRATIC_2"
-			"FACTION_NAME_DEMOCRATIC_3"
-			"FACTION_NAME_DEMOCRATIC_4"
-			"FACTION_NAME_DEMOCRATIC_5"
-			"FACTION_NAME_DEMOCRATIC_6"
+			"FACTION_NAME_liberalism_1"
+			"FACTION_NAME_liberalism_2"
+			"FACTION_NAME_liberalism_3"
+			"FACTION_NAME_liberalism_4"
+			"FACTION_NAME_liberalism_5"
+			"FACTION_NAME_liberalism_6"
 		}
 		color = { 0 11 102 }
 		rules = {
@@ -337,12 +337,12 @@ ideologies = {
 		}
 
 		dynamic_faction_names = {
-			"FACTION_NAME_DEMOCRATIC_1"
-			"FACTION_NAME_DEMOCRATIC_2"
-			"FACTION_NAME_DEMOCRATIC_3"
-			"FACTION_NAME_DEMOCRATIC_4"
-			"FACTION_NAME_DEMOCRATIC_5"
-			"FACTION_NAME_DEMOCRATIC_6"
+			"FACTION_NAME_liberalism_1"
+			"FACTION_NAME_liberalism_2"
+			"FACTION_NAME_liberalism_3"
+			"FACTION_NAME_liberalism_4"
+			"FACTION_NAME_liberalism_5"
+			"FACTION_NAME_liberalism_6"
 		}
 
 		color = { 70 133 234 }
@@ -387,12 +387,12 @@ ideologies = {
 		}
 
 		dynamic_faction_names = {
-			"FACTION_NAME_DEMOCRATIC_1"
-			"FACTION_NAME_DEMOCRATIC_2"
-			"FACTION_NAME_DEMOCRATIC_3"
-			"FACTION_NAME_DEMOCRATIC_4"
-			"FACTION_NAME_DEMOCRATIC_5"
-			"FACTION_NAME_DEMOCRATIC_6"
+			"FACTION_NAME_liberalism_1"
+			"FACTION_NAME_liberalism_2"
+			"FACTION_NAME_liberalism_3"
+			"FACTION_NAME_liberalism_4"
+			"FACTION_NAME_liberalism_5"
+			"FACTION_NAME_liberalism_6"
 		}
 
 		color = { 81 191 255 }
@@ -426,7 +426,7 @@ ideologies = {
 		}
 		ai_democratic = yes # uses the liberalism AI behaviour
 	}
-#FASCISM
+#labryscism
 ##########################################################################################################################################
 	labryscism = {
 

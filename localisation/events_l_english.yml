@@ -20,31 +20,7 @@
  news.2.t:0 "President Coolidge Not Running For A Second Term"
  news.2.d:0 "Coolidge Not Running For A Second Term"
  news.2.a:0 "Messy Business"
- #USA
- le_USA.1.t:0 "The Nations Fractures"
- le_USA.1.d:0 ""
- le_USA.1.a:0 ""
- le_USA.2.t:0 "The Democratic National Convention"
- le_USA.2.d:0 "The Democratic National Convention"
- le_USA.3.t:0 "The Republican National Convention"
- le_USA.8.t:0 "General Strike"
- le_USA.8.d:0 "They came out in droves. Anger at President Reed’s crackdown on organized labor amidst the current economic downturn both the International Workers of the World (IWW) and the American Federation of Labor (AFL), two of the largest labor organizations in the United States have set aside their differences and called a general strike in opposition to the President’s policies. From Minneapolis to Norfolk, hundreds of thousands, maybe even millions, of blue-collar Americans have taken to the streets of their cities to protest the failures of the current administration. The economy is slowly grinding to halt especially in the north where the labor unions are the strongest. In the south, however, where organized labor is weak, most people curse the ‘Yankee Reds’. Meanwhile, in Washington, the President has called an emergency meeting of the cabinet."
- le_USA.8.a:0 "So it begins..."
- 
- le_USA.9.t:0 "The President's Address"
- le_USA.9.d:0 "Today, President James Reed made an address to both congress and the people over radio. ‘My fellow Americans, our nation is beset by an internal fifth column, that of the communist rabble rousers. They wish to destroy the America we hold dear, to turn it into a socialist dictatorship. They want to take away our businesses, our homes, and our livelihood. These communists wish nothing more than death and destruction for all. And I will not let this happen. America will be a beacon of liberty and the most steadfast foe of communist tyranny...’ As the President finishes his speech he comes to his final remarks. The whole nation leans in to their radios..."
- le_USA.9.a:0 "'If these socialists want a fight, I’ll give them hell.'"
- le_USA.9.b:0 "'It is important not to lose sight of the values which made our nation great.'"
- le_USA.10.t:0 "A March in Chicago"
- le_USA.10.d:0 "Shortly after the President’s announcement of a hardline stance towards the striking workers new protests were called by union leaders all across the country. The largest of which were in the left-wing stronghold of Chicago. All along Michigan Avenue, thousands of workers marched for better pay, better working conditions, and an end to the ‘War on the Working Class’ as they put it. Several notable socialists spoke at the protest, including IWW leaders Big Bill Haywood and Lucy Parsons. Socialist Party leader Eugene Debs also made a fiery speech decrying the President’s policies. However a speech by Emma Goldman calling for an effective revolution and ‘an end to capitalist exploitation’ worried even some of the protesters. A response by the authorities is awaited."
- le_USA.10.a:0 "Send in the boys in blue."
- presidents_address_tt:0 "§RTHIS ACTION WILL HAVE CONSEQUENCES§!\n"
- le_USA.11.t:0 "The Chicago Riots"
- le_USA.11.d:0 "Following the government’s decision to send in police to forcibly disperse the protesters in Chicago, violence ensued. Protesters grabbed bottles, canes, umbrellas, street signs, baseball bats, and even cobblestones to repulse the police officers. Mass riots gripped the second largest city in the United States and lasted over three days before a stalemate was reached. While law enforcement holds most of the city, the rioters maintain control of the downtown area. There, Lucy Parsons declared the creation of the Chicago Commune. This has sent shockwaves throughout the US but the Republican Governor of Illinois, Leo Small, has so far refused federal calls to send in the National Guard."
- le_USA.11.a:0 "We may need to federalize it"
- le_USA.12.t:0 "Democrats Protest"
- le_USA.12.d:0 "Following the President’s surprise turnaround on his campaign promises of being hard on unions, numerous Democrats have come out in open criticism of his policies. An open letter, signed by various high-ranking Democrats and even a few more conservative Republicans sharply criticized the the administration’s policies. Even a few fire-eater Democrats from the Deep South have called the President ‘A communist agent’ and named him as perhaps one of America’s worst leaders. President Reed has dismissed these allegations as ‘mere slander’ but already in the Capitol there are rumors of several high-profile resignations from the cabinet and some protests have broken out in the south."
- le_USA.12.a:0 "Can we negotiate at least with the socialists?"
+
  #France Events
  le_france.11.t:0 "The French Elections"
  le_france.11.d:0 "The king has stepped down, we must appoint a new government leader.
@@ -226,42 +202,6 @@
  dutchrevolt.2.t:0 "Start of the Revolt"
  dutchrevolt.2.d:0 "We have announced our revolt, time to attack and take Amsterdam!"
  dutchrevolt.2.a:0 "To Amsterdam!"
- #GREECE
- le_greece.1.t:0 "The Greek Elections of 1928"
- le_greece.1.d:0 "Elections have been a recent addition to the Greek Government. Ever since the Parliament was created in 1923 The Greeks elected a Prime minister, as well as representatives from each part of Greece. Even though they are still mostly all puppets to the King, the Prime Minister still has a say in government and what happens in the country. Today a new prime minister will be elected."
- le_greece.1.a:0 "Election Time!"
- le_greece.2.t:0 "Forming A Coalition Government"
- le_greece.2.d:0 "The day has come to elect a Prime Minister. There are four canidates. Firstly there is Eleftherios Venizelos, he is a liberal monarchist and supporter of the new parliament. He advocates for a stronger democracy, but still with a king. Secondly there is Nikos Zachariadis, he is the leader of the Hellenic Commune, and a symbol for many Greeks. Thirdly there is Georgios Tsolakoglou, he is part of the newly formed labryscist party, and the leader of the Spartan State. Lastly there is Charles Zervas, he is named after the French figurehead Charlemange, a current nationalist symbol in France. He beleives that the state should adopt a orthodox state religion and follow the old ways of the Byzantines. He still supports the monarchy, but only as hiself as the king."
- le_greece.2.I:0 "The Communist Nikos Zachariadis Wins"
- le_greece.2.II:0 "The Nationalist Georgios Tsolakoglou Wins"
- le_greece.2.III:0 "The Liberal Monarchist Eleftherios Venizelos Wins"
- le_greece.2.IV:0 "The Radical Charles Zervas Wins"
- le_greece.14.t:0 "Military Coup"
- le_greece.14.d:0 "Today high ranking Generals have been seen running around in haste, the military is on high alert and poised to launch a coup. While there are some loyal to the government still, a overwhelming majority have joined up in arms to overthrow the government. We must act quickly to crush the officers and hope the army isnt as loyal as them seem."
- le_greece.14.a:0 "The Coup Succeeds \n( §gDespotism§! Becomes The Ruling Party )"
- le_greece.14.b:0 "The Coup Fails"
- le_greece.15.t:0 "Theocratic Coup"
- le_greece.15.d:0 "The political party "The Hands Of God" has been a thorn in Greece's side for years. Starting as a minor party they have grown popular with the religous of the state. They have sensed weakness in the government, and hoping to gain Constantines support have launched a secret coup. A meeting is currently being held between the Theocrats and the King about the future of the State. Will Constantine cave under the pressure of the faith, or will be countinue ruling as a king, and be the one and only ruler of Greece?"
- le_greece.15.a:0 "Constantine Submits/n( §gTheocratic§! Becomes The Ruling Party )"
- le_greece.15.b:0 "Constantine Kicks Out The Theocrats"\
- le_greece.16.t:0 "Labor Strikes"
- le_greece.16.d:0 "Today in Athens a large portion of workers demanding better pay and working conditions have gone on strike and are refusing to work. Unfortunately, this initially peaceful demonstration has spiralled out of control with certain far-left elements becoming increasingly prevalent. With violence rising by the hour, we were forced to send in the police who forcibly broke the strike."
- le_greece.16.a:0 "How Unfortunate"
- le_greece.17.t:0 "The Loyal Legion"
- le_greece.17.d:0 "As of late a long-time subversive organization called the 'Loyal Legion' has been conducting more and more attacks on police, military, and government buildings. The Legion pushes for Prince Constantine to become the King of Greece. Yesterday, numreous pro-Constantine slogans were painted across Athens and some of our senior intelligence analysts warn that a significant number of military officers are secretly pro-Constantine. The most notable Loyal Legion activity was a bombing at the Police HQ in Athens just last week which killed seven officers and wounded thirteen more. In the rubble a picture of Constantine was found along with a slogan saying 'Long live the true King'."
- le_greece.17.a:0 "Damn Traitors"
- le_greece.18.t:0 "The King's Secert"
- le_greece.18.d:0 "It is well known that King Constantine has had many...adventures of the romantic kind. He once spent a hedonistic and well-documented weekend in Nice with several female relations of some very powerful individuals. However, as Constantine is now King his personal life is far less secretive and certain reports have reached the press that the King, in addition to his love of women has a certain...taste, so to speak, for men. While this is obviously just some silly rumor both the populace and the powerful orthodox church are worried about their King's indecent ways."
- le_greece.18.a:0 "How did this get out?!"
- 
- le_greece.19.t:0 "Gyaros Island"
- le_greece.19.d:0 "Gyaros Island sits in the western part of the Aegean Sea and has hosted a small prison since the reign of Leopold II. However, by expanding the installation we can hold more dissidents and treasons citizens with a very low chance of escaping. However some are concerned that the expense will not be worth the possible public backlash."
- le_greece.19.a:0 "Expand The Prison"
- le_greece.19.b:0 "It’s Not Worth it"
- 
- le_greece.20.t:0 "The Gyaros Report"
- le_greece.20.d:0 "Since our expansion of the prison complex on Gyaros island certain rumors have been circulating among our population that the prison is host to grave violations of people’s rights. Some time ago several foreign newspapers published a scathing article titled the ‘Gyaros Report’ which details what goes on at the island prison. Stories of prisoners being forced into tubs of human vomit or reports of dissidents being herded into crowded cells with cattle prods have outraged the population."
- le_greece.20.a:0 "A Small Price To Pay For Salvation"
  
  #GREEK CIVIL WAR
  le_greek_civil_war.1.t:0 "Hugely Successful Attack"
@@ -389,19 +329,6 @@
  le_russia.10.d:0 "We have Conquered the Caucasus, how shall we divide the newly conquered land?"
  le_russia.10.a:0 "Form Seperate Caucasus States"
  le_russia.10.b:0 "Form The Transcaucasian Soviet Socialist Republic"
- #POLAND
- le_poland.1.t:0 "Prussia Occupies Our Land!"
- le_poland.1.d:0 "In our time of weakness Prussia has exploited us and moved their army into our nation. We can resist, but will easily be defeated. Our future seems to be in the Prussians hands now."
- le_poland.1.a:0 "Damn!"
-
- le_poland.2.t:0 "Russia Occupies Our Land!"
- le_poland.2.d:0 "In our time of weakness Russia has exploited us and moved their army into our nation. We can resist, but will easily be defeated. Our future seems to be in the Prussians hands now."
- le_poland.2.a:0 "Damn!"
- 
- le_poland.3.t:0 "Poland Offers An Alliance"
- le_poland.3.d:0 "Poland remembers the days of old, then we have been in a union. Since they the Lithuanian people have established their identity more than ever before, and returning to these ways may not be popular any more with the populace. However their are many in the government that see the threat to the Polish government and ours, an alliance may be a good idea to protect both of our nations."
- le_poland.3.a:0 "Agree"
- le_poland.3.b:0 "Deny"
 
  #HRE ELECTIONS
  hre.1.t:0 "Holy Roman Elections"

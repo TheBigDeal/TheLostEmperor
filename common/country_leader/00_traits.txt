@@ -4,26 +4,6 @@ leader_traits = {
 	##												MOD													##
 	######################################################################################################
 	######################################################################################################
-	usa_the_lawman = {
-		random = no
-		sprite = 13
-		drift_defence_factor = 0.05
-	}
-	usa_the_pragmatist = {
-		random = no
-		sprite = 13
-		stability_factor = 0.05
-	}
-	usa_the_heir = {
-		random = no
-		sprite = 13
-		political_advisor_cost_factor = -0.10
-	}
-	usa_the_underdog = {
-		random = no
-		sprite = 13
-		political_power_gain = 0.5
-	}
 	gre_nationalist_symbol = {
 		random = no
 		sprite = 13
@@ -39,6 +19,54 @@ leader_traits = {
 		stability_factor = 0.15
 		ai_will_do = {
 			factor = 0
+		}
+	}
+	political_protegee = {
+		random = no
+		political_power_gain = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	naive_appeaser = {
+		random = no
+		opinion_gain_monthly_factor = 0.10
+		political_power_gain = -0.04
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	laissez_faire_capitalist = {
+		random = no
+		political_power_gain = 0.03
+		local_resources_factor = -0.05
+		production_factory_max_efficiency_factor = 0.06
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	old_general = {
+		random = no
+		experience_gain_army = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	bland_bueaucrat = {
+		random = no
+		political_power_gain = 0.03
+		stability_factor = -0.02
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	expert_spymaster = {
+		random = no
+		encryption_factor = 1
+		decryption_factor = 1
+		foreign_subversive_activites = -0.05
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	dislikes_britain = {
@@ -83,7 +111,7 @@ leader_traits = {
 		proletarianism_acceptance = -50
 		collectivism_acceptance = -50
 		despotism_acceptance = -50
-		labryscist_acceptance = -50
+		labryscism_acceptance = -50
 		ai_will_do = {
 			factor = 0
 		}
@@ -1059,7 +1087,7 @@ leader_traits = {
 	# drift is a percent applied weekly
 	communist_revolutionary = {
 		random = no
-		# Boosts Communism
+		# Boosts collectivism
 		sprite = 13
 		collectivism_drift = 0.1
 		
@@ -1084,7 +1112,7 @@ leader_traits = {
 	
 	fascist_demagogue = {
 		random = no
-		# Boosts Fascism
+		# Boosts labryscism
 		sprite = 13
 		labryscism_drift = 0.1
 		

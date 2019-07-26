@@ -1,70 +1,129 @@
 ideas = {
+	country = {
+		pol_protect_orthodox_christians = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pol_protect_orthodox_christians"}
+			picture = generic_pp_unity_bonus
+			modifier = {
+				political_power_gain = -0.10
+				MONTHLY_POPULATION = 0.02
+			}
+		}	
+		pol_de_facto_government = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pol_de_facto_government"}
+			picture = generic_pp_unity_bonus
+			modifier = {
+				political_power_gain = -0.10
+				trade_opinion_factor = -0.25
+				opinion_gain_monthly_factor = -0.15
+			}
+		}
+		pol_russian_sponsored_military = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pol_surrounded_on_all_sides"}
+			picture = chi_war_of_resistance3
+			modifier = {
+				conscription_factor = 0.15
+				army_org_factor = 0.05
+				supply_consumption_factor = -0.10
+			}
+		}
+		pol_austrian_sponsored_military = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pol_surrounded_on_all_sides"}
+			picture = chi_war_of_resistance3
+			modifier = {
+				conscription_factor = 0.10
+				army_org_factor = 0.10
+				non_core_manpower = 0.02
+			}
+		}
+		pol_prussian_sponsored_military = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pol_surrounded_on_all_sides"}
+			picture = chi_war_of_resistance3
+			modifier = {
+				conscription_factor = 0.05
+				army_org_factor = 0.15
+				army_speed_factor = 0.05
+			}
+		}
+		pol_surrounded_on_all_sides = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pol_surrounded_on_all_sides"}
+			picture = chi_war_of_resistance3
+			modifier = {
+				ai_focus_defense_factor = 0.5
+				army_core_defence_factor = 0.10
+				conscription_factor = 0.05
+			}
+		}
+		pol_revolutionary_generals = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pol_revolutionary_generals"}
+			picture = MEX_politicised_army_2
+			modifier = {
+				max_planning = 0.25
+				army_leader_start_defense_level= 1
+			}
+			targeted_modifier = { tag = PRS attack_bonus_against = 0.05 }
+			targeted_modifier = { tag = PRS defense_bonus_against = 0.15 }
+			targeted_modifier = { tag = RUS attack_bonus_against = 0.05 }
+			targeted_modifier = { tag = RUS defense_bonus_against = 0.15 }
+		}
+	}
+	head_of_government = {
+		POL_Wladyslaw_Sikorski = {
+			picture = generic_political_advisor_europe_5
+			visible = {
+				original_tag = POL
+			}
+			cost = 250
+		}	
+	}
+	foreign_minister = {
+		POL_Edward_Bernard_Raczynski = {
+			picture = generic_political_advisor_europe_4
+			visible = {
+				original_tag = POL
+			}
+			traits = { monarchist_diplomat }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	defence_minister = {
+		POL_Tadeusz_Kaprzycki = {
+			picture = generic_political_advisor_europe_3
+			visible = {
+				original_tag = POL
+			}
+			traits = { rifleman }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	economy_minister = {
+		POL_Wladyslaw_Grabski = {
+			picture = generic_political_advisor_europe_2
+			visible = {
+				original_tag = POL
+			}
+			traits = { economic_reformer }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	security_minister = {
+		POL_Maciej_Rataj = {
+			picture = generic_political_advisor_europe_1
+			visible = {
+				original_tag = POL
+			}
+			traits = { writer }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	intel_minister = {
 
-country = {
-	pol_protect_orthodox_christians = {
-        on_add = {log = "[GetDateText]: [Root.GetName]: add idea pol_protect_orthodox_christians"}
-        picture = generic_pp_unity_bonus
-		modifier = {
-			political_power_gain = -0.10
-			MONTHLY_POPULATION = 0.02
-		}
-    }	
-	pol_de_facto_government = {
-        on_add = {log = "[GetDateText]: [Root.GetName]: add idea pol_de_facto_government"}
-        picture = generic_pp_unity_bonus
-		modifier = {
-			political_power_gain = -0.10
-			political_advisor_cost_factor = 1.0
-			trade_opinion_factor = -0.25
-			opinion_gain_monthly_factor = -0.15
-		}
-    }
-	pol_russian_sponsored_military = {
-        on_add = {log = "[GetDateText]: [Root.GetName]: add idea pol_surrounded_on_all_sides"}
-        picture = chi_war_of_resistance3
-		modifier = {
-			conscription_factor = 0.15
-			army_org_factor = 0.05
-			supply_consumption_factor = -0.10
-		}
-    }
-	pol_austrian_sponsored_military = {
-        on_add = {log = "[GetDateText]: [Root.GetName]: add idea pol_surrounded_on_all_sides"}
-        picture = chi_war_of_resistance3
-		modifier = {
-			conscription_factor = 0.10
-			army_org_factor = 0.10
-			non_core_manpower = 0.02
-		}
-    }
-	pol_prussian_sponsored_military = {
-        on_add = {log = "[GetDateText]: [Root.GetName]: add idea pol_surrounded_on_all_sides"}
-        picture = chi_war_of_resistance3
-		modifier = {
-			conscription_factor = 0.05
-			army_org_factor = 0.15
-			army_speed_factor = 0.05
-		}
-    }
-	pol_surrounded_on_all_sides = {
-        on_add = {log = "[GetDateText]: [Root.GetName]: add idea pol_surrounded_on_all_sides"}
-        picture = chi_war_of_resistance3
-		modifier = {
-			ai_focus_defense_factor = 0.5
-			army_core_defence_factor = 0.10
-			conscription_factor = 0.05
-		}
-    }
-	pol_revolutionary_generals = {
-        on_add = {log = "[GetDateText]: [Root.GetName]: add idea pol_revolutionary_generals"}
-        picture = MEX_politicised_army_2
-		modifier = {
-			max_planning = 0.25
-			army_leader_start_defense_level= 1
-		}
-		targeted_modifier = { tag = PRS attack_bonus_against = 0.05 }
-		targeted_modifier = { tag = PRS defense_bonus_against = 0.15 }
-		targeted_modifier = { tag = RUS attack_bonus_against = 0.05 }
-		targeted_modifier = { tag = RUS defense_bonus_against = 0.15 }
-    }
+	}
 }

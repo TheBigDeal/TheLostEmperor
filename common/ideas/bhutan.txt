@@ -6,7 +6,7 @@ ideas = {
 
 			picture = generic_political_advisor_asia_3
 			
-			available = {
+			visible = {
 				original_tag = BHU
 			}
 			
@@ -17,7 +17,7 @@ ideas = {
 
 			picture = generic_political_advisor_asia_2
 				
-			available = {
+			visible = {
 				original_tag = BHU
 			}
 			
@@ -28,7 +28,7 @@ ideas = {
 
 			picture = generic_political_advisor_asia_1
 			
-			available = {
+			visible = {
 				original_tag = BHU
 			}
 			
@@ -42,7 +42,7 @@ ideas = {
 			
 			picture = generic_army_asia_3
 
-			available = {
+			visible = {
 				original_tag = BHU
 			}
 			
@@ -58,7 +58,7 @@ ideas = {
 
 			picture = generic_army_asia_1
 			
-			available = {
+			visible = {
 				original_tag = BHU
 			}
 			
@@ -78,7 +78,7 @@ ideas = {
 			
 			picture = generic_air_asia_2
 			
-			available = {
+			visible = {
 				original_tag = BHU
 			}
 			
@@ -94,7 +94,7 @@ ideas = {
 
 			picture = generic_air_asia_3
 			
-			available = {
+			visible = {
 				original_tag = BHU
 			}
 			
@@ -113,7 +113,7 @@ ideas = {
 			
 			picture = generic_navy_asia_1
 
-			available = {
+			visible = {
 				original_tag = BHU
 			}
 					
@@ -129,7 +129,7 @@ ideas = {
 			
 			picture = generic_navy_asia_2
 
-			available = {
+			visible = {
 				original_tag = BHU
 			}
 					
@@ -147,7 +147,7 @@ ideas = {
 
 			picture = generic_army_asia_4
 			
-			available = {
+			visible = {
 				original_tag = BHU
 			}
 			
@@ -162,7 +162,7 @@ ideas = {
 
 			picture = generic_army_asia_5
 			
-			available = {
+			visible = {
 				original_tag = BHU
 			}
 			
@@ -177,7 +177,7 @@ ideas = {
 
 			picture = generic_air_asia_3
 			
-			available = {
+			visible = {
 				original_tag = BHU
 			}
 			
@@ -192,7 +192,7 @@ ideas = {
 
 			picture = generic_navy_asia_1
 			
-			available = {
+			visible = {
 				original_tag = BHU
 			}
 			
@@ -211,7 +211,7 @@ ideas = {
 
 			picture = generic_army_asia_2
 			
-			available = {
+			visible = {
 				original_tag = BHU
 			}
 			
@@ -226,7 +226,7 @@ ideas = {
 
 			picture = generic_air_asia_2
 			
-			available = {
+			visible = {
 				original_tag = BHU
 			}
 			
@@ -241,7 +241,7 @@ ideas = {
 
 			picture = generic_navy_asia_2
 			
-			available = {
+			visible = {
 				original_tag = BHU
 			}
 			

@@ -6,7 +6,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = LAT
 			}
 			
@@ -17,7 +17,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 				
-			allowed = {
+			visible = {
 				original_tag = LAT
 			}
 			
@@ -28,7 +28,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = LAT
 			}
 			
@@ -42,7 +42,7 @@ ideas = {
 					
 			picture = generic_army_europe_4
 
-			allowed = {
+			visible = {
 				original_tag = LAT
 			}
 			
@@ -57,7 +57,7 @@ ideas = {
 					
 			picture = generic_air_europe_1
 				
-			allowed = {
+			visible = {
 				original_tag = LAT
 			}
 			
@@ -75,7 +75,7 @@ ideas = {
 
 			picture = generic_air_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = LAT
 			}
 			
@@ -90,7 +90,7 @@ ideas = {
 
 			picture = generic_navy_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = LAT
 			}
 			
@@ -105,7 +105,7 @@ ideas = {
 
 			picture = generic_army_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = LAT
 			}
 			
@@ -120,7 +120,7 @@ ideas = {
 
 			picture = generic_army_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = LAT
 			}
 			
@@ -137,7 +137,7 @@ ideas = {
 		LAT_fricis_celmins = {
 			picture = generic_army_europe_5
 			
-			allowed = {
+			visible = {
 				original_tag = LAT
 			}
 			
@@ -153,7 +153,7 @@ ideas = {
 		LAT_rudolfs_kocins = {
 			picture = generic_army_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = LAT
 			}
 			
@@ -169,7 +169,7 @@ ideas = {
 		LAT_arturs_sprogis = {
 			picture = generic_army_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = LAT
 			}
 			
@@ -188,7 +188,7 @@ ideas = {
 		LAT_konstantins_cakste = {
 			picture = generic_air_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = LAT
 			}
 			
@@ -204,7 +204,7 @@ ideas = {
 		LAT_izglitibas_tautas = {
 			picture = generic_air_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = LAT
 			}
 			
@@ -223,7 +223,7 @@ ideas = {
 		LAT_tomas_spade = {
 			picture = generic_navy_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = LAT
 			}
 			
@@ -239,7 +239,7 @@ ideas = {
 		LAT_teodors_zvejnieks = {
 			picture = generic_navy_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = LAT
 			}
 			
@@ -261,7 +261,7 @@ ideas = {
 			picture = generic_air_manufacturer_1
 
 			
-			allowed = {
+			visible = {
 				original_tag = LAT
 			}
 			
@@ -289,7 +289,7 @@ ideas = {
 			picture = generic_naval_manufacturer_2
 
 			
-			allowed = {
+			visible = {
 				original_tag = LAT
 			}
 			

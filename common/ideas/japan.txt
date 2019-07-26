@@ -2,7 +2,7 @@ ideas = {
 	political_advisor = {	
 		sanzo_nosaka = {
 			
-			available = {
+			visible = {
 				if = {
 					limit = {
 						has_DLC = "Waking the Tiger"
@@ -10,7 +10,7 @@ ideas = {
 					has_completed_focus = JAP_the_unthinkable_option
 				}
 			}
-			allowed = {
+			visible = {
 				original_tag = "JAP"
 			}
 			
@@ -31,7 +31,7 @@ ideas = {
 			
 		kijuro_shidehara = {
 			
-			available = {
+			visible = {
 				if = {
 					limit = {
 						has_DLC = "Waking the Tiger"
@@ -40,7 +40,7 @@ ideas = {
 				}
 			}
 			
-			allowed = {
+			visible = {
 				original_tag = "JAP"
 			}
 			
@@ -62,7 +62,7 @@ ideas = {
 		kingoro_hashimoto = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "JAP"
 			}
 			
@@ -85,7 +85,7 @@ ideas = {
 			
 			picture = generic_political_advisor_asia_2
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -96,7 +96,7 @@ ideas = {
 			
 			picture = generic_political_advisor_asia_1
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -107,7 +107,7 @@ ideas = {
 			
 			picture = generic_political_advisor_asia_3
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -118,7 +118,7 @@ ideas = {
 
 			picture = takuo_godo
 
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 
@@ -136,7 +136,7 @@ ideas = {
 		kanin_kotohito = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -152,7 +152,7 @@ ideas = {
 		hajime_sugiyama = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -166,7 +166,7 @@ ideas = {
 		hideki_tojo = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -186,7 +186,7 @@ ideas = {
 		fushimi_hiroyasu = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -202,7 +202,7 @@ ideas = {
 		osami_nagano = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -218,7 +218,7 @@ ideas = {
 		shigetaro_shimada = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -237,7 +237,7 @@ ideas = {
 		torashiro_kawabe = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -253,7 +253,7 @@ ideas = {
 		korechika_anami = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -269,7 +269,7 @@ ideas = {
 		kenji_doihara = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -289,7 +289,7 @@ ideas = {
 		hitoshi_imamura = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -305,7 +305,7 @@ ideas = {
 		yasuji_okamura = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -327,7 +327,7 @@ ideas = {
 		shunroku_hata = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -343,7 +343,7 @@ ideas = {
 		mitsuo_fuchida = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -359,7 +359,7 @@ ideas = {
 		nishizo_tsukahara = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -375,7 +375,7 @@ ideas = {
 		tateo_kato = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -391,7 +391,7 @@ ideas = {
 		soemu_toyoda = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -407,7 +407,7 @@ ideas = {
 		matome_ugaki = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -423,7 +423,7 @@ ideas = {
 		chuichi_nagumo = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -445,7 +445,7 @@ ideas = {
 		kure_naval_arsenal = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 
@@ -461,7 +461,7 @@ ideas = {
 		
 		yokosuka_naval_arsenal = {
 						
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -478,7 +478,7 @@ ideas = {
 		
 		maizuru_naval_arsenal = {
 						
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 				
@@ -495,7 +495,7 @@ ideas = {
 		
 		sasebo_naval_arsenal = {
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -517,7 +517,7 @@ ideas = {
 		
 		mitsubishi = {
 						
-			allowed = {
+			visible = {
 				original_tag = JAP		
 			}
 			
@@ -534,7 +534,7 @@ ideas = {
 
 		aichi = {
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 						
@@ -547,7 +547,7 @@ ideas = {
 		
 		nakajima = {
 						
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -561,7 +561,7 @@ ideas = {
 		
 		yokosuka = {
 						
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 						
@@ -578,7 +578,7 @@ ideas = {
 	
 		kawasaki = {
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -592,7 +592,7 @@ ideas = {
 		
 		sumitomo = {
 						
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 						
@@ -607,7 +607,7 @@ ideas = {
 						
 			picture = generic_industrial_concern_2
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 						
@@ -626,7 +626,7 @@ ideas = {
 		
 		tokyo_arsenal = {
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -639,7 +639,7 @@ ideas = {
 		
 		nissan = {
 						
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 						
@@ -658,7 +658,7 @@ ideas = {
 	
 		osaka_army_arsenal = {
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 				
@@ -674,7 +674,7 @@ ideas = {
 		
 		tomoyuki_yamashita = {
 						
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -689,7 +689,7 @@ ideas = {
 		
 		hisaichi_terauchi = {
 						
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 						
@@ -702,7 +702,7 @@ ideas = {
 		
 		isoroku_yamamoto = {
 						
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -717,7 +717,7 @@ ideas = {
 		
 		minoru_genda = {
 						
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 						
@@ -730,7 +730,7 @@ ideas = {
 		
 		yoshitoshi_tokugawa = {
 						
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -745,7 +745,7 @@ ideas = {
 		
 		hino_kumazo = {
 						
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}	
 			
@@ -759,7 +759,7 @@ ideas = {
 		yoshio_nishina = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			
@@ -775,7 +775,7 @@ ideas = {
 		hideo_itokawa = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = JAP
 			}
 			

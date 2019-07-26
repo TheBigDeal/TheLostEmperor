@@ -8,7 +8,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -19,7 +19,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 				
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -30,7 +30,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -43,7 +43,7 @@ ideas = {
 		BEL_victor_strydonck_burkel = {
 			picture = generic_army_europe_3
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -59,7 +59,7 @@ ideas = {
 		BEL_leon_degrelle = {
 			picture = generic_army_europe_2
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -75,7 +75,7 @@ ideas = {
 		BEL_charles_bastin = {
 			picture = generic_army_europe_4
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -94,7 +94,7 @@ ideas = {
 		BEL_jules_iserentant = {
 			picture = generic_air_europe_3
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -110,7 +110,7 @@ ideas = {
 		BEL_raoul_overstraeten = {
 			picture = generic_air_europe_3
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -130,7 +130,7 @@ ideas = {
 		BEL_fritz_conrad = {
 			picture = generic_navy_europe_2
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -146,7 +146,7 @@ ideas = {
 		BEL_georges_vereecken = {
 			picture = generic_navy_europe_1
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -166,7 +166,7 @@ ideas = {
 			
 			picture = generic_army_europe_1
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -181,7 +181,7 @@ ideas = {
 
 			picture = generic_army_europe_5
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -196,7 +196,7 @@ ideas = {
 
 			picture = generic_air_europe_3
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -211,7 +211,7 @@ ideas = {
 
 			picture = generic_navy_europe_2
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -228,7 +228,7 @@ ideas = {
 			
 			picture = generic_army_europe_6
 
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -243,7 +243,7 @@ ideas = {
 			
 			picture = generic_air_europe_1
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -258,7 +258,7 @@ ideas = {
 
 			picture = generic_navy_europe_1
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -280,7 +280,7 @@ ideas = {
 			picture = renault
 
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -299,7 +299,7 @@ ideas = {
 			picture = generic_tank_manufacturer_2
 		
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -323,7 +323,7 @@ ideas = {
 			picture = generic_air_manufacturer_2
 
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -346,7 +346,7 @@ ideas = {
 			picture = generic_air_manufacturer_2
 
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -374,7 +374,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			
@@ -395,7 +395,7 @@ ideas = {
 			picture = generic_infantry_equipment_manufacturer_2
 
 			
-			available = {
+			visible = {
 				original_tag = BEL
 			}
 			

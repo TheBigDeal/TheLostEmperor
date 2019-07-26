@@ -6,7 +6,7 @@ ideas = {
 		law = yes
 		tno_political_parties_one_party_state = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_political_parties_one_party_state"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			removal_cost = -1
 			modifier = {
 				political_power_gain = 0.15
@@ -17,7 +17,7 @@ ideas = {
 		}
 		tno_political_parties_controlled_opposition = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_political_parties_controlled_opposition"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			default = yes
 			removal_cost = -1
 			modifier = {
@@ -30,7 +30,7 @@ ideas = {
 		}
 		tno_political_parties_multiparty_system = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_political_parties_multiparty_system"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -45,127 +45,117 @@ ideas = {
 		tno_religious_rights_catholicism = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_religious_rights_catholicism"}
 			default = yes
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.10
-				war_support_factor = 0.05
+
 			}
 			cancel_if_invalid = no
 			ai_will_do = { } #TODO CHANGEME
 		}
 		tno_religious_rights_protestantism = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_religious_rights_protestantism"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.10
-				war_support_factor = 0.05
+
 			}
 			cancel_if_invalid = no
 			ai_will_do = { } #TODO CHANGEME
 		}
 		tno_religious_rights_orthodox = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_religious_rights_orthodox"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.10
-				war_support_factor = 0.05
+
 			}
 			cancel_if_invalid = no
 			ai_will_do = { } #TODO CHANGEME
 		}
 		tno_religious_rights_judism = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_religious_rights_judism"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.10
-				war_support_factor = 0.05
+
 			}
 			cancel_if_invalid = no
 			ai_will_do = { } #TODO CHANGEME
 		}
 		tno_religious_rights_shia = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_religious_rights_shia"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.10
-				war_support_factor = 0.05
+
 			}
 			cancel_if_invalid = no
 			ai_will_do = { } #TODO CHANGEME
 		}
 		tno_religious_rights_sunni = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_religious_rights_sunni"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.10
-				war_support_factor = 0.05
+
 			}
 			cancel_if_invalid = no
 			ai_will_do = { } #TODO CHANGEME
 		}
 		tno_religious_rights_mormonism = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_religious_rights_mormonism"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.10
-				war_support_factor = 0.05
+
 			}
 			cancel_if_invalid = no
 			ai_will_do = { } #TODO CHANGEME
 		}
 		tno_religious_rights_sikhism = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_religious_rights_sikhism"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.10
-				war_support_factor = 0.05
+
 			}
 			cancel_if_invalid = no
 			ai_will_do = { } #TODO CHANGEME
 		}
 		tno_religious_rights_hinduism = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_religious_rights_hinduism"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.10
-				war_support_factor = 0.05
+
 			}
 			cancel_if_invalid = no
 			ai_will_do = { } #TODO CHANGEME
 		}
 		tno_religious_rights_buddhism = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_religious_rights_buddhism"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.025
+
 			} #TODO CHANGEME
 			cancel_if_invalid = no
 			ai_will_do = { } #TODO CHANGEME
 		}
 		tno_religious_rights_shintoism = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_religious_rights_shintoism"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.10
-				war_support_factor = 0.05
+
 			}
 			cancel_if_invalid = no
 			ai_will_do = { } #TODO CHANGEME
 		}
 		tno_religious_rights_confucianism = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_religious_rights_confucianism"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.025
@@ -175,14 +165,20 @@ ideas = {
 		}
 		tno_religious_rights_state_atheism = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_religious_rights_state_atheism"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
-				stability_factor = -0.025
-				war_support_factor = 0.05
-				drift_defence_factor = 0.50
-				political_power_gain = 0.05
+
+			}
+			cancel_if_invalid = no
+			ai_will_do = { } #TODO CHANGEME
+		}
+		tno_religious_rights_secularism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_religious_rights_state_atheism"}
+			visible = { always = no } #TODO CHANGEME
+			removal_cost = -1
+			modifier = {
 			}
 			cancel_if_invalid = no
 			ai_will_do = { } #TODO CHANGEME
@@ -193,7 +189,7 @@ ideas = {
 		tno_trade_unions_illegal = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_trade_unions_illegal"}
 			default = yes
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -207,7 +203,7 @@ ideas = {
 		}
 		tno_trade_unions_state_controlled = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_trade_unions_state_controlled"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -219,9 +215,9 @@ ideas = {
 			cancel_if_invalid = no
 			ai_will_do = { } #TODO CHANGEME
 		}
-		tno_trade_unions_nonsocialist_allowed = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_trade_unions_nonsocialist_allowed"}
-			available = { always = no } #TODO CHANGEME
+		tno_trade_unions_nonsocialist_visible = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_trade_unions_nonsocialist_visible"}
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -231,9 +227,9 @@ ideas = {
 			cancel_if_invalid = no
 			ai_will_do = { } #TODO CHANGEME
 		}
-		tno_trade_unions_all_allowed = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_trade_unions_all_allowed"}
-			available = { always = no } #TODO CHANGEME
+		tno_trade_unions_all_visible = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_trade_unions_all_visible"}
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -251,7 +247,7 @@ ideas = {
 		tno_immigration_closed_borders = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_immigration_closed_borders"}
 			default = yes
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -263,7 +259,7 @@ ideas = {
 		}
 		tno_immigration_quota_immigration = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_immigration_quota_immigration"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -275,7 +271,7 @@ ideas = {
 		}
 		tno_immigration_open_immigration = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_immigration_open_immigration"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -286,7 +282,7 @@ ideas = {
 		}
 		tno_immigration_naturalization = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_immigration_naturalization"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -298,7 +294,7 @@ ideas = {
 		}
 		tno_immigration_encouraged_immigration = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_immigration_encouraged_immigration"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -312,9 +308,9 @@ ideas = {
 	tno_slavery = {
 		law = yes
 		tno_slavery_allowed = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_slavery_allowed"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_slavery_visible"}
 			default = yes
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -333,7 +329,7 @@ ideas = {
 		}
 		tno_slavery_corvee = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_slavery_corvee"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -352,7 +348,7 @@ ideas = {
 		}
 		tno_slavery_outlawed = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_slavery_outlawed"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -367,7 +363,7 @@ ideas = {
 		tno_public_meetings_outlawed = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_public_meetings_outlawed"}
 			default = no
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -378,7 +374,7 @@ ideas = {
 		}
 		tno_public_meetings_regulated = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_public_meetings_regulated"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -388,9 +384,9 @@ ideas = {
 			cancel_if_invalid = no
 			ai_will_do = { } #TODO CHANGEME
 		}
-		tno_public_meetings_allowed = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_public_meetings_allowed"}
-			available = { always = no } #TODO CHANGEME
+		tno_public_meetings_visible = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_public_meetings_visible"}
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -405,7 +401,7 @@ ideas = {
 		tno_press_rights_state_press_only = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_press_rights_state_press_only"}
 			default = yes
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -417,7 +413,7 @@ ideas = {
 		}
 		tno_press_rights_censored_press = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_press_rights_censored_press"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -429,7 +425,7 @@ ideas = {
 		}
 		tno_press_rights_free_press = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_press_rights_free_press"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -445,7 +441,7 @@ ideas = {
 		tno_vote_franchise_no_voting = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_vote_franchise_no_voting"}
 			default = yes
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -457,7 +453,7 @@ ideas = {
 		}
 		tno_vote_franchise_elite_voting = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_vote_franchise_elite_voting"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -469,7 +465,7 @@ ideas = {
 		}
 		tno_vote_franchise_registered_voting = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_vote_franchise_registered_voting"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -481,7 +477,7 @@ ideas = {
 		}
 		tno_vote_franchise_universal = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_vote_franchise_universal"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -492,7 +488,7 @@ ideas = {
 		}
 		tno_vote_franchise_support_disenfranchised = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_vote_franchise_support_disenfranchised"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -508,7 +504,7 @@ ideas = {
 		tno_refugees_banned = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_refugees_banned"}
 			default = yes
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -520,7 +516,7 @@ ideas = {
 		}
 		tno_refugees_skilled = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_refugees_skilled"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -532,7 +528,7 @@ ideas = {
 		}
 		tno_refugees_vetted_entry = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_refugees_vetted_entry"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -543,7 +539,7 @@ ideas = {
 		}
 		tno_refugees_open = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_refugees_open"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -555,7 +551,7 @@ ideas = {
 		}
 		tno_refugees_give_me_your_poor = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_refugees_give_me_your_poor"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {

@@ -3,7 +3,7 @@ ideas = {
 	country = {
 		sour_loser = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -23,7 +23,7 @@ ideas = {
 		
 		general_staff = {
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 
@@ -41,7 +41,7 @@ ideas = {
 
 		triumphant_will = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 			removal_cost = -1
@@ -61,7 +61,7 @@ ideas = {
 		
 		GER_air_innovations_2_idea = {
 			removal_cost = -1
-			available = {
+			visible = {
 				always = no # Unlocked via focus
 			}
 
@@ -80,7 +80,7 @@ ideas = {
 
 		GER_rocketry_idea = {
 			removal_cost = -1
-			available = {
+			visible = {
 				always = no # Unlocked via focus
 			}
 
@@ -102,7 +102,7 @@ ideas = {
 
 		rhineland_challenge_met = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -125,10 +125,10 @@ ideas = {
 		todt = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
-			available = {
+			visible = {
 				has_completed_focus = GER_west_wall
 			}
 			
@@ -142,7 +142,7 @@ ideas = {
 		speer = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -152,7 +152,7 @@ ideas = {
 		hjalmar_schacht = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -165,7 +165,7 @@ ideas = {
 		walther_funk = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -179,7 +179,7 @@ ideas = {
 		ernst_thalmann = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -203,7 +203,7 @@ ideas = {
 		kurt_schumacher = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -227,7 +227,7 @@ ideas = {
 		joseph_goebbels = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -251,10 +251,10 @@ ideas = {
 		rudolf_hess = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
-			available = {
+			visible = {
 				NOT = { has_country_flag = flight_of_hess }
 			}
 			
@@ -264,7 +264,7 @@ ideas = {
 		heinrich_himmler = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -274,7 +274,7 @@ ideas = {
 		martin_bormann = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -284,7 +284,7 @@ ideas = {
 		joachim_von_ribbentrop = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -298,7 +298,7 @@ ideas = {
 		konstantin_von_neurath = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -315,7 +315,7 @@ ideas = {
 		porsche = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -330,7 +330,7 @@ ideas = {
 		henschel = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -349,7 +349,7 @@ ideas = {
 
 			picture = GER_MAN
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -372,7 +372,7 @@ ideas = {
 		germaniawerft = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -391,7 +391,7 @@ ideas = {
 		blohm_und_voss = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -414,7 +414,7 @@ ideas = {
 		
 		messerschmitt = {
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -434,7 +434,7 @@ ideas = {
 		}
 		
 		junkers = { 
-			available = {
+			visible = {
 				original_tag = GER
 			}
 						
@@ -457,7 +457,7 @@ ideas = {
 		focke_wulf = { 
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -476,7 +476,7 @@ ideas = {
 		heinkel = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -494,7 +494,7 @@ ideas = {
 		
 		dornier = {
 
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -517,7 +517,7 @@ ideas = {
 		
 		ig_faben = {
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -535,7 +535,7 @@ ideas = {
 		
 		krupp = {
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -549,7 +549,7 @@ ideas = {
 
 		siemens = {
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -567,7 +567,7 @@ ideas = {
 		
 		rheinmetall = {
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -585,7 +585,7 @@ ideas = {
 		mauser = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -605,7 +605,7 @@ ideas = {
 		
 		opel = {
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -620,7 +620,7 @@ ideas = {
 	theorist = {
 		von_braun = {
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -634,7 +634,7 @@ ideas = {
 		heisenberg = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 		
@@ -648,7 +648,7 @@ ideas = {
 		heinz_guderian = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -663,7 +663,7 @@ ideas = {
 		manstein = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -680,7 +680,7 @@ ideas = {
 		wolfram_von_richthofen = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -696,7 +696,7 @@ ideas = {
 		walther_wever = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -710,7 +710,7 @@ ideas = {
 		ernst_udet = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -724,7 +724,7 @@ ideas = {
 		alfred_saalwachter = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -740,7 +740,7 @@ ideas = {
 		otto_ciliax = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -758,7 +758,7 @@ ideas = {
 		ludwig_beck = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -771,7 +771,7 @@ ideas = {
 		wilhelm_keitel  = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 						
@@ -785,7 +785,7 @@ ideas = {
 		franz_halder = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 						
@@ -799,10 +799,10 @@ ideas = {
 		walther_von_brauchitsch = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
-			available = {
+			visible = {
 				has_completed_focus = GER_army_innovation
 			}
 
@@ -820,7 +820,7 @@ ideas = {
 		goering = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 						
@@ -834,10 +834,10 @@ ideas = {
 		ritter_von_greim = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
-			available = {
+			visible = {
 				has_completed_focus = GER_air_innovation
 			}
 						
@@ -851,7 +851,7 @@ ideas = {
 		albert_kesselring = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 						
@@ -868,7 +868,7 @@ ideas = {
 		raeder = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 						
@@ -882,7 +882,7 @@ ideas = {
 		donitz = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 						
@@ -899,7 +899,7 @@ ideas = {
 		ferdinand_schorner = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -913,10 +913,10 @@ ideas = {
 		erwin_rommel = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
-			available = {
+			visible = {
 					has_completed_focus = GER_army_innovation
 				}
 			
@@ -930,7 +930,7 @@ ideas = {
 		gerd_von_rundstedt = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -944,7 +944,7 @@ ideas = {
 		werner_von_fritsch = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -958,10 +958,10 @@ ideas = {
 		hugo_sperrle = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
-			available = {
+			visible = {
 					has_completed_focus = GER_air_innovation
 			}
 			
@@ -975,7 +975,7 @@ ideas = {
 		erhard_milch = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -989,7 +989,7 @@ ideas = {
 		kurt_student = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -1003,7 +1003,7 @@ ideas = {
 		erich_bey = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -1017,7 +1017,7 @@ ideas = {
 		gunther_lutjens = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			
@@ -1031,7 +1031,7 @@ ideas = {
 		viktor_schutze = {
 
 			
-			available = {
+			visible = {
 				original_tag = GER
 			}
 			

@@ -243,7 +243,6 @@ allow_leave_faction = {
         desc = "RULE_ALLOW_LEAVE_FACTION_BLOCKED_DESC"
     }
 }
-}
 
 allow_kick_faction = {
 	name = "RULE_ALLOW_KICK_FACTION"
@@ -572,9 +571,9 @@ GER_ai_behavior = {
 		allow_achievements = yes
 	}
 	option = {
-		name = DEMOCRATIC
-		text = "RULE_OPTION_DEMOCRATIC"
-		desc = "RULE_DEMOCRATIC_GER_AI_DESC"
+		name = liberalism
+		text = "RULE_OPTION_liberalism"
+		desc = "RULE_liberalism_GER_AI_DESC"
 	}
 	option = {
 		name = KAISER
@@ -627,14 +626,14 @@ JAP_ai_behavior = {
 		desc = "RULE_OPTION_COMMUNIST_JAP_AI_DESC"
 	}
 	option = {
-		name = NEUTRALITY
-		text = "RULE_OPTION_NEUTRALITY"
-		desc = "RULE_OPTION_NEUTRALITY_JAP_AI_DESC"
+		name = absolutism
+		text = "RULE_OPTION_absolutism"
+		desc = "RULE_OPTION_absolutism_JAP_AI_DESC"
 	}
 	option = {
-		name = DEMOCRATIC
-		text = "RULE_OPTION_DEMOCRATIC"
-		desc = "RULE_DEMOCRATIC_JAP_AI_DESC"
+		name = liberalism
+		text = "RULE_OPTION_liberalism"
+		desc = "RULE_liberalism_JAP_AI_DESC"
 	}
 	option = {
 		name = FASCIST
@@ -689,15 +688,15 @@ FRA_ai_behavior = {
 		desc = "RULE_OPTION_COMMUNIST_FRA_AI_DESC"
 	}
 	option = {
-		name = DEMOCRATIC_HISTORICAL
-		text = "RULE_OPTION_DEMOCRATIC_HISTORICAL"
-		desc = "RULE_OPTION_DEMOCRATIC_HISTORICAL_FRA_AI_DESC"
+		name = liberalism_HISTORICAL
+		text = "RULE_OPTION_liberalism_HISTORICAL"
+		desc = "RULE_OPTION_liberalism_HISTORICAL_FRA_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = DEMOCRATIC_ALTERNATE
-		text = "RULE_OPTION_DEMOCRATIC_ALTERNATE"
-		desc = "RULE_DEMOCRATIC_ALTERNATE_FRA_AI_DESC"
+		name = liberalism_ALTERNATE
+		text = "RULE_OPTION_liberalism_ALTERNATE"
+		desc = "RULE_liberalism_ALTERNATE_FRA_AI_DESC"
 	}
 	option = {
 		name = FASCIST
@@ -758,15 +757,15 @@ AST_ai_behavior = {
 		desc = "RULE_OPTION_COMMUNIST_AST_AI_DESC"
 	}
 	option = {
-		name = DEMOCRATIC_HISTORICAL
-		text = "RULE_OPTION_DEMOCRATIC_HISTORICAL"
-		desc = "RULE_OPTION_DEMOCRATIC_HISTORICAL_AST_AI_DESC"
+		name = liberalism_HISTORICAL
+		text = "RULE_OPTION_liberalism_HISTORICAL"
+		desc = "RULE_OPTION_liberalism_HISTORICAL_AST_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = DEMOCRATIC_ALTERNATE
-		text = "RULE_OPTION_DEMOCRATIC_ALTERNATE"
-		desc = "RULE_DEMOCRATIC_ALTERNATE_AST_AI_DESC"
+		name = liberalism_ALTERNATE
+		text = "RULE_OPTION_liberalism_ALTERNATE"
+		desc = "RULE_liberalism_ALTERNATE_AST_AI_DESC"
 	}
 	option = {
 		name = FASCIST
@@ -795,15 +794,15 @@ CAN_ai_behavior = {
 		desc = "RULE_OPTION_COMMUNIST_CAN_AI_DESC"
 	}
 	option = {
-		name = DEMOCRATIC_HISTORICAL
-		text = "RULE_OPTION_DEMOCRATIC_HISTORICAL"
-		desc = "RULE_OPTION_DEMOCRATIC_HISTORICAL_CAN_AI_DESC"
+		name = liberalism_HISTORICAL
+		text = "RULE_OPTION_liberalism_HISTORICAL"
+		desc = "RULE_OPTION_liberalism_HISTORICAL_CAN_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = DEMOCRATIC_ALTERNATE
-		text = "RULE_OPTION_DEMOCRATIC_ALTERNATE"
-		desc = "RULE_DEMOCRATIC_ALTERNATE_CAN_AI_DESC"
+		name = liberalism_ALTERNATE
+		text = "RULE_OPTION_liberalism_ALTERNATE"
+		desc = "RULE_liberalism_ALTERNATE_CAN_AI_DESC"
 	}
 	option = {
 		name = FASCIST
@@ -832,15 +831,15 @@ SAF_ai_behavior = {
 		desc = "RULE_OPTION_COMMUNIST_SAF_AI_DESC"
 	}
 	option = {
-		name = DEMOCRATIC_HISTORICAL
-		text = "RULE_OPTION_DEMOCRATIC_HISTORICAL"
-		desc = "RULE_OPTION_DEMOCRATIC_HISTORICAL_SAF_AI_DESC"
+		name = liberalism_HISTORICAL
+		text = "RULE_OPTION_liberalism_HISTORICAL"
+		desc = "RULE_OPTION_liberalism_HISTORICAL_SAF_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = DEMOCRATIC_ALTERNATE
-		text = "RULE_OPTION_DEMOCRATIC_ALTERNATE"
-		desc = "RULE_DEMOCRATIC_ALTERNATE_SAF_AI_DESC"
+		name = liberalism_ALTERNATE
+		text = "RULE_OPTION_liberalism_ALTERNATE"
+		desc = "RULE_liberalism_ALTERNATE_SAF_AI_DESC"
 	}
 	option = {
 		name = FASCIST
@@ -868,15 +867,15 @@ NZL_ai_behavior = {
 		desc = "RULE_OPTION_COMMUNIST_NZL_AI_DESC"
 	}
 	option = {
-		name = DEMOCRATIC_HISTORICAL
-		text = "RULE_OPTION_DEMOCRATIC_HISTORICAL"
-		desc = "RULE_OPTION_DEMOCRATIC_HISTORICAL_NZL_AI_DESC"
+		name = liberalism_HISTORICAL
+		text = "RULE_OPTION_liberalism_HISTORICAL"
+		desc = "RULE_OPTION_liberalism_HISTORICAL_NZL_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = DEMOCRATIC_ALTERNATE
-		text = "RULE_OPTION_DEMOCRATIC_ALTERNATE"
-		desc = "RULE_DEMOCRATIC_ALTERNATE_NZL_AI_DESC"
+		name = liberalism_ALTERNATE
+		text = "RULE_OPTION_liberalism_ALTERNATE"
+		desc = "RULE_liberalism_ALTERNATE_NZL_AI_DESC"
 	}
 	option = {
 		name = FASCIST
@@ -904,9 +903,9 @@ RAJ_ai_behavior = {
 		desc = "RULE_OPTION_COMMUNIST_RAJ_AI_DESC"
 	}
 	option = {
-		name = DEMOCRATIC_HISTORICAL
+		name = liberalism_HISTORICAL
 		text = "RULE_OPTION_HISTORICAL"
-		desc = "RULE_OPTION_DEMOCRATIC_HISTORICAL_RAJ_AI_DESC"
+		desc = "RULE_OPTION_liberalism_HISTORICAL_RAJ_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
@@ -941,9 +940,9 @@ HUN_ai_behavior = {
 		desc = "RULE_OPTION_AUSTRIA_HUNGARY_HUN_AI_DESC"
 	}
 	option = {
-		name = DEMOCRATIC
-		text = "RULE_OPTION_DEMOCRATIC"
-		desc = "RULE_OPTION_DEMOCRATIC_HUN_AI_DESC"
+		name = liberalism
+		text = "RULE_OPTION_liberalism"
+		desc = "RULE_OPTION_liberalism_HUN_AI_DESC"
 	}
 	option = {
 		name = FASCIST_ALTERNATE
@@ -978,9 +977,9 @@ ROM_ai_behavior = {
 		desc = "RULE_OPTION_BALKAN_DOMINANCE_ROM_AI_DESC"
 	}
 	option = {
-		name = DEMOCRATIC
-		text = "RULE_OPTION_DEMOCRATIC"
-		desc = "RULE_OPTION_DEMOCRATIC_ROM_AI_DESC"
+		name = liberalism
+		text = "RULE_OPTION_liberalism"
+		desc = "RULE_OPTION_liberalism_ROM_AI_DESC"
 	}
 	option = {
 		name = COMMUNIST
@@ -1014,9 +1013,9 @@ YUG_ai_behavior = {
 		desc = "RULE_OPTION_COMMUNIST_YUG_AI_DESC"
 	}
 	option = {
-		name = DEMOCRATIC
-		text = "RULE_OPTION_DEMOCRATIC"
-		desc = "RULE_OPTION_DEMOCRATIC_YUG_AI_DESC"
+		name = liberalism
+		text = "RULE_OPTION_liberalism"
+		desc = "RULE_OPTION_liberalism_YUG_AI_DESC"
 	}
 	option = {
 		name = FASCIST
@@ -1051,14 +1050,14 @@ CZE_ai_behavior = {
 		desc = "RULE_OPTION_COMMUNIST_CZE_AI_DESC"
 	}
 	option = {
-		name = DEMOCRATIC
-		text = "RULE_OPTION_DEMOCRATIC"
-		desc = "RULE_OPTION_DEMOCRATIC_CZE_AI_DESC"
+		name = liberalism
+		text = "RULE_OPTION_liberalism"
+		desc = "RULE_OPTION_liberalism_CZE_AI_DESC"
 	}
 	option = {
-		name = DEMOCRATIC_ALTERNATE
-		text = "RULE_OPTION_DEMOCRATIC_ALTERNATE"
-		desc = "RULE_OPTION_DEMOCRATIC_ALTERNATE_CZE_AI_DESC"
+		name = liberalism_ALTERNATE
+		text = "RULE_OPTION_liberalism_ALTERNATE"
+		desc = "RULE_OPTION_liberalism_ALTERNATE_CZE_AI_DESC"
 	}
 	option = {
 		name = FASCIST
@@ -1167,15 +1166,15 @@ ENG_ai_behavior = {
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
 	}
 	option = {
-		name = DEMOCRATIC_HISTORICAL
-		text = "RULE_OPTION_DEMOCRATIC_HISTORICAL"
-		desc = "RULE_OPTION_DEMOCRATIC_ENG_AI_DESC"
+		name = liberalism_HISTORICAL
+		text = "RULE_OPTION_liberalism_HISTORICAL"
+		desc = "RULE_OPTION_liberalism_ENG_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = DEMOCRATIC_ALTERNATE
-		text = "RULE_OPTION_DEMOCRATIC_NO_MORE_APPEASEMENT"
-		desc = "RULE_OPTION_DEMOCRATIC_NO_MORE_APPEASEMENT_ENG_AI_DESC"
+		name = liberalism_ALTERNATE
+		text = "RULE_OPTION_liberalism_NO_MORE_APPEASEMENT"
+		desc = "RULE_OPTION_liberalism_NO_MORE_APPEASEMENT_ENG_AI_DESC"
 	}
 	option = {
 		name = COMMUNIST
@@ -1183,7 +1182,7 @@ ENG_ai_behavior = {
 		desc = "RULE_OPTION_TRADE_UNIONS_ENG_AI_DESC"
 	}
 	option = {
-		name = NEUTRALITY
+		name = absolutism
 		text = "RULE_OPTION_THE_KINGS_PARTY"
 		desc = "RULE_OPTION_THE_KINGS_PARTY_ENG_AI_DESC"
 	}
@@ -1214,15 +1213,15 @@ USA_ai_behavior = {
 		desc = "RULE_OPTION_COMMUNIST_USA_AI_DESC"
 	}
 	option = {
-		name = DEMOCRATIC_HISTORICAL
-		text = "RULE_OPTION_DEMOCRATIC_HISTORICAL"
-		desc = "RULE_OPTION_DEMOCRATIC_HISTORICAL_USA_AI_DESC"
+		name = liberalism_HISTORICAL
+		text = "RULE_OPTION_liberalism_HISTORICAL"
+		desc = "RULE_OPTION_liberalism_HISTORICAL_USA_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = DEMOCRATIC_ALTERNATE
-		text = "RULE_OPTION_DEMOCRATIC_ALTERNATE"
-		desc = "RULE_DEMOCRATIC_ALTERNATE_USA_AI_DESC"
+		name = liberalism_ALTERNATE
+		text = "RULE_OPTION_liberalism_ALTERNATE"
+		desc = "RULE_liberalism_ALTERNATE_USA_AI_DESC"
 	}
 	option = {
 		name = FASCIST
@@ -1246,25 +1245,25 @@ HOL_ai_behavior = {
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
 	}
 	option = {
-		name = DEMOCRATIC_HISTORICAL
-		text = "RULE_OPTION_DEMOCRATIC_HISTORICAL"
-		desc = "RULE_OPTION_DEMOCRATIC_HISTORICAL_HOL_AI_DESC"
+		name = liberalism_HISTORICAL
+		text = "RULE_OPTION_liberalism_HISTORICAL"
+		desc = "RULE_OPTION_liberalism_HISTORICAL_HOL_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = DEMOCRATIC_ALTERNATE_1
-		text = "RULE_OPTION_DEMOCRATIC_CONTINUE_THE_WAR_IN_BATAVIA"
-		desc = "RULE_DEMOCRATIC_CONTINUE_THE_WAR_IN_BATAVIA_HOL_AI_DESC"
+		name = liberalism_ALTERNATE_1
+		text = "RULE_OPTION_liberalism_CONTINUE_THE_WAR_IN_BATAVIA"
+		desc = "RULE_liberalism_CONTINUE_THE_WAR_IN_BATAVIA_HOL_AI_DESC"
 	}
 	option = {
-		name = DEMOCRATIC_ALTERNATE_2
-		text = "RULE_OPTION_DEMOCRATIC_CONTINUE_THE_ZUIDERZEE_WORKS"
-		desc = "RULE_DEMOCRATIC_CONTINUE_THE_ZUIDERZEE_WORKS_HOL_AI_DESC"
+		name = liberalism_ALTERNATE_2
+		text = "RULE_OPTION_liberalism_CONTINUE_THE_ZUIDERZEE_WORKS"
+		desc = "RULE_liberalism_CONTINUE_THE_ZUIDERZEE_WORKS_HOL_AI_DESC"
 	}
 	option = {
-		name = DEMOCRATIC_ALTERNATE_3
-		text = "RULE_OPTION_DEMOCRATIC_LEAD_THE_MINOR_DEMOCRACIES"
-		desc = "RULE_DEMOCRATIC_LEAD_THE_MINOR_DEMOCRACIES_HOL_AI_DESC"
+		name = liberalism_ALTERNATE_3
+		text = "RULE_OPTION_liberalism_LEAD_THE_MINOR_DEMOCRACIES"
+		desc = "RULE_liberalism_LEAD_THE_MINOR_DEMOCRACIES_HOL_AI_DESC"
 	}
 	option = {
 		name = COMMUNIST
@@ -1272,7 +1271,7 @@ HOL_ai_behavior = {
 		desc = "RULE_OPTION_LEGACY_OF_THE_DE_ZEVEN_PROVINCIEN_MUTINY_HOL_AI_DESC"
 	}
 	option = {
-		name = NEUTRALITY
+		name = absolutism
 		text = "RULE_OPTION_ORANJE_BOVEN"
 		desc = "RULE_OPTION_ORANJE_BOVEN_HOL_AI_DESC"
 	}

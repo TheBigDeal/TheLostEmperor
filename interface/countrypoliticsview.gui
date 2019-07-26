@@ -513,8 +513,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "political_ideas_window"
-		position = { x = 550 y = 80 }
-		size = { width=730 height=100%% }
+		position = { x = 540 y = 80 }
+		size = { width=500 height=500 }
 		show_sound = open_sub_window
 
 		background = {
@@ -548,7 +548,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "grid"
 				position = { x = 0 y = 0 }
-				size = { width=730 height=-4 }
+				size = { width=500 height=-4 }
 				verticalScrollbar = "right_vertical_slider"
 				margin = { top = 4 bottom = 12}
 
@@ -567,8 +567,8 @@ guiTypes = {
 					name = "box"
 					position = { x = 10 y = 10 }
 					size = { width = 500 height = 1 }
-					slotsize = { width = 231 height = 145 }
-					max_slots_horizontal = 4
+					slotsize = { width = 231 height = 80 }
+					max_slots_horizontal = 2
 					add_horizontal = yes
 					format = "UPPER_LEFT"
 				}
@@ -594,14 +594,14 @@ guiTypes = {
 		size = { width=500 height=30 }
 		#verticalScrollbar = "right_vertical_slider"
 		#margin = { top = 14 bottom = 12}
-
+		
 		iconType = {
 			name = "title_bar"
 			position = { x = 244 y = 0 }
 			quadTextureSprite = "GFX_idea_group_header"
-			centerposition = yes
+			centerposition = yes			
 		}
-
+		
 		instantTextboxType = {
 			name = "title"
 			position = { x = 135 y = -10 }
@@ -611,7 +611,7 @@ guiTypes = {
 			maxHeight = 20
 			format = center
 		}
-
+		
 		instantTextboxType = {
 			name = "limit"
 			position = { x = 250 y = -10 }
@@ -621,7 +621,7 @@ guiTypes = {
 			maxHeight = 20
 			format = right
 		}
-
+		
 		gridBoxType = {
 			name = "ideas_grid"
 			position = { x = 10 y = 25 }
@@ -632,7 +632,7 @@ guiTypes = {
 			format = "UPPER_LEFT"
 		}
 	}
-
+	
 	containerWindowType = {
 		name = "political_idea_entry"
 		size = { width = 53 height = 53 }
@@ -642,17 +642,17 @@ guiTypes = {
 			name = "idea_alert_glow"
 			position = { x = -14 y = -8 }
 			spriteType = "GFX_ongoing_generic_glow_yellow"
-			scale = 0.65
+			scale = 0.65			
 			alwaystransparent = yes
-		}
-
+		}		
+		
 		buttonType = {
 			name = "add_idea_button"
 			position = { x = 0 y = 0 }
 			spriteType = "GFX_add_pol_idea_button"
 			clicksound = click_default
 		}
-
+		
 		iconType = {
 			name = "idea_traits"
 			position = { x = 43 y = 46 }
@@ -661,23 +661,23 @@ guiTypes = {
 			alwaystransparent = yes
 			frame = 1
 		}
-
+		
 	}
-
+	
 	containerWindowType = {
 		name = "political_selectable_idea_entry"
-		size = { width = 231 height = 148 }
+		size = { width = 231 height = 74 }
 		clipping = no
-
+			
 		background = {
 			name = "idea_entry_bg"
 			position = { x = 3 y = 0 }
 			spriteType = "GFX_idea_entry_bg_2"
 		}
-
+			
 		iconType = {
 			name = "icon"
-			position = { x = 42 y = 80 }
+			position = { x = 42 y = 38 }
 			spriteType = "GFX_placeholder_bordered"
 			centerposition = yes
 			alwaystransparent = yes
@@ -691,31 +691,31 @@ guiTypes = {
 			alwaystransparent = yes
 			frame = 1
 		}
-
+		
 		instantTextboxType = {
 			name = "name"
-			position = { x = 10 y = 10 }
+			position = { x = 66 y = 10 }
 			font = "hoi_18mbs"
-			fixedsize = yes
+			fixedsize = yes			
 			text = "name"
-			maxWidth = 220
-			maxHeight = 38
-			format = center
-			alwaystransparent = yes
+			maxWidth = 160
+			maxHeight = 18
+			format = center	
+			alwaystransparent = yes			
 		}
-
+		
 		gridboxtype = {
 			name = "traits_grid"
-			position = { x = 90 y = 48 }
+			position = { x = 90 y = 28 }
 			size = { width = 231 height = 100%% }
 			slotsize = { width = 200 height = 15 }
 			add_horizontal = no
 			format = "UPPER_LEFT"
 		}
-
+		
 		instantTextboxType = {
 			name = "cost"
-			position = { x = -90 y = 110 }
+			position = { x = 80 y = 47 }
 			font = "hoi_16mbs"
 			text = ""
 			maxWidth = 142

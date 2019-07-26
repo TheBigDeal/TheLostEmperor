@@ -10,8 +10,6 @@ set_technology = {
 add_ideas = {
 	scraping_the_barrel
 	war_economy
-	brutal_civil_war
-	SPT_legacy_of_leonidas
 }
 set_politics = {
 	ruling_party = labryscism

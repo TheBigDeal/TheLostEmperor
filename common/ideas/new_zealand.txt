@@ -5,7 +5,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -16,7 +16,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 				
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -27,7 +27,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -41,7 +41,7 @@ ideas = {
 					
 			picture = generic_army_europe_1
 
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -56,7 +56,7 @@ ideas = {
 					
 			picture = generic_air_europe_1
 				
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -70,7 +70,7 @@ ideas = {
 		NZL_arthur_dawes = {
 					
 					
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -90,7 +90,7 @@ ideas = {
 
 			picture = generic_army_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -105,7 +105,7 @@ ideas = {
 
 			picture = generic_army_europe_4
 			
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -120,7 +120,7 @@ ideas = {
 
 			picture = generic_air_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -135,7 +135,7 @@ ideas = {
 
 			picture = generic_navy_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -153,7 +153,7 @@ ideas = {
 			
 			picture = generic_army_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -170,7 +170,7 @@ ideas = {
 			
 			picture = generic_army_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -187,7 +187,7 @@ ideas = {
 			
 			picture = generic_army_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -204,7 +204,7 @@ ideas = {
 			
 			picture = generic_army_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -224,7 +224,7 @@ ideas = {
 			
 			picture = generic_air_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -241,7 +241,7 @@ ideas = {
 			
 			picture = generic_air_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -261,7 +261,7 @@ ideas = {
 			
 			picture = generic_navy_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -278,7 +278,7 @@ ideas = {
 			
 			picture = generic_navy_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -295,7 +295,7 @@ ideas = {
 			
 			picture = generic_navy_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = NZL
 			}
 			
@@ -317,7 +317,7 @@ ideas = {
 
 			picture = generic_naval_manufacturer_2
 			
-			allowed = {
+			visible = {
 				original_TAG = NZL
 				has_dlc = "Together for Victory"
 			}
@@ -334,7 +334,7 @@ ideas = {
 
 			picture = generic_naval_manufacturer_1
 			
-			allowed = {
+			visible = {
 				original_TAG = NZL
 				has_dlc = "Together for Victory"
 			}
@@ -356,7 +356,7 @@ ideas = {
 
 			picture = generic_industrial_concern_2
 			
-			allowed = {
+			visible = {
 				original_TAG = NZL
 				has_dlc = "Together for Victory"
 			}
@@ -383,7 +383,7 @@ ideas = {
 
 			picture = generic_motorized_equipment_manufacturer_1
 			
-			allowed = {
+			visible = {
 				original_TAG = NZL
 				has_dlc = "Together for Victory"
 			}
@@ -407,7 +407,7 @@ ideas = {
 
 			picture = generic_tank_manufacturer_1
 			
-			allowed = {
+			visible = {
 				original_TAG = NZL
 				has_dlc = "Together for Victory"
 			}
@@ -428,7 +428,7 @@ ideas = {
 
 			picture = generic_tank_manufacturer_2
 			
-			allowed = {
+			visible = {
 				original_TAG = NZL
 				has_dlc = "Together for Victory"
 			}

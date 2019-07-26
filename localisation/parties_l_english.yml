@@ -54,51 +54,9 @@
  proletarianism_noun:0 "Proletarian"
  proletarianism_ideology_desc:0 "Proletarianism Description"
 
- PRS_absolutism_party:0 "House of Hohenzollern"
-
- #POLISH PARTIES
- POL_absolutism_party:0 "Polish Monarchist Party"
- POL_royalism_party:0 "Polish Monarchist Party"
- POL_rexism_party:0 "Polish Monarchist Party"
- POL_despotism_party:0 "United Polish Front"
- POL_conservatism_party:0 "Alliance of Democrats"
- POL_liberalism_party:0 "Centrolew"
- POL_socialism_party:0 "Polish Socialist Party"
- POL_theocracy_party:0 "National Catholic Party"
- POL_labryscism_party:0 "Popular National Union"
- POL_mutualism_party:0 "The International"
- POL_collectivism_party:0 "Great Proletariat Party"
- POL_proletarianism_party:0 "Polish Communist Party"
 
 
- #GREEK PARTIES
- GRE_absolutism_party:0 "The Legitimists"
- GRE_royalism_party:0 "Enosis Party"
- GRE_rexism_party:0 "Greek National Party"
- GRE_despotism_party:0 "National Salvation Council"
- GRE_conservatism_party:0 "Enosis Party (Moderates)"
- GRE_liberalism_party:0 "Democratic Liberal Party"
- GRE_socialism_party:0 "Peoples Party of Greece"
- GRE_theocracy_party:0 "Hands of God"
- GRE_labryscism_party:0 "Spartan League"
- GRE_mutualism_party:0 "Greek Workers Front"
- GRE_collectivism_party:0 "Greek Workers Front"
- GRE_proletarianism_party:0 "Greek Workers Front"
- 
- 
- #USA PARTIES
- USA_proletarianism_party:0 "American Workers Party"
- USA_mutualism_party:0 "American Workers Party"
- USA_collectivism_party:0 "American Workers Party"
- USA_despotism_party:0 "American National Workers Party"
- USA_labryscism_party:0 "American National Workers Party"
- USA_socialism_party:0 "Socialist Party"
- USA_liberalism_party:0 "Republican Party"
- USA_conservatism_party:0 "Democratic Party"
- USA_rexism_party:0 "American Monarchist Party"
- USA_absolutism_party:0 "American Monarchist Party"
- USA_royalism_party:0 "American Monarchist Party"
- USA_theocracy_party:0 "American Monarchist Party"
+
 #SUBCATS
  #absolutism_desc:0 "Monarchist Regime"
  #rexism_desc:0 "Totalitarian Regime"

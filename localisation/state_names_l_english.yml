@@ -72,7 +72,7 @@
  STATE_71:0 "Eastern Slovakia"
  STATE_72:0 "Zaolzie"
  STATE_73:0 "Carpathian Ruthenia"
- STATE_74:0 "Eastern Sudetenland"
+ STATE_74:0 "Czech Silesia"
  STATE_75:0 "Moravia"
  STATE_76:0 "North Transylvania"
  STATE_77:0 "Dobrudja"
@@ -676,7 +676,7 @@
  STATE_675:0 "Al Hajara"
  STATE_676:0 "Kirkuk"
  STATE_677:0 "Aleppo"
- STATE_678:0 "Rub al Khali"
+ STATE_678:0 "Nejd"
  STATE_679:0 "Hejaz"
  STATE_680:0 "Deir-az-Zur"
  STATE_681:0 "Cape"
@@ -775,8 +775,10 @@
  STATE_774:0 "Nizza"
  STATE_775:0 "Metz"
  STATE_776:0 "East Brittany"
- STATE_776:0 "Southern Desert"
-
+ STATE_777:0 "Southern Desert"
+ STATE_778:0 "British Madagascar"
+ STATE_779:0 "Dervish State"
+ 
  STATE_783:0 "East Faud"
  STATE_784:0 "Port Said"
 
@@ -807,6 +809,8 @@
  STATE_826:0 "Thessaly"
  STATE_827:0 "Euboea"
  STATE_828:0 "Corfu"
+ 
+ STATE_831:0 "Southern Nejd"
  STATE_832:0 "Blagoevgrad"
  STATE_833:0 "Dijon"
  STATE_834:0 "Rwanda"
@@ -847,7 +851,9 @@
  STATE_882:0 "Hamburg"
  STATE_886:0 "Versailles"
  STATE_887:0 "Quatar"
-
+ 
+ STATE_897:0 "Tumrait"
+ STATE_898:0 "Tarim"
  STATE_900:0 "South Michigan"
  
  STATE_925:0 "Johor"
@@ -915,7 +921,7 @@
  STATE_994:0 "Nandi"
  STATE_995:0 "Kisumu"
  STATE_996:0 "Vranje"
- 
+ STATE_997:0 "Wiesbaden"
  STATE_998:0 "Rhode Island"
  STATE_999:0 "West Banat"
  STATE_1000:0 "Srem"
@@ -925,5 +931,16 @@
  STATE_1004:0 "Lleida"
  STATE_1005:0 "Girona"
  STATE_1006:0 "Andorra"
+ STATE_1007:0 "Southern Manitoba"
+ STATE_1008:0 "Southern Saskatchewan"
+ STATE_1009:0 "Southern Alberta"
+ 
+ 
  STATE_1010:0 "Bahrain"
  STATE_1011:0 "Dubai"
+ STATE_1012:0 "Socotra"
+ STATE_1013:0 "Southern Rub Al Khali"
+ STATE_1014:0 "Al Mundfin"
+ STATE_1015:0 "Northern Rub Al Khali"
+ STATE_1016:0 "Western Rub Al Khali"
+ STATE_1017:0 "Delaware"

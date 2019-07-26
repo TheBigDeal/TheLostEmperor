@@ -153,23 +153,6 @@ country_event = { #PRINCE CONSTANTINES MAKES A MOVE
 		country_event = { id = le_greece.1 days = 5 } 
 	}
 }
-country_event = { #CONSTANTINE VICTORY
-	id = le_greece.9
-	title = le_greece.9.t
-	desc = le_greece.9.d
-	fire_only_once = yes
-	trigger = {
-		original_tag = GRE
-		has_country_flag = GRE_ROYAL_WAR
-		has_civil_war = no
-		has_country_leader = { name = "King Constantine" ruling_only = yes }
-		has_government = absolutism
-	}
-	option = {
-		name = le_greece.9.a
-		add_stability = 0.25
-	}
-}
 country_event = { #ROYALIST VICTORY
 	id = le_greece.9
 	title = le_greece.9.t
@@ -403,5 +386,22 @@ country_event = { #Gyaros Island
 	option = { #Expand The Prison
 		name = le_greece.20.a
 		add_popularity = { ideology = despotism popularity = -0.03 }
+	}
+}
+country_event = { #CONSTANTINE VICTORY
+	id = le_greece.21
+	title = le_greece.21.t
+	desc = le_greece.21.d
+	fire_only_once = yes
+	trigger = {
+		original_tag = GRE
+		has_country_flag = GRE_ROYAL_WAR
+		has_civil_war = no
+		has_country_leader = { name = "King Constantine" ruling_only = yes }
+		has_government = absolutism
+	}
+	option = {
+		name = le_greece.21.a
+		add_stability = 0.25
 	}
 }

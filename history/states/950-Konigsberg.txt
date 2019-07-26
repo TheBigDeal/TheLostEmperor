@@ -3,10 +3,10 @@ state={
 	name="STATE_950"
 	history={
 		victory_points = {
-			6332 10
+			6332 20
 		}
 		victory_points = {
-			3384 2
+			3384 5
 		}
 		owner = PRS
 		buildings = {

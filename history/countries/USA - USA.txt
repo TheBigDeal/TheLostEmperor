@@ -32,6 +32,14 @@ add_ideas = {
 	usa_sluggish_economy
 	usa_american_militarism
 	usa_popular_discontent
+	### Ministers ###
+	USA_calvin_coolidge
+	USA_frank_lowden
+	USA_Frank_B_Kellogg
+	USA_John_Pershing
+	USA_Andrew_Mellon
+	USA_Hubert_Work
+	USA_J_Edgar_Hoover
 }
 
 set_politics = {	

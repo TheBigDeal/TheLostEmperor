@@ -1,0 +1,83 @@
+﻿l_english: 
+
+### Political Parties ###
+ PRS_absolutism_party:0 "Loyalist Party"
+ PRS_royalism_party:0 "Loyalist Party"
+ PRS_rexism_party:0 "Loyalist Party"
+ PRS_despotism_party:0 "Wehrmacht National Party"
+ PRS_conservatism_party:0 "Prussian Moderate Party"
+ PRS_liberalism_party:0 "Democratic Liberal Party"
+ PRS_socialism_party:0 "Prussian Peoples Party"
+ PRS_theocracy_party:0 "Germanic Peoples Party"
+ PRS_labryscism_party:0 "National Socialist Party"
+ PRS_mutualism_party:0 "Prussian Anarchist Party"
+ PRS_collectivism_party:0 "Prussian Workers Front"
+ PRS_proletarianism_party:0 "Peoples Socialist Party"
+ 
+### Ministers ###
+ # Head Of State
+ #USA_calvin_coolidge:0 "Calvin Coolidge"
+ # Secondary Head
+ #USA_frank_lowden:0 "Frank Lowden"
+ # Foriegn Minister
+ #USA_Frank_B_Kellogg:0 "Frank B. Kellogg"
+ # Minister Of Defence
+ #USA_John_Pershing:0 "John Pershing"
+ # Economic Minister
+ #USA_Andrew_Mellon:0 "Andrew Mellon"
+ # Minister Of The Interior
+ #USA_Hubert_Work:0 "Hubert Work"
+ # Minister Of Security
+ #USA_J_Edgar_Hoover:0 "Edgar Hoover"
+ 
+### Ideas ###
+ PRS_political_opposition:0 "Political Opposition"
+ PRS_unmaintained_navy:0 "Unmaintained Navy"
+ PRUSSIAN_SPHERE:0 "Prussian Sphere"
+ PRS_PRUSSIAN_MILITARISM:0 "Prussian Militarism"
+ PRS_GERMAN_MILITARISM:0 "German Militarism"
+### Tooltips ###
+ berlin_conference_tt:0 "§LNorthern German Nations Will Meet In Berlin to Discuss The Formation Of A Prussian-Lead Germany.\n §!"
+### Global / Country Flags ###
+ 
+### Focus Tree ###
+ PRS_A_DIVIDED_NATION:0 "A Divided Nation"
+ PRS_A_DIVIDED_NATION_desc:0 "Ever since the growing popularity of radical ideologies around the world, the Prussian people have been searching for more than a monarchy expecially since Henry came to power. For the monarchists Henry is a very popular king, but some in the military see him as weak as his reign has been a peaceful one, a stark difference to any other Prussian king."
+ PRS_PICK_A_SIDE:0 "Pick A Side"
+ PRS_PRINCE_WILHELM_MAKES_A_MOVE:0 "Price Wilhelm Makes A Move"
+ PRS_THE_KING_FALLS_ILL:0 "The King Falls Ill"
+ PRS_LONG_LIVE_KING_WILHELM:0 "Long Live King Wilhelm"
+ PRS_LONG_LIVE_KING_WALDEMAR:0 "Long Live King Waldemar"
+ PRS_WILHELMS_IRON_FIST:0 "Wilhelms Iron Fist"
+ PRS_WALDEMARS_TRAINING:0 "Waldemar's Acedemics"
+ PRS_RENEWED_IMPERIALISM:0 "Renewed Imperialism"
+ PRS_MEET_WITH_THE_NATIONALISTS:0 "Meet With The Nationalists"
+ PRS_ENACT_NATIONALIST_POLICIES:0 "Enact Nationalist Policies"
+ PRS_ELECT_PARTY_MEMBERS:0 "Elect Party Members"
+ PRS_QUESTION_PARTY_LEADERSHIP:0 "Question Party Leadership"
+ PRS_REINHARD_HEYDRICH:0 "Reinhard Heydrich"
+ PRS_THE_KING_RULES_OVER_THE_PARTY:0 "The King Rules Over The Party"
+ PRS_NATIONALISTS_IN_POWER:0 "Nationalists Rise To Power"
+ PRS_ERADICATE_THE_OPPOSITION:0 "Eradicate The Opposition"
+ PRS_CRUSH_THE_COMMUNISTS:0 "Crush The Communists"
+ PRS_DEAL_WITH_THE_DEMOCRATS:0 "Deal With The Democrats"
+ PRS_NEGOTIATE_WITH_THE_NATIONALISTS:0 "Negotiate With The Nationalists"
+ PRS_ASSASSINATE_PRINCE_WILHELM:0 "Assassinate Prince Wilhelm"
+ PRS_BAN_POLITICAL_PARTIES:0 "Ban Political Parties"
+ PRS_CRIMINALIZE_RADICALISM:0 "Criminalize Radicalism"
+ PRS_PRUSSIA_INDIVISIBLE:0 "Prussia Indivisible"
+ PRS_GERMAN_AMBITIONS:0 "German Ambitions"
+ PRS_THREATEN_NORTHERN_STATES:0 "Threaten Northern States"
+ PRS_THE_HANNOVER_PROBLEM:0 "The Hannover Problem"
+ PRS_NEGOTIATE_WITH_THE_BRITISH:0 "Negotiate With The British"
+ PRS_PRUSSIAN_SPONSORED_ASSASSINATIONS:0 "Prussian Sponsored Assassinations"
+ PRS_SHOW_OUR_STRENGTH:0 "Show Our Strength"
+ PRS_DEMAND_DANISH_HOLSTEIN:0 "Demand Danish Holstein"
+ PRS_DEMAND_POZNAN:0 "Demand Poznan"
+ PRS_THE_BERLIN_CONFERENCE:0 "The Berlin Conference"
+ PRS_THE_NORTH_GERMAN_CONFEDERATION:0 "The North German Confederation"
+ PRS_OFFER_AUSTRIA_LORDSHIP_OVER_THE_HANSA:0 "Offer Austria Lordship Over The Hansa"
+ PRS_THE_AUSTRO_PRUSSIAN_WAR:0 "The Austro-Prussian War"
+ PRS_ASSSASSINATE_AUSTRIAN_LEADERS:0 "Assassinate Austrian Leaders"
+ PRS_A_UNITED_GERMANY:0 "A United Germany"
+### Events ###

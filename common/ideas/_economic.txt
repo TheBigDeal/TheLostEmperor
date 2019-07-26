@@ -5,7 +5,7 @@ ideas = {
 		undisturbed_isolation = {
 			
 			
-			available = {
+			visible = {
 				always = no
 			}
 			removal_cost = -1
@@ -37,7 +37,7 @@ ideas = {
 			
 			
 			
-			available = {
+			visible = {
 				always = no
 			}
 			removal_cost = -1
@@ -84,7 +84,7 @@ ideas = {
 		
 		low_economic_mobilisation = {
 			
-			available = {
+			visible = {
 				OR = {
 					has_government = rexism
 					has_government = proletarianism
@@ -126,7 +126,7 @@ ideas = {
 		
 		partial_economic_mobilisation = {
 			
-			available = {
+			visible = {
 				OR = {
 					has_government = rexism
 					has_government = proletarianism
@@ -172,7 +172,7 @@ ideas = {
 		war_economy = {
 			
 			
-			available = {
+			visible = {
 				threat > 0.15
 				OR = {
 					has_government = rexism
@@ -224,7 +224,7 @@ ideas = {
 		tot_economic_mobilisation = {
 			
 			
-			available = {
+			visible = {
 				has_war = yes
 				threat > 0.2
 				any_enemy_country = {
@@ -326,7 +326,7 @@ ideas = {
 		limited_exports = {
 			
 			
-			available = {
+			visible = {
 				OR = {
 					AND = {
 						has_government = liberalism
@@ -378,7 +378,7 @@ ideas = {
 		closed_economy = {
 			
 			
-			available = {
+			visible = {
 				has_war = yes
 				OR = { 
 					has_government = rexism

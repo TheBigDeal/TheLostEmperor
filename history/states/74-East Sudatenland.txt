@@ -1,14 +1,9 @@
-state=
-{
+
+state={
 	id=74
 	name="STATE_74"
-	manpower = 820000
-	
-	state_category = rural
-	
-	
-	history=
-	{
+
+	history={
 		owner = BOH
 		victory_points = {
 			3414 10 
@@ -16,11 +11,16 @@ state=
 		buildings = {
 			infrastructure = 7
 			arms_factory = 1
+
 		}
 		add_core_of = BOH
 
 	}
-	provinces= {
-		421 3414 3583 6485
- 	}
+
+	provinces={
+		3583 6485 
+	}
+	manpower=820000
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

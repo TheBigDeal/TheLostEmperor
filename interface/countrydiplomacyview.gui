@@ -453,20 +453,6 @@ guiTypes = {
 			
 			#------------------------- INFO TAB ----------------------------
 			
-			
-			containerWindowType = {
-				name = "ideas_info"
-				position = { x = 10 y = 365 }
-				size = { width = 265 height = -50 }
-				verticalScrollbar = "right_vertical_slider"
-				margin = { top = 7 bottom = 7 }
-				
-				background = {
-					name = "Background"
-					spriteType ="GFX_tiled_window_1b_thin_border"
-				}
-			}
-			
 			containerWindowType = {
 				name = "trade_info"
 				position = { x = 272 y = 365 }

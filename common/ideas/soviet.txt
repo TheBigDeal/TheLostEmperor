@@ -3,10 +3,10 @@ ideas = {
 		mikhail_kalinin = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "SOV"
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purged_kalinin }
 				NOT = { has_country_flag = counter_purge }
@@ -21,11 +21,11 @@ ideas = {
 			
 			picture = generic_army_europe_4
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 
-			available = 
+			visible = 
 			{
 				custom_trigger_tooltip = {
 					tooltip =  SOV_beria_idea
@@ -43,7 +43,7 @@ ideas = {
 			
 			picture = generic_political_advisor_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -54,7 +54,7 @@ ideas = {
 			
 			picture = generic_political_advisor_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -65,11 +65,11 @@ ideas = {
 			
 			picture = generic_army_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = counter_purge }
 				NOT = { has_country_flag = purge_2_group_a }
@@ -83,10 +83,10 @@ ideas = {
 		nikita_khrushchev = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "SOV"
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purged_khrushchev }
 				NOT = { has_country_flag = counter_purge }
@@ -110,7 +110,7 @@ ideas = {
 		alexander_kerensky = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "SOV"
 			}
 			
@@ -132,10 +132,10 @@ ideas = {
 		konstantin_rodzaevsky = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "SOV"
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = counter_purge }
 			}
@@ -162,10 +162,10 @@ ideas = {
 		semyon_timoshenko = {
 			#Also unit leader: 404
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purge_1_group_b }
 				hidden_trigger = {
@@ -191,10 +191,10 @@ ideas = {
 		kliment_voroshilov = {
 			#Also unit leader: 405
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purge_1_group_b }
 				hidden_trigger = {
@@ -220,10 +220,10 @@ ideas = {
 		alexander_yegorov = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purge_1_group_a }
 			}
@@ -241,11 +241,11 @@ ideas = {
 		vasily_blucher = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purge_1_group_a }
 			}
@@ -265,11 +265,11 @@ ideas = {
 		pyotr_smirnov = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purge_1_group_a }
 			}
@@ -287,11 +287,11 @@ ideas = {
 		mikhail_frinovsky = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purge_1_group_a }
 			}
@@ -309,11 +309,11 @@ ideas = {
 		nikolay_kuznetsov = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purge_2_group_b }
 			}
@@ -331,11 +331,11 @@ ideas = {
 		ivan_yumashev = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purge_1_group_b }
 			}
@@ -355,11 +355,11 @@ ideas = {
 		
 		alexander_novikov = {
 						
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purge_2_group_a }
 			}
@@ -377,11 +377,11 @@ ideas = {
 		konstantin_vershinin = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purge_2_group_b }
 			}
@@ -398,11 +398,11 @@ ideas = {
 		yakov_smushkevich = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purge_2_group_a }
 			}
@@ -420,11 +420,11 @@ ideas = {
 		pavel_rychagov = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purge_2_group_a }
 			}
@@ -446,10 +446,10 @@ ideas = {
 		ivan_konev = {
 			#Also unit leader: 408
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = counter_purge }
 				custom_trigger_tooltip = {
@@ -477,11 +477,11 @@ ideas = {
 		aleksandr_vasilevsky = {
 			#Also unit leader: 407
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purge_2_group_b }
 				hidden_trigger = {
@@ -507,7 +507,7 @@ ideas = {
 		konstantin_rokossovsky = {
 			#Also unit leader: 402
 			
-			allowed = {
+			visible = {
 				original_tag = SOV # Unlocked via focus
 				hidden_trigger = {
 					NOT = {
@@ -519,7 +519,7 @@ ideas = {
 					}
 				}
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purge_1_group_b }
 				has_completed_focus = SOV_positive_heroism
@@ -538,11 +538,11 @@ ideas = {
 		pavel_zhigarev = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = counter_purge }
 			}
@@ -559,11 +559,11 @@ ideas = {
 		sergei_khudyakov = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purge_2_group_b }
 			}
@@ -581,11 +581,11 @@ ideas = {
 		stepan_krasovsky = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = counter_purge }
 			}
@@ -602,11 +602,11 @@ ideas = {
 		vladimir_kasatonov = {
 			#Also unit leader: 403
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purge_1_group_b }
 				hidden_trigger = {
@@ -632,11 +632,11 @@ ideas = {
 		gordey_levchenko = {
 			#Also unit leader: 406
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purge_2_group_a }
 				hidden_trigger = {
@@ -663,11 +663,11 @@ ideas = {
 		arseniy_golovko = {
 			#Also unit leader: 409
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = counter_purge }
 				hidden_trigger = {
@@ -698,7 +698,7 @@ ideas = {
 		morozov_design_bureau = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -715,7 +715,7 @@ ideas = {
 		astrov_design_bureau = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -734,7 +734,7 @@ ideas = {
 		okmo = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -758,7 +758,7 @@ ideas = {
 		mig_design_bureau = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -777,7 +777,7 @@ ideas = {
 		ilyushin_design_bureau = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -796,7 +796,7 @@ ideas = {
 		tupolev_design_bureau = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -815,7 +815,7 @@ ideas = {
 		yakovlev_design_bureau = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -838,7 +838,7 @@ ideas = {
 		stalingrad_tractor_factory = {
 		
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -857,7 +857,7 @@ ideas = {
 		leningrad_polytechnical_institute = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -881,7 +881,7 @@ ideas = {
 		grabin_design_bureau = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -902,7 +902,7 @@ ideas = {
 		tula_arms_plant = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -921,7 +921,7 @@ ideas = {
 		gaz = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -946,7 +946,7 @@ ideas = {
 		nevskoye_design_bureau = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -969,11 +969,11 @@ ideas = {
 		mikhail_tukhachevsky = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = purge_1_group_a }
 			}
@@ -991,7 +991,7 @@ ideas = {
 		boris_shaposhnikov = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -1007,15 +1007,15 @@ ideas = {
 		georgy_zhukov = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV # Unlocked via focus
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = counter_purge }
 			}
-			available = {
+			visible = {
 				has_completed_focus = SOV_positive_heroism
 			}
 			
@@ -1031,11 +1031,11 @@ ideas = {
 		sergey_gorshkov = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = counter_purge }
 			}
@@ -1052,7 +1052,7 @@ ideas = {
 		vladimir_tributs = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -1068,11 +1068,11 @@ ideas = {
 		sergei_rudenko = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 
 			}
-			available = 
+			visible = 
 			{
 				NOT = { has_country_flag = counter_purge }
 			}
@@ -1089,7 +1089,7 @@ ideas = {
 		alexander_golovanov = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -1105,7 +1105,7 @@ ideas = {
 		igor_kurchatov = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			
@@ -1121,7 +1121,7 @@ ideas = {
 		sergei_korolev = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = SOV
 			}
 			

@@ -1059,7 +1059,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_THEY_WILL_GROW_INTO_COMMUNISM
+		id = SOV_THEY_WILL_GROW_INTO_collectivism
 		icon = GFX_unknown
 		prerequisite = { focus = SOV_THE_NEW_RUSSIAN_RULING_CLASS }
 		x = 18
@@ -1083,7 +1083,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_COMMUNISM_WITH_RUSSIAN_CHARACTERISTIC
+		id = SOV_collectivism_WITH_RUSSIAN_CHARACTERISTIC
 		icon = GFX_unknown
 		prerequisite = { focus = SOV_EXPAND_CURRENCY_PRINTING }
 		x = 20

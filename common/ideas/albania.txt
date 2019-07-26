@@ -6,7 +6,7 @@ ideas = {
 
 			picture = generic_political_advisor_arab_1
 			
-			available = {
+			visible = {
 				original_tag = ALB
 			}
 			
@@ -17,7 +17,7 @@ ideas = {
 
 			picture = generic_political_advisor_arab_2
 				
-			available = {
+			visible = {
 				original_tag = ALB
 			}
 			
@@ -28,7 +28,7 @@ ideas = {
 
 			picture = generic_political_advisor_arab_3
 			
-			available = {
+			visible = {
 				original_tag = ALB
 			}
 			
@@ -42,7 +42,7 @@ ideas = {
 					
 			picture = generic_army_arab_1
 
-			available = {
+			visible = {
 				original_tag = ALB
 			}
 			
@@ -57,7 +57,7 @@ ideas = {
 					
 			picture = generic_air_arab_1
 				
-			available = {
+			visible = {
 				original_tag = ALB
 			}
 			
@@ -71,7 +71,7 @@ ideas = {
 		ALB_hajre_fetahu = {
 					
 					
-			available = {
+			visible = {
 				original_tag = ALB
 			}
 			
@@ -91,7 +91,7 @@ ideas = {
 
 			picture = generic_army_arab_1
 			
-			available = {
+			visible = {
 				original_tag = ALB
 			}
 			
@@ -106,7 +106,7 @@ ideas = {
 
 			picture = generic_army_arab_2
 			
-			available = {
+			visible = {
 				original_tag = ALB
 			}
 			
@@ -121,7 +121,7 @@ ideas = {
 
 			picture = generic_army_arab_3
 			
-			available = {
+			visible = {
 				original_tag = ALB
 			}
 			
@@ -136,7 +136,7 @@ ideas = {
 
 			picture = generic_navy_arab_1
 			
-			available = {
+			visible = {
 				original_tag = ALB
 			}
 			
@@ -154,7 +154,7 @@ ideas = {
 			
 			picture = generic_army_arab_2
 			
-			available = {
+			visible = {
 				original_tag = ALB
 			}
 			
@@ -171,7 +171,7 @@ ideas = {
 			
 			picture = generic_army_arab_1
 			
-			available = {
+			visible = {
 				original_tag = ALB
 			}
 			
@@ -191,7 +191,7 @@ ideas = {
 			
 			picture = generic_air_arab_1
 			
-			available = {
+			visible = {
 				original_tag = ALB
 			}
 			
@@ -208,7 +208,7 @@ ideas = {
 			
 			picture = generic_air_arab_3
 			
-			available = {
+			visible = {
 				original_tag = ALB
 			}
 			
@@ -225,7 +225,7 @@ ideas = {
 			
 			picture = generic_air_arab_2
 			
-			available = {
+			visible = {
 				original_tag = ALB
 			}
 			
@@ -245,7 +245,7 @@ ideas = {
 			
 			picture = generic_navy_arab_2
 			
-			available = {
+			visible = {
 				original_tag = ALB
 			}
 			
@@ -262,7 +262,7 @@ ideas = {
 			
 			picture = generic_navy_arab_1
 			
-			available = {
+			visible = {
 				original_tag = ALB
 			}
 			
@@ -279,7 +279,7 @@ ideas = {
 			
 			picture = generic_navy_arab_3
 			
-			available = {
+			visible = {
 				original_tag = ALB
 			}
 			

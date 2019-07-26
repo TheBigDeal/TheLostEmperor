@@ -1533,7 +1533,7 @@ focus_tree = {
 
 		}
 	}
-	#MONARCHIST/DEMOCRATIC PATH
+	#MONARCHIST/liberalism PATH
 	focus = {
 		id = FRA_PLEASE_THE_PEOPLE
 		icon = GFX_goal_generic_support_democracy

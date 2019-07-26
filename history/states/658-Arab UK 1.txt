@@ -5,6 +5,7 @@ state={
 	resources={
 		oil=8.000
 	}
+
 	history={
 		owner = TNS
 		add_core_of = TNS
@@ -17,11 +18,13 @@ state={
 				naval_base = 3
 
 			}
+
 		}
+
 	}
 
 	provinces={
-		2048 7960 8108 13268 13269 13271 
+		2048 7960 8108 13268 13269 
 	}
 	manpower=220000
 	buildings_max_level_factor=1.000

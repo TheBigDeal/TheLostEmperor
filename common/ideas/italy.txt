@@ -3,7 +3,7 @@ ideas = {
 		victor_emmanuel = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "ITA"
 			}
 
@@ -27,7 +27,7 @@ ideas = {
 		}
 		vittoria_mutilata = {			
 			
-			allowed = {
+			visible = {
 				original_tag = "ITA"
 			}
 
@@ -55,7 +55,7 @@ ideas = {
 
 			picture = german_advisors
 
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 
@@ -97,7 +97,7 @@ ideas = {
 		amadeo_bordiga = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "ITA"
 			}
 			
@@ -119,7 +119,7 @@ ideas = {
 		ivanoe_bonomi = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "ITA"
 			}
 			
@@ -141,7 +141,7 @@ ideas = {
 		carlo_scorza = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "ITA"
 			}
 			
@@ -162,7 +162,7 @@ ideas = {
 
 		ITA_giovanni_marinelli = {
 						
-			allowed = {
+			visible = {
 				original_tag = "ITA"
 			}
 
@@ -181,7 +181,7 @@ ideas = {
 		ITA_gian_galeazzo_ciano = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "ITA"
 			}
 
@@ -200,7 +200,7 @@ ideas = {
 		ITA_roberto_farinacci = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "ITA"
 			}
 
@@ -216,7 +216,7 @@ ideas = {
 		ITA_dino_grandi = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "ITA"
 			}
 
@@ -235,7 +235,7 @@ ideas = {
 		ITA_serafino_mazzolini = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "ITA"
 			}
 
@@ -254,7 +254,7 @@ ideas = {
 		ITA_giacomo_acerbo = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "ITA"
 			}
 
@@ -273,7 +273,7 @@ ideas = {
 		ITA_junio_valerio_borghese = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "ITA"
 			}
 
@@ -292,7 +292,7 @@ ideas = {
 		ITA_luigi_einaudi = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "ITA"
 			}
 
@@ -311,7 +311,7 @@ ideas = {
 		ITA_paolo_thaon_di_revel = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "ITA"
 			}
 
@@ -335,7 +335,7 @@ ideas = {
 		pietro_badoglio = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -351,7 +351,7 @@ ideas = {
 		ugo_cavallero = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -367,7 +367,7 @@ ideas = {
 		emilio_de_bono = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -385,7 +385,7 @@ ideas = {
 		domenico_cavagnari = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -402,7 +402,7 @@ ideas = {
 		arturo_riccardi = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -418,7 +418,7 @@ ideas = {
 		inigo_campioni = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -437,7 +437,7 @@ ideas = {
 		italo_balbo = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -453,7 +453,7 @@ ideas = {
 		rino_corso_fougier = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -469,7 +469,7 @@ ideas = {
 		francesco_pricolo = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -488,7 +488,7 @@ ideas = {
 		mario_roatta = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -504,7 +504,7 @@ ideas = {
 		vittorio_ambrosio = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -520,7 +520,7 @@ ideas = {
 		alfredo_guzzoni = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -536,7 +536,7 @@ ideas = {
 		ettore_muti = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -552,7 +552,7 @@ ideas = {
 		marziale_cerutti = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -568,7 +568,7 @@ ideas = {
 		silvio_scaroni = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -584,7 +584,7 @@ ideas = {
 		alberto_da_zara = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -600,7 +600,7 @@ ideas = {
 		carlo_bergamini = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -616,7 +616,7 @@ ideas = {
 		luigi_mascherpa = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -638,7 +638,7 @@ ideas = {
 		fiat = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -660,7 +660,7 @@ ideas = {
 		beretta = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -676,7 +676,7 @@ ideas = {
 		lancia = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -691,7 +691,7 @@ ideas = {
 		breda = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -713,7 +713,7 @@ ideas = {
 		macchi = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -727,7 +727,7 @@ ideas = {
 		savoia_marchetti = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 
@@ -740,7 +740,7 @@ ideas = {
 		
 		caproni = {
 						
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 						
@@ -753,7 +753,7 @@ ideas = {
 		
 		piaggio = {
 						
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 						
@@ -769,7 +769,7 @@ ideas = {
 	
 		danieli = {
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -789,7 +789,7 @@ ideas = {
 		
 		crda = {
 						
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 						
@@ -804,7 +804,7 @@ ideas = {
 	theorist = {	
 		giovanni_messe = {
 						
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -819,7 +819,7 @@ ideas = {
 		
 		rodolfo_graziani = {
 						
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -838,7 +838,7 @@ ideas = {
 		
 		guiseppe_fioravanzo = {
 						
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -853,7 +853,7 @@ ideas = {
 		
 		angelo_iachino = {
 						
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 						
@@ -866,7 +866,7 @@ ideas = {
 		
 		amedeo_mecozzi = {
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 			
@@ -882,7 +882,7 @@ ideas = {
 		renato_sandalli = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 						
@@ -896,7 +896,7 @@ ideas = {
 		gaetano_crocco = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = ITA
 			}
 						

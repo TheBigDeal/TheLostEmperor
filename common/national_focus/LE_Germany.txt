@@ -1569,7 +1569,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_ideas = Democratic_Drift
+			add_ideas = liberalism_Drift
 			add_popularity = { ideology = liberalism popularity = 0.1 }
 			add_popularity = { ideology = conservatism popularity = 0.1 }
 		}

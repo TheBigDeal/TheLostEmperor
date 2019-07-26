@@ -24,6 +24,12 @@ add_ideas = {
 	pol_de_facto_government
 	pol_surrounded_on_all_sides
 	pol_revolutionary_generals
+	### Ministers ###
+	POL_Wladyslaw_Sikorski
+	POL_Edward_Bernard_Raczynski
+	POL_Tadeusz_Kaprzycki
+	POL_Wladyslaw_Grabski
+	POL_Maciej_Rataj
 }
 set_convoys = 10
 
@@ -86,7 +92,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-		#
+		cornered_fox
 	}
 }
 

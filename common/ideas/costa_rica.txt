@@ -8,7 +8,7 @@ ideas = {
 
 			picture = generic_political_advisor_south_america_1
 
-			available = {
+			visible = {
 				original_tag = COS
 			}
 			
@@ -19,7 +19,7 @@ ideas = {
 
 			picture = generic_political_advisor_south_america_3
 				
-			available = {
+			visible = {
 				original_tag = COS
 			}
 			
@@ -30,7 +30,7 @@ ideas = {
 
 			picture = generic_political_advisor_south_america_2
 			
-			available = {
+			visible = {
 				original_tag = COS
 			}
 			
@@ -41,7 +41,7 @@ ideas = {
 
 			picture = generic_political_advisor_south_america_2
 			
-			available = {
+			visible = {
 				original_tag = COS
 			}
 			
@@ -52,7 +52,7 @@ ideas = {
 
 			picture = generic_political_advisor_south_america_2
 			
-			available = {
+			visible = {
 				original_tag = COS
 			}
 			
@@ -66,7 +66,7 @@ ideas = {
 
 			picture = generic_air_south_america_1
 			
-			available = {
+			visible = {
 				original_tag = COS
 			}
 			
@@ -81,7 +81,7 @@ ideas = {
 
 			picture = generic_navy_south_america_1
 			
-			available = {
+			visible = {
 				original_tag = COS
 			}
 			
@@ -99,7 +99,7 @@ ideas = {
 			
 			picture = generic_army_south_america_4
 			
-			available = {
+			visible = {
 				original_tag = COS
 			}
 			
@@ -114,7 +114,7 @@ ideas = {
 
 			picture = generic_air_south_america_1
 			
-			available = {
+			visible = {
 				original_tag = COS
 			}
 			
@@ -129,7 +129,7 @@ ideas = {
 
 			picture = generic_air_south_america_2
 			
-			available = {
+			visible = {
 				original_tag = COS
 			}
 			
@@ -144,7 +144,7 @@ ideas = {
 
 			picture = generic_navy_south_america_3
 			
-			available = {
+			visible = {
 				original_tag = COS
 			}
 			
@@ -162,7 +162,7 @@ ideas = {
 
 			picture = generic_army_south_america_3
 			
-			available = {
+			visible = {
 				original_tag = COS
 			}		
 			
@@ -177,7 +177,7 @@ ideas = {
 
 			picture = generic_army_south_america_2
 			
-			available = {
+			visible = {
 				original_tag = COS
 			}
 			
@@ -192,7 +192,7 @@ ideas = {
 
 			picture = generic_army_south_america_1
 			
-			available = {
+			visible = {
 				original_tag = COS
 			}
 			
@@ -210,7 +210,7 @@ ideas = {
 
 			picture = generic_air_south_america_2
 			
-			available = {
+			visible = {
 				original_tag = COS
 			}
 			
@@ -225,7 +225,7 @@ ideas = {
 
 			picture = generic_air_south_america_1
 			
-			available = {
+			visible = {
 				original_tag = COS
 			}
 			
@@ -244,7 +244,7 @@ ideas = {
 
 			picture = generic_navy_south_america_3
 			
-			available = {
+			visible = {
 				original_tag = COS
 			}
 					
@@ -259,7 +259,7 @@ ideas = {
 
 			picture = generic_navy_south_america_2
 			
-			available = {
+			visible = {
 				original_tag = COS
 			}
 					

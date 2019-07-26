@@ -108,7 +108,7 @@ set_cosmetic_tag = INS_HOL # Netherlands East Indies
 	set_technology = {
 		gwtank = 1
 		
-		interwar_artillery = 1
+		
 		interwar_antiair = 1
 		tech_recon = 1
 		infantry_weapons2 = 1

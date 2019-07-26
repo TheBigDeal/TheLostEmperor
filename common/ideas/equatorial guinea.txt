@@ -8,7 +8,7 @@ ideas = {
 
 			picture = generic_political_advisor_african_2
 
-			allowed = {
+			visible = {
 				original_tag = EQG
 			}
 			
@@ -19,7 +19,7 @@ ideas = {
 
 			picture = generic_political_advisor_african_1
 				
-			allowed = {
+			visible = {
 				original_tag = EQG
 			}
 			
@@ -30,7 +30,7 @@ ideas = {
 
 			picture = generic_political_advisor_african_3
 			
-			allowed = {
+			visible = {
 				original_tag = EQG
 			}
 			
@@ -44,7 +44,7 @@ ideas = {
 
 			picture = generic_army_african_4
 			
-			allowed = {
+			visible = {
 				original_tag = EQG
 			}		
 			
@@ -59,7 +59,7 @@ ideas = {
 
 			picture = generic_army_african_1
 			
-			allowed = {
+			visible = {
 				original_tag = EQG
 			}
 			
@@ -77,7 +77,7 @@ ideas = {
 
 			picture = generic_air_african_3
 			
-			allowed = {
+			visible = {
 				original_tag = EQG
 			}
 			
@@ -92,7 +92,7 @@ ideas = {
 
 			picture = generic_air_african_3
 			
-			allowed = {
+			visible = {
 				original_tag = EQG
 			}
 			
@@ -111,7 +111,7 @@ ideas = {
 
 			picture = generic_navy_african_2
 			
-			allowed = {
+			visible = {
 				original_tag = EQG
 			}
 					
@@ -126,7 +126,7 @@ ideas = {
 
 			picture = generic_navy_african_3
 			
-			allowed = {
+			visible = {
 				original_tag = EQG
 			}
 					
@@ -144,7 +144,7 @@ ideas = {
 			
 			picture = generic_army_african_5
 			
-			allowed = {
+			visible = {
 				original_tag = EQG
 			}
 			
@@ -159,7 +159,7 @@ ideas = {
 
 			picture = generic_army_african_3
 			
-			allowed = {
+			visible = {
 				original_tag = EQG
 			}
 			
@@ -174,7 +174,7 @@ ideas = {
 
 			picture = generic_army_african_2
 			
-			allowed = {
+			visible = {
 				original_tag = EQG
 			}
 			
@@ -189,7 +189,7 @@ ideas = {
 
 			picture = generic_air_african_2
 			
-			allowed = {
+			visible = {
 				original_tag = EQG
 			}
 			
@@ -204,7 +204,7 @@ ideas = {
 
 			picture = generic_navy_african_2
 			
-			allowed = {
+			visible = {
 				original_tag = EQG
 			}
 			
@@ -221,7 +221,7 @@ ideas = {
 			
 			picture = generic_army_african_6
 
-			allowed = {
+			visible = {
 				original_tag = EQG
 			}
 			
@@ -236,7 +236,7 @@ ideas = {
 
 			picture = generic_navy_african_3
 			
-			allowed = {
+			visible = {
 				original_tag = EQG
 			}
 			
@@ -251,7 +251,7 @@ ideas = {
 
 			picture = generic_air_african_2
 			
-			allowed = {
+			visible = {
 				original_tag = EQG
 			}
 			

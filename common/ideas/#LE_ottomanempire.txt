@@ -2,7 +2,7 @@ ideas = {
 	country = {
 		TUR_internal_instability = {
 			picture = GFX_idea_Prussian_Militarism
-			available = {
+			visible = {
 				always = yes
 			}
 			modifier = {

@@ -7,7 +7,7 @@ ideas = {
 		law = yes
 		tno_conscription_scraping_the_barrel = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_conscription_scraping_the_barrel"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = { 
@@ -27,7 +27,7 @@ ideas = {
 		}
 		tno_conscription_all_adults_serve = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_conscription_all_adults_serve"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = { 
@@ -47,7 +47,7 @@ ideas = {
 		}
 		tno_conscription_service_by_requirement = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_conscription_service_by_requirement"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = { 
@@ -67,7 +67,7 @@ ideas = {
 		}
 		tno_conscription_four_year_draft = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_conscription_four_year_draft"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = { 
@@ -86,7 +86,7 @@ ideas = {
 		}
 		tno_conscription_two_year_draft = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_conscription_two_year_draft"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = { 
@@ -105,7 +105,7 @@ ideas = {
 		tno_conscription_one_year_draft = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_conscription_one_year_draft"}
 			default = yes
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = { 
@@ -119,7 +119,7 @@ ideas = {
 		}
 		tno_conscription_volunteer_only = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_conscription_volunteer_only"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = { 
@@ -134,7 +134,7 @@ ideas = {
 		}
 		tno_conscription_disarmed_nation = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_conscription_disarmed_nation"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = { 
@@ -156,7 +156,7 @@ ideas = {
 		tno_women_banned = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_women_banned"}
 			default = yes
-			available = {
+			visible = {
 				NOT = {
 					has_idea = tno_gender_rights_gender_equality
 					has_idea = tno_gender_rights_promoted_equality
@@ -173,7 +173,7 @@ ideas = {
 		}
 		tno_women_military_assistance = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_women_military_assistance"}
-			available = {
+			visible = {
 				OR = {
 					has_idea = tno_gender_rights_women_in_the_workplace
 					has_idea = tno_gender_rights_gender_equality
@@ -192,7 +192,7 @@ ideas = {
 		}
 		tno_women_noncombat_only = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_women_noncombat_only"}
-			available = {
+			visible = {
 				OR = {
 					has_idea = tno_gender_rights_women_in_the_workplace
 					has_idea = tno_gender_rights_gender_equality
@@ -211,7 +211,7 @@ ideas = {
 		}
 		tno_women_combat_roles = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_women_combat_roles"}
-			available = {
+			visible = {
 				OR = {
 					has_idea = tno_gender_rights_gender_equality
 					has_idea = tno_gender_rights_promoted_equality
@@ -229,7 +229,7 @@ ideas = {
 		}
 		tno_women_total_equality = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_women_total_equality"}
-			available = {
+			visible = {
 				has_idea = tno_gender_rights_promoted_equality
 			}
 			
@@ -248,7 +248,7 @@ ideas = {
 		tno_military_supervision_kill_em_all = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_military_supervision_kill_em_all"}
 			default = yes
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -261,7 +261,7 @@ ideas = {
 		}
 		tno_military_supervision_no_supervision = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_military_supervision_no_supervision"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -274,7 +274,7 @@ ideas = {
 		}
 		tno_military_supervision_military_policing = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_military_supervision_military_policing"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -287,7 +287,7 @@ ideas = {
 		}
 		tno_military_supervision_rules_of_engagement = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_military_supervision_rules_of_engagement"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -299,7 +299,7 @@ ideas = {
 		}
 		tno_military_supervision_watchdog_groups = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_military_supervision_watchdog_groups"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -312,7 +312,7 @@ ideas = {
 		}
 		tno_military_supervision_total_supervision = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_military_supervision_total_supervision"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -329,7 +329,7 @@ ideas = {
 		tno_military_spending_demilitarized = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_military_spending_demilitarized"}
 			default = yes
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = { 
@@ -340,7 +340,7 @@ ideas = {
 		}
 		tno_military_spending_low_spending = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_military_spending_low_spending"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = { 
@@ -351,7 +351,7 @@ ideas = {
 		}
 		tno_military_spending_medium_spending = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_military_spending_medium_spending"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = { 
@@ -362,7 +362,7 @@ ideas = {
 		}
 		tno_military_spending_large_spending = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_military_spending_large_spending"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = { 
@@ -373,7 +373,7 @@ ideas = {
 		}
 		tno_military_spending_militarycentric_budget = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_military_spending_militarycentric_budget"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = { 
@@ -384,7 +384,7 @@ ideas = {
 		}
 		tno_military_spending_total_war_economy = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_military_spending_total_war_economy"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = { 
@@ -399,7 +399,7 @@ ideas = {
 		tno_training_none = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_training_none"}
 			default = yes
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -415,7 +415,7 @@ ideas = {
 		}
 		tno_training_minimal_training = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_training_minimal_training"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -431,7 +431,7 @@ ideas = {
 		}
 		tno_training_basic_training = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_training_basic_training"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -445,7 +445,7 @@ ideas = {
 		}
 		tno_training_combat_schooling = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_training_combat_schooling"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -459,7 +459,7 @@ ideas = {
 		}
 		tno_training_advanced_training_methods = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_training_advanced_training_methods"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -478,7 +478,7 @@ ideas = {
 		law = yes
 		tno_racial_integration_not_applicable = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_racial_integration_not_applicable"}
-			available = { always = no }
+			visible = { always = no }
 			
 			removal_cost = -1
 			modifier = { }
@@ -487,7 +487,7 @@ ideas = {
 		}
 		tno_racial_integration_none = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_racial_integration_none"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			default = yes
 			removal_cost = -1
 			modifier = {
@@ -500,7 +500,7 @@ ideas = {
 		}
 		tno_racial_integration_segregated_regiments = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_racial_integration_segregated_regiments"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -514,7 +514,7 @@ ideas = {
 		}
 		tno_racial_integration_integrated_military = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_racial_integration_integrated_military"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -526,7 +526,7 @@ ideas = {
 		}
 		tno_racial_integration_enforced_integration = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_racial_integration_enforced_integration"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -544,7 +544,7 @@ ideas = {
 		tno_draft_exemptions_none = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_draft_exemptions_none"}
 			default = yes
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -556,7 +556,7 @@ ideas = {
 		}
 		tno_draft_exemptions_educational_deferment = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_draft_exemptions_educational_deferment"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -569,7 +569,7 @@ ideas = {
 		}
 		tno_draft_exemptions_civil_service_deferment = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_draft_exemptions_civil_service_deferment"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {
@@ -582,7 +582,7 @@ ideas = {
 		}
 		tno_draft_exemptions_religious_deferment = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tno_draft_exemptions_religious_deferment"}
-			available = { always = no } #TODO CHANGEME
+			visible = { always = no } #TODO CHANGEME
 			
 			removal_cost = -1
 			modifier = {

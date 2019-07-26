@@ -3,7 +3,7 @@ ideas = {
 	country = {
 		george_v = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 
@@ -31,7 +31,7 @@ ideas = {
 
 		ENG_king_edward = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 
@@ -63,7 +63,7 @@ ideas = {
 
 		ENG_king_edward_rexism = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 
@@ -86,7 +86,7 @@ ideas = {
 
 		ENG_george_vi = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 
@@ -116,7 +116,7 @@ ideas = {
 
 		ENG_the_war_to_end_all_wars = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -136,7 +136,7 @@ ideas = {
 		
 		stiff_upper_lip = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 			
@@ -159,7 +159,7 @@ ideas = {
 		
 		british_austerity_idea = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 			
@@ -178,7 +178,7 @@ ideas = {
 		
 		ENG_colonial_elite = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -199,7 +199,7 @@ ideas = {
 		
 		british_fighter_discount = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -220,7 +220,7 @@ ideas = {
 		
 		british_arms_discount = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 			
@@ -243,7 +243,7 @@ ideas = {
 		
 		british_convoy_discount = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -267,7 +267,7 @@ ideas = {
 		
 		indian_independence_promised_idea  = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -286,7 +286,7 @@ ideas = {
 
 		ENG_continuation_of_politics = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -309,7 +309,7 @@ ideas = {
 	political_advisor = {
 		
 		harry_pollitt = {
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -334,7 +334,7 @@ ideas = {
 			
 		clement_attlee = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -359,7 +359,7 @@ ideas = {
 		
 		john_beckett = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -386,7 +386,7 @@ ideas = {
 			
 			picture = generic_political_advisor_europe_3
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -397,7 +397,7 @@ ideas = {
 			
 			picture = generic_political_advisor_europe_5
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -408,7 +408,7 @@ ideas = {
 			
 			picture = generic_political_advisor_europe_1
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -423,7 +423,7 @@ ideas = {
 			
 			picture = generic_political_advisor_europe_2
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -434,7 +434,7 @@ ideas = {
 			
 			picture = generic_political_advisor_europe_6
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -449,7 +449,7 @@ ideas = {
 	# MILITARY
 	army_chief = {
 		john_vereker = {
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -464,7 +464,7 @@ ideas = {
 		
 		edmund_ironside = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -479,7 +479,7 @@ ideas = {
 		
 		alan_brooke = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -496,7 +496,7 @@ ideas = {
 
 		ernle_chatfield = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -511,7 +511,7 @@ ideas = {
 		
 		dudley_pound = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -527,7 +527,7 @@ ideas = {
 		
 		andrew_cunningham = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -544,7 +544,7 @@ ideas = {
 
 		cyril_newall = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -559,7 +559,7 @@ ideas = {
 		
 		charles_portal = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -575,7 +575,7 @@ ideas = {
 		
 		edward_ellington = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -593,7 +593,7 @@ ideas = {
 
 		archibald_wavell = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -608,7 +608,7 @@ ideas = {
 		
 		claude_auchinleck = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -623,7 +623,7 @@ ideas = {
 		
 		kenneth_anderson = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -638,7 +638,7 @@ ideas = {
 	
 		sholto_douglas = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -653,7 +653,7 @@ ideas = {
 		
 		trafford_leigh_mallory = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -668,7 +668,7 @@ ideas = {
 		
 		frederick_bowhill = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -683,7 +683,7 @@ ideas = {
 		
 		louis_mountbatten = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -698,7 +698,7 @@ ideas = {
 		
 		henry_harwood = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -713,7 +713,7 @@ ideas = {
 		
 		max_horton = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -734,7 +734,7 @@ ideas = {
 		
 		yarrow_shipbuilders = {
 			
-			available = {
+			visible = {
 				original_TAG = ENG
 			}
 						
@@ -748,7 +748,7 @@ ideas = {
 		
 		harland_wolff = {
 			
-			available = {
+			visible = {
 				original_TAG = ENG
 			}
 			
@@ -763,7 +763,7 @@ ideas = {
 		
 		cammell_laird = {
 			
-			available = {
+			visible = {
 				original_TAG = ENG
 			}
 			
@@ -781,7 +781,7 @@ ideas = {
 		
 		john_brown_company = {
 			
-			available = {
+			visible = {
 				original_TAG = ENG
 			}
 			
@@ -801,7 +801,7 @@ ideas = {
 		
 		supermarine = {
 			
-			available = {
+			visible = {
 				original_TAG = ENG
 			}
 			
@@ -819,7 +819,7 @@ ideas = {
 		
 		hawker = {
 			
-			available = {
+			visible = {
 				original_TAG = ENG
 			}
 			
@@ -836,7 +836,7 @@ ideas = {
 		}	
 		de_havilland = {
 			
-			available = {
+			visible = {
 				original_TAG = ENG
 			}
 			
@@ -854,7 +854,7 @@ ideas = {
 		
 		avro = {
 			
-			available = {
+			visible = {
 				original_TAG = ENG
 			}
 			
@@ -872,7 +872,7 @@ ideas = {
 		
 		fairey_aviation = {
 			
-			available = {
+			visible = {
 				original_TAG = ENG
 			}
 			
@@ -895,7 +895,7 @@ ideas = {
 		
 		rsaf_enfield = {
 			
-			available = {
+			visible = {
 				original_TAG = ENG
 			}
 			
@@ -913,7 +913,7 @@ ideas = {
 		
 		vauxhall = {
 			
-			available = {
+			visible = {
 				original_TAG = ENG
 			}
 			
@@ -931,7 +931,7 @@ ideas = {
 		
 		royal_arsenal = {
 			
-			available = {
+			visible = {
 				original_TAG = ENG
 			}
 			
@@ -951,7 +951,7 @@ ideas = {
 				
 		aioc = {
 			
-			available = {
+			visible = {
 				original_TAG = ENG
 			}
 			
@@ -969,7 +969,7 @@ ideas = {
 		
 		english_electric = {
 			
-			available = {
+			visible = {
 				original_TAG = ENG
 			}
 			
@@ -991,7 +991,7 @@ ideas = {
 	tank_manufacturer = {
 		vickers_armstrong_eng = {
 			
-			available = {
+			visible = {
 				original_TAG = ENG
 			}
 			
@@ -1012,7 +1012,7 @@ ideas = {
 	
 		bernard_montgomery = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -1027,7 +1027,7 @@ ideas = {
 		
 		harold_alexander = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -1042,7 +1042,7 @@ ideas = {
 		
 		james_somerville = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -1057,7 +1057,7 @@ ideas = {
 		
 		tom_phillips = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -1072,7 +1072,7 @@ ideas = {
 		
 		hugh_dowding = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -1087,7 +1087,7 @@ ideas = {
 		
 		arthur_harris = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -1102,7 +1102,7 @@ ideas = {
 		
 		james_chadwick = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			
@@ -1117,7 +1117,7 @@ ideas = {
 		
 		frank_whittle = {
 			
-			available = {
+			visible = {
 				original_tag = ENG
 			}
 			

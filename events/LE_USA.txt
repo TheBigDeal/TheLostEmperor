@@ -124,7 +124,7 @@ country_event = {
 	desc = le_USA.7.d
 	fire_only_once = yes
 	trigger = {
-		date > 11.20.1928
+		date > 1928.11.20
 	}
 	option = { #Democrats
 		name = le_USA.7.a
@@ -248,7 +248,7 @@ country_event = { #The Presidents Address
 	}
 	option = { 
 		name = le_USA.9.b
-		custom_effect_tooltip = presidents_address_tt
+		custom_effect_tooltip = democrats_protest_tt
 		add_stability = -0.05
 		hidden_effect = { country_event = { id = le_USA.12 days = 7 } }
 	}
@@ -263,9 +263,11 @@ country_event = { #A March In Chicago
 		name = le_USA.10.a
 		add_stability = -0.05
 		hidden_effect = { country_event = { id = le_USA.11 days = 7 } }
+		set_global_flag = chicago_protest
+		complete_national_focus = USA_DOMINOS_BEGIN_TO_FALL
 	}
 }
-country_event = { #A March In Chicago
+country_event = { #Chicago Riots
 	id = le_USA.11
 	title = le_USA.11.t
 	desc = le_USA.11.d
@@ -273,8 +275,8 @@ country_event = { #A March In Chicago
 	picture = GFX_report_event_american_hunger_march
 	option = { 
 		name = le_USA.11.a
-		
 		add_stability = -0.05
+		set_global_flag = chicago_riots
 	}
 }
 country_event = { #Democrats Protest
@@ -286,5 +288,153 @@ country_event = { #Democrats Protest
 	option = { 
 		name = le_USA.12.a
 		add_stability = -0.05
+		hidden_effect = { country_event = { id = le_USA.13 days = 7 } }
+		set_global_flag = baltimore_protest
+		complete_national_focus = USA_DOMINOS_BEGIN_TO_FALL
+	}
+}
+country_event = { #Clashes In Baltimore
+	id = le_USA.13
+	title = le_USA.13.t
+	desc = le_USA.13.d
+	is_triggered_only = yes
+	picture = GFX_report_event_american_hunger_march
+	option = { 
+		name = le_USA.13.a
+		add_stability = -0.05
+		set_global_flag = baltimore_riots
+	}
+}
+country_event = { #Federalize The National Guard
+	id = le_USA.14
+	title = le_USA.14.t
+	desc = le_USA.14.d
+	is_triggered_only = yes
+	picture = GFX_report_event_american_hunger_march
+	option = { 
+		name = le_USA.14.a
+	}
+}
+country_event = { #Chaos In The Cities
+	id = le_USA.15
+	title = le_USA.15.t
+	desc = le_USA.15.d
+	picture = GFX_report_event_american_hunger_march
+	fire_only_once = yes
+	trigger = {
+		tag = USA
+		has_completed_focus = USA_FEDERALIZE_NATIONAL_GUARDS
+	}
+	option = { 
+		name = le_USA.15.a
+		add_stability = -0.05
+	}
+}
+country_event = { #Martial Law Declared
+	id = le_USA.16
+	title = le_USA.16.t
+	desc = le_USA.16.d
+	picture = GFX_report_event_american_hunger_march
+	is_triggered_only = yes
+	option = { 
+		name = le_USA.16.a
+		add_stability = -0.05
+	}
+}
+
+country_event = { #Cordell Hull Cheated In The Election!
+	id = le_USA.17
+	title = le_USA.17.t
+	desc = le_USA.17.d
+	picture = GFX_report_event_american_hunger_march
+	is_triggered_only = yes
+	option = { 
+		name = le_USA.17.a
+		set_global_flag = usa_election_rigged
+		add_popularity = { ideology = conservatism popularity = -0.05 }
+	}
+}
+
+country_event = { #A Meeting In The Dark
+	id = le_USA.18
+	title = le_USA.18.t
+	desc = le_USA.18.d
+	picture = GFX_report_event_american_hunger_march
+	fire_only_once = yes
+	trigger = {
+		original_tag = USA
+		focus_progress = {
+			focus = my_focus
+			progress > 0.5
+		}
+	}
+	option = { 
+		name = le_USA.18.a
+	}
+}
+country_event = { #Cover Our Tracks
+	id = le_USA.19
+	title = le_USA.19.t
+	desc = le_USA.19.d
+	picture = GFX_report_event_american_hunger_march
+	is_triggered_only = yes
+	option = { 
+		name = le_USA.19.a
+		country_event = { id = le_USA.20 }
+	}
+	option = { 
+		name = le_USA.19.b
+	}
+}
+country_event = { #Hull Speaks
+	id = le_USA.20
+	title = le_USA.20.t
+	desc = le_USA.20.d
+	picture = GFX_report_event_american_hunger_march
+	is_triggered_only = yes
+	option = { 
+		name = le_USA.20.a
+	}
+}
+country_event = { #Hull Remains Silent
+	id = le_USA.21
+	title = le_USA.21.t
+	desc = le_USA.21.d
+	picture = GFX_report_event_american_hunger_march
+	is_triggered_only = yes
+	option = { 
+		name = le_USA.21.a
+	}
+}
+country_event = { #Stack The Courts
+	id = le_USA.22
+	title = le_USA.22.t
+	desc = le_USA.22.d
+	picture = GFX_report_event_american_hunger_march
+	is_triggered_only = yes
+	option = { 
+		name = le_USA.22.a
+	}
+}
+country_event = { #Washington Post v. United States
+	id = le_USA.23
+	title = le_USA.23.t
+	desc = le_USA.23.d
+	picture = GFX_report_event_american_hunger_march
+	is_triggered_only = yes
+	option = { 
+		name = le_USA.23.a
+		country_event = { id = le_USA.24 days = 7}
+	}
+}
+country_event = { #The Capitol is Dark and Full of Terrors
+	id = le_USA.24
+	title = le_USA.24.t
+	desc = le_USA.24.d
+	picture = GFX_report_event_american_hunger_march
+	is_triggered_only = yes
+	option = { 
+		name = le_USA.24.a
+
 	}
 }

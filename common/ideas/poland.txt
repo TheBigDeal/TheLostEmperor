@@ -5,7 +5,7 @@ country = {
 	POL_ideological_fanaticism = {
 		
 		
-		allowed = {
+		visible = {
 			always = no
 		}
 
@@ -24,7 +24,7 @@ country = {
 	
 	POL_militarism_focus = {
 			
-		allowed = {
+		visible = {
 			original_tag = POL
 			always = no
 		}
@@ -46,7 +46,7 @@ country = {
 
 	POL_authoritarianism_focus = {
 			
-		allowed = {
+		visible = {
 			original_tag = POL
 			always = no
 		}
@@ -69,7 +69,7 @@ country = {
 
 	POL_polish_revanchism_focus = {
 	
-		allowed = {
+		visible = {
 			original_tag = POL
 			always = no
 		}
@@ -91,7 +91,7 @@ country = {
 	
 	POL_internationalism_focus = {
 	
-		allowed = {
+		visible = {
 			original_tag = POL
 			always = no
 		}
@@ -117,7 +117,7 @@ political_advisor = {
 
 		picture = generic_labryscist_demagogue_eastern_european_2d
 
-		allowed = {
+		visible = {
 			original_tag = POL
 		}
 		
@@ -132,7 +132,7 @@ political_advisor = {
 	
 		picture = generic_collectivist_revolutionary_eastern_european_2d
 
-		allowed = {
+		visible = {
 			original_tag = POL
 		}
 		
@@ -147,7 +147,7 @@ political_advisor = {
 
 		picture = generic_liberalism_reformer_eastern_european_2d
 
-		allowed = {
+		visible = {
 			original_tag = POL
 		}
 		
@@ -162,7 +162,7 @@ political_advisor = {
 
 		picture = generic_army_europe_1
 
-		allowed = {
+		visible = {
 			original_tag = POL
 		}
 		
@@ -173,7 +173,7 @@ political_advisor = {
 
 		picture = generic_army_europe_4
 			
-		allowed = {
+		visible = {
 			original_tag = POL
 		}
 		
@@ -184,7 +184,7 @@ political_advisor = {
 
 		picture = generic_army_europe_5
 
-		allowed = {
+		visible = {
 			original_tag = POL
 		}
 		
@@ -197,7 +197,7 @@ theorist = {
 	POL_tomislaw_lupaszko = {
 				
 				
-		allowed = {
+		visible = {
 			original_tag = POL
 		}
 		
@@ -213,7 +213,7 @@ theorist = {
 	POL_wladyslaw_kalkus = {
 				
 				
-		allowed = {
+		visible = {
 			original_tag = POL
 		}
 		
@@ -235,7 +235,7 @@ theorist = {
 			
 			picture = generic_army_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = POL
 			}
 			
@@ -252,7 +252,7 @@ theorist = {
 			
 			picture = generic_army_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = POL
 			}
 			
@@ -273,7 +273,7 @@ theorist = {
 			
 			picture = generic_air_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = POL
 			}
 			
@@ -290,7 +290,7 @@ theorist = {
 			
 			picture = generic_air_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = POL
 			}
 			
@@ -311,7 +311,7 @@ theorist = {
 			
 			picture = generic_navy_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = POL
 			}
 			
@@ -328,7 +328,7 @@ theorist = {
 			
 			picture = generic_navy_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = POL
 			}
 			
@@ -347,7 +347,7 @@ theorist = {
 		POL_zygmunt_buhusz_szysko = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = POL
 			}
 			
@@ -363,7 +363,7 @@ theorist = {
 		POL_stanislav_maczek = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = POL
 			}
 			
@@ -379,7 +379,7 @@ theorist = {
 		POL_wladyslaw_anders = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = POL
 			}
 			
@@ -395,7 +395,7 @@ theorist = {
 		POL_stanislaw_pawluc = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = POL
 			}
 			
@@ -415,7 +415,7 @@ theorist = {
 		
 		POL_fb = {
 			
-			allowed = {
+			visible = {
 				has_dlc = "Poland: United and Ready"
 				original_TAG = POL
 			}
@@ -434,7 +434,7 @@ theorist = {
 
 		POL_lrl = {
 			
-			allowed = {
+			visible = {
 				has_dlc = "Poland: United and Ready"
 				original_TAG = POL
 			}
@@ -453,7 +453,7 @@ theorist = {
 
 		POL_smpa = {
 			
-			allowed = {
+			visible = {
 				has_dlc = "Poland: United and Ready"
 				original_TAG = POL
 			}
@@ -478,7 +478,7 @@ theorist = {
 			picture = generic_tank_manufacturer_1
 
 			
-			allowed = {
+			visible = {
 				original_tag = POL
 				has_dlc = "Poland: United and Ready"
 			}
@@ -504,7 +504,7 @@ theorist = {
 			picture = generic_naval_manufacturer_1
 
 			
-			allowed = {
+			visible = {
 				original_tag = POL
 				has_dlc = "Poland: United and Ready"
 			}
@@ -533,7 +533,7 @@ theorist = {
 			picture = generic_air_manufacturer_1
 
 			
-			allowed = {
+			visible = {
 				original_tag = POL
 				has_dlc = "Poland: United and Ready"
 			}
@@ -558,7 +558,7 @@ theorist = {
 			picture = generic_air_manufacturer_2
 
 			
-			allowed = {
+			visible = {
 				original_tag = POL
 				has_dlc = "Poland: United and Ready"
 			}
@@ -583,7 +583,7 @@ theorist = {
 				
 		POL_pkp = {
 			
-			allowed = {
+			visible = {
 				original_tag = POL
 				has_dlc = "Poland: United and Ready"
 			}
@@ -602,7 +602,7 @@ theorist = {
 		
 		POL_ava = {
 			
-			allowed = {
+			visible = {
 				original_tag = POL
 				has_dlc = "Poland: United and Ready"
 			}

@@ -4,7 +4,7 @@ ideas = {
 		great_depression = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -23,7 +23,7 @@ ideas = {
 		}
 
 		USA_homeland_defense = {
-			allowed = {
+			visible = {
 				always = no
 			}
 			allowed_civil_war = {
@@ -43,7 +43,7 @@ ideas = {
 		new_deal = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -62,7 +62,7 @@ ideas = {
 		wilkies_new_deal = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -82,7 +82,7 @@ ideas = {
 		full_employment = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -101,7 +101,7 @@ ideas = {
 		
 		
 		wartime_industry_focus = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -121,7 +121,7 @@ ideas = {
 		bureau_of_ships_focus = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -155,7 +155,7 @@ ideas = {
 		USA_prepare_intervention = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -175,7 +175,7 @@ ideas = {
 		limited_interventionism = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -196,7 +196,7 @@ ideas = {
 
 		combined_bomber_offensive = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -216,7 +216,7 @@ ideas = {
 		}
 
 		office_of_strategic_services = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -237,7 +237,7 @@ ideas = {
 		}
 
 		war_bonds_focus = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -255,7 +255,7 @@ ideas = {
 
 		liberty_ships_focus = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -272,7 +272,7 @@ ideas = {
 
 		air_war_plans_division_focus = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -294,7 +294,7 @@ ideas = {
 
 		air_support_focus = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -316,7 +316,7 @@ ideas = {
 
 		strategic_bombing_focus = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -335,7 +335,7 @@ ideas = {
 
 		escort_effort_focus = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -354,7 +354,7 @@ ideas = {
 		
 		home_of_the_free = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -378,7 +378,7 @@ ideas = {
 
 		# idea for the protect Amercians focus - USA liberalism
 		american_influence_defence_liberalism = {
-			allowed = { always = no	}
+			visible = { always = no	}
 
 			allowed_civil_war = {
 				has_government = liberalism
@@ -391,7 +391,7 @@ ideas = {
 			}
 		}
 		american_influence_drift_liberalism = {
-			allowed = { always = no	}
+			visible = { always = no	}
 
 			allowed_civil_war = {
 				has_government = liberalism
@@ -404,7 +404,7 @@ ideas = {
 			}
 		} 
 		american_protection_defence_liberalism = {
-			allowed = { always = no	}
+			visible = { always = no	}
 
 			allowed_civil_war = {
 				has_government = liberalism
@@ -417,7 +417,7 @@ ideas = {
 			}
 		}
 		american_protection_drift_liberalism = {
-			allowed = { always = no	}
+			visible = { always = no	}
 
 			allowed_civil_war = {
 				has_government = liberalism
@@ -431,7 +431,7 @@ ideas = {
 		}
 			# idea for the protect Amercians focus - USA communist
 		american_influence_defence_collectivism = {
-			allowed = { always = no	}
+			visible = { always = no	}
 
 			allowed_civil_war = {
 				has_government = collectivism
@@ -444,7 +444,7 @@ ideas = {
 			}
 		}
 		american_influence_drift_collectivism = {
-			allowed = { always = no	}
+			visible = { always = no	}
 
 			allowed_civil_war = {
 				has_government = collectivism
@@ -457,7 +457,7 @@ ideas = {
 			}
 		} 
 		american_protection_defence_collectivism = {
-			allowed = { always = no	}
+			visible = { always = no	}
 
 			allowed_civil_war = {
 				has_government = collectivism
@@ -470,7 +470,7 @@ ideas = {
 			}
 		}
 		american_protection_drift_collectivism = {
-			allowed = { always = no	}
+			visible = { always = no	}
 
 			allowed_civil_war = {
 				has_government = collectivism
@@ -484,7 +484,7 @@ ideas = {
 		}
 			# idea for the protect Amercians focus - USA fascist
 		american_influence_defence_labryscism = {
-			allowed = { always = no	}
+			visible = { always = no	}
 
 			allowed_civil_war = {
 				has_government = labryscism
@@ -497,7 +497,7 @@ ideas = {
 			}
 		}
 		american_influence_drift_labryscism = {
-			allowed = { always = no	}
+			visible = { always = no	}
 
 			allowed_civil_war = {
 				has_government = labryscism
@@ -510,7 +510,7 @@ ideas = {
 			}
 		} 
 		american_protection_defence_labryscism = {
-			allowed = { always = no	}
+			visible = { always = no	}
 
 			allowed_civil_war = {
 				has_government = labryscism
@@ -523,7 +523,7 @@ ideas = {
 			}
 		}
 		american_protection_drift_labryscism = {
-			allowed = { always = no	}
+			visible = { always = no	}
 
 			allowed_civil_war = {
 				has_government = labryscism
@@ -536,7 +536,7 @@ ideas = {
 			}			
 		}
 		USA_world_police = {
-			allowed = { always = no	}
+			visible = { always = no	}
 
 			allowed_civil_war = {
 				always = yes
@@ -558,7 +558,7 @@ ideas = {
 		earl_browder = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "USA"
 			}
 			
@@ -580,7 +580,7 @@ ideas = {
 		harold_ickes = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "USA"
 			}
 			
@@ -602,7 +602,7 @@ ideas = {
 		charles_coughlin = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = "USA"
 			}
 			
@@ -625,7 +625,7 @@ ideas = {
 			
 			picture = generic_political_advisor_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -636,7 +636,7 @@ ideas = {
 			
 			picture = generic_political_advisor_europe_5
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -647,7 +647,7 @@ ideas = {
 			
 			picture = generic_political_advisor_europe_6
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -658,7 +658,7 @@ ideas = {
 			
 			picture = generic_political_advisor_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -669,7 +669,7 @@ ideas = {
 			
 			picture = generic_political_advisor_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -684,7 +684,7 @@ ideas = {
 		douglas_macarthur = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -700,7 +700,7 @@ ideas = {
 		george_marshall = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -716,7 +716,7 @@ ideas = {
 		dwight_eisenhower = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -736,7 +736,7 @@ ideas = {
 		henry_arnold = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -752,7 +752,7 @@ ideas = {
 		carl_spaatz = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -769,7 +769,7 @@ ideas = {
 		george_kenney = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -788,7 +788,7 @@ ideas = {
 		ernest_king = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -804,7 +804,7 @@ ideas = {
 		chester_nimitz = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -820,7 +820,7 @@ ideas = {
 		william_halsey = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -839,7 +839,7 @@ ideas = {
 		courtney_hodges = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -855,11 +855,11 @@ ideas = {
 		joseph_stilwell = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
-			available = {
+			visible = {
 				NOT = { has_country_flag = joseph_stilwell_sent_to_china }
 			}
 
@@ -874,7 +874,7 @@ ideas = {
 		mark_clark = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -890,7 +890,7 @@ ideas = {
 		jimmy_doolittle = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -906,7 +906,7 @@ ideas = {
 		john_cannon = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -922,7 +922,7 @@ ideas = {
 		claire_lee_chennault = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -938,7 +938,7 @@ ideas = {
 		raymond_spruance = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -954,7 +954,7 @@ ideas = {
 		frank_jack_fletcher = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -970,7 +970,7 @@ ideas = {
 		thomas_kinkaid = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -991,7 +991,7 @@ ideas = {
 		marmon_herrington = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}			
 
@@ -1009,7 +1009,7 @@ ideas = {
 		chrysler = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1028,7 +1028,7 @@ ideas = {
 		army_ordnance_department = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1052,7 +1052,7 @@ ideas = {
 		norfolk_naval_yard = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1071,7 +1071,7 @@ ideas = {
 		electric_boat_company = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1090,7 +1090,7 @@ ideas = {
 		brooklyn_naval_yard = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1109,7 +1109,7 @@ ideas = {
 		newport_news_shipbuilding = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1133,7 +1133,7 @@ ideas = {
 		north_american_aviation = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1152,7 +1152,7 @@ ideas = {
 		#bell = {
 		#	
 		#	
-		#	allowed = {
+		#	visible = {
 		#		original_tag = USA
 		#	}
 		#	
@@ -1171,7 +1171,7 @@ ideas = {
 		lockheed = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1190,7 +1190,7 @@ ideas = {
 		douglas_aircraft_company = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1210,7 +1210,7 @@ ideas = {
 		boeing = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1229,7 +1229,7 @@ ideas = {
 		#consolidated_aircraft = {
 		#	
 		#	
-		#	allowed = {
+		#	visible = {
 		#		original_tag = USA
 		#	}
 		#	
@@ -1247,7 +1247,7 @@ ideas = {
 		grumman = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1272,7 +1272,7 @@ ideas = {
 		springfield_armory = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1291,7 +1291,7 @@ ideas = {
 		ford_motor_company = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1312,7 +1312,7 @@ ideas = {
 		rock_island_arsenal = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1336,7 +1336,7 @@ ideas = {
 		standard_oil_california = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1355,7 +1355,7 @@ ideas = {
 		general_electric = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1377,7 +1377,7 @@ ideas = {
 		omar_bradley = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1393,7 +1393,7 @@ ideas = {
 		george_patton = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1409,7 +1409,7 @@ ideas = {
 		dewitt_clinton_ramsey = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1425,7 +1425,7 @@ ideas = {
 		marc_mitscher = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1441,7 +1441,7 @@ ideas = {
 		curtis_lemay = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1457,7 +1457,7 @@ ideas = {
 		harold_mcclelland = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1473,7 +1473,7 @@ ideas = {
 		robert_oppenheimer = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			
@@ -1489,7 +1489,7 @@ ideas = {
 		robert_goddard = {
 			
 			
-			allowed = {
+			visible = {
 				original_tag = USA
 			}
 			

@@ -1,17 +1,23 @@
+
 state={
 	id=1008
 	name="STATE_1008"
+
 	history={
 		owner = LOU
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
+
 		}
 		add_core_of = LOU
+
 	}
+
 	provinces={
 		1788 3769 10552 12603 
 	}
-	manpower=0
+	manpower=33150
 	buildings_max_level_factor=1.000
+	state_category = large_town
 }

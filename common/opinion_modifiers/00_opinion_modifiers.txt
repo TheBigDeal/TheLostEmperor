@@ -9,6 +9,8 @@
 # trade = yes/no
 
 opinion_modifiers = {
+	#VITAL
+	Monarchist_Diplomat = { value = 20 }
 	#THE LOST EMPEROR
 	#################################################################
 	HRE_relations = { value = 160 }

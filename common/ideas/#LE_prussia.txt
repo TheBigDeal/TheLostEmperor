@@ -36,7 +36,7 @@ ideas = {
 	political_advisor = {
 		adolf_hitler = {
 			
-			available = {
+			visible = {
 				original_tag = PRS
 			}
 			traits = { labryscist_demagogue }

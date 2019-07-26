@@ -1099,7 +1099,7 @@ frloc_parties_sg_fem_cons_03a_comm = { # TODO : 140x
 }
 
 
-### Democratic Parties / Partis démocratiques ###
+### liberalism Parties / Partis démocratiques ###
 
 #Ex.: LE Kuomintang / DU Kuomintang / AU Kuomintang # TODO : 140x
 frloc_parties_sg_masc_cons_01a_demo = {

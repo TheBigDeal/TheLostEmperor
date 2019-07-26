@@ -215,10 +215,6 @@ sub_units = {
 		}
 
 		combat_width = 1
-
-		need = {
-			super_heavy_tank_aa_equipment = 4
-		}
 		manpower = 500
 		max_organisation = 0
 		default_morale = 0.1

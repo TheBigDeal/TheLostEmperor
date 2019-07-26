@@ -5,7 +5,7 @@ ideas = {
 
 			picture = generic_political_advisor_asia_2
 			
-			allowed = {
+			visible = {
 				original_tag = MAN
 			}
 			
@@ -16,7 +16,7 @@ ideas = {
 
 			picture = generic_political_advisor_asia_3
 				
-			allowed = {
+			visible = {
 				original_tag = MAN
 			}
 			
@@ -27,7 +27,7 @@ ideas = {
 
 			picture = generic_political_advisor_asia_1
 			
-			allowed = {
+			visible = {
 				original_tag = MAN
 			}
 			
@@ -41,7 +41,7 @@ ideas = {
 			
 			picture = generic_army_asia_4
 
-			allowed = {
+			visible = {
 				original_tag = MAN
 			}
 			
@@ -59,7 +59,7 @@ ideas = {
 
 			picture = generic_air_asia_3
 			
-			allowed = {
+			visible = {
 				original_tag = MAN
 			}
 			
@@ -78,7 +78,7 @@ ideas = {
 
 			picture = generic_navy_asia_3
 			
-			allowed = {
+			visible = {
 				original_tag = MAN
 			}
 			
@@ -98,7 +98,7 @@ ideas = {
 
 			picture = generic_army_asia_3
 			
-			allowed = {
+			visible = {
 				original_tag = MAN
 			}
 			
@@ -113,7 +113,7 @@ ideas = {
 
 			picture = generic_air_asia_2
 			
-			allowed = {
+			visible = {
 				original_tag = MAN
 			}
 			
@@ -128,7 +128,7 @@ ideas = {
 
 			picture = generic_army_asia_1
 			
-			allowed = {
+			visible = {
 				original_tag = MAN
 			}
 			
@@ -147,7 +147,7 @@ ideas = {
 
 			picture = generic_army_asia_1
 			
-			allowed = {
+			visible = {
 				original_tag = MAN
 			}
 			
@@ -162,7 +162,7 @@ ideas = {
 
 			picture = generic_air_asia_2
 			
-			allowed = {
+			visible = {
 				original_tag = MAN
 			}
 			
@@ -181,11 +181,11 @@ ideas = {
 
 			picture = generic_air_manufacturer_1
 
-			available = {
+			visible = {
 				controls_state = 714
 			}
 
-			allowed = {
+			visible = {
 				original_tag = MAN
 				NOT = { has_dlc = "Waking the Tiger" }
 			}
@@ -205,7 +205,7 @@ ideas = {
 
 			picture = generic_air_manufacturer_1
 
-			allowed = {
+			visible = {
 				original_tag = MAN
 				has_dlc = "Waking the Tiger"
 			}
@@ -226,7 +226,7 @@ ideas = {
 
 			picture = generic_air_manufacturer_1
 
-			allowed = {
+			visible = {
 				original_tag = MAN
 				has_dlc = "Waking the Tiger"
 			}
@@ -247,7 +247,7 @@ ideas = {
 
 			picture = generic_air_manufacturer_1
 
-			allowed = {
+			visible = {
 				original_tag = MAN
 				has_dlc = "Waking the Tiger"
 			}
@@ -271,11 +271,11 @@ ideas = {
 
 			picture = generic_industrial_concern_2			
 			
-			available = {
+			visible = {
 				
 			}
 
-			allowed = {
+			visible = {
 				has_dlc = "Waking the Tiger"
 				original_tag = MAN
 			}

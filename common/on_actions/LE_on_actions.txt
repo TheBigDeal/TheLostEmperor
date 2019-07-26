@@ -4,7 +4,7 @@ on_actions = {
 			set_variable = { var = GLOBAL_COMMUNIST_INFLUENCE var_name value = 0 }
 			set_variable = { var = GLOBAL_FASCIST_INFLUENCE var_name value = 0 }
 			set_variable = { var = GLOBAL_THEOCRATIC_INFLUENCE var_name value = 0 }
-			set_variable = { var = GLOBAL_DEMOCRATIC_INFLUENCE var_name value = 0 }
+			set_variable = { var = GLOBAL_liberalism_INFLUENCE var_name value = 0 }
 			#64 = { set_state_flag = GERMAN_CONFEDERATION }
 			# num_battalions max_manpower_k
 			every_country = {

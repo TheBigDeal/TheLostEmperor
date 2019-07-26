@@ -1,5 +1,12 @@
 spriteTypes = {	
-
+	SpriteType = {
+		name = "GFX_idea_USA_calvin_coolidge"
+		textureFile = "gfx/interface/ideas/idea_USA_calvin_coolidge.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_USA_frank_lowden"
+		textureFile = "gfx/interface/ideas/idea_USA_frank_lowden.dds"
+	}
 	SpriteType = {
 		name = "GFX_idea_prince_constantine"
 		textureFile = "gfx/interface/ideas/idea_prince_constantine.tga"

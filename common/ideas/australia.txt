@@ -3,7 +3,7 @@ ideas = {
 	country = {
 		AST_great_depression_1 = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -25,7 +25,7 @@ ideas = {
 		
 		AST_great_depression_2 = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -46,7 +46,7 @@ ideas = {
 		
 		AST_great_depression_3 = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -67,7 +67,7 @@ ideas = {
 
 		AST_all_in = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -88,7 +88,7 @@ ideas = {
 
 		AST_invest_in_victory = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -110,7 +110,7 @@ ideas = {
 
 		AST_invest_in_victory_2 = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -132,7 +132,7 @@ ideas = {
 
 		AST_australian_womens_army_service = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -151,7 +151,7 @@ ideas = {
 
 		AST_naval_auxiliary_patrol = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -171,7 +171,7 @@ ideas = {
 
 		AST_australian_arms_production = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -190,7 +190,7 @@ ideas = {
 
 		AST_volunteer_defence_corps = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -210,7 +210,7 @@ ideas = {
 
 		AST_citizen_military_forces = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -234,7 +234,7 @@ ideas = {
 
 		AST_classify_aliens = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -255,7 +255,7 @@ ideas = {
 
 		AST_empire_air_training_scheme = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -326,7 +326,7 @@ ideas = {
 
 		AST_abandon_the_westminster_system = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -346,7 +346,7 @@ ideas = {
 
 		AST_abandon_the_westminster_system_proletarianism = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -367,7 +367,7 @@ ideas = {
 
 		AST_abandon_the_westminster_system_rexism = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -388,7 +388,7 @@ ideas = {
 
 		AST_indonesian_nationalists = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -409,7 +409,7 @@ ideas = {
 
 		AST_support_indonesian_uprising = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -434,7 +434,7 @@ ideas = {
 
 		AST_direct_support = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -459,7 +459,7 @@ ideas = {
 
 		AST_arms_for_the_revolution = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -484,7 +484,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 			
-			available = {
+			visible = {
 				original_tag = AST
 			}
 			
@@ -495,7 +495,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 				
-			available = {
+			visible = {
 				original_tag = AST
 			}
 			
@@ -506,7 +506,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			available = {
+			visible = {
 				original_tag = AST
 				has_dlc = "Together for Victory"
 			}
@@ -515,7 +515,7 @@ ideas = {
 
 			traits = { smooth_talking_charmer }
 
-			available = {
+			visible = {
 				has_completed_focus = AST_never_another_gallipoli
 			}
 		}
@@ -524,7 +524,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 			
-			available = {
+			visible = {
 				original_tag = AST
 			}
 			
@@ -532,7 +532,7 @@ ideas = {
 
 			traits = { silent_workhorse }
 
-			available = {
+			visible = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }
 					has_completed_focus = AST_support_the_policy_of_appeasement
@@ -544,7 +544,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			available = {
+			visible = {
 				original_tag = AST
 				has_dlc = "Together for Victory"
 			}
@@ -557,7 +557,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			available = {
+			visible = {
 				original_tag = AST
 				has_dlc = "Together for Victory"
 			}
@@ -567,11 +567,11 @@ ideas = {
 
 		AST_generic_labryscist_demagogue = {
 			
-			available = {
+			visible = {
 				original_tag = AST
 				
 			}
-			available = {
+			visible = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }
 					has_completed_focus = AST_support_the_centre_party
@@ -599,11 +599,11 @@ ideas = {
 
 		AST_lance_sharkey = {
 			
-			available = {
+			visible = {
 				original_tag = AST
 				
 			}
-			available = {
+			visible = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }
 					has_completed_focus = AST_empower_the_workers
@@ -632,10 +632,10 @@ ideas = {
 
 		AST_arthur_calwell = {
 			
-			available = {
+			visible = {
 				original_tag = AST
 			}
-			available = {
+			visible = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }
 					OR = {
@@ -672,7 +672,7 @@ theorist = {
 				
 		picture = generic_political_advisor_europe_3
 
-		available = {
+		visible = {
 			original_tag = AST
 		}
 		
@@ -687,7 +687,7 @@ theorist = {
 				
 		picture = generic_political_advisor_europe_2
 			
-		available = {
+		visible = {
 			original_tag = AST
 		}
 		
@@ -707,7 +707,7 @@ high_command = {
 
 		picture = generic_army_europe_2
 		
-		available = {
+		visible = {
 			original_tag = AST
 		}
 		
@@ -722,7 +722,7 @@ high_command = {
 
 		picture = generic_air_europe_1
 		
-		available = {
+		visible = {
 			original_tag = AST
 		}
 		
@@ -737,7 +737,7 @@ high_command = {
 
 		picture = generic_navy_europe_1
 		
-		available = {
+		visible = {
 			original_tag = AST
 		}
 		
@@ -752,7 +752,7 @@ high_command = {
 
 		picture = generic_army_europe_1
 		
-		available = {
+		visible = {
 			original_tag = AST
 		}
 		
@@ -766,7 +766,7 @@ high_command = {
 
 		picture = generic_army_europe_4
 			
-		available = {
+		visible = {
 			original_tag = AST
 			has_dlc = "Together for Victory"
 		}
@@ -778,12 +778,12 @@ high_command = {
 
 		picture = generic_army_europe_4
 		
-		available = {
+		visible = {
 			original_tag = AST
 			has_dlc = "Together for Victory"
 		}
 		cost = 100
-		available = {
+		visible = {
 				has_completed_focus = AST_australian_army_catering_corps
 			}
 
@@ -801,7 +801,7 @@ high_command = {
 			
 			picture = generic_army_europe_5
 			
-			available = {
+			visible = {
 				original_tag = AST
 			}
 			
@@ -816,7 +816,7 @@ high_command = {
 			
 			picture = generic_army_europe_3
 			
-			available = {
+			visible = {
 				original_tag = AST
 			}
 			
@@ -831,7 +831,7 @@ high_command = {
 			
 			picture = generic_army_europe_5
 			
-			available = {
+			visible = {
 				original_tag = AST
 			}
 			
@@ -850,7 +850,7 @@ high_command = {
 			
 			picture = generic_air_europe_1
 			
-			available = {
+			visible = {
 				original_tag = AST
 			}
 			
@@ -865,7 +865,7 @@ high_command = {
 			
 			picture = generic_air_europe_3
 			
-			available = {
+			visible = {
 				original_tag = AST
 			}
 			
@@ -884,7 +884,7 @@ high_command = {
 			
 			picture = generic_navy_europe_2
 			
-			available = {
+			visible = {
 				original_tag = AST
 			}
 			
@@ -899,7 +899,7 @@ high_command = {
 			
 			picture = generic_navy_europe_1
 			
-			available = {
+			visible = {
 				original_tag = AST
 			}
 			
@@ -920,7 +920,7 @@ high_command = {
 
 			picture = generic_industrial_concern_1
 			
-			available = {
+			visible = {
 				original_TAG = AST
 				has_dlc = "Together for Victory"
 			}
@@ -941,7 +941,7 @@ high_command = {
 					
 			picture = generic_political_advisor_europe_2
 				
-			available = {
+			visible = {
 				original_tag = AST
 				has_dlc = "Together for Victory"
 			}
@@ -963,7 +963,7 @@ high_command = {
 			picture = generic_tank_manufacturer_1
 
 
-			available = {
+			visible = {
 				original_TAG = AST
 				has_dlc = "Together for Victory"
 			}
@@ -990,7 +990,7 @@ high_command = {
 			
 			picture = generic_naval_manufacturer_2
 
-			available = {
+			visible = {
 				original_TAG = AST
 				has_dlc = "Together for Victory"
 			}
@@ -1007,7 +1007,7 @@ high_command = {
 			
 			picture = generic_naval_manufacturer_1
 
-			available = {
+			visible = {
 				original_TAG = AST
 				has_dlc = "Together for Victory"
 			}
@@ -1032,7 +1032,7 @@ high_command = {
 			
 			picture = generic_infantry_equipment_manufacturer_2
 
-			available = {
+			visible = {
 				original_TAG = AST
 				has_dlc = "Together for Victory"
 			}
@@ -1052,7 +1052,7 @@ high_command = {
 
 			picture = generic_infantry_equipment_manufacturer_1
 			
-			available = {
+			visible = {
 				original_TAG = AST
 				has_dlc = "Together for Victory"
 			}
@@ -1079,12 +1079,12 @@ high_command = {
 
 			cost = 50
 
-			available = {
+			visible = {
 				original_tag = AST
 				has_dlc = "Together for Victory"
 			}
 
-			available = {
+			visible = {
 				has_completed_focus = AST_commonwealth_aircraft_corporation
 				is_subject_of = ENG
 			}

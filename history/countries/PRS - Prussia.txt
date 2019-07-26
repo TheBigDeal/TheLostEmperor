@@ -12,11 +12,9 @@ add_ideas = {
 	
 	##POLITICAL LAWS##
 	tno_political_parties_controlled_opposition
-	tno_religious_rights_state_religion
 	tno_trade_unions_illegal
 	tno_immigration_quota_immigration
 	tno_slavery_outlawed
-	tno_public_meetings_allowed
 	##MILITARY LAWS###
 	tno_conscription_volunteer_only
 	tno_women_banned

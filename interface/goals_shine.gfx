@@ -1,7 +1,7 @@
 spriteTypes = {
 	SpriteType = {
 	name = "GFX_pol_surrounded_shine"
-		texturefile = "gfx/interface/goals/pol_surrounded.dds"			
+		texturefile = "gfx/interface/goals/Mod/pol_surrounded.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_generic_strike_at_democracy3.dds"			

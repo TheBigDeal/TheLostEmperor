@@ -6,7 +6,7 @@ ideas = {
 
 			picture = generic_political_advisor_south_america_1
 			
-			allowed = {
+			visible = {
 				original_tag = PAR
 			}
 			
@@ -20,7 +20,7 @@ ideas = {
 
 			picture = generic_political_advisor_south_america_2
 				
-			allowed = {
+			visible = {
 				original_tag = PAR
 			}
 			
@@ -31,7 +31,7 @@ ideas = {
 
 			picture = generic_political_advisor_south_america_3
 			
-			allowed = {
+			visible = {
 				original_tag = PAR
 			}
 			
@@ -45,7 +45,7 @@ ideas = {
 					
 			picture = generic_political_advisor_south_america_3
 
-			allowed = {
+			visible = {
 				original_tag = PAR
 			}
 			
@@ -59,7 +59,7 @@ ideas = {
 		PAR_higenio_morinigo_martinez = {
 					
 					
-			allowed = {
+			visible = {
 				original_tag = PAR
 			}
 			
@@ -79,7 +79,7 @@ ideas = {
 
 			picture = generic_army_south_america_4
 			
-			allowed = {
+			visible = {
 				original_tag = PAR
 			}
 			
@@ -94,7 +94,7 @@ ideas = {
 
 			picture = generic_army_south_america_5
 			
-			allowed = {
+			visible = {
 				original_tag = PAR
 			}
 			
@@ -109,7 +109,7 @@ ideas = {
 
 			picture = generic_army_south_america_3
 			
-			allowed = {
+			visible = {
 				original_tag = PAR
 			}
 			
@@ -124,7 +124,7 @@ ideas = {
 
 			picture = generic_air_south_america_1
 			
-			allowed = {
+			visible = {
 				original_tag = PAR
 			}
 			
@@ -142,7 +142,7 @@ ideas = {
 			
 			picture = generic_army_south_america_2
 			
-			allowed = {
+			visible = {
 				original_tag = PAR
 			}
 			
@@ -159,7 +159,7 @@ ideas = {
 			
 			picture = generic_army_south_america_1
 			
-			allowed = {
+			visible = {
 				original_tag = PAR
 			}
 			
@@ -179,7 +179,7 @@ ideas = {
 			
 			picture = generic_air_south_america_3
 			
-			allowed = {
+			visible = {
 				original_tag = PAR
 			}
 			
@@ -196,7 +196,7 @@ ideas = {
 			
 			picture = generic_air_south_america_2
 			
-			allowed = {
+			visible = {
 				original_tag = PAR
 			}
 			
@@ -216,7 +216,7 @@ ideas = {
 			
 			picture = generic_navy_south_america_2
 			
-			allowed = {
+			visible = {
 				original_tag = PAR
 			}
 			
@@ -233,7 +233,7 @@ ideas = {
 			
 			picture = generic_navy_south_america_3
 			
-			allowed = {
+			visible = {
 				original_tag = PAR
 			}
 			

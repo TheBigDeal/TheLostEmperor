@@ -99,21 +99,7 @@ on_actions = {
             if = {
 				#ADDS THE RATE TO CURRENT MANA
                 add_to_variable = { current_money = current_money_rate }
-                
-                if = {
-                    limit = { has_idea = fuhrer_boost_research }
-                
-                    subtract_from_variable = { current_money = 15 }
-                    
-                    
-                    if = {
-                        limit = { check_variable = { current_money < 15 } }
-						swap_ideas = {
-							remove_idea = fuhrer_boost_research
-						}                    
-					}
-                }
-                
+
 				if = {
 					limit = { check_variable = { fuhrer_focus_research > 0 } }
                     add_to_variable = { fuhrer_focus_research_day = 1 }

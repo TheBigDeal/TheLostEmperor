@@ -6,7 +6,7 @@ country = {
 	#################
 	labryscist_assault_divisions = {
 			
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 
@@ -27,7 +27,7 @@ country = {
 			
 			removal_cost = -1
 			
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 
@@ -39,7 +39,7 @@ country = {
 		}
 	proletariet_partisans_recruiting = {
 			
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 
@@ -144,7 +144,7 @@ country = {
 			socialism_drift = 0.03
 		}
 	}
-	Democratic_Drift = {
+	liberalism_Drift = {
 		picture = Hungarian_Monarchy
 		modifier = {
 			liberalism_drift = 0.01

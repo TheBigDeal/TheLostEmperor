@@ -4,7 +4,7 @@ ideas = {
 
 		HUN_treaty_of_triannon = {
 
-			available = {
+			visible = {
 				has_war = no
 			}
 
@@ -17,7 +17,7 @@ ideas = {
 
 			picture = HUN_treaty_of_triannon
 
-			available = {
+			visible = {
 				has_war = no
 			}
 
@@ -30,7 +30,7 @@ ideas = {
 
 			picture = HUN_treaty_of_triannon
 
-			available = {
+			visible = {
 				has_war = no
 			}
 
@@ -204,7 +204,7 @@ ideas = {
 
 		HUN_secret_rearmament = {
 
-			available = {
+			visible = {
 				OR = {
 					has_idea = disarmed_nation 
 					has_idea = volunteer_only 
@@ -302,7 +302,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -313,7 +313,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -324,7 +324,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -336,7 +336,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 
-			allowed = {
+			visible = {
 				original_tag = HUN
 				has_dlc = "Death or Dishonor"
 			}
@@ -348,7 +348,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 				
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -359,7 +359,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -370,7 +370,7 @@ ideas = {
 
 			picture = generic_communist_europe
 			
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -381,7 +381,7 @@ ideas = {
 
 			picture = generic_liberalism_europe
 			
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -392,7 +392,7 @@ ideas = {
 
 			picture = generic_fascist_europe
 			
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -410,7 +410,7 @@ ideas = {
 			
 			picture = generic_army_europe_4
 			
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -427,7 +427,7 @@ ideas = {
 			
 			picture = generic_army_europe_5
 			
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -448,7 +448,7 @@ ideas = {
 			
 			picture = generic_air_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -465,7 +465,7 @@ ideas = {
 			
 			picture = generic_air_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -486,7 +486,7 @@ ideas = {
 			
 			picture = generic_navy_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -503,7 +503,7 @@ ideas = {
 			
 			picture = generic_navy_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -523,7 +523,7 @@ ideas = {
 			
 			picture = generic_army_europe_3
 
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -539,7 +539,7 @@ ideas = {
 		HUN_dezso_laszlo = {
 			
 			picture = generic_army_europe_2			
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -556,7 +556,7 @@ ideas = {
 			
 			picture = generic_air_europe_3
 
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -571,7 +571,7 @@ ideas = {
 
 			picture = generic_army_europe_1
 
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -590,7 +590,7 @@ ideas = {
 		
 			picture = generic_army_europe_2
 
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -605,7 +605,7 @@ ideas = {
 
 			picture = generic_air_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -627,7 +627,7 @@ ideas = {
 			picture = generic_air_manufacturer_2
 
 			
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -653,14 +653,14 @@ ideas = {
 			
 			picture = generic_naval_manufacturer_1
 
-			available = {
+			visible = {
 				if = {
 					limit = { has_dlc = "Death or Dishonor" }
 					has_completed_focus = HUN_naval_warfare
 				}
 			}
 
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -681,7 +681,7 @@ ideas = {
 			
 			picture = generic_industrial_concern_1
 
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			
@@ -704,7 +704,7 @@ ideas = {
 			
 			picture = generic_infantry_equipment_manufacturer_2
 
-			allowed = {
+			visible = {
 				original_tag = HUN
 			}
 			

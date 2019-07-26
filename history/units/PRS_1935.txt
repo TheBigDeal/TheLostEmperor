@@ -218,23 +218,23 @@ units = {
 		division_template = "Kavallerie-Brigade"
 		start_experience_factor = 0.5
 	}
-	#POZNAN
+	#Frankfurt an der Oder
 	#############
 	division = {
 		name = "Kavallerie-Brigade"
-		location = 6558
+		location = 444
 		division_template = "Kavallerie-Brigade"
 		start_experience_factor = 0.5
 	}
 	division = {
 		name = "Kavallerie-Brigade"
-		location = 6558
+		location = 444
 		division_template = "Kavallerie-Brigade"
 		start_experience_factor = 0.5
 	}
 	division = {
 		name = "Infanterie-Division"
-		location = 6558
+		location = 444
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.5
 	}

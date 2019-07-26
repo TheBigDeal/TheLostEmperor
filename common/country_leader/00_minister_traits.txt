@@ -1,0 +1,91 @@
+leader_traits = {
+	### Head Of State ###
+	cornered_fox = {
+		random = no
+		army_morale_factor = 0.1
+		army_core_defence_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	### Secondary Leader ###
+	
+	### Foriegn Minister ###
+	monarchist_diplomat = {
+		random = no
+		absolutism_acceptance = 20
+		royalism_acceptance = 20
+		rexism_acceptance = 20
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	### Minister Of Defence ###
+	rifleman = {
+		random = no
+		army_infantry_attack_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	### Economic Minister ###
+	economic_reformer = {
+		random = no
+		political_power_gain = -0.01
+		production_speed_infrastructure_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	### Minister Of Security ###
+	writer = {
+		random = no
+		political_power_gain = 0.02
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	### Minister Of Intelligence ###
+	
+	### Theorist ###	
+	general_theorist = {
+		random = no
+		research_speed_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	nuclear_theorist = {
+		random = no
+	}
+	landcruiser_theorist = {
+		random = no
+	}
+	heavy_artillery_theorist = {
+		random = no
+	}
+	submarine_theorist = {
+		random = no
+	}
+	chemical_warfare_theorist = {
+		random = no
+	}
+	rocketry_theorist = {
+		random = no
+	}
+	jet_theorist = {
+		random = no
+	}
+	
+	synth_resources_theorist = {
+		random = no
+	}
+	
+	radar_theorist = {
+		random = no
+	}
+	
+	intelligence_theorist = {
+		random = no
+	}
+}

@@ -3,7 +3,7 @@ ideas = {
 	country = {
 		extreme_civil_unrest = {
 			picture = generic_political_advisor_europe_5
-			available = { always = yes }
+			visible = { always = yes }
 			modifier = {
 				political_power_factor = -0.75
 				foreign_subversive_activites = 0.50
@@ -21,7 +21,7 @@ ideas = {
 
 		picture = generic_political_advisor_europe_5
 
-		allowed = {
+		visible = {
 			original_tag = GRE
 		}
 
@@ -32,7 +32,7 @@ ideas = {
 
 		picture = generic_political_advisor_europe_2
 
-		allowed = {
+		visible = {
 			original_tag = GRE
 		}
 
@@ -43,7 +43,7 @@ ideas = {
 
 		picture = generic_political_advisor_europe_3
 
-		allowed = {
+		visible = {
 			original_tag = GRE
 		}
 
@@ -57,7 +57,7 @@ theorist = {
 
 		picture = generic_army_europe_3
 
-		allowed = {
+		visible = {
 			original_tag = GRE
 		}
 
@@ -72,7 +72,7 @@ theorist = {
 
 		picture = generic_political_advisor_europe_1
 
-		allowed = {
+		visible = {
 			original_tag = GRE
 		}
 
@@ -90,7 +90,7 @@ theorist = {
 
 			picture = generic_army_europe_3
 
-			allowed = {
+			visible = {
 				original_tag = GRE
 			}
 
@@ -107,7 +107,7 @@ theorist = {
 
 			picture = generic_army_europe_5
 
-			allowed = {
+			visible = {
 				original_tag = GRE
 			}
 
@@ -128,7 +128,7 @@ theorist = {
 
 			picture = generic_air_europe_1
 
-			allowed = {
+			visible = {
 				original_tag = GRE
 			}
 
@@ -145,7 +145,7 @@ theorist = {
 
 			picture = generic_air_europe_2
 
-			allowed = {
+			visible = {
 				original_tag = GRE
 			}
 
@@ -166,7 +166,7 @@ theorist = {
 
 			picture = generic_navy_europe_1
 
-			allowed = {
+			visible = {
 				original_tag = GRE
 			}
 
@@ -183,7 +183,7 @@ theorist = {
 
 			picture = generic_navy_europe_1
 
-			allowed = {
+			visible = {
 				original_tag = GRE
 			}
 
@@ -201,7 +201,7 @@ theorist = {
 
 		GRE_aris_velouchiotis = {
 
-			allowed = {
+			visible = {
 				original_tag = GRE
 			}
 
@@ -217,7 +217,7 @@ theorist = {
 		GRE_napoleon_zervas = {
 
 
-			allowed = {
+			visible = {
 				original_tag = GRE
 			}
 
@@ -233,7 +233,7 @@ theorist = {
 		GRE_nikos_beloyannis = {
 
 
-			allowed = {
+			visible = {
 				original_tag = GRE
 			}
 
@@ -249,7 +249,7 @@ theorist = {
 		GRE_aristeidis_moraitinis = {
 
 
-			allowed = {
+			visible = {
 				original_tag = GRE
 			}
 
@@ -271,7 +271,7 @@ theorist = {
 			picture = generic_air_manufacturer_3
 
 
-			allowed = {
+			visible = {
 				original_tag = GRE
 			}
 
@@ -298,7 +298,7 @@ theorist = {
 			picture = generic_naval_manufacturer_1
 
 
-			allowed = {
+			visible = {
 				original_tag = GRE
 			}
 

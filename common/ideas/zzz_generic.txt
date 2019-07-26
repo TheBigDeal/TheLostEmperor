@@ -1,16 +1,22 @@
 ideas = {
 	#MOD
 	head_of_government = {
-		generic_communist_revolutionary = {	
+		generic_head_of_government = {	
 			traits = { communist_revolutionary }
+			visible = {
+				NOT = { tag = USA }
+			}
 			ai_will_do = {
 				factor = 0
 			}
 		}
 	}
 	secondary_head = {
-		generic_communist_revolutionary = {	
+		generic_secondary_head = {	
 			traits = { communist_revolutionary }
+			visible = {
+				NOT = { tag = USA }
+			}
 			ai_will_do = {
 				factor = 0
 			}
@@ -19,6 +25,9 @@ ideas = {
 	foreign_minister = {
 		generic_foreign_minister = {
 			traits = { army_chief_planning_2 }
+			visible = {
+				NOT = { tag = USA }
+			}
 			ai_will_do = {
 				factor = 1
 			}
@@ -27,6 +36,9 @@ ideas = {
 	defence_minister = {
 		generic_defence_minister = {
 			traits = { army_chief_planning_2 }
+			visible = {
+				NOT = { tag = USA }
+			}
 			ai_will_do = {
 				factor = 1
 			}
@@ -35,6 +47,9 @@ ideas = {
 	economy_minister = {
 		generic_economy_minister = {
 			traits = { army_chief_planning_2 }
+			visible = {
+				NOT = { tag = USA }
+			}
 			ai_will_do = {
 				factor = 1
 			}
@@ -43,6 +58,9 @@ ideas = {
 	security_minister = {
 		generic_security_minister = {
 			traits = { army_chief_planning_2 }
+			visible = {
+				NOT = { tag = USA }
+			}
 			ai_will_do = {
 				factor = 1
 			}
@@ -51,18 +69,141 @@ ideas = {
 	intel_minister = {
 		generic_intel_minister = {
 			traits = { army_chief_planning_2 }
+			visible = {
+				NOT = { tag = USA }
+			}
 			ai_will_do = {
 				factor = 1
 			}
 		}	
 	}
 	theorist = {
-		generic_theorist = {
-			traits = { army_chief_planning_2 }
+		conventional_theorist = {
+			traits = { general_theorist }
+			picture = generic_political_advisor_europe_5
+			visible = {
+				always = yes
+			}
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
+		nuclear_theorist = {
+			traits = { nuclear_theorist }
+			picture = generic_political_advisor_europe_1
+			research_bonus = {
+				nuclear = 0.15
+			}
+			visible = {
+				always = yes
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		landcruiser_theorist = {
+			traits = { landcruiser_theorist }
+			picture = generic_political_advisor_europe_4
+			research_bonus = {
+				landcruiser_cat = 0.15
+			}
+			visible = {
+				always = yes
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		heavy_artillery_theorist = {
+			traits = { heavy_artillery_theorist }
+			picture = generic_political_advisor_europe_2
+			research_bonus = {
+				railway_gun_cat = 0.15
+			}
+			visible = {
+				always = yes
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		rocketry_theorist = {
+			traits = { rocketry_theorist }
+			picture = generic_political_advisor_europe_6
+			research_bonus = {
+				rocketry = 0.15
+			}
+			visible = {
+				always = yes
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		jet_theorist = {
+			traits = { jet_theorist }
+			picture = generic_political_advisor_europe_9
+			research_bonus = {
+				jet_technology = 0.15
+			}
+			visible = {
+				always = yes
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		chemical_warfare_theorist = {
+			traits = { chemical_warfare_theorist }
+			picture = generic_political_advisor_europe_9
+			visible = {
+				always = yes
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}			
+		synth_resources_theorist = {
+			traits = { synth_resources_theorist }
+			picture = generic_political_advisor_europe_6
+			research_bonus = {
+				synth_resources = 0.15
+			}
+			visible = {
+				always = yes
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		radar_theorist = {
+			traits = { radar_theorist }
+			picture = generic_political_advisor_europe_10
+			research_bonus = {
+				radar_tech = 0.15
+			}
+			visible = {
+				always = yes
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		intelligence_theorist = {
+			traits = { intelligence_theorist }
+			picture = generic_political_advisor_europe_10
+			research_bonus = {
+				decryption_tech = 0.15
+				encryption_tech = 0.15
+			}
+			visible = {
+				always = yes
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 	
 	
@@ -70,7 +211,7 @@ ideas = {
 	hidden_ideas = {
 
 		continuous_naval_production = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -87,7 +228,7 @@ ideas = {
 
 
 		continuous_air_production = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -167,7 +308,7 @@ ideas = {
 	
 		nationalism = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -187,7 +328,7 @@ ideas = {
 
 		internationalism = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -207,7 +348,7 @@ ideas = {
 
 		fascist_influence = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -228,7 +369,7 @@ ideas = {
 		communist_influence = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -248,7 +389,7 @@ ideas = {
 		liberalism_influence = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -267,7 +408,7 @@ ideas = {
 		}
 		
 		soviet_german_friendship = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -301,7 +442,7 @@ ideas = {
 		communist_pressure = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -322,7 +463,7 @@ ideas = {
 		# Generic Focus Ideas
 
 		special_forces = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -342,7 +483,7 @@ ideas = {
 		collectivist_ethos_focus = {
 			
 		
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -362,7 +503,7 @@ ideas = {
 		liberty_ethos_focus = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -382,7 +523,7 @@ ideas = {
 		militarism_focus = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -403,7 +544,7 @@ ideas = {
 		military_youth_focus = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -426,7 +567,7 @@ ideas = {
 		paramilitarism_focus = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -449,7 +590,7 @@ ideas = {
 		indoctrination_focus = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -472,7 +613,7 @@ ideas = {
 		ideological_fanaticism_focus = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -498,7 +639,7 @@ ideas = {
 		political_commissars_focus = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -518,7 +659,7 @@ ideas = {
 		absolutism_idea = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -546,7 +687,7 @@ ideas = {
 		deterrence = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -567,7 +708,7 @@ ideas = {
 		}
 
 		volunteer_corps_focus = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -585,7 +726,7 @@ ideas = {
 		}
 
 		foreign_expeditions_focus = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -603,7 +744,7 @@ ideas = {
 		}
 
 		why_we_fight_focus = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -622,7 +763,7 @@ ideas = {
 		}	
 
 		idea_political_correctness = {
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -641,7 +782,7 @@ ideas = {
 
 		collectivism_banned = {
 			picture = anti_soviet_pact
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -660,7 +801,7 @@ ideas = {
 
 			picture = generic_labryscism_banned
 
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -678,7 +819,7 @@ ideas = {
 		race_for_the_bomb = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -701,7 +842,7 @@ ideas = {
 		race_for_the_bomb_outclassed = {
 			
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -724,7 +865,7 @@ ideas = {
 		
 		received_attache = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -741,7 +882,7 @@ ideas = {
 		}
 		draft_dodging = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 			
@@ -760,7 +901,7 @@ ideas = {
 
 		draft_dodging_2 = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 			
@@ -779,7 +920,7 @@ ideas = {
 
 		draft_dodging_3 = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 			
@@ -798,7 +939,7 @@ ideas = {
 
 		strikes_1 = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 			
@@ -819,7 +960,7 @@ ideas = {
 		}
 		strikes_2 = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 			
@@ -840,7 +981,7 @@ ideas = {
 		}
 		strikes_3 = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 			
@@ -861,7 +1002,7 @@ ideas = {
 		}
 		mutiny_1 = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 			
@@ -883,7 +1024,7 @@ ideas = {
 		}
 		mutiny_2 = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 			
@@ -905,7 +1046,7 @@ ideas = {
 		}
 		mutiny_3 = {
 			
-			allowed = {
+			visible = {
 				always = no
 			}
 			
@@ -929,7 +1070,7 @@ ideas = {
 		# Civil War Ideas
 		civil_war_surprise_attack_plan = {
 
-			allowed = {
+			visible = {
 				always = no
 			}
 
@@ -951,7 +1092,7 @@ ideas = {
 		# POLITICAL	
 		generic_collectivist_revolutionary = {
 			
-			allowed = {
+			visible = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = ROM tag = CHI tag = MAN } }
 				NOT = {
 					has_available_idea_with_traits = { idea = collectivist_revolutionary limit = 1 }
@@ -978,7 +1119,7 @@ ideas = {
 			
 		generic_liberalism_reformer = {
 			
-			allowed = {
+			visible = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = PRC tag = CHI tag = MAN } }
 				NOT = {
 					has_available_idea_with_traits = { idea = liberalism_reformer limit = 1 }
@@ -1005,7 +1146,7 @@ ideas = {
 		
 		generic_labryscist_demagogue = {
 			
-			allowed = {
+			visible = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = CZE tag = PRC tag = CHI tag = MAN } }
 				NOT = {
 					has_available_idea_with_traits = { idea = labryscist_demagogue limit = 1 }
@@ -1042,7 +1183,7 @@ ideas = {
 
 			picture = generic_tank_manufacturer_1
 			
-			allowed = {
+			visible = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE } }
 				NOT = {
 					has_available_idea_with_traits = { idea = tank_manufacturer limit = 1 }
@@ -1074,7 +1215,7 @@ ideas = {
 			
 			picture = generic_naval_manufacturer_1
 
-			allowed = {
+			visible = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = SWE tag = HUN tag = CZE } }
 				NOT = {
 					has_available_idea_with_traits = { idea = naval_manufacturer limit = 1 }
@@ -1112,7 +1253,7 @@ ideas = {
 			
 			picture = generic_air_manufacturer_1
 
-			allowed = {
+			visible = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
 				NOT = {
 					has_available_idea_with_traits = { idea = light_aircraft_manufacturer limit = 1 }
@@ -1145,7 +1286,7 @@ ideas = {
 			
 			picture = generic_air_manufacturer_3
 
-			allowed = {
+			visible = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = ROM } }
 				NOT = {
 					has_available_idea_with_traits = { idea = medium_aircraft_manufacturer limit = 1 }
@@ -1178,7 +1319,7 @@ ideas = {
 
 			picture = generic_air_manufacturer_2
 			
-			allowed = {
+			visible = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = ROM } }
 				NOT = {
 					has_available_idea_with_traits = { idea = heavy_aircraft_manufacturer limit = 1 }
@@ -1211,7 +1352,7 @@ ideas = {
 			
 			picture = generic_naval_manufacturer_2
 
-			allowed = {
+			visible = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = ROM tag = YUG } }
 				NOT = {
 					has_available_idea_with_traits = { idea = naval_aircraft_manufacturer limit = 1 }
@@ -1243,7 +1384,7 @@ ideas = {
 			
 			picture = generic_industrial_concern_1
 
-			allowed = {
+			visible = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN } }
 				NOT = {
 					has_available_idea_with_traits = { idea = industrial_concern limit = 1 }
@@ -1270,7 +1411,7 @@ ideas = {
 			
 			picture = generic_electronics_concern_1
 
-			allowed = {
+			visible = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
 				NOT = {
 					has_available_idea_with_traits = { idea = electronics_concern limit = 1 }
@@ -1296,7 +1437,7 @@ ideas = {
 			
 			picture = generic_motorized_equipment_manufacturer_3
 
-			allowed = {
+			visible = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
 				NOT = {
 					has_available_idea_with_traits = { idea = motorized_equipment_manufacturer limit = 1 }
@@ -1323,7 +1464,7 @@ ideas = {
 			
 			picture = generic_infantry_equipment_manufacturer_2
 
-			allowed = {
+			visible = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN } }
 				NOT = {
 					has_available_idea_with_traits = { idea = infantry_equipment_manufacturer limit = 1 }
@@ -1350,7 +1491,7 @@ ideas = {
 			
 			picture = generic_artillery_manufacturer_2
 
-			allowed = {
+			visible = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
 				NOT = {
 					has_available_idea_with_traits = { idea = artillery_manufacturer limit = 1 }
@@ -1378,7 +1519,7 @@ ideas = {
 
 		generic_captain_of_industry = {
 
-			allowed = {
+			visible = {
 				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
@@ -1387,7 +1528,7 @@ ideas = {
 		
 		generic_fortification_engineer = {
 
-			allowed = {
+			visible = {
 				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
@@ -1396,7 +1537,7 @@ ideas = {
 
 		generic_war_industrialist = {
 
-			allowed = {
+			visible = {
 				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
@@ -1408,7 +1549,7 @@ ideas = {
 		
 		generic_army_chief_off = {
 			
-			allowed = {
+			visible = {
 				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
@@ -1417,7 +1558,7 @@ ideas = {
 
 		generic_army_chief_def = {
 			
-			allowed = {
+			visible = {
 				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
@@ -1429,7 +1570,7 @@ ideas = {
 
 		generic_navy_chief_decisive_bat = {
 			
-			allowed = {
+			visible = {
 				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
@@ -1438,7 +1579,7 @@ ideas = {
 
 		generic_navy_anti_submarine = {
 			
-			allowed = {
+			visible = {
 				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
@@ -1450,7 +1591,7 @@ ideas = {
 
 		generic_air_close_air_sup = {
 			
-			allowed = {
+			visible = {
 				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
@@ -1459,7 +1600,7 @@ ideas = {
 	
 		generic_air_chief_all_weather = {
 			
-			allowed = {
+			visible = {
 				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
@@ -1471,7 +1612,7 @@ ideas = {
 
 		generic_army_art = {
 			
-			allowed = {
+			visible = {
 				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
@@ -1480,7 +1621,7 @@ ideas = {
 		
 		generic_army_log = {
 
-			allowed = {
+			visible = {
 				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
@@ -1489,7 +1630,7 @@ ideas = {
 
 		generic_navy_fleet_log = {
 
-			allowed = {
+			visible = {
 				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
@@ -1498,7 +1639,7 @@ ideas = {
 
 		generic_air_air_combat_trainer = {
 
-			allowed = {
+			visible = {
 				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
@@ -1510,7 +1651,7 @@ ideas = {
 
 		generic_military_theorist = {
 			
-			allowed = {
+			visible = {
 				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
@@ -1523,7 +1664,7 @@ ideas = {
 	
 		generic_naval_theorist = {
 			
-			allowed = {
+			visible = {
 				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
@@ -1536,7 +1677,7 @@ ideas = {
 
 		generic_air_warfare_theorist = {
 			
-			allowed = {
+			visible = {
 				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			

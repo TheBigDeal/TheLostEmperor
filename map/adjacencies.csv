@@ -179,5 +179,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9887;849;sea;7678;-1;-1;-1;-1;;MOD;STRAIT
 7211;1205;sea;5913;-1;-1;-1;-1;;MOD;STRAIT
 13223;13224;sea;5407;-1;-1;-1;-1;;MOD;STRAIT
-3314;6336;sea;173;-1;-1;-1;-1;;MOD;STRAIT
+3314;6336;sea;8622;-1;-1;-1;-1;;MOD;STRAIT
+8051;13267;sea;2691;-1;-1;-1;-1;;MOD;STRAIT
+12702;13267;sea;2691;-1;-1;-1;-1;;MOD;STRAIT
 -1;-1;;-1;-1;-1;-1;-1;-1

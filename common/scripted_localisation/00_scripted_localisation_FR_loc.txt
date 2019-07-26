@@ -89,14 +89,14 @@ defined_text = {
 			OR = { tag = COG original_tag = COG }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_COG_NOT_NEUTRALITY_INHAB
+		localization_key = FRLOC_COG_NOT_absolutism_INHAB
 	}
 	text = {
 		trigger = {
 			OR = { tag = COG original_tag = COG }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_COG_NEUTRALITY_INHAB
+		localization_key = FRLOC_COG_absolutism_INHAB
 	}
 	text = {
 		trigger = { OR = { tag = COL original_tag = COL } }
@@ -219,14 +219,14 @@ defined_text = {
 			OR = { tag = ISR original_tag = ISR }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_ISR_NOT_NEUTRALITY_INHAB
+		localization_key = FRLOC_ISR_NOT_absolutism_INHAB
 	}
 	text = {
 		trigger = {
 			OR = { tag = ISR original_tag = ISR }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_ISR_NEUTRALITY_INHAB
+		localization_key = FRLOC_ISR_absolutism_INHAB
 	}
 	text = {
 		trigger = { OR = { tag = ITA original_tag = ITA } }
@@ -330,21 +330,21 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = FRLOC_NZL_NOR_FASCISM_COMMUNISM_INHAB
+		localization_key = FRLOC_NZL_NOR_labryscism_collectivism_INHAB
 	}
 	text = {
 		trigger = {
 			OR = { tag = NZL original_tag = NZL }
 			has_government = labryscism
 		}
-		localization_key = FRLOC_NZL_FASCISM_INHAB
+		localization_key = FRLOC_NZL_labryscism_INHAB
 	}
 	text = {
 		trigger = {
 			OR = { tag = NZL original_tag = NZL }
 			has_government = collectivism
 		}
-		localization_key = FRLOC_NZL_COMMUNISM_INHAB
+		localization_key = FRLOC_NZL_collectivism_INHAB
 	}
 	text = {
 		trigger = { OR = { tag = OMA original_tag = OMA } }
@@ -407,14 +407,14 @@ defined_text = {
 			OR = { tag = SAU original_tag = SAU }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_SAU_NOT_NEUTRALITY_INHAB
+		localization_key = FRLOC_SAU_NOT_absolutism_INHAB
 	}
 	text = {
 		trigger = {
 			OR = { tag = SAU original_tag = SAU }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_SAU_NEUTRALITY_INHAB
+		localization_key = FRLOC_SAU_absolutism_INHAB
 	}
 	text = {
 		trigger = { OR = { tag = SER original_tag = SER } }
@@ -441,14 +441,14 @@ defined_text = {
 			OR = { tag = SOV original_tag = SOV }
 			NOT = { has_government = collectivism }
 		}
-		localization_key = FRLOC_SOV_NOT_COMMUNISM_INHAB
+		localization_key = FRLOC_SOV_NOT_collectivism_INHAB
 	}
 	text = {
 		trigger = {
 			OR = { tag = SOV original_tag = SOV }
 			has_government = collectivism
 		}
-		localization_key = FRLOC_SOV_COMMUNISM_INHAB
+		localization_key = FRLOC_SOV_collectivism_INHAB
 	}
 	text = {
 		trigger = { OR = { tag = SPR original_tag = SPR } }
@@ -491,14 +491,14 @@ defined_text = {
 			OR = { tag = USA original_tag = USA }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_USA_NOT_NEUTRALITY_INHAB
+		localization_key = FRLOC_USA_NOT_absolutism_INHAB
 	}
 	text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_USA_NEUTRALITY_INHAB
+		localization_key = FRLOC_USA_absolutism_INHAB
 	}
 	text = {
 		trigger = { OR = { tag = VEN original_tag = VEN } }
@@ -533,14 +533,14 @@ defined_text = {
 			OR = { tag = ZIM original_tag = ZIM }
 			NOT = { has_government = labryscism }
 		}
-		localization_key = FRLOC_ZIM_NOT_FASCISM_INHAB
+		localization_key = FRLOC_ZIM_NOT_labryscism_INHAB
 	}
 	text = {
 		trigger = {
 			OR = { tag = ZIM original_tag = ZIM }
 			has_government = labryscism
 		}
-		localization_key = FRLOC_ZIM_FASCISM_INHAB
+		localization_key = FRLOC_ZIM_labryscism_INHAB
 	}
 }
 
@@ -632,14 +632,14 @@ defined_text = {
 			OR = { tag = COG original_tag = COG }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_COG_NOT_NEUTRALITY_ADJ_M
+		localization_key = FRLOC_COG_NOT_absolutism_ADJ_M
 	}
 	text = {
 		trigger = {
 			OR = { tag = COG original_tag = COG }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_COG_NEUTRALITY_ADJ_M
+		localization_key = FRLOC_COG_absolutism_ADJ_M
 	}
 	text = {
 		trigger = { OR = { tag = COL original_tag = COL } }
@@ -762,14 +762,14 @@ defined_text = {
 			OR = { tag = ISR original_tag = ISR }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_ISR_NOT_NEUTRALITY_ADJ_MS
+		localization_key = FRLOC_ISR_NOT_absolutism_ADJ_MS
 	}
 	text = {
 		trigger = {
 			OR = { tag = ISR original_tag = ISR }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_ISR_NEUTRALITY_ADJ_MS
+		localization_key = FRLOC_ISR_absolutism_ADJ_MS
 	}
 	text = {
 		trigger = { OR = { tag = ITA original_tag = ITA } }
@@ -883,21 +883,21 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = FRLOC_NZL_NOR_FASCISM_COMMUNISM_ADJ_M
+		localization_key = FRLOC_NZL_NOR_labryscism_collectivism_ADJ_M
 	}
 	text = {
 		trigger = {
 			OR = { tag = NZL original_tag = NZL }
 			has_government = labryscism
 		}
-		localization_key = FRLOC_NZL_FASCISM_ADJ_MS
+		localization_key = FRLOC_NZL_labryscism_ADJ_MS
 	}
 	text = {
 		trigger = {
 			OR = { tag = NZL original_tag = NZL }
 			has_government = collectivism
 		}
-		localization_key = FRLOC_NZL_COMMUNISM_ADJ
+		localization_key = FRLOC_NZL_collectivism_ADJ
 	}
 	text = {
 		trigger = { OR = { tag = OMA original_tag = OMA } }
@@ -960,14 +960,14 @@ defined_text = {
 			OR = { tag = SAU original_tag = SAU }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_SAU_NOT_NEUTRALITY_ADJ_S
+		localization_key = FRLOC_SAU_NOT_absolutism_ADJ_S
 	}
 	text = {
 		trigger = {
 			OR = { tag = SAU original_tag = SAU }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_SAU_NEUTRALITY_ADJ_MS
+		localization_key = FRLOC_SAU_absolutism_ADJ_MS
 	}
 	text = {
 		trigger = { OR = { tag = SER original_tag = SER } }
@@ -994,14 +994,14 @@ defined_text = {
 			OR = { tag = SOV original_tag = SOV }
 			NOT = { has_government = collectivism }
 		}
-		localization_key = FRLOC_SOV_NOT_COMMUNISM_ADJ_S
+		localization_key = FRLOC_SOV_NOT_collectivism_ADJ_S
 	}
 	text = {
 		trigger = {
 			OR = { tag = SOV original_tag = SOV }
 			has_government = collectivism
 		}
-		localization_key = FRLOC_SOV_COMMUNISM_ADJ_S
+		localization_key = FRLOC_SOV_collectivism_ADJ_S
 	}
 	text = {
 		trigger = { OR = { tag = SPR original_tag = SPR } }
@@ -1044,14 +1044,14 @@ defined_text = {
 			OR = { tag = USA original_tag = USA }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_USA_NOT_NEUTRALITY_ADJ_MS
+		localization_key = FRLOC_USA_NOT_absolutism_ADJ_MS
 	}
 	text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_USA_NEUTRALITY_ADJ_MS
+		localization_key = FRLOC_USA_absolutism_ADJ_MS
 	}
 	text = {
 		trigger = { OR = { tag = VEN original_tag = VEN } }
@@ -1086,14 +1086,14 @@ defined_text = {
 			OR = { tag = ZIM original_tag = ZIM }
 			NOT = { has_government = labryscism }
 		}
-		localization_key = FRLOC_ZIM_NOT_FASCISM_ADJ_MS
+		localization_key = FRLOC_ZIM_NOT_labryscism_ADJ_MS
 	}
 	text = {
 		trigger = {
 			OR = { tag = ZIM original_tag = ZIM }
 			has_government = labryscism
 		}
-		localization_key = FRLOC_ZIM_FASCISM_ADJ_MS
+		localization_key = FRLOC_ZIM_labryscism_ADJ_MS
 	}
 }
 
@@ -1183,14 +1183,14 @@ defined_text = {
 			OR = { tag = COG original_tag = COG }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_COG_NOT_NEUTRALITY_ADJ_FS
+		localization_key = FRLOC_COG_NOT_absolutism_ADJ_FS
 	}
 	text = {
 		trigger = {
 			OR = { tag = COG original_tag = COG }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_COG_NEUTRALITY_ADJ_FS
+		localization_key = FRLOC_COG_absolutism_ADJ_FS
 	}
 	text = {
 		trigger = { OR = { tag = COL original_tag = COL } }
@@ -1313,14 +1313,14 @@ defined_text = {
 			OR = { tag = ISR original_tag = ISR }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_ISR_NOT_NEUTRALITY_ADJ_FS
+		localization_key = FRLOC_ISR_NOT_absolutism_ADJ_FS
 	}
 	text = {
 		trigger = {
 			OR = { tag = ISR original_tag = ISR }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_ISR_NEUTRALITY_ADJ_FS
+		localization_key = FRLOC_ISR_absolutism_ADJ_FS
 	}
 	text = {
 		trigger = { OR = { tag = ITA original_tag = ITA } }
@@ -1434,21 +1434,21 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = FRLOC_NZL_NOR_FASCISM_COMMUNISM_ADJ_FS
+		localization_key = FRLOC_NZL_NOR_labryscism_collectivism_ADJ_FS
 	}
 	text = {
 		trigger = {
 			OR = { tag = NZL original_tag = NZL }
 			has_government = labryscism
 		}
-		localization_key = FRLOC_NZL_FASCISM_ADJ_FS
+		localization_key = FRLOC_NZL_labryscism_ADJ_FS
 	}
 	text = {
 		trigger = {
 			OR = { tag = NZL original_tag = NZL }
 			has_government = collectivism
 		}
-		localization_key = FRLOC_NZL_COMMUNISM_ADJ
+		localization_key = FRLOC_NZL_collectivism_ADJ
 	}
 	text = {
 		trigger = { OR = { tag = OMA original_tag = OMA } }
@@ -1511,14 +1511,14 @@ defined_text = {
 			OR = { tag = SAU original_tag = SAU }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_SAU_NOT_NEUTRALITY_ADJ_S
+		localization_key = FRLOC_SAU_NOT_absolutism_ADJ_S
 	}
 	text = {
 		trigger = {
 			OR = { tag = SAU original_tag = SAU }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_SAU_NEUTRALITY_ADJ_FS
+		localization_key = FRLOC_SAU_absolutism_ADJ_FS
 	}
 	text = {
 		trigger = { OR = { tag = SER original_tag = SER } }
@@ -1545,14 +1545,14 @@ defined_text = {
 			OR = { tag = SOV original_tag = SOV }
 			NOT = { has_government = collectivism }
 		}
-		localization_key = FRLOC_SOV_NOT_COMMUNISM_ADJ_S
+		localization_key = FRLOC_SOV_NOT_collectivism_ADJ_S
 	}
 	text = {
 		trigger = {
 			OR = { tag = SOV original_tag = SOV }
 			has_government = collectivism
 		}
-		localization_key = FRLOC_SOV_COMMUNISM_ADJ_S
+		localization_key = FRLOC_SOV_collectivism_ADJ_S
 	}
 	text = {
 		trigger = { OR = { tag = SPR original_tag = SPR } }
@@ -1595,14 +1595,14 @@ defined_text = {
 			OR = { tag = USA original_tag = USA }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_USA_NOT_NEUTRALITY_ADJ_FS
+		localization_key = FRLOC_USA_NOT_absolutism_ADJ_FS
 	}
 	text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_USA_NEUTRALITY_ADJ_FS
+		localization_key = FRLOC_USA_absolutism_ADJ_FS
 	}
 	text = {
 		trigger = { OR = { tag = VEN original_tag = VEN } }
@@ -1637,14 +1637,14 @@ defined_text = {
 			OR = { tag = ZIM original_tag = ZIM }
 			NOT = { has_government = labryscism }
 		}
-		localization_key = FRLOC_ZIM_NOT_FASCISM_ADJ_FS
+		localization_key = FRLOC_ZIM_NOT_labryscism_ADJ_FS
 	}
 	text = {
 		trigger = {
 			OR = { tag = ZIM original_tag = ZIM }
 			has_government = labryscism
 		}
-		localization_key = FRLOC_ZIM_FASCISM_ADJ_FS
+		localization_key = FRLOC_ZIM_labryscism_ADJ_FS
 	}
 }
 
@@ -1734,14 +1734,14 @@ defined_text = {
 			OR = { tag = COG original_tag = COG }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_COG_NOT_NEUTRALITY_ADJ_M
+		localization_key = FRLOC_COG_NOT_absolutism_ADJ_M
 	}
 	text = {
 		trigger = {
 			OR = { tag = COG original_tag = COG }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_COG_NEUTRALITY_ADJ_M
+		localization_key = FRLOC_COG_absolutism_ADJ_M
 	}
 	text = {
 		trigger = { OR = { tag = COL original_tag = COL } }
@@ -1864,14 +1864,14 @@ defined_text = {
 			OR = { tag = ISR original_tag = ISR }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_ISR_NOT_NEUTRALITY_ADJ_MP
+		localization_key = FRLOC_ISR_NOT_absolutism_ADJ_MP
 	}
 	text = {
 		trigger = {
 			OR = { tag = ISR original_tag = ISR }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_ISR_NEUTRALITY_ADJ_MP
+		localization_key = FRLOC_ISR_absolutism_ADJ_MP
 	}
 	text = {
 		trigger = { OR = { tag = ITA original_tag = ITA } }
@@ -1985,21 +1985,21 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = FRLOC_NZL_NOR_FASCISM_COMMUNISM_ADJ_M
+		localization_key = FRLOC_NZL_NOR_labryscism_collectivism_ADJ_M
 	}
 	text = {
 		trigger = {
 			OR = { tag = NZL original_tag = NZL }
 			has_government = labryscism
 		}
-		localization_key = FRLOC_NZL_FASCISM_ADJ_MP
+		localization_key = FRLOC_NZL_labryscism_ADJ_MP
 	}
 	text = {
 		trigger = {
 			OR = { tag = NZL original_tag = NZL }
 			has_government = collectivism
 		}
-		localization_key = FRLOC_NZL_COMMUNISM_ADJ
+		localization_key = FRLOC_NZL_collectivism_ADJ
 	}
 	text = {
 		trigger = { OR = { tag = OMA original_tag = OMA } }
@@ -2062,14 +2062,14 @@ defined_text = {
 			OR = { tag = SAU original_tag = SAU }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_SAU_NOT_NEUTRALITY_ADJ_P
+		localization_key = FRLOC_SAU_NOT_absolutism_ADJ_P
 	}
 	text = {
 		trigger = {
 			OR = { tag = SAU original_tag = SAU }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_SAU_NEUTRALITY_ADJ_MP
+		localization_key = FRLOC_SAU_absolutism_ADJ_MP
 	}
 	text = {
 		trigger = { OR = { tag = SER original_tag = SER } }
@@ -2096,14 +2096,14 @@ defined_text = {
 			OR = { tag = SOV original_tag = SOV }
 			NOT = { has_government = collectivism }
 		}
-		localization_key = FRLOC_SOV_NOT_COMMUNISM_ADJ_P
+		localization_key = FRLOC_SOV_NOT_collectivism_ADJ_P
 	}
 	text = {
 		trigger = {
 			OR = { tag = SOV original_tag = SOV }
 			has_government = collectivism
 		}
-		localization_key = FRLOC_SOV_COMMUNISM_ADJ_P
+		localization_key = FRLOC_SOV_collectivism_ADJ_P
 	}
 	text = {
 		trigger = { OR = { tag = SPR original_tag = SPR } }
@@ -2146,14 +2146,14 @@ defined_text = {
 			OR = { tag = USA original_tag = USA }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_USA_NOT_NEUTRALITY_ADJ_MP
+		localization_key = FRLOC_USA_NOT_absolutism_ADJ_MP
 	}
 	text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_USA_NEUTRALITY_ADJ_MP
+		localization_key = FRLOC_USA_absolutism_ADJ_MP
 	}
 	text = {
 		trigger = { OR = { tag = VEN original_tag = VEN } }
@@ -2188,14 +2188,14 @@ defined_text = {
 			OR = { tag = ZIM original_tag = ZIM }
 			NOT = { has_government = labryscism }
 		}
-		localization_key = FRLOC_ZIM_NOT_FASCISM_ADJ_MP
+		localization_key = FRLOC_ZIM_NOT_labryscism_ADJ_MP
 	}
 	text = {
 		trigger = {
 			OR = { tag = ZIM original_tag = ZIM }
 			has_government = labryscism
 		}
-		localization_key = FRLOC_ZIM_FASCISM_ADJ_MP
+		localization_key = FRLOC_ZIM_labryscism_ADJ_MP
 	}
 }
 
@@ -2285,14 +2285,14 @@ defined_text = {
 			OR = { tag = COG original_tag = COG }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_COG_NOT_NEUTRALITY_ADJ_FP
+		localization_key = FRLOC_COG_NOT_absolutism_ADJ_FP
 	}
 	text = {
 		trigger = {
 			OR = { tag = COG original_tag = COG }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_COG_NEUTRALITY_ADJ_FP
+		localization_key = FRLOC_COG_absolutism_ADJ_FP
 	}
 	text = {
 		trigger = { OR = { tag = COL original_tag = COL } }
@@ -2415,14 +2415,14 @@ defined_text = {
 			OR = { tag = ISR original_tag = ISR }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_ISR_NOT_NEUTRALITY_ADJ_FP
+		localization_key = FRLOC_ISR_NOT_absolutism_ADJ_FP
 	}
 	text = {
 		trigger = {
 			OR = { tag = ISR original_tag = ISR }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_ISR_NEUTRALITY_ADJ_FP
+		localization_key = FRLOC_ISR_absolutism_ADJ_FP
 	}
 	text = {
 		trigger = { OR = { tag = ITA original_tag = ITA } }
@@ -2536,21 +2536,21 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = FRLOC_NZL_NOR_FASCISM_COMMUNISM_ADJ_FP
+		localization_key = FRLOC_NZL_NOR_labryscism_collectivism_ADJ_FP
 	}
 	text = {
 		trigger = {
 			OR = { tag = NZL original_tag = NZL }
 			has_government = labryscism
 		}
-		localization_key = FRLOC_NZL_FASCISM_ADJ_FP
+		localization_key = FRLOC_NZL_labryscism_ADJ_FP
 	}
 	text = {
 		trigger = {
 			OR = { tag = NZL original_tag = NZL }
 			has_government = collectivism
 		}
-		localization_key = FRLOC_NZL_COMMUNISM_ADJ
+		localization_key = FRLOC_NZL_collectivism_ADJ
 	}
 	text = {
 		trigger = { OR = { tag = OMA original_tag = OMA } }
@@ -2613,14 +2613,14 @@ defined_text = {
 			OR = { tag = SAU original_tag = SAU }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_SAU_NOT_NEUTRALITY_ADJ_P
+		localization_key = FRLOC_SAU_NOT_absolutism_ADJ_P
 	}
 	text = {
 		trigger = {
 			OR = { tag = SAU original_tag = SAU }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_SAU_NEUTRALITY_ADJ_FP
+		localization_key = FRLOC_SAU_absolutism_ADJ_FP
 	}
 	text = {
 		trigger = { OR = { tag = SER original_tag = SER } }
@@ -2647,14 +2647,14 @@ defined_text = {
 			OR = { tag = SOV original_tag = SOV }
 			NOT = { has_government = collectivism }
 		}
-		localization_key = FRLOC_SOV_NOT_COMMUNISM_ADJ_P
+		localization_key = FRLOC_SOV_NOT_collectivism_ADJ_P
 	}
 	text = {
 		trigger = {
 			OR = { tag = SOV original_tag = SOV }
 			has_government = collectivism
 		}
-		localization_key = FRLOC_SOV_COMMUNISM_ADJ_P
+		localization_key = FRLOC_SOV_collectivism_ADJ_P
 	}
 	text = {
 		trigger = { OR = { tag = SPR original_tag = SPR } }
@@ -2697,14 +2697,14 @@ defined_text = {
 			OR = { tag = USA original_tag = USA }
 			NOT = { has_government = absolutism }
 		}
-		localization_key = FRLOC_USA_NOT_NEUTRALITY_ADJ_FP
+		localization_key = FRLOC_USA_NOT_absolutism_ADJ_FP
 	}
 	text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
 			has_government = absolutism
 		}
-		localization_key = FRLOC_USA_NEUTRALITY_ADJ_FP
+		localization_key = FRLOC_USA_absolutism_ADJ_FP
 	}
 	text = {
 		trigger = { OR = { tag = VEN original_tag = VEN } }
@@ -2739,14 +2739,14 @@ defined_text = {
 			OR = { tag = ZIM original_tag = ZIM }
 			NOT = { has_government = labryscism }
 		}
-		localization_key = FRLOC_ZIM_NOT_FASCISM_ADJ_FP
+		localization_key = FRLOC_ZIM_NOT_labryscism_ADJ_FP
 	}
 	text = {
 		trigger = {
 			OR = { tag = ZIM original_tag = ZIM }
 			has_government = labryscism
 		}
-		localization_key = FRLOC_ZIM_FASCISM_ADJ_FP
+		localization_key = FRLOC_ZIM_labryscism_ADJ_FP
 	}
 }
 
@@ -7536,16 +7536,16 @@ defined_text = {
 #################################
 ###  Ideologies / Idéologies  ###
 #################################
-### Ex. "The ruling ideology in (Country) is Fascism/Communism/Democracy/Neutrality" => "L'idéologie au pouvoir en NP est le [labryscisme/collectivisme]/la [démocratie/neutralité]." (lower case / minuscule)
+### Ex. "The ruling ideology in (Country) is labryscism/collectivism/Democracy/absolutism" => "L'idéologie au pouvoir en NP est le [labryscisme/collectivisme]/la [démocratie/neutralité]." (lower case / minuscule)
 defined_text = {
 	name = GetIdeologie
 	text = {
 		trigger = { has_government = labryscism }
-		localization_key = FRLOC_FASCISME
+		localization_key = FRLOC_labryscismE
 	}
 	text = {
 		trigger = { has_government = collectivism }
-		localization_key = FRLOC_COMMUNISME
+		localization_key = FRLOC_collectivismE
 	}
 	text = {
 		trigger = { has_government = liberalism }
@@ -7556,16 +7556,16 @@ defined_text = {
 		localization_key = FRLOC_NEUTRALITE
 	}
 }
-### Ex. "[Fascism/Communism/Democracy/Neutrality] ruling or not, they'll have to give up." => "[Fascisme/Communisme/Démocratie/Neutralité] ou non, ils vont devoir céder." (upper case / majuscule)
+### Ex. "[labryscism/collectivism/Democracy/absolutism] ruling or not, they'll have to give up." => "[labryscisme/collectivisme/Démocratie/Neutralité] ou non, ils vont devoir céder." (upper case / majuscule)
 defined_text = {
 	name = GetIdeologieCap
 	text = {
 		trigger = { has_government = labryscism }
-		localization_key = FRLOC_FASCISME_CAP
+		localization_key = FRLOC_labryscismE_CAP
 	}
 	text = {
 		trigger = { has_government = collectivism }
-		localization_key = FRLOC_COMMUNISME_CAP
+		localization_key = FRLOC_collectivismE_CAP
 	}
 	text = {
 		trigger = { has_government = liberalism }
@@ -7579,7 +7579,7 @@ defined_text = {
 
 
 
-### Ex. "The ruling ideology in (Country) is Fascism/Communism/Democracy/Neutrality" => "L'idéologie au pouvoir en NP est le [labryscisme/collectivisme]/la [démocratie/neutralité]." (lower case / minuscule)
+### Ex. "The ruling ideology in (Country) is labryscism/collectivism/Democracy/absolutism" => "L'idéologie au pouvoir en NP est le [labryscisme/collectivisme]/la [démocratie/neutralité]." (lower case / minuscule)
 defined_text = {
 	name = GetLeLaLIdeo
 	text = {
@@ -7601,7 +7601,7 @@ defined_text = {
 		localization_key = FRLOC_LA
 	}
 }
-### Ex. "[Fascism/Communism/Democracy/Neutrality] is the ruling ideology in (Country)." => "[Le] labryscisme/collectivisme / [La] démocratie/neutralité est l'idéologie au pouvoir en NP." (upper case / majuscule)
+### Ex. "[labryscism/collectivism/Democracy/absolutism] is the ruling ideology in (Country)." => "[Le] labryscisme/collectivisme / [La] démocratie/neutralité est l'idéologie au pouvoir en NP." (upper case / majuscule)
 defined_text = {
 	name = GetLeLaLIdeoCap
 	text = {
@@ -7626,7 +7626,7 @@ defined_text = {
 
 
 
-### Ex. "This is the most obvious evidence of the validy [of] Fascism/Communism/Democracy/Neutrality." => "C'est là la meilleure preuve qui soit de la validité [du] labryscisme/collectivisme / [de la] démocratie/neutralité." (lower case / minuscule)
+### Ex. "This is the most obvious evidence of the validy [of] labryscism/collectivism/Democracy/absolutism." => "C'est là la meilleure preuve qui soit de la validité [du] labryscisme/collectivisme / [de la] démocratie/neutralité." (lower case / minuscule)
 defined_text = {
 	name = GetDuDelaIdeo
 	text = {
@@ -7648,7 +7648,7 @@ defined_text = {
 		localization_key = FRLOC_DELA
 	}
 }
-### Ex. "[Of] Fascism/Communism/Democracy/Neutrality nothing will remain in the future." => "[Du] labryscisme/collectivisme / [De la] démocratie/neutralité rien ne subistera à l'avenir ." (upper case / majuscule)
+### Ex. "[Of] labryscism/collectivism/Democracy/absolutism nothing will remain in the future." => "[Du] labryscisme/collectivisme / [De la] démocratie/neutralité rien ne subistera à l'avenir ." (upper case / majuscule)
 defined_text = {
 	name = GetDuDelaIdeoCap
 	text = {
@@ -10570,7 +10570,7 @@ defined_text = {
 
 
 
-### Democratic Parties / Partis démocratiques ###
+### liberalism Parties / Partis démocratiques ###
 
 ### "The ruling party is [the] NSDAP/IKL/Misr al-Fatah/UNF/Armenian Legion/Fire Horses." => "Le parti au pouvoir est [le] NSDAP/[] Misr al-Fatah/[l']IKL/[la] Légion arménienne/[les] Chevaux de feu" (lower case / minuscule)
 defined_text = {
@@ -12879,7 +12879,7 @@ defined_text = {
 		}
 		localization_key = FRLOC_LES
 	}
-	text = { # FALLBACK FOR DEMOCRACIES & NEUTRALITY FACTION RANDOM NAMES
+	text = { # FALLBACK FOR DEMOCRACIES & absolutism FACTION RANDOM NAMES
 		trigger = {
 			OR = {
 				has_government = labryscism
@@ -12979,7 +12979,7 @@ defined_text = {
 		}
 		localization_key = FRLOC_LES_CAP
 	}
-	text = { # FALLBACK FOR DEMOCRACIES & NEUTRALITY FACTION RANDOM NAMES
+	text = { # FALLBACK FOR DEMOCRACIES & absolutism FACTION RANDOM NAMES
 		trigger = {
 			OR = {
 				has_government = labryscism
@@ -13082,7 +13082,7 @@ defined_text = {
 		}
 		localization_key = FRLOC_DES
 	}
-	text = { # FALLBACK FOR DEMOCRACIES & NEUTRALITY FACTION RANDOM NAMES
+	text = { # FALLBACK FOR DEMOCRACIES & absolutism FACTION RANDOM NAMES
 		trigger = {
 			OR = {
 				has_government = labryscism
@@ -13182,7 +13182,7 @@ defined_text = {
 		}
 		localization_key = FRLOC_DES_CAP
 	}
-	text = { # FALLBACK FOR DEMOCRACIES & NEUTRALITY FACTION RANDOM NAMES
+	text = { # FALLBACK FOR DEMOCRACIES & absolutism FACTION RANDOM NAMES
 		trigger = {
 			OR = {
 				has_government = labryscism
@@ -13285,7 +13285,7 @@ defined_text = {
 		}
 		localization_key = FRLOC_AUX
 	}
-	text = { # FALLBACK FOR DEMOCRACIES & NEUTRALITY FACTION RANDOM NAMES
+	text = { # FALLBACK FOR DEMOCRACIES & absolutism FACTION RANDOM NAMES
 		trigger = {
 			OR = {
 				has_government = labryscism
@@ -13385,7 +13385,7 @@ defined_text = {
 		}
 		localization_key = FRLOC_AUX_CAP
 	}
-	text = { # FALLBACK FOR DEMOCRACIES & NEUTRALITY FACTION RANDOM NAMES
+	text = { # FALLBACK FOR DEMOCRACIES & absolutism FACTION RANDOM NAMES
 		trigger = {
 			OR = {
 				has_government = labryscism
@@ -13480,7 +13480,7 @@ defined_text = {
 		}
 		localization_key = FRLOC_S
 	}
-	text = { # FALLBACK FOR FASCIST & COMMUNIST & DEMOCRACIES & NEUTRALITY FACTION RANDOM NAMES
+	text = { # FALLBACK FOR FASCIST & COMMUNIST & DEMOCRACIES & absolutism FACTION RANDOM NAMES
 		trigger = {
 			OR = {
 				has_government = labryscism
@@ -13561,7 +13561,7 @@ defined_text = {
 		}
 		localization_key = FRLOC_ENT
 	}
-	text = { # FALLBACK FOR FASCIST & COMMUNIST & DEMOCRACIES & NEUTRALITY FACTION RANDOM NAMES
+	text = { # FALLBACK FOR FASCIST & COMMUNIST & DEMOCRACIES & absolutism FACTION RANDOM NAMES
 		trigger = {
 			OR = {
 				has_government = labryscism
@@ -13642,7 +13642,7 @@ defined_text = {
 		}
 		localization_key = FRLOC_ONT
 	}
-	text = { # FALLBACK FOR FASCIST & COMMUNIST & DEMOCRACIES & NEUTRALITY FACTION RANDOM NAMES
+	text = { # FALLBACK FOR FASCIST & COMMUNIST & DEMOCRACIES & absolutism FACTION RANDOM NAMES
 		trigger = {
 			OR = {
 				has_government = labryscism
@@ -13723,7 +13723,7 @@ defined_text = {
 		}
 		localization_key = FRLOC_SONT
 	}
-	text = { # FALLBACK FOR FASCIST & COMMUNIST & DEMOCRACIES & NEUTRALITY FACTION RANDOM NAMES
+	text = { # FALLBACK FOR FASCIST & COMMUNIST & DEMOCRACIES & absolutism FACTION RANDOM NAMES
 		trigger = {
 			OR = {
 				has_government = labryscism
@@ -13804,7 +13804,7 @@ defined_text = {
 		}
 		localization_key = FRLOC_FONT
 	}
-	text = { # FALLBACK FOR FASCIST & COMMUNIST & DEMOCRACIES & NEUTRALITY FACTION RANDOM NAMES
+	text = { # FALLBACK FOR FASCIST & COMMUNIST & DEMOCRACIES & absolutism FACTION RANDOM NAMES
 		trigger = {
 			OR = {
 				has_government = labryscism
@@ -13885,7 +13885,7 @@ defined_text = {
 		}
 		localization_key = FRLOC_VENT
 	}
-	text = { # FALLBACK FOR FASCIST & COMMUNIST & DEMOCRACIES & NEUTRALITY FACTION RANDOM NAMES
+	text = { # FALLBACK FOR FASCIST & COMMUNIST & DEMOCRACIES & absolutism FACTION RANDOM NAMES
 		trigger = {
 			OR = {
 				has_government = labryscism

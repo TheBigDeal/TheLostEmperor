@@ -1,78 +1,162 @@
 ideas = {
-
-country = {
-	##################
-	#      USA       #
-	##################
-	usa_general_strike = {
-		picture = MEX_revolutionary_army
-		modifier = {
-			industrial_capacity_factory = -0.50
-			production_speed_buildings_factor = -0.50
-			industrial_capacity_dockyard = -0.50
+	country = {
+		##################
+		#      USA       #
+		##################
+		usa_election_rigged = {
+			picture = MEX_revolutionary_army
+			modifier = {
+				stability_factor = -0.10
+			}
 		}
-	}
-	usa_alien_and_sedition_act = {
-		picture = man_five_year_plan_industry
-		modifier = {
-			decryption_factor = 0.1
-			encryption_factor = 0.1
-			foreign_subversive_activites = -0.25
+		usa_general_strike = {
+			picture = MEX_revolutionary_army
+			modifier = {
+				industrial_capacity_factory = -0.50
+				production_speed_buildings_factor = -0.50
+				industrial_capacity_dockyard = -0.50
+			}
 		}
-	}
-	usa_immigration_quotas = {
-		picture = man_five_year_plan_industry
-		modifier = {
-			MONTHLY_POPULATION = -0.10
-			political_power_gain = 0.10
+		usa_alien_and_sedition_act = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				decryption_factor = 0.1
+				encryption_factor = 0.1
+				foreign_subversive_activites = -0.25
+			}
 		}
-	}
-	usa_reeds_justice = {
-		picture = man_five_year_plan_industry
-		modifier = {
-			stability_factor = 0.05
+		usa_immigration_quotas = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				MONTHLY_POPULATION = -0.10
+				political_power_gain = 0.10
+			}
 		}
-	}
-	usa_sluggish_economy_2 = {
-		picture = man_five_year_plan_industry
-		modifier = {
-			consumer_goods_factor = 0.15
-			production_factory_max_efficiency_factor = -0.10
-			industrial_capacity_dockyard = -0.10
-			production_speed_buildings_factor = -0.20
+		usa_reeds_justice = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				stability_factor = 0.05
+			}
 		}
-	}
-	usa_sluggish_economy = {
-		picture = man_five_year_plan_industry
-		modifier = {
-			consumer_goods_factor = 0.20
-			production_factory_max_efficiency_factor = -0.10
-			industrial_capacity_dockyard = -0.10
-			production_speed_buildings_factor = -0.25
+		usa_sluggish_economy_2 = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_factory_max_efficiency_factor = -0.10
+				industrial_capacity_dockyard = -0.10
+				production_speed_buildings_factor = -0.20
+			}
 		}
-	}
-	usa_american_militarism = {
-		picture = usa_desegregation_1
-		modifier = {
-			war_support_factor = 0.10 
-			army_core_defence_factor = 0.05
-			army_core_attack_factor = 0.05
+		usa_sluggish_economy_3 = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				consumer_goods_factor = 0.20
+				production_factory_max_efficiency_factor = -0.10
+				industrial_capacity_dockyard = -0.10
+				production_speed_buildings_factor = -0.10
+			}
 		}
-	}
-	usa_popular_discontent = {
-		picture = FRA_scw_intervention_republicans_focus
-		modifier = {
-			stability_factor = -0.15
-			political_power_gain = -0.2
+		usa_sluggish_economy = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				consumer_goods_factor = 0.20
+				production_factory_max_efficiency_factor = -0.10
+				industrial_capacity_dockyard = -0.10
+				production_speed_buildings_factor = -0.25
+			}
+		}
+		usa_american_militarism = {
+			picture = usa_desegregation_1
+			modifier = {
+				war_support_factor = 0.10 
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+		usa_popular_discontent = {
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.2
+			}
 		}
 	}
 	head_of_government = {
-		calvin_coolidge = {
-			picture = USA_walter_krueger
-			available = {
+		USA_calvin_coolidge = {
+			picture = USA_calvin_coolidge
+			visible = {
 				original_tag = USA
 			}
-			traits = { army_chief_planning_2 }
+			cost = 250
+		}	
+	}
+	secondary_head = {
+		USA_frank_lowden = {
+			picture = USA_frank_lowden
+			visible = {
+			original_tag = USA
+			}
+			traits = { political_protegee }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	foreign_minister = {
+		USA_Frank_B_Kellogg = {
+			picture = generic_political_advisor_europe_4
+			visible = {
+				original_tag = USA
+			}
+			traits = { naive_appeaser }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	defence_minister = {
+		USA_John_Pershing = {
+			picture = generic_political_advisor_europe_3
+			visible = {
+				original_tag = USA
+			}
+			traits = { old_general }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	economy_minister = {
+		USA_Andrew_Mellon = {
+			picture = generic_political_advisor_europe_2
+			visible = {
+				original_tag = USA
+			}
+			traits = { laissez_faire_capitalist }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	security_minister = {
+		USA_Hubert_Work = {
+			picture = generic_political_advisor_europe_1
+			visible = {
+				original_tag = USA
+			}
+			traits = { bland_bueaucrat }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	intel_minister = {
+		USA_J_Edgar_Hoover = {
+			picture = USA_harry_white
+			visible = {
+				original_tag = USA
+			}
+			traits = { expert_spymaster }
 			ai_will_do = {
 				factor = 1
 			}

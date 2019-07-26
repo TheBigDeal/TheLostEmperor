@@ -4,7 +4,7 @@ ideas = {
 
 		FRA_victors_of_wwi = {
 			
-			available = {
+			visible = {
 				original_tag = FRA
 				always = no
 			}
@@ -27,7 +27,7 @@ ideas = {
 
 		FRA_disjointed_government = {
 			
-			available = {
+			visible = {
 				original_tag = FRA
 				always = no
 			}
@@ -48,7 +48,7 @@ ideas = {
 
 		FRA_protected_by_the_maginot_line = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -89,7 +89,7 @@ ideas = {
 
 		FRA_infantry_focus = {
 		
-			available = {
+			visible = {
 				original_tag = FRA
 				always = no
 			}
@@ -111,7 +111,7 @@ ideas = {
 
 		FRA_fortification_focus = {
 		
-			available = {
+			visible = {
 				original_tag = FRA
 				always = no
 			}
@@ -130,7 +130,7 @@ ideas = {
 
 		FRA_motorized_focus = {
 		
-			available = {
+			visible = {
 				original_tag = FRA
 				always = no
 			}
@@ -149,7 +149,7 @@ ideas = {
 		}
 		FRA_support_the_left_focus = {
 				picture = generic_proletarianism_drift_bonus
-				available = {
+				visible = {
 					always = no # Added via focus
 				}
 
@@ -175,7 +175,7 @@ ideas = {
 
 		FRA_scw_intervention_republicans_focus = {
 			picture = FRA_scw_intervention_republicans_focus
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -192,7 +192,7 @@ ideas = {
 		}
 
 		FRA_national_mobilization_focus = {
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -207,7 +207,7 @@ ideas = {
 		}		
 		FRA_support_the_centre_focus = {
 				picture = generic_liberalism_drift_bonus				
-				available = {
+				visible = {
 					always = no # Added via focus
 				}
 
@@ -222,7 +222,7 @@ ideas = {
 
 		FRA_strengthen_government_support_focus = {
 				picture = generic_pp_unity_bonus
-				available = {
+				visible = {
 					always = no # Added via focus
 				}
 
@@ -236,7 +236,7 @@ ideas = {
 		}		
 		FRA_support_the_right_focus = {
 				picture = generic_rexism_drift_bonus
-				available = {
+				visible = {
 					always = no # Added via focus
 				}
 				allowed_civil_war = {
@@ -260,7 +260,7 @@ ideas = {
 
 		FRA_scw_intervention_nationalists_focus = {
 			picture = FRA_scw_intervention_nationalists_focus
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -277,7 +277,7 @@ ideas = {
 		}
 		FRA_army_of_aggression_focus = {
 			picture = FRA_army_of_aggression_focus
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -293,7 +293,7 @@ ideas = {
 
 		FRA_factory_strikes = {
 			picture = generic_production_bonus
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -312,7 +312,7 @@ ideas = {
 
 		FRA_matignon_agreements = {
 			picture = generic_production_bonus
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -330,7 +330,7 @@ ideas = {
 
 		FRA_proletarianism_banned = {
 			picture = anti_soviet_pact
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -352,10 +352,10 @@ ideas = {
 		maurice_thorez = {
 			
 			
-			available = {
+			visible = {
 				original_tag = "FRA"
 			}			
-			available = {
+			visible = {
 				has_completed_focus = FRA_leftist_rhetoric
 			}
 			
@@ -379,7 +379,7 @@ ideas = {
 		leon_blum = {
 			
 			
-			available = {
+			visible = {
 				original_tag = "FRA"
 			}
 			
@@ -405,10 +405,10 @@ ideas = {
 		marcel_bucard = {
 			
 			
-			available = {
+			visible = {
 				original_tag = "FRA"
 			}
-			available ={
+			visible ={
 				has_completed_focus = FRA_right_wing_rhetoric
 			}
 			
@@ -431,7 +431,7 @@ ideas = {
 
 		FRA_gaston_henry_haye = {
 			
-			available = {
+			visible = {
 				original_tag = "FRA"
 			}
 			
@@ -452,7 +452,7 @@ ideas = {
 
 		FRA_jacques_duclos = {
 			
-			available = {
+			visible = {
 				original_tag = "FRA"
 			}
 			
@@ -467,7 +467,7 @@ ideas = {
 
 		FRA_paul_baudouin = {
 			
-			available = {
+			visible = {
 				original_tag = "FRA"
 			}
 			
@@ -488,7 +488,7 @@ ideas = {
 
 		FRA_zivony_peshkov = {
 			
-			available = {
+			visible = {
 				original_tag = "FRA"
 			}
 			
@@ -509,7 +509,7 @@ ideas = {
 
 		FRA_felix_gouin = {
 			
-			available = {
+			visible = {
 				original_tag = "FRA"
 			}
 			
@@ -530,7 +530,7 @@ ideas = {
 
 		FRA_charles_tillon = {
 			
-			available = {
+			visible = {
 				original_tag = "FRA"
 			}
 			
@@ -551,7 +551,7 @@ ideas = {
 
 		FRA_paul_reynaud = {
 			
-			available = {
+			visible = {
 				original_tag = "FRA"
 			}
 
@@ -578,10 +578,10 @@ ideas = {
 		maurice_gamelin = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
-			available = {
+			visible = {
 				has_completed_focus = FRA_aggressive_focus
 			}
 
@@ -597,10 +597,10 @@ ideas = {
 		maxime_weygand = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
-			available = {
+			visible = {
 				has_completed_focus = FRA_defensive_focus
 			}
 
@@ -617,7 +617,7 @@ ideas = {
 			
 			picture = generic_army_europe_3
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -634,7 +634,7 @@ ideas = {
 			
 			picture = generic_army_europe_1
 
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -650,7 +650,7 @@ ideas = {
 		alphonse_georges = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -668,7 +668,7 @@ ideas = {
 		francois_darlan = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -684,7 +684,7 @@ ideas = {
 		marcel_gensoul = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -700,7 +700,7 @@ ideas = {
 		jean_marie_abrial = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -718,7 +718,7 @@ ideas = {
 		joseph_vuillemin = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -734,7 +734,7 @@ ideas = {
 		robert_odic = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -750,7 +750,7 @@ ideas = {
 		philippe_fequant = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -769,7 +769,7 @@ ideas = {
 		rene_prioux = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -785,7 +785,7 @@ ideas = {
 		charles_huntziger = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -801,7 +801,7 @@ ideas = {
 		philippe_leclerc = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -817,7 +817,7 @@ ideas = {
 		alfred_heurtaux = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -833,7 +833,7 @@ ideas = {
 		martial_valin = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -849,7 +849,7 @@ ideas = {
 		jean_francois_jannekeyn = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -865,7 +865,7 @@ ideas = {
 		jean_de_laborde = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -881,7 +881,7 @@ ideas = {
 		emile_muselier = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -897,7 +897,7 @@ ideas = {
 		rene_emile_godfroy = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -920,7 +920,7 @@ ideas = {
 		
 			picture = renault
 						
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 						
@@ -936,11 +936,11 @@ ideas = {
 		
 			picture = generic_tank_manufacturer_2
 
-			available = {
+			visible = {
 				has_completed_focus = FRA_army_reform
 			}
 						
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 						
@@ -959,7 +959,7 @@ ideas = {
 		
 		somua = {
 		
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 
@@ -973,7 +973,7 @@ ideas = {
 		
 		mas = {
 						
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 						
@@ -986,7 +986,7 @@ ideas = {
 	
 		schneider = {
 						
-			available = {
+			visible = {
 				original_tag = FRA
 			}		
 			
@@ -1004,7 +1004,7 @@ ideas = {
 		
 		morane_saulnier = {
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -1017,7 +1017,7 @@ ideas = {
 		
 		bloch = {
 						
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 						
@@ -1030,7 +1030,7 @@ ideas = {
 		
 		amiot = {
 						
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 						
@@ -1043,7 +1043,7 @@ ideas = {
 		
 		levasseur = {
 						
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 						
@@ -1061,7 +1061,7 @@ ideas = {
 		
 		fcm = {
 						
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 						
@@ -1077,7 +1077,7 @@ ideas = {
 		
 		famh = {
 						
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 						
@@ -1093,7 +1093,7 @@ ideas = {
 	theorist = {
 		charles_de_gaulle = {
 						
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -1119,7 +1119,7 @@ ideas = {
 		
 		henri_giraud = {
 						
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 						
@@ -1143,7 +1143,7 @@ ideas = {
 		louis_kahn = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -1159,7 +1159,7 @@ ideas = {
 		jean_decoux = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -1174,7 +1174,7 @@ ideas = {
 		victor_denain = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			
@@ -1189,7 +1189,7 @@ ideas = {
 		
 		jean_marie_bergeret = {
 						
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 						
@@ -1203,7 +1203,7 @@ ideas = {
 		frederic_irene_joliot_curie = {
 			
 			
-			available = {
+			visible = {
 				original_tag = FRA
 			}
 			

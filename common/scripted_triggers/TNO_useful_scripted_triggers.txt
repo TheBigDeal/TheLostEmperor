@@ -42,8 +42,8 @@ has_same_government_as_ROOT = {
 			ROOT = { has_government = despotism }
 		}
 		AND = {
-			has_government = fascism
-			ROOT = { has_government = fascism }
+			has_government = labryscism
+			ROOT = { has_government = labryscism }
 		}
 	}
 }
@@ -68,7 +68,7 @@ has_elected_government = {
 }
 
 # checks for these five government types for the country in scope
-has_democratic_government = {
+has_liberalism_government = {
 	OR = {
 		has_government = social_democrat
 		has_government = social_liberal
@@ -83,7 +83,7 @@ has_authoritarian_government = {
 	OR = {
 		has_government = authoritarian_democrat
 		has_government = despotism
-		has_government = fascism
+		has_government = labryscism
 	}
 }
 
@@ -91,7 +91,7 @@ has_authoritarian_government = {
 has_dictatorship_government = {
 	OR = {
 		has_government = despotism
-		has_government = fascism
+		has_government = labryscism
 	}
 }
 
@@ -104,8 +104,8 @@ same_government_type_as_ROOT = {
 			ROOT = { has_socialist_government = yes }
 		}
 		AND = {
-			has_democratic_government = yes
-			ROOT = { has_democratic_government = yes }
+			has_liberalism_government = yes
+			ROOT = { has_liberalism_government = yes }
 		}
 		AND = {
 			has_dictatorship_government = yes
@@ -943,7 +943,7 @@ has_far_left_ruling_party = {
 
 has_far_right_ruling_party = {
 	OR = {
-		has_government = fascism
+		has_government = labryscism
 		has_government = national_socialism
 		has_government = ultranational_socialism
 	}

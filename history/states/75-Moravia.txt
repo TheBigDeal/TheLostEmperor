@@ -1,13 +1,11 @@
+
 state={
 	id=75
 	name="STATE_75"
-	manpower = 2598400
 	resources={
-		steel=6
-		oil = 4
+		steel=6.000
+		oil=4.000
 	}
-
-	state_category = city
 
 	history={
 		owner = BOH
@@ -25,6 +23,9 @@ state={
 	}
 
 	provinces={
-		569 3553 3569 6562 6576 6590 11511 
+		421 569 3414 3553 3569 6562 6576 6590 11511 
 	}
+	manpower=2598400
+	buildings_max_level_factor=1.000
+	state_category=city
 }

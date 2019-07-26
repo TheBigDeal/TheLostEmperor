@@ -3,7 +3,7 @@ ideas = {
 	country = {
 		synarchist_support_surge = {
 			
-			allowed = {
+			visible = {
 				always = no # Triggered via event
 			}
 
@@ -26,7 +26,7 @@ ideas = {
 
 			picture = generic_political_advisor_south_america_1
 
-			allowed = {
+			visible = {
 				original_tag = MEX
 			}
 			
@@ -37,7 +37,7 @@ ideas = {
 
 			picture = generic_political_advisor_south_america_2
 				
-			allowed = {
+			visible = {
 				original_tag = MEX
 			}
 			
@@ -48,7 +48,7 @@ ideas = {
 
 			picture = generic_political_advisor_south_america_3
 			
-			allowed = {
+			visible = {
 				original_tag = MEX
 			}
 			
@@ -61,7 +61,7 @@ ideas = {
 		MEX_enrique_estrada = {
 					
 
-			allowed = {
+			visible = {
 				original_tag = MEX
 			}
 			
@@ -78,7 +78,7 @@ ideas = {
 					
 			picture = generic_air_europe_3
 
-			allowed = {
+			visible = {
 				original_tag = MEX
 			}
 			
@@ -97,7 +97,7 @@ ideas = {
 			
 			picture = generic_army_europe_4
 			
-			allowed = {
+			visible = {
 				original_tag = MEX
 			}
 			
@@ -112,7 +112,7 @@ ideas = {
 			
 			picture = generic_army_europe_5
 			
-			allowed = {
+			visible = {
 				original_tag = MEX
 			}
 			
@@ -131,7 +131,7 @@ ideas = {
 			
 			picture = generic_air_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = MEX
 			}
 			
@@ -146,7 +146,7 @@ ideas = {
 			
 			picture = generic_air_europe_3
 
-			allowed = {
+			visible = {
 				original_tag = MEX
 			}
 			
@@ -164,7 +164,7 @@ ideas = {
 			
 			picture = generic_navy_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = MEX
 			}
 			
@@ -181,7 +181,7 @@ ideas = {
 			
 			picture = generic_army_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = MEX
 			}
 			
@@ -201,7 +201,7 @@ ideas = {
 			
 			picture = generic_air_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = MEX
 			}
 			
@@ -217,7 +217,7 @@ ideas = {
 			
 			picture = generic_navy_europe_1
 
-			allowed = {
+			visible = {
 				original_tag = MEX
 			}
 			
@@ -232,7 +232,7 @@ ideas = {
 			
 			picture = generic_army_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = MEX
 			}
 			
@@ -248,7 +248,7 @@ ideas = {
 			
 			picture = generic_army_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = MEX
 			}
 			
@@ -270,7 +270,7 @@ ideas = {
 			picture = generic_air_manufacturer_1
 
 			
-			allowed = {
+			visible = {
 				original_tag = MEX
 			}
 			
@@ -299,7 +299,7 @@ ideas = {
 			picture = generic_infantry_equipment_manufacturer_2
 
 			
-			allowed = {
+			visible = {
 				original_tag = MEX
 			}
 			
@@ -322,7 +322,7 @@ ideas = {
 			picture = generic_artillery_manufacturer_3
 
 			
-			allowed = {
+			visible = {
 				original_tag = MEX
 			}
 			

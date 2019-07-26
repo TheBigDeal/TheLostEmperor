@@ -147,26 +147,26 @@ guiTypes = {
 
 	}
 	containerWindowType = {
-    name = "chart_explanation"
-    position = { x = 334 y = 297 }
-    size = { width = 216 height = 80 }
-    clipping = yes
-    verticalScrollbar = "right_vertical_slider"
-    margin = { top = 6 left = 0 bottom = 5 right = 0}
+		name = "chart_explanation"
+		position = { x = 334 y = 297 }
+		size = { width = 216 height = 80 }
+		clipping = yes
+		verticalScrollbar = "right_vertical_slider"
+		margin = { top = 6 left = 0 bottom = 5 right = 0}
 
-    background = {
-        name = "Background"        
-        quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
-    }
-    
-    gridBoxType = {
-        name = "parties_grid"
-        position = { x = -55 y = 0 }
-        size = { width = 100%% height = 100%% }
-        slotsize = { width = 230 height = 16 }
-        format = "UPPER_LEFT"
-    }
-}
+		background = {
+			name = "Background"        
+			quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
+		}
+		
+		gridBoxType = {
+			name = "parties_grid"
+			position = { x = -55 y = 0 }
+			size = { width = 100%% height = 100%% }
+			slotsize = { width = 230 height = 16 }
+			format = "UPPER_LEFT"
+		}
+	}
 	containerWindowType = {
 		name = "TNO_SG_politics_laws"
 		position = { x = 0 y = 485 }
@@ -4076,7 +4076,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_1_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -4248,7 +4248,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_1_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -4275,14 +4275,20 @@ guiTypes = {
 				containerWindowType = {
 					name = "law_tno_religious_rights_1"
 					position = { x = 10 y = 10 }
-					size = { width = 345 height = 156 }
+					size = { width = 345 height = 90 }
+					iconType ={
+						name ="law_tno_religious_rights_1_icon"
+						spriteType = "GFX_religion_catholicism"
+						position = { x= 10 y = 12 }
+						Orientation = "UPPER_LEFT"
+					}
 					background = {
 						name = "Background"
 						quadTextureSprite ="GFX_tiled_idea_entry"
 					}
 					instantTextboxType = {
 						name = "header"
-						position = { x = 18 y = 12 }
+						position = { x = 80 y = 12 }
 						font = "vic_18"
 						text = "tno_religious_rights_catholicism"
 						maxWidth = 670
@@ -4291,7 +4297,7 @@ guiTypes = {
 					}
 					instantTextboxType = {
 						name = "set_law_tno_religious_rights_1_txt"
-						position = { x = 20 y = 38 }
+						position = { x = 80 y = 38 }
 						font = "garamond_14"
 						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER"
 						maxWidth = 300
@@ -4307,6 +4313,7 @@ guiTypes = {
 						maxHeight = 100
 						format = left
 					}
+
 				}
 
 				containerWindowType = {
@@ -4422,14 +4429,20 @@ guiTypes = {
 				containerWindowType = {
 					name = "law_tno_religious_rights_5"
 					position = { x = 354 y = 10 }
-					size = { width = 345 height = 156 }
+					size = { width = 345 height = 90 }
+					iconType ={
+						name ="law_tno_religious_rights_1_icon"
+						spriteType = "GFX_religion_orthodoxy"
+						position = { x= 10 y = 12 }
+						Orientation = "UPPER_LEFT"
+					}
 					background = {
 						name = "Background"
 						quadTextureSprite ="GFX_tiled_idea_entry"
 					}
 					instantTextboxType = {
 						name = "header"
-						position = { x = 18 y = 12 }
+						position = { x = 80 y = 12 }
 						font = "vic_18"
 						text = "tno_religious_rights_orthodox"
 						maxWidth = 670
@@ -4438,7 +4451,7 @@ guiTypes = {
 					}
 					instantTextboxType = {
 						name = "set_law_tno_religious_rights_5_txt"
-						position = { x = 20 y = 38 }
+						position = { x = 80 y = 38 }
 						font = "garamond_14"
 						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER"
 						maxWidth = 300
@@ -4825,7 +4838,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_1_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -5034,7 +5047,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_1_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -5281,7 +5294,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_1_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -5453,7 +5466,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_1_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -5625,7 +5638,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_1_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -5797,7 +5810,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_1_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -6043,7 +6056,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_1_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -6289,7 +6302,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_2_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -6646,7 +6659,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_2_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -6892,7 +6905,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_2_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -7175,7 +7188,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_2_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -7421,7 +7434,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_2_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -7630,7 +7643,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_2_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -7839,7 +7852,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_3_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -8048,7 +8061,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_3_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -8331,7 +8344,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_3_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -8577,7 +8590,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_3_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -8823,7 +8836,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_3_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -9069,7 +9082,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_3_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -9315,7 +9328,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_3_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -9487,7 +9500,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_3_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -9733,7 +9746,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_3_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -9979,7 +9992,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_4_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -10225,7 +10238,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_4_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -10471,7 +10484,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_4_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -10717,7 +10730,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_4_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -10963,7 +10976,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_4_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -11209,7 +11222,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_4_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -11418,7 +11431,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_4_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -11627,7 +11640,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_4_SWITCH"
 			maxWidth = 450
 			maxHeight = 20
@@ -11836,7 +11849,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "switch"
 			position = { x = 10 y = 26 }
-			font = "hoi_20"
+			font = "hoi_20b"
 			text = "TNO_LAWS_CATEGORY_4_SWITCH"
 			maxWidth = 450
 			maxHeight = 20

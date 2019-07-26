@@ -44,99 +44,20 @@ set_technology = {
 
 }
 
-1939.1.1 = {
-
-	add_political_power = 1199
-	
-	#adding ministers
-	add_ideas = {
-		USA_robert_taft
-		carl_spaatz
-		jimmy_doolittle
-		army_ordnance_department
-		general_electric
-		robert_goddard
-		USA_prepare_intervention
-
-		#laws
-		isolation
-		volunteer_only
-
-		new_deal
-	}
-
-	#focuses
-	
-	oob = "USA_1939"
-	set_technology = {
-		fighter1 = 1
-		cv_fighter1 = 1
-		heavy_fighter1 = 1
-		tactical_bomber1 = 1
-		CAS2 = 1
-		strategic_bomber1 = 1
-		
-		interwar_artillery = 1
-		interwar_antitank = 1
-		interwar_antiair = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		marines = 1
-		basic_destroyer = 1
-		basic_heavy_cruiser = 1
-		basic_battlecruiser = 1
-
-		#doctrines
-		#Air
-		air_superiority = 1
-		infrastructure_destruction = 1
-		naval_strike_tactics = 1
-
-		sup_delay = 1
-		submarine_operations_bs = 1
-		carrier_primacy = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-	}
-	create_equipment_variant = {
-		name = "Martin M166"
-		type = tac_bomber_equipment_0
-		upgrades = {
-			plane_tac_bomb_upgrade = 2
-			plane_range_upgrade = 1
-			plane_engine_upgrade = 2
-			plane_reliability_upgrade = 3
-		}
-	}
-}
-
-
-
-
 set_convoys = 100
 
 
 set_politics = {	
-	ruling_party = liberalism
+	ruling_party = conservatism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    liberalism = 80
+    conservatism = 50
+    liberalism = 40
     labryscism = 10
-    collectivism = 10
 }
 
 add_ideas = {

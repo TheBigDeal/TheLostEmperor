@@ -6,8 +6,8 @@ spriteTypes = {
 	# IDEOLOGIES
 	##############################################################
 	SpriteType = {
-	name = "GFX_ideology_conservatism"
-	texturefile = "gfx/interface/goals/ideology_conservatism.tga"			
+	name = "GFX_ideology_proletarianism"
+	texturefile = "gfx/interface/goals/ideology_proletarianism.tga"			
 	}
 	SpriteType = {
 	name = "GFX_ideology_labrycsism"
@@ -21,7 +21,15 @@ spriteTypes = {
 	name = "GFX_ideology_socialism"
 	texturefile = "gfx/interface/goals/ideology_socialism.tga"			
 	}
-	
+	### RELIGIONS ###
+	SpriteType = {
+		name = "GFX_religion_catholicism"
+		texturefile = "gfx/interface/goals/Religion/religion_catholicism.dds"
+	}
+	SpriteType = {
+		name = "GFX_religion_orthodoxy"
+		texturefile = "gfx/interface/goals/Religion/religion_orthodoxy.dds"
+	}
 	# THE LOST EMPEROR
 	#############################################################
 	SpriteType = {
@@ -83,6 +91,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_usa_reed"
 		texturefile = "gfx/interface/goals/Mod/usa_reed.dds"
+	}
+	SpriteType = {
+		name = "GFX_usa_reeds_justice"
+		texturefile = "gfx/interface/goals/Mod/usa_reeds_justice.dds"
+	}
+	SpriteType = {
+		name = "GFX_usa_immigration_quotas"
+		texturefile = "gfx/interface/goals/Mod/usa_immigration_quotas.dds"
 	}
 	# OTHER MOD GFX
 	#############################################################

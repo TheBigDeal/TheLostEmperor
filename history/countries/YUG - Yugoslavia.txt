@@ -103,7 +103,7 @@ set_technology = {
 		tactical_bomber1 = 1
 		CAS1 = 1
 		naval_bomber1 = 1
-		interwar_artillery = 1
+		
 		interwar_antiair = 1
 		infantry_weapons2 = 1
 		support_weapons = 1

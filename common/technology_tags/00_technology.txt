@@ -2,6 +2,9 @@
 # If adding new technology, make sure they are uniquely named.
 
 technology_categories = {
+	landcruiser_cat
+	railway_gun_cat
+
 	light_air
 	medium_air
 	heavy_air

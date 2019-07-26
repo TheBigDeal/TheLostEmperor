@@ -3,7 +3,7 @@ ideas = {
 	country = {
 		rexist_assault_divisions = {
 			
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 
@@ -22,7 +22,7 @@ ideas = {
 	
 		collectivist_partisans_recruiting = {
 			
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 
@@ -39,7 +39,7 @@ ideas = {
 		}
 		proletariat_partisans_recruiting = {
 			
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 
@@ -56,7 +56,7 @@ ideas = {
 		}
 		mutualist_partisans_recruiting = {
 			
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 
@@ -74,7 +74,7 @@ ideas = {
 	
 		conservatism_opposition_voicing_protests = {
 			
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 
@@ -91,7 +91,7 @@ ideas = {
 		}
 		socialism_opposition_voicing_protests = {
 			
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 
@@ -108,7 +108,7 @@ ideas = {
 		}
 		liberalism_opposition_voicing_protests = {
 			
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 
@@ -127,7 +127,7 @@ ideas = {
 		#Revolutionaries
 		labryscist_revolutionaries = {
 			removal_cost = -1
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 			picture = generic_labryscism_drift_bonus
@@ -137,7 +137,7 @@ ideas = {
 		}
 		collectivist_revolutionaries = {
 			removal_cost = -1
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 			picture = generic_collectivism_drift_bonus
@@ -147,7 +147,7 @@ ideas = {
 		}
 		mutualist_revolutionaries = {
 			removal_cost = -1
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 			picture = generic_collectivism_drift_bonus
@@ -157,7 +157,7 @@ ideas = {
 		}
 		proletariat_revolutionaries = {
 			removal_cost = -1
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 			picture = generic_collectivism_drift_bonus
@@ -167,7 +167,7 @@ ideas = {
 		}
 		liberalism_revolutionaries = {
 			removal_cost = -1
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 			picture = generic_liberalism_drift_bonus
@@ -177,7 +177,7 @@ ideas = {
 		}
 		conservative_revolutionaries = {
 			removal_cost = -1
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 			picture = generic_liberalism_drift_bonus
@@ -187,7 +187,7 @@ ideas = {
 		}
 		royalism_revolutionaries = {
 			removal_cost = -1
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 			picture = generic_liberalism_drift_bonus
@@ -197,7 +197,7 @@ ideas = {
 		}
 		absolutism_revolutionaries = {
 			removal_cost = -1
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 			picture = generic_liberalism_drift_bonus
@@ -207,7 +207,7 @@ ideas = {
 		}
 		theocratic_revolutionaries = {
 			removal_cost = -1
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 			picture = generic_liberalism_drift_bonus
@@ -217,7 +217,7 @@ ideas = {
 		}
 		despotic_revolutionaries = {
 			removal_cost = -1
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 			picture = generic_labryscism_drift_bonus
@@ -227,7 +227,7 @@ ideas = {
 		}
 		rexist_revolutionaries = {
 			removal_cost = -1
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 			picture = generic_labryscism_drift_bonus
@@ -237,7 +237,7 @@ ideas = {
 		}
 		socialism_revolutionaries = {
 			removal_cost = -1
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 			picture = generic_liberalism_drift_bonus
@@ -255,7 +255,7 @@ ideas = {
 		labryscism_defeated = {
 			removal_cost = -1
 			
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 
@@ -269,7 +269,7 @@ ideas = {
 		proletarianism_defeated = {
 			removal_cost = -1
 			
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 
@@ -283,7 +283,7 @@ ideas = {
 		reign_of_terror = {
 			removal_cost = -1
 			
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 
@@ -298,7 +298,7 @@ ideas = {
 			
 			removal_cost = -1 # Or make removable, with high cost?
 			
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 	
@@ -313,7 +313,7 @@ ideas = {
 			
 			removal_cost = -1 # Or make removable, with high cost?
 			
-			available = {
+			visible = {
 				always = no # Triggered via event
 			}
 	
@@ -329,7 +329,7 @@ ideas = {
 
 		anti_nazi_coup = {			
 			
-			available = {
+			visible = {
 				always = no
 			}
 			removal_cost = -1
@@ -343,7 +343,7 @@ ideas = {
 		
 		shattered_government = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 			removal_cost = -1

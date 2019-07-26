@@ -3,7 +3,7 @@ ideas = {
 	country = {
 		CAN_great_depression_1 = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -24,7 +24,7 @@ ideas = {
 
 		CAN_great_depression_2 = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -45,7 +45,7 @@ ideas = {
 
 		CAN_patriation = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -66,7 +66,7 @@ ideas = {
 
 		CAN_conscription_crisis = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -85,7 +85,7 @@ ideas = {
 		
 		CAN_conscription_crisis_mended = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 			
@@ -104,7 +104,7 @@ ideas = {
 
 		CAN_defence_of_canada_regulations_liberalism = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -125,7 +125,7 @@ ideas = {
 
 		CAN_defence_of_canada_regulations_rexism = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -146,7 +146,7 @@ ideas = {
 
 		CAN_defence_of_canada_regulations_proletarianism = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -167,7 +167,7 @@ ideas = {
 
 		CAN_war_bonds_1 = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -186,7 +186,7 @@ ideas = {
 
 		CAN_war_bonds_2 = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -205,7 +205,7 @@ ideas = {
 
 		CAN_national_resources_mobilization_act = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -227,7 +227,7 @@ ideas = {
 
 		CAN_wartime_prices_and_trade_board = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -247,7 +247,7 @@ ideas = {
 		
 		CAN_bits_and_pieces_program = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -269,7 +269,7 @@ ideas = {
 
 		CAN_commit_to_the_war = {
 
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -289,7 +289,7 @@ ideas = {
 
 		CAN_send_in_the_zombies = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -309,7 +309,7 @@ ideas = {
 		
 		CAN_the_plan = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -380,7 +380,7 @@ ideas = {
 		}
 		
 		CAN_swastika_clubs = {
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -399,7 +399,7 @@ ideas = {
 		}
 
 		CAN_swastika_clubs_2 = {
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -420,7 +420,7 @@ ideas = {
 		}
 
 		CAN_swastika_clubs_skewer = {
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -443,7 +443,7 @@ ideas = {
 		}
 
 		CAN_communist_ideals = {
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -462,7 +462,7 @@ ideas = {
 		}
 
 		CAN_communist_ideals_2 = {
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -483,7 +483,7 @@ ideas = {
 		}
 
 		CAN_communist_ideals_3 = {
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -507,7 +507,7 @@ ideas = {
 		}
 
 		CAN_degauss_ship_hulls = {
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -534,7 +534,7 @@ ideas = {
 
 		CAN_trade_fleet = {
 			
-			available = {
+			visible = {
 				always = no
 			}
 
@@ -558,12 +558,12 @@ ideas = {
 
 		CAN_chuck_crate = {
 
-			available = {
+			visible = {
 				original_tag = CAN
 				
 			}
 
-			available = {
+			visible = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }
 					has_completed_focus = CAN_swastika_clubs
@@ -591,12 +591,12 @@ ideas = {
 
 		CAN_robert_manion = {
 
-			available = {
+			visible = {
 				original_tag = CAN
 				
 			}
 
-			available = {
+			visible = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }
 					OR = {
@@ -627,12 +627,12 @@ ideas = {
 
 		CAN_william_kashtan = {
 
-			available = {
+			visible = {
 				original_tag = CAN
 				
 			}
 
-			available = {
+			visible = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }
 					has_completed_focus = CAN_burn_the_royal_portraits
@@ -663,7 +663,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 			
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -674,7 +674,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 				
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -685,7 +685,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -696,7 +696,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			available = {
+			visible = {
 				original_tag = CAN
 				has_dlc = "Together for Victory"
 			}
@@ -708,7 +708,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 			
-			available = {
+			visible = {
 				original_tag = CAN
 				has_dlc = "Together for Victory"
 			}
@@ -720,12 +720,12 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 			
-			available = {
+			visible = {
 				original_tag = CAN
 				has_dlc = "Together for Victory"
 			}
 
-			available = {
+			visible = {
 				has_completed_focus = CAN_forced_quebec_conscription
 			}
 			
@@ -738,12 +738,12 @@ ideas = {
 			
 			cost = 50
 
-			available = {
+			visible = {
 				original_tag = CAN
 				has_dlc = "Together for Victory"
 			}
 
-			available = {
+			visible = {
 				has_completed_focus = CAN_crown_corporations
 			}
 			
@@ -757,7 +757,7 @@ ideas = {
 					
 			picture = generic_army_europe_1
 
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -771,7 +771,7 @@ ideas = {
 					
 			picture = generic_political_advisor_europe_2
 
-			available = {
+			visible = {
 				original_tag = CAN
 				has_dlc = "Together for Victory"
 			}
@@ -786,7 +786,7 @@ ideas = {
 					
 			picture = generic_air_europe_2
 					
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -803,7 +803,7 @@ ideas = {
 		CAN_harry_crerar = {
 			picture = generic_army_europe_4
 			
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -819,7 +819,7 @@ ideas = {
 		CAN_andrew_mcnaughton = {
 			picture = generic_army_europe_3
 			
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -835,7 +835,7 @@ ideas = {
 		CAN_george_pearkes = {
 			picture = generic_army_europe_3
 			
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -854,7 +854,7 @@ ideas = {
 		CAN_lloyd_samuel_breadner = {
 			picture = generic_air_europe_2
 			
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -870,7 +870,7 @@ ideas = {
 		CAN_george_croil = {
 			picture = generic_air_europe_1
 			
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -886,7 +886,7 @@ ideas = {
 		CAN_harold_edwards = {
 			picture = generic_air_europe_3
 			
-			available = {
+			visible = {
 				original_tag = CAN
 				has_dlc = "Together for Victory"
 			}
@@ -902,7 +902,7 @@ ideas = {
 		CAN_raymond_collishaw = {
 			picture = generic_air_europe_3
 			
-			available = {
+			visible = {
 				original_tag = CAN
 				has_dlc = "Together for Victory"
 			}
@@ -922,7 +922,7 @@ ideas = {
 		CAN_percy_nelles = {
 			picture = generic_navy_europe_3
 			
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -940,7 +940,7 @@ ideas = {
 		CAN_alasdair_murray = {
 			picture = generic_navy_europe_1
 			
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -953,7 +953,7 @@ ideas = {
 		CAN_george_jones = {
 			picture = generic_navy_europe_1
 			
-			available = {
+			visible = {
 				original_tag = CAN
 				has_dlc = "Together for Victory"
 			}
@@ -973,7 +973,7 @@ ideas = {
 			
 			picture = generic_army_europe_1
 
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -988,7 +988,7 @@ ideas = {
 			
 			picture = generic_air_europe_2
 			
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -1003,7 +1003,7 @@ ideas = {
 			
 			picture = generic_army_europe_2
 
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -1018,7 +1018,7 @@ ideas = {
 			
 			picture = generic_army_europe_3
 
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -1040,7 +1040,7 @@ ideas = {
 			picture = generic_tank_manufacturer_1
 
 			
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -1062,7 +1062,7 @@ ideas = {
 
 			picture = generic_industrial_concern_1
 			
-			available = {
+			visible = {
 				original_TAG = CAN
 				has_dlc = "Together for Victory"
 			}
@@ -1083,7 +1083,7 @@ ideas = {
 					
 			picture = generic_industrial_concern_2
 				
-			available = {
+			visible = {
 				original_tag = CAN
 				has_dlc = "Together for Victory"
 			}
@@ -1106,7 +1106,7 @@ ideas = {
 			
 			picture = generic_infantry_equipment_manufacturer_2
 
-			available = {
+			visible = {
 				original_TAG = CAN
 				has_dlc = "Together for Victory"
 			}
@@ -1126,7 +1126,7 @@ ideas = {
 
 			picture = generic_infantry_equipment_manufacturer_1
 			
-			available = {
+			visible = {
 				original_TAG = CAN
 				has_dlc = "Together for Victory"
 			}
@@ -1151,7 +1151,7 @@ ideas = {
 			picture = generic_naval_manufacturer_2
 
 			
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -1170,7 +1170,7 @@ ideas = {
 			picture = generic_naval_manufacturer_3
 
 			
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -1194,7 +1194,7 @@ ideas = {
 			picture = generic_air_manufacturer_1
 
 			
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -1215,7 +1215,7 @@ ideas = {
 			picture = generic_air_manufacturer_2
 
 			
-			available = {
+			visible = {
 				original_tag = CAN
 			}
 			
@@ -1237,12 +1237,12 @@ ideas = {
 
 			cost = 150
 
-			available = {
+			visible = {
 				original_tag = CAN
 				has_dlc = "Together for Victory"
 			}
 
-			available = {
+			visible = {
 				has_completed_focus = CAN_fund_fairchilds_development
 			}
 			
@@ -1264,12 +1264,12 @@ ideas = {
 
 			cost = 150
 
-			available = {
+			visible = {
 				original_tag = CAN
 				has_dlc = "Together for Victory"
 			}
 
-			available = {
+			visible = {
 				has_completed_focus = CAN_cookie_carriers
 			}
 			

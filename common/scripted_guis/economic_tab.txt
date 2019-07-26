@@ -24,8 +24,8 @@ scripted_gui = {
 							flag = show_economic_tab
 							value = 0
 						}
-						modify_country_flag = { flag = show_economic_tab value = 1 }
 					}
+					modify_country_flag = { flag = show_economic_tab value = 1 }
 				}
 			}
 		}

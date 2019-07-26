@@ -6,7 +6,7 @@ ideas = {
 
 			picture = FRA_matignon_agreements
 
-			allowed = {
+			visible = {
 				original_tag = SPR
 				has_government = labryscism
 			}
@@ -28,7 +28,7 @@ ideas = {
 
 			picture = generic_army_europe_2
 
-			allowed = {
+			visible = {
 				original_tag = SPR
 				has_government = labryscism
 			}
@@ -40,7 +40,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 
-			allowed = {
+			visible = {
 				original_tag = SPR
 				has_government = labryscism
 			}
@@ -52,7 +52,7 @@ ideas = {
 
 			picture = generic_army_europe_4
 
-			allowed = {
+			visible = {
 				original_tag = SPR
 				has_government = labryscism
 			}
@@ -66,7 +66,7 @@ ideas = {
 	SPA_jose_enrique_varela = {
 				
 				
-		allowed = {
+		visible = {
 			original_tag = SPR
 			has_government = labryscism
 		}
@@ -83,7 +83,7 @@ ideas = {
 	SPA_emilio_herrera = {
 				
 				
-		allowed = {
+		visible = {
 			original_tag = SPR
 			has_government = labryscism
 		}
@@ -105,7 +105,7 @@ ideas = {
 			
 			picture = generic_army_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = SPR
 				has_government = labryscism
 			}
@@ -123,7 +123,7 @@ ideas = {
 			
 			picture = generic_army_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = SPR
 				has_government = labryscism
 			}
@@ -141,7 +141,7 @@ ideas = {
 			
 			picture = generic_army_europe_5
 			
-			allowed = {
+			visible = {
 				original_tag = SPR
 				has_government = labryscism
 			}
@@ -162,7 +162,7 @@ ideas = {
 			
 			picture = generic_air_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = SPR
 				has_government = labryscism
 			}
@@ -180,7 +180,7 @@ ideas = {
 			
 			picture = generic_air_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = SPR
 				has_government = labryscism
 			}
@@ -202,7 +202,7 @@ ideas = {
 			
 			picture = generic_navy_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = SPR
 				has_government = labryscism
 			}
@@ -220,7 +220,7 @@ ideas = {
 			
 			picture = generic_navy_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = SPR
 				has_government = labryscism
 			}
@@ -238,7 +238,7 @@ ideas = {
 			
 			picture = generic_navy_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = SPR
 				has_government = labryscism
 			}
@@ -258,7 +258,7 @@ ideas = {
 		SPA_emilio_esteban_infantes = {
 			
 			picture = generic_army_europe_5
-			allowed = {
+			visible = {
 				original_tag = SPR
 				has_government = labryscism
 			}
@@ -275,7 +275,7 @@ ideas = {
 		SPA_agustin_munoz_grandes = {
 			
 			picture = generic_army_europe_3
-			allowed = {
+			visible = {
 				original_tag = SPR
 				has_government = labryscism
 			}
@@ -292,7 +292,7 @@ ideas = {
 		SPA_joaquin_garcia_morato = {
 			
 			picture = generic_air_europe_2
-			allowed = {
+			visible = {
 				original_tag = SPR
 				has_government = labryscism
 			}
@@ -309,7 +309,7 @@ ideas = {
 		SPA_angel_salas_larrazabal = {
 			
 			picture = generic_air_europe_1
-			allowed = {
+			visible = {
 				original_tag = SPR
 				has_government = labryscism
 			}

@@ -8,7 +8,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_2
 
-			allowed = {
+			visible = {
 				original_tag = WLS
 			}
 			
@@ -19,7 +19,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 				
-			allowed = {
+			visible = {
 				original_tag = WLS
 			}
 			
@@ -30,7 +30,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = WLS
 			}
 			
@@ -44,7 +44,7 @@ ideas = {
 
 			picture = generic_army_europe_4
 			
-			allowed = {
+			visible = {
 				original_tag = WLS
 			}		
 			
@@ -59,7 +59,7 @@ ideas = {
 
 			picture = generic_army_europe_1
 			
-			allowed = {
+			visible = {
 				original_tag = WLS
 			}
 			
@@ -77,7 +77,7 @@ ideas = {
 
 			picture = generic_air_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = WLS
 			}
 			
@@ -92,7 +92,7 @@ ideas = {
 
 			picture = generic_air_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = WLS
 			}
 			
@@ -111,7 +111,7 @@ ideas = {
 
 			picture = generic_navy_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = WLS
 			}
 					
@@ -126,7 +126,7 @@ ideas = {
 
 			picture = generic_navy_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = WLS
 			}
 					
@@ -144,7 +144,7 @@ ideas = {
 			
 			picture = generic_army_europe_5
 			
-			allowed = {
+			visible = {
 				original_tag = WLS
 			}
 			
@@ -159,7 +159,7 @@ ideas = {
 
 			picture = generic_army_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = WLS
 			}
 			
@@ -174,7 +174,7 @@ ideas = {
 
 			picture = generic_army_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = WLS
 			}
 			
@@ -189,7 +189,7 @@ ideas = {
 
 			picture = generic_air_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = WLS
 			}
 			
@@ -204,7 +204,7 @@ ideas = {
 
 			picture = generic_navy_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = WLS
 			}
 			
@@ -221,7 +221,7 @@ ideas = {
 			
 			picture = generic_army_europe_6
 
-			allowed = {
+			visible = {
 				original_tag = WLS
 			}
 			
@@ -236,7 +236,7 @@ ideas = {
 
 			picture = generic_navy_europe_3
 			
-			allowed = {
+			visible = {
 				original_tag = WLS
 			}
 			
@@ -251,7 +251,7 @@ ideas = {
 
 			picture = generic_air_europe_2
 			
-			allowed = {
+			visible = {
 				original_tag = WLS
 			}
 			

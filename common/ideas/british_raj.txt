@@ -3,7 +3,7 @@ ideas = {
 	hidden_ideas = {
 		RAJ_lions_of_the_great_war = {
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
@@ -20,7 +20,7 @@ ideas = {
 
 		RAJ_indian_gurkhas = {
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
@@ -41,7 +41,7 @@ ideas = {
 		RAJ_azad_hind = {
 			picture = generic_morale_bonus
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
@@ -60,7 +60,7 @@ ideas = {
 		
 			picture = raj_marginalized_muslim_community
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
@@ -80,7 +80,7 @@ ideas = {
 		
 			picture = raj_marginalized_muslim_community_angry
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
@@ -101,7 +101,7 @@ ideas = {
 		
 			picture = raj_marginalized_muslim_community_happy
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
@@ -122,7 +122,7 @@ ideas = {
 
 			picture = raj_risk_of_famine
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
@@ -146,7 +146,7 @@ ideas = {
 
 			picture = ENG_the_war_to_end_all_wars
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
@@ -169,7 +169,7 @@ ideas = {
 
 			picture = generic_morale_bonus
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
@@ -193,7 +193,7 @@ ideas = {
 
 			picture = generic_morale_bonus
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
@@ -217,7 +217,7 @@ ideas = {
 
 			picture = generic_production_bonus
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
@@ -242,7 +242,7 @@ ideas = {
 
 			picture = generic_manpower_bonus
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
@@ -268,7 +268,7 @@ ideas = {
 
 			picture = raj_indian_gentlemen_officers
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
@@ -293,7 +293,7 @@ ideas = {
 
 			picture = raj_all_india_forward_bloc
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
@@ -316,7 +316,7 @@ ideas = {
 
 			picture = raj_all_india_forward_bloc_rexism
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
@@ -338,7 +338,7 @@ ideas = {
 
 			picture = raj_all_india_forward_bloc_proletarianism
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
@@ -360,7 +360,7 @@ ideas = {
 
 			picture = generic_agrarian_society
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
@@ -379,7 +379,7 @@ ideas = {
 		
 			picture = raj_quit_india_movement
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
@@ -405,11 +405,11 @@ ideas = {
 
 		RAJ_bhimrao_ramji_ambedkar = {
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
-			available = {
+			visible = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }
 					has_completed_focus = RAJ_indian_national_congress				
@@ -434,11 +434,11 @@ ideas = {
 
 		RAJ_karam_singh_mann = {
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 
-			available = {
+			visible = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }	
 					has_completed_focus = RAJ_all_india_forward_bloc
@@ -463,11 +463,11 @@ ideas = {
 
 		RAJ_subhas_chanda_bose = {
 			
-			available = {
+			visible = {
 				original_tag = RAJ				
 			}
 
-			available = {
+			visible = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }	
 					has_completed_focus = RAJ_all_india_forward_bloc
@@ -495,7 +495,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_5
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -506,7 +506,7 @@ ideas = {
 
 			picture = generic_political_advisor_arab_3
 				
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -517,7 +517,7 @@ ideas = {
 
 			picture = generic_political_advisor_arab_3
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -528,7 +528,7 @@ ideas = {
 
 			picture = generic_political_advisor_europe_1
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -539,7 +539,7 @@ ideas = {
 
 			picture = generic_political_advisor_arab_3
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -554,7 +554,7 @@ ideas = {
 
 			picture = generic_political_advisor_arab_2
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -568,7 +568,7 @@ ideas = {
 					
 			picture = generic_army_arab_1
 
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -583,7 +583,7 @@ ideas = {
 					
 			picture = generic_air_arab_1
 				
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -597,7 +597,7 @@ ideas = {
 		RAJ_bahadur_jayla_of_khoch_bahur = {
 					
 					
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -612,11 +612,11 @@ ideas = {
 
 		RAJ_homi_j_bhabha = {
 					
-			available = {
+			visible = {
 				has_completed_focus = RAJ_institute_of_fundamental_research
 			}
 
-			available = {
+			visible = {
 				original_tag = RAJ
 				has_dlc = "Together for Victory"
 			}
@@ -637,7 +637,7 @@ ideas = {
 
 			picture = generic_army_arab_1
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -652,7 +652,7 @@ ideas = {
 
 			picture = generic_air_arab_3
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -667,7 +667,7 @@ ideas = {
 
 			picture = generic_air_arab_2
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -682,7 +682,7 @@ ideas = {
 
 			picture = generic_air_arab_1
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -697,7 +697,7 @@ ideas = {
 
 			picture = generic_navy_europe_1
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -715,7 +715,7 @@ ideas = {
 			
 			picture = generic_army_europe_2
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -732,7 +732,7 @@ ideas = {
 			
 			picture = generic_army_europe_5
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -749,7 +749,7 @@ ideas = {
 			
 			picture = generic_army_europe_1
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -766,7 +766,7 @@ ideas = {
 			
 			picture = generic_army_arab_3
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -783,7 +783,7 @@ ideas = {
 			
 			picture = generic_army_arab_2
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -803,7 +803,7 @@ ideas = {
 			
 			picture = generic_air_europe_1
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -820,7 +820,7 @@ ideas = {
 			
 			picture = generic_air_arab_3
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -837,7 +837,7 @@ ideas = {
 			
 			picture = generic_air_arab_2
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -857,7 +857,7 @@ ideas = {
 			
 			picture = generic_navy_europe_2
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -874,7 +874,7 @@ ideas = {
 			
 			picture = generic_navy_europe_1
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -891,7 +891,7 @@ ideas = {
 			
 			picture = generic_navy_arab_3
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -908,7 +908,7 @@ ideas = {
 			
 			picture = generic_navy_arab_3
 			
-			available = {
+			visible = {
 				original_tag = RAJ
 			}
 			
@@ -928,7 +928,7 @@ ideas = {
 		
 		mazagon_dock_limited = {
 			
-			available = {
+			visible = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
@@ -945,7 +945,7 @@ ideas = {
 		
 		garden_reach_shipbuilders = {
 			
-			available = {
+			visible = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
@@ -961,7 +961,7 @@ ideas = {
 		
 		scindia_shipyard = {
 			
-			available = {
+			visible = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
@@ -984,7 +984,7 @@ ideas = {
 		
 		hindustan_aircraft= {
 			
-			available = {
+			visible = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
@@ -1008,7 +1008,7 @@ ideas = {
 		
 		ishapore_rifle_factory = {
 			
-			available = {
+			visible = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
@@ -1027,7 +1027,7 @@ ideas = {
 		
 		ordnance_factories_board = {
 			
-			available = {
+			visible = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
