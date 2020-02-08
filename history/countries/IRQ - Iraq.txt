@@ -16,7 +16,7 @@ set_convoys = 5
 
 
 set_politics = {
-	ruling_party = absolutism
+	ruling_party = royalism
 	last_election = "1920.15.6"
 	election_frequency = 48
 	elections_allowed = no
@@ -28,15 +28,27 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Ghazi I"
-	desc = "POLITICS_GHAZI_I_DESC"
-	picture = "GFX_portrait_iraq_ghazi"
+	name = "Zeid I"
+	desc = ""
+	picture = ""
 	expire = "1965.1.1"
 	ideology = absolutism_ideology
 	traits = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Zeid I"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = royalism_ideology
+	traits = {
+		#
+	}
+}
+
 
 create_country_leader = {
 	name = "Rashid Ali al-Gaylani"
