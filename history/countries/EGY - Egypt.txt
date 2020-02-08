@@ -6,6 +6,10 @@ set_technology = {
 	gwtank = 1
 }
 
+add_ideas = {
+	tno_religious_rights_sunni
+}
+
 set_convoys = 20
 
 set_politics = {	

@@ -8,6 +8,10 @@ set_technology = {
 	gwtank = 1
 }
 
+add_ideas = {
+	tno_religious_rights_sunni
+}
+
 set_convoys = 5
 
 set_politics = {	
@@ -20,8 +24,9 @@ set_politics = {
 set_popularities = {
     liberalism = 0
     rexism = 0
-    proletarianism = 0
-    absolutism = 100
+	proletarianism = 0
+	theocracy = 34
+    absolutism = 66
 }
 
 create_country_leader = {

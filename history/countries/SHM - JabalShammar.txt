@@ -8,6 +8,10 @@ set_technology = {
 	tech_recon = 1
 }
 
+add_ideas = {
+	tno_religious_rights_sunni
+}
+
 set_politics = {	
 	ruling_party = absolutism
 	last_election = "1933.3.5"

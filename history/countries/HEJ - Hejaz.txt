@@ -8,6 +8,10 @@ set_technology = {
 	tech_recon = 1
 }
 
+add_ideas = {
+	tno_religious_rights_sunni
+}
+
 set_politics = {	
 	ruling_party = royalism
 	last_election = "1933.3.5"
@@ -19,8 +23,8 @@ set_popularities = {
     liberalism = 0
     rexism = 0
     proletarianism = 0
-	royalism = 56
-    absolutism = 44
+	royalism = 60
+    absolutism = 40
 }
 
 set_convoys = 5
