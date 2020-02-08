@@ -23,7 +23,8 @@ set_politics = {
 }
 
 set_popularities = {
-    absolutism = 100
+	royalism = 88
+	absolutism = 12
 }
 
 create_country_leader = {
@@ -56,32 +57,5 @@ create_country_leader = {
 	ideology = proletarianism
 	traits = {
 		#
-	}
-}
-
-1939.1.1 = {
-	set_politics = {	
-	ruling_party = absolutism
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-}
-
-    set_popularities = {
-        liberalism = 0
-        rexism = 30
-        proletarianism = 0
-        absolutism = 70
-    }
-
-	create_country_leader = {
-		name = "Faisal II"
-		desc = "POLITICS_FAISAL_II_DESC"
-		picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_land_1.dds"
-		expire = "1965.1.1"
-		ideology = absolutism_ideology
-		traits = {
-			#
-		}
 	}
 }

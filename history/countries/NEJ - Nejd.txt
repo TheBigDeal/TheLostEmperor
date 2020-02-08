@@ -18,23 +18,23 @@ set_politics = {
 set_popularities = {
     liberalism = 0
     rexism = 0
-    proletarianism = 10
-    absolutism = 90
+    proletarianism = 0
+    absolutism = 10
 }
 
 set_convoys = 5
 
-#Victor Emmanuel III of Italy after 39
-#create_country_leader = {
-#	name = "King Zog"
-#	desc = "POLITICS_KING_ZOG_DESC"
-#	picture = "Portrait_Albania_King_Zog.dds"
-#	expire = "1965.1.1"
-#	ideology = absolutism_ideology
-#	traits = {
-#		#
-#	}
-#}
+create_country_leader = {
+	name = "Abdulaziz Ibn Saud"
+	desc = "POLITICS_ABDULAZIZ_DESC"
+	picture = "Portrait_Saudi_Arabia_Abdulazis_Ibn_Saud.dds"
+	expire = "1965.1.1"
+	ideology = absolutism_ideology
+	traits = {
+		#
+	}
+}
+
 
 #create_field_marshal = {
 #	name = "Xhemal Aranitasi"

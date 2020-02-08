@@ -21,11 +21,11 @@
  socialism_noun:0 "Democratic Socialist"
  socialism_ideology_desc:0 "Democratic Socialism is the mixture of democracy and collectivism, being a sort of lite form of collectivism. Socialism beleives in the equality of all people to a certain degree, which is not as extreme as collectivism."
 
- conservatism: "Conservatism"
- conservatism_noun: "Conservative"
+ conservatism:0 "Conservatism"
+ conservatism_noun:0 "Conservative"
 
- liberalism: "Liberalism"
- liberalism_noun: "Liberal"
+ liberalism:0 "Liberalism"
+ liberalism_noun:0 "Liberal"
 
  #Monarchy
  theocracy:0 "Theocracy"
@@ -225,8 +225,10 @@
  TUR_proletarianism_party_long:0 "Türkiye Komünist Partisi"
  TUR_liberalism_party:0 "DP"
  TUR_liberalism_party_long:0 "Demokrat Parti"
- TUR_absolutism_party:0 "CHP"
- TUR_absolutism_party_long:0 "Cumhuriyet Halk Partisi"
+ TUR_absolutism_party:0 "Osmangolu"
+ TUR_absolutism_party_long:0 "House of Osmangolu"
+ TUR_theocracy_party:0 "Ulema"
+ TUR_theocracy_party_long:0 "Ulema"
  HUN_rexism_party:1 "Horthy Government"
  HUN_arrow_cross_party:0 "NPHM"
  HUN_arrow_cross_party_long:0 "Nyilaskeresztes Párt – Hungarista Mozgalom"
