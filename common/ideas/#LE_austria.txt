@@ -4,6 +4,15 @@ country = {
 	##################
 	#     SPAIN      #
 	##################
+	aus_british_embargo = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			local_resources_factor = -0.10
+			production_oil_factor = -0.20
+			consumer_goods_factor = 0.10
+			industrial_capacity_factory = -0.15
+		}
+	}
 	aus_aeiou = {
 		picture = Hungarian_Monarchy
 		modifier = {

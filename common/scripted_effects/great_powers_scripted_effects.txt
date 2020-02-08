@@ -1,0 +1,17 @@
+get_power_ratings = {
+	clear_array = power_rating_array
+	
+	for_each_scope_loop = {
+		array = power_rating_array
+		#value = i
+		#index = currentLoop
+		every_country = {
+			add_to_array = {
+				array = power_rating_array
+				value = power_rating
+				index = currentLoop
+			}
+			#VARIABLE = "[ROOT.GetPowerRating]"
+		}
+	}
+}

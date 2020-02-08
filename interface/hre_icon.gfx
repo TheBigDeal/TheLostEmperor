@@ -1,0 +1,14 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_hre_icon"
+		textureFile = "gfx//interface/hre_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_hre_not_icon"
+		textureFile = "gfx//interface/hre_not_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_hre_in_icon"
+		textureFile = "gfx//interface/hre_in_icon.dds"
+	}
+}

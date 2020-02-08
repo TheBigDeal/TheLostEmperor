@@ -33,6 +33,8 @@ opinion_modifiers = {
 	sent_diplomats = { value = 50 }
 	polish_deterrence = { value = -100 }
 	declined_alliance = { value = -40 }
+	anti_imperialistic = { value = -50 }
+	anti_communist = { value = -50 }
 	#VANILLA
 	hostile_status = { #special used for civil wars that are on hold and blocks faction stuff
 		value = -100

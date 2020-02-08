@@ -1,0 +1,3 @@
+﻿l_english:
+ EFFECT_CHANGE_LAW_law_political_parties:0 "Change Political Parties Law to '$NAME|Y$' which grants ($DESC$)."
+ EFFECT_CHANGE_LAW_law_trade_unions:0 "Change Trade Unions Law to '$NAME|Y$' which grants ($DESC$)."

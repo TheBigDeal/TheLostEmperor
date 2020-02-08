@@ -1,4 +1,7 @@
 ﻿l_english:
+ law_1_only_underground:0 "Only Underground"
+ EFFECT_CHANGE_LAW_law_political_parties:0 "Change Political Parties Law to '$NAME|Y$' which grants ($DESC$)."
+
  minister:0 "Political Advisors"
  head_of_government:0 "Head Of Government"
  secondary_head:0 "Secondary Head"
@@ -24,7 +27,6 @@
  Religion_Shia:0 "Shia"
  Religion_Secular:0 "Secular"
  Religion_Athiest:0 "Athiest"
-
 
  #Austria
  aus_aeiou:0 "A.E.I.O.U"

@@ -8,6 +8,45 @@
 # localization_key -> points to the localization key
 # that'll be used if trigger passes
 
+# GREAT POWERS
+defined_text = {
+	name = GetPowerStatusName
+	text = {
+		trigger = {
+            check_variable = { 
+			var = this.score_array_position_var
+            value = 8		
+			compare = less_than_or_equals 
+			}			
+		}
+		localization_key = "Great Power" 
+	}
+	text = {
+		trigger = {	
+            check_variable = { this.score_array_position_var >  8 }		
+            check_variable = { 
+			var = this.score_array_position_var
+            value = 16 		
+			compare = less_than_or_equals 
+			}			
+		}
+		localization_key = "Secondary Power"
+	}
+	text = {
+		trigger = {		
+            check_variable = { this.score_array_position_var >  16 }		
+            check_variable = { 
+			var = this.score_array_position_var
+            value = 40 		
+			compare = less_than_or_equals 
+			}		
+		}
+		localization_key = "Regional Power"
+	}
+	text = {
+		localization_key = "Local Power"
+	}
+}
 
 ##########################################
 # M O D

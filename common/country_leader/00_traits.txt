@@ -4,6 +4,25 @@ leader_traits = {
 	##												MOD													##
 	######################################################################################################
 	######################################################################################################
+	gbr_popular_figurhead = {
+		random = no
+		sprite = 13
+		stability_factor = 0.15
+	}
+	prs_legendary_war_hero = {
+		random = no
+		sprite = 13
+		stability_factor = 0.15
+		surrender_limit = 0.1
+	}
+	prs_the_red_baron = {
+		random = no
+		sprite = 13
+		air_ace_generation_chance_factor = 0.10
+		army_bonus_air_superiority_factor = 0.10
+		air_range_factor = 0.1
+		experience_gain_air_factor = 0.03
+	}
 	gre_nationalist_symbol = {
 		random = no
 		sprite = 13

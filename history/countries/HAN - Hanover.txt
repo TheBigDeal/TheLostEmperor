@@ -29,12 +29,22 @@ create_country_leader = {
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "Portrait_Ernest_Augustus_von_Hannover.tga"
 	expire = "1965.1.1"
-	ideology = absolutism_ideology
+	ideology = royalism_ideology
 	traits = {
 		#
 	}
 }
 
+create_country_leader = {
+	name = "Queen Margaret I"
+	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+	picture = "Portrait_margaret_I.dds"
+	expire = "1936.1.20"
+	ideology = royalism_ideology
+	traits = {
+		gbr_popular_figurhead
+	}
+}
 #create_field_marshal = {
 #	name = "Xhemal Aranitasi"
 #	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"

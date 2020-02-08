@@ -222,6 +222,16 @@
  le_greece.2.II:0 "The Nationalist Georgios Tsolakoglou Wins"
  le_greece.2.III:0 "The Liberal Monarchist Eleftherios Venizelos Wins"
  le_greece.2.IV:0 "The Radical Charles Zervas Wins"
+ 
+ le_greece.7.t:0 "Prince Constantine Returns!"
+ le_greece.7.d:0 "Today word has reached the king that his rival, Prince Constantine has returned from his exile. This has caused quite a stir in Greece, causing supporters of the Prince to come out in his name. Many feel Greece is being ruled by a foreign power as the king is German born, and not Greek."
+ le_greece.7.a:0 "Damn!"
+ le_greece.8.t:0 "Prince Constantine Makes A Move!"
+ le_greece.8.d:0 "Today the kings home in Athens was raided. In an attempt to seize power for hiself Prince Constantine has ordered his followers to oust the current king. This includes some army leaders and government officials. Tensions are high and Constantine is close to taking power. Who knows what will happen next."
+ le_greece.8.a:0 "Constantine Seizes Power"
+ le_greece.8.b:0 "Constantine Is Captured"
+ 
+ 
  le_greece.14.t:0 "Military Coup"
  le_greece.14.d:0 "Today high ranking Generals have been seen running around in haste, the military is on high alert and poised to launch a coup. While there are some loyal to the government still, a overwhelming majority have joined up in arms to overthrow the government. We must act quickly to crush the officers and hope the army isnt as loyal as them seem."
  le_greece.14.a:0 "The Coup Succeeds \n( §gDespotism§! Becomes The Ruling Party )"

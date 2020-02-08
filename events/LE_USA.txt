@@ -438,3 +438,89 @@ country_event = { #The Capitol is Dark and Full of Terrors
 
 	}
 }
+country_event = { #A National Tradegy
+	id = le_USA.25
+	title = le_USA.25.t
+	desc = le_USA.25.d
+	picture = GFX_report_event_american_hunger_march
+	fire_only_once = yes
+	trigger = {
+		original_tag = USA
+		has_completed_focus = USA_REIGN_IN_THE_STATES
+		has_completed_focus = USA_SUPPORT_BIG_BUSINESS
+		has_completed_focus = USA_CRACK_DOWN_ON_CORRUPTION
+	}
+	option = { 
+		name = le_USA.25.a
+		add_stability = -0.05
+		add_country_leader_trait = usa_in_coma
+		complete_national_focus = USA_A_NATIONAL_TRAGEDY
+	}
+}
+
+country_event = { #A National Tradegy
+	id = le_USA.26
+	title = le_USA.26.t
+	desc = le_USA.26.d
+	picture = GFX_report_event_american_hunger_march
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = le_USA.26.a
+		add_stability = -0.05
+		add_country_leader_trait = usa_in_coma
+		complete_national_focus = USA_CHAOS_IN_THE_CAPITAL
+	}
+}
+country_event = { #The Succession Question
+	id = le_USA.27
+	title = le_USA.27.t
+	desc = le_USA.27.d
+	picture = GFX_report_event_american_hunger_march
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = le_USA.27.a
+		add_stability = -0.05
+		add_country_leader_trait = usa_in_coma
+		complete_national_focus = USA_THE_SUCCESSION_QUESTION
+	}
+}
+country_event = { #A House Divided
+	id = le_USA.28
+	title = le_USA.28.t
+	desc = le_USA.28.d
+	picture = GFX_report_event_american_hunger_march
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = le_USA.28.a
+		ILL = {
+				set_politics = {
+					ruling_party = collectivism
+				}
+				set_popularities = {
+					conservatism = 1
+					liberalism = 1
+					socialism = 12
+					labryscism = 5
+					rexism = 1
+					despotism = 5
+					royalism = 1
+					theocracy = 1
+					absolutism = 3
+					proletarianism = 15
+					collectivism = 50
+					mutualism = 5
+				}
+				set_cosmetic_tag = UNITED_COMMUNES_OF_AMERICA
+				transfer_state = 395
+				transfer_state = 394
+				transfer_state = 900
+				transfer_state = 393
+				transfer_state = 396
+				transfer_state = 261
+				transfer_state = 817
+			}	
+	}
+}

@@ -9,9 +9,12 @@ scripted_gui = {
 		}
 		
 		effects = {
-			current_money_bg_right_click = {
-				add_to_variable = { current_money = 10000 }
-			}
+			#current_money_bg_right_click = {
+			#	add_to_variable = { current_money = 100000 }
+			#}
+			#current_money_bg_click = {
+			#	add_to_variable = { current_money = -100000 }
+			#}
 		}
 	}
 }

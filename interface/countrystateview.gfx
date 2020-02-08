@@ -1,5 +1,9 @@
 spriteTypes = {
-
+	SpriteType = {
+		name = "GFX_LongTile"
+		textureFile = "gfx//interface/LongTile.dds"
+	}
+	
 	progressbartype = {
 		name = "GFX_nuke_progress"
 		color = { 0.0 0.5 0.0 }
@@ -145,7 +149,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_buildings_strip"
 		textureFile = "gfx/interface/buildings/building_icon_strip.dds"
-		noOfFrames = 15
+		noOfFrames = 16
 	}
 
 	spriteType = {

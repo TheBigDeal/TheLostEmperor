@@ -1,50 +1,76 @@
 scripted_gui = {
-	economic_tab = {
+	economic_window_sg = {
 		context_type = player_context
-		
+		parent_window_token = politics_tab
 		window_name = "countryeconomicview"
-		
+		#parent_window_name = "countrypoliticsview"
 		visible = {
-            is_ai = no
-			has_country_flag = {
-				flag = show_economic_tab
-				value = 0
-			}
-		}
-		
-		effects = {
-			economic_button_click = {
-				log = "test"
-				#set_temp_variable = { show = 1 }
-				#subtract_from_temp_variable = { show = show_economic_tab }
-				set_country_flag = show_economic_tab
-				if = {
-					limit = {
-						has_country_flag = {
-							flag = show_economic_tab
-							value = 0
-						}
-					}
-					modify_country_flag = { flag = show_economic_tab value = 1 }
-				}
+			check_variable = {
+				open_economic_window = 1
 			}
 		}
 	}
-	economic_tab_close = {
+	pol_econ_tab = {
 		context_type = player_context
-		
-		window_name = "countryeconomicview"
-		
+		window_name = "open_economic_tab"
+		parent_window_token = politics_tab
+		#parent_window_name = "countrypoliticsview"
 		visible = {
-            OR = {
-				check_variable = { show_economic_tab > 0.0 }
-				is_ai = YES
+            always = yes
+		}
+		
+		effects = {
+			pol_economic_button_bg_click = {
+				set_variable = { open_economic_window = 1 }
+			}
+		}
+	}
+	pol_political_tab = {
+		context_type = player_context
+		window_name = "open_political_tab"
+		parent_window_token = politics_tab
+		#parent_window_name = "countrypoliticsview"
+		visible = {
+            always = yes
+		}
+		
+		effects = {
+			political_button_click = {
+				set_variable = { open_economic_window = 0 }
+			}
+		}
+	}
+	
+	econ_econ_tab = {
+		context_type = player_context
+		window_name = "econ_open_economic_tab"
+		parent_window_token = countryeconomicview
+		#parent_window_name = "countrypoliticsview"
+		visible = {
+            check_variable = {
+				open_economic_window = 1
 			}
 		}
 		
 		effects = {
-			econ_close_button_click = {
-				set_variable = { show_economic_tab = 0 }
+			pol_economic_button_bg_click = {
+				set_variable = { open_economic_window = 1 }
+			}
+		}
+	}
+	econ_political_tab = {
+		context_type = player_context
+		window_name = "econ_open_political_tab"
+		parent_window_token = countryeconomicview
+		visible = {
+            check_variable = {
+				open_economic_window = 1
+			}
+		}
+		
+		effects = {
+			political_button_click = {
+				set_variable = { open_economic_window = 0 }
 			}
 		}
 	}

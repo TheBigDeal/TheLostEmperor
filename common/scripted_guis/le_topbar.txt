@@ -1,0 +1,45 @@
+scripted_gui = {
+	current_money = {
+		context_type = player_context
+		
+		window_name = "military_experience_container"
+		parent_window_name = "topbar"
+		visible = {
+            always = yes
+		}
+		triggers = {
+            experience_value_bg_visible = {
+                always = no
+            }
+        }
+		
+		effects = {
+			#current_money_bg_right_click = {
+			#	add_to_variable = { current_money = 100000 }
+			#}
+			#current_money_bg_click = {
+			#	add_to_variable = { current_money = -100000 }
+			#}
+		}
+	}
+	show_military_info = {
+		context_type = player_context
+		
+		window_name = "experience_value_bg"
+		#parent_window_name = "topbar"
+		
+		visible = {
+            always = no
+		}
+		
+		effects = {
+			#current_money_bg_right_click = {
+			#	add_to_variable = { current_money = 100000 }
+			#}
+			#current_money_bg_click = {
+			#	add_to_variable = { current_money = -100000 }
+			#}
+		}
+	}
+}
+

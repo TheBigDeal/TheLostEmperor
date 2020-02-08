@@ -1,5 +1,31 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_political_strip"
+		texturefile = "gfx//interface//movement_strip_political.dds"
+		#effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 8
+	}
+	
+	spriteType = {
+		name = "GFX_social_strip"
+		texturefile = "gfx//interface//movement_strip_social.dds"
+		#effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 8
+	}
+	
+	spriteType = {
+		name = "GFX_selected_law"
+		texturefile = "gfx/interface/selected_law.dds"
+	}
+	spriteType = {
+		name = "GFX_selected_law_small"
+		texturefile = "gfx/interface/selected_law_small.dds"	
+	}
+	spriteType = {
+		name = "GFX_lawheader"
+		texturefile = "gfx/interface/lawheader.dds"	
+	}
+	spriteType = {
 		name = "GFX_category_header_longer"
 		textureFile = "gfx/interface/category_header_longer.dds"
 	}

@@ -1,0 +1,67 @@
+﻿l_english: 
+
+### Political Parties ###
+ TUR_absolutism_party:0 "Loyal League"
+ TUR_royalism_party:0 "British National Party"
+ TUR_rexism_party:0 "British Imperial Front"
+ TUR_despotism_party:0 "Unity And Nationalist Association"
+ TUR_conservatism_party:0 "Conservative Party (Tories)"
+ TUR_liberalism_party:0 "Liberal Party"
+ TUR_socialism_party:0 "Labour Party"
+ TUR_theocracy_party:0 "Church Of England"
+ TUR_labryscism_party:0 "New Model Republicans"
+ TUR_mutualism_party:0 "British Congress of Trade Unions"
+ TUR_collectivism_party:0 "British Congress of Trade Unions"
+ TUR_proletarianism_party:0 "British Congress of Trade Unions"
+ 
+### Ministers ###
+ # Head Of State
+
+ # Secondary Head
+
+ # Foriegn Minister
+
+ # Minister Of Defence
+
+ # Economic Minister
+ 
+ # Minister Of The Interior
+
+ # Minister Of Security
+
+ 
+### Ideas ###
+ #tur_the_sun_never_sets:0 "The Sun Never Sets"
+ 
+### Tooltips ###
+ ott_revolt_risk_1:0 "§RTHERE IS A 10% CHANCE ALL COUNTRIES WILL REVOLT UPON COMPLETION§!"
+ random_list_spacing_tt:0 "          "
+### Global / Country Flags ###
+ 
+### Focus Tree ###
+TUR_STABILIZE_THE_NATION:0 "Stabilize The Nation"
+TUR_FORCEFUL_INTEGRATION:0 "Forceful Integration"
+TUR_SUPRESS_THE_LEVANT:0 "Supress The Levant"
+TUR_REINTEGRATE_THE_LEVANT:0 "Reintegrate The Levant"
+TUR_SUPRESS_THE_JORDANIANS:0 "Supress The Jordanians"
+TUR_REINTEGRATE_TRANSJORDAN:0 "Reintegrate Transjordan"
+TUR_SUPRESS_THE_SYRIANS:0 "Supress The Syrians"
+TUR_REINTEGRATE_SYRIA:0 "Reintegrate Syrian"
+TUR_SUPRESS_THE_KURDS:0 "Supress The Kurds"
+TUR_REINTEGRATE_KURDISH_LANDS:0 "Reintegrate Kurdish Lands"
+TUR_SOUTHERN_INFRASTRUCTURE:0 "Eastern Infrastructure"
+TUR_IMPROVE_CROP_YIELDS:0 "Improve Crop Yields"
+TUR_INVEST_IN_RESOURCE_EXTRACTION:0 "Invest In Resource Extraction"
+TUR_REBUILDING_EFFORT:0 "Rebuilding Effort"
+TUR_PROMOTE_OTTOMAN_CULTURE:0 "Promote Turkish Culture"
+TUR_THE_NATIONAL_INTELLIGENCE_ORGANIZATION:0 "The National Intelligence Comittee"
+TUR_THE_REBORN_EMPIRE:0 "The Reborn Empire"
+TUR_COMPLETE_REFORM:0 "Complete Reform"
+TUR_RETURN_DISPUTED_LANDS:0 "Return Disputed Lands"
+TUR_RELEASE_AUTONOMOUS_NATIONS:0 "Release Autonomous Nations"
+TUR_RELEASE_THE_LEVANT:0 "Release The Levant"
+TUR_RELEASE_TRANSJORDAN:0 "Release Transjordan"
+TUR_GIFT_TRANSJORDAN_TO_JABAL_SHAMMAR:0 "Gift Transjordan To Jabal Shammar"
+TUR_RELEASE_SYRIA:0 "Release Syria"
+TUR_THE_TURKISH_STATE:0 "The Turkish State"
+### Events ###

@@ -1,5 +1,25 @@
 idea_categories = {
-
+	law_political_parties = {
+		hidden = yes
+		cost = 0
+		removal_cost = -1
+	}
+	law_vote_franchise = {
+		hidden = yes
+		cost = 0
+		removal_cost = -1
+	}
+	law_trade_unions = {
+		hidden = yes
+		cost = 0
+		removal_cost = -1
+	}
+	law_slavery = {
+		hidden = yes
+		cost = 0
+		removal_cost = -1
+	}
+	
 	hidden_ideas = {
 		hidden = yes
 

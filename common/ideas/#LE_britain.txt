@@ -1,0 +1,50 @@
+ideas = {
+	country = {
+		####################
+		#      Britain     #
+		####################
+		gbr_the_sun_never_sets = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				surrender_limit = 0.1
+				war_support_factor = 0.10
+			}
+		}
+		gbr_britannia_rules_the_waves = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				research_bonus = { naval_doctrine = 0.08 }
+				production_speed_dockyard_factor = 0.1
+				experience_gain_navy = 0.10
+			}
+		}
+		gbr_labor_unrest = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.10
+			}
+		}
+		gbr_splendid_isolation = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				join_faction_tension = 1
+				mobilization_laws_cost_factor = 2.00
+			}
+		}
+		gbr_british_stoicism = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				surrender_limit = 0.1
+			}
+		}
+		gbr_irish_question = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				political_power_gain = -0.15
+				conscription_factor = -0.1
+				stability_factor = -0.10
+			}
+		}
+	}
+}

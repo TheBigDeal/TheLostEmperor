@@ -1,0 +1,41 @@
+scripted_gui = {
+	great_powers = {
+		context_type = player_context
+		
+		window_name = "great_powers_container"
+		
+		visible = {
+            always = yes
+		}
+		
+		effects = {
+			great_powers_bg_click = {
+				set_variable = { open_great_power_container = 1 }
+			}
+		}
+	}
+	great_powers_container = {
+		context_type = player_context
+		
+		window_name = "great_powers_main_container"
+		
+		visible = {
+			check_variable = { open_great_power_container = 1 }
+		}
+		dynamic_lists = {
+			# this is the main grid that contains added countries
+			country_list = {
+				array = power_rating_array
+				change_scope = yes
+				entry_container = "great_power_list_[?Root.open_great_power_container]"
+			}
+		}
+		
+		effects = {
+			gp_close_button_click = {
+				set_variable = { open_great_power_container = 0 }
+			}
+		}
+	}
+}
+

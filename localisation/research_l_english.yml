@@ -188,12 +188,8 @@
  peoples_army_desc:0 "The People's Army believes in the primacy of men over weapons, with superior motivation compensating for inferior technology, and enjoys widespread support from the civilian population.\n\n"
  guerilla_warfare:0 "Guerrilla Warfare"
  guerilla_warfare_desc:0 "The enemy advances, we retreat; the enemy camps, we harass; the enemy tires, we attack; the enemy retreats, we pursue."
- infantry_weapons2:0 "Improved Infantry Equipment I"
- infantry_weapons2_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs. Improved weapon models and more specialized equipment."
- improved_infantry_weapons_2:0 "Improved Infantry Equipment II"
- improved_infantry_weapons_2_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs. Improved weapon models and more specialized equipment."
- advanced_infantry_weapons2:0 "Improved Infantry Equipment III"
- advanced_infantry_weapons2_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs. Further Modernized to include personal Assault Rifles and anti-tank rockets. Improved availability of weapons previously distributed to a limited extent."
+ 
+ 
  infantry_at:0 "Infantry Anti-Tank I"
  infantry_at_desc:0 "Arming our infantry units with anti-tank rifles will allow them to take out lighter armored vehicles while maintaining mobility."
  infantry_at2:0 "Infantry Anti-Tank II"
@@ -803,7 +799,7 @@
  cat_mass_assault:0 "Mass Assault Doctrine"
  cat_trade_interdiction:0 "Trade Interdiction Doctrine"
  cat_battlefield_support:0 "Battlefield Support Doctrine"
- infantry_weapons:0 "Infantry Weapons"
+ 
  base_strike_main:0 "Base Strike Doctrine"
  transport:0 "Transport Ship"
  transport_desc:0 "Ship designed solely for troop movement, without any defensive capabilities."

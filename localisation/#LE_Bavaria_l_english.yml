@@ -1,0 +1,42 @@
+﻿l_english: 
+
+### Political Parties ###
+ # GBR_absolutism_party:0 "Loyal League"
+ # GBR_royalism_party:0 "British National Party"
+ # GBR_rexism_party:0 "British Imperial Front"
+ # GBR_despotism_party:0 "Unity And Nationalist Association"
+ # GBR_conservatism_party:0 "Conservative Party (Tories)"
+ # GBR_liberalism_party:0 "Liberal Party"
+ # GBR_socialism_party:0 "Labour Party"
+ # GBR_theocracy_party:0 "Church Of England"
+ # GBR_labryscism_party:0 "New Model Republicans"
+ # GBR_mutualism_party:0 "British Congress of Trade Unions"
+ # GBR_collectivism_party:0 "British Congress of Trade Unions"
+ # GBR_proletarianism_party:0 "British Congress of Trade Unions"
+ 
+### Ministers ###
+ # Head Of State
+
+ # Secondary Head
+
+ # Foriegn Minister
+
+ # Minister Of Defence
+
+ # Economic Minister
+ 
+ # Minister Of The Interior
+
+ # Minister Of Security
+
+ 
+### Ideas ###
+ 
+### Tooltips ###
+ 
+### Global / Country Flags ###
+ 
+### Focus Tree ###
+ BAV_TENSIONS_RISING:0 "Tensions Rising"
+### Events ###
+le_bavaria.1.t:0 "Communist Takeover"

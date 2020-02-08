@@ -41,51 +41,6 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 		
-		containerWindowType = {
-			name = "economic_tab"
-			position = { x= 235 y = 6 }
-			clipping = no
-			buttonType = {
-				name = "economic_button"
-				position = { x = 0 y = 0 }
-				spriteType = "GFX_economic_button"
-				clicksound = click_default
-			}
-			instantTextboxType = {
-				name = "economic_title"
-				position = { x = 60 y = 4 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = -10 y = 0}
-				text = "Economic"
-				maxWidth = 400
-				maxHeight = 20
-				fixedsize = yes
-			}
-		}
-		containerWindowType = {
-			name = "political_tab"
-			position = { x= 15 y = 6 }
-			clipping = no
-			buttonType = {
-				name = "political_button"
-				position = { x = 0 y = 0 }
-				spriteType = "GFX_economic_button"
-				clicksound = click_default
-			}
-			instantTextboxType = {
-				name = "political_title"
-				position = { x = 38 y = 4 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 0}
-				text = "POLITICAL_POLITICAL"
-				maxWidth = 400
-				maxHeight = 20
-				fixedsize = yes
-			}
-		}
-		
 		iconType ={
 			name ="pol_view_bg"
 			spriteType = "GFX_pol_view_bg"
@@ -1120,7 +1075,7 @@ guiTypes = {
 			buttonFont = "hoi_18mbs"
 			Orientation = "UPPER_LEFT"
 			buttonText = "RELEASE"
-			}
+		}
 
 		buttonType = {
 			name = "occupied_country_flag"

@@ -9,17 +9,21 @@ set_technology = {
 }
 
 set_politics = {	
-	ruling_party = absolutism
+	ruling_party = conservatism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    liberalism = 0
-    rexism = 0
-    proletarianism = 10
-    absolutism = 90
+    liberalism = 20
+    rexism = 8
+    proletarianism = 5
+	collectivism = 10
+	conservatism = 30
+    absolutism = 10
+	theocracy = 5
+	labryscism = 12
 }
 
-set_convoys = 5
+set_convoys = 20

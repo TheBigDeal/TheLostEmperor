@@ -2,6 +2,11 @@ spriteTypes = {
 	
 	#################################################################################
 	spriteType = {
+		name = "GFX_information"
+		textureFile = "gfx//interface//information.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_technology_armour_folder_small_unavailable_item_bg"
 		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
 	}	

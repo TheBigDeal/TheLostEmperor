@@ -1,144 +1,27 @@
 on_actions = {
-
 	on_startup = {
 		effect = {
-			every_country = {
-				set_country_flag = show_economic_tab
-                set_variable = { current_money = 30 }
-				################################
-				#             Gains            #
-				################################
-				
-				#Population Taxes
-				##################
-                set_variable = { total_gain = max_manpower_k }
-				divide_variable = { var = total_gain value = 40 }
-				round_variable = total_gain
-				set_variable = { population_tax = total_gain }
-				#Industry Taxes
-				##################
-				set_variable = { industry_tax = num_of_factories }
-				multiply_variable = { industry_tax = 10 }
-				add_to_variable = { total_gain = industry_tax }
-				
-				#Trade
-				#################
-				
-				#SET PRICES
-				#################
-				#FOOD
-				set_variable = { food_price = resource_exported@food } # $1
-				divide_variable = { var = food_price value = 8 } # $0.125
-				#STEEL
-				set_variable = { steel_price = resource_exported@steel } # $1
-				divide_variable = { var = steel_price value = 4 } # $0.25
-				#OIL
-				set_variable = { oil_price = resource_exported@oil } # $1
-				divide_variable = { var = oil_price value = 2 } # $0.5
-				#ALUMINIUM
-				set_variable = { aluminium_price = resource_exported@aluminium } # $1
-				divide_variable = { var = aluminium_price value = 4 } # $0.25
-				#TUNGSTEN
-				set_variable = { tungsten_price = resource_exported@tungsten } # $1
-				divide_variable = { var = tungsten_price value = 4 } # $0.25
-				#RUBBER
-				set_variable = { rubber_price = resource_exported@rubber } # $1
-				divide_variable = { var = rubber_price value = 4 } # $0.25
-				#CHROMIUM
-				set_variable = { chromium_price = resource_exported@chromium } # $1
-				divide_variable = { var = chromium_price value = 4 } # $0.25
-				
-				add_to_variable = { total_gain_export = food_price }
-				add_to_variable = { total_gain_export = steel_price }
-				add_to_variable = { total_gain_export = oil_price }
-				add_to_variable = { total_gain_export = aluminium_price }
-				add_to_variable = { total_gain_export = tungsten_price }
-				add_to_variable = { total_gain_export = rubber_price }
-				add_to_variable = { total_gain_export = chromium_price }
-				
-				add_to_variable = { total_gain = total_gain_export }
-	
-				set_variable = { current_money_rate = total_gain }
-				
-				#################################
-				#             Losses            #
-				#################################
-				
-				#Army Spending
-				##################
-				set_variable = { army_spending = num_battalions }
-				multiply_variable = { army_spending = 2 }
-				#Infrastructure Spending
-				##################
-				set_variable = { infrastructure_spending = num_controlled_states }
-				multiply_variable = { infrastructure_spending = 10 }
-				#Corruption
-				##################
-				set_variable = { corruption = 100 } #100
-				set_variable = { temp1 = stability } #0.57
-				multiply_variable = { temp1 = 100 } #57
-				subtract_from_variable = { corruption = temp1 } #43
-				round_variable = corruption
-				
-		
-				subtract_from_variable = { current_money_rate = army_spending }
-				subtract_from_variable = { current_money_rate = infrastructure_spending }
-				subtract_from_variable = { current_money_rate = corruption }
-				
-				set_variable = { total_loss = army_spending }
-				add_to_variable = { total_loss = infrastructure_spending }
-				add_to_variable = { total_loss = corruption }
-				
-                set_variable = { current_money_max = 999999999 }
-            }
-		}
+			country_event = { id = great_power.2 }
+			set_country_flag = show_economic_tab
+			sort_power_ratings = yes
+			every_country = { refresh_economy = yes }
+			set_variable = { current_money = 0 }
+			reload_ideas = yes
+		} 
 	}
     
     on_daily = {
 		effect = {
-            if = {
-				#ADDS THE RATE TO CURRENT MANA
-                add_to_variable = { current_money = current_money_rate }
-
+			for_each_loop = {
 				if = {
-					limit = { check_variable = { fuhrer_focus_research > 0 } }
-                    add_to_variable = { fuhrer_focus_research_day = 1 }
-					
-					if = {
-						limit = { check_variable = { fuhrer_focus_research_day = 14 } }
-						
-						if = {
-							limit = { check_variable = { fuhrer_focus_research = 1 } }
-							add_to_variable = { current_money_rate = 1 }
-						}
-						if = {
-							limit = { check_variable = { fuhrer_focus_research = 2 } }
-							add_to_variable = { current_money_max = 25 }
-						}
-						
-						set_variable = { fuhrer_focus_research = 0 }
-					}
+					limit = { check_variable = { v = 7 } }
+					every_country = { refresh_economy = yes }
+					add_to_variable = { current_money = current_money_rate }	
+					round_variable = current_money				
+					clamp_variable = { var = current_money min = -999999 max = 999999 }
 				}
-				
-                clamp_variable = { var = current_money min = 0 max = current_money_max }
+				set_temp_variable = { break = 7 }
 			}
-			
-			
-				if = {
-					limit = { NOT = { check_variable = { conquering = 0 } } }
-					
-                    add_to_variable = { conquer_day = 1 }
-					if = {
-						limit = { check_variable = { conquer_day = 14 } }
-						
-						var:conquering = {
-							ROOT = {
-								annex_country = { target = PREV transfer_troops = yes }
-							}
-						}
-						set_variable = { conquering = 0 }
-					}
-				}
         }
     }
 }

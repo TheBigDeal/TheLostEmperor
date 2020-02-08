@@ -1,4 +1,8 @@
 ﻿l_english:
+ in_hre:0 "This State is a part of the Holy Roman Empire"
+ not_in_hre:0 "This State is not a part of the Holy Roman Empire"
+ 
+ CLOSE_TOOLTIP:0 "§TClose§!"
  SEPARATION_LINE:0 "--------------\n"
  MENU_MESSAGES_DISABLE_ALL:0 "Disable all"
  FILTER:0 "Filter"

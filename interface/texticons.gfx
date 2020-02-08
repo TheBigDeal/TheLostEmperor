@@ -1,6 +1,11 @@
 spriteTypes = {	
 	#MOD
 	spriteType = {
+		name = "GFX_texticon_money"
+		texturefile = "gfx/texticons/money.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_texticon_food"
 		texturefile = "gfx/texticons/food.dds"
 		legacy_lazy_load = no

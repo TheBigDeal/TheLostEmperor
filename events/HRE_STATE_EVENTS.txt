@@ -1,0 +1,21 @@
+﻿add_namespace = HRE_STATE
+country_event = { #ADD ALL STATES TO HRE
+	id = HRE_STATE.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event HRE_STATE.1"}
+ 	title = HRE_STATE.1.t
+ 	desc = HRE_STATE.1.desc
+ 	fire_only_once = no
+	is_triggered_only = yes
+	hidden = yes
+ 	option = {
+ 		name = HRE_STATE.1.a
+		ROOT = {
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+				}
+				set_variable = { var = is_in_HRE value = 1 }
+			}
+		}
+ 	}
+}

@@ -155,12 +155,6 @@ spriteTypes = {
 		name = "GFX_main_battle_tank_medium"
 		textureFile = "gfx/interface/technologies/modern_tank.dds"
 	}
-	
-	
-	
-	
-	
-	
 	Spritetype = {
 		name = "GFX_tank_destroyer_1_medium"
 		textureFile = "gfx/interface/technologies/tank_destroyer_1.dds"
@@ -196,5 +190,101 @@ spriteTypes = {
 	Spritetype = {
 		name = "GFX_landcruiser_A_medium"
 		textureFile = "gfx/interface/technologies/landcruiser_A.dds"
+	}
+	
+	
+	### INFANTRY ###
+	
+	Spritetype = {
+		name = "GFX_cyanide_gas_medium"
+		textureFile = "gfx/interface/technologies/cyanide_gas.dds"
+	}
+	Spritetype = {
+		name = "GFX_chlorine_gas_medium"
+		textureFile = "gfx/interface/technologies/chlorine_gas.dds"
+	}
+	Spritetype = {
+		name = "GFX_mustard_gas_medium"
+		textureFile = "gfx/interface/technologies/mustard_gas.dds"
+	}
+	Spritetype = {
+		name = "GFX_sarin_gas_medium"
+		textureFile = "gfx/interface/technologies/sarin_gas.dds"
+	}
+	Spritetype = {
+		name = "GFX_VX_gas_medium"
+		textureFile = "gfx/interface/technologies/VX_gas.dds"
+	}
+	Spritetype = {
+		name = "GFX_infantry_weapons_4_medium"
+		textureFile = "gfx/interface/technologies/infantry4.dds"
+	}
+	Spritetype = {
+		name = "GFX_infantry_weapons_5_medium"
+		textureFile = "gfx/interface/technologies/infantry5.dds"
+	}
+	Spritetype = {
+		name = "GFX_standard_gas_mask_medium"
+		textureFile = "gfx/interface/technologies/gas_mask1.dds"
+	}
+	Spritetype = {
+		name = "GFX_light_machine_gun_1_medium"
+		textureFile = "gfx/interface/technologies/lmg1.dds"
+	}
+	Spritetype = {
+		name = "GFX_light_machine_gun_2_medium"
+		textureFile = "gfx/interface/technologies/lmg2.dds"
+	}
+	Spritetype = {
+		name = "GFX_light_machine_gun_3_medium"
+		textureFile = "gfx/interface/technologies/lmg3.dds"
+	}
+	Spritetype = {
+		name = "GFX_light_machine_gun_4_medium"
+		textureFile = "gfx/interface/technologies/lmg4.dds"
+	}
+	Spritetype = {
+		name = "GFX_light_machine_gun_5_medium"
+		textureFile = "gfx/interface/technologies/lmg5.dds"
+	}
+	Spritetype = {
+		name = "GFX_sub_machine_gun_1_medium"
+		textureFile = "gfx/interface/technologies/smg1.dds"
+	}
+	Spritetype = {
+		name = "GFX_sub_machine_gun_2_medium"
+		textureFile = "gfx/interface/technologies/smg2.dds"
+	}
+	Spritetype = {
+		name = "GFX_sub_machine_gun_3_medium"
+		textureFile = "gfx/interface/technologies/smg3.dds"
+	}
+	Spritetype = {
+		name = "GFX_sub_machine_gun_4_medium"
+		textureFile = "gfx/interface/technologies/smg4.dds"
+	}
+	Spritetype = {
+		name = "GFX_basic_uniform_medium"
+		textureFile = "gfx/interface/technologies/uniform1.dds"
+	}
+	Spritetype = {
+		name = "GFX_standard_uniform_medium"
+		textureFile = "gfx/interface/technologies/uniform2.dds"
+	}
+	Spritetype = {
+		name = "GFX_improved_uniform_medium"
+		textureFile = "gfx/interface/technologies/uniform3.dds"
+	}
+	Spritetype = {
+		name = "GFX_camouflage_uniform_medium"
+		textureFile = "gfx/interface/technologies/uniform4.dds"
+	}
+	Spritetype = {
+		name = "GFX_modern_uniform_medium"
+		textureFile = "gfx/interface/technologies/uniform5.dds"
+	}
+	Spritetype = {
+		name = "GFX_improved_modern_uniform_medium"
+		textureFile = "gfx/interface/technologies/uniform6.dds"
 	}
 }

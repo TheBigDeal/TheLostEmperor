@@ -18,8 +18,14 @@ FRA_ROYALIST = {
 	color = rgb { 129 94 158 }
 	color_ui = rgb { 129 94 158 }
 }
-
-
+UNITED_COMMUNES_OF_AMERICA = {
+	color = rgb { 158 78 73 }
+	color_ui = rgb { 158 78 73 }
+}
+Hannover_Revolutionaries = {
+	color = rgb { 138 58 53 }
+	color_ui = rgb { 138 58 53 }
+}
 
 BELGIUM = {
 	color = rgb { 193 171 8 }
@@ -94,7 +100,11 @@ SOV_COLOR_CRI = {
 	color_ui = rgb { 165 38 38 }
 }
 NORTH_GERMAN_CONFEDERATION = {
-	color = HSV { 0.1 0.15 0.4 }
+	color = rgb { 87 87 87 }
+	color_ui = rgb { 138 155 116 }
+}
+SOUTH_GERMAN_CONFEDERATION = {
+	color = rgb { 120 120 120 }
 	color_ui = rgb { 138 155 116 }
 }
 HABSBURG_SPAIN = {
@@ -276,9 +286,6 @@ CHI_warlord_leader = {
 MAN_restored = {
 	color = rgb { 237 152 18 }
 	color_ui = rgb { 224 139 5 }
-}
-JAP_showa_restoration = {
-	color = rgb { 230 230 230 }
 }
 
 GER_greater_german_reich = {

@@ -1,10 +1,12 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			set_variable = { var = GLOBAL_COMMUNIST_INFLUENCE var_name value = 0 }
-			set_variable = { var = GLOBAL_FASCIST_INFLUENCE var_name value = 0 }
-			set_variable = { var = GLOBAL_THEOCRATIC_INFLUENCE var_name value = 0 }
-			set_variable = { var = GLOBAL_liberalism_INFLUENCE var_name value = 0 }
+			get_power_ratings = yes
+			set_variable = { var = open_economic_window value = 0 }
+			set_variable = { var = GLOBAL_COMMUNIST_INFLUENCE value = 0 }
+			set_variable = { var = GLOBAL_FASCIST_INFLUENCE value = 0 }
+			set_variable = { var = GLOBAL_THEOCRATIC_INFLUENCE value = 0 }
+			set_variable = { var = GLOBAL_liberalism_INFLUENCE value = 0 }
 			#64 = { set_state_flag = GERMAN_CONFEDERATION }
 			# num_battalions max_manpower_k
 			every_country = {

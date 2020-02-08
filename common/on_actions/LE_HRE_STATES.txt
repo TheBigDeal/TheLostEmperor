@@ -1,0 +1,64 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = PRS
+						original_tag = BOH
+						original_tag = PRS
+						original_tag = SAX
+						original_tag = VRP
+						original_tag = MCH
+						original_tag = MST
+						original_tag = HAN
+						original_tag = HLS
+						original_tag = BRE
+						original_tag = OLD
+						original_tag = MUN
+						original_tag = RAV
+						original_tag = PAD
+						original_tag = BRU
+						original_tag = THU
+						original_tag = HES
+						original_tag = HNZ
+						original_tag = ANH
+						original_tag = PYR
+						original_tag = NAS
+						original_tag = JUL
+						original_tag = CLG
+						original_tag = HRE
+						original_tag = JUL
+						original_tag = KLE
+						original_tag = HES
+						original_tag = FUL
+						original_tag = TRI
+						original_tag = NSA
+						original_tag = PSU
+						original_tag = BAV
+						original_tag = AUG
+						original_tag = NUR
+						original_tag = BAM
+						original_tag = WRZ
+						original_tag = MAI
+						original_tag = HUL
+						original_tag = ULM
+						original_tag = MEM
+						original_tag = LND
+						original_tag = WUR
+						original_tag = FUS
+						original_tag = BAD
+						original_tag = SPY
+						original_tag = PLT
+						original_tag = ALS
+						original_tag = FRN
+						original_tag = FLA
+						original_tag = WLN
+					}
+				}
+				country_event = { id = HRE_STATE.1 }
+			}
+			
+		}
+	}
+}

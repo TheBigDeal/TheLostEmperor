@@ -1,0 +1,242 @@
+guiTypes = {		
+	containerWindowType = {
+		name = "show_list_container"
+		position = { x = 275 y = 175 }
+		size = { width= 1200 height= 100%% }
+		
+		margin = { top = 0 bottom = 15 left = 0 right = 0 }
+		moveable =  yes 
+		clipping = yes 
+		
+			iconType = {
+				name = "title_box"
+				quadTextureSprite = "GFX_generic_box_small"
+				position = { x = 573 y = 16 }
+				frame = 1
+			}
+			iconType = {
+				name = "ledger_view"
+				quadTextureSprite = "GFX_ledger_view"
+				position = { x = 100 y = 0 }
+				frame = 1
+			}
+			buttonType = {
+				name = "closebutton"
+				quadTextureSprite = "GFX_closebutton"
+				position = { x = 1152  y = 34 } 
+				shortcut = "ESCAPE"
+			}	
+			instantTextboxType = {
+				name = "box_name"
+				position = { x = 400 y = 7 }
+				font = "hoi_30header"
+				text = "Great Power Listing"
+				maxWidth = 500 
+				maxHeight = 68
+				format = centre
+				fixedsize = no
+			}
+			instantTextboxType = {
+				name = "title0"
+				position = { x = 650 y = -100 }
+				font = "hoi_20bs"
+				text = "Great Powers"
+				maxWidth = 132
+				maxHeight = 68
+				format = centre
+				fixedsize = no
+			}
+			instantTextboxType = {
+				name = "title1"
+				position = { x = 230 y = 58 }
+				font = "hoi_20bs"
+				text = "Name"
+				maxWidth = 132
+				maxHeight = 68
+				format = centre
+				fixedsize = no
+			}
+			instantTextboxType = {
+				name = "title2"
+				position = { x = 375 y = 58 }
+				font = "hoi_20bs"
+				text = "Power Projection"
+				maxWidth = 132
+				maxHeight = 68
+				format = centre
+				fixedsize = no
+			}
+			instantTextboxType = {
+				name = "title3"
+				position = { x = 500 y = 58 }
+				font = "hoi_20bs"
+				text = "Position"
+				maxWidth = 132
+				maxHeight = 68
+				format = centre
+				fixedsize = no
+			}
+			instantTextboxType = {
+				name = "title4"
+				position = { x = 650 y = 58 }
+				font = "hoi_20bs"
+				text = "Power Status"
+				maxWidth = 132
+				maxHeight = 68
+				format = centre
+				fixedsize = no
+			}
+			instantTextboxType = {
+				name = "title5"
+				position = { x = 800 y = 58 }
+				font = "hoi_20bs"
+				text = "Government Type"
+				maxWidth = 132
+				maxHeight = 68
+				format = centre
+				fixedsize = no
+			}
+			instantTextboxType = {
+				name = "title6"
+				position = { x = 925 y = 58 }
+				font = "hoi_20bs"
+				text = "Population"
+				maxWidth = 132
+				maxHeight = 68
+				format = centre
+				fixedsize = no
+			}
+			instantTextboxType = {
+				name = "title7"
+				position = { x = 1025 y = 50 }
+				font = "hoi_20bs"
+				text = "Number of Factories"
+				maxWidth = 132
+				maxHeight = 68
+				format = centre
+				fixedsize = no
+			}
+		containerWindowType = {
+			name = "show_list_container_list"
+			verticalScrollbar = "right_vertical_slider"
+			position = { x = -95 y = 91 }
+			size = { width= 1270 height= 585 }
+			margin = { top = 5 bottom = 10 left = 0 right = 0 }
+			smooth_scrolling = yes
+			scroll_wheel_factor = 40
+			vertical_scroll_step = 40
+
+			background ={
+				name ="Background"
+				#quadTextureSprite = "GFX_generic_box_smallest"
+				position = { x=0 y=0 }
+			}
+			
+			gridboxtype = {
+				name = "show_grid"
+				position = { x = 20 y = -20 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 100%% height = 50 }
+				add_horizontal = no
+				format = "UPPER_LEFT"
+				max_slots_horizontal = 1
+			}
+		}
+	}
+	containerWindowType = {  
+		name = "show_entry"
+		#moveable =  yes
+
+		iconType = {
+			name = "flag"
+			quadTextureSprite = "GFX_flag_small2"
+			position = { x = 215 y = 15 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name = "flag_frame"
+			quadTextureSprite = "GFX_small_flag_frame_thin"
+			position = { x = 212 y = 15 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name = "lines"
+			quadTextureSprite = "GFX_lines_ledger_view"
+			position = { x = 201 y = 1 }
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name ="name"
+			font = "hoi_18mbs"
+			position = { x = 280 y = 20 }
+			text = "[?global.score_tag_array^i.GetName]"
+			format = centre 
+			maxWidth = 182
+			maxHeight = 68
+			fixedsize = no
+			orientation = centre
+		}
+		instantTextBoxType = {
+			name ="score"
+			font = "hoi_18mbs"
+			position = { x = 445 y = 22 }
+			text = "[?global.score_array^i|0]"
+			format = centre
+			maxWidth = 132
+			maxHeight = 68
+			fixedsize = no
+		}
+		instantTextBoxType = {
+			name ="position"
+			font = "hoi_18mbs"
+			position = { x = 575 y = 22 }
+			text = "[?global.score_array_position^i]"
+			format = centre
+			maxWidth = 132
+			maxHeight = 68
+			fixedsize = no
+		}
+		
+		instantTextBoxType = {
+			name ="Power Status"
+			font = "hoi_20mbs"
+			position = { x = 730 y = 21 }
+			text = "[?global.score_tag_array^i.GetPowerStatusName]"
+			format = centre
+			maxWidth = 132
+			maxHeight = 68
+			fixedsize = no
+		}
+		
+		instantTextBoxType = {
+			name ="Government Type"
+			font = "hoi_18mbs"
+			position = { x = 880 y = 22 }
+			text = "[?global.score_tag_array^i.GetRulingIdeology]"
+			format = centre
+			maxWidth = 132
+			maxHeight = 68
+			fixedsize = no
+		}
+		instantTextBoxType = {
+			name ="Population"
+			font = "hoi_18mbs"
+			position = { x = 1005 y = 23 }
+			text = "[?global.population_array^i|2] M" 
+			format = centre
+			maxWidth = 132
+			maxHeight = 68
+			fixedsize = no
+		}
+		instantTextBoxType = {
+			name ="Number of Factories"
+			font = "hoi_18mbs"
+			position = { x = 1100 y = 23 }
+			text = "[?global.factories_array^i]"
+			format = centre
+			maxWidth = 132
+			maxHeight = 68
+			fixedsize = no
+		}
+	}
+}

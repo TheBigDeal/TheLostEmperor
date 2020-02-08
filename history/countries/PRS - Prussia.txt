@@ -38,7 +38,7 @@ add_ideas = {
 	tno_minimum_wage_low_minimum_wage
 	tno_max_workhours_unlimited_work_day
 }
-complete_national_focus = PRS_THE_KINGDOM_OF_PRUSSIA
+set_stability = 0.98
 
 #1 = Prussia 2 = Austria
 set_variable = { var = PRS_SAXONY_SUPPORT value = 100 }
@@ -67,15 +67,15 @@ set_politics = {
 }
 
 set_popularities = {
-    conservatism = 12
+    conservatism = 10
     liberalism = 3
-    socialism = 2
-    labryscism = 7
+    socialism = 1
+    labryscism = 26
     rexism = 11
     despotism = 2
-    royalism = 12
-    theocracy = 8
-    absolutism = 35
+    royalism = 1
+    theocracy = 2
+    absolutism = 36
     proletarianism = 1
     collectivism = 4
     mutualism = 3
@@ -93,19 +93,77 @@ create_country_leader = {
 	ideology = absolutism_ideology
 	traits = {
 		Political_Dancer
+	}
+}
+
+create_country_leader = {
+	name = "Heinrich von Hohenzollern"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Heinrich.tga"
+	expire = "1950.4.6"
+	ideology = royalism_ideology
+	traits = {
+		Political_Dancer
+	}
+}
+
+create_country_leader = {
+	name = "Heinrich von Hohenzollern"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Heinrich.tga"
+	expire = "1950.4.6"
+	ideology = rexism_ideology
+	traits = {
+		Political_Dancer
+	}
+}
+
+create_country_leader = {
+	name = "Wilhelm II von Hehenzollern"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Prussia_Wilhelm_II.tga"
+	id = 2
+	expire = "1950.4.6"
+	ideology = rexism_ideology
+	traits = {
+		Political_Dancer
 		Warmonger
 	}
 }
 
 create_country_leader = {
-	name = "Fredrick Wilhelm II"
+	name = "Karl Liebknecht"
 	desc = "POLITICS_KING_ZOG_DESC"
-	picture = "Portrait_Prussia_Wilhelm_II.tga"
-	expire = "1942.4.6"
-	ideology = royalism_ideology
+	picture = "Portrait_Prussia_Karl_Liebknecht.tga"
+	expire = "1950.4.6"
+	ideology = collectivism_ideology
 	traits = {
 		Political_Dancer
 		Warmonger
+	}
+}
+
+create_country_leader = {
+	name = "Martin Bormann"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Germany_Martin_Bormann.dds"
+	expire = "1950.4.6"
+	ideology = labryscism_ideology
+	traits = {
+		Political_Dancer
+		Warmonger
+	}
+}
+
+create_country_leader = {
+	name = "Manfred von Richthofen"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "portrait_prs_ns_comittee.dds"
+	expire = "1950.4.6"
+	ideology = despotism_ideology
+	traits = {
+		prs_the_red_baron
+		prs_legendary_war_hero
 	}
 }
 
@@ -120,16 +178,28 @@ create_field_marshal = {
 	planning_skill = 3
 	logistics_skill = 4
 }
-create_field_marshal = {
-	name = "Wilhelm Von Hohenzollern III"
-	portrait_path = "gfx/leaders/PRS/portrait_ger_wilhelm_iii.tga"
+
+create_corps_commander = {
+	name = "Manfred von Richthofen"
+	portrait_path = "gfx/leaders/PRS/portrait_mandred_von_richthofen.dds"
 	traits = { offensive_doctrine }
 	id = 1
 	skill = 3
 	attack_skill = 3
 	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 3
+	planning_skill = 5
+	logistics_skill = 5
+}
+create_corps_commander = {
+	name = "Erwin von Witzleben"
+	portrait_path = "gfx/leaders/PRS/Portrait_Germany_Erwin_von_Witzleben.tga"
+	traits = { offensive_doctrine }
+	id = 1
+	skill = 4
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 5
+	logistics_skill = 5
 }
 create_corps_commander = {
 	name = "August von Mackensen"
@@ -146,7 +216,7 @@ create_corps_commander = {
 	name = "Paul von Lettow-Vorbeck"
 	picture = "portrait_ger_von_lettow_vorbeck.dds"
 	traits = { trait_cautious armor_officer }
-	skill = 1
+	skill = 5
 	id = 3
 	attack_skill = 5
 	defense_skill = 2

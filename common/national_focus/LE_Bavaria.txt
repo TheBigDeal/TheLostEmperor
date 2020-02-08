@@ -1,0 +1,133 @@
+focus_tree = {
+	id = bavarian_focus
+	country = { factor = 0 modifier = { add = 10 tag = BAV } }
+	default = no
+	focus = {
+		id = BAV_TENSIONS_RISING
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = BAV_TENSIONS_RISING }
+		x = 12
+		y = 0
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {}
+	}
+	focus = {
+		id = BAV_APPEAL_TO_THE_LEFT
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = BAV_TENSIONS_RISING }
+		mutually_exclusive = { focus = BAV_EASE_TENSIONS focus = BAV_STRIKE_THE_RADICALS } 
+		x = 6
+		y = 1
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {}
+	}
+	focus = {
+		id = BAV_INCREASE_WORKPLACE_SAFETY
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = BAV_APPEAL_TO_THE_LEFT }
+		x = 3
+		y = 2
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {}
+	}
+	focus = {
+		id = BAV_ALLOW_TRADE_UNIONS
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = BAV_APPEAL_TO_THE_LEFT }
+		x = 5
+		y = 2
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			random_list = {
+				80 = {
+					add_ideas = law_3_all_allowed 
+				}
+				20 = {
+					country_event = { id = le_bavaria.1 }
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAV_PRIVATIZE_BUSINESS
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = BAV_APPEAL_TO_THE_LEFT }
+		x = 7
+		y = 2
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {}
+	}
+	focus = {
+		id = BAV_UNIVERSAL_HEALTHCARE
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = BAV_APPEAL_TO_THE_LEFT }
+		x = 9
+		y = 2
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {}
+	}
+	focus = {
+		id = BAV_THE_KING_STEPS_DOWN
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = BAV_UNIVERSAL_HEALTHCARE }
+		prerequisite = { focus = BAV_PRIVATIZE_BUSINESS }
+		prerequisite = { focus = BAV_ALLOW_TRADE_UNIONS }
+		prerequisite = { focus = BAV_INCREASE_WORKPLACE_SAFETY }
+		x = 6
+		y = 3
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {}
+	}
+	focus = {
+		id = BAV_COMMUNIST_TAKEOVER
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = BAV_THE_KING_STEPS_DOWN }
+		mutually_exclusive = { focus = BAV_A_SOCIALIST_GOVERNMENT }
+		x = 4
+		y = 4
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {}
+	}
+	focus = {
+		id = BAV_A_SOCIALIST_GOVERNMENT
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = BAV_THE_KING_STEPS_DOWN }
+		mutually_exclusive = { focus = BAV_COMMUNIST_TAKEOVER }
+		x = 8
+		y = 4
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {}
+	}
+	focus = {
+		id = BAV_EASE_TENSIONS
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = BAV_TENSIONS_RISING }
+		mutually_exclusive = { focus = BAV_STRIKE_THE_RADICALS focus = BAV_PICK_A_SIDE } 
+		x = 12
+		y = 1
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {}
+	}
+	focus = {
+		id = BAV_STRIKE_THE_RADICALS
+		icon = GFX_goal_support_rexism
+		prerequisite = { focus = BAV_TENSIONS_RISING }
+		mutually_exclusive = { focus = BAV_EASE_TENSIONS focus = BAV_PICK_A_SIDE } 
+		x = 15
+		y = 1
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {}
+	}
+}
+	

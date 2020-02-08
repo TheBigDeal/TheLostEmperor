@@ -23,34 +23,17 @@ set_technology = {
 
 
 set_politics = {	
-	ruling_party = absolutism
-	last_election = "1932.9.18"
-	election_frequency = 48
+	ruling_party = royalism
 	elections_allowed = no
 }
 
 set_popularities = {
-    absolutism = 65
+    absolutism = 5
+	royalism = 35
+	rexism = 28
     socialism = 10
     liberalism = 14
-    proletarianism = 8
-    rexism = 3
-}
-
-1939.1.1 = {
-	set_politics = {		
-		ruling_party = liberalism
-		last_election = "1936.9.20"
-		election_frequency = 48
-		elections_allowed = yes
-}
-
-    set_popularities = {
-        liberalism = 85
-        absolutism = 12
-        proletarianism = 4
-        rexism = 1
-    }
+    collectivism = 8
 }
 
 set_convoys = 25
@@ -60,44 +43,22 @@ set_stability = 0.9
 
 
 create_country_leader = {
-	name = "Per Albin Hansson"
+	name = "Oscar Gustaf Adolf Bernadotte V"
 	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
-	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
-	expire = "1965.1.1"
-	ideology = socialism
+	picture = "Portrait_Sweden_Gustaf_V.tga"
+	expire = "1950.10.29"
+	ideology = absolutism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Sven Olov Lindholm"
-	desc = "POLITICS_SVEN_OLOV_LINDHOLM_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = rexism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Sven Linderot"
-	desc = "POLITICS_SVEN_LINDEROT_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = proletarianism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Axel Pehrsson-Bramstorp"
-	desc = "POLITICS_AXEL_PEHRSSON_BRAMSTORP_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	expire = "1965.1.1"
-	ideology = centrism
+	name = "Oscar Gustaf Adolf Bernadotte V"
+	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
+	picture = "Portrait_Sweden_Gustaf_V.tga"
+	expire = "1950.10.29"
+	ideology = royalism
 	traits = {
 		#
 	}

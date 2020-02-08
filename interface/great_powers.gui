@@ -1,0 +1,84 @@
+
+guiTypes = {
+	containerWindowType = {
+		name = "great_powers_container"
+		position = { x = 85%% y = 4 }
+		
+		buttonType ={
+			name ="great_powers_bg"
+			spriteType = "GFX_great_powers"
+			position = { x=0 y=0 }
+			shortcut = "ctrl+g"
+		}
+	}
+	containerWindowType = {
+		name = "great_powers_main_container"
+		position = { x = 650 y = 270 }
+		size = { width=550 height=74%% }
+		margin = { top = 6 bottom = 13}
+		moveable = yes
+		background = {
+			name = "great_powers_main_bg"
+			quadTextureSprite ="GFX_tiled_window_1b_border"
+		}
+		iconType = {
+			name = gp_header
+			spriteType = "GFX_header_bg"
+			position = {x=6 y=-1}
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "gp_close_button"
+			position = { x = -42 y = 2 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		instantTextboxType = {
+			name = "gp_title"
+			position = { x = 60 y = 0 }
+			font = "hoi_36header"
+			text = "Great Powers"
+			maxWidth = 400
+			maxHeight = 400
+			fixedsize = no
+			format = center		
+			alwaystransparent = no
+		}
+		containerWindowType = {
+			name = "great_power_list_1"
+
+			instantTextBoxType = {
+				name = "country_name"
+				position = { x = 195 y = 200 }
+				
+				font = "hoi_16mbs"
+				borderSize = {x = 0 y = 0}
+				text = "[?this.GetNameWithFlag]"	
+				maxWidth = 175
+				maxHeight = 20
+				format = center
+				fixedsize = yes	
+			
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "power_rating1"
+				position = { x = 295 y = 200 }
+				
+				font = "hoi_16mbs"
+				borderSize = {x = 0 y = 0}
+				text = "[?power_rating_array|0]"	
+				maxWidth = 175
+				maxHeight = 20
+				format = center
+				fixedsize = yes	
+			
+				Orientation = "UPPER_LEFT"
+			}
+		}
+	}
+}

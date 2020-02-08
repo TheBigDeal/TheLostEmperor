@@ -23,60 +23,33 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = socialism
-	last_election = "1933.2.16"
-	election_frequency = 36
-	elections_allowed = yes
+	ruling_party = mutualism
+	elections_allowed = no
 }
 
 set_popularities = {
     conservatism = 13
     liberalism = 7
-    socialism = 30
+    socialism = 15
     labryscism = 1
     rexism = 2
     despotism = 3
     royalism = 6
     theocracy = 1
     absolutism = 3
-    proletarianism = 5
-    collectivism = 20
-    mutualism = 9
+    proletarianism = 4
+    collectivism = 5
+    mutualism = 40
 }
 
 create_country_leader = {
-	name = "Pol Pot" 
+	name = "Pompeu Fabra" 
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
-	expire = "1953.3.1"
-	ideology = proletarianism #insanity
+	picture = "Portrait_CNT_Pompeu_Fabra_i_Poch.tga"
+	expire = "1948.12.25"
+	ideology = mutualism
 	traits = {
 		
 	}
 }
-
-#non standard GBRlish alphabet character
-create_country_leader = {
-	name = "Sisowath Youtévong"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
-	expire = "1953.3.1"
-	ideology = liberalism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Norodom Sihanouk" 
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
-
-#couldnt find anything historical on rexism
 

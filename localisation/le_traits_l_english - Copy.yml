@@ -8,6 +8,10 @@
  usa_the_pragmatist:0 "The Diplomat"
  usa_the_heir:0 "The Heir"
  usa_the_underdog:0 "The Underdog"
+ 
+### Opinions ###
+ anti_imperialistic:0 "Anti Imperialist"
+ anti_communist:0 "Anti Communist"
 
 ### Ministers ###
  cornered_fox:0 "Cornered Fox"

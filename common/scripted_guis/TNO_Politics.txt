@@ -139,33 +139,6 @@ scripted_gui = {
 			always = yes
 		}
 
-		properties = {
-			category_5_academic_base_trend = {
-				image = "[get_academic_base_trend]"
-			}
-			category_5_research_facilities_trend = {
-				image = "[get_research_facilities_trend]"
-			}
-			category_5_agriculture_trend = {
-				image = "[get_agriculture_trend]"
-			}
-			category_5_poverty_rate_trend = {
-				image = "[get_poverty_rate_trend]"
-			}
-			category_5_industrial_equipment_trend = {
-				image = "[get_industrial_equipment_trend]"
-			}
-			category_5_industrial_expertise_trend = {
-				image = "[get_industrial_expertise_trend]"
-			}
-			category_5_army_professionalism_trend = {
-				image = "[get_army_professionalism_trend]"
-			}
-			category_5_nuclear_stockpile_trend = {
-				image = "[get_nuclear_stockpile_trend]"
-			}
-		}
-
 		effects = {
 			category_1_law_tno_political_parties_btn_click = {
 				set_variable = { tno_opened_laws_category = 10 }

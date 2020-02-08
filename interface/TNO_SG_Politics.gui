@@ -82,95 +82,9 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
-		name = "TNO_SG_politics_faction_leader_container"
-		position = { x = 230 y = 270 }
-		size = { width=193 height=20 }
-
-		instantTextboxType = {
-			name = "faction_subject"
-			position = {x=6 y=-23}
-			font = "hoi_16mbs"
-			text = "[This.GetFactionName]"
-
-			maxWidth = 100
-			maxHeight = 40
-			fixedsize = yes
-			format = left
-		}
-
-		instantTextboxType = {
-			name = "faction_leader_member"
-			position = {x=6 y=5}
-			font = "hoi_16mbs"
-			text = "[This.GetFactionLeaderMember]"
-
-			maxWidth = 100
-			maxHeight = 20
-			format = left
-		}
-
-		iconType = {
-			name = "faction_icon_unity_pakt"
-			position = {x=-46 y=-23}
-			quadTextureSprite = "GFX_unity_pakt"
-			scale = 0.61334
-		}
-		iconType = {
-			name = "faction_icon_as"
-			position = {x=-46 y=-23}
-			quadTextureSprite = "GFX_afrika_schild"
-			scale = 0.61334
-		}
-		iconType = {
-			name = "faction_icon_coprosperity"
-			position = {x=-46 y=-23}
-			quadTextureSprite = "GFX_coprosperity"
-			scale = 0.61334
-		}
-		iconType = {
-			name = "faction_icon_generic"
-			position = {x=-46 y=-23}
-			quadTextureSprite = "GFX_generic_faction"
-			scale = 0.61334
-		}
-		iconType = {
-			name = "faction_icon_OFN"
-			position = {x=-46 y=-23}
-			quadTextureSprite = "GFX_OFN"
-		}
-		iconType = {
-			name = "faction_icon_triumvirate"
-			position = {x=-46 y=-23}
-			quadTextureSprite = "GFX_triumvirate"
-			scale = 0.61334
-		}
-
-	}
-	containerWindowType = {
-		name = "chart_explanation"
-		position = { x = 334 y = 297 }
-		size = { width = 216 height = 80 }
-		clipping = yes
-		verticalScrollbar = "right_vertical_slider"
-		margin = { top = 6 left = 0 bottom = 5 right = 0}
-
-		background = {
-			name = "Background"        
-			quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
-		}
-		
-		gridBoxType = {
-			name = "parties_grid"
-			position = { x = -55 y = 0 }
-			size = { width = 100%% height = 100%% }
-			slotsize = { width = 230 height = 16 }
-			format = "UPPER_LEFT"
-		}
-	}
-	containerWindowType = {
 		name = "TNO_SG_politics_laws"
-		position = { x = 0 y = 485 }
-		size = { width=100%% height=96%% }
+		position = { x = 0 y = 480 }
+		size = { width=100%% height=97%% }
 		verticalScrollbar = "right_vertical_slider_tno_laws_2"
 		margin = { top = 13 bottom = 10 }
 		background = {
@@ -178,1605 +92,1120 @@ guiTypes = {
 			quadTextureSprite ="GFX_tiled_window_1b_no_border"
 		}
 		containerWindowType = {
-			name = "TNO_category_1"
-			position = { x = 12 y = 5 }
-			size = { width=260 height=284 }
-			iconType ={
-				name ="category_header_5"
-				spriteType = "GFX_category_header_shorter_double"
-				position = { x=0 y=0 }
-			}
-			iconType ={
-				name ="category_header_1"
-				spriteType = "GFX_category_header_shorter"
-				position = { x=0 y=0 }
-			}
-			iconType ={
-				name ="category_1_icon"
-				spriteType = "GFX_idea_categories_computer"
-				position = { x=9 y=7 }
-				scale = 0.9
-				Orientation = "UPPER_LEFT"
-				frame = 2
-			}
-			instantTextboxType = {
-				name = "category_1_name"
-				position = { x = 57 y = 12 }
-				font = "vic_22"
-				text = "political_laws"
-				maxWidth = 300
-				maxHeight = 20
-			}
+			name = "LE_category_1"
+			position = { x = 12 y = 0 }
+			size = { width=260 height=700 }
 			containerWindowType = {
 				name = "TNO_category_1_slider"
-				position = { x = 0 y = 44 }
-				size = { width=100%% height=280 }
-				verticalScrollbar = "right_vertical_slider_tno_laws"
+				position = { x = 0 y = 0 }
+				size = { width=200%% height=700 }
 				margin = { top = 4 bottom = 5 }
 				background = {
 					name = "Background"
 					quadTextureSprite ="GFX_blank"
 				}
-				#Category 1 start
-				containerWindowType = {
-					name = "category_1_law_tno_political_parties"
-					position = { x = 8 y = 0 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_1_law_tno_political_parties_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_political_parties"
-						pdx_tooltip = "tno_political_parties"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_1_law_tno_political_parties_btn"
-						position = { x = 97 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_1_law_tno_political_parties_text"
-						position = { x = 110 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory1Lawtno_political_parties]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
+				iconType ={
+					name ="political_header"
+					spriteType = "GFX_category_header_shorter_double"
+					position = { x=-2 y=-3 }
 				}
-				containerWindowType = {
-					name = "category_1_law_tno_religious_rights"
-					position = { x = 8 y = 30 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_1_law_tno_religious_rights_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_religious_rights"
-						pdx_tooltip = "tno_religious_rights"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_1_law_tno_religious_rights_btn"
-						position = { x = 97 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_1_law_tno_religious_rights_text"
-						position = { x = 110 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory1Lawtno_religious_rights]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
-				}
-				containerWindowType = {
-					name = "category_1_law_tno_trade_unions"
-					position = { x = 8 y = 60 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_1_law_tno_trade_unions_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_trade_unions"
-						pdx_tooltip = "tno_trade_unions"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_1_law_tno_trade_unions_btn"
-						position = { x = 97 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_trade_unions_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_1_law_tno_trade_unions_text"
-						position = { x = 110 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory1Lawtno_trade_unions]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_trade_unions_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
-				}
-				containerWindowType = {
-					name = "category_1_law_tno_immigration"
-					position = { x = 8 y = 90 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_1_law_tno_immigration_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_immigration"
-						pdx_tooltip = "tno_immigration"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_1_law_tno_immigration_btn"
-						position = { x = 97 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_immigration_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_1_law_tno_immigration_text"
-						position = { x = 110 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory1Lawtno_immigration]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_immigration_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
-				}
-				containerWindowType = {
-					name = "category_1_law_tno_slavery"
-					position = { x = 8 y = 120 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_1_law_tno_slavery_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_slavery"
-						pdx_tooltip = "tno_slavery"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_1_law_tno_slavery_btn"
-						position = { x = 97 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_slavery_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_1_law_tno_slavery_text"
-						position = { x = 110 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory1Lawtno_slavery]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_slavery_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
+				instantTextboxType = {
+					name = "category_1_name"
+					position = { x = 200 y = 3 }
+					font = "vic_22"
+					text = "political_laws"
+					maxWidth = 300
+					maxHeight = 20
 				}
 				
-				containerWindowType = {
-					name = "category_1_law_tno_press_rights"
-					position = { x = 8 y = 150 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_1_law_tno_press_rights_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_press_rights"
-						pdx_tooltip = "tno_press_rights"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_1_law_tno_press_rights_btn"
-						position = { x = 97 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_press_rights_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_1_law_tno_press_rights_text"
-						position = { x = 110 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory1Lawtno_press_rights]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_press_rights_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
+				iconType = {
+					name = "social_header"
+					spriteType = "GFX_category_header_shorter_double"
+					position = { x=-2 y=308 }
 				}
-				containerWindowType = {
-					name = "category_1_law_tno_vote_franchise"
-					position = { x = 8 y = 180 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_1_law_tno_vote_franchise_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_vote_franchise"
-						pdx_tooltip = "tno_vote_franchise"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_1_law_tno_vote_franchise_btn"
-						position = { x = 97 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_vote_franchise_TT"
-						buttonFont = "hoi_18"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_1_law_tno_vote_franchise_text"
-						position = { x = 110 y = 6 }
-						font = "hoi_18"
-						text = "[This.GetCategory1Lawtno_vote_franchise]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_vote_franchise_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
+				instantTextboxType = {
+					name = "social_laws_name"
+					position = { x = 200 y = 314 }
+					font = "vic_22"
+					text = "Social Laws"
+					maxWidth = 300
+					maxHeight = 20
 				}
-				#Category 1 end
 			}
-		}
-		containerWindowType = {
-			name = "TNO_category_2"
-			position = { x = 269 y = 5 }
-			size = { width=260 height=284 }
-			iconType ={
-				name ="category_header_2"
-				spriteType = "GFX_category_header_shorter"
-				position = { x=0 y=0 }
-			}
-			iconType ={
-				name ="category_2_icon"
-				spriteType = "GFX_idea_categories_computer"
-				position = { x=-19 y=9 }
-				scale = 0.9
-				Orientation = "UPPER_LEFT"
-				frame = 6
-			}
-			instantTextboxType = {
-				name = "category_2_name"
-				position = { x = 24 y = 12 }
-				font = "vic_22"
-				text = "military_laws"
-				maxWidth = 300
-				maxHeight = 20
+			###Category 1 start 
+			########################################################
+			containerWindowType = {
+				name = "category_2_law_political_parties"
+				position = { x =0 y = 29 }
+				size = { width = 100%% height = 30 }
+				iconType = {
+					name = "law_political_parties_header"
+					spriteType = "GFX_lawheader"
+					position = { x=-2 y=0 }
+				}
+				iconType = {
+					name = "law_political_parties_icon"
+					spriteType = "GFX_political_strip"
+					frame = 8
+					position = { x=2 y=0 }
+				}
+				instantTextboxType = {
+					name = "category_1_law_political_parties_name"
+					position = { x = 28 y = 8 }
+					font = "vic_18"
+					text = "tno_political_parties"
+					pdx_tooltip = "tno_political_parties"
+					maxWidth = 100
+					maxHeight = 15
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "law_political_parties_btn_1"
+					position = { x = 0 y = 28 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "LE_political_parties_1_tt"
+					buttonFont = "vic_18"
+					text = "Only Underground"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_political_parties_btn_2"
+					position = { x = 0 y = 52 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Harrassment"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_political_parties_btn_3"
+					position = { x = 0 y = 76 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Gerrymandering"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_political_parties_btn_4"
+					position = { x = 0 y = 100 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Open Ballots"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_political_parties_btn_5"
+					position = { x = 0 y = 124 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Confidential Ballots"
+					Orientation = "UPPER_LEFT"
+				}
 			}
 			containerWindowType = {
-				name = "TNO_category_2_slider"
-				position = { x = -14 y = 44 }
-				size = { width=100%% height=280 }
-				verticalScrollbar = "right_vertical_slider_tno_laws"
-				margin = { top = 4 bottom = 5 }
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_blank"
+				name = "selected_laws_political_parties_1"
+				position = { x=-10 y=-578}
+				size = { width = 100%% height = 100%% }
+				iconType = {
+					name = "law_political_parties_selected_1"
+					position = { x=10 y=635 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
 				}
-				#Category 2 start
-				containerWindowType = {
-					name = "category_2_law_tno_conscription"
-					position = { x = 8 y = 0 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_2_law_tno_conscription_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_conscription"
-						pdx_tooltip = "tno_conscription"
-						maxWidth = 120
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_2_law_tno_conscription_btn"
-						position = { x = 117 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_2_LAW_tno_conscription_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_2_law_tno_conscription_text"
-						position = { x = 130 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory2Lawtno_conscription]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_2_LAW_tno_conscription_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
+				iconType = {
+					name = "law_political_parties_selected_2"
+					position = { x=10 y=659 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
 				}
-				containerWindowType = {
-					name = "category_2_law_tno_women"
-					position = { x = 8 y = 30 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_2_law_tno_women_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_women"
-						pdx_tooltip = "tno_women"
-						maxWidth = 120
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_2_law_tno_women_btn"
-						position = { x = 117 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_2_LAW_tno_women_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_2_law_tno_women_text"
-						position = { x = 130 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory2Lawtno_women]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_2_LAW_tno_women_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
+				iconType = {
+					name = "law_political_parties_selected_3"
+					position = { x=10 y=682 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = no
 				}
-				containerWindowType = {
-					name = "category_2_law_tno_military_supervision"
-					position = { x = 8 y = 60 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_2_law_tno_military_supervision_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_military_supervision"
-						pdx_tooltip = "tno_military_supervision"
-						maxWidth = 120
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_2_law_tno_military_supervision_btn"
-						position = { x = 117 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_2_LAW_tno_military_supervision_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_2_law_tno_military_supervision_text"
-						position = { x = 130 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory2Lawtno_military_supervision]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_2_LAW_tno_military_supervision_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
+				iconType = {
+					name = "law_political_parties_selected_4"
+					position = { x=10 y=707 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
 				}
-				containerWindowType = {
-					name = "category_2_law_tno_training"
-					position = { x = 8 y = 90 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_2_law_tno_training_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_training"
-						pdx_tooltip = "tno_training"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_2_law_tno_training_btn"
-						position = { x = 117 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_2_LAW_tno_training_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_2_law_tno_training_text"
-						position = { x = 130 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory2Lawtno_training]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_2_LAW_tno_training_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
+				iconType = {
+					name = "law_political_parties_selected_5"
+					position = { x=10 y=730 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
 				}
-				containerWindowType = {
-					name = "category_2_law_tno_racial_integration"
-					position = { x = 8 y = 120 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_2_law_tno_racial_integration_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_racial_integration"
-						pdx_tooltip = "tno_racial_integration"
-						maxWidth = 120
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_2_law_tno_racial_integration_btn"
-						position = { x = 117 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_2_LAW_tno_racial_integration_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_2_law_tno_racial_integration_text"
-						position = { x = 130 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory2Lawtno_racial_integration]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_2_LAW_tno_racial_integration_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
-				}
-				containerWindowType = {
-					name = "category_2_law_tno_draft_exemptions"
-					position = { x = 8 y = 150 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_2_law_tno_draft_exemptions_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_draft_exemptions"
-						pdx_tooltip = "tno_draft_exemptions"
-						maxWidth = 120
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_2_law_tno_draft_exemptions_btn"
-						position = { x = 117 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_2_LAW_tno_draft_exemptions_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_2_law_tno_draft_exemptions_text"
-						position = { x = 130 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory2Lawtno_draft_exemptions]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_2_LAW_tno_draft_exemptions_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
-				}
-				containerWindowType = {
-					name = "category_2_law_tno_spending"
-					position = { x = 8 y = 180 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_2_law_tno_spending_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_spending"
-						pdx_tooltip = "tno_spending"
-						maxWidth = 120
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_2_law_tno_spending_btn"
-						position = { x = 117 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_2_LAW_tno_spending_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_2_law_tno_spending_text"
-						position = { x = 130 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory2Lawtno_spending]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_2_LAW_tno_spending_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
-				}
-				#Category 2 end
 			}
-		}
-		containerWindowType = {
-			name = "TNO_category_3"
-			position = { x = 13 y = 269 }
-			size = { width=260 height=284 }
-			iconType ={
-				name ="category_header_5"
-				spriteType = "GFX_category_header_shorter_double"
-				position = { x=0 y=0 }
-			}
-			iconType ={
-				name ="category_header_3"
-				spriteType = "GFX_category_header_shorter"
-				position = { x=0 y=0 }
-			}
-			iconType ={
-				name ="category_3_icon"
-				spriteType = "GFX_idea_categories_computer"
-				position = { x=9 y=8 }
-				scale = 0.9
-				Orientation = "UPPER_LEFT"
-				frame = 5
-			}
-			instantTextboxType = {
-				name = "category_3_name"
-				position = { x = 57 y = 12 }
-				font = "vic_22"
-				text = "economic_laws"
-				maxWidth = 300
-				maxHeight = 20
+			### VOTE FRANCHISE
+			####################################################################
+			containerWindowType = {
+				name = "category_2_law_vote_franchise"
+				position = { x =135 y = 37 }
+				size = { width = 100%% height = 30 }
+				iconType = {
+					name = "law_vote_franchise_icon"
+					spriteType = "GFX_political_strip"
+					frame = 2
+					position = { x=0 y=-6 }
+				}
+				instantTextboxType = {
+					name = "category_1_law_vote_franchise_name"
+					position = { x = 26 y = 2 }
+					font = "vic_18"
+					text = "Vote Franchise"
+					pdx_tooltip = "tno_political_parties"
+					maxWidth = 100
+					maxHeight = 15
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "law_vote_franchise_btn_1"
+					position = { x = 0 y = 20 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "No Voting"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_vote_franchise_btn_2"
+					position = { x = 0 y = 44 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Executive Committee"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_vote_franchise_btn_3"
+					position = { x = 0 y = 68 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Wealth"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_vote_franchise_btn_4"
+					position = { x = 0 y = 92 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Only Men"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_vote_franchise_btn_5"
+					position = { x = 0 y = 116 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Universial Voting"
+					Orientation = "UPPER_LEFT"
+				}
 			}
 			containerWindowType = {
-				name = "TNO_category_3_slider"
-				position = { x = 0 y = 44 }
-				size = { width=100%% height=280 }
-				verticalScrollbar = "right_vertical_slider_tno_laws"
-				margin = { top = 4 bottom = 5 }
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_blank"
+				name = "selected_laws_vote_franchise_2"
+				position = { x=125 y=-578}
+				size = { width = 100%% height = 100%% }
+				iconType = {
+					name = "law_vote_franchise_selected_1"
+					position = { x=10 y=635 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
 				}
-				#Category 3 start
-				containerWindowType = {
-					name = "category_3_law_tno_trade_laws"
-					position = { x = 8 y = 0 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_3_law_tno_trade_laws_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_trade_laws"
-						pdx_tooltip = "tno_trade_laws"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_3_law_tno_trade_laws_btn"
-						position = { x = 97 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_3_LAW_tno_trade_laws_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_3_law_tno_trade_laws_text"
-						position = { x = 110 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory3Lawtno_trade_laws]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_3_LAW_tno_trade_laws_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
+				iconType = {
+					name = "law_vote_franchise_selected_2"
+					position = { x=10 y=659 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
 				}
-				containerWindowType = {
-					name = "category_3_law_tno_economic_focus"
-					position = { x = 8 y = 30 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_3_law_tno_economic_focus_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_economic_focus"
-						pdx_tooltip = "tno_economic_focus"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_3_law_tno_economic_focus_btn"
-						position = { x = 97 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_3_LAW_tno_economic_focus_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_3_law_tno_economic_focus_text"
-						position = { x = 110 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory3Lawtno_economic_focus]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_3_LAW_tno_economic_focus_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
+				iconType = {
+					name = "law_vote_franchise_selected_3"
+					position = { x=10 y=682 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = no
 				}
-				containerWindowType = {
-					name = "category_3_law_tno_tax_rate"
-					position = { x = 8 y = 60 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_3_law_tno_tax_rate_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_tax_rate"
-						pdx_tooltip = "tno_tax_rate"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_3_law_tno_tax_rate_btn"
-						position = { x = 97 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_3_LAW_tno_tax_rate_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_3_law_tno_tax_rate_text"
-						position = { x = 110 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory3Lawtno_tax_rate]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_3_LAW_tno_tax_rate_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
+				iconType = {
+					name = "law_vote_franchise_selected_4"
+					position = { x=10 y=707 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
 				}
-				containerWindowType = {
-					name = "category_3_law_tno_minimum_wage"
-					position = { x = 8 y = 90 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_3_law_tno_minimum_wage_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_minimum_wage"
-						pdx_tooltip = "tno_minimum_wage"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_3_law_tno_minimum_wage_btn"
-						position = { x = 97 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_3_LAW_tno_minimum_wage_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_3_law_tno_minimum_wage_text"
-						position = { x = 110 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory3Lawtno_minimum_wage]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_3_LAW_tno_minimum_wage_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
+				iconType = {
+					name = "law_vote_franchise_selected_5"
+					position = { x=10 y=730 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
 				}
-				containerWindowType = {
-					name = "category_3_law_tno_max_workhours"
-					position = { x = 8 y = 120 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_3_law_tno_max_workhours_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_max_workhours"
-						pdx_tooltip = "tno_max_workhours"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_3_law_tno_max_workhours_btn"
-						position = { x = 97 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_3_LAW_tno_max_workhours_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_3_law_tno_max_workhours_text"
-						position = { x = 110 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory3Lawtno_max_workhours]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_3_LAW_tno_max_workhours_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
-				}
-				containerWindowType = {
-					name = "category_3_law_tno_child_labor"
-					position = { x = 8 y = 150 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_3_law_tno_child_labor_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_child_labor"
-						pdx_tooltip = "tno_child_labor"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_3_law_tno_child_labor_btn"
-						position = { x = 97 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_3_LAW_tno_child_labor_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_3_law_tno_child_labor_text"
-						position = { x = 110 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory3Lawtno_child_labor]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_3_LAW_tno_child_labor_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
-				}
-				containerWindowType = {
-					name = "category_3_law_tno_pensions"
-					position = { x = 8 y = 180 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_3_law_tno_pensions_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_pensions"
-						pdx_tooltip = "tno_pensions"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_3_law_tno_pensions_btn"
-						position = { x = 97 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_3_LAW_tno_pensions_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_3_law_tno_pensions_text"
-						position = { x = 110 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory3Lawtno_pensions]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_3_LAW_tno_pensions_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
-				}
-				containerWindowType = {
-					name = "category_3_law_tno_unemployment"
-					position = { x = 8 y = 210 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_3_law_tno_unemployment_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_unemployment"
-						pdx_tooltip = "tno_unemployment"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_3_law_tno_unemployment_btn"
-						position = { x = 97 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_3_LAW_tno_unemployment_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_3_law_tno_unemployment_text"
-						position = { x = 110 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory3Lawtno_unemployment]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_3_LAW_tno_unemployment_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
-				}
-				#Category 3 end
 			}
-		}
-		containerWindowType = {
-			name = "TNO_category_4"
-			position = { x = 269 y = 269 }
-			size = { width=260 height=284 }
-			iconType ={
-				name ="category_header_4"
-				spriteType = "GFX_category_header_shorter"
-				position = { x=0 y=0 }
-			}
-			iconType ={
-				name ="category_4_icon"
-				spriteType = "GFX_idea_categories_computer"
-				position = { x=-19 y=7 }
-				scale = 0.9
-				Orientation = "UPPER_LEFT"
-				frame = 3
-			}
-			instantTextboxType = {
-				name = "category_4_name"
-				position = { x = 24 y = 12 }
-				font = "vic_22"
-				text = "social_laws"
-				maxWidth = 300
-				maxHeight = 20
+			### TRADE UNIONS
+			####################################
+			containerWindowType = {
+				name = "category_2_trade_unions"
+				position = { x =270 y = 37 }
+				size = { width = 100%% height = 30 }
+				iconType = {
+					name = "law_political_parties_icon"
+					spriteType = "GFX_political_strip"
+					frame = 7
+					position = { x=0 y=-5 }
+				}
+				instantTextboxType = {
+					name = "category_1_law_slavery_name"
+					position = { x = 26 y = 2 }
+					font = "vic_18"
+					text = "Trade Unions"
+					pdx_tooltip = "tno_political_parties"
+					maxWidth = 100
+					maxHeight = 15
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "law_trade_unions_btn_1"
+					position = { x = 0 y = 20 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Illegal"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_trade_unions_btn_2"
+					position = { x = 0 y = 44 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "State Controlled"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_trade_unions_btn_3"
+					position = { x = 0 y = 68 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Non-Socialist Allowed"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_trade_unions_btn_4"
+					position = { x = 0 y = 92 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "All Allowed"
+					Orientation = "UPPER_LEFT"
+				}
 			}
 			containerWindowType = {
-				name = "TNO_category_4_slider"
-				position = { x = -14 y = 44 }
-				size = { width=100%% height=280 }
-				verticalScrollbar = "right_vertical_slider_tno_laws"
-				margin = { top = 4 bottom = 5 }
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_blank"
+				name = "selected_laws_trade_unions_3"
+				position = { x=260 y=-578}
+				size = { width = 100%% height = 100%% }
+				iconType = {
+					name = "law_trade_unions_selected_1"
+					position = { x=10 y=635 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
 				}
-				#Category 4 start
-				containerWindowType = {
-					name = "category_4_law_tno_safety"
-					position = { x = 8 y = 0 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_4_law_tno_safety_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_safety"
-						pdx_tooltip = "tno_safety"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_4_law_tno_safety_btn"
-						position = { x = 117 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_4_LAW_tno_safety_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_4_law_tno_safety_text"
-						position = { x = 130 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory4Lawtno_safety]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_4_LAW_tno_safety_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
+				iconType = {
+					name = "law_trade_unions_selected_2"
+					position = { x=10 y=659 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
 				}
-				containerWindowType = {
-					name = "category_4_law_tno_health_care"
-					position = { x = 8 y = 30 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_4_law_tno_health_care_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_health_care"
-						pdx_tooltip = "tno_health_care"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_4_law_tno_health_care_btn"
-						position = { x = 117 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_4_LAW_tno_health_care_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_4_law_tno_health_care_text"
-						position = { x = 130 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory4Lawtno_health_care]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_4_LAW_tno_health_care_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
+				iconType = {
+					name = "law_trade_unions_selected_3"
+					position = { x=10 y=682 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = no
 				}
-				containerWindowType = {
-					name = "category_4_law_tno_pollution"
-					position = { x = 8 y = 60 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_4_law_tno_pollution_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_pollution"
-						pdx_tooltip = "tno_pollution"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_4_law_tno_pollution_btn"
-						position = { x = 117 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_4_LAW_tno_pollution_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_4_law_tno_pollution_text"
-						position = { x = 130 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory4Lawtno_pollution]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_4_LAW_tno_pollution_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
+				iconType = {
+					name = "law_trade_unions_selected_4"
+					position = { x=10 y=707 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
 				}
-				containerWindowType = {
-					name = "category_4_law_tno_education"
-					position = { x = 8 y = 90 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_4_law_tno_education_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_education"
-						pdx_tooltip = "tno_education"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_4_law_tno_education_btn"
-						position = { x = 117 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_4_LAW_tno_education_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_4_law_tno_education_text"
-						position = { x = 130 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory4Lawtno_education]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_4_LAW_tno_education_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
-				}
-				containerWindowType = {
-					name = "category_4_law_tno_penal_system"
-					position = { x = 8 y = 120 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_4_law_tno_penal_system_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_penal_system"
-						pdx_tooltip = "tno_penal_system"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_4_law_tno_penal_system_btn"
-						position = { x = 117 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_4_LAW_tno_penal_system_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_4_law_tno_penal_system_text"
-						position = { x = 130 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory4Lawtno_penal_system]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_4_LAW_tno_penal_system_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
-				}
-				containerWindowType = {
-					name = "category_4_law_tno_gender_rights"
-					position = { x = 8 y = 150 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_4_law_tno_gender_rights_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_gender_rights"
-						pdx_tooltip = "tno_gender_rights"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_4_law_tno_gender_rights_btn"
-						position = { x = 117 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_4_LAW_tno_gender_rights_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_4_law_tno_gender_rights_text"
-						position = { x = 130 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory4Lawtno_gender_rights]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_4_LAW_tno_gender_rights_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
-				}
-				containerWindowType = {
-					name = "category_4_law_tno_minorities"
-					position = { x = 8 y = 180 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_4_law_tno_minorities_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_minorities"
-						pdx_tooltip = "tno_minorities"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_4_law_tno_minorities_btn"
-						position = { x = 117 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_4_LAW_tno_minorities_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_4_law_tno_minorities_text"
-						position = { x = 130 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory4Lawtno_minorities]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_4_LAW_tno_minorities_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
-				}
-				containerWindowType = {
-					name = "category_4_law_tno_security"
-					position = { x = 8 y = 210 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_4_law_tno_security_name"
-						position = { x = -3 y = 6 }
-						font = "vic_18"
-						text = "tno_security"
-						pdx_tooltip = "tno_security"
-						maxWidth = 100
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_4_law_tno_security_btn"
-						position = { x = 117 y = 0 }
-						quadTextureSprite ="GFX_sort_button_140x29"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_4_LAW_tno_security_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_4_law_tno_security_text"
-						position = { x = 130 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetCategory4Lawtno_security]"
-						pdx_tooltip = "TNO_POLITICS_CATEGORY_4_LAW_tno_security_TT"
-						maxWidth = 115
-						maxHeight = 15
-						fixedsize = yes
-					}
-				}
-				#Category 4 end
 			}
-		}
-		#Societal Development Category
-		containerWindowType = {
-			name = "TNO_category_5"
-			position = { x = 13 y = 570 }
-			size = { width=500 height=300 }
-			iconType ={
-				name ="category_header_5"
-				spriteType = "GFX_category_header_shorter_double"
-				position = { x=0 y=0 }
-			}
-			iconType ={
-				name ="category_5_icon"
-				spriteType = "GFX_idea_categories_computer"
-				position = { x=9 y=7 }
-				scale = 0.9
-				Orientation = "UPPER_LEFT"
-				frame = 5
-			}
-			instantTextboxType = {
-				name = "category_5_name"
-				position = { x = 57 y = 12 }
-				font = "hoi_14mbs"
-				text = "tno_societal_development"
-				maxWidth = 300
-				maxHeight = 20
+			### SLAVERY
+			####################################################################
+			containerWindowType = {
+				name = "category_2_slavery"
+				position = { x =405 y = 37 }
+				size = { width = 100%% height = 30 }
+				iconType = {
+					name = "law_slavery_icon"
+					spriteType = "GFX_political_strip"
+					frame = 1
+					position = { x=0 y=-5 }
+				}
+				instantTextboxType = {
+					name = "category_1_law_slavery_name"
+					position = { x = 26 y = 2 }
+					font = "vic_18"
+					text = "Slavery"
+					pdx_tooltip = "tno_political_parties"
+					maxWidth = 100
+					maxHeight = 15
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "law_slavery_btn_1"
+					position = { x = 0 y = 20 }
+					quadTextureSprite ="GFX_sort_button_104x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Not Allowed"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_slavery_btn_2"
+					position = { x = 0 y = 44 }
+					quadTextureSprite ="GFX_sort_button_104x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Allowed"
+					Orientation = "UPPER_LEFT"
+				}
 			}
 			containerWindowType = {
-				name = "TNO_category_5_slider"
-				position = { x = 10 y = 44 }
-				size = { width=100%% height=270 }
-				verticalScrollbar = "right_vertical_slider_tno_laws"
-				margin = { top = 4 bottom = 5 }
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_blank"
+				name = "selected_laws_slavery_4"
+				position = { x=395 y=-578}
+				size = { width = 100%% height = 100%% }
+				iconType = {
+					name = "law_slavery_selected_1"
+					position = { x=10 y=635 }
+					spriteType = "GFX_selected_law_small"
+					alwaystransparent = yes
 				}
-				containerWindowType = {
-					name = "category_5_sd_tno_academic_base"
-					position = { x = 8 y = 0 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_5_sd_tno_academic_base_name"
-						position = { x = -3 y = 6 }
-						font = "garamond_14"
-						text = "tno_academic_base"
-						pdx_tooltip = "tno_academic_base_d"
-						maxwidth = 130
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_5_sd_tno_academic_base_btn"
-						position = { x = 127 y = 0 }
-						quadTextureSprite ="GFX_sort_button_195x29"
-						pdx_tooltip = "TNO_POLITICS_SD_academic_base_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_5_sd_tno_academic_base_text"
-						position = { x = 140 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetSocietyDevelopment_AcademicBase]"
-						pdx_tooltip = "TNO_POLITICS_SD_academic_base_TT"
-						maxWidth = 170
-						maxHeight = 15
-						fixedsize = yes
-					}
-
-					instantTextboxType = {
-						name = "category_5_sd_tno_academic_base_trend_text"
-						position = { x = 375 y = 4 }
-						font = "garamond_14"
-						text = "TNO_SD_Trend"
-						maxWidth = 50
-						maxHeight = 15
-						fixedsize = yes
-					}
-
-					iconType ={
-						name ="category_5_academic_base_trend"
-						spriteType = "GFX_idea_flat_line"
-						position = { x=415 y=0 }
-						scale = 1.0
-						Orientation = "UPPER_LEFT"
-					}
+				iconType = {
+					name = "law_slavery_selected_2"
+					position = { x=10 y=659 }
+					spriteType = "GFX_selected_law_small"
+					alwaystransparent = yes
 				}
-				containerWindowType = {
-					name = "category_5_sd_tno_research_facilities"
-					position = { x = 8 y = 30 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_5_sd_tno_research_facilities_name"
-						position = { x = -3 y = 6 }
-						font = "garamond_14"
-						text = "tno_research_facilities"
-						pdx_tooltip = "tno_research_facilities_d"
-						maxwidth = 130
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_5_sd_tno_research_facilities_btn"
-						position = { x = 127 y = 0 }
-						quadTextureSprite ="GFX_sort_button_195x29"
-						pdx_tooltip = "TNO_POLITICS_SD_research_facilities_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_5_sd_tno_research_facilities_text"
-						position = { x = 140 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetSocietyDevelopment_ResearchFacilities]"
-						pdx_tooltip = "TNO_POLITICS_SD_research_facilities_TT"
-						maxWidth = 170
-						maxHeight = 15
-						fixedsize = yes
-					}
-
-					instantTextboxType = {
-						name = "category_5_sd_tno_research_facilities_trend_text"
-						position = { x = 375 y = 4 }
-						font = "garamond_14"
-						text = "TNO_SD_Trend"
-						maxWidth = 50
-						maxHeight = 15
-						fixedsize = yes
-					}
-
-					iconType ={
-						name ="category_5_research_facilities_trend"
-						spriteType = "GFX_idea_flat_line"
-						position = { x=415 y=0 }
-						scale = 1.0
-						Orientation = "UPPER_LEFT"
-					}
+			}
+			### IMMIGRATION
+			############################
+			containerWindowType = {
+				name = "category_2_immigration"
+				position = { x =0 y = 188 }
+				size = { width = 100%% height = 30 }
+				iconType = {
+					name = "law_immigration_header"
+					spriteType = "GFX_lawheader"
+					position = { x=-2 y=-8 }
 				}
-				containerWindowType = {
-					name = "category_5_sd_tno_agriculture"
-					position = { x = 8 y = 60 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_5_sd_tno_agriculture_name"
-						position = { x = -3 y = 6 }
-						font = "garamond_14"
-						text = "tno_agriculture"
-						pdx_tooltip = "tno_agriculture_d"
-						maxwidth = 130
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_5_sd_tno_agriculture_btn"
-						position = { x = 127 y = 0 }
-						quadTextureSprite ="GFX_sort_button_195x29"
-						pdx_tooltip = "TNO_POLITICS_SD_agriculture_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_5_sd_tno_agriculture_text"
-						position = { x = 140 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetSocietyDevelopment_Agriculture]"
-						pdx_tooltip = "TNO_POLITICS_SD_agriculture_TT"
-						maxWidth = 170
-						maxHeight = 15
-						fixedsize = yes
-					}
-
-					instantTextboxType = {
-						name = "category_5_sd_tno_agriculture_trend_text"
-						position = { x = 375 y = 4 }
-						font = "garamond_14"
-						text = "TNO_SD_Trend"
-						maxWidth = 50
-						maxHeight = 15
-						fixedsize = yes
-					}
-
-					iconType ={
-						name ="category_5_agriculture_trend"
-						spriteType = "GFX_idea_flat_line"
-						position = { x=415 y=0 }
-						scale = 1.0
-						Orientation = "UPPER_LEFT"
-					}
+				iconType = {
+					name = "law_vote_franchise_icon"
+					spriteType = "GFX_political_strip"
+					frame = 5
+					position = { x=0 y=-6 }
 				}
-				containerWindowType = {
-					name = "category_5_sd_tno_poverty_rate"
-					position = { x = 8 y = 90 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_5_sd_tno_poverty_rate_name"
-						position = { x = -3 y = 6 }
-						font = "garamond_14"
-						text = "tno_poverty_rate"
-						pdx_tooltip = "tno_poverty_rate_d"
-						maxwidth = 130
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_5_sd_tno_poverty_rate_btn"
-						position = { x = 127 y = 0 }
-						quadTextureSprite ="GFX_sort_button_195x29"
-						pdx_tooltip = "TNO_POLITICS_SD_poverty_rate_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_5_sd_tno_poverty_rate_text"
-						position = { x = 140 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetSocietyDevelopment_PovertyRate]"
-						pdx_tooltip = "TNO_POLITICS_SD_poverty_rate_TT"
-						maxWidth = 170
-						maxHeight = 15
-						fixedsize = yes
-					}
-
-					instantTextboxType = {
-						name = "category_5_sd_tno_poverty_rate_trend_text"
-						position = { x = 375 y = 4 }
-						font = "garamond_14"
-						text = "TNO_SD_Trend"
-						maxWidth = 50
-						maxHeight = 15
-						fixedsize = yes
-					}
-
-					iconType ={
-						name ="category_5_poverty_rate_trend"
-						spriteType = "GFX_idea_flat_line"
-						position = { x=415 y=0 }
-						scale = 1.0
-						Orientation = "UPPER_LEFT"
-					}
+				instantTextboxType = {
+					name = "category_1_law_public_meetings_name"
+					position = { x = 27 y = 1 }
+					font = "vic_18"
+					text = "Immigration"
+					pdx_tooltip = "tno_political_parties"
+					maxWidth = 140
+					maxHeight = 15
+					fixedsize = yes
 				}
-				containerWindowType = {
-					name = "category_5_sd_tno_industrial_equipment"
-					position = { x = 8 y = 120 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_5_sd_tno_industrial_equipment_name"
-						position = { x = -3 y = 6 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment"
-						pdx_tooltip = "tno_industrial_equipment_d"
-						maxwidth = 130
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_5_sd_tno_industrial_equipment_btn"
-						position = { x = 127 y = 0 }
-						quadTextureSprite ="GFX_sort_button_195x29"
-						pdx_tooltip = "TNO_POLITICS_SD_industrial_equipment_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_5_sd_tno_industrial_equipment_text"
-						position = { x = 140 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetSocietyDevelopment_IndustrialEquipment]"
-						pdx_tooltip = "TNO_POLITICS_SD_industrial_equipment_TT"
-						maxWidth = 170
-						maxHeight = 15
-						fixedsize = yes
-					}
-
-					instantTextboxType = {
-						name = "category_5_sd_tno_industrial_equipment_trend_text"
-						position = { x = 375 y = 4 }
-						font = "garamond_14"
-						text = "TNO_SD_Trend"
-						maxWidth = 50
-						maxHeight = 15
-						fixedsize = yes
-					}
-
-					iconType ={
-						name ="category_5_industrial_equipment_trend"
-						spriteType = "GFX_idea_flat_line"
-						position = { x=415 y=0 }
-						scale = 1.0
-						Orientation = "UPPER_LEFT"
-					}
+				buttonType = {
+					name = "law_immigration_btn_1"
+					position = { x = 0 y = 20 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Closed Borders"
+					Orientation = "UPPER_LEFT"
 				}
-				containerWindowType = {
-					name = "category_5_sd_tno_industrial_expertise"
-					position = { x = 8 y = 150 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_5_sd_tno_industrial_expertise_name"
-						position = { x = -3 y = 6 }
-						font = "garamond_14"
-						text = "tno_industrial_expertise"
-						pdx_tooltip = "tno_industrial_expertise_d"
-						maxwidth = 130
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_5_sd_tno_industrial_expertise_btn"
-						position = { x = 127 y = 0 }
-						quadTextureSprite ="GFX_sort_button_195x29"
-						pdx_tooltip = "TNO_POLITICS_SD_industrial_expertise_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_5_sd_tno_industrial_expertise_text"
-						position = { x = 140 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetSocietyDevelopment_IndustrialExpertise]"
-						pdx_tooltip = "TNO_POLITICS_SD_industrial_expertise_TT"
-						maxWidth = 170
-						maxHeight = 15
-						fixedsize = yes
-					}
-
-					instantTextboxType = {
-						name = "category_5_sd_tno_industrial_expertise_trend_text"
-						position = { x = 375 y = 4 }
-						font = "garamond_14"
-						text = "TNO_SD_Trend"
-						maxWidth = 50
-						maxHeight = 15
-						fixedsize = yes
-					}
-
-					iconType ={
-						name ="category_5_industrial_expertise_trend"
-						spriteType = "GFX_idea_flat_line"
-						position = { x=415 y=0 }
-						scale = 1.0
-						Orientation = "UPPER_LEFT"
-					}
+				buttonType = {
+					name = "law_immigration_btn_2"
+					position = { x = 0 y = 44 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Quota Immigration"
+					Orientation = "UPPER_LEFT"
 				}
-				containerWindowType = {
-					name = "category_5_sd_army_professionalism"
-					position = { x = 8 y = 180 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_5_sd_tno_army_professionalism_name"
-						position = { x = -3 y = 6 }
-						font = "garamond_14"
-						text = "tno_army_professionalism"
-						pdx_tooltip = "tno_army_professionalism_d"
-						maxwidth = 130
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_5_sd_tno_army_professionalism_btn"
-						position = { x = 127 y = 0 }
-						quadTextureSprite ="GFX_sort_button_195x29"
-						pdx_tooltip = "TNO_POLITICS_SD_army_professionalism_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_5_sd_tno_army_professionalism_text"
-						position = { x = 140 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetSocietyDevelopment_ArmyProfessionalism]"
-						pdx_tooltip = "TNO_POLITICS_SD_army_professionalism_TT"
-						maxWidth = 170
-						maxHeight = 15
-						fixedsize = yes
-					}
-
-					instantTextboxType = {
-						name = "category_5_sd_tno_army_professionalism_trend_text"
-						position = { x = 375 y = 4 }
-						font = "garamond_14"
-						text = "TNO_SD_Trend"
-						maxWidth = 50
-						maxHeight = 15
-						fixedsize = yes
-					}
-
-					iconType ={
-						name ="category_5_army_professionalism_trend"
-						spriteType = "GFX_idea_flat_line"
-						position = { x=415 y=0 }
-						scale = 1.0
-						Orientation = "UPPER_LEFT"
-					}
+				buttonType = {
+					name = "law_immigration_btn_3"
+					position = { x = 0 y = 68 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Open Immigration"
+					Orientation = "UPPER_LEFT"
 				}
-				containerWindowType = {
-					name = "category_5_sd_tno_nuclear_stockpile"
-					position = { x = 8 y = 210 }
-					size = { width = 100%% height = 30 }
-					instantTextboxType = {
-						name = "category_5_sd_tno_nuclear_stockpile_name"
-						position = { x = -3 y = 6 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile"
-						pdx_tooltip = "tno_nuclear_stockpile_d"
-						maxwidth = 130
-						maxHeight = 15
-						fixedsize = yes
-					}
-					buttonType = {
-						name = "category_5_sd_tno_nuclear_stockpile_btn"
-						position = { x = 127 y = 0 }
-						quadTextureSprite ="GFX_sort_button_195x29"
-						pdx_tooltip = "TNO_POLITICS_SD_nuclear_stockpile_TT"
-						buttonFont = "garamond_14"
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextboxType = {
-						name = "category_5_sd_tno_nuclear_stockpile_text"
-						position = { x = 140 y = 6 }
-						font = "garamond_14"
-						text = "[This.GetSocietyDevelopment_NuclearStockpile]"
-						pdx_tooltip = "TNO_POLITICS_SD_nuclear_stockpile_TT"
-						maxWidth = 170
-						maxHeight = 15
-						fixedsize = yes
-					}
-
-					instantTextboxType = {
-						name = "category_5_sd_tno_nuclear_stockpile_trend_text"
-						position = { x = 375 y = 4 }
-						font = "garamond_14"
-						text = "TNO_SD_Trend"
-						maxWidth = 50
-						maxHeight = 15
-						fixedsize = yes
-					}
-
-					iconType ={
-						name ="category_5_nuclear_stockpile_trend"
-						spriteType = "GFX_idea_flat_line"
-						position = { x=415 y=0 }
-						scale = 1.0
-						Orientation = "UPPER_LEFT"
-					}
+				buttonType = {
+					name = "law_immigration_btn_4"
+					position = { x = 0 y = 92 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Naturalization"
+					Orientation = "UPPER_LEFT"
+				}
+			}
+			containerWindowType = {
+				name = "category_2_public_meetings"
+				position = { x =406 y = 188 }
+				size = { width = 100%% height = 30 }
+				iconType = {
+					name = "law_vote_franchise_icon"
+					spriteType = "GFX_political_strip"
+					frame = 5
+					position = { x=0 y=-6 }
+				}
+				instantTextboxType = {
+					name = "category_1_law_public_meetings_name"
+					position = { x = 24 y = 1 }
+					font = "vic_18"
+					text = "Meetings"
+					pdx_tooltip = "tno_political_parties"
+					maxWidth = 100
+					maxHeight = 15
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "law_public_meetings_btn_1"
+					position = { x = 0 y = 20 }
+					quadTextureSprite ="GFX_sort_button_104x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Not Allowed"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_public_meetings_btn_2"
+					position = { x = 0 y = 44 }
+					quadTextureSprite ="GFX_sort_button_104x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Allowed"
+					Orientation = "UPPER_LEFT"
+				}
+			}
+			containerWindowType = {
+				name = "category_2_minorities"
+				position = { x =270 y = 188 }
+				size = { width = 100%% height = 130 }
+				iconType = {
+					name = "law_minorities_icon"
+					spriteType = "GFX_political_strip"
+					frame = 4
+					position = { x=0 y=-6 }
+				}
+				instantTextboxType = {
+					name = "category_1_law_public_meetings_name"
+					position = { x = 26 y = 2 }
+					font = "vic_18"
+					text = "Minorities"
+					pdx_tooltip = "tno_political_parties"
+					maxWidth = 140
+					maxHeight = 15
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "law_minorites_btn_1"
+					position = { x = 0 y = 20 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Oppression"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_minorites_btn_2"
+					position = { x = 0 y = 44 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Limited Rights"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_minorites_btn_3"
+					position = { x = 0 y = 68 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Protected"
+					Orientation = "UPPER_LEFT"
+				}
+			}
+			containerWindowType = {
+				name = "category_2_press_rights"
+				position = { x =135 y = 188 }
+				size = { width = 100%% height = 130 }
+				iconType = {
+					name = "law_minorities_icon"
+					spriteType = "GFX_political_strip"
+					frame = 6
+					position = { x=0 y=-6 }
+				}
+				instantTextboxType = {
+					name = "category_1_law_press_rights_name"
+					position = { x = 26 y = 2 }
+					font = "vic_18"
+					text = "Press Rights"
+					pdx_tooltip = "tno_political_parties"
+					maxWidth = 140
+					maxHeight = 15
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "law_press_rights_btn_1"
+					position = { x = 0 y = 20 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "State Run Press"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_press_rights_btn_2"
+					position = { x = 0 y = 44 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Censored Press"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_press_rights_btn_3"
+					position = { x = 0 y = 68 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Free Press"
+					Orientation = "UPPER_LEFT"
+				}
+			}
+			containerWindowType = {
+				name = "category_1_law_minimum_wage"
+				position = { x =0 y = 336 }
+				size = { width = 100%% height = 30 }
+				iconType = {
+					name = "law_social_laws_1_header"
+					spriteType = "GFX_lawheader"
+					position = { x=-2 y=0 }
+				}
+				iconType = {
+					name = "law_minimum_wage_icon"
+					spriteType = "GFX_social_strip"
+					frame = 1
+					position = { x=2 y=0 }
+				}
+				instantTextboxType = {
+					name = "category_1_law_minimum_wage_name"
+					position = { x = 28 y = 8 }
+					font = "vic_18"
+					text = "Minimum Wage"
+					pdx_tooltip = "tno_political_parties"
+					maxWidth = 100
+					maxHeight = 15
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "law_minimum_wage_btn_1"
+					position = { x = 0 y = 28 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "No Minimun Wage"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_minimum_wage_btn_2"
+					position = { x = 0 y = 52 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Poor Minimun Wage"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_minimum_wage_btn_3"
+					position = { x = 0 y = 76 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Low Minimum Wage"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_minimum_wage_btn_4"
+					position = { x = 0 y = 100 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Acceptable Wages"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_minimum_wage_btn_5"
+					position = { x = 0 y = 124 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Good Wages"
+					Orientation = "UPPER_LEFT"
+				}
+			}
+			containerWindowType = {
+				name = "category_1_law_pensions"
+				position = { x =135 y = 336 }
+				size = { width = 100%% height = 30 }
+				iconType = {
+					name = "law_pensions_icon"
+					spriteType = "GFX_social_strip"
+					frame = 5
+					position = { x=2 y=0 }
+				}
+				instantTextboxType = {
+					name = "category_1_law_pensions_name"
+					position = { x = 28 y = 8 }
+					font = "vic_18"
+					text = "Pensions"
+					pdx_tooltip = "tno_political_parties"
+					maxWidth = 100
+					maxHeight = 15
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "law_pensions_btn_1"
+					position = { x = 0 y = 28 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "No Pensions"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_pensions_btn_2"
+					position = { x = 0 y = 52 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Poor Pensions"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_pensions_btn_3"
+					position = { x = 0 y = 76 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Low Pensions"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_pensions_btn_4"
+					position = { x = 0 y = 100 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Acceptable Pensions"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_pensions_btn_5"
+					position = { x = 0 y = 124 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Good Pensions"
+					Orientation = "UPPER_LEFT"
+				}
+			}
+			containerWindowType = {
+				name = "category_1_law_workhours"
+				position = { x =270 y = 336 }
+				size = { width = 100%% height = 30 }
+				iconType = {
+					name = "law_pensions_icon"
+					spriteType = "GFX_social_strip"
+					frame = 2
+					position = { x=2 y=0 }
+				}
+				instantTextboxType = {
+					name = "category_1_law_workhours_name"
+					position = { x = 28 y = 8 }
+					font = "vic_18"
+					text = "Max. Workhours"
+					pdx_tooltip = "tno_political_parties"
+					maxWidth = 100
+					maxHeight = 15
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "law_workhours_btn_1"
+					position = { x = 0 y = 28 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Unlimited Work Day"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_workhours_btn_2"
+					position = { x = 0 y = 52 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "14 Hour Work Day"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_workhours_btn_3"
+					position = { x = 0 y = 76 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "12 Hour Work Day"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_workhours_btn_4"
+					position = { x = 0 y = 100 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "10 Hour Work Day"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_workhours_btn_5"
+					position = { x = 0 y = 124 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "8 Hour Work Day"
+					Orientation = "UPPER_LEFT"
+				}
+			}
+			containerWindowType = {
+				name = "category_1_law_child_labor"
+				position = { x =405 y = 336 }
+				size = { width = 100%% height = 30 }
+				iconType = {
+					name = "law_pensions_icon"
+					spriteType = "GFX_social_strip"
+					frame = 8
+					position = { x=2 y=2 }
+				}
+				instantTextboxType = {
+					name = "category_1_law_child_labor_name"
+					position = { x = 28 y = 8 }
+					font = "vic_18"
+					text = "Child Labor"
+					pdx_tooltip = "tno_political_parties"
+					maxWidth = 100
+					maxHeight = 15
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "law_child_labor_btn_1"
+					position = { x = 0 y = 28 }
+					quadTextureSprite ="GFX_sort_button_104x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Legal"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_child_labor_btn_2"
+					position = { x = 0 y = 52 }
+					quadTextureSprite ="GFX_sort_button_104x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Regulated"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_child_labor_btn_3"
+					position = { x = 0 y = 76 }
+					quadTextureSprite ="GFX_sort_button_104x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Restricted"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_child_labor_btn_4"
+					position = { x = 0 y = 100 }
+					quadTextureSprite ="GFX_sort_button_104x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Illegal"
+					Orientation = "UPPER_LEFT"
+				}
+			}
+			containerWindowType = {
+				name = "category_1_law_health_care"
+				position = { x =0 y = 488 }
+				size = { width = 100%% height = 30 }
+				iconType = {
+					name = "social_laws_2_header"
+					spriteType = "GFX_lawheader"
+					position = { x=-2 y=0 }
+				}
+				iconType = {
+					name = "law_health_care_icon"
+					spriteType = "GFX_social_strip"
+					frame = 6
+					position = { x=2 y=0 }
+				}
+				instantTextboxType = {
+					name = "category_1_law_health_care"
+					position = { x = 28 y = 8 }
+					font = "vic_18"
+					text = "Health Care"
+					pdx_tooltip = "tno_political_parties"
+					maxWidth = 100
+					maxHeight = 15
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "law_health_care_btn_1"
+					position = { x = 0 y = 28 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "No Health Care"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_health_care_btn_2"
+					position = { x = 0 y = 52 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Poor Health Care"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_health_care_btn_3"
+					position = { x = 0 y = 76 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Acceptable Health Care"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_health_care_btn_4"
+					position = { x = 0 y = 100 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Good Health Care"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_health_care_btn_5"
+					position = { x = 0 y = 124 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Universal Health Care"
+					Orientation = "UPPER_LEFT"
+				}
+			}
+			containerWindowType = {
+				name = "category_1_law_safety"
+				position = { x =135 y = 488 }
+				size = { width = 100%% height = 30 }
+				iconType = {
+					name = "law_safety_icon"
+					spriteType = "GFX_social_strip"
+					frame = 3
+					position = { x=2 y=0 }
+				}
+				instantTextboxType = {
+					name = "category_1_law_safety"
+					position = { x = 28 y = 8 }
+					font = "vic_18"
+					text = "Workplace Safety"
+					pdx_tooltip = "tno_political_parties"
+					maxWidth = 100
+					maxHeight = 15
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "law_safety_btn_1"
+					position = { x = 0 y = 28 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "No Safety Regulations"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_safety_btn_2"
+					position = { x = 0 y = 52 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Minimal Safety"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_safety_btn_3"
+					position = { x = 0 y = 76 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Limited Safety"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_safety_btn_4"
+					position = { x = 0 y = 100 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Acceptable Safety"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_safety_btn_5"
+					position = { x = 0 y = 124 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Excellent Safety"
+					Orientation = "UPPER_LEFT"
+				}
+			}
+			containerWindowType = {
+				name = "category_1_unemployment"
+				position = { x =270 y = 488 }
+				size = { width = 100%% height = 30 }
+				iconType = {
+					name = "law_safety_icon"
+					spriteType = "GFX_social_strip"
+					frame = 4
+					position = { x=2 y=0 }
+				}
+				instantTextboxType = {
+					name = "category_1_law_unemployment"
+					position = { x = 28 y = 8 }
+					font = "vic_18"
+					text = "Unemployment"
+					pdx_tooltip = "tno_political_parties"
+					maxWidth = 100
+					maxHeight = 15
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "law_unemployment_btn_1"
+					position = { x = 0 y = 28 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "No Subsidies"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_unemployment_btn_2"
+					position = { x = 0 y = 52 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Minimal Subsidies"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_unemployment_btn_3"
+					position = { x = 0 y = 76 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Acceptable Subsidies"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_unemployment_btn_4"
+					position = { x = 0 y = 100 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Extended Subsidies"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_unemployment_btn_5"
+					position = { x = 0 y = 124 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Generous Subsidies"
+					Orientation = "UPPER_LEFT"
+				}
+			}
+			containerWindowType = {
+				name = "category_1_education"
+				position = { x =405 y = 488 }
+				size = { width = 100%% height = 30 }
+				iconType = {
+					name = "law_education_icon"
+					spriteType = "GFX_social_strip"
+					frame = 7
+					position = { x=2 y=0 }
+				}
+				instantTextboxType = {
+					name = "category_1_law_education"
+					position = { x = 28 y = 8 }
+					font = "vic_18"
+					text = "Education"
+					pdx_tooltip = "tno_political_parties"
+					maxWidth = 100
+					maxHeight = 15
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "law_education_btn_1"
+					position = { x = 0 y = 28 }
+					quadTextureSprite ="GFX_sort_button_104x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Elite Education"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_education_btn_2"
+					position = { x = 0 y = 52 }
+					quadTextureSprite ="GFX_sort_button_104x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Religious Schools"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_education_btn_3"
+					position = { x = 0 y = 76 }
+					quadTextureSprite ="GFX_sort_button_104x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Private Schools"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_education_btn_4"
+					position = { x = 0 y = 100 }
+					quadTextureSprite ="GFX_sort_button_104x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Public Schools"
+					Orientation = "UPPER_LEFT"
 				}
 			}
 		}
@@ -1800,2259 +1229,6 @@ guiTypes = {
 			scale = 40
 		}
 	}
-
-	containerWindowType = {
-		name = "TNO_sd_category_tno_academic_base_window"
-		position = { x = 556 y = 2 }
-		size = { width=730 height=100%% }
-		show_sound = open_sub_window
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_tiled_plain_bg"
-		}
-
-		instantTextboxType = {
-			name = "title"
-			position = { x = 16 y = 15 }
-			font = "hoi_36header"
-			text = "tno_academic_base"
-			maxWidth = 450
-			maxHeight = 30
-			format = left
-		}
-
-		containerWindowType = {
-			name = "ideas"
-			position = { x = 0 y = 50 }
-			size = { width=730 height=100%% }
-
-			containerWindowType = {
-				name = "grid"
-				position = { x = 6 y = 0 }
-				size = { width=718 height=-4 }
-				verticalScrollbar = "right_vertical_slider_tno_laws_2"
-				margin = { top = 13 bottom = 10 }
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_window_1b_no_border"
-				}
-
-				containerWindowType = {
-					name = "law_tno_academic_base_1"
-					position = { x = 10 y = 10 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_academic_base_mass_illiteracy"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_academic_base_1_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_academic_base_mass_illiteracy_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_academic_base_1_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_academic_base_mass_illiteracy_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_academic_base_2"
-					position = { x = 10 y = 166 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_academic_base_basic_literacy"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_academic_base_2_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_academic_base_basic_literacy_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_academic_base_2_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_academic_base_basic_literacy_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_academic_base_3"
-					position = { x = 10 y = 322 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_academic_base_primary_schooling"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_academic_base_3_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_academic_base_primary_schooling_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_academic_base_3_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_academic_base_primary_schooling_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_academic_base_4"
-					position = { x = 10 y = 478 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_academic_base_secondary_schooling"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_academic_base_4_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_academic_base_secondary_schooling_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_academic_base_4_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_academic_base_secondary_schooling_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_academic_base_5"
-					position = { x = 10 y = 634 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_academic_base_tertiary_schooling"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_academic_base_5_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_academic_base_tertiary_schooling_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_academic_base_5_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_academic_base_tertiary_schooling_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_academic_base_6"
-					position = { x = 10 y = 790 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_academic_base_golden_age"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_academic_base_6_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_academic_base_golden_age_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_academic_base_6_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_academic_base_golden_age_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-			}
-		}
-		buttonType = {
-			name = "close"
-			position = { x = -50 y = 15 }
-			quadTextureSprite ="GFX_closebutton"
-			buttonFont = "Main_14_black"
-			shortcut = "ESCAPE"
-			Orientation = "UPPER_RIGHT"
-			clicksound = click_close
-			pdx_tooltip = "CLOSE"
-		}
-	}
-	containerWindowType = {
-		name = "TNO_sd_category_tno_research_facilities_window"
-		position = { x = 556 y = 2 }
-		size = { width=730 height=100%% }
-		show_sound = open_sub_window
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_tiled_plain_bg"
-		}
-
-		instantTextboxType = {
-			name = "title"
-			position = { x = 16 y = 15 }
-			font = "hoi_36header"
-			text = "tno_research_facilities"
-			maxWidth = 450
-			maxHeight = 30
-			format = left
-		}
-
-		containerWindowType = {
-			name = "ideas"
-			position = { x = 0 y = 50 }
-			size = { width=730 height=100%% }
-
-			containerWindowType = {
-				name = "grid"
-				position = { x = 6 y = 0 }
-				size = { width=718 height=-4 }
-				verticalScrollbar = "right_vertical_slider_tno_laws_2"
-				margin = { top = 13 bottom = 10 }
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_window_1b_no_border"
-				}
-
-				containerWindowType = {
-					name = "law_tno_research_facilities_1"
-					position = { x = 10 y = 10 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_research_facilities_makeshift"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_research_facilities_1_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_research_facilities_makeshift_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_research_facilities_1_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_research_facilities_makeshift_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_research_facilities_2"
-					position = { x = 10 y = 166 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_research_facilities_basic"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_research_facilities_2_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_research_facilities_basic_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_research_facilities_2_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_research_facilities_basic_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_research_facilities_3"
-					position = { x = 10 y = 322 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_research_facilities_outdated"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_research_facilities_3_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_research_facilities_outdated_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_research_facilities_3_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_research_facilities_outdated_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_research_facilities_4"
-					position = { x = 10 y = 478 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_research_facilities_modern"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_research_facilities_4_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_research_facilities_modern_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_research_facilities_4_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_research_facilities_modern_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_research_facilities_5"
-					position = { x = 10 y = 634 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_research_facilities_politicized"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_research_facilities_5_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_research_facilities_politicized_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_research_facilities_5_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_research_facilities_politicized_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_research_facilities_6"
-					position = { x = 10 y = 790 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_research_facilities_militarized"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_research_facilities_6_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_research_facilities_militarized_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_research_facilities_6_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_research_facilities_militarized_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_research_facilities_7"
-					position = { x = 10 y = 946 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_research_facilities_cutting_edge"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_research_facilities_7_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_research_facilities_cutting_edge_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_research_facilities_7_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_research_facilities_cutting_edge_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-			}
-		}
-		buttonType = {
-			name = "close"
-			position = { x = -50 y = 15 }
-			quadTextureSprite ="GFX_closebutton"
-			buttonFont = "Main_14_black"
-			shortcut = "ESCAPE"
-			Orientation = "UPPER_RIGHT"
-			clicksound = click_close
-			pdx_tooltip = "CLOSE"
-		}
-	}
-	containerWindowType = {
-		name = "TNO_sd_category_tno_agriculture_window"
-		position = { x = 556 y = 2 }
-		size = { width=730 height=100%% }
-		show_sound = open_sub_window
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_tiled_plain_bg"
-		}
-
-		instantTextboxType = {
-			name = "title"
-			position = { x = 16 y = 15 }
-			font = "hoi_36header"
-			text = "tno_agriculture"
-			maxWidth = 450
-			maxHeight = 30
-			format = left
-		}
-
-		containerWindowType = {
-			name = "ideas"
-			position = { x = 0 y = 50 }
-			size = { width=730 height=100%% }
-
-			containerWindowType = {
-				name = "grid"
-				position = { x = 6 y = 0 }
-				size = { width=718 height=-4 }
-				verticalScrollbar = "right_vertical_slider_tno_laws_2"
-				margin = { top = 13 bottom = 10 }
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_window_1b_no_border"
-				}
-
-				containerWindowType = {
-					name = "law_tno_tno_agriculture_1"
-					position = { x = 10 y = 10 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_agriculture_subsistence"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_agriculture_1_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_agriculture_subsistence_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_agriculture_1_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_agriculture_subsistence_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_agriculture_2"
-					position = { x = 10 y = 166 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_agriculture_centralized"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_agriculture_2_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_agriculture_centralized_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_agriculture_2_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_agriculture_centralized_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_agriculture_3"
-					position = { x = 10 y = 322 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_agriculture_basic_mechanized"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_agriculture_3_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_agriculture_basic_mechanized_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_agriculture_3_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_agriculture_basic_mechanized_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_agriculture_4"
-					position = { x = 10 y = 478 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_agriculture_mass_mechanized"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_agriculture_4_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_agriculture_mass_mechanized_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_agriculture_4_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_agriculture_mass_mechanized_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_agriculture_5"
-					position = { x = 10 y = 634 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_agriculture_modern"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_agriculture_5_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_agriculture_modern_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_agriculture_5_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_agriculture_modern_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-			}
-		}
-		buttonType = {
-			name = "close"
-			position = { x = -50 y = 15 }
-			quadTextureSprite ="GFX_closebutton"
-			buttonFont = "Main_14_black"
-			shortcut = "ESCAPE"
-			Orientation = "UPPER_RIGHT"
-			clicksound = click_close
-			pdx_tooltip = "CLOSE"
-		}
-	}
-
-	containerWindowType = {
-		name = "TNO_sd_category_tno_poverty_rate_window"
-		position = { x = 556 y = 2 }
-		size = { width=730 height=100%% }
-		show_sound = open_sub_window
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_tiled_plain_bg"
-		}
-
-		instantTextboxType = {
-			name = "title"
-			position = { x = 16 y = 15 }
-			font = "hoi_36header"
-			text = "tno_poverty_rate"
-			maxWidth = 450
-			maxHeight = 30
-			format = left
-		}
-
-		containerWindowType = {
-			name = "ideas"
-			position = { x = 0 y = 50 }
-			size = { width=730 height=100%% }
-
-			containerWindowType = {
-				name = "grid"
-				position = { x = 6 y = 0 }
-				size = { width=718 height=-4 }
-				verticalScrollbar = "right_vertical_slider_tno_laws_2"
-				margin = { top = 13 bottom = 10 }
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_window_1b_no_border"
-				}
-
-				containerWindowType = {
-					name = "law_tno_poverty_rate_1"
-					position = { x = 10 y = 10 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_spartan_ideal"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_poverty_rate_1_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_spartan_ideal_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_poverty_rate_1_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_spartan_ideal_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_poverty_rate_2"
-					position = { x = 10 y = 166 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_80"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_poverty_rate_2_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_80_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_poverty_rate_2_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_80_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_poverty_rate_3"
-					position = { x = 10 y = 322 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_50"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_poverty_rate_3_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_50_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_poverty_rate_3_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_50_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_poverty_rate_4"
-					position = { x = 10 y = 478 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_25"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_poverty_rate_4_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_25_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_poverty_rate_4_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_25_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_poverty_rate_5"
-					position = { x = 10 y = 634 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_15"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_poverty_rate_5_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_15_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_poverty_rate_5_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_15_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_poverty_rate_6"
-					position = { x = 10 y = 790 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_10"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_poverty_rate_6_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_10_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_poverty_rate_6_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_10_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_poverty_rate_7"
-					position = { x = 10 y = 946 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_5"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_poverty_rate_7_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_5_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_poverty_rate_7_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_5_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_poverty_rate_8"
-					position = { x = 10 y = 1102 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_0"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_poverty_rate_8_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_0_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_poverty_rate_8_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_poverty_rate_0_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-			}
-		}
-		buttonType = {
-			name = "close"
-			position = { x = -50 y = 15 }
-			quadTextureSprite ="GFX_closebutton"
-			buttonFont = "Main_14_black"
-			shortcut = "ESCAPE"
-			Orientation = "UPPER_RIGHT"
-			clicksound = click_close
-			pdx_tooltip = "CLOSE"
-		}
-	}
-	containerWindowType = {
-		name = "TNO_sd_category_tno_industrial_equipment_window"
-		position = { x = 556 y = 2 }
-		size = { width=730 height=100%% }
-		show_sound = open_sub_window
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_tiled_plain_bg"
-		}
-
-		instantTextboxType = {
-			name = "title"
-			position = { x = 16 y = 15 }
-			font = "hoi_36header"
-			text = "tno_industrial_equipment"
-			maxWidth = 450
-			maxHeight = 30
-			format = left
-		}
-
-		containerWindowType = {
-			name = "ideas"
-			position = { x = 0 y = 50 }
-			size = { width=730 height=100%% }
-
-			containerWindowType = {
-				name = "grid"
-				position = { x = 6 y = 0 }
-				size = { width=718 height=-4 }
-				verticalScrollbar = "right_vertical_slider_tno_laws_2"
-				margin = { top = 13 bottom = 10 }
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_window_1b_no_border"
-				}
-
-				containerWindowType = {
-					name = "law_industrial_equipment_1"
-					position = { x = 10 y = 10 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment_hand_tools"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_equipment_1_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment_hand_tools_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_equipment_1_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment_hand_tools_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_industrial_equipment_2"
-					position = { x = 10 y = 166 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment_power_tools"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_equipment_2_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment_power_tools_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_equipment_2_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment_power_tools_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_industrial_equipment_3"
-					position = { x = 10 y = 322 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment_manufacturing_lines"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_equipment_3_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment_manufacturing_lines_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_equipment_3_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment_manufacturing_lines_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_industrial_equipment_4"
-					position = { x = 10 y = 478 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment_factory_complexes"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_equipment_4_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment_factory_complexes_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_equipment_4_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment_factory_complexes_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_industrial_equipment_5"
-					position = { x = 10 y = 634 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment_modern"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_equipment_5_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment_modern_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_equipment_5_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment_modern_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_industrial_equipment_6"
-					position = { x = 10 y = 790 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment_cutting_edge"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_equipment_6_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment_cutting_edge_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_equipment_6_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_equipment_cutting_edge_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-			}
-		}
-		buttonType = {
-			name = "close"
-			position = { x = -50 y = 15 }
-			quadTextureSprite ="GFX_closebutton"
-			buttonFont = "Main_14_black"
-			shortcut = "ESCAPE"
-			Orientation = "UPPER_RIGHT"
-			clicksound = click_close
-			pdx_tooltip = "CLOSE"
-		}
-	}
-	containerWindowType = {
-		name = "TNO_sd_category_tno_industrial_expertise_window"
-		position = { x = 556 y = 2 }
-		size = { width=730 height=100%% }
-		show_sound = open_sub_window
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_tiled_plain_bg"
-		}
-
-		instantTextboxType = {
-			name = "title"
-			position = { x = 16 y = 15 }
-			font = "hoi_36header"
-			text = "tno_industrial_expertise"
-			maxWidth = 450
-			maxHeight = 30
-			format = left
-		}
-
-		containerWindowType = {
-			name = "ideas"
-			position = { x = 0 y = 50 }
-			size = { width=730 height=100%% }
-
-			containerWindowType = {
-				name = "grid"
-				position = { x = 6 y = 0 }
-				size = { width=718 height=-4 }
-				verticalScrollbar = "right_vertical_slider_tno_laws_2"
-				margin = { top = 13 bottom = 10 }
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_window_1b_no_border"
-				}
-
-				containerWindowType = {
-					name = "law_industrial_expertise_1"
-					position = { x = 10 y = 10 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_industrial_expertise_pre_industrial"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_expertise_1_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_expertise_pre_industrial_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_expertise_1_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_expertise_pre_industrial_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_industrial_expertise_2"
-					position = { x = 10 y = 166 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_industrial_expertise_incompetent"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_expertise_2_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_expertise_incompetent_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_expertise_2_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_expertise_incompetent_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_industrial_expertise_3"
-					position = { x = 10 y = 322 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_industrial_expertise_nascent"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_expertise_3_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_expertise_nascent_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_expertise_3_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_expertise_nascent_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_industrial_expertise_4"
-					position = { x = 10 y = 478 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_industrial_expertise_experienced"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_expertise_4_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_expertise_experienced_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_expertise_4_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_expertise_experienced_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_industrial_expertise_5"
-					position = { x = 10 y = 634 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_industrial_expertise_innovative"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_expertise_5_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_expertise_innovative_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_industrial_expertise_5_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_industrial_expertise_innovative_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-			}
-		}
-		buttonType = {
-			name = "close"
-			position = { x = -50 y = 15 }
-			quadTextureSprite ="GFX_closebutton"
-			buttonFont = "Main_14_black"
-			shortcut = "ESCAPE"
-			Orientation = "UPPER_RIGHT"
-			clicksound = click_close
-			pdx_tooltip = "CLOSE"
-		}
-	}
-	containerWindowType = {
-		name = "TNO_sd_category_tno_army_professionalism_window"
-		position = { x = 556 y = 2 }
-		size = { width=730 height=100%% }
-		show_sound = open_sub_window
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_tiled_plain_bg"
-		}
-
-		instantTextboxType = {
-			name = "title"
-			position = { x = 16 y = 15 }
-			font = "hoi_36header"
-			text = "tno_army_professionalism"
-			maxWidth = 450
-			maxHeight = 30
-			format = left
-		}
-
-		containerWindowType = {
-			name = "ideas"
-			position = { x = 0 y = 50 }
-			size = { width=730 height=100%% }
-
-			containerWindowType = {
-				name = "grid"
-				position = { x = 6 y = 0 }
-				size = { width=718 height=-4 }
-				verticalScrollbar = "right_vertical_slider_tno_laws_2"
-				margin = { top = 13 bottom = 10 }
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_window_1b_no_border"
-				}
-
-				containerWindowType = {
-					name = "law_tno_army_professionalism_1"
-					position = { x = 10 y = 10 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_untrained"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_army_professionalism_1_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_untrained_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_army_professionalism_1_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_untrained_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_army_professionalism_2"
-					position = { x = 10 y = 166 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_reluctant_conscripts"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_army_professionalism_2_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_reluctant_conscripts_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_army_professionalism_2_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_reluctant_conscripts_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_army_professionalism_3"
-					position = { x = 10 y = 322 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_disgruntled_veterans"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_army_professionalism_3_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_disgruntled_veterans_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_army_professionalism_3_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_disgruntled_veterans_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_army_professionalism_4"
-					position = { x = 10 y = 478 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_cronyism"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_army_professionalism_4_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_cronyism_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_army_professionalism_4_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_cronyism_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_army_professionalism_5"
-					position = { x = 10 y = 634 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_political_interference"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_army_professionalism_5_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_political_interference_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_army_professionalism_5_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_political_interference_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_army_professionalism_6"
-					position = { x = 10 y = 790 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_professional"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_army_professionalism_6_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_professional_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_army_professionalism_6_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_professional_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_army_professionalism_7"
-					position = { x = 10 y = 946 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_spartan_discipline"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_army_professionalism_7_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_spartan_discipline_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_army_professionalism_7_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_army_professionalism_spartan_discipline_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-			}
-		}
-		buttonType = {
-			name = "close"
-			position = { x = -50 y = 15 }
-			quadTextureSprite ="GFX_closebutton"
-			buttonFont = "Main_14_black"
-			shortcut = "ESCAPE"
-			Orientation = "UPPER_RIGHT"
-			clicksound = click_close
-			pdx_tooltip = "CLOSE"
-		}
-	}
-	containerWindowType = {
-		name = "TNO_sd_category_tno_nuclear_stockpile_window"
-		position = { x = 556 y = 2 }
-		size = { width=730 height=100%% }
-		show_sound = open_sub_window
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_tiled_plain_bg"
-		}
-
-		instantTextboxType = {
-			name = "title"
-			position = { x = 16 y = 15 }
-			font = "hoi_36header"
-			text = "tno_nuclear_stockpile"
-			maxWidth = 450
-			maxHeight = 30
-			format = left
-		}
-
-		containerWindowType = {
-			name = "ideas"
-			position = { x = 0 y = 50 }
-			size = { width=730 height=100%% }
-
-			containerWindowType = {
-				name = "grid"
-				position = { x = 6 y = 0 }
-				size = { width=718 height=-4 }
-				verticalScrollbar = "right_vertical_slider_tno_laws_2"
-				margin = { top = 13 bottom = 10 }
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_window_1b_no_border"
-				}
-
-				containerWindowType = {
-					name = "law_tno_nuclear_stockpile_1"
-					position = { x = 10 y = 10 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile_none"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_nuclear_stockpile_1_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile_none_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_nuclear_stockpile_1_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile_none_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_nuclear_stockpile_2"
-					position = { x = 10 y = 166 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile_one"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_nuclear_stockpile_2_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile_one_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_nuclear_stockpile_2_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile_one_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_nuclear_stockpile_3"
-					position = { x = 10 y = 322 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile_few"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_nuclear_stockpile_3_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile_few_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_nuclear_stockpile_3_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile_few_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_nuclear_stockpile_4"
-					position = { x = 10 y = 478 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile_many"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_nuclear_stockpile_4_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile_many_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_nuclear_stockpile_4_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile_many_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_nuclear_stockpile_5"
-					position = { x = 10 y = 634 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile_massive"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_nuclear_stockpile_5_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile_massive_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_nuclear_stockpile_5_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile_massive_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-
-				containerWindowType = {
-					name = "law_tno_nuclear_stockpile_6"
-					position = { x = 10 y = 790 }
-					size = { width = 685 height = 156 }
-					background = {
-						name = "Background"
-						quadTextureSprite ="GFX_tiled_idea_entry"
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile_apocalyptic"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_nuclear_stockpile_6_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile_apocalyptic_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_sd_tno_nuclear_stockpile_6_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "tno_nuclear_stockpile_apocalyptic_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-			}
-		}
-		buttonType = {
-			name = "close"
-			position = { x = -50 y = 15 }
-			quadTextureSprite ="GFX_closebutton"
-			buttonFont = "Main_14_black"
-			shortcut = "ESCAPE"
-			Orientation = "UPPER_RIGHT"
-			clicksound = click_close
-			pdx_tooltip = "CLOSE"
-		}
-	}
-
 	containerWindowType = {
 		name = "TNO_laws_category_tno_political_parties_window"
 		position = { x = 556 y = 2 }

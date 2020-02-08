@@ -1,0 +1,19 @@
+scripted_gui = {
+	hre_icon = {
+		context_type = selected_state_context
+		window_name = "hre_icon_container"
+		parent_window_token = selected_state_view
+
+		visible = {
+
+		}
+
+		triggers = {
+			hre_icon_ic_visible = {
+				check_variable = {
+					is_in_HRE = 1
+				}
+			}
+		}
+	}
+}

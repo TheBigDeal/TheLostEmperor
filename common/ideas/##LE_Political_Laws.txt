@@ -1,0 +1,154 @@
+ideas = {
+	### POLITCAL PARTIES
+	###############################
+	law_political_parties = {
+		law = yes
+		law_1_only_underground = {
+			#hidden = yes
+			on_add = {
+				reload_ideas = yes 
+				refresh_economy = yes
+			}
+			modifier = {
+				stability_factor = -0.10
+				drift_defence_factor = 0.25
+			}
+			cancel_if_invalid = no
+		}
+		law_1_harrassment = {
+			#hidden = yes
+			default = yes
+			on_add = { 
+				reload_ideas = yes 
+				refresh_economy = yes
+			}
+			modifier = {
+				stability_factor = -0.08
+				drift_defence_factor = 0.15
+			}
+			cancel_if_invalid = no
+		}
+		law_1_gerrymandering = {
+			#hidden = yes
+			on_add = {
+				reload_ideas = yes 
+				refresh_economy = yes
+			}
+			modifier = {
+				stability_factor = -0.5
+				drift_defence_factor = 0.08
+			}
+			cancel_if_invalid = no
+		}
+		law_1_open_ballots = {
+			#hidden = yes
+			on_add = { 
+				reload_ideas = yes 
+				refresh_economy = yes
+			}
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = -0.03
+			}
+			cancel_if_invalid = no
+		}
+		law_1_confidential_ballots = {
+			#hidden = yes
+			on_add = { 
+				reload_ideas = yes 
+				refresh_economy = yes
+			}
+			modifier = {
+				stability_factor = 0.10
+				drift_defence_factor = -0.10
+			}
+			cancel_if_invalid = no
+		}
+	}
+	
+	### VOTE FRANCHISE
+	###############################
+	law_vote_franchise = {
+		law = yes
+		law_2_no_voting = {
+			default = yes
+			modifier = {
+				stability_factor = -0.20
+			}
+			cancel_if_invalid = no
+		}
+		law_2_execuitive_comittee = {
+			modifier = {
+				stability_factor = -0.15
+			}
+			cancel_if_invalid = no
+		}
+		law_2_wealth = {
+			modifier = {
+				stability_factor = -0.10
+			}
+			cancel_if_invalid = no
+		}
+		law_2_only_men = {
+			modifier = {
+				stability_factor = 0.05
+			}
+			cancel_if_invalid = no
+		}
+		law_2_universal_voting = {
+			modifier = {
+				stability_factor = 0.10
+			}
+			cancel_if_invalid = no
+		}
+	}
+	
+	### TRADE UNIONS
+	###############################
+	law_trade_unions = {
+		law = yes
+		law_3_illegal = {
+			modifier = {
+				stability_factor = -0.20
+			}
+			cancel_if_invalid = no
+		}
+		law_3_state_controlled = {
+			default = yes
+			modifier = {
+				stability_factor = -0.15
+			}
+			cancel_if_invalid = no
+		}
+		law_3_non_socialist_allowed = {
+			modifier = {
+				stability_factor = -0.10
+			}
+			cancel_if_invalid = no
+		}
+		law_3_all_allowed = {
+			modifier = {
+				stability_factor = 0.05
+			}
+			cancel_if_invalid = no
+		}
+	}
+	### SLAVERY
+	###############################
+	law_slavery = {
+		law = yes
+		law_4_not_allowed = {
+			default = yes
+			modifier = {
+				stability_factor = -0.20
+			}
+			cancel_if_invalid = no
+		}
+		law_4_allowed = {
+			modifier = {
+				stability_factor = -0.15
+			}
+			cancel_if_invalid = no
+		}
+	}
+}

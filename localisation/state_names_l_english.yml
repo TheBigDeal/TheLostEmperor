@@ -56,7 +56,7 @@
  STATE_55:0 "Hessen"
  STATE_56:0 "Weser-Ems"
  STATE_57:0 "Westfalen"
- STATE_58:0 "Schleswig-Holstein"
+ STATE_58:0 "Holstein"
  STATE_59:0 "Hannover"
  STATE_60:0 "Erfurt"
  STATE_61:0 "Mecklenburg"
@@ -781,7 +781,7 @@
  
  STATE_783:0 "East Faud"
  STATE_784:0 "Port Said"
-
+ STATE_785:0 "Southern Holstein"
 
  STATE_786:0 "Mecklenburg-Strelitz"
  STATE_787:0 "Connecticut"
@@ -791,6 +791,9 @@
  STATE_791:0 "Maine"
  STATE_792:0 "West Virginia"
  STATE_797:0 "Lindau"
+ 
+ STATE_804:0 "Furstenberg"
+ 
  STATE_806:0 "Bialystok"
  STATE_807:0 "Marijampole"
  STATE_808:0 "Dobruja"
@@ -842,6 +845,9 @@
  STATE_865:0 "Barcelona"
  STATE_866:0 "Northern Aragon"
  STATE_867:0 "City of Calais"
+ STATE_869:0 "Parma"
+ STATE_869:0 "Modena"
+ 
  STATE_871:0 "Thuringia"
  STATE_872:0 "Stettin"
  STATE_874:0 "Edirne"
@@ -944,3 +950,4 @@
  STATE_1015:0 "Northern Rub Al Khali"
  STATE_1016:0 "Western Rub Al Khali"
  STATE_1017:0 "Delaware"
+ STATE_1018:0 "Northern Schleswig"

@@ -1,0 +1,71 @@
+﻿l_english: 
+
+### Political Parties ###
+ GBR_absolutism_party:0 "Loyal League"
+ GBR_royalism_party:0 "British National Party"
+ GBR_rexism_party:0 "British Imperial Front"
+ GBR_despotism_party:0 "Unity And Nationalist Association"
+ GBR_conservatism_party:0 "Conservative Party (Tories)"
+ GBR_liberalism_party:0 "Liberal Party"
+ GBR_socialism_party:0 "Labour Party"
+ GBR_theocracy_party:0 "Church Of England"
+ GBR_labryscism_party:0 "New Model Republicans"
+ GBR_mutualism_party:0 "British Congress of Trade Unions"
+ GBR_collectivism_party:0 "British Congress of Trade Unions"
+ GBR_proletarianism_party:0 "British Congress of Trade Unions"
+ 
+### Ministers ###
+ # Head Of State
+
+ # Secondary Head
+
+ # Foriegn Minister
+
+ # Minister Of Defence
+
+ # Economic Minister
+ 
+ # Minister Of The Interior
+
+ # Minister Of Security
+
+ 
+### Ideas ###
+ gbr_the_sun_never_sets:0 "The Sun Never Sets"
+ gbr_britannia_rules_the_waves:0 "Britannia Rules The Waves"
+ gbr_labor_unrest:0 "Labor Unrest"
+ gbr_splendid_isolation:0 "Splendid Isolation"
+ gbr_british_stoicism:0 "British Stoicism"
+ gbr_irish_question:0 "Irish Question"
+ gbr_irish_question_desc:0 "Throughout human history there have always been several universal truths; one of those is that the Irish do not particularly like the British. Centuries of discrimination, rebellion, and anger have soured relations between the two islands. Boycotts of British goods and public protests are common and any conscription attempt of Irishmen, with the notable exception of the pro-British Ulster unionists, is met with fierce resistance. While Ireland might be stable for now some say it’s a ticking time bomb just waiting to explode."
+### Tooltips ###
+ 
+### Global / Country Flags ###
+ 
+### Focus Tree ###
+ENG_THE_GENERAL_STRIKE:0 "The General Strike"
+ENG_A_SPARK_IS_LIT:0 "A Spark Is Lit"
+### Communist Path ###
+ENG_THE_FIRE_SPREADS:0 "The Fire Spreads"
+ENG_DAMAGED_BUT_AFLOAT:0 "Damaged But Afloat"
+ENG_ARMY_LAYS_DOWN_THEIR_ARMS:0 "The Army Lays Down Their Arms"
+ENG_ARMY_SUPPORTS_PARLIAMENT:0 "Army Supports Parliament"
+ENG_REFORGE_BRITAIN:0 "Reforge Britain"
+ENG_FALL_OF_THE_EMPIRE:0 "Fall Of The Empire"
+ENG_RECOVER_FROM_CIVIL_WAR:0 "Recover From Civil War"
+ENG_A_NEW_MILITARY:0 "A New Military"
+ENG_TUC_DOMINANT:0 "T.U.C Dominant"
+ENG_FEED_THE_COUNTRYSIDE:0 "Feed The Countryside"
+ENG_NATIONAL_TRUTH_BOARD:0 "National Truth Board"
+ENG_WORKERS_PARADISE:0 "Workers Paradise"
+ENG_PEOPLES_RECONSTRUCTION_AUTHORITY:0 "People's Reconstruction Authority"
+ENG_EXPAND_WELFARE:0 "Expand Welfare"
+ENG_REWARD_OUR_FOLLOWERS:0 "Reward Our Followers"
+ENG_THE_FIRST_TRADES_UNION_CONGRESS:0 "The First Trades Union Congress"
+ENG_DICTATORSHIP_ON_THE_CHAIRMAN:0 "Dictatorship Of The Chairman"
+### Democratic Path ###
+ENG_NEGOTIATIONS_PREVAIL:0 "Negotiations Prevail"
+
+
+
+### Events ###

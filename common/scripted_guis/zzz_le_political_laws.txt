@@ -1,0 +1,266 @@
+scripted_gui = {
+	political_laws_1 = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_SG_politics_laws"
+		visible = { always = yes }
+		triggers = { 
+			law_political_parties_selected_1_visible = { has_idea = law_1_only_underground }
+			law_political_parties_selected_2_visible = { has_idea = law_1_harrassment }
+			law_political_parties_selected_3_visible = { has_idea = law_1_gerrymandering }
+			law_political_parties_selected_4_visible = { has_idea = law_1_open_ballots }
+			law_political_parties_selected_5_visible = { has_idea = law_1_confidential_ballots }
+			law_vote_franchise_selected_1_visible = { has_idea = law_2_no_voting }
+			law_vote_franchise_selected_2_visible = { has_idea = law_2_execuitive_comittee }
+			law_vote_franchise_selected_3_visible = { has_idea = law_2_wealth }
+			law_vote_franchise_selected_4_visible = { has_idea = law_2_only_men }
+			law_vote_franchise_selected_5_visible = { has_idea = law_2_universal_voting }
+			law_trade_unions_selected_1_visible = { has_idea = law_3_illegal }
+			law_trade_unions_selected_2_visible = { has_idea = law_3_state_controlled }
+			law_trade_unions_selected_3_visible = { has_idea = law_3_non_socialist_allowed }
+			law_trade_unions_selected_4_visible = { has_idea = law_3_all_allowed }
+			law_slavery_selected_1_visible = { has_idea = law_4_not_allowed }
+			law_slavery_selected_2_visible = { has_idea = law_4_allowed }
+		}
+		effects = {
+			law_political_parties_btn_1_click = {
+				if = {
+					limit = { NOT = { has_idea = law_1_only_underground } }
+					set_variable = { open_law_window = 1 }
+					set_variable = { law_1_only_underground_var = 1 }
+				}
+			}
+			law_political_parties_btn_2_click = {
+				if = {
+					limit = { NOT = { has_idea = law_1_harrassment } }
+					set_variable = { open_law_window = 1 }
+					set_variable = { law_1_harrassment_var = 1 }
+				}
+			}
+			law_political_parties_btn_3_click = {
+				if = {
+					limit = { NOT = { has_idea = law_1_gerrymandering } }
+					set_variable = { open_law_window = 1 }
+					set_variable = { law_1_gerrymandering_var = 1 }
+				}
+			}
+			law_political_parties_btn_4_click = {
+				if = {
+					limit = { NOT = { has_idea = law_1_open_ballots } }
+					set_variable = { open_law_window = 1 }
+					set_variable = { law_1_open_ballots_var = 1 }
+				}
+			}
+			law_political_parties_btn_5_click = {
+				if = {
+					limit = { NOT = { has_idea = law_1_confidential_ballots } }
+					set_variable = { open_law_window = 1 }
+					set_variable = { law_1_confidential_ballots_var = 1 }
+				}
+			}
+			law_vote_franchise_btn_1_click = {
+				if = {
+					limit = { NOT = { has_idea = law_2_no_voting } }
+					set_variable = { open_law_window = 1 }
+					set_variable = { law_2_no_voting_var = 1 }
+				}
+			}
+			law_vote_franchise_btn_2_click = {
+				if = {
+					limit = { NOT = { has_idea = law_2_execuitive_comittee } }
+					set_variable = { open_law_window = 1 }
+					set_variable = { law_2_execuitive_comittee_var = 1 }
+				}
+			}
+			law_vote_franchise_btn_3_click = {
+				if = {
+					limit = { NOT = { has_idea = law_2_wealth } }
+					set_variable = { open_law_window = 1 }
+					set_variable = { law_2_wealth_var = 1 }
+				}
+			}
+			law_vote_franchise_btn_4_click = {
+				if = {
+					limit = { NOT = { has_idea = law_2_only_men } }
+					set_variable = { open_law_window = 1 }
+					set_variable = { law_2_only_men_var = 1 }
+				}
+			}
+			law_vote_franchise_btn_5_click = {
+				if = {
+					limit = { NOT = { has_idea = law_2_universal_voting } }
+					set_variable = { open_law_window = 1 }
+					set_variable = { law_2_universal_voting_var = 1 }
+				}
+			}
+			law_trade_unions_btn_1_click = {
+				if = {
+					limit = { NOT = { has_idea = law_3_illegal } }
+					set_variable = { open_law_window = 1 }
+					set_variable = { law_3_illegal_var = 1 }
+				}
+			}
+			law_trade_unions_btn_2_click = {
+				if = {
+					limit = { NOT = { has_idea = law_3_state_controlled } }
+					set_variable = { open_law_window = 1 }
+					set_variable = { law_3_state_controlled_var = 1 }
+				}
+			}
+			law_trade_unions_btn_3_click = {
+				if = {
+					limit = { NOT = { has_idea = law_3_non_socialist_allowed } }
+					set_variable = { open_law_window = 1 }
+					set_variable = { law_3_non_socialist_allowed_var = 1 }
+				}
+			}
+			law_trade_unions_btn_4_click = {
+				if = {
+					limit = { NOT = { has_idea = law_3_all_allowed } }
+					set_variable = { open_law_window = 1 }
+					set_variable = { law_3_all_allowed_var = 1 }
+				}
+			}
+			law_slavery_btn_1_click = {
+				if = {
+					limit = { NOT = { has_idea = law_4_not_allowed } }
+					set_variable = { open_law_window = 1 }
+					set_variable = { law_4_not_allowed_var = 1 }
+				}
+			}
+			law_slavery_btn_2_click = {
+				if = {
+					limit = { NOT = { has_idea = law_4_allowed } }
+					set_variable = { open_law_window = 1 }
+					set_variable = { law_4_allowed_var = 1 }
+				}
+			}
+		}
+	}
+	show_cat1_only_underground = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "country_laws"
+		visible = { check_variable = { open_law_window = 1 } }
+		effects = {
+			country_laws_close_button_click = {
+				set_variable = { open_law_window = 0 }
+			}
+			country_laws_ok_button_click = {
+				if = { ### POLITICAL PARTIES
+					limit = {check_variable = { law_1_only_underground_var = 1 }}
+					remove_ideas = { law_1_harrassment law_1_gerrymandering law_1_open_ballots law_1_confidential_ballots }
+					add_ideas = { law_1_only_underground }
+					set_variable = { open_law_window = 0 }
+					set_variable = { law_1_only_underground_var = 0 }
+				}
+				else_if = {
+					limit = {check_variable = { law_1_harrassment_var = 1 }}
+					remove_ideas = { law_1_only_underground law_1_gerrymandering law_1_open_ballots law_1_confidential_ballots }
+					add_ideas = { law_1_harrassment }
+					set_variable = { open_law_window = 0 }
+					set_variable = { law_1_harrassment_var = 0 }
+				}
+				else_if = {
+					limit = {check_variable = { law_1_gerrymandering_var = 1 }}
+					remove_ideas = { law_1_harrassment law_1_only_underground law_1_open_ballots law_1_confidential_ballots }
+					add_ideas = { law_1_gerrymandering }
+					set_variable = { open_law_window = 0 }
+					set_variable = { law_1_gerrymandering_var = 0 }
+				}
+				else_if = {
+					limit = {check_variable = { law_1_open_ballots_var = 1 }}
+					remove_ideas = { law_1_harrassment law_1_gerrymandering law_1_only_underground law_1_confidential_ballots }
+					add_ideas = { law_1_open_ballots }
+					set_variable = { open_law_window = 0 }
+					set_variable = { law_1_open_ballots_var = 0 }
+				}
+				else_if = {
+					limit = {check_variable = { law_1_confidential_ballots_var = 1 }}
+					remove_ideas = { law_1_harrassment law_1_gerrymandering law_1_open_ballots law_1_only_underground }
+					add_ideas = { law_1_confidential_ballots }
+					set_variable = { open_law_window = 0 }
+					set_variable = { law_1_confidential_ballots_var = 0 }
+				}
+				else_if = { ### VOTING FRANCHISE
+					limit = {check_variable = { law_2_no_voting_var = 1 }}
+					remove_ideas = { law_2_execuitive_comittee law_2_wealth law_2_only_men law_2_universal_voting}
+					add_ideas = { law_2_no_voting }
+					set_variable = { open_law_window = 0 }
+					set_variable = { law_2_no_voting_var = 0 }
+				}
+				else_if = {
+					limit = {check_variable = { law_2_execuitive_comittee_var = 1 }}
+					remove_ideas = { law_2_no_voting law_2_wealth law_2_only_men law_2_universal_voting}
+					add_ideas = { law_2_execuitive_comittee }
+					set_variable = { open_law_window = 0 }
+					set_variable = { law_2_execuitive_comittee_var = 0 }
+				}
+				else_if = {
+					limit = {check_variable = { law_2_wealth_var = 1 }}
+					remove_ideas = { law_2_execuitive_comittee law_2_no_voting law_2_only_men law_2_universal_voting}
+					add_ideas = { law_2_wealth }
+					set_variable = { open_law_window = 0 }
+					set_variable = { law_2_wealth_var = 0 }
+				}
+				else_if = {
+					limit = {check_variable = { law_2_only_men_var = 1 }}
+					remove_ideas = { law_2_execuitive_comittee law_2_wealth law_2_no_voting law_2_universal_voting}
+					add_ideas = { law_2_only_men }
+					set_variable = { open_law_window = 0 }
+					set_variable = { law_2_only_men_var = 0 }
+				}
+				else_if = {
+					limit = {check_variable = { law_2_universal_voting_var = 1 }}
+					remove_ideas = { law_2_execuitive_comittee law_2_wealth law_2_only_men law_2_no_voting}
+					add_ideas = { law_2_universal_voting }
+					set_variable = { open_law_window = 0 }
+					set_variable = { law_2_universal_voting_var = 0 }
+				}
+				else_if = { #TRADE UNIONS
+					limit = {check_variable = { law_3_illegal_var = 1 }}
+					remove_ideas = { law_3_state_controlled law_3_non_socialist_allowed law_3_all_allowed }
+					add_ideas = { law_3_illegal }
+					set_variable = { open_law_window = 0 }
+					set_variable = { law_3_illegal_var = 0 }
+				}
+				else_if = {
+					limit = {check_variable = { law_3_state_controlled_var = 1 }}
+					remove_ideas = { law_3_illegal law_3_non_socialist_allowed law_3_all_allowed }
+					add_ideas = { law_3_state_controlled }
+					set_variable = { open_law_window = 0 }
+					set_variable = { law_3_state_controlled_var = 0 }
+				}
+				else_if = {
+					limit = {check_variable = { law_3_non_socialist_allowed_var = 1 }}
+					remove_ideas = { law_3_state_controlled law_3_illegal law_3_all_allowed }
+					add_ideas = { law_3_non_socialist_allowed }
+					set_variable = { open_law_window = 0 }
+					set_variable = { law_3_non_socialist_allowed_var = 0 }
+				}
+				else_if = { 
+					limit = {check_variable = { law_3_all_allowed_var = 1 }}
+					remove_ideas = { law_3_state_controlled law_3_non_socialist_allowed law_3_illegal }
+					add_ideas = { law_3_all_allowed }
+					set_variable = { open_law_window = 0 }
+					set_variable = { law_3_all_allowed_var = 0 }
+				}
+				else_if = { ### SLAVERY
+					limit = {check_variable = { law_4_not_allowed_var = 1 }}
+					remove_ideas = { law_4_allowed }
+					add_ideas = { law_4_not_allowed }
+					set_variable = { open_law_window = 0 }
+					set_variable = { law_4_not_allowed_var = 0 }
+				}
+				else_if = {
+					limit = {check_variable = { law_4_allowed_var = 1 }}
+					remove_ideas = {  law_4_not_allowed }
+					add_ideas = { law_4_allowed }
+					set_variable = { open_law_window = 0 }
+					set_variable = { law_4_allowed_var = 0 }
+				}
+			}
+		}
+	}
+}
+

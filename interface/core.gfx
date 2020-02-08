@@ -1,5 +1,31 @@
 spriteTypes = {
-
+	
+	# MOD
+	textSpriteType = {
+		name = "GFX_green_sort_button_140x29"
+		texturefile = "gfx//interface//green_sort_button_140x29.dds"
+		noOfFrames = 2
+	}
+	
+	textSpriteType = {
+		name = "GFX_sort_button_164x29"
+		texturefile = "gfx//interface//sort_button_164x29.dds"
+		noOfFrames = 2
+	}
+	
+	textSpriteType = {
+		name = "GFX_sort_button_104x29"
+		texturefile = "gfx//interface//sort_button_104x29.dds"
+		noOfFrames = 2
+	}
+	
+	textSpriteType = {
+		name = "GFX_sort_button_92x29"
+		texturefile = "gfx//interface//sort_button_92x29.dds"
+		noOfFrames = 2
+	}
+	
+	# Vanilla
 	spriteType = { 
 		name = "GFX_default_fallback_texture"
 		texturefile = "gfx/interface/thisisdog.dds"
@@ -79,7 +105,9 @@ spriteTypes = {
 		texturefile = "gfx//interface//sort_button_100x29_2.dds"
 		noOfFrames = 2
 	}	
-
+	
+	
+	
 	textSpriteType = {
 		name = "GFX_sort_button_140x29"
 		texturefile = "gfx//interface//sort_button_140x29.dds"

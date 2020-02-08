@@ -87,7 +87,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_PRUSSIAN_MILITARY_MISSION
-		icon = GFX_generic_army_focus_red
+		icon = GFX_prussian_military_mission
 		prerequisite = { focus = POL_CEDE_POZNAN }
 		x = 2
 		y = 4

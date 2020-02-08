@@ -56,6 +56,15 @@ ideas = {
 				production_speed_buildings_factor = -0.10
 			}
 		}
+		usa_sluggish_economy_4 = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				consumer_goods_factor = 0.10
+				production_factory_max_efficiency_factor = -0.10
+				industrial_capacity_dockyard = -0.10
+				production_speed_buildings_factor = -0.25
+			}
+		}
 		usa_sluggish_economy = {
 			picture = man_five_year_plan_industry
 			modifier = {

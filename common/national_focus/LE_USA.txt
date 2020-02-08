@@ -308,7 +308,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_FROM_BAD_TO_WORSE
-		icon = GFX_unknown
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = USA_BANKING_REFORM }
 		prerequisite = { focus = USA_ALIEN_AND_SEDITION_ACT }
 		prerequisite = { focus = USA_CRUSH_STRIKES }
@@ -326,7 +326,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_DOMINOS_BEGIN_TO_FALL
-		icon = GFX_unknown
+		icon = GFX_generic_revolution
 		prerequisite = { focus = USA_FROM_BAD_TO_WORSE }
 		x = 10
 		y = 6
@@ -346,7 +346,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_FEDERALIZE_NATIONAL_GUARDS
-		icon = GFX_unknown
+		icon = GFX_generic_army_focus_red
 		prerequisite = { focus = USA_DOMINOS_BEGIN_TO_FALL }
 		x = 10
 		y = 7
@@ -366,7 +366,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_DECLARE_MARTIAL_LAW
-		icon = GFX_unknown
+		icon = GFX_generic_political_oppression
 		prerequisite = { focus = USA_FEDERALIZE_NATIONAL_GUARDS }
 		x = 10
 		y = 8
@@ -394,7 +394,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_HULLS_IDEALS
-		icon = GFX_unknown
+		icon = GFX_goal_foreign_diplomacy
 		prerequisite = { focus = USA_THE_PRAGMATIST }
 		x = 16
 		y = 1
@@ -408,7 +408,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_NEGOTIATE_WITH_THE_FAR_RIGHT
-		icon = GFX_unknown
+		icon = GFX_focus_deal_with_right
 		prerequisite = { focus = USA_HULLS_IDEALS }
 		x = 14
 		y = 2
@@ -425,7 +425,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_NEGOTIATE_WITH_THE_FAR_LEFT
-		icon = GFX_unknown
+		icon = GFX_focus_deal_with_left
 		prerequisite = { focus = USA_HULLS_IDEALS }
 		x = 18
 		y = 2
@@ -442,7 +442,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_LOWER_TAXES
-		icon = GFX_unknown
+		icon = GFX_planned_economy
 		prerequisite = { focus = USA_HULLS_IDEALS }
 		x = 16
 		y = 3
@@ -459,7 +459,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_TALKS_WITH_INDUSTRIALISTS
-		icon = GFX_unknown
+		icon = GFX_generic_factories
 		prerequisite = { focus = USA_NEGOTIATE_WITH_THE_FAR_RIGHT }
 		x = 14
 		y = 4
@@ -502,7 +502,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_THE_STORY_BREAKS
-		icon = GFX_unknown
+		icon = GFX_KTG_Elections
 		prerequisite = { focus = USA_TRUST_IN_DEMOCRACY }
 		prerequisite = { focus = USA_LOWER_TAXES }
 		prerequisite = { focus = USA_TALKS_WITH_INDUSTRIALISTS }
@@ -521,7 +521,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_COVER_OUR_TRACKS
-		icon = GFX_unknown
+		icon = GFX_focus_trade_unions
 		prerequisite = { focus = USA_THE_STORY_BREAKS }
 		x = 16
 		y = 6
@@ -535,7 +535,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_STACK_THE_COURT
-		icon = GFX_unknown
+		icon = GFX_goal_government_icon
 		prerequisite = { focus = USA_COVER_OUR_TRACKS }
 		x = 16
 		y = 7
@@ -549,7 +549,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_PUNISH_THE_PRESS
-		icon = GFX_unknown
+		icon = GFX_nationalize_the_press
 		prerequisite = { focus = USA_STACK_THE_COURT }
 		x = 16
 		y = 8
@@ -572,12 +572,12 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.05
 		}
 	}
 	focus = {
 		id = USA_LOWDENS_PLAN
-		icon = GFX_unknown
+		icon = GFX_focus_monarchy
 		prerequisite = { focus = USA_THE_HEIR }
 		x = 22
 		y = 1
@@ -586,12 +586,13 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 50
+			add_popularity = { ideology = liberalism popularity = 0.02 }
 		}
 	}
 	focus = {
 		id = USA_DEAL_WITH_THE_REDS
-		icon = GFX_unknown
+		icon = GFX_generic_espionage
 		prerequisite = { focus = USA_LOWDENS_PLAN }
 		x = 20
 		y = 2
@@ -600,12 +601,14 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_popularity = { ideology = collectivism popularity = -0.03 }
+			add_popularity = { ideology = proletarianism popularity = -0.03 }
+			add_popularity = { ideology = mutualism popularity = -0.03 }
 		}
 	}
 	focus = {
 		id = USA_SUPPRESS_THE_FAR_RIGHT_RADICALS
-		icon = GFX_unknown
+		icon = GFX_generic_political_purge
 		prerequisite = { focus = USA_LOWDENS_PLAN }
 		x = 24
 		y = 2
@@ -614,12 +617,14 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_popularity = { ideology = labryscism popularity = -0.03 }
+			add_popularity = { ideology = rexism popularity = -0.03 }
+			add_popularity = { ideology = despotism popularity = -0.03 }
 		}
 	}
 	focus = {
 		id = USA_SUPPORT_BIG_BUSINESS
-		icon = GFX_unknown
+		icon = GFX_Generic_Industry
 		prerequisite = { focus = USA_LOWDENS_PLAN }
 		x = 22
 		y = 3
@@ -628,12 +633,15 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			swap_ideas = {
+				remove_idea = usa_sluggish_economy
+				add_idea = usa_sluggish_economy_4
+			}
 		}
 	}
 	focus = {
 		id = USA_REIGN_IN_THE_STATES
-		icon = GFX_unknown
+		icon = GFX_generic_bad_expansionism
 		prerequisite = { focus = USA_DEAL_WITH_THE_REDS }
 		x = 20
 		y = 4
@@ -642,12 +650,13 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 150		
+			add_stability = -0.03
 		}
 	}
 	focus = {
 		id = USA_CRACK_DOWN_ON_CORRUPTION
-		icon = GFX_unknown
+		icon = GFX_goal_stamp_out_corruption
 		prerequisite = { focus = USA_SUPPRESS_THE_FAR_RIGHT_RADICALS }
 		x = 24
 		y = 4
@@ -656,12 +665,13 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = -50
+			add_stability = 0.05
 		}
 	}
 	focus = {
 		id = USA_A_NATIONAL_TRAGEDY
-		icon = GFX_unknown
+		icon = GFX_generic_handgun
 		prerequisite = { focus = USA_REIGN_IN_THE_STATES }
 		prerequisite = { focus = USA_SUPPORT_BIG_BUSINESS }
 		prerequisite = { focus = USA_CRACK_DOWN_ON_CORRUPTION }
@@ -677,7 +687,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_CHAOS_IN_THE_CAPITAL
-		icon = GFX_unknown
+		icon = GFX_generic_revolution
 		prerequisite = { focus = USA_A_NATIONAL_TRAGEDY }
 		x = 22
 		y = 6
@@ -691,7 +701,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_THE_SUCCESSION_QUESTION
-		icon = GFX_unknown
+		icon = GFX_goal_USA_1940_review_the_union
 		prerequisite = { focus = USA_CHAOS_IN_THE_CAPITAL }
 		x = 22
 		y = 7
@@ -705,7 +715,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_THE_CRACKS_BEGIN_TO_SHOW
-		icon = GFX_unknown
+		icon = GFX_USA_goal_new_deal
 		prerequisite = { focus = USA_THE_SUCCESSION_QUESTION }
 		x = 22
 		y = 8
@@ -714,7 +724,33 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			ILL = {
+				set_politics = {
+					ruling_party = collectivism
+				}
+				set_popularities = {
+					conservatism = 1
+					liberalism = 1
+					socialism = 12
+					labryscism = 5
+					rexism = 1
+					despotism = 5
+					royalism = 1
+					theocracy = 1
+					absolutism = 3
+					proletarianism = 15
+					collectivism = 50
+					mutualism = 5
+				}
+				set_cosmetic_tag = UNITED_COMMUNES_OF_AMERICA
+				transfer_state = 395
+				transfer_state = 394
+				transfer_state = 900
+				transfer_state = 393
+				transfer_state = 396
+				transfer_state = 261
+				transfer_state = 817
+			}		
 		}
 	}
 	focus = {

@@ -1,7 +1,74 @@
 ideas = {
-
-	country = {
-
+	country = {	
+		prs_limited_navy_counter = {
+			picture = general_staff
+			modifier = {
+				production_speed_dockyard_factor = -0.12
+				production_speed_naval_base_factor = -0.12
+				industrial_capacity_dockyard = -0.12
+				experience_gain_navy_factor = -0.08
+			}
+		}
+		prs_limited_navy = {
+			picture = general_staff
+			modifier = {
+				production_speed_dockyard_factor = -0.25
+				production_speed_naval_base_factor = -0.25
+				industrial_capacity_dockyard = -0.25
+				experience_gain_navy_factor = -0.15
+			}
+		}
+		prs_purchased_hannover_counter = {
+			picture = general_staff
+			modifier = {
+				political_power_factor = -0.15
+				consumer_goods_factor = 0.08
+			}
+		}
+		prs_purchased_hannover = {
+			picture = general_staff
+			modifier = {
+				political_power_factor = -0.25
+				consumer_goods_factor = 0.15
+			}
+		}
+		prs_military_push = {
+			picture = general_staff
+			modifier = {
+				army_org_factor = 0.05
+				army_speed_factor = 0.04
+			}
+		}
+		prs_renewed_imperialism = {
+			picture = general_staff
+			modifier = {
+				justify_war_goal_time = -0.25
+				generate_wargoal_tension = -0.50
+				subjects_autonomy_gain = -0.2
+				subversive_activites_upkeep = -0.1
+			}
+		}
+		prs_wilhelms_iron_fist = {
+			picture = general_staff
+			modifier = {
+				conscription_factor = 0.05
+				non_core_manpower = 0.01
+				army_org_factor = 0.05
+				army_morale_factor = -0.1
+				army_speed_factor = -0.06
+				stability_weekly = -0.01
+			}
+		}
+		prs_waldemars_acedemics = {
+			picture = general_staff
+			modifier = {
+				conscription_factor = -0.05
+				army_org_factor = -0.05
+				army_morale_factor = 0.1
+				army_speed_factor = 0.06
+				stability_weekly = 0.01
+			}
+		}
 		PRS_PRUSSIAN_MILITARISM = {
 			picture = general_staff
 			modifier = {
@@ -30,6 +97,28 @@ ideas = {
 				naval_hit_chance = -0.10
 				naval_coordination = -0.05
 				experience_gain_navy_factor = -0.50
+			}
+		}
+		
+		PRS_criminalized_radicalism = {
+			picture = MTG_naval_treaty_adherent_reduced
+			modifier = {
+				proletarianism_drift = -0.03
+				collectivism_drift = -0.03
+				mutualism_drift = -0.03
+				labryscism_drift = -0.03
+				rexism_drift = -0.03
+				theocracy_drift = -0.03
+			}
+		}
+		
+		PRS_the_call_of_the_fatherland = {
+			picture = MTG_naval_treaty_adherent_reduced
+			modifier = {
+				conscription = 0.10
+				army_morale_factor = 0.10
+				political_power_gain = 0.05
+				stability_factor = 0.10
 			}
 		}
 	}

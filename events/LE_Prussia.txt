@@ -4,486 +4,1045 @@
 
 add_namespace = le_prussia
 
-# INTRO EVENT
-country_event = {
+country_event = { #Prince Wilhelm Visits the Capital
 	id = le_prussia.1
 	title = le_prussia.1.t
 	desc = le_prussia.1.d
-	fire_only_once = yes
+	#fire_only_once = yes
 	is_triggered_only = yes
-	trigger = {
-		AND = {
-			tag = PRS
-			NOT = { has_country_flag = INTRO_DONE }
-		}
-	}
-	option = {
+	option = { #Accept Wilhelm
 		name = le_prussia.1.a
-		set_country_flag = INTRO_DONE
+		#country_event = { id = le_prussia.7 days = 10 }
+		set_country_flag = prs_wilhelm_in_capital
+	}
+	option = { #Turn Wilhelm Away
+		name = le_prussia.1.b
+		complete_national_focus = PRS_ERADICATE_THE_OPPOSITION
 	}
 }
-country_event = { #What flag should we use?
+country_event = { #Wilhelm Makes A Move
 	id = le_prussia.2
 	title = le_prussia.2.t
 	desc = le_prussia.2.d
-	picture = GFX_report_event_hitler_parade
-
-	fire_only_once = yes
+	#fire_only_once = yes
 	is_triggered_only = yes
-
-	mean_time_to_happen = { days = 1 }
-
-	option = { #Traditional Eagle
+	option = {
 		name = le_prussia.2.a
-		set_cosmetic_tag = GERMAN_EMPIRE_OLD
+		complete_national_focus = PRS_LONG_LIVE_KING_WILHELM
 	}
-	option = { #Adopt a Tricolor
+	option = {
 		name = le_prussia.2.b
-		set_cosmetic_tag = GERMAN_EMPIRE
+		complete_national_focus = PRS_LONG_LIVE_KING_WALDEMAR
 	}
 }
-country_event = { #Annex by Germany
+country_event = { #Nationalist Coup
 	id = le_prussia.3
 	title = le_prussia.3.t
 	desc = le_prussia.3.d
-	picture = GFX_report_event_hitler_parade
-
-	trigger = {
-		AND = {
-			PRS = { focus_progress = { focus = PRS_OATHS_OF_LOYALTY progress > 0.0 } }
-			OR = {
-				tag = BAV
-				tag = SAX
-				tag = TRI
-				tag = ULM
-				tag = LUB
-				tag = HAN
-				tag = BAD
-				tag = CLG
-				tag = HES
-				tag = FRN
-				tag = WUR
-				tag = HAM
-				tag = BRE
-				tag = BRU
-				tag = ANH
-				tag = WRZ
-				tag = THU
-				tag = KLE
-				tag = HRE
-				tag = MAI
-				tag = NUR
-				tag = AUG
-				tag = ANS
-				tag = PLT
-				tag = OLD
-				tag = MST
-				tag = MCH
-				tag = HLS
-				tag = EFR
-				tag = MUN
-				tag = RAV
-				tag = PAD
-				tag = PYR
-				tag = NAS
-				tag = JUL
-				tag = NSA
-				tag = FUL
-				tag = BAM
-				tag = SPY
-				tag = OFF
-				tag = HUL
-				tag = MEM
-				tag = LND
-				tag = HNZ
-				tag = FUS
-				tag = PSU
-			}
-		}
-	}
-
-	mean_time_to_happen = { days = 40 }
-
-	option = { #Accept (Get Annexed)
-		name = le_prussia.3.1
-		ai_chance = { factor = 50 }
-		if = {
-			limit = {
-				AND = {
-					country_exists = GER
-					NOT = { country_exists = PRS }
-				}
-			}
-			GER = { annex_country = { target = FROM transfer_troops = yes } }
-			else = {
-				PRS = { annex_country = { target = FROM transfer_troops = yes } }
-			}
-		}
-	}
-	option = { #Decline
-		name = le_prussia.3.3
-		ai_chance = { factor = 0 }
-		PRS = { create_wargoal = { type = annex_everything target = FROM } }
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = le_prussia.3.a
+		
 	}
 }
-
-country_event = { #Country gets puppeted
+country_event = { #Nationalists assassinate the King, seize power
 	id = le_prussia.4
 	title = le_prussia.4.t
 	desc = le_prussia.4.d
-	picture = GFX_report_event_hitler_parade
-
 	fire_only_once = yes
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 1 }
-
-	option = { #START THE WAR
+	
+	option = {
 		name = le_prussia.4.a
+		
 	}
 }
-
-country_event = { #THE BERLIN CONFERENCE
+country_event = { #The King steps down for unknown reasons
 	id = le_prussia.5
 	title = le_prussia.5.t
 	desc = le_prussia.5.d
-	picture = GFX_report_event_hitler_parade
-
 	fire_only_once = yes
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 1 }
-
-	option = { #Join The Confederation
+	option = {
 		name = le_prussia.5.a
-		ai_chance = { factor = 30 }
-		PRS = { annex_country = { target = ROOT transfer_troops = yes } }
-	}
-	option = { #Keep Independence
-		name = le_prussia.5.b
-		ai_chance = { factor = 10 }
-		PRS = { add_opinion_modifier = { target = ROOT modifier = DECLINED_BERLIN_CONFERENCE } }
+		
 	}
 }
-country_event = { #TRYOL REVOLT TO VENICE
+country_event = { #Threaten Northern States
 	id = le_prussia.6
 	title = le_prussia.6.t
 	desc = le_prussia.6.d
-	picture = GFX_report_event_hitler_parade
-	fire_only_once = yes
 	is_triggered_only = yes
-	immediate = {
-		VNC = { transfer_state = 39 }
-	}
-	option = { #Damn!
+	option = {
 		name = le_prussia.6.a
-		ai_chance = { factor = 30 }
+		ai_chance = {
+			factor = 75
+		}
+		PRS = { 
+			annex_country = {
+				target = ROOT
+				transfer_troops = no
+			} 
+		}
 	}
-	option = { #Attack Venice!
+	option = { #No
 		name = le_prussia.6.b
-		ai_chance = { factor = 20 }
-		declare_war_on = {
-		    target = VNC
-		    type = annex_everything
+		ai_chance = {
+			factor = 0
+		}
+		PRS = {
+			create_wargoal = {
+				type = annex_everything
+				target = ROOT
+			}
 		}
 	}
 }
-country_event = { #TRYOL REVOLT TO VENICE
+country_event = { 
 	id = le_prussia.7
 	title = le_prussia.7.t
 	desc = le_prussia.7.d
-	picture = GFX_report_event_hitler_parade
-	fire_only_once = yes
-	trigger = {
-		tag = AUS
-		AUS = { has_country_flag = ILLYRIAN_REVOLT }
-		NOT = { country_exists = CRO }
-		AUS = {
-			owns_state = 109
-			owns_state = 102
-			owns_state = 103
-			owns_state = 104
-		}
-	}
-	option = { #Relese Illyria
+	is_triggered_only = yes
+	option = {
 		name = le_prussia.7.a
-		ai_chance = { factor = 30 }
-		CRO = {
-			transfer_state = 104
-			transfer_state = 109
-			transfer_state = 103
-		}
-		puppet = CRO
-	}
-	option = { #Attack Venice!
-		name = le_prussia.7.b
-		ai_chance = { factor = 20 }
+		kill_country_leader = yes
 	}
 }
-country_event = { #Military Paride in Berlin
+country_event = { #Support The Prussians (GBR) / Embargo The Austrians
 	id = le_prussia.8
 	title = le_prussia.8.t
 	desc = le_prussia.8.d
-	picture = GFX_report_event_hitler_parade
-	fire_only_once = yes
 	is_triggered_only = yes
-	option = { #Good
+	option = { #Of Course!
 		name = le_prussia.8.a
-		ai_chance = { factor = 20 }
-		add_stability = 0.1
-		add_war_support = 0.25
+		PRS = { country_event = { id = le_prussia.9 } }
+		add_political_power = -100
+	}
+	option = { #Lets not get involved.
+		name = le_prussia.8.b
+		
 	}
 }
-country_event = { #Protection for Poznan
+country_event = { #Britain Supports Us!
 	id = le_prussia.9
 	title = le_prussia.9.t
 	desc = le_prussia.9.d
-	picture = GFX_report_event_hitler_parade
-	fire_only_once = yes
 	is_triggered_only = yes
-	option = { #Accept
+	option = { #We Knew it!
 		name = le_prussia.9.a
-		ai_chance = { factor = 20 }
-		PRS = {
-			transfer_state = 86
-			give_guarantee = POL
-		}
-	}
-	option = { #Decline
-		name = le_prussia.9.b
-		ai_chance = { factor = 20 }
-		PRS = { country_event = { id = le_prussia.10 days = 2}}
+		AUS = { country_event = { id = le_prussia.10 } }
 	}
 }
-country_event = { #Poland Denies Poznan Trade
+country_event = { #British Embargo of Austria
 	id = le_prussia.10
 	title = le_prussia.10.t
 	desc = le_prussia.10.d
-	picture = GFX_report_event_hitler_parade
-	fire_only_once = yes
 	is_triggered_only = yes
-	option = { #Countinue improving relations
+	option = { #Damn Them!
 		name = le_prussia.10.a
-		ai_chance = { factor = 20 }
-	}
-	option = { #Demand Poznan
-		name = le_prussia.10.b
-		ai_chance = { factor = 20 }
-		set_country_flag = PRS_POL_ENEMIES
-		complete_national_focus = PRS_DEMAND_POZNAN
+		add_timed_idea =  = { idea = aus_british_embargo days = 365 }
 	}
 }
-country_event = { #Prussia Demands Annexation
+country_event = { #The Hannover Problems
 	id = le_prussia.11
 	title = le_prussia.11.t
 	desc = le_prussia.11.d
-	picture = GFX_report_event_hitler_parade
-	fire_only_once = yes
 	is_triggered_only = yes
-	option = { #Accept
+	option = {
 		name = le_prussia.11.a
-		ai_chance = { factor = 20 }
-		PRS = {
-			annex_country = {
-    			target = ROOT
-    			transfer_troops = yes
-			}
-		}
+		GBR = { country_event = { id = le_prussia.28 }}
 	}
-	option = { #Deny
+	option = {
 		name = le_prussia.11.b
-		ai_chance = { factor = 2 }
-		PRS = {
-			create_wargoal = {
-			    type = annex_everything
-			    target = ROOT
+		random_list = {
+			75 = {
+				country_event = { id = le_prussia.12 }
+			}
+			25 = {
+				country_event = { id = le_prussia.13 }
 			}
 		}
 	}
 }
-country_event = { #Prussia Asks for Alliance
+country_event = { #Successful Assassination
 	id = le_prussia.12
 	title = le_prussia.12.t
 	desc = le_prussia.12.d
-	picture = GFX_report_event_hitler_parade
-	fire_only_once = yes
 	is_triggered_only = yes
-	option = { #Accept
-		name = le_prussia.12.a
-		ai_chance = { factor = 20 }
-		give_guarantee = PRS
-		PRS = { give_guarantee = ROOT }
+	immediate = {
+		
 	}
-	option = { #Deny
-		name = le_prussia.12.b
-		ai_chance = { factor = 2 }
+	option = {
+		name = le_prussia.12.a
+		country_event = { id = le_prussia.14 }
+		PRS = { complete_national_focus = PRS_PRUSSIAN_SPONSORED_ASSASSINATIONS }
 	}
 }
-country_event = { #Prussian Sponsored Commonwealth
+country_event = { #Assassination of Hannover Ruler Failed!
 	id = le_prussia.13
 	title = le_prussia.13.t
 	desc = le_prussia.13.d
-	picture = GFX_report_event_hitler_parade
-	fire_only_once = yes
 	is_triggered_only = yes
-	option = { #Accept
+	option = { #Britain is gonna be pissed
 		name = le_prussia.13.a
-		ai_chance = { factor = 10 }
-		POL = {
-			annex_country = {
-			    target = ROOT
-			    transfer_troops = yes
-			}
-		}
-	}
-	option = { #Compromise with alliance
-		name = le_prussia.13.b
-		ai_chance = { factor = 10 }
-		give_guarantee = PRS
-		give_guarantee = POL
-		PRS = { country_event = { id = le_prussia.14 days = 3 } }
-	}
-	option = { #Deny
-		name = le_prussia.13.c
-		ai_chance = { factor = 10 }
-		PRS = { country_event = { id = le_prussia.15 days = 3 } }
+		add_stability = -0.1
+		
 	}
 }
-country_event = { #Lithuania Compromises
+country_event = { #Hannover breaks into chaos.
 	id = le_prussia.14
 	title = le_prussia.14.t
 	desc = le_prussia.14.d
-	picture = GFX_report_event_hitler_parade
-	fire_only_once = yes
 	is_triggered_only = yes
-	option = { #Accept their compromise
-		name = le_prussia.14.a
-		ai_chance = { factor = 10 }
-		give_guarantee = LIT
-		POL = { give_guarantee = LIT }
+	immediate = {
+		hidden_effect = {
+			HAN = { country_event = { id = le_prussia.47 } }
+			HAN = { end_puppet = yes }
+			kill_country_leader = yes
+		}
 	}
-	option = { #Give Poland the Order to Invade
-		name = le_prussia.13.b
-		ai_chance = { factor = 5 }
-		POL = {
-			create_wargoal = {
-			    type = annex_everything
-			    target = LIT
+	option = { #Time to strike
+		name = le_prussia.14.a
+		create_wargoal = { type = annex_everything target = HAN }
+		HAN = {
+			start_civil_war = {
+				ruling_party = royalism
+				ideology = absolutism
+				size = 0.5
+				only_own_territory = no
+				capital = 770
+				states = { 770 }
+				keep_unit_leaders = {}
 			}
+		}
+		random_country = {
+			limit = {
+				original_tag = HAN
+				has_government = absolutism
+			}
+			set_cosmetic_tag = Hannover_Revolutionaries
+			PRS = { create_wargoal = { type = annex_everything target = PREV } }
 		}
 	}
 }
-country_event = { #Lithuania Denies
+country_event = { #Prussia Depands Holstein
 	id = le_prussia.15
 	title = le_prussia.15.t
 	desc = le_prussia.15.d
-	picture = GFX_report_event_hitler_parade
 	fire_only_once = yes
 	is_triggered_only = yes
-	option = { #Accept This
+	option = { #Give up Holstein
 		name = le_prussia.15.a
-		ai_chance = { factor = 20 }
-	}
-	option = { #Give Poland the Order to Invade
-		name = le_prussia.15.b
-		ai_chance = { factor = 10 }
-		POL = {
-			create_wargoal = {
-			    type = annex_everything
-			    target = LIT
-			}
+		ai_chance = {
+			factor = 75
 		}
+		PRS = { country_event = { id = le_prussia.16 }}
+	}
+	option = { #Refuse
+		name = le_prussia.15.b
+		ai_chance = {
+			factor = 15
+		}
+		PRS = { country_event = { id = le_prussia.17 }}
 	}
 }
-country_event = { #Prussia Demands Poznan
+country_event = { #Prussia Depands Holstein
 	id = le_prussia.16
 	title = le_prussia.16.t
 	desc = le_prussia.16.d
-	picture = GFX_report_event_hitler_parade
 	fire_only_once = yes
 	is_triggered_only = yes
-	option = { #Cede Poznan
+	option = { #Give up Hannover
 		name = le_prussia.16.a
-		ai_chance = { factor = 20 }
-		PRS = { transfer_state = 86 }
-	}
-	option = { #Prepare for War
-		name = le_prussia.16.b
-		ai_chance = { factor = 5 }
-		PRS = {
-			create_wargoal = {
-			    type = annex_everything
-			    target = POL
-			}
-		}
+		transfer_state = 785
 	}
 }
-country_event = { #Prussia Demands Lower Strip
+country_event = { #Prussia Depands Holstein
 	id = le_prussia.17
 	title = le_prussia.17.t
 	desc = le_prussia.17.d
-	picture = GFX_report_event_hitler_parade
 	fire_only_once = yes
 	is_triggered_only = yes
-	option = { #Cede Poznan
+	option = { #Give up Hannover
 		name = le_prussia.17.a
-		ai_chance = { factor = 20 }
-		PRS = { transfer_state = 839 }
-	}
-	option = { #Prepare for War
-		name = le_prussia.17.b
-		ai_chance = { factor = 10 }
-		PRS = {
-			create_wargoal = {
-			    type = annex_everything
-			    target = POL
-			}
+		create_wargoal = {
+			type = annex_everything
+			target = DEN
 		}
 	}
 }
-country_event = { #Prussia Demands Subjugation
+
+country_event = { #Prussia Depands Poznan
 	id = le_prussia.18
 	title = le_prussia.18.t
 	desc = le_prussia.18.d
-	picture = GFX_report_event_hitler_parade
 	fire_only_once = yes
 	is_triggered_only = yes
-	option = { #Cede Poznan
+	option = { #Give up Holstein
 		name = le_prussia.18.a
-		ai_chance = { factor = 20 }
-		PRS = { puppet = ROOT }
+		PRS = { country_event = { id = le_prussia.19 }}
+		ai_chance = {
+			factor = 75
+		}
 	}
-	option = { #Prepare for War
-		name = le_prussia.18.b
-		ai_chance = { factor = 10 }
-		PRS = {
+	option = { #Refuse
+		name = le_prussia.18.a
+		ai_chance = {
+			factor = 10
+		}
+		PRS = { country_event = { id = le_prussia.20 }}
+	}
+}
+country_event = { #Prussia Depands Holstein
+	id = le_prussia.19
+	title = le_prussia.19.t
+	desc = le_prussia.19.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Give up Hannover
+		name = le_prussia.19.a
+		transfer_state = 86
+	}
+}
+country_event = { #Prussia Depands Holstein
+	id = le_prussia.20
+	title = le_prussia.20.t
+	desc = le_prussia.20.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Give up Hannover
+		name = le_prussia.20.a
+		create_wargoal = {
+			type = annex_everything
+			target = POL
+		}
+	}
+}
+country_event = { #Prussia Berlin Conference
+	id = le_prussia.21
+	title = le_prussia.21.t
+	desc = le_prussia.21.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Lets see how the meeting goes.
+		name = le_prussia.21.a
+		# North German confederation is created. Depending on past choices different things may happen. If Britain gave hannover they will give their support for a German Nation under Prussia, causing some southern states to join (All but bavaria mostly) some lands will go to bavaria and France will Annex Burgundy. Austria will be in no position to intervene and the only obsticle is Bavaria. If Wilhelm rules Prussia then Prussia will get more units from the annexed countries. If the nationalists take over then there is a possibility of a nationalist coup in Bohemia upon forming the confederation.
+		custom_effect_tooltip = berlin_conference_event_tt
+		hidden_effect = { #Join the Confederation?
+			SAX = { country_event = { id = le_prussia.22 }}
+			ANH = { country_event = { id = le_prussia.22 }}
+			BRU = { country_event = { id = le_prussia.22 }}
+			PAD = { country_event = { id = le_prussia.22 }}
+			BRE = { country_event = { id = le_prussia.22 }}
+			OLD = { country_event = { id = le_prussia.22 }}
+			EFR = { country_event = { id = le_prussia.22 }}
+			MUN = { country_event = { id = le_prussia.22 }}
+			RAV = { country_event = { id = le_prussia.22 }}
+			PAD = { country_event = { id = le_prussia.22 }}
+			PYR = { country_event = { id = le_prussia.22 }}
+			KLE = { country_event = { id = le_prussia.22 }}
+			JUL = { country_event = { id = le_prussia.22 }}
+			CLG = { country_event = { id = le_prussia.22 }}
+			HRE = { country_event = { id = le_prussia.22 }}
+			HES = { country_event = { id = le_prussia.22 }}
+			NAS = { country_event = { id = le_prussia.22 }}
+			FUL = { country_event = { id = le_prussia.22 }}
+			FRN = { country_event = { id = le_prussia.22 }}
+			TRI = { country_event = { id = le_prussia.22 }}
+			NSA = { country_event = { id = le_prussia.22 }}
+			FUL = { country_event = { id = le_prussia.22 }}
+			THU = { country_event = { id = le_prussia.22 }}
+		}
+		if = {
+			limit = {
+				has_global_flag = GBR_GAVE_HANNOVER
+			}
+			GBR = { country_event = { id = le_prussia.8 }} #Support The Prussians
+		}
+		if = {
+			limit = {
+				has_completed_focus = PRS_NATIONALIST_MOVEMENT
+			}
+			random_list = {
+				60 = { BOH = { country_event = { id = le_prussia.8 }}} #Nationalist Coup
+				40 = {}
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = PRS_LOVE_LIVE_KING_WILHELM
+			}
+			country_event = { id = le_prussia.45 }} #Load Extra Units
+		}
+		else = {
+			country_event = { id = le_prussia.46 }} #Load Normal Units
+		}
+	}
+}
+country_event = { #The Berlin Conference (Northern States)
+	id = le_prussia.22
+	title = le_prussia.22.t
+	desc = le_prussia.22.d
+	is_triggered_only = yes
+	option = { #Support the Confederation
+		name = le_prussia.22.a
+		ai_chance = { factor = 100 }
+		PRS = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = { #Decline the Confederation
+		name = le_prussia.22.a
+		ai_chance = { factor = 0 }
+		PRS = { create_wargoal = { type = annex_everything target = ROOT } }
+	}
+}
+country_event = { #The SOUTH German Confederation
+	id = le_prussia.23
+	title = le_prussia.23.t
+	desc = le_prussia.23.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Approach Austria
+		name = le_prussia.23.a
+		ai_chance = { factor = 50 }
+		AUS = { country_event = { id = le_prussia.48 }}
+	}
+	option = { #Form The Confederation
+		name = le_prussia.23.b
+		ai_chance = { factor = 100 }
+		PSU = { country_event = { id = le_prussia.24 }}
+		BAM = { country_event = { id = le_prussia.24 }}
+		NUR = { country_event = { id = le_prussia.24 }}
+		THU = { country_event = { id = le_prussia.24 }}
+		WRZ = { country_event = { id = le_prussia.24 }}
+		FUL = { country_event = { id = le_prussia.24 }}
+		MAI = { country_event = { id = le_prussia.24 }}
+		FRN = { country_event = { id = le_prussia.24 }}
+		PLT = { country_event = { id = le_prussia.24 }}
+		SPY = { country_event = { id = le_prussia.24 }}
+		WUR = { country_event = { id = le_prussia.24 }}
+		BAD = { country_event = { id = le_prussia.24 }}
+		FUS = { country_event = { id = le_prussia.24 }}
+		MEM = { country_event = { id = le_prussia.24 }}
+		LND = { country_event = { id = le_prussia.24 }}
+		AUG = { country_event = { id = le_prussia.24 }}
+		ULM = { country_event = { id = le_prussia.24 }}
+		HUL = { country_event = { id = le_prussia.24 }}
+		BAV = { set_cosmetic_tag = SOUTH_GERMAN_CONFEDERATION }
+		PRS = { country_event = { id = le_prussia.55 }}
+	}
+	option = { #Face Prussia
+		name = le_prussia.23.c
+		ai_chance = { factor = 25 }
+		PRS = { country_event = { id = le_prussia.51 }}
+	}
+}
+country_event = { #Join the south german confederation
+	id = le_prussia.24
+	title = le_prussia.24.t
+	desc = le_prussia.24.d
+	is_triggered_only = yes
+	option = { #Give up Hannover
+		name = le_prussia.24.a
+		ai_chance = { factor = 75 }
+		BAV = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = { #Give up Hannover
+		name = le_prussia.24.a
+		ai_chance = { factor = 0 }
+		BAV = {
 			create_wargoal = {
-			    type = annex_everything
-			    target = LIT
+				type = annex_everything
+				target = ROOT
 			}
 		}
 	}
 }
-country_event = { #TRYOL REVOLT TO VENICE
-	id = le_prussia.19
-	title = le_prussia.19.t
-	desc = le_prussia.19.d
-	picture = GFX_report_event_hitler_parade
+country_event = { #Demand Southern Germany
+	id = le_prussia.25
+	title = le_prussia.25.t
+	desc = le_prussia.25.d
+	is_triggered_only = yes
+	option = { #Back Down
+		name = le_prussia.25.a
+		ai_chance = {
+			factor = 75
+		}
+		PSU = { country_event = { id = le_prussia.26 }}
+		BAM = { country_event = { id = le_prussia.26 }}
+		NUR = { country_event = { id = le_prussia.26 }}
+		THU = { country_event = { id = le_prussia.26 }}
+		WRZ = { country_event = { id = le_prussia.26 }}
+		FUL = { country_event = { id = le_prussia.26 }}
+		MAI = { country_event = { id = le_prussia.26 }}
+		FRN = { country_event = { id = le_prussia.26 }}
+		PLT = { country_event = { id = le_prussia.26 }}
+		SPY = { country_event = { id = le_prussia.26 }}
+		WUR = { country_event = { id = le_prussia.26 }}
+		BAD = { country_event = { id = le_prussia.26 }}
+		FUS = { country_event = { id = le_prussia.26 }}
+		MEM = { country_event = { id = le_prussia.26 }}
+		LND = { country_event = { id = le_prussia.26 }}
+		AUG = { country_event = { id = le_prussia.26 }}
+		ULM = { country_event = { id = le_prussia.26 }}
+		HUL = { country_event = { id = le_prussia.26 }}
+	}
+	option = { #Face Prussia
+		name = le_prussia.25.a
+		ai_chance = {
+			factor = 25
+		}
+		ROOT = {
+			create_wargoal = {
+				type = annex_everything
+				target = PRS
+			}
+		}
+	}
+}
+country_event = { #Demand Southern Germany
+	id = le_prussia.26
+	title = le_prussia.26.t
+	desc = le_prussia.26.d
+	is_triggered_only = yes
+	option = { #Accept Prussian Annexation
+		name = le_prussia.25.a
+		ai_chance = {
+			factor = 125
+			modifier = {
+				factor = -100
+				AND = {
+					original_tag = BAV
+					OR = {
+						NOT = { has_government = absolutism }
+						NOT = { has_government = royalism }
+						NOT = { has_government = rexism }
+					}
+				}
+			}
+		}
+	}
+	option = { #Deny
+		name = le_prussia.26.a
+		ai_chance = {
+			factor = 5
+		}
+		PRS = {
+			create_wargoal = {
+				type = annex_everything
+				target = ROOT
+			}
+		}
+	}
+}
+country_event = { #Assassinate Prince Wilhelm
+	id = le_prussia.27
+	title = le_prussia.27.t
+	desc = le_prussia.27.d
+	is_triggered_only = yes
+	option = { #Accept Prussian Annexation
+		name = le_prussia.27.a
+		add_stability = 0.05
+	}
+}
+country_event = { #Prussia wants Hannover
+	id = le_prussia.28
+	title = le_prussia.28.t
+	desc = le_prussia.28.d
+	is_triggered_only = yes
+	option = { #Give them Hannover
+		name = le_prussia.28.a
+		PRS = { country_event = { id = le_prussia.29 }}
+		set_global_flag = GBR_GAVE_HANNOVER
+	}
+	option = { #Allow them to Purchase Hannover
+		name = le_prussia.28.b
+		PRS = { country_event = { id = le_prussia.30 }}
+	}
+	option = { #Force Prussia to limit their navy
+		name = le_prussia.11.b
+		PRS = { country_event = { id = le_prussia.31 }}
+	}
+}
+country_event = { #Britain gives us Hannover
+	id = le_prussia.29
+	title = le_prussia.29.t
+	desc = le_prussia.29.d
+	is_triggered_only = yes
+	option = { #Cool
+		name = le_prussia.29.a
+		PRS = { annex_country = { target = HAN transfer_troops = yes } }
+		PRS = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+	}
+}
+country_event = { #Britain offers to sell Hannover
+	id = le_prussia.30
+	title = le_prussia.30.t
+	desc = le_prussia.30.d
+	is_triggered_only = yes
+	option = { #Accept
+		name = le_prussia.30.a
+		PRS = { annex_country = { target = HAN transfer_troops = yes } }
+		PRS = { add_ideas = { prs_purchased_hannover }}
+		PRS = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+	}
+	option = { #Counter-Offer
+		name = le_prussia.30.b
+		GBR = { country_event = { id = le_prussia.32 }}
+	}
+	option = { #Decline and Resort to Espionage
+		name = le_prussia.30.c
+		random_list = {
+			75 = {
+				country_event = { id = le_prussia.12 }
+			}
+			25 = {
+				country_event = { id = le_prussia.13 }
+			}
+		}
+	}
+}
+country_event = { #Britain Wants us to Limit our Navy
+	id = le_prussia.31
+	title = le_prussia.31.t
+	desc = le_prussia.31.d
+	is_triggered_only = yes
+	option = { #Accept
+		name = le_prussia.31.a
+		PRS = { annex_country = { target = HAN transfer_troops = yes } }
+		PRS = { add_ideas = { prs_limited_navy }}
+		PRS = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+	}
+	option = { #Counter-Offer
+		name = le_prussia.31.b
+		GBR = { country_event = { id = le_prussia.33 }}
+	}
+	option = { #Decline and Resort to Espionage
+		name = le_prussia.30.c
+		random_list = {
+			75 = {
+				country_event = { id = le_prussia.12 }
+			}
+			25 = {
+				country_event = { id = le_prussia.13 }
+			}
+		}
+	}
+}
+country_event = { #Prusia sends a counter offer for purchase
+	id = le_prussia.32
+	title = le_prussia.32.t
+	desc = le_prussia.32.d
+	is_triggered_only = yes
+	option = { #Enforce Prior Deal
+		name = le_prussia.32.a
+		PRS = { country_event = { id = le_prussia.34 }}
+	}
+	option = { #Accept Counter Offer
+		name = le_prussia.32.b
+		PRS = { country_event = { id = le_prussia.35 }}
+	}
+}
+country_event = { #Prusia sends a counter offer for limiting navy
+	id = le_prussia.33
+	title = le_prussia.33.t
+	desc = le_prussia.33.d
+	is_triggered_only = yes
+	option = { #Enforce Prior Deal
+		name = le_prussia.33.a
+		PRS = { country_event = { id = le_prussia.36 }}
+	}
+	option = { #Accept Counter Offer
+		name = le_prussia.33.b
+		PRS = { country_event = { id = le_prussia.37 }}
+	}
+}
+country_event = { #Britain enforces old deal
+	id = le_prussia.34
+	title = le_prussia.34.t
+	desc = le_prussia.34.d
+	is_triggered_only = yes
+	option = { #Accept Prior Deal
+		name = le_prussia.34.a
+		PRS = { annex_country = { target = HAN transfer_troops = yes } }
+		PRS = { add_ideas = { prs_purchased_hannover }}
+		PRS = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+	}
+	option = { #Resort to Espionage
+		name = le_prussia.34.b
+		random_list = {
+			75 = {
+				country_event = { id = le_prussia.12 }
+			}
+			25 = {
+				country_event = { id = le_prussia.13 }
+			}
+		}
+	}
+}
+country_event = { #Britain accepts counter offer
+	id = le_prussia.35
+	title = le_prussia.35.t
+	desc = le_prussia.35.d
+	is_triggered_only = yes
+	option = { #Accept Prior Deal
+		name = le_prussia.35.a
+		PRS = { annex_country = { target = HAN transfer_troops = yes } }
+		PRS = { add_ideas = { prs_purchased_hannover_counter }}
+		PRS = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+	}
+}
+
+country_event = { #Britain enforces old deal
+	id = le_prussia.36
+	title = le_prussia.36.t
+	desc = le_prussia.36.d
+	is_triggered_only = yes
+	option = { #Accept Prior Deal
+		name = le_prussia.36.a
+		PRS = { annex_country = { target = HAN transfer_troops = yes } }
+		PRS = { add_ideas = { prs_limited_navy }}
+		PRS = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+	}
+	option = { #Resoft to Espionage
+		name = le_prussia.36.b
+		random_list = {
+			75 = {
+				country_event = { id = le_prussia.12 }
+			}
+			25 = {
+				country_event = { id = le_prussia.13 }
+			}
+		}
+	}
+}
+country_event = { #Britain accepts counter offer
+	id = le_prussia.37
+	title = le_prussia.37.t
+	desc = le_prussia.37.d
+	is_triggered_only = yes
+	option = { #Accept Prior Deal
+		name = le_prussia.37.a
+		PRS = { annex_country = { target = HAN transfer_troops = yes } }
+		PRS = { add_ideas = { prs_limited_navy_counter }}
+		PRS = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+	}
+}
+
+country_event = { #Prussia Occupies Poznan
+	id = le_prussia.38
+	title = le_prussia.38.t
+	desc = le_prussia.38.d
+	fire_only_once = yes
+	trigger = {
+		PRS = { controls_state = 86 }
+		original_tag = POL
+	}
+	option = { #Send a Peace Deal to Prussia
+		name = le_prussia.38.a
+		PRS = { country_event = { id = le_prussia.40 }}
+	}
+}
+
+country_event = { #Prussia Occupies Warsaw
+	id = le_prussia.39
+	title = le_prussia.39.t
+	desc = le_prussia.39.d
+	fire_only_once = yes
+	trigger = {
+		AND = {
+			PRS = { controls_state = 10 }
+			original_tag = POL
+		}
+	}
+	option = { #Send a Peace Deal to Prussia
+		name = le_prussia.39.a
+		PRS = { country_event = { id = le_prussia.40 }}
+	}
+}
+
+country_event = { #Poland Surrenders
+	id = le_prussia.40
+	title = le_prussia.40.t
+	desc = le_prussia.40.d
 	fire_only_once = yes
 	is_triggered_only = yes
-	immediate = {
-		CRO = { transfer_state = 39 }
-		release_puppet = CRO
-	}
-	option = { #Damn!
-		name = le_prussia.19.a
-		ai_chance = { factor = 30 }
-	}
-	option = { #Attack Venice!
-		name = le_prussia.1.b
-		ai_chance = { factor = 20 }
-		declare_war_on = {
-		    target = CRO
-		    type = annex_everything
+	option = { #Accept The Transfer of Poznan
+		name = le_prussia.40.a
+		white_peace = {
+			tag = POL
+			message = POL_PRS_WHITE_PEACE
 		}
-		set_country_flag = ILLYRIAN_REVOLT
+		hidden_effect = { transfer_state = 86 }
+	}
+}
+
+country_event = { #Prussia Occupies Holstein
+	id = le_prussia.41
+	title = le_prussia.41.t
+	desc = le_prussia.41.d
+	fire_only_once = yes
+	trigger = {
+		PRS = { controls_state = 1018 }
+		PRS = { controls_state = 785 }
+		original_tag = DEN
+	}
+	option = { #Send a Peace Deal to Prussia
+		name = le_prussia.41.a
+		PRS = { country_event = { id = le_prussia.42 }}
+	}
+}
+
+country_event = { #Denmark Surrenders
+	id = le_prussia.42
+	title = le_prussia.42.t
+	desc = le_prussia.42.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Accept The Peace Deal
+		name = le_prussia.42.a
+		white_peace = {
+			tag = DEN
+			message = DEN_PRS_WHITE_PEACE
+		}
+		hidden_effect = { 
+			transfer_state = 1018
+			transfer_state = 785
+		}
+	}
+}
+
+country_event = { #Bohemian Nationalist Influence
+	id = le_prussia.43
+	title = le_prussia.43.t
+	desc = le_prussia.43.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Uh Oh
+		name = le_prussia.42.a
+		add_popularity = { ideology = labryscism popularity  = 0.15 }
+		hidden_effect = { country_event = { id = le_prussia.44 days = 7 } }
+	}
+}
+country_event = { #Bohemian Nationalist Coup
+	id = le_prussia.44
+	title = le_prussia.44.t
+	desc = le_prussia.44.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #this is most unfortunate.
+		name = le_prussia.44.a
+		set_politics = { ruling_party = labryscism }
+	}
+}
+country_event = { #Wilhelm Extra Units
+	id = le_prussia.45
+	title = le_prussia.45.t
+	desc = le_prussia.45.d
+	is_triggered_only = yes
+	option = { #this is most unfortunate.
+		name = le_prussia.45.a
+		load_oob = "PRS_Wilhelm_Conference"
+	}
+}
+country_event = { #Militias Join the Army
+	id = le_prussia.46
+	title = le_prussia.46.t
+	desc = le_prussia.46.d
+	is_triggered_only = yes
+	option = { #this is most unfortunate.
+		name = le_prussia.46.a
+		load_oob = "PRS_Conference"
+	}
+}
+country_event = { #Militias Rise up in Hannover
+	id = le_prussia.47
+	title = le_prussia.47.t
+	desc = le_prussia.47.d
+	is_triggered_only = yes
+	option = { #this is most unfortunate.
+		name = le_prussia.47.a
+		load_oob = "HAN_REVOLUTION"
+	}
+}
+country_event = { #Bavaria asks for our support.
+	id = le_prussia.48
+	title = le_prussia.48.t
+	desc = le_prussia.48.d
+	is_triggered_only = yes
+	option = { #Guarantee Bavaria
+		name = le_prussia.48.a
+		give_guarantee = BAV
+		BAV = { country_event = { id = le_prussia.49 }}
+	}
+	option = { #Decline German Involvement
+		name = le_prussia.48.a
+		BAV = { country_event = { id = le_prussia.50 }}
+	}
+}
+country_event = { #Austria Accepts our Support
+	id = le_prussia.49
+	title = le_prussia.49.t
+	desc = le_prussia.49.d
+	is_triggered_only = yes
+	option = { #Good
+		name = le_prussia.49.a
+		add_stability = 0.10
+	}
+}
+country_event = { #Austria Declines our Support
+	id = le_prussia.50
+	title = le_prussia.50.t
+	desc = le_prussia.50.d
+	is_triggered_only = yes
+	option = { #Form the Confederation
+		name = le_prussia.50.a
+		PSU = { country_event = { id = le_prussia.24 }}
+		BAM = { country_event = { id = le_prussia.24 }}
+		NUR = { country_event = { id = le_prussia.24 }}
+		THU = { country_event = { id = le_prussia.24 }}
+		WRZ = { country_event = { id = le_prussia.24 }}
+		FUL = { country_event = { id = le_prussia.24 }}
+		MAI = { country_event = { id = le_prussia.24 }}
+		FRN = { country_event = { id = le_prussia.24 }}
+		PLT = { country_event = { id = le_prussia.24 }}
+		SPY = { country_event = { id = le_prussia.24 }}
+		WUR = { country_event = { id = le_prussia.24 }}
+		BAD = { country_event = { id = le_prussia.24 }}
+		FUS = { country_event = { id = le_prussia.24 }}
+		MEM = { country_event = { id = le_prussia.24 }}
+		LND = { country_event = { id = le_prussia.24 }}
+		AUG = { country_event = { id = le_prussia.24 }}
+		ULM = { country_event = { id = le_prussia.24 }}
+		HUL = { country_event = { id = le_prussia.24 }}
+		BAV = {	set_cosmetic_tag = SOUTH_GERMAN_CONFEDERATION }
+		PRS = { country_event = { id = le_prussia.55 }}
+	}
+	option = { #Approach Prussia
+		name = le_prussia.50.b
+		PRS = { country_event = { id = le_prussia.51 }}
+	}
+}
+country_event = { #Bavaria wants to make a deal, Independance in return for the south
+	id = le_prussia.51
+	title = le_prussia.51.t
+	desc = le_prussia.51.d
+	is_triggered_only = yes
+	option = { #Accept
+		name = le_prussia.51.a
+		PSU = { country_event = { id = le_prussia.24 }}
+		BAM = { country_event = { id = le_prussia.22 }}
+		NUR = { country_event = { id = le_prussia.22 }}
+		THU = { country_event = { id = le_prussia.22 }}
+		WRZ = { country_event = { id = le_prussia.22 }}
+		FUL = { country_event = { id = le_prussia.22 }}
+		MAI = { country_event = { id = le_prussia.22 }}
+		FRN = { country_event = { id = le_prussia.22 }}
+		PLT = { country_event = { id = le_prussia.22 }}
+		SPY = { country_event = { id = le_prussia.22 }}
+		WUR = { country_event = { id = le_prussia.22 }}
+		BAD = { country_event = { id = le_prussia.22 }}
+		FUS = { country_event = { id = le_prussia.22 }}
+		MEM = { country_event = { id = le_prussia.22 }}
+		LND = { country_event = { id = le_prussia.22 }}
+		AUG = { country_event = { id = le_prussia.22 }}
+		ULM = { country_event = { id = le_prussia.22 }}
+		HUL = { country_event = { id = le_prussia.22 }}
+	}
+	option = { #Counter Offer
+		name = le_prussia.51.a
+		add_stability = 0.10
+	}
+	option = { #Decline
+		name = le_prussia.51.a
+		add_war_support = 0.10
+	}
+}
+country_event = { #Prussians Counter Offer
+	id = le_prussia.52
+	title = le_prussia.52.t
+	desc = le_prussia.52.d
+	is_triggered_only = yes
+	option = { #Fine.
+		name = le_prussia.52.a
+		PRS = { country_event = { id = le_prussia.53 }}
+	}
+	option = { #No
+		name = le_prussia.52.a
+		PRS = { country_event = { id = le_prussia.54 }}
+	}
+}
+country_event = { #Bavarians Accept Counter Offer
+	id = le_prussia.53
+	title = le_prussia.53.t
+	desc = le_prussia.53.d
+	is_triggered_only = yes
+	option = { #Great!
+		name = le_prussia.53.a
+		PSU = { country_event = { id = le_prussia.24 }}
+		BAM = { country_event = { id = le_prussia.22 }}
+		NUR = { country_event = { id = le_prussia.22 }}
+		THU = { country_event = { id = le_prussia.22 }}
+		WRZ = { country_event = { id = le_prussia.22 }}
+		FUL = { country_event = { id = le_prussia.22 }}
+		MAI = { country_event = { id = le_prussia.22 }}
+		FRN = { country_event = { id = le_prussia.22 }}
+		PLT = { country_event = { id = le_prussia.22 }}
+		SPY = { country_event = { id = le_prussia.22 }}
+		WUR = { country_event = { id = le_prussia.22 }}
+		BAD = { country_event = { id = le_prussia.22 }}
+		FUS = { country_event = { id = le_prussia.22 }}
+		MEM = { country_event = { id = le_prussia.22 }}
+		LND = { country_event = { id = le_prussia.22 }}
+		AUG = { country_event = { id = le_prussia.22 }}
+		ULM = { country_event = { id = le_prussia.22 }}
+		HUL = { country_event = { id = le_prussia.22 }}
+		puppet = BAV
+	}
+}
+country_event = { #Bavarians Decline Counter Offer
+	id = le_prussia.54
+	title = le_prussia.54.t
+	desc = le_prussia.54.d
+	is_triggered_only = yes
+	option = { #Shame.
+		name = le_prussia.54.a
+		add_war_support = 0.10
+	}
+}
+country_event = { #Provinces defect to Bavaria!
+	id = le_prussia.55
+	title = le_prussia.55.t
+	desc = le_prussia.55.d
+	is_triggered_only = yes
+	option = { #Shame.
+		name = le_prussia.55.a
+		BAV = {
+			transfer_state = 799
+			transfer_state = 800
+			transfer_state = 824
+		}
+	}
+}
+country_event = { #The Germans are getting too Strong!
+	id = le_prussia.56
+	title = le_prussia.56.t
+	desc = le_prussia.56.d
+	is_triggered_only = yes
+	option = { #Join France
+		name = le_prussia.55.a
+		if = {
+			limit = {
+				tag = ALS
+			}
+			transfer_state = 767
+		}
+		ai_chance = { factor 100 }
+		FRA = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = { #Stay Independent
+		name = le_prussia.55.a
+		ai_chance = { factor 0 }
+		FRA = { annex_country = { target = ROOT transfer_troops = yes } }
 	}
 }

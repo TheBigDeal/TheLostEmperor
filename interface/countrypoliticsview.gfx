@@ -1,10 +1,19 @@
 spriteTypes = {
 
+	
+	
 	spriteType = {
 		name = "GFX_economic_button"
 		texturefile = "gfx/interface/economic_button.dds"	
 	}	
-
+	spriteType = {
+		name = "GFX_economic_button_selected"
+		texturefile = "gfx/interface/economic_button_selected.dds"	
+	}
+	spriteType = {
+		name = "GFX_econ_view_bg"
+		texturefile = "gfx/interface/econ_view_bg.dds"	
+	}
 	#Autonomy Stuff
 
 	spriteType = {

@@ -9,8 +9,8 @@ division_template = {
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
         infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+		artillery = { x = 2 y = 1 }
+		artillery = { x = 2 y = 2 }
 	}
 	
 	support = {
@@ -62,31 +62,61 @@ units = {
 		name = "Infantry Division"
 		location = 6521
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.5
+		start_experience_factor = 1
+	}
+	division = {
+		name = "Infantry Division"
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 1
+	}
+	division = {
+		name = "Infantry Division"
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 1
 	}
 	division = {
 		name = "Sturmtroopers"
 		location = 6521
 		division_template = "Sturmtroopers"
-		start_experience_factor = 0.5
+		start_experience_factor = 1
 	}
 	division = {
 		name = "Sturmtroopers"
 		location = 6521
 		division_template = "Sturmtroopers"
-		start_experience_factor = 0.5
+		start_experience_factor = 1
+	}
+	division = {
+		name = "Sturmtroopers"
+		location = 6521
+		division_template = "Sturmtroopers"
+		start_experience_factor = 1
+	}
+	division = {
+		name = "Sturmtroopers"
+		location = 6521
+		division_template = "Sturmtroopers"
+		start_experience_factor = 1
+	}
+	division = {
+		name = "Sturmtroopers"
+		location = 6521
+		division_template = "Sturmtroopers"
+		start_experience_factor = 1
 	}
 	division = {
 		name = "Kavallerie-Brigade"
 		location = 6521
 		division_template = "Kavallerie-Brigade"
-		start_experience_factor = 0.5
+		start_experience_factor = 1
 	}
 	division = {
 		name = "Kavallerie-Brigade"
 		location = 6521
 		division_template = "Kavallerie-Brigade"
-		start_experience_factor = 0.5
+		start_experience_factor = 1
 	}
 	division = {
 		name = "Infanterie-Division"
@@ -151,9 +181,20 @@ units = {
 		division_template = "Sturmtroopers"
 		start_experience_factor = 0.5
 	}
-
+	division = {
+		name = "Sturmtroopers"
+		location = 6521
+		division_template = "Sturmtroopers"
+		start_experience_factor = 0.5
+	}
 	#MAGEDEBURG
 	#####################
+	division = {
+		name = "Infanterie-Division"
+		location = 3522
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
 	division = {
 		name = "Infanterie-Division"
 		location = 3522
@@ -172,7 +213,12 @@ units = {
 		division_template = "Sturmtroopers"
 		start_experience_factor = 0.5
 	}
-
+	division = {
+		name = "Sturmtroopers"
+		location = 6521
+		division_template = "Sturmtroopers"
+		start_experience_factor = 0.5
+	}
 
 	#ROSTOCK
 	#####################
@@ -197,7 +243,12 @@ units = {
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.4
 	}
-
+	division = {
+		name = "Infanterie-Division"
+		location = 6282
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.4
+	}
 	#BRESLAU
 	#####################
 	division = {

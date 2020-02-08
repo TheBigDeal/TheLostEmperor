@@ -1,0 +1,27 @@
+ability = {
+	gas_attack = {
+		name = GAS_ATTACK
+		desc = GAS_ATTACK_DESC
+		
+		sound_effect = command_power_ability_offensive
+		
+		type = army_leader
+		
+		allowed = {
+			#Allowed if stockpile has more than 500 Gas Cannisters
+			OWNER = { has_equipment = { cyanide_gas > 1000 } }
+		}
+		
+		cost = 0.00
+		duration = 168
+		
+		one_time_effect = {
+			ROOT = { set_country_flag = active_gas_attack }
+			custom_effect_tooltip = ABILITY_GAS_ATTACK_TOOLTIP
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

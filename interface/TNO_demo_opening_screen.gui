@@ -1,0 +1,93 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "TNO_TNO_demo_opening_screen_main"
+		size = { width = 600 height = 600 }
+		position = { x=690 y=300 }
+		moveable = yes
+		clipping = no
+
+		background = {
+			name = "BG"
+			quadTextureSprite= "GFX_TNO_opening_bg"
+		}
+
+		iconType = {
+			name = "posters"
+			spriteType ="GFX_TNO_opening_posters"
+			position = { x=-214 y=-6 }
+			allwaystransparent = yes
+		}
+		   
+		iconType = {
+			name = "Background"
+			spriteType ="GFX_TNO_opening_bg"
+			allwaystransparent = yes
+		}
+
+		containerWindowType = {
+			name = "TNO_TNO_demo_opening_screen_main"       
+			size = { width = 503 height = 505 }
+			position = { x=7 y=47 }
+			moveable = no
+			clipping = yes
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 3 left = 0 bottom = 3 right = 0}
+
+			background = {
+				name = "BG2"
+				quadTextureSprite= "GFX_TNO_opening_blank_bg"
+			}        
+
+			instantTextBoxType = {
+				name = "opening_title"
+				position = { x = 45 y = 55 }
+				font = "gothic_22"
+				borderSize = {x = 0 y = 0}
+				text = "TNO_OPENING_TITLE"	
+				maxWidth = 400
+				maxHeight = 200  
+				format = center
+			}
+   
+			instantTextBoxType = {
+				name = "opening_desc"
+				position = { x = 15 y = 95 }
+				font = "gothic_22"
+				borderSize = {x = 0 y = 0}
+				text = "TNO_OPENING_DESC"	
+				maxWidth = 470
+				#maxHeight = 1000
+				format = left
+			}
+		}
+
+		iconType = {
+			name = "banner"
+			spriteType ="GFX_TNO_opening_banner"
+			position = { x=-43 y=-257 }
+			allwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "TNO_opening_screen_button"
+			quadTextureSprite ="GFX_button_221x34"
+			buttonFont = "gothic_22"
+			#buttonText = "TNO_opening_screen_button"
+			position = { x=150 y=550 }
+
+		}
+
+		instantTextBoxType = {
+			name = "TNO_opening_screen_button_text"
+			position = { x = 165 y = 551 }
+			font = "gothic_22"
+			borderSize = {x = 0 y = 0}
+			text = "TNO_OPENING_SCREEN_BUTTON_TEXT"	
+			maxWidth = 200
+			maxHeight = 200
+			format = center
+			allwaystransparent = yes
+		}
+	}
+}

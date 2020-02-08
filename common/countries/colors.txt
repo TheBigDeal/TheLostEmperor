@@ -273,8 +273,8 @@ NAV = {
 	color_ui = rgb { 252 233 58 }
 }
 VRP = {
-	color = rgb { 62 63 140 }
-	color_ui = rgb { 62 63 140 }
+	color = rgb { 43 135 67 }
+	color_ui = rgb { 43 135 67 }
 }
 
 
@@ -373,7 +373,7 @@ PAR = {
 	color_ui = rgb { 128 202 129 }
 }
 PRS = {
-	color = rgb { 0 49 83 }
+	color = rgb { 20 69 103 }
 	color_ui = rgb { 0 49 83 }
 }
 TRN = {
@@ -777,12 +777,12 @@ MOR = {
 }
 
 MST = {
-	color = rgb { 244 197 66 }
-	color_ui = rgb { 244 197 66 }
+	color = rgb { 55 140 143 }
+	color_ui = rgb { 55 140 143 }
 }
 MCH = {
-	color = rgb { 243 255 119 }
-	color_ui = rgb { 243 255 119 }
+	color = rgb { 237 184 69 }
+	color_ui = rgb { 237 184 69 }
 }
 HLS = {
 	color = rgb { 226 138 79 }

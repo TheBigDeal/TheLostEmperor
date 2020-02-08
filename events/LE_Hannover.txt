@@ -1,0 +1,16 @@
+﻿###########################
+# German Events
+###########################
+
+add_namespace = le_hannover
+
+country_event = { #Militias Rise up in Hannover
+	id = le_hannover.1
+	title = le_hannover.1.t
+	desc = le_hannover.1.d
+	is_triggered_only = yes
+	option = { #this is most unfortunate.
+		name = le_hannover.1.a
+		load_oob = "HAN_REVOLUTION"
+	}
+}

@@ -1,0 +1,156 @@
+refresh_economy = {
+	################################
+	#             Gains            #
+	################################
+	set_variable = { total_gain = 0 }
+	#Population Taxes
+	##################
+	set_variable = { population_tax = 0 }
+    add_to_variable = { population_tax = max_manpower_k }
+	divide_variable = { var = population_tax value = 40 }
+	round_variable = population_tax
+	add_to_variable = { total_gain = population_tax }
+	#Industry Taxes
+	##################
+	set_variable = { industry_tax = num_of_factories }
+	multiply_variable = { industry_tax = 10 }
+	add_to_variable = { total_gain = industry_tax }
+	
+	#MODIFIERS, LAWS AND FOCUSES
+	###############################
+	set_variable = { law_gain_tax = 0 }
+	add_to_variable = { law_gain_tax = law_1_only_underground_var }
+	add_to_variable = { total_gain = law_gain_tax }
+	
+	#Trade
+	#################
+	
+	#SET PRICES
+	#################
+	#FOOD
+	set_variable = { food_price = resource_exported@food } # $1
+	divide_variable = { var = food_price value = 6 } # $0.16
+	#STEEL
+	set_variable = { steel_price = resource_exported@steel } # $1
+	divide_variable = { var = steel_price value = 4 } # $0.25
+	#OIL
+	set_variable = { oil_price = resource_exported@oil } # $1
+	divide_variable = { var = oil_price value = 2 } # $0.5
+	#ALUMINIUM
+	set_variable = { aluminium_price = resource_exported@aluminium } # $1
+	divide_variable = { var = aluminium_price value = 4 } # $0.25
+	#TUNGSTEN
+	set_variable = { tungsten_price = resource_exported@tungsten } # $1
+	divide_variable = { var = tungsten_price value = 4 } # $0.25
+	#RUBBER
+	set_variable = { rubber_price = resource_exported@rubber } # $1
+	divide_variable = { var = rubber_price value = 4 } # $0.25
+	#CHROMIUM
+	set_variable = { chromium_price = resource_exported@chromium } # $1
+	divide_variable = { var = chromium_price value = 4 } # $0.25
+			
+	add_to_variable = { total_gain_export = food_price }
+	add_to_variable = { total_gain_export = steel_price }
+	add_to_variable = { total_gain_export = oil_price }
+	add_to_variable = { total_gain_export = aluminium_price }
+	add_to_variable = { total_gain_export = tungsten_price }
+	add_to_variable = { total_gain_export = rubber_price }
+	add_to_variable = { total_gain_export = chromium_price }
+			
+	add_to_variable = { total_gain = total_gain_export }
+	set_variable = { current_money_rate = total_gain }
+			
+	#################################
+	#             Losses            #
+	#################################
+			
+	#Army Spending
+	##################
+	set_variable = { army_spending = num_battalions }
+	multiply_variable = { army_spending = 3 }
+	#Infrastructure Spending
+	##################
+	set_variable = { infrastructure_spending = num_controlled_states }
+	multiply_variable = { infrastructure_spending = 10 }
+	#MODIFIERS, LAWS AND FOCUSES
+	###############################
+	set_variable = { law_loss_tax = 0 }
+	subtract_from_variable = { law_loss_tax = law_1_only_underground_var }
+	subtract_from_variable = { law_loss_tax = law_1_harrassment_var }
+	subtract_from_variable = { law_loss_tax = law_1_gerrymandering_var }
+	subtract_from_variable = { law_loss_tax = law_1_open_ballots_var }
+	subtract_from_variable = { law_loss_tax = law_1_confidential_ballots_var }
+	subtract_from_variable = { total_gain = law_loss_tax }
+	
+	#Corruption
+	##################
+	set_variable = { corruption = 100 } #100
+	set_variable = { temp1 = stability } #0.57
+	multiply_variable = { temp1 = 100 } #57
+	subtract_from_variable = { corruption = temp1 } #43
+	round_variable = corruption
+			
+	subtract_from_variable = { current_money_rate = army_spending }
+	subtract_from_variable = { current_money_rate = infrastructure_spending }
+	subtract_from_variable = { current_money_rate = corruption }
+			
+	set_variable = { total_loss = army_spending }
+	add_to_variable = { total_loss = infrastructure_spending }
+	add_to_variable = { total_loss = corruption }
+			
+    set_variable = { current_money_max = 999999 }
+	set_variable = { current_money_min = -999999 }
+}
+
+reload_ideas = {
+	### Political Parties - Only Underground
+	#############################################################
+	if = {
+		limit = { has_idea = law_1_only_underground }
+		set_variable = { law_1_only_underground_var = -140 }
+	}
+	else_if  = {
+		NOT = { limit = { has_idea = law_1_only_underground } }
+		set_variable = { law_1_only_underground_var = 0 }
+	}
+	### Political Parties - Harrassment
+	#############################################################
+	if = {
+		limit = { has_idea = law_1_harrassment }
+		set_variable = { law_1_harrassment_var = -100 }
+	}
+	else_if  = {
+		NOT = { limit = { has_idea = law_1_harrassment } }
+		set_variable = { law_1_harrassment_var = 0 }
+	}
+	### Political Parties - Gerrymandering
+	#############################################################
+	if = {
+		limit = { has_idea = law_1_gerrymandering }
+		set_variable = { law_1_gerrymandering_var = -60 }
+	}
+	else_if  = {
+		NOT = { limit = { has_idea = law_1_gerrymandering } }
+		set_variable = { law_1_gerrymandering_var = 0 }
+	}
+	### Political Parties - Open Ballots
+	#############################################################
+	if = {
+		limit = { has_idea = law_1_open_ballots }
+		set_variable = { law_1_open_ballots_var = -40 }
+	}
+	else_if  = {
+		NOT = { limit = { has_idea = law_1_open_ballots } }
+		set_variable = { law_1_open_ballots_var = 0 }
+	}
+	### Political Parties - Open Ballots
+	#############################################################
+	if = {
+		limit = { has_idea = law_1_confidential_ballots }
+		set_variable = { law_1_confidential_ballots_var = -20 }
+	}
+	else_if  = {
+		NOT = { limit = { has_idea = law_1_confidential_ballots } }
+		set_variable = { law_1_confidential_ballots_var = 0 }
+	}
+}

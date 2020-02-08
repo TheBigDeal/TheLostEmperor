@@ -1,8 +1,8 @@
 NDefines = {
 
 NGame = {
-	START_DATE = "1936.1.1.12",
-	END_DATE = "1949.1.1.1",
+	START_DATE = "1928.1.1.12",
+	END_DATE = "1959.1.1.1",
 	MAP_SCALE_PIXEL_TO_KM = 7.114,					-- Yes, we did the math
 	SAVE_VERSION = 6,
 	CHECKSUM_SALT = "zwOdv5d9wm9uDSOT",				-- Data to modify generated checksum when game binaries have changed but not any content files.
@@ -27,8 +27,8 @@ NDiplomacy = {
 	MIN_TRUST_VALUE = -100,							-- Min trust value cap.
 	MAX_OPINION_VALUE = 100,						-- Max opinion value cap.
 	MIN_OPINION_VALUE = -100,						-- Min opinion value cap.
-	BASE_TRUCE_PERIOD = 30,							-- Base truce period in days.
-	TRUCE_PERIOD_AFTER_KICKING_FROM_FACTION = 30,				-- Truce period after kicking someone from faction in days.
+	BASE_TRUCE_PERIOD = 365,							-- Base truce period in days.
+	TRUCE_PERIOD_AFTER_KICKING_FROM_FACTION = 180,				-- Truce period after kicking someone from faction in days.
 	NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 90,			-- Number of days before being able to kick a new member of faction 
 	NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 90,			-- Number of days before being able to re invite a kicked nation to your faction
 	BASE_NEGATIVE_OPINION_AFTER_BEING_KICKED = 20,				-- Negative opinion that will be received after kicking a nation
@@ -467,7 +467,7 @@ NMilitary = {
 	CORPS_COMMANDER_DIVISIONS_CAP = 24,			-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
 	DIVISION_SIZE_FOR_XP = 8,                   -- how many battalions should a division have to count as a full divisions when calculating XP stuff
 	CORPS_COMMANDER_ARMIES_CAP = -1,			-- how many armies a corps commander is limited to. 0 = inf, < 0 = blocked
-	FIELD_MARSHAL_DIVISIONS_CAP = 24,			-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
+	FIELD_MARSHAL_DIVISIONS_CAP = 36,			-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
 	FIELD_MARSHAL_ARMIES_CAP = 5,				-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked
 
 	UNIT_LEADER_GENERATION_CAPITAL_CONTINENT_FACTOR = 100, --Integer factor to multiply manpower.

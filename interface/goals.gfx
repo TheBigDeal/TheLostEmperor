@@ -6,22 +6,23 @@ spriteTypes = {
 	# IDEOLOGIES
 	##############################################################
 	SpriteType = {
-	name = "GFX_ideology_proletarianism"
-	texturefile = "gfx/interface/goals/ideology_proletarianism.tga"			
+		name = "GFX_ideology_proletarianism"
+		texturefile = "gfx/interface/goals/ideologies/ideology_proletarianism.dds"			
 	}
 	SpriteType = {
-	name = "GFX_ideology_labrycsism"
-	texturefile = "gfx/interface/goals/ideology_labrycsism.tga"			
+		name = "GFX_ideology_rexism"
+		texturefile = "gfx/interface/goals/ideologies/ideology_rexism.dds"			
 	}
 	SpriteType = {
-	name = "GFX_ideology_liberalism"
-	texturefile = "gfx/interface/goals/ideology_liberalism.tga"			
+		name = "GFX_ideology_labrycsism"
+		texturefile = "gfx/interface/goals/ideologies/ideology_labryscism.dds"			
 	}
 	SpriteType = {
-	name = "GFX_ideology_socialism"
-	texturefile = "gfx/interface/goals/ideology_socialism.tga"			
+		name = "GFX_ideology_despotism"
+		texturefile = "gfx/interface/goals/ideologies/ideology_despotism.dds"			
 	}
-	### RELIGIONS ###
+	# RELIGIONS
+	##############################################################
 	SpriteType = {
 		name = "GFX_religion_catholicism"
 		texturefile = "gfx/interface/goals/Religion/religion_catholicism.dds"
@@ -30,8 +31,16 @@ spriteTypes = {
 		name = "GFX_religion_orthodoxy"
 		texturefile = "gfx/interface/goals/Religion/religion_orthodoxy.dds"
 	}
-	# THE LOST EMPEROR
+	# THE LOST EMPEROR CUSTOM ICONS
 	#############################################################
+	SpriteType = {
+		name = "GFX_assassinate_wilhelm"
+		texturefile = "gfx/interface/goals/Mod/assassinate_wilhelm.dds"
+	}
+	SpriteType = {
+		name = "GFX_prussian_military_mission"
+		texturefile = "gfx/interface/goals/Mod/prussian_military_mission.dds"
+	}
 	SpriteType = {
 		name = "GFX_gre_divine_right"
 		texturefile = "gfx/interface/goals/Mod/gre_divine_right.dds"
@@ -103,6 +112,62 @@ spriteTypes = {
 	# OTHER MOD GFX
 	#############################################################
 	
+	SpriteType = {
+		name = "GFX_Generic_Invasion"
+		texturefile = "gfx/interface/goals/Generic_Invasion.dds"
+	}
+	SpriteType = {
+		name = "GFX_German_Empire"
+		texturefile = "gfx/interface/goals/German_Empire.tga"
+	}
+	SpriteType = {
+		name = "GFX_Invite_Prussian_Commanders"
+		texturefile = "gfx/interface/goals/Invite_Prussian_Commanders.tga"
+	}
+	SpriteType = {
+		name = "GFX_Generic_Elections_Banned"
+		texturefile = "gfx/interface/goals/Generic_Elections_Banned.tga"
+	}
+	SpriteType = {
+		name = "GFX_round_up_the_communists"
+		texturefile = "gfx/interface/goals/round_up_the_communists.tga"
+	}
+	SpriteType = {
+		name = "GFX_USA_goal_new_deal"
+		texturefile = "gfx/interface/goals/USA_goal_new_deal.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_handgun"
+		texturefile = "gfx/interface/goals/Generic_Handgun.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_political_purge"
+		texturefile = "gfx/interface/goals/Generic_Political_Purge.dds"
+	}
+	SpriteType = {
+		name = "GFX_nationalize_the_press"
+		texturefile = "gfx/interface/goals/Nationalize_the_Press.tga"
+	}
+	SpriteType = {
+		name = "GFX_KTG_Elections"
+		texturefile = "gfx/interface/goals/KTG_Elections.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_factories"
+		texturefile = "gfx/interface/goals/Generic_Factories.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_deal_with_left"
+		texturefile = "gfx/interface/goals/focus_deal_with_left.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_deal_with_right"
+		texturefile = "gfx/interface/goals/focus_deal_with_right.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_political_oppression"
+		texturefile = "gfx/interface/goals/Generic_Political_Oppression.dds"
+	}
 	SpriteType = {
 	name = "GFX_befriend_lithuania"
 	texturefile = "gfx/interface/goals/Befriend_Lithuania.tga"

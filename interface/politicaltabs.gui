@@ -1,0 +1,94 @@
+guiTypes = {
+		containerWindowType = {
+			name = "open_political_tab"
+			position = { x= 10 y = 6 }
+			clipping = no
+			buttonType = {
+				name = "political_button"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_economic_button_selected"
+				clicksound = click_default
+			}
+			instantTextboxType = {
+				name = "political_title"
+				position = { x = 38 y = 4 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "POLITICAL_POLITICAL"
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+		}
+		containerWindowType = {
+			name = "open_economic_tab"
+			position = { x= 228 y = 6 }
+			clipping = no
+			buttonType = {
+				name = "pol_economic_button_bg"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_economic_button"
+				clicksound = click_default
+				pdx_tooltip = "CLOSE"
+			}
+			instantTextboxType = {
+				name = "economic_title"
+				position = { x = 60 y = 4 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = -10 y = 0}
+				text = "Economic"
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+		}
+		
+		
+		containerWindowType = {
+			name = "econ_open_political_tab"
+			position = { x= 4 y = 84 }
+			clipping = no
+			buttonType = {
+				name = "political_button"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_economic_button"
+				clicksound = click_default
+			}
+			instantTextboxType = {
+				name = "political_title"
+				position = { x = 38 y = 4 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "POLITICAL_POLITICAL"
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+		}
+		containerWindowType = {
+			name = "econ_open_economic_tab"
+			position = { x= 222 y = 84 }
+			clipping = no
+			buttonType = {
+				name = "pol_economic_button_bg"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_economic_button_selected"
+				clicksound = click_default
+				pdx_tooltip = "CLOSE"
+			}
+			instantTextboxType = {
+				name = "economic_title"
+				position = { x = 60 y = 4 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = -10 y = 0}
+				text = "Economic"
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+		}
+}

@@ -5,7 +5,14 @@ oob = "ENG_1936"
 set_research_slots = 4
 
 set_stability = 0.6
-
+add_ideas = {
+	gbr_the_sun_never_sets
+	gbr_britannia_rules_the_waves
+	gbr_labor_unrest
+	gbr_splendid_isolation
+	gbr_british_stoicism
+	gbr_irish_question
+}
 # Starting tech
 set_technology = {
 	#Industrial Techs
@@ -146,90 +153,33 @@ give_military_access = RAJ
 # Order matters - here Chamberlain becomes starting leader
 
 create_country_leader = {
-	name = "King George V"
+	name = "Queen Margaret I"
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-	picture = "Portrait_George_V.tga"
+	picture = "Portrait_margaret_I.dds"
 	expire = "1936.1.20"
 	ideology = absolutism_ideology
 	traits = {
-		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
+		gbr_popular_figurhead
 	}
 }
 create_country_leader = {
-	name = "King George V"
+	name = "Queen Margaret I"
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-	picture = "Portrait_George_V.tga"
+	picture = "Portrait_margaret_I.dds"
 	expire = "1936.1.20"
 	ideology = royalism_ideology
 	traits = {
-		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
+		gbr_popular_figurhead
 	}
 }
-#create_country_leader = {
-#		name = "King Edward VIII"
-#		desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-#		picture = "Portrait_King_Edward_VIII.tga"
-#		expire = "1965.1.1"
-#		ideology = absolutism_ideology
-#		traits = {
-#			#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
-#		}
-#}
-
-
 create_country_leader = {
-	name = "Winston Churchill"
+	name = "Queen Margaret I"
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-	picture = "Portrait_Britain_Winston_Churchill.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
+	picture = "Portrait_margaret_I.dds"
+	expire = "1936.1.20"
+	ideology = rexism_ideology
 	traits = {
-		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
-	}
-}
-
-
-create_country_leader = {
-	name = "Stanley Baldwin"
-	desc = "POLITICS_STANLEY_BALDWIN_DESC"
-	picture = "gfx//leaders//GBR//Portrait_Britain_Stanley_Baldwin.dds"
-	expire = "1938.1.1"
-	ideology = liberalism
-	traits = {
-
-	}
-}
-
-#create_country_leader = {
-#	name = "Neville Chamberlain"
-#	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
-#	picture = "Portrait_Britain_Neville_Chamberlain.dds"
-#	expire = "1965.1.1"
-#	ideology = liberalism
-#	traits = {
-#
-#	}
-#}
-
-create_country_leader = {
-	name = "Oswald Mosley"
-	desc = "POLITICS_OSWALD_MOSLEY_DESC"
-	picture = "Portrait_Britain_Oswald_Mosley.dds"
-	expire = "1965.1.1"
-	ideology = rexism
-	traits = {
-
-	}
-}
-
-create_country_leader = {
-	name = "Rajani Palme Dutt"
-	desc = "POLITICS_PALME_DUTT_DESC"
-	picture = "Portrait_Britain_Palme_Dutt.dds"
-	expire = "1965.1.1"
-	ideology = proletarianism
-	traits = {
-
+		gbr_popular_figurhead
 	}
 }
 

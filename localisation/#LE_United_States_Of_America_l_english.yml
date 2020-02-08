@@ -14,6 +14,14 @@
  USA_royalism_party:0 "American Monarchist Party"
  USA_theocracy_party:0 "American Monarchist Party"
  
+### Cosmetic Tags ###
+ UNITED_COMMUNES_OF_AMERICA_proletarianism:0 "United Communes Of America"
+ UNITED_COMMUNES_OF_AMERICA_proletarianism_DEF:0 "United Communes Of America"
+ UNITED_COMMUNES_OF_AMERICA_collectivism:0 "United Communes Of America"
+ UNITED_COMMUNES_OF_AMERICA_collectivism_DEF:0 "United Communes Of America"
+ UNITED_COMMUNES_OF_AMERICA_mutualism:0 "United Communes Of America"
+ UNITED_COMMUNES_OF_AMERICA_mutualism_DEF:0 "United Communes Of America"
+ UNITED_COMMUNES_OF_AMERICA_ADJ:0 "American"
 ### Ministers ###
  # Head Of State
  USA_calvin_coolidge:0 "Calvin Coolidge"
@@ -34,6 +42,7 @@
  usa_sluggish_economy:0 "Sluggish Economy"
  usa_sluggish_economy_2:0 "Sluggish Economy"
  usa_sluggish_economy_3:0 "Sluggish Economy"
+ usa_sluggish_economy_4:0 "Sluggish Economy"
  usa_american_militarism:0 "American Militarism"
  usa_popular_discontent:0 "Popular Discontent"
  usa_general_strike:0 "General Strike"
@@ -99,7 +108,7 @@
  USA_A_NATIONAL_TRAGEDY:0 "A National Tragedy"
  USA_CHAOS_IN_THE_CAPITAL:0 "Chaos In The Capital"
  USA_THE_SUCCESSION_QUESTION:0 "The Succession Question"
- USA_THE_CRACKS_BEGIN_TO_SHOW:0 "The Cracks Begin To Show"
+ USA_THE_CRACKS_BEGIN_TO_SHOW:0 "A House Divided"
  USA_THE_UNDERDOG:0 "The Underdog"
  USA_ROOSEVELTS_VISION:0 "Roosevelts Vision"
  USA_DISCREDIT_NATIVISTS:0 "Discredit Nativists"
@@ -173,3 +182,19 @@
  le_USA.24.t:0 "The Capitol is Dark and Full of Terrors"
  le_USA.24.d:0 "Last night something unexpected happened in Washington. Black cars parked in front of major government buildings and dark suited men exited. Some gunshots were heard throughout the city as a curfew was imposed. People wondered, but they did little. As dawn rose on a Washington morning Americans discovered a cold, hard truth. Someone leaked the evidence of President Hull's cheating in the election, someone purposely sabotaged the federal raid on the Washington Post, someone has continually undermined Cordell Hull's administration. And that someone was perhaps the most elusive man in the capital- FBI Director J. Edgar Hoover. His FBI agents had, by now, complete control of the capital and the neighboring area. Yet even now as Hull is disposed of and Hoover is sworn in as President, the America he knows crumbles around him. In spite of this, Hoover now leads a shattered and broken US, one that is made of knives and whispers rather than freedom and democracy. America, as it once was is gone, now it is nothing more than a state of shadows."
  le_USA.24.a:0 "Evil triumphs when good men do nothing."
+ 
+ le_USA.25.t:0 "A National Tragedy"
+ le_USA.25.d:0 "While Frank Lowden, by far the favorite, managed to secure his election as the President of the United States it was a surprisingly close race and furthermore the Democrats managed to take control of the House of Representatives- a nasty surprise for any incoming Republican President. In fact, Lowden's whole presidency has been one nasty surprise after the next. First, Vice President Warren Harding who was a very popular running mate and probably gave Lowden the election suffered a serious stroke in the beginning of March from which he is still recovering. Next, a failure to secure a trade deal with Great Britain- a vital campaign promise- further damaged the popularity of the administration. Lastly, a confrontation was looming over next year's budget with the pugnacious Speaker of the House- John Nance Garner, a Texan immigrant- which Lowden wasn't sure he could win given Garner's fierce reputation. Could this get any worse? As it turns out it can. While traveling from the Capitol back to the White House one day an anarchist threw a small homemade explosive at the Presidential motorcade. President Lowden was severely injured and despite doctor's best efforts he fell into a coma."
+ le_USA.25.a:0 "Why can't we have nice things?"
+ 
+ le_USA.26.t:0 "Chaos In The Capital"
+ le_USA.26.d:0 "Who is running the United States? That is a question nobody can seem to answer or even get a clue. With Vice President Harding still in recovery all sorts of vultures have leapt at the carcass of President Lowden's Administration. Almost immedietly after Lowden was admitted to the hospital, Secretary of State Robert La Follette declared himself Acting President. A significant number of people agreed with this decision but most forgot the last time a President was incapacitated for a significant period of time- in 1882. At that time the President, James Garfield, was succeeded by his Vice President William Forester. But when Forester fell ill and the President was still recovering from a gunshot wound the Speaker of the House, Democrat Andrew Tilden, stepped  in and assumed the role of Acting President for two months. Back to the present, with an increasing number of people claiming House Speaker Garner is the President the Virginia representative hurriedly appointed a cabinet while his opponent did the same in the White House. With both of them issuing orders to respective departments no one actually knows what the government is much less what it's actually doing."
+ le_USA.26.a:0 "Can't we just all get along?"
+ 
+ le_USA.27.t:0 "The Succession Question"
+ le_USA.27.d:0 "As disorder reigns in the Capitol, Vice President Warren G Harding was declared to be sufficiently recovered from his stroke. Almost immediately, Harding announced his intention to assume the Presidency. However, neither La Follette nor Garner has backed the vice president’s claim although a few conservative Republican congressmen have supported him. In spite of this all three of the claimants are now locked in a contest over the failing United States. With the government in a total shutdown nothing can be done to repair the nation. Departments do nothing- their staff on unpaid leave. When people don’t have jobs- like federal workers nowadays- they grumble and complain. Bored workers become radical workers. Furthermore, a quiet has set in the Capitol. There’s little hustle and bustle, just a sense of loss. Then President Lowden died."
+ le_USA.27.a:0 "Is this loss?"
+ 
+ le_USA.28.t:0 "A House Divided"
+ le_USA.28.d:0 "' The United States of America'. Pfft. We are the Disunited States of America. What are we but a squabbling band of states who can’t even agree who leads us when our leader dies? Are we a democracy? No, we are nothing anymore. America has tried to crush us but here we are, proud and strong. The bourgeois think they can destroy us, but they fail to see the inevitability of socialism. Our time has come! The working class has nothing to lose but their chains! We have a world to win! Working people of America, unite!\n\n\nCheers ring out from the crowd as the speaker sits down. Amid renditions of “Solidarity Forever” the Chicago Commune is declared. Detroit follows. Then Minneapolis. Even Cleveland declares its commune. The time of America has ended but the age of chaos has begun."
+ le_USA.28.a:0 "A House Divided Against Itself Cannot Stand."

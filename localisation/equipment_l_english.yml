@@ -2897,21 +2897,7 @@
  rocket_artillery_equipment_1:0 "Towed Rocket Artillery"
  rocket_artillery_equipment_1_short:0 "Rocket Artillery"
  rocket_artillery_equipment_1_desc:0 "Rocket artillery is less accurate and has a much lower sustained rate of fire than batteries of traditional artillery guns. However, they have the capability of simultaneously hitting a target with multiple rockets with devastating effect."
- infantry_equipment:0 "Infantry Equipment"
- infantry_equipment_short:0 "Infantry Eq."
- infantry_equipment_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs."
- infantry_equipment_0:0 "Basic Infantry Equipment"
- infantry_equipment_0_short:0 "Basic Eq."
- infantry_equipment_0_desc:0 "Basic infantryman equipment developed before and during the Great War."
- infantry_equipment_1:0 "Infantry Equipment I"
- infantry_equipment_1_short:0 "Weapons I"
- infantry_equipment_1_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs."
- infantry_equipment_2:0 "Infantry Equipment II"
- infantry_equipment_2_short:0 "Weapons II"
- infantry_equipment_2_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs. Modernized to include a great number of sub-machineguns and anti-tank rifles."
- infantry_equipment_3:0 "Infantry Equipment III"
- infantry_equipment_3_short:0 "Weapons III"
- infantry_equipment_3_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs. Further modernized to include personal Assault Rifles and anti-tank rockets."
+
  
  # small arms
  

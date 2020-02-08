@@ -101,8 +101,11 @@ country_event = { #PRINCE CONSTANTINE RETURNS
 	fire_only_once = yes
 	trigger = {
 		tag = GRE
-		royalism < 20
-		has_stability < 0.2
+		has_government = royalism
+		OR = {
+			royalism < 20
+			has_stability < 0.3
+		}
 	}
 	immediate = {
 		hidden_effect = {
@@ -111,7 +114,7 @@ country_event = { #PRINCE CONSTANTINE RETURNS
 	}
 	option = { #Cede Thrace
 		name = le_greece.7.a
-		add_stability = -0.5
+		add_popularity = { ideology = absolutism popularity = 0.25 }
 	}
 }
 country_event = { #PRINCE CONSTANTINES MAKES A MOVE
@@ -134,13 +137,13 @@ country_event = { #PRINCE CONSTANTINES MAKES A MOVE
 			}
 		}
 		start_civil_war = {
-			ruling_party = royalism
-			ideology = ROOT
+			ruling_party = absolutism
+			ideology = royalism
 			size = 0.4
 			only_own_territory = no
 			capital = 185
 			states = { 
-				185 825 826
+				185 825 826 731 955
 			}
 			#keep_unit_leaders = {
 			#	750 751 752 731 955
@@ -203,10 +206,30 @@ country_event = { #WHAT DO WE DO WITH CONSTANTINE? (THEOCRATIC)
 	option = { #THEOCRATIC LEADER
 		name = le_greece.11.a
 		add_stability = -0.20
+		create_country_leader = {
+			name = "Charles Zervas"
+			desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			picture = "Portrait_GRE_Napoleon_Zervas.tga"
+			expire = "1965.1.1"
+			ideology = theocracy
+			traits = {
+				
+			}
+		}
 	}
 	option = { #CONSTANTINE WILL LEAD THE COUNTRY TO GREATNESS
 		name = le_greece.11.b
 		add_stability = -0.15
+		create_country_leader = {
+			name = "King Constantine"
+			desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			picture = "Portrait_Greece_Constnatine.tga"
+			expire = "1965.1.1"
+			ideology = theocracy
+			traits = {
+				
+			}
+		}
 	}
 }
 

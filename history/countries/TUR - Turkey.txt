@@ -157,6 +157,39 @@ create_country_leader = {
 	}
 }
 
+create_field_marshal = {
+	name = "Osman Fuad Efendi"
+	portrait_path = "gfx/leaders/TUR/Portrait_Ottoman_OsmanFuad.tga"
+	id = 680
+	traits = {
+		politically_connected
+		war_hero
+		inspirational_leader
+		desert_fox
+	}
+	skill = 4
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Ömer Fahrettin Paşa"
+	portrait_path = "gfx/leaders/TUR/Portrait_TUR_Omer_Fahrettin.tga"
+	traits = {
+		old_guard
+		war_hero
+		desert_fox
+		skilled_staffer
+	}
+	skill = 4
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+}
+
 create_corps_commander = {
 	name = "Cemil Cahit Toydemir"
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"

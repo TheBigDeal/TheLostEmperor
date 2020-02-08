@@ -22,6 +22,9 @@ set_technology = {
 	tech_recon = 1
 }
 set_convoys = 17
+set_stability = 0.40
+set_war_support = 0.95
+
 set_politics = {
 	ruling_party = royalism
 	last_election = "1933.3.5"
@@ -41,8 +44,6 @@ set_popularities = {
     absolutism = 16
     proletarianism = 12
 }
-set_stability = 0.40
-set_war_support = 0.95
 create_country_leader = {
 	name = "King Alvertos von Saxe-Coburg-Gotha"
 	desc = "gre_description_king_albert"

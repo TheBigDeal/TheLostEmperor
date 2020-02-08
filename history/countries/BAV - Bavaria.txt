@@ -23,15 +23,15 @@ set_popularities = {
     conservatism = 1
     liberalism = 1
     socialism = 8
-    labryscism = 3
-    rexism = 2
-    despotism = 5
+    labryscism = 2
+    rexism = 3
+    despotism = 2
     royalism = 3
     theocracy = 2
-    absolutism = 30
-    proletarianism = 0
-    collectivism = 40
-    mutualism = 10
+    absolutism = 33
+    proletarianism = 9
+    collectivism = 21
+    mutualism = 15
 }
 
 set_convoys = 5

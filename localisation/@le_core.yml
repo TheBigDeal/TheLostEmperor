@@ -1,0 +1,4 @@
+﻿l_english:
+ state_in_HRE:0 "This State Is A Part Of The Holy Roman Empire"
+ CHANGE_CAT1_ONLY_UNDERGROUND:0 "Do you want to replace our current policial law with §YOnly Underground§!?"
+ random_list_spacing_tt:0 "          §!" #WORKING IN LE_Ottoman_I_english, wont take from here for whatever reason.
