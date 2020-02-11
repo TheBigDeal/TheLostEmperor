@@ -32,8 +32,6 @@ set_popularities = {
     proletarianism = 6
     collectivism = 8
     mutualism = 12
-    royalism = 10
-    absolutism = 90
 }
 
 set_convoys = 5

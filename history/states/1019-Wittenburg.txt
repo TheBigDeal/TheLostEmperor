@@ -1,0 +1,21 @@
+state={
+	id=1019
+	name="STATE_1019"
+	history={
+		owner = SAX
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 4
+		}
+		victory_points = {
+			6441 5 
+		}
+		add_core_of = SAX
+	}
+	provinces={
+		6441 11545 
+	}
+	manpower=1747195
+	buildings_max_level_factor=1.000
+}

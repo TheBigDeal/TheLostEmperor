@@ -21,16 +21,6 @@ spriteTypes = {
 		name = "GFX_ideology_despotism"
 		texturefile = "gfx/interface/goals/ideologies/ideology_despotism.dds"			
 	}
-	# RELIGIONS
-	##############################################################
-	SpriteType = {
-		name = "GFX_religion_catholicism"
-		texturefile = "gfx/interface/goals/Religion/religion_catholicism.dds"
-	}
-	SpriteType = {
-		name = "GFX_religion_orthodoxy"
-		texturefile = "gfx/interface/goals/Religion/religion_orthodoxy.dds"
-	}
 	# THE LOST EMPEROR CUSTOM ICONS
 	#############################################################
 	SpriteType = {

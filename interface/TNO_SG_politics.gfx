@@ -1,4 +1,98 @@
 spriteTypes = {
+	# RELIGIONS
+	##############################################################
+	SpriteType = {
+		name = "GFX_religion_catholicism"
+		texturefile = "gfx/interface/goals/Religion/religion_catholicism.dds"
+	}
+	SpriteType = {
+		name = "GFX_religion_orthodoxy"
+		texturefile = "gfx/interface/goals/Religion/religion_orthodoxy.dds"
+	}
+	# TRADE LAW
+	##############################################################
+	SpriteType = {
+		name = "GFX_trade_free_trade"
+		texturefile = "gfx/interface/goals/Governmental_Laws/trade_free_trade.dds"
+	}
+	SpriteType = {
+		name = "GFX_trade_export_focus"
+		texturefile = "gfx/interface/goals/Governmental_Laws/trade_export_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_trade_limited_exports"
+		texturefile = "gfx/interface/goals/Governmental_Laws/trade_limited_exports.dds"
+	}
+	SpriteType = {
+		name = "GFX_trade_closed_economy"
+		texturefile = "gfx/interface/goals/Governmental_Laws/trade_closed_economy.dds"
+	}
+	# ECONOMIC LAW
+	##############################################################
+	SpriteType = {
+		name = "GFX_economy_undisturbed_isolation"
+		texturefile = "gfx/interface/goals/Governmental_Laws/economy_undisturbed_isolation.dds"
+	}
+	SpriteType = {
+		name = "GFX_economy_isolation"
+		texturefile = "gfx/interface/goals/Governmental_Laws/economy_isolation.dds"
+	}
+	SpriteType = {
+		name = "GFX_economy_civilian_economy"
+		texturefile = "gfx/interface/goals/Governmental_Laws/economy_civilian_economy.dds"
+	}
+	SpriteType = {
+		name = "GFX_economy_early_mobilization"
+		texturefile = "gfx/interface/goals/Governmental_Laws/economy_early_mobilization.dds"
+	}
+	SpriteType = {
+		name = "GFX_economy_partial_mobilization"
+		texturefile = "gfx/interface/goals/Governmental_Laws/economy_partial_mobilization.dds"
+	}
+	SpriteType = {
+		name = "GFX_economy_war_economy"
+		texturefile = "gfx/interface/goals/Governmental_Laws/economy_war_economy.dds"
+	}
+	SpriteType = {
+		name = "GFX_economy_total_mobilization"
+		texturefile = "gfx/interface/goals/Governmental_Laws/economy_total_mobilization.dds"
+	}
+	# CONSCRIPTION
+    ##############################################################
+	SpriteType = {
+		name = "GFX_conscription_disarmed_nation"
+		texturefile = "gfx/interface/goals/Governmental_Laws/conscription_disarmed_nation.dds"
+	}
+	SpriteType = {
+		name = "GFX_conscription_volunteer_only"
+		texturefile = "gfx/interface/goals/Governmental_Laws/conscription_volunteer_only.dds"
+	}
+	SpriteType = {
+		name = "GFX_conscription_limited_conscription"
+		texturefile = "gfx/interface/goals/Governmental_Laws/conscription_limited_conscription.dds"
+	}
+	SpriteType = {
+		name = "GFX_conscription_extensive_conscription"
+		texturefile = "gfx/interface/goals/Governmental_Laws/conscription_extensive_conscription.dds"
+	}
+	SpriteType = {
+		name = "GFX_conscription_service_by_requirement"
+		texturefile = "gfx/interface/goals/Governmental_Laws/conscription_service_by_requirement.dds"
+	}
+	SpriteType = {
+		name = "GFX_conscription_all_adults_serve"
+		texturefile = "gfx/interface/goals/Governmental_Laws/conscription_all_adults_serve.dds"
+	}
+	SpriteType = {
+		name = "GFX_conscription_scraping_the_barrel"
+		texturefile = "gfx/interface/goals/Governmental_Laws/conscription_scraping_the_barrel.dds"
+	}
+	
+	
+	
+	
+	
+	#MISC
 	spriteType = {
 		name = "GFX_political_strip"
 		texturefile = "gfx//interface//movement_strip_political.dds"

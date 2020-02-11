@@ -4,10 +4,18 @@
  top_level:0 "Head of Government"
  TNO_POLITICS_FACTION_LEADER:0 "Leader"
  TNO_POLITICS_FACTION_MEMBER:0 "Member"
+ law_switch_governmental_religion:0 "Replace §YState Religion?§!"
+ law_switch_conscription_law:0 "Replace §YConscription Law?§!"
+ law_switch_trade_law:0 "Replace §YTrade Law?§!"
+ law_switch_economy_law:0 "Replace §YEconomic Law?§!"
+ #GOVERNMENTAL LAW TOOLTIPS
+ LE_religion_tt:0 "§GClick to change§!§Y State Religion§!"
+ LE_conscription_tt:0 "§GClick to change§!§Y Conscription Law§!"
+ LE_economic_tt:0 "§GClick to change§!§Y Economic Law§!"
+ LE_trade_tt:0 "§GClick to change§!§Y Trade Law§!"
  #LAW TOOLTIPS
  #######################################
  LE_political_parties_1_tt:0 "§YPolitical Parties: Only Underground§!\n\nCost (£pol_power)): §R300§!\n\n§YTo Enact:§!\n   Cannot have ideology: §YLiberalism§!\n   Cannot have ideology: §YConservatism§!\n   Cannot have ideology: §YSocialism§!\n§YEffects:§!\n   Lose Income ( £texticon_money  ): §R-140§! \n   Stability §R-10%§!\n   Ideology Drift Defence §G+25%§!"
- 
  #EFFECT CHANGES
  #######################################
  EFFECT_CHANGE_LAW_le_religion:0 "Change State Religion to '$NAME|Y$' which grants ($DESC$)."
@@ -26,9 +34,31 @@
  security_minister:0 "Minister Of The Interior"
  intel_minister:0 "Minister Of Intelligence"
  
- #RELIGION
+ #GOVERNMENTAL LAW IDEAS
  #######################################
  LE_ideas:0 "Head Of State"
+ #Conscription Laws
+ law_conscription_1:0 "Disarmed Nation"
+ law_conscription_2:0 "Volunteer Only"
+ law_conscription_3:0 "Two Year Draft"
+ law_conscription_4:0 "Four Year Draft"
+ law_conscription_5:0 "Six Year Draft"
+ law_conscription_6:0 "All Adults Serve"
+ law_conscription_7:0 "Scraping The Barrel"
+ #Trade Laws
+ law_trade_1:0 "Free Trade"
+ law_trade_2:0 "Export Focus"
+ law_trade_3:0 "Limited Exports"
+ law_trade_4:0 "Closed Economy"
+ #Economic Laws
+ law_economy_1:0 "Undisturbed Isolation"
+ law_economy_2:0 "Isolation"
+ law_economy_3:0 "Civilian Economy"
+ law_economy_4:0 "Partial Mobilization"
+ law_economy_5:0 "Expanded Mobilization"
+ law_economy_6:0 "War Economy"
+ law_economy_7:0 "Total Mobilization"
+ #Religions
  le_religion_protestant:0 "Protestant"
  le_religion_catholicism:0 "Catholic"
  le_religion_orthodox:0 "Orthodox"
@@ -37,11 +67,36 @@
  le_religion_secular:0 "Secular"
  le_religion_athiest:0 "Athiest"
  #MODIFIERS
+ ######################################
+ #CONSCRIPTION
+ law_conscription_cost:0 "£pol_power §R300§!"
+ LE_conscription_1_m:0 "Conscription: §Y1.0%§!"
+ LE_conscription_2_m:0 "Conscription: §Y1.5%§!"
+ LE_conscription_3_m:0 "Conscription: §Y2.5%§!"
+ LE_conscription_4_m:0 "Conscription: §Y5.0%§!\nTraining Time Factor: §R-10%§!"
+ LE_conscription_5_m:0 "Conscription: §Y10.0%§!\nFactory and Dockyard Capacity: §R-10%§!\nConstruction Speed: §R-10%§!\nTraining Time Factor: §R-10%§!"
+ LE_conscription_6_m:0 "Conscription: §Y20.0%§!\nFactory and Dockyard Capacity: §R-30%§!\nConstruction Speed: §R-30%§!\nTraining Time Factor: §R-30%§!"
+ LE_conscription_7_m:0 "Conscription: §Y25.0%§!\nFactory and Dockyard Capacity: §R-40%§!\nConstruction Speed: §R-40%§!\nTraining Time Factor: §R-50%§!"
+ #TRADE
+ law_trade_cost:0 "£pol_power §R300§!"
+ LE_trade_1_m:0 "Factory and Dockyard Capacity: §G+15%§!\nConstruction Speed: §G+15%§!\nMinimum Exports: §Y80%§!\nResearch Speed: §R-10%§!"
+ LE_trade_2_m:0 "Factory and Dockyard Capacity: §G+10%§!\nConstruction Speed: §G+10%§!\nMinimum Exports: §Y50%§!\nResearch Speed: §R-5%§!"
+ LE_trade_3_m:0 "Factory and Dockyard Capacity: §G+5%§!\nConstruction Speed: §G+5%§!\nMinimum Exports: §Y25%§!\nResearch Speed: §R-1%§!"
+ LE_trade_4_m:0 "Minimum Exports: §Y0%§!\n§RNo resources will be exported.§!"
+ #Economy
+ law_economy_cost:0 "£pol_power §R300§!"
+ LE_economy_1_m:0 "Consumer Goods: §Y40%§!\nCivilian Factory Construction Speed: §G+40%§!\nArms Factory Construction Speed: §R-50%§!\nFactory Conversion Cost: §R+50%§!"
+ LE_economy_2_m:0 "Consumer Goods: §Y35%§!\nCivilian Factory Construction Speed: §G+30%§!\nArms Factory Construction Speed: §R-40%§!\nFactory Conversion Cost: §R+35%§!"
+ LE_economy_3_m:0 "Consumer Goods: §Y30%§!\nCivilian Factory Construction Speed: §G+20%§!\nArms Factory Construction Speed: §R-30%§!\nFactory Conversion Cost: §R+20%§!"
+ LE_economy_4_m:0 "Consumer Goods: §Y25%§!\nArms Factory Construction Speed: §G+15%§!\nCivilian Factory Construction Speed: §R-30%§!\nFactory Conversion Cost: §R+20%§!"
+ LE_economy_5_m:0 "Consumer Goods: §Y20%§!\nArms Factory Construction Speed: §G+20%§!\nCivilian Factory Construction Speed: §R-40%§!\nFactory Conversion Cost: §R+20%§!"
+ LE_economy_6_m:0 "Consumer Goods: §Y15%§!\nArms Factory Construction Speed: §G+25%§!\nCivilian Factory Construction Speed: §R-50%§!\nFactory Conversion Cost: §R+35%§!"
+ LE_economy_7_m:0 "Consumer Goods: §Y10%§!\nArms Factory Construction Speed: §G+30%§!\nCivilian Factory Construction Speed: §R+60%§!\nFactory Conversion Cost: §R+50%§!"
+ #Religions
  LE_Catholicism_Modifier:0 "War Support: §G+10.00%§!\nIdeology Drift Defence: §G+10.00%§!\n§YEnables Papal Actions§!"
  LE_Orthodoxy_Modifier:0 "Conscription: §G+5.00%§!\nIdeology Drift Defence: §R-8.00%§!"
  #CATEGORIES
  #######################################
- law_switch_governmental_religion:0 "Replace §YState Religion?§!"
  law_1_only_underground:0 "Only Underground"
  #POLITICAL IDEA LAWS
  law_3_all_allowed:0 "Unrestricted Trade Unions"
