@@ -57,9 +57,20 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				frame = 1
 			}
-			
-
-			
+			### RELIGION ICONS
+			#####################################################
+			# iconType ={ 
+				# name = "religion_icon_1"
+				# spriteType = "GFX_religion_catholicism"
+				# position = { x = 238 y = -6 }
+				# Orientation = "UPPER_LEFT"
+			# }
+			# iconType ={ 
+				# name = "religion_icon_2"
+				# spriteType = "GFX_religion_orthodoxy"
+				# position = { x = 238 y = -6 }
+				# Orientation = "UPPER_LEFT"
+			# }
 		
 
 			iconType =

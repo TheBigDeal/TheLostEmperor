@@ -154,3 +154,11 @@ reload_ideas = {
 		set_variable = { law_1_confidential_ballots_var = 0 }
 	}
 }
+set_religions = {
+	if = {
+		every_country = {
+			limit = { has_idea = le_religion_catholicism }
+			set_variable = { state_catholicism = 1 }
+		}
+	}
+}

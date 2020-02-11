@@ -1,0 +1,28 @@
+ideas = {
+	### RELGIONS
+	###############################
+	le_religion = {
+		law = yes
+		le_religion_catholicism = {
+			default = yes
+			modifier = { stability_factor = 0.10}
+			cancel_if_invalid = no
+		}
+		le_religion_orthodox = {
+			modifier = { stability_factor = -0.10}
+			cancel_if_invalid = no
+		}
+		le_religion_protestant = {
+			modifier = {}
+			cancel_if_invalid = no
+		}
+		le_religion_shia = {
+			modifier = {}
+			cancel_if_invalid = no
+		}
+		le_religion_sunni = {
+			modifier = {}
+			cancel_if_invalid = no
+		}
+	}
+}

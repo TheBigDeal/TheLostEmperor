@@ -13,7 +13,7 @@ guiTypes = {
 				quadTextureSprite ="GFX_pol_goal_popup_bg"
 			}
 			instantTextboxType = {
-				name = "country_laws"
+				name = "country_laws_txt"
 				position = { x = 10 y = 30 }
 				font = "hoi_24mbs"
 				text = "Replace Political Law"
@@ -56,4 +56,65 @@ guiTypes = {
 			}
 		}
 	}
+	
+	
+	
+	containerWindowType = {
+		name = "governmental_laws"
+		position = { x=0 y=0}
+		size = { width=352%% height=100%% }
+		containerWindowType = { #Background
+			name = "governmental_laws_bg"
+			size = { width=450 height=100%% }
+			position = { x=720 y=360}
+			moveable = yes
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_pol_goal_popup_bg"
+			}
+			instantTextboxType = {
+				name = "governmental_laws_textbox"
+				position = { x = 10 y = 30 }
+				font = "hoi_24mbs"
+				text = "Replace Political Law"
+				maxWidth = 460
+				maxHeight = 400
+				fixedsize = no
+				format = center	
+				alwaystransparent = no
+			}
+			instantTextboxType = {
+				name = "governmental_laws_info"
+				position = { x = 50 y = 100 }
+				font = "hoi_24mbs"
+				text = "Are you sure you would like to switch laws?"
+				maxWidth = 400
+				maxHeight = 400
+				fixedsize = no
+				format = center	
+				alwaystransparent = no
+			}
+			buttonType = {
+				name = "governmental_laws_close_button"
+				position = { x = 80 y = 320 }
+				quadTextureSprite ="GFX_button_148x34"	
+				buttonText = "CLOSE"
+				buttonFont = "hoi_20b"
+				Orientation = "UPPER_LEFT"
+				clicksound = click_default
+				shortcut = "ESCAPE"
+			}
+			buttonType = {
+				name = "governmental_laws_ok_button"
+				position = { x = 260 y = 320 }
+				quadTextureSprite ="GFX_button_148x34"	
+				buttonText = "OK"
+				buttonFont = "hoi_20b"
+				Orientation = "UPPER_LEFT"
+				clicksound = click_default
+				shortcut = "RETURN"
+			}
+		}
+	}
+	
 }

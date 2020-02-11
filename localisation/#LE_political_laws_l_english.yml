@@ -1,15 +1,48 @@
 ﻿l_english:
  #MISC
+ #######################################
  top_level:0 "Head of Government"
  TNO_POLITICS_FACTION_LEADER:0 "Leader"
  TNO_POLITICS_FACTION_MEMBER:0 "Member"
  #LAW TOOLTIPS
+ #######################################
  LE_political_parties_1_tt:0 "§YPolitical Parties: Only Underground§!\n\nCost (£pol_power)): §R300§!\n\n§YTo Enact:§!\n   Cannot have ideology: §YLiberalism§!\n   Cannot have ideology: §YConservatism§!\n   Cannot have ideology: §YSocialism§!\n§YEffects:§!\n   Lose Income ( £texticon_money  ): §R-140§! \n   Stability §R-10%§!\n   Ideology Drift Defence §G+25%§!"
  
  #EFFECT CHANGES
+ #######################################
+ EFFECT_CHANGE_LAW_le_religion:0 "Change State Religion to '$NAME|Y$' which grants ($DESC$)."
  EFFECT_CHANGE_LAW_law_political_parties:0 "Change Political Parties Law to '$NAME|Y$' which grants ($DESC$)."
  EFFECT_CHANGE_LAW_law_trade_unions:0 "Change Trade Unions Law to '$NAME|Y$' which grants ($DESC$)."
+ EFFECT_CHANGE_LAW_law_political_parties:0 "Change Political Parties Law to '$NAME|Y$' which grants ($DESC$)."
  
+ #HEAD OF GOVERNMENT
+ #######################################
+ minister:0 "Political Advisors"
+ head_of_government:0 "Head Of Government"
+ secondary_head:0 "Secondary Head"
+ foreign_minister:0 "Foreign Minister"
+ defence_minister:0 "Minister Of Defence"
+ economy_minister:0 "Economic Minister"
+ security_minister:0 "Minister Of The Interior"
+ intel_minister:0 "Minister Of Intelligence"
+ 
+ #RELIGION
+ #######################################
+ LE_ideas:0 "Head Of State"
+ le_religion_protestant:0 "Protestant"
+ le_religion_catholicism:0 "Catholic"
+ le_religion_orthodox:0 "Orthodox"
+ le_religion_sunni:0 "Sunni"
+ le_religion_shia:0 "Shia"
+ le_religion_secular:0 "Secular"
+ le_religion_athiest:0 "Athiest"
+ #MODIFIERS
+ LE_Catholicism_Modifier:0 "War Support: §G+10.00%§!\nIdeology Drift Defence: §G+10.00%§!\n§YEnables Papal Actions§!"
+ LE_Orthodoxy_Modifier:0 "Conscription: §G+5.00%§!\nIdeology Drift Defence: §R-8.00%§!"
+ #CATEGORIES
+ #######################################
+ law_switch_governmental_religion:0 "Replace §YState Religion?§!"
+ law_1_only_underground:0 "Only Underground"
  #POLITICAL IDEA LAWS
  law_3_all_allowed:0 "Unrestricted Trade Unions"
  

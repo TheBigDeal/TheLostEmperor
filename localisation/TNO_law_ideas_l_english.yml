@@ -1,6 +1,7 @@
 ﻿l_english:
+ LE_religion_tt:0 "§GClick to change§!§Y State Religion§!"
  military_laws:0 "Military Laws"
- tno_conscription:0 "Conscription"
+ tno_conscription_law:0 "Conscription"
  EFFECT_CHANGE_LAW_tno_conscription:0 "Change Conscription Law to '$NAME|Y$' which grants ($DESC$)."
  tno_conscription_scraping_the_barrel:0 "Scraping the Barrel"
  tno_conscription_all_adults_serve:0 "All Adults Serve"

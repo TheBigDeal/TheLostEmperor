@@ -1,0 +1,25 @@
+scripted_gui = {
+	set_governmental_laws = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_SG_politics_laws"
+		visible = { always = yes }
+		triggers = {
+			law_religion_btn_1_visible = { has_idea = le_religion_catholicism }
+			law_religion_btn_2_visible = { 
+				has_idea = le_religion_orthodox 
+				NOT = { has_idea = le_religion_catholicism } 
+			}
+		}
+		effects = {
+			law_religion_btn_1_click = { set_variable = { open_religion_container = 1 } }
+			law_religion_btn_2_click = { set_variable = { open_religion_container = 1 } }
+		}
+	}
+	# open_religion_container_sg = {
+		# context_type = player_context
+		# window_name = "TNO_laws_category_tno_public_meetings_window"
+		# visible = { check_variable = {open_religion_container = 1} }
+	# }
+}
+

@@ -5,6 +5,12 @@ scripted_gui = {
 		window_name = "TNO_SG_politics_laws"
 		visible = { always = yes }
 		triggers = { 
+			###GOVERNMENTAL LAWS
+			################################################
+			law_religion_btn_1_visible = { has_idea = le_religion_catholicism }
+			law_religion_btn_2_visible = { has_idea = le_religion_orthodox }
+			###POLITICAL LAWS
+			################################################
 			law_political_parties_selected_1_visible = { has_idea = law_1_only_underground }
 			law_political_parties_selected_2_visible = { has_idea = law_1_harrassment }
 			law_political_parties_selected_3_visible = { has_idea = law_1_gerrymandering }
@@ -23,6 +29,36 @@ scripted_gui = {
 			law_slavery_selected_2_visible = { has_idea = law_4_allowed }
 		}
 		effects = {
+			###GOVERNMENTAL LAWS
+			################################################
+			law_religion_btn_1_click = { 
+				if = {
+					limit = { check_variable = { open_religion_container = 0 } }
+					set_variable = { open_religion_container = 1 }
+				}
+				else_if = {
+					limit = { check_variable = { open_religion_container = 1 } }
+					set_variable = { open_religion_container = 0 }
+				}
+				else {
+					set_variable = { open_religion_container = 1 }
+				}
+			}
+			law_religion_btn_2_click = { 
+				if = {
+					limit = { check_variable = { open_religion_container = 0 } }
+					set_variable = { open_religion_container = 1 }
+				}
+				else_if = {
+					limit = { check_variable = { open_religion_container = 1 } }
+					set_variable = { open_religion_container = 0 }
+				}
+				else {
+					set_variable = { open_religion_container = 1 }
+				}
+			}
+			###POLITICAL LAWS
+			################################################
 			law_political_parties_btn_1_click = {
 				if = {
 					limit = { NOT = { has_idea = law_1_only_underground } }
@@ -137,7 +173,7 @@ scripted_gui = {
 			}
 		}
 	}
-	show_cat1_only_underground = {
+	pick_ideas_political_laws = {
 		context_type = player_context
 		parent_window_token = politics_tab
 		window_name = "country_laws"
@@ -258,6 +294,48 @@ scripted_gui = {
 					add_ideas = { law_4_allowed }
 					set_variable = { open_law_window = 0 }
 					set_variable = { law_4_allowed_var = 0 }
+				}
+			}
+		}
+	}
+	open_religion_container_sg = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "le_state_religion_window"
+		visible = { check_variable = {open_religion_container = 1} }
+		effects = {
+			religion_close_button_click = { set_variable = { open_religion_container = 0 } }
+			law_tno_religious_rights_1_button_click = { #CATHOLICISM
+				set_variable = { open_governmental_window = 1 }
+				set_variable = { CATHOLICISM_RELIGION = 1 }
+			}
+			law_tno_religious_rights_5_button_click = { #ORTHODOX
+				set_variable = { open_governmental_window = 1 }
+				set_variable = { ORTHODOX_RELIGION = 1 }
+			}
+		}
+	}
+	governmenal_window_check = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "governmental_laws"
+		visible = { check_variable = { open_governmental_window = 1 } }
+		effects = {
+			governmental_laws_close_button_click = { set_variable = { open_governmental_window = 0 }}
+			governmental_laws_ok_button_click = {
+				if = {
+					limit = {check_variable = { CATHOLICISM_RELIGION = 1 }}
+					remove_ideas = { le_religion_orthodox }
+					add_ideas = { le_religion_catholicism }
+					set_variable = { open_governmental_window = 0 }
+					set_variable = { CATHOLICISM_RELIGION = 0 }
+				}
+				else_if = {
+					limit = {check_variable = { ORTHODOX_RELIGION = 1 }}
+					remove_ideas = { le_religion_catholicism }
+					add_ideas = { le_religion_orthodox }
+					set_variable = { open_governmental_window = 0 }
+					set_variable = { ORTHODOX_RELIGION = 0 }
 				}
 			}
 		}
