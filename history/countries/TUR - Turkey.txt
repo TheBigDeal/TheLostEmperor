@@ -7,6 +7,7 @@ set_research_slots = 3
 add_ideas = {
 	limited_conscription
 	TUR_internal_instability
+	tno_religious_rights_sunni
 }
 set_country_flag = TUR_syrian_rebellions
 set_variable = { var = SYRIAN_REBEL_STRENGH value = 29 }
@@ -42,25 +43,24 @@ set_politics = {
 }
 
 set_popularities = {
-    conservatism = 4
+    conservatism = 7
     liberalism = 1
     socialism = 0
-    labryscism = 5
-    rexism = 3
-    despotism = 6
+    labryscism = 0
+    rexism = 0
+    despotism = 10
     royalism = 1
-    theocracy = 10
+    theocracy = 16
     absolutism = 65
     proletarianism = 0
-    collectivism = 3
-    mutualism = 2
+    collectivism = 0
+    mutualism = 0
 }
 
 set_convoys = 20
 set_stability = 0.55
 puppet = ALG
 puppet = EGY
-puppet = RUM
 give_guarantee = MOR
 puppet = TUN
 puppet = LBA
@@ -77,16 +77,6 @@ if = {
 	}
 	else = {
 		puppet = IRQ
-	}
-}
-
-IRQ = { add_popularity = { ideology = absolutism popularity = 1 } }
-IRQ = {
-	set_politics = {
-		ruling_party = absolutism
-		last_election = "1920.15.6"
-		election_frequency = 48
-		elections_allowed = no
 	}
 }
 

@@ -8,58 +8,11 @@ set_technology = {
 	gwtank = 1
 }
 
-set_convoys = 5
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "SAU_1939"
-	set_technology = {
-		tech_support = 1
-		tech_recon = 1
-		support_weapons = 1
-		gw_artillery = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	}
+add_ideas = {
+	tno_religious_rights_sunni
 }
+
+set_convoys = 5
 
 set_politics = {	
 	ruling_party = absolutism
@@ -71,8 +24,9 @@ set_politics = {
 set_popularities = {
     liberalism = 0
     rexism = 0
-    proletarianism = 0
-    absolutism = 100
+	proletarianism = 0
+	theocracy = 34
+    absolutism = 66
 }
 
 create_country_leader = {
@@ -84,20 +38,4 @@ create_country_leader = {
 	traits = {
 		#
 	}
-}
-
-1939.1.1 = {
-	set_politics = {		
-		ruling_party = absolutism
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-}
-
-    set_popularities = {
-        liberalism = 0
-        rexism = 0
-        proletarianism = 0
-        absolutism = 100
-    }
 }
