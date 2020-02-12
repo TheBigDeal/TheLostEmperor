@@ -104,35 +104,7 @@ guiTypes = {
 				background = {
 					name = "Background"
 					quadTextureSprite ="GFX_blank"
-				}
-				iconType ={
-					name ="political_header"
-					spriteType = "GFX_category_header"
-					position = { x=-2 y=-2 }
-				}
-				instantTextboxType = {
-					name = "category_1_name"
-					position = { x = 200 y = 10 }
-					font = "vic_22"
-					text = "political_laws"
-					maxWidth = 300
-					maxHeight = 20
-				}
-				
-				iconType = {
-					name = "social_header"
-					spriteType = "GFX_category_header"
-					position = { x=-2 y=326 }
-				}
-				instantTextboxType = {
-					name = "social_laws_name"
-					position = { x = 200 y = 336 }
-					font = "vic_22"
-					text = "Social Laws"
-					maxWidth = 300
-					maxHeight = 20
-				}
-				
+				}		
 			}
 			###Governmental Laws Start
 			########################################################
@@ -334,6 +306,24 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 					shortcut = "4"
 				}
+				buttonType = { #Shia
+					name = "law_religion_btn_3"
+					position = { x = 414 y = 42 }
+					quadTextureSprite ="GFX_religion_shia"
+					buttonFont = "vic_18"
+					pdx_tooltip = "LE_religion_tt"
+					Orientation = "UPPER_LEFT"
+					shortcut = "4"
+				}
+				buttonType = { #Sunni
+					name = "law_religion_btn_4"
+					position = { x = 414 y = 42 }
+					quadTextureSprite ="GFX_religion_sunni"
+					buttonFont = "vic_18"
+					pdx_tooltip = "LE_religion_tt"
+					Orientation = "UPPER_LEFT"
+					shortcut = "4"
+				}
 			}
 			###Category 1 start 
 			########################################################
@@ -343,18 +333,18 @@ guiTypes = {
 				size = { width = 100%% height = 30 }
 				iconType = {
 					name = "law_political_parties_header"
-					spriteType = "GFX_lawheader"
-					position = { x=-2 y=0 }
+					spriteType = "GFX_category_header"
+					position = { x=-2 y=-46 }
 				}
 				iconType = {
 					name = "law_political_parties_icon"
 					spriteType = "GFX_political_strip"
 					frame = 8
-					position = { x=2 y=0 }
+					position = { x=2 y=-5 }
 				}
 				instantTextboxType = {
 					name = "category_1_law_political_parties_name"
-					position = { x = 28 y = 8 }
+					position = { x = 28 y = 2 }
 					font = "vic_18"
 					text = "tno_political_parties"
 					pdx_tooltip = "tno_political_parties"
@@ -364,7 +354,7 @@ guiTypes = {
 				}
 				buttonType = {
 					name = "law_political_parties_btn_1"
-					position = { x = 0 y = 28 }
+					position = { x = 0 y = 20 }
 					quadTextureSprite ="GFX_sort_button_140x29"
 					pdx_tooltip = "LE_political_parties_1_tt"
 					buttonFont = "vic_18"
@@ -373,7 +363,7 @@ guiTypes = {
 				}
 				buttonType = {
 					name = "law_political_parties_btn_2"
-					position = { x = 0 y = 52 }
+					position = { x = 0 y = 44 }
 					quadTextureSprite ="GFX_sort_button_140x29"
 					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
 					buttonFont = "vic_18"
@@ -382,7 +372,7 @@ guiTypes = {
 				}
 				buttonType = {
 					name = "law_political_parties_btn_3"
-					position = { x = 0 y = 76 }
+					position = { x = 0 y = 68 }
 					quadTextureSprite ="GFX_sort_button_140x29"
 					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
 					buttonFont = "vic_18"
@@ -391,7 +381,7 @@ guiTypes = {
 				}
 				buttonType = {
 					name = "law_political_parties_btn_4"
-					position = { x = 0 y = 100 }
+					position = { x = 0 y = 92 }
 					quadTextureSprite ="GFX_sort_button_140x29"
 					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
 					buttonFont = "vic_18"
@@ -400,7 +390,7 @@ guiTypes = {
 				}
 				buttonType = {
 					name = "law_political_parties_btn_5"
-					position = { x = 0 y = 124 }
+					position = { x = 0 y = 116 }
 					quadTextureSprite ="GFX_sort_button_140x29"
 					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
 					buttonFont = "vic_18"
@@ -410,35 +400,35 @@ guiTypes = {
 			}
 			containerWindowType = {
 				name = "selected_laws_political_parties_1"
-				position = { x=-10 y=-558}
+				position = { x=-10 y=24}
 				size = { width = 100%% height = 100%% }
 				iconType = {
 					name = "law_political_parties_selected_1"
-					position = { x=10 y=635 }
+					position = { x=10 y=20 }
 					spriteType = "GFX_selected_law"
 					alwaystransparent = yes
 				}
 				iconType = {
 					name = "law_political_parties_selected_2"
-					position = { x=10 y=659 }
+					position = { x=10 y=44 }
 					spriteType = "GFX_selected_law"
 					alwaystransparent = yes
 				}
 				iconType = {
 					name = "law_political_parties_selected_3"
-					position = { x=10 y=682 }
+					position = { x=10 y=68 }
 					spriteType = "GFX_selected_law"
 					alwaystransparent = no
 				}
 				iconType = {
 					name = "law_political_parties_selected_4"
-					position = { x=10 y=707 }
+					position = { x=10 y=92 }
 					spriteType = "GFX_selected_law"
 					alwaystransparent = yes
 				}
 				iconType = {
 					name = "law_political_parties_selected_5"
-					position = { x=10 y=730 }
+					position = { x=10 y=116 }
 					spriteType = "GFX_selected_law"
 					alwaystransparent = yes
 				}
@@ -453,11 +443,11 @@ guiTypes = {
 					name = "law_vote_franchise_icon"
 					spriteType = "GFX_political_strip"
 					frame = 2
-					position = { x=0 y=-6 }
+					position = { x=0 y=-15 }
 				}
 				instantTextboxType = {
 					name = "category_1_law_vote_franchise_name"
-					position = { x = 26 y = 2 }
+					position = { x = 26 y = -8 }
 					font = "vic_18"
 					text = "Vote Franchise"
 					pdx_tooltip = "tno_political_parties"
@@ -1665,12 +1655,18 @@ guiTypes = {
 					size = { width = 345 height = 156 }
 					buttonType = {
 						name = "law_tno_religious_rights_7_button"
-						quadTextureSprite ="GFX_law_bg"
+						spriteType ="GFX_law_bg"
 						size = { width = 345 height = 100 }
+					}
+					iconType ={
+						name ="law_religious_rights_7_icon"
+						spriteType = "GFX_religion_shia"
+						position = { x= 12 y = 11 }
+						Orientation = "UPPER_LEFT"
 					}
 					instantTextboxType = {
 						name = "header"
-						position = { x = 18 y = 12 }
+						position = { x = 90 y = 12 }
 						font = "vic_18"
 						text = "tno_religious_rights_shia"
 						maxWidth = 670
@@ -1679,18 +1675,9 @@ guiTypes = {
 					}
 					instantTextboxType = {
 						name = "set_law_tno_religious_rights_7_txt"
-						position = { x = 20 y = 38 }
+						position = { x = 90 y = 38 }
 						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_law_tno_religious_rights_7_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER_2"
+						text = "LE_Catholicism_Modifier"
 						maxWidth = 300
 						maxHeight = 100
 						format = left
@@ -1702,12 +1689,18 @@ guiTypes = {
 					size = { width = 345 height = 156 }
 					buttonType = {
 						name = "law_tno_religious_rights_8_button"
-						quadTextureSprite ="GFX_law_bg"
+						spriteType ="GFX_law_bg"
 						size = { width = 345 height = 100 }
+					}
+					iconType ={
+						name ="law_religious_rights_8_icon"
+						spriteType = "GFX_religion_sunni"
+						position = { x= 12 y = 11 }
+						Orientation = "UPPER_LEFT"
 					}
 					instantTextboxType = {
 						name = "header"
-						position = { x = 18 y = 12 }
+						position = { x = 90 y = 12 }
 						font = "vic_18"
 						text = "tno_religious_rights_sunni"
 						maxWidth = 670
@@ -1716,18 +1709,9 @@ guiTypes = {
 					}
 					instantTextboxType = {
 						name = "set_law_tno_religious_rights_8_txt"
-						position = { x = 20 y = 38 }
+						position = { x = 90 y = 38 }
 						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_law_tno_religious_rights_8_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER_2"
+						text = "LE_Catholicism_Modifier"
 						maxWidth = 300
 						maxHeight = 100
 						format = left
@@ -2046,7 +2030,7 @@ guiTypes = {
 						name = "cost"
 						position = { x = 286 y = 15 }
 						font = "vic_18"
-						text = "law_conscription_cost"
+						text = "[Root.political_power_cost_sl]"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
@@ -2094,7 +2078,7 @@ guiTypes = {
 						name = "cost"
 						position = { x = 286 y = 15 }
 						font = "vic_18"
-						text = "law_conscription_cost"
+						text = "[Root.political_power_cost_sl]"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
@@ -2143,7 +2127,7 @@ guiTypes = {
 						name = "cost"
 						position = { x = 286 y = 15 }
 						font = "vic_18"
-						text = "law_conscription_cost"
+						text = "[Root.political_power_cost_sl]"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
@@ -2192,7 +2176,7 @@ guiTypes = {
 						name = "cost"
 						position = { x = 286 y = 15 }
 						font = "vic_18"
-						text = "law_conscription_cost"
+						text = "[Root.political_power_cost_sl]"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
@@ -2240,7 +2224,7 @@ guiTypes = {
 						name = "cost"
 						position = { x = 286 y = 15 }
 						font = "vic_18"
-						text = "law_conscription_cost"
+						text = "[Root.political_power_cost_sl]"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
@@ -2288,7 +2272,7 @@ guiTypes = {
 						name = "cost"
 						position = { x = 286 y = 15 }
 						font = "vic_18"
-						text = "law_conscription_cost"
+						text = "[Root.political_power_cost_sl]"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
@@ -2336,7 +2320,7 @@ guiTypes = {
 						name = "cost"
 						position = { x = 286 y = 15 }
 						font = "vic_18"
-						text = "law_conscription_cost"
+						text = "[Root.political_power_cost_sl]"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
@@ -2444,7 +2428,7 @@ guiTypes = {
 						name = "cost"
 						position = { x = 286 y = 15 }
 						font = "vic_18"
-						text = "law_trade_cost"
+						text = "[Root.political_power_cost_sl]"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
@@ -2492,7 +2476,7 @@ guiTypes = {
 						name = "cost"
 						position = { x = 286 y = 15 }
 						font = "vic_18"
-						text = "law_trade_cost"
+						text = "[Root.political_power_cost_sl]"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
@@ -2541,7 +2525,7 @@ guiTypes = {
 						name = "cost"
 						position = { x = 286 y = 15 }
 						font = "vic_18"
-						text = "law_trade_cost"
+						text = "[Root.political_power_cost_sl]"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
@@ -2590,7 +2574,7 @@ guiTypes = {
 						name = "cost"
 						position = { x = 286 y = 15 }
 						font = "vic_18"
-						text = "law_trade_cost"
+						text = "[Root.political_power_cost_sl]"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
@@ -2695,7 +2679,7 @@ guiTypes = {
 						name = "cost"
 						position = { x = 286 y = 15 }
 						font = "vic_18"
-						text = "law_economy_cost"
+						text = "[Root.political_power_cost_sl]"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
@@ -2743,7 +2727,7 @@ guiTypes = {
 						name = "cost"
 						position = { x = 286 y = 15 }
 						font = "vic_18"
-						text = "law_economy_cost"
+						text = "[Root.political_power_cost_sl]"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
@@ -2792,7 +2776,7 @@ guiTypes = {
 						name = "cost"
 						position = { x = 286 y = 15 }
 						font = "vic_18"
-						text = "law_economy_cost"
+						text = "[Root.political_power_cost_sl]"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
@@ -2841,7 +2825,7 @@ guiTypes = {
 						name = "cost"
 						position = { x = 286 y = 15 }
 						font = "vic_18"
-						text = "law_economy_cost"
+						text = "[Root.political_power_cost_sl]"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
@@ -2889,7 +2873,7 @@ guiTypes = {
 						name = "cost"
 						position = { x = 286 y = 15 }
 						font = "vic_18"
-						text = "law_economy_cost"
+						text = "[Root.political_power_cost_sl]"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
@@ -2937,7 +2921,7 @@ guiTypes = {
 						name = "cost"
 						position = { x = 286 y = 15 }
 						font = "vic_18"
-						text = "law_economy_cost"
+						text = "[Root.political_power_cost_sl]"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
@@ -2985,7 +2969,7 @@ guiTypes = {
 						name = "cost"
 						position = { x = 286 y = 15 }
 						font = "vic_18"
-						text = "law_economy_cost"
+						text = "[Root.political_power_cost_sl]"
 						maxWidth = 670
 						maxHeight = 20
 						format = left

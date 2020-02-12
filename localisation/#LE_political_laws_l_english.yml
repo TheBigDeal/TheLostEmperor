@@ -84,7 +84,8 @@
  LE_trade_3_m:0 "Factory and Dockyard Capacity: §G+5%§!\nConstruction Speed: §G+5%§!\nMinimum Exports: §Y25%§!\nResearch Speed: §R-1%§!"
  LE_trade_4_m:0 "Minimum Exports: §Y0%§!\n§RNo resources will be exported.§!"
  #Economy
- law_economy_cost:0 "£pol_power §R300§!"
+ pol_cost_met:0 "£pol_power §Y300§!"
+ pol_cost_not_met:0 "£pol_power §R300§!"
  LE_economy_1_m:0 "Consumer Goods: §Y40%§!\nCivilian Factory Construction Speed: §G+40%§!\nArms Factory Construction Speed: §R-50%§!\nFactory Conversion Cost: §R+50%§!"
  LE_economy_2_m:0 "Consumer Goods: §Y35%§!\nCivilian Factory Construction Speed: §G+30%§!\nArms Factory Construction Speed: §R-40%§!\nFactory Conversion Cost: §R+35%§!"
  LE_economy_3_m:0 "Consumer Goods: §Y30%§!\nCivilian Factory Construction Speed: §G+20%§!\nArms Factory Construction Speed: §R-30%§!\nFactory Conversion Cost: §R+20%§!"

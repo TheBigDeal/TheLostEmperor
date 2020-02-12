@@ -7,7 +7,7 @@ set_research_slots = 3
 add_ideas = {
 	limited_conscription
 	TUR_internal_instability
-	tno_religious_rights_sunni
+	le_religion_sunni
 }
 set_country_flag = TUR_syrian_rebellions
 set_variable = { var = SYRIAN_REBEL_STRENGH value = 29 }

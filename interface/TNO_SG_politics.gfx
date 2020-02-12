@@ -9,6 +9,14 @@ spriteTypes = {
 		name = "GFX_religion_orthodoxy"
 		texturefile = "gfx/interface/goals/Religion/religion_orthodoxy.dds"
 	}
+	SpriteType = {
+		name = "GFX_religion_shia"
+		texturefile = "gfx/interface/goals/Religion/religion_shia.dds"
+	}
+	SpriteType = {
+		name = "GFX_religion_sunni"
+		texturefile = "gfx/interface/goals/Religion/religion_sunni.dds"
+	}
 	# TRADE LAW
 	##############################################################
 	SpriteType = {

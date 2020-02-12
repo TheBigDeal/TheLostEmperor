@@ -1,4 +1,19 @@
 defined_text = {
+	name = political_power_cost_sl
+	text = {
+		trigger = {
+			has_political_power > 299
+		}
+		localization_key = pol_cost_met
+	}
+	text = {
+		trigger = {
+			has_political_power < 300
+		}
+		localization_key = pol_cost_not_met
+	}
+}
+defined_text = {
 	name = GetCategory2Lawtno_conscription
 	text = {
 		trigger = {

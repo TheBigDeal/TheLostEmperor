@@ -31,6 +31,8 @@ scripted_gui = {
 			#State Religion
 			law_religion_btn_1_visible = { has_idea = le_religion_catholicism }
 			law_religion_btn_2_visible = { has_idea = le_religion_orthodox }
+			law_religion_btn_3_visible = { has_idea = le_religion_shia }
+			law_religion_btn_4_visible = { has_idea = le_religion_sunni }
 			###POLITICAL LAWS
 			################################################
 			law_political_parties_selected_1_visible = { has_idea = law_1_only_underground }
@@ -58,6 +60,8 @@ scripted_gui = {
 					limit = { check_variable = { open_conscription_container = 0 } }
 					set_variable = { open_conscription_container = 1 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_trade_container_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 				else_if = {
 					limit = { check_variable = { open_conscription_container = 1 } }
@@ -66,6 +70,8 @@ scripted_gui = {
 				else {
 					set_variable = { open_conscription_container = 1 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_trade_container_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 			}
 			law_conscription_btn_2_click = { 
@@ -73,6 +79,8 @@ scripted_gui = {
 					limit = { check_variable = { open_conscription_container = 0 } }
 					set_variable = { open_conscription_container = 1 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_trade_container_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 				else_if = {
 					limit = { check_variable = { open_conscription_container = 1 } }
@@ -81,6 +89,8 @@ scripted_gui = {
 				else {
 					set_variable = { open_conscription_container = 1 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_trade_container_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 			}
 			law_conscription_btn_3_click = { 
@@ -88,6 +98,8 @@ scripted_gui = {
 					limit = { check_variable = { open_conscription_container = 0 } }
 					set_variable = { open_conscription_container = 1 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_trade_container_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 				else_if = {
 					limit = { check_variable = { open_conscription_container = 1 } }
@@ -96,6 +108,8 @@ scripted_gui = {
 				else {
 					set_variable = { open_conscription_container = 1 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_trade_container_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 			}
 			law_conscription_btn_4_click = { 
@@ -103,6 +117,8 @@ scripted_gui = {
 					limit = { check_variable = { open_conscription_container = 0 } }
 					set_variable = { open_conscription_container = 1 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_trade_container_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 				else_if = {
 					limit = { check_variable = { open_conscription_container = 1 } }
@@ -111,6 +127,8 @@ scripted_gui = {
 				else {
 					set_variable = { open_conscription_container = 1 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_trade_container_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 			}
 			law_conscription_btn_5_click = { 
@@ -118,6 +136,8 @@ scripted_gui = {
 					limit = { check_variable = { open_conscription_container = 0 } }
 					set_variable = { open_conscription_container = 1 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_trade_container_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 				else_if = {
 					limit = { check_variable = { open_conscription_container = 1 } }
@@ -126,6 +146,8 @@ scripted_gui = {
 				else {
 					set_variable = { open_conscription_container = 1 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_trade_container_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 			}
 			law_conscription_btn_6_click = { 
@@ -133,6 +155,8 @@ scripted_gui = {
 					limit = { check_variable = { open_conscription_container = 0 } }
 					set_variable = { open_conscription_container = 1 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_trade_container_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 				else_if = {
 					limit = { check_variable = { open_conscription_container = 1 } }
@@ -141,6 +165,8 @@ scripted_gui = {
 				else {
 					set_variable = { open_conscription_container = 1 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_trade_container_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 			}
 			law_conscription_btn_7_click = { 
@@ -148,6 +174,8 @@ scripted_gui = {
 					limit = { check_variable = { open_conscription_container = 0 } }
 					set_variable = { open_conscription_container = 1 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_trade_container_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 				else_if = {
 					limit = { check_variable = { open_conscription_container = 1 } }
@@ -156,6 +184,8 @@ scripted_gui = {
 				else {
 					set_variable = { open_conscription_container = 1 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_trade_container_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 			}
 			###TRADE LAWS
@@ -165,6 +195,7 @@ scripted_gui = {
 					set_variable = { open_trade_container = 1 }
 					set_variable = { open_conscription_container = 0 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 				else_if = {
 					limit = { check_variable = { open_trade_container = 1 } }
@@ -174,6 +205,7 @@ scripted_gui = {
 					set_variable = { open_trade_container = 1 }
 					set_variable = { open_conscription_container = 0 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 			}
 			law_trade_btn_2_click = { 
@@ -182,6 +214,7 @@ scripted_gui = {
 					set_variable = { open_trade_container = 1 }
 					set_variable = { open_conscription_container = 0 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 				else_if = {
 					limit = { check_variable = { open_trade_container = 1 } }
@@ -191,6 +224,7 @@ scripted_gui = {
 					set_variable = { open_trade_container = 1 }
 					set_variable = { open_conscription_container = 0 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 			}
 			law_trade_btn_3_click = { 
@@ -199,6 +233,7 @@ scripted_gui = {
 					set_variable = { open_trade_container = 1 }
 					set_variable = { open_conscription_container = 0 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 				else_if = {
 					limit = { check_variable = { open_trade_container = 1 } }
@@ -208,6 +243,7 @@ scripted_gui = {
 					set_variable = { open_trade_container = 1 }
 					set_variable = { open_conscription_container = 0 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 			}
 			law_trade_btn_4_click = { 
@@ -216,6 +252,7 @@ scripted_gui = {
 					set_variable = { open_trade_container = 1 }
 					set_variable = { open_conscription_container = 0 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 				else_if = {
 					limit = { check_variable = { open_trade_container = 1 } }
@@ -225,6 +262,7 @@ scripted_gui = {
 					set_variable = { open_trade_container = 1 }
 					set_variable = { open_conscription_container = 0 }
 					set_variable = { open_religion_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 			}
 			###ECONOMY LAWS
@@ -369,6 +407,7 @@ scripted_gui = {
 					set_variable = { open_religion_container = 1 }
 					set_variable = { open_conscription_container = 0 }
 					set_variable = { open_trade_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 				else_if = {
 					limit = { check_variable = { open_religion_container = 1 } }
@@ -378,6 +417,7 @@ scripted_gui = {
 					set_variable = { open_religion_container = 1 }
 					set_variable = { open_conscription_container = 0 }
 					set_variable = { open_trade_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 			}
 			law_religion_btn_2_click = { 
@@ -386,6 +426,7 @@ scripted_gui = {
 					set_variable = { open_religion_container = 1 }
 					set_variable = { open_conscription_container = 0 }
 					set_variable = { open_trade_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 				else_if = {
 					limit = { check_variable = { open_religion_container = 1 } }
@@ -395,6 +436,45 @@ scripted_gui = {
 					set_variable = { open_religion_container = 1 }
 					set_variable = { open_conscription_container = 0 }
 					set_variable = { open_trade_container = 0 }
+					set_variable = { open_economy_container = 0 }
+				}
+			}
+			law_religion_btn_3_click = {
+				if = {
+					limit = { check_variable = { open_religion_container = 0 } }
+					set_variable = { open_religion_container = 1 }
+					set_variable = { open_conscription_container = 0 }
+					set_variable = { open_trade_container = 0 }
+					set_variable = { open_economy_container = 0 }
+				}
+				else_if = {
+					limit = { check_variable = { open_religion_container = 1 } }
+					set_variable = { open_religion_container = 0 }
+				}
+				else {
+					set_variable = { open_religion_container = 1 }
+					set_variable = { open_conscription_container = 0 }
+					set_variable = { open_trade_container = 0 }
+					set_variable = { open_economy_container = 0 }
+				}
+			}
+			law_religion_btn_4_click = { 
+				if = {
+					limit = { check_variable = { open_religion_container = 0 } }
+					set_variable = { open_religion_container = 1 }
+					set_variable = { open_conscription_container = 0 }
+					set_variable = { open_trade_container = 0 }
+					set_variable = { open_economy_container = 0 }
+				}
+				else_if = {
+					limit = { check_variable = { open_religion_container = 1 } }
+					set_variable = { open_religion_container = 0 }
+				}
+				else {
+					set_variable = { open_religion_container = 1 }
+					set_variable = { open_conscription_container = 0 }
+					set_variable = { open_trade_container = 0 }
+					set_variable = { open_economy_container = 0 }
 				}
 			}
 			###POLITICAL LAWS
@@ -647,11 +727,19 @@ scripted_gui = {
 			religion_close_button_click = { set_variable = { open_religion_container = 0 } }
 			law_tno_religious_rights_1_button_click = { #CATHOLICISM
 				set_variable = { open_religion_window = 1 }
-				set_variable = { CATHOLICISM_RELIGION = 1 }
+				set_variable = { COUNTRY_RELIGION_LAW = 1 }
 			}
 			law_tno_religious_rights_5_button_click = { #ORTHODOX
 				set_variable = { open_religion_window = 1 }
-				set_variable = { ORTHODOX_RELIGION = 1 }
+				set_variable = { COUNTRY_RELIGION_LAW = 5 }
+			}
+			law_tno_religious_rights_7_button_click = { #SHIA
+				set_variable = { open_religion_window = 1 }
+				set_variable = { COUNTRY_RELIGION_LAW = 7 }
+			}
+			law_tno_religious_rights_8_button_click = { #SUNNI
+				set_variable = { open_religion_window = 1 }
+				set_variable = { COUNTRY_RELIGION_LAW = 8 }
 			}
 		}
 	}
@@ -923,18 +1011,32 @@ scripted_gui = {
 			religous_laws_close_button_click = { set_variable = { open_religion_window = 0 }}
 			religous_laws_ok_button_click = {
 				if = {
-					limit = {check_variable = { CATHOLICISM_RELIGION = 1 }}
-					remove_ideas = { le_religion_orthodox }
+					limit = {check_variable = { COUNTRY_RELIGION_LAW = 1 }}
+					remove_ideas = { le_religion_orthodox le_religion_shia le_religion_sunni }
 					add_ideas = { le_religion_catholicism }
 					set_variable = { open_religion_window = 0 }
-					set_variable = { CATHOLICISM_RELIGION = 0 }
+					set_variable = { COUNTRY_RELIGION_LAW = 0 }
 				}
 				else_if = {
-					limit = {check_variable = { ORTHODOX_RELIGION = 1 }}
-					remove_ideas = { le_religion_catholicism }
+					limit = {check_variable = { COUNTRY_RELIGION_LAW = 5 }}
+					remove_ideas = { le_religion_catholicism le_religion_shia le_religion_sunni }
 					add_ideas = { le_religion_orthodox }
 					set_variable = { open_religion_window = 0 }
-					set_variable = { ORTHODOX_RELIGION = 0 }
+					set_variable = { COUNTRY_RELIGION_LAW = 0 }
+				}
+				else_if = {
+					limit = {check_variable = { COUNTRY_RELIGION_LAW = 7 }}
+					remove_ideas = { le_religion_orthodox le_religion_catholicism le_religion_sunni }
+					add_ideas = { le_religion_shia }
+					set_variable = { open_religion_window = 0 }
+					set_variable = { COUNTRY_RELIGION_LAW = 0 }
+				}
+				else_if = {
+					limit = {check_variable = { COUNTRY_RELIGION_LAW = 8 }}
+					remove_ideas = { le_religion_orthodox le_religion_shia le_religion_catholicism }
+					add_ideas = { le_religion_sunni }
+					set_variable = { open_religion_window = 0 }
+					set_variable = { COUNTRY_RELIGION_LAW = 0 }
 				}
 			}
 		}
