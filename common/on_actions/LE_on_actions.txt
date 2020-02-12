@@ -1,6 +1,7 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			every_country = {limit = {is_ai = no}set_variable = { show_opening_screen = 1 }}
 			get_power_ratings = yes
 			set_variable = { var = open_economic_window value = 0 }
 			set_variable = { var = GLOBAL_COMMUNIST_INFLUENCE value = 0 }

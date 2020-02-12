@@ -8,17 +8,31 @@ guiTypes = {
 			spriteType = "GFX_hre_not_icon"
 			pdx_tooltip = "not_in_hre"
 		}
-		#iconType = {
-		#	name = "hre_available_icon_ic"
-		#	position = {x=0 y=0}
-		#	spriteType = "GFX_hre_icon"
-		#	pdx_tooltip = "not_in_hre"
-		#}
 		iconType = {
 			name = "hre_icon_ic"
 			position = {x=0 y=0}
 			spriteType = "GFX_hre_icon"
 			pdx_tooltip = "in_hre"
+		}
+	}
+	containerWindowType = {
+		name = "state_core"
+		position = {x=434 y=60}
+		iconType = {
+			name = "core_icon_ic"
+			position = {x=0 y=0}
+			spriteType = "GFX_core_state_button"
+			pdx_tooltip = "in_hre"
+		}
+	}
+	containerWindowType = {
+		name = "state_claim"
+		position = {x=434 y=60}
+		iconType = {
+			name = "claim_icon_ic"
+			position = {x=0 y=0}
+			spriteType = "GFX_claim_state_button"
+			pdx_tooltip = "not_in_hre"
 		}
 	}
 }

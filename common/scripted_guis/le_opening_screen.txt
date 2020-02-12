@@ -1,0 +1,18 @@
+scripted_gui = {
+	opening_screen = {
+		context_type = player_context
+		
+		window_name = "lost_emperor_opening"
+		
+		visible = {
+            check_variable = { show_opening_screen = 1 }
+		}
+		
+		effects = {
+			opening_ok_button_click = {
+				set_variable = { show_opening_screen = 0 }
+			}
+		}
+	}
+}
+

@@ -11,7 +11,7 @@ bookmarks = {
 			history = FRA_BLITZKRIEG_DESC
 			ideology = absolutism
 			ideas={
-				
+				le_religion_catholicism
 			}
 			focuses = {
 				
@@ -56,7 +56,7 @@ bookmarks = {
 			history = GER_BLITZKRIEG_DESC
 			ideology = royalism
 			ideas = {
-
+				le_religion_catholicism
 			}
 			focuses = {
 
@@ -66,8 +66,8 @@ bookmarks = {
 			history = GER_BLITZKRIEG_DESC
 			ideology = absolutism
 			ideas = {
+				le_religion_orthodox
 				GRE_exiled_prince_constantine
-				GRE_unreliable_military
 				GRE_failed_economy
 				GRE_unpopular_monarchy
 			}
@@ -81,7 +81,7 @@ bookmarks = {
 			history = SOV_BLITZKRIEG_DESC
 			ideology = absolutism
 			ideas = {
-
+				le_religion_orthodox
 			}
 			focuses = {
 
@@ -99,7 +99,7 @@ bookmarks = {
 			history = "ROM_BLITZKRIEG_DESC"
 			ideology = absolutism
 			ideas = {
-
+				le_religion_catholicism
 			}
 			focuses = {
 
@@ -111,7 +111,7 @@ bookmarks = {
 			history = "ROM_BLITZKRIEG_DESC"
 			ideology = absolutism
 			ideas = {
-
+				le_religion_sunni
 			}
 			focuses = {
 
@@ -135,7 +135,7 @@ bookmarks = {
 			history = "ROM_BLITZKRIEG_DESC"
 			ideology = absolutism
 			ideas = {
-
+				le_religion_shia
 			}
 			focuses = {
 
@@ -147,7 +147,7 @@ bookmarks = {
 			history = "ROM_BLITZKRIEG_DESC"
 			ideology = rexism
 			ideas = {
-
+				
 			}
 			focuses = {
 
@@ -159,7 +159,7 @@ bookmarks = {
 			history = "ROM_BLITZKRIEG_DESC"
 			ideology = absolutism
 			ideas = {
-
+				le_religion_catholicism
 			}
 			focuses = {
 
@@ -171,7 +171,7 @@ bookmarks = {
 			history = "ROM_BLITZKRIEG_DESC"
 			ideology = despotism
 			ideas = {
-
+				le_religion_catholicism
 			}
 			focuses = {
 
@@ -183,7 +183,7 @@ bookmarks = {
 			history = "ROM_BLITZKRIEG_DESC"
 			ideology = absolutism
 			ideas = {
-
+				le_religion_catholicism
 			}
 			focuses = {
 

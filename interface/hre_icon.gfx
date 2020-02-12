@@ -11,4 +11,13 @@ spriteTypes = {
 		name = "GFX_hre_in_icon"
 		textureFile = "gfx//interface/hre_in_icon.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_core_state_button"
+		textureFile = "gfx//interface/core_state_button.dds"
+	}
+	SpriteType = {
+		name = "GFX_claim_state_button"
+		textureFile = "gfx//interface/claim_state_button.dds"
+	}
 }

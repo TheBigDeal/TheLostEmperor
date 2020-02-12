@@ -3,11 +3,6 @@ scripted_gui = {
 		context_type = selected_state_context
 		window_name = "hre_icon_container"
 		parent_window_token = selected_state_view
-
-		visible = {
-
-		}
-
 		triggers = {
 			hre_icon_ic_visible = {
 				check_variable = {
@@ -15,5 +10,17 @@ scripted_gui = {
 				}
 			}
 		}
+	}
+	core_icon = {
+		context_type = selected_state_context
+		window_name = "state_core"
+		parent_window_token = selected_state_view
+		visible = { is_controlled_by=ROOT }
+	}
+	claim_icon = {
+		context_type = selected_state_context
+		window_name = "state_claim"
+		parent_window_token = selected_state_view
+		visible = { NOT = {is_controlled_by=ROOT } }
 	}
 }

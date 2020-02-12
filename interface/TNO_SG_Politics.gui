@@ -85,9 +85,9 @@ guiTypes = {
 	containerWindowType = {
 		name = "TNO_SG_politics_laws"
 		position = { x = 0 y = 480 }
-		size = { width=100%% height=97%% }
+		size = { width=100%% height=96%% }
 		verticalScrollbar = "right_vertical_slider_tno_laws_2"
-		margin = { top = 13 bottom = 10 }
+		margin = { top = 13 bottom = 8 }
 		background = {
 			name = "Background"
 			quadTextureSprite ="GFX_tiled_window_1b_no_border"
@@ -95,7 +95,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "LE_category_1"
 			position = { x = 12 y = 120 }
-			size = { width=260 height=700 }
+			size = { width=240 height=700 }
 			containerWindowType = {
 				name = "TNO_category_1_slider"
 				position = { x = 0 y = 0 }
@@ -329,22 +329,22 @@ guiTypes = {
 			########################################################
 			containerWindowType = {
 				name = "category_2_law_political_parties"
-				position = { x =0 y = 49 }
+				position = { x =0 y = 29 }
 				size = { width = 100%% height = 30 }
 				iconType = {
 					name = "law_political_parties_header"
 					spriteType = "GFX_category_header"
-					position = { x=-2 y=-46 }
+					position = { x=-2 y=-24 }
 				}
 				iconType = {
 					name = "law_political_parties_icon"
 					spriteType = "GFX_political_strip"
 					frame = 8
-					position = { x=2 y=-5 }
+					position = { x=2 y=-18 }
 				}
 				instantTextboxType = {
 					name = "category_1_law_political_parties_name"
-					position = { x = 28 y = 2 }
+					position = { x = 28 y = -10 }
 					font = "vic_18"
 					text = "tno_political_parties"
 					pdx_tooltip = "tno_political_parties"
@@ -400,7 +400,7 @@ guiTypes = {
 			}
 			containerWindowType = {
 				name = "selected_laws_political_parties_1"
-				position = { x=-10 y=24}
+				position = { x=-10 y=29}
 				size = { width = 100%% height = 100%% }
 				iconType = {
 					name = "law_political_parties_selected_1"
@@ -437,17 +437,17 @@ guiTypes = {
 			####################################################################
 			containerWindowType = {
 				name = "category_2_law_vote_franchise"
-				position = { x =135 y = 57 }
+				position = { x =135 y = 29 }
 				size = { width = 100%% height = 30 }
 				iconType = {
 					name = "law_vote_franchise_icon"
 					spriteType = "GFX_political_strip"
 					frame = 2
-					position = { x=0 y=-15 }
+					position = { x=0 y=-17 }
 				}
 				instantTextboxType = {
 					name = "category_1_law_vote_franchise_name"
-					position = { x = 26 y = -8 }
+					position = { x = 26 y = -10 }
 					font = "vic_18"
 					text = "Vote Franchise"
 					pdx_tooltip = "tno_political_parties"
@@ -503,7 +503,7 @@ guiTypes = {
 			}
 			containerWindowType = {
 				name = "selected_laws_vote_franchise_2"
-				position = { x=125 y=-558}
+				position = { x=125 y=-586}
 				size = { width = 100%% height = 100%% }
 				iconType = {
 					name = "law_vote_franchise_selected_1"
@@ -540,17 +540,17 @@ guiTypes = {
 			####################################
 			containerWindowType = {
 				name = "category_2_trade_unions"
-				position = { x =270 y = 57 }
+				position = { x =270 y = 29 }
 				size = { width = 100%% height = 30 }
 				iconType = {
 					name = "law_political_parties_icon"
 					spriteType = "GFX_political_strip"
 					frame = 7
-					position = { x=0 y=-5 }
+					position = { x=0 y=-18 }
 				}
 				instantTextboxType = {
 					name = "category_1_law_slavery_name"
-					position = { x = 26 y = 2 }
+					position = { x = 26 y = -10 }
 					font = "vic_18"
 					text = "Trade Unions"
 					pdx_tooltip = "tno_political_parties"
@@ -597,7 +597,7 @@ guiTypes = {
 			}
 			containerWindowType = {
 				name = "selected_laws_trade_unions_3"
-				position = { x=260 y=-558}
+				position = { x=260 y=-586}
 				size = { width = 100%% height = 100%% }
 				iconType = {
 					name = "law_trade_unions_selected_1"
@@ -628,17 +628,17 @@ guiTypes = {
 			####################################################################
 			containerWindowType = {
 				name = "category_2_slavery"
-				position = { x =405 y = 57 }
+				position = { x =405 y = 29 }
 				size = { width = 100%% height = 30 }
 				iconType = {
 					name = "law_slavery_icon"
 					spriteType = "GFX_political_strip"
 					frame = 1
-					position = { x=0 y=-5 }
+					position = { x=0 y=-17 }
 				}
 				instantTextboxType = {
 					name = "category_1_law_slavery_name"
-					position = { x = 26 y = 2 }
+					position = { x = 26 y = -10 }
 					font = "vic_18"
 					text = "Slavery"
 					pdx_tooltip = "tno_political_parties"
@@ -667,7 +667,7 @@ guiTypes = {
 			}
 			containerWindowType = {
 				name = "selected_laws_slavery_4"
-				position = { x=395 y=-558}
+				position = { x=395 y=-586}
 				size = { width = 100%% height = 100%% }
 				iconType = {
 					name = "law_slavery_selected_1"
@@ -686,22 +686,22 @@ guiTypes = {
 			############################
 			containerWindowType = {
 				name = "category_2_immigration"
-				position = { x =0 y = 208 }
+				position = { x =0 y = 196 }
 				size = { width = 100%% height = 30 }
 				iconType = {
-					name = "law_immigration_header"
-					spriteType = "GFX_lawheader"
-					position = { x=-2 y=-8 }
+					name = "law_political_parties_header"
+					spriteType = "GFX_category_header"
+					position = { x=-2 y=-24 }
 				}
 				iconType = {
 					name = "law_vote_franchise_icon"
 					spriteType = "GFX_political_strip"
 					frame = 5
-					position = { x=0 y=-6 }
+					position = { x=0 y=-17 }
 				}
 				instantTextboxType = {
 					name = "category_1_law_public_meetings_name"
-					position = { x = 27 y = 1 }
+					position = { x = 27 y = -10 }
 					font = "vic_18"
 					text = "Immigration"
 					pdx_tooltip = "tno_political_parties"
@@ -748,17 +748,17 @@ guiTypes = {
 			}
 			containerWindowType = {
 				name = "category_2_public_meetings"
-				position = { x =406 y = 208 }
+				position = { x =406 y = 196 }
 				size = { width = 100%% height = 30 }
 				iconType = {
 					name = "law_vote_franchise_icon"
 					spriteType = "GFX_political_strip"
 					frame = 5
-					position = { x=0 y=-6 }
+					position = { x=0 y=-17 }
 				}
 				instantTextboxType = {
 					name = "category_1_law_public_meetings_name"
-					position = { x = 24 y = 1 }
+					position = { x = 24 y = -10 }
 					font = "vic_18"
 					text = "Meetings"
 					pdx_tooltip = "tno_political_parties"
@@ -787,17 +787,17 @@ guiTypes = {
 			}
 			containerWindowType = {
 				name = "category_2_minorities"
-				position = { x =270 y = 208 }
+				position = { x =270 y = 196 }
 				size = { width = 100%% height = 130 }
 				iconType = {
 					name = "law_minorities_icon"
 					spriteType = "GFX_political_strip"
 					frame = 4
-					position = { x=0 y=-6 }
+					position = { x=2 y=-17 }
 				}
 				instantTextboxType = {
 					name = "category_1_law_public_meetings_name"
-					position = { x = 26 y = 2 }
+					position = { x = 28 y = -10 }
 					font = "vic_18"
 					text = "Minorities"
 					pdx_tooltip = "tno_political_parties"
@@ -835,17 +835,17 @@ guiTypes = {
 			}
 			containerWindowType = {
 				name = "category_2_press_rights"
-				position = { x =135 y = 208 }
+				position = { x =135 y = 196 }
 				size = { width = 100%% height = 130 }
 				iconType = {
 					name = "law_minorities_icon"
 					spriteType = "GFX_political_strip"
 					frame = 6
-					position = { x=0 y=-6 }
+					position = { x=2 y=-17 }
 				}
 				instantTextboxType = {
 					name = "category_1_law_press_rights_name"
-					position = { x = 26 y = 2 }
+					position = { x = 28 y = -10 }
 					font = "vic_18"
 					text = "Press Rights"
 					pdx_tooltip = "tno_political_parties"
@@ -883,22 +883,22 @@ guiTypes = {
 			}
 			containerWindowType = {
 				name = "category_1_law_minimum_wage"
-				position = { x =0 y = 376 }
+				position = { x =0 y = 332 }
 				size = { width = 100%% height = 30 }
 				iconType = {
-					name = "law_social_laws_1_header"
-					spriteType = "GFX_lawheader"
-					position = { x=-2 y=0 }
+					name = "law_political_parties_header"
+					spriteType = "GFX_category_header"
+					position = { x=-2 y=-16 }
 				}
 				iconType = {
 					name = "law_minimum_wage_icon"
 					spriteType = "GFX_social_strip"
 					frame = 1
-					position = { x=2 y=0 }
+					position = { x=2 y=-8 }
 				}
 				instantTextboxType = {
 					name = "category_1_law_minimum_wage_name"
-					position = { x = 28 y = 8 }
+					position = { x = 28 y = 0 }
 					font = "vic_18"
 					text = "Minimum Wage"
 					pdx_tooltip = "tno_political_parties"
@@ -954,17 +954,17 @@ guiTypes = {
 			}
 			containerWindowType = {
 				name = "category_1_law_pensions"
-				position = { x =135 y = 376 }
+				position = { x =135 y = 332 }
 				size = { width = 100%% height = 30 }
 				iconType = {
 					name = "law_pensions_icon"
 					spriteType = "GFX_social_strip"
 					frame = 5
-					position = { x=2 y=0 }
+					position = { x=2 y=-8 }
 				}
 				instantTextboxType = {
 					name = "category_1_law_pensions_name"
-					position = { x = 28 y = 8 }
+					position = { x = 28 y = 0 }
 					font = "vic_18"
 					text = "Pensions"
 					pdx_tooltip = "tno_political_parties"
@@ -1020,17 +1020,17 @@ guiTypes = {
 			}
 			containerWindowType = {
 				name = "category_1_law_workhours"
-				position = { x =270 y = 376 }
+				position = { x =270 y = 332 }
 				size = { width = 100%% height = 30 }
 				iconType = {
 					name = "law_pensions_icon"
 					spriteType = "GFX_social_strip"
 					frame = 2
-					position = { x=2 y=0 }
+					position = { x=2 y=-8 }
 				}
 				instantTextboxType = {
 					name = "category_1_law_workhours_name"
-					position = { x = 28 y = 8 }
+					position = { x = 28 y = 0 }
 					font = "vic_18"
 					text = "Max. Workhours"
 					pdx_tooltip = "tno_political_parties"
@@ -1086,17 +1086,17 @@ guiTypes = {
 			}
 			containerWindowType = {
 				name = "category_1_law_child_labor"
-				position = { x =405 y = 376 }
+				position = { x =405 y = 332 }
 				size = { width = 100%% height = 30 }
 				iconType = {
 					name = "law_pensions_icon"
 					spriteType = "GFX_social_strip"
 					frame = 8
-					position = { x=2 y=2 }
+					position = { x=2 y=-8 }
 				}
 				instantTextboxType = {
 					name = "category_1_law_child_labor_name"
-					position = { x = 28 y = 8 }
+					position = { x = 28 y = 0 }
 					font = "vic_18"
 					text = "Child Labor"
 					pdx_tooltip = "tno_political_parties"
