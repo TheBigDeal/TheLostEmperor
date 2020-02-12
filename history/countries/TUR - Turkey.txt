@@ -7,24 +7,18 @@ set_research_slots = 3
 add_ideas = {
 	limited_conscription
 	TUR_internal_instability
+	TUR_rebellious_subject_states
 	le_religion_sunni
 }
-set_country_flag = TUR_syrian_rebellions
-set_variable = { var = SYRIAN_REBEL_STRENGH value = 29 }
-set_variable = { var = SYRIAN_TURKIFICATION value = 13 }
 
-set_country_flag = TUR_levant_rebellions
-set_variable = { var = LEVANT_REBEL_STRENGH value = 57 }
-set_variable = { var = LEVANT_TURKIFICATION value = 4 }
-
-set_country_flag = TUR_kurdish_rebellions
-set_variable = { var = KURDISH_REBEL_STRENGH value = 41 }
-set_variable = { var = KURDISH_TURKIFICATION value = 34 }
-
-set_country_flag = TUR_jordan_rebellions
-set_variable = { var = JORDAN_REBEL_STRENGH value = 13 }
-set_variable = { var = JORDAN_TURKIFICATION value = 3 }
-
+set_variable = { var = TUR_REBEL_STRENGTH value = 10 }
+set_variable = { var = IRAQ_LIBERTY_DESIRE value = 15 }
+set_variable = { var = HEJAZ_LIBERTY_DESIRE value = 30 }
+set_variable = { var = EGYPT_LIBERTY_DESIRE value = 40 }
+set_variable = { var = TRIPOLITANIA_LIBERTY_DESIRE value = 40 }
+set_variable = { var = JABAL_SHAMMAR_LIBERTY_DESIRE value = 20 }
+set_variable = { var = YEMEN_LIBERTY_DESIRE value = 40 }
+set_variable = { var = ASIR_LIBERTY_DESIRE value = 30 }
 
 
 set_technology = {

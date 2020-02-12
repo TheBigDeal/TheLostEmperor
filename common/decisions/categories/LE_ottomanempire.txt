@@ -2,42 +2,17 @@
 ##### GENERIC ######
 ####################
 
-SYRIAN_REBELLIONS = {
+tur_deal_with_rebellion_coalition = {
 	icon = idea_collectivism
 	visible = {
 		tag = TUR
 		has_idea = TUR_internal_instability
-		NOT = { country_exists = SYR }
 	}
 }
-LEVANT_REBELLIONS = {
+tur_subject_liberty_desire = {
 	icon = idea_collectivism
 	visible = {
 		tag = TUR
-		has_idea = TUR_internal_instability
-		NOT = { country_exists = LEV }
-	}
-}
-JORDAN_REBELLIONS = {
-	icon = idea_collectivism
-	visible = {
-		tag = TUR
-		has_idea = TUR_internal_instability
-		NOT = { country_exists = JOR }
-	}
-}
-KURDISH_REBELLIONS = {
-	icon = idea_collectivism
-	visible = {
-		tag = TUR
-		has_idea = TUR_internal_instability
-		NOT = { country_exists = KUR }
-	}
-}
-rebellious_vilayets = {
-	icon = idea_collectivism
-	visible = {
-		tag = TUR
-		has_idea = TUR_internal_instability
+		has_idea = TUR_rebellious_subject_states
 	}
 }

@@ -12,4 +12,16 @@ ideas = {
 				army_attack_factor = -0.1
 			}
 		}
+		TUR_rebellious_subject_states = {
+			picture = GFX_idea_Prussian_Militarism
+			visible = {
+				always = yes
+			}
+			modifier = {
+				conscription = 0.02
+				justify_war_goal_time = 0.75
+				army_org_Factor = -0.5
+				army_attack_factor = -0.1
+			}
+		}
 	}

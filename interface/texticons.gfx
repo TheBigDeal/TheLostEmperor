@@ -1,6 +1,16 @@
 spriteTypes = {	
 	#MOD
 	spriteType = {
+		name = "GFX_texticon_rebel"
+		texturefile = "gfx/texticons/rebel.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_weapons"
+		texturefile = "gfx/texticons/weapons.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_texticon_money"
 		texturefile = "gfx/texticons/money.dds"
 		legacy_lazy_load = no

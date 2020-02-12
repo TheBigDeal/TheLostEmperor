@@ -31,10 +31,22 @@
 
  
 ### Ideas ###
- #tur_the_sun_never_sets:0 "The Sun Never Sets"
- 
+ TUR_internal_instability:0 "Internal Instability"
+ TUR_rebellious_subject_states:0 "Rebellious Subject States"
+### Decisions ###
+ tur_deal_with_rebellion_coalition:0 "The Rebellion Coalition"
+ tur_deal_with_rebellion_coalition_desc:0 "It is no secret the Ottomans Empire's golden age is at an end. It is most clear to the people in our country who work to see the nations end every day. These rebels are from across our nation, different nationalities, relgions, languages, but they all have one common goal in mind; to take us down.\n\n£texticon_rebel Rebellion Coalition Strength: [Root.GetRebelStrength] ( [?TUR.TUR_REBEL_STRENGTH|-0]/100 )"
+ tur_propaganda_effort:0 "Propaganda Effort"
+ tur_send_military:0 "Prepare Military"
+ tur_subject_liberty_desire:0 "Rebellious Vassals"
+ tur_subject_liberty_desire_desc:0 "Our Vassals have begun to reject our overlordship. With the situation with the rebels turning dire it is hard to keep everything in check.\n\n[IRQ.GetFlag]Iraq Liberty Desire: Test\n[HEJ.GetFlag]Hejaz Liberty Desire: Test\n[SHM.GetFlag]Jabal Shammar Liberty Desire: Test\n[EGY.GetFlag]Egypt Liberty Desire: Test\n[ASR.GetFlag]Asir Liberty Desire: Test\n[YEM.GetFlag]Yemen Liberty Desire: Test\n[LBA.GetFlag]Tripolitania Liberty Desire: Test"
 ### Tooltips ###
  ott_revolt_risk_1:0 "§RTHERE IS A 10% CHANCE ALL COUNTRIES WILL REVOLT UPON COMPLETION§!"
+ send_military_tt:0 "§RPrepares The Military To Deal With The Rebel Coalition""
+ tur_propaganda_effort_tt:0 "Reduce Rebel Coalition Strength By §G-5.0%§!"
+ infantry_equipment_more_than_1000:0 "£texticon_weapons §H1,000§!"
+ infantry_equipment_more_than_1000_blocked:0 "£texticon_weapons §R1,000§!"
+ infantry_equipment_more_than_1000_tooltip:0 "It costs 1,000£texticon_weapons to select this."
  random_list_spacing_tt:0 "          "
 ### Global / Country Flags ###
  
