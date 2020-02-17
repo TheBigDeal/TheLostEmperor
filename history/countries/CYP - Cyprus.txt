@@ -9,68 +9,16 @@ set_technology = {
 
 set_convoys = 5
 
-1939.1.1 = {
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		
-		
-		
-		
-		
-		
-		
-		
-	}
-}
 set_politics = {	
-	ruling_party = liberalism
+	ruling_party = absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    liberalism = 60
+    liberalism = 27
     labryscism = 8
     collectivism = 15
-    absolutism = 27
+    absolutism = 60
 }
-
-
-1939.1.1 = {
-	set_politics = {	
-	ruling_party = liberalism
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = yes
-}
-
-set_popularities = {
-    liberalism = 60
-    labryscism = 8
-    collectivism = 15
-    absolutism = 27
-}
-

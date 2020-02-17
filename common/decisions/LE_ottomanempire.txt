@@ -16,7 +16,200 @@ tur_deal_with_rebellion_coalition = {
 			}
 		}
 	}
-	
+	tur_rebel_expansion_into_palestine = {
+		icon = GFX_icon_collectivism
+		allowed = {tag = TUR has_idea = TUR_internal_instability}
+		
+		available = { 
+			divisions_in_state = {
+				size > 9
+				state = 454
+			}
+			has_stability > 0.40
+		}
+		activation = {
+			tag = TUR
+            453 = {
+				is_demilitarized_zone = yes
+				is_border_conflict = yes
+			}
+			454 = {
+				NOT = {
+					is_demilitarized_zone = yes
+					is_border_conflict = yes
+				}
+				is_owned_by = TUR
+			}
+        }
+		is_good = no
+		days_mission_timeout = 7
+		ai_will_do = { factor = 10 }
+		timeout_effect = {
+            454 = {
+				set_border_war = yes 
+				set_demilitarized_zone = yes
+			}
+        }
+		complete_effect = {
+        
+        }
+	}
+	tur_rebel_expansion_into_lebanon = {
+		icon = GFX_icon_collectivism
+		allowed = {tag = TUR has_idea = TUR_internal_instability}
+		available = { 
+			divisions_in_state = {
+				size > 9
+				state = 454
+			}
+			has_stability > 0.40
+		}
+		activation = {
+			tag = TUR
+            454 = {
+				is_demilitarized_zone = yes
+				is_border_conflict = yes
+			}
+			553 = {
+				NOT = {
+					is_demilitarized_zone = yes
+					is_border_conflict = yes
+				}
+				is_owned_by = TUR
+			}
+        }
+		is_good = no
+		days_mission_timeout = 7
+		ai_will_do = { factor = 10 }
+		timeout_effect = {
+            553 = {
+				set_border_war = yes 
+				set_demilitarized_zone = yes
+			}
+        }
+		complete_effect = {
+        
+        }
+	}
+	tur_rebel_expansion_into_west_jordan = {
+		icon = GFX_icon_collectivism
+		allowed = {tag = TUR has_idea = TUR_internal_instability}
+		available = { 
+			divisions_in_state = {
+				size > 9
+				state = 454
+			}
+			has_stability > 0.40
+		}
+		activation = {
+			tag = TUR
+            454 = {
+				is_demilitarized_zone = yes
+				is_border_conflict = yes
+			}
+			455 = {
+				NOT = {
+					is_demilitarized_zone = yes
+					is_border_conflict = yes
+				}
+				is_owned_by = TUR
+			}
+        }
+		is_good = no
+		days_mission_timeout = 7
+		ai_will_do = { factor = 10 }
+		timeout_effect = {
+            455 = {
+				set_border_war = yes 
+				set_demilitarized_zone = yes
+			}
+        }
+		complete_effect = {
+        
+        }
+	}
+	tur_rebel_expansion_into_east_jordan  = {
+		icon = GFX_icon_collectivism
+		allowed = {tag = TUR has_idea = TUR_internal_instability}
+		available = { 
+			divisions_in_state = {
+				size > 9
+				state = 454
+			}
+			has_stability > 0.40
+		}
+		activation = {
+			tag = TUR
+            455 = {
+				is_demilitarized_zone = yes
+				is_border_conflict = yes
+			}
+			890 = {
+				NOT = {
+					is_demilitarized_zone = yes
+					is_border_conflict = yes
+				}
+				is_owned_by = TUR
+			}
+        }
+		is_good = no
+		days_mission_timeout = 7
+		ai_will_do = { factor = 10 }
+		timeout_effect = {
+            890 = {
+				set_border_war = yes 
+				set_demilitarized_zone = yes
+			}
+        }
+		complete_effect = {
+        
+        }
+	}
+	tur_rebel_expansion_into_cyprus  = {
+		icon = GFX_icon_collectivism
+		allowed = {tag = TUR has_idea = TUR_internal_instability}
+		available = { 
+			divisions_in_state = {
+				size > 9
+				state = 454
+			}
+			has_stability > 0.40
+		}
+		activation = {
+			tag = TUR
+			OR = {
+				553 = {
+					is_demilitarized_zone = yes
+					is_border_conflict = yes
+				}
+				553 = {
+					is_owned_by = LEV
+				}
+			}
+			183 = {
+				NOT = {
+					is_demilitarized_zone = yes
+					is_border_conflict = yes
+				}
+				is_owned_by = TUR
+			}
+        }
+		is_good = no
+		days_mission_timeout = 7
+		ai_will_do = { factor = 10 }
+		timeout_effect = {
+            CYP = {transfer_state = 183}
+			CYP = {
+			set_truce = {
+					target = JOR
+					days = 90
+				}
+			}
+        }
+		complete_effect = {
+        
+        }
+	}
 	tur_send_military = {
 		cost = 60
 		icon = GFX_icon_collectivism

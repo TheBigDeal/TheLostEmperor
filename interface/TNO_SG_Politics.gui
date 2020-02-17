@@ -1451,10 +1451,10 @@ guiTypes = {
 				}
 				
 				containerWindowType = {
-					name = "law_tno_religious_rights_1"
+					name = "law_le_religion_txt_1"
 					position = { x = 10 y = 10 }
 					buttonType = {
-						name = "law_tno_religious_rights_1_button"
+						name = "law_le_religion_txt_1_button"
 						spriteType ="GFX_law_bg"
 						size = { width = 345 height = 100 }
 					}
@@ -1468,13 +1468,13 @@ guiTypes = {
 						name = "header"
 						position = { x = 90 y = 12 }
 						font = "vic_18"
-						text = "tno_religious_rights_catholicism"
+						text = "le_religion_txt_catholicism"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
 					}
 					instantTextboxType = {
-						name = "set_law_tno_religious_rights_1_txt"
+						name = "set_law_le_religion_txt_1_txt"
 						position = { x = 90 y = 38 }
 						font = "garamond_14"
 						text = "LE_Catholicism_Modifier"
@@ -1484,11 +1484,11 @@ guiTypes = {
 					}
 				}
 				containerWindowType = {
-					name = "law_tno_religious_rights_2"
+					name = "law_le_religion_txt_2"
 					position = { x = 10 y = 106 }
 					size = { width = 345 height = 156 }
 					buttonType = {
-						name = "law_tno_religious_rights_2_button"
+						name = "law_le_religion_txt_2_button"
 						quadTextureSprite ="GFX_law_bg"
 						size = { width = 345 height = 100 }
 					}
@@ -1496,25 +1496,16 @@ guiTypes = {
 						name = "header"
 						position = { x = 18 y = 12 }
 						font = "vic_18"
-						text = "tno_religious_rights_protestantism"
+						text = "le_religion_txt_protestantism"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
 					}
 					instantTextboxType = {
-						name = "set_law_tno_religious_rights_2_txt"
+						name = "set_law_le_religion_txt_2_txt"
 						position = { x = 20 y = 38 }
 						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_2_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_law_tno_religious_rights_2_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_2_MODIFIER_2"
+						text = "LE_WIP_Modifier"
 						maxWidth = 300
 						maxHeight = 100
 						format = left
@@ -1522,11 +1513,11 @@ guiTypes = {
 				}
 
 				containerWindowType = {
-					name = "law_tno_religious_rights_3"
-					position = { x = 354 y = 586 }
+					name = "law_le_religion_txt_3"
+					position = { x = 354 y = 682 }
 					size = { width = 345 height = 156 }
 					buttonType = {
-						name = "law_tno_religious_rights_3_button"
+						name = "law_le_religion_txt_3_button"
 						quadTextureSprite ="GFX_law_bg"
 						size = { width = 345 height = 100 }
 					}
@@ -1534,16 +1525,16 @@ guiTypes = {
 						name = "header"
 						position = { x = 18 y = 12 }
 						font = "vic_18"
-						text = "tno_religious_rights_secularism"
+						text = "le_religion_txt_secularism"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
 					}
 					instantTextboxType = {
-						name = "set_law_tno_religious_rights_3_txt"
+						name = "set_law_le_religion_txt_3_txt"
 						position = { x = 20 y = 38 }
 						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_3_MODIFIER"
+						text = "LE_WIP_Modifier"
 						maxWidth = 300
 						maxHeight = 100
 						format = left
@@ -1551,11 +1542,11 @@ guiTypes = {
 				}
 
 				containerWindowType = {
-					name = "law_tno_religious_rights_4"
-					position = { x = 10 y = 586 }
+					name = "law_le_religion_txt_4"
+					position = { x = 10 y = 682 }
 					size = { width = 345 height = 156 }
 					buttonType = {
-						name = "law_tno_religious_rights_4_button"
+						name = "law_le_religion_txt_4_button"
 						quadTextureSprite ="GFX_law_bg"
 						size = { width = 345 height = 100 }
 					}
@@ -1563,32 +1554,32 @@ guiTypes = {
 						name = "header"
 						position = { x = 18 y = 12 }
 						font = "vic_18"
-						text = "tno_religious_rights_state_atheism"
+						text = "le_religion_txt_state_atheism"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
 					}
 					instantTextboxType = {
-						name = "set_law_tno_religious_rights_4_txt"
+						name = "set_law_le_religion_txt_4_txt"
 						position = { x = 20 y = 38 }
 						font = "garamond_14"
-						text = "TEST"
+						text = "LE_WIP_Modifier"
 						maxWidth = 300
 						maxHeight = 100
 						format = left
 					}
 				}
 				containerWindowType = {
-					name = "law_tno_religious_rights_5"
+					name = "law_le_religion_txt_5"
 					position = { x = 354 y = 10 }
 					size = { width = 345 height = 100 }
 					buttonType = {
-						name = "law_tno_religious_rights_5_button"
+						name = "law_le_religion_txt_5_button"
 						quadTextureSprite ="GFX_law_bg"
 						size = { width = 345 height = 100 }
 					}
 					iconType ={
-						name ="law_tno_religious_rights_1_icon"
+						name ="law_le_religion_txt_1_icon"
 						spriteType = "GFX_religion_orthodoxy"
 						position = { x= 12 y = 11 }
 						Orientation = "UPPER_LEFT"
@@ -1597,13 +1588,13 @@ guiTypes = {
 						name = "header"
 						position = { x = 90 y = 12 }
 						font = "vic_18"
-						text = "tno_religious_rights_orthodox"
+						text = "le_religion_txt_orthodox"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
 					}
 					instantTextboxType = {
-						name = "set_law_tno_religious_rights_5_txt"
+						name = "set_law_le_religion_txt_5_txt"
 						position = { x = 90 y = 38 }
 						font = "garamond_14"
 						text = "LE_Orthodoxy_Modifier"
@@ -1613,11 +1604,11 @@ guiTypes = {
 					}
 				}
 				containerWindowType = {
-					name = "law_tno_religious_rights_6"
+					name = "law_le_religion_txt_6"
 					position = { x = 354 y = 106 }
 					size = { width = 345 height = 156 }
 					buttonType = {
-						name = "law_tno_religious_rights_6_button"
+						name = "law_le_religion_txt_6_button"
 						quadTextureSprite ="GFX_law_bg"
 						size = { width = 345 height = 100 }
 					}
@@ -1625,36 +1616,27 @@ guiTypes = {
 						name = "header"
 						position = { x = 18 y = 12 }
 						font = "vic_18"
-						text = "tno_religious_rights_judism"
+						text = "le_religion_txt_judism"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
 					}
 					instantTextboxType = {
-						name = "set_law_tno_religious_rights_6_txt"
+						name = "set_law_le_religion_txt_6_txt"
 						position = { x = 20 y = 38 }
 						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_law_tno_religious_rights_6_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER_2"
+						text = "LE_WIP_Modifier"
 						maxWidth = 300
 						maxHeight = 100
 						format = left
 					}
 				}
 				containerWindowType = {
-					name = "law_tno_religious_rights_7"
+					name = "law_le_religion_txt_7"
 					position = { x = 10 y = 202 }
 					size = { width = 345 height = 156 }
 					buttonType = {
-						name = "law_tno_religious_rights_7_button"
+						name = "law_le_religion_txt_7_button"
 						spriteType ="GFX_law_bg"
 						size = { width = 345 height = 100 }
 					}
@@ -1668,27 +1650,27 @@ guiTypes = {
 						name = "header"
 						position = { x = 90 y = 12 }
 						font = "vic_18"
-						text = "tno_religious_rights_shia"
+						text = "le_religion_txt_shia"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
 					}
 					instantTextboxType = {
-						name = "set_law_tno_religious_rights_7_txt"
+						name = "set_law_le_religion_txt_7_txt"
 						position = { x = 90 y = 38 }
 						font = "garamond_14"
-						text = "LE_Catholicism_Modifier"
+						text = "LE_WIP_Modifier"
 						maxWidth = 300
 						maxHeight = 100
 						format = left
 					}
 				}
 				containerWindowType = {
-					name = "law_tno_religious_rights_8"
+					name = "law_le_religion_txt_8"
 					position = { x = 354 y = 202 }
 					size = { width = 345 height = 156 }
 					buttonType = {
-						name = "law_tno_religious_rights_8_button"
+						name = "law_le_religion_txt_8_button"
 						spriteType ="GFX_law_bg"
 						size = { width = 345 height = 100 }
 					}
@@ -1702,16 +1684,16 @@ guiTypes = {
 						name = "header"
 						position = { x = 90 y = 12 }
 						font = "vic_18"
-						text = "tno_religious_rights_sunni"
+						text = "le_religion_txt_sunni"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
 					}
 					instantTextboxType = {
-						name = "set_law_tno_religious_rights_8_txt"
+						name = "set_law_le_religion_txt_8_txt"
 						position = { x = 90 y = 38 }
 						font = "garamond_14"
-						text = "LE_Catholicism_Modifier"
+						text = "LE_WIP_Modifier"
 						maxWidth = 300
 						maxHeight = 100
 						format = left
@@ -1719,48 +1701,45 @@ guiTypes = {
 				}
 				#===================================================================
 				containerWindowType = {
-					name = "law_tno_religious_rights_9"
+					name = "law_le_religion_txt_15"
 					position = { x = 10 y = 298 }
 					size = { width = 345 height = 156 }
 					buttonType = {
-						name = "law_tno_religious_rights_9_button"
-						quadTextureSprite ="GFX_law_bg"
+						name = "law_le_religion_txt_15_button"
+						spriteType ="GFX_law_bg"
 						size = { width = 345 height = 100 }
+					}
+					iconType ={
+						name ="law_religious_rights_8_icon"
+						spriteType = "GFX_religion_ibadism"
+						position = { x= 12 y = 11 }
+						Orientation = "UPPER_LEFT"
 					}
 					instantTextboxType = {
 						name = "header"
-						position = { x = 18 y = 12 }
+						position = { x = 90 y = 12 }
 						font = "vic_18"
-						text = "tno_religious_rights_mormonism"
+						text = "le_religion_txt_sunni"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
 					}
 					instantTextboxType = {
-						name = "set_law_tno_religious_rights_9_txt"
-						position = { x = 20 y = 38 }
+						name = "set_law_le_religion_txt_15_txt"
+						position = { x = 90 y = 38 }
 						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_law_tno_religious_rights_9_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER_2"
+						text = "LE_WIP_Modifier"
 						maxWidth = 300
 						maxHeight = 100
 						format = left
 					}
 				}
 				containerWindowType = {
-					name = "law_tno_religious_rights_10"
+					name = "law_le_religion_txt_9"
 					position = { x = 354 y = 298 }
 					size = { width = 345 height = 156 }
 					buttonType = {
-						name = "law_tno_religious_rights_10_button"
+						name = "law_le_religion_txt_9_button"
 						quadTextureSprite ="GFX_law_bg"
 						size = { width = 345 height = 100 }
 					}
@@ -1768,73 +1747,27 @@ guiTypes = {
 						name = "header"
 						position = { x = 18 y = 12 }
 						font = "vic_18"
-						text = "tno_religious_rights_sikhism"
+						text = "le_religion_txt_mormonism"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
 					}
 					instantTextboxType = {
-						name = "set_law_tno_religious_rights_10_txt"
+						name = "set_law_le_religion_txt_9_txt"
 						position = { x = 20 y = 38 }
 						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_law_tno_religious_rights_10_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER_2"
+						text = "LE_WIP_Modifier"
 						maxWidth = 300
 						maxHeight = 100
 						format = left
 					}
 				}
 				containerWindowType = {
-					name = "law_tno_religious_rights_11"
-					position = { x = 10 y = 394 }
-					size = { width = 345 height = 156 }
-					buttonType = {
-						name = "law_tno_religious_rights_11_button"
-						quadTextureSprite ="GFX_law_bg"
-						size = { width = 345 height = 100 }
-					}
-					instantTextboxType = {
-						name = "header"
-						position = { x = 18 y = 12 }
-						font = "vic_18"
-						text = "tno_religious_rights_hinduism"
-						maxWidth = 670
-						maxHeight = 20
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_law_tno_religious_rights_11_txt"
-						position = { x = 20 y = 38 }
-						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_law_tno_religious_rights_11_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER_2"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-				}
-				containerWindowType = {
-					name = "law_tno_religious_rights_12"
+					name = "law_le_religion_txt_10"
 					position = { x = 354 y = 394 }
 					size = { width = 345 height = 156 }
 					buttonType = {
-						name = "law_tno_religious_rights_12_button"
+						name = "law_le_religion_txt_10_button"
 						quadTextureSprite ="GFX_law_bg"
 						size = { width = 345 height = 100 }
 					}
@@ -1842,36 +1775,27 @@ guiTypes = {
 						name = "header"
 						position = { x = 18 y = 12 }
 						font = "vic_18"
-						text = "tno_religious_rights_buddhism"
+						text = "le_religion_txt_sikhism"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
 					}
 					instantTextboxType = {
-						name = "set_law_tno_religious_rights_12_txt"
+						name = "set_law_le_religion_txt_10_txt"
 						position = { x = 20 y = 38 }
 						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_law_tno_religious_rights_12_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER_2"
+						text = "LE_WIP_Modifier"
 						maxWidth = 300
 						maxHeight = 100
 						format = left
 					}
 				}
 				containerWindowType = {
-					name = "law_tno_religious_rights_13"
-					position = { x = 10 y = 490 }
+					name = "law_le_religion_txt_11"
+					position = { x = 10 y = 394 }
 					size = { width = 345 height = 156 }
 					buttonType = {
-						name = "law_tno_religious_rights_13_button"
+						name = "law_le_religion_txt_11_button"
 						quadTextureSprite ="GFX_law_bg"
 						size = { width = 345 height = 100 }
 					}
@@ -1879,36 +1803,27 @@ guiTypes = {
 						name = "header"
 						position = { x = 18 y = 12 }
 						font = "vic_18"
-						text = "tno_religious_rights_shintoism"
+						text = "le_religion_txt_hinduism"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
 					}
 					instantTextboxType = {
-						name = "set_law_tno_religious_rights_13_txt"
+						name = "set_law_le_religion_txt_11_txt"
 						position = { x = 20 y = 38 }
 						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER"
-						maxWidth = 300
-						maxHeight = 100
-						format = left
-					}
-					instantTextboxType = {
-						name = "set_law_tno_religious_rights_13_txt_2"
-						position = { x = 325 y = 38 }
-						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER_2"
+						text = "LE_WIP_Modifier"
 						maxWidth = 300
 						maxHeight = 100
 						format = left
 					}
 				}
 				containerWindowType = {
-					name = "law_tno_religious_rights_14"
+					name = "law_le_religion_txt_12"
 					position = { x = 354 y = 490 }
 					size = { width = 345 height = 156 }
 					buttonType = {
-						name = "law_tno_religious_rights_14_button"
+						name = "law_le_religion_txt_12_button"
 						quadTextureSprite ="GFX_law_bg"
 						size = { width = 345 height = 100 }
 					}
@@ -1916,25 +1831,118 @@ guiTypes = {
 						name = "header"
 						position = { x = 18 y = 12 }
 						font = "vic_18"
-						text = "tno_religious_rights_confucianism"
+						text = "le_religion_txt_buddhism"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
 					}
 					instantTextboxType = {
-						name = "set_law_tno_religious_rights_14_txt"
+						name = "set_law_le_religion_txt_12_txt"
 						position = { x = 20 y = 38 }
 						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER"
+						text = "LE_WIP_Modifier"
 						maxWidth = 300
 						maxHeight = 100
 						format = left
 					}
+				}
+				containerWindowType = {
+					name = "law_le_religion_txt_13"
+					position = { x = 10 y = 490 }
+					size = { width = 345 height = 156 }
+					buttonType = {
+						name = "law_le_religion_txt_13_button"
+						spriteType ="GFX_law_bg"
+						size = { width = 345 height = 100 }
+					}
+					iconType ={
+						name ="law_religious_rights_13_icon"
+						spriteType = "GFX_religion_shintoism"
+						position = { x= 12 y = 11 }
+						Orientation = "UPPER_LEFT"
+					}
 					instantTextboxType = {
-						name = "set_law_tno_religious_rights_14_txt_2"
-						position = { x = 325 y = 38 }
+						name = "header"
+						position = { x = 90 y = 12 }
+						font = "vic_18"
+						text = "le_religion_txt_shintoism"
+						maxWidth = 670
+						maxHeight = 20
+						format = left
+					}
+					instantTextboxType = {
+						name = "set_law_le_religion_txt_13_txt"
+						position = { x = 90 y = 38 }
 						font = "garamond_14"
-						text = "TNO_POLITICS_CATEGORY_1_LAW_tno_religious_rights_1_MODIFIER_2"
+						text = "LE_WIP_Modifier"
+						maxWidth = 300
+						maxHeight = 100
+						format = left
+					}
+				}
+				containerWindowType = {
+					name = "law_le_religion_txt_14"
+					position = { x = 354 y = 586 }
+					size = { width = 345 height = 156 }
+					buttonType = {
+						name = "law_le_religion_txt_14_button"
+						spriteType ="GFX_law_bg"
+						size = { width = 345 height = 100 }
+					}
+					iconType ={
+						name ="law_religious_rights_13_icon"
+						spriteType = "GFX_religion_confucianism"
+						position = { x= 12 y = 11 }
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextboxType = {
+						name = "header"
+						position = { x = 90 y = 12 }
+						font = "vic_18"
+						text = "le_religion_txt_confucianism"
+						maxWidth = 670
+						maxHeight = 20
+						format = left
+					}
+					instantTextboxType = {
+						name = "set_law_le_religion_txt_14_txt"
+						position = { x = 90 y = 38 }
+						font = "garamond_14"
+						text = "LE_WIP_Modifier"
+						maxWidth = 300
+						maxHeight = 100
+						format = left
+					}
+				}
+				containerWindowType = {
+					name = "law_le_religion_txt_16"
+					position = { x = 10 y = 586 }
+					size = { width = 345 height = 156 }
+					buttonType = {
+						name = "law_le_religion_txt_16_button"
+						spriteType ="GFX_law_bg"
+						size = { width = 345 height = 100 }
+					}
+					iconType ={
+						name ="law_religious_rights_16_icon"
+						spriteType = "GFX_religion_confucianism"
+						position = { x= 12 y = 11 }
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextboxType = {
+						name = "header"
+						position = { x = 90 y = 12 }
+						font = "vic_18"
+						text = "le_religion_txt_taoism"
+						maxWidth = 670
+						maxHeight = 20
+						format = left
+					}
+					instantTextboxType = {
+						name = "set_law_le_religion_txt_16_txt"
+						position = { x = 90 y = 38 }
+						font = "garamond_14"
+						text = "LE_WIP_Modifier"
 						maxWidth = 300
 						maxHeight = 100
 						format = left

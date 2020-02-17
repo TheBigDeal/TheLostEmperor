@@ -17,6 +17,18 @@ spriteTypes = {
 		name = "GFX_religion_sunni"
 		texturefile = "gfx/interface/goals/Religion/religion_sunni.dds"
 	}
+	SpriteType = {
+		name = "GFX_religion_shintoism"
+		texturefile = "gfx/interface/goals/Religion/religion_shintoism.dds"
+	}
+	SpriteType = {
+		name = "GFX_religion_confucianism"
+		texturefile = "gfx/interface/goals/Religion/religion_confucianism.dds"
+	}
+	SpriteType = {
+		name = "GFX_religion_ibadism"
+		texturefile = "gfx/interface/goals/Religion/religion_ibadism.dds"
+	}
 	# TRADE LAW
 	##############################################################
 	SpriteType = {
