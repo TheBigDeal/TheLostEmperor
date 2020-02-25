@@ -22,16 +22,7 @@
  news.2.a:0 "Messy Business"
 
  #France Events
- le_france.11.t:0 "The French Elections"
- le_france.11.d:0 "The king has stepped down, we must appoint a new government leader.
- le_france.11.a:0 "Elect Marcel Cachin (Collectivist)"
- le_france.11.b:0 "Elect Auguste Champetier De Ribes (Liberal)"
- le_france.11.c:0 "Elect Jacques Doriot (Labryscist)"
- le_france.14.t:0 "Peoples Party of France Elections"
- le_france.14.d:0 "The people have chosen a socialist revolution! It is now our duty to represent them properly. Many workers beleive in very limited government interaction, while other beleive the state should control all. Should we follow the ways of Marx or make our own path?"
- le_france.14.1:0 "Elect Jacques Duclos (Collectivist)"
- le_france.14.2:0 "Elect Benoît Frachon (Proletariat)"
- le_france.14.3:0 "Elect Sebastien Faure (Mutualist)"
+ 
  #Austria
  le_austria.1.t:0 "Invitation To The South German Confederation"
  le_austria.1.d:0 "Austria has announced a new German confederation to be formed in the name of keeping peace in the German Region. Prussia has shown to be a very large threat in the region and a rival to Austria's power. This confederation will act as a detorrent for Prussia."

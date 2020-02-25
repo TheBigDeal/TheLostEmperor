@@ -320,3 +320,120 @@ country_event = { #FANCE DEMANDS ANNEXATION OF AQUITAINE
 		}
   	}
 }
+
+country_event = { #The State Of France
+	id = le_france.19
+	title = le_france.19.t
+	desc = le_france.19.d
+	fire_only_once = yes
+	is_triggered_only = yes
+  	option = { #Accept
+		name = le_france.19.a
+		add_stability = 0.05
+  	}
+}
+
+country_event = { #THE GLORIOUS REVOLUTION
+	id = le_france.20
+	title = le_france.20.t
+	desc = le_france.20.d
+	fire_only_once = yes
+	is_triggered_only = yes
+  	option = { #Side with the communists
+		name = le_france.20.a
+		set_capital = 886
+		set_politics = {ruling_party = collectivism}
+		set_cosmetic_tag = FRA_COMMUNIST
+		hidden_effect = {
+			start_civil_war = {
+				ideology = labryscism
+				size = 1
+				only_own_territory = yes
+				capital = 16
+				states = { 16 }
+			}
+		}
+		FR0 = {
+			set_capital = 21
+			set_politics = {ruling_party = theocracy}
+			set_cosmetic_tag = FRA_THEOCRACY
+			transfer_state = 21
+			transfer_state = 735
+			transfer_state = 32
+		}
+		FR1 = {
+			set_capital = 31
+			set_politics = {ruling_party = absolutism}
+			set_cosmetic_tag = FRA_ROYALIST
+			transfer_state = 31
+			transfer_state = 22
+			transfer_state = 20
+			transfer_state = 26
+		}
+		FR2 = {
+			set_capital = 16
+			set_politics = {ruling_party = labryscism}
+			set_cosmetic_tag = FRA_FASCIST
+			transfer_state = 16
+			transfer_state = 29
+			transfer_state = 18
+		}
+		FR3 = {
+			set_capital = 26
+			set_politics = {ruling_party = conservatism}
+			set_cosmetic_tag = FRA_REPUBLIC
+			transfer_state = 33
+			transfer_state = 25
+			transfer_state = 26
+		}
+  	}
+	option = { #Side with the communists
+		name = le_france.20.b
+		set_politics = {ruling_party = labryscism}
+		set_cosmetic_tag = FRA_FASCIST
+		hidden_effect = {
+			start_civil_war = {
+				ideology = collectivism
+				size = 1
+				only_own_territory = yes
+				capital = 886
+				states = { 886 26 24 30 23 27}
+			}
+		}
+		FR0 = {
+			set_capital = 21
+			set_politics = {ruling_party = theocracy}
+			set_cosmetic_tag = FRA_THEOCRACY
+			transfer_state = 21
+			transfer_state = 735
+			transfer_state = 32
+		}
+		FR1 = {
+			set_capital = 31
+			set_politics = {ruling_party = absolutism}
+			set_cosmetic_tag = FRA_ROYALIST
+			transfer_state = 31
+			transfer_state = 22
+			transfer_state = 20
+			transfer_state = 26
+		}
+		FR2 = {
+			set_capital = 886
+			set_politics = {ruling_party = collectivism}
+			set_cosmetic_tag = FRA_COMMUNIST
+			transfer_state = 886
+			transfer_state = 24
+			transfer_state = 27
+			transfer_state = 30
+			transfer_state = 23
+		}
+		FR3 = {
+			set_capital = 26
+			set_politics = {ruling_party = conservatism}
+			set_cosmetic_tag = FRA_REPUBLIC
+			transfer_state = 33
+			transfer_state = 25
+			transfer_state = 26
+		}
+  	}
+}

@@ -13,68 +13,121 @@ focus_tree = {
 	default = no
 	continuous_focus_position = { x = 50 y = 2600 }
 	focus = {
-		id = FRA_THE_KINGDOM_OF_FRANCE
+		id = FRA_A_NATION_IN_TURMOIL
 		icon = GFX_goal_france_monarchy
 		x = 28
 		y = 0
 		cost = 1
-		bypass = {
-			tag = FRA
-		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-
+			country_event = { id = le_france.19 }
 		}
 	}
 	focus = {
-		id = FRA_EXPEL_THE_KING
+		id = FRA_OVERTHROW_THE_KING
 		icon = GFX_goal_generic_support_democracy
-		prerequisite = { focus = FRA_THE_KINGDOM_OF_FRANCE }
+		prerequisite = { focus = FRA_A_NATION_IN_TURMOIL }
+		mutually_exclusive = { focus = FRA_MONARCHY_IS_THE_WAY focus = FRA_PLEASE_THE_PEOPLE }
+		x = 26
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_popularity = { ideology = absolutism popularity = -0.05 }
+			add_popularity = { ideology = royalism popularity = -0.05 }
+			add_popularity = { ideology = rexism popularity = -0.05 }
+		}
+	}
+	focus = {
+		id = FRA_THE_GLORIOUS_REVOLUTION
+		icon = GFX_goal_generic_support_democracy
+		prerequisite = { focus = FRA_OVERTHROW_THE_KING }
 		mutually_exclusive = { focus = FRA_CONTINUE_THE_MONARCHY }
-		x = 27
-		y = 1
+		x = 26
+		y = 2
 		cost = 2
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					tag = FRA
-					OR = {
-						has_government = absolutism
-						has_government = royalism
-						has_government = rexism
-					}
-				}
-				retire_country_leader = yes
-			}
+			country_event = { id = le_france.20 }
 		}
 	}
 	focus = {
-		id = FRA_CONTINUE_THE_MONARCHY
+		id = FRA_PLEASE_THE_PEOPLE
 		icon = GFX_goal_generic_support_democracy
-		prerequisite = { focus = FRA_THE_KINGDOM_OF_FRANCE }
-		mutually_exclusive = { focus = FRA_EXPEL_THE_KING }
-		x = 29
+		prerequisite = { focus = FRA_A_NATION_IN_TURMOIL }
+		mutually_exclusive = { focus = FRA_MONARCHY_IS_THE_WAY focus = FRA_OVERTHROW_THE_KING }
+		x = 28
 		y = 1
 		cost = 2
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			country_event = { id = le_france.12 }
+			add_popularity = { ideology = liberalism popularity = 0.05 }
+			add_popularity = { ideology = conservatism popularity = 0.05 }
+			add_popularity = { ideology = socialism popularity = 0.05 }
+			add_stability = 0.10
+		}
+	}
+	focus = {
+		id = FRA_DRAFT_A_BILL_OF_RIGHTS
+		icon = GFX_goal_generic_support_democracy
+		prerequisite = { focus = FRA_PLEASE_THE_PEOPLE }
+		x = 28
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_MONARCHY_IS_THE_WAY
+		icon = GFX_goal_generic_support_democracy
+		prerequisite = { focus = FRA_A_NATION_IN_TURMOIL }
+		mutually_exclusive = { focus = FRA_OVERTHROW_THE_KING focus = FRA_PLEASE_THE_PEOPLE }
+		x = 30
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_stability = -0.10
+		}
+	}
+	focus = {
+		id = FRA_CRACK_DOWN_ON_EXTREMISTS
+		icon = FRA_MONARCHY_IS_THE_WAY
+		prerequisite = { focus = FRA_MONARCHY_IS_THE_WAY }
+		x = 30
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_popularity = { ideology = labryscism popularity = -0.05 }
+			add_popularity = { ideology = proletarianism popularity = -0.05 }
+			add_popularity = { ideology = collectivism popularity = -0.05 }
+			add_popularity = { ideology = mutualism popularity = -0.05 }
 		}
 	}
 	focus = {
 		id = FRA_THE_FOURTH_REVOLUTION
 		icon = GFX_goal_support_fourth_int
-		prerequisite = { focus = FRA_EXPEL_THE_KING }
-		mutually_exclusive = { focus = FRA_PLEASE_THE_PEOPLE focus = FRA_PRESERVE_THE_MONARCHY focus = FRA_NATIONALISTIC_SURGE }
+		prerequisite = { focus = FRA_THE_GLORIOUS_REVOLUTION }
+		mutually_exclusive = { focus = FRA_DEMOCRACY_PREVAILS focus = FRA_PRESERVE_THE_MONARCHY focus = FRA_NATIONALISTIC_SURGE }
 		x = 13
-		y = 2
+		y = 3
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -92,7 +145,7 @@ focus_tree = {
 		icon = GFX_focus_red_army
 		prerequisite = { focus = FRA_THE_FOURTH_REVOLUTION }
 		x = 3
-		y = 3
+		y = 4
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -107,7 +160,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_ARMEE_POPULAIRE }
 		mutually_exclusive = { focus = FRA_FOCUS_ON_ARMOR }
 		x = 2
-		y = 4
+		y = 5
 		cost = 6R
 		ai_will_do = {
 			factor = 10
@@ -125,7 +178,7 @@ focus_tree = {
 		icon = GFX_Renewed_Arms
 		prerequisite = { focus = FRA_FOCUS_ON_INFANTRY }
 		x = 2
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -139,7 +192,7 @@ focus_tree = {
 		icon = GFX_goal_officers
 		prerequisite = { focus = FRA_FOCUS_ON_INFANTRY }
 		x = 0
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -154,7 +207,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_IMPROVE_COMMAND_STRUCTURE }
 		prerequisite = { focus = FRA_INCREASE_SMALL_ARM_PRODUCTION }
 		x = 2
-		y = 6
+		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -168,7 +221,7 @@ focus_tree = {
 		icon = GFX_goal_national_mobilization
 		prerequisite = { focus = FRA_CONSCRIPTION_CAMPAIGN }
 		x = 2
-		y = 7
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -183,7 +236,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_ARMEE_POPULAIRE }
 		mutually_exclusive = { focus = FRA_FOCUS_ON_INFANTRY }
 		x = 4
-		y = 4
+		y = 5
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -202,7 +255,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_FOCUS_ON_ARMOR }
 		mutually_exclusive = { focus = FRA_QUALITY_OVER_QUANTITY }
 		x = 4
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -216,7 +269,7 @@ focus_tree = {
 		icon = GFX_Focus_Military_Mobilisation
 		prerequisite = { focus = FRA_MASS_PRODUCTION focus = FRA_QUALITY_OVER_QUANTITY }
 		x = 4
-		y = 6
+		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -230,7 +283,7 @@ focus_tree = {
 		icon = GFX_goal_further_oil
 		prerequisite = { focus = FRA_MASS_PRODUCTION focus = FRA_QUALITY_OVER_QUANTITY }
 		x = 6
-		y = 6
+		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -245,7 +298,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_INVEST_IN_OIL }
 		prerequisite = { focus = FRA_INCREASE_ARMOR_RESEARCH_SPENDING }
 		x = 4
-		y = 7
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -260,7 +313,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_FOCUS_ON_ARMOR }
 		mutually_exclusive = { focus = FRA_MASS_PRODUCTION }
 		x = 6
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -279,7 +332,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_FOURTH_REVOLUTION }
 		mutually_exclusive = { focus = FRA_THE_INDEPENDENT_COMMUNES focus = FRA_DEMOCRACY_IN_THE_WORKPLACE }
 		x = 13
-		y = 3
+		y = 4
 		cost = 6
 		available = {
 			has_government = proletarianism
@@ -299,7 +352,7 @@ focus_tree = {
 		icon = GFX_red_terror
 		prerequisite = { focus = FRA_DOMINANCE_OF_THE_PARTY }
 		x = 12
-		y = 4
+		y = 5
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -315,7 +368,7 @@ focus_tree = {
 		icon = GFX_goal_government_icon
 		prerequisite = { focus = FRA_DOMINANCE_OF_THE_PARTY }
 		x = 14
-		y = 4
+		y = 5
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -329,7 +382,7 @@ focus_tree = {
 		icon = GFX_Crush_the_Rebellion
 		prerequisite = { focus = FRA_RED_TERROR }
 		x = 12
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -343,7 +396,7 @@ focus_tree = {
 		icon = GFX_focus_trade_unions
 		prerequisite = { focus = FRA_THE_NATIONAL_CONVENTION }
 		x = 14
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -358,7 +411,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_COMMITEE_OF_PUBLIC_SAFETY }
 		prerequisite = { focus = FRA_CATCH_THE_NOBLES }
 		x = 13
-		y = 6
+		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -373,7 +426,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_KINGS_PROCESS }
 		mutually_exclusive = { focus = FRA_CACHIN_IS_THE_MAN }
 		x = 12
-		y = 7
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -407,7 +460,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_KINGS_PROCESS }
 		mutually_exclusive = { focus = FRA_END_THE_CACHIN_DICTATORSHIP }
 		x = 14
-		y = 7
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -421,7 +474,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_END_THE_CACHIN_DICTATORSHIP focus = FRA_CACHIN_IS_THE_MAN }
 		x = 13
-		y = 8
+		y = 9
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -437,7 +490,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_DIRECTORATE }
 		x = 12
-		y = 9
+		y = 10
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -451,7 +504,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_DIRECTORATE }
 		x = 14
-		y = 9
+		y = 10
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -466,7 +519,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_MARCH_TROOPS_INTO_NORMANDY }
 		prerequisite = { focus = FRA_ANNEX_AQUITAINE }
 		x = 13
-		y = 10
+		y = 11
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -480,7 +533,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_DEPOSE_OF_BURGUNDY }
 		x = 13
-		y = 11
+		y = 12
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -494,7 +547,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_DEPOSE_OF_BRITANNY }
 		x = 13
-		y = 12
+		y = 13
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -508,7 +561,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_FRONTIER_ON_THE_RHINE }
 		x = 13
-		y = 13
+		y = 14
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -522,7 +575,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_CONSOLATE }
 		x = 12
-		y = 14
+		y = 15
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -536,7 +589,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_PIEDMONT_AND_GENOA }
 		x = 12
-		y = 15
+		y = 16
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -550,7 +603,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_PIEDMONT_AND_GENOA }
 		x = 12
-		y = 16
+		y = 17
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -564,7 +617,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_TAKE_TUSCANY }
 		x = 12
-		y = 17
+		y = 18
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -578,7 +631,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_CONSOLATE }
 		x = 14
-		y = 14
+		y = 15
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -592,7 +645,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_SECOND_BATAVIAN_REPUBLIC }
 		x = 14
-		y = 15
+		y = 16
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -606,7 +659,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_SECOND_BATAVIAN_REPUBLIC }
 		x = 16
-		y = 15
+		y = 16
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -620,7 +673,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_UNION_OF_THE_RHINE }
 		x = 14
-		y = 16
+		y = 17
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -634,7 +687,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_SWISS_SUBMIT }
 		x = 14
-		y = 16
+		y = 17
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -650,7 +703,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_WIEN_COMMUNE }
 		mutually_exclusive = { focus = FRA_DORIOT_PROCLAIMED_EMPEROR focus = FRA_THE_CONSOLATE_IS_DISSOLVED focus = FRA_POWER_STRUGGLE }
 		x = 10
-		y = 18
+		y = 19
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -666,7 +719,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_WIEN_COMMUNE }
 		mutually_exclusive = { focus = FRA_DEAL_PROCLAIMED_EMPEROR focus = FRA_DORIOT_PROCLAIMED_EMPEROR focus = FRA_POWER_STRUGGLE }
 		x = 12
-		y = 18
+		y = 19
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -682,7 +735,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_WIEN_COMMUNE }
 		mutually_exclusive = { focus = FRA_DEAL_PROCLAIMED_EMPEROR focus = FRA_THE_CONSOLATE_IS_DISSOLVED focus = FRA_DORIOT_PROCLAIMED_EMPEROR }
 		x = 14
-		y = 18
+		y = 19
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -698,7 +751,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_WIEN_COMMUNE }
 		mutually_exclusive = { focus = FRA_DEAL_PROCLAIMED_EMPEROR focus = FRA_THE_CONSOLATE_IS_DISSOLVED focus = FRA_POWER_STRUGGLE }
 		x = 16
-		y = 18
+		y = 19
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -716,7 +769,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_FOURTH_REVOLUTION }
 		mutually_exclusive = { focus = FRA_DEMOCRACY_IN_THE_WORKPLACE focus = FRA_DOMINANCE_OF_THE_PARTY }
 		x = 9
-		y = 3
+		y = 4
 		cost = 6
 		available = {
 			has_government = collectivism
@@ -736,7 +789,7 @@ focus_tree = {
 		icon = GFX_goal_commune_politics
 		prerequisite = { focus = FRA_THE_INDEPENDENT_COMMUNES }
 		x = 9
-		y = 4
+		y = 5
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -750,7 +803,7 @@ focus_tree = {
 		icon = GFX_focus_farms
 		prerequisite = { focus = FRA_THE_ASSEMBLY_OF_THE_COMMUNES }
 		x = 8
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -764,7 +817,7 @@ focus_tree = {
 		icon = GFX_goal_revolution_tools
 		prerequisite = { focus = FRA_THE_ASSEMBLY_OF_THE_COMMUNES }
 		x = 10
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -779,7 +832,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_END_OF_OPPRESSION }
 		prerequisite = { focus = FRA_LAND_REDISTRIBUTION }
 		x = 9
-		y = 6
+		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -793,7 +846,7 @@ focus_tree = {
 		icon = GFX_labour_voucher_focus
 		prerequisite = { focus = FRA_COLLECTIVE_OWNERSHIP }
 		x = 9
-		y = 7
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -808,7 +861,7 @@ focus_tree = {
 		icon = GFX_ROM_strikes
 		prerequisite = { focus = FRA_LABOR_VOUCHERS }
 		x = 9
-		y = 8
+		y = 9
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -826,7 +879,7 @@ focus_tree = {
 		icon = GFX_focus_fires_of_revolution
 		prerequisite = { focus = FRA_PREPARE_THE_INSURECTIONS }
 		x = 8
-		y = 9
+		y = 10
 		cost = 6
 		available = {
 			NOT = { has_country_flag = funding_rebellion }
@@ -853,7 +906,7 @@ focus_tree = {
 		icon = GFX_focus_red_army
 		prerequisite = { focus = FRA_PREPARE_THE_INSURECTIONS }
 		x = 10
-		y = 9
+		y = 10
 		cost = 6
 		available = {
 			NOT = { has_country_flag = funding_rebellion }
@@ -882,7 +935,7 @@ focus_tree = {
 		icon = GFX_goal_revolution
 		prerequisite = { focus = FRA_REVOLT_IN_BRITANNY }
 		x = 8
-		y = 10
+		y = 11
 		cost = 6
 		available = {
 			NOT = { has_country_flag = funding_rebellion }
@@ -913,7 +966,7 @@ focus_tree = {
 		icon = GFX_focus_mutualism
 		prerequisite = { focus = FRA_WEAPONS_IN_BURGUNDY }
 		x = 10
-		y = 10
+		y = 11
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -930,7 +983,7 @@ focus_tree = {
 		icon = GFX_focus_purge_bureaucracy
 		prerequisite = { focus = FRA_THE_END_OF_AQUITAINE focus = FRA_RAISE_THE_NORMAN_WORKERS }
 		x = 9
-		y = 11
+		y = 12
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -944,7 +997,7 @@ focus_tree = {
 		icon = GFX_focus_death_or_dishonor
 		prerequisite = { focus = FRA_LIBERATE_OUR_FOREIGN_COMRADES }
 		x = 4
-		y = 12
+		y = 13
 		cost = 6
 		ai_will_do = {
 			factor = 6
@@ -958,7 +1011,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_WEAPONS_IN_NORTHERN_ITALY }
 		x = 4
-		y = 13
+		y = 14
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -972,7 +1025,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_ATTACK_CENTRAL_ITALY }
 		x = 4
-		y = 14
+		y = 15
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -986,7 +1039,7 @@ focus_tree = {
 		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = FRA_LIBERATE_OUR_FOREIGN_COMRADES }
 		x = 2
-		y = 12
+		y = 13
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1000,7 +1053,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_WEAPONS_IN_CATALONIA }
 		x = 2
-		y = 13
+		y = 14
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1014,7 +1067,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_MEN_IN_MADRID }
 		x = 2
-		y = 14
+		y = 15
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1028,7 +1081,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_REVOLT_IN_LISBOA focus = FRA_ARM_THE_SOUTHERNERS }
 		x = 3
-		y = 15
+		y = 16
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1042,7 +1095,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_FREE_NORTH_AFRICA }
 		x = 3
-		y = 16
+		y = 17
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1057,7 +1110,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_WEAPONS_OVER_THE_RHINE }
 		prerequisite = { focus = FRA_WEAPONS_IN_NORTHERN_ITALY }
 		x = 6
-		y = 13
+		y = 14
 		cost = 6
 		ai_will_do = {
 			factor = 6
@@ -1071,7 +1124,7 @@ focus_tree = {
 		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = { focus = FRA_LIBERATE_OUR_FOREIGN_COMRADES }
 		x = 7
-		y = 12
+		y = 13
 		cost = 6
 		ai_will_do = {
 			factor = 6
@@ -1086,7 +1139,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_WEAPONS_OVER_THE_RHINE }
 		mutually_exclusive = { focus = FRA_ATTACK_THE_PRUSSIANS }
 		x = 8
-		y = 13
+		y = 14
 		cost = 6
 		ai_will_do = {
 			factor = 6
@@ -1100,7 +1153,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_FREE_THE_BAVARIANS }
 		x = 8
-		y = 14
+		y = 15
 		cost = 6
 		ai_will_do = {
 			factor = 6
@@ -1115,7 +1168,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_END_THE_DANUBIAN_KINGDOMS }
 		prerequisite = { focus = FRA_THE_SWISS_REVOLT }
 		x = 6
-		y = 15
+		y = 16
 		cost = 6
 		ai_will_do = {
 			factor = 6
@@ -1130,7 +1183,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_WEAPONS_OVER_THE_RHINE }
 		mutually_exclusive = { focus = FRA_FREE_THE_BAVARIANS }
 		x = 10
-		y = 13
+		y = 14
 		cost = 6
 		ai_will_do = {
 			factor = 6
@@ -1144,7 +1197,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_ATTACK_THE_PRUSSIANS }
 		x = 10
-		y = 14
+		y = 15
 		cost = 6
 		ai_will_do = {
 			factor = 6
@@ -1158,7 +1211,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_CONDENSE_GERMANY }
 		x = 10
-		y = 15
+		y = 16
 		cost = 6
 		ai_will_do = {
 			factor = 6
@@ -1172,7 +1225,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_CONDENSE_GERMANY focus = FRA_END_THE_DANUBIAN_KINGDOMS }
 		x = 8
-		y = 16
+		y = 17
 		cost = 6
 		ai_will_do = {
 			factor = 6
@@ -1187,7 +1240,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_LIBERATE_THE_ARABS }
 		prerequisite = { focus = FRA_LIBERATE_THE_POLISH }
 		x = 5
-		y = 17
+		y = 18
 		cost = 6
 		ai_will_do = {
 			factor = 6
@@ -1201,7 +1254,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_EXPORT_THE_REVOLUTION }
 		x = 3
-		y = 18
+		y = 19
 		cost = 6
 		ai_will_do = {
 			factor = 6
@@ -1215,7 +1268,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_LIBERATE_THE_COLONIES }
 		x = 3
-		y = 19
+		y = 20
 		cost = 6
 		ai_will_do = {
 			factor = 6
@@ -1230,7 +1283,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_EXPORT_THE_REVOLUTION }
 		mutually_exclusive = { focus = FRA_INFLUENCE_JAPAN }
 		x = 5
-		y = 18
+		y = 19
 		cost = 6
 		ai_will_do = {
 			factor = 6
@@ -1245,7 +1298,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_EXPORT_THE_REVOLUTION }
 		mutually_exclusive = { focus = FRA_INFLUENCE_CHINA }
 		x = 7
-		y = 18
+		y = 19
 		cost = 6
 		ai_will_do = {
 			factor = 6
@@ -1261,7 +1314,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_FOURTH_REVOLUTION }
 		mutually_exclusive = { focus = FRA_THE_INDEPENDENT_COMMUNES focus = FRA_DOMINANCE_OF_THE_PARTY }
 		x = 17
-		y = 3
+		y = 4
 		cost = 6
 		available = {
 			has_government = mutualism
@@ -1281,7 +1334,7 @@ focus_tree = {
 		icon = GFX_goal_new_treaty
 		prerequisite = { focus = FRA_DEMOCRACY_IN_THE_WORKPLACE }
 		x = 16
-		y = 4
+		y = 5
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1295,7 +1348,7 @@ focus_tree = {
 		icon = GFX_focus_farms
 		prerequisite = { focus = FRA_STRIP_THE_TITLES }
 		x = 16
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1309,7 +1362,7 @@ focus_tree = {
 		icon = GFX_focus_red_constitution
 		prerequisite = { focus = FRA_DEMOCRACY_IN_THE_WORKPLACE }
 		x = 18
-		y = 4
+		y = 5
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1323,7 +1376,7 @@ focus_tree = {
 		icon = GFX_Workers_Paradise
 		prerequisite = { focus = FRA_LEGALIZE_THE_CGT }
 		x = 18
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1338,7 +1391,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_DISTRIBUTE_LAND }
 		prerequisite = { focus = FRA_EXPAND_UNIONS }
 		x = 17
-		y = 6
+		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1352,7 +1405,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_AGRARIAN_UNIONS }
 		x = 17
-		y = 7
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1366,7 +1419,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_NORTHERN_SYNDICATES }
 		x = 16
-		y = 8
+		y = 9
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1380,7 +1433,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_NORTHERN_SYNDICATES }
 		x = 18
-		y = 8
+		y = 9
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1395,7 +1448,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_SYNDACATES_UNDER_OPPRESSION }
 		prerequisite = { focus = FRA_AQUITANIAN_PACT }
 		x = 17
-		y = 9
+		y = 10
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1410,7 +1463,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_WESTERN_INTERNATIONALE }
 		mutually_exclusive = { focus = FRA_SUPPORT_AN_INDEPENDENT_CATALONIA focus = FRA_SUPPORT_AN_INFLUENCE_THE_DUTCH }
 		x = 15
-		y = 10
+		y = 11
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1424,7 +1477,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_SUPPORT_A_NORTHERN_ITALIAN_COMMUNE }
 		x = 15
-		y = 11
+		y = 12
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1438,7 +1491,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_INFLUENCE_THE_SWISS }
 		x = 15
-		y = 12
+		y = 13
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1453,7 +1506,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_WESTERN_INTERNATIONALE }
 		mutually_exclusive = { focus = FRA_SUPPORT_A_NORTHERN_ITALIAN_COMMUNE focus = FRA_SUPPORT_AN_INFLUENCE_THE_DUTCH }
 		x = 17
-		y = 10
+		y = 11
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1467,7 +1520,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_SUPPORT_AN_INDEPENDENT_CATALONIA }
 		x = 17
-		y = 11
+		y = 12
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1481,7 +1534,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_EXPAND_CATALONIA }
 		x = 17
-		y = 12
+		y = 13
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1496,7 +1549,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_WESTERN_INTERNATIONALE }
 		mutually_exclusive = { focus = FRA_SUPPORT_AN_INDEPENDENT_CATALONIA focus = FRA_SUPPORT_A_NORTHERN_ITALIAN_COMMUNE }
 		x = 19
-		y = 10
+		y = 11
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1510,7 +1563,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_SUPPORT_AN_INFLUENCE_THE_DUTCH }
 		x = 19
-		y = 11
+		y = 12
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1524,7 +1577,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_BREAK_THE_BAVARIAN_CHAINS }
 		x = 19
-		y = 12
+		y = 13
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1535,12 +1588,12 @@ focus_tree = {
 	}
 	#MONARCHIST/liberalism PATH
 	focus = {
-		id = FRA_PLEASE_THE_PEOPLE
+		id = FRA_DEMOCRACY_PREVAILS
 		icon = GFX_goal_generic_support_democracy
-		prerequisite = { focus = FRA_EXPEL_THE_KING }
+		prerequisite = { focus = FRA_DRAFT_A_BILL_OF_RIGHTS }
 		mutually_exclusive = { focus = FRA_PRESERVE_THE_MONARCHY focus = FRA_THE_FOURTH_REVOLUTION focus = FRA_NATIONALISTIC_SURGE }
 		x = 28
-		y = 2
+		y = 3
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1552,9 +1605,9 @@ focus_tree = {
 	focus = {
 		id = FRA_ARMEE_DU_SECOURS_NATIONALE
 		icon = GFX_goal_unknown
-		prerequisite = { focus = FRA_PLEASE_THE_PEOPLE }
+		prerequisite = { focus = FRA_DEMOCRACY_PREVAILS }
 		x = 23
-		y = 3
+		y = 4
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1569,7 +1622,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_ARMEE_DU_SECOURS_NATIONALE }
 		mutually_exclusive = { focus = FRA_FOCUS_ON_STRATEGY }
 		x = 22
-		y = 4
+		y = 5
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1583,7 +1636,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_FOCUS_ON_EQUIPMENT_QUALITY }
 		x = 22
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1597,7 +1650,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_FOCUS_ON_EQUIPMENT_QUALITY }
 		x = 20
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1612,7 +1665,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_IMPROVE_OUR_ARTILLERY }
 		prerequisite = { focus = FRA_IMPROVE_OUR_WEAPONS }
 		x = 22
-		y = 6
+		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1626,7 +1679,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_IMPROVE_OUR_WEAPON_PRODUCTION }
 		x = 22
-		y = 7
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1641,7 +1694,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_ARMEE_DU_SECOURS_NATIONALE }
 		mutually_exclusive = { focus = FRA_FOCUS_ON_EQUIPMENT_QUALITY }
 		x = 24
-		y = 4
+		y = 5
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1655,7 +1708,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_FOCUS_ON_STRATEGY }
 		x = 24
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1669,7 +1722,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_FOCUS_ON_STRATEGY }
 		x = 26
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1684,7 +1737,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_IMPROVE_SPECIAL_FORCES_TRAINING }
 		prerequisite = { focus = FRA_IMPROVE_LINES_OF_COMMUNICATION }
 		x = 24
-		y = 6
+		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1698,7 +1751,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_IMPROVE_MILITARY_TRAINING }
 		x = 24
-		y = 7
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1710,9 +1763,9 @@ focus_tree = {
 	focus = {
 		id = FRA_STRIKE_AT_THE_NATIONALISTS
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		prerequisite = { focus = FRA_PLEASE_THE_PEOPLE }
+		prerequisite = { focus = FRA_DEMOCRACY_PREVAILS }
 		x = 27
-		y = 3
+		y = 4
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1724,9 +1777,9 @@ focus_tree = {
 	focus = {
 		id = FRA_STRIKE_AT_THE_COMMUNISTS
 		icon = GFX_goal_generic_war_with_comintern
-		prerequisite = { focus = FRA_PLEASE_THE_PEOPLE }
+		prerequisite = { focus = FRA_DEMOCRACY_PREVAILS }
 		x = 29
-		y = 3
+		y = 4
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1740,7 +1793,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_STRIKE_AT_THE_COMMUNISTS focus = FRA_STRIKE_AT_THE_NATIONALISTS }
 		x = 28
-		y = 4
+		y = 5
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1754,7 +1807,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_FAIR_TRIALS }
 		x = 28
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1768,7 +1821,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_GRAND_DEBATE }
 		x = 28
-		y = 6
+		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1783,7 +1836,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_FRONT_DEMOCRATQUE_SPLITS }
 		mutually_exclusive = { focus = FRA_USE_THE_SPLIT }
 		x = 26
-		y = 7
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1798,7 +1851,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_PRIORITIZE_COLLABORATION }
 		mutually_exclusive = { focus = FRA_USE_THE_SPLIT }
 		x = 26
-		y = 8
+		y = 9
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1813,7 +1866,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_FIRST_ELECTIONS }
 		mutually_exclusive = { focus = FRA_LE_LIBERAUX_WIN_THE_ELECTION focus = FRA_LE_REPUBLICAIE_WIN_THE_ELECTION }
 		x = 26
-		y = 9
+		y = 10
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1827,7 +1880,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_LE_MODERE_WIN_THE_ELECTION }
 		x = 26
-		y = 10
+		y = 11
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1842,7 +1895,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_FIRST_ELECTIONS }
 		mutually_exclusive = { focus = FRA_LE_MODERE_WIN_THE_ELECTION focus = FRA_LE_REPUBLICAIE_WIN_THE_ELECTION }
 		x = 24
-		y = 9
+		y = 10
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1856,7 +1909,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_LE_LIBERAUX_WIN_THE_ELECTION }
 		x = 24
-		y = 10
+		y = 11
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1871,7 +1924,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_FIRST_ELECTIONS }
 		mutually_exclusive = { focus = FRA_LE_LIBERAUX_WIN_THE_ELECTION focus = FRA_LE_MODERE_WIN_THE_ELECTION }
 		x = 22
-		y = 9
+		y = 10
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1885,7 +1938,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_LE_REPUBLICAIE_WIN_THE_ELECTION }
 		x = 22
-		y = 10
+		y = 11
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1899,7 +1952,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_CONSERVATIVE_ECONOMICS focus = FRA_LIBERAL_ECONOMICS focus = FRA_SOCIALIST_ECONOMICS }
 		x = 24
-		y = 11
+		y = 12
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1914,7 +1967,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_FRONT_DEMOCRATQUE_SPLITS }
 		mutually_exclusive = { focus = FRA_PRIORITIZE_COLLABORATION }
 		x = 30
-		y = 7
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1928,7 +1981,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_USE_THE_SPLIT }
 		x = 30
-		y = 8
+		y = 9
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1943,7 +1996,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_FORM_A_GOVERNMENT }
 		mutually_exclusive = { focus = FRA_LE_BOURBONISTE_AT_THE_HELM }
 		x = 30
-		y = 9
+		y = 10
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1957,7 +2010,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_LE_LOYALISTE_AT_THE_HELM }
 		x = 30
-		y = 10
+		y = 11
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1972,7 +2025,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_FORM_A_GOVERNMENT }
 		mutually_exclusive = { focus = FRA_LE_LOYALISTE_AT_THE_HELM }
 		x = 32
-		y = 9
+		y = 10
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -1986,7 +2039,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_LE_BOURBONISTE_AT_THE_HELM }
 		x = 32
-		y = 10
+		y = 11
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2000,7 +2053,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_A_WEAK_PARLIAMENT focus = FRA_A_LOYAL_PARLIAMENT }
 		x = 31
-		y = 11
+		y = 12
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2014,7 +2067,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_FIRST_ELECTIONS focus = FRA_FORM_A_GOVERNMENT }
 		x = 28
-		y = 9
+		y = 10
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2028,7 +2081,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_REORGANIZE_THE_GOVERNMENT }
 		x = 28
-		y = 10
+		y = 11
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2043,7 +2096,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_REUNIFICATION_CAMPAIGN }
 		mutually_exclusive = { focus = FRA_USE_FORCE }
 		x = 27
-		y = 11
+		y = 12
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2057,7 +2110,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_USE_DIPLOMACY }
 		x = 27
-		y = 12
+		y = 13
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2071,7 +2124,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_USE_DIPLOMACY }
 		x = 25
-		y = 12
+		y = 13
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2086,7 +2139,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_REDERENDUM_IN_AQUITAINE }
 		prerequisite = { focus = FRA_REDERENDUM_IN_NORMANDY }
 		x = 25
-		y = 13
+		y = 14
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2101,7 +2154,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_REDERENDUM_IN_AQUITAINE }
 		prerequisite = { focus = FRA_REDERENDUM_IN_NORMANDY }
 		x = 27
-		y = 13
+		y = 14
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2116,7 +2169,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_VISIT_BRITTANY }
 		prerequisite = { focus = FRA_VISIT_BURGUNDY }
 		x = 27
-		y = 14
+		y = 15
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2131,7 +2184,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_REUNIFICATION_CAMPAIGN }
 		mutually_exclusive = { focus = FRA_USE_DIPLOMACY }
 		x = 29
-		y = 11
+		y = 12
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2145,7 +2198,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_USE_FORCE }
 		x = 29
-		y = 12
+		y = 13
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2159,7 +2212,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_USE_FORCE }
 		x = 31
-		y = 12
+		y = 13
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2174,7 +2227,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_INTERVENTION_IN_BRITANNY }
 		prerequisite = { focus = FRA_ASSAULT_ON_NORMANDY }
 		x = 29
-		y = 13
+		y = 14
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2189,7 +2242,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_INTERVENTION_IN_BRITANNY }
 		prerequisite = { focus = FRA_ASSAULT_ON_NORMANDY }
 		x = 31
-		y = 13
+		y = 14
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2204,7 +2257,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_BURGUNDIAN_BET }
 		prerequisite = { focus = FRA_ATTACK_AQUITAINE }
 		x = 29
-		y = 14
+		y = 15
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2220,7 +2273,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_CONSTITUTION }
 		mutually_exclusive = { focus = FRA_THE_KINGS_ALLIANCE }
 		x = 23
-		y = 15
+		y = 16
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2234,7 +2287,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_CONTINENTAL_BLOC }
 		x = 21
-		y = 16
+		y = 17
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2248,7 +2301,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_A_DEAL_WITH_THE_SPANISH }
 		x = 21
-		y = 17
+		y = 18
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2262,7 +2315,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_TALKS_WITH_PORTUGAL }
 		x = 21
-		y = 18
+		y = 19
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2276,7 +2329,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_CONTINENTAL_BLOC }
 		x = 23
-		y = 16
+		y = 17
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2290,7 +2343,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_TALKS_WITH_THE_GERMANS }
 		x = 23
-		y = 17
+		y = 18
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2304,7 +2357,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_INFLUENCE_IN_THE_BENELUX }
 		x = 23
-		y = 18
+		y = 19
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2318,7 +2371,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_WALLONIAN_QUESTION }
 		x = 23
-		y = 19
+		y = 20
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2334,7 +2387,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_BOURBON_CHARTER }
 		mutually_exclusive = { focus = FRA_THE_CONTINENTAL_BLOC }
 		x = 33
-		y = 15
+		y = 16
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2348,7 +2401,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_KINGS_ALLIANCE }
 		x = 35
-		y = 16
+		y = 17
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2362,7 +2415,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_KINGS_ALLIANCE }
 		x = 33
-		y = 16
+		y = 17
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2376,7 +2429,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_TALKS_WITH_THE_BRITISH }
 		x = 33
-		y = 17
+		y = 18
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2390,7 +2443,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_PROPOSE_ANGEVIN_EMPIRE }
 		x = 33
-		y = 17
+		y = 18
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2404,7 +2457,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_UNIFICATION_WARS focus = FRA_PEACEFUL_REUNIFICATION }
 		x = 28
-		y = 16
+		y = 17
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2418,7 +2471,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_COLONIAL_EXPANSION }
 		x = 28
-		y = 17
+		y = 18
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2432,7 +2485,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_DEAL_WITH_THE_GERMANS }
 		x = 26
-		y = 18
+		y = 19
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2446,7 +2499,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_DEAL_WITH_THE_GERMANS }
 		x = 28
-		y = 18
+		y = 19
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2461,7 +2514,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_MARINE_EFFORT }
 		prerequisite = { focus = FRA_PLANS_FOR_LOUISIANA }
 		x = 27
-		y = 19
+		y = 20
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2475,7 +2528,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_DEAL_WITH_THE_GERMANS }
 		x = 30
-		y = 18
+		y = 19
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2490,7 +2543,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_MARINE_EFFORT }
 		prerequisite = { focus = FRA_PLANS_FOR_ASIA }
 		x = 29
-		y = 19
+		y = 20
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2504,7 +2557,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_INVADE_INDOCHINA }
 		x = 29
-		y = 19
+		y = 20
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2518,7 +2571,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_INVADE_SOUTHERN_CHINA }
 		x = 29
-		y = 20
+		y = 21
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2531,10 +2584,10 @@ focus_tree = {
 	focus = {
 		id = FRA_PRESERVE_THE_MONARCHY
 		icon = GFX_focus_monarchy
-		prerequisite = { focus = FRA_CONTINUE_THE_MONARCHY }
-		mutually_exclusive = { focus = FRA_PLEASE_THE_PEOPLE focus = FRA_THE_FOURTH_REVOLUTION focus = FRA_NATIONALISTIC_SURGE }
+		prerequisite = { focus = FRA_CRACK_DOWN_ON_EXTREMISTS }
+		mutually_exclusive = { focus = FRA_DEMOCRACY_PREVAILS focus = FRA_THE_FOURTH_REVOLUTION focus = FRA_NATIONALISTIC_SURGE }
 		x = 38
-		y = 2
+		y = 3
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2546,10 +2599,10 @@ focus_tree = {
 	focus = {
 		id = FRA_NATIONALISTIC_SURGE
 		icon = GFX_nationalist_victory
-		prerequisite = { focus = FRA_EXPEL_THE_KING }
-		mutually_exclusive = { focus = FRA_PLEASE_THE_PEOPLE focus = FRA_THE_FOURTH_REVOLUTION focus = FRA_PRESERVE_THE_MONARCHY }
+		prerequisite = { focus = FRA_THE_GLORIOUS_REVOLUTION }
+		mutually_exclusive = { focus = FRA_DEMOCRACY_PREVAILS focus = FRA_THE_FOURTH_REVOLUTION focus = FRA_PRESERVE_THE_MONARCHY }
 		x = 44
-		y = 2
+		y = 3
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2563,7 +2616,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_PRESERVE_THE_MONARCHY }
 		x = 50
-		y = 3
+		y = 4
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2578,7 +2631,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_ARMEE_NOUVELLE }
 		mutually_exclusive = { focus = FRA_IMPROVE_OUR_TANKS }
 		x = 49
-		y = 4
+		y = 5
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2592,7 +2645,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_IMPROVE_OUR_INFANTRY }
 		x = 49
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2606,7 +2659,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_IMPROVE_OUR_INFANTRY }
 		x = 47
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2621,7 +2674,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_EXPAND_THE_ASSEMBLY_LINE }
 		prerequisite = { focus = FRA_SIMPLIFIED_WEAPON_SCHEMATICS }
 		x = 49
-		y = 6
+		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2635,7 +2688,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_MORE_RESOURCES_TO_THE_FRONT }
 		x = 49
-		y = 7
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2650,7 +2703,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_ARMEE_NOUVELLE }
 		mutually_exclusive = { focus = FRA_IMPROVE_OUR_INFANTRY }
 		x = 51
-		y = 4
+		y = 5
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2664,7 +2717,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_IMPROVE_OUR_TANKS }
 		x = 53
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2678,7 +2731,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_IMPROVE_OUR_TANKS }
 		x = 51
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2692,7 +2745,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_SIMPLIFIED_TANK_SCHEMATICS }
 		x = 51
-		y = 6
+		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2706,7 +2759,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_MORE_RESOURCES_TO_INDUSTRY }
 		x = 51
-		y = 7
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2720,7 +2773,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_eagle
 		prerequisite = { focus = FRA_NATIONALISTIC_SURGE }
 		x = 44
-		y = 3
+		y = 4
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2734,7 +2787,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_STRONGER_THAN_A_KING }
 		x = 44
-		y = 4
+		y = 5
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2748,7 +2801,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_A_PARTY_DICTATORSHIP }
 		x = 43
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2762,7 +2815,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_A_PARTY_DICTATORSHIP }
 		x = 45
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2776,7 +2829,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_INTERNMENT_CAMPS }
 		x = 43
-		y = 6
+		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2790,7 +2843,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_SECRET_POLICE }
 		x = 45
-		y = 6
+		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2805,7 +2858,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_WORK_CAMPS }
 		prerequisite = { focus = FRA_IMPRISON_OUR_OPPONENTS }
 		x = 44
-		y = 7
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2819,7 +2872,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_FORCED_LABOR }
 		x = 44
-		y = 8
+		y = 9
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2833,7 +2886,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_ASSERT_WESTERN_CLAIMS }
 		x = 43
-		y = 9
+		y = 10
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2847,7 +2900,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_ASSERT_WESTERN_CLAIMS }
 		x = 45
-		y = 9
+		y = 10
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2862,7 +2915,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_REESTABLISH_EASTERN_CONTROL }
 		prerequisite = { focus = FRA_REESTABLISH_NORTHERN_CONTROL }
 		x = 44
-		y = 10
+		y = 11
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2876,7 +2929,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_ESTABLISH_NATURAL_BORDERS }
 		x = 44
-		y = 11
+		y = 12
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2890,7 +2943,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_PROPOGANDA_CAMPAIGNS }
 		x = 44
-		y = 12
+		y = 13
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2905,7 +2958,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_PRESERVE_THE_MONARCHY }
 		mutually_exclusive = { focus = FRA_STRONGER_THAN_A_KING focus = FRA_CAROLINGIAN_IDENTITY }
 		x = 40
-		y = 3
+		y = 4
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2919,7 +2972,7 @@ focus_tree = {
 		icon = GFX_goal_new_treaty
 		prerequisite = { focus = FRA_EMPOWER_THE_KING }
 		x = 40
-		y = 4
+		y = 5
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2933,7 +2986,7 @@ focus_tree = {
 		icon = GFX_goal_generic_isolation
 		prerequisite = { focus = FRA_ELIMINATE_MONARCH_RESTRICTIONS }
 		x = 39
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2947,7 +3000,7 @@ focus_tree = {
 		icon = GFX_goal_purge_opposition
 		prerequisite = { focus = FRA_ELIMINATE_MONARCH_RESTRICTIONS }
 		x = 41
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2961,7 +3014,7 @@ focus_tree = {
 		icon = GFX_goal_planned_economy
 		prerequisite = { focus = FRA_CLOSE_BORDERS }
 		x = 39
-		y = 7
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2975,7 +3028,7 @@ focus_tree = {
 		icon = GFX_goal_purge_dissenters
 		prerequisite = { focus = FRA_DEPORT_IMMIGRANTS }
 		x = 41
-		y = 6
+		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -2989,7 +3042,7 @@ focus_tree = {
 		icon = GFX_focus_purge_bureaucracy
 		prerequisite = { focus = FRA_DEPORT_MINORITIES }
 		x = 41
-		y = 7
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3004,7 +3057,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_DEPORT_POLITICAL_OPPOSITION }
 		prerequisite = { focus = FRA_LIMIT_IMPORTS }
 		x = 40
-		y = 8
+		y = 9
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3018,7 +3071,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_STRIKE_AT_BURGUNDY }
 		x = 39
-		y = 9
+		y = 10
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3032,7 +3085,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_STRIKE_AT_BURGUNDY }
 		x = 41
-		y = 9
+		y = 10
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3047,7 +3100,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_ASSAULT_ON_ROUEN }
 		prerequisite = { focus = FRA_INTO_AQUITAINE }
 		x = 40
-		y = 10
+		y = 11
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3061,7 +3114,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_BRITTANY_GAMBLE }
 		x = 40
-		y = 11
+		y = 12
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3075,7 +3128,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_NATURAL_BORDERS }
 		x = 40
-		y = 12
+		y = 13
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3091,7 +3144,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_PRESERVE_THE_MONARCHY}
 		mutually_exclusive = { focus = FRA_EMPOWER_THE_KING focus = FRA_STRONGER_THAN_A_KING }
 		x = 36
-		y = 3
+		y = 4
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3105,7 +3158,7 @@ focus_tree = {
 		icon = GFX_focus_generic_home_defense
 		prerequisite = { focus = FRA_CAROLINGIAN_IDENTITY }
 		x = 37
-		y = 4
+		y = 5
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3138,7 +3191,7 @@ focus_tree = {
 		icon = GFX_focus_hun_elect_a_king
 		prerequisite = { focus = FRA_THE_CAROLINGIAN_HERITAGE }
 		x = 37
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3153,7 +3206,7 @@ focus_tree = {
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		prerequisite = { focus = FRA_CAROLINGIAN_IDENTITY }
 		x = 34
-		y = 4
+		y = 5
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3168,7 +3221,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_APPROACH_THE_CHURCH }
 		mutually_exclusive = { focus = FRA_A_FRIEND_IN_ROME }
 		x = 32
-		y = 5
+		y = 6
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3185,7 +3238,7 @@ focus_tree = {
 		icon = GFX_goal_generic_secret_weapon
 		prerequisite = { focus = FRA_THE_POPE_DENIES_OUR_CROWN }
 		x = 32
-		y = 6
+		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3199,7 +3252,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = FRA_OUR_OWN_POPE }
 		x = 32
-		y = 7
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3213,7 +3266,7 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = FRA_BUILD_SUPPORT_FOR_OUR_POPE }
 		x = 32
-		y = 8
+		y = 9
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3228,7 +3281,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_APPROACH_THE_CHURCH }
 		mutually_exclusive = { focus = FRA_THE_POPE_DENIES_OUR_CROWN }
 		x = 35
-		y = 5
+		y = 6
 		cost = 6
 		available = {
 			has_country_flag = A_FRIEND_IN_ROME
@@ -3247,7 +3300,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_PREPARE_A_NEW_CROWN }
 		prerequisite = { focus = FRA_A_FRIEND_IN_ROME }
 		x = 36
-		y = 6
+		y = 7
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3262,7 +3315,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_FRANKISH_CORONATION }
 		mutually_exclusive = { focus = FRA_A_SECULAR_STATE }
 		x = 35
-		y = 7
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3282,7 +3335,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_THE_FRANKISH_CORONATION }
 		mutually_exclusive = { focus = FRA_ENFORCE_CATHOLICISM }
 		x = 37
-		y = 7
+		y = 8
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3299,7 +3352,7 @@ focus_tree = {
 		icon = GFX_goal_purge_opposition
 		prerequisite = { focus = FRA_ENFORCE_CATHOLICISM }
 		x = 34
-		y = 8
+		y = 9
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3315,7 +3368,7 @@ focus_tree = {
 		icon = GFX_goal_purge_opposition
 		prerequisite = { focus = FRA_ENFORCE_CATHOLICISM }
 		x = 36
-		y = 8
+		y = 9
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3331,7 +3384,7 @@ focus_tree = {
 		icon = GFX_goal_army_guy_2
 		prerequisite = { focus = FRA_STRIKE_AT_THE_HEATHENS focus = FRA_STRIKE_AT_THE_HERETICS }
 		x = 35
-		y = 9
+		y = 10
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3346,7 +3399,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_STRIKE_AT_THE_HEATHENS focus = FRA_A_SECULAR_STATE }
 		prerequisite = { focus = FRA_STRIKE_AT_THE_HERETICS focus = FRA_A_SECULAR_STATE }
 		x = 37
-		y = 9
+		y = 10
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3360,7 +3413,7 @@ focus_tree = {
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = FRA_FRANCE_NO_MORE }
 		x = 36
-		y = 10
+		y = 11
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3451,7 +3504,7 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = FRA_FRANCE_NO_MORE }
 		x = 38
-		y = 10
+		y = 11
 		cost = 6
 		available = {
 			GRE = { has_cosmetic_tag = BYZANTIUM }
@@ -3468,7 +3521,7 @@ focus_tree = {
 		icon = GFX_goal_flag_spain
 		prerequisite = { focus = FRA_ASSERT_OUR_CLAIMS }
 		x = 34
-		y = 11
+		y = 12
 		cost = 6
 		available = {
 			SPR = {
@@ -3491,7 +3544,7 @@ focus_tree = {
 		icon = GFX_march_to_rome
 		prerequisite = { focus = FRA_ASSERT_OUR_CLAIMS }
 		x = 36
-		y = 11
+		y = 12
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3515,7 +3568,7 @@ focus_tree = {
 		icon = GFX_focus_CZE_german_puppet
 		prerequisite = { focus = FRA_ASSERT_OUR_CLAIMS }
 		x = 38
-		y = 11
+		y = 12
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3529,7 +3582,7 @@ focus_tree = {
 		icon = GFX_goal_revolution
 		prerequisite = { focus = FRA_ALLIANCE_WITH_SPAIN focus = FRA_MARCH_TO_ROME focus = FRA_INTEGRATE_AQUITAINE }
 		x = 35
-		y = 12
+		y = 13
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3543,7 +3596,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_ALLIANCE_WITH_SPAIN focus = FRA_MARCH_TO_ROME focus = FRA_INTEGRATE_AQUITAINE }
 		x = 37
-		y = 12
+		y = 13
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3558,7 +3611,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_SUBJUGATE_BRITTANY }
 		prerequisite = { focus = FRA_REVOLT_IN_NORMANDY }
 		x = 37
-		y = 13
+		y = 14
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3573,7 +3626,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_SUBJUGATE_BRITTANY }
 		prerequisite = { focus = FRA_REVOLT_IN_NORMANDY }
 		x = 35
-		y = 13
+		y = 14
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3588,7 +3641,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_INVADE_THE_SWISS }
 		prerequisite = { focus = FRA_INVADE_THE_BENELUX }
 		x = 36
-		y = 14
+		y = 15
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3602,7 +3655,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_OUR_PLACE_IN_THE_WORLD focus = FRA_AGGRESSIVE_POLICY }
 		x = 42
-		y = 13
+		y = 14
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3617,7 +3670,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_RULERS_OF_EUROPE }
 		mutually_exclusive = { focus = FRA_TERRITORIAL_EXPANSION }
 		x = 40
-		y = 14
+		y = 15
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3631,7 +3684,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_EUROPEAN_AXIS }
 		x = 39
-		y = 15
+		y = 16
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3645,7 +3698,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_UNITE_ITALY }
 		x = 39
-		y = 17
+		y = 18
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3659,7 +3712,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_EUROPEAN_AXIS }
 		x = 41
-		y = 15
+		y = 16
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3673,7 +3726,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_CATALONIAN_INDEPENDENCE }
 		x = 41
-		y = 16
+		y = 17
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3687,7 +3740,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_RAISE_TENSIONS }
 		x = 41
-		y = 17
+		y = 18
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3701,7 +3754,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_SWISS_STATE focus = FRA_ARM_THE_REBELS focus = FRA_DEMAND_CATALONIA focus = FRA_RULE_IN_CENTRAL_ITALY }
 		x = 40
-		y = 18
+		y = 19
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3716,7 +3769,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_RULERS_OF_EUROPE }
 		mutually_exclusive = { focus = FRA_THE_EUROPEAN_AXIS }
 		x = 44
-		y = 14
+		y = 15
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3730,7 +3783,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_TERRITORIAL_EXPANSION }
 		x = 43
-		y = 15
+		y = 16
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3744,7 +3797,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_CLAIM_CATALONIA }
 		x = 43
-		y = 17
+		y = 18
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3758,7 +3811,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_TERRITORIAL_EXPANSION }
 		x = 45
-		y = 15
+		y = 16
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3772,7 +3825,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_INVADE_THE_SWISS_STATES }
 		x = 45
-		y = 16
+		y = 17
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3786,7 +3839,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_RULE_IN_NORTHERN_ITALY }
 		x = 45
-		y = 17
+		y = 18
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3800,7 +3853,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_SWISS_STATE focus = FRA_ARM_THE_REBELS focus = FRA_DEMAND_CATALONIA focus = FRA_RULE_IN_CENTRAL_ITALY }
 		x = 44
-		y = 18
+		y = 19
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -3814,7 +3867,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_SWISS_STATE focus = FRA_ARM_THE_REBELS focus = FRA_DEMAND_CATALONIA focus = FRA_RULE_IN_CENTRAL_ITALY }
 		x = 42
-		y = 18
+		y = 19
 		cost = 6
 		ai_will_do = {
 			factor = 10

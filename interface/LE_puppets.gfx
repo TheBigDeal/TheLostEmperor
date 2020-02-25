@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_autonomy_personal_union_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_personal_union_icon.dds"
+	}
+}

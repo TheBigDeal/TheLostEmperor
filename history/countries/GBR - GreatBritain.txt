@@ -44,6 +44,11 @@ if = {
 		has_dlc = "Together for Victory"
 	}
 	set_autonomy = {
+		target = HAN
+		autonomous_state = autonomy_personal_union
+		freedom_level = 0.75
+	}
+	set_autonomy = {
 		target = GUY
 		autonomous_state = autonomy_colony
 	}
@@ -123,6 +128,7 @@ if = {
 		puppet = ALK
 		puppet = GUY
 		puppet = NFL
+		puppet = HAN
 	}
 }
 

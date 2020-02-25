@@ -194,7 +194,7 @@ country = {
 		modifier = {
 			army_morale_factor = -0.4
 			encryption_factor = -0.2
-			conscription = -0.2
+			conscription = -0.005
 		}
 	}
 	FRA_ideological_surge = {
