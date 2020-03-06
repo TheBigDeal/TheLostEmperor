@@ -175,7 +175,7 @@ units = {
 	### Vesting Holland (CO: ) ###
 	division= {	
 		name = "Oostfront VH"
-		location = 391  # Amsterdam
+		location = 391  # AMEKerdam
 		division_template = "Infanterie Divisie"
 		start_equipment_factor = 0.3
 
@@ -189,7 +189,7 @@ units = {
 	}
 	division= {	
 		name = "Groep Spui & Kil VH"
-		location = 391  # Amsterdam
+		location = 391  # AMEKerdam
 		division_template = "Infanterie Divisie"
 		start_equipment_factor = 0.3
 

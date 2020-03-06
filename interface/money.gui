@@ -8,7 +8,7 @@ guiTypes = {
 			name ="current_money_bg"
 			spriteType = "GFX_generic_box_small"
 			position = { x=0 y=0 }
-			shortcut = "ctrl+k"
+			#shortcut = "ctrl+k"
 		}
 		
 		iconType = {

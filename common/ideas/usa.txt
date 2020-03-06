@@ -429,7 +429,7 @@ ideas = {
 				liberalism_drift = 0.05
 			}			
 		}
-			# idea for the protect Amercians focus - USA communist
+			# idea for the protect Amercians focus - USA collectivist
 		american_influence_defence_collectivism = {
 			visible = { always = no	}
 

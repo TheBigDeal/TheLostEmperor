@@ -60,8 +60,8 @@ ideas = {
 				max_planning = 0.25
 				army_leader_start_defense_level= 1
 			}
-			targeted_modifier = { tag = PRS attack_bonus_against = 0.05 }
-			targeted_modifier = { tag = PRS defense_bonus_against = 0.15 }
+			targeted_modifier = { tag = PRE attack_bonus_against = 0.05 }
+			targeted_modifier = { tag = PRE defense_bonus_against = 0.15 }
 			targeted_modifier = { tag = RUS attack_bonus_against = 0.05 }
 			targeted_modifier = { tag = RUS defense_bonus_against = 0.15 }
 		}

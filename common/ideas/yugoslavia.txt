@@ -612,7 +612,7 @@ ideas = {
 
 		YUG_ivo_lola_ribar = {
 
-			picture = generic_communist_europe
+			picture = generic_collectivist_europe
 			
 			visible = {
 				original_tag = YUG

@@ -442,7 +442,7 @@ ideas = {
 			}
 		}
 
-		CAN_communist_ideals = {
+		CAN_collectivist_ideals = {
 			visible = {
 				always = no
 			}
@@ -461,7 +461,7 @@ ideas = {
 			}
 		}
 
-		CAN_communist_ideals_2 = {
+		CAN_collectivist_ideals_2 = {
 			visible = {
 				always = no
 			}
@@ -482,7 +482,7 @@ ideas = {
 			}
 		}
 
-		CAN_communist_ideals_3 = {
+		CAN_collectivist_ideals_3 = {
 			visible = {
 				always = no
 			}
@@ -1035,7 +1035,7 @@ ideas = {
 		
 		designer = yes
 		
-		vickers_armstrong_can = {
+		vickers_arMEKrong_can = {
 
 			picture = generic_tank_manufacturer_1
 

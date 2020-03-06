@@ -257,7 +257,7 @@ AST = {
 			"Stuart" "Vampire" "Vendetta" "Voyager" "Waterhen" "Arunta" "Bataan" "Warramunga" "Napier" "Nizam" "Nestor" "Norman" "Nerissa" 
 			"Quiberon" "Quickmatch" "Quadrant" "Quality" "Queenborough" "Tobruk" "Anzac" "Barcoo" "Barwon" "Burdekin" "Diamantina" "Gascoyne" 
 			"Hawkesbury" "Lachlan" "Macquarie" "Murchison" "Condamine" "Shoalhaven" "Culgoa" "Balmaine" "Bogam" "Campaspe" "Murrumbidgee" "Naomi" "Nepean" 
-			"Warburton" "Williamstown" "Wimmera" "Wollondilly" 
+			"Warburton" "WilliaMEKown" "Wimmera" "Wollondilly" 
 		}
 	}
 	light_cruiser = {
@@ -2096,7 +2096,7 @@ HOL = {
 		generic = { "Torpedobootjager" }
 		unique = {
 			"Piet Hein" "Eversten" "Van Ghent" "Kortenaer" "Van Galen" "Witte de With" "Banckert" "Van Nes" "Gerard Callenburgh" "Isaac Sweers" "Tjerk Hiddes" "Philips van Almonde"
-			"Campbelltown" "Marnix" "Holland" "Zeeland" "Noord-Brabant" "Gelderland" "Friesland" "Groningen" "Limburg" "Overijssel" "Drenthe" "Utrecht" "Rotterdam" "Amsterdam"
+			"Campbelltown" "Marnix" "Holland" "Zeeland" "Noord-Brabant" "Gelderland" "Friesland" "Groningen" "Limburg" "Overijssel" "Drenthe" "Utrecht" "Rotterdam" "AMEKerdam"
 			"Wolf" "Fret" "Bulhond" "Jakhals" "Hermelijn" "Lynx" "Vos" "Panter" 
 		}
 	}
@@ -4224,7 +4224,7 @@ SWE = {
 		generic = { "Lätt KRyśsare" }
 		unique = {
 			"Gotland" "Fylgia" "Klas Horn" "Klas Uggla" "Psilander" "Göta Lejon" "Tre Kronor" "Klas Fleming"
-			"Kalmar" "Västervik" "Gävle" "Malmö" "Halmstad" "Karlskrona" "Sundsvall" "Luleå" "Umeå" "Härnösand" "Hudiksvall" 
+			"Kalmar" "Västervik" "Gävle" "Malmö" "HalMEKad" "Karlskrona" "Sundsvall" "Luleå" "Umeå" "Härnösand" "Hudiksvall" 
 			"Uddevalla" "Helsingborg" "Varberg" "Norrköping" "Söderköping" "Visby" "Älvsnabben"
 		}
 	}

@@ -4,10 +4,10 @@
 	### ROYAL NAVY (CO: ) ###
 	fleet = {
 		name = "Koninklijke Marine"			
-		naval_base = 3314  # Amsterdam
+		naval_base = 3314  # AMEKerdam
 		task_force = {				
 			name = "Koninklijke Vloot"			
-			location = 3314  # Amsterdam
+			location = 3314  # AMEKerdam
 			ship = { name = "HrMs Vliereede" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = HOL version_name = "Hertog Hendrik Class" } } }		
 			ship = { name = "HrMs Ijmuiden" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = HOL version_name = "Soerabaja Class" } } }		
 			ship = { name = "HrMs Van Galen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = HOL version_name = "Van Galen Class" } } }		
@@ -15,7 +15,7 @@
 		}				
 		task_force = {				
 			name = "Koninklijke Onderzeeboot Smaldeel"			
-			location = 3314  # Amsterdam
+			location = 3314  # AMEKerdam
 			ship = { name = "HrMs O-8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = HOL version_name = "K-III Class" } } }
 			ship = { ordered_name = 9 definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = HOL version_name = "O9 Class" } } }
 			ship = { ordered_name = 10 definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = HOL version_name = "O9 Class" } } }

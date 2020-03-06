@@ -19,7 +19,7 @@ AST_DD_HISTORICAL = {
 		"Arunta" "Bataan" "Warramunga" "Napier" "Nizam" "Nestor" "Norman" "Nerissa" 
 		"Quiberon" "Quickmatch" "Quadrant" "Quality" "Queenborough" "Tobruk" "Anzac" "Barcoo" "Barwon" "Burdekin" "Diamantina" "Gascoyne" 
 		"Hawkesbury" "Lachlan" "Macquarie" "Murchison" "Condamine" "Shoalhaven" "Culgoa" "Balmaine" "Bogam" "Campaspe" "Murrumbidgee" "Naomi" "Nepean" 
-		"Warburton" "Williamstown" "Wimmera" "Wollondilly" "Stuart" "Vampire" "Vendetta" "Voyager" "Waterhen" 
+		"Warburton" "WilliaMEKown" "Wimmera" "Wollondilly" "Stuart" "Vampire" "Vendetta" "Voyager" "Waterhen" 
 	}
 }
 
@@ -297,7 +297,7 @@ AST_DD_COMMUNIST = {
 		"Arunta" "Bataan" "Warramunga" "Napier" "Nizam" "Nestor" "Norman" "Nerissa" 
 		"Quiberon" "Quickmatch" "Quadrant" "Quality" "Queenborough" "Tobruk" "Anzac" "Barcoo" "Barwon" "Burdekin" "Diamantina" "Gascoyne" 
 		"Hawkesbury" "Lachlan" "Macquarie" "Murchison" "Condamine" "Shoalhaven" "Culgoa" "Balmaine" "Bogam" "Campaspe" "Murrumbidgee" "Naomi" "Nepean" 
-		"Warburton" "Williamstown" "Wimmera" "Wollondilly" "Stuart" "Vampire" "Vendetta" "Voyager" "Waterhen" 
+		"Warburton" "WilliaMEKown" "Wimmera" "Wollondilly" "Stuart" "Vampire" "Vendetta" "Voyager" "Waterhen" 
 	}
 }
 

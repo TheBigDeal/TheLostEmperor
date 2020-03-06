@@ -14,14 +14,14 @@ on_actions = {
 				add_to_faction = HAM
 			}
 			#Spheres
-			# PRS = {
+			# PRE = {
 				# create_faction = ROOT_Sphere
 				# add_to_faction = SAX
 				# add_to_faction = VRP
 				# add_to_faction = MCH
-				# add_to_faction = MST
+				# add_to_faction = MEK
 				# add_to_faction = HAN
-				# add_to_faction = HLS
+				# add_to_faction = SHL
 				# add_to_faction = BRE
 				# add_to_faction = OLD
 				# add_to_faction = MUN
@@ -48,7 +48,7 @@ on_actions = {
 			# AUS = {
 				# create_faction = ROOT_Sphere
 				# add_to_faction = PSU
-				# add_to_faction = BAV
+				# add_to_faction = BAY
 				# add_to_faction = AUG
 				# add_to_faction = NUR
 				# add_to_faction = BAM

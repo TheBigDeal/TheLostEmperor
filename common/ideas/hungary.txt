@@ -195,7 +195,7 @@ ideas = {
 
 		HUN_the_hungarian_red_army = {
 
-			picture = generic_communist_army
+			picture = generic_collectivist_army
 
 			modifier = {
 				conscription = 0.05
@@ -368,7 +368,7 @@ ideas = {
 
 		HUN_laszlo_rajk = {
 
-			picture = generic_communist_europe
+			picture = generic_collectivist_europe
 			
 			visible = {
 				original_tag = HUN

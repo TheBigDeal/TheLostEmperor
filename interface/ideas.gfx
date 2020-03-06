@@ -2019,8 +2019,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_fairey_aviation.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_vickers_armstrong_eng"
-		texturefile = "gfx/interface/ideas/vickers_armstrong_eng.dds"
+		name = "GFX_idea_vickers_arMEKrong_eng"
+		texturefile = "gfx/interface/ideas/vickers_arMEKrong_eng.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_aioc"

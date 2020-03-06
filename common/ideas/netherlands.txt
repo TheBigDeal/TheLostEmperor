@@ -337,7 +337,7 @@ ideas = {
 		
 		designer = yes
 		
-		nsm_amsterdam = {
+		nsm_aMEKerdam = {
 			
 			picture = generic_naval_manufacturer_1
 

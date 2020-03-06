@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 1928.2.4
 		picture = "GFX_select_date_1936"
-		default_country = "PRS"
+		default_country = "PRE"
 		default = yes
 
 		FRA = {
@@ -40,7 +40,7 @@ bookmarks = {
 			}
 
 		}
-		PRS = {
+		PRE = {
 			history = GER_BLITZKRIEG_DESC
 			ideology = absolutism
 			ideas = {

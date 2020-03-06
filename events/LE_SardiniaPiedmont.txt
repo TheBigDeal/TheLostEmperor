@@ -151,8 +151,8 @@ country_event = { #Prussian - Sardinian Alliance
 	is_triggered_only = yes
 	option = { #Accept
 		name = le_sardiniapiedmont.7.a
-		SAR = { give_guarantee = PRS }
-		PRS = { give_guarantee = SAR }
+		SAR = { give_guarantee = PRE }
+		PRE = { give_guarantee = SAR }
 	}
 	option = { #Decline
 		name = le_sardiniapiedmont.7.a

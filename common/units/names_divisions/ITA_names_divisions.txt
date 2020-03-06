@@ -5,7 +5,7 @@
 #
 # for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
 #
-# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+# can_use - is a trigger that locks/unlocks the group under specific circuMEKances. The trigger is in a country scope.
 #
 # division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template 
 #                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because 

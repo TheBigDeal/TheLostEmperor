@@ -62,7 +62,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			#POSITIVE OPINION OF AUSTRIA OF GERMAN STATES IN SPHERE	
-			BAV = { if = { limit = { is_in_faction_with = AUS } add_opinion_modifier = {target = ROOT modifier = friendly_relations}}}
+			BAY = { if = { limit = { is_in_faction_with = AUS } add_opinion_modifier = {target = ROOT modifier = friendly_relations}}}
 			AUG = { if = { limit = { is_in_faction_with = AUS } add_opinion_modifier = {target = ROOT modifier = friendly_relations}}}
 			ULM = { if = { limit = { is_in_faction_with = AUS } add_opinion_modifier = {target = ROOT modifier = friendly_relations}}}
 			MEM = { if = { limit = { is_in_faction_with = AUS } add_opinion_modifier = {target = ROOT modifier = friendly_relations}}}
@@ -105,7 +105,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			declare_war_on = {
-				target = PRS
+				target = PRE
 				type = annex_everything
 			}
 			add_war_support = 0.10
@@ -124,7 +124,7 @@ focus_tree = {
 		completion_reward = {
 			add_to_war = { 
 				targeted_alliance = PREV 
-				enemy = PRS 
+				enemy = PRE 
 				hostility_reason = asked_to_join
 			}
 		}
@@ -140,7 +140,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			BAV = { if = { limit = { is_in_faction_with = AUS } country_event = { id = le_austria.1 }}}
+			BAY = { if = { limit = { is_in_faction_with = AUS } country_event = { id = le_austria.1 }}}
 			AUG = { if = { limit = { is_in_faction_with = AUS } country_event = { id = le_austria.1 }}}
 			ULM = { if = { limit = { is_in_faction_with = AUS } country_event = { id = le_austria.1 }}}
 			MEM = { if = { limit = { is_in_faction_with = AUS } country_event = { id = le_austria.1 }}}

@@ -136,7 +136,7 @@ USA_CL_HISTORICAL = {
 		# From Wiki (Built/Served/Fought) 
 		"Brooklyn" "Philadelphia" "Savannah" "Honolulu" "Nashville" "Boise" "Phoenix" "St. Louis" "Helena" 
 		"Cleveland" "Columbia" "Montpelier" "Denver" "Santa Fe" "Birmingham" "Mobile" "Biloxi" "Houston" "Miami" "Vincennes" "Astoria" "Pasadena" "Wilkes-Barre" "Springfield" "Vicksburg" "Topeka" 
-		"Duluth" "Oklahoma City" "Atlanta" "Dayton" "Amsterdam" "Providence" "Little Rock" "Portsmouth" "Fargo" "Huntington" "Manchester" 
+		"Duluth" "Oklahoma City" "Atlanta" "Dayton" "AMEKerdam" "Providence" "Little Rock" "Portsmouth" "Fargo" "Huntington" "Manchester" 
 		"Worcester" "Roanoke" "Norfolk" "Galveston" 
 		# CLAA Names
 		"Atlanta" "Juneau" "San Diego" "San Juan" "Oakland" "Reno" "Flint" "Tucson" "Juneau" "Spokane" "Fresno" 
@@ -387,7 +387,7 @@ USA_CITIES = {
 	unique = {
 		"Washington" "New York City" "Chicago" "Los Angeles" "San Francisco" "Detroit" "Boston" "Philadelphia" "Pittsburgh" "Cleveland" "St. Louis" "Baltimore" "Kansas City" "Milwaukee" "New Orleans" "Cincinnati" "Miami" 
 		"Indianapolis" "Seattle" "Dallas" "Atlanta" "Buffalo" "Minneapolis" "Denver" "Omaha" "San Diego" "Nashville" "Oklahoma City" "Louisville" "Phoenix" "Portland" "Rochester" 
-		"Albany" "Albuquerque" "Alexandria" "Amsterdam" "Annapolis" "Anniston" "Asheville" "Astoria" "Augusta" "Baton Rouge" "Biloxi" "Birmingham" "Boise" "Bremerton" "Bridgeport" "Brooklyn" "Cambridge" "Cheyenne" 
+		"Albany" "Albuquerque" "Alexandria" "AMEKerdam" "Annapolis" "Anniston" "Asheville" "Astoria" "Augusta" "Baton Rouge" "Biloxi" "Birmingham" "Boise" "Bremerton" "Bridgeport" "Brooklyn" "Cambridge" "Cheyenne" 
 		"Charleston" "Charlotte" "Chattanooga" "Chester" "Columbia" "Columbus" "Concord" "Corpus Christi" "Dayton" "Des Moines" "Duluth" "Fall River" "Fargo" "Flint" "Frederick" "Fresno" "Galena" "Galveston" "Gary" 
 		"Greenville" "Groton" "Hampton" "Hartford" "Helena" "Honolulu" "Houston" "Huntington" "Huron" "Jacksonville" "Jefferson City" "Juneau" "Key West" "La Jolla" "Lancaster" "Long Beach" "Little Rock" "Macon" 
 		"Manchester" "Marblehead" "Marion" "Memphis" "Missoula" "Mobile" "Mohican" "Montgomery" "Montpelier" "New Haven" "Newark" "Newport News" "Norfolk" "Northampton" "Oakland" "Olympia" "Oregon City" 

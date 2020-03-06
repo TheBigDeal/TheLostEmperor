@@ -1456,7 +1456,7 @@ guiTypes = {
 					buttonType = {
 						name = "law_le_religion_txt_1_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						##size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_religious_rights_1_icon"
@@ -1490,7 +1490,7 @@ guiTypes = {
 					buttonType = {
 						name = "law_le_religion_txt_2_button"
 						quadTextureSprite ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					instantTextboxType = {
 						name = "header"
@@ -1519,7 +1519,7 @@ guiTypes = {
 					buttonType = {
 						name = "law_le_religion_txt_3_button"
 						quadTextureSprite ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					instantTextboxType = {
 						name = "header"
@@ -1548,7 +1548,7 @@ guiTypes = {
 					buttonType = {
 						name = "law_le_religion_txt_4_button"
 						quadTextureSprite ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					instantTextboxType = {
 						name = "header"
@@ -1572,11 +1572,11 @@ guiTypes = {
 				containerWindowType = {
 					name = "law_le_religion_txt_5"
 					position = { x = 354 y = 10 }
-					size = { width = 345 height = 100 }
+					#size = { width = 345 height = 100 }
 					buttonType = {
 						name = "law_le_religion_txt_5_button"
 						quadTextureSprite ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_le_religion_txt_1_icon"
@@ -1610,7 +1610,7 @@ guiTypes = {
 					buttonType = {
 						name = "law_le_religion_txt_6_button"
 						quadTextureSprite ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					instantTextboxType = {
 						name = "header"
@@ -1638,7 +1638,7 @@ guiTypes = {
 					buttonType = {
 						name = "law_le_religion_txt_7_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_religious_rights_7_icon"
@@ -1672,7 +1672,7 @@ guiTypes = {
 					buttonType = {
 						name = "law_le_religion_txt_8_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_religious_rights_8_icon"
@@ -1707,7 +1707,7 @@ guiTypes = {
 					buttonType = {
 						name = "law_le_religion_txt_15_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_religious_rights_8_icon"
@@ -1741,7 +1741,7 @@ guiTypes = {
 					buttonType = {
 						name = "law_le_religion_txt_9_button"
 						quadTextureSprite ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					instantTextboxType = {
 						name = "header"
@@ -1769,7 +1769,7 @@ guiTypes = {
 					buttonType = {
 						name = "law_le_religion_txt_10_button"
 						quadTextureSprite ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					instantTextboxType = {
 						name = "header"
@@ -1797,7 +1797,7 @@ guiTypes = {
 					buttonType = {
 						name = "law_le_religion_txt_11_button"
 						quadTextureSprite ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					instantTextboxType = {
 						name = "header"
@@ -1825,7 +1825,7 @@ guiTypes = {
 					buttonType = {
 						name = "law_le_religion_txt_12_button"
 						quadTextureSprite ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					instantTextboxType = {
 						name = "header"
@@ -1853,7 +1853,7 @@ guiTypes = {
 					buttonType = {
 						name = "law_le_religion_txt_13_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_religious_rights_13_icon"
@@ -1887,7 +1887,7 @@ guiTypes = {
 					buttonType = {
 						name = "law_le_religion_txt_14_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_religious_rights_13_icon"
@@ -1921,7 +1921,7 @@ guiTypes = {
 					buttonType = {
 						name = "law_le_religion_txt_16_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_religious_rights_16_icon"
@@ -2012,12 +2012,12 @@ guiTypes = {
 					buttonType = {
 						name = "law_conscription_1_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					buttonType = {
 						name = "law_conscription_1_button_sel"
 						spriteType ="GFX_law_selected_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_religious_rights_1_icon"
@@ -2060,12 +2060,12 @@ guiTypes = {
 					buttonType = {
 						name = "law_conscription_2_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					buttonType = {
 						name = "law_conscription_2_button_sel"
 						spriteType ="GFX_law_selected_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_religious_rights_2_icon"
@@ -2109,12 +2109,12 @@ guiTypes = {
 					buttonType = {
 						name = "law_conscription_3_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					buttonType = {
 						name = "law_conscription_3_button_sel"
 						spriteType ="GFX_law_selected_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_religious_rights_3_icon"
@@ -2158,12 +2158,12 @@ guiTypes = {
 					buttonType = {
 						name = "law_conscription_4_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					buttonType = {
 						name = "law_conscription_4_button_sel"
 						spriteType ="GFX_law_selected_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_religious_rights_4_icon"
@@ -2202,16 +2202,16 @@ guiTypes = {
 				containerWindowType = {
 					name = "law_conscription_5"
 					position = { x = 10 y = 394 }
-					size = { width = 345 height = 100 }
+					#size = { width = 345 height = 100 }
 					buttonType = {
 						name = "law_conscription_5_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					buttonType = {
 						name = "law_conscription_5_button_sel"
 						spriteType ="GFX_law_selected_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_religious_rights_5_icon"
@@ -2254,12 +2254,12 @@ guiTypes = {
 					buttonType = {
 						name = "law_conscription_6_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					buttonType = {
 						name = "law_conscription_6_button_sel"
 						spriteType ="GFX_law_selected_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_religious_rights_6_icon"
@@ -2302,12 +2302,12 @@ guiTypes = {
 					buttonType = {
 						name = "law_conscription_7_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					buttonType = {
 						name = "law_conscription_7_button_sel"
 						spriteType ="GFX_law_selected_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_religious_rights_7_icon"
@@ -2410,12 +2410,12 @@ guiTypes = {
 					buttonType = {
 						name = "law_trade_1_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					buttonType = {
 						name = "law_trade_1_button_sel"
 						spriteType ="GFX_law_selected_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_trade_1_icon"
@@ -2458,12 +2458,12 @@ guiTypes = {
 					buttonType = {
 						name = "law_trade_2_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					buttonType = {
 						name = "law_trade_2_button_sel"
 						spriteType ="GFX_law_selected_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_trade_2_icon"
@@ -2507,12 +2507,12 @@ guiTypes = {
 					buttonType = {
 						name = "law_trade_3_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					buttonType = {
 						name = "law_trade_3_button_sel"
 						spriteType ="GFX_law_selected_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_trade_3_icon"
@@ -2556,12 +2556,12 @@ guiTypes = {
 					buttonType = {
 						name = "law_trade_4_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					buttonType = {
 						name = "law_trade_4_button_sel"
 						spriteType ="GFX_law_selected_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_trade_rights_4_icon"
@@ -2661,12 +2661,12 @@ guiTypes = {
 					buttonType = {
 						name = "law_economy_1_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					buttonType = {
 						name = "law_economy_1_button_sel"
 						spriteType ="GFX_law_selected_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_economy_1_icon"
@@ -2709,12 +2709,12 @@ guiTypes = {
 					buttonType = {
 						name = "law_economy_2_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					buttonType = {
 						name = "law_economy_2_button_sel"
 						spriteType ="GFX_law_selected_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_economy_2_icon"
@@ -2758,12 +2758,12 @@ guiTypes = {
 					buttonType = {
 						name = "law_economy_3_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					buttonType = {
 						name = "law_economy_3_button_sel"
 						spriteType ="GFX_law_selected_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_economy_3_icon"
@@ -2807,12 +2807,12 @@ guiTypes = {
 					buttonType = {
 						name = "law_economy_4_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					buttonType = {
 						name = "law_economy_4_button_sel"
 						spriteType ="GFX_law_selected_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_economy_rights_4_icon"
@@ -2855,12 +2855,12 @@ guiTypes = {
 					buttonType = {
 						name = "law_economy_5_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					buttonType = {
 						name = "law_economy_5_button_sel"
 						spriteType ="GFX_law_selected_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_economy_rights_5_icon"
@@ -2903,12 +2903,12 @@ guiTypes = {
 					buttonType = {
 						name = "law_economy_6_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					buttonType = {
 						name = "law_economy_6_button_sel"
 						spriteType ="GFX_law_selected_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_economy_rights_6_icon"
@@ -2951,12 +2951,12 @@ guiTypes = {
 					buttonType = {
 						name = "law_economy_7_button"
 						spriteType ="GFX_law_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					buttonType = {
 						name = "law_economy_7_button_sel"
 						spriteType ="GFX_law_selected_bg"
-						size = { width = 345 height = 100 }
+						#size = { width = 345 height = 100 }
 					}
 					iconType ={
 						name ="law_economy_rights_7_icon"

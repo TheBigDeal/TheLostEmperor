@@ -7,14 +7,14 @@ state={
 	}
 
 	history={
-		owner = PRS
+		owner = PRE
 		victory_points = { 11415 6 }
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 1
 
 		}
-		add_core_of = PRS
+		add_core_of = PRE
 		add_core_of = BRN
 
 	}

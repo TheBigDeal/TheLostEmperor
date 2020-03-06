@@ -295,7 +295,7 @@ ideas = {
 			}
 		}
 
-		vickers_armstrong_bel = {
+		vickers_arMEKrong_bel = {
 			picture = generic_tank_manufacturer_2
 		
 			

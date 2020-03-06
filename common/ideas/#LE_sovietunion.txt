@@ -2,11 +2,11 @@ ideas = {
 
 country = {
 	#################
-	#COMMUNIST PATH
+	#collectivist PATH
 	#################
 	SOV_the_soviet_red_army = {
 
-		picture = generic_communist_army
+		picture = generic_collectivist_army
 
 		modifier = {
 			conscription = 0.05

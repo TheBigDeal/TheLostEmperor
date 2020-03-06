@@ -5,7 +5,7 @@
 #
 # for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
 #
-# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+# can_use - is a trigger that locks/unlocks the group under specific circuMEKances. The trigger is in a country scope.
 #
 # division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
 #                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
@@ -364,7 +364,7 @@ GER_Inf_01 =
 		# deleted 369., 373., 392. Infanterie-Division (kroatische) for the same reasons as Division Azul.
 		# deleted 162. (Turk.) ID because its existence depends on German occupation of certain areas they may not go in game.
 		# omitted noncombat "shadow divisions" and holding units raised to fill up combat units
-		# ad hoc divisional sized Kampfgruppe such as "Division von Broich" deleted as their temporary existence was highly dependent on unique historical circumstances that are not guaranteed to be replicated in game
+		# ad hoc divisional sized Kampfgruppe such as "Division von Broich" deleted as their temporary existence was highly dependent on unique historical circuMEKances that are not guaranteed to be replicated in game
 		# deleted Landesschützen, training/holding divisions with a super short life and no combat record, "infantry divisions" that were ad hoc collections of fortress/coast defense units in Norway, etc
 		# deleted some 500-series Grenadier Divisions as they were almost immediately converted to Volksgrenadier
 		# deleted Sturm-Division Rhodos as it was made from a collection of Aegean island garrison troops not guaranteed to exist in game

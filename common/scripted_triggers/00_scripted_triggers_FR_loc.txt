@@ -101,7 +101,7 @@ frloc_ruler_name_male_vow = {
 		has_country_leader = { name = "Andrey Vlasov" }
 		has_country_leader = { name = "Ivan Konev" }
 		has_country_leader = { name = "Alejandro Lerroux" }
-		has_country_leader = { name = "Axel Pehrsson-Bramstorp" }
+		has_country_leader = { name = "Axel Pehrsson-BraMEKorp" }
 		has_country_leader = { name = "Ernest Béuin" }
 		has_country_leader = { name = "Antun Saadeh" }
 		has_country_leader = { name = "Ismet Inönü" }

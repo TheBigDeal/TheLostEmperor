@@ -4,7 +4,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = PRS
+			tag = PRE
 		}
 	}
 
@@ -159,7 +159,7 @@ focus_tree = {
 		id = PRS_WAR_ON_IMPERIALISM
 		icon = GFX_focus_rom_abdicate
 		prerequisite = { focus = PRS_NATIONALIST_MOVEMENT }
-		mutually_exclusive = { focus = PRS_WAR_ON_COMMUNISM }
+		mutually_exclusive = { focus = PRS_WAR_ON_collectivism }
 		x = 6
 		y = 3
 		cost = 4
@@ -183,7 +183,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = PRS_WAR_ON_COMMUNISM
+		id = PRS_WAR_ON_collectivism
 		icon = GFX_focus_ger_strike_at_the_source
 		prerequisite = { focus = PRS_NATIONALIST_MOVEMENT }
 		mutually_exclusive = { focus = PRS_WAR_ON_IMPERIALISM }
@@ -211,7 +211,7 @@ focus_tree = {
 	focus = {
 		id = PRS_ESTABLISH_SECRET_POLICE
 		icon = GFX_generic_espionage
-		prerequisite = { focus = PRS_WAR_ON_COMMUNISM focus = PRS_WAR_ON_IMPERIALISM }
+		prerequisite = { focus = PRS_WAR_ON_collectivism focus = PRS_WAR_ON_IMPERIALISM }
 		x = 6
 		y = 4
 		cost = 4
@@ -221,7 +221,7 @@ focus_tree = {
 	focus = {
 		id = PRS_SOCIAL_HEIARCHY
 		icon = GFX_generic_revolution
-		prerequisite = { focus = PRS_WAR_ON_COMMUNISM focus = PRS_WAR_ON_IMPERIALISM }
+		prerequisite = { focus = PRS_WAR_ON_collectivism focus = PRS_WAR_ON_IMPERIALISM }
 		x = 8
 		y = 4
 		cost = 4
@@ -379,9 +379,9 @@ focus_tree = {
 		completion_reward = {
 			VRP = { country_event = { id = le_prussia.6 }}
 			MCH = { country_event = { id = le_prussia.6 }}
-			MST = { country_event = { id = le_prussia.6 }}
+			MEK = { country_event = { id = le_prussia.6 }}
 			ANH = { country_event = { id = le_prussia.6 }}
-			HLS = { country_event = { id = le_prussia.6 }}
+			SHL = { country_event = { id = le_prussia.6 }}
 		}
 	}
 	focus = {
@@ -481,7 +481,7 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			set_cosmetic_tag = NORTH_GERMAN_CONFEDERATION
-			BAV = { country_event = { id = le_prussia.23 }}
+			BAY = { country_event = { id = le_prussia.23 }}
 			BUR = { country_event = { id = le_prussia.56 }}
 			ALS = { country_event = { id = le_prussia.56 }}
 		}
@@ -496,7 +496,7 @@ focus_tree = {
 		cost = 10
 		ai_will_do = { factor = 100 }
 		completion_reward = {
-			if = { limit = { country_exists = BAV } create_wargoal = { type = annex_everything target = BAV } }
+			if = { limit = { country_exists = BAY } create_wargoal = { type = annex_everything target = BAY } }
 			if = { limit = { country_exists = PSU } create_wargoal = { type = annex_everything target = PSU } }
 			if = { limit = { country_exists = BAM } create_wargoal = { type = annex_everything target = BAM } }
 			if = { limit = { country_exists = NUR } create_wargoal = { type = annex_everything target = NUR } }
@@ -527,8 +527,8 @@ focus_tree = {
 		ai_will_do = { factor = 200 }
 		available = {
 			OR = {
-				NOT = { country_exists = BAV }
-				BAV = { is_puppet_of = PRS }
+				NOT = { country_exists = BAY }
+				BAY = { is_puppet_of = PRE }
 			}
 			NOT = { country_exists = PSU }
 			NOT = { country_exists = BAM }

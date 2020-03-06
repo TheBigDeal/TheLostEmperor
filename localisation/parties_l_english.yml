@@ -3,7 +3,7 @@
 ##################
 
 
- #Fascism
+ #labryscism
  rexism:0 "Rexism"
  rexism_noun:0 "Rexist"
  rexism_ideology_desc:0 "Rexism is the belief that the king should be absolute in his entirety, being able to take any action regardless of laws and checks on his power to ensure the safety/success of his subjects."
@@ -17,9 +17,9 @@
  labryscism_ideology_desc:0 "Labryscism is an idea that originated in Greece that there needs to be an absolute leader with popular sovereignty from the common class to exercise absolute power to bring their people/country success and prosperity."
 
  #Democracy 
- socialism:0 "Democratic Socialism"
- socialism_noun:0 "Democratic Socialist"
- socialism_ideology_desc:0 "Democratic Socialism is the mixture of democracy and collectivism, being a sort of lite form of collectivism. Socialism beleives in the equality of all people to a certain degree, which is not as extreme as collectivism."
+ socialism:0 "liberalism Socialism"
+ socialism_noun:0 "liberalism Socialist"
+ socialism_ideology_desc:0 "liberalism Socialism is the mixture of democracy and collectivism, being a sort of lite form of collectivism. Socialism beleives in the equality of all people to a certain degree, which is not as extreme as collectivism."
 
  conservatism:0 "Conservatism"
  conservatism_noun:0 "Conservative"
@@ -41,7 +41,7 @@
  royalism_noun:0 "Royalist"
  royalism_ideology_desc:0 "Royalism is the idea wherein a monarch rules a nation as head of state but in which a Constitution lays down the laws and boundaries of the powers that be in the nation often at times investing in more power to the people."
 
- #Communism
+ #collectivism
  mutualism:0 "Mutualism"
  mutualism_noun:0 "Mutualist"
  mutualism_ideology_desc:0 "Mutualism is the idea that humanity should be left in their natural state. This is close to Anarchism in OTL. Government powers are limited or non existant, with usually only a basic set of rules."
@@ -61,7 +61,7 @@
  #absolutism_desc:0 "Monarchist Regime"
  #rexism_desc:0 "Totalitarian Regime"
  #proletarianism_desc:0 "Totalitarian Regime"
- #liberalism_desc:0 "Democratic Regime"
+ #liberalism_desc:0 "liberalism Regime"
  #conservatism:0 "Conservatism"
  #conservatism_desc:0 "Considering rapid changes to society to be potentially harmful, conservatism espouses tradition and moderate reforms, sometimes advocating a return to old moral values."
  #liberalism:0 "Liberalism"
@@ -80,7 +80,7 @@
  #anarchist_proletarianism_desc:0 "An ideology embracing the idea of proletarianism as a stateless society, Anarchist proletarianism eschews the idea of a transitionary socialist state and favors a society based on voluntary associations and mutual aid."
  #rexism_ideology:0 "Nazism"
  #rexism_desc:0 "Rooted in extreme nationalism, National Socialism is driven by ideas of Germanic supremacy. It promotes aggressive expansionism and a totalitarian state where the people are united under a leader with absolute power, the Führer."
- #rexism_ideology:0 "Fascism"
+ #rexism_ideology:0 "labryscism"
  #rexism_ideology_desc:0 "Encompassing a variety of ultra-nationalist movements, rexism typically venerates devotion to the state and uniting the people under a strong leader."
  #rexism_ideology:0 "Falangism"
  #rexism_desc:0 "An authoritarian ideology with traits of rexism and conservatism, Falangism values national and Catholic identity."
@@ -123,7 +123,7 @@
  AUS_absolutism_party:1 "Vaterländische Front"
  CHI_proletarianism_party:0 "CPC"
  CHI_proletarianism_party_long:0 "Communist Party of China"
- CHI_liberalism_party:0 "China Democratic League"
+ CHI_liberalism_party:0 "China liberalism League"
  CHI_rexism_party:0 "RNGROC"
  CHI_rexism_party_long:0 "Reorganized National Government of the Republic of China"
  CHI_absolutism_party:0 "Kuomintang"
@@ -482,7 +482,7 @@
  VIN_proletarianism_party:0 "Communist Party of Vietnam" #Viet Minh was more important in early years
  VIN_absolutism_party:0 "Viêt Nam Quoc Dân Đang"
  CAM_rexism_party:0 "Khmerite Party"
- CAM_liberalism_party:0 "Democratic Party" #formed in 1946
+ CAM_liberalism_party:0 "liberalism Party" #formed in 1946
  CAM_proletarianism_party:0 "Communist Party of Kampuchea" # aka Khmer Communist Party or a different party Krom Pracheachon aka Krom
  CAM_absolutism_party:0 "Sangkum Reastr Niyum" # or just Sangkum 1955, liberalism but right leaning and anti communist
  INS_rexism_party:0 "New Order" #inspired by right wingers from 1960s
@@ -494,7 +494,7 @@
  MAL_proletarianism_party:0 "Malayan Communist Party" #or MCP
  MAL_absolutism_party:0 "Kesatuan Melayu Muda" #or KMM
  LAO_rexism_party:0 "Tribal Centralization Party"
- LAO_liberalism_party:0 "Democratic Party"
+ LAO_liberalism_party:0 "liberalism Party"
  LAO_proletarianism_party:0 "Pathet Lao"
  LAO_absolutism_party:0 "Royalists"
  MNT_rexism_party:0 "Greens"
@@ -502,11 +502,11 @@
  MNT_proletarianism_party:0 "Communist Party of Montenegro" #or KPCG
  MNT_absolutism_party:0 "Federalist Party" # Montenegrin ultra nationalists, start democtratic right wing but went full fascist collaboration in 41'
  UKR_rexism_party:0 "OUN"
- UKR_liberalism_party:0 "Ukrainian National Democratic Alliance" # or UNDO
+ UKR_liberalism_party:0 "Ukrainian National liberalism Alliance" # or UNDO
  UKR_proletarianism_party:0 "Communist Party of Ukraine"
  UKR_absolutism_party:0 "Ukrainian Progress Party"
  GEO_rexism_party:0 "Tbilisi Council"
- GEO_liberalism_party:0 "Social Democratic Party of Georgia"
+ GEO_liberalism_party:0 "Social liberalism Party of Georgia"
  GEO_proletarianism_party:0 "Communist Party of Georgia"
  GEO_absolutism_party:0 "Gori Convention"
  KAZ_rexism_party:0 "Zhuze Ultşildiq"

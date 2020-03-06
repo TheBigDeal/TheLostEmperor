@@ -3197,7 +3197,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			PRS = { add_opinion_modifier = { target = FRA modifier = claimed_HRE_crown } }
+			PRE = { add_opinion_modifier = { target = FRA modifier = claimed_HRE_crown } }
 			AUS = { add_opinion_modifier = { target = FRA modifier = claimed_HRE_crown } }
 		}
 	}

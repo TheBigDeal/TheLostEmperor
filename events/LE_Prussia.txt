@@ -79,7 +79,7 @@ country_event = { #Threaten Northern States
 		ai_chance = {
 			factor = 75
 		}
-		PRS = { 
+		PRE = { 
 			annex_country = {
 				target = ROOT
 				transfer_troops = no
@@ -91,7 +91,7 @@ country_event = { #Threaten Northern States
 		ai_chance = {
 			factor = 0
 		}
-		PRS = {
+		PRE = {
 			create_wargoal = {
 				type = annex_everything
 				target = ROOT
@@ -116,7 +116,7 @@ country_event = { #Support The Prussians (GBR) / Embargo The Austrians
 	is_triggered_only = yes
 	option = { #Of Course!
 		name = le_prussia.8.a
-		PRS = { country_event = { id = le_prussia.9 } }
+		PRE = { country_event = { id = le_prussia.9 } }
 		add_political_power = -100
 	}
 	option = { #Lets not get involved.
@@ -176,7 +176,7 @@ country_event = { #Successful Assassination
 	option = {
 		name = le_prussia.12.a
 		country_event = { id = le_prussia.14 }
-		PRS = { complete_national_focus = PRS_PRUSSIAN_SPONSORED_ASSASSINATIONS }
+		PRE = { complete_national_focus = PRS_PRUSSIAN_SPONSORED_ASSASSINATIONS }
 	}
 }
 country_event = { #Assassination of Hannover Ruler Failed!
@@ -222,7 +222,7 @@ country_event = { #Hannover breaks into chaos.
 				has_government = absolutism
 			}
 			set_cosmetic_tag = Hannover_Revolutionaries
-			PRS = { create_wargoal = { type = annex_everything target = PREV } }
+			PRE = { create_wargoal = { type = annex_everything target = PREV } }
 		}
 	}
 }
@@ -237,14 +237,14 @@ country_event = { #Prussia Depands Holstein
 		ai_chance = {
 			factor = 75
 		}
-		PRS = { country_event = { id = le_prussia.16 }}
+		PRE = { country_event = { id = le_prussia.16 }}
 	}
 	option = { #Refuse
 		name = le_prussia.15.b
 		ai_chance = {
 			factor = 15
 		}
-		PRS = { country_event = { id = le_prussia.17 }}
+		PRE = { country_event = { id = le_prussia.17 }}
 	}
 }
 country_event = { #Prussia Depands Holstein
@@ -281,7 +281,7 @@ country_event = { #Prussia Depands Poznan
 	is_triggered_only = yes
 	option = { #Give up Holstein
 		name = le_prussia.18.a
-		PRS = { country_event = { id = le_prussia.19 }}
+		PRE = { country_event = { id = le_prussia.19 }}
 		ai_chance = {
 			factor = 75
 		}
@@ -291,7 +291,7 @@ country_event = { #Prussia Depands Poznan
 		ai_chance = {
 			factor = 10
 		}
-		PRS = { country_event = { id = le_prussia.20 }}
+		PRE = { country_event = { id = le_prussia.20 }}
 	}
 }
 country_event = { #Prussia Depands Holstein
@@ -388,12 +388,12 @@ country_event = { #The Berlin Conference (Northern States)
 	option = { #Support the Confederation
 		name = le_prussia.22.a
 		ai_chance = { factor = 100 }
-		PRS = { annex_country = { target = ROOT transfer_troops = yes } }
+		PRE = { annex_country = { target = ROOT transfer_troops = yes } }
 	}
 	option = { #Decline the Confederation
 		name = le_prussia.22.a
 		ai_chance = { factor = 0 }
-		PRS = { create_wargoal = { type = annex_everything target = ROOT } }
+		PRE = { create_wargoal = { type = annex_everything target = ROOT } }
 	}
 }
 country_event = { #The SOUTH German Confederation
@@ -428,13 +428,13 @@ country_event = { #The SOUTH German Confederation
 		AUG = { country_event = { id = le_prussia.24 }}
 		ULM = { country_event = { id = le_prussia.24 }}
 		HUL = { country_event = { id = le_prussia.24 }}
-		BAV = { set_cosmetic_tag = SOUTH_GERMAN_CONFEDERATION }
-		PRS = { country_event = { id = le_prussia.55 }}
+		BAY = { set_cosmetic_tag = SOUTH_GERMAN_CONFEDERATION }
+		PRE = { country_event = { id = le_prussia.55 }}
 	}
 	option = { #Face Prussia
 		name = le_prussia.23.c
 		ai_chance = { factor = 25 }
-		PRS = { country_event = { id = le_prussia.51 }}
+		PRE = { country_event = { id = le_prussia.51 }}
 	}
 }
 country_event = { #Join the south german confederation
@@ -445,12 +445,12 @@ country_event = { #Join the south german confederation
 	option = { #Give up Hannover
 		name = le_prussia.24.a
 		ai_chance = { factor = 75 }
-		BAV = { annex_country = { target = ROOT transfer_troops = yes } }
+		BAY = { annex_country = { target = ROOT transfer_troops = yes } }
 	}
 	option = { #Give up Hannover
 		name = le_prussia.24.a
 		ai_chance = { factor = 0 }
-		BAV = {
+		BAY = {
 			create_wargoal = {
 				type = annex_everything
 				target = ROOT
@@ -495,7 +495,7 @@ country_event = { #Demand Southern Germany
 		ROOT = {
 			create_wargoal = {
 				type = annex_everything
-				target = PRS
+				target = PRE
 			}
 		}
 	}
@@ -512,7 +512,7 @@ country_event = { #Demand Southern Germany
 			modifier = {
 				factor = -100
 				AND = {
-					original_tag = BAV
+					original_tag = BAY
 					OR = {
 						NOT = { has_government = absolutism }
 						NOT = { has_government = royalism }
@@ -527,7 +527,7 @@ country_event = { #Demand Southern Germany
 		ai_chance = {
 			factor = 5
 		}
-		PRS = {
+		PRE = {
 			create_wargoal = {
 				type = annex_everything
 				target = ROOT
@@ -552,16 +552,16 @@ country_event = { #Prussia wants Hannover
 	is_triggered_only = yes
 	option = { #Give them Hannover
 		name = le_prussia.28.a
-		PRS = { country_event = { id = le_prussia.29 }}
+		PRE = { country_event = { id = le_prussia.29 }}
 		set_global_flag = GBR_GAVE_HANNOVER
 	}
 	option = { #Allow them to Purchase Hannover
 		name = le_prussia.28.b
-		PRS = { country_event = { id = le_prussia.30 }}
+		PRE = { country_event = { id = le_prussia.30 }}
 	}
 	option = { #Force Prussia to limit their navy
 		name = le_prussia.11.b
-		PRS = { country_event = { id = le_prussia.31 }}
+		PRE = { country_event = { id = le_prussia.31 }}
 	}
 }
 country_event = { #Britain gives us Hannover
@@ -571,8 +571,8 @@ country_event = { #Britain gives us Hannover
 	is_triggered_only = yes
 	option = { #Cool
 		name = le_prussia.29.a
-		PRS = { annex_country = { target = HAN transfer_troops = yes } }
-		PRS = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+		PRE = { annex_country = { target = HAN transfer_troops = yes } }
+		PRE = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
 	}
 }
 country_event = { #Britain offers to sell Hannover
@@ -582,9 +582,9 @@ country_event = { #Britain offers to sell Hannover
 	is_triggered_only = yes
 	option = { #Accept
 		name = le_prussia.30.a
-		PRS = { annex_country = { target = HAN transfer_troops = yes } }
-		PRS = { add_ideas = { prs_purchased_hannover }}
-		PRS = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+		PRE = { annex_country = { target = HAN transfer_troops = yes } }
+		PRE = { add_ideas = { prs_purchased_hannover }}
+		PRE = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
 	}
 	option = { #Counter-Offer
 		name = le_prussia.30.b
@@ -609,9 +609,9 @@ country_event = { #Britain Wants us to Limit our Navy
 	is_triggered_only = yes
 	option = { #Accept
 		name = le_prussia.31.a
-		PRS = { annex_country = { target = HAN transfer_troops = yes } }
-		PRS = { add_ideas = { prs_limited_navy }}
-		PRS = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+		PRE = { annex_country = { target = HAN transfer_troops = yes } }
+		PRE = { add_ideas = { prs_limited_navy }}
+		PRE = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
 	}
 	option = { #Counter-Offer
 		name = le_prussia.31.b
@@ -636,11 +636,11 @@ country_event = { #Prusia sends a counter offer for purchase
 	is_triggered_only = yes
 	option = { #Enforce Prior Deal
 		name = le_prussia.32.a
-		PRS = { country_event = { id = le_prussia.34 }}
+		PRE = { country_event = { id = le_prussia.34 }}
 	}
 	option = { #Accept Counter Offer
 		name = le_prussia.32.b
-		PRS = { country_event = { id = le_prussia.35 }}
+		PRE = { country_event = { id = le_prussia.35 }}
 	}
 }
 country_event = { #Prusia sends a counter offer for limiting navy
@@ -650,11 +650,11 @@ country_event = { #Prusia sends a counter offer for limiting navy
 	is_triggered_only = yes
 	option = { #Enforce Prior Deal
 		name = le_prussia.33.a
-		PRS = { country_event = { id = le_prussia.36 }}
+		PRE = { country_event = { id = le_prussia.36 }}
 	}
 	option = { #Accept Counter Offer
 		name = le_prussia.33.b
-		PRS = { country_event = { id = le_prussia.37 }}
+		PRE = { country_event = { id = le_prussia.37 }}
 	}
 }
 country_event = { #Britain enforces old deal
@@ -664,9 +664,9 @@ country_event = { #Britain enforces old deal
 	is_triggered_only = yes
 	option = { #Accept Prior Deal
 		name = le_prussia.34.a
-		PRS = { annex_country = { target = HAN transfer_troops = yes } }
-		PRS = { add_ideas = { prs_purchased_hannover }}
-		PRS = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+		PRE = { annex_country = { target = HAN transfer_troops = yes } }
+		PRE = { add_ideas = { prs_purchased_hannover }}
+		PRE = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
 	}
 	option = { #Resort to Espionage
 		name = le_prussia.34.b
@@ -687,9 +687,9 @@ country_event = { #Britain accepts counter offer
 	is_triggered_only = yes
 	option = { #Accept Prior Deal
 		name = le_prussia.35.a
-		PRS = { annex_country = { target = HAN transfer_troops = yes } }
-		PRS = { add_ideas = { prs_purchased_hannover_counter }}
-		PRS = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+		PRE = { annex_country = { target = HAN transfer_troops = yes } }
+		PRE = { add_ideas = { prs_purchased_hannover_counter }}
+		PRE = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
 	}
 }
 
@@ -700,9 +700,9 @@ country_event = { #Britain enforces old deal
 	is_triggered_only = yes
 	option = { #Accept Prior Deal
 		name = le_prussia.36.a
-		PRS = { annex_country = { target = HAN transfer_troops = yes } }
-		PRS = { add_ideas = { prs_limited_navy }}
-		PRS = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+		PRE = { annex_country = { target = HAN transfer_troops = yes } }
+		PRE = { add_ideas = { prs_limited_navy }}
+		PRE = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
 	}
 	option = { #Resoft to Espionage
 		name = le_prussia.36.b
@@ -723,9 +723,9 @@ country_event = { #Britain accepts counter offer
 	is_triggered_only = yes
 	option = { #Accept Prior Deal
 		name = le_prussia.37.a
-		PRS = { annex_country = { target = HAN transfer_troops = yes } }
-		PRS = { add_ideas = { prs_limited_navy_counter }}
-		PRS = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+		PRE = { annex_country = { target = HAN transfer_troops = yes } }
+		PRE = { add_ideas = { prs_limited_navy_counter }}
+		PRE = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
 	}
 }
 
@@ -735,12 +735,12 @@ country_event = { #Prussia Occupies Poznan
 	desc = le_prussia.38.d
 	fire_only_once = yes
 	trigger = {
-		PRS = { controls_state = 86 }
+		PRE = { controls_state = 86 }
 		original_tag = POL
 	}
 	option = { #Send a Peace Deal to Prussia
 		name = le_prussia.38.a
-		PRS = { country_event = { id = le_prussia.40 }}
+		PRE = { country_event = { id = le_prussia.40 }}
 	}
 }
 
@@ -751,13 +751,13 @@ country_event = { #Prussia Occupies Warsaw
 	fire_only_once = yes
 	trigger = {
 		AND = {
-			PRS = { controls_state = 10 }
+			PRE = { controls_state = 10 }
 			original_tag = POL
 		}
 	}
 	option = { #Send a Peace Deal to Prussia
 		name = le_prussia.39.a
-		PRS = { country_event = { id = le_prussia.40 }}
+		PRE = { country_event = { id = le_prussia.40 }}
 	}
 }
 
@@ -783,13 +783,13 @@ country_event = { #Prussia Occupies Holstein
 	desc = le_prussia.41.d
 	fire_only_once = yes
 	trigger = {
-		PRS = { controls_state = 1018 }
-		PRS = { controls_state = 785 }
+		PRE = { controls_state = 1018 }
+		PRE = { controls_state = 785 }
 		original_tag = DEN
 	}
 	option = { #Send a Peace Deal to Prussia
 		name = le_prussia.41.a
-		PRS = { country_event = { id = le_prussia.42 }}
+		PRE = { country_event = { id = le_prussia.42 }}
 	}
 }
 
@@ -872,12 +872,12 @@ country_event = { #Bavaria asks for our support.
 	is_triggered_only = yes
 	option = { #Guarantee Bavaria
 		name = le_prussia.48.a
-		give_guarantee = BAV
-		BAV = { country_event = { id = le_prussia.49 }}
+		give_guarantee = BAY
+		BAY = { country_event = { id = le_prussia.49 }}
 	}
 	option = { #Decline German Involvement
 		name = le_prussia.48.a
-		BAV = { country_event = { id = le_prussia.50 }}
+		BAY = { country_event = { id = le_prussia.50 }}
 	}
 }
 country_event = { #Austria Accepts our Support
@@ -915,12 +915,12 @@ country_event = { #Austria Declines our Support
 		AUG = { country_event = { id = le_prussia.24 }}
 		ULM = { country_event = { id = le_prussia.24 }}
 		HUL = { country_event = { id = le_prussia.24 }}
-		BAV = {	set_cosmetic_tag = SOUTH_GERMAN_CONFEDERATION }
-		PRS = { country_event = { id = le_prussia.55 }}
+		BAY = {	set_cosmetic_tag = SOUTH_GERMAN_CONFEDERATION }
+		PRE = { country_event = { id = le_prussia.55 }}
 	}
 	option = { #Approach Prussia
 		name = le_prussia.50.b
-		PRS = { country_event = { id = le_prussia.51 }}
+		PRE = { country_event = { id = le_prussia.51 }}
 	}
 }
 country_event = { #Bavaria wants to make a deal, Independance in return for the south
@@ -965,11 +965,11 @@ country_event = { #Prussians Counter Offer
 	is_triggered_only = yes
 	option = { #Fine.
 		name = le_prussia.52.a
-		PRS = { country_event = { id = le_prussia.53 }}
+		PRE = { country_event = { id = le_prussia.53 }}
 	}
 	option = { #No
 		name = le_prussia.52.a
-		PRS = { country_event = { id = le_prussia.54 }}
+		PRE = { country_event = { id = le_prussia.54 }}
 	}
 }
 country_event = { #Bavarians Accept Counter Offer
@@ -997,7 +997,7 @@ country_event = { #Bavarians Accept Counter Offer
 		AUG = { country_event = { id = le_prussia.22 }}
 		ULM = { country_event = { id = le_prussia.22 }}
 		HUL = { country_event = { id = le_prussia.22 }}
-		puppet = BAV
+		puppet = BAY
 	}
 }
 country_event = { #Bavarians Decline Counter Offer
@@ -1017,7 +1017,7 @@ country_event = { #Provinces defect to Bavaria!
 	is_triggered_only = yes
 	option = { #Shame.
 		name = le_prussia.55.a
-		BAV = {
+		BAY = {
 			transfer_state = 799
 			transfer_state = 800
 			transfer_state = 824

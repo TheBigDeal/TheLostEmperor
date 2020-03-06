@@ -57,9 +57,9 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			PRS = {
+			PRE = {
 				add_opinion_modifier = {
-					target = PRS
+					target = PRE
 					modifier = prussia_dominated
 				}
 			}
@@ -76,7 +76,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {	
-			PRS = { transfer_state = 86 }
+			PRE = { transfer_state = 86 }
 			random_list = {
 				20 = {
 					country_event = { id = le_poland.1 random = 50 }
@@ -116,7 +116,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			PRS ={ transfer_state = 839 }
+			PRE ={ transfer_state = 839 }
 			random_list = {
 				20 = {
 					country_event = { id = le_poland.1 random = 50 }
@@ -137,7 +137,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			PRS = { give_guarantee = POL }
+			PRE = { give_guarantee = POL }
 			add_ideas = pol_prussian_sponsored_military
 		}
 	}
@@ -153,7 +153,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			PRS = { puppet = POL }	
+			PRE = { puppet = POL }	
 		}
 	}
 	focus = {
@@ -374,7 +374,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			PRS = {
+			PRE = {
 				add_opinion_modifier = {
 					target = POL
 					modifier = polish_deterrence

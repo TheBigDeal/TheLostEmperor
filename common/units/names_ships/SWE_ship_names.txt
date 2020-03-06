@@ -34,7 +34,7 @@ SWE_CL_HISTORICAL = {
 
 	unique = {
 		"Gotland" "Fylgia" "Klas Horn" "Klas Uggla" "Psilander" "Göta Lejon" "Tre Kronor" "Klas Fleming"
-		"Kalmar" "Västervik" "Gävle" "Malmö" "Halmstad" "Karlskrona" "Sundsvall" "Luleå" "Umeå" "Härnösand" "Hudiksvall" 
+		"Kalmar" "Västervik" "Gävle" "Malmö" "HalMEKad" "Karlskrona" "Sundsvall" "Luleå" "Umeå" "Härnösand" "Hudiksvall" 
 		"Uddevalla" "Helsingborg" "Varberg" "Norrköping" "Söderköping" "Visby" "Älvsnabben"
 	}
 }

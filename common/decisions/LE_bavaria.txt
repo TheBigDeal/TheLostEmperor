@@ -2,7 +2,7 @@ bavarian_civil_war_cat = {
 	arrest_protesters = {
 		icon = generic_army_support
 		visible = {
-			tag = BAV
+			tag = BAY
 			has_country_flag = BAV_PROTESTERS
 		}
 		cost = 10
@@ -16,7 +16,7 @@ bavarian_civil_war_cat = {
 	execute_protesters = {
 		icon = generic_army_support
 		visible = {
-			tag = BAV
+			tag = BAY
 			has_country_flag = BAV_PROTESTERS
 		}
 		cost = 20
@@ -31,7 +31,7 @@ bavarian_civil_war_cat = {
 	request_foreign_aid = {
 		icon = generic_army_support
 		visible = {
-			tag = BAV
+			tag = BAY
 		}
 		cost = 10
 		ai_will_do = {
@@ -44,7 +44,7 @@ bavarian_civil_war_cat = {
 	hire_more_police = {
 		icon = generic_army_support
 		visible = {
-			tag = BAV
+			tag = BAY
 		}
 		cost = 20
 		ai_will_do = {
@@ -58,7 +58,7 @@ bavarian_civil_war_cat = {
 	strike_at_rebel_stronghold = {
 		icon = generic_army_support
 		visible = {
-			tag = BAV
+			tag = BAY
 			has_country_flag = BAV_REBEL_STRONGHOLD
 		}
 		cost = 10
@@ -73,7 +73,7 @@ bavarian_civil_war_cat = {
 		icon = generic_army_support
 		fixed_random_seed = no
 		visible = {
-			tag = BAV
+			tag = BAY
 			has_country_flag = BAV_REBEL_LEADER
 		}
 		cost = 10
@@ -95,7 +95,7 @@ bavarian_civil_war_cat = {
 	meet_with_revolutionary_leaders = {
 		icon = generic_army_support
 		visible = {
-			tag = BAV
+			tag = BAY
 		}
 		cost = 200
 		ai_will_do = {

@@ -81,7 +81,7 @@
 			"Emden" "Königsberg" "Karlsruhe" "Köln" "Leipzig" "Nürnberg" "München" "Berlin" "Hamburg" "Stuttgart"
 			"Bremen" "Lübeck" "Danzig" "Stettin" "Dresden" "Mainz" "Augsburg" "Magdeburg" "Breslau" "Hannover"
 			"Stralsund" "Frankfurt" "Rostock" "Elbing" "Straßburg" "Regensburg" "Wiesbaden" "Aachen" "Potsdam" "Heidelberg"
-			"Kiel" "Würzburg" "Münster" "Darmstadt" "Chemnitz" "Braunschweig" "Kassel" "Oldenburg" "Düsseldorf" "Halle"
+			"Kiel" "Würzburg" "Münster" "DarMEKadt" "Chemnitz" "Braunschweig" "Kassel" "Oldenburg" "Düsseldorf" "Halle"
 			"Wien" "Dortmund" "Freiburg" "Duisburg" "Mannheim" "Erfurt" "Osnabrück" "Essen" "Wolfsburg" "Wuppertal"
 			"Prag" "Innsbruck" "Saarbrücken" "Posen" "Mülhausen" "Paderborn" "Brünn" "Ingolstadt" "Bielefeld" "Salzburg"
 			"Pilsen" "Mülheim" "Heilbronn" "Bonn" "Graz" "Oberhausen" "Ludwigshafen" "Bochum" "Solingen" "Linz"

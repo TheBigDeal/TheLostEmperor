@@ -542,7 +542,7 @@
  PAP_ITALIAN_IN_LIVONIA:0 "Itanian Livonia"
  PAP_ATTEMPT_DIPLOMACY:0 "Attempt Diplomacy"
  PAP_HELP_RUSSIA:0 "Help Russia"
- PAP_SPEAK_AGAINST_COMMUNISM:0 "Speak Against Communism"
+ PAP_SPEAK_AGAINST_collectivism:0 "Speak Against collectivism"
  PAP_RUSSIANS_IN_LIVONIA:0 "Russians in Livonia"
  PAP_RAISE_THE_TEUTONS:0 "Raise the Teutonic Order"
  PAP_GAIN_SUPPORT:0 "Gain Support"

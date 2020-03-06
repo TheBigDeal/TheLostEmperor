@@ -39,7 +39,7 @@ GER = {
 	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
 }
 
-PRS = {
+PRE = {
 	male = {
 		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
 			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl
@@ -170,7 +170,7 @@ USA = {
 	}
 	surnames = { 
 		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
-		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		ArMEKrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
 		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
 		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
 		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
@@ -209,7 +209,7 @@ USB = {
 	}
 	surnames = { 
 		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
-		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		ArMEKrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
 		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
 		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
 		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
@@ -248,7 +248,7 @@ CSA = {
 	}
 	surnames = { 
 		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
-		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		ArMEKrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
 		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
 		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
 		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
@@ -1471,7 +1471,7 @@ AST = {
 		names = { }
 	}
 	surnames = {
-		Hope Tennyson Northcote War Thesinger Denman Forster Baird Issac Stewart Fisher Cook Davis Armstrong Anderson Mitchell MacKenzie
+		Hope Tennyson Northcote War Thesinger Denman Forster Baird Issac Stewart Fisher Cook Davis ArMEKrong Anderson Mitchell MacKenzie
 	
 	 }
 	callsigns = { }
@@ -1523,7 +1523,7 @@ NZL = {
 		names = { }
 	}
 	surnames = {
-		Hope Tennyson Northcote War Thesinger Denman Forster Baird Issac Stewart Fisher Cook Davis Armstrong Anderson Mitchell MacKenzie
+		Hope Tennyson Northcote War Thesinger Denman Forster Baird Issac Stewart Fisher Cook Davis ArMEKrong Anderson Mitchell MacKenzie
 	
 	 }
 	callsigns = { }

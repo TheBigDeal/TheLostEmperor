@@ -126,7 +126,7 @@ ideas = {
 		adolf_hitler = {
 			
 			visible = {
-				original_tag = PRS
+				original_tag = PRE
 			}
 			traits = { labryscist_demagogue }
 	

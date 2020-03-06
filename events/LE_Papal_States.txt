@@ -21,7 +21,7 @@ country_event = {
 		ai_chance = {
 			base = 50
 		}
-		PRS = { release = TEU }
+		PRE = { release = TEU }
 		PAP = { country_event = { days = 1 id = papal.2 } }
 	}
 	option = { # Invade
@@ -30,19 +30,19 @@ country_event = {
 			base = 5			
 		}
 		PAP = {
-			declare_war_on = { target = PRS type = annex_everything }	
+			declare_war_on = { target = PRE type = annex_everything }	
 		}
 		DAN = {
-			declare_war_on = { target = PRS type = annex_everything }	
+			declare_war_on = { target = PRE type = annex_everything }	
 		}
-		BAV = {
-			declare_war_on = { target = PRS type = annex_everything }	
+		BAY = {
+			declare_war_on = { target = PRE type = annex_everything }	
 		}
 		SAR = {
-			declare_war_on = { target = PRS type = annex_everything }	
+			declare_war_on = { target = PRE type = annex_everything }	
 		}
 		FRA = {
-			declare_war_on = { target = PRS type = annex_everything }	
+			declare_war_on = { target = PRE type = annex_everything }	
 		}
 	}
 }

@@ -13,7 +13,7 @@ ideas = {
 		gbr_britannia_rules_the_waves = {
 			picture = Hungarian_Monarchy
 			modifier = {
-				research_bonus = { naval_doctrine = 0.08 }
+				#research_bonus = { naval_doctrine = 0.08 }
 				production_speed_dockyard_factor = 0.1
 				experience_gain_navy = 0.10
 			}
@@ -29,7 +29,7 @@ ideas = {
 			picture = Hungarian_Monarchy
 			modifier = {
 				join_faction_tension = 1
-				mobilization_laws_cost_factor = 2.00
+				#mobilization_laws_cost_factor = 0.5
 			}
 		}
 		gbr_british_stoicism = {

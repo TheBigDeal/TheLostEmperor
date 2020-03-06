@@ -1,6 +1,6 @@
 focus_tree = {
 	id = bavarian_focus
-	country = { factor = 0 modifier = { add = 10 tag = BAV } }
+	country = { factor = 0 modifier = { add = 10 tag = BAY } }
 	default = no
 	focus = {
 		id = BAV_TENSIONS_RISING

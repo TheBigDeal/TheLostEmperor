@@ -973,7 +973,7 @@
  AND:0 "and "
  RANDOM_LIST_EFFECT:0 "§TOne of $SIZE|H$ options will happen.§!\n"
  RANDOM_EFFECT:0 "§T$CHANCE|%0H$ chance of:\n          §!"
- ---_democratic:0 "any democratic country"
+ ---_liberalism:0 "any liberalism country"
  ---_fascist:0 "any fascist country"
  ---_communist:0 "any communist country"
  DETAILS:0 "Details"

@@ -265,7 +265,7 @@ country = {
 		modifier = {
 			political_power_gain = -0.1
 			stability_factor = 0.10
-			partisan_effect = 0.1
+			#partisan_effect = 0.1
 		}
 	}
 	gre_big_brother = {

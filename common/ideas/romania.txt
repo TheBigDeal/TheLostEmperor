@@ -15,7 +15,7 @@ ideas = {
 
 		ROM_gheorghe_gheorghiu_dej = {
 
-			picture = generic_communist_europe
+			picture = generic_collectivist_europe
 
 			visible = {
 				original_tag = ROM

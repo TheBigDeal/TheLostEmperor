@@ -30,10 +30,10 @@ labor_vouchers_cat = {
 	# demand_poznan = {
 		# icon = generic_army_support
 		# available = {
-			# 86 = { is_claimed_by = PRS }
+			# 86 = { is_claimed_by = PRE }
 		# }
 		# visible = {
-			# tag = PRS
+			# tag = PRE
 		# }
 		# cost = 0
 		# ai_will_do = {

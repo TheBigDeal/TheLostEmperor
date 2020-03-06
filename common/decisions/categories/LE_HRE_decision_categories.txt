@@ -6,8 +6,8 @@ HRE_elections_category = {
 	icon = idea_ger_revive_the_kaiserreich
 	available = {
 		OR = {
-			original_tag = BAV
-			original_tag = MST
+			original_tag = BAY
+			original_tag = MEK
 			original_tag = WUR
 			original_tag = SAX
 			original_tag = BOH
@@ -21,12 +21,12 @@ HRE_control_catagory = {
 	icon = idea_ger_revive_the_kaiserreich
 	visible = {
 		OR = {
-			original_tag = PRS
+			original_tag = PRE
 			original_tag = AUS
 		}
 		NOT = { has_global_flag = HRE_VOTING_OVER }
 		AUS = { NOT = { has_country_flag = holy_roman_emperor }}
-		PRS = { NOT = { has_country_flag = holy_roman_emperor }}
+		PRE = { NOT = { has_country_flag = holy_roman_emperor }}
 	}
 }
 HRE_emperor_decisions = {

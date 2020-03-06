@@ -69,7 +69,7 @@
 			"Omaha" "Milwaukee" "Cincinnati" "Raleigh" "Detroit" "Richmond" "Concord" "Trenton" "Marblehead" "Memphis" "Brooklyn" "Philadelphia" "Savannah" "Nashville" "Phoenix" "Boise" "Honolulu" 
 			"St. Louis" "Helena" "Atlanta" "Juneau" "San Diego" "San Juan" "Cleveland"	"Columbia" "Montpelier" "Denver" "Santa Fe" "Birmingham" "Mobile" "Vincennes" "Pasadena" "Springfield" 
 			"Topeka" "Biloxi" "Houston" "Providence" "Manchester" "Vicksburg" "Duluth" "Miami" "Astoria" "Oklahoma City" "Little Rock" "Galveston" "Oakland" "Reno" "Flint" "Tucson" 
-			"Amsterdam" "Portsmouth" "Wilkes-Barre" "Dayton" "Fargo" "Huntington" "Spokane" "Fresno" 
+			"AMEKerdam" "Portsmouth" "Wilkes-Barre" "Dayton" "Fargo" "Huntington" "Spokane" "Fresno" 
 			# From Wiki  (Unfinished/Cancelled/Converted before completion)
 			"Newark" "New Haven" "Buffalo" "Wilmington" "Vallejo" "Roanoke" "Tallahassee" "Cheyenne" "Chattanooga" "Worcester" "Gary" "Providence" "Portsmouth" 
 			}

@@ -6,7 +6,7 @@ country = {
 	#################
 	HRE_diet_relations = {
 
-		picture = generic_communist_army
+		picture = generic_collectivist_army
 
 		modifier = {
 			conscription = 0.05

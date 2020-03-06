@@ -272,7 +272,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			PRS = { country_event = { id = le_sardiniapiedmont.7 } }
+			PRE = { country_event = { id = le_sardiniapiedmont.7 } }
 		}
 	}
 	focus = {

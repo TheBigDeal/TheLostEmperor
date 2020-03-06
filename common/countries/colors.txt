@@ -372,7 +372,7 @@ PAR = {
 	color = rgb { 128 202 129 }
 	color_ui = rgb { 128 202 129 }
 }
-PRS = {
+PRE = {
 	color = rgb { 20 69 103 }
 	color_ui = rgb { 0 49 83 }
 }
@@ -776,7 +776,7 @@ MOR = {
 	color_ui = rgb { 191  110  62 }
 }
 
-MST = {
+MEK = {
 	color = rgb { 55 140 143 }
 	color_ui = rgb { 55 140 143 }
 }
@@ -784,7 +784,7 @@ MCH = {
 	color = rgb { 237 184 69 }
 	color_ui = rgb { 237 184 69 }
 }
-HLS = {
+SHL = {
 	color = rgb { 226 138 79 }
 	color_ui = rgb { 226 138 79 }
 }
@@ -944,7 +944,7 @@ SAX = {
 	color = rgb { 160 167 178 }
 	color_ui = rgb { 160 167 178 }
 }
-BAV = {
+BAY = {
 	color = rgb { 73 128 216 }
 	color_ui = rgb { 73 128 216 }
 }

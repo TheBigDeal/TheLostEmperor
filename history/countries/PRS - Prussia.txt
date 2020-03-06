@@ -52,8 +52,8 @@ set_variable = { var = PRS_THURINGIA_SUPPORT value = 100 }
 
 SAX = { set_country_flag = supporting_prussia }
 HAN = { set_country_flag = supporting_prussia }
-MST = { set_country_flag = supporting_prussia }
-BAV = { set_country_flag = supporting_austria }
+MEK = { set_country_flag = supporting_prussia }
+BAY = { set_country_flag = supporting_austria }
 BOH = { set_country_flag = supporting_austria }
 PLT = { set_country_flag = supporting_austria }
 HES = { set_country_flag = supporting_austria }
@@ -169,7 +169,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Paul Von Hindenburg"
-	portrait_path = "gfx/leaders/PRS/Portrait_Paul_Von_Hidenburg.tga"
+	portrait_path = "gfx/leaders/PRE/Portrait_Paul_Von_Hidenburg.tga"
 	traits = { offensive_doctrine }
 	id = 1
 	skill = 6
@@ -181,7 +181,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Manfred von Richthofen"
-	portrait_path = "gfx/leaders/PRS/portrait_mandred_von_richthofen.dds"
+	portrait_path = "gfx/leaders/PRE/portrait_mandred_von_richthofen.dds"
 	traits = { offensive_doctrine }
 	id = 1
 	skill = 3
@@ -192,7 +192,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Erwin von Witzleben"
-	portrait_path = "gfx/leaders/PRS/Portrait_Germany_Erwin_von_Witzleben.tga"
+	portrait_path = "gfx/leaders/PRE/Portrait_Germany_Erwin_von_Witzleben.tga"
 	traits = { offensive_doctrine }
 	id = 1
 	skill = 4
@@ -203,7 +203,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "August von Mackensen"
-	portrait_path = "gfx/leaders/PRS/portrait_ger_august_von_mackensen.dds"
+	portrait_path = "gfx/leaders/PRE/portrait_ger_august_von_mackensen.dds"
 	traits = { offensive_doctrine }
 	id = 1
 	skill = 6

@@ -989,7 +989,7 @@ ideas = {
 
 	
 	tank_manufacturer = {
-		vickers_armstrong_eng = {
+		vickers_arMEKrong_eng = {
 			
 			visible = {
 				original_TAG = ENG

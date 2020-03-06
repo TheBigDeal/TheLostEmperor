@@ -8,13 +8,13 @@ state={
 	}
 
 	history={
-		owner = PRS
+		owner = PRE
 		victory_points = { 11467 5 }
 		buildings = {
 			infrastructure = 6
 			farm = 2
 		}
-		add_core_of = PRS
+		add_core_of = PRE
 		add_core_of = SIL
 
 	}

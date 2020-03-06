@@ -77,7 +77,7 @@ ideas = {
 			traits = { military_theorist }
 		}
 
-		SWE_erik_palmstierna = {
+		SWE_erik_palMEKierna = {
 					
 					
 			visible = {

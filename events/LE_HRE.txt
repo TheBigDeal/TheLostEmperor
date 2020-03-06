@@ -102,7 +102,7 @@ country_event = {
 				    compare = greater_than
 				}
 			}
-			PRS = { country_event = { id = hre.2 } }
+			PRE = { country_event = { id = hre.2 } }
 		}
 		if = { #TIE!
 			limit = {
@@ -145,18 +145,18 @@ country_event = {
 	option = { #Accept
 		name = hre.3.a
 		if = { limit = { tag = VRP }
-			PRS = { annex_country = { target = VRP transfer_troops = yes } }
+			PRE = { annex_country = { target = VRP transfer_troops = yes } }
 		}
 		if = { limit = { tag = MCH }
-			PRS = { annex_country = { target = MCH transfer_troops = yes } }
+			PRE = { annex_country = { target = MCH transfer_troops = yes } }
 		}
-		PRS = { transfer_state = 949 }
+		PRE = { transfer_state = 949 }
 
 		if = { limit = { tag = HAM }
-			HLS = { annex_country = { target = HAM transfer_troops = yes } }
+			SHL = { annex_country = { target = HAM transfer_troops = yes } }
 		}
 		if = { limit = { tag = LUB }
-			HLS = { annex_country = { target = LUB transfer_troops = yes } }
+			SHL = { annex_country = { target = LUB transfer_troops = yes } }
 		}
 		if = { limit = { tag = BRU }
 			HAN = { annex_country = { target = BRU transfer_troops = yes } }
@@ -256,18 +256,18 @@ country_event = {
 		WUR = { transfer_state = 54 }
 
 		if = { limit = { tag = AUG }
-			BAV = { annex_country = { target = AUG transfer_troops = yes } }
+			BAY = { annex_country = { target = AUG transfer_troops = yes } }
 		}
 		if = { limit = { tag = NUR }
-			BAV = { annex_country = { target = NUR transfer_troops = yes } }
+			BAY = { annex_country = { target = NUR transfer_troops = yes } }
 		}
 		if = { limit = { tag = WRZ }
-			BAV = { annex_country = { target = WRZ transfer_troops = yes } }
+			BAY = { annex_country = { target = WRZ transfer_troops = yes } }
 		}
 		if = { limit = { tag = PSU }
-			BAV = { annex_country = { target = PSU transfer_troops = yes } }
+			BAY = { annex_country = { target = PSU transfer_troops = yes } }
 		}
-		BAV = { transfer_state = 799 }
+		BAY = { transfer_state = 799 }
 
 		if = { limit = { tag = ALS }
 			BUR = { annex_country = { target = ALS transfer_troops = yes } }
@@ -280,7 +280,7 @@ country_event = {
 	#	name = hre.3.b
 	#	if = {
 	#		limit = {
-	#			PRS = { has_country_flag = holy_roman_emperor }
+	#			PRE = { has_country_flag = holy_roman_emperor }
 	#		}
 	#		create_wargoal = {
 	#		    type = annex_everything
@@ -314,7 +314,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 40
-				tag = BAV
+				tag = BAY
 			}
 			modifier = {
 				factor = 4000
@@ -369,7 +369,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 6
-				tag = BAV
+				tag = BAY
 			}
 			modifier = {
 				factor = 6
@@ -411,7 +411,7 @@ country_event = {
 	#	name = hre.6.b
 	#	if = {
 	#		limit = {
-	#			PRS = { has_country_flag = holy_roman_emperor }
+	#			PRE = { has_country_flag = holy_roman_emperor }
 	#		}
 	#		create_wargoal = {
 	#		    type = annex_everything

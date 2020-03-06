@@ -1,11 +1,11 @@
 spriteTypes = {
 	
 	# MOD
-	textSpriteType = {
-		name = "GFX_green_sort_button_140x29"
-		texturefile = "gfx//interface//green_sort_button_140x29.dds"
-		noOfFrames = 2
-	}
+	#textSpriteType = {
+	#	name = "GFX_green_sort_button_140x29"
+	#	texturefile = "gfx//interface//green_sort_button_140x29.dds"
+	#	noOfFrames = 2
+	#}
 	
 	textSpriteType = {
 		name = "GFX_sort_button_164x29"
@@ -25,7 +25,6 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 	
-	# Vanilla
 	spriteType = { 
 		name = "GFX_default_fallback_texture"
 		texturefile = "gfx/interface/thisisdog.dds"
@@ -47,16 +46,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/console_win_bg.dds"
 	}	
 	
-	spriteType = { 
-		name = "GFX_crt_delete"
-		texturefile = "gfx/interface/btn_delete_crt.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_TNO_minimap"
-		texturefile = "gfx/interface/minimap.dds"
-	}	
-	
 	spriteType = {
 		name = "GFX_dog"
 		texturefile = "gfx/interface/thisisdog.dds"
@@ -65,7 +54,7 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_tiled_generic_overlay_bg1_small"
 		size= { x=290 y=310 }
-		textureFile = "gfx//interface//tiled_generic_overlay_bg1_small.dds"
+		textureFile = "gfx//interface//tiles//tiled_generic_overlay_bg1_small.dds"
 		borderSize = { x=144 y=144 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -75,7 +64,7 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_tiled_generic_overlay_bg1"
 		size= { x=549 y=600 }
-		textureFile = "gfx//interface//tiled_generic_overlay_bg1.dds"
+		textureFile = "gfx//interface//tiles//tiled_generic_overlay_bg1.dds"
 		borderSize = { x=268 y=268 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -104,24 +93,28 @@ spriteTypes = {
 		name = "GFX_sort_button_100x29_2"
 		texturefile = "gfx//interface//sort_button_100x29_2.dds"
 		noOfFrames = 2
-	}	
-	
-	
-	
+	}
+
+	textSpriteType = {
+		name = "GFX_sort_button_120x29"
+		texturefile = "gfx//interface//sort_button_120x29.png"
+		noOfFrames = 2
+	}
+
 	textSpriteType = {
 		name = "GFX_sort_button_140x29"
 		texturefile = "gfx//interface//sort_button_140x29.dds"
 		noOfFrames = 2
 	}
-
-	textSpriteType = {
-		name = "GFX_sort_button_195x29"
-		texturefile = "gfx//interface//sort_button_195x29.dds"
-		noOfFrames = 2
-	}
 	
 	textSpriteType = {
 		name = "GFX_sort_button_171x35"
+		texturefile = "gfx//interface//sort_button_171x35.tga"
+		noOfFrames = 2
+	}	
+
+	SpriteType = {
+		name = "GFX_sort_button_focus_171x35"
 		texturefile = "gfx//interface//sort_button_171x35.tga"
 		noOfFrames = 2
 	}	
@@ -156,16 +149,10 @@ spriteTypes = {
 		noOfFrames = 2
 	}	
 	
-	spriteType = {
-		name = "GFX_tno_button_123x34"
-		texturefile = "gfx//interface//tno_button_123x34.dds"
-		noOfFrames = 2
-	}
-	
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_transparent_transparent"
 		size= { x=96 y=96 }
-		textureFile = "gfx//interface//tiled_window_transparent.dds"
+		textureFile = "gfx//interface//tiles//tiled_window_transparent.dds"
 		borderSize = { x=32 y=32 }
 		tilingCenter = no
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -175,7 +162,7 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_transparent"
 		size= { x=3 y=3 }
-		textureFile = "gfx//interface//tiled_window_transparent.dds"
+		textureFile = "gfx//interface//tiles//tiled_window_transparent.dds"
 		borderSize = { x=1 y=1 }
 		tilingCenter = no
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -184,7 +171,7 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_small_selectable"
 		size= { x=96 y=96 }
-		textureFile = "gfx//interface//tiled_window_small_selectable.dds"
+		textureFile = "gfx//interface//tiles//tiled_window_small_selectable.dds"
 		borderSize = { x=32 y=32 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -194,7 +181,7 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_small"
 		size= { x=96 y=96 }
-		textureFile = "gfx//interface//tiled_window_small.dds"
+		textureFile = "gfx//interface//tiles//tiled_window_small.dds"
 		borderSize = { x=32 y=32 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -203,7 +190,7 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_small_small"
 		size= { x=48 y=48 }
-		textureFile = "gfx//interface//tiled_window_small_small.dds"
+		textureFile = "gfx//interface//tiles//tiled_window_small_small.dds"
 		borderSize = { x=16 y=16 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -212,16 +199,7 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_thin_border2"
 		size= { x=192 y=192 }
-		textureFile = "gfx//interface//tiled_window_thin_border2.dds"
-		borderSize = { x=64 y=64 }
-		tilingCenter = yes
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-	}	
-	
-	corneredTileSpriteType = {
-		name = "GFX_tiled_savescreen_background"
-		size= { x=192 y=192 }
-		textureFile = "gfx//interface//tiled_savescreen_background.dds"
+		textureFile = "gfx//interface//tiles//tiled_window_thin_border2.dds"
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -230,7 +208,7 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_thin_border"
 		size= { x=192 y=192 }
-		textureFile = "gfx//interface//tiled_window_thin_border.dds"
+		textureFile = "gfx//interface//tiles//tiled_window_thin_border.dds"
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -239,16 +217,16 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_1b_thin_border"
 		size= { x=192 y=192 }
-		textureFile = "gfx//interface//tiled_window_1b_thin_border.dds"
+		textureFile = "gfx//interface//tiles//tiled_window_1b_thin_border.dds"
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}	
-
+	
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window2_1b_border"
 		size= { x=192 y=192 }
-		textureFile = "gfx//interface//tiled_window2_1b_border.dds"
+		textureFile = "gfx//interface//tiles//tiled_window2_1b_border.dds"
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -257,7 +235,7 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_1b_border"
 		size= { x=192 y=192 }
-		textureFile = "gfx//interface//tiled_window_1b_border.dds"
+		textureFile = "gfx//interface//tiles//tiled_window_1b_border.dds"
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -266,7 +244,7 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_1_scrollbar"
 		size= { x=192 y=192 }
-		textureFile = "gfx//interface//tiled_window_1_scrollbar.dds"
+		textureFile = "gfx//interface//tiles//tiled_window_1_scrollbar.dds"
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -275,30 +253,30 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_1_scrollbar_glow"
 		size= { x=192 y=192 }
-		textureFile = "gfx//interface//tiled_window_1_scrollbar_glow.dds"
+		textureFile = "gfx//interface//tiles//tiled_window_1_scrollbar_glow.dds"
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		looping = yes
 		animation_rate_spf = 4
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}	
 
 	corneredTileSpriteType = {
 		name = "GFX_tiled_research_bg_glow"
 		size= { x=96 y=96 }
-		textureFile = "gfx//interface//tiled_research_bg.dds"
+		textureFile = "gfx//interface//tiles//tiled_research_bg.dds"
 		borderSize = { x=32 y=32 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		looping = yes
 		animation_rate_spf = 2
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}	
 	
 	spriteType = {
 		name = "GFX_tiled_window_color_picker"
-		textureFile = "gfx//interface//tiled_window_color_picker.dds"
+		textureFile = "gfx//interface//tiles//tiled_window_color_picker.dds"
 	}	
 	
 	corneredTileSpriteType = {
@@ -322,7 +300,7 @@ spriteTypes = {
 #	corneredTileSpriteType = {
 #		name = "GFX_tiled_window_color_picker"
 #		size= { x=48 y=48 }
-#		textureFile = "gfx//interface//tiled_window_color_picker.dds"
+#		textureFile = "gfx//interface//tiles//tiled_window_color_picker.dds"
 #		borderSize = { x=16 y=16 }
 #		tilingCenter = yes
 #	}
@@ -335,7 +313,7 @@ spriteTypes = {
 		looping = yes
 		play_on_show = yes
 		pause_on_loop = 0.0
-		allwaystransparent = yes
+		alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}	
 	
@@ -354,11 +332,6 @@ spriteTypes = {
 		texturefile = "gfx//interface//icon_twitter.dds"
 		noOfFrames = 1
 	}
-		spriteType = {
-		name = "privacy"
-		texturefile = "gfx//interface//icon_privacy.dds"
-		noOfFrames = 1
-	}
 	spriteType = {
 		name = "homepage"
 		texturefile = "gfx//interface//icon_homepage.dds"
@@ -367,6 +340,11 @@ spriteTypes = {
 	spriteType = {
 		name = "privacy"
 		texturefile = "gfx//interface//icon_privacy.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "achievements"
+		texturefile = "gfx//interface//icon_achievements.dds"
 		noOfFrames = 1
 	}
 	spriteType = {
@@ -384,7 +362,7 @@ spriteTypes = {
 
 	textSpriteType = {
 		name = "ToolTip"
-		texturefile = "gfx//interface//tiles_dialog.tga"
+		texturefile = "gfx//interface//tiles//tiles_dialog.tga"
 		noOfFrames = 1
 	}
 
@@ -393,7 +371,7 @@ spriteTypes = {
 		size= {x=132 y=132 }
 		texturefile = "gfx//interface//tooltip_tile.dds"
 		borderSize = { x=45 y=45 }
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	
 	corneredTileSpriteType = {
@@ -401,32 +379,40 @@ spriteTypes = {
 		size= {x=32 y=32 }
 		texturefile = "gfx//interface//small_tiles_dialog.dds"
 		borderSize = { x=8 y=8 }
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 
 	corneredTileSpriteType = {
 		name = "GFX_mini_tooltip"
 		size= {x=32 y=32 }
-		texturefile = "gfx//interface//tiled_mini_dialog.dds"
+		texturefile = "gfx//interface//tiles//tiled_mini_dialog.dds"
 		borderSize = { x=12 y=12 }
 	}
 
 	corneredTileSpriteType = {
 		name = "GFX_construction_province_background"
-		size= {x=32 y=32 }
-		texturefile = "gfx//interface//tiled_mini_dialog.dds"
-		borderSize = { x=12 y=12 }
-		allwaystransparent = yes
+		size= {x=76 y=56 }
+		texturefile = "gfx//interface//tiles//tiled_mini_dialog_with_header.dds"
+		borderSize = { x=12 y=21 }
+		alwaystransparent = yes
 	}
-
+	
 	spriteType = {
 		name = "GFX_construction_title_bg"
 		texturefile = "gfx//interface//construction_title_bg.dds"
 	}
+
 	corneredTileSpriteType = {
 		name = "GFX_mini_bg"
 		size= {x=32 y=32 }
-		texturefile = "gfx//interface//tiled_mini_dialog.dds"
+		texturefile = "gfx//interface//tiles//tiled_mini_dialog.dds"
+		borderSize = { x=12 y=12 }
+	}
+	
+	corneredTileSpriteType = {
+		name = "GFX_mini_bg_grey"
+		size= {x=32 y=32 }
+		texturefile = "gfx//interface//tiles//tiled_mini_dialog_grey.dds"
 		borderSize = { x=12 y=12 }
 	}
 	
@@ -465,6 +451,8 @@ spriteTypes = {
 		textureFile = "gfx/interface/expand_collapse_sideways.dds"
 		noOfFrames = 2
 	}
+
+
 	
 
 
@@ -480,7 +468,7 @@ spriteTypes = {
 		textureFile1 = "gfx//interface//minishield.tga"
 		textureFile2 = "gfx//interface//minimask.tga"
 		effectFile = "gfx//FX//maskedflag.lua"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	
 	maskedShieldType = {
@@ -536,6 +524,13 @@ spriteTypes = {
 	textSpriteType = {
 		name = "GFX_button_148x34"
 		texturefile = "gfx//interface//button_148x34.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	textSpriteType = {
+		name = "GFX_government_button"
+		texturefile = "gfx//interface//government_button.dds"
 		noOfFrames = 1
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
@@ -602,6 +597,7 @@ spriteTypes = {
 		noOfFrames = 1
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	
 	textSpriteType = {
 		name = "button_type_9"
 		texturefile = "gfx//interface//button_type_9.tga"
@@ -623,61 +619,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 
-	textSpriteType = {
-		name = "liquid_save_button"
-		texturefile = "gfx//interface//liquid_save.dds"
-		noOfFrames = 1
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-
-	textSpriteType = {
-		name = "liquid_spend_button"
-		texturefile = "gfx//interface//liquid_spend.dds"
-		noOfFrames = 1
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-
-	textSpriteType = {
-		name = "civilian_spend_button"
-		texturefile = "gfx//interface//civilian_spend.dds"
-		noOfFrames = 1
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-
-	textSpriteType = {
-		name = "civilian_save_button"
-		texturefile = "gfx//interface//civilian_save.dds"
-		noOfFrames = 1
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-
-	textSpriteType = {
-		name = "military_spend_button"
-		texturefile = "gfx//interface//military_spend.dds"
-		noOfFrames = 1
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-
-	textSpriteType = {
-		name = "military_save_button"
-		texturefile = "gfx//interface//military_save.dds"
-		noOfFrames = 1
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-
-	textSpriteType = {
-		name = "construction_spend_button"
-		texturefile = "gfx//interface//construction_spend.dds"
-		noOfFrames = 1
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-
-	textSpriteType = {
-		name = "construction_save_button"
-		texturefile = "gfx//interface//construction_save.dds"
-		noOfFrames = 1
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
 
 
 
@@ -760,6 +701,19 @@ objectTypes = {
 			format = centre
 		}
 	}
+	
+	animatedmaptext = {
+		name = "debugtext"
+		speed = 0.05
+		textblock = {
+			text = "txt"
+			color = { 0.9 0.9 0.0 }
+			font = "DebugFont"
+			position = { x=0 y=40 }
+			size = { x=1256 y = 164  }
+			format = centre
+		}
+	}
 }
 
 
@@ -768,7 +722,7 @@ bitmapfonts = {
 
 	# Global text colors used in the entire game, for use in loc files ex: "§G Text Text§!" 
 	textcolors = {
-		M = { 35 206 255 }
+		C = { 35 206 255 }
 		L = { 195 176 145 }
 		W = { 255 255 255 }
 		B = { 0 0 255 }
@@ -779,6 +733,7 @@ bitmapfonts = {
 		Y = { 255 189 0 }
 		H = { 255 189 0 }
 		T = { 255 255 255 }
+		O = { 255 112 25 }
 	}
 
 
@@ -827,9 +782,12 @@ bitmapfonts = {
 	}
 	
 	
+	bitmapfont = {
+		name = "DebugFont"
+		path = "gfx/fonts/garamond_14"
+		color = 0xff7799ff
+	}
 	
-
-
 
 	bitmapfont = {
 		name = "Main_24"
@@ -1217,23 +1175,6 @@ bitmapfonts = {
 	}	
 	
 	bitmapfont = {
-		name = "hoi_20bsSVA"
-#		path = "gfx/fonts/hoi_20bsSVA"
-		fontfiles = { 
-			"gfx/fonts/hoi_20bsSVA"
-		}		
-		color = 0xffffffff
-
-		textcolors = {
-			G = { 86 172 91 }
-			R = { 222 86 70 }
-			Y = { 238 201 35 }
-			H = { 238 201 35 }
-			T = { 255 255 255 }
-		}
-	}
-
-	bitmapfont = {
 		name = "hoi_20bs"
 #		path = "gfx/fonts/hoi_20bs"
 		fontfiles = { 
@@ -1265,11 +1206,11 @@ bitmapfonts = {
 			"gfx/fonts/hoi4_typewriter16"
 			"gfx/fonts/hoi_16typewriter"			
 		}		
-		color = 0xffffffff
+		color = 0xff000000
 
 		textcolors = {
 			G = { 86 172 91 }
-			R = { 222 86 70 }
+			R = { 238 0 0 }
 			Y = { 238 201 35 }
 			H = { 238 201 35 }
 			T = { 255 255 255 }
@@ -1283,15 +1224,14 @@ bitmapfonts = {
 			"gfx/fonts/hoi_16typewriter_cryllic"
 		}
 	languages = { "l_russian" "l_polish" } 
-	}	
-	
+	}
+
+
 	bitmapfont = {
-		name = "hoi4_typewriter22"
-#		path = "gfx/fonts/hoi4_typewriter22"
-		fontfiles = { 
-			"gfx/fonts/hoi4_typewriter22"		
-			"gfx/fonts/hoi_22typewriter"
-#			"gfx/fonts/hoi_22typewriter_cryllic"
+		name = "hoi4_typewriter16_inverted"
+		fontfiles = { 	
+			"gfx/fonts/hoi4_typewriter16_inverted"
+			"gfx/fonts/hoi_16typewriter_inverted"			
 		}		
 		color = 0xffffffff
 
@@ -1303,12 +1243,68 @@ bitmapfonts = {
 			T = { 255 255 255 }
 		}
 	}
+
+	bitmapfont_override = {
+		name = "hoi4_typewriter16_inverted"
+		fontfiles = { 
+			"gfx/fonts/hoi_16typewriter_inverted"
+			"gfx/fonts/hoi_16typewriter_cryllic_inverted"
+		}
+	languages = { "l_russian" "l_polish" } 
+	}		
 	
+	bitmapfont = {
+		name = "hoi4_typewriter22"
+#		path = "gfx/fonts/hoi4_typewriter22"
+		fontfiles = { 
+			"gfx/fonts/hoi4_typewriter22"		
+			"gfx/fonts/hoi_22typewriter"
+#			"gfx/fonts/hoi_22typewriter_cryllic"
+		}		
+		color = 0xff000000
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
+
 	bitmapfont_override = {
 		name = "hoi4_typewriter22"
 		fontfiles = { 
 			"gfx/fonts/hoi_22typewriter"
 			"gfx/fonts/hoi_22typewriter_cryllic"
+		}
+	languages = { "l_russian" "l_polish" } 
+	}	
+
+	bitmapfont = {
+		name = "hoi4_typewriter22_inverted"
+#		path = "gfx/fonts/hoi4_typewriter22"
+		fontfiles = { 
+			"gfx/fonts/hoi4_typewriter22_inverted"		
+			"gfx/fonts/hoi_22typewriter_inverted"
+#			"gfx/fonts/hoi_22typewriter_cryllic"
+		}		
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}	
+	
+	bitmapfont_override = {
+		name = "hoi4_typewriter22_inverted"
+		fontfiles = { 
+			"gfx/fonts/hoi_22typewriter_inverted"
+			"gfx/fonts/hoi_22typewriter_cryllic_inverted"
 		}
 	languages = { "l_russian" "l_polish" } 
 	}		
@@ -1394,8 +1390,25 @@ bitmapfonts = {
 			"gfx/fonts/hoi_26mbs"
 			"gfx/fonts/hoi_26mbs_cryllic"
 		}
-	languages = { "l_russian" "l_polish" } 
-	}	
+		languages = { "l_russian" "l_polish" } 
+	}
+	
+	bitmapfont = {
+		name = "hoi_26header"
+		fontfiles = { 
+			"gfx/fonts/hoi_26mbs"
+			"gfx/fonts/hoi_26mbs_cryllic"
+		} 
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
 	
 	bitmapfont = {
 		name = "hoi_22tech"
@@ -1491,54 +1504,32 @@ bitmapfonts = {
 
 	bitmapfont = {
 		name = "cg_16b"				####### GENERAL TOOLTIP FONT ########
-		path = "gfx/fonts/hoi_18"
-		color = 0xff2f8a87
-		textcolors = {
-			M = { 35 206 255 }
-			L = { 195 176 145 }
-			W = { 47 138 135 }
-			B = { 47 138 135 }
-			G = { 76 168 84 }
-			R = { 125 66 66 }
-			b = { 0 0 0 }
-			g = { 176 176 176 }
-			Y = { 220 218 80 }
-			H = { 220 218 80 }
-			T = { 47 138 135 }
-		}
+#		path = "gfx/fonts/cg_16b"
+		fontfiles = { 
+			"gfx/fonts/cg_16b"		
+			"gfx/fonts/hoi_16tooltip3"					
+		}			
+		color = 0xffffffff
 	}
 
-#	bitmapfont_override = {
-#		name = "cg_16b"
-#		fontfiles = { 
-#			"gfx/fonts/hoi_16tooltip3"
-#		}
-#	languages = { "l_russian" "l_polish" } 
-#	}
+	bitmapfont_override = {
+		name = "cg_16b"
+		fontfiles = { 
+			"gfx/fonts/hoi_16tooltip3"
+		}
+	languages = { "l_russian" "l_polish" } 
+	}
 	
 	bitmapfont = {
 		name = "cg_18b"
-		path = "gfx/fonts/hoi_20b"
-		color = 0xff2f8a87
-		textcolors = {
-			M = { 35 206 255 }
-			L = { 195 176 145 }
-			W = { 47 138 135 }
-			B = { 47 138 135 }
-			G = { 76 168 84 }
-			R = { 125 66 66 }
-			b = { 0 0 0 }
-			g = { 176 176 176 }
-			Y = { 220 218 80 }
-			H = { 220 218 80 }
-			T = { 47 138 135 }
-		}
+		path = "gfx/fonts/cg_18b"
+		color = 0xffffffff
 	}
 
 	corneredTileSpriteType = {
 		name = "SandboxFloaterBackground"
 		size= {x=190 y=310 }
-		textureFile ="gfx//interface//tiles_dialog.tga"
+		textureFile ="gfx//interface//tiles//tiles_dialog.tga"
 		borderSize = { x=32 y=32 }
 	}
 	

@@ -6,43 +6,43 @@ create_pie_chart = {
 	clear_array = pie_chart
 	resize_array = {
 		array = pie_chart
-		value = 1 # 1 is value for neutrality frame, so we don't have to make a loop for it
+		value = 1 # 1 is value for absolutism frame, so we don't have to make a loop for it
 		size = 100 # 100 pieces, each percent is one piece
 	}
-	set_temp_variable = { neutrality_pop = party_popularity@neutrality }
-	multiply_temp_variable = { neutrality_pop = 100 }
-	round_temp_variable = neutrality_pop
+	set_temp_variable = { absolutism_pop = party_popularity@absolutism }
+	multiply_temp_variable = { absolutism_pop = 100 }
+	round_temp_variable = absolutism_pop
 
-	set_temp_variable = { communism_pop = party_popularity@communism }
-	multiply_temp_variable = { communism_pop = 100 }
-	round_temp_variable = communism_pop 
-	set_variable = { ROOT.last_idx = neutrality_pop }
-	add_to_temp_variable = { communism_pop = ROOT.last_idx }
+	set_temp_variable = { collectivism_pop = party_popularity@collectivism }
+	multiply_temp_variable = { collectivism_pop = 100 }
+	round_temp_variable = collectivism_pop 
+	set_variable = { ROOT.last_idx = absolutism_pop }
+	add_to_temp_variable = { collectivism_pop = ROOT.last_idx }
 	for_loop_effect = {
 		start = ROOT.last_idx
-		end = communism_pop
+		end = collectivism_pop
 		set_variable = { pie_chart^v = 2 }
 		add_to_variable = { ROOT.last_idx = 1 }
 	}
 
-	set_temp_variable = { democratic_pop = party_popularity@democratic }
-	multiply_temp_variable = { democratic_pop = 100 }
-	round_temp_variable = democratic_pop
-	add_to_temp_variable = { democratic_pop = ROOT.last_idx }
+	set_temp_variable = { liberalism_pop = party_popularity@liberalism }
+	multiply_temp_variable = { liberalism_pop = 100 }
+	round_temp_variable = liberalism_pop
+	add_to_temp_variable = { liberalism_pop = ROOT.last_idx }
 	for_loop_effect = {
 		start = ROOT.last_idx
-		end = democratic_pop
+		end = liberalism_pop
 		set_variable = { pie_chart^v = 3 }
 		add_to_variable = { ROOT.last_idx = 1 }
 	}
 
-	set_temp_variable = { fascism_pop = party_popularity@fascism }
-	multiply_temp_variable = { fascism_pop = 100 }
-	round_temp_variable = fascism_pop 
-	add_to_temp_variable = { fascism_pop = ROOT.last_idx }
+	set_temp_variable = { labryscism_pop = party_popularity@labryscism }
+	multiply_temp_variable = { labryscism_pop = 100 }
+	round_temp_variable = labryscism_pop 
+	add_to_temp_variable = { labryscism_pop = ROOT.last_idx }
 	for_loop_effect = {
 		start = ROOT.last_idx
-		end = fascism_pop
+		end = labryscism_pop
 		set_variable = { pie_chart^v = 4 }
 	}
 

@@ -2,7 +2,7 @@ ideas = {
 	#MOD
 	head_of_government = {
 		generic_head_of_government = {	
-			traits = { communist_revolutionary }
+			traits = { collectivist_revolutionary }
 			visible = {
 				NOT = { tag = USA }
 			}
@@ -13,7 +13,7 @@ ideas = {
 	}
 	secondary_head = {
 		generic_secondary_head = {	
-			traits = { communist_revolutionary }
+			traits = { collectivist_revolutionary }
 			visible = {
 				NOT = { tag = USA }
 			}
@@ -366,7 +366,7 @@ ideas = {
 			}
 		}
 		
-		communist_influence = {
+		collectivist_influence = {
 			
 			
 			visible = {
@@ -439,7 +439,7 @@ ideas = {
 			}
 		}
 		
-		communist_pressure = {
+		collectivist_pressure = {
 			
 			
 			visible = {
@@ -537,7 +537,7 @@ ideas = {
 	
 			modifier = {
 				conscription = 0.05
-				enemy_partisan_effect = -0.1
+				#enemy_partisan_effect = -0.1
 			}
 		}
 	
