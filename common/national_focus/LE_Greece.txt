@@ -1426,7 +1426,7 @@ focus_tree = {
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 10 }
-		completion_reward = { add_ideas = { tno_gender_rights_women_in_the_workplace } } #REVISIT
+		completion_reward = { } #REVISIT
 	}
 	focus = {
 		id = GRE_COLLECTIVIZATION
@@ -1679,7 +1679,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
-		completion_reward = { add_ideas = tno_unemployment_basic_income }
+		completion_reward = { }
 	}
 	focus = {
 		id = GRE_PUBLIC_WORKS_PROGRAM

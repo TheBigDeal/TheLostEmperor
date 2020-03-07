@@ -479,7 +479,7 @@ focus_tree = {
 	focus = {
 		id = TUR_AGGRESSION_FOCUS
 		icon = GFX_unknown
-		prerequisite = { focus = TUR_DIPLOMATIC_DIRECTION }
+		#prerequisite = { focus = TUR_DIPLOMATIC_DIRECTION }
 		mutually_exclusive = { focus = TUR_PASSIVE_FOCUS }
 		x = 21
 		y = 1
@@ -780,7 +780,7 @@ focus_tree = {
 			OR = {
 				GRA = { controls_state = 290 }
 				TUR = { controls_state = 290 }
-				ANL = { controls_state = 290 }
+				ADU = { controls_state = 290 }
 			}
 		}
 		ai_will_do = {
@@ -808,7 +808,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			create_wargoal = { type = annex_everything target = SPR }
-			ANL = { annex_country = { target = GRA transfer_troops = yes } }
+			ADU = { annex_country = { target = GRA transfer_troops = yes } }
 		}
 	}
 	
@@ -818,7 +818,7 @@ focus_tree = {
 	focus = {
 		id = TUR_PASSIVE_FOCUS
 		icon = GFX_unknown
-		prerequisite = { focus = TUR_DIPLOMATIC_DIRECTION }
+		#prerequisite = { focus = TUR_DIPLOMATIC_DIRECTION }
 		mutually_exclusive = { focus = TUR_AGGRESSION_FOCUS }
 		x = 31
 		y = 1

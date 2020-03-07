@@ -98,7 +98,7 @@ create_country_leader = {
 set_convoys = 100
 set_stability = 0.9
 
-1939.1.1 = {
+
 	set_politics = {		
 		ruling_party = liberalism
 		last_election = "1935.10.14"
@@ -179,7 +179,7 @@ create_equipment_variant = {
 	}
 }
 
-1939.1.1 = {
+
 	create_equipment_variant = {
 		name = "Athabaskan Class"
 		type = destroyer_1

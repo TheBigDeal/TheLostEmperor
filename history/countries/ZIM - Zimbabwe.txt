@@ -10,7 +10,7 @@ set_technology = {
 
 set_convoys = 5
 
-1939.1.1 = {
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -77,7 +77,7 @@ create_country_leader = {
 
 
 #Now a colony of Italy  However, if independent it would have
-1939.1.1 = {
+
 	set_politics = {		
 		ruling_party = absolutism
 		last_election = "1936.1.1"

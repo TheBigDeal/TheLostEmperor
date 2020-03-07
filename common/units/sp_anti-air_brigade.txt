@@ -36,6 +36,8 @@ sub_units = {
 		#Tanks are awesome
 		soft_attack = 0.5
 
+		suppression = 2
+
 		forest = {
 		    attack = -0.2
 			movement = -0.4
@@ -98,6 +100,8 @@ sub_units = {
 
 		#Tanks are awesome
 		soft_attack = 0.5
+
+		suppression = 2
 
 		forest = {
 		    attack = -0.3
@@ -165,6 +169,8 @@ sub_units = {
 		#Tanks are awesome
 		soft_attack = 0.5
 
+		suppression = 2
+
 		forest = {
 		    attack = -0.40
 			movement = -0.40
@@ -193,67 +199,6 @@ sub_units = {
 		}
 		amphibious = { 
 			attack = -0.8 
-		}
-	}
-	
-	super_heavy_sp_anti_air_brigade = {
-		sprite = heavy_armor
-		map_icon_category = armored
-		priority = 301
-		ai_priority = 100
-		active = yes
-		categories = {
-			category_all_armor
-			category_army
-		}
-		
-		group = armor
-		
-		type = {
-			armor
-			anti_air
-		}
-
-		combat_width = 1
-		manpower = 500
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 0.6
-		training_time = 180
-		weight = 1.75
-		supply_consumption = 0.1
-
-		#Tanks are awesome
-		soft_attack = 0.5
-
-		forest = {
-		    attack = -0.5
-			movement = -0.4
-		}
-		hills = {
-		    attack = -0.3
-		}
-		mountain = 	{
-		    attack = -0.4
-		}
-		jungle = {
-		    attack = -0.7
-			movement = -0.4
-		}
-		marsh = {
-		    attack = -0.5 
-			movement = -0.2
-		}
-		urban = {
-			attack = -0.6
-			defence = -0.2
-		}
-		river = { 
-			attack = -0.5
-			movement = -0.4
-		}
-		amphibious = { 
-			attack = -1.0
 		}
 	}
 	
@@ -291,6 +236,8 @@ sub_units = {
 
 		#Tanks are awesome
 		soft_attack = 0.5
+
+		suppression = 2
 
 		forest = {
 		    attack = -0.3

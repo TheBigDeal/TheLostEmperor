@@ -121,7 +121,7 @@ focus_tree = {
 		id = PAP_SPARK_A_AUSTRO-PRUSSIAN_WAR
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = PAP_TEUTON_LIBERATION }
-		mutually_exclusive = { focus = PAP_SPARK_A_AUSTRO-PRUSSIAN_WAR }
+		mutually_exclusive = { focus = PAP_PROMISE_A_UNITED_GERMANY }
 		x = 6
 		y = 4
 		cost = 10

@@ -12,14 +12,14 @@
 ##########################################
 # M O D
 ##########################################
-defined_text = {
-	name = GetGreatPower1
-	text = {
-		trigger = {
-			every_country = {
-				has_country_flag = great_power_one
-			}
-		}
-		localization_key = "[?ROOT.GetName] - [?power_rating]"
-	}
-}
+# defined_text = {
+	# name = GetGreatPower1
+	# text = {
+		# trigger = {
+			# every_country = {
+				# has_country_flag = great_power_one
+			# }
+		# }
+		# localization_key = "[?ROOT.GetName] - [?power_rating]"
+	# }
+# }

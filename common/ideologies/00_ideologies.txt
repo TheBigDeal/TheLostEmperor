@@ -3,15 +3,10 @@ ideologies = {
 #COMMUNIST
 ##########################################################################################################################################
 	mutualism = {
-
 		types = {
-
-
 			mutualism_ideology = {
 			}
-			mutualism = {
-			}
-
+			mutualism = {}
 		}
 
 		dynamic_faction_names = {
@@ -48,11 +43,9 @@ ideologies = {
 	collectivism = {
 
 		types = {
-
 			collectivism_ideology = {
 			}
-			collectivism = {
-			}
+			collectivism = {}
 		}
 
 		dynamic_faction_names = {
@@ -88,12 +81,9 @@ ideologies = {
 	proletarianism = {
 
 		types = {
-
-
 			proletarianism_ideology = {
 			}
-			proletarianism = {
-			}
+			proletarianism = {}
 		}
 
 		dynamic_faction_names = {
@@ -133,11 +123,9 @@ ideologies = {
 	absolutism = {
 
 		types = {
-
 			absolutism_ideology  = {
 			}
-			absolutism  = {
-			}
+			absolutism  = {}
 		}
 
 		dynamic_faction_names = {
@@ -179,13 +167,10 @@ ideologies = {
 		ai_neutral = yes #
 	}
 	royalism = {
-
 		types = {
-
 			royalism_ideology  = {
 			}
-			royalism  = {
-			}
+			royalism  = {}
 		}
 
 		dynamic_faction_names = {
@@ -230,12 +215,10 @@ ideologies = {
 	theocracy = {
 
 		types = {
-			theocratic = {
-
-			}
-			radical_theocracy = {
-			
-			}
+			theocratic_ideology = {}
+			radical_theocracy = {}
+			theocracy = {}
+			theocratic = {}
 		}
 
 		dynamic_faction_names = {
@@ -286,10 +269,8 @@ ideologies = {
 ##########################################################################################################################################
 	conservatism = {
 		types = {
-			conservatism_ideology = {
-			}
-			conservatism = {
-			}
+			conservatism_ideology = {}
+			conservatism = {}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_liberalism_1"
@@ -329,10 +310,8 @@ ideologies = {
 
 		types = {
 
-			liberalism_ideology = {
-			}
-			liberalism = {
-			}
+			liberalism_ideology = {}
+			liberalism = {}
 		}
 
 		dynamic_faction_names = {
@@ -378,10 +357,8 @@ ideologies = {
 
 		types = {
 
-			socialism = {
-
-			}
-
+			socialism_ideology = {}
+			socialism = {}
 		}
 
 		dynamic_faction_names = {
@@ -428,11 +405,8 @@ ideologies = {
 	labryscism = {
 
 		types = {
-
-			labryscism = {
-			}
-			labryscism_ideology = {
-			}
+			labryscism = {}
+			labryscism_ideology = {}
 		}
 
 		dynamic_faction_names = {
@@ -464,9 +438,7 @@ ideologies = {
 	rexism = {
 
 		types = {
-
-			rexism = {
-			}
+			rexism = {}
 			rexism_ideology = {
 			}
 		}
@@ -500,22 +472,12 @@ ideologies = {
 	despotism = {
 
 		types = {
-
-			despotism = {
-
-			}
-			oligarchism  = {
-			}
-
-			dictatorship = {
-
-			}
-			centrism = {
-
-			}
-			moderatism = {
-			}
-
+			despotism_ideology = {}
+			oligarchism  = {}
+			dictatorship = {}
+			centrism = {}
+			moderatism = {}
+			despotism = {}
 		}
 
 		dynamic_faction_names = {

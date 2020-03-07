@@ -8,7 +8,7 @@
 tactic_gas_attack = {
 
 	is_attacker = yes
-	has_country_flag = active_gas_attack
+	#has_country_flag = active_gas_attack
 	trigger = { # combined scope for both country and combatant
 		is_attacker = yes
 		phase = no
@@ -27,7 +27,7 @@ tactic_gas_counterattack = { # counters basic attack, assault
 	trigger = {
 		is_attacker = no
 		phase = no
-		has_tech = standard_gas_mask
+		#has_tech = standard_gas_mask
 	}
 	active = yes
 	base =  {

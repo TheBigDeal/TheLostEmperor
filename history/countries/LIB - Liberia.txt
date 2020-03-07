@@ -9,7 +9,7 @@ set_technology = {
 
 set_convoys = 10
 
-1939.1.1 = {
+
 
 	add_political_power = 1198
 	
@@ -80,7 +80,7 @@ create_country_leader = {
 	}
 }
 
-1939.1.1 = {
+
 	set_politics = {		
 		ruling_party = liberalism
 		last_election = "1939.1.1"

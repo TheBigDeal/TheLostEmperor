@@ -18,7 +18,7 @@ tur_deal_with_rebellion_coalition = {
 	}
 	tur_rebel_expansion_into_palestine = {
 		icon = GFX_icon_collectivism
-		allowed = {tag = TUR has_idea = TUR_internal_instability}
+		visible = {tag = TUR has_idea = TUR_internal_instability}
 		
 		available = { 
 			divisions_in_state = {
@@ -56,7 +56,7 @@ tur_deal_with_rebellion_coalition = {
 	}
 	tur_rebel_expansion_into_lebanon = {
 		icon = GFX_icon_collectivism
-		allowed = {tag = TUR has_idea = TUR_internal_instability}
+		visible = {tag = TUR has_idea = TUR_internal_instability}
 		available = { 
 			divisions_in_state = {
 				size > 9
@@ -93,7 +93,7 @@ tur_deal_with_rebellion_coalition = {
 	}
 	tur_rebel_expansion_into_west_jordan = {
 		icon = GFX_icon_collectivism
-		allowed = {tag = TUR has_idea = TUR_internal_instability}
+		visible = {tag = TUR has_idea = TUR_internal_instability}
 		available = { 
 			divisions_in_state = {
 				size > 9
@@ -130,7 +130,7 @@ tur_deal_with_rebellion_coalition = {
 	}
 	tur_rebel_expansion_into_east_jordan  = {
 		icon = GFX_icon_collectivism
-		allowed = {tag = TUR has_idea = TUR_internal_instability}
+		visible = {tag = TUR has_idea = TUR_internal_instability}
 		available = { 
 			divisions_in_state = {
 				size > 9
@@ -167,7 +167,7 @@ tur_deal_with_rebellion_coalition = {
 	}
 	tur_rebel_expansion_into_cyprus  = {
 		icon = GFX_icon_collectivism
-		allowed = {tag = TUR has_idea = TUR_internal_instability}
+		visible = {tag = TUR has_idea = TUR_internal_instability}
 		available = { 
 			divisions_in_state = {
 				size > 9

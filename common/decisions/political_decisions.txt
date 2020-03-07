@@ -11,7 +11,7 @@ labryscism_on_the_rise = {
 			NOT = { has_country_flag = preparation_for_labryscist_civil_war }
 			has_idea_with_trait = labryscist_demagogue
 			#check_has_focus_tree_to_switch_to_labryscist = yes
-			NOT = { has_government = labryscist }
+			NOT = { has_government = labryscism }
 		}
 		
 		fire_only_once = yes
@@ -38,7 +38,7 @@ labryscism_on_the_rise = {
 			}
 			has_idea_with_trait = labryscist_demagogue
 			#check_has_focus_tree_to_switch_to_labryscist = yes
-			NOT = { has_government = labryscist }
+			NOT = { has_government = labryscism }
 		}
 		
 		fire_only_once = no

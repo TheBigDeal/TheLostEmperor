@@ -30,7 +30,7 @@ set_popularities = {
     proletarianism = 6
 }
 
-1939.1.1 = {
+
 	set_politics = {		
 		ruling_party = liberalism
 		last_election = "1939.4.2"

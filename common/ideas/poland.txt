@@ -40,7 +40,7 @@ country = {
 		modifier = {
 			conscription = 0.025
 			war_support_factor = 0.05
-			#enemy_partisan_effect = -0.1
+			#enemy_resistance_damage_to_garrison_on_our_occupied_states = -0.1
 		}
 	}	
 

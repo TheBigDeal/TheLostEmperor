@@ -80,10 +80,10 @@ equipments = {
 		fuel_consumption 	= 0.8
 	}
 
-	armored_car_equipment_1 = {
+	armored_car_equipment_0 = {
 		year = 1934
 		
-		archetype = armored_car_equipment
+		#archetype = armored_car_equipment
 		parent = gw_armored_car_equipment
 		priority = 10
 		visual_level = 0
@@ -95,7 +95,7 @@ equipments = {
 	armored_car_equipment_2 = {
 		year = 1941
 		
-		archetype = armored_car_equipment
+		#archetype = armored_car_equipment
 		parent = armored_car_equipment_1
 		priority = 10
 		visual_level = 1
@@ -129,7 +129,7 @@ equipments = {
 		#should be closer to a tank than an AT tank/SPG
 		year = 1941
 
-		archetype = armored_car_equipment
+		#archetype = armored_car_equipment
 		parent = armored_car_equipment_2
 		priority = 10
 		visual_level = 1

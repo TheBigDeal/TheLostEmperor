@@ -582,7 +582,7 @@ NFL = {
 	color = rgb { 175 155 133 }
 	color_ui = rgb { 175 155 133 }
 }
-ANL = {
+ADU = {
 	color = rgb { 240 230 155 }
 	color_ui = rgb { 240 230 155 }
 }

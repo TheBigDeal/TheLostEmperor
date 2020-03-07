@@ -490,7 +490,7 @@ focus_tree = {
 		id = PRS_DEMAND_SOUTHERN_GERMANY
 		icon = GFX_Generic_Invasion
 		prerequisite = { focus = PRS_THE_NORTH_GERMAN_CONFEDERATION }
-		mutually_exclusive = {focus = PRS_ASSSASSINATE_AUSTRIAN_LEADERS }
+		#mutually_exclusive = {focus = PRS_ASSSASSINATE_AUSTRIAN_LEADERS }
 		x = 18
 		y = 8
 		cost = 10

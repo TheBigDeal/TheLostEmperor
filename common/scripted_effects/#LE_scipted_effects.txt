@@ -110,7 +110,7 @@ reload_ideas = {
 		set_variable = { law_1_only_underground_var = -140 }
 	}
 	else_if  = {
-		NOT = { limit = { has_idea = law_1_only_underground } }
+		limit = { NOT = { has_idea = law_1_only_underground } }
 		set_variable = { law_1_only_underground_var = 0 }
 	}
 	### Political Parties - Harrassment
@@ -120,7 +120,7 @@ reload_ideas = {
 		set_variable = { law_1_harrassment_var = -100 }
 	}
 	else_if  = {
-		NOT = { limit = { has_idea = law_1_harrassment } }
+		limit = { NOT = { has_idea = law_1_harrassment } }
 		set_variable = { law_1_harrassment_var = 0 }
 	}
 	### Political Parties - Gerrymandering
@@ -130,7 +130,7 @@ reload_ideas = {
 		set_variable = { law_1_gerrymandering_var = -60 }
 	}
 	else_if  = {
-		NOT = { limit = { has_idea = law_1_gerrymandering } }
+		limit = { NOT = { has_idea = law_1_gerrymandering } }
 		set_variable = { law_1_gerrymandering_var = 0 }
 	}
 	### Political Parties - Open Ballots
@@ -140,7 +140,7 @@ reload_ideas = {
 		set_variable = { law_1_open_ballots_var = -40 }
 	}
 	else_if  = {
-		NOT = { limit = { has_idea = law_1_open_ballots } }
+		limit = { NOT = { has_idea = law_1_open_ballots } }
 		set_variable = { law_1_open_ballots_var = 0 }
 	}
 	### Political Parties - Open Ballots
@@ -150,7 +150,7 @@ reload_ideas = {
 		set_variable = { law_1_confidential_ballots_var = -20 }
 	}
 	else_if  = {
-		NOT = { limit = { has_idea = law_1_confidential_ballots } }
+		limit = { NOT = { has_idea = law_1_confidential_ballots } }
 		set_variable = { law_1_confidential_ballots_var = 0 }
 	}
 }

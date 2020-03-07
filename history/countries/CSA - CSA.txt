@@ -67,7 +67,7 @@ add_ideas = {
 	home_of_the_free
 }
 
-1939.1.1 = {
+
 
 	set_politics = {		
 		ruling_party = liberalism
@@ -178,7 +178,7 @@ create_equipment_variant = {
 
 }
 
-1939.1.1 = {
+
 	
 	create_equipment_variant = {
 		name = "Salmon Class"

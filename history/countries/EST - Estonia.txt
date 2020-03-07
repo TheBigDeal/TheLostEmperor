@@ -36,7 +36,7 @@ set_popularities = {
     collectivism = 5
 }
 
-1939.1.1 = {
+
 	set_politics = {
 		ruling_party = absolutism
 		last_election = "1938.2.25"

@@ -2725,7 +2725,7 @@ focus_tree = {
 		id = GER_INVADE_POLAND
 		icon = GFX_goal_generic_occupy_start_war
 		prerequisite = { focus = GER_BOHEMIAN_REFURDNDUM }
-		mutually_exclusive = { focus = GER_DEMAND_POZNAN }
+		mutually_exclusive = { focus = GER_COM_DEMAND_POZNAN }
 		x = 52
 		y = 11
 		cost = 10
@@ -2886,7 +2886,7 @@ focus_tree = {
 		id = GER_A_GERMAN_REICH
 		icon = GFX_focus_german_reich
 		prerequisite = { focus = GER_GERMAN_CIVIL_WAR focus = GER_A_SUCCESSFUL_COUP}
-		mutually_exclusive = { focus = GER_A_GERMAN_REICH }
+		mutually_exclusive = { focus = GER_A_GERMAN_UNION }
 		x = 56
 		y = 4
 		cost = 10

@@ -24,7 +24,7 @@ if = {
 
 set_convoys = 20
 
-1939.1.1 = {#placeholder same tech as ENG
+#placeholder same tech as ENG
 	#generic focuses
 
 	add_political_power = 1198

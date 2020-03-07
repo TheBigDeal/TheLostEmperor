@@ -46,7 +46,6 @@ focus_tree = {
 		id = FRA_THE_GLORIOUS_REVOLUTION
 		icon = GFX_goal_generic_support_democracy
 		prerequisite = { focus = FRA_OVERTHROW_THE_KING }
-		mutually_exclusive = { focus = FRA_CONTINUE_THE_MONARCHY }
 		x = 26
 		y = 2
 		cost = 2
@@ -443,7 +442,7 @@ focus_tree = {
 				desc = "POLITICS_MAURICE_THOREZ_DESC"
 				picture = "Portrait_France_Benoit_Frachon.tga"
 				expire = "1965.1.1"
-				ideology = 	proletarianism
+				ideology = 	proletarianism_ideology
 				traits = {
 					headstrong
 					indomitable_perseverance
@@ -1849,7 +1848,7 @@ focus_tree = {
 		id = FRA_THE_FIRST_ELECTIONS
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_PRIORITIZE_COLLABORATION }
-		mutually_exclusive = { focus = FRA_USE_THE_SPLIT }
+		#mutually_exclusive = { focus = FRA_USE_THE_SPLIT }
 		x = 26
 		y = 9
 		cost = 6
@@ -1965,7 +1964,7 @@ focus_tree = {
 		id = FRA_USE_THE_SPLIT
 		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_THE_FRONT_DEMOCRATQUE_SPLITS }
-		mutually_exclusive = { focus = FRA_PRIORITIZE_COLLABORATION }
+		mutually_exclusive = { focus = FRA_PRIORITIZE_COLLABORATION   }
 		x = 30
 		y = 8
 		cost = 6
@@ -2772,6 +2771,7 @@ focus_tree = {
 		id = FRA_STRONGER_THAN_A_KING
 		icon = GFX_focus_FRA_eagle
 		prerequisite = { focus = FRA_NATIONALISTIC_SURGE }
+		mutually_exclusive = { focus = FRA_CAROLINGIAN_IDENTITY focus = FRA_EMPOWER_THE_KING }
 		x = 44
 		y = 4
 		cost = 6
@@ -3179,7 +3179,7 @@ focus_tree = {
 				desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 				picture = "Portrait_France_Maurice_Gamelin.dds"
 				expire = "1965.1.1"
-				ideology = theocratic
+				ideology = theocratic_ideology
 				traits = {
 
 				}

@@ -10,55 +10,6 @@ set_technology = {
 }
 set_country_flag = monroe_doctrine
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = construction_effort_2
-	complete_national_focus = production_effort_2
-	complete_national_focus = infrastructure_effort
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "PAR_1939"
-	set_technology = {
-		CAS1 = 1
-		
-		interwar_antiair = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	}
-}
-
 set_politics = {	
 	ruling_party = proletarianism
 	last_election = "1936.1.1"
@@ -93,34 +44,4 @@ create_country_leader = {
 	traits = {
 		#
 	}
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = absolutism
-		last_election = "1938.1.1"
-		election_frequency = 48
-		elections_allowed = no
-}
-
-    set_popularities = {
-        liberalism = 20
-        rexism = 0
-        proletarianism = 30
-        absolutism = 50
-    }
-
-
-	create_country_leader = {
-		name = "Higinio Morinigo"
-		desc = "POLITICS_HIGINIO_MORINIGO_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
-		expire = "1965.1.1"
-		ideology = absolutism_ideology
-		traits = {
-			#
-		}
-	}
-
-
 }

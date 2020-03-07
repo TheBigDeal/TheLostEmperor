@@ -67,7 +67,7 @@ create_country_leader = {
 	}
 }
 
-1939.1.1 = {
+
 	set_politics = {	
 		ruling_party = absolutism
 		last_election = "1936.1.1"

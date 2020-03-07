@@ -1,0 +1,197 @@
+﻿capital = 64
+OOB = "PRS_1935"
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+add_ideas = {
+	PRS_PRUSSIAN_MILITARISM
+	PRS_political_opposition
+	PRS_unmaintained_navy
+}
+set_stability = 0.98
+
+#1 = Prussia 2 = Austria
+set_variable = { var = PRS_SAXONY_SUPPORT value = 100 }
+set_variable = { var = PRS_HANNOVER_SUPPORT value = 100 }
+set_variable = { var = PRS_MECKELENBURG_SUPPORT value = 100 }
+set_variable = { var = PRS_BAVARIAN_SUPPORT value = -100 }
+set_variable = { var = PRS_BOHEMIAN_SUPPORT value = -100 }
+set_variable = { var = PRS_PALATINATE_SUPPORT value = -100 }
+set_variable = { var = PRS_HESSE_SUPPORT value = 100 }
+set_variable = { var = PRS_THURINGIA_SUPPORT value = 100 }
+
+SAX = { set_country_flag = supporting_prussia }
+HAN = { set_country_flag = supporting_prussia }
+MEK = { set_country_flag = supporting_prussia }
+BAY = { set_country_flag = supporting_austria }
+BOH = { set_country_flag = supporting_austria }
+PLT = { set_country_flag = supporting_austria }
+HES = { set_country_flag = supporting_austria }
+THU = { set_country_flag = supporting_prussia }
+
+set_politics = {
+	ruling_party = absolutism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    conservatism = 10
+    liberalism = 3
+    socialism = 1
+    labryscism = 26
+    rexism = 11
+    despotism = 2
+    royalism = 1
+    theocracy = 2
+    absolutism = 36
+    proletarianism = 1
+    collectivism = 4
+    mutualism = 3
+}
+
+set_convoys = 200
+give_guarantee = HRE
+#add_relation_modifier = { target = HRE modifier = part_of_hre }
+
+create_country_leader = {
+	name = "Heinrich von Hohenzollern"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Heinrich.tga"
+	expire = "1950.4.6"
+	ideology = absolutism_ideology
+	traits = {
+		Political_Dancer
+	}
+}
+
+create_country_leader = {
+	name = "Heinrich von Hohenzollern"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Heinrich.tga"
+	expire = "1950.4.6"
+	ideology = royalism_ideology
+	traits = {
+		Political_Dancer
+	}
+}
+
+create_country_leader = {
+	name = "Heinrich von Hohenzollern"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Heinrich.tga"
+	expire = "1950.4.6"
+	ideology = rexism_ideology
+	traits = {
+		Political_Dancer
+	}
+}
+
+create_country_leader = {
+	name = "Wilhelm II von Hehenzollern"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Prussia_Wilhelm_II.tga"
+	id = 2
+	expire = "1950.4.6"
+	ideology = rexism_ideology
+	traits = {
+		Political_Dancer
+		Warmonger
+	}
+}
+
+create_country_leader = {
+	name = "Karl Liebknecht"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Prussia_Karl_Liebknecht.tga"
+	expire = "1950.4.6"
+	ideology = collectivism_ideology
+	traits = {
+		Political_Dancer
+		Warmonger
+	}
+}
+
+create_country_leader = {
+	name = "Martin Bormann"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Germany_Martin_Bormann.dds"
+	expire = "1950.4.6"
+	ideology = labryscism_ideology
+	traits = {
+		Political_Dancer
+		Warmonger
+	}
+}
+
+create_country_leader = {
+	name = "Manfred von Richthofen"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "portrait_prs_ns_comittee.dds"
+	expire = "1950.4.6"
+	ideology = despotism_ideology
+	traits = {
+		prs_the_red_baron
+		prs_legendary_war_hero
+	}
+}
+
+create_field_marshal = {
+	name = "Paul Von Hindenburg"
+	portrait_path = "gfx/leaders/PRE/Portrait_Paul_Von_Hidenburg.tga"
+	traits = { offensive_doctrine }
+	id = 1
+	skill = 6
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Manfred von Richthofen"
+	portrait_path = "gfx/leaders/PRE/portrait_mandred_von_richthofen.dds"
+	traits = { offensive_doctrine }
+	id = 1
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 5
+	logistics_skill = 5
+}
+create_corps_commander = {
+	name = "Erwin von Witzleben"
+	portrait_path = "gfx/leaders/PRE/Portrait_Germany_Erwin_von_Witzleben.tga"
+	traits = { offensive_doctrine }
+	id = 1
+	skill = 4
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 5
+	logistics_skill = 5
+}
+create_corps_commander = {
+	name = "August von Mackensen"
+	portrait_path = "gfx/leaders/PRE/portrait_ger_august_von_mackensen.dds"
+	traits = { offensive_doctrine }
+	id = 1
+	skill = 6
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 6
+}
+create_corps_commander = {
+	name = "Paul von Lettow-Vorbeck"
+	picture = "portrait_ger_von_lettow_vorbeck.dds"
+	traits = { trait_cautious armor_officer }
+	skill = 5
+	id = 3
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}

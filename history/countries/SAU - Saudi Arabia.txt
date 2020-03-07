@@ -8,9 +8,7 @@ set_technology = {
 	gwtank = 1
 }
 
-add_ideas = {
-	tno_religious_rights_sunni
-}
+add_ideas = {}
 
 set_convoys = 5
 

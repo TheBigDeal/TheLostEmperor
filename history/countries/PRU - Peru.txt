@@ -52,7 +52,7 @@ create_country_leader = {
 	}
 }
 
-1939.1.1 = {
+
 	set_politics = {		
 		ruling_party = rexism
 		last_election = "1931.10.11"
