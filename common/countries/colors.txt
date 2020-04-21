@@ -1,4 +1,13 @@
 #reload countrycolors
+MET = {
+	color = rgb { 66 177 138 }
+	color_ui = rgb { 224 133 22 }
+}
+LOR = {
+	color = rgb { 151 164 168 }
+	color_ui = rgb { 151 164 168 }
+}
+
 AND = {
 	color = rgb { 255 113 22 }
 	color_ui = rgb { 224 133 22 }
@@ -273,8 +282,8 @@ NAV = {
 	color_ui = rgb { 252 233 58 }
 }
 VRP = {
-	color = rgb { 43 135 67 }
-	color_ui = rgb { 43 135 67 }
+	color = rgb { 8  82  165 }
+	color_ui = rgb { 8  82  165 }
 }
 
 
@@ -1124,7 +1133,7 @@ SOV = {
 	color_ui = rgb { 165 38 38 }
 }
 SWE = {
-	color = rgb { 36 132 247 }
+	color = rgb { 8  82  165 }
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {

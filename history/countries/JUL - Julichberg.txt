@@ -1,4 +1,4 @@
-﻿capital = 878
+﻿capital = 821
 
 ##OOB = "ANH_1928"
 

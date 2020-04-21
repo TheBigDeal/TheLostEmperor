@@ -1,4 +1,4 @@
-﻿capital = 7
+﻿capital = 963
 
 oob = "HOL_1936"
 
@@ -35,16 +35,25 @@ if = {
 
 
 set_politics = {	
-	ruling_party = absolutism
+	ruling_party = despotism
 	last_election = "1933.4.26"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
-    liberalism = 8
-    rexism = 4
-    absolutism = 88
+    conservatism = 0
+    liberalism = 0
+    socialism = 0
+    labryscism = 0
+    rexism = 0
+    despotism = 100
+    royalism = 0
+    theocracy = 0
+    absolutism = 0
+    proletarianism = 0
+    collectivism = 0
+    mutualism = 0
 }
 
 set_convoys = 500

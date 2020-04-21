@@ -1,0 +1,18 @@
+scripted_gui = {
+
+	hre_congress_decision_ui = {
+		context_type = player_category
+		window_name = "hre_main_container"
+
+		properties = {
+			senate_icon = {
+				frame = current_senate_icon_frame
+			}
+
+			house_icon = {
+				frame = current_house_icon_frame
+			}
+		}
+	}
+}
+

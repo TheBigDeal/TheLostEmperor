@@ -23,6 +23,7 @@ set_variable = { var = AUS_PALATINATE_SUPPORT value = 100 }
 set_variable = { var = AUS_HESSE_SUPPORT value = -100 }
 set_variable = { var = AUS_THURINGIA_SUPPORT value = -100 }
 add_ideas = {
+	HRE_emperor
 	aus_ethnic_tensions
 }
 set_politics = {	

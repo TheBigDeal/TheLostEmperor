@@ -1,7 +1,11 @@
 ################
 ##### USA ######
 ################
-
+hre_state_highlight_cat ={
+	visible = {
+		is_ai = no
+	}
+}
 HRE_elections_category = {
 	icon = idea_ger_revive_the_kaiserreich
 	available = {

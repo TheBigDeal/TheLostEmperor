@@ -348,7 +348,7 @@ country_event = { #THE GLORIOUS REVOLUTION
 			start_civil_war = {
 				ideology = labryscism
 				size = 1
-				only_own_territory = yes
+				
 				capital = 16
 				states = { 16 }
 			}
@@ -395,7 +395,7 @@ country_event = { #THE GLORIOUS REVOLUTION
 			start_civil_war = {
 				ideology = collectivism
 				size = 1
-				only_own_territory = yes
+				
 				capital = 886
 				states = { 886 26 24 30 23 27}
 			}

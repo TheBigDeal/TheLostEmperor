@@ -1,36 +1,36 @@
 ﻿add_namespace = great_power
 
 # Test Event 1
-country_event = {
-	id = great_power.1
-	
-	hidden = yes
+#country_event = {
+#	id = great_power.1
+#	
+#	hidden = yes
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		get_power_level = yes
+#	}
+#}
 
-	is_triggered_only = yes
-	
-	option = {
-		get_power_level = yes
-	}
-}
-
-country_event = {
-	id = great_power.2
-	hidden = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		every_country = {
-			all_country = {
-				limit = {
-					NOT = { original_tag = PREV }
-				}
-				if = {
-					limit = {
-						check_variable = { PREV.power_rating < power_rating }
-					}
-					PREV = { set_country_flag = great_power_one }
-				}
-			}
-		}
-	}
-}
+#country_event = {
+#	id = great_power.2
+#	hidden = yes
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		every_country = {
+#			all_country = {
+#				limit = {
+#					NOT = { original_tag = PREV }
+#				}
+#				if = {
+#					limit = {
+#						check_variable = { PREV.power_rating < power_rating }
+#					}
+#					PREV = { set_country_flag = great_power_one }
+#				}
+#			}
+#		}
+#	}
+#}

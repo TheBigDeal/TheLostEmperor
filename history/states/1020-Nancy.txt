@@ -1,0 +1,31 @@
+state={
+	id=1020
+	name="STATE_1020"
+	state_category = city
+	resources={
+		steel=10
+		food=20
+		wood=80
+	}
+
+	history={
+		owner = LOR
+		victory_points = {
+			11516 5 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = LOR
+		add_core_of = BUR
+	}
+	
+	
+	
+	provinces={
+		521 11516 
+	}
+	manpower = 517500
+	buildings_max_level_factor=1.000
+}

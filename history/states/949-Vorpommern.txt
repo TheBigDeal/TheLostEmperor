@@ -10,7 +10,7 @@ state={
 		add_core_of = VRP
 	}
 	provinces={
-		3340 9388
+		349 3340 6282 9388
 	}
 	manpower=367385
 	state_category=city

@@ -19,3 +19,23 @@ country_event = { #ADD ALL STATES TO HRE
 		}
  	}
 }
+country_event = { #ADD ALL STATES TO HRE
+	id = HRE_STATE.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event HRE_STATE.2"}
+ 	title = HRE_STATE.2.t
+ 	desc = HRE_STATE.2.desc
+ 	fire_only_once = no
+	is_triggered_only = yes
+ 	option = {
+ 		name = HRE_STATE.2.a
+		effect_tooltip = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 64
+					}
+				}
+			}
+		}
+ 	}
+}

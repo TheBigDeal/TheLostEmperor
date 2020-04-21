@@ -162,3 +162,80 @@ set_religions = {
 		}
 	}
 }
+HRE_recalc_congress_icon_frames = {
+	set_temp_variable = { house_temp = representatives_support }
+	divide_temp_variable = { house_temp = representatives_total }
+	multiply_temp_variable = { house_temp = 21 }
+	if = {
+		limit = { check_variable = { house_temp > 0 } }
+		clamp_temp_variable = {
+			var = house_temp
+			min = 1
+			max = 21
+		}
+	}
+	else = {
+		set_temp_variable = { house_temp = 1 }		
+	}
+	set_variable = { current_house_icon_frame = house_temp }
+}
+HRE_load_emperor_array = {
+	clear_array = global.emperor_array
+	add_to_array = { global.emperor_array = AUS }
+}
+HRE_load_elector_array = {
+	clear_array = global.elector_array
+	add_to_array = { global.elector_array = BOH }
+	add_to_array = { global.elector_array = MAI }
+	add_to_array = { global.elector_array = HES }
+	add_to_array = { global.elector_array = CLG }
+	add_to_array = { global.elector_array = BAY }
+	add_to_array = { global.elector_array = SAX }
+	add_to_array = { global.elector_array = PRE }
+	add_to_array = { global.elector_array = HAN }
+}
+HRE_load_city_array = {
+	clear_array = global.city_array
+	add_to_array = { global.city_array = HAM.id }
+	add_to_array = { global.city_array = LUB.id }
+	add_to_array = { global.city_array = ULM.id }
+	add_to_array = { global.city_array = NUR.id }
+	add_to_array = { global.city_array = FRN.id }
+	add_to_array = { global.city_array = HRE.id }
+	add_to_array = { global.city_array = BRE.id }
+	add_to_array = { global.city_array = HUL.id }
+	add_to_array = { global.city_array = MEM.id }
+	add_to_array = { global.city_array = LND.id }
+}
+HRE_load_country_array = {
+	clear_array = global.hre_array
+	add_to_array = { global.hre_array = VRP.id }
+	add_to_array = { global.hre_array = MEK.id }
+	add_to_array = { global.hre_array = MCH.id }
+	add_to_array = { global.hre_array = SHL.id }
+	add_to_array = { global.hre_array = OLD.id }
+	add_to_array = { global.hre_array = MUN.id }
+	add_to_array = { global.hre_array = RAV.id }
+	add_to_array = { global.hre_array = PAD.id }
+	add_to_array = { global.hre_array = BRU.id }
+	add_to_array = { global.hre_array = ANH.id }
+	add_to_array = { global.hre_array = KLE.id }
+	add_to_array = { global.hre_array = JUL.id }
+	add_to_array = { global.hre_array = NAS.id }
+	add_to_array = { global.hre_array = PYR.id }
+	add_to_array = { global.hre_array = THU.id }
+	add_to_array = { global.hre_array = FUL.id }
+	add_to_array = { global.hre_array = BAM.id }
+	add_to_array = { global.hre_array = WRZ.id }
+	add_to_array = { global.hre_array = TRI.id }
+	add_to_array = { global.hre_array = NSA.id }
+	add_to_array = { global.hre_array = MET.id }
+	add_to_array = { global.hre_array = LUX.id }
+	add_to_array = { global.hre_array = LOR.id }
+	add_to_array = { global.hre_array = ALS.id }
+	add_to_array = { global.hre_array = BAD.id }
+	add_to_array = { global.hre_array = FUS.id }
+	add_to_array = { global.hre_array = WUR.id }
+	add_to_array = { global.hre_array = HNZ.id }
+	add_to_array = { global.hre_array = AUG.id }
+}

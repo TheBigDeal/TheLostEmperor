@@ -82,7 +82,7 @@ scripted_gui = {
 			} 
 		}
 		properties = {
-			flag = { image = "[?global.score_tag_array^i.GetFlag]" }
+			image = "[This.GetFlag]"
 		}
 		effects = {
 			closebutton_click = {

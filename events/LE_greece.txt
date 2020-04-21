@@ -140,7 +140,7 @@ country_event = { #PRINCE CONSTANTINES MAKES A MOVE
 			ruling_party = absolutism
 			ideology = royalism
 			size = 0.4
-			only_own_territory = no
+			
 			capital = 185
 			states = { 
 				185 825 826 731 955

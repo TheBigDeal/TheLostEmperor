@@ -1,4 +1,8 @@
 ﻿l_english:
+ HRE_congress_house_support_header:0 "§HImperial Diet§!"
+ HRE_congress_house_support_amount:0 "§G[?root.representatives_support]§! / §Y[?global.representatives_total]§!"
+ hre_emperor_tt:0 "§Y6 Seats in the Imperial Diet§!§YGain 6 Imperial Influence per Month§!\n§YUnlock Imperial Authority§!"
+ tooltip_get_name:0 "[Root.GetName]"
  #MISC
  #######################################
  top_level:0 "Head of Government"

@@ -6,6 +6,7 @@ set_technology = {
 	tech_recon = 1
 }
 add_ideas = {
+	HRE_elector
 	PRS_PRUSSIAN_MILITARISM
 	PRS_political_opposition
 	PRS_unmaintained_navy

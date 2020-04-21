@@ -3,11 +3,11 @@ state={
 	id=28
 	name="STATE_28"
 	resources={
-		steel=236.000
+		steel=20
 	}
 
 	history={
-		owner = BUR
+		owner = LOR
 		victory_points = {
 			678 5 
 		}
@@ -20,45 +20,18 @@ state={
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 3
-			549 = {
-				bunker = 10
-
-			}
-			678 = {
-				bunker = 10
-
-			}
-			3629 = {
-				bunker = 10
-
-			}
-			6529 = {
-				bunker = 10
-
-			}
-			9503 = {
-				bunker = 10
-
-			}
-			9559 = {
-				bunker = 10
-
-			}
-			11502 = {
-				bunker = 10
-
-			}
 			anti_air_building = 5
 			air_base = 5
 
 		}
 		add_core_of = BUR
 		add_core_of = FRA
+		add_core_of = LOR
 
 	}
 
 	provinces={
-		3629 11502 
+		3629 
 	}
 	manpower=1915600
 	buildings_max_level_factor=1.000

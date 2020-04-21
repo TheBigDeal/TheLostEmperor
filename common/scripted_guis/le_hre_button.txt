@@ -1,0 +1,79 @@
+scripted_gui = {
+	holy_roman_empire_button = {
+		context_type = player_context
+		window_name = "hre_container"
+		visible = {
+            always = yes
+		}
+		effects = {
+			hre_bg_click = {
+				if = {
+					limit = { check_variable = { open_hre_container = 1 } }
+					set_variable = { open_hre_container = 0 }
+				}
+				else = {
+					set_variable = { open_hre_container = 1 }
+					HRE_recalc_congress_icon_frames = yes
+					HRE_load_elector_array = yes
+					HRE_load_country_array = yes
+					HRE_load_emperor_array = yes
+					HRE_load_city_array = yes
+				}
+			}
+		}
+	}
+	hre_main_container = {
+		context_type = player_context
+		
+		window_name = "hre_main_container"
+		
+		visible = {
+			check_variable = { open_hre_container = 1 }
+		}
+		properties = {
+			house_icon = {frame = current_house_icon_frame}
+		}
+		effects = {
+			hre_close_button_click = {
+				set_variable = { open_hre_container = 0 }
+			}
+		}
+	}
+	hre_elector_list = {
+		context_type = player_context
+		
+		window_name = "hre_main_container"
+		
+		visible = {check_variable = { open_hre_container = 1 }}
+		dynamic_lists = {
+			hre_show_grid_emp = {
+				array = global.emperor_array
+				entry_container = hre_emperor_entry
+			}
+			hre_show_grid = {
+				array = global.elector_array
+				entry_container = hre_elector_entry
+			}
+			hre_show_grid_member = {
+				array = global.hre_array
+				entry_container = hre_member_entry
+			}	
+			hre_show_grid_city = {
+				array = global.city_array
+				entry_container = hre_city_entry
+			}	
+		}
+		properties = {
+			flag = { image = "[?global.elector_array^i.GetFlag]" }
+			flag_m = { image = "[?global.hre_array^i.GetFlag]" }
+			flag_e = { image = "[?global.emperor_array^i.GetFlag]" }
+			flag_c = { image = "[?global.city_array^i.GetFlag]" }
+		}
+		effects = {
+			hre_close_button_click = {
+				set_variable = { open_hre_container = 0 }
+			}
+		}
+	}
+}
+

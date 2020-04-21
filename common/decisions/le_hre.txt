@@ -1,0 +1,748 @@
+hre_state_highlight_cat = {
+	hre_state_highlight_64 = { #leave HRE
+		icon = hol_draw_up_staff_plans
+		available = { 
+			owns_state = 64 
+			has_political_power > 500
+		}
+		highlight_state_targets = { state = 64 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_68 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 68 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_62 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 62 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_796 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 796 }
+		highlight_color_before_active = 1
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_879 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 879 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_66 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 66 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_67 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 67 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_762 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 762 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_872 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 872 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_811 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 811 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_65 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 65 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_1019 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 1019 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_60 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 60 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_69 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 69 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_9 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 9 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_75 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 75 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_74 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 74 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_984 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 984 }
+		highlight_color_before_active = 3
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_152 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 152 }
+		highlight_color_before_active = 3
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_4 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 4 }
+		highlight_color_before_active = 3
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_102 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 102 }
+		highlight_color_before_active = 3
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_736 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 736 }
+		highlight_color_before_active = 3
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_794 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 794 }
+		highlight_color_before_active = 3
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_153 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 153 }
+		highlight_color_before_active = 3
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_39 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 39 }
+		highlight_color_before_active = 3
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_52 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 52 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_53 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 53 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_793 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 793 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_61 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 61 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_61 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 61 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_786 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 786 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_949 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 949 }
+		highlight_color_before_active = 2
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_59 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 59 }
+		highlight_color_before_active = 2
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_770 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 770 }
+		highlight_color_before_active = 2
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_882 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 882 }
+		highlight_color_before_active = 1
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_58 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 58 }
+		highlight_color_before_active = 2
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_940 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 940 }
+		highlight_color_before_active = 1
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_800 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 800 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_871 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 871 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_795 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 795 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_765 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 765 }
+		highlight_color_before_active = 1
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_799 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 799 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_885 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 885 }
+		highlight_color_before_active = 1
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_870 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 870 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_766 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 766 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_883 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 883 }
+		highlight_color_before_active = 1
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_797 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 797 }
+		highlight_color_before_active = 1
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_798 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 798 }
+		highlight_color_before_active = 1
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_804 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 804 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_805 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 805 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	
+	hre_state_highlight_801 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 801 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_802 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 802 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_50 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 50 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_803 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 803 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_796 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 796 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_54 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 54 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_884 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 884 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_768 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 768 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	
+	
+	
+	
+	
+	
+	hre_state_highlight_818 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 818 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_813 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 813 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_55 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 55 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_819 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 819 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_824 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 824 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_767 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 767 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_771 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 771 }
+		highlight_color_before_active = 1
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_769 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 769 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_56 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 56 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_57 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 57 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_812 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 812 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_814 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 814 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_815 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 815 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_878 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 878 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_821 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 821 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_876 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 876 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_877 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 877 }
+		highlight_color_before_active = 1
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_51 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 51 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_822 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 822 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_997 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 997 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_42 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 42 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_823 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 823 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_997 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 997 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_881 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 881 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_978 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 978 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_8 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 8 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_28 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 28 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_775 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 775 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_961 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 961 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_977 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 977 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_772 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 772 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_1020 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 1020 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_63 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 63 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+	hre_state_highlight_820 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 820 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
+}

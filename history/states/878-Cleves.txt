@@ -1,10 +1,10 @@
 
 state={
 	id=878
-	name="STATE_759"
+	name="STATE_878"
 
 	history={
-		owner = JUL
+		owner = CLG
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
@@ -16,7 +16,7 @@ state={
 		victory_points = {
 			6570 2 
 		}
-		add_core_of = JUL
+		add_core_of = CLG
 
 	}
 

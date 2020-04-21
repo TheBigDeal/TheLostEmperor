@@ -141,7 +141,7 @@ country_event = { #British Embargo of Austria
 	is_triggered_only = yes
 	option = { #Damn Them!
 		name = le_prussia.10.a
-		add_timed_idea =  = { idea = aus_british_embargo days = 365 }
+		add_timed_idea = { idea = aus_british_embargo days = 365 }
 	}
 }
 country_event = { #The Hannover Problems
@@ -210,7 +210,7 @@ country_event = { #Hannover breaks into chaos.
 				ruling_party = royalism
 				ideology = absolutism
 				size = 0.5
-				only_own_territory = no
+				
 				capital = 770
 				states = { 770 }
 				keep_unit_leaders = {}
@@ -359,24 +359,24 @@ country_event = { #Prussia Berlin Conference
 				has_global_flag = GBR_GAVE_HANNOVER
 			}
 			GBR = { country_event = { id = le_prussia.8 }} #Support The Prussians
-		}
-		if = {
-			limit = {
-				has_completed_focus = PRS_NATIONALIST_MOVEMENT
+			else_if = {
+				limit = {
+					has_completed_focus = PRS_NATIONALIST_MOVEMENT
+				}
+				random_list = {
+					60 = { BOH = { country_event = { id = le_prussia.8 }}} #Nationalist Coup
+					40 = {}
+				}
 			}
-			random_list = {
-				60 = { BOH = { country_event = { id = le_prussia.8 }}} #Nationalist Coup
-				40 = {}
+			else_if = {
+				limit = {
+					has_completed_focus = PRS_LOVE_LIVE_KING_WILHELM
+				}
+				country_event = { id = le_prussia.45 } #Load Extra Units
 			}
-		}
-		if = {
-			limit = {
-				has_completed_focus = PRS_LOVE_LIVE_KING_WILHELM
+			else = {
+				country_event = { id = le_prussia.46 } #Load Normal Units
 			}
-			country_event = { id = le_prussia.45 }} #Load Extra Units
-		}
-		else = {
-			country_event = { id = le_prussia.46 }} #Load Normal Units
 		}
 	}
 }
@@ -1037,12 +1037,12 @@ country_event = { #The Germans are getting too Strong!
 			}
 			transfer_state = 767
 		}
-		ai_chance = { factor 100 }
+		ai_chance = { factor = 100 }
 		FRA = { annex_country = { target = ROOT transfer_troops = yes } }
 	}
 	option = { #Stay Independent
 		name = le_prussia.55.a
-		ai_chance = { factor 0 }
+		ai_chance = { factor = 0 }
 		FRA = { annex_country = { target = ROOT transfer_troops = yes } }
 	}
 }

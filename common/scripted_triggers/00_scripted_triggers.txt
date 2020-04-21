@@ -77,7 +77,6 @@ check_has_focus_tree_to_switch_to_labryscism = {
 		AND = {
 			tag = SAF
 			has_dlc = "Together for Victory"
-			has_completed_focus = SAF_south_africa_first
 		}
 	}
 	NOT = {
@@ -107,7 +106,6 @@ check_has_focus_tree_to_switch_to_labryscism = {
 	NOT = {
 		AND = {
 			original_tag = SPR
-			has_completed_focus = SPA_the_phalanx_ascendant
 			has_dlc = "La Resistance"
 		}
 	}
@@ -241,7 +239,6 @@ check_has_focus_tree_to_switch_to_collectivism = {
 	NOT = {
 		AND = {
 			original_tag = SPR
-			has_completed_focus = SPR_the_popular_front
 			has_dlc = "La Resistance"
 		}
 	}

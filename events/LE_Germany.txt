@@ -37,7 +37,7 @@ country_event = { #What Side Do We Support?
 		    ruling_party = collectivism
 		    ideology = absolutism
 		    size = 0.45
-		    only_own_territory = yes
+		    
 		    capital = 52
 		    states = { 
 		        64 61 786 59 58 882 940 65 68 879 66 67 62 872 63 85 953 5 950 188 770 771 769 816 57 812 815 871 55 818 811 762 60 813 56 819 949 820 822 51 878 814 876 821 877

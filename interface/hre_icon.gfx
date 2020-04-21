@@ -8,6 +8,10 @@ spriteTypes = {
 		textureFile = "gfx//interface/hre_not_icon.dds"
 	}
 	SpriteType = {
+		name = "GFX_testHREheader"
+		textureFile = "gfx//interface/testHREheader.dds"
+	}
+	SpriteType = {
 		name = "GFX_hre_in_icon"
 		textureFile = "gfx//interface/hre_in_icon.dds"
 	}
@@ -19,5 +23,21 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_claim_state_button"
 		textureFile = "gfx//interface/claim_state_button.dds"
+	}
+	SpriteType = {
+		name = "GFX_imperialeagle"
+		textureFile = "gfx//interface/imperialeagle.tga"
+	}
+	maskedShieldType = {
+		name = "GFX_hre_shield_medium"
+		textureFile1 = "gfx/interface/hre_shield_medium_overlay.dds"
+		textureFile2 = "gfx/interface/hre_shield_medium_mask.tga"
+		effectFile = "gfx/FX/maskedflag.lua"
+	}
+	maskedShieldType = {
+		name = "GFX_hre_shield"
+		textureFile1 = "gfx/interface/hre_shield_frame.dds"
+		textureFile2 = "gfx/interface/hre_shield_mask.tga"
+		effectFile = "gfx/FX/maskedflag.lua"
 	}
 }

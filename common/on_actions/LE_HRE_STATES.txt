@@ -1,6 +1,33 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			#HRE DIET
+			set_variable = { var = representatives_total value = 73 }
+			set_variable = { var = representatives_support value = 2 }
+			every_country = {
+				limit = {
+					has_idea = HRE_emperor
+				}
+				set_variable = { var = representatives_support value = 6 }
+			}
+			every_country = {
+				limit = {
+					has_idea = HRE_elector
+				}
+				set_variable = { var = representatives_support value = 3 }
+			}
+			every_country = {
+				limit = {
+					has_idea = HRE_free_city
+				}
+				set_variable = { var = representatives_support value = 1 }
+			}
+			every_country = {
+				limit = {
+					has_idea = HRE_Member
+				}
+				set_variable = { var = representatives_support value = 1 }
+			}
 			every_country = {
 				limit = {
 					OR = {
@@ -52,13 +79,10 @@ on_actions = {
 						original_tag = PLT
 						original_tag = ALS
 						original_tag = FRN
-						original_tag = FLA
-						original_tag = WLN
 					}
 				}
 				country_event = { id = HRE_STATE.1 }
 			}
-			
 		}
 	}
 }

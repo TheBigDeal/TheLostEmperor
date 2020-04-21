@@ -3,11 +3,13 @@ state={
 	id=775
 	name="STATE_775"
 	resources={
-		steel=48.000
+		steel=28.000
+		wood = 40
+		food = 10
 	}
 
 	history={
-		owner = BUR
+		owner = MET
 		victory_points = {
 			9642 5 
 		}
@@ -15,18 +17,19 @@ state={
 			11516 5 
 		}
 		buildings = {
-			infrastructure = 7
+			infrastructure = 4
 			industrial_complex = 1
 			air_base = 5
 
 		}
 		add_core_of = FRA
+		add_core_of = MET
 		add_core_of = BUR
 
 	}
 
 	provinces={
-		9559 
+		9559 11502 
 	}
 	manpower=532314
 	buildings_max_level_factor=1.000

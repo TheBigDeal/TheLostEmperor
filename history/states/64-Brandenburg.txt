@@ -19,7 +19,6 @@ state={
 			farm = 4
 		}
 		add_core_of = PRE
-		set_demilitarized_zone = yes
 	}
 	provinces={
 		375 3367 3499 3522 6487 6521 9238 9375 9428 9456 9560 11219 11359 11444 11468 11505 
