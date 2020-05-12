@@ -22,6 +22,25 @@ scripted_gui = {
 			#}
 		}
 	}
+	score_system = {
+		context_type = player_context
+		window_name = "score_container"
+		parent_window_name = "topbar"
+		visible = {
+            always = yes
+		}
+		effects = {
+			prestige_bg_click = {
+				add_to_variable = { prestige_score = 1 }
+			}
+			industrial_bg_click = {
+				get_industrial_score = yes
+			}
+			military_bg_click = {
+				get_military_score = yes
+			}
+		}
+	}
 	show_military_info = {
 		context_type = player_context
 		

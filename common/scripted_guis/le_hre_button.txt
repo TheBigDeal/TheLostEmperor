@@ -22,23 +22,6 @@ scripted_gui = {
 			}
 		}
 	}
-	hre_main_container = {
-		context_type = player_context
-		
-		window_name = "hre_main_container"
-		
-		visible = {
-			check_variable = { open_hre_container = 1 }
-		}
-		properties = {
-			house_icon = {frame = current_house_icon_frame}
-		}
-		effects = {
-			hre_close_button_click = {
-				set_variable = { open_hre_container = 0 }
-			}
-		}
-	}
 	hre_elector_list = {
 		context_type = player_context
 		
@@ -68,6 +51,7 @@ scripted_gui = {
 			flag_m = { image = "[?global.hre_array^i.GetFlag]" }
 			flag_e = { image = "[?global.emperor_array^i.GetFlag]" }
 			flag_c = { image = "[?global.city_array^i.GetFlag]" }
+			diet_icon = {frame = current_house_icon_frame}
 		}
 		effects = {
 			hre_close_button_click = {

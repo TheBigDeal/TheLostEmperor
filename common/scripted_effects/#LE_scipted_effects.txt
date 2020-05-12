@@ -163,15 +163,15 @@ set_religions = {
 	}
 }
 HRE_recalc_congress_icon_frames = {
-	set_temp_variable = { house_temp = representatives_support }
-	divide_temp_variable = { house_temp = representatives_total }
-	multiply_temp_variable = { house_temp = 21 }
+	set_temp_variable = { house_temp = global.representatives_support }
+	divide_temp_variable = { house_temp = global.representatives_total }
+	multiply_temp_variable = { house_temp = 80 }
 	if = {
 		limit = { check_variable = { house_temp > 0 } }
 		clamp_temp_variable = {
 			var = house_temp
 			min = 1
-			max = 21
+			max = 80
 		}
 	}
 	else = {
@@ -185,57 +185,122 @@ HRE_load_emperor_array = {
 }
 HRE_load_elector_array = {
 	clear_array = global.elector_array
-	add_to_array = { global.elector_array = BOH }
-	add_to_array = { global.elector_array = MAI }
-	add_to_array = { global.elector_array = HES }
-	add_to_array = { global.elector_array = CLG }
-	add_to_array = { global.elector_array = BAY }
-	add_to_array = { global.elector_array = SAX }
-	add_to_array = { global.elector_array = PRE }
-	add_to_array = { global.elector_array = HAN }
+	set_variable = { HRE_num_electors = 0 }
+	every_country = {
+		limit = {
+			has_idea = HRE_elector
+		}
+		add_to_array = { global.elector_array = this.id } 
+	}
+	for_each_loop = {
+		array = global.elector_array
+		add_to_variable = { HRE_num_electors = 1 }
+	}
 }
 HRE_load_city_array = {
 	clear_array = global.city_array
-	add_to_array = { global.city_array = HAM.id }
-	add_to_array = { global.city_array = LUB.id }
-	add_to_array = { global.city_array = ULM.id }
-	add_to_array = { global.city_array = NUR.id }
-	add_to_array = { global.city_array = FRN.id }
-	add_to_array = { global.city_array = HRE.id }
-	add_to_array = { global.city_array = BRE.id }
-	add_to_array = { global.city_array = HUL.id }
-	add_to_array = { global.city_array = MEM.id }
-	add_to_array = { global.city_array = LND.id }
+	set_variable = { HRE_num_cities = 0 }
+	every_country = {
+		limit = {
+			has_idea = HRE_city
+		}
+		add_to_array = { global.city_array = this.id } 
+	}
+	for_each_loop = {
+		array = global.city_array
+		add_to_variable = { HRE_num_cities = 1 }
+	}
 }
 HRE_load_country_array = {
 	clear_array = global.hre_array
-	add_to_array = { global.hre_array = VRP.id }
-	add_to_array = { global.hre_array = MEK.id }
-	add_to_array = { global.hre_array = MCH.id }
-	add_to_array = { global.hre_array = SHL.id }
-	add_to_array = { global.hre_array = OLD.id }
-	add_to_array = { global.hre_array = MUN.id }
-	add_to_array = { global.hre_array = RAV.id }
-	add_to_array = { global.hre_array = PAD.id }
-	add_to_array = { global.hre_array = BRU.id }
-	add_to_array = { global.hre_array = ANH.id }
-	add_to_array = { global.hre_array = KLE.id }
-	add_to_array = { global.hre_array = JUL.id }
-	add_to_array = { global.hre_array = NAS.id }
-	add_to_array = { global.hre_array = PYR.id }
-	add_to_array = { global.hre_array = THU.id }
-	add_to_array = { global.hre_array = FUL.id }
-	add_to_array = { global.hre_array = BAM.id }
-	add_to_array = { global.hre_array = WRZ.id }
-	add_to_array = { global.hre_array = TRI.id }
-	add_to_array = { global.hre_array = NSA.id }
-	add_to_array = { global.hre_array = MET.id }
-	add_to_array = { global.hre_array = LUX.id }
-	add_to_array = { global.hre_array = LOR.id }
-	add_to_array = { global.hre_array = ALS.id }
-	add_to_array = { global.hre_array = BAD.id }
-	add_to_array = { global.hre_array = FUS.id }
-	add_to_array = { global.hre_array = WUR.id }
-	add_to_array = { global.hre_array = HNZ.id }
-	add_to_array = { global.hre_array = AUG.id }
+	set_variable = { HRE_num_members = 0 }
+	every_country = {
+		limit = {
+			has_idea = HRE_member
+		}
+		add_to_array = { global.hre_array = this.id } 
+	}
+	for_each_loop = {
+		array = global.hre_array
+		add_to_variable = { HRE_num_members = 1 }
+	}
 }
+get_industrial_score = {
+	set_variable = { industrial_score = 0 }
+	set_variable = { temp_pop = max_manpower_k }
+	divide_variable = {
+		var = temp_pop
+		value = 5000
+	}
+	add_to_variable = {
+		var = industrial_score
+		value = temp_pop
+	}
+	add_to_variable = {
+		var = industrial_score
+		value = num_of_factories
+	}
+}
+get_military_score = {
+	set_variable = { military_score = 0 }
+	set_variable = { temp_bat = num_battalions }
+	divide_variable = {
+		var = temp_bat
+		value = 15
+	}
+	add_to_variable = {
+		var = military_score
+		value = temp_bat
+	}
+}
+get_total_score = {
+	set_variable = { total_score = 0 }
+	add_to_variable = {
+		var = total_score
+		value = prestige_score
+	}
+	add_to_variable = {
+		var = total_score
+		value = military_score
+	}
+	add_to_variable = {
+		var = total_score
+		value = industrial_score
+	}
+}
+load_great_powers_array = {
+	clear_array = global.powers_array
+	set_variable = { num_countries = 0 }
+	every_country = {
+		add_to_array = { global.powers_array = this.total_score } 
+	}
+	for_each_loop = {
+		array = global.powers_array
+		add_to_variable = { num_countries = 1 }
+	}
+}
+get_population_number = {
+	set_variable = { country_population = max_manpower_k }
+	if = {
+		limit = {
+			check_variable = {
+				var = country_population
+				value = 1000
+				compare = greater_than_or_equals
+			}
+		}
+		set_variable = { is_over_million_pop = 1 }
+		divide_variable = {
+			var = country_population
+			value = 1000
+		}
+	}
+}
+
+
+
+
+
+
+
+

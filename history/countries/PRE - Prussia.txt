@@ -7,9 +7,9 @@ set_technology = {
 }
 add_ideas = {
 	HRE_elector
-	PRS_PRUSSIAN_MILITARISM
-	PRS_political_opposition
-	PRS_unmaintained_navy
+	PRE_PRUSSIAN_MILITARISM
+	PRE_political_opposition
+	PRE_unmaintained_navy
 }
 set_stability = 0.98
 

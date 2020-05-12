@@ -6,7 +6,6 @@ on_actions = {
 			HRE_load_country_array = yes
 			HRE_load_city_array = yes
 			every_country = {limit = {is_ai = no}set_variable = { show_opening_screen = 1 }}
-			#get_power_ratings = yes
 			set_variable = { var = open_economic_window value = 0 }
 			set_variable = { var = GLOBAL_COMMUNIST_INFLUENCE value = 0 }
 			set_variable = { var = GLOBAL_FASCIST_INFLUENCE value = 0 }
@@ -15,61 +14,22 @@ on_actions = {
 			#64 = { set_state_flag = GERMAN_CONFEDERATION }
 			# num_battalions max_manpower_k
 			every_country = {
-				set_variable = { power_rating }
-				set_variable = { temp_bat = num_battalions }
-				set_variable = { temp_pop = max_manpower_k }
-				divide_variable = {
-					var = temp_pop
-					value = 1000
-				}
-				divide_variable = {
-					var = temp_bat
-					value = 20
-				}
-				add_to_variable = {
-					var = power_rating
-					value = num_of_factories
-				}
-				add_to_variable = {
-					var = power_rating
-					value = temp_bat
-				}
-				add_to_variable = {
-					var = power_rating
-					value = temp_pop
-				}
+				set_variable = { prestige_score = 0 }
+				get_industrial_score = yes
+				get_military_score = yes
+				get_total_score = yes
+				load_great_powers_array = yes
+				get_population_number = yes
 			}
 		}
 	}
 	on_daily = {
 		effect = {
 			every_country = {
-				clear_variable = power_rating
-				clear_variable = temp_bat
-				clear_variable = temp_pop
-				set_variable = { power_rating }
-				set_variable = { temp_bat = num_battalions }
-				set_variable = { temp_pop = max_manpower_k }
-				divide_variable = {
-					var = temp_pop
-					value = 1000
-				}
-				divide_variable = {
-					var = temp_bat
-					value = 20
-				}
-				add_to_variable = {
-					var = power_rating
-					value = num_of_factories
-				}
-				add_to_variable = {
-					var = power_rating
-					value = temp_bat
-				}
-				add_to_variable = {
-					var = power_rating
-					value = temp_pop
-				}
+				get_industrial_score = yes
+				get_military_score = yes
+				get_total_score = yes
+				#load_great_powers_array = yes
 			}
 		}
 	}

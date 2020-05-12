@@ -841,7 +841,7 @@ guiTypes = {
 			}	
 			containerWindowType = {
 				name = "tiled_exp_research_bg"
-				position = { x=1955 y=970 }
+				position = { x=2915 y=970 }
 				size = { width = 500 height = 240 }
 				clipping = no
 				background = {
@@ -863,7 +863,7 @@ guiTypes = {
 				iconType = {
 					name = "infomation_antiair"
 					spriteType = "GFX_information"
-					position = { x=366 y=522 }
+					position = { x=1330%% y=522 }
 					allwaystransparent = no
 					pdx_tooltip = "infomation_antiair_TOOLTIP"
 					pdx_tooltip_delayed = "infomation_antiair_TOOLTIP_delayed"
@@ -871,7 +871,7 @@ guiTypes = {
 				iconType = {
 					name = "infomation_SPG"
 					spriteType = "GFX_information"
-					position = { x=552 y=698 }
+					position = { x=1515%% y=698 }
 					allwaystransparent = no
 					pdx_tooltip = "infomation_SPG_TOOLTIP"
 					pdx_tooltip_delayed = "infomation_SPG_TOOLTIP_delayed"
@@ -879,7 +879,7 @@ guiTypes = {
 				iconType = {
 					name = "infomation_light_tank"
 					spriteType = "GFX_information"
-					position = { x=986 y=377 }
+					position = { x=1945%% y=377 }
 					allwaystransparent = no
 					pdx_tooltip = "infomation_light_TOOLTIP"
 					pdx_tooltip_delayed = "infomation_light_TOOLTIP_delayed"
@@ -887,7 +887,7 @@ guiTypes = {
 				iconType = {
 					name = "infomation_early_tank"
 					spriteType = "GFX_information"
-					position = { x=1398 y=142 }
+					position = { x=2360%% y=142 }
 					allwaystransparent = no
 					pdx_tooltip = "infomation_early_TOOLTIP"
 					pdx_tooltip_delayed = "infomation_early_TOOLTIP_delayed"
@@ -895,7 +895,7 @@ guiTypes = {
 				iconType = {
 					name = "infomation_medium_tank"
 					spriteType = "GFX_information"
-					position = { x=1652 y=377 }
+					position = { x=2618%% y=377 }
 					allwaystransparent = no
 					pdx_tooltip = "infomation_medium_TOOLTIP"
 					pdx_tooltip_delayed = "infomation_medium_TOOLTIP_delayed"
@@ -903,7 +903,7 @@ guiTypes = {
 				iconType = {
 					name = "infomation_heavy_tank"
 					spriteType = "GFX_information"
-					position = { x=1914 y=377 }
+					position = { x=2874%% y=377 }
 					allwaystransparent = no
 					pdx_tooltip = "infomation_heavy_TOOLTIP"
 					pdx_tooltip_delayed = "infomation_heavy_TOOLTIP_delayed"
@@ -911,7 +911,7 @@ guiTypes = {
 				iconType = {
 					name = "infomation_super_heavy_tank"
 					spriteType = "GFX_information"
-					position = { x=2286 y=494 }
+					position = { x=3246%% y=494 }
 					allwaystransparent = no
 					pdx_tooltip = "infomation_super_heavy_TOOLTIP"
 					pdx_tooltip_delayed = "infomation_super_heavy_TOOLTIP_delayed"
@@ -919,7 +919,7 @@ guiTypes = {
 				iconType = {
 					name = "infomation_landcruiser"
 					spriteType = "GFX_information"
-					position = { x=2418 y=978 }
+					position = { x=3378%% y=978 }
 					allwaystransparent = no
 					pdx_tooltip = "infomation_landcruiser_TOOLTIP"
 					pdx_tooltip_delayed = "infomation_landcruiser_TOOLTIP_delayed"

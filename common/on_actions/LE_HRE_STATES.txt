@@ -2,31 +2,31 @@ on_actions = {
 	on_startup = {
 		effect = {
 			#HRE DIET
-			set_variable = { var = representatives_total value = 73 }
-			set_variable = { var = representatives_support value = 2 }
+			set_variable = { var = representatives_total value = 79 }
+			set_variable = { var = representatives_support value = 50 }
 			every_country = {
 				limit = {
 					has_idea = HRE_emperor
 				}
-				set_variable = { var = representatives_support value = 6 }
+				set_variable = { var = num_imperial_seats value = 6 }
 			}
 			every_country = {
 				limit = {
 					has_idea = HRE_elector
 				}
-				set_variable = { var = representatives_support value = 3 }
+				set_variable = { var = num_imperial_seats value = 3 }
 			}
 			every_country = {
 				limit = {
 					has_idea = HRE_free_city
 				}
-				set_variable = { var = representatives_support value = 1 }
+				set_variable = { var = num_imperial_seats value = 1 }
 			}
 			every_country = {
 				limit = {
 					has_idea = HRE_Member
 				}
-				set_variable = { var = representatives_support value = 1 }
+				set_variable = { var = num_imperial_seats value = 1 }
 			}
 			every_country = {
 				limit = {

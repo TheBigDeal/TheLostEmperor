@@ -7,7 +7,9 @@ set_technology = {
 	tech_support = 1
 	tech_recon = 1
 }
-
+add_ideas = {
+	HRE_elector
+}
 set_politics = {	
 	ruling_party = absolutism
 	last_election = "1933.3.5"

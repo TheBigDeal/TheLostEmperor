@@ -1,78 +1,28 @@
 scripted_gui = {
 	economic_window_sg = {
 		context_type = player_context
-		parent_window_token = politics_tab
 		window_name = "countryeconomicview"
-		#parent_window_name = "countrypoliticsview"
+		properties = {
+			balances_button = {frame = selected_economy_tab}
+			purchases_button = {frame = selected_economy_tab2}
+		}
 		visible = {
 			check_variable = {
 				open_economic_window = 1
 			}
 		}
-	}
-	pol_econ_tab = {
-		context_type = player_context
-		window_name = "open_economic_tab"
-		parent_window_token = politics_tab
-		#parent_window_name = "countrypoliticsview"
-		visible = {
-            always = yes
-		}
-		
 		effects = {
-			pol_economic_button_bg_click = {
-				set_variable = { open_economic_window = 1 }
+			balances_button_click = {
+				set_variable = { selected_economy_tab = 1 }
+				set_variable = { selected_economy_tab2 = 2 }
 			}
-		}
-	}
-	pol_political_tab = {
-		context_type = player_context
-		window_name = "open_political_tab"
-		parent_window_token = politics_tab
-		#parent_window_name = "countrypoliticsview"
-		visible = {
-            always = yes
-		}
-		
-		effects = {
-			political_button_click = {
-				set_variable = { open_economic_window = 0 }
+			purchases_button_click = {
+				set_variable = { selected_economy_tab = 2 }
+				set_variable = { selected_economy_tab2 = 1 }
 			}
-		}
-	}
-	
-	econ_econ_tab = {
-		context_type = player_context
-		window_name = "econ_open_economic_tab"
-		parent_window_token = countryeconomicview
-		#parent_window_name = "countrypoliticsview"
-		visible = {
-            check_variable = {
-				open_economic_window = 1
-			}
-		}
-		
-		effects = {
-			pol_economic_button_bg_click = {
-				set_variable = { open_economic_window = 1 }
-			}
-		}
-	}
-	econ_political_tab = {
-		context_type = player_context
-		window_name = "econ_open_political_tab"
-		parent_window_token = countryeconomicview
-		visible = {
-            check_variable = {
-				open_economic_window = 1
-			}
-		}
-		
-		effects = {
-			political_button_click = {
+			close_button_click = {
 				set_variable = { open_economic_window = 0 }
 			}
 		}
 	}
 }
-

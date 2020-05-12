@@ -21,7 +21,9 @@ set_popularities = {
     proletarianism = 10
     royalism = 60
 }
-
+add_ideas = {
+	HRE_elector
+}
 set_convoys = 5
 
 create_country_leader = {

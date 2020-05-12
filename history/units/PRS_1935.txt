@@ -224,7 +224,7 @@ units = {
 	#####################
 	division = {
 		name = "Infanterie-Division"
-		location = 321
+		location = 3312
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.4
 	}

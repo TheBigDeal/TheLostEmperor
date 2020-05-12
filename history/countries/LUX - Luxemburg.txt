@@ -11,7 +11,9 @@ set_technology = {
 	tech_engineers = 1
 	early_fighter = 1
 }
-
+add_ideas = {
+	HRE_member
+}
 set_politics = {	
 	ruling_party = liberalism
 	last_election = "1934.6.3"

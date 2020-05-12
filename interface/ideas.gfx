@@ -1,9 +1,21 @@
 spriteTypes = {	
-	
 	SpriteType = {
 		name = "GFX_idea_HRE_emperor"
 		textureFile = "gfx/interface/ideas/idea_HRE_emperor.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_HRE_elector"
+		textureFile = "gfx/interface/ideas/idea_HRE_elector.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_HRE_city"
+		textureFile = "gfx/interface/ideas/idea_HRE_city.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_HRE_member"
+		textureFile = "gfx/interface/ideas/idea_HRE_member.dds"
+	}
+	
 	SpriteType = {
 		name = "GFX_idea_USA_calvin_coolidge"
 		textureFile = "gfx/interface/ideas/idea_USA_calvin_coolidge.dds"

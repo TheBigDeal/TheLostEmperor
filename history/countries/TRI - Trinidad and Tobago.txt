@@ -9,41 +9,9 @@ set_technology = {
 
 set_convoys = 5
 
-
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		
-		
-		
-		
-		
-		
-		
-	}
+add_ideas = {
+	HRE_member
 }
-
 
 set_popularities = {
     liberalism = 75

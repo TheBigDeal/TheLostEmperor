@@ -1,52 +1,76 @@
 guiTypes = {
 	containerWindowType = {
 		name = "countryeconomicview"
-		position = { x=-6 y=0}
-		size = { width=550 height=100%% }
-		containerWindowType = { #Background
-			name = "economic_bg"
-			size = { width=550 height=100%% }
-			background = {
-				name = "Background"
-				quadTextureSprite ="GFX_tiled_plain_bg"
-			}
+		position = { x = 39%% y = 20%% }
+		size = { width=856 height=80%% }
+		margin = { top = 6 bottom = 13}
+		moveable = no
+		clipping = no
+		background = {
+			name = "economy_bg"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
 		}
-		
 		iconType = {
-				name ="production_header_bg"
-				spriteType = "GFX_header_bg"
-				position = { x= 11 y = 07 }
-				Orientation = "UPPER_LEFT"
-			}
+			name ="economy_bar_bg"
+			spriteType = "GFX_economy_bar_bg"
+			position = { x= 2 y = -4 }
+		}
+		iconType ={
+			name ="economy_header_bg"
+			spriteType = "GFX_header_ultrawide_bg"
+			position = { x= 5 y = -40 }
+			Orientation = "UPPER_LEFT"
+		}
 		buttonType = {
-			name = "econ_close_button"
-			position = { x = -37 y = 9 }
+			name = "close_button"
+			position = { x = -47 y = -38 }
 			quadTextureSprite ="GFX_closebutton"
-			buttonFont = "Main_14_black"
+			buttonFont = "hoi_16mbs"
 			shortcut = "ESCAPE"
 			Orientation = "UPPER_RIGHT"
 			clicksound = click_close
 			pdx_tooltip = "CLOSE"
 		}
+		buttonType = {
+			name = "balances_button"
+			quadTextureSprite = "GFX_tab_intel_ledger"
+			position = { x=6 y=-40 }
+			buttonText = "Balances"
+			font = "hoi_18mbs"
+		}
+		buttonType = {
+			name = "purchases_button"
+			quadTextureSprite = "GFX_tab_intel_ledger"
+			position = { x=266 y= -40 }
+			buttonText = "Purchases"
+			font = "hoi_18mbs"
+		}
+		iconType = {
+			name ="tab_extension"
+			spriteType = "GFX_tab_extension"
+			position = { x= 523 y = -8 }
+		}
 		containerWindowType = {
-			name = "countryeconomicview"
-			position = { x=0 y=0}
-			iconType ={
-				name ="pol_view_bg"
-				spriteType = "GFX_econ_view_bg"
-				position = { x= 6 y = 44 }
-				Orientation = "UPPER_LEFT"
+			name = "economy_ledger"
+			position = { x = 493 y = 240 }
+			size = { width=360 height=100%% }
+			margin = { top = 6 bottom = 13}
+			moveable = no
+			clipping = no
+			background = {
+				name = "economy_bg"
+				quadTextureSprite ="GFX_tiled_special_cut_bg"
 			}
 			instantTextboxType = {
-				name = "econ_text"
-				position = { x = 40 y = 100 }
-				font = "hoi_16mbs"
-				text = "current_money_pos"
-				maxWidth = 400
-				maxHeight = 400
-				fixedsize = no
-				format = left		
-				alwaystransparent = no
+				name = "Income"
+				position = { x = 130 y = 0 }
+				font = "vic_36"
+				text = "Income"
+				maxWidth = 80
+				maxHeight = 20
+				fixedsize = yes
+				format = center		
+				alwaystransparent = yes
 			}
 		}
 	}

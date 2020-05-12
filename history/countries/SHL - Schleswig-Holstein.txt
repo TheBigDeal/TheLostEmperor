@@ -15,7 +15,9 @@ set_politics = {
 set_popularities = {
 	absolutism = 100
 }
-
+add_ideas = {
+	HRE_member
+}
 
 #create_country_leader = {
 #	name = "Dennis Fredauer"

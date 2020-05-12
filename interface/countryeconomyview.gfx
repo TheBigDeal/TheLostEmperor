@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tab_extension"
+		textureFile = "gfx//interface//tab_extension.dds"
+	}
+	spriteType = {
+		name = "GFX_economy_bar_bg"
+		textureFile = "gfx//interface//economy_bar_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_header_ultrawide_bg"
+		textureFile = "gfx//interface//header_ultrawide_bg.dds"
+	}
+}

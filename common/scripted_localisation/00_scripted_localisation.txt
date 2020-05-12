@@ -8,14 +8,19 @@
 # localization_key -> points to the localization key
 # that'll be used if trigger passes
 
-
 defined_text = {
-	name = GetCountryNameTT
+	name = GetPopulationSuffix
 	text = {
 		trigger = {
-            always = yes			
+            check_variable = { is_over_million_pop = 1}
 		}
-		localization_key = "THIS.getName" 
+		localization_key = "Million" 
+	}
+	text = {
+		trigger = {
+            check_variable = { is_over_million_pop = 0}
+		}
+		localization_key = "Thousand" 
 	}
 }
 

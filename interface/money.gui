@@ -1,8 +1,7 @@
-
 guiTypes = {
 	containerWindowType = {
 		name = "current_money_container"
-		position = { x = 100 y = 4 }
+		position = { x = 165 y = 4 }
 		
 		iconType ={
 			name ="current_money_bg"
@@ -21,7 +20,7 @@ guiTypes = {
 			name ="current_money_text"
 			position = { x= 12 y = 4 }
 			font = "hoi_18mbs"
-			text = "[?current_money|+*0.1Y]"
+			text = "[?current_money|*0.1]"
 			format = right
 			maxWidth = 70
 			maxHeight = 24
@@ -29,6 +28,91 @@ guiTypes = {
 			
 			pdx_tooltip = "current_money_TOOLTIP"
 			pdx_tooltip_delayed = "current_money_TOOLTIP_DELAYED"
+		}
+	}
+	
+	
+	
+	containerWindowType = {
+		name = "score_container"
+		position = { x = 98 y = 4 }
+		containerWindowType = {
+			name = "prestige_container"
+			position = { x = 0 y = 0 }
+			iconType ={
+				name ="prestige_bg"
+				spriteType = "GFX_generic_box_smallest"
+				position = { x=0 y=0 }
+				#shortcut = "ctrl+k"
+			}
+			iconType = {
+				name ="prestige_score"
+				spriteType = "GFX_prestige"
+				position = { x= 4 y = 1 }
+			}
+			instantTextBoxType = {
+				name ="prestige_text"
+				position = { x= 10 y = 4 }
+				font = "hoi_18mbs"
+				text = "[?prestige_score|0]"
+				format = center
+				maxWidth = 70
+				maxHeight = 24
+				fixedsize = yes
+				pdx_tooltip = "prestige_TOOLTIP"
+			}
+		}
+		containerWindowType = {
+			name = "industrial_container"
+			position = { x = 0 y = 25 }
+			iconType ={
+				name ="industrial_bg"
+				spriteType = "GFX_generic_box_smallest"
+				position = { x=0 y=0 }
+				#shortcut = "ctrl+k"
+			}
+			iconType = {
+				name ="industrial_icon"
+				spriteType = "GFX_industrial_capacity_icon"
+				position = { x= -1 y = -1 }
+			}
+			instantTextBoxType = {
+				name ="industrial_text"
+				position = { x= 10 y = 4 }
+				font = "hoi_18mbs"
+				text = "[?industrial_score|0]"
+				format = center
+				maxWidth = 70
+				maxHeight = 24
+				fixedsize = yes
+				pdx_tooltip = "industrial_score_TOOLTIP"
+			}
+		}
+		containerWindowType = {
+			name = "military_container"
+			position = { x = 0 y = 50 }
+			iconType ={
+				name ="military_bg"
+				spriteType = "GFX_generic_box_smallest"
+				position = { x=0 y=0 }
+				#shortcut = "ctrl+k"
+			}
+			iconType = {
+				name ="military_score"
+				spriteType = "GFX_texticon_weapons"
+				position = { x= 5 y = 1 }
+			}
+			instantTextBoxType = {
+				name ="military_text"
+				position = { x= 10 y = 4 }
+				font = "hoi_18mbs"
+				text = "[?military_score|0]"
+				format = center
+				maxWidth = 70
+				maxHeight = 24
+				fixedsize = yes
+				pdx_tooltip = "military_score_TOOLTIP"
+			}
 		}
 	}
 }

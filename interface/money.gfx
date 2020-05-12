@@ -3,7 +3,10 @@ spriteTypes = {
 		name = "GFX_current_money"
 		texturefile = "gfx/current_money.dds"
 	}
-    
+    spriteType = {
+		name = "GFX_prestige"
+		texturefile = "gfx/prestige.dds"
+	}
 	spriteType = {
 		name = "GFX_idea_fuhrer_boost_research"
 		texturefile = "gfx/interface/ideas/idea_general_staff.dds"

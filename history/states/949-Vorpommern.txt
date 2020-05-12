@@ -3,9 +3,15 @@ state={
 	name="STATE_949"
 	history={
 		owner = VRP
+		victory_points = {
+			6282 1 
+		}
 		buildings = {
 			infrastructure = 6
 			arms_factory = 2
+			6282 = {
+				naval_base = 4
+			}
 		}
 		add_core_of = VRP
 	}

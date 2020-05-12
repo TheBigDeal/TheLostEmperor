@@ -1,0 +1,605 @@
+focus_tree = {
+	id = dutch_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HOL
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 3100 }
+	focus = {
+		id = HOL_LIBERALS_IN_THE_STREET
+		icon = GTS_goal_unknown
+		x = 10
+		y = 0
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_STAY_THE_PATH
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_LIBERALS_IN_THE_STREET }
+		mutually_exclusive = { focus = HOL_ELIMINATE_LIBERALISM }
+		x = 10
+		y = 1
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_BLISSFUL_IGNORANCE
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_STAY_THE_PATH }
+		mutually_exclusive = { focus = HOL_KNOW_THE_ODDS }
+		x = 8
+		y = 2
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_KNOW_THE_ODDS
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_STAY_THE_PATH }
+		mutually_exclusive = { focus = HOL_BLISSFUL_IGNORANCE }
+		x = 12
+		y = 2
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_A_GAMBLING_MAN
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_KNOW_THE_ODDS focus = HOL_BLISSFUL_IGNORANCE }
+		x = 10
+		y = 3
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_PLAN_THE_PARTY
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_A_GAMBLING_MAN }
+		x = 10
+		y = 4
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_INVITE_FRIENDS
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_PLAN_THE_PARTY }
+		mutually_exclusive = { focus = HOL_INVITE_EVERYONE}
+		x = 8
+		y = 5
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_INVITE_EVERYONE
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_PLAN_THE_PARTY }
+		mutually_exclusive = { focus = HOL_INVITE_FRIENDS }
+		x = 12
+		y = 5
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_SPREAD_THE_WORD
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_INVITE_FRIENDS focus = HOL_INVITE_EVERYONE }
+		x = 10
+		y = 6
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_GET_THE_PARTY_STARTED
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_SPREAD_THE_WORD }
+		x = 10
+		y = 7
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_WITH_PERSONALITY
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_GET_THE_PARTY_STARTED }
+		mutually_exclusive = { focus = HOL_WITH_GIFTS}
+		x = 8
+		y = 8
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_WITH_GIFTS
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_GET_THE_PARTY_STARTED }
+		mutually_exclusive = { focus = HOL_WITH_PERSONALITY }
+		x = 12
+		y = 8
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_RAISE_THE_STAKES
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_WITH_PERSONALITY focus = HOL_WITH_GIFTS }
+		x = 10
+		y = 9
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_PLAY_FAIR
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_RAISE_THE_STAKES }
+		mutually_exclusive = { focus = HOL_WEIGH_THE_DICE}
+		x = 8
+		y = 10
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_CRAFTING_STRATEGY
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_PLAY_FAIR }
+		x = 8
+		y = 11
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_A_LOST_BET
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_CRAFTING_STRATEGY focus = HOL_HIDE_THE_ACE }
+		mutually_exclusive = { focus = HOL_THE_GAMBIT_SUCCEEDS }
+		x = 8
+		y = 12
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_A_SORE_LOSER
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_A_LOST_BET }
+		x = 7
+		y = 13
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_GRACE_IN_DEFEAT
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_A_LOST_BET }
+		x = 9
+		y = 13
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_WEIGH_THE_DICE
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_RAISE_THE_STAKES }
+		mutually_exclusive = { focus = HOL_PLAY_FAIR }
+		x = 12
+		y = 10
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_HIDE_THE_ACE
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_WEIGH_THE_DICE }
+		x = 12
+		y = 11
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_THE_GAMBIT_SUCCEEDS
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_HIDE_THE_ACE focus = HOL_CRAFTING_STRATEGY}
+		mutually_exclusive = { focus = HOL_A_LOST_BET }
+		x = 12
+		y = 12
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_GRACE_IN_VICTORY
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_THE_GAMBIT_SUCCEEDS }
+		x = 12
+		y = 13
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_ELIMINATE_LIBERALISM
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_LIBERALS_IN_THE_STREET }
+		mutually_exclusive = { focus = HOL_STAY_THE_PATH }
+		x = 20
+		y = 1
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_THE_IRON_FIST
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_ELIMINATE_LIBERALISM }
+		x = 17
+		y = 2
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_PUT_DOWN_THE_DESPERATE_DOGS
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_THE_IRON_FIST }
+		mutually_exclusive = { focus = HOL_THE_DANGER_OF_A_REASONABLE_MAN focus = HOL_CRUSH_THE_G }
+		x = 15
+		y = 3
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_INSTITUTE_A_CURFEW
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_PUT_DOWN_THE_DESPERATE_DOGS }
+		x = 15
+		y = 4
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_CAPITAL_PUNISHMENT
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_INSTITUTE_A_CURFEW }
+		x = 15
+		y = 5
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_CRUSH_THE_G
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_THE_IRON_FIST }
+		mutually_exclusive = { focus = HOL_PUL_DOWN_THE_DESPERATE_DOGS focus = HOL_THE_DANGER_OF_A_REASONABLE_MAN }
+		x = 17
+		y = 3
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_BREAK_UP_PROTESTS
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_CRUSH_THE_G }
+		x = 17
+		y = 4
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_POLICE_THE_TOWNSHIPS
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_BREAK_UP_PROTESTS }
+		x = 17
+		y = 5
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_THE_DANGER_OF_A_REASONABLE_MAN
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_THE_IRON_FIST }
+		mutually_exclusive = { focus = HOL_PUL_DOWN_THE_DESPERATE_DOGS focus = HOL_CRUSH_THE_G }
+		x = 19
+		y = 3
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_RESTRICT_SUNDAY_CLUBS
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_THE_IRON_FIST }
+		x = 19
+		y = 4
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_SILENCE_THE_PREACHERS
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_RESTRICT_SUNDAY_CLUBS }
+		x = 19
+		y = 5
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_THE_BEAST
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_BREAK_UP_PROTESTS }
+		x = 17
+		y = 5
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_CRUSHING_OUR_ENEMIES
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_THE_BEAST focus = HOL_CAPITAL_PUNISHMENT focus = HOL_SILENCE_THE_PREACHERS }
+		x = 17
+		y = 6
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_THE_VELVET_GLOVE
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_ELIMINATE_LIBERALISM }
+		x = 23
+		y = 2
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_THROW_THE_DOGS_A_BONE
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_THE_VELVET_GLOVE }
+		mutually_exclusive = { focus = HOL_COMPROMISE_WITH_THE_G focus = HOL_DISTRACT_MODERATES }
+		x = 21
+		y = 3
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_FROM_A_POSITION_OF_POWER
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_THROW_THE_DOGS_A_BONE }
+		x = 21
+		y = 4
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_PROGRESS_FOR_PROGRESS_SAKE
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_FROM_A_POSITION_OF_POWER }
+		x = 21
+		y = 5
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_COMPROMISE_WITH_THE_G
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_THE_VELVET_GLOVE }
+		mutually_exclusive = { focus = HOL_THROW_THE_DOGS_A_BONE focus = HOL_DISTRACT_MODERATES }
+		x = 23
+		y = 3
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_EIGHT_HOUR_WORKDAY
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_COMPROMISE_WITH_THE_G }
+		x = 23
+		y = 4
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_CONCESSIONS_TO_THE_TOWNSHIPS
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_EIGHT_HOUR_WORKDAY }
+		x = 23
+		y = 5
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_DISTRACT_MODERATES
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_THE_VELVET_GLOVE }
+		mutually_exclusive = { focus = HOL_COMPROMISE_WITH_THE_G focus = HOL_THROW_THE_DOGS_A_BONE }
+		x = 25
+		y = 3
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_SUNDAY_FOOTFALL
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_DISTRACT_MODERATES }
+		x = 25
+		y = 4
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_LIGHTEN_THE_TAX_BURDEN
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_SUNDAY_FOOTFALL }
+		x = 25
+		y = 5
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_WEAKENING_OUR_FRIENDS
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_LIGHTEN_THE_TAX_BURDEN focus = HOL_CONCESSIONS_TO_THE_TOWNSHIPS focus = HOL_PROGRESS_FOR_PROGRESS_SAKE }
+		x = 23
+		y = 6
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_THE_STREETS_FALL_QUIET
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_CRUSHING_OUR_ENEMIES focus = HOL_WEAKENING_OUR_FRIENDS }
+		x = 20
+		y = 7
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HOL_CALM_BEFORE_THE_STORM
+		icon = GTS_goal_unknown
+		prerequisite = { focus = HOL_THE_STREETS_FALL_QUIET }
+		x = 20
+		y = 8
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+}

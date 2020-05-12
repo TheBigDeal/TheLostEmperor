@@ -215,7 +215,7 @@ tur_deal_with_rebellion_coalition = {
 		icon = GFX_icon_collectivism
 		days_re_enable = 14
 		highlight_states = {state = 453}
-		custom_cost_trigger = {has_equipment = {infantry_weapons > 1000}}
+		#custom_cost_trigger = {has_equipment = {infantry_weapons > 1000}}
 		custom_cost_text = infantry_equipment_more_than_1000
 		visible = { 
 			tag = TUR 

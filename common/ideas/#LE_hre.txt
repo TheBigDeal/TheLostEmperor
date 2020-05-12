@@ -1,35 +1,32 @@
 ideas = {
-
-country = {
-	#################
-	#HRE
-	#################
-	HRE_Member = {
-		picture = ger_revive_the_kaiserreich
-		modifier = {
-			conscription = -1.00
-			MONTHLY_POPULATION = 0.25
+	country = {
+		HRE_member = {
+			picture = idea_HRE_member
+			modifier = {
+				conscription = -1.00
+				MONTHLY_POPULATION = 0.25
+			}
 		}
-	}
-	HRE_free_city = {
-		picture = ger_revive_the_kaiserreich
-		modifier = {
-			conscription = -1.00
-			MONTHLY_POPULATION = 0.5
+		HRE_city = {
+			picture = idea_HRE_city
+			modifier = {
+				conscription = 0.1
+				MONTHLY_POPULATION = 0.5
+			}
 		}
-	}
-	HRE_elector = {
-		picture = ger_revive_the_kaiserreich
-		modifier = {
-			conscription = 0.1
-			MONTHLY_POPULATION = 0.5
+		HRE_elector = {
+			picture = idea_HRE_elector
+			modifier = {
+				conscription = 0.1
+				MONTHLY_POPULATION = 0.5
+			}
 		}
-	}
-	HRE_emperor = {
-		picture = idea_HRE_emperor
-		modifier = {
-			custom_effect_tooltip = hre_emperor_tt
-			conscription = 0.15
+		HRE_emperor = {
+			picture = idea_HRE_emperor
+			modifier = {
+				#custom_effect_tooltip = hre_emperor_tt
+				conscription = 0.15
+			}
 		}
 	}
 }

@@ -12,7 +12,7 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1900 }
 
 	focus = {
-		id = PRS_A_DIVIDED_NATION
+		id = PRE_A_DIVIDED_NATION
 		icon = GFX_crown_of_prussia
 		x = 8
 		y = 0
@@ -21,15 +21,15 @@ focus_tree = {
 		completion_reward = {country_event = { id = le_prussia.1 }}
 	}
 	focus = {
-		id = PRS_THE_KING_IS_SICK
+		id = PRE_THE_KING_IS_SICK
 		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = PRS_A_DIVIDED_NATION }
-		mutually_exclusive = { focus = PRS_ERADICATE_THE_OPPOSITION }
+		prerequisite = { focus = PRE_A_DIVIDED_NATION }
+		mutually_exclusive = { focus = PRE_ERADICATE_THE_OPPOSITION }
 		x = 4
 		y = 1
 		cost = 2
 		available = {
-			has_country_flag = prs_wilhelm_in_capital
+			has_country_flag = PRE_wilhelm_in_capital
 		}
 		ai_will_do = { factor = 100 }
 		completion_reward = { 
@@ -42,10 +42,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRS_PRINCE_WILHELM_MAKES_A_MOVE
+		id = PRE_PRINCE_WILHELM_MAKES_A_MOVE
 		icon = GFX_generic_espionage
-		prerequisite = { focus = PRS_THE_KING_IS_SICK }
-		mutually_exclusive = { focus = PRS_NATIONALIST_MOVEMENT }
+		prerequisite = { focus = PRE_THE_KING_IS_SICK }
+		mutually_exclusive = { focus = PRE_NATIONALIST_MOVEMENT }
 		x = 1
 		y = 2
 		cost = 4
@@ -55,10 +55,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRS_LONG_LIVE_KING_WILHELM
+		id = PRE_LONG_LIVE_KING_WILHELM
 		icon = GFX_focus_FRA_eagle
-		prerequisite = { focus = PRS_PRINCE_WILHELM_MAKES_A_MOVE }
-		mutually_exclusive = { focus = PRS_LONG_LIVE_KING_WALDEMAR }
+		prerequisite = { focus = PRE_PRINCE_WILHELM_MAKES_A_MOVE }
+		mutually_exclusive = { focus = PRE_LONG_LIVE_KING_WALDEMAR }
 		x = 0
 		y = 3
 		cost = 4
@@ -74,21 +74,21 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRS_WILHELMS_IRON_FIST
+		id = PRE_WILHELMS_IRON_FIST
 		icon = GFX_focus_purge_bureaucracy
-		prerequisite = { focus = PRS_LONG_LIVE_KING_WILHELM }
+		prerequisite = { focus = PRE_LONG_LIVE_KING_WILHELM }
 		x = 0
 		y = 4
 		cost = 4
 		
 		ai_will_do = { factor = 100 }
-		completion_reward = { add_ideas = { prs_wilhelms_iron_fist } }
+		completion_reward = { add_ideas = { PRE_wilhelms_iron_fist } }
 	}
 	focus = {
-		id = PRS_LONG_LIVE_KING_WALDEMAR
+		id = PRE_LONG_LIVE_KING_WALDEMAR
 		icon = GFX_focus_monarchy
-		prerequisite = { focus = PRS_PRINCE_WILHELM_MAKES_A_MOVE }
-		mutually_exclusive = { focus = PRS_LONG_LIVE_KING_WILHELM }
+		prerequisite = { focus = PRE_PRINCE_WILHELM_MAKES_A_MOVE }
+		mutually_exclusive = { focus = PRE_LONG_LIVE_KING_WILHELM }
 		x = 2
 		y = 3
 		cost = 4
@@ -103,42 +103,42 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRS_WALDEMARS_TRAINING
+		id = PRE_WALDEMARS_TRAINING
 		icon = GFX_education_reform
-		prerequisite = { focus = PRS_LONG_LIVE_KING_WALDEMAR }
+		prerequisite = { focus = PRE_LONG_LIVE_KING_WALDEMAR }
 		x = 2
 		y = 4
 		cost = 4
 		ai_will_do = { factor = 100 }
-		completion_reward = {add_ideas = { prs_waldemars_acedemics }}
+		completion_reward = {add_ideas = { PRE_waldemars_acedemics }}
 	}
 	focus = {
-		id = PRS_RENEWED_IMPERIALISM
+		id = PRE_RENEWED_IMPERIALISM
 		icon = GFX_focus_ger_revive_kaiserreich
-		prerequisite = { focus = PRS_WILHELMS_IRON_FIST }
+		prerequisite = { focus = PRE_WILHELMS_IRON_FIST }
 		x = 0
 		y = 5
 		cost = 4
 		
 		ai_will_do = { factor = 100 }
-		completion_reward = { add_ideas = { prs_renewed_imperialism } remove_ideas = PRS_POLITICAL_OPPOSITION }
+		completion_reward = { add_ideas = { PRE_renewed_imperialism } remove_ideas = PRE_POLITICAL_OPPOSITION }
 	}
 	focus = {
-		id = PRS_ESTABLISH_REICHSTAG
+		id = PRE_ESTABLISH_REICHSTAG
 		icon = GFX_goal_government_icon
-		prerequisite = { focus = PRS_WALDEMARS_TRAINING}
+		prerequisite = { focus = PRE_WALDEMARS_TRAINING}
 		x = 2
 		y = 5
 		cost = 4
 		
 		ai_will_do = { factor = 100 }
-		completion_reward = { add_ideas = { prs_renewed_imperialism } remove_ideas = PRS_POLITICAL_OPPOSITION }
+		completion_reward = { add_ideas = { PRE_renewed_imperialism } remove_ideas = PRE_POLITICAL_OPPOSITION }
 	}
 	focus = {
-		id = PRS_NATIONALIST_MOVEMENT
+		id = PRE_NATIONALIST_MOVEMENT
 		icon = GFX_nationalist_victory
-		prerequisite = { focus = PRS_THE_KING_IS_SICK }
-		mutually_exclusive = { focus = PRS_PRINCE_WILHELM_MAKES_A_MOVE }
+		prerequisite = { focus = PRE_THE_KING_IS_SICK }
+		mutually_exclusive = { focus = PRE_PRINCE_WILHELM_MAKES_A_MOVE }
 		x = 7
 		y = 2
 		cost = 4
@@ -156,10 +156,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = PRS_WAR_ON_IMPERIALISM
+		id = PRE_WAR_ON_IMPERIALISM
 		icon = GFX_focus_rom_abdicate
-		prerequisite = { focus = PRS_NATIONALIST_MOVEMENT }
-		mutually_exclusive = { focus = PRS_WAR_ON_collectivism }
+		prerequisite = { focus = PRE_NATIONALIST_MOVEMENT }
+		mutually_exclusive = { focus = PRE_WAR_ON_collectivism }
 		x = 6
 		y = 3
 		cost = 4
@@ -183,10 +183,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = PRS_WAR_ON_collectivism
+		id = PRE_WAR_ON_collectivism
 		icon = GFX_focus_ger_strike_at_the_source
-		prerequisite = { focus = PRS_NATIONALIST_MOVEMENT }
-		mutually_exclusive = { focus = PRS_WAR_ON_IMPERIALISM }
+		prerequisite = { focus = PRE_NATIONALIST_MOVEMENT }
+		mutually_exclusive = { focus = PRE_WAR_ON_IMPERIALISM }
 		x = 8
 		y = 3
 		cost = 4
@@ -209,9 +209,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = PRS_ESTABLISH_SECRET_POLICE
+		id = PRE_ESTABLISH_SECRET_POLICE
 		icon = GFX_generic_espionage
-		prerequisite = { focus = PRS_WAR_ON_collectivism focus = PRS_WAR_ON_IMPERIALISM }
+		prerequisite = { focus = PRE_WAR_ON_collectivism focus = PRE_WAR_ON_IMPERIALISM }
 		x = 6
 		y = 4
 		cost = 4
@@ -219,9 +219,9 @@ focus_tree = {
 		completion_reward = { add_stability = 0.15 add_political_power = -50 }
 	}
 	focus = {
-		id = PRS_SOCIAL_HEIARCHY
+		id = PRE_SOCIAL_HEIARCHY
 		icon = GFX_generic_revolution
-		prerequisite = { focus = PRS_WAR_ON_collectivism focus = PRS_WAR_ON_IMPERIALISM }
+		prerequisite = { focus = PRE_WAR_ON_collectivism focus = PRE_WAR_ON_IMPERIALISM }
 		x = 8
 		y = 4
 		cost = 4
@@ -230,22 +230,22 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = PRS_UNITED_UNDER_ONE
+		id = PRE_UNITED_UNDER_ONE
 		icon = GFX_focus_ger_reichskommisariats
-		prerequisite = { focus = PRS_ESTABLISH_SECRET_POLICE }
-		prerequisite = { focus = PRS_SOCIAL_HEIARCHY }
+		prerequisite = { focus = PRE_ESTABLISH_SECRET_POLICE }
+		prerequisite = { focus = PRE_SOCIAL_HEIARCHY }
 		x = 7
 		y = 5
 		cost = 4
 		ai_will_do = { factor = 100 }
-		completion_reward = { remove_ideas = PRS_POLITICAL_OPPOSITION }
+		completion_reward = { remove_ideas = PRE_POLITICAL_OPPOSITION }
 	}
 
 	focus = {
-		id = PRS_ERADICATE_THE_OPPOSITION
+		id = PRE_ERADICATE_THE_OPPOSITION
 		icon = GFX_generic_political_oppression
-		prerequisite = { focus = PRS_A_DIVIDED_NATION }
-		mutually_exclusive = { focus = PRS_THE_KING_IS_SICK }
+		prerequisite = { focus = PRE_A_DIVIDED_NATION }
+		mutually_exclusive = { focus = PRE_THE_KING_IS_SICK }
 		x = 12
 		y = 1
 		cost = 4
@@ -255,9 +255,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRS_CRUSH_THE_COMMUNISTS
+		id = PRE_CRUSH_THE_COMMUNISTS
 		icon = GFX_round_up_the_communists
-		prerequisite = { focus = PRS_ERADICATE_THE_OPPOSITION }
+		prerequisite = { focus = PRE_ERADICATE_THE_OPPOSITION }
 		x = 10
 		y = 2
 		cost = 10
@@ -271,9 +271,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRS_DEAL_WITH_THE_DEMOCRATS
+		id = PRE_DEAL_WITH_THE_DEMOCRATS
 		icon = GFX_red_terror
-		prerequisite = { focus = PRS_ERADICATE_THE_OPPOSITION }
+		prerequisite = { focus = PRE_ERADICATE_THE_OPPOSITION }
 		x = 12
 		y = 2
 		cost = 4
@@ -287,9 +287,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRS_NEGOTIATE_WITH_THE_NATIONALISTS
+		id = PRE_NEGOTIATE_WITH_THE_NATIONALISTS
 		icon = GFX_Crush_the_Rebellion
-		prerequisite = { focus = PRS_ERADICATE_THE_OPPOSITION }
+		prerequisite = { focus = PRE_ERADICATE_THE_OPPOSITION }
 		x = 14
 		y = 2
 		cost = 4
@@ -302,11 +302,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRS_ASSASSINATE_PRINCE_WILHELM
+		id = PRE_ASSASSINATE_PRINCE_WILHELM
 		icon = GFX_assassinate_wilhelm
-		prerequisite = { focus = PRS_CRUSH_THE_COMMUNISTS }
-		prerequisite = { focus = PRS_DEAL_WITH_THE_DEMOCRATS }
-		prerequisite = { focus = PRS_NEGOTIATE_WITH_THE_NATIONALISTS }
+		prerequisite = { focus = PRE_CRUSH_THE_COMMUNISTS }
+		prerequisite = { focus = PRE_DEAL_WITH_THE_DEMOCRATS }
+		prerequisite = { focus = PRE_NEGOTIATE_WITH_THE_NATIONALISTS }
 		x = 12
 		y = 3
 		cost = 4
@@ -317,9 +317,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRS_BAN_POLITICAL_PARTIES
+		id = PRE_BAN_POLITICAL_PARTIES
 		icon = GFX_Generic_Elections_Banned
-		prerequisite = { focus = PRS_ASSASSINATE_PRINCE_WILHELM }
+		prerequisite = { focus = PRE_ASSASSINATE_PRINCE_WILHELM }
 		x = 12
 		y = 4
 		cost = 4
@@ -330,48 +330,48 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRS_CRIMINALIZE_RADICALISM
+		id = PRE_CRIMINALIZE_RADICALISM
 		icon = GFX_prison_camps
-		prerequisite = { focus = PRS_BAN_POLITICAL_PARTIES }
+		prerequisite = { focus = PRE_BAN_POLITICAL_PARTIES }
 		x = 12
 		y = 5
 		cost = 4
 		
 		ai_will_do = { factor = 100 }
 		completion_reward = {
-			add_timed_idea = { idea = PRS_criminalized_radicalism days = 180 }
+			add_timed_idea = { idea = PRE_criminalized_radicalism days = 180 }
 		}
 	}
 	focus = {
-		id = PRS_PRUSSIA_INDIVISIBLE
+		id = PRE_PRUSSIA_INDIVISIBLE
 		icon = GFX_Invite_Prussian_Commanders
-		prerequisite = { focus = PRS_CRIMINALIZE_RADICALISM }
+		prerequisite = { focus = PRE_CRIMINALIZE_RADICALISM }
 		x = 12
 		y = 6
 		cost = 4
 		
 		ai_will_do = { factor = 100 }
 		completion_reward = {
-			remove_ideas = { PRS_political_opposition }
-			add_ideas = { PRS_the_call_of_the_fatherland }
+			remove_ideas = { PRE_political_opposition }
+			add_ideas = { PRE_the_call_of_the_fatherland }
 		}
 	}
 	focus = {
-		id = PRS_GERMAN_AMBITIONS
+		id = PRE_GERMAN_AMBITIONS
 		icon = GFX_German_Empire
 		x = 18
 		y = 0
 		cost = 4
 		available = {
-			NOT = { has_idea = PRS_political_opposition }
+			NOT = { has_idea = PRE_political_opposition }
 		}
 		ai_will_do = { factor = 100 }
 		completion_reward = {add_political_power = 100}
 	}
 	focus = {
-		id = PRS_THREATEN_NORTHERN_STATES
+		id = PRE_THREATEN_NORTHERN_STATES
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = PRS_GERMAN_AMBITIONS }
+		prerequisite = { focus = PRE_GERMAN_AMBITIONS }
 		x = 18
 		y = 1
 		cost = 1
@@ -385,9 +385,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRS_THE_HANNOVER_PROBLEM
+		id = PRE_THE_HANNOVER_PROBLEM
 		icon = GFX_focus_AST_never_gallipoli
-		prerequisite = { focus = PRS_THREATEN_NORTHERN_STATES }
+		prerequisite = { focus = PRE_THREATEN_NORTHERN_STATES }
 		x = 18
 		y = 2
 		cost = 3
@@ -397,10 +397,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRS_NEGOTIATE_WITH_THE_BRITISH
+		id = PRE_NEGOTIATE_WITH_THE_BRITISH
 		icon = GFX_focus_chi_british_cooperation
-		prerequisite = { focus = PRS_THE_HANNOVER_PROBLEM }
-		mutually_exclusive = { focus = PRS_PRUSSIAN_SPONSORED_ASSASSINATIONS }
+		prerequisite = { focus = PRE_THE_HANNOVER_PROBLEM }
+		mutually_exclusive = { focus = PRE_PRUSSIAN_SPONSORED_ASSASSINATIONS }
 		x = 17
 		y = 3
 		cost = 5
@@ -408,10 +408,10 @@ focus_tree = {
 		completion_reward = {}
 	}
 	focus = {
-		id = PRS_PRUSSIAN_SPONSORED_ASSASSINATIONS
+		id = PRE_PRUSSIAN_SPONSORED_ASSASSINATIONS
 		icon = GFX_generic_espionage
-		prerequisite = { focus = PRS_THE_HANNOVER_PROBLEM }
-		mutually_exclusive = { focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+		prerequisite = { focus = PRE_THE_HANNOVER_PROBLEM }
+		mutually_exclusive = { focus = PRE_NEGOTIATE_WITH_THE_BRITISH }
 		x = 19
 		y = 3
 		cost = 5
@@ -419,9 +419,9 @@ focus_tree = {
 		completion_reward = {}
 	}
 	focus = {
-		id = PRS_SHOW_OUR_STRENGTH
+		id = PRE_SHOW_OUR_STRENGTH
 		icon = GFX_focus_eng_move_to_secure_the_dominions
-		prerequisite = { focus = PRS_NEGOTIATE_WITH_THE_BRITISH focus = PRS_PRUSSIAN_SPONSORED_ASSASSINATIONS }
+		prerequisite = { focus = PRE_NEGOTIATE_WITH_THE_BRITISH focus = PRE_PRUSSIAN_SPONSORED_ASSASSINATIONS }
 		x = 18
 		y = 4
 		cost = 4
@@ -431,12 +431,12 @@ focus_tree = {
 			owns_state = 770
 		}
 		ai_will_do = { factor = 100 }
-		completion_reward = { add_timed_idea = { idea = prs_military_push days = 365 } }
+		completion_reward = { add_timed_idea = { idea = PRE_military_push days = 365 } }
 	}
 	focus = {
-		id = PRS_DEMAND_DANISH_HOLSTEIN
+		id = PRE_DEMAND_DANISH_HOLSTEIN
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = PRS_SHOW_OUR_STRENGTH }
+		prerequisite = { focus = PRE_SHOW_OUR_STRENGTH }
 		x = 17
 		y = 5
 		cost = 2
@@ -444,9 +444,9 @@ focus_tree = {
 		completion_reward = { DEN = { country_event = { id = le_prussia.15 }}}
 	}
 	focus = {
-		id = PRS_DEMAND_POZNAN
+		id = PRE_DEMAND_POZNAN
 		icon = GFX_goal_poland_goal
-		prerequisite = { focus = PRS_SHOW_OUR_STRENGTH }
+		prerequisite = { focus = PRE_SHOW_OUR_STRENGTH }
 		x = 19
 		y = 5
 		cost = 2
@@ -454,10 +454,10 @@ focus_tree = {
 		completion_reward = { POL = { country_event = { id = le_prussia.18 }}}
 	}
 	focus = {
-		id = PRS_THE_BERLIN_CONFERENCE
+		id = PRE_THE_BERLIN_CONFERENCE
 		icon = GFX_goal_government_icon
-		prerequisite = { focus = PRS_DEMAND_POZNAN}
-		prerequisite = { focus = PRS_DEMAND_DANISH_HOLSTEIN }
+		prerequisite = { focus = PRE_DEMAND_POZNAN}
+		prerequisite = { focus = PRE_DEMAND_DANISH_HOLSTEIN }
 		x = 18
 		y = 6
 		cost = 4
@@ -472,9 +472,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRS_THE_NORTH_GERMAN_CONFEDERATION
+		id = PRE_THE_NORTH_GERMAN_CONFEDERATION
 		icon = GFX_focus_ger_oppose_hitler
-		prerequisite = { focus = PRS_THE_BERLIN_CONFERENCE }
+		prerequisite = { focus = PRE_THE_BERLIN_CONFERENCE }
 		x = 18
 		y = 7
 		cost = 5
@@ -487,10 +487,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRS_DEMAND_SOUTHERN_GERMANY
+		id = PRE_DEMAND_SOUTHERN_GERMANY
 		icon = GFX_Generic_Invasion
-		prerequisite = { focus = PRS_THE_NORTH_GERMAN_CONFEDERATION }
-		#mutually_exclusive = {focus = PRS_ASSSASSINATE_AUSTRIAN_LEADERS }
+		prerequisite = { focus = PRE_THE_NORTH_GERMAN_CONFEDERATION }
+		#mutually_exclusive = {focus = PRE_ASSSASSINATE_AUSTRIAN_LEADERS }
 		x = 18
 		y = 8
 		cost = 10
@@ -518,9 +518,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRS_A_UNITED_GERMANY
+		id = PRE_A_UNITED_GERMANY
 		icon = GFX_focus_ger_revive_kaiserreich
-		prerequisite = { focus = PRS_DEMAND_SOUTHERN_GERMANY }
+		prerequisite = { focus = PRE_DEMAND_SOUTHERN_GERMANY }
 		x = 18
 		y = 9
 		cost = 5

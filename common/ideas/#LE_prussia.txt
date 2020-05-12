@@ -1,6 +1,6 @@
 ideas = {
 	country = {	
-		prs_limited_navy_counter = {
+		PRE_limited_navy_counter = {
 			picture = general_staff
 			modifier = {
 				production_speed_dockyard_factor = -0.12
@@ -9,7 +9,7 @@ ideas = {
 				experience_gain_navy_factor = -0.08
 			}
 		}
-		prs_limited_navy = {
+		PRE_limited_navy = {
 			picture = general_staff
 			modifier = {
 				production_speed_dockyard_factor = -0.25
@@ -18,28 +18,28 @@ ideas = {
 				experience_gain_navy_factor = -0.15
 			}
 		}
-		prs_purchased_hannover_counter = {
+		PRE_purchased_hannover_counter = {
 			picture = general_staff
 			modifier = {
 				political_power_factor = -0.15
 				consumer_goods_factor = 0.08
 			}
 		}
-		prs_purchased_hannover = {
+		PRE_purchased_hannover = {
 			picture = general_staff
 			modifier = {
 				political_power_factor = -0.25
 				consumer_goods_factor = 0.15
 			}
 		}
-		prs_military_push = {
+		PRE_military_push = {
 			picture = general_staff
 			modifier = {
 				army_org_factor = 0.05
 				army_speed_factor = 0.04
 			}
 		}
-		prs_renewed_imperialism = {
+		PRE_renewed_imperialism = {
 			picture = general_staff
 			modifier = {
 				justify_war_goal_time = -0.25
@@ -48,7 +48,7 @@ ideas = {
 				subversive_activites_upkeep = -0.1
 			}
 		}
-		prs_wilhelms_iron_fist = {
+		PRE_wilhelms_iron_fist = {
 			picture = general_staff
 			modifier = {
 				conscription_factor = 0.05
@@ -59,7 +59,7 @@ ideas = {
 				stability_weekly = -0.01
 			}
 		}
-		prs_waldemars_acedemics = {
+		PRE_waldemars_acedemics = {
 			picture = general_staff
 			modifier = {
 				conscription_factor = -0.05
@@ -69,7 +69,7 @@ ideas = {
 				stability_weekly = 0.01
 			}
 		}
-		PRS_PRUSSIAN_MILITARISM = {
+		PRE_PRUSSIAN_MILITARISM = {
 			picture = general_staff
 			modifier = {
 				conscription = 0.02
@@ -77,7 +77,7 @@ ideas = {
 				army_attack_factor = 0.05
 			}
 		}
-		PRS_political_opposition = {
+		PRE_political_opposition = {
 			picture = jap_the_unthinkable_option
 			modifier = {
 				drift_defence_factor = -0.10
@@ -91,7 +91,7 @@ ideas = {
 				socialism_acceptance = -50
 			}
 		}
-		PRS_unmaintained_navy = {
+		PRE_unmaintained_navy = {
 			picture = MTG_naval_treaty_adherent_reduced
 			modifier = {
 				naval_hit_chance = -0.10
@@ -100,7 +100,7 @@ ideas = {
 			}
 		}
 		
-		PRS_criminalized_radicalism = {
+		PRE_criminalized_radicalism = {
 			picture = MTG_naval_treaty_adherent_reduced
 			modifier = {
 				proletarianism_drift = -0.03
@@ -112,7 +112,7 @@ ideas = {
 			}
 		}
 		
-		PRS_the_call_of_the_fatherland = {
+		PRE_the_call_of_the_fatherland = {
 			picture = MTG_naval_treaty_adherent_reduced
 			modifier = {
 				conscription = 0.10

@@ -40,4 +40,13 @@ spriteTypes = {
 		textureFile2 = "gfx/interface/hre_shield_mask.tga"
 		effectFile = "gfx/FX/maskedflag.lua"
 	}
+	spriteType = {
+		name = "GFX_diet_ui"
+		texturefile = "gfx/interface/diet_seats_ui.dds"
+		noOfFrames = 80
+	}
+	SpriteType = {
+		name = "GFX_hre_banner"
+		textureFile = "gfx//interface/hre_banner.dds"
+	}
 }
