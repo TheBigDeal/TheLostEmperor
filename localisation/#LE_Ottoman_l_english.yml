@@ -1,18 +1,16 @@
 ﻿l_english: 
 
 ### Political Parties ###
- TUR_absolutism_party:0 "Loyal League"
- TUR_royalism_party:0 "British National Party"
- TUR_rexism_party:0 "British Imperial Front"
- TUR_despotism_party:0 "Unity And Nationalist Association"
- TUR_conservatism_party:0 "Conservative Party (Tories)"
- TUR_liberalism_party:0 "Liberal Party"
- TUR_socialism_party:0 "Labour Party"
- TUR_theocracy_party:0 "Church Of England"
- TUR_labryscism_party:0 "New Model Republicans"
- TUR_mutualism_party:0 "British Congress of Trade Unions"
- TUR_collectivism_party:0 "British Congress of Trade Unions"
- TUR_proletarianism_party:0 "British Congress of Trade Unions"
+ TUR_rexism_party:0 "Millet Partisi"
+ TUR_rexism_party_long:0 "Millet Partisi"
+ TUR_proletarianism_party:0 "TKP"
+ TUR_proletarianism_party_long:0 "Türkiye Komünist Partisi"
+ TUR_liberalism_party:0 "DP"
+ TUR_liberalism_party_long:0 "Demokrat Parti"
+ TUR_absolutism_party:0 "Osmangolu"
+ TUR_absolutism_party_long:0 "House of Osmangolu"
+ TUR_theocracy_party:0 "Ulema"
+ TUR_theocracy_party_long:0 "Ulema"
  
 ### Ministers ###
  # Head Of State
