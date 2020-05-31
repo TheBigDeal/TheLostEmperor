@@ -62,11 +62,14 @@ HEJ = {
 		liberalism = 5
 		socialism = 5 
 		labryscism = 11
+		rexism = 0
 		despotism = 5
 		royalism = 7
 		theocracy = 29
 		absolutism = 22
 		proletarianism = 11
+		collectivism = 0
+    	mutualism = 0
 	}
 }
 
@@ -85,7 +88,7 @@ EGY = {
 	set_popularities = {
 		liberalism = 37
 		rexism = 3
-		labyrschism = 12
+		labryscism = 12
 		proletarianism = 13
 		absolutism = 20
 		royalism = 5

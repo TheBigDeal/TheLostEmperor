@@ -36,22 +36,6 @@ set_popularities = {
 
 set_convoys = 5
 
-create_country_leader = {# Saūd bin Abd al-Azīz
-	name = "Abdulaziz bin Saud Al Rashid"
-	desc = "POLITICS_AZIZ_JBS_DESC"
-	picture = "Portrait_JBS_Abdulaziz_bin_Saud_bin_Abdulaziz.tga"
-	expire = "1965.1.1"
-	ideology = absolutism_ideology
-	traits = {}
-}
-create_country_leader = {# Saūd bin Abd al-Azīz
-	name = "Abdulaziz bin Saud Al Rashid"
-	desc = "POLITICS_AZIZ_JBS_DESC"
-	picture = "Portrait_JBS_Abdulaziz_bin_Saud_bin_Abdulaziz.tga"
-	expire = "1965.1.1"
-	ideology = royalism_ideology
-	traits = {}
-}
 create_country_leader = {
 	name = "Saud bin Abdulaziz"
 	desc = "POLITICS_ABDULAZIZ_DESC"

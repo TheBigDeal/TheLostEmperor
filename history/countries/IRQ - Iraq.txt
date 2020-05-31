@@ -27,8 +27,17 @@ set_politics = {
 }
 
 set_popularities = {
-	royalism = 88
-	absolutism = 12
+	conservatism = 24
+	liberalism = 12
+	socialism = 2
+	labryscism = 10
+	despotism = 6
+	royalism = 22
+	theocracy = 9
+	absolutism = 10
+	proletarianism = 1
+	collectivism = 1
+    mutualism = 1
 }
 
 
