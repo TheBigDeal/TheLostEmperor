@@ -1,0 +1,13 @@
+﻿l_english: 
+
+### Political Parties ###
+ #
+
+### Country Names ###
+ ASR_absolutism:0 "Emirate of Asir"
+ ASR_absolutism_DEF:0 "The Emirate of Asir"
+ ASR_theocracy:0 "Imamate of Asir"
+ ASR_theocracy_DEF:0 "The Imamate of Asir"
+ ASR_absolutism_ADJ:0 "Asiri"
+ ASR_theocracy_ADJ:0 "Asiri"
+ 

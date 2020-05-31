@@ -56,46 +56,6 @@ set_stability = 0.55
 
 give_military_access = ATA
 
-HEJ = {
-	set_popularities = {
-		conservatism = 5
-		liberalism = 5
-		socialism = 5 
-		labryscism = 11
-		rexism = 0
-		despotism = 5
-		royalism = 7
-		theocracy = 29
-		absolutism = 22
-		proletarianism = 11
-		collectivism = 0
-    	mutualism = 0
-	}
-}
-
-ASR = {
-	set_popularities = {
-		conservatism = 8
-		liberalism = 22
-		rexism = 9
-		royalism = 10
-		absolutism = 71
-		theocracy = 10
-	}	
-}
-
-EGY = {
-	set_popularities = {
-		liberalism = 37
-		rexism = 3
-		labryscism = 12
-		proletarianism = 13
-		absolutism = 20
-		royalism = 5
-		theocracy = 10
-	}
-}
-
 if = {
 	limit = {
 		has_dlc = "Together for Victory"
@@ -125,6 +85,77 @@ if = {
 		puppet = EGY
 		puppet = LBA
 		puppet = HEJ
+	}
+}
+
+HEJ = {
+	set_popularities = {
+		conservatism = 5
+		liberalism = 5
+		socialism = 5 
+		labryscism = 11
+		rexism = 0
+		despotism = 5
+		royalism = 7
+		theocracy = 29
+		absolutism = 22
+		proletarianism = 11
+		collectivism = 0
+    	mutualism = 0
+	}
+}
+
+ASR = {
+	set_popularities = {
+		conservatism = 4
+		socialism = 2
+		rexism = 9
+		royalism = 10
+		absolutism = 21
+		theocracy = 20
+		proletarianism = 13
+		collectivism = 6
+    	mutualism = 15
+	}
+	set_politics = {
+		ruling_party = theocracy
+		last_election = "1920.15.6"
+		election_frequency = 48
+		elections_allowed = no
+	}
+}
+
+EGY = {
+	set_popularities = {
+		liberalism = 37
+		rexism = 3
+		labryscism = 12
+		proletarianism = 13
+		absolutism = 20
+		royalism = 5
+		theocracy = 10
+	}
+}
+
+IRQ = {
+	set_popularities = {
+		conservatism = 24
+		liberalism = 12
+		socialism = 2
+		labryscism = 10
+		despotism = 6
+		royalism = 22
+		theocracy = 11
+		absolutism = 10
+		proletarianism = 1
+		collectivism = 1
+		mutualism = 1
+	}
+	set_politics = {
+		ruling_party = royalism
+		last_election = "1920.15.6"
+		election_frequency = 48
+		elections_allowed = no
 	}
 }
 

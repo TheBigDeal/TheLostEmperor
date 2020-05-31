@@ -1231,17 +1231,13 @@
  GAL_royalism_DEF:0 "The Kingdom Of Galicia-Lodomeria"
  GAL_royalism_ADJ:0 "Galician"
 
- HEJ_absolutism:0 "Sharifate of Hejaz"
- HEJ_absolutism_DEF:0 "The Sharifate of Hejaz"
- HEJ_absolutism_ADJ:0 "Hejaz"
+ 
 
- ASR_absolutism:0 "Emirate of Asir"
- ASR_absolutism_DEF:0 "The Emirate of Asir"
- ASR_absolutism_ADJ:0 "Hejaz"
+ 
 
  KUB_absolutism:0 "Kuba"
- ASR_absolutism_DEF:0 "Kuba"
- ASR_absolutism_ADJ:0 "Kuba"
+ KUB_absolutism_DEF:0 "Kuba"
+ KUB_absolutism_ADJ:0 "Kuba"
 
  KAT_absolutism:0 "Katanga"
  KAT_absolutism_DEF:0 "Katanga"
