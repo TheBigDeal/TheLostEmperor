@@ -37,18 +37,18 @@ set_politics = {
 }
 
 set_popularities = {
-    conservatism = 7
-    liberalism = 1
-    socialism = 0
-    labryscism = 0
-    rexism = 0
-    despotism = 10
-    royalism = 1
-    theocracy = 16
-    absolutism = 65
-    proletarianism = 0
-    collectivism = 0
-    mutualism = 0
+    conservatism = 0
+    liberalism = 0
+    socialism = 9
+    labryscism = 10
+    rexism = 8
+    despotism = 8
+    royalism = 14
+    theocracy = 8
+    absolutism = 22
+    proletarianism = 1
+    collectivism = 13
+    mutualism = 7
 }
 
 set_convoys = 20
@@ -161,7 +161,7 @@ IRQ = {
 
 create_country_leader = {
 	name = "Mehmed Osman VI"
-	desc = "POLITICS_ISMET_INÖNÜ_DESC"
+	desc = ""
 	picture = "Portrait_Mehmed_VI.tga"
 	expire = "1965.1.1"
 	ideology = absolutism_ideology
@@ -175,7 +175,7 @@ create_country_leader = {
 	desc = "POLITICS_ISMET_INÖNÜ_DESC"
 	picture = "Portrait_Turkey_Ismet_Inonu.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = rexism_ideology
 	traits = {
 		#
 	}
@@ -186,7 +186,7 @@ create_country_leader = {
 	desc = "POLITICS_MUSTAFA_KEMAL_ATATÜRK_DESC"
 	picture = "gfx/leaders/TUR/Portrait_Turkey_Mustafa_Kemal_Ataturk.dds"
 	expire = "1938.11.10"
-	ideology = oligarchism
+	ideology = labryscism_ideology
 	traits = {
 		#
 	}
@@ -197,7 +197,7 @@ create_country_leader = {
 	desc = "POLITICS_SEFIK_HUSNU_DESC"
 	picture = "gfx/leaders/TUR/Portrait_Turkey_Sefik_Husnu.dds"
 	expire = "1965.1.1"
-	ideology = proletarianism
+	ideology = collectivism_ideology
 	traits = {
 		#
 	}
@@ -208,7 +208,7 @@ create_country_leader = {
 	desc = "POLITICS_CELAL_BAYAR_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = socialism_ideology
 	traits = {
 		#
 	}
@@ -218,7 +218,7 @@ create_country_leader = {
 	desc = "POLITICS_OGUZ_REMZI_ARIK_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 	expire = "1965.1.1"
-	ideology = rexism
+	ideology = theocracy_ideology
 	traits = {
 		#
 	}
