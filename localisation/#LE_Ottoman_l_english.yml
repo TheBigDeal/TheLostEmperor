@@ -37,7 +37,7 @@
  tur_propaganda_effort:0 "Propaganda Effort"
  tur_send_military:0 "Prepare Military"
  tur_subject_liberty_desire:0 "Rebellious Vassals"
- tur_subject_liberty_desire_desc:0 "Our Vassals have begun to reject our overlordship. With the situation with the rebels turning dire it is hard to keep everything in check.\n\n[IRQ.GetFlag]Iraq Liberty Desire: Test\n[HEJ.GetFlag]Hejaz Liberty Desire: Test\n[SHM.GetFlag]Jabal Shammar Liberty Desire: Test\n[EGY.GetFlag]Egypt Liberty Desire: Test\n[ASR.GetFlag]Asir Liberty Desire: Test\n[YEM.GetFlag]Yemen Liberty Desire: Test\n[LBA.GetFlag]Tripolitania Liberty Desire: Test"
+ tur_subject_liberty_desire_desc:0 "Our Vassals have begun to reject our overlordship. With the situation with the rebels turning dire it is hard to keep everything in check.\n\n[IRQ.GetFlag]Iraqi Liberty Desire: Test\n[HEJ.GetFlag]Hejazi Liberty Desire: Test\n[SHM.GetFlag]Shammari Liberty Desire: Test\n[EGY.GetFlag]Egyptian Liberty Desire: Test\n[ASR.GetFlag]Asir Liberty Desire: Test\n[LBA.GetFlag]Tripolitania Liberty Desire: Test\n[NEJ.GetFlag]Nejdi Liberty Desire: Test"
  tur_rebel_expansion_into_palestine:0 "Rebel Expansion Into Palestine"
  tur_rebel_expansion_into_lebanon:0 "Rebel Expansion Into Lebanon"
  tur_rebel_expansion_into_west_jordan:0 "Rebel Expansion Into West Jordan"

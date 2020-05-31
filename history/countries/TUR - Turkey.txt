@@ -85,6 +85,7 @@ if = {
 		puppet = EGY
 		puppet = LBA
 		puppet = HEJ
+		puppet = ASR
 	}
 }
 
@@ -159,12 +160,41 @@ IRQ = {
 	}
 }
 
+LBA = {
+	set_popularities = {
+		liberalism = 1
+		rexism = 22
+		labryscism = 50
+		proletarianism = 9
+		absolutism = 6
+		royalism = 5
+		theocracy = 7
+	}
+	set_politics = {
+		ruling_party = labryscism
+		last_election = "1920.15.6"
+		election_frequency = 48
+		elections_allowed = no
+	}
+}
+
 create_country_leader = {
 	name = "Mehmed Osman VI"
 	desc = ""
 	picture = "Portrait_Mehmed_VI.tga"
 	expire = "1965.1.1"
 	ideology = absolutism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mehmed Osman VI"
+	desc = ""
+	picture = "Portrait_Mehmed_VI.tga"
+	expire = "1965.1.1"
+	ideology = royalism_ideology
 	traits = {
 		#
 	}
@@ -204,6 +234,16 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Mustafa Suphi"
+	desc = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/TUR/Portrait_Turkey_Sefik_Husnu.dds"
+	expire = "1965.1.1"
+	ideology = mutualism_ideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
 	name = "Celâl Bayar"
 	desc = "POLITICS_CELAL_BAYAR_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
@@ -218,7 +258,17 @@ create_country_leader = {
 	desc = "POLITICS_OGUZ_REMZI_ARIK_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 	expire = "1965.1.1"
-	ideology = theocracy_ideology
+	ideology = despotism_ideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Şeyhulislam Mehmed"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = theocratic_ideology
 	traits = {
 		#
 	}
