@@ -1,23 +1,26 @@
 focus_tree = {
 	id = bavarian_focus
 	country = { factor = 0 modifier = { add = 10 tag = BAY } }
+	continuous_focus_position = { x = 50 y = 800 }
 	default = no
 	focus = {
 		id = BAV_TENSIONS_RISING
-		icon = GFX_goal_support_rexism
-		prerequisite = { focus = BAV_TENSIONS_RISING }
-		x = 12
+		icon = GFX_goal_revolution
+		x = 7
 		y = 0
-		cost = 3
+		cost = 1
 		ai_will_do = { factor = 12 }
-		completion_reward = {}
+		completion_reward = {
+			add_stability = -0.05
+			country_event = { id = le_bavaria.2 }
+		}
 	}
 	focus = {
 		id = BAV_APPEAL_TO_THE_LEFT
-		icon = GFX_goal_support_rexism
+		icon = GFX_focus_red_constitution
 		prerequisite = { focus = BAV_TENSIONS_RISING }
-		mutually_exclusive = { focus = BAV_EASE_TENSIONS focus = BAV_STRIKE_THE_RADICALS } 
-		x = 6
+		mutually_exclusive = { focus = BAV_STRIKE_THE_RADICALS } 
+		x = 3
 		y = 1
 		cost = 3
 		ai_will_do = { factor = 12 }
@@ -25,9 +28,9 @@ focus_tree = {
 	}
 	focus = {
 		id = BAV_INCREASE_WORKPLACE_SAFETY
-		icon = GFX_goal_support_rexism
+		icon = GFX_goal_economic_control_red
 		prerequisite = { focus = BAV_APPEAL_TO_THE_LEFT }
-		x = 3
+		x = 0
 		y = 2
 		cost = 3
 		ai_will_do = { factor = 12 }
@@ -35,28 +38,28 @@ focus_tree = {
 	}
 	focus = {
 		id = BAV_ALLOW_TRADE_UNIONS
-		icon = GFX_goal_support_rexism
+		icon = GFX_focus_trade_unions
 		prerequisite = { focus = BAV_APPEAL_TO_THE_LEFT }
-		x = 5
+		x = 2
 		y = 2
 		cost = 3
 		ai_will_do = { factor = 12 }
 		completion_reward = { 
 			random_list = {
-				80 = {
+				90 = {
 					add_ideas = law_3_all_allowed 
 				}
-				20 = {
+				10 = {
 					country_event = { id = le_bavaria.1 }
 				}
 			}
 		}
 	}
 	focus = {
-		id = BAV_PRIVATIZE_BUSINESS
-		icon = GFX_goal_support_rexism
+		id = BAV_ELIMINATE_LOWER_CLASS_TAX_BURDEN
+		icon = GFX_goal_planned_economy2
 		prerequisite = { focus = BAV_APPEAL_TO_THE_LEFT }
-		x = 7
+		x = 4
 		y = 2
 		cost = 3
 		ai_will_do = { factor = 12 }
@@ -64,9 +67,9 @@ focus_tree = {
 	}
 	focus = {
 		id = BAV_UNIVERSAL_HEALTHCARE
-		icon = GFX_goal_support_rexism
+		icon = GFX_education_reform
 		prerequisite = { focus = BAV_APPEAL_TO_THE_LEFT }
-		x = 9
+		x = 6
 		y = 2
 		cost = 3
 		ai_will_do = { factor = 12 }
@@ -74,12 +77,12 @@ focus_tree = {
 	}
 	focus = {
 		id = BAV_THE_KING_STEPS_DOWN
-		icon = GFX_goal_support_rexism
+		icon = GFX_focus_rom_abdicate
 		prerequisite = { focus = BAV_UNIVERSAL_HEALTHCARE }
-		prerequisite = { focus = BAV_PRIVATIZE_BUSINESS }
+		prerequisite = { focus = BAV_ELIMINATE_LOWER_CLASS_TAX_BURDEN }
 		prerequisite = { focus = BAV_ALLOW_TRADE_UNIONS }
 		prerequisite = { focus = BAV_INCREASE_WORKPLACE_SAFETY }
-		x = 6
+		x = 3
 		y = 3
 		cost = 3
 		ai_will_do = { factor = 12 }
@@ -87,47 +90,971 @@ focus_tree = {
 	}
 	focus = {
 		id = BAV_COMMUNIST_TAKEOVER
-		icon = GFX_goal_support_rexism
+		icon = GFX_communist_pride
 		prerequisite = { focus = BAV_THE_KING_STEPS_DOWN }
 		mutually_exclusive = { focus = BAV_A_SOCIALIST_GOVERNMENT }
-		x = 4
+		x = 1
 		y = 4
 		cost = 3
 		ai_will_do = { factor = 12 }
-		completion_reward = {}
+		completion_reward = {
+			remove_ideas = rooted_collectivists
+		}
 	}
 	focus = {
 		id = BAV_A_SOCIALIST_GOVERNMENT
-		icon = GFX_goal_support_rexism
+		icon = GFX_socialist
 		prerequisite = { focus = BAV_THE_KING_STEPS_DOWN }
 		mutually_exclusive = { focus = BAV_COMMUNIST_TAKEOVER }
-		x = 8
+		x = 5
 		y = 4
 		cost = 3
 		ai_will_do = { factor = 12 }
-		completion_reward = {}
-	}
-	focus = {
-		id = BAV_EASE_TENSIONS
-		icon = GFX_goal_support_rexism
-		prerequisite = { focus = BAV_TENSIONS_RISING }
-		mutually_exclusive = { focus = BAV_STRIKE_THE_RADICALS focus = BAV_APPEAL_TO_THE_LEFT } 
-		x = 12
-		y = 1
-		cost = 3
-		ai_will_do = { factor = 12 }
-		completion_reward = {}
+		completion_reward = {
+			remove_ideas = rooted_collectivists
+		}
 	}
 	focus = {
 		id = BAV_STRIKE_THE_RADICALS
-		icon = GFX_goal_support_rexism
+		icon = GFX_round_up_the_communists
 		prerequisite = { focus = BAV_TENSIONS_RISING }
-		mutually_exclusive = { focus = BAV_EASE_TENSIONS focus = BAV_APPEAL_TO_THE_LEFT } 
-		x = 15
+		mutually_exclusive = { focus = BAV_APPEAL_TO_THE_LEFT } 
+		x = 11
 		y = 1
 		cost = 3
 		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = BAV_MONARCH_PROPAGANDA
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = BAV_STRIKE_THE_RADICALS }
+		x = 9
+		y = 2
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_popularity = { ideology = absolutism popularity = 0.03 }
+			add_popularity = { ideology = royalism popularity = 0.02 }
+		}
+	}
+	focus = {
+		id = BAV_SUPPRESS_COMMUNISTS
+		icon = GFX_focus_purge_bureaucracy
+		prerequisite = { focus = BAV_STRIKE_THE_RADICALS }
+		x = 11
+		y = 2
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_popularity = { ideology = collectivism popularity = -0.05 }
+			add_popularity = { ideology = mutualism popularity = -0.05 }
+			add_popularity = { ideology = proletarianism popularity = -0.05 }
+		}
+	}
+	focus = {
+		id = BAV_INCREASE_WORKER_TAXES
+		icon = GFX_generic_gold_coins
+		prerequisite = { focus = BAV_STRIKE_THE_RADICALS }
+		x = 13
+		y = 2
+		cost = 3
+		ai_will_do = { factor = 12 }
 		completion_reward = {}
+	}
+	focus = {
+		id = BAV_REQUEST_FOREIGN_AID
+		icon = GFX_generic_socialism
+		prerequisite = { focus = BAV_MONARCH_PROPAGANDA }
+		prerequisite = { focus = BAV_SUPPRESS_COMMUNISTS }
+		prerequisite = { focus = BAV_INCREASE_WORKER_TAXES }
+		x = 11
+		y = 3
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			AUS = { country_event = { id = le_bavaria.6 days = 8 }}
+			BOH = { country_event = { id = le_bavaria.6 days = 8 }}
+			PRE = { country_event = { id = le_bavaria.6 days = 8 }}
+			SWI = { country_event = { id = le_bavaria.6 days = 8 }}
+			HOL = { country_event = { id = le_bavaria.6 days = 8 }}
+			BUR = { country_event = { id = le_bavaria.6 days = 8 }}
+			FRA = { country_event = { id = le_bavaria.6 days = 8 }}
+		}
+	}
+	focus = {
+		id = BAV_THE_BAVARIAN_SOCIALIST_UPRISING
+		icon = GFX_generic_revolution
+		prerequisite = { focus = BAV_REQUEST_FOREIGN_AID }
+		x = 11
+		y = 4
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			remove_ideas = rooted_collectivists
+			country_event = { id = le_bavaria.3 }
+			country_event = { id = le_bavaria.4 days = 3 }
+		}
+	}
+	focus = {
+		id = BAV_THE_PEOPLE_PREVAIL
+		icon = GFX_goal_revolution_tools
+		x = 22
+		y = 0
+		cost = 3
+		ai_will_do = { factor = 12 }
+		available = {
+			NOT = { has_idea = rooted_collectivists }
+			OR = {
+				has_government = collectivism
+				has_government = proletarianism
+				has_government = mutualism
+			}
+		}
+		completion_reward = {
+			army_experience = 25
+			add_to_variable = { prestige_score =  8 }
+			custom_effect_tooltip = prestige8_tt
+		}
+	}
+	focus = {
+		id = BAV_AGGRESSIVE_REVOLUTION
+		icon = GFX_socialism_of_the_people
+		prerequisite = { focus = BAV_THE_PEOPLE_PREVAIL }
+		mutually_exclusive = { focus = BAV_COVERT_REVOLUTION }
+		x = 16
+		y = 1
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_politics = { ruling_party = proletarianism }
+			add_popularity = { ideology = proletarianism popularity = 0.20 }
+			add_popularity = { ideology = collectivism popularity = -0.20 }
+		}
+	}
+	focus = {
+		id = BAV_THREATEN_PASSAU
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = BAV_AGGRESSIVE_REVOLUTION }
+		x = 15
+		y = 2
+		cost = 3
+		ai_will_do = { factor = 12 }
+		bypass = {
+			NOT = { country_exists = PSU }
+		}
+		completion_reward = {
+			add_state_core = 793
+			PSU = { country_event = { id = le_bavaria.8 }}
+		}
+	}
+	focus = {
+		id = BAV_INVADE_AUGSBERG
+		icon = GFX_generic_strike
+		prerequisite = { focus = BAV_AGGRESSIVE_REVOLUTION }
+		x = 17
+		y = 2
+		cost = 3
+		ai_will_do = { factor = 12 }
+		bypass = {
+			NOT = { country_exists = AUG }
+		}
+		completion_reward = {
+			add_state_core = 766
+			create_wargoal = {
+				type = annex_everything
+				target = AUG
+			}
+		}
+	}
+	focus = {
+		id = BAV_THE_PRUSSIAN_ISSUE
+		icon = GFX_crown_of_prussia
+		prerequisite = { focus = BAV_THREATEN_PASSAU }
+		prerequisite = { focus = BAV_INVADE_AUGSBERG }
+		x = 16
+		y = 3
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			country_event = { id = le_bavaria.11 }
+		}
+	}
+	focus = {
+		id = BAV_ENCITE_REVOLT
+		icon = GFX_generic_revolution
+		prerequisite = { focus = BAV_THE_PRUSSIAN_ISSUE }
+		mutually_exclusive = { focus = BAV_INVADE_THE_LANDS }
+		x = 15
+		y = 4
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			PRE = {
+				release = ANS
+				release = BTH
+				country_event = { id = le_bavaria.12 }
+			}
+		}
+	}
+	focus = {
+		id = BAV_INVADE_THE_LANDS
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = BAV_THE_PRUSSIAN_ISSUE }
+		mutually_exclusive = { focus = BAV_ENCITE_REVOLT }
+		x = 17
+		y = 4
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			transfer_state = 799
+			add_state_core = 799
+			transfer_state = 800
+			add_state_core = 800
+			PRE = { country_event = { id = le_bavaria.13 }}
+		}
+	}
+	focus = {
+		id = BAV_INFLUENCE_THE_FREE_CITIES
+		icon = GFX_goal_foreign_diplomacy
+		prerequisite = { focus = BAV_INVADE_THE_LANDS focus = BAV_ENCITE_REVOLT }
+		mutually_exclusive = { focus = BAV_INVADE_THE_FREE_CITIES }
+		x = 15
+		y = 5
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			custom_effect_tooltip = bavarian_free_cities_cat_tt
+			set_country_flag = INFLUENCE_THE_FREE_CITIES
+		}
+	}
+	focus = {
+		id = BAV_INVADE_THE_FREE_CITIES
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = BAV_INVADE_THE_LANDS focus = BAV_ENCITE_REVOLT }
+		mutually_exclusive = { focus = BAV_INFLUENCE_THE_FREE_CITIES }
+		x = 17
+		y = 5
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			custom_effect_tooltip = bavarian_war_with_austria_tt
+			set_country_flag = INFLUENCE_THE_FREE_CITIES
+			create_wargoal = { type = annex_everything target = ULM }
+			create_wargoal = { type = annex_everything target = LND }
+			create_wargoal = { type = annex_everything target = MEM }
+			create_wargoal = { type = annex_everything target = HUL }
+			create_wargoal = { type = annex_everything target = NUR }
+			add_state_core = 797
+			add_state_core = 798
+			add_state_core = 796
+			add_state_core = 883
+			add_state_core = 765
+		}
+	}
+	focus = {
+		id = BAV_EASTERN_THRUST
+		icon = GFX_Generic_Invasion
+		prerequisite = { focus = BAV_INFLUENCE_THE_FREE_CITIES focus = BAV_INVADE_THE_FREE_CITIES }
+		x = 16
+		y = 6
+		cost = 3
+		ai_will_do = { factor = 12 }
+		available = {
+			NOT = { country_exists = LND }
+			NOT = { country_exists = MEM }
+			NOT = { country_exists = ULM }
+			NOT = { country_exists = HUL }
+			NOT = { country_exists = NUR }
+		}
+		completion_reward = {
+			MAI = { 
+				create_faction = Bavarian_Coalition
+				add_to_faction = BAD
+				add_to_faction = FUS
+				add_to_faction = HNZ
+				add_to_faction = SPY
+				add_to_faction = WUR
+				add_to_faction = WRZ
+				add_to_faction = BAM
+			}
+			declare_war_on = {type = annex_everything target = MAI}
+			declare_war_on = {type = annex_everything target = BAD}
+			declare_war_on = {type = annex_everything target = FUS}
+			declare_war_on = {type = annex_everything target = HNZ}
+			declare_war_on = {type = annex_everything target = SPY}
+			declare_war_on = {type = annex_everything target = WUR}
+			declare_war_on = {type = annex_everything target = WRZ}
+			declare_war_on = {type = annex_everything target = BAM}
+		}
+	}
+	focus = {
+		id = BAV_PROCLAIM_SOUTH_GERMAN_SOCIALIST_REPUBLIC
+		icon = GFX_communist_pride
+		prerequisite = { focus = BAV_EASTERN_THRUST }
+		x = 16
+		y = 7
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_to_variable = { prestige_score = 30 }
+			custom_effect_tooltip = prestige30_tt
+			set_cosmetic_tag = SOUTH_GERMAN_SOCIALIST_REPUBLIC
+			add_state_core = 766
+			add_state_core = 799
+			add_state_core = 800
+			add_state_core = 795
+			add_state_core = 870
+			add_state_core = 884
+			add_state_core = 54
+			add_state_core = 50
+			add_state_core = 801
+			add_state_core = 803
+			add_state_core = 802
+			add_state_core = 805
+		}
+	}
+	focus = {
+		id = BAV_FORM_THE_RED_ARMY
+		icon = GFX_focus_red_army
+		prerequisite = { focus = BAV_PROCLAIM_SOUTH_GERMAN_SOCIALIST_REPUBLIC }
+		x = 16
+		y = 8
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAV_DEFEAT_THE_PRUSSIANS
+		icon = GFX_unknown
+		prerequisite = { focus = BAV_PROCLAIM_SOUTH_GERMAN_SOCIALIST_REPUBLIC }
+		available = {
+			has_completed_focus = BAV_VICTORY_IN_THE_EAST
+		}
+		x = 13
+		y = 8
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAV_CONTACT_THE_BELGIANS
+		icon = GFX_unknown
+		prerequisite = { focus = BAV_DEFEAT_THE_PRUSSIANS }
+		mutually_exclusive = { focus = BAV_CONTACT_THE_DUTCH }
+		x = 11
+		y = 9
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAV_SUPPORT_A_UNITED_BELGIAN_STATE
+		icon = GFX_unknown
+		prerequisite = { focus = BAV_CONTACT_THE_BELGIANS }
+		x = 11
+		y = 10
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAV_CONTACT_THE_DUTCH
+		icon = GFX_unknown
+		prerequisite = { focus = BAV_DEFEAT_THE_PRUSSIANS }
+		mutually_exclusive = { focus = BAV_CONTACT_THE_BELGIANS }
+		x = 15
+		y = 9
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAV_SUPPORT_DUTCH_CLAIMS
+		icon = GFX_unknown
+		prerequisite = { focus = BAV_CONTACT_THE_DUTCH }
+		x = 15
+		y = 10
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAV_EXPAND_MILITARY_DISCIPLINE
+		icon = GFX_unknown
+		prerequisite = { focus = BAV_SUPPORT_DUTCH_CLAIMS focus = BAV_SUPPORT_A_UNITED_BELGIAN_STATE }
+		x = 11
+		y = 11
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAV_RECUIT_VETERAN_OFFICERS
+		icon = GFX_unknown
+		prerequisite = { focus = BAV_SUPPORT_DUTCH_CLAIMS focus = BAV_SUPPORT_A_UNITED_BELGIAN_STATE }
+		x = 13
+		y = 11
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAV_EXPAND_CONSCRIPTION
+		icon = GFX_unknown
+		prerequisite = { focus = BAV_SUPPORT_DUTCH_CLAIMS focus = BAV_SUPPORT_A_UNITED_BELGIAN_STATE }
+		x = 15
+		y = 11
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAV_WAR_OF_UNIFICATION
+		icon = GFX_unknown
+		prerequisite = { focus = BAV_EXPAND_CONSCRIPTION }
+		prerequisite = { focus = BAV_RECUIT_VETERAN_OFFICERS }
+		prerequisite = { focus = BAV_EXPAND_MILITARY_DISCIPLINE }
+		x = 13
+		y = 12
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAV_VICTORY_IN_THE_NORTH
+		icon = GFX_unknown
+		prerequisite = { focus = BAV_WAR_OF_UNIFICATION }
+		x = 13
+		y = 13
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAV_A_UNITED_GERMANY
+		icon = GFX_unknown
+		prerequisite = { focus = BAV_VICTORY_IN_THE_NORTH }
+		prerequisite = { focus = BAV_VICTORY_IN_THE_EAST }
+		x = 16
+		y = 14
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAV_DOMINATE_THE_AUSTRIANS
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus = BAV_PROCLAIM_SOUTH_GERMAN_SOCIALIST_REPUBLIC }
+		x = 18
+		y = 8
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = BAV_APPEAL_TO_HUNGARIAN_COMMUNISTS
+		icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = BAV_DOMINATE_THE_AUSTRIANS }
+		x = 18
+		y = 9
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			country_event = { id = le_bavaria.21 }
+			HUN = { add_popularity = {ideology = proletarianism popularity = 0.2 } }
+		}
+	}
+	focus = {
+		id = BAV_THE_MUNICH_TREATY
+		icon = GFX_focus_red_constitution
+		prerequisite = { focus = BAV_APPEAL_TO_HUNGARIAN_COMMUNISTS }
+		x = 18
+		y = 10
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_state_claim = 153
+			add_state_claim = 39
+			add_state_claim = 794
+			add_state_claim = 152
+			add_state_claim = 102
+			add_state_claim = 736
+			add_state_claim = 4
+			add_state_claim = 984
+			HUN = {
+				add_state_claim = 45
+				add_state_claim = 999
+				add_state_claim = 70
+				add_state_claim = 71
+				add_state_claim = 1001
+				add_state_claim = 82
+				add_state_claim = 83
+				add_state_claim = 76
+				add_state_claim = 84
+			}
+		}
+	}
+	focus = {
+		id = BAV_INVITE_SERBIA
+		icon = GFX_generic_army_focus_red
+		prerequisite = { focus = BAV_THE_MUNICH_TREATY }
+		mutually_exclusive = { focus = BAV_PERSUADE_ILLYRIA }
+		x = 17
+		y = 11
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAV_PERSUADE_ILLYRIA
+		icon = GFX_focus_NZL_bob_semple_tank
+		prerequisite = { focus = BAV_THE_MUNICH_TREATY }
+		mutually_exclusive = { focus = BAV_INVITE_SERBIA }
+		x = 19
+		y = 11
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = BAV_BREAK_THE_AUSTRIANS
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = BAV_INVITE_SERBIA focus = BAV_PERSUADE_ILLYRIA}
+		x = 17
+		y = 12
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			declare_war_on = {
+				target = AUS
+				type = annex_everything
+			}
+			HUN = {
+				declare_war_on = {target = AUS type = annex_everything}
+				declare_war_on = {target = SLO type = annex_everything}
+				declare_war_on = {target = TRN type = annex_everything}
+				declare_war_on = {target = VOJ type = annex_everything}
+				start_civil_war = {
+					ruling_party = proletarianism
+					ideology = ROOT
+					size = 0.2
+					only_own_territory = no
+					capital = 155
+					states = { 
+						155
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAV_INVADE_BOHEMIA
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = BAV_INVITE_SERBIA focus = BAV_PERSUADE_ILLYRIA}
+		x = 19
+		y = 12
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			declare_war_on = {target = BOH type = annex_everything}
+		}
+	}
+	focus = {
+		id = BAV_VICTORY_IN_THE_EAST
+		icon = GFX_unknown
+		prerequisite = { focus = BAV_BREAK_THE_AUSTRIANS }
+		prerequisite = { focus = BAV_INVADE_BOHEMIA }
+		x = 18
+		y = 13
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAV_CHOOSE_CABINET_MEMBERS
+		icon = GFX_seize_the_means_of_production
+		prerequisite = { focus = BAV_THE_PEOPLE_PREVAIL }
+		x = 21
+		y = 1
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_timed_idea = {
+				idea = bay_reconstruction_effort
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = BAV_CHOOSE_COMMUNIST_POLICIES
+		icon = GFX_seize_the_means_of_production
+		prerequisite = { focus = BAV_THE_PEOPLE_PREVAIL }
+		x = 23
+		y = 1
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_timed_idea = {
+				idea = bay_reconstruction_effort
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = BAV_REBUILD_THE_COUNTRY
+		icon = GFX_seize_the_means_of_production
+		prerequisite = { focus = BAV_CHOOSE_CABINET_MEMBERS }
+		prerequisite = { focus = BAV_CHOOSE_COMMUNIST_POLICIES }
+		x = 22
+		y = 2
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_timed_idea = {
+				idea = bay_reconstruction_effort
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = BAV_THREE_YEAR_PLAN
+		icon = GFX_planned_economy
+		prerequisite = { focus = BAV_REBUILD_THE_COUNTRY }
+		x = 21
+		y = 3
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_timed_idea = {
+				idea = bay_industrial_push
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = BAV_INDUSTRIAL_RESEARCH_COMITTEE
+		icon = GFX_focus_research2
+		prerequisite = { focus = BAV_THREE_YEAR_PLAN }
+		x = 19
+		y = 4
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = BAV_ELECTRONICS_RESEARCH_DIVISION
+		icon = GFX_goal_electronics
+		prerequisite = { focus = BAV_INDUSTRIAL_RESEARCH_COMITTEE }
+		x = 19
+		y = 5
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = BAV_DEVELOP_OUR_CITIES
+		icon = GFX_city
+		prerequisite = { focus = BAV_THREE_YEAR_PLAN }
+		x = 21
+		y = 4
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			52 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			53 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAV_IMPROVE_WORKER_MORALE
+		icon = GFX_generic_work_bill
+		prerequisite = { focus = BAV_DEVELOP_OUR_CITIES }
+		x = 21
+		y = 5
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAV_MILITARY_PRODUCTION_BOOM
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BAV_IMPROVE_WORKER_MORALE }
+		prerequisite = { focus = BAV_ELECTRONICS_RESEARCH_DIVISION }
+		x = 19
+		y = 6
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			53 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			52 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAV_CIVILIAN_PRODUCTION_BOOM
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BAV_IMPROVE_WORKER_MORALE }
+		prerequisite = { focus = BAV_ELECTRONICS_RESEARCH_DIVISION }
+		x = 21
+		y = 6
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			53 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			52 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAV_SPONSOR_TEXTILE_FACTORIES
+		icon = GFX_generic_textile_factories
+		prerequisite = { focus = BAV_CIVILIAN_PRODUCTION_BOOM }
+		prerequisite = { focus = BAV_MILITARY_PRODUCTION_BOOM }
+		x = 20
+		y = 7
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			52 = {
+				add_building_construction = {
+					type = textile_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAV_POPULATION_BOOM
+		icon = GFX_focus_national_socialist_male
+		prerequisite = { focus = BAV_REBUILD_THE_COUNTRY }
+		x = 23
+		y = 3
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_ideas = bay_population_boom
+		}
+	}
+	focus = {
+		id = BAV_EXPAND_FARMLAND
+		icon = GFX_focus_farms
+		prerequisite = { focus = BAV_POPULATION_BOOM }
+		x = 23
+		y = 4
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			52 = {
+				add_building_construction = {
+					type = farm
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			1021 = {
+				add_building_construction = {
+					type = farm
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			53 = {
+				add_building_construction = {
+					type = farm
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+	focus = {
+		id = BAV_ENCOURAGE_COMMUNISTS_ABROAD
+		icon = GFX_communist_cooperation
+		prerequisite = { focus = BAV_POPULATION_BOOM }
+		x = 25
+		y = 4
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_timed_idea = {
+				idea = communist_immigration
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = BAV_EXPAND_INFRASTRUCTURE
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = BAV_ENCOURAGE_COMMUNISTS_ABROAD }
+		prerequisite = { focus = BAV_EXPAND_FARMLAND }
+		x = 23
+		y = 5
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			53 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1021 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			52 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAV_ARM_THE_POPULACE
+		icon = GFX_goal_generic_arm_populace
+		prerequisite = { focus = BAV_ENCOURAGE_COMMUNISTS_ABROAD }
+		prerequisite = { focus = BAV_EXPAND_FARMLAND }
+		x = 25
+		y = 5
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_ideas = bay_armed_populace
+		}
+	}
+	focus = {
+		id = BAV_RESOURCE_EXTRACTION
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = BAV_ARM_THE_POPULACE }
+		prerequisite = { focus = BAV_EXPAND_INFRASTRUCTURE }
+		x = 24
+		y = 6
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_ideas = bay_improved_resource_extraction
+		}
+	}
+	focus = {
+		id = BAV_COMMUNIST_PARADISE
+		icon = GFX_Workers_Paradise
+		prerequisite = { focus = BAV_RESOURCE_EXTRACTION }
+		x = 24
+		y = 7
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			add_ideas = bay_workers_paradise
+		}
+	}
+	focus = {
+		id = BAV_DEVELOP_SOUTHERN_GERMANY
+		icon = GFX_Workers_Paradise
+		prerequisite = { focus = BAV_PROCLAIM_SOUTH_GERMAN_SOCIALIST_REPUBLIC }
+		prerequisite = { focus = BAV_SPONSOR_TEXTILE_FACTORIES }
+		prerequisite = { focus = BAV_COMMUNIST_PARADISE }
+		x = 22
+		y = 8
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+
+		}
 	}
 }
 	

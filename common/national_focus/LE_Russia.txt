@@ -1,0 +1,573 @@
+focus_tree = {
+	id = le_russian_focus
+	country = {factor = 0 modifier = {add = 10 tag = RUS} }
+	default = no
+	continuous_focus_position = { x = 50 y = 3100 }
+	focus = {
+		id = RUS_DECLARE_STATE_OF_EMERGENCY
+		icon = GFX_unknown
+		mutually_exclusive = { focus = RUS_BUSINESS_AS_USUAL}
+		x = 5
+		y = 0
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_READY_THE_RESERVES
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_DECLARE_STATE_OF_EMERGENCY }
+		x = 5
+		y = 1
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_CALL_IN_THE_MERCENARIES
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_READY_THE_RESERVES }
+		mutually_exclusive = { focus = RUS_ONE_LOYAL_ARMY }
+		x = 4
+		y = 2
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_REQUEST_BRITISH_AID
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_CALL_IN_THE_MERCENARIES }
+		x = 0
+		y = 3
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_A_TRAINING_GROUND_FOR_THE_RAF
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_REQUEST_BRITISH_AID }
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_REQUEST_DANISH_AID
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_CALL_IN_THE_MERCENARIES }
+		x = 2
+		y = 3
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_BLOCKADE_SOVIET_SUPPLIERS
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_REQUEST_DANISH_AID }
+		x = 2
+		y = 4
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_REQUEST_PRUSSIAN_AID
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_CALL_IN_THE_MERCENARIES }
+		x = 4
+		y = 3
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_EMPLOY_GERMAN_WEAPON_DESIGNER
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_REQUEST_PRUSSIAN_AID }
+		x = 4
+		y = 4
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_THE_COST_WE_HAVE_TO_PAY
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_A_TRAINING_GROUND_FOR_THE_RAF focus = RUS_BLOCKADE_SOVIET_SUPPLIERS focus = RUS_EMPLOY_GERMAN_WEAPON_DESIGNER }
+		x = 2
+		y = 6
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_ONE_LOYAL_ARMY
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_READY_THE_RESERVES }
+		mutually_exclusive = { focus = RUS_CALL_IN_THE_MERCENARIES }
+		x = 6
+		y = 2
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_FILL_THE_RANKS
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_ONE_LOYAL_ARMY }
+		x = 6
+		y = 3
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_BRINGING_IN_THE_ARTILLERY
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_ONE_LOYAL_ARMY }
+		x = 8
+		y = 3
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_RUSHING_WEAPON_PRODUCTION
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_FILL_THE_RANKS focus = RUS_BRINGING_IN_THE_ARTILLERY }
+		x = 6
+		y = 4
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_FORCE_PEASANTS_INTO_FACTORIES
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_FILL_THE_RANKS focus = RUS_BRINGING_IN_THE_ARTILLERY }
+		x = 8
+		y = 4
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_PUT_THE_CIVIL_ENGINEERS_TO_WORK
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_FORCE_PEASANTS_INTO_FACTORIES focus = RUS_RUSHING_WEAPON_PRODUCTION }
+		x = 6
+		y = 5
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_LET_THE_WOMEN_TILL_THE_FIELDS
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_FORCE_PEASANTS_INTO_FACTORIES focus = RUS_RUSHING_WEAPON_PRODUCTION }
+		x = 8
+		y = 5
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_THE_LIVES_WE_HAVE_TO_LOSE
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_PUT_THE_CIVIL_ENGINEERS_TO_WORK focus = RUS_LET_THE_WOMEN_TILL_THE_FIELDS }
+		x = 7
+		y = 6
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_THE_DOCTORS_COUP
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_THE_LIVES_WE_HAVE_TO_LOSE focus = RUS_THE_COST_WE_HAVE_TO_PAY }
+		x = 0
+		y = 7
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_REINSTATE_THE_1910_CONSTITUTION
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_THE_LIVES_WE_HAVE_TO_LOSE focus = RUS_THE_COST_WE_HAVE_TO_PAY }
+		x = 3
+		y = 7
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_REWRITE_THE_CONSTITUTION
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_THE_LIVES_WE_HAVE_TO_LOSE focus = RUS_THE_COST_WE_HAVE_TO_PAY }
+		x = 6
+		y = 7
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_THE_RED_TSAR
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_THE_LIVES_WE_HAVE_TO_LOSE focus = RUS_THE_COST_WE_HAVE_TO_PAY }
+		x = 9
+		y = 7
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	
+	
+	focus = {
+		id = RUS_BUSINESS_AS_USUAL
+		icon = GFX_unknown
+		mutually_exclusive = { focus = RUS_DECLARE_STATE_OF_EMERGENCY}
+		x = 18
+		y = 0
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_A_CURIOUS_PROPOSAL
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_BUSINESS_AS_USUAL}
+		x = 18
+		y = 1
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_AN_EYE_FOR_AN_EYE
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_A_CURIOUS_PROPOSAL}
+		mutually_exclusive = { focus = RUS_A_BULLET_IN_THE_FOOT focus = RUS_THE_LONG_ROAD_AHEAD }
+		x = 14
+		y = 2
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_PARDON_THE_BLACK_HUNDREDS
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_AN_EYE_FOR_AN_EYE}
+		x = 13
+		y = 3
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_SEIZE_JEWISH_ASSETS
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_PARDON_THE_BLACK_HUNDREDS}
+		x = 12
+		y = 4
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_DENOUNCE_THE_ROYALISTS
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_PARDON_THE_BLACK_HUNDREDS focus = RUS_OUR_MEN_ON_THE_INSIDE}
+		x = 14
+		y = 4
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_PAVE_THE_ROAD_TO_MOSCOW
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_DENOUNCE_THE_ROYALISTS }
+		prerequisite = { focus = RUS_SEIZE_JEWISH_ASSETS }
+		prerequisite = { focus = RUS_ADMIT_MILITARY_PERSONELL_IN_THE_DUMA }
+		x = 14
+		y = 5
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_A_MENACE_BETWEEN_CLOSED_DOORS
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_PAVE_THE_ROAD_TO_MOSCOW }
+		x = 14
+		y = 6
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_OUR_MEN_ON_THE_INSIDE
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_AN_EYE_FOR_AN_EYE}
+		x = 15
+		y = 3
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_ADMIT_MILITARY_PERSONELL_IN_THE_DUMA
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_OUR_MEN_ON_THE_INSIDE focus = RUS_REINFORCE_THE_CHAIN_OF_COMMAND }
+		x = 16
+		y = 4
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_PUT_THE_RESERVES_IN_USE
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_ADMIT_MILITARY_PERSONELL_IN_THE_DUMA }
+		x = 17
+		y = 5
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_FREE_THE_POLITICAL_PRISONERS
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_A_CONTROLLED_LEFT focus = RUS_TWO_BULLETS_IN_THE_HEAD}
+		x = 21
+		y = 5
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_THE_LONG_ROAD_AHEAD
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_A_CURIOUS_PROPOSAL}
+		mutually_exclusive = { focus = RUS_AN_EYE_FOR_AN_EYE focus = RUS_A_BULLET_IN_THE_FOOT }
+		x = 18
+		y = 2
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_REINFORCE_THE_CHAIN_OF_COMMAND
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_THE_LONG_ROAD_AHEAD}
+		x = 18
+		y = 3
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_A_CONTROLLED_LEFT
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_REINFORCE_THE_CHAIN_OF_COMMAND focus = RUS_HELP_FROM_UNEXPECTED_PLACES }
+		x = 20
+		y = 4
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_PUSH_AGAINST_NOVOROSSI
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_ADMIT_MILITARY_PERSONELL_IN_THE_DUMA}
+		prerequisite = { focus = RUS_A_CONTROLLED_LEFT}
+		x = 19
+		y = 5
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_A_CONTROLLED_GOVERNMENT
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_PUSH_AGAINST_NOVOROSSI}
+		prerequisite = { focus = RUS_PUT_THE_RESERVES_IN_USE}
+		prerequisite = { focus = RUS_FREE_THE_POLITICAL_PRISONERS}
+		x = 18
+		y = 6
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_A_BULLET_IN_THE_FOOT
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_A_CURIOUS_PROPOSAL}
+		mutually_exclusive = { focus = RUS_AN_EYE_FOR_AN_EYE focus = RUS_THE_LONG_ROAD_AHEAD }
+		x = 23
+		y = 2
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_HELP_FROM_UNEXPECTED_PLACES
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_A_BULLET_IN_THE_FOOT}
+		x = 22
+		y = 3
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_CONVINCE_KIROV
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_A_BULLET_IN_THE_FOOT}
+		x = 24
+		y = 3
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_TWO_BULLETS_IN_THE_HEAD
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_HELP_FROM_UNEXPECTED_PLACES}
+		prerequisite = { focus = RUS_CONVINCE_KIROV}
+		x = 23
+		y = 4
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_PERMIT_THE_BOLSHEVICKS_IN_THE_DUMA
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_TWO_BULLETS_IN_THE_HEAD}
+		x = 23
+		y = 5
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_DECRIMINALIZE_THE_RED_GUARD
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_TWO_BULLETS_IN_THE_HEAD}
+		x = 25
+		y = 5
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+	focus = {
+		id = RUS_CALL_FOR_ELECTION
+		icon = GFX_unknown
+		prerequisite = { focus = RUS_DECRIMINALIZE_THE_RED_GUARD }
+		prerequisite = { focus = RUS_PERMIT_THE_BOLSHEVICKS_IN_THE_DUMA }
+		prerequisite = { focus = RUS_FREE_THE_POLITICAL_PRISONERS }
+		x = 23
+		y = 6
+		cost = 10
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_political_power = 100		
+		}
+	}
+}

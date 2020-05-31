@@ -1,6 +1,9 @@
 state={
 	id=979
 	name="STATE_979"
+	resources={
+		wood=19
+	}
 	history={
 		owner = WLN
 		buildings = {

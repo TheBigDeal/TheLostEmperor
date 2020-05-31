@@ -4,33 +4,35 @@ state={
 	name="STATE_52"
 	resources={
 		aluminium=30.000
+		wood = 30
 	}
 
 	history={
 		owner = BAY
-		victory_points = { 692 30 }
-		victory_points = { 6540 5 }
-		victory_points = { 592 1 }
+		victory_points = {
+			692 30 
+		}
+		victory_points = {
+			6540 5 
+		}
+		victory_points = {
+			592 1 
+		}
+		victory_points = {
+			707 1 
+		}
 		buildings = {
 			infrastructure = 7
 			arms_factory = 3
 			industrial_complex = 1
-			air_base = 6
-
+			farm = 2
 		}
 		add_core_of = BAY
-		1939.1.1 = {
-			buildings = {
-				air_base = 10
-
-			}
-
-		}
 
 	}
 
 	provinces={
-		692 707 3688 3705 6540 6693 9652 11620 11653 
+		692 707 3688 3705 6693 9652 11620 11653 13282
 	}
 	manpower=2679413
 	buildings_max_level_factor=1.000

@@ -6,6 +6,10 @@
 
  #Holy Roman Empire
  ###############################
+ ULM:0 "Ulm"
+ ULM_DEF:0 "Ulm"
+ ULM_ADJ:0 "Ulmer"
+ ###
  MEK:0 "Mecklenburg-Schwerin"
  MEK_DEF:0 "Mecklenburg-Schwerin"
  MEK_ADJ:0 "Mecklenburg-Schwerin"
@@ -29,6 +33,10 @@
  VRP:0 "Vorpommern"
  VRP_DEF:0 "Vorpommern"
  VRP_ADJ:0 "Vorpommern"
+ ###
+ BTH:0 "Bayreuth"
+ BTH_DEF:0 "Bayreuth"
+ BTH_ADJ:0 "Bayreuth"
  ###
  RAV:0 "Minden-Ravensburg"
  RAV_DEF:0 "Minden-Ravensburg"
@@ -1759,44 +1767,7 @@
  GBR_royalism_ADJ:0 "British"
  GBR_mutualism_ADJ:0 "British"
 
- SOV_rexism:0 "Slavic Empire"
- SOV_rexism_DEF:0 "The Slavic Empire"
- SOV_liberalism:0 "Russian Federation"
- SOV_liberalism_DEF:0 "The Russian Federation"
- SOV_absolutism:0 "Russian Empire"
- SOV_absolutism_DEF:0 "Russia"
- SOV_absolutism:0 "Russian Empire"
- SOV_absolutism_DEF:0 "Russia"
- SOV_mutualism:0 "Soviet Mutualist State"
- SOV_mutualism_DEF:0 "The Soviet Mutualist State"
- SOV_proletarianism:0 "Soviet Russia"
- SOV_proletarianism_DEF:0 "The Soviet Socialist Republic of Russia"
- SOV_collectivism:0 "Russian Soviet Federative Socialist Republic"
- SOV_collectivism_DEF:0 "The Russian Soviet Federative Socialist Republic"
- SOV_rexism_ADJ:0 "Russian"
- SOV_liberalism_ADJ:0 "Russian"
- SOV_absolutism_ADJ:0 "Russian"
- SOV_mutualism_ADJ:0 "Soviet"
- SOV_collectivism_ADJ:0 "Soviet"
- SOV_proletarianism_ADJ:0 "Soviet"
-
- RUS_rexism:0 "Slavic Empire"
- RUS_rexism_DEF:0 "The Slavic Empire"
- RUS_liberalism:0 "Russian Federation"
- RUS_liberalism_DEF:0 "The Russian Federation"
- RUS_absolutism:0 "Russian Empire"
- RUS_absolutism_DEF:0 "Russia"
- RUS_royalism:0 "Russian Empire"
- RUS_royalism_DEF:0 "Russia"
- RUS_mutualism:0 "Soviet Union"
- RUS_mutualism_DEF:0 "The Soviet Union"
- RUS_rexism_ADJ:0 "Russian"
- RUS_liberalism_ADJ:0 "Russian"
- RUS_absolutism_ADJ:0 "Russian"
- RUS_royalism_ADJ:0 "Russian"
- RUS_mutualism_ADJ:0 "Soviet"
- RUS_proletarianism_ADJ:0 "Soviet"
- RUS_collectivism_ADJ:0 "Soviet"
+ 
 
  ########################################
  #REVOLTS
@@ -3076,20 +3047,7 @@
 
 
 
- GEO_rexism:0 "Caucasus Authority"
- GEO_rexism_DEF:0 "The Caucasus Authority"
- GEO_liberalism:0 "Republic of Georgia"
- GEO_liberalism_DEF:0 "The Republic of Georgia"
- GEO_absolutism:0 "Free State of St. George"
- GEO_absolutism_DEF:0 "The Free State of St. George"
- GEO_proletarianism:1 "Georgian Socialist Republic"
- GEO_proletarianism_DEF:1 "The Georgian Socialist Republic"
- GEO_mutualism:1 "Georgian Mutualist Republic"
- GEO_mutualism_DEF:1 "The Georgian Mutualist Republic"
- GEO_rexism_ADJ:0 "Georgian"
- GEO_liberalism_ADJ:0 "Georgian"
- GEO_absolutism_ADJ:0 "Georgian"
- GEO_mutualism_ADJ:0 "Georgian"
+
 
  KAZ_rexism:0 "Kazakh Presidential Khanate"
  KAZ_rexism_DEF:0 "The Kazakh Presidential Khanate"

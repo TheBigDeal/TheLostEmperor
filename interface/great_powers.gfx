@@ -3,4 +3,20 @@ spriteTypes = {
 		name = "GFX_great_powers"
 		texturefile = "gfx/interface/great_powers.dds"
 	}
+	spriteType = {
+		name = "GFX_mini_great_powers"
+		texturefile = "gfx/interface/mini_great_power_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_mini_great_powers"
+		texturefile = "gfx/interface/mini_great_power_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_large_flag_great_power"
+		texturefile = "gfx/interface/large_flag_great_power.dds"
+	}
+	spriteType = {
+		name = "GFX_large_flag_secondary_power"
+		texturefile = "gfx/interface/large_flag_secondary_power.dds"
+	}
 }

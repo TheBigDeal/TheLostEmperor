@@ -1,5 +1,13 @@
 spriteTypes = {	
 	SpriteType = {
+		name = "GFX_decision_russian_civil_war"
+		textureFile = "gfx/interface/decision/decision_russian_civil_war.dds"
+	}
+	SpriteType = {
+		name = "GFX_minister_fritz_schaffer"
+		textureFile = "gfx/interface/ideas/minister_fritz_schaffer.dds"
+	}
+	SpriteType = {
 		name = "GFX_idea_HRE_emperor"
 		textureFile = "gfx/interface/ideas/idea_HRE_emperor.dds"
 	}

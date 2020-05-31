@@ -8,6 +8,7 @@ state={
 	
 	resources={
 		oil=8
+		wood = 38
 	}
 
 	history={

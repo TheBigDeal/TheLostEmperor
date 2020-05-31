@@ -5,6 +5,7 @@ state={
 	resources={
 		oil=351.000
 		aluminium=46.000
+		cotton  = 15
 	}
 
 	history={

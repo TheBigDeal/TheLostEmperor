@@ -3,12 +3,12 @@ state={
 	name="STATE_945"
 	state_category=wasteland
 	history={
-		owner = SPR
+		owner = AST
 		buildings = {
 			infrastructure = 2
 
 		}
-		add_core_of = SPR
+		add_core_of = AST
 
 	}
 	

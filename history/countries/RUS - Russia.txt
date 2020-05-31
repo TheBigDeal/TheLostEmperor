@@ -2,15 +2,6 @@
 
 oob = "SOV_1936"
 
-set_variable = { RUS_SOVIET_STRENGTH = 23 } 
-set_variable = { RUS_UKRAINIAN_STRENGTH = 25 } 
-set_variable = { RUS_BELERUS_STRENGTH = 23 } 
-set_variable = { RUS_LATVIAN_STRENGTH = 12 } 
-set_variable = { RUS_ESTONIAN_STRENGTH = 12 } 
-set_variable = { RUS_AZERBIJAN_STRENGTH = 11 } 
-set_variable = { RUS_DON_KUBAN_STRENGTH = 16 } 
-set_variable = { RUS_ALASH_ORDA_STRENGTH = 24 } 
-
 set_research_slots = 3
 
 # Starting tech
@@ -31,7 +22,9 @@ set_technology = {
 	naval_bomber1 = 1
 	mass_assault = 1
 }
-
+add_ideas = {
+	rus_vast_empire
+}
 set_convoys = 50
 set_stability = 0.55
 
@@ -99,7 +92,7 @@ add_namespace = {
 
 create_corps_commander = {
 	name = "Portrait_Lavr_Kornilov"
-		picture = "Portrait_Soviet_Gregory_Zhukov.dds"
+	picture = "Portrait_Soviet_Gregory_Zhukov.dds"
 	traits = { winter_specialist old_guard  }
 	skill = 5
 }

@@ -14,7 +14,9 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-
+add_ideas = {
+	HRE_member
+}
 set_popularities = {
     liberalism = 0
     rexism = 0

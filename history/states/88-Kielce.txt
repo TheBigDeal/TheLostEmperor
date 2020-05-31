@@ -5,6 +5,7 @@ state={
 	resources={
 		steel=8.000
 		oil=4.000
+		wood = 6
 	}
 
 	history={

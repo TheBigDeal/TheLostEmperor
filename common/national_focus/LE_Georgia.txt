@@ -1,0 +1,88 @@
+focus_tree = {
+	id = le_georgia``_focus
+	country = {factor = 0 modifier = {add = 10 tag = GEO} }
+	default = no
+	continuous_focus_position = { x = 50 y = 3100 }
+	focus = {
+		id = GEO_TERROR_OF_THE_CAUCASUS
+		icon = GFX_GEO_stalinreturns
+		x = 8
+		y = 0
+		cost = 2
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_state_claim = 230
+			add_state_claim = 969
+			add_state_claim = 971
+			add_state_claim = 229
+			add_state_claim = 970
+		}
+	}
+	focus = {
+		id = GEO_RALLY_THE_RESERVES
+		icon = GFX_red_army_officers
+		prerequisite = { focus = GEO_TERROR_OF_THE_CAUCASUS }
+		x = 8
+		y = 1
+		cost = 2
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_ideas = DEPLOYED_RESERVES
+		}
+	}
+	focus = {
+		id = GEO_PREPARE_THE_INVASIONS
+		icon = GFX_generic_bad_expansionism
+		prerequisite = { focus = GEO_RALLY_THE_RESERVES }
+		x = 8
+		y = 2
+		cost = 5
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			add_ideas = PLANNING_CAUCASUS_EXPANSION
+		}
+	}
+	focus = {
+		id = GEO_CRUSH_ARMENIA
+		icon = GFX_Peoples_Guard
+		prerequisite = { focus = GEO_PREPARE_THE_INVASIONS }
+		x = 6
+		y = 3
+		cost = 1
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			declare_war_on = {
+				target = ARM
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = GEO_SHATTER_AZERBIJAN
+		icon = GFX_goal_generic_arm_populace
+		prerequisite = { focus = GEO_PREPARE_THE_INVASIONS }
+		x = 10
+		y = 3
+		cost = 1
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			declare_war_on = {
+				target = AZR
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = GEO_TRANSCAUCASIAN_SOCIALIST_REPUBLIC
+		icon = GFX_form_transcaucasia
+		prerequisite = { focus = GEO_CRUSH_ARMENIA }
+		prerequisite = { focus = GEO_SHATTER_AZERBIJAN }
+		x = 8
+		y = 4
+		cost = 5
+		ai_will_do = {factor = 10}
+		completion_reward = {
+			set_cosmetic_tag = TRANSCAUCASIA	
+		}
+	}
+}

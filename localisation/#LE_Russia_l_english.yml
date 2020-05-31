@@ -1,0 +1,141 @@
+﻿l_english: 
+
+### Political Parties ###
+ # GBR_absolutism_party:0 "Loyal League"
+ # GBR_royalism_party:0 "British National Party"
+ # GBR_rexism_party:0 "British Imperial Front"
+ # GBR_despotism_party:0 "Unity And Nationalist Association"
+ # GBR_conservatism_party:0 "Conservative Party (Tories)"
+ # GBR_liberalism_party:0 "Liberal Party"
+ # GBR_socialism_party:0 "Labour Party"
+ # GBR_theocracy_party:0 "Church Of England"
+ # GBR_labryscism_party:0 "New Model Republicans"
+ # GBR_mutualism_party:0 "British Congress of Trade Unions"
+ # GBR_collectivism_party:0 "British Congress of Trade Unions"
+ # GBR_proletarianism_party:0 "British Congress of Trade Unions"
+ 
+### Ministers ###
+ # Head Of State
+
+ # Secondary Head
+
+ # Foriegn Minister
+
+ # Minister Of Defence
+
+ # Economic Minister
+ 
+ # Minister Of The Interior
+
+ # Minister Of Security
+
+## Localisation ###
+ #Soviets
+ SOV_rexism:0 "Slavic Empire"
+ SOV_rexism_DEF:0 "The Slavic Empire"
+ SOV_liberalism:0 "Russian Federation"
+ SOV_liberalism_DEF:0 "The Russian Federation"
+ SOV_absolutism:0 "Russian Empire"
+ SOV_absolutism_DEF:0 "Russia"
+ SOV_absolutism:0 "Russian Empire"
+ SOV_absolutism_DEF:0 "Russia"
+ SOV_mutualism:0 "Soviet Mutualist State"
+ SOV_mutualism_DEF:0 "The Soviet Mutualist State"
+ SOV_proletarianism:0 "Soviet Russia"
+ SOV_proletarianism_DEF:0 "The Soviet Socialist Republic of Russia"
+ SOV_collectivism:0 "Russian Soviet Federative Socialist Republic"
+ SOV_collectivism_DEF:0 "The Russian Soviet Federative Socialist Republic"
+ SOV_rexism_ADJ:0 "Russian"
+ SOV_liberalism_ADJ:0 "Russian"
+ SOV_absolutism_ADJ:0 "Russian"
+ SOV_mutualism_ADJ:0 "Soviet"
+ SOV_collectivism_ADJ:0 "Soviet"
+ SOV_proletarianism_ADJ:0 "Soviet"
+ #RUSSIA
+ RUS_rexism:0 "Slavic Empire"
+ RUS_rexism_DEF:0 "The Slavic Empire"
+ RUS_liberalism:0 "Russian Federation"
+ RUS_liberalism_DEF:0 "The Russian Federation"
+ RUS_absolutism:0 "Russian Empire"
+ RUS_absolutism_DEF:0 "Russia"
+ RUS_royalism:0 "Russian Empire"
+ RUS_royalism_DEF:0 "Russia"
+ RUS_mutualism:0 "Soviet Union"
+ RUS_mutualism_DEF:0 "The Soviet Union"
+ RUS_rexism_ADJ:0 "Russian"
+ RUS_liberalism_ADJ:0 "Russian"
+ RUS_absolutism_ADJ:0 "Russian"
+ RUS_royalism_ADJ:0 "Russian"
+ RUS_mutualism_ADJ:0 "Soviet"
+ RUS_proletarianism_ADJ:0 "Soviet"
+ RUS_collectivism_ADJ:0 "Soviet"
+
+### Ideas ###
+ rus_vast_empire:0 "Vast Empire"
+### Opinion Modifier ###
+
+### Tooltips ###
+
+### Global / Country Flags ###
+
+### Decisions ###
+ RUSSIAN_CIVIL_WAR:0 "Russian - Soviet Civil War"
+ CAUCASUS_REVOLUTION:0 "Caucasus Revolution"
+ SOV_ATTACK_COUNTRIES:0 "Integrate Former Territory"
+ SOV_CREATE_SOCIALIST_REPUBLICS:0 "Form Soviet Republics"
+ RUS_REVOLT_RISK_CAT:0 "Civil Unrest"
+ RUS_REVOLT_RISK_CAT_desc:1 "Unrest is growing around the nation. The communists in our country have gotten very popular and many peasants are flocking to the movement. The Tsar is in danger and we are at risk of losing our lands, our homes, everything to the Soviets."
+ RUS_nonexistant:0 "§GNonexistant"
+ RUS_low:0 "§MLow§!"
+ RUS_medium:0 "§GMedium§!"
+ RUS_high:0 "§YHigh§!"
+ RUS_veryhigh:0 "§RVery High§!"
+ RUS_extreme:0 "§RExtreme§!"
+### Focus Tree ###
+ RUS_DECLARE_STATE_OF_EMERGENCY:0 "Declare State Of Emergency"
+ RUS_READY_THE_RESERVES:0 "Ready The Reserves"
+ RUS_CALL_IN_THE_MERCENARIES:0 "Call In The Mercenaries"
+ RUS_REQUEST_PRUSSIAN_AID:0 "Request Prussian Aid"
+ RUS_REQUEST_DANISH_AID:0 "Request Danish Aid"
+ RUS_REQUEST_BRITISH_AID:0 "Request British Aid"
+ RUS_A_TRAINING_GROUND_FOR_THE_RAF:0 "A Training Ground For The RAF"
+ RUS_EMPLOY_GERMAN_WEAPON_DESIGNER:0 "Employ German Weapon Designer"
+ RUS_THE_COST_WE_HAVE_TO_PAY:0 "The Cost We Have To Pay"
+ RUS_ONE_LOYAL_ARMY:0 "One Loyal Army"
+ RUS_FILL_THE_RANKS:0 "Fill The Ranks"
+ RUS_RUSHING_WEAPON_PRODUCTION:0 "Rushing Weapon Production"
+ RUS_BRINGING_IN_THE_ARTILLERY:0 "Bringing In The Artillery"
+ RUS_FORCE_PEASANTS_INTO_FACTORIES:0 "Force Peasants Into Factories"
+ RUS_PUT_THE_CIVIL_ENGINEERS_TO_WORK:0 "Put The Civil Engineers To Work"
+ RUS_LET_THE_WOMEN_TILL_THE_FIELDS:0 "Let The Women Till The Fields"
+ RUS_THE_LIVES_WE_HAVE_TO_LOSE:0 "The Lives We Have To Lose"
+ RUS_THE_DOCTORS_COUP:0 "The Doctors Coup"
+ RUS_REINSTATE_THE_1910_CONSTITUTION:0 "Reinstate The 1910 Constitution"
+ RUS_REWRITE_THE_CONSTITUTION:0 "Rewrite The Constitution"
+ RUS_THE_RED_TSAR:0 "The Red Tsar"
+ RUS_BUISINESS_AS_USUAL:0 "Buisiness As Usual"
+ RUS_A_CURIOUS_PROPOSAL:0 "A Curious Proposal"
+ RUS_AN_EYE_FOR_AN_EYE:0 "An Eye For An Eye"
+ RUS_PARDON_THE_BLACK_HUNDREDS:0 "Pardon The Black Hundreds"
+ RUS_OUR_MEN_ON_THE_INSIDE:0 "Our Men On The Inside"
+ RUS_SEIZE_JEWISH_ASSETS:0 "Seize Jewish Assets"
+ RUS_DENOUNCE_THE_ROYALISTS:0 "Denounce The Royalists"
+ RUS_ADMIT_MILITARY_PERSONELL_IN_THE_DUMA:0 "Admit Military Personell"
+ RUS_PAVE_THE_ROAD_TO_MOSCOW:0 "Pave The Road TO Moscow"
+ RUS_A_MENACE_BETWEEN_CLOSED_DOORS:0 "A Menace Between Closed Doors"
+ RUS_THE_LONG_ROAD_AHEAD:0 "The Long Road Ahead"
+ RUS_REINFORCE_THE_CHAIN_OF_COMMAND:0 "Reinforce The Chain Of Command"
+ RUS_A_CONTROLLED_LEFT:0 "A Controlled Left"
+ RUS_PUT_THE_RESERVES_IN_USE:0 "Put The Reserves In Use"
+ RUS_PUSH_AGAINST_NOVOROSSI:0 "Push Against Novorossi"
+ RUS_A_CONTROLLED_GOVERNMENT:0 "A Controlled Government"
+ RUS_A_BULLET_IN_THE_FOOT:0 "A Bullet In The Foot"
+ RUS_HELP_FROM_UNEXPECTED_PLACES:0 "Help From Unexpected Places"
+ RUS_CONVINCE_KIROV:0 "Convince Kirov"
+ RUS_TWO_BULLETS_IN_THE_HEAD:0 "Two Bullets In The Head"
+ RUS_FREE_THE_POLITICAL_PRISONERS:0 "Free The Political Prisoners"
+ RUS_PERMIT_THE_BOLSHEVICKS_IN_THE_DUMA:0 "Permit The Bolshevicks In The Duma"
+ RUS_DECRIMINALIZE_THE_RED_GUARD:0 "Decriminalize The Red Guard"
+ RUS_CALL_FOR_ELECTION:0 "Call For Elections"
+ RUS_BLOCKADE_SOVIET_SUPPLIERS:0 "Blockade Soviet Suppliers"
+### Events ###

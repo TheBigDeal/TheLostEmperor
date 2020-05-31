@@ -1,6 +1,8 @@
 ﻿l_english:
  in_hre:0 "This State is a part of the Holy Roman Empire"
  not_in_hre:0 "This State is not a part of the Holy Roman Empire"
+ prestige30_tt:0 "Gain §G30§! £texticon_prestige Prestige"
+ prestige8_tt:0 "Gain §G8§! £texticon_prestige Prestige"
  
  CLOSE_TOOLTIP:0 "§TClose§!"
  SEPARATION_LINE:0 "--------------\n"

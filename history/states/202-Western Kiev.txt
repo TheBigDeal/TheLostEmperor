@@ -6,6 +6,7 @@ state={
 	resources={
 		oil=14
 		aluminium=12
+		wood = 8
 	}
 	
 	state_category = city

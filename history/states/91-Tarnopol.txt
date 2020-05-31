@@ -4,7 +4,9 @@ state={
 	manpower = 3227800
 	
 	state_category = city
-	
+	resources = {
+		wood = 16
+	}
 	history={
 		owner = GAL
 		victory_points = {

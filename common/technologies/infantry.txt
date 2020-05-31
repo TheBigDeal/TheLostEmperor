@@ -363,6 +363,10 @@ technologies = {
 			light_machine_gun_1
 		}
 		
+		enable_subunits = {
+			heavy_infantry
+		}
+		
 		path = {
 			leads_to_tech = light_machine_gun_2
 			research_cost_coeff = 1

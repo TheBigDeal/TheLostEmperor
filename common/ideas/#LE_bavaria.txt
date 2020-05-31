@@ -1,15 +1,86 @@
 ideas = {
 
-country = {
-	##################
-	#     SPAIN      #
-	##################
-	rooted_collectivists = {
-		picture = Hungarian_Monarchy
-		modifier = {
-			collectivism_drift = 0.03
-			foreign_subversive_activites = 0.25
-			collectivism_acceptance = -50
+	country = {
+		##################
+		#     SPAIN      #
+		##################
+		rooted_collectivists = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				collectivism_drift = 0.03
+				foreign_subversive_activites = 0.25
+				collectivism_acceptance = -50
+			}
 		}
+		bay_armed_populace = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				conscription = 0.02
+				army_core_defence_factor = 0.1
+			}
+		}
+		bay_workers_paradise = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				stability_factor = 0.10
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.10
+			}
+		}
+		bay_improved_resource_extraction = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				local_resources_factor = 0.05
+			}
+		}
+		bay_industrial_push = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				production_speed_arms_factory_factor = 0.08
+				production_speed_industrial_complex_factor = 0.15
+			}
+		}
+		bay_population_boom = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				MONTHLY_POPULATION = 0.15
+			}
+		}
+		communist_immigration = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				MONTHLY_POPULATION = 0.10
+				collectivism_drift = 0.01
+				proletarianism_drift = 0.01
+				mutualism_drift = 0.01
+			}
+		}
+		bay_reconstruction_effort = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				industry_repair_factor = 0.25
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		bay_bavarian_influence = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				proletarianism_drift = 0.05
+			}
+		}
+	}
+	
+	economy_minister = {
+		bay_fritz_schaffer = {
+			picture = minister_fritz_schaffer
+			visible = {
+				original_tag = USA
+			}
+			traits = { laissez_faire_capitalist }
+			ai_will_do = {
+				factor = 1
+			}
+		}	
 	}
 }

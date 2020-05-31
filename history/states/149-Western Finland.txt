@@ -2,8 +2,10 @@
 state={
 	id=149
 	name="STATE_149"
-
-	history={
+	resources={
+		wood = 98
+	}
+	history={	
 		owner = SWE
 		victory_points = {
 			3122 3 

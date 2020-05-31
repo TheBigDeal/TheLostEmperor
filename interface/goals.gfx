@@ -24,6 +24,22 @@ spriteTypes = {
 	# THE LOST EMPEROR CUSTOM ICONS
 	#############################################################
 	SpriteType = {
+		name = "GFX_red_army_officers"
+		texturefile = "gfx/interface/goals/Mod/Red_Army_Officers.dds"
+	}
+	SpriteType = {
+		name = "GFX_form_transcaucasia"
+		texturefile = "gfx/interface/goals/Mod/form_transcaucasia.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_textile_factories"
+		texturefile = "gfx/interface/goals/Mod/Generic_Textile_Factories.dds"
+	}
+	SpriteType = {
+		name = "GFX_city"
+		texturefile = "gfx/interface/goals/Mod/City.dds"
+	}
+	SpriteType = {
 		name = "GFX_assassinate_wilhelm"
 		texturefile = "gfx/interface/goals/Mod/assassinate_wilhelm.dds"
 	}
@@ -101,7 +117,26 @@ spriteTypes = {
 	}
 	# OTHER MOD GFX
 	#############################################################
-	
+	SpriteType = {
+		name = "GFX_GEO_stalinreturns"
+		texturefile = "gfx/interface/goals/GEO_stalinreturns.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_electronics"
+		texturefile = "gfx/interface/goals/goal_electronics.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_work_bill"
+		texturefile = "gfx/interface/goals/generic_work_bill.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_strike"
+		texturefile = "gfx/interface/goals/Generic_Strike.dds"
+	}
+	SpriteType = {
+		name = "GFX_socialism_of_the_people"
+		texturefile = "gfx/interface/goals/Socialism_of_the_people.dds"
+	}
 	SpriteType = {
 		name = "GFX_Generic_Invasion"
 		texturefile = "gfx/interface/goals/Generic_Invasion.dds"
@@ -502,6 +537,10 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/Workers_Paradise.dds"			
 	}
 	SpriteType = {
+	name = "GFX_communist_cooperation"
+	texturefile = "gfx/interface/goals/communist_cooperation.tga"			
+	}
+	SpriteType = {
 	name = "GFX_focus_red_constitution"
 	texturefile = "gfx/interface/goals/focus_red_constitution.dds"			
 	}
@@ -542,12 +581,25 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/focus_mutualism.tga"			
 	}
 	SpriteType = {
+	name = "GFX_generic_gold_coins"
+	texturefile = "gfx/interface/goals/generic_gold_coins.dds"			
+	}
+	SpriteType = {
 	name = "GFX_goal_purge_dissenters"
 	texturefile = "gfx/interface/goals/Purge_Dissenters.dds"			
 	}
 	SpriteType = {
 	name = "GFX_goal_planned_economy"
 	texturefile = "gfx/interface/goals/Planned_Economy.dds"			
+	}
+	SpriteType = {
+	name = "GFX_generic_socialism"
+	texturefile = "gfx/interface/goals/Generic_Socialism.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_planned_economy2"
+	texturefile = "gfx/interface/goals/Planned_Economy2.tga"			
 	}
 	SpriteType = {
 	name = "GFX_goal_generic_isolation"

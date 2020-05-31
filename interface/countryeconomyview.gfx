@@ -11,4 +11,8 @@ spriteTypes = {
 		name = "GFX_header_ultrawide_bg"
 		textureFile = "gfx//interface//header_ultrawide_bg.dds"
 	}
+	spriteType = {
+		name = "GFX_button_border_77x31"
+		textureFile = "gfx//interface//Button_Border_77x31.dds"
+	}
 }

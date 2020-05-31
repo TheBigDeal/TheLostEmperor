@@ -1135,7 +1135,7 @@
  political.20.a:0 "Round them up."
  political.20.b:0 "Just proceed as usual."
  political.20.c:0 "If we accept the referendum, perhaps we can preserve our legacy."
- political.21.t:0 "Fascists March on [Root.Capital.GetName]"
+ political.21.t:0 "Proletariats March on [Root.Capital.GetName]"
  political.21.d:0 "Having been refused their referendum, almost a token attempt at seizing power legally, the fascists have used their significant public support and connections in the [Root.GetAdjective] military to attempt a coup. The [Root.GetRulingParty] government has refused their terms and claims it is going to fight to the end to preserve [Root.GetName] as we know it."
  political.21.a:0 "We will stop them at any cost!"
  political.21.b:0 "The fascists carry the true spirit of [Root.GetName]!"

@@ -2,23 +2,23 @@ state={
 	id=766
 	name="STATE_766"
 	state_category = large_city
+	resources={
+		wood=19
+	}
 	history={
 		owner = AUG
 		victory_points = {
-			9517 5 
+			13281 3 
 		}
 		buildings = {
-			infrastructure = 8
-			arms_factory = 7
+			infrastructure = 6
+			arms_factory = 1
 			industrial_complex = 1
-			air_base = 3
-
 		}
-		add_core_of = WUR
+		add_core_of = AUG
 	}
-	
 	provinces={
-		708 9666 11638 
+		708 9666 11638 13281
 	}
 	manpower=315156
 	buildings_max_level_factor=1.000

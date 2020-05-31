@@ -2,9 +2,12 @@
 state={
 	id=768
 	name="STATE_768"
-
+	resources = {
+		wood = 13
+	}
 	history={
 		owner = BAY
+		victory_points = { 3558 3 }
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 3

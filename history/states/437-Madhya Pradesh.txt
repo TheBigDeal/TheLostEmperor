@@ -2,7 +2,9 @@
 state={
 	id=437
 	name="STATE_437"
-
+	resources={
+		cotton = 42
+	}
 	history={
 		owner = MAR
 		add_core_of = MAR

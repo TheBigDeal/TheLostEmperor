@@ -14,19 +14,19 @@ buildings = {
 		shares_slots = yes                          # Determines if this building uses building slots.
 		infrastructure_construction_effect = yes    # Determines if this building benefits from infrastructure boosting construction speed.
 		provincial = no                            # Determines if this building is a province building.
-		local_resources_food = 1  # Adds resources to state.
+		local_resources_food = 5  # Adds resources to state.
 	}
 	
-	barracks = {
+	textile_factory = {
 		#show_on_map = 1
-		base_cost = 20000
+		base_cost = 5000
 		icon_frame = 16
-		max_level = 1 # This is the max unlock level
+		max_level = 6 # This is the max unlock level
 		shares_slots = yes
 		value = 2
 		infrastructure_construction_effect = yes
 		show_modifier = yes
-		conscription_factor = 0.01
+		local_resources_textiles = 5  # Adds resources to state.
 	}
 	
 	#VANILLA

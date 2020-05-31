@@ -969,6 +969,10 @@ TRI = {
 	color = rgb { 221 171 44 }
 	color_ui = rgb { 221 171 44 }
 }
+BTH = {
+	color = rgb { 162 184 135 }
+	color_ui = rgb { 162 184 135 }
+}
 CLG = {
 	color = rgb { 62 114 35 }
 	color_ui = rgb { 62 114 35 }

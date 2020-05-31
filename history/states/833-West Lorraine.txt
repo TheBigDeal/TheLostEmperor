@@ -3,7 +3,9 @@ state={
 	name="STATE_833"
 	
 	state_category = city
-	
+	resources={
+		wood=11
+	}
 	history={
 		owner = BUR
 		buildings = {

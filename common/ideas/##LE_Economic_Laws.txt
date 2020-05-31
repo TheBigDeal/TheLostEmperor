@@ -1,0 +1,412 @@
+ideas = {
+	### Upper Class Taxes
+	###############################
+	tax_upper_class = {
+		law = yes
+		tax_upper_class_none = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.25 }
+			cancel_if_invalid = no
+		}
+		tax_upper_class_very_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.15 }
+			cancel_if_invalid = no
+		}
+		tax_upper_class_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.05 }
+			cancel_if_invalid = no
+		}
+		tax_upper_class_medium = {
+			default = yes
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = {}
+			cancel_if_invalid = no
+		}
+		tax_upper_class_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.15 }
+			cancel_if_invalid = no
+		}
+		tax_upper_class_very_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.25 }
+			cancel_if_invalid = no
+		}
+		tax_upper_class_excessive = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.45 }
+			cancel_if_invalid = no
+		}
+	}
+	### Middle Class Taxes
+	###############################
+	tax_middle_class = {
+		law = yes
+		tax_middle_class_none = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.25 }
+			cancel_if_invalid = no
+		}
+		tax_middle_class_very_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.15 }
+			cancel_if_invalid = no
+		}
+		tax_middle_class_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.05 }
+			cancel_if_invalid = no
+		}
+		tax_middle_class_medium = {
+			default = yes
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = {}
+			cancel_if_invalid = no
+		}
+		tax_middle_class_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.10 }
+			cancel_if_invalid = no
+		}
+		tax_middle_class_very_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.20 }
+			cancel_if_invalid = no
+		}
+		tax_middle_class_excessive = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.45 }
+			cancel_if_invalid = no
+		}
+	}
+	### Lower Class Taxes
+	###############################
+	tax_lower_class = {
+		law = yes
+		tax_lower_class_none = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.25 }
+			cancel_if_invalid = no
+		}
+		tax_lower_class_very_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.15 }
+			cancel_if_invalid = no
+		}
+		tax_lower_class_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.05 }
+			cancel_if_invalid = no
+		}
+		tax_lower_class_medium = {
+			default = yes
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = {}
+			cancel_if_invalid = no
+		}
+		tax_lower_class_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.10 }
+			cancel_if_invalid = no
+		}
+		tax_lower_class_very_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.20 }
+			cancel_if_invalid = no
+		}
+		tax_lower_class_excessive = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.45 }
+			cancel_if_invalid = no
+		}
+	}
+	### Capital Gains Taxes
+	###############################
+	tax_capital_gains = {
+		law = yes
+		tax_capital_gains_none = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.25 }
+			cancel_if_invalid = no
+		}
+		tax_capital_gains_very_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.15 }
+			cancel_if_invalid = no
+		}
+		tax_capital_gains_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.05 }
+			cancel_if_invalid = no
+		}
+		tax_capital_gains_medium = {
+			default = yes
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = {}
+			cancel_if_invalid = no
+		}
+		tax_capital_gains_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.10 }
+			cancel_if_invalid = no
+		}
+		tax_capital_gains_very_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.20 }
+			cancel_if_invalid = no
+		}
+		tax_capital_gains_excessive = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.45 }
+			cancel_if_invalid = no
+		}
+	}
+	### Tariffs
+	###############################
+	tax_tariffs = {
+		law = yes
+		tax_tariffs_none = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.25 }
+			cancel_if_invalid = no
+		}
+		tax_tariffs_very_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.15 }
+			cancel_if_invalid = no
+		}
+		tax_tariffs_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.05 }
+			cancel_if_invalid = no
+		}
+		tax_tariffs_medium = {
+			default = yes
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = {}
+			cancel_if_invalid = no
+		}
+		tax_tariffs_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.10 }
+			cancel_if_invalid = no
+		}
+		tax_tariffs_very_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.20 }
+			cancel_if_invalid = no
+		}
+		tax_tariffs_excessive = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.45 }
+			cancel_if_invalid = no
+		}
+	}
+	### Tariffs
+	###############################
+	tax_army_funding = {
+		law = yes
+		tax_army_funding_none = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.25 }
+			cancel_if_invalid = no
+		}
+		tax_army_funding_very_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.15 }
+			cancel_if_invalid = no
+		}
+		tax_army_funding_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.05 }
+			cancel_if_invalid = no
+		}
+		tax_army_funding_medium = {
+			default = yes
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = {}
+			cancel_if_invalid = no
+		}
+		tax_army_funding_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.10 }
+			cancel_if_invalid = no
+		}
+		tax_army_funding_very_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.20 }
+			cancel_if_invalid = no
+		}
+		tax_army_funding_excessive = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.45 }
+			cancel_if_invalid = no
+		}
+	}
+	### Tariffs
+	###############################
+	tax_education_funding = {
+		law = yes
+		tax_education_funding_none = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.25 }
+			cancel_if_invalid = no
+		}
+		tax_education_funding_very_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.15 }
+			cancel_if_invalid = no
+		}
+		tax_education_funding_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.05 }
+			cancel_if_invalid = no
+		}
+		tax_education_funding_medium = {
+			default = yes
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = {}
+			cancel_if_invalid = no
+		}
+		tax_education_funding_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.10 }
+			cancel_if_invalid = no
+		}
+		tax_education_funding_very_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.20 }
+			cancel_if_invalid = no
+		}
+		tax_education_funding_excessive = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.45 }
+			cancel_if_invalid = no
+		}
+	}
+	### Tariffs
+	###############################
+	tax_administration_funding = {
+		law = yes
+		tax_administration_funding_none = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.25 }
+			cancel_if_invalid = no
+		}
+		tax_administration_funding_very_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.15 }
+			cancel_if_invalid = no
+		}
+		tax_administration_funding_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.05 }
+			cancel_if_invalid = no
+		}
+		tax_administration_funding_medium = {
+			default = yes
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = {}
+			cancel_if_invalid = no
+		}
+		tax_administration_funding_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.10 }
+			cancel_if_invalid = no
+		}
+		tax_administration_funding_very_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.20 }
+			cancel_if_invalid = no
+		}
+		tax_administration_funding_excessive = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.45 }
+			cancel_if_invalid = no
+		}
+	}
+	### Tariffs
+	###############################
+	tax_social_funding = {
+		law = yes
+		tax_social_funding_none = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.25 }
+			cancel_if_invalid = no
+		}
+		tax_social_funding_very_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.15 }
+			cancel_if_invalid = no
+		}
+		tax_social_funding_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.05 }
+			cancel_if_invalid = no
+		}
+		tax_social_funding_medium = {
+			default = yes
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = {}
+			cancel_if_invalid = no
+		}
+		tax_social_funding_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.10 }
+			cancel_if_invalid = no
+		}
+		tax_social_funding_very_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.20 }
+			cancel_if_invalid = no
+		}
+		tax_social_funding_excessive = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.45 }
+			cancel_if_invalid = no
+		}
+	}
+	### Tariffs
+	###############################
+	tax_covert_funding = {
+		law = yes
+		tax_covert_funding_none = {
+			default = yes
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.25 }
+			cancel_if_invalid = no
+		}
+		tax_covert_funding_very_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.15 }
+			cancel_if_invalid = no
+		}
+		tax_covert_funding_low = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = 0.05 }
+			cancel_if_invalid = no
+		}
+		tax_covert_funding_medium = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = {}
+			cancel_if_invalid = no
+		}
+		tax_covert_funding_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.10 }
+			cancel_if_invalid = no
+		}
+		tax_covert_funding_very_high = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.20 }
+			cancel_if_invalid = no
+		}
+		tax_covert_funding_excessive = {
+			on_add = { reload_ideas = yes refresh_economy2 = yes }
+			modifier = { stability_factor = -0.45 }
+			cancel_if_invalid = no
+		}
+	}
+}

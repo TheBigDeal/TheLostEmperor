@@ -5,7 +5,10 @@ state={
 	manpower = 1468210
 	
 	state_category = city
-
+	
+	resources = {
+		cotton = 14
+	}
 	history={
 		owner = USA
 		buildings = {

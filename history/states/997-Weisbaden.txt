@@ -1,6 +1,9 @@
 state={
 	id=997
 	name="STATE_997"
+	resources = {
+		wood = 19
+	}
 	history={
 		owner = NAS
 		buildings = {

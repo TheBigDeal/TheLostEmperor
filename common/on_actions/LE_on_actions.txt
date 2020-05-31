@@ -1,36 +1,44 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			every_country = {limit = {is_ai = no}set_variable = { show_opening_screen = 1 }}
+			set_variable = { var = GLOBAL_COMMUNIST_INFLUENCE value = 0 }
+			set_variable = { var = GLOBAL_FASCIST_INFLUENCE value = 0 }
+			set_variable = { var = GLOBAL_THEOCRATIC_INFLUENCE value = 0 }
+			set_variable = { var = GLOBAL_DEMOCRATIC_INFLUENCE value = 0 }
+			set_variable = { dailytempfix = 0}
+			set_variable = { selected_economy_tab2 = 2}
 			HRE_load_emperor_array = yes
 			HRE_load_elector_array = yes
 			HRE_load_country_array = yes
 			HRE_load_city_array = yes
-			every_country = {limit = {is_ai = no}set_variable = { show_opening_screen = 1 }}
-			set_variable = { var = open_economic_window value = 0 }
-			set_variable = { var = GLOBAL_COMMUNIST_INFLUENCE value = 0 }
-			set_variable = { var = GLOBAL_FASCIST_INFLUENCE value = 0 }
-			set_variable = { var = GLOBAL_THEOCRATIC_INFLUENCE value = 0 }
-			set_variable = { var = GLOBAL_liberalism_INFLUENCE value = 0 }
-			#64 = { set_state_flag = GERMAN_CONFEDERATION }
-			# num_battalions max_manpower_k
 			every_country = {
 				set_variable = { prestige_score = 0 }
 				get_industrial_score = yes
 				get_military_score = yes
 				get_total_score = yes
-				load_great_powers_array = yes
 				get_population_number = yes
+				refresh_economy2 = yes
+				get_food_needs = yes
+				get_force_limit = yes
+				get_starting_food = yes
+				set_economic_pp_costs = yes
+				set_variable = { treasury = 0 }
+				
 			}
+			load_great_powers_array = yes
 		}
 	}
 	on_daily = {
 		effect = {
-			every_country = {
-				get_industrial_score = yes
-				get_military_score = yes
-				get_total_score = yes
-				#load_great_powers_array = yes
-			}
+			get_industrial_score = yes
+			get_military_score = yes
+			get_total_score = yes
+			refresh_economy2 = yes
+			recieve_daily_money = yes
+			get_food_needs = yes
+			get_force_limit = yes
+			#load_great_powers_array = yes
 		}
 	}
 }

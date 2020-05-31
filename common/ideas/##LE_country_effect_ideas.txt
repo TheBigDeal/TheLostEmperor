@@ -1,0 +1,37 @@
+ideas = {
+	country = {
+		##################
+		#     Force Limit      #
+		##################
+		minor_exceeded_force_limit = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				military_leader_cost_factor = 0.25
+				army_morale_factor = -0.05
+				training_time_factor = 0.10
+				ai_desired_divisions_factor = -0.25
+				command_power_gain = -0.5
+			}
+		}
+		exceeded_force_limit = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				military_leader_cost_factor = 0.50
+				army_morale_factor = -0.15
+				training_time_factor = 0.40
+				ai_desired_divisions_factor = -0.50
+				command_power_gain = -1
+			}
+		}
+		majorly_exceeded_force_limit = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				military_leader_cost_factor = 1
+				army_morale_factor = -0.30
+				training_time_factor = 1.00
+				ai_desired_divisions_factor = -1
+				command_power_gain = -2
+			}
+		}
+	}
+}

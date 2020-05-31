@@ -5,7 +5,9 @@ state={
 	manpower = 1431624
 	
 	state_category = city
-
+	resources = {
+		wood = 4
+	}
 	history={
 		owner = GBR
 		victory_points = { 9392 10 }

@@ -2,7 +2,10 @@
 state={
 	id=14
 	name="STATE_14"
-
+	resources={
+		wood=16
+		steel = 3
+	}
 	history={
 		owner = BRI
 		victory_points = {

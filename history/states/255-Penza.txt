@@ -6,7 +6,9 @@ state={
 	
 	
 	state_category = town
-
+	resources = {
+		wood = 35
+	}
 
 	history={
 		owner = RUS

@@ -3,6 +3,9 @@ state={
 	id=839
 	name="STATE_839"
 	state_category = city
+	resources={
+		wood=9
+	}
 	history={
 		owner = POL
 		buildings = {

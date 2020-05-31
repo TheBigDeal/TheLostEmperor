@@ -5,7 +5,9 @@ state={
 	manpower = 1050883
 	
 	state_category = town
-
+	resources = {
+		wood = 122
+	}
 	history={
 		owner = RUS
 		victory_points = {
@@ -21,11 +23,6 @@ state={
 		}
 		add_core_of = RUS 
 		add_core_of = SOV
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 2
-			}
-		}
 	}
 
 	provinces={

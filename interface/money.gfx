@@ -8,7 +8,20 @@ spriteTypes = {
 		texturefile = "gfx/prestige.dds"
 	}
 	spriteType = {
+		name = "GFX_food"
+		texturefile = "gfx/interface/food.dds"
+	}
+	spriteType = {
+		name = "GFX_force_limit"
+		texturefile = "gfx/interface/force_limit.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_fuhrer_boost_research"
 		texturefile = "gfx/interface/ideas/idea_general_staff.dds"
+	}
+	spriteType = {
+		name = "GFX_economy_button"
+		texturefile = "gfx//interface//topbar//toolbar//economy_button.dds"
+		noOfFrames = 2		
 	}
 }

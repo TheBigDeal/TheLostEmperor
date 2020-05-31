@@ -1,17 +1,19 @@
 state={
 	id=799
 	name="STATE_799"
-	
+	resources={
+		wood=27
+	}
 	history={
 		owner = PRE
+		victory_points = { 11529 3 }
 		buildings = {
 			infrastructure = 6
-			arms_factory = 2
-			air_base = 5
-
+			arms_factory = 1
+			industrial_complex = 1
 		}
 		add_core_of = PRE
-
+		add_core_of = ANS
 	}
 	
 	state_category=town

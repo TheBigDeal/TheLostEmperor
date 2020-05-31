@@ -8,6 +8,7 @@ state={
 	
 	resources={
 		steel=10
+		wood = 94
 	}
 
 

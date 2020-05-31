@@ -2,6 +2,9 @@
  farm:0 "Farm"
  farm_plural:0 "Farms"
  farm_desc:0 "Farms are a countries source of §Yfood§!. Without farms countries cannot eat, and cannot exist.\n- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\nProdudes One £texticon_food"
+ textile_factory:0 "Textile Factory"
+ textile_factory_plural:0 "Textile Factories"
+ 
  infrastructure:0 "Infrastructure"
  infrastructure_plural:0 "Infrastructure"
  infrastructure_desc:0 "This building provides the state with improvement of infrastructure. It increases your supply power in strategic regions and increases your divisions' speed."

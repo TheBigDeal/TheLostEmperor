@@ -1,7 +1,12 @@
 #################
 #   POLITICAL   #
 #################
-mod_options_cat = {
+le_achievements = {
+	available = {
+		always = yes
+	}
+}
+test_cat = {
 	available = {
 		always = yes
 	}

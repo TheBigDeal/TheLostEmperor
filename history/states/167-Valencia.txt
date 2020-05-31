@@ -5,7 +5,9 @@ state={
 	manpower = 1979294
 	
 	state_category = large_town
-
+	resources={
+		wood=7
+	}
 	history={
 		owner = SPR
 		victory_points = {

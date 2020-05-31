@@ -1,0 +1,27 @@
+opinion_modifiers = {
+	Monarchist_Diplomat = { value = 20 }
+	HRE_relations = { value = 160 }
+	PRUSSIAN_SPHERE = { value = 60 }
+	DECLINED_BERLIN_CONFERENCE = { value = -100 }
+	PAP_meddling_in_affairs = { value = -50 }
+	sent_envoy = { value = 30 }
+	denied_crown = { value = -100 }
+  	claimed_HRE_crown = { value = -100 }
+	french_shadow_puppet = { value = 100 }
+  	GRE_civil_war_support = { value = 50 }
+  	HRE_send_envoy = { value = 20 }
+  	HRE_establish_embassy = { value = 50 }
+  	HRE_declare_alliance = { value = 100 }
+  	covert_missions_against_us = { value = -100 }
+	friendly_relations = { value = 40 }
+	prussia_dominated = { value = 40 }
+	russia_dominated = { value = 40 }
+	aligned_austria = { value = 40 }
+	sent_diplomats = { value = 50 }
+	polish_deterrence = { value = -100 }
+	declined_alliance = { value = -40 }
+	anti_imperialistic = { value = -50 }
+	anti_communist = { value = -50 }
+	bav_supported_the_communists = { value = -100 }
+	bav_invaded_our_holdings = { value = -100 }
+}

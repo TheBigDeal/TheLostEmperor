@@ -1,105 +1,215 @@
-refresh_economy = {
-	################################
-	#             Gains            #
-	################################
-	set_variable = { total_gain = 0 }
+#set_variable = { oil_price = resource_exported@oil } # $1
+refresh_economy2 = {
+	#Set/Reset Main Variables
+	######################################################
+	set_variable = { daily_gain = 0 }
+	set_variable = { daily_loss = 0 }
+	set_variable = { daily_income = 0}
+	
 	#Population Taxes
-	##################
-	set_variable = { population_tax = 0 }
-    add_to_variable = { population_tax = max_manpower_k }
-	divide_variable = { var = population_tax value = 40 }
-	round_variable = population_tax
-	add_to_variable = { total_gain = population_tax }
+	######################################################
+	set_variable = { upper_class_population = max_manpower_k }
+	set_variable = { upper_class_population = max_manpower_k }
+	set_variable = { upper_class_percent = 0.05 }
+	set_variable = { middle_class_population = max_manpower_k }
+	set_variable = { middle_class_percent = 0.75 }
+	set_variable = { lower_class_population = max_manpower_k }
+	set_variable = { lower_class_percent = 0.20 }
+	
+	multiply_variable = { upper_class_population = upper_class_percent }
+	multiply_variable = { middle_class_population = middle_class_percent }
+	multiply_variable = { lower_class_population = lower_class_percent }
+	
+	#Upper Class
+	if = {
+		limit = { has_idea = tax_upper_class_none }
+		set_variable = { upper_class_tax_rate = 0 }
+	}
+	else_if = {
+		limit = { has_idea = tax_upper_class_very_low }
+		set_variable = { upper_class_tax_rate = 0.10 }
+	}
+	else_if = {
+		limit = { has_idea = tax_upper_class_low }
+		set_variable = { upper_class_tax_rate = 0.20 }
+	}
+	else_if = {
+		limit = { has_idea = tax_upper_class_medium }
+		set_variable = { upper_class_tax_rate = 0.30 }
+	}
+	else_if = {
+		limit = { has_idea = tax_upper_class_high }
+		set_variable = { upper_class_tax_rate = 0.40 }
+	}
+	else_if = {
+		limit = { has_idea = tax_upper_class_very_high }
+		set_variable = { upper_class_tax_rate = 0.50 }
+	}
+	else_if = {
+		limit = { has_idea = tax_upper_class_excessive }
+		set_variable = { upper_class_tax_rate = 0.60 }
+	}
+	#Middle Class
+	if = {
+		limit = { has_idea = tax_middle_class_none }
+		set_variable = { middle_class_tax_rate = 0 }
+	}
+	else_if = {
+		limit = { has_idea = tax_middle_class_very_low }
+		set_variable = { middle_class_tax_rate = 0.10 }
+	}
+	else_if = {
+		limit = { has_idea = tax_middle_class_low }
+		set_variable = { middle_class_tax_rate = 0.20 }
+	}
+	else_if = {
+		limit = { has_idea = tax_middle_class_medium }
+		set_variable = { middle_class_tax_rate = 0.30 }
+	}
+	else_if = {
+		limit = { has_idea = tax_middle_class_high }
+		set_variable = { middle_class_tax_rate = 0.40 }
+	}
+	else_if = {
+		limit = { has_idea = tax_middle_class_very_high }
+		set_variable = { middle_class_tax_rate = 0.50 }
+	}
+	else_if = {
+		limit = { has_idea = tax_middle_class_excessive }
+		set_variable = { middle_class_tax_rate = 0.60 }
+	}
+	#Lower Class
+	if = {
+		limit = { has_idea = tax_lower_class_none }
+		set_variable = { lower_class_tax_rate = 0 }
+	}
+	else_if = {
+		limit = { has_idea = tax_lower_class_very_low }
+		set_variable = { lower_class_tax_rate = 0.10 }
+	}
+	else_if = {
+		limit = { has_idea = tax_lower_class_low }
+		set_variable = { lower_class_tax_rate = 0.20 }
+	}
+	else_if = {
+		limit = { has_idea = tax_lower_class_medium }
+		set_variable = { lower_class_tax_rate = 0.30 }
+	}
+	else_if = {
+		limit = { has_idea = tax_lower_class_high }
+		set_variable = { lower_class_tax_rate = 0.40 }
+	}
+	else_if = {
+		limit = { has_idea = tax_lower_class_very_high }
+		set_variable = { lower_class_tax_rate = 0.50 }
+	}
+	else_if = {
+		limit = { has_idea = tax_lower_class_excessive }
+		set_variable = { lower_class_tax_rate = 0.60 }
+	}
+	set_variable = { upper_class_taxes = upper_class_population }
+	multiply_variable = { upper_class_taxes = upper_class_tax_rate }
+	divide_variable = {  upper_class_taxes = 10 }
+	round_variable = upper_class_taxes
+	
+	set_variable = { middle_class_taxes = middle_class_population }
+	multiply_variable = { middle_class_taxes = middle_class_tax_rate }
+	divide_variable = {  middle_class_taxes = 100 }
+	round_variable = middle_class_taxes
+	
+	set_variable = { lower_class_taxes = lower_class_population }
+	multiply_variable = { lower_class_taxes = lower_class_tax_rate }
+	divide_variable = {  lower_class_taxes = 100 }
+	round_variable = lower_class_taxes
+	
+	set_variable = { total_population_tax_gain = upper_class_taxes }
+	add_to_variable = { total_population_tax_gain = middle_class_taxes }
+	add_to_variable = { total_population_tax_gain = lower_class_taxes }
+	
+	add_to_variable = { daily_gain = total_population_tax_gain }
+	
 	#Industry Taxes
-	##################
-	set_variable = { industry_tax = num_of_factories }
-	multiply_variable = { industry_tax = 10 }
-	add_to_variable = { total_gain = industry_tax }
+	######################################################
+	set_variable = { industry_tax = num_of_civilian_factories }
+	if = {
+		limit = { has_idea = tax_capital_gains_none }
+		set_variable = { capital_gains_tax_rate = 0 }
+	}
+	else_if = {
+		limit = { has_idea = tax_capital_gains_very_low }
+		set_variable = { capital_gains_tax_rate = 0.50 }
+	}
+	else_if = {
+		limit = { has_idea = tax_capital_gains_low }
+		set_variable = { capital_gains_tax_rate = 0.75 }
+	}
+	else_if = {
+		limit = { has_idea = tax_capital_gains_medium }
+		set_variable = { capital_gains_tax_rate = 1 }
+	}
+	else_if = {
+		limit = { has_idea = tax_capital_gains_high }
+		set_variable = { capital_gains_tax_rate = 1.25 }
+	}
+	else_if = {
+		limit = { has_idea = tax_capital_gains_very_high }
+		set_variable = { capital_gains_tax_rate = 1.50 }
+	}
+	else_if = {
+		limit = { has_idea = tax_capital_gains_excessive }
+		set_variable = { capital_gains_tax_rate = 2 }
+	}
+	multiply_variable = { industry_tax = capital_gains_tax_rate }
+	multiply_variable = { industry_tax = 2 }
+	round_variable = industry_tax
+	add_to_variable = { daily_gain = industry_tax}
 	
-	#MODIFIERS, LAWS AND FOCUSES
-	###############################
-	set_variable = { law_gain_tax = 0 }
-	add_to_variable = { law_gain_tax = law_1_only_underground_var }
-	add_to_variable = { total_gain = law_gain_tax }
+	#Resource Income
+	######################################################
+	set_variable = { food_resource_income = resource_exported@food }
+	divide_variable = { food_resource_income = 100 } #0.01 Per Food
+	set_variable = { coal_resource_income = resource_exported@coal }
+	divide_variable = { coal_resource_income = 25 } #0.004 Per Coal
+	set_variable = { textiles_resource_income = resource_exported@textiles }
+	set_variable = { wood_resource_income = resource_exported@wood }
+	divide_variable = { wood_resource_income = 25 } #0.004 Per Wood
+	set_variable = { cotton_resource_income = resource_exported@cotton }
+	set_variable = { tobacco_resource_income = resource_exported@tobacco }
+	set_variable = { oil_resource_income = resource_exported@oil }
+	set_variable = { aluminium_resource_income = resource_exported@aluminium }
+	set_variable = { rubber_resource_income = resource_exported@rubber }
+	set_variable = { flint_resource_income = resource_exported@flint }
+	set_variable = { steel_resource_income = resource_exported@steel }
+	divide_variable = { steel_resource_income = 10 } #0.10 Per Steel
+	set_variable = { chromium_resource_income = resource_exported@chromium }
+	divide_variable = { chromium_resource_income = 10 } #0.10 Per Chromium
 	
-	#Trade
-	#################
-	
-	#SET PRICES
-	#################
-	#FOOD
-	set_variable = { food_price = resource_exported@food } # $1
-	divide_variable = { var = food_price value = 6 } # $0.16
-	#STEEL
-	set_variable = { steel_price = resource_exported@steel } # $1
-	divide_variable = { var = steel_price value = 4 } # $0.25
-	#OIL
-	set_variable = { oil_price = resource_exported@oil } # $1
-	divide_variable = { var = oil_price value = 2 } # $0.5
-	#ALUMINIUM
-	set_variable = { aluminium_price = resource_exported@aluminium } # $1
-	divide_variable = { var = aluminium_price value = 4 } # $0.25
-	#TUNGSTEN
-	set_variable = { tungsten_price = resource_exported@tungsten } # $1
-	divide_variable = { var = tungsten_price value = 4 } # $0.25
-	#RUBBER
-	set_variable = { rubber_price = resource_exported@rubber } # $1
-	divide_variable = { var = rubber_price value = 4 } # $0.25
-	#CHROMIUM
-	set_variable = { chromium_price = resource_exported@chromium } # $1
-	divide_variable = { var = chromium_price value = 4 } # $0.25
-			
-	add_to_variable = { total_gain_export = food_price }
-	add_to_variable = { total_gain_export = steel_price }
-	add_to_variable = { total_gain_export = oil_price }
-	add_to_variable = { total_gain_export = aluminium_price }
-	add_to_variable = { total_gain_export = tungsten_price }
-	add_to_variable = { total_gain_export = rubber_price }
-	add_to_variable = { total_gain_export = chromium_price }
-			
-	add_to_variable = { total_gain = total_gain_export }
-	set_variable = { current_money_rate = total_gain }
-			
-	#################################
-	#             Losses            #
-	#################################
-			
-	#Army Spending
-	##################
-	set_variable = { army_spending = num_battalions }
-	multiply_variable = { army_spending = 3 }
-	#Infrastructure Spending
-	##################
-	set_variable = { infrastructure_spending = num_controlled_states }
-	multiply_variable = { infrastructure_spending = 10 }
-	#MODIFIERS, LAWS AND FOCUSES
-	###############################
-	set_variable = { law_loss_tax = 0 }
-	subtract_from_variable = { law_loss_tax = law_1_only_underground_var }
-	subtract_from_variable = { law_loss_tax = law_1_harrassment_var }
-	subtract_from_variable = { law_loss_tax = law_1_gerrymandering_var }
-	subtract_from_variable = { law_loss_tax = law_1_open_ballots_var }
-	subtract_from_variable = { law_loss_tax = law_1_confidential_ballots_var }
-	subtract_from_variable = { total_gain = law_loss_tax }
-	
-	#Corruption
-	##################
-	set_variable = { corruption = 100 } #100
-	set_variable = { temp1 = stability } #0.57
-	multiply_variable = { temp1 = 100 } #57
-	subtract_from_variable = { corruption = temp1 } #43
-	round_variable = corruption
-			
-	subtract_from_variable = { current_money_rate = army_spending }
-	subtract_from_variable = { current_money_rate = infrastructure_spending }
-	subtract_from_variable = { current_money_rate = corruption }
-			
-	set_variable = { total_loss = army_spending }
-	add_to_variable = { total_loss = infrastructure_spending }
-	add_to_variable = { total_loss = corruption }
-			
-    set_variable = { current_money_max = 999999 }
-	set_variable = { current_money_min = -999999 }
+	set_variable = { total_resource_income = food_resource_income }
+	add_to_variable = { total_resource_income = coal_resource_income }
+	add_to_variable = { total_resource_income = textiles_resource_income }
+	add_to_variable = { total_resource_income = wood_resource_income }
+	add_to_variable = { total_resource_income = cotton_resource_income }
+	add_to_variable = { total_resource_income = tobacco_resource_income }
+	add_to_variable = { total_resource_income = oil_resource_income }
+	add_to_variable = { total_resource_income = aluminium_resource_income }
+	add_to_variable = { total_resource_income = rubber_resource_income }
+	add_to_variable = { total_resource_income = flint_resource_income }
+	add_to_variable = { total_resource_income = steel_resource_income }
+	add_to_variable = { total_resource_income = chromium_resource_income }
+	#Adding to Treasury
+	######################################################
+	# Variables are stored as 32 bit integers, cannot be larger than 2,147,483,647 or smaller than -2,147,483,647
+	add_to_variable = { daily_income = daily_gain}
+	subtract_from_variable = {daily_income = daily_loss }
+}
+
+recieve_daily_money = {
+	add_to_variable = { treasury = daily_income }
+	clamp_variable = {
+		var = treasury
+		min = -20000000
+		max = 20000000
+	}
 }
 
 reload_ideas = {
@@ -238,7 +348,7 @@ get_industrial_score = {
 	}
 	add_to_variable = {
 		var = industrial_score
-		value = num_of_factories
+		value = num_of_civilian_factories
 	}
 }
 get_military_score = {
@@ -252,33 +362,258 @@ get_military_score = {
 		var = military_score
 		value = temp_bat
 	}
-}
-get_total_score = {
-	set_variable = { total_score = 0 }
 	add_to_variable = {
-		var = total_score
-		value = prestige_score
+		var = military_score
+		value = num_of_military_factories
 	}
 	add_to_variable = {
-		var = total_score
-		value = military_score
-	}
-	add_to_variable = {
-		var = total_score
-		value = industrial_score
+		var = military_score
+		value = num_of_naval_factories
 	}
 }
+set_economic_pp_costs = {
+	set_variable = { upper_economic_pp_cost = 300 }
+	subtract_from_variable = { upper_economic_pp_cost_neg = upper_economic_pp_cost } # Negitive of variable
+	set_variable = { middle_economic_pp_cost = 300 }
+	subtract_from_variable = { middle_economic_pp_cost_neg = middle_economic_pp_cost }
+	set_variable = { lower_economic_pp_cost = 300 }
+	subtract_from_variable = { lower_economic_pp_cost_neg = lower_economic_pp_cost }
+	set_variable = { capital_gains_economic_pp_cost = 300 }
+	subtract_from_variable = { capital_gains_economic_pp_cost_neg = capital_gains_economic_pp_cost }
+	set_variable = { tariffs_economic_pp_cost = 300 }
+	subtract_from_variable = { tariffs_economic_pp_cost_neg = tariffs_economic_pp_cost }
+	set_variable = { army_economic_pp_cost = 300 }
+	subtract_from_variable = { army_economic_pp_cost_neg = army_economic_pp_cost }
+	set_variable = { education_economic_pp_cost = 300 }
+	subtract_from_variable = { education_economic_pp_cost_neg = education_economic_pp_cost }
+	set_variable = { administration__economic_pp_cost = 300 }
+	subtract_from_variable = { administration__economic_pp_cost_neg = administration__economic_pp_cost }
+	set_variable = { social_economic_pp_cost = 300 }
+	subtract_from_variable = { social_economic_pp_cost_neg = social_economic_pp_cost }
+	set_variable = { covert_economic_pp_cost = 300 }
+	subtract_from_variable = { covert_economic_pp_cost_neg = covert_economic_pp_cost }
+}
+
 load_great_powers_array = {
-	clear_array = global.powers_array
-	set_variable = { num_countries = 0 }
 	every_country = {
-		add_to_array = { global.powers_array = this.total_score } 
+		clear_array = global.powers_array
+		clear_array = global.sorted_powers_array
+		clear_array = global.score_array 
+		
+		clear_array = global.prestige_score_array 
+		clear_array = global.military_score_array 
+		clear_array = global.industrial_score_array 
+		
+		clear_array = global.score_array_position
+		clear_array = global.score_tag_array
+		
+		set_variable = { total_score = 0 }
+		
+		if = {
+			limit = {
+				OR = {
+					is_puppet = yes 
+					is_subject = yes 
+					NOT = { check_variable = { prestige_score = puppet_prestige_counter } }
+				} 
+			}
+			OVERLORD = {
+				add_to_variable = { var = prestige_score value = PREV.prestige_score }
+				add_to_variable = { var = total_score value = PREV.prestige_score }
+				set_variable = { puppet_prestige_counter = PREV.prestige_score }
+			}
+		}
+		else = {
+			add_to_variable = { var = total_score value = prestige_score }
+		}
+		if = {
+			limit = {
+				OR = {
+					is_puppet = yes 
+					is_subject = yes 
+					NOT = { check_variable = { prestige_score = puppet_prestige_counter } }
+				} 
+			}
+			OVERLORD = {
+				add_to_variable = { var = military_score value = PREV.military_score }
+				add_to_variable = { var = total_score value = PREV.military_score }
+				set_variable = { puppet_military_counter = PREV.military_score }
+			}
+		}
+		else = {
+			add_to_variable = { var = total_score value = military_score }
+		}
+		if = {
+			limit = {
+				OR = {
+					is_puppet = yes 
+					is_subject = yes
+					NOT = { check_variable = { prestige_score = puppet_prestige_counter } }
+				} 
+			}
+			OVERLORD = {
+				add_to_variable = { var = industrial_score value = PREV.industrial_score }
+				add_to_variable = { var = total_score value = PREV.industrial_score }
+				set_variable = { puppet_industrial_counter = PREV.industrial_score }
+			}
+		}
+		else = {
+			add_to_variable = { var = total_score value = industrial_score }
+		}
 	}
-	for_each_loop = {
-		array = global.powers_array
-		add_to_variable = { num_countries = 1 }
-	}
+	
+	every_country = {
+		round_variable = total_score
+		round_variable = prestige_score
+		round_variable = military_score
+		round_variable = industrial_score
+		add_to_array = { global.score_array = total_score }
+		
+		add_to_array = { global.prestige_score_array = prestige_score }
+		add_to_array = { global.military_score_array = military_score }
+		add_to_array = { global.industrial_score_array = industrial_score }
+		
+		add_to_array = { global.score_tag_array = THIS.id }
+		add_to_array = { global.p_score_tag_array = THIS.id }
+		add_to_array = { global.m_score_tag_array = THIS.id }
+		add_to_array = { global.i_score_tag_array = THIS.id }
+		
+        set_temp_variable = { length_temp = global.score_array^num }
+    }
+	
+	for_loop_effect = {
+        start = 0
+        end = length_temp
+        add = 1
+        value = v
+        break = b
+        find_highest_in_array = { array = global.score_array value = score_array_highest_value index = score_array_highest_index }
+		find_highest_in_array = { array = global.prestige_score_array value = prestige_score_array_highest_value index = prestige_score_array_highest_index }
+		find_highest_in_array = { array = global.military_score_array value = military_score_array_highest_value index = military_score_array_highest_index }
+		find_highest_in_array = { array = global.industrial_score_array value = industrial_score_array_highest_value index = industrial_score_array_highest_index }
+		
+        remove_from_array = { array = global.score_array index = score_array_highest_index }
+		remove_from_array = { array = global.prestige_score_array index = prestige_score_array_highest_index }
+		remove_from_array = { array = global.military_score_array index = military_score_array_highest_index }
+		remove_from_array = { array = global.industrial_score_array index = industrial_score_array_highest_index }
+		
+        add_to_temp_array = { array = global.score_array_temp value = score_array_highest_value }
+		add_to_temp_array = { array = global.p_score_array_temp value = prestige_score_array_highest_value }
+		add_to_temp_array = { array = global.m_score_array_temp value = military_score_array_highest_value }
+		add_to_temp_array = { array = global.i_score_array_temp value = industrial_score_array_highest_value }
+		
+        set_temp_variable = { tag_temp = global.score_tag_array^score_array_highest_index }
+		set_temp_variable = { p_tag_temp = global.p_score_tag_array^prestige_score_array_highest_index }
+		set_temp_variable = { m_tag_temp = global.m_score_tag_array^military_score_array_highest_index }
+		set_temp_variable = { i_tag_temp = global.i_score_tag_array^industrial_score_array_highest_index }
+		
+        remove_from_array = { array = global.score_tag_array index = score_array_highest_index }
+		remove_from_array = { array = global.p_score_tag_array index = prestige_score_array_highest_index }
+		remove_from_array = { array = global.m_score_tag_array index = military_score_array_highest_index }
+		remove_from_array = { array = global.i_score_tag_array index = industrial_score_array_highest_index }
+		
+        add_to_temp_array = { array = global.score_tag_array_temp value = tag_temp }
+		add_to_temp_array = { array = global.p_score_tag_array_temp value = p_tag_temp}
+		add_to_temp_array = { array = global.m_score_tag_array_temp value = m_tag_temp }
+		add_to_temp_array = { array = global.i_score_tag_array_temp value = i_tag_temp }
+    }
+    for_loop_effect = {
+        start = 0
+        end = length_temp
+        add = 1
+        value = v
+        break = b
+        add_to_array = { array = global.score_array value = global.score_array_temp^v }
+        add_to_array = { array = global.score_tag_array value = global.score_tag_array_temp^v }
+		
+		add_to_array = { array = global.prestige_score_array value = global.p_score_array_temp^v }
+        add_to_array = { array = global.p_score_tag_array value = global.p_score_tag_array_temp^v }
+		
+		add_to_array = { array = global.military_score_array value = global.m_score_array_temp^v  }
+        add_to_array = { array = global.m_score_tag_array value = global.m_score_tag_array_temp^v }
+		
+		add_to_array = { array = global.industrial_score_array value = global.i_score_array_temp^v }
+        add_to_array = { array = global.i_score_tag_array value = global.i_score_tag_array_temp^v }
+    }
+    for_loop_effect = { #Add Numbers to array based on how many tags exist
+        start = 0
+        end = length_temp
+        add = 1
+        value = v
+        break = b
+				
+        add_to_array = { array = global.score_array_position value = v }	
+        add_to_variable = { global.score_array_position^v = 1 } 		
+		
+		add_to_array = { array = global.p_score_array_position  value = v }	
+        add_to_variable = { global.p_score_array_position^v = 1 }
+		
+		add_to_array = { array = global.m_score_array_position value = v }	
+        add_to_variable = { global.m_score_array_position^v = 1 }
+		
+		add_to_array = { array = global.i_score_array_position value = v }	
+        add_to_variable = { global.i_score_array_position^v = 1 }
+    }	
+		
+	every_country = { #Get Position in list
+        for_loop_effect = {
+            start = 0
+            end = length_temp
+            add = 1
+            value = v  
+            break = b 
+                
+            if = {
+                limit = { check_variable = { global.score_tag_array^v = THIS } }
+                set_variable = { score_array_position_var = v } 
+                set_variable = { b = 0 }
+            }
+			if = {
+                limit = { check_variable = { global.score_tag_array^v = THIS } }
+                set_variable = { p_score_array_position_var = v } 
+                set_variable = { b = 0 }
+            }	
+			if = {
+                limit = { check_variable = { global.score_tag_array^v = THIS } }
+                set_variable = { m_score_array_position_var = v } 
+                set_variable = { b = 0 }
+            }
+			if = {
+                limit = { check_variable = { global.score_tag_array^v = THIS } }
+                set_variable = { i_score_array_position_var = v } 
+                set_variable = { b = 0 }
+            }
+        }      
+        set_variable = { score_array_position_var_pop = score_array_position_var }
+        add_to_variable = { score_array_position_var = 1 } 
+		set_variable = { p_score_array_position_var_pop = p_score_array_position_var }
+        add_to_variable = { p_score_array_position_var = 1 } 
+		set_variable = { i_score_array_position_var_pop = i_score_array_position_var }
+        add_to_variable = { i_score_array_position_var = 1 } 
+		set_variable = { m_score_array_position_var_pop = m_score_array_position_var }
+        add_to_variable = { m_score_array_position_var = 1 } 
+    }
+	
+	every_country = {	
+        for_loop_effect = {
+            start = 0
+            end = length_temp
+            add = 1
+            value = v  
+            break = b 
+				
+		    if = {
+				limit = { check_variable = { global.score_tag_array^v = THIS } }		
+			    set_variable = { global.prestige_score_array^v = prestige_score } 	
+                set_variable = { global.military_score_array^v = military_score }
+			    set_variable = { global.industrial_score_array^v = industrial_score }
+				set_variable = { b = 0 }
+			}		
+        }		
+    }
+	
 }
+
 get_population_number = {
 	set_variable = { country_population = max_manpower_k }
 	if = {
@@ -297,10 +632,39 @@ get_population_number = {
 	}
 }
 
+get_force_limit = {
+	set_variable = { force_limit = max_manpower_k }
+	divide_variable = { force_limit = 400 }
+	round_variable = force_limit
+	
+	set_variable = { force_limit_6 = force_limit }
+	add_to_variable = { force_limit_6 = 6 } #Minor Exceeding
+	
+	set_variable = { force_limit_12 = force_limit }
+	add_to_variable = { force_limit_12 = 12 } #Exceeding
+	
+	set_variable = { force_limit_18 = force_limit }
+	add_to_variable = { force_limit_18 = 18 } #Major Exceeding
+}
 
-
-
-
-
-
-
+get_food_needs = {
+	if = {
+		limit = { check_variable = { allowed_to_run = 0 }}
+		set_variable = { starting_food = max_manpower_k }
+		divide_variable = {starting_food = 200}
+		round_variable = starting_food #Food every day needed
+		multiply_variable = { starting_food = 30 } #30 days of food stockpiled in beginning
+		add_to_variable = { current_food = starting_food }
+		set_variable = { allowed_to_run = 1 }
+	}
+	set_variable = { food_needed = max_manpower_k }
+	divide_variable = {food_needed = 200}
+	round_variable = food_needed
+	if = {
+		limit = { check_variable = { food_needed < resource@food } }
+		set_variable = { surplus_food = resource@food }
+		subtract_from_variable = { surplus_food = food_needed }
+		set_variable = { current_food = surplus_food }
+	}
+	clamp_variable = { var = current_food min = 0 max = 100000}
+}

@@ -6,6 +6,7 @@ state={
 	resources={
 		steel=110
 		aluminium=38
+		wood = 14
 	}
 	
 	state_category = large_city
@@ -19,7 +20,7 @@ state={
 			infrastructure = 6
 			arms_factory = 1
 			industrial_complex = 1
-			air_base = 6
+			farm = 5
 		}
 		add_core_of = PRE
 		add_core_of = SIL

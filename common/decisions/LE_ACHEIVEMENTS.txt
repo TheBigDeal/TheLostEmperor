@@ -1,0 +1,43 @@
+le_achievements = {
+	lenin_lives = {
+
+		icon = generic_army_support
+
+		available = {
+
+		}
+		visible = {
+			OR = {
+				original_tag = RUS
+				original_tag = SOV
+			}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = playerevents.2
+		}
+	}
+}
+test_cat = {
+	test_info = {
+
+		icon = generic_army_support
+
+		available = {
+
+		}
+		visible = {
+			is_ai = no
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = playerevents.2
+		}
+	}
+}

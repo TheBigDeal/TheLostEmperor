@@ -5,7 +5,9 @@ state={
 	manpower = 1364537
 	
 	state_category = town
-
+	resources = {
+		wood=6
+	}
 	history={
 		owner = RUS
 		buildings = {

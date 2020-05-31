@@ -9,6 +9,7 @@ state={
 	resources={
 		steel=8
 		chromium=2
+		wood = 142
 	}
 	history={
 		owner = SWE

@@ -7,6 +7,7 @@ state={
 		chromium=22.000
 		aluminium=58.000
 		tungsten=20.000
+		wood = 9
 	}
 
 	history={

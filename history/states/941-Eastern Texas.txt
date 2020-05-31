@@ -7,6 +7,7 @@ state={
 	resources={
 		oil=325
 		aluminium=52
+		cotton = 26
 	}
 
 

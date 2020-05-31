@@ -1,108 +1,138 @@
-bavarian_civil_war_cat = {
-	arrest_protesters = {
+bavarian_free_cities_cat = {
+	ULM_bribe_government_members = { #Increase Communist Support
 		icon = generic_army_support
+		cost = 25
+		days_remove = 5
 		visible = {
-			tag = BAY
-			has_country_flag = BAV_PROTESTERS
+			original_tag = BAY
+			has_country_flag = INFLUENCE_THE_FREE_CITIES
 		}
-		cost = 10
-		ai_will_do = {
-			factor = 0
-		}
-		complete_effect = {
-			subtract_from_variable = { BAV_COMMUNIST_STRENGTH = 5 } 
+		remove_effect  = {
+			ULM = { add_popularity = { ideology = proletarianism popularity = 0.10 } }
 		}
 	}
-	execute_protesters = {
+	ULM_urge_referendum = { #Increase Communist Support
 		icon = generic_army_support
+		cost = 25
+		days_remove = 5
 		visible = {
-			tag = BAY
-			has_country_flag = BAV_PROTESTERS
+			original_tag = BAY
+			has_country_flag = INFLUENCE_THE_FREE_CITIES
+			NOT = { has_government = proletarianism }
 		}
-		cost = 20
-		ai_will_do = {
-			factor = 0
+		available = {
+			ULM = { proletarianism > 0.50 }
 		}
-		complete_effect = {
-			subtract_from_variable = { BAV_COMMUNIST_STRENGTH = 10 } 
-			add_stability = -0.1
+		remove_effect  = {
+			ULM = { country_event = { id = political.21 } }
 		}
 	}
-	request_foreign_aid = {
+	ULM_propose_union = { #
 		icon = generic_army_support
+		cost = 25
+		days_remove = 5
 		visible = {
-			tag = BAY
+			original_tag = BAY
+			has_country_flag = INFLUENCE_THE_FREE_CITIES
+			ULM = { has_government = proletarianism }
 		}
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		complete_effect = {
-			subtract_from_variable = { BAV_COMMUNIST_STRENGTH = 5 } 
+		remove_effect = {
+			ULM = { country_event = { id = le_bavaria.18 } }
 		}
 	}
-	hire_more_police = {
+	HUL_bribe_government_members = { #Increase Communist Support
 		icon = generic_army_support
+		cost = 25
+		days_remove = 5
 		visible = {
-			tag = BAY
+			original_tag = BAY
+			has_country_flag = INFLUENCE_THE_FREE_CITIES
 		}
-		cost = 20
-		ai_will_do = {
-			factor = 10
-		}
-		complete_effect = {
-			add_to_variable = { BAV_COMMUNIST_STRENGTH = 2 } 
-			add_stability = 0.1
+		remove_effect  = {
+			HUL = { add_popularity = { ideology = proletarianism popularity = 0.10 } }
 		}
 	}
-	strike_at_rebel_stronghold = {
+	HUL_propose_union = { #
 		icon = generic_army_support
+		cost = 25
+		days_remove = 5
 		visible = {
-			tag = BAY
-			has_country_flag = BAV_REBEL_STRONGHOLD
+			original_tag = BAY
+			has_country_flag = INFLUENCE_THE_FREE_CITIES
 		}
-		cost = 10
-		ai_will_do = {
-			factor = 0
-		}
-		complete_effect = {
-			subtract_from_variable = { BAV_COMMUNIST_STRENGTH = 20 } 
+		available = {
+			HUL = { has_government = proletarianism }
 		}
 	}
-	plan_rebel_leader_assassination = {
+	NUR_bribe_government_members = { #Increase Communist Support
 		icon = generic_army_support
-		fixed_random_seed = no
+		cost = 25
+		days_remove = 5
 		visible = {
-			tag = BAY
-			has_country_flag = BAV_REBEL_LEADER
+			original_tag = BAY
+			has_country_flag = INFLUENCE_THE_FREE_CITIES
 		}
-		cost = 10
-		ai_will_do = {
-			factor = 0
-		}
-		complete_effect = {
-			random_list = {
-				70 = {
-					subtract_from_variable = { BAV_COMMUNIST_STRENGTH = 30 }
-					country_event = { id = le_bavaria.10 }
-				}
-				30 = {
-					country_event = { id = le_bavaria.11 }
-				}
-			}
+		remove_effect  = {
+			NUR = { add_popularity = { ideology = proletarianism popularity = 0.10 } }
 		}
 	}
-	meet_with_revolutionary_leaders = {
+	NUR_propose_union = { #
 		icon = generic_army_support
+		cost = 25
+		days_remove = 5
 		visible = {
-			tag = BAY
+			original_tag = BAY
+			has_country_flag = INFLUENCE_THE_FREE_CITIES
 		}
-		cost = 200
-		ai_will_do = {
-			factor = 0
+		available = {
+			NUR = { has_government = proletarianism }
 		}
-		complete_effect = {
-			subtract_from_variable = { BAV_COMMUNIST_STRENGTH = 5 } 
+	}
+	MEM_bribe_government_members = { #Increase Communist Support
+		icon = generic_army_support
+		cost = 25
+		visible = {
+			original_tag = BAY
+			has_country_flag = INFLUENCE_THE_FREE_CITIES
+		}
+		remove_effect  = {
+			MEM = { add_popularity = { ideology = proletarianism popularity = 0.10 } }
+		}
+	}
+	MEM_propose_union = { #
+		icon = generic_army_support
+		cost = 25
+		days_remove = 5
+		visible = {
+			original_tag = BAY
+			has_country_flag = INFLUENCE_THE_FREE_CITIES
+		}
+		available = {
+			MEM = { has_government = proletarianism }
+		}
+	}
+	LND_bribe_government_members = { #Increase Communist Support
+		icon = generic_army_support
+		cost = 25
+		days_remove = 5
+		visible = {
+			original_tag = BAY
+			has_country_flag = INFLUENCE_THE_FREE_CITIES
+		}
+		remove_effect  = {
+			LND = { add_popularity = { ideology = proletarianism popularity = 0.10 } }
+		}
+	}
+	LND_propose_union = { #
+		icon = generic_army_support
+		cost = 25
+		days_remove = 5
+		visible = {
+			original_tag = BAY
+			has_country_flag = INFLUENCE_THE_FREE_CITIES
+		}
+		available = {
+			LND = { has_government = proletarianism }
 		}
 	}
 }

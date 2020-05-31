@@ -8,13 +8,15 @@ state={
 	resources={
 		steel=19 # was: 60
 		aluminium=7 # was: 20
+		wood = 3
 	}
 	state_category = city
 	history={
 		owner = PRE
 		buildings = {
-			infrastructure = 6
+			infrastructure = 4
 			industrial_complex = 1
+			farm = 3
 		}
 		add_core_of = PRE
 	}

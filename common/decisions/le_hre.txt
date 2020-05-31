@@ -34,6 +34,14 @@ hre_state_highlight_cat = {
 		on_map_mode = map_only
 		visible = {is_ai = no}
 	}
+	hre_state_highlight_1021 = {
+		icon = hol_draw_up_staff_plans
+		available = { always = no }
+		highlight_state_targets = { state = 1021 }
+		highlight_color_before_active = 5
+		on_map_mode = map_only
+		visible = {is_ai = no}
+	}
 	hre_state_highlight_879 = {
 		icon = hol_draw_up_staff_plans
 		available = { always = no }

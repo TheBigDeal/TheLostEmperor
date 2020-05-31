@@ -1,21 +1,372 @@
 ﻿###########################
 # Bavarian Events
 ###########################
-
 add_namespace = le_bavaria
-
 country_event = { #Communist Takeover
 	id = le_bavaria.1
 	title = le_bavaria.1.t
 	desc = le_bavaria.1.d
-	picture = GFX_report_event_hitler_parade
-	
+	picture = GFX_report_event_communists_cheer
 	fire_only_once = yes
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 1 }
-	
 	option = { #We Tried Our Best...
 		name = le_bavaria.1.a
 		
+	}
+}
+country_event = { #Communist Riots In Munich, terror attack on nearby military base
+	id = le_bavaria.2
+	title = le_bavaria.2.t
+	desc = le_bavaria.2.d
+	picture = GFX_report_event_generic_riot
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #We must act soon
+		name = le_bavaria.2.a
+		add_popularity = { ideology = collectivism popularity = 0.02 }
+		add_manpower = -230
+	}
+}
+country_event = { #Communist Uprising
+	id = le_bavaria.3
+	title = le_bavaria.3.t
+	desc = le_bavaria.3.d
+	picture = GFX_report_event_generic_riot
+	#fire_only_once = yes
+	is_triggered_only = yes
+	option = { #The Workers Will Not Be Silenced!
+		name = le_bavaria.3.a
+		set_cosmetic_tag = BAY_COMMUNIST
+		set_capital = 53
+		start_civil_war = {
+			ruling_party = collectivism
+			ideology = absolutism
+			size = 0.4
+			only_own_territory = no
+			capital = 52
+			states = { 
+				52 768 1021 
+			}
+		}
+		random_country = {
+			limit = {
+				has_government = absolutism
+				original_tag = BAY
+			}
+			set_cosmetic_tag = BAY_CIVIL_WAR
+		}
+		
+	}
+	option = { #They must be put down
+		name = le_bavaria.3.b
+		set_cosmetic_tag = BAY_CIVIL_WAR
+		start_civil_war = {
+			ruling_party = absolutism
+			ideology = collectivism
+			size = 0.6
+			only_own_territory = no
+			capital = 53
+			states = { 
+				53
+			}
+		}
+		random_country = {
+			limit = {
+				has_government = collectivism
+				original_tag = BAY
+			}
+			set_cosmetic_tag = BAY_COMMUNIST
+			add_manpower = BAV_COMMUNIST_MEN
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = BAV_COMMUNIST_GUNS
+				producer = ROOT
+			}
+		}
+	}
+}
+country_event = { #The Palatinate Declared Independence!
+	id = le_bavaria.4
+	title = le_bavaria.4.t
+	desc = le_bavaria.4.d
+	picture = GFX_report_event_generic_riot
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #We are not in a position to do anything.
+		name = le_bavaria.4.a
+		PLT = { transfer_state = 768 }
+		PLT = { add_ideas = HRE_MEMBER }
+	}
+}
+country_event = { #Bavaria Is Defeated
+	id = le_bavaria.5
+	title = le_bavaria.5.t
+	desc = le_bavaria.5.d
+	picture = GFX_report_event_generic_riot
+	fire_only_once = yes
+	trigger = {
+		has_idea = HRE_emperor
+		OR = {
+			NOT = { country_exists = BAV }
+			AND = {
+				BAV = { has_government = collectivism }
+				BAV = { has_civil_war = no }
+			}
+		}
+	}
+	option = { #Nassau
+		name = le_bavaria.5.a
+		PLT = { swap_ideas = {remove_idea = HRE_member add_idea = HRE_elector } }
+	}
+	option = { #Luxembourg
+		name = le_bavaria.5.b
+		LUX = { swap_ideas = {remove_idea = HRE_member add_idea = HRE_elector } }
+	}
+	option = { #Munster
+		name = le_bavaria.5.c
+		MUN = { swap_ideas = {remove_idea = HRE_member add_idea = HRE_elector } }
+	}
+	option = { #Lorraine
+		name = le_bavaria.5.d
+		LOR = { swap_ideas = {remove_idea = HRE_member add_idea = HRE_elector } }
+	}
+}
+country_event = { #Bavaria Seeks Aid
+	id = le_bavaria.6
+	title = le_bavaria.6.t
+	desc = le_bavaria.6.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	option = { #Support The Bavarians
+		name = le_bavaria.6.a
+		ai_chance = { base = 3 }
+		BAY = { country_event = { id = le_bavaria.7 } }
+		add_manpower = -5000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = -5000
+			producer = ROOT
+		}
+	}
+	option = { #Decline
+		name = le_bavaria.6.c
+		ai_chance = { base = 10 }
+		BAY = { country_event = { id = le_bavaria.9 } }
+	}
+}
+country_event = { #FROM Send Aid
+	id = le_bavaria.7
+	title = le_bavaria.7.t
+	desc = le_bavaria.7.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	option = { #Support The Bavarians
+		name = le_bavaria.7.a
+		add_manpower = 5000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 5000
+			producer = FROM
+		}
+	}
+}
+country_event = { #Bavaria Demands Annexation
+	id = le_bavaria.8
+	title = le_bavaria.8.t
+	desc = le_bavaria.8.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	option = { #Accept
+		name = le_bavaria.8.a
+		ai_chance = { base = 5 }
+		BAY = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+	}
+	option = { #Deny
+		name = le_bavaria.8.b
+		ai_chance = { base = 1 }
+		BAY = { country_event = { id = le_bavaria.10 } }
+	}
+}
+country_event = { #FROM declines
+	id = le_bavaria.9
+	title = le_bavaria.9.t
+	desc = le_bavaria.9.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	option = { 
+		name = le_bavaria.9.a
+	}
+}
+country_event = { #FROM.GetName Denies Annexation
+	id = le_bavaria.10
+	title = le_bavaria.10.t
+	desc = le_bavaria.10.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	option = { #Unfortunate
+		name = le_bavaria.10.a
+		ai_chance = { base = 1 }
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
+	}
+}
+country_event = { #The Prussian Issue
+	id = le_bavaria.11
+	title = le_bavaria.11.t
+	desc = le_bavaria.11.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	option = { #Encite Revolts
+		name = le_bavaria.11.a
+		ai_chance = { base = 1 }
+		complete_national_focus = BAV_ENCITE_REVOLT
+	}
+	option = { #Invade
+		name = le_bavaria.11.b
+		ai_chance = { base = 1 }
+		complete_national_focus = BAV_INVADE_THE_LANDS
+	}
+}
+country_event = { #Our Lower Holdings Revolt!
+	id = le_bavaria.12
+	title = le_bavaria.12.t
+	desc = le_bavaria.12.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	option = { #Oh Well
+		name = le_bavaria.12.a
+		ai_chance = { base = 10 }
+	}
+	option = { #Investigate
+		name = le_bavaria.12.b
+		ai_chance = { base = 6 }
+		random_list = {
+			60 = {
+				country_event = { id = le_bavaria.15 }
+			}
+			40 = {
+				country_event = { id = le_bavaria.16 }
+			}
+		}
+	}
+}
+country_event = { #Bavaria Invades our Lower Holdings!
+	id = le_bavaria.13
+	title = le_bavaria.13.t
+	desc = le_bavaria.13.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	option = { #Protest Them
+		name = le_bavaria.13.a
+		ai_chance = { base = 10 }
+		add_opinion_modifier = { target = BAY modifier = bav_invaded_our_holdings }
+		BAY = { country_event = { id = le_bavaria.14 } }
+	}
+}
+country_event = { #Prussia has issues a formal protest.
+	id = le_bavaria.14
+	title = le_bavaria.14.t
+	desc = le_bavaria.14.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	option = { #More eyes are on us.
+		name = le_bavaria.14.a
+		ai_chance = { base = 10 }
+	}
+}
+country_event = { #Investigation yields no results
+	id = le_bavaria.15
+	title = le_bavaria.15.t
+	desc = le_bavaria.15.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	option = { #More eyes are on us.
+		name = le_bavaria.15.a
+		ai_chance = { base = 10 }
+	}
+}
+country_event = { #Our Investigation Shows Promise
+	id = le_bavaria.16
+	title = le_bavaria.16.t
+	desc = le_bavaria.16.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	option = { #Those Commie Bastards
+		name = le_bavaria.16.a
+		ai_chance = { base = 10 }
+		add_opinion_modifier = {target = BAY modifier = bav_invaded_our_holdings }
+		BAY = { country_event = { id = le_bavaria.17 } }
+	}
+}
+country_event = { #Prussia found out we are behind the revolts.
+	id = le_bavaria.17
+	title = le_bavaria.17.t
+	desc = le_bavaria.17.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	option = { #More eyes are on us.
+		name = le_bavaria.17.a
+		ai_chance = { base = 10 }
+	}
+}
+
+country_event = { #Bavaria offers membership in their nation
+	id = le_bavaria.18
+	title = le_bavaria.18.t
+	desc = le_bavaria.18.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	option = { #Who shall join our comrades
+		name = le_bavaria.18.a
+		ai_chance = { base = 10 }
+		BAY = { country_event = { id = le_bavaria.19 } }
+	}
+	option = { #More eyes are on us.
+		name = le_bavaria.18.b
+		ai_chance = { base = 0 }
+		BAY = { country_event = { id = le_bavaria.20 } }
+	}
+}
+country_event = { #FROM.GetName Accepts our proposal
+	id = le_bavaria.19
+	title = le_bavaria.19.t
+	desc = le_bavaria.19.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	option = { #Who shall join our comrades
+		name = le_bavaria.19.a
+		ai_chance = { base = 10 }
+		annex_country = { target = FROM transfer_troops = yes }
+	}
+}
+country_event = { #FROM.GetName Accepts our proposal
+	id = le_bavaria.20
+	title = le_bavaria.20.t
+	desc = le_bavaria.20.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	option = { #Who shall join our comrades
+		name = le_bavaria.20.a
+		ai_chance = { base = 10 }
+		create_wargoal = { type = annex_everything target = FROM }
+	}
+}
+
+country_event = { #COntact with Hungarian Communists
+	id = le_bavaria.21
+	title = le_bavaria.21.t
+	desc = le_bavaria.21.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	option = { #Who shall join our comrades
+		name = le_bavaria.21.a
+		ai_chance = { base = 10 }
 	}
 }

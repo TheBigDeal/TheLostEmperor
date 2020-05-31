@@ -9,6 +9,7 @@ state={
 	resources={
 		steel=40
 		tungsten=34
+		wood=8
 	}
 
 	history={

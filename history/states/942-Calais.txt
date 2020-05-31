@@ -15,19 +15,15 @@ state={
 			6560 5 
 		}
 		buildings = {
-			infrastructure = 9
-			arms_factory = 5
-			industrial_complex = 7
-			air_base = 3
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 1
 			6560 = {
 				naval_base = 3
-
 			}
 
 		}
-		add_extra_state_shared_building_slots = 2
 		add_core_of = FLA
-
 	}
 
 	provinces={

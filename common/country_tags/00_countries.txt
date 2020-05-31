@@ -4,6 +4,8 @@
 IM1 = "countries/ColoniaTanganica.txt"
 IM2 = "countries/ColoniaPapua.txt"
 IM3 = "countries/ColoniaOrientaleItaliana.txt"
+
+
 #AFRICA
 MET = "countries/Metz.txt"
 LOR = "countries/Lorraine.txt"
@@ -147,6 +149,7 @@ MAI = "countries/Mainz.txt"
 NUR = "countries/Nuremburg.txt"
 AUG = "countries/Augsburg.txt"
 ANS = "countries/Ansbach.txt"
+BTH = "countries/Bayreuth.txt"
 PLT = "countries/Palatinate.txt"
 OLD = "countries/Oldenburg.txt"
 QNG = "countries/Qing.txt"

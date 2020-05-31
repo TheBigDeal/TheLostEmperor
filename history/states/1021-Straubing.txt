@@ -1,0 +1,29 @@
+state={
+	id=1021
+	name="STATE_1021"
+	resources={
+		steel=20.000
+		wood = 45
+	}
+	history={
+		owner = BAY
+		victory_points = {
+			9681 1 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			farm = 3
+		}
+		add_core_of = BAY
+
+	}
+	
+	provinces={
+		6725 9515 9681 
+	}
+	manpower=454395
+	buildings_max_level_factor=1.000
+	state_category = town
+}

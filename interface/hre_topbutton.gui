@@ -4,8 +4,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "hre_container"
-		position = { x = 83%% y = 4 }
-
+		position = { x = 98% y = 160 }
 		buttonType ={
 			name ="hre_bg"
 			spriteType = "GFX_hre"
@@ -15,7 +14,7 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "hre_main_container"
-		position = { x = 43%% y = 20%% }
+		position = { x = 43% y = 20%% }
 		size = { width=650 height=80%% }
 		margin = { top = 6 bottom = 13}
 		moveable = no

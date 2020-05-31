@@ -3,7 +3,9 @@ state={
 	id=208
 	name="STATE_208" # Luga
 	manpower = 341819
-	
+	resources={
+		wood=46
+	}
 	state_category = rural
 
 	history={

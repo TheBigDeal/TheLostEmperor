@@ -2,10 +2,11 @@
 ##### GENERIC ######
 ####################
 
-bavarian_civil_war_cat = {
+bavarian_free_cities_cat = {
 	icon = idea_collectivism
+	picture = GFX_decision_cat_picture_concessions_to_the_trade_unions
 	visible = {
 		original_tag = BAY
-		#has_ideas = { rooted_collectivists }
+		has_country_flag = INFLUENCE_THE_FREE_CITIES
 	}
 }

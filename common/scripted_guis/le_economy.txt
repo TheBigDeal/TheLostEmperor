@@ -3,17 +3,31 @@ scripted_gui = {
 		context_type = player_context
 		window_name = "current_money_container"
 		visible = { always = yes }
+		effects = {}
+	}
+	current_food = {
+		context_type = player_context
+		window_name = "current_food_container"
+		visible = { always = yes }
+		effects = {}
+	}
+	current_food = {
+		context_type = player_context
+		window_name = "current_force_limit_container"
+		visible = { always = yes }
+		effects = {}
+	}
+	economy_button_open = {
+		context_type = player_context
+		window_name = "economy_container"
+		visible = { always = yes }
 		effects = {
-			current_money_bg_click = {
+			economy_button_click = {
 				if = {
-					limit = {
-						check_variable = { open_economic_window = 1 }
-					}
+					limit = {check_variable = { open_economic_window = 1 }}
 					set_variable = { open_economic_window = 0 }
 				}
-				else = {
-					set_variable = { open_economic_window = 1 }
-				}
+				else = {set_variable = { open_economic_window = 1 }}
 			}
 		}
 	}

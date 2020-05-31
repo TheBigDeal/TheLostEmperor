@@ -8,6 +8,8 @@ state={
 	
 	resources={
 		steel=112
+		cotton = 26
+		tobacco = 22
 	}
 
 

@@ -10,7 +10,14 @@ scripted_gui = {
 		
 		effects = {
 			great_powers_bg_click = {
-				set_variable = { open_great_power_container = 1 }
+				if = {
+					limit = { check_variable = { open_great_power_container = 1 } }
+					set_variable = { open_great_power_container = 0 }
+				}
+				else = {
+					set_variable = { open_great_power_container = 1 }
+					load_great_powers_array = yes
+				}
 			}
 		}
 	}
@@ -23,14 +30,18 @@ scripted_gui = {
 			check_variable = { open_great_power_container = 1 }
 		}
 		dynamic_lists = {
-			# this is the main grid that contains added countries
-			country_list = {
-				array = power_rating_array
-				change_scope = yes
-				entry_container = "great_power_list_[?Root.open_great_power_container]"
+			gp_show_grid = {
+				array = global.score_tag_array
+				entry_container = gp_entry
 			}
 		}
-		
+		triggers = { 
+			flag_great_power_border_visible = { check_variable = {  global.score_array_position^i < 11 } }
+			flag_secondary_power_border_visible = { check_variable = {  global.score_array_position^i < 21 } }
+		}
+		properties = {
+			flag = { image = "[?global.score_tag_array^i.GetFlag]" }
+		}
 		effects = {
 			gp_close_button_click = {
 				set_variable = { open_great_power_container = 0 }

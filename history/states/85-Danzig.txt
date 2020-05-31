@@ -2,7 +2,9 @@
 state={
 	id=85
 	name="STATE_85"
-
+	resources={
+		wood=25
+	}
 	history={
 		owner = PRE
 		victory_points = { 3324 3 }

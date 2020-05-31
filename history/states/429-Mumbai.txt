@@ -5,7 +5,9 @@ state={
 	resources={
 		tungsten=26.000
 	}
-
+	resources={
+		cotton = 119
+	}
 	history={
 		owner = MAR
 		add_core_of = MAR

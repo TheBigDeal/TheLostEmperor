@@ -3,7 +3,6 @@ ideas = {
 		HRE_member = {
 			picture = idea_HRE_member
 			modifier = {
-				conscription = -1.00
 				MONTHLY_POPULATION = 0.25
 			}
 		}

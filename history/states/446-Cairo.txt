@@ -2,7 +2,9 @@
 state={
 	id=446
 	name="STATE_446"
-
+	resources={
+		cotton = 32
+	}
 	history={
 		owner = EGY
 		buildings = {

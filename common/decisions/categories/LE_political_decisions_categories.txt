@@ -41,3 +41,8 @@ collectivism_on_the_rise = {
 		always = yes
 	}
 }
+proletarianism_on_the_rise = {
+	available = {
+		always = yes
+	}
+}

@@ -1,6 +1,9 @@
 state={
 	id=1019
 	name="STATE_1019"
+	resources = {
+		wood = 11
+	}
 	history={
 		owner = SAX
 		buildings = {

@@ -2,28 +2,97 @@
 guiTypes = {
 	containerWindowType = {
 		name = "great_powers_container"
-		position = { x = 85%% y = 4 }
+		position = { x = 65 y = 50 }
 		buttonType ={
 			name ="great_powers_bg"
-			spriteType = "GFX_great_powers"
+			spriteType = "GFX_mini_great_powers"
 			position = { x=0 y=0 }
 			shortcut = "ctrl+g"
 		}
 	}
 	containerWindowType = {
 		name = "great_powers_main_container"
-		position = { x = 650 y = 270 }
-		size = { width=550 height=74%% }
+		position = { x = 35% y = 160 }
+		size = { width=1216 height=80%% }
 		margin = { top = 6 bottom = 13}
-		moveable = yes
+		moveable = no
 		background = {
 			name = "great_powers_main_bg"
 			quadTextureSprite ="GFX_tiled_window_1b_border"
 		}
+		containerWindowType = {
+			name = "gp_main_container_list"
+			position = {x = 8 y = 30}
+			size = {width = 1186 height = 660 }
+			margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+			verticalScrollbar = "right_vertical_slider"
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_thin_border2"
+			}
+			instantTextboxType = {
+				name = "rank_title"
+				position = { x = 20 y = 0 }
+				font = "hoi_36header"
+				text = "Rank"
+				maxWidth = 400
+				maxHeight = 400
+				fixedsize = no
+				format = left		
+				alwaystransparent = no
+			}
+			instantTextboxType = {
+				name = "name_title"
+				position = { x = 300 y = 0 }
+				font = "hoi_36header"
+				text = "Name"
+				maxWidth = 400
+				maxHeight = 400
+				fixedsize = no
+				format = left		
+				alwaystransparent = no
+			}
+			instantTextboxType = {
+				name = "total_score_title"
+				position = { x = 580 y = 0 }
+				font = "hoi_36header"
+				text = "Total Score"
+				maxWidth = 400
+				maxHeight = 400
+				fixedsize = no
+				format = left		
+				alwaystransparent = no
+			}
+			iconType = {
+				name ="prestige_score"
+				spriteType = "GFX_prestige"
+				position = { x= 822 y = 8 }
+			}
+			iconType = {
+				name ="industrial_icon"
+				spriteType = "GFX_industrial_capacity_icon"
+				position = { x= 918 y = 7 }
+			}
+			iconType = {
+				name ="military_score"
+				spriteType = "GFX_texticon_weapons"
+				position = { x= 1028 y = 12 }
+			}
+			gridboxtype = {
+				name = "gp_show_grid"
+				position = { x = -30 y = 40 }
+				size = { width = 95 height = 90 }
+				slotsize = { width = 60 height = 60 }
+				max_slots_horizontal = 1
+				max_slots_vertical = 5000
+				add_horizontal = yes
+			}
+		}
 		iconType = {
 			name = gp_header
-			spriteType = "GFX_header_bg"
-			position = {x=6 y=-1}
+			spriteType = "GFX_category_header_long"
+			position = {x=2 y=-4}
 			alwaystransparent = yes
 		}
 		buttonType = {
@@ -47,37 +116,101 @@ guiTypes = {
 			format = center		
 			alwaystransparent = no
 		}
-		containerWindowType = {
-			name = "great_power_list_1"
-
-			instantTextBoxType = {
-				name = "country_name"
-				position = { x = 195 y = 200 }
-				
-				font = "hoi_16mbs"
-				borderSize = {x = 0 y = 0}
-				text = "[?this.GetNameWithFlag]"	
-				maxWidth = 175
-				maxHeight = 20
-				format = center
-				fixedsize = yes	
-			
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "power_rating1"
-				position = { x = 295 y = 200 }
-				
-				font = "hoi_16mbs"
-				borderSize = {x = 0 y = 0}
-				text = "[?power_rating_array|0]"	
-				maxWidth = 175
-				maxHeight = 20
-				format = center
-				fixedsize = yes	
-			
-				Orientation = "UPPER_LEFT"
-			}
+	}
+	containerWindowType = {  
+		name = "gp_entry"
+		position = { x = 0 y = 0}
+		size = { width = 60 height = 90 }
+		buttonType = {
+			name = "flag"
+			quadTextureSprite = "GFX_shield_medium"
+			position = { x = 106 y = 0 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "gp_name"
+		}
+		iconType = {
+			name = "flag_border"
+			spriteType = "GFX_large_flag_frame"
+			position = {x=100 y=-1}
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "flag_secondary_power_border"
+			spriteType = "GFX_large_flag_secondary_power"
+			position = {x=102 y=-1}
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "flag_great_power_border"
+			spriteType = "GFX_large_flag_great_power"
+			position = {x=102 y=-1}
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "gp_name"
+			position = { x = 210 y = 8 }
+			font = "hoi_36header"
+			text = "gp_name"
+			maxWidth = 460
+			maxHeight = 400
+			fixedsize = no
+			format = left		
+			alwaystransparent = no
+		}
+		instantTextboxType = {
+			name = "gp_total_score"
+			position = { x = 650 y = 8 }
+			font = "hoi_36header"
+			text = "gp_score"
+			maxWidth = 700
+			maxHeight = 400
+			fixedsize = no
+			format = left		
+			alwaystransparent = no
+		}
+		instantTextboxType = {
+			name = "gp_rank"
+			position = { x = -288 y = 8 }
+			font = "hoi_36header"
+			text = "gp_rank"
+			maxWidth = 700
+			maxHeight = 400
+			fixedsize = no
+			format = center		
+			alwaystransparent = no
+		}
+		instantTextboxType = {
+			name = "gp_prestige_rank"
+			position = { x = 500 y = 8 }
+			font = "hoi_36header"
+			text = "gp_prestige"
+			maxWidth = 700
+			maxHeight = 400
+			fixedsize = no
+			format = center		
+			alwaystransparent = no
+		}
+		instantTextboxType = {
+			name = "gp_industrial_rank"
+			position = { x = 600 y = 8 }
+			font = "hoi_36header"
+			text = "gp_industrial"
+			maxWidth = 700
+			maxHeight = 400
+			fixedsize = no
+			format = center		
+			alwaystransparent = no
+		}
+		instantTextboxType = {
+			name = "gp_military_rank"
+			position = { x = 700 y = 8 }
+			font = "hoi_36header"
+			text = "gp_military"
+			maxWidth = 700
+			maxHeight = 400
+			fixedsize = no
+			format = center		
+			alwaystransparent = no
 		}
 	}
 }

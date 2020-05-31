@@ -1,0 +1,22 @@
+ideas = {
+
+country = {
+	####################
+	#     GEORGIA      #
+	####################
+	DEPLOYED_RESERVES = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			conscription = 0.15
+			
+		}
+	}
+	PLANNING_CAUCASUS_EXPANSION = {
+		picture = Hungarian_Monarchy
+		targeted_modifier = { tag = AZR attack_bonus_against = 0.25 }
+		targeted_modifier = { tag = ARM attack_bonus_against = 0.25 }
+		modifier = {
+			army_org_factor = 0.05
+		}
+	}
+}

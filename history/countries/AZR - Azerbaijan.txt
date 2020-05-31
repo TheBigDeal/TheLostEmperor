@@ -16,33 +16,29 @@ set_technology = {
 	motorised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
-	gwtank = 1
-	  # PLACEHOLDER
-	#basic_heavy_tank = 1  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
-	early_fighter = 1
-	fighter1 = 1
-	early_bomber = 1
-	strategic_bomber1 = 1
-	naval_bomber1 = 1
-	
-	
-	
-	
-	
-	
-	
-	
 	mass_assault = 1
-	
 }
 
-set_politics = {}
+set_politics = {	
+	ruling_party = socialism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
 
 set_popularities = {
-    liberalism = 30
-    proletarianism = 40
-    absolutism = 30
+    conservatism = 10
+    liberalism = 3
+    socialism = 41
+    labryscism = 6
+    rexism = 11
+    despotism = 2
+    royalism = 16
+    theocracy = 2
+    absolutism = 1
+    proletarianism = 1
+    collectivism = 4
+    mutualism = 3
 }
 
 create_country_leader = {

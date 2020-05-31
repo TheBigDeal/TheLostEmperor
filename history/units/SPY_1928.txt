@@ -1,0 +1,27 @@
+division_template = {
+	name = "Imperial_Guard"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+units = {
+	division = {
+		name = "Imperial Guard"
+		location = 3530
+		division_template = "Imperial_Guard"
+		start_experience_factor = 1
+	}
+}

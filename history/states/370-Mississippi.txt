@@ -2,7 +2,9 @@
 state={
 	id=370
 	name="STATE_370"
-
+	resources = {
+		cotton = 20
+	}
 	history={
 		owner = USA
 		victory_points = {

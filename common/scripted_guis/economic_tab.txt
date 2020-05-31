@@ -5,11 +5,94 @@ scripted_gui = {
 		properties = {
 			balances_button = {frame = selected_economy_tab}
 			purchases_button = {frame = selected_economy_tab2}
+			
 		}
 		visible = {
 			check_variable = {
 				open_economic_window = 1
 			}
+		}
+		triggers = { 
+			#Upper Class Taxes
+			taxes_upper_none_border_visible = { has_idea = tax_upper_class_none }
+			taxes_upper_very_low_border_visible = { has_idea = tax_upper_class_very_low }
+			taxes_upper_low_border_visible = { has_idea = tax_upper_class_low }
+			taxes_upper_medium_border_visible = { has_idea = tax_upper_class_medium }
+			taxes_upper_high_border_visible = { has_idea = tax_upper_class_high }
+			taxes_upper_very_high_border_visible = { has_idea = tax_upper_class_very_high }
+			taxes_upper_excessive_border_visible = { has_idea = tax_upper_class_excessive }
+			#Middle Class Taxes
+			taxes_middle_none_border_visible = { has_idea = tax_middle_class_none }
+			taxes_middle_very_low_border_visible = { has_idea = tax_middle_class_very_low }
+			taxes_middle_low_border_visible = { has_idea = tax_middle_class_low }
+			taxes_middle_medium_border_visible = { has_idea = tax_middle_class_medium }
+			taxes_middle_high_border_visible = { has_idea = tax_middle_class_high }
+			taxes_middle_very_high_border_visible = { has_idea = tax_middle_class_very_high }
+			taxes_middle_excessive_border_visible = { has_idea = tax_middle_class_excessive }
+			#Lower Class Taxes
+			taxes_lower_none_border_visible = { has_idea = tax_lower_class_none }
+			taxes_lower_very_low_border_visible = { has_idea = tax_lower_class_very_low }
+			taxes_lower_low_border_visible = { has_idea = tax_lower_class_low }
+			taxes_lower_medium_border_visible = { has_idea = tax_lower_class_medium }
+			taxes_lower_high_border_visible = { has_idea = tax_lower_class_high }
+			taxes_lower_very_high_border_visible = { has_idea = tax_lower_class_very_high }
+			taxes_lower_excessive_border_visible = { has_idea = tax_lower_class_excessive }
+			#Capital Gains Class Taxes
+			taxes_capital_gains_none_border_visible = { has_idea = tax_capital_gains_none }
+			taxes_capital_gains_very_low_border_visible = { has_idea = tax_capital_gains_very_low }
+			taxes_capital_gains_low_border_visible = { has_idea = tax_capital_gains_low }
+			taxes_capital_gains_medium_border_visible = { has_idea = tax_capital_gains_medium }
+			taxes_capital_gains_high_border_visible = { has_idea = tax_capital_gains_high }
+			taxes_capital_gains_very_high_border_visible = { has_idea = tax_capital_gains_very_high }
+			taxes_capital_gains_excessive_border_visible = { has_idea = tax_capital_gains_excessive }
+			#tariffs Class Taxes
+			tariffs_none_border_visible = { has_idea = tax_tariffs_none }
+			tariffs_very_low_border_visible = { has_idea = tax_tariffs_very_low }
+			tariffs_low_border_visible = { has_idea = tax_tariffs_low }
+			tariffs_medium_border_visible = { has_idea = tax_tariffs_medium }
+			tariffs_high_border_visible = { has_idea = tax_tariffs_high }
+			tariffs_very_high_border_visible = { has_idea = tax_tariffs_very_high }
+			tariffs_excessive_border_visible = { has_idea = tax_tariffs_excessive }
+			#army_funding Class Taxes
+			army_funding_none_border_visible = { has_idea = tax_army_funding_none }
+			army_funding_very_low_border_visible = { has_idea = tax_army_funding_very_low }
+			army_funding_low_border_visible = { has_idea = tax_army_funding_low }
+			army_funding_medium_border_visible = { has_idea = tax_army_funding_medium }
+			army_funding_high_border_visible = { has_idea = tax_army_funding_high }
+			army_funding_very_high_border_visible = { has_idea = tax_army_funding_very_high }
+			army_funding_excessive_border_visible = { has_idea = tax_army_funding_excessive }
+			#education_funding Class Taxes
+			education_spending_none_border_visible = { has_idea = tax_education_funding_none }
+			education_spending_very_low_border_visible = { has_idea = tax_education_funding_very_low }
+			education_spending_low_border_visible = { has_idea = tax_education_funding_low }
+			education_spending_medium_border_visible = { has_idea = tax_education_funding_medium }
+			education_spending_high_border_visible = { has_idea = tax_education_funding_high }
+			education_spending_very_high_border_visible = { has_idea = tax_education_funding_very_high }
+			education_spending_excessive_border_visible = { has_idea = tax_education_funding_excessive }
+			#administration_funding Class Taxes
+			administration_funding_none_border_visible = { has_idea = tax_administration_funding_none }
+			administration_funding_very_low_border_visible = { has_idea = tax_administration_funding_very_low }
+			administration_funding_low_border_visible = { has_idea = tax_administration_funding_low }
+			administration_funding_medium_border_visible = { has_idea = tax_administration_funding_medium }
+			administration_funding_high_border_visible = { has_idea = tax_administration_funding_high }
+			administration_funding_very_high_border_visible = { has_idea = tax_administration_funding_very_high }
+			administration_funding_excessive_border_visible = { has_idea = tax_administration_funding_excessive }
+			#social_funding Class Taxes
+			social_funding_none_border_visible = { has_idea = tax_social_funding_none }
+			social_funding_very_low_border_visible = { has_idea = tax_social_funding_very_low }
+			social_funding_low_border_visible = { has_idea = tax_social_funding_low }
+			social_funding_medium_border_visible = { has_idea = tax_social_funding_medium }
+			social_funding_high_border_visible = { has_idea = tax_social_funding_high }
+			social_funding_very_high_border_visible = { has_idea = tax_social_funding_very_high }
+			social_funding_excessive_border_visible = { has_idea = tax_social_funding_excessive }
+			#covert_funding Class Taxes
+			covert_spending_none_border_visible = { has_idea = tax_covert_funding_none }
+			covert_spending_very_low_border_visible = { has_idea = tax_covert_funding_very_low }
+			covert_spending_low_border_visible = { has_idea = tax_covert_funding_low }
+			covert_spending_medium_border_visible = { has_idea = tax_covert_funding_medium }
+			covert_spending_high_border_visible = { has_idea = tax_covert_funding_high }
+			covert_spending_very_high_border_visible = { has_idea = tax_covert_funding_very_high }
+			covert_spending_excessive_border_visible = { has_idea = tax_covert_funding_excessive }
 		}
 		effects = {
 			balances_button_click = {
@@ -20,8 +103,443 @@ scripted_gui = {
 				set_variable = { selected_economy_tab = 2 }
 				set_variable = { selected_economy_tab2 = 1 }
 			}
-			close_button_click = {
-				set_variable = { open_economic_window = 0 }
+			close_button_click = {set_variable = { open_economic_window = 0 }}
+			
+			taxes_upper_none_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_upper_class_none } has_political_power > var:upper_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_upper_class_none_var = 1 }
+				}
+			}
+			taxes_upper_very_low_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_upper_class_very_low } has_political_power > var:upper_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_upper_class_very_low_var = 1 }
+				}
+			}
+			taxes_upper_low_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_upper_class_low } has_political_power > var:upper_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_upper_class_low_var = 1 }
+				}
+			}
+			taxes_upper_medium_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_upper_class_medium } has_political_power > var:upper_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_upper_class_medium_var = 1 }
+				}
+			}
+			taxes_upper_high_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_upper_class_high } has_political_power > var:upper_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_upper_class_high_var = 1 }
+				}
+			}
+			taxes_upper_very_high_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_upper_class_very_high } has_political_power > var:upper_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_upper_class_very_high_var = 1 }
+				}
+			}
+			taxes_upper_excessive_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_upper_class_excessive } has_political_power > var:upper_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_upper_class_excessive_var = 1 }
+				}
+			}
+			#Middle Class
+			taxes_middle_none_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_middle_class_none } has_political_power > var:middle_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_middle_class_none_var = 1 }
+				}
+			}
+			taxes_middle_very_low_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_middle_class_very_low } has_political_power > var:middle_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_middle_class_very_low_var = 1 }
+				}
+			}
+			taxes_middle_low_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_middle_class_low } has_political_power > var:middle_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_middle_class_low_var = 1 }
+				}
+			}
+			taxes_middle_medium_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_middle_class_medium } has_political_power > var:middle_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_middle_class_medium_var = 1 }
+				}
+			}
+			taxes_middle_high_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_middle_class_high } has_political_power > var:middle_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_middle_class_high_var = 1 }
+				}
+			}
+			taxes_middle_very_high_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_middle_class_very_high } has_political_power > var:middle_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_middle_class_very_high_var = 1 }
+				}
+			}
+			taxes_middle_excessive_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_middle_class_excessive } has_political_power > var:middle_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_middle_class_excessive_var = 1 }
+				}
+			}
+			#Lower Class
+			taxes_lower_none_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_lower_class_none } has_political_power > var:lower_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_lower_class_none_var = 1 }
+				}
+			}
+			taxes_lower_very_low_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_lower_class_very_low } has_political_power > var:lower_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_lower_class_very_low_var = 1 }
+				}
+			}
+			taxes_lower_low_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_lower_class_low } has_political_power > var:lower_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_lower_class_low_var = 1 }
+				}
+			}
+			taxes_lower_medium_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_lower_class_medium } has_political_power > var:lower_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_lower_class_medium_var = 1 }
+				}
+			}
+			taxes_lower_high_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_lower_class_high } has_political_power > var:lower_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_lower_class_high_var = 1 }
+				}
+			}
+			taxes_lower_very_high_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_lower_class_very_high } has_political_power > var:lower_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_lower_class_very_high_var = 1 }
+				}
+			}
+			taxes_lower_excessive_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_lower_class_excessive } has_political_power > var:lower_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_lower_class_excessive_var = 1 }
+				}
+			}
+			#Capital Gains
+			taxes_capital_gains_none_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_capital_gains_none } has_political_power > var:capital_gains_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_capital_gains_none_var = 1 }
+				}
+			}
+			taxes_capital_gains_very_low_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_capital_gains_very_low } has_political_power > var:capital_gains_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_capital_gains_very_low_var = 1 }
+				}
+			}
+			taxes_capital_gains_low_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_capital_gains_low } has_political_power > var:capital_gains_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_capital_gains_low_var = 1 }
+				}
+			}
+			taxes_capital_gains_medium_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_capital_gains_medium } has_political_power > var:capital_gains_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_capital_gains_medium_var = 1 }
+				}
+			}
+			taxes_capital_gains_high_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_capital_gains_high } has_political_power > var:capital_gains_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_capital_gains_high_var = 1 }
+				}
+			}
+			taxes_capital_gains_very_high_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_capital_gains_very_high } has_political_power > var:capital_gains_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_capital_gains_very_high_var = 1 }
+				}
+			}
+			taxes_capital_gains_excessive_click = { 
+				if = {
+					limit = { NOT = { has_idea = tax_capital_gains_excessive } has_political_power > var:capital_gains_economic_pp_cost }
+					set_variable = { open_economic_container = 1 }
+					set_variable = { tax_capital_gains_excessive_var = 1 }
+				}
+			}
+		}
+	}
+	
+	pick_ideas_economic_laws = {
+		context_type = player_context
+		window_name = "economic_laws"
+		visible = { check_variable = { open_economic_container = 1 } }
+		effects = {
+			economic_laws_close_button_click = {set_variable = { open_economic_container = 0 }}
+			economic_laws_ok_button_click = {
+				if = { ### Upper Class
+					limit = {check_variable = { tax_upper_class_none_var = 1 }}
+					remove_ideas = { tax_upper_class_very_low tax_upper_class_low tax_upper_class_medium tax_upper_class_high tax_upper_class_very_high tax_upper_class_excessive }
+					add_ideas = { tax_upper_class_none }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_upper_class_none_var = 0 }
+					add_political_power = var:upper_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_upper_class_very_low_var = 1 }}
+					remove_ideas = { tax_upper_class_none tax_upper_class_low tax_upper_class_medium tax_upper_class_high tax_upper_class_very_high tax_upper_class_excessive }
+					add_ideas = { tax_upper_class_very_low }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_upper_class_very_low_var = 0 }
+					add_political_power = var:upper_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_upper_class_low_var = 1 }}
+					remove_ideas = { tax_upper_class_none tax_upper_class_very_low tax_upper_class_medium tax_upper_class_high tax_upper_class_very_high tax_upper_class_excessive }
+					add_ideas = { tax_upper_class_low }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_upper_class_low_var = 0 }
+					add_political_power = var:upper_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_upper_class_medium_var = 1 }}
+					remove_ideas = { tax_upper_class_none tax_upper_class_very_low tax_upper_class_low tax_upper_class_high tax_upper_class_very_high tax_upper_class_excessive }
+					add_ideas = { tax_upper_class_medium }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_upper_class_medium_var = 0 }
+					add_political_power = var:upper_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_upper_class_high_var = 1 }}
+					remove_ideas = { tax_upper_class_none tax_upper_class_very_low tax_upper_class_medium tax_upper_class_low tax_upper_class_very_high tax_upper_class_excessive }
+					add_ideas = { tax_upper_class_high }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_upper_class_high_var = 0 }
+					add_political_power = var:upper_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_upper_class_very_high_var = 1 }}
+					remove_ideas = { tax_upper_class_none tax_upper_class_very_low tax_upper_class_medium tax_upper_class_high tax_upper_class_low tax_upper_class_excessive }
+					add_ideas = { tax_upper_class_very_high }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_upper_class_very_high_var = 0 }
+					add_political_power = var:upper_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_upper_class_excessive_var = 1 }}
+					remove_ideas = { tax_upper_class_none tax_upper_class_very_low tax_upper_class_medium tax_upper_class_high tax_upper_class_very_high tax_upper_class_low }
+					add_ideas = { tax_upper_class_excessive }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_upper_class_excessive_var = 0 }
+					add_political_power = var:upper_economic_pp_cost_neg
+				}
+				if = { ### Middle Class
+					limit = {check_variable = { tax_middle_class_none_var = 1 }}
+					remove_ideas = { tax_middle_class_very_low tax_middle_class_low tax_middle_class_medium tax_middle_class_high tax_middle_class_very_high tax_middle_class_excessive }
+					add_ideas = { tax_middle_class_none }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_middle_class_none_var = 0 }
+					add_political_power = var:middle_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_middle_class_very_low_var = 1 }}
+					remove_ideas = { tax_middle_class_none tax_middle_class_low tax_middle_class_medium tax_middle_class_high tax_middle_class_very_high tax_middle_class_excessive }
+					add_ideas = { tax_middle_class_very_low }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_middle_class_very_low_var = 0 }
+					add_political_power = var:middle_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_middle_class_low_var = 1 }}
+					remove_ideas = { tax_middle_class_none tax_middle_class_very_low tax_middle_class_medium tax_middle_class_high tax_middle_class_very_high tax_middle_class_excessive }
+					add_ideas = { tax_middle_class_low }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_middle_class_low_var = 0 }
+					add_political_power = var:middle_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_middle_class_medium_var = 1 }}
+					remove_ideas = { tax_middle_class_none tax_middle_class_very_low tax_middle_class_low tax_middle_class_high tax_middle_class_very_high tax_middle_class_excessive }
+					add_ideas = { tax_middle_class_medium }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_middle_class_medium_var = 0 }
+					add_political_power = var:middle_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_middle_class_high_var = 1 }}
+					remove_ideas = { tax_middle_class_none tax_middle_class_very_low tax_middle_class_medium tax_middle_class_low tax_middle_class_very_high tax_middle_class_excessive }
+					add_ideas = { tax_middle_class_high }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_middle_class_high_var = 0 }
+					add_political_power = var:middle_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_middle_class_very_high_var = 1 }}
+					remove_ideas = { tax_middle_class_none tax_middle_class_very_low tax_middle_class_medium tax_middle_class_high tax_middle_class_low tax_middle_class_excessive }
+					add_ideas = { tax_middle_class_very_high }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_middle_class_very_high_var = 0 }
+					add_political_power = var:middle_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_middle_class_excessive_var = 1 }}
+					remove_ideas = { tax_middle_class_none tax_middle_class_very_low tax_middle_class_medium tax_middle_class_high tax_middle_class_very_high tax_middle_class_low }
+					add_ideas = { tax_middle_class_excessive }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_middle_class_excessive_var = 0 }
+					add_political_power = var:middle_economic_pp_cost_neg
+				}
+				
+				if = { ### Lower Class
+					limit = {check_variable = { tax_lower_class_none_var = 1 }}
+					remove_ideas = { tax_lower_class_very_low tax_lower_class_low tax_lower_class_medium tax_lower_class_high tax_lower_class_very_high tax_lower_class_excessive }
+					add_ideas = { tax_lower_class_none }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_lower_class_none_var = 0 }
+					add_political_power = var:lower_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_lower_class_very_low_var = 1 }}
+					remove_ideas = { tax_lower_class_none tax_lower_class_low tax_lower_class_medium tax_lower_class_high tax_lower_class_very_high tax_lower_class_excessive }
+					add_ideas = { tax_lower_class_very_low }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_lower_class_very_low_var = 0 }
+					add_political_power = var:lower_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_lower_class_low_var = 1 }}
+					remove_ideas = { tax_lower_class_none tax_lower_class_very_low tax_lower_class_medium tax_lower_class_high tax_lower_class_very_high tax_lower_class_excessive }
+					add_ideas = { tax_lower_class_low }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_lower_class_low_var = 0 }
+					add_political_power = var:lower_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_lower_class_medium_var = 1 }}
+					remove_ideas = { tax_lower_class_none tax_lower_class_very_low tax_lower_class_low tax_lower_class_high tax_lower_class_very_high tax_lower_class_excessive }
+					add_ideas = { tax_lower_class_medium }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_lower_class_medium_var = 0 }
+					add_political_power = var:lower_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_lower_class_high_var = 1 }}
+					remove_ideas = { tax_lower_class_none tax_lower_class_very_low tax_lower_class_medium tax_lower_class_low tax_lower_class_very_high tax_lower_class_excessive }
+					add_ideas = { tax_lower_class_high }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_lower_class_high_var = 0 }
+					add_political_power = var:lower_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_lower_class_very_high_var = 1 }}
+					remove_ideas = { tax_lower_class_none tax_lower_class_very_low tax_lower_class_medium tax_lower_class_high tax_lower_class_low tax_lower_class_excessive }
+					add_ideas = { tax_lower_class_very_high }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_lower_class_very_high_var = 0 }
+					add_political_power = var:lower_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_lower_class_excessive_var = 1 }}
+					remove_ideas = { tax_lower_class_none tax_lower_class_very_low tax_lower_class_medium tax_lower_class_high tax_lower_class_very_high tax_lower_class_low }
+					add_ideas = { tax_lower_class_excessive }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_lower_class_excessive_var = 0 }
+					add_political_power = var:lower_economic_pp_cost_neg
+				}
+				
+				if = { ### Capital Gains
+					limit = {check_variable = { tax_capital_gains_none_var = 1 }}
+					remove_ideas = { tax_capital_gains_very_low tax_capital_gains_low tax_capital_gains_medium tax_capital_gains_high tax_capital_gains_very_high tax_capital_gains_excessive }
+					add_ideas = { tax_capital_gains_none }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_capital_gains_none_var = 0 }
+					add_political_power = var:capital_gains_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_capital_gains_very_low_var = 1 }}
+					remove_ideas = { tax_capital_gains_none tax_capital_gains_low tax_capital_gains_medium tax_capital_gains_high tax_capital_gains_very_high tax_capital_gains_excessive }
+					add_ideas = { tax_capital_gains_very_low }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_capital_gains_very_low_var = 0 }
+					add_political_power = var:capital_gains_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_capital_gains_low_var = 1 }}
+					remove_ideas = { tax_capital_gains_none tax_capital_gains_very_low tax_capital_gains_medium tax_capital_gains_high tax_capital_gains_very_high tax_capital_gains_excessive }
+					add_ideas = { tax_capital_gains_low }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_capital_gains_low_var = 0 }
+					add_political_power = var:capital_gains_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_capital_gains_medium_var = 1 }}
+					remove_ideas = { tax_capital_gains_none tax_capital_gains_very_low tax_capital_gains_low tax_capital_gains_high tax_capital_gains_very_high tax_capital_gains_excessive }
+					add_ideas = { tax_capital_gains_medium }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_capital_gains_medium_var = 0 }
+					add_political_power = var:capital_gains_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_capital_gains_high_var = 1 }}
+					remove_ideas = { tax_capital_gains_none tax_capital_gains_very_low tax_capital_gains_medium tax_capital_gains_low tax_capital_gains_very_high tax_capital_gains_excessive }
+					add_ideas = { tax_capital_gains_high }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_capital_gains_high_var = 0 }
+					add_political_power = var:capital_gains_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_capital_gains_very_high_var = 1 }}
+					remove_ideas = { tax_capital_gains_none tax_capital_gains_very_low tax_capital_gains_medium tax_capital_gains_high tax_capital_gains_low tax_capital_gains_excessive }
+					add_ideas = { tax_capital_gains_very_high }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_capital_gains_very_high_var = 0 }
+					add_political_power = var:capital_gains_economic_pp_cost_neg
+				}
+				else_if = {
+					limit = {check_variable = { tax_capital_gains_excessive_var = 1 }}
+					remove_ideas = { tax_capital_gains_none tax_capital_gains_very_low tax_capital_gains_medium tax_capital_gains_high tax_capital_gains_very_high tax_capital_gains_low }
+					add_ideas = { tax_capital_gains_excessive }
+					set_variable = { open_economic_container = 0 }
+					set_variable = { tax_capital_gains_excessive_var = 0 }
+					add_political_power = var:capital_gains_economic_pp_cost_neg
+				}
 			}
 		}
 	}

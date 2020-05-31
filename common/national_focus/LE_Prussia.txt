@@ -388,6 +388,7 @@ focus_tree = {
 		id = PRE_THE_HANNOVER_PROBLEM
 		icon = GFX_focus_AST_never_gallipoli
 		prerequisite = { focus = PRE_THREATEN_NORTHERN_STATES }
+		bypass = { NOT = { country_exists = HAN } }
 		x = 18
 		y = 2
 		cost = 3
@@ -400,6 +401,7 @@ focus_tree = {
 		id = PRE_NEGOTIATE_WITH_THE_BRITISH
 		icon = GFX_focus_chi_british_cooperation
 		prerequisite = { focus = PRE_THE_HANNOVER_PROBLEM }
+		bypass = { NOT = { country_exists = HAN } }
 		mutually_exclusive = { focus = PRE_PRUSSIAN_SPONSORED_ASSASSINATIONS }
 		x = 17
 		y = 3
@@ -411,6 +413,7 @@ focus_tree = {
 		id = PRE_PRUSSIAN_SPONSORED_ASSASSINATIONS
 		icon = GFX_generic_espionage
 		prerequisite = { focus = PRE_THE_HANNOVER_PROBLEM }
+		bypass = { NOT = { country_exists = HAN } }
 		mutually_exclusive = { focus = PRE_NEGOTIATE_WITH_THE_BRITISH }
 		x = 19
 		y = 3
@@ -437,6 +440,7 @@ focus_tree = {
 		id = PRE_DEMAND_DANISH_HOLSTEIN
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = PRE_SHOW_OUR_STRENGTH }
+		bypass = { owns_state = 58 }
 		x = 17
 		y = 5
 		cost = 2
@@ -447,6 +451,7 @@ focus_tree = {
 		id = PRE_DEMAND_POZNAN
 		icon = GFX_goal_poland_goal
 		prerequisite = { focus = PRE_SHOW_OUR_STRENGTH }
+		bypass = { owns_state = 86 }
 		x = 19
 		y = 5
 		cost = 2

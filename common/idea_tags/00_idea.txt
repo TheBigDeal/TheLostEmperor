@@ -1,54 +1,39 @@
 idea_categories = {
-	le_religion = {
-		hidden = yes
-		cost = 0
-		removal_cost = -1
-	}
-	law_political_parties = {
-		hidden = yes
-		cost = 0
-		removal_cost = -1
-	}
-	law_vote_franchise = {
-		hidden = yes
-		cost = 0
-		removal_cost = -1
-	}
-	law_trade_unions = {
-		hidden = yes
-		cost = 0
-		removal_cost = -1
-	}
-	law_slavery = {
-		hidden = yes
-		cost = 0
-		removal_cost = -1
-	}
-	
+	#Economy
+	tax_upper_class  = { hidden = yes cost = 0 removal_cost = -1 }
+	tax_middle_class  = { hidden = yes cost = 0 removal_cost = -1 }
+	tax_lower_class  = { hidden = yes cost = 0 removal_cost = -1 }
+	tax_capital_gains  = { hidden = yes cost = 0 removal_cost = -1 }
+	tax_tariffs  = { hidden = yes cost = 0 removal_cost = -1 }
+	tax_army_funding  = { hidden = yes cost = 0 removal_cost = -1 }
+	tax_education_funding  = { hidden = yes cost = 0 removal_cost = -1 }
+	tax_administration_funding  = { hidden = yes cost = 0 removal_cost = -1 }
+	tax_social_funding  = { hidden = yes cost = 0 removal_cost = -1 }
+	tax_covert_funding  = { hidden = yes cost = 0 removal_cost = -1 }
+	#Political Laws/Policies
+	le_religion = { hidden = yes cost = 0 removal_cost = -1 }
+	law_political_parties = { hidden = yes cost = 0 removal_cost = -1 }
+	law_vote_franchise = { hidden = yes cost = 0 removal_cost = -1 }
+	law_trade_unions = { hidden = yes cost = 0 removal_cost = -1 }
+	law_slavery = { hidden = yes cost = 0 removal_cost = -1 }
+	#Vanilla
 	hidden_ideas = {
 		hidden = yes
-
 		cost = 0
 		removal_cost = -1
 	}
-
 	country = {
 		national_spirit = yes
-
 		cost = 0
 		removal_cost = -1
 	}
-
+	#Politcal Advisors / Governmental Heads
 	top_level = {
 		slot = head_of_government
 		slot = secondary_head
-		slot = dummy_idea_category_1
-		slot = tno_hog_dummy_1
-
 		cost = 150
 		removal_cost = 0
 	}
-
 	minister = {
 		slot = foreign_minister
 		slot = defence_minister
@@ -56,99 +41,8 @@ idea_categories = {
 		slot = security_minister
 		slot = intel_minister
 		slot = theorist
-		slot = tno_minister_dummy_1
-
 		cost = 150
 		removal_cost = 0
 
-	}
-
-	societal_development = {
-		slot = tno_academic_base
-		slot = tno_research_facilities
-		slot = tno_agriculture
-		slot = tno_industrial_equipment
-		slot = tno_industrial_expertise
-		slot = tno_army_professionalism
-		slot = tno_nuclear_stockpile
-		slot = tno_poverty_rate
-		slot = tno_socdev_dummy_1
-		removal_cost = -1
-	}
-	
-		political_laws = {
-		slot = tno_political_parties
-		slot = tno_religious_rights
-		slot = tno_trade_unions
-		slot = tno_immigration
-		slot = tno_slavery
-		slot = tno_public_meetings
-		slot = tno_press_rights
-		slot = tno_vote_franchise
-		slot = tno_refugees
-
-		cost = 150
-		removal_cost = 0
-	}
-
-	military_laws = {
-		slot = tno_conscription
-		slot = tno_women
-		slot = tno_military_supervision
-		slot = tno_military_spending
-		slot = tno_training
-		slot = tno_racial_integration
-		slot = tno_draft_exemptions
-		slot = tno_military_dummy_1
-		slot = tno_military_dummy_2
-
-		cost = 150
-		removal_cost = 0
-	}
-
-	economic_laws = {
-		slot = tno_trade_laws
-		slot = tno_economic_focus
-		slot = tno_tax_rate
-		slot = tno_income_taxation
-		slot = tno_minimum_wage
-		slot = tno_max_workhours
-		slot = tno_child_labor
-		slot = tno_pensions
-		slot = tno_unemployment
-
-		cost = 150
-		removal_cost = 0
-	}
-
-	social_laws = {
-		slot = tno_safety
-		slot = tno_health_care
-		slot = tno_pollution
-		slot = tno_education
-		slot = tno_penal_system
-		slot = tno_lgbt_rights
-		slot = tno_gender_rights
-		slot = tno_minorities
-		slot = tno_security
-
-		cost = 150
-		removal_cost = 0
-	}
-
-	construction_laws = {
-		slot = construction_level_0
-		slot = construction_level_1
-		slot = construction_level_2
-		slot = construction_level_3
-		slot = construction_level_4
-		slot = construction_level_5
-		slot = construction_level_6
-		slot = construction_level_7
-		slot = construction_level_8
-		slot = construction_level_9
-
-		cost = 50
-		removal_cost = 0
 	}
 }

@@ -2,7 +2,9 @@
 state={
 	id=5
 	name="STATE_5"
-
+	resources={
+		wood=40
+	}
 	history={
 		owner = PRE
 		victory_points = {
@@ -15,7 +17,7 @@ state={
 			infrastructure = 6
 			industrial_complex = 2
 			anti_air_building = 2
-			air_base = 6
+			farm = 6
 		}
 		add_core_of = PRE
 

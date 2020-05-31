@@ -2,22 +2,16 @@
 ###########
 #   MOD   #
 ###########
+#Achievements
+ lenin_lives:0 "Lenin Lives"
+
+
  #Categories
   sphere_options_cat:0 "Sphere Options"
   expand_influence:0 "Expand Influence In [FROM.GetName]"
   sphere_infuence_tt:0 "Under the [FROM.GetSphereController] Sphere.\n"
   LE_colonization_cat:0 "Colonization"
   LE_declare_colonial_war:0 "Declare Colonial War On [FROM.GetName]"
-  SOV_ATTACK_COUNTRIES:0 "Integrate Former Territory"
-  SOV_CREATE_SOCIALIST_REPUBLICS:0 "Form Soviet Republics"
-  RUS_REVOLT_RISK_CAT:0 "Civil Unrest"
-  RUS_REVOLT_RISK_CAT_desc:1 "Unrest is growing around the nation. The communists in our country have gotten very popular and many peasants are flocking to the movement. The Tsar is in danger and we are at risk of losing our lands, our homes, everything to the Soviets.\n\n§RCommunist§W Party Risk: [Root.GetCommunistLevel] ([?RUS.RUS_SOVIET_STRENGTH|-0])\n- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\nUkrainian Revolt Risk: [Root.GetUkranianLevel] ([?RUS.RUS_UKRAINIAN_STRENGTH|-0])\nBelerus Revolt Risk: [Root.GetBelerusLevel] ([?RUS.RUS_BELERUS_STRENGTH|-0])\nLatvian Revolt Risk: [Root.GetLatvianLevel] ([?RUS.RUS_LATVIAN_STRENGTH|-0])\nEstonian Revolt Risk: [Root.GetEstonianLevel] ([?RUS.RUS_ESTONIAN_STRENGTH|-0])\nAzerbijan Revolt Risk: [Root.GetAzerbijanLevel] ([?RUS.RUS_AZERBIJAN_STRENGTH|-0])\nDon Kuban Revolt Risk: [Root.GetDonKubanLevel] ([?RUS.RUS_DON_KUBAN_STRENGTH|-0])\nAlash Orda Revolt Risk: [Root.GetAlashOrdaLevel] ([?RUS.RUS_ALASH_ORDA_STRENGTH|-0])"
-  RUS_nonexistant:0 "§GNonexistant"
-  RUS_low:0 "§MLow§!"
-  RUS_medium:0 "§GMedium§!"
-  RUS_high:0 "§YHigh§!"
-  RUS_veryhigh:0 "§RVery High§!"
-  RUS_extreme:0 "§RExtreme§!"
   PROPAGANDA_MOVEMENT:0 "Propaganda Movement"
   PROPAGANDA_MOVEMENT_tt:0 "Spread Tsarist Propaganda Throughout The Nation.\n(§G-5 Soviet Strength§W)\n"
   ARREST_PROTESTERS_IN_UKRAINE:0 "Arrest Ukrainian Protesters"
@@ -37,8 +31,8 @@
   conservatism_on_the_rise:0 "Conservatism On The Rise"
   liberalism_on_the_rise:0 "Liberalism On The Rise"
   socialism_on_the_rise:0 "liberalism Socialism On The Rise"
-  mod_options_cat:0 "The Lost Emperor Mod Menu"
-  mod_options_cat_desc:0 "Important Information:\n\nCurrent Power Level:§Y [Root.GetPowerLevel] [?power_rating|0]§W\n=================================================\nCurrent Population: §Y[Root.GetManpowerLevel][?max_manpower_k|0]k§W\nCurrent Battallions: §Y[Root.GetBattalionLevel][?num_battalions|0]§W\nCurrent Factories: §Y[Root.GetFactoryLevel][?num_of_factories|0]§W\nCurrent Global §RCommunist§W Influence: [Root.GetCommunistLevel] [?GLOBAL_COMMUNIST_INFLUENCE|-0]\nCurrent Global §HNationalist§W Influence: [Root.GetFascistLevel] [?GLOBAL_Fascist_INFLUENCE|-0]\nCurrent Global §gRadical Theocratic§W Influence: [Root.GetTheocracyLevel] [?GLOBAL_THEOCRATIC_INFLUENCE|-0]\nCurrent Global §Mliberalism§W Influence: [Root.GetliberalismLevel] [?GLOBAL_liberalism_INFLUENCE|-0]"
+  mod_options_cat:0 "Achievements"
+  #mod_options_cat_desc:0 "Important Information:\n\nCurrent Power Level:§Y [Root.GetPowerLevel] [?power_rating|0]§W\n=================================================\nCurrent Population: §Y[Root.GetManpowerLevel][?max_manpower_k|0]k§W\nCurrent Battallions: §Y[Root.GetBattalionLevel][?num_battalions|0]§W\nCurrent Factories: §Y[Root.GetFactoryLevel][?num_of_factories|0]§W\nCurrent Global §RCommunist§W Influence: [Root.GetCommunistLevel] [?GLOBAL_COMMUNIST_INFLUENCE|-0]\nCurrent Global §HNationalist§W Influence: [Root.GetFascistLevel] [?GLOBAL_Fascist_INFLUENCE|-0]\nCurrent Global §gRadical Theocratic§W Influence: [Root.GetTheocracyLevel] [?GLOBAL_THEOCRATIC_INFLUENCE|-0]\nCurrent Global §Mliberalism§W Influence: [Root.GetliberalismLevel] [?GLOBAL_liberalism_INFLUENCE|-0]"
   PWR_local_power:0 "§WLocal Power§!"
   PWR_regional_power:0 "§YRegional Power§!"
   PWR_secondary_power:0 "§GSecondary Power§!"

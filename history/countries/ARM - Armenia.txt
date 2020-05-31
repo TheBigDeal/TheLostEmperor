@@ -37,12 +37,26 @@ set_technology = {
 	
 }
 
-set_politics = {}
+set_politics = {	
+	ruling_party = royalism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
 
 set_popularities = {
-    rexism = 34
-    liberalism = 30
-    proletarianism = 36
+    conservatism = 10
+    liberalism = 3
+    socialism = 21
+    labryscism = 6
+    rexism = 11
+    despotism = 2
+    royalism = 36
+    theocracy = 2
+    absolutism = 1
+    proletarianism = 1
+    collectivism = 4
+    mutualism = 3
 }
 
 create_country_leader = {

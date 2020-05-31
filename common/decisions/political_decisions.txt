@@ -1,84 +1,51 @@
 labryscism_on_the_rise = {
 	prepare_for_labryscist_civil_war = {
-
 		icon = generic_prepare_civil_war
-
 		available = {
-			labryscism > 0.1
+			labryscism > 0.5
 		}
-
 		visible = {
+			labryscism > 0.35
+			num_of_controlled_states > 1
 			NOT = { has_country_flag = preparation_for_labryscist_civil_war }
-			has_idea_with_trait = labryscist_demagogue
-			#check_has_focus_tree_to_switch_to_labryscist = yes
 			NOT = { has_government = labryscism }
 		}
-		
 		fire_only_once = yes
-		
 		cost = 50
-		
-		complete_effect = {
-			set_country_flag = preparation_for_labryscist_civil_war
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
+		complete_effect = {set_country_flag = preparation_for_labryscist_civil_war}
+		ai_will_do = {factor = 1}
 	}
-	
 	expand_civil_labryscism_support = {
-
 		icon = generic_civil_support
-
 		visible = {
 			OR = {
 				has_country_flag = preparation_for_labryscist_civil_war
 				has_country_flag = open_up_political_discourse_labryscism
 			}
-			has_idea_with_trait = labryscist_demagogue
-			#check_has_focus_tree_to_switch_to_labryscist = yes
 			NOT = { has_government = labryscism }
 		}
-		
 		fire_only_once = no
-		
 		cost = 25
-
 		days_remove = 30
-
 		modifier = {
 			labryscism_drift = 0.02
 			stability_weekly = -0.02
  			political_power_gain = -0.2
 		}
-		
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
 	army_support_for_labryscist_civil_war = {
-
 		icon = generic_army_support
-
 		visible = {
 			has_country_flag = preparation_for_labryscist_civil_war
-			has_idea_with_trait = labryscist_demagogue
-			
 			NOT = { has_government = labryscism }
 		}
-	
 		fire_only_once = no
-	
 		cost = 50
-
 		days_remove = 30
-
-		modifier = {
-			command_power_gain = -0.02
-		}
-
+		modifier = {command_power_gain = -0.02}
 		remove_effect = {
 			if = {
 				limit = {
@@ -94,99 +61,48 @@ labryscism_on_the_rise = {
 			}
 			set_country_flag = military_support_for_labryscist_civil_war
 		}
-		
-		complete_effect = {
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
+		ai_will_do = {factor = 1}
 	}
-
 	ensure_general_loyalty_for_labryscist_civil_war = {
-
 		icon = generic_army_support
-
-		available = {
-			has_country_flag = military_support_for_labryscist_civil_war
-		}
-
+		available = {has_country_flag = military_support_for_labryscist_civil_war}
 		visible = {
 			has_country_flag = preparation_for_labryscist_civil_war
-			has_idea_with_trait = labryscist_demagogue
-			any_army_leader = {
-				NOT = { has_trait = hidden_sympathies }
-			}
-			
+			any_army_leader = { NOT = { has_trait = hidden_sympathies } }
 			NOT = { has_government = labryscism }
 		}
-	
 		fire_only_once = yes
-	
 		cost = 50
-		
-		complete_effect = {
-			country_event = { id = decisions.1 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
+		complete_effect = {country_event = { id = decisions.1 }}
+		ai_will_do = {factor = 1}
 	}
-
 	ensure_marshal_loyalty_for_labryscist_civil_war = {
-
 		icon = generic_army_support
-
-		available = {
-			has_country_flag = military_support_for_labryscist_civil_war
-		}
-
+		available = {has_country_flag = military_support_for_labryscist_civil_war}
 		visible = {
 			has_country_flag = preparation_for_labryscist_civil_war
-			has_idea_with_trait = labryscist_demagogue
-			any_army_leader = {
-				NOT = { has_trait = hidden_sympathies }
-			}
-			
+			any_army_leader = {NOT = { has_trait = hidden_sympathies }}
 			NOT = { has_government = labryscism }
 		}
-	
 		fire_only_once = yes
-	
 		cost = 50
-		
-		complete_effect = {
-			country_event = { id = decisions.2 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
+		complete_effect = {country_event = { id = decisions.2 }}
+		ai_will_do = {factor = 1}
 	}
-
 	siphon_equipment_stockpiles_for_labryscist_civil_war = {
-
 		icon = generic_prepare_civil_war
-
 		available = {
 			has_country_flag = military_support_for_labryscist_civil_war
 			has_equipment = { infantry_equipment > 1000 }
 			command_power > 2
 		}
-
 		visible = {
 			has_country_flag = preparation_for_labryscist_civil_war
 			has_country_flag = military_support_for_labryscist_civil_war
-			has_idea_with_trait = labryscist_demagogue
-			
 			NOT = { has_government = labryscism }
 		}
-	
 		fire_only_once = no
-	
 		cost = 50
-		
 		complete_effect = {
 			add_command_power = -2
 			add_equipment_to_stockpile = {
@@ -195,178 +111,97 @@ labryscism_on_the_rise = {
 			}
 			set_country_flag = siphoned_equipment_stockpiles_for_civil_war
 		}
-		
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 	}
 
 	formulate_surprise_attack_plan_for_labryscist_civil_war = {
-
 		icon = generic_army_support
-
 		available = {
 			has_country_flag = military_support_for_labryscist_civil_war
 			command_power > 2
 		}
-
 		visible = {
 			has_country_flag = preparation_for_labryscist_civil_war
-			has_idea_with_trait = labryscist_demagogue
-			
 			NOT = { has_government = labryscism }
 		}
-	
 		fire_only_once = yes
-	
 		cost = 50
-		
 		complete_effect = {
 			add_command_power = -2
 			custom_effect_tooltip = formulate_surprise_attack_plan_for_civil_war_tt
 			set_country_flag = formulated_surprise_attack_plan_for_civil_war
 		}
-		
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ignite_the_labryscist_civil_war = {
-
 		icon = generic_ignite_civil_war
-
 		available = {
 			has_stability < 0.5
+			labryscism < 0.5
 		}
-
 		visible = {
 			has_country_flag = preparation_for_labryscist_civil_war
-			has_idea_with_trait = labryscist_demagogue
-			
 			NOT = { has_government = labryscism }
 		}
-	
 		fire_only_once = yes
-	
 		cost = 50
-		
 		complete_effect = {
 			if = {
-				limit = {
-					has_government = absolutism
-				}
-				set_variable = {
-					var = civil_war_size_var
-					value = party_popularity@absolutism
-				}
+				limit = {has_government = absolutism}
+				set_variable = {civil_war_size_var = party_popularity@absolutism}
 			}
 			if = {
-				limit = {
-					has_government = theocracy
-				}
-				set_variable = {
-					var = civil_war_size_var
-					value = party_popularity@theocracy
-				}
+				limit = {has_government = theocracy}
+				set_variable = {civil_war_size_var = party_popularity@theocracy}
 			}
 			if = {
-				limit = {
-					has_government = royalism
-				}
-				set_variable = {
-					var = civil_war_size_var
-					value = party_popularity@royalism
-				}
+				limit = {has_government = royalism}
+				set_variable = {civil_war_size_var = party_popularity@royalism}
 			}
 			if = {
-				limit = {
-					has_government = mutualism
-				}
-				set_variable = {
-					var = civil_war_size_var
-					value = party_popularity@mutualism
-				}
+				limit = {has_government = mutualism}
+				set_variable = {civil_war_size_var = party_popularity@mutualism}
 			}
 			if = {
-				limit = {
-					has_government = collectivism
-				}
-				set_variable = {
-					var = civil_war_size_var
-					value = party_popularity@collectivism
-				}
+				limit = {has_government = collectivism}
+				set_variable = {civil_war_size_var = party_popularity@collectivism}
 			}
 			if = {
-				limit = {
-					has_government = proletarianism
-				}
-				set_variable = {
-					var = civil_war_size_var
-					value = party_popularity@proletarianism
-				}
+				limit = {has_government = proletarianism}
+				set_variable = {civil_war_size_var = party_popularity@proletarianism}
 			}
 			if = {
-				limit = {
-					has_government = rexism
-				}
-				set_variable = {
-					var = civil_war_size_var
-					value = party_popularity@rexism
-				}
+				limit = {has_government = rexism}
+				set_variable = {civil_war_size_var = party_popularity@rexism}
 			}
 			if = {
-				limit = {
-					has_government = despotism
-				}
-				set_variable = {
-					var = civil_war_size_var
-					value = party_popularity@despotism
-				}
+				limit = {has_government = despotism}
+				set_variable = {civil_war_size_var = party_popularity@despotism}
 			}
 			if = {
-				limit = {
-					has_government = conservatism
-				}
-				set_variable = {
-					var = civil_war_size_var
-					value = party_popularity@conservatism
-				}
+				limit = {has_government = conservatism}
+				set_variable = {civil_war_size_var = party_popularity@conservatism}
 			}
 			if = {
-				limit = {
-					has_government = liberalism
-				}
-				set_variable = {
-					var = civil_war_size_var
-					value = party_popularity@liberalism
-				}
+				limit = {has_government = liberalism}
+				set_variable = {civil_war_size_var = party_popularity@liberalism}
 			}
 			if = {
-				limit = {
-					has_government = socialism
-				}
-				set_variable = {
-					var = civil_war_size_var
-					value = party_popularity@socialism
-				}
+				limit = {has_government = socialism}
+				set_variable = {civil_war_size_var = party_popularity@socialism}
 			}
 			subtract_from_variable = {
 				var = civil_war_size_var
 				value = army_support_var
 			}
 			if = {
-				limit = {
-					check_variable = {
-						var = civil_war_size_var
-						value = 0.3
-						compare = less_than
-					}
-				}
-				set_variable = {
-					var = civil_war_size_var
-					value = 0.3
-				}
+				limit = {check_variable = { civil_war_size_var < 0.3}}
+				set_variable = {civil_war_size_var = 0.3}
 			}
 			start_civil_war = {
 				ruling_party = labryscism
@@ -381,219 +216,403 @@ labryscism_on_the_rise = {
 			clr_country_flag = civil_support_for_labryscism_civil_war
 			set_country_flag = ideology_civil_war
 		}
-		
+		ai_will_do = {factor = 1}
+	}
+
+	open_up_political_discourse_labryscism = {
+		icon = generic_political_discourse
+		available = {labryscism > 0.5}
+		visible = {
+			labryscism > 0.35
+			NOT = { has_country_flag = open_up_political_discourse_labryscism }
+			NOT = { has_government = labryscism }
+		}
+		fire_only_once = yes
+		cost = 75
+		complete_effect = {set_country_flag = open_up_political_discourse_labryscism}
+		ai_will_do = {factor = 10}
+	}
+	
+	discredit_government_labryscism = {
+		icon = generic_political_discourse
+		available = {labryscism > 0.5}
+		visible = {
+			has_country_flag = open_up_political_discourse_labryscism
+			NOT = { has_government = labryscism }
+		}
+		fire_only_once = yes
+		cost = 50
+		complete_effect = {
+			add_stability = -0.01
+			if = {
+				limit = {has_government = absolutism}
+				add_popularity = {ideology = absolutism popularity = -0.1}
+			}
+			if = {
+				limit = {has_government = royalism}
+				add_popularity = {ideology = royalism popularity = -0.1}
+			}
+			if = {
+				limit = {has_government = despotism}
+				add_popularity = {ideology = despotism popularity = -0.1}
+			}
+			if = {
+				limit = {has_government = collectivism}
+				add_popularity = {ideology = collectivism popularity = -0.1}
+			}
+			if = {
+				limit = {has_government = proletarianism}
+				add_popularity = {ideology = proletarianism popularity = -0.1}
+			}
+			if = {
+				limit = {has_government = mutualism}
+				add_popularity = {ideology = mutualism popularity = -0.1}
+			}
+			if = {
+				limit = {has_government = rexism}
+				add_popularity = {ideology = rexism popularity = -0.1}
+			}
+			if = {
+				limit = {has_government = conservatism}
+				add_popularity = {ideology = conservatism popularity = -0.1}
+			}
+			if = {
+				limit = {has_government = liberalism}
+				add_popularity = {ideology = liberalism popularity = -0.1}
+			}
+			if = {
+				limit = {has_government = socialism}
+				add_popularity = {ideology = socialism popularity = -0.1
+				}
+			}
+			if = {
+				limit = {has_government = theocracy}
+				add_popularity = {ideology = theocracy popularity = -0.1
+				}
+			}
+		}
+		ai_will_do = {factor = 1}
+	}
+	hold_the_labryscist_national_referendum = {
+		icon = generic_political_discourse
+		visible = {
+			NOT = { has_government = labryscism }
+			labryscism > 0.5
+			has_country_flag = open_up_political_discourse_labryscism
+		}
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {country_event = { id = political.16 }}
+		ai_will_do = {factor = 210}
+	}
+}
+
+
+proletarianism_on_the_rise = {
+	prepare_for_proletariat_civil_war = {
+		icon = generic_prepare_civil_war
+		available = {
+			proletarianism > 0.5
+		}
+		visible = {
+			labryscism > 0.35
+			num_of_controlled_states > 1
+			NOT = { has_country_flag = preparation_for_proletariat_civil_war }
+			NOT = { has_government = proletarianism }
+		}
+		fire_only_once = yes
+		cost = 50
+		complete_effect = {set_country_flag = preparation_for_proletariat_civil_war}
+		ai_will_do = {factor = 1}
+	}
+	expand_civil_proletarianism_support = {
+		icon = generic_civil_support
+		visible = {
+			OR = {
+				has_country_flag = preparation_for_proletariat_civil_war
+				has_country_flag = open_up_political_discourse_proletarianism
+			}
+			NOT = { has_government = proletarianism }
+		}
+		fire_only_once = no
+		cost = 25
+		days_remove = 30
+		modifier = {
+			proletarianism_drift = 0.02
+			stability_weekly = -0.02
+ 			political_power_gain = -0.2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	army_support_for_proletariat_civil_war = {
+		icon = generic_army_support
+		visible = {
+			has_country_flag = preparation_for_proletariat_civil_war
+			NOT = { has_government = proletarianism }
+		}
+		fire_only_once = no
+		cost = 50
+		days_remove = 30
+		modifier = {command_power_gain = -0.02}
+		remove_effect = {
+			if = {
+				limit = {
+					check_variable = { var = army_support_var value = 0.1 compare = less_than }
+				}
+				set_variable = { var = army_support_var value = 0.1 } 
+			}
+			if = {
+				limit = {
+					check_variable = { var = army_support_var value = 0.1 compare = greater_than_or_equals }
+				}
+				add_to_variable = { var = army_support_var value = 0.1 } 
+			}
+			set_country_flag = military_support_for_proletariat_civil_war
+		}
+		ai_will_do = {factor = 1}
+	}
+	ensure_general_loyalty_for_proletariat_civil_war = {
+		icon = generic_army_support
+		available = {has_country_flag = military_support_for_proletariat_civil_war}
+		visible = {
+			has_country_flag = preparation_for_proletariat_civil_war
+			any_army_leader = { NOT = { has_trait = hidden_sympathies } }
+			NOT = { has_government = proletarianism }
+		}
+		fire_only_once = yes
+		cost = 50
+		complete_effect = {country_event = { id = decisions.1 }}
+		ai_will_do = {factor = 1}
+	}
+	ensure_marshal_loyalty_for_proletariat_civil_war = {
+		icon = generic_army_support
+		available = {has_country_flag = military_support_for_proletariat_civil_war}
+		visible = {
+			has_country_flag = preparation_for_proletariat_civil_war
+			any_army_leader = {NOT = { has_trait = hidden_sympathies }}
+			NOT = { has_government = proletarianism }
+		}
+		fire_only_once = yes
+		cost = 50
+		complete_effect = {country_event = { id = decisions.2 }}
+		ai_will_do = {factor = 1}
+	}
+	siphon_equipment_stockpiles_for_proletariat_civil_war = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_country_flag = military_support_for_proletariat_civil_war
+			has_equipment = { infantry_equipment > 1000 }
+			command_power > 2
+		}
+		visible = {
+			has_country_flag = preparation_for_proletariat_civil_war
+			has_country_flag = military_support_for_proletariat_civil_war
+			NOT = { has_government = proletarianism }
+		}
+		fire_only_once = no
+		cost = 50
+		complete_effect = {
+			add_command_power = -2
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			set_country_flag = siphoned_equipment_stockpiles_for_civil_war
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	formulate_surprise_attack_plan_for_proletariat_civil_war = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = military_support_for_proletariat_civil_war
+			command_power > 2
+		}
+		visible = {
+			has_country_flag = preparation_for_proletariat_civil_war
+			NOT = { has_government = proletarianism }
+		}
+		fire_only_once = yes
+		cost = 50
+		complete_effect = {
+			add_command_power = -2
+			custom_effect_tooltip = formulate_surprise_attack_plan_for_civil_war_tt
+			set_country_flag = formulated_surprise_attack_plan_for_civil_war
+		}
 		ai_will_do = {
 			factor = 0
 		}
 	}
-
-	open_up_political_discourse_labryscism = {
-
-		icon = generic_political_discourse
-
+	
+	ignite_the_proletariat_civil_war = {
+		icon = generic_ignite_civil_war
 		available = {
-			labryscism < 0.9
-			rexism < 0.9
-			despotism < 0.9
-			mutualism < 0.9
-			collectivism < 0.9
-			proletarianism < 0.9
-			conservatism < 0.9
-			liberalism < 0.9
-			socialism < 0.9
-			absolutism < 0.9
-			royalism < 0.9
-			theocracy < 0.9
+			has_stability < 0.5
+			proletarianism < 0.5
 		}
-
 		visible = {
-			has_idea_with_trait = labryscist_demagogue
-			NOT = { has_country_flag = open_up_political_discourse_labryscism }
-			
-			NOT = { has_government = labryscism }
+			has_country_flag = preparation_for_proletariat_civil_war
+			NOT = { has_government = proletarianism }
 		}
-		
-		#remove = {
-		#	has_government = labryscism
-		#}
-		
 		fire_only_once = yes
-		
-		cost = 75
-		
+		cost = 50
 		complete_effect = {
-			set_country_flag = open_up_political_discourse_labryscism
+			if = {
+				limit = {has_government = absolutism}
+				set_variable = {civil_war_size_var = party_popularity@absolutism}
+			}
+			if = {
+				limit = {has_government = theocracy}
+				set_variable = {civil_war_size_var = party_popularity@theocracy}
+			}
+			if = {
+				limit = {has_government = royalism}
+				set_variable = {civil_war_size_var = party_popularity@royalism}
+			}
+			if = {
+				limit = {has_government = mutualism}
+				set_variable = {civil_war_size_var = party_popularity@mutualism}
+			}
+			if = {
+				limit = {has_government = collectivism}
+				set_variable = {civil_war_size_var = party_popularity@collectivism}
+			}
+			if = {
+				limit = {has_government = labryscism}
+				set_variable = {civil_war_size_var = party_popularity@labryscism}
+			}
+			if = {
+				limit = {has_government = rexism}
+				set_variable = {civil_war_size_var = party_popularity@rexism}
+			}
+			if = {
+				limit = {has_government = despotism}
+				set_variable = {civil_war_size_var = party_popularity@despotism}
+			}
+			if = {
+				limit = {has_government = conservatism}
+				set_variable = {civil_war_size_var = party_popularity@conservatism}
+			}
+			if = {
+				limit = {has_government = liberalism}
+				set_variable = {civil_war_size_var = party_popularity@liberalism}
+			}
+			if = {
+				limit = {has_government = socialism}
+				set_variable = {civil_war_size_var = party_popularity@socialism}
+			}
+			subtract_from_variable = {
+				var = civil_war_size_var
+				value = army_support_var
+			}
+			if = {
+				limit = {check_variable = { civil_war_size_var < 0.3}}
+				set_variable = {civil_war_size_var = 0.3}
+			}
+			start_civil_war = {
+				ruling_party = proletarianism
+				ideology = ROOT
+				size = civil_war_size_var
+				keep_unit_leaders_trigger = {
+					has_trait = hidden_sympathies
+				}
+			}
+			clr_country_flag = preparation_for_proletariat_civil_war
+			clr_country_flag = military_support_for_proletariat_civil_war
+			clr_country_flag = civil_support_for_proletariat_civil_war
+			set_country_flag = ideology_civil_war
 		}
-		
-		ai_will_do = {
-			factor = 1
+		ai_will_do = {factor = 1}
+	}
+
+	open_up_political_discourse_proletarianism = {
+		icon = generic_political_discourse
+		available = {proletarianism > 0.5}
+		visible = {
+			proletarianism > 0.35
+			NOT = { has_country_flag = open_up_political_discourse_proletarianism }
+			NOT = { has_government = proletarianism }
 		}
+		fire_only_once = yes
+		cost = 75
+		complete_effect = {set_country_flag = open_up_political_discourse_proletarianism}
+		ai_will_do = {factor = 10}
 	}
 	
 	discredit_government_labryscism = {
-
 		icon = generic_political_discourse
-
-		available = {
-			labryscism < 0.8
-			rexism < 0.8
-			despotism < 0.8
-			mutualism < 0.8
-			collectivism < 0.8
-			proletarianism < 0.8
-			conservatism < 0.8
-			liberalism < 0.8
-			socialism < 0.8
-			absolutism < 0.8
-			royalism < 0.8
-			theocracy < 0.8
-			has_idea_with_trait = labryscist_demagogue
-		}
-
+		available = {proletarianism > 0.5}
 		visible = {
-			has_country_flag = open_up_political_discourse_labryscism
-			
-			NOT = { has_government = labryscism }
+			has_country_flag = open_up_political_discourse_proletarianism
+			NOT = { has_government = proletarianism }
 		}
-		
-		#remove = {
-		#	has_government = labryscism
-		#}
-		
 		fire_only_once = yes
-		
 		cost = 50
-		
 		complete_effect = {
-			add_stability = -0.010
+			add_stability = -0.01
 			if = {
-				limit = {
-					has_government = absolutism
-				}
-				add_popularity = {
-					ideology = absolutism
-					popularity = -0.1
+				limit = {has_government = absolutism}
+				add_popularity = {ideology = absolutism popularity = -0.1}
+			}
+			if = {
+				limit = {has_government = royalism}
+				add_popularity = {ideology = royalism popularity = -0.1}
+			}
+			if = {
+				limit = {has_government = despotism}
+				add_popularity = {ideology = despotism popularity = -0.1}
+			}
+			if = {
+				limit = {has_government = collectivism}
+				add_popularity = {ideology = collectivism popularity = -0.1}
+			}
+			if = {
+				limit = {has_government = labryscism}
+				add_popularity = {ideology = labryscism popularity = -0.1}
+			}
+			if = {
+				limit = {has_government = mutualism}
+				add_popularity = {ideology = mutualism popularity = -0.1}
+			}
+			if = {
+				limit = {has_government = rexism}
+				add_popularity = {ideology = rexism popularity = -0.1}
+			}
+			if = {
+				limit = {has_government = conservatism}
+				add_popularity = {ideology = conservatism popularity = -0.1}
+			}
+			if = {
+				limit = {has_government = liberalism}
+				add_popularity = {ideology = liberalism popularity = -0.1}
+			}
+			if = {
+				limit = {has_government = socialism}
+				add_popularity = {ideology = socialism popularity = -0.1
 				}
 			}
 			if = {
-				limit = {
-					has_government = royalism
-				}
-				add_popularity = {
-					ideology = royalism
-					popularity = -0.1
-				}
-			}
-			if = {
-				limit = {
-					has_government = despotism
-				}
-				add_popularity = {
-					ideology = despotism
-					popularity = -0.1
-				}
-			}
-			if = {
-				limit = {
-					has_government = collectivism
-				}
-				add_popularity = {
-					ideology = collectivism
-					popularity = -0.1
-				}
-			}
-			if = {
-				limit = {
-					has_government = proletarianism
-				}
-				add_popularity = {
-					ideology = proletarianism
-					popularity = -0.1
-				}
-			}
-			if = {
-				limit = {
-					has_government = mutualism
-				}
-				add_popularity = {
-					ideology = mutualism
-					popularity = -0.1
-				}
-			}
-			if = {
-				limit = {
-					has_government = rexism
-				}
-				add_popularity = {
-					ideology = rexism
-					popularity = -0.1
-				}
-			}
-			if = {
-				limit = {
-					has_government = conservatism
-				}
-				add_popularity = {
-					ideology = conservatism
-					popularity = -0.1
-				}
-			}
-			if = {
-				limit = {
-					has_government = liberalism
-				}
-				add_popularity = {
-					ideology = liberalism
-					popularity = -0.1
-				}
-			}
-			if = {
-				limit = {
-					has_government = socialism
-				}
-				add_popularity = {
-					ideology = socialism
-					popularity = -0.1
+				limit = {has_government = theocracy}
+				add_popularity = {ideology = theocracy popularity = -0.1
 				}
 			}
 		}
-		
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = {factor = 1}
 	}
-	
-	hold_the_labryscist_national_referendum = {
-
+	hold_the_proletariat_national_referendum = {
 		icon = generic_political_discourse
-
 		visible = {
-			NOT = { has_government = labryscism }
-			#check_has_focus_tree_to_switch_to_labryscism = yes
-			OR = {
-				labryscism > 0.6
-				has_country_flag = open_up_political_discourse_labryscism
-			}
+			NOT = { has_government = proletarianism }
+			proletarianism > 0.5
+			has_country_flag = open_up_political_discourse_proletarianism
 		}
-		
-		#remove = {
-		#	has_government = labryscism
-		#}
-		
 		fire_only_once = yes
-		
 		cost = 100
-		
-		complete_effect = {
-			country_event = { id = le_political.18 }
-		}
-		
-		ai_will_do = {
-			factor = 210
-			modifier = {
-				labryscism > 0.6
-				factor = 10
-			}
-		}
+		complete_effect = {country_event = { id = political.21 }}
+		ai_will_do = {factor = 210}
 	}
 }

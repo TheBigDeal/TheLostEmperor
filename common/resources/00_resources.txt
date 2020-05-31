@@ -3,8 +3,8 @@ resources = {
 	#MOD
 	food = {
 		icon_frame = 7
-		cic = 0.125
-		convoys = 0.05
+		cic = 0.062
+		convoys = 0.025
 	}
 	coal = {
 		icon_frame = 8
@@ -18,8 +18,8 @@ resources = {
 	}
 	wood = {
 		icon_frame = 10
-		cic = 0.125
-		convoys = 0.15
+		cic = 0.062
+		convoys = 0.025
 	}
 	cotton = {
 		icon_frame = 11

@@ -4,24 +4,18 @@ technologies = {
 		enable_equipments = {
 			seige_cannon
 		}
-
 		path = {
 			leads_to_tech = experimental_artillery 
 			research_cost_coeff = 1
 		}
-
 		research_cost = 1.0
-		
-		
 		folder = {
 			name = artillery_folder
 			position = { x = 3 y = 0 }
 		}
-		
 		categories = {
 			artillery
 		}
-		
 		ai_will_do = {
 			factor = 2
 		}
@@ -63,7 +57,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1910
+		start_year = 1800
 		folder = {
 			name = artillery_folder
 			position = { x = 3 y = 2 }
@@ -119,7 +113,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1928
+		start_year = 1910
 		folder = {
 			name = artillery_folder
 			position = { x = 6 y = 4 }
@@ -163,7 +157,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 1925
 		
 		folder = {
 			name = artillery_folder
@@ -208,7 +202,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 1925
 		
 		folder = {
 			name = artillery_folder
@@ -248,7 +242,7 @@ technologies = {
 		
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 1920
 		
 		folder = {
 			name = artillery_folder
@@ -392,7 +386,7 @@ technologies = {
 		
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 1920
 		
 		folder = {
 			name = artillery_folder
@@ -420,21 +414,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 2
-			
-			modifier = {
-				factor = 2
-				date > "1938.1.9"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-			
-			modifier = {
-				factor = 5
-				date > "1939.1.6"
-			}
 		}
 	}
 	
@@ -446,7 +425,7 @@ technologies = {
 		
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 1930
 		
 		folder = {
 			name = artillery_folder
@@ -538,10 +517,9 @@ technologies = {
 			railway_gun
 		}
 		
-		research_cost = 1
+		research_cost = 2
 
-		start_year = 1939
-		
+		start_year = 1945
 		
 		folder = {
 			name = artillery_folder
@@ -580,13 +558,6 @@ technologies = {
 		enable_equipments = {
 			artillery_equipment_2
 		}
-
-		#artillery = {
-		#	soft_attack = 0.1
-		#}
-		#artillery_brigade = {
-		#	soft_attack = 0.1
-		#}
 		
 		path = {
 			leads_to_tech = artillery2
@@ -600,7 +571,7 @@ technologies = {
 		
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 1930
 		
 		folder = {
 			name = artillery_folder
@@ -1037,7 +1008,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -8 y = 4 }
+			position = { x = -8 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -1102,7 +1073,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -8 y = 6 }
+			position = { x = -8 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -1150,7 +1121,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -8 y = 8 }
+			position = { x = -8 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -1200,7 +1171,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -8 y = 10 }
+			position = { x = -8 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -1250,7 +1221,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -8 y = 12 }
+			position = { x = -8 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -1293,7 +1264,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -8 y = 14 }
+			position = { x = -8 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -1335,7 +1306,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -4 y = 4 }
+			position = { x = -4 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -1423,7 +1394,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -4 y = 6 }
+			position = { x = -4 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -1492,7 +1463,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -4 y = 8 }
+			position = { x = -4 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -1570,7 +1541,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -4 y = 10 }
+			position = { x = -4 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -1644,7 +1615,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -4 y = 12 }
+			position = { x = -4 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -1708,7 +1679,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -4 y = 14 }
+			position = { x = -4 y = 16 }
 		}
 		
 		ai_will_do = {

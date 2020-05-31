@@ -4,7 +4,9 @@ state={
 	name="STATE_397"
 	manpower = 137203
 	state_category = wasteland
-
+	resources = {
+		wood = 110
+	}
 	history={
 		owner = RUS
 		buildings = {

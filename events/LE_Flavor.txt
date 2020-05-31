@@ -1,0 +1,21 @@
+﻿###########################
+# Flavor Events
+###########################
+
+add_namespace = le_flavor
+
+country_event = { #INVITE TO GERMAN CONFEDERATION
+	id = le_flavor.1
+	title = le_flavor.1.t
+	desc = le_flavor.1.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { #ACCEPT
+		name = le_flavor.1.a
+		
+	}
+	option = { #DECLINE
+		name = le_flavor.1.b
+
+	}
+}

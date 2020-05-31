@@ -11,5 +11,4 @@ spriteTypes = {
 		name = "GFX_hre_seats"
 		texturefile = "gfx/interface/hre_seats.dds"
 	}
-	
 }

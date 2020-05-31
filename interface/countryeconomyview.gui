@@ -1,8 +1,8 @@
 guiTypes = {
 	containerWindowType = {
 		name = "countryeconomicview"
-		position = { x = 39%% y = 20%% }
-		size = { width=856 height=80%% }
+		position = { x = 35%% y = 20%% }
+		size = { width=1142 height=82%% }
 		margin = { top = 6 bottom = 13}
 		moveable = no
 		clipping = no
@@ -21,16 +21,7 @@ guiTypes = {
 			position = { x= 5 y = -40 }
 			Orientation = "UPPER_LEFT"
 		}
-		buttonType = {
-			name = "close_button"
-			position = { x = -47 y = -38 }
-			quadTextureSprite ="GFX_closebutton"
-			buttonFont = "hoi_16mbs"
-			shortcut = "ESCAPE"
-			Orientation = "UPPER_RIGHT"
-			clicksound = click_close
-			pdx_tooltip = "CLOSE"
-		}
+		
 		buttonType = {
 			name = "balances_button"
 			quadTextureSprite = "GFX_tab_intel_ledger"
@@ -50,26 +41,1235 @@ guiTypes = {
 			spriteType = "GFX_tab_extension"
 			position = { x= 523 y = -8 }
 		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -40 y = -36 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
 		containerWindowType = {
-			name = "economy_ledger"
-			position = { x = 493 y = 240 }
-			size = { width=360 height=100%% }
+			name = "income_economy_laws"
+			position = { x = 3 y = 236 }
+			size = { width=100% height=101%% }
 			margin = { top = 6 bottom = 13}
 			moveable = no
 			clipping = no
+			background = {
+				name = "economy_bg"
+				quadTextureSprite ="GFX_tiled_bg"
+			}
+			containerWindowType = {
+				name = "upper_class_taxes"
+				position = { x = 0 y = 0 }
+				instantTextboxType = {
+					name = "upper_class_taxes_tx"
+					position = { x = 20 y = 20 }
+					font = "hoi18_mbs"
+					text = "Upper Class Taxes"
+					maxWidth = 200
+					maxHeight = 40
+					fixedsize = yes
+					format = left		
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_upper_none"
+					position = { x = 20 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "None"
+					pdx_tooltip = "taxes_upper_none_tt"
+				}
+				iconType = {
+					name ="taxes_upper_none_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 22 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_upper_very_low"
+					position = { x = 97 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very Low"
+					pdx_tooltip = "taxes_upper_very_low_tt"
+				}
+				iconType = {
+					name ="taxes_upper_very_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 99 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_upper_low"
+					position = { x = 174 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Low"
+					pdx_tooltip = "taxes_upper_low_tt"
+				}
+				iconType = {
+					name ="taxes_upper_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 176 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_upper_medium"
+					position = { x = 251 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Medium"
+					pdx_tooltip = "taxes_upper_medium_tt"
+				}
+				iconType = {
+					name ="taxes_upper_medium_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 253 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_upper_high"
+					position = { x = 328 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "High"
+					pdx_tooltip = "taxes_upper_high_tt"
+				}
+				iconType = {
+					name ="taxes_upper_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 330 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_upper_very_high"
+					position = { x = 405 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very High"
+					pdx_tooltip = "taxes_upper_very_high_tt"
+				}
+				iconType = {
+					name ="taxes_upper_very_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 407 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_upper_excessive"
+					position = { x = 482 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Excessive"
+					pdx_tooltip = "taxes_upper_excessive_tt"
+				}
+				iconType = {
+					name ="taxes_upper_excessive_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 484 y = 42 }
+					alwaystransparent = yes
+				}
+			}
+			containerWindowType = {
+				name = "middle_class_taxes"
+				position = { x = 0 y = 50 }
+				instantTextboxType = {
+					name = "Middle_Class_Taxes_tx"
+					position = { x = 20 y = 20 }
+					font = "hoi18_mbs"
+					text = "Middle Class Taxes"
+					maxWidth = 200
+					maxHeight = 40
+					fixedsize = yes
+					format = left		
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_middle_none"
+					position = { x = 20 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "None"
+					pdx_tooltip = "taxes_middle_none_tt"
+				}
+				iconType = {
+					name ="taxes_middle_none_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 22 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_middle_very_low"
+					position = { x = 97 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very Low"
+					pdx_tooltip = "taxes_middle_very_low_tt"
+				}
+				iconType = {
+					name ="taxes_middle_very_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 99 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_middle_low"
+					position = { x = 174 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Low"
+					pdx_tooltip = "taxes_middle_low_tt"
+				}
+				iconType = {
+					name ="taxes_middle_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 176 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_middle_medium"
+					position = { x = 251 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Medium"
+					pdx_tooltip = "taxes_middle_medium_tt"
+				}
+				iconType = {
+					name ="taxes_middle_medium_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 253 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_middle_high"
+					position = { x = 328 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "High"
+					pdx_tooltip = "taxes_middle_high_tt"
+				}
+				iconType = {
+					name ="taxes_middle_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 330 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_middle_very_high"
+					position = { x = 405 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very High"
+					pdx_tooltip = "taxes_middle_very_high_tt"
+				}
+				iconType = {
+					name ="taxes_middle_very_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 407 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_middle_excessive"
+					position = { x = 482 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Excessive"
+					pdx_tooltip = "taxes_middle_excessive_tt"
+				}
+				iconType = {
+					name ="taxes_middle_excessive_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 484 y = 42 }
+					alwaystransparent = yes
+				}
+			}
+			containerWindowType = {
+				name = "lower_class_taxes"
+				position = { x = 0 y = 100 }
+				instantTextboxType = {
+					name = "Lower_Class_Taxes_tx"
+					position = { x = 20 y = 20 }
+					font = "hoi18_mbs"
+					text = "Lower Class Taxes"
+					maxWidth = 200
+					maxHeight = 40
+					fixedsize = yes
+					format = left		
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_lower_none"
+					position = { x = 20 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "None"
+					pdx_tooltip = "taxes_middle_none_tt"
+				}
+				iconType = {
+					name ="taxes_lower_none_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 22 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_lower_very_low"
+					position = { x = 97 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very Low"
+					pdx_tooltip = "taxes_middle_very_low_tt"
+				}
+				iconType = {
+					name ="taxes_lower_very_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 99 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_lower_low"
+					position = { x = 174 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Low"
+					pdx_tooltip = "taxes_middle_low_tt"
+				}
+				iconType = {
+					name ="taxes_lower_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 176 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_lower_medium"
+					position = { x = 251 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Medium"
+					pdx_tooltip = "taxes_middle_medium_tt"
+				}
+				iconType = {
+					name ="taxes_lower_medium_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 253 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_lower_high"
+					position = { x = 328 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "High"
+					pdx_tooltip = "taxes_middle_high_tt"
+				}
+				iconType = {
+					name ="taxes_lower_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 330 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_lower_very_high"
+					position = { x = 405 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very High"
+					pdx_tooltip = "taxes_middle_very_high_tt"
+				}
+				iconType = {
+					name ="taxes_lower_very_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 407 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_lower_excessive"
+					position = { x = 482 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Excessive"
+					pdx_tooltip = "taxes_middle_excessive_tt"
+				}
+				iconType = {
+					name ="taxes_lower_excessive_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 484 y = 42 }
+					alwaystransparent = yes
+				}
+			}
+			containerWindowType = {
+				name = "capital_gains_taxes"
+				position = { x = 0 y = 150 }
+				instantTextboxType = {
+					name = "capital_gains_taxes_tx"
+					position = { x = 20 y = 20 }
+					font = "hoi18_mbs"
+					text = "Capital Gains Taxes"
+					maxWidth = 200
+					maxHeight = 40
+					fixedsize = yes
+					format = left		
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_capital_gains_none"
+					position = { x = 20 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "None"
+				}
+				iconType = {
+					name ="taxes_capital_gains_none_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 22 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_capital_gains_very_low"
+					position = { x = 97 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very Low"
+				}
+				iconType = {
+					name ="taxes_capital_gains_very_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 99 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_capital_gains_low"
+					position = { x = 174 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Low"
+				}
+				iconType = {
+					name ="taxes_capital_gains_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 176 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_capital_gains_medium"
+					position = { x = 251 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Medium"
+				}
+				iconType = {
+					name ="taxes_capital_gains_medium_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 253 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_capital_gains_high"
+					position = { x = 328 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "High"
+				}
+				iconType = {
+					name ="taxes_capital_gains_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 330 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_capital_gains_very_high"
+					position = { x = 405 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very High"
+				}
+				iconType = {
+					name ="taxes_capital_gains_very_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 407 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "taxes_capital_gains_excessive"
+					position = { x = 482 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Excessive"
+				}
+				iconType = {
+					name ="taxes_capital_gains_excessive_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 484 y = 42 }
+					alwaystransparent = yes
+				}
+			}
+			containerWindowType = {
+				name = "tariffs"
+				position = { x = 0 y = 200 }
+				instantTextboxType = {
+					name = "tariffs_tx"
+					position = { x = 20 y = 20 }
+					font = "hoi18_mbs"
+					text = "Tariffs"
+					maxWidth = 200
+					maxHeight = 40
+					fixedsize = yes
+					format = left		
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "tariffs_none"
+					position = { x = 20 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "None"
+				}
+				iconType = {
+					name ="tariffs_none_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 22 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "tariffs_very_low"
+					position = { x = 97 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very Low"
+				}
+				iconType = {
+					name ="tariffs_very_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 99 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "tariffs_low"
+					position = { x = 174 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Low"
+				}
+				iconType = {
+					name ="tariffs_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 176 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "tariffs_medium"
+					position = { x = 251 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Medium"
+				}
+				iconType = {
+					name ="tariffs_medium_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 253 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "tariffs_high"
+					position = { x = 328 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "High"
+				}
+				iconType = {
+					name ="tariffs_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 330 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "tariffs_very_high"
+					position = { x = 405 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very High"
+				}
+				iconType = {
+					name ="tariffs_very_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 407 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "tariffs_excessive"
+					position = { x = 482 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Excessive"
+				}
+				iconType = {
+					name ="tariffs_excessive_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 484 y = 42 }
+					alwaystransparent = yes
+				}
+			}
+		}
+		containerWindowType = {
+			name = "expense_economy_laws"
+			position = { x = 565 y = 236 }
+			size = { width=100% height=101%% }
+			margin = { top = 6 bottom = 13}
+			moveable = no
+			clipping = no
+			containerWindowType = {
+				name = "army_funding"
+				position = { x = 0 y = 0 }
+				instantTextboxType = {
+					name = "army_funding_tx"
+					position = { x = 20 y = 20 }
+					font = "hoi18_mbs"
+					text = "Army Funding"
+					maxWidth = 200
+					maxHeight = 40
+					fixedsize = yes
+					format = left		
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "army_funding_none"
+					position = { x = 20 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "None"
+				}
+				iconType = {
+					name ="army_funding_none_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 22 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "army_funding_very_low"
+					position = { x = 97 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very Low"
+				}
+				iconType = {
+					name ="army_funding_very_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 99 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "army_funding_low"
+					position = { x = 174 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Low"
+				}
+				iconType = {
+					name ="army_funding_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 176 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "army_funding_medium"
+					position = { x = 251 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Medium"
+				}
+				iconType = {
+					name ="army_funding_medium_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 253 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "army_funding_high"
+					position = { x = 328 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "High"
+				}
+				iconType = {
+					name ="army_funding_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 330 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "army_funding_very_high"
+					position = { x = 405 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very High"
+				}
+				iconType = {
+					name ="army_funding_very_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 407 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "army_funding_excessive"
+					position = { x = 482 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Excessive"
+				}
+				iconType = {
+					name ="army_funding_excessive_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 484 y = 42 }
+					alwaystransparent = yes
+				}
+			}
+			containerWindowType = {
+				name = "education_spending"
+				position = { x = 0 y = 50 }
+				instantTextboxType = {
+					name = "education_spending_tx"
+					position = { x = 20 y = 20 }
+					font = "hoi18_mbs"
+					text = "Education Funding"
+					maxWidth = 200
+					maxHeight = 40
+					fixedsize = yes
+					format = left		
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "education_spending_none"
+					position = { x = 20 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "None"
+				}
+				iconType = {
+					name ="education_spending_none_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 22 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "education_spending_very_low"
+					position = { x = 97 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very Low"
+				}
+				iconType = {
+					name ="education_spending_very_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 99 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "education_spending_low"
+					position = { x = 174 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Low"
+				}
+				iconType = {
+					name ="education_spending_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 176 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "education_spending_medium"
+					position = { x = 251 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Medium"
+				}
+				iconType = {
+					name ="education_spending_medium_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 253 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "education_spending_high"
+					position = { x = 328 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "High"
+				}
+				iconType = {
+					name ="education_spending_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 330 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "education_spending_very_high"
+					position = { x = 405 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very High"
+				}
+				iconType = {
+					name ="education_spending_very_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 407 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "education_spending_excessive"
+					position = { x = 482 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Excessive"
+				}
+				iconType = {
+					name ="education_spending_excessive_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 484 y = 42 }
+					alwaystransparent = yes
+				}
+			}
+			containerWindowType = {
+				name = "administration_funding"
+				position = { x = 0 y = 100 }
+				instantTextboxType = {
+					name = "administration_funding_tx"
+					position = { x = 20 y = 20 }
+					font = "hoi18_mbs"
+					text = "Administration Funding"
+					maxWidth = 200
+					maxHeight = 40
+					fixedsize = yes
+					format = left		
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "administration_funding_none"
+					position = { x = 20 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "None"
+				}
+				iconType = {
+					name ="administration_funding_none_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 22 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "administration_funding_very_low"
+					position = { x = 97 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very Low"
+				}
+				iconType = {
+					name ="administration_funding_very_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 99 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "administration_funding_low"
+					position = { x = 174 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Low"
+				}
+				iconType = {
+					name ="administration_funding_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 176 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "administration_funding_medium"
+					position = { x = 251 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Medium"
+				}
+				iconType = {
+					name ="administration_funding_medium_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 253 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "administration_funding_high"
+					position = { x = 328 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "High"
+				}
+				iconType = {
+					name ="administration_funding_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 330 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "administration_funding_very_high"
+					position = { x = 405 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very High"
+				}
+				iconType = {
+					name ="administration_funding_very_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 407 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "administration_funding_excessive"
+					position = { x = 482 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Excessive"
+				}
+				iconType = {
+					name ="administration_funding_excessive_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 484 y = 42 }
+					alwaystransparent = yes
+				}
+			}
+			containerWindowType = {
+				name = "social_funding"
+				position = { x = 0 y = 150 }
+				instantTextboxType = {
+					name = "social_funding_tx"
+					position = { x = 20 y = 20 }
+					font = "hoi18_mbs"
+					text = "Social Funding"
+					maxWidth = 200
+					maxHeight = 40
+					fixedsize = yes
+					format = left		
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "social_funding_none"
+					position = { x = 20 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "None"
+				}
+				iconType = {
+					name ="social_funding_none_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 22 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "social_funding_very_low"
+					position = { x = 97 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very Low"
+				}
+				iconType = {
+					name ="social_funding_very_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 99 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "social_funding_low"
+					position = { x = 174 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Low"
+				}
+				iconType = {
+					name ="social_funding_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 176 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "social_funding_medium"
+					position = { x = 251 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Medium"
+				}
+				iconType = {
+					name ="social_funding_medium_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 253 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "social_funding_high"
+					position = { x = 328 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "High"
+				}
+				iconType = {
+					name ="social_funding_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 330 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "social_funding_very_high"
+					position = { x = 405 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very High"
+				}
+				iconType = {
+					name ="social_funding_very_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 407 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "social_funding_excessive"
+					position = { x = 482 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Excessive"
+				}
+				iconType = {
+					name ="social_funding_excessive_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 484 y = 42 }
+					alwaystransparent = yes
+				}
+			}
+			containerWindowType = {
+				name = "covert_spending"
+				position = { x = 0 y = 200 }
+				instantTextboxType = {
+					name = "covert_spending_tx"
+					position = { x = 20 y = 20 }
+					font = "hoi18_mbs"
+					text = "Covert Spending"
+					maxWidth = 200
+					maxHeight = 40
+					fixedsize = yes
+					format = left		
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "covert_spending_none"
+					position = { x = 20 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "None"
+				}
+				iconType = {
+					name ="covert_spending_none_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 22 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "covert_spending_very_low"
+					position = { x = 97 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very Low"
+				}
+				iconType = {
+					name ="covert_spending_very_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 99 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "covert_spending_low"
+					position = { x = 174 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Low"
+				}
+				iconType = {
+					name ="covert_spending_low_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 176 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "covert_spending_medium"
+					position = { x = 251 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Medium"
+				}
+				iconType = {
+					name ="covert_spending_medium_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 253 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "covert_spending_high"
+					position = { x = 328 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "High"
+				}
+				iconType = {
+					name ="covert_spending_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 330 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "covert_spending_very_high"
+					position = { x = 405 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Very High"
+				}
+				iconType = {
+					name ="covert_spending_very_high_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 407 y = 42 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "covert_spending_excessive"
+					position = { x = 482 y = 40 }
+					quadTextureSprite = "GFX_77x31_button"
+					buttonFont = "hoi_18"
+					Orientation = "UPPER_LEFT"
+					buttonText = "Excessive"
+				}
+				iconType = {
+					name ="covert_spending_excessive_border"
+					spriteType = "GFX_button_border_77x31"
+					position = { x= 484 y = 42 }
+					alwaystransparent = yes
+				}
+			}
+		}
+		instantTextboxType = {
+			name = "total_gain_tx"
+			position = { x = 260 y = 600 }
+			font = "vic_36s"
+			text = "total_gain"
+			maxWidth = 600
+			maxHeight = 40
+			fixedsize = yes
+			format = center		
+			alwaystransparent = yes
+		}
+		containerWindowType = {
+			name = "economy_ledger"
+			position = { x = 840 y = 0 }
+			size = { width=300 height=38%% }
+			margin = { top = 2 bottom = 2}
+			verticalScrollbar = "right_vertical_slider_tno_laws_2"
+			moveable = no
+			clipping = yes
 			background = {
 				name = "economy_bg"
 				quadTextureSprite ="GFX_tiled_special_cut_bg"
 			}
 			instantTextboxType = {
 				name = "Income"
-				position = { x = 130 y = 0 }
+				position = { x = 110 y = 0 }
 				font = "vic_36"
 				text = "Income"
 				maxWidth = 80
 				maxHeight = 20
 				fixedsize = yes
 				format = center		
+				alwaystransparent = yes
+			}
+			iconType = {
+				name ="tab_extension"
+				spriteType = "GFX_tab_extension"
+				position = { x= 12 y = 30 }
+			}
+			instantTextboxType = {
+				name = "Taxes"
+				position = { x = 20 y = 40 }
+				font = "hoi18mbs"
+				text = "economy_ledger_text"
+				maxWidth = 250
+				maxHeight = 2000
+				fixedsize = no
+				format = left		
 				alwaystransparent = yes
 			}
 		}

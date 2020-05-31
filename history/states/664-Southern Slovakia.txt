@@ -5,6 +5,7 @@ state={
 	resources={
 		steel=20
 		chromium = 4
+		wood = 14
 	}
 	
 	state_category = town

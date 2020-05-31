@@ -130,15 +130,15 @@ bookmarks = {
 			}
 		}
 
-		"PER"={
+		"BAY"={
 			minor = yes
 			history = "ROM_BLITZKRIEG_DESC"
 			ideology = absolutism
 			ideas = {
-				le_religion_shia
+				rooted_collectivists
 			}
 			focuses = {
-
+				BAV_THE_BAVARIAN_SOCIALIST_UPRISING
 			}
 		}
 
