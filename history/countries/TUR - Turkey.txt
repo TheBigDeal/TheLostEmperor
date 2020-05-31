@@ -53,12 +53,7 @@ set_popularities = {
 
 set_convoys = 20
 set_stability = 0.55
-puppet = ALG
-puppet = EGY
-give_guarantee = MOR
-puppet = TUN
-puppet = LBA
-puppet = HEJ
+
 give_military_access = ATA
 
 if = {
@@ -67,14 +62,31 @@ if = {
 	}
 	set_autonomy = {
 		target = IRQ
-		autonomous_state = autonomy_colony
+		autonomous_state = autonomy_eyalet
+	}
+	set_autonomy = {
+		target = EGY
+		autonomous_state = autonomy_eyalet
+	}
+	set_autonomy = {
+		target = HEJ
+		autonomous_state = autonomy_eyalet
+	}
+	set_autonomy = {
+		target = LBA
+		autonomous_state = autonomy_vilayet
+	}
+	set_autonomy = {
+		target = ASR
+		autonomous_state = autonomy_vilayet
 	}
 	else = {
 		puppet = IRQ
+		puppet = EGY
+		puppet = LBA
+		puppet = HEJ
 	}
 }
-
-# Atatürk still alive in '36, however, Inönü was already Prime Minister (but not President)
 
 create_country_leader = {
 	name = "Mehmed Osman VI"
