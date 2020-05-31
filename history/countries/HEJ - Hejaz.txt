@@ -19,17 +19,7 @@ set_politics = {
 	elections_allowed = no
 }
 
-set_popularities = {
-    conservatism = 5
-    liberalism = 5
-    socialism = 5 
-    labryscism = 11
-    despotism = 5
-    royalism = 7
-    theocracy = 29
-    absolutism = 22
-    proletarianism = 11
-}
+
 
 set_convoys = 5
 

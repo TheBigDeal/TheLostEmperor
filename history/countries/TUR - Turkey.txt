@@ -56,6 +56,43 @@ set_stability = 0.55
 
 give_military_access = ATA
 
+HEJ = {
+	set_popularities = {
+		conservatism = 5
+		liberalism = 5
+		socialism = 5 
+		labryscism = 11
+		despotism = 5
+		royalism = 7
+		theocracy = 29
+		absolutism = 22
+		proletarianism = 11
+	}
+}
+
+ASR = {
+	set_popularities = {
+		conservatism = 8
+		liberalism = 22
+		rexism = 9
+		royalism = 10
+		absolutism = 71
+		theocracy = 10
+	}	
+}
+
+EGY = {
+	set_popularities = {
+		liberalism = 37
+		rexism = 3
+		labyrschism = 12
+		proletarianism = 13
+		absolutism = 20
+		royalism = 5
+		theocracy = 10
+	}
+}
+
 if = {
 	limit = {
 		has_dlc = "Together for Victory"
