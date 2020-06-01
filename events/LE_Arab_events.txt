@@ -2,4 +2,27 @@
 # Arabia Events
 ###########################
 
-add_namespace = arab
+add_namespace = le_arab
+
+country_event = {
+	id = le_arab.1 # Mujahideen Groups rebel
+	title = le_arab.1.t
+	desc = le_arab.1.d
+	picture = GFX_report_event_generic_read_write
+	trigger = {
+	 OR = {
+	  original_tag = ASR
+	  original_tag = YEM
+	  original_tag = SHM
+	 }
+	 always = no
+	}
+	option = { #ACCEPT
+		name = le_arab.1.a
+		
+	}
+	option = { #DECLINE
+		name = le_arab.1.b
+
+	}
+}
