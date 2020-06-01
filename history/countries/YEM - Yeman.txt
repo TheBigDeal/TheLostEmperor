@@ -20,8 +20,20 @@ set_politics = {
 }
 
 set_popularities = {
-    absolutism = 100 #WIP
-}
+		conservatism = 0
+		liberalism = 0
+		socialism = 0 
+		labryscism = 23
+		rexism = 3
+		despotism = 0
+		royalism = 1
+		theocracy = 30
+		absolutism = 35
+		proletarianism = 7
+		collectivism = 0
+  mutualism = 1
+	}
+
 
 create_country_leader = {
 	name = "Imam Yahya"
@@ -33,3 +45,8 @@ create_country_leader = {
 		#
 	}
 }
+
+
+
+
+
