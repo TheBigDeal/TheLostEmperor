@@ -4,6 +4,20 @@ set_technology = {
 	infantry_weapons = 1
 	tech_support = 1
 	tech_recon = 1
+	seige_cannon = 1
+	experimental_artillery = 1
+	light_artillery_1 = 1
+	heavy_artillery = 1
+	gw_artillery = 1
+	infantry_weapons1 = 1
+	light_machine_gun_1 = 1
+	basic_machine_tools = 1
+	agriculture1 = 1
+	industrial_realisation = 1
+	industrial_expansion = 1
+	industrial_factories = 1
+	early_automobile_industry = 1
+	basic_infrastructure = 1
 }
 add_ideas = {
 	HRE_elector

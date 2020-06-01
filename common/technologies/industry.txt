@@ -15,6 +15,7 @@ technologies = {
 		#	building = infrastructure
 		#	level = 5	#Infrastructure up to level 5 is availble for everyone
 		#}
+		active = yes
 		
 		path = {
 			leads_to_tech = agriculture1
@@ -40,7 +41,7 @@ technologies = {
 		start_year = 1700
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 0 }
+			position = { x = 6 y = 0 }
 		}
 		
 		ai_will_do = {
@@ -63,12 +64,20 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		on_research_complete = {
+			modify_building_resources = {
+				building = farm
+				resource = food
+				amount = 4
+			}
+		}
+		
 		research_cost = 1.5
 		start_year = 1800
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 3 }
+			position = { x = 0 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -85,9 +94,54 @@ technologies = {
 		production_speed_buildings_factor = 0.05
 
 
+		
+		path = {
+			leads_to_tech = agriculture3 
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = farm
+				resource = food
+				amount = 4
+			}
+		}
+		
+		research_cost = 1.5
+		start_year = 1880
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 35
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	agriculture3 = {
+
+		MONTHLY_POPULATION = 0.02
+
 		path = {
 			leads_to_tech = increased_urbanization1
 			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = agriculture4
+			research_cost_coeff = 1
+		}
+		on_research_complete = {
+			modify_building_resources = {
+				building = farm
+				resource = food
+				amount = 4
+			}
 		}
 		
 		research_cost = 1.5
@@ -96,6 +150,39 @@ technologies = {
 		folder = {
 			name = industry_folder
 			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 35
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	agriculture4 = {
+
+		MONTHLY_POPULATION = 0.02
+
+		#path = {
+		#	leads_to_tech = increased_urbanization1
+		#	research_cost_coeff = 1
+		#}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = farm
+				resource = food
+				amount = 4
+			}
+		}
+		
+		research_cost = 1.5
+		start_year = 1880
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -332,7 +419,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 9 y = 2 }
+			position = { x = 14 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -369,7 +456,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 16 y = 4 }
+			position = { x = 20 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -404,7 +491,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 16 y = 6 }
+			position = { x = 20 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -746,7 +833,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 20 y = 7 }
+			position = { x = 20 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -808,7 +895,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 24 y = 9 }
+			position = { x = 34 y = 9 }
 		}
 		
 		ai_will_do = {
@@ -830,7 +917,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 24 y = 11 }
+			position = { x = 34 y = 11 }
 		}
 		
 		ai_will_do = {
@@ -1392,10 +1479,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = basic_oil_processing
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 2.5
 		start_year = 1928

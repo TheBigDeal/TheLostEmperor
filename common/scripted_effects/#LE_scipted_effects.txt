@@ -634,7 +634,7 @@ get_population_number = {
 
 get_force_limit = {
 	set_variable = { force_limit = max_manpower_k }
-	divide_variable = { force_limit = 400 }
+	divide_variable = { force_limit = 450 }
 	round_variable = force_limit
 	
 	set_variable = { force_limit_6 = force_limit }

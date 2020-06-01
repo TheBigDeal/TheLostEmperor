@@ -1,5 +1,21 @@
 spriteTypes = {
 	Spritetype = {
+		name = "GFX_industrial_realisation_medium"
+		textureFile = "gfx/interface/technologies/industrial_realization.dds"
+	}
+	Spritetype = {
+		name = "GFX_agriculture2_medium"
+		textureFile = "gfx/interface/technologies/agriculture_II.dds"
+	}
+	Spritetype = {
+		name = "GFX_agriculture1_medium"
+		textureFile = "gfx/interface/technologies/agriculture_I.dds"
+	}
+	Spritetype = {
+		name = "GFX_seige_cannon_medium"
+		textureFile = "gfx/interface/technologies/seige_cannon.dds"
+	}
+	Spritetype = {
 		name = "GFX_seige_cannon_medium"
 		textureFile = "gfx/interface/technologies/seige_cannon.dds"
 	}	
