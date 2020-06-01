@@ -37,7 +37,7 @@
  tur_propaganda_effort:0 "Propaganda Effort"
  tur_send_military:0 "Prepare Military"
  tur_subject_liberty_desire:0 "Rebellious Vassals"
- tur_subject_liberty_desire_desc:0 "Our Vassals have begun to reject our overlordship. With the situation with the rebels turning dire it is hard to keep everything in check.\n\n[IRQ.GetFlag]Iraqi Liberty Desire: Test\n[HEJ.GetFlag]Hejazi Liberty Desire: Test\n[SHM.GetFlag]Shammari Liberty Desire: Test\n[EGY.GetFlag]Egyptian Liberty Desire: Test\n[ASR.GetFlag]Asir Liberty Desire: Test\n[LBA.GetFlag]Tripolitania Liberty Desire: [?TRIPOLITANIA_LIBERTY_DESIRE|2%%]\n[NEJ.GetFlag]Nejdi Liberty Desire: [?NEJD_LIBERTY_DESIRE|2%%]"
+ tur_subject_liberty_desire_desc:0 "Our Vassals have begun to reject our overlordship. With the situation with the rebels turning dire it is hard to keep everything in check.\n\n[IRQ.GetFlag][IRQ.GetAdjective] Liberty Desire: [?IRAQ_LIBERTY_DESIRE|2%%]"\n[HEJ.GetFlag][HEJ.GetAdjective] Liberty Desire: [?HEJAZ_LIBERTY_DESIRE|2%%]"\n[SHM.GetFlag][SHM.GetAdjective] Liberty Desire: [?JABAL_SHAMMAR_LIBERTY_DESIRE|2%%]"\n[EGY.GetFlag][EGY.GetAdjective] Liberty Desire: [?EGYPT_LIBERTY_DESIRE|2%%]"\n[ASR.GetFlag][ASR.GetAdjective] Liberty Desire: [?NEJD_LIBERTY_DESIRE|2%%]"\n[LBA.GetFlag][LBA.GetAdjective] Liberty Desire: [?TRIPOLITANIA_LIBERTY_DESIRE|2%%]\n[NEJ.GetFlag][NEJ.GetAdjective] Liberty Desire: [?NEJD_LIBERTY_DESIRE|2%%]"
  tur_rebel_expansion_into_palestine:0 "Rebel Expansion Into Palestine"
  tur_rebel_expansion_into_lebanon:0 "Rebel Expansion Into Lebanon"
  tur_rebel_expansion_into_west_jordan:0 "Rebel Expansion Into West Jordan"
