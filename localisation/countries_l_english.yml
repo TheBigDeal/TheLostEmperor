@@ -1214,7 +1214,7 @@
 
  NEJ_absolutism:0 "Emirate of Nejd"
  NEJ_absolutism_DEF:0 "The Emirate of Nejd"
- NEJ_absolutism_ADJ:0 "Nejd"
+ NEJ_absolutism_ADJ:0 "Nejdi"
 
  ATA_absolutism:0 "Anglo-Turkish Administration"
  ATA_absolutism_DEF:0 "The Anglo-Turkish Administration"
@@ -1222,7 +1222,7 @@
 
  SHM_absolutism:0 "Emirate of Jabal Shammar"
  SHM_absolutism_DEF:0 "The Emirate of Jabal Shammar"
- SHM_absolutism_ADJ:0 "Jabal Shammar"
+ SHM_absolutism_ADJ:0 "Shammari"
 
  GAL_absolutism:0 "Galicia-Lodomeria"
  GAL_absolutism_DEF:0 "The Kingdom Of Galicia-Lodomeria"
