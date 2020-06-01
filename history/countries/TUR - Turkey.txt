@@ -73,6 +73,14 @@ if = {
 		autonomous_state = autonomy_eyalet
 	}
 	set_autonomy = {
+		target = NEJ
+		autonomous_state = autonomy_eyalet
+	}
+	set_autonomy = {
+		target = SHM
+		autonomous_state = autonomy_eyalet
+	}
+	set_autonomy = {
 		target = LBA
 		autonomous_state = autonomy_vilayet
 	}
@@ -86,6 +94,8 @@ if = {
 		puppet = LBA
 		puppet = HEJ
 		puppet = ASR
+		puppet = NEJ
+		puppet = SHM
 	}
 }
 
@@ -175,6 +185,40 @@ LBA = {
 		last_election = "1920.15.6"
 		election_frequency = 48
 		elections_allowed = no
+	}
+}
+
+SHM = {
+	set_popularities = {
+		conservatism = 0
+		liberalism = 0
+		socialism = 0
+		labryscism = 16
+		rexism = 10
+		despotism = 6
+		royalism = 30
+		theocracy = 6
+		absolutism = 12
+		proletarianism = 6
+		collectivism = 8
+		mutualism = 6
+	}
+}
+
+NEJ = {
+	set_popularities = {
+		conservatism = 0
+		liberalism = 0
+		socialism = 0
+		labryscism = 15
+		rexism = 10
+		despotism = 10
+		royalism = 8
+		theocracy = 20
+		absolutism = 35
+		proletarianism = 0
+		collectivism = 0
+		mutualism = 2
 	}
 }
 

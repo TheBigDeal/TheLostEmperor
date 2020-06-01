@@ -15,14 +15,40 @@ country_event = {
 	  original_tag = YEM
 	  original_tag = SHM
 	 }
-	 always = no
+	 labryscism > 0.4
 	}
-	option = { #ACCEPT
+	immediate = {
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = MJG
+				prioritize_location = { NOT = { is_capital = yes }}
+			}
+			create_unit = {
+				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = MJG
+				prioritize_location = { NOT = { is_capital = yes }}
+			}
+			create_unit = {
+				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = MJG
+				prioritize_location = { NOT = { is_capital = yes }}
+			}
+			create_unit = {
+				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = MJG
+				prioritize_location = { NOT = { is_capital = yes }}
+			}
+		} 
+	}
+	option = { #duh
 		name = le_arab.1.a
-		
+		add_political_power = 5
 	}
-	option = { #DECLINE
+	option = { #JIHADDDDDDD
 		name = le_arab.1.b
-
+		MJG = {
+			change_tag_from = ROOT
+		}
 	}
 }
