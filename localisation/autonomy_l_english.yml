@@ -16,6 +16,8 @@
  autonomy_wtt_imperial_subject:1 "Imperial Subject"
  autonomy_collaboration_government:0 "Collaboration Government"
  autonomy_personal_union:0 "Personal Union"
+ autonomy_eyalet:0 "Eyalet"
+ autonomy_vilayet:0 "Vilayet"
  
  AUTONOMY_CAN_TAKE_DESC:1 "$OWNER|UH$ can become $NEXTLEVEL|H$"
  AUTONOMY_CANT_TAKE_DESC:1 "$OWNER|UH$ can not become $NEXTLEVEL|H$ yet"

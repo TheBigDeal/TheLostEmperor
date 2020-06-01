@@ -13,26 +13,31 @@ add_ideas = {
 }
 
 set_politics = {	
-	ruling_party = royalism
-	last_election = "1933.3.5"
+	ruling_party = absolutism
+	last_election = "1920.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-set_popularities = {
-    liberalism = 0
-    rexism = 0
-    proletarianism = 0
-	royalism = 60
-    absolutism = 40
-}
+
 
 set_convoys = 5
 
 create_country_leader = {
-	name = "Husayin bin Ali"
-	desc = "POLITICS_ABDULAZIZ_DESC"
-	picture = "Portrait_Saudi_Arabia_Abdulazis_Ibn_Saud.dds"
+	name = "Ali I"
+	desc = ""
+	picture = "Portrait_Arabia_Ali_bin_Hussein.tga"
+	expire = "1965.1.1"
+	ideology = absolutism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ali I"
+	desc = ""
+	picture = "Portrait_Arabia_Ali_bin_Hussein.tga"
 	expire = "1965.1.1"
 	ideology = royalism_ideology
 	traits = {

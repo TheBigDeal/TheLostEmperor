@@ -2,53 +2,15 @@
 
 oob = "YEM_1936"
 
+add_ideas = {
+  le_religion_shia
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 }
 set_convoys = 5
-
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "YEM_1939"
-	set_technology = {
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-		
-		battlefleet_concentration = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	}
-}
 
 set_politics = {	
 	ruling_party = absolutism
@@ -58,10 +20,7 @@ set_politics = {
 }
 
 set_popularities = {
-    liberalism = 0
-    rexism = 0
-    proletarianism = 0
-    absolutism = 100
+    absolutism = 100 #WIP
 }
 
 create_country_leader = {
@@ -73,20 +32,4 @@ create_country_leader = {
 	traits = {
 		#
 	}
-}
-
-
-	set_politics = {	
-		ruling_party = absolutism
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-}
-
-    set_popularities = {
-        liberalism = 0
-        rexism = 0
-        proletarianism = 0
-        absolutism = 100
-    }
 }

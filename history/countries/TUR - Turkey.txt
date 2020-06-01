@@ -17,7 +17,7 @@ set_variable = { var = HEJAZ_LIBERTY_DESIRE value = 30 }
 set_variable = { var = EGYPT_LIBERTY_DESIRE value = 40 }
 set_variable = { var = TRIPOLITANIA_LIBERTY_DESIRE value = 40 }
 set_variable = { var = JABAL_SHAMMAR_LIBERTY_DESIRE value = 20 }
-set_variable = { var = YEMEN_LIBERTY_DESIRE value = 40 }
+set_variable = { var = NEJD_LIBERTY_DESIRE value = 40 }
 set_variable = { var = ASIR_LIBERTY_DESIRE value = 30 }
 
 
@@ -37,28 +37,23 @@ set_politics = {
 }
 
 set_popularities = {
-    conservatism = 7
-    liberalism = 1
-    socialism = 0
-    labryscism = 0
-    rexism = 0
-    despotism = 10
-    royalism = 1
-    theocracy = 16
-    absolutism = 65
-    proletarianism = 0
-    collectivism = 0
-    mutualism = 0
+    conservatism = 0
+    liberalism = 0
+    socialism = 9
+    labryscism = 10
+    rexism = 8
+    despotism = 8
+    royalism = 14
+    theocracy = 8
+    absolutism = 22
+    proletarianism = 1
+    collectivism = 13
+    mutualism = 7
 }
 
 set_convoys = 20
 set_stability = 0.55
-puppet = ALG
-puppet = EGY
-give_guarantee = MOR
-puppet = TUN
-puppet = LBA
-puppet = HEJ
+
 give_military_access = ATA
 
 if = {
@@ -67,21 +62,139 @@ if = {
 	}
 	set_autonomy = {
 		target = IRQ
-		autonomous_state = autonomy_colony
+		autonomous_state = autonomy_eyalet
+	}
+	set_autonomy = {
+		target = EGY
+		autonomous_state = autonomy_eyalet
+	}
+	set_autonomy = {
+		target = HEJ
+		autonomous_state = autonomy_eyalet
+	}
+	set_autonomy = {
+		target = LBA
+		autonomous_state = autonomy_vilayet
+	}
+	set_autonomy = {
+		target = ASR
+		autonomous_state = autonomy_vilayet
 	}
 	else = {
 		puppet = IRQ
+		puppet = EGY
+		puppet = LBA
+		puppet = HEJ
+		puppet = ASR
 	}
 }
 
-# Atatürk still alive in '36, however, Inönü was already Prime Minister (but not President)
+HEJ = {
+	set_popularities = {
+		conservatism = 5
+		liberalism = 5
+		socialism = 5 
+		labryscism = 11
+		rexism = 0
+		despotism = 5
+		royalism = 7
+		theocracy = 29
+		absolutism = 22
+		proletarianism = 11
+		collectivism = 0
+    	mutualism = 0
+	}
+}
+
+ASR = {
+	set_popularities = {
+		conservatism = 4
+		socialism = 2
+		rexism = 9
+		royalism = 10
+		absolutism = 21
+		theocracy = 20
+		proletarianism = 13
+		collectivism = 6
+    	mutualism = 15
+	}
+	set_politics = {
+		ruling_party = theocracy
+		last_election = "1920.15.6"
+		election_frequency = 48
+		elections_allowed = no
+	}
+}
+
+EGY = {
+	set_popularities = {
+		liberalism = 37
+		rexism = 3
+		labryscism = 12
+		proletarianism = 13
+		absolutism = 20
+		royalism = 5
+		theocracy = 10
+	}
+}
+
+IRQ = {
+	set_popularities = {
+		conservatism = 24
+		liberalism = 12
+		socialism = 2
+		labryscism = 10
+		despotism = 6
+		royalism = 22
+		theocracy = 11
+		absolutism = 10
+		proletarianism = 1
+		collectivism = 1
+		mutualism = 1
+	}
+	set_politics = {
+		ruling_party = royalism
+		last_election = "1920.15.6"
+		election_frequency = 48
+		elections_allowed = no
+	}
+}
+
+LBA = {
+	set_popularities = {
+		liberalism = 1
+		rexism = 22
+		labryscism = 50
+		proletarianism = 9
+		absolutism = 6
+		royalism = 5
+		theocracy = 7
+	}
+	set_politics = {
+		ruling_party = labryscism
+		last_election = "1920.15.6"
+		election_frequency = 48
+		elections_allowed = no
+	}
+}
 
 create_country_leader = {
 	name = "Mehmed Osman VI"
-	desc = "POLITICS_ISMET_INÖNÜ_DESC"
+	desc = ""
 	picture = "Portrait_Mehmed_VI.tga"
 	expire = "1965.1.1"
 	ideology = absolutism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mehmed Osman VI"
+	desc = ""
+	picture = "Portrait_Mehmed_VI.tga"
+	expire = "1965.1.1"
+	ideology = royalism_ideology
 	traits = {
 		#
 	}
@@ -92,18 +205,18 @@ create_country_leader = {
 	desc = "POLITICS_ISMET_INÖNÜ_DESC"
 	picture = "Portrait_Turkey_Ismet_Inonu.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = labryscism_ideology
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Mustafa Kemal Atatürk"
-	desc = "POLITICS_MUSTAFA_KEMAL_ATATÜRK_DESC"
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Mustafa_Kemal_Ataturk.dds"
-	expire = "1938.11.10"
-	ideology = oligarchism
+	name = "Ismail Enver Pasha"
+	desc = ""
+	picture = ".dds"
+	expire = "1965.11.10"
+	ideology = rexism_ideology
 	traits = {
 		#
 	}
@@ -114,18 +227,28 @@ create_country_leader = {
 	desc = "POLITICS_SEFIK_HUSNU_DESC"
 	picture = "gfx/leaders/TUR/Portrait_Turkey_Sefik_Husnu.dds"
 	expire = "1965.1.1"
-	ideology = proletarianism
+	ideology = collectivism_ideology
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
+	name = "Mustafa Suphi"
+	desc = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/TUR/Portrait_Turkey_Sefik_Husnu.dds"
+	expire = "1965.1.1"
+	ideology = mutualism_ideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
 	name = "Celâl Bayar"
 	desc = "POLITICS_CELAL_BAYAR_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = socialism_ideology
 	traits = {
 		#
 	}
@@ -135,7 +258,17 @@ create_country_leader = {
 	desc = "POLITICS_OGUZ_REMZI_ARIK_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 	expire = "1965.1.1"
-	ideology = rexism
+	ideology = despotism_ideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Şeyhulislam Mehmed"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = theocratic_ideology
 	traits = {
 		#
 	}

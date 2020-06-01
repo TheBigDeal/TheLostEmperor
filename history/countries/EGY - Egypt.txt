@@ -19,12 +19,7 @@ set_politics = {
 	elections_allowed = no
 }
 
-set_popularities = {
-    liberalism = 25
-    rexism = 20
-    proletarianism = 5
-    absolutism = 50
-}
+
 
 create_country_leader = {
 	name = "Muhammad Naguib"
@@ -47,9 +42,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Farouk Muhammad Ali"
+	name = "Farouk I"
 	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
+	picture = "Portrait_Egypt_Farouk_I.tga"
 	ideology = absolutism_ideology
 	traits = {
 		#

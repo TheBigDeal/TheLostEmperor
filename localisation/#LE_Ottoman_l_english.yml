@@ -1,18 +1,16 @@
 ﻿l_english: 
 
 ### Political Parties ###
- TUR_absolutism_party:0 "Loyal League"
- TUR_royalism_party:0 "British National Party"
- TUR_rexism_party:0 "British Imperial Front"
- TUR_despotism_party:0 "Unity And Nationalist Association"
- TUR_conservatism_party:0 "Conservative Party (Tories)"
- TUR_liberalism_party:0 "Liberal Party"
- TUR_socialism_party:0 "Labour Party"
- TUR_theocracy_party:0 "Church Of England"
- TUR_labryscism_party:0 "New Model Republicans"
- TUR_mutualism_party:0 "British Congress of Trade Unions"
- TUR_collectivism_party:0 "British Congress of Trade Unions"
- TUR_proletarianism_party:0 "British Congress of Trade Unions"
+ TUR_rexism_party:0 "Turaniçiler"
+ TUR_labryscism_party:0 "Cumhuriyet Partisi"
+ TUR_collectivism_party:0 "Türkiye Komünist Partisi"
+ TUR_proletarianism_party:0 "Komünist Halk Partisi"
+ TUR_mutualism_party:0 "Halk Partisi"
+ TUR_socialism_party:0 "Demokrat Parti"
+ TUR_despotism_party:0 "Millet Partisi"
+ TUR_absolutism_party:0 "House of Osmangolu"
+ TUR_royalism_party:0 "House of Osmangolu"
+ TUR_theocracy_party:0 "Ulema"
  
 ### Ministers ###
  # Head Of State
@@ -39,7 +37,7 @@
  tur_propaganda_effort:0 "Propaganda Effort"
  tur_send_military:0 "Prepare Military"
  tur_subject_liberty_desire:0 "Rebellious Vassals"
- tur_subject_liberty_desire_desc:0 "Our Vassals have begun to reject our overlordship. With the situation with the rebels turning dire it is hard to keep everything in check.\n\n[IRQ.GetFlag]Iraq Liberty Desire: Test\n[HEJ.GetFlag]Hejaz Liberty Desire: Test\n[SHM.GetFlag]Jabal Shammar Liberty Desire: Test\n[EGY.GetFlag]Egypt Liberty Desire: Test\n[ASR.GetFlag]Asir Liberty Desire: Test\n[YEM.GetFlag]Yemen Liberty Desire: Test\n[LBA.GetFlag]Tripolitania Liberty Desire: Test"
+ tur_subject_liberty_desire_desc:0 "Our Vassals have begun to reject our overlordship. With the situation with the rebels turning dire it is hard to keep everything in check.\n\n[IRQ.GetFlag]Iraqi Liberty Desire: Test\n[HEJ.GetFlag]Hejazi Liberty Desire: Test\n[SHM.GetFlag]Shammari Liberty Desire: Test\n[EGY.GetFlag]Egyptian Liberty Desire: Test\n[ASR.GetFlag]Asir Liberty Desire: Test\n[LBA.GetFlag]Tripolitania Liberty Desire: [?TRIPOLITANIA_LIBERTY_DESIRE|2%%]\n[NEJ.GetFlag]Nejdi Liberty Desire: [?NEJD_LIBERTY_DESIRE|2%%]"
  tur_rebel_expansion_into_palestine:0 "Rebel Expansion Into Palestine"
  tur_rebel_expansion_into_lebanon:0 "Rebel Expansion Into Lebanon"
  tur_rebel_expansion_into_west_jordan:0 "Rebel Expansion Into West Jordan"

@@ -5,4 +5,13 @@
  HEJ_royalism_party:0 "Hashimate Dynasty"
  HEJ_rexism_party:0 "Hashimate Dynasty"
  HEJ_despotism_party:0 "Hashimate Dynasty"
+ HEJ_theocracy_party:0 "Majlis ul-Umma Al-Islamiyya"
+ HEJ_conservatism_party:0 "Al-Hizb ul-Watani"
+ HEJ_proletarianism_party:0 "Jaysh ut-Tahrir"
+ HEJ_labryscism_party:0 "Mujahideen Groups"
+
+### Country Names ###
+ HEJ_absolutism:0 "Sharifate of Hejaz"
+ HEJ_absolutism_DEF:0 "The Sharifate of Hejaz"
+ HEJ_absolutism_ADJ:0 "Hejazi"
  
