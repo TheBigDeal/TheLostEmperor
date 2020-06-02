@@ -8,6 +8,10 @@ JTH = {
 	color = rgb { 209 36 36 }
 	color_ui = rgb { 209 36 36 }
 }
+MAH = {
+	color = rgb { 138 101 66 }
+	color_ui = rgb { 138 101 66 }
+}
 
 MET = {
 	color = rgb { 66 177 138 }
