@@ -93,7 +93,10 @@ technologies = {
 		MONTHLY_POPULATION = 0.02
 		production_speed_buildings_factor = 0.05
 
-
+		path = {
+			leads_to_tech = increased_urbanization1
+			research_cost_coeff = 1
+		}
 		
 		path = {
 			leads_to_tech = agriculture3 
@@ -113,7 +116,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -128,10 +131,7 @@ technologies = {
 
 		MONTHLY_POPULATION = 0.02
 
-		path = {
-			leads_to_tech = increased_urbanization1
-			research_cost_coeff = 1
-		}
+		
 		path = {
 			leads_to_tech = agriculture4
 			research_cost_coeff = 1
@@ -149,7 +149,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -182,7 +182,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -240,7 +240,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 9 }
+			position = { x = 4 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -266,7 +266,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 11 }
+			position = { x = 4 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -298,7 +298,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 5 y = 13 }
+			position = { x = 4 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -324,54 +324,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 5 y = 15 }
-		}
-		
-		ai_will_do = {
-			factor = 25
-		}
-		
-		categories = {
-			industry
-		}
-	}
-	factory_limit3 = {
-
-
-		global_building_slots_factor = 0.20
-
-		path = {
-			leads_to_tech = factory_limit4
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 1937
-		
-		folder = {
-			name = industry_folder
-			position = { x = 5 y = 17 }
-		}
-		
-		ai_will_do = {
-			factor = 25
-		}
-		
-		categories = {
-			industry
-		}
-	}
-	factory_limit4 = {
-
-
-		global_building_slots_factor = 0.20
-		
-		research_cost = 2
-		start_year = 1940
-		
-		folder = {
-			name = industry_folder
-			position = { x = 5 y = 19 }
+			position = { x = 4 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -528,7 +481,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 12 y = 5 }
+			position = { x = 12 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -675,11 +628,11 @@ technologies = {
 			building = infrastructure
 			level = 7	#Infrastructure up to level 5 is availble for everyone
 		}
-		production_speed_infrastructure_factor	= 0.15
+		production_speed_infrastructure_factor	= 0.10
 		
 		
 		path = {
-			leads_to_tech = advanced_infrastructure 
+			leads_to_tech = improved_infrastructure 
 			research_cost_coeff = 1
 		}
 			
@@ -705,14 +658,49 @@ technologies = {
 			industry
 		}
 	}
-	
+	improved_infrastructure = {
+
+		enable_building = {
+			building = infrastructure
+			level = 9
+		}
+		production_speed_infrastructure_factor	= 0.10
+		
+		
+		path = {
+			leads_to_tech = advanced_infrastructure 
+			research_cost_coeff = 1
+		}
+			
+		research_cost = 2
+		start_year = 1880
+		
+		folder = {
+			name = industry_folder
+			position = { x = 7 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 12
+			
+			#modifier = {
+			#	factor = 38
+			#	has_idea = (startup industrialist)
+			#}
+			
+		}
+		
+		categories = {
+			industry
+		}
+	}
 	advanced_infrastructure = {
 
 		enable_building = {
 			building = infrastructure
 			level = 9
 		}
-		production_speed_infrastructure_factor	= 0.15
+		production_speed_infrastructure_factor	= 0.10
 		
 		
 		path = {
@@ -725,7 +713,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 7 y = 6 }
+			position = { x = 7 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -757,19 +745,13 @@ technologies = {
             automobile_industry = 1
         }
 
-
-		
-		path = {
-			leads_to_tech = factory_limit1 
-			research_cost_coeff = 1
-		}
 			
 		research_cost = 1.5
 		start_year = 1928
 		
 		folder = {
 			name = industry_folder
-			position = { x = 7 y = 11 }
+			position = { x = 7 y = 18 }
 		}
 		
 		ai_will_do = {

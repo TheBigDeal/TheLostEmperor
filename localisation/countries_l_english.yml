@@ -2,8 +2,13 @@
 ###############################
 #MODS
 ###############################
-
-
+ MJG:0 "Mujahideen Groups"
+ MJG_DEF:0 "Mujahideen Groups"
+ MJG_ADJ:0 "Mujahideen"
+ 
+ JTH:0 "Jaysh ut-Tahrir"
+ JTH_DEF:0 "Jaysh ut-Tahrir"
+ JTH_ADJ:0 "Jaysh ut-Tahrir"
  #Holy Roman Empire
  ###############################
  ULM:0 "Ulm"
