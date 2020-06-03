@@ -88,6 +88,10 @@ if = {
 		target = ASR
 		autonomous_state = autonomy_vilayet
 	}
+	set_autonomy = {
+		target = ASW
+		autonomous_state = autonomy_vilayet
+	}
 	else = {
 		puppet = IRQ
 		puppet = EGY
@@ -96,6 +100,7 @@ if = {
 		puppet = ASR
 		puppet = NEJ
 		puppet = SHM
+		puppet = ASW
 	}
 }
 
@@ -222,8 +227,25 @@ NEJ = {
 	}
 }
 
+ASW = {
+	set_politics = {	
+		ruling_party = despotism
+		last_election = "1920.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+		theocracy = 5
+		absolutism = 10
+		labryscism = 5
+		royalism = 25
+		despotism = 55
+	}
+}
+
 create_country_leader = {
-	name = "Mehmed Osman VI"
+	name = "Mehmed Vahideddin VI"
 	desc = ""
 	picture = "Portrait_Mehmed_VI.tga"
 	expire = "1965.1.1"
@@ -234,7 +256,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Mehmed Osman VI"
+	name = "Mehmed Vahideddin VI"
 	desc = ""
 	picture = "Portrait_Mehmed_VI.tga"
 	expire = "1965.1.1"

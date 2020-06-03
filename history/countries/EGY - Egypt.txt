@@ -42,9 +42,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Farouk I"
+	name = "Fuad I"
 	desc = ""
-	picture = "Portrait_Egypt_Farouk_I.tga"
+	picture = "Portrait_Egypt_Fuad_I.tga"
 	ideology = absolutism_ideology
 	traits = {
 		#

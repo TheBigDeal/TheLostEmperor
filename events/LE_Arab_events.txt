@@ -40,6 +40,12 @@ country_event = {
 				prioritize_location = { NOT = { is_capital = yes }}
 			}
 		} 
+		MJG = {
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}
+		}
 	}
 	option = { #duh
 		name = le_arab.1.a
