@@ -60,5 +60,35 @@ scripted_gui = {
 			#}
 		}
 	}
+	show_sunni_radicalism = {
+		context_type = player_context
+		window_name = "religion_sunni_radicalism_container"
+		visible = {
+            has_idea = le_religion_sunni
+		}
+		effects = {
+
+		}
+	}
+	show_sunni_radicalism = {
+		context_type = player_context
+		window_name = "religion_shia_radicalism_container"
+		visible = {
+            has_idea = le_religion_shia
+		}
+		effects = {
+
+		}
+	}
+	show_sunni_radicalism = {
+		context_type = player_context
+		window_name = "religion_ibadi_radicalism_container"
+		visible = {
+            has_idea = le_religion_ibadi
+		}
+		effects = {
+
+		}
+	}
 }
 

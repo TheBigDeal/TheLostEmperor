@@ -5,6 +5,10 @@ IM1 = "countries/ColoniaTanganica.txt"
 IM2 = "countries/ColoniaPapua.txt"
 IM3 = "countries/ColoniaOrientaleItaliana.txt"
 
+MJG = "countries/Mujahideen_Groups.txt"
+JTH = "countries/Jaysh_ut-Tahrir.txt"
+MAH = "countries/Mahdist_State.txt"
+ASW = "countries/Aswan.txt"
 
 #AFRICA
 MET = "countries/Metz.txt"

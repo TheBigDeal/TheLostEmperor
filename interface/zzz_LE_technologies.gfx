@@ -1,5 +1,61 @@
 spriteTypes = {
 	Spritetype = {
+		name = "GFX_zeppelin1_medium"
+		textureFile = "gfx/interface/technologies/zeppelin1.dds"
+	}
+	Spritetype = {
+		name = "GFX_zeppelin2_medium"
+		textureFile = "gfx/interface/technologies/zeppelin2.dds"
+	}
+	Spritetype = {
+		name = "GFX_helium_zeppelin1_medium"
+		textureFile = "gfx/interface/technologies/zeppelin3.dds"
+	}
+	Spritetype = {
+		name = "GFX_nuclear_powered_zeppelin_medium"
+		textureFile = "gfx/interface/technologies/zeppelin4.dds"
+	}
+	Spritetype = {
+		name = "GFX_observation_balloon_medium"
+		textureFile = "gfx/interface/technologies/observation_balloon.dds"
+	}
+	Spritetype = {
+		name = "GFX_engine_large"
+		textureFile = "gfx/interface/technologies/engine.dds"
+	}
+	Spritetype = {
+		name = "GFX_radial_engine_medium"
+		textureFile = "gfx/interface/technologies/radial_engine.dds"
+	}
+	Spritetype = {
+		name = "GFX_scout_plane0_medium"
+		textureFile = "gfx/interface/technologies/scout_biplane.dds"
+	}
+	Spritetype = {
+		name = "GFX_jet_scout_plane_medium"
+		textureFile = "gfx/interface/technologies/jet_scout_plane.dds"
+	}
+	Spritetype = {
+		name = "GFX_experimental_aircraft_medium"
+		textureFile = "gfx/interface/technologies/expirimental_aircraft.dds"
+	}
+	Spritetype = {
+		name = "GFX_triplane_fighter_medium"
+		textureFile = "gfx/interface/technologies/triplane_fighter.dds"
+	}
+	Spritetype = {
+		name = "GFX_biplane_bomber_medium"
+		textureFile = "gfx/interface/technologies/biplane_bomber.dds"
+	}
+	Spritetype = {
+		name = "GFX_biplane_fighter_medium"
+		textureFile = "gfx/interface/technologies/biplane_fighter.dds"
+	}
+	Spritetype = {
+		name = "GFX_early_fighter_medium"
+		textureFile = "gfx/interface/technologies/early_fighter.dds"
+	}
+	Spritetype = {
 		name = "GFX_industrial_realisation_medium"
 		textureFile = "gfx/interface/technologies/industrial_realization.dds"
 	}
@@ -270,6 +326,10 @@ spriteTypes = {
 	Spritetype = {
 		name = "GFX_sub_machine_gun_2_medium"
 		textureFile = "gfx/interface/technologies/smg2.dds"
+	}
+	Spritetype = {
+		name = "GFX_transport_plane_medium"
+		textureFile = "gfx/interface/technologies/transport_plane_equipment.dds"
 	}
 	Spritetype = {
 		name = "GFX_sub_machine_gun_3_medium"

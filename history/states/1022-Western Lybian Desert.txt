@@ -1,0 +1,17 @@
+state={
+	id=1022
+	name="STATE_1022"
+	history={
+		owner = LBA
+		buildings = {
+			infrastructure = 0
+			industrial_complex = 1
+		}
+		add_core_of = LBA
+	}
+	provinces={
+		1060 1140 11951 
+	}
+	manpower=41536
+	buildings_max_level_factor=1.000
+}
