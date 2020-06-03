@@ -32,7 +32,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Sudan_Abdurrahman_Mahdi.dds"
 	expire = "1965.1.1"
-	ideology = absolutism_ideology
+	ideology = rexism_ideology
 	traits = {
 		#
 	}
