@@ -26,9 +26,9 @@ set_convoys = 5
 
 #Victor Emmanuel III of Italy after 39
 create_country_leader = {
-	name = "Abderrahman Abusaif"
-	desc = "POLITICS_KING_ZOG_DESC"
-	picture = "Portrait_Albania_King_Zog.dds"
+	name = "Abdelquddus Abusaif"
+	desc = ""
+	picture = "Portrait_Mujahideen_Abdelquddus.dds"
 	expire = "1965.1.1"
 	ideology = labryscism_ideology
 	traits = {

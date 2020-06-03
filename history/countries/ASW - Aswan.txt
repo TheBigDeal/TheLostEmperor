@@ -15,7 +15,7 @@ set_convoys = 5
 
 create_country_leader = {
 	name = "Mostafa el-Nahhas"
-	desc = "POLITICS_KING_ZOG_DESC"
+	desc = ""
 	picture = "Portrait_Aswan_Mostafa_Nahhas.dds"
 	expire = "1965.1.1"
 	ideology = despotism_ideology
