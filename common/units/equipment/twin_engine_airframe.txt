@@ -337,6 +337,7 @@ equipments = {
 		naval_strike_attack = 9
 		naval_strike_targetting = 10
 	}
+	
 	scout_plane_equipment = {
 		year = 1933
 
@@ -375,7 +376,24 @@ equipments = {
 		manpower = 40
 		fuel_consumption = 0.26
 	}
+	
+	scout_plane_equipment_0 = {
+		year = 1936
 
+		archetype = scout_plane_equipment
+		priority = 100
+		
+		air_range = 500
+		maximum_speed = 500
+		air_agility = 15
+		air_attack = 0
+		air_defence = 6
+		
+		build_cost_ic = 20
+		naval_strike_attack = 0
+		naval_strike_targetting = 0
+	}
+	
 	scout_plane_equipment_1 = {
 		year = 1936
 
@@ -410,6 +428,28 @@ equipments = {
 		resources = {		
 			aluminium = 3
 			rubber = 1
+		}
+		naval_strike_attack = 0
+		naval_strike_targetting = 0
+	}
+	
+	scout_plane_equipment_3 = {
+		year = 1940
+
+		archetype = scout_plane_equipment
+		parent = scout_plane_equipment_1
+		priority = 100
+		
+		air_range = 2600
+		maximum_speed = 850
+		air_agility = 50
+		air_attack = 0
+		air_defence = 25
+
+		build_cost_ic = 35
+		resources = {		
+			aluminium = 6
+			rubber = 3
 		}
 		naval_strike_attack = 0
 		naval_strike_targetting = 0

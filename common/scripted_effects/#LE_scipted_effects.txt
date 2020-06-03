@@ -207,8 +207,8 @@ recieve_daily_money = {
 	add_to_variable = { treasury = daily_income }
 	clamp_variable = {
 		var = treasury
-		min = -20000000
-		max = 20000000
+		min = -2000000
+		max = 2000000
 	}
 }
 

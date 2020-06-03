@@ -1,29 +1,36 @@
+
 state={
 	id=551
 	name="STATE_551"
-	manpower = 1993507
 	resources={
-		cotton = 8
+		cotton=8.000
 	}
-	state_category = rural
-	history = {
+
+	history={
 		owner = MAH
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			12725 = {
 				naval_base = 3
+
 			}
+
 		}
 		victory_points = {
-			12806 3
+			12806 3 
 		}
 		victory_points = {
-			12725 1
+			12725 1 
 		}
 		add_core_of = MAH
+
 	}
+
 	provinces={
-		1977 2003 2046 2088 4963 7925 7989 8105 10743 10745 10784 10902 12725 12796 12806 12826 12862 12881 4138 12836 4961
+		2088 4961 7925 10743 10784 10900 12796 12806 12826 12836 12862 12881 
 	}
+	manpower=1993507
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

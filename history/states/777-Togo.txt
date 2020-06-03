@@ -4,11 +4,12 @@ state={
 	name="STATE_777"
 
 	history={
-		owner = MAH
+		owner = EGY
+
 	}
 
 	provinces={
-		7987 10900 
+		4138 
 	}
 	manpower=24532
 	buildings_max_level_factor=1.000

@@ -5,7 +5,7 @@ state={
 	state_category = rural
 	
 	history={
-		owner = ATA
+		owner = EGY
 		victory_points = {
 			12049 10 
 		}
@@ -13,9 +13,8 @@ state={
 			infrastructure = 0
 
 		}
-		add_core_of = ATA
-		add_core_of = TUR
-		add_core_of = GBR
+		add_core_of = EGY
+		add_claim_by = GBR
 
 	}
 	

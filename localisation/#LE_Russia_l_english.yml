@@ -139,3 +139,7 @@
  RUS_CALL_FOR_ELECTION:0 "Call For Elections"
  RUS_BLOCKADE_SOVIET_SUPPLIERS:0 "Blockade Soviet Suppliers"
 ### Events ###
+ le_russia.11.t:0 "Russia asks for Aid"
+ le_russia.11.d:0 "Russia is asking for aid against their internal communist threat. Having a large communist nation such as russia would be be quite a hinderence on the world."
+ le_russia.11.a:0 "Accept"
+ le_russia.11.b:0 "Decline"

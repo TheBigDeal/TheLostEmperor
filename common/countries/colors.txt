@@ -1,5 +1,10 @@
 #reload countrycolors
 
+ASW = {
+	color = rgb { 227 159 70 }
+	color_ui = rgb { 227 159 70 }
+}
+
 MJG = {
 	color = rgb { 45 46 43 }
 	color_ui = rgb { 45 46 43 }

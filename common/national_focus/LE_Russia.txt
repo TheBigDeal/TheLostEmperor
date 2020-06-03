@@ -89,7 +89,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_REQUEST_BRITISH_AID
-		icon = GFX_unknown
+		icon = GFX_focus_chi_british_cooperation
 		prerequisite = { focus = RUS_CALL_IN_THE_MERCENARIES }
 		x = 0
 		y = 3
