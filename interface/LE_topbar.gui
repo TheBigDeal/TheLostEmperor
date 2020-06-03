@@ -225,7 +225,7 @@ guiTypes = {
 		iconType = {
 			name ="current_radicalism_icon"
 			spriteType = "GFX_current_radicalism"
-			position = { x= 5 y = 1 }
+			position = { x= 5 y = 0 }
 		}
 		instantTextBoxType = {
 			name ="current_sunni_radicalism_text"
@@ -252,7 +252,7 @@ guiTypes = {
 		iconType = {
 			name ="current_radicalism_icon"
 			spriteType = "GFX_current_radicalism"
-			position = { x= 5 y = 1 }
+			position = { x= 5 y = 0 }
 		}
 		instantTextBoxType = {
 			name ="current_radicalism_text"
@@ -279,7 +279,7 @@ guiTypes = {
 		iconType = {
 			name ="current_radicalism_icon"
 			spriteType = "GFX_current_radicalism"
-			position = { x= 5 y = 1 }
+			position = { x= 5 y = 0 }
 		}
 		instantTextBoxType = {
 			name ="current_radicalism_text"

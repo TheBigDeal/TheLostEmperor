@@ -311,3 +311,62 @@ country_event = { #THE FATE OF THE CAUCASUS
 		set_country_flag = FLAG_TCSSR
 	}
 }
+
+country_event = { #Russia requests aid
+	id = le_russia.11
+	title = le_russia.11.t
+	desc = le_russia.11.d
+	is_triggered_only = yes
+	option = { #accept
+		name = le_russia.11.a
+		RUS = { set_country_flag = accepted_british_support}
+		RUS = { country_event = { id = le_russia.12 }} 
+		send_equipment = {
+			equipment = CAS_equipment
+			amount = 100
+			target = RUS
+		}
+		diplomatic_relation = {
+			country = RUS
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+	option = { #decline
+		name = le_russia.11.b
+		RUS = { country_event = { id = le_russia.13 } }
+	}
+}
+country_event = { #Britain accepted our aid
+	id = le_russia.12
+	title = le_russia.12.t
+	desc = le_russia.12.d
+	is_triggered_only = yes
+	option = { #accept
+		name = le_russia.12.a
+		RUS = { set_country_flag = accepted_british_support}
+		effect_tooltip 
+			send_equipment = {
+				equipment = close_air_support
+				amount = 100
+				target = RUS
+			}
+			diplomatic_relation = {
+				country = RUS
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+	}
+}
+country_event = { #Britain refused our aid
+	id = le_russia.13
+	title = le_russia.13.t
+	desc = le_russia.13.d
+	is_triggered_only = yes
+	option = { #accept
+		name = le_russia.13.a
+		RUS = { set_country_flag = accepted_british_support}
+		country_event = {  }
+	}
+}

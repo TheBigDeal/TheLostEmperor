@@ -75,9 +75,9 @@
 ### Opinion Modifier ###
 
 ### Tooltips ###
-
+ merc_tt:0 "§YCost§! ( £texticon_money  ) 1000"
 ### Global / Country Flags ###
-
+ accepted_british_support:0 "§YBritish Accepted Support§!"
 ### Decisions ###
  RUSSIAN_CIVIL_WAR:0 "Russian - Soviet Civil War"
  CAUCASUS_REVOLUTION:0 "Caucasus Revolution"

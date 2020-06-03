@@ -7,7 +7,9 @@ set_technology = {
 	tech_support = 1
 	tech_recon = 1
 }
-
+add_ideas = {
+	le_religion_sunni
+}
 set_politics = {	
 	ruling_party = rexism
 	last_election = "1933.3.5"

@@ -5,13 +5,15 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 3100 }
 	focus = {
 		id = RUS_DECLARE_STATE_OF_EMERGENCY
-		icon = GFX_unknown
+		icon = GFX_generic_political_oppression
 		mutually_exclusive = { focus = RUS_BUSINESS_AS_USUAL}
 		x = 5
 		y = 0
 		cost = 10
 		ai_will_do = {factor = 10}
 		completion_reward = {
+			add_stability = -0.10
+			add_war_support = -0.20
 			add_political_power = 100		
 		}
 	}
@@ -24,12 +26,12 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			
 		}
 	}
 	focus = {
 		id = RUS_CALL_IN_THE_MERCENARIES
-		icon = GFX_unknown
+		icon = GFX_red_army_officers
 		prerequisite = { focus = RUS_READY_THE_RESERVES }
 		mutually_exclusive = { focus = RUS_ONE_LOYAL_ARMY }
 		x = 4
@@ -37,7 +39,52 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			subtract_from_variable = { current_money = 1000 }
+			custom_effect_tooltip = merc_tt
+			capital_scope  = {
+				create_unit = {
+					division = "name = \"Strelkovaya Diviziya\" 
+					division_template = \"Strelkovaya Diviziya\" 
+					start_experience_factor = 0.5 
+					start_equipment_factor = 0.5"
+					owner = RUS
+				}
+				create_unit = {
+					division = "name = \"Strelkovaya Diviziya\" 
+					division_template = \"Strelkovaya Diviziya\" 
+					start_experience_factor = 0.5 
+					start_equipment_factor = 0.5"
+					owner = RUS
+				}
+				create_unit = {
+					division = "name = \"Strelkovaya Diviziya\" 
+					division_template = \"Strelkovaya Diviziya\" 
+					start_experience_factor = 0.5 
+					start_equipment_factor = 0.5"
+					owner = RUS
+				}
+				create_unit = {
+					division = "name = \"Strelkovaya Diviziya\" 
+					division_template = \"Strelkovaya Diviziya\" 
+					start_experience_factor = 0.5 
+					start_equipment_factor = 0.5"
+					owner = RUS
+				}
+				create_unit = {
+					division = "name = \"Strelkovaya Diviziya\" 
+					division_template = \"Strelkovaya Diviziya\" 
+					start_experience_factor = 0.5 
+					start_equipment_factor = 0.5"
+					owner = RUS
+				}
+				create_unit = {
+					division = "name = \"Strelkovaya Diviziya\" 
+					division_template = \"Strelkovaya Diviziya\" 
+					start_experience_factor = 0.5 
+					start_equipment_factor = 0.5"
+					owner = RUS
+				}
+			}
 		}
 	}
 	focus = {
@@ -49,7 +96,7 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			GBR = { country_event = { id = le_russia.11 = 2} }
 		}
 	}
 	focus = {
@@ -59,6 +106,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		cost = 10
+		available = { has_country_flag = accepted_british_support }
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
