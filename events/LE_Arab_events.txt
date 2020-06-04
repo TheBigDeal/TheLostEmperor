@@ -14,8 +14,8 @@ country_event = {
 	  OR = {
 	   original_tag = HEJ
 	   original_tag = NEJ
-	   original_tag = MAH
 	  }
+	  has_government = labryscism
 	 }
 	 has_idea = le_religion_sunni
 	 labryscism > 0.4
@@ -73,7 +73,9 @@ country_event = {
 	 has_idea = le_religion_shia
 	 has_idea = le_religion_ibadi
 	 }
+	 FROM = {
 	 total_communist_support > 40
+	 }
 	}
 	immediate = {
 		random_owned_controlled_state = {
@@ -112,6 +114,58 @@ country_event = {
 	option = { #TAHRIIIIIIR
 		name = le_arab.1.b
 		JTH = {
+			change_tag_from = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = le_arab.3 # Ikhwan rebel
+	title = le_arab.3.t
+	desc = le_arab.3.d
+	picture = GFX_report_event_generic_read_write
+	trigger = {
+	 original_tag = NEJ
+	 has_idea = le_religion_sunni
+	 labryscism > 0.4
+	}
+	immediate = {
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = IKH
+				prioritize_location = { NOT = { is_capital = yes }}
+			}
+			create_unit = {
+				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = IKH
+				prioritize_location = { NOT = { is_capital = yes }}
+			}
+			create_unit = {
+				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = IKH
+				prioritize_location = { NOT = { is_capital = yes }}
+			}
+			create_unit = {
+				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = IKH
+				prioritize_location = { NOT = { is_capital = yes }}
+			}
+		} 
+		IKH = {
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+	}
+	option = { #duh
+		name = le_arab.3.a
+		add_political_power = 5
+	}
+	option = { #JIHADDDDDDD
+		name = le_arab.3.b
+		IKH = {
 			change_tag_from = ROOT
 		}
 	}
