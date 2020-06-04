@@ -17,7 +17,7 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "state_core"
-		position = {x=434 y=60}
+		position = {x=434 y=62}
 		iconType = {
 			name = "core_icon_ic"
 			position = {x=0 y=0}
@@ -27,12 +27,76 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "state_claim"
-		position = {x=434 y=60}
-		iconType = {
-			name = "claim_icon_ic"
+		position = {x=434 y=62}
+		buttonType = {
+			name = "claim_button"
 			position = {x=0 y=0}
 			spriteType = "GFX_claim_state_button"
-			pdx_tooltip = "not_in_hre"
+			pdx_tooltip = "claim_state"
+		}
+		iconType = {
+			name = "has_claim_button"
+			position = {x=0 y=0}
+			spriteType = "GFX_has_claim_state_button"
+		}
+	}
+	
+	
+	containerWindowType = {
+		name = "state_claim_container"
+		position = { x=0 y=0}
+		size = { width=352%% height=100%% }
+		containerWindowType = { #Background
+			name = "conscription_laws_bg"
+			size = { width=450 height=100%% }
+			position = { x=720 y=360}
+			moveable = yes
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_pol_goal_popup_bg"
+			}
+			instantTextboxType = {
+				name = "state_claim_textbox"
+				position = { x = 10 y = 30 }
+				font = "hoi_24mbs"
+				text = "Replace Political Law"
+				maxWidth = 460
+				maxHeight = 400
+				fixedsize = no
+				format = center	
+				alwaystransparent = no
+			}
+			instantTextboxType = {
+				name = "state_claim_info"
+				position = { x = 50 y = 100 }
+				font = "hoi_24mbs"
+				text = "Are you sure you would like to switch laws?"
+				maxWidth = 400
+				maxHeight = 400
+				fixedsize = no
+				format = center	
+				alwaystransparent = no
+			}
+			buttonType = {
+				name = "state_claim_close_button"
+				position = { x = 80 y = 320 }
+				quadTextureSprite ="GFX_button_148x34"	
+				buttonText = "CLOSE"
+				buttonFont = "hoi_20b"
+				Orientation = "UPPER_LEFT"
+				clicksound = click_default
+				shortcut = "ESCAPE"
+			}
+			buttonType = {
+				name = "state_claim_ok_button"
+				position = { x = 260 y = 320 }
+				quadTextureSprite ="GFX_button_148x34"	
+				buttonText = "OK"
+				buttonFont = "hoi_20b"
+				Orientation = "UPPER_LEFT"
+				clicksound = click_default
+				shortcut = "RETURN"
+			}
 		}
 	}
 }

@@ -10,4 +10,16 @@ country = {
 			production_speed_infrastructure_factor	= 0.10
 		}
 	}
+	rus_readied_the_reserves = {
+		picture = generic_collectivist_army
+		modifier = {
+			training_time_factor = -0.10
+			war_support_factor = -0.10
+		}
+	}
+	RUS_THE_SOUND_TOLL = {
+		modifier = {
+			trade_opinion_factor = -0.25
+		}
+	}
 }

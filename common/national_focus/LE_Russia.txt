@@ -19,14 +19,14 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_READY_THE_RESERVES
-		icon = GFX_unknown
+		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = RUS_DECLARE_STATE_OF_EMERGENCY }
 		x = 5
 		y = 1
 		cost = 10
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			
+			add_ideas = { rus_readied_the_reserves }
 		}
 	}
 	focus = {
@@ -101,7 +101,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_A_TRAINING_GROUND_FOR_THE_RAF
-		icon = GFX_unknown
+		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = RUS_REQUEST_BRITISH_AID }
 		x = 0
 		y = 4
@@ -109,36 +109,40 @@ focus_tree = {
 		available = { has_country_flag = accepted_british_support }
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			air_experience = 50
+			GBR = { send_equipment = { equipment = fighter_equipment amount = 150 target = RUS } }
 		}
 	}
 	focus = {
 		id = RUS_REQUEST_DANISH_AID
-		icon = GFX_unknown
+		icon = GFX_focus_attack_denmark
 		prerequisite = { focus = RUS_CALL_IN_THE_MERCENARIES }
 		x = 2
 		y = 3
 		cost = 10
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			DEN = { country_event = { id = le_russia.14 } }
 		}
 	}
 	focus = {
 		id = RUS_BLOCKADE_SOVIET_SUPPLIERS
-		icon = GFX_unknown
+		icon = GFX_focus_generic_cruiser2
 		prerequisite = { focus = RUS_REQUEST_DANISH_AID }
 		x = 2
 		y = 4
 		cost = 10
 		ai_will_do = {factor = 10}
+		available = {
+			has_country_flag = accepted_danish_support
+		}
 		completion_reward = {
-			add_political_power = 100		
+			SOV = {add_ideas = { RUS_THE_SOUND_TOLL }}
 		}
 	}
 	focus = {
 		id = RUS_REQUEST_PRUSSIAN_AID
-		icon = GFX_unknown
+		icon = GFX_focus_support_prussia
 		prerequisite = { focus = RUS_CALL_IN_THE_MERCENARIES }
 		x = 4
 		y = 3
@@ -150,7 +154,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_EMPLOY_GERMAN_WEAPON_DESIGNER
-		icon = GFX_unknown
+		icon = GFX_focus_secret_rearmament
 		prerequisite = { focus = RUS_REQUEST_PRUSSIAN_AID }
 		x = 4
 		y = 4
@@ -174,7 +178,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_ONE_LOYAL_ARMY
-		icon = GFX_unknown
+		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = RUS_READY_THE_RESERVES }
 		mutually_exclusive = { focus = RUS_CALL_IN_THE_MERCENARIES }
 		x = 6

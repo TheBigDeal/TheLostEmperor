@@ -25,6 +25,10 @@ spriteTypes = {
 		textureFile = "gfx//interface/claim_state_button.dds"
 	}
 	SpriteType = {
+		name = "GFX_has_claim_state_button"
+		textureFile = "gfx//interface/has_claim_state_button.dds"
+	}
+	SpriteType = {
 		name = "GFX_imperialeagle"
 		textureFile = "gfx//interface/imperialeagle.tga"
 	}

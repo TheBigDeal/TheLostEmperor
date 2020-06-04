@@ -15,12 +15,44 @@ scripted_gui = {
 		context_type = selected_state_context
 		window_name = "state_core"
 		parent_window_token = selected_state_view
-		visible = { is_controlled_by=ROOT }
+		visible = { is_controlled_by = ROOT }
 	}
 	claim_icon = {
 		context_type = selected_state_context
 		window_name = "state_claim"
 		parent_window_token = selected_state_view
-		visible = { NOT = {is_controlled_by=ROOT } }
+		visible = { NOT = {is_controlled_by = ROOT } }
+		triggers = {
+			has_claim_button_visible = { is_claimed_by = ROOT }
+		}
+		effects = {
+			claim_button_click = { 
+				if = {
+					limit = { 
+						ROOT = { check_variable = { open_claim_container = 0 } } 
+						ROOT = { has_political_power > 299 }
+					}
+					ROOT = { set_variable = { open_claim_container = 1 } }
+				}
+				else = {
+					ROOT = { set_variable = { open_claim_container = 0 } }
+				}
+			}
+		}
+	}
+	claim_container_open = {
+		context_type = selected_state_context
+		window_name = "state_claim_container"
+		visible = { ROOT = { check_variable = { open_claim_container = 1 } } }
+		effects = {
+			state_claim_close_button_click = { 
+				ROOT = { set_variable = { open_claim_container = 0 } }
+			}
+			state_claim_ok_button_click = {
+				add_claim_by = ROOT
+				ROOT = { add_political_power = -300 }
+				ROOT = { set_variable = { open_claim_container = 0 } }
+			}
+		}
 	}
 }

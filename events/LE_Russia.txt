@@ -319,7 +319,6 @@ country_event = { #Russia requests aid
 	is_triggered_only = yes
 	option = { #accept
 		name = le_russia.11.a
-		RUS = { set_country_flag = accepted_british_support}
 		RUS = { country_event = { id = le_russia.12 }} 
 		send_equipment = {
 			equipment = CAS_equipment
@@ -345,7 +344,7 @@ country_event = { #Britain accepted our aid
 	option = { #accept
 		name = le_russia.12.a
 		RUS = { set_country_flag = accepted_british_support}
-		effect_tooltip 
+		effect_tooltip = {
 			send_equipment = {
 				equipment = close_air_support
 				amount = 100
@@ -366,7 +365,66 @@ country_event = { #Britain refused our aid
 	is_triggered_only = yes
 	option = { #accept
 		name = le_russia.13.a
-		RUS = { set_country_flag = accepted_british_support}
-		country_event = {  }
+
 	}
 }
+country_event = { #Russia requests aid
+	id = le_russia.14
+	title = le_russia.14.t
+	desc = le_russia.14.d
+	is_triggered_only = yes
+	option = { #accept
+		name = le_russia.14.a
+		RUS = { country_event = { id = le_russia.15 }} 
+		send_equipment = {
+			equipment = convoy
+			amount = 100
+			target = RUS
+		}
+		diplomatic_relation = {
+			country = RUS
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+	option = { #decline
+		name = le_russia.14.b
+		RUS = { country_event = { id = le_russia.16 } }
+	}
+}
+country_event = { #Denmark accepted our aid
+	id = le_russia.15
+	title = le_russia.15.t
+	desc = le_russia.15.d
+	is_triggered_only = yes
+	option = { #accept
+		name = le_russia.15.a
+		RUS = { set_country_flag = accepted_danish_support}
+		effect_tooltip = {
+			send_equipment = {
+				equipment = convoy
+				amount = 100
+				target = RUS
+			}
+			diplomatic_relation = {
+				country = RUS
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+	}
+}
+country_event = { #Denmark refused our aid
+	id = le_russia.16
+	title = le_russia.16.t
+	desc = le_russia.16.d
+	is_triggered_only = yes
+	option = { #accept
+		name = le_russia.16.a
+
+	}
+}
+
+
+
+

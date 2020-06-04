@@ -133,7 +133,7 @@ wargoal_types = {
 		}
 
 		available = {
-
+			always = no
 		}
 
 		take_states = {
