@@ -1,7 +1,11 @@
 ﻿l_english: 
 
 ### Political Parties ###
- #
+ ASR_absolutism_party:0 "House of Idris"
+ ASR_theocracy_party:0 "House of Idris"
+ ASR_labryscism_party:0 "Mujahideen Groups"
+ ASR_royalism_party:0 "House of Idris"
+ ASR_proletarianism_party:0 "Jaysh ut-Tahrir"
 
 ### Country Names ###
  ASR_absolutism:0 "Emirate of Asir"

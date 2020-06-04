@@ -26,12 +26,20 @@ set_politics = {
 }
 
 set_popularities = {
-    liberalism = 15
-    rexism = 0
-    proletarianism = 30
-    despotism = 20
-    absolutism = 35
-}
+		conservatism = 11
+		liberalism = 0
+		socialism = 0 
+		labryscism = 6
+		rexism = 0
+		despotism = 5
+		royalism = 33
+		theocracy = 17
+		absolutism = 5
+		proletarianism = 23
+		collectivism = 0
+  mutualism = 0
+	}
+
 
 create_country_leader = {
 	name = "Reza Shah Pahlavi"
@@ -66,23 +74,6 @@ create_country_leader = {
 		#
 	}
 }
-
-
-	set_politics = {	
-		ruling_party = absolutism
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-}
-
-    set_popularities = {
-        liberalism = 0
-        rexism = 0
-        proletarianism = 0
-        absolutism = 100
-    }
-}
-
 create_corps_commander = {
 	name = "Hasan Arfa"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"

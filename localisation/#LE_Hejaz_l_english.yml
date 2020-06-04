@@ -7,7 +7,11 @@
  HEJ_despotism_party:0 "Hashimate Dynasty"
  HEJ_theocracy_party:0 "Majlis ul-Umma Al-Islamiyya"
  HEJ_conservatism_party:0 "Al-Hizb ul-Watani"
+ HEJ_liberalism_party:0 "Al-Hizb ul-Watani"
+ HEJ_socialism_party:0 "Al-Hizb ul-Watani"
  HEJ_proletarianism_party:0 "Jaysh ut-Tahrir"
+ HEJ_mutualism_party:0 "Jaysh ut-Tahrir"
+ HEJ_collectivism_party:0 "Jaysh ut-Tahrir"
  HEJ_labryscism_party:0 "Mujahideen Groups"
 
 ### Country Names ###
