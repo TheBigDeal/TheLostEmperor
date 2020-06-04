@@ -18,25 +18,25 @@ set_politics = {
 }
 
 set_popularities = {
-    liberalism = 20
+    royalism = 17
     labryscism = 10
-    theocracy = 20
-    rexism = 50
+    theocracy = 33
+    rexism = 40
 }
 
 set_convoys = 5
 
 #Victor Emmanuel III of Italy after 39
-#create_country_leader = {
-#	name = "King Zog"
-#	desc = "POLITICS_KING_ZOG_DESC"
-#	picture = "Portrait_Albania_King_Zog.dds"
-#	expire = "1965.1.1"
-#	ideology = absolutism_ideology
-#	traits = {
-#		#
-#	}
-#}
+create_country_leader = {
+	name = "Abdul-Rahman Al-Mahdi"
+	desc = ""
+	picture = "Portrait_Sudan_Abdurrahman_Mahdi.dds"
+	expire = "1965.1.1"
+	ideology = rexism_ideology
+	traits = {
+		#
+	}
+}
 
 #create_field_marshal = {
 #	name = "Xhemal Aranitasi"

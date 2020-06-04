@@ -5,5 +5,12 @@
  IRQ_royalism_party:0 "Hashimate Dynasty"
  IRQ_rexism_party:0 "Hashimate Dynasty"
  IRQ_despotism_party:0 "Hashimate Dynasty"
- IRQ_proletarianism_party:0 "Al-Hizb al-Shiu'iy"
+ IRQ_theocracy_party:0 "Majlis ul-Umma Al-Islamiyya"
+ IRQ_conservatism_party:0 "Al-Hizb ul-Watani"
+ IRQ_liberalism_party:0 "Hizb ut-Tajaddud"
+ IRQ_socialism_party:0 "Al-Hizb ush-Sha'bi Al-Arabi"
+ IRQ_proletarianism_party:0 "Jaysh ut-Tahrir"
+ IRQ_mutualism_party:0 "Jaysh ut-Tahrir"
+ IRQ_collectivism_party:0 "Jaysh ut-Tahrir"
+ IRQ_labryscism_party:0 "Mujahideen Groups"
  
