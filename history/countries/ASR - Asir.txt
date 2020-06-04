@@ -1,6 +1,6 @@
 ﻿capital = 782
 
-##OOB = "AAC_1928"
+OOB = "generic_arab"
 
 add_ideas = {
   le_religion_sunni

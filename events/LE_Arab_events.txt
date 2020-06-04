@@ -23,6 +23,9 @@ country_event = {
 	}
 	immediate = {
 		MJG_spawn_effect = yes
+		MJG = {
+			country_event = { id = le_arab.4 hours = 1 }
+		}
 	}
 
 	option = { #duh
@@ -50,9 +53,13 @@ country_event = {
 				has_government = collectivism
 			}
 		}
-		total_communist_pop > 40
+		OR = {
+			has_idea = le_religion_sunni
+			has_idea = le_religion_shia
+			has_idea = le_religion_ibadi
+		}  
+		check_variable = { total_communist_pop > 40 }
 	}
-	fire_only_once = yes
 	immediate = {
 		JTH_spawn_effect = yes
 	}
@@ -79,34 +86,7 @@ country_event = {
 	 labryscism > 0.4
 	}
 	immediate = {
-		random_owned_controlled_state = {
-			create_unit = {
-				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-				owner = IKH
-				##
-			}
-			create_unit = {
-				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-				owner = IKH
-				##
-			}
-			create_unit = {
-				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-				owner = IKH
-				##
-			}
-			create_unit = {
-				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-				owner = IKH
-				##
-			}
-		} 
-		IKH = {
-			declare_war_on = {
-				target = FROM
-				type = annex_everything
-			}
-		}
+		IKH_spawn_effect = yes
 	}
 	option = { #duh
 		name = le_arab.3.a

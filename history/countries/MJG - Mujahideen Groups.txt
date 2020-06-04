@@ -1,6 +1,6 @@
 ﻿capital = 679
 
-OOB = "MJG"
+OOB = "generic_arab"
 
 set_technology = {
 	infantry_weapons = 1
