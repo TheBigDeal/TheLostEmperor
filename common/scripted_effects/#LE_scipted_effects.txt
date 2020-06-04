@@ -683,3 +683,107 @@ find_total_communist_pop = {
 	  add_to_variable = { total_communist_pop = party_popularity@collectivism} 
 	}
 }
+
+MJG_spawn_effect = {
+	random_owned_controlled_state = {
+		is_capital = no
+		MJG = {
+			transfer_state = PREV
+		}
+		create_unit = {
+			division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+			owner = MJG
+			##
+		}
+		create_unit = {
+			division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+			owner = MJG
+			##
+		}
+		create_unit = {
+			division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+			owner = MJG
+			##
+		}
+		
+	} 
+	random_owned_controlled_state = {
+		is_capital = no
+		MJG = {
+			transfer_state = PREV
+		}
+		create_unit = {
+			division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+			owner = MJG
+			##
+		}
+		create_unit = {
+			division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+			owner = MJG
+			##
+		}
+		create_unit = {
+			division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+			owner = MJG
+			##
+		}
+	}
+	MJG = {
+		declare_war_on = {
+			target = FROM
+			type = annex_everything
+		}
+	}
+}
+
+JTH_spawn_effect = {
+	random_owned_controlled_state = {
+		is_capital = no
+		JTH = {
+			transfer_state = PREV
+		}
+		create_unit = {
+			division = "name = \"Alfurqa Attahririyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+			owner = JTH
+			##
+		}
+		create_unit = {
+			division = "name = \"Alfurqa Attahririyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+			owner = JTH
+			##
+		}
+		create_unit = {
+			division = "name = \"Alfurqa Attahririyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+			owner = JTH
+			##
+		}
+		
+	} 
+	random_owned_controlled_state = {
+		is_capital = no
+		JTH = {
+			transfer_state = PREV
+		}
+		create_unit = {
+			division = "name = \"Alfurqa Attahririyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+			owner = JTH
+			##
+		}
+		create_unit = {
+			division = "name = \"Alfurqa Attahririyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+			owner = JTH
+			##
+		}
+		create_unit = {
+			division = "name = \"Alfurqa Attahririyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+			owner = JTH
+			##
+		}
+	}
+	JTH = {
+		declare_war_on = {
+			target = FROM
+			type = annex_everything
+		}
+	}
+}

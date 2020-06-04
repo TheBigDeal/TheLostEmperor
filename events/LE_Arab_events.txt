@@ -5,55 +5,26 @@
 add_namespace = le_arab
 
 country_event = {
-	id = le_arab.1 # Mujahideen Groups rebel
-	title = le_arab.1.t
+	id = le_arab.1 # Mujahideen Groups rebel #Command: event le_arab.1
+	title = le_arab.1.t 
 	desc = le_arab.1.d
 	picture = GFX_report_event_generic_read_write
 	
 	trigger = {
-	 NOT = {
-	  OR = {
-	   original_tag = HEJ
-	   original_tag = NEJ
-	  }
-	  has_government = labryscism
-	  MJG = {
-		  exists = yes
-	  }
-	 }
-	 has_idea = le_religion_sunni
-	 labryscism > 0.4
+		NOT = {
+			OR = {
+	 	 		original_tag = HEJ
+	 			original_tag = NEJ
+			}
+			has_government = labryscism
+		}
+		has_idea = le_religion_sunni
+		labryscism > 0.4
 	}
 	immediate = {
-		random_owned_controlled_state = {
-			create_unit = {
-				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-				owner = MJG
-				prioritize_location = { NOT = { is_capital = yes }}
-			}
-			create_unit = {
-				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-				owner = MJG
-				prioritize_location = { NOT = { is_capital = yes }}
-			}
-			create_unit = {
-				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-				owner = MJG
-				prioritize_location = { NOT = { is_capital = yes }}
-			}
-			create_unit = {
-				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-				owner = MJG
-				prioritize_location = { NOT = { is_capital = yes }}
-			}
-		} 
-		MJG = {
-			declare_war_on = {
-				target = FROM
-				type = annex_everything
-			}
-		}
+		MJG_spawn_effect = yes
 	}
+
 	option = { #duh
 		name = le_arab.1.a
 		add_political_power = 5
@@ -83,34 +54,7 @@ country_event = {
 	}
 	fire_only_once = yes
 	immediate = {
-		random_owned_controlled_state = {
-			create_unit = {
-				division = "name = \"Alfurqa Attahririyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-				owner = JTH
-				prioritize_location = { NOT = { is_capital = yes }}
-			}
-			create_unit = {
-				division = "name = \"Alfurqa Attahririyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-				owner = JTH
-				prioritize_location = { NOT = { is_capital = yes }}
-			}
-			create_unit = {
-				division = "name = \"Alfurqa Attahririyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-				owner = JTH
-				prioritize_location = { NOT = { is_capital = yes }}
-			}
-			create_unit = {
-				division = "name = \"Alfurqa Attahririyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-				owner = JTH
-				prioritize_location = { NOT = { is_capital = yes }}
-			}
-		} 
-		JTH = {
-			declare_war_on = {
-				target = FROM
-				type = annex_everything
-			}
-		}
+		JTH_spawn_effect = yes
 	}
 	option = { #duh
 		name = le_arab.1.a
@@ -139,22 +83,22 @@ country_event = {
 			create_unit = {
 				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
 				owner = IKH
-				prioritize_location = { NOT = { is_capital = yes }}
+				##
 			}
 			create_unit = {
 				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
 				owner = IKH
-				prioritize_location = { NOT = { is_capital = yes }}
+				##
 			}
 			create_unit = {
 				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
 				owner = IKH
-				prioritize_location = { NOT = { is_capital = yes }}
+				##
 			}
 			create_unit = {
 				division = "name = \"Alfurqa Aljihadiyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
 				owner = IKH
-				prioritize_location = { NOT = { is_capital = yes }}
+				##
 			}
 		} 
 		IKH = {
