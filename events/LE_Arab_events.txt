@@ -10,11 +10,14 @@ country_event = {
 	desc = le_arab.1.d
 	picture = GFX_report_event_generic_read_write
 	trigger = {
-	 OR = {
-	  original_tag = ASR
-	  original_tag = YEM
-	  original_tag = SHM
+	 NOT = {
+	  OR = {
+	   original_tag = HEJ
+	   original_tag = NEJ
+	   original_tag = MAH
+	  }
 	 }
+	 has_idea = le_religion_sunni
 	 labryscism > 0.4
 	}
 	immediate = {
@@ -54,6 +57,61 @@ country_event = {
 	option = { #JIHADDDDDDD
 		name = le_arab.1.b
 		MJG = {
+			change_tag_from = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = le_arab.2 # Jaysh ut-Tahrir rebels
+	title = le_arab.2.t
+	desc = le_arab.2.d
+	picture = GFX_report_event_generic_read_write
+	trigger = {
+	 OR = {
+	 has_idea = le_religion_sunni
+	 has_idea = le_religion_shia
+	 has_idea = le_religion_ibadi
+	 }
+	 total_communist_support > 40
+	}
+	immediate = {
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Alfurqa Attahririyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = JTH
+				prioritize_location = { NOT = { is_capital = yes }}
+			}
+			create_unit = {
+				division = "name = \"Alfurqa Attahririyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = JTH
+				prioritize_location = { NOT = { is_capital = yes }}
+			}
+			create_unit = {
+				division = "name = \"Alfurqa Attahririyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = JTH
+				prioritize_location = { NOT = { is_capital = yes }}
+			}
+			create_unit = {
+				division = "name = \"Alfurqa Attahririyya\" division_template = \"Alfurqat Almasha\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = JTH
+				prioritize_location = { NOT = { is_capital = yes }}
+			}
+		} 
+		JTH = {
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+	}
+	option = { #duh
+		name = le_arab.1.a
+		add_political_power = 5
+	}
+	option = { #TAHRIIIIIIR
+		name = le_arab.1.b
+		JTH = {
 			change_tag_from = ROOT
 		}
 	}
