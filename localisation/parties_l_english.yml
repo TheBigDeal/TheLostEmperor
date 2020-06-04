@@ -17,9 +17,9 @@
  labryscism_ideology_desc:0 "Labryscism is an idea that originated in Greece that there needs to be an absolute leader with popular sovereignty from the common class to exercise absolute power to bring their people/country success and prosperity."
 
  #Democracy 
- socialism:0 "liberalism Socialism"
- socialism_noun:0 "liberalism Socialist"
- socialism_ideology_desc:0 "liberalism Socialism is the mixture of democracy and collectivism, being a sort of lite form of collectivism. Socialism beleives in the equality of all people to a certain degree, which is not as extreme as collectivism."
+ socialism:0 "Socialism"
+ socialism_noun:0 "Socialist"
+ socialism_ideology_desc:0 "Socialism is the mixture of democracy and collectivism, being a sort of lite form of collectivism. Socialism beleives in the equality of all people to a certain degree, which is not as extreme as collectivism."
 
  conservatism:0 "Conservatism"
  conservatism_noun:0 "Conservative"
@@ -451,10 +451,7 @@
  JOR_absolutism_party:0 "Hashemite"
  JOR_liberalism_party:0 "National Liberal Party"
  JOR_proletarianism_party:0 "Jordanian Workers Society"
- EGY_proletarianism_party:0 "Egyptian Communist Party"
- EGY_rexism_party:0 "Misr El-Fatah"
- EGY_liberalism_party:0 "Liberation Rally"
- EGY_absolutism_party:0 "Royalists"
+ 
  PAL_rexism_party:0 "Al-Muqaddas"
  PAL_proletarianism_party:0 "NLL"
  PAL_proletarianism_party_long:0 "National Liberation League"

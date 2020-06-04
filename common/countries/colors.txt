@@ -1,5 +1,10 @@
 #reload countrycolors
 
+ASW = {
+	color = rgb { 227 159 70 }
+	color_ui = rgb { 227 159 70 }
+}
+
 MJG = {
 	color = rgb { 45 46 43 }
 	color_ui = rgb { 45 46 43 }
@@ -7,6 +12,10 @@ MJG = {
 JTH = {
 	color = rgb { 209 36 36 }
 	color_ui = rgb { 209 36 36 }
+}
+MAH = {
+	color = rgb { 138 101 66 }
+	color_ui = rgb { 138 101 66 }
 }
 
 MET = {

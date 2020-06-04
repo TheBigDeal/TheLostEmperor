@@ -295,7 +295,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name ="command_power_value"
-			position = { x= 832 y = 49 }
+			position = { x= 820 y = 49 }
 			font = "hoi_18mbs"
 			text = "999"
 			format = center

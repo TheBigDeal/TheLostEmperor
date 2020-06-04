@@ -1,0 +1,21 @@
+﻿l_english: 
+
+#### Egypt ####
+ ### Political Parties ###
+    EGY_absolutism_party:0 "Muhammed Ali Dynasty"
+    EGY_royalism_party:0 "Muhammed Ali Dynasty"
+    EGY_rexism_party:0 "Muhammed Ali Dynasty"
+    EGY_despotism_party:0 "Muhammed Ali Dynasty"
+    EGY_theocracy_party:0 "Majlis ul-Umma Al-Islamiyya"
+    EGY_conservatism_party:0 "Hizb Al-Wafd"
+    EGY_liberalism_party:0 "Hizb ut-Tajaddud"
+    EGY_socialism_party:0 "Al-Hizb ush-Sha'bi Al-Arabi"
+    EGY_proletarianism_party:0 "Jaysh ut-Tahrir"
+    EGY_mutualism_party:0 "Jaysh ut-Tahrir"
+    EGY_collectivism_party:0 "Jaysh ut-Tahrir"
+    EGY_labryscism_party:0 "Mujahideen Groups"
+
+#### Aswan ####
+ ### Political Parties ###
+    ASW_despotism_party:0 "Mahkamat Aswan"
+ 

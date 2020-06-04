@@ -19,12 +19,15 @@ technologies = {
 			leads_to_tech = mounted_cannons
 			research_cost_coeff = 1
 		}
-		
+		path = {
+			leads_to_tech = armored_car1
+			research_cost_coeff = 1
+		}
 		research_cost = 2
 		start_year = 1918
 		folder = {
 			name = armour_folder
-			position = { x = 5 y = 0 }
+			position = { x = -12 y = 0 }
 		}
 		
 		ai_will_do = {
@@ -56,6 +59,94 @@ technologies = {
 			cat_light_armor
 		}
 	}	
+	armored_car1 = {
+
+		enable_subunits = {
+			armored_car
+		}
+
+		enable_equipments = {
+			gw_armored_car_equipment
+		}
+		allow_branch = { has_dlc = "La Resistance" }
+		path = {
+			leads_to_tech = armored_car2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1914
+		folder = {
+			name = armour_folder
+			position = { x = -12 y = 4 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+		}
+	}
+
+	armored_car2 = {
+
+		enable_equipments = {
+			armored_car_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = armored_car3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = armour_folder
+			position = { x = -12 y = 10 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+		}
+	}
+
+	armored_car3 = {
+
+		enable_equipments = {
+			armored_car_equipment_2
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = armour_folder
+			position = { x = -12 y = 14 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+		}
+		
+		sub_technologies = {
+			armored_car_at_upgrade
+		}
+	}
+
+	armored_car_at_upgrade = {
+		enable_equipments = {
+			armored_car_at_equipment
+		}
+		research_cost = 1
+		start_year = 1942
+		sub_tech_index = 1
+		
+		categories = {
+			motorized_equipment
+			armor
+		}
+	}
 	
 	tread_designs = {
 

@@ -363,7 +363,7 @@ technologies = {
 		#}
 		
 		path = {
-			leads_to_tech = early_automobile_industry 
+			leads_to_tech = engine 
 			research_cost_coeff = 1
 		}
 			
@@ -462,18 +462,22 @@ technologies = {
 		}
 	}
 	
-	early_automobile_industry = {
+	engine = {
 	
 		#allows production of basic equipment (motorized)
 		#custom_effect_tooltip = IND_RES_EARLY_AUTOMOBILE_INDUSTRY
-
+		
+		enable_subunits = {
+			motorized
+		}
+		
 		path = {
 			leads_to_tech = automobile_industry 
 			research_cost_coeff = 1
 		}
 			
 		research_cost = 1.5
-		start_year = 1870
+		start_year = 1900
 
 		on_research_complete = {
 			custom_effect_tooltip = IND_RES_EARLY_AUTOMOBILE_INDUSTRY
@@ -482,6 +486,11 @@ technologies = {
 		folder = {
 			name = industry_folder
 			position = { x = 12 y = 6 }
+		}
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 6 y = 0 }
 		}
 		
 		ai_will_do = {
@@ -1024,7 +1033,7 @@ technologies = {
 		
 		
 		dependencies = {
-            early_automobile_industry = 1
+            engine = 1
             factory_works = 1
         }
 		

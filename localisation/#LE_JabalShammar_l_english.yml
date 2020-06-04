@@ -5,4 +5,12 @@
  SHM_royalism_party:0 "Rashidi Dynasty"
  SHM_rexism_party:0 "Rashidi Dynasty"
  SHM_despotism_party:0 "Rashidi Dynasty"
+ SHM_theocracy_party:0 "Majlis ul-Umma Al-Islamiyya"
+ SHM_conservatism_party:0 "Al-Hizb ul-Watani"
+ SHM_liberalism_party:0 "Hizb ut-Tajaddud"
+ SHM_socialism_party:0 "Al-Hizb ush-Sha'bi Al-Arabi"
+ SHM_proletarianism_party:0 "Jaysh ut-Tahrir"
+ SHM_mutualism_party:0 "Jaysh ut-Tahrir"
+ SHM_collectivism_party:0 "Jaysh ut-Tahrir"
+ SHM_labryscism_party:0 "Mujahideen Groups"
  

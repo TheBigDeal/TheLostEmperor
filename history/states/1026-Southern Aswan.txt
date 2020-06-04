@@ -1,0 +1,17 @@
+state={
+	id=1026
+	name="STATE_1026"
+	history={
+		owner = ASW
+		buildings = {
+			infrastructure = 0
+			industrial_complex = 1
+		}
+		add_core_of = ASW
+	}
+	provinces={
+		1977 2003 2046 4963 7989 8105 10745 10902 12725 
+	}
+	manpower=665413
+	buildings_max_level_factor=1.000
+}

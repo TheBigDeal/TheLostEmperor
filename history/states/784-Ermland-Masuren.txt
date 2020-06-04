@@ -5,7 +5,7 @@ state={
 	state_category = rural
 	
 	history={
-		owner = ATA
+		owner = TUR
 		
 		victory_points = {
 			1155 10 
@@ -14,9 +14,10 @@ state={
 			infrastructure = 0
 
 		}
-		add_core_of = ATA
+		set_border_war = yes 
+		set_demilitarized_zone = yes
 		add_core_of = TUR
-		add_core_of = GBR
+		add_claim_by = GBR
 
 	}
 	

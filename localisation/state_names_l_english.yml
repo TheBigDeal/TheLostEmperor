@@ -454,7 +454,7 @@
  STATE_453:0 "Sinai"
  STATE_454:0 "Palestine"
  STATE_455:0 "Jordan"
- STATE_456:0 "Aswan"
+ STATE_456:0 "Luxor"
  STATE_457:1 "Eastern Desert"
  STATE_458:0 "Tunisia"
  STATE_459:0 "Algiers"
@@ -964,3 +964,9 @@
  STATE_1019:0 "Wittenburg"
  STATE_1020:0 "Nancy"
  STATE_1021:0 "Straubing"
+ 
+ STATE_1023:0 "Wahat"
+ STATE_1024:0 "Aswan"
+ STATE_1025:0 "Bahar"
+ STATE_1026:0 "Halayeb"
+ 

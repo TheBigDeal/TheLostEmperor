@@ -1,0 +1,20 @@
+state={
+	id=1024
+	name="STATE_1024"
+	history={
+		owner = ASW
+		victory_points = {
+			11999 5 
+		}
+		buildings = {
+			infrastructure = 0
+			industrial_complex = 1
+		}
+		add_core_of = ASW
+	}
+	provinces={
+		10844 11999 
+	}
+	manpower=321455
+	buildings_max_level_factor=1.000
+}
