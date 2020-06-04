@@ -28,5 +28,13 @@ ideas = {
 			modifier = {}
 			cancel_if_invalid = no
 		}
+		 le_religion_atheist = {
+			modifier = {}
+			cancel_if_invalid = no
+		}
+		 le_religion_animist = {
+			modifier = {}
+			cancel_if_invalid = no
+		}
 	}
 }

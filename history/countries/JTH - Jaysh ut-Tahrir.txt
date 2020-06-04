@@ -8,6 +8,10 @@ set_technology = {
 	tech_recon = 1
 }
 
+add_ideas = { 
+ le_religion_atheist 
+}
+
 set_politics = {	
 	ruling_party = proletarianism
 	last_election = "1933.3.5"
