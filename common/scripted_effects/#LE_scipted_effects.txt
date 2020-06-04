@@ -668,3 +668,18 @@ get_food_needs = {
 	}
 	clamp_variable = { var = current_food min = 0 max = 100000}
 }
+
+find_total_communist_pop = {
+	every_country = {
+	  limit = { 
+		  	OR = {
+			  has_idea = le_religion_sunni
+			  has_idea = le_religion_shia
+			  has_idea = le_religion_ibadi
+	  		}  
+		}
+	  set_variable = { total_communist_pop = party_popularity@mutualism }
+	  add_to_variable = { total_communist_pop = party_popularity@proletarianism }
+	  add_to_variable = { total_communist_pop = party_popularity@collectivism} 
+	}
+}

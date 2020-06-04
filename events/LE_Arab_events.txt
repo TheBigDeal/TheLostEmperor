@@ -9,6 +9,7 @@ country_event = {
 	title = le_arab.1.t
 	desc = le_arab.1.d
 	picture = GFX_report_event_generic_read_write
+	
 	trigger = {
 	 NOT = {
 	  OR = {
@@ -16,6 +17,9 @@ country_event = {
 	   original_tag = NEJ
 	  }
 	  has_government = labryscism
+	  MJG = {
+		  exists = yes
+	  }
 	 }
 	 has_idea = le_religion_sunni
 	 labryscism > 0.4
@@ -68,15 +72,16 @@ country_event = {
 	desc = le_arab.2.d
 	picture = GFX_report_event_generic_read_write
 	trigger = {
-	 OR = {
-	 has_idea = le_religion_sunni
-	 has_idea = le_religion_shia
-	 has_idea = le_religion_ibadi
-	 }
-	 FROM = {
-	 total_communist_support > 40
-	 }
+		NOT = {
+			OR = {
+				has_government = mutualism
+				has_government = proletarianism
+				has_government = collectivism
+			}
+		}
+		total_communist_pop > 40
 	}
+	fire_only_once = yes
 	immediate = {
 		random_owned_controlled_state = {
 			create_unit = {
