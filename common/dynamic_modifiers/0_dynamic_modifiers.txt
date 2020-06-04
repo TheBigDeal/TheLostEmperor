@@ -24,6 +24,18 @@
 #	can be added to countries, states or unit leaders
 #	will only updated daily, unless forced by force_update_dynamic_modifier effect
 
+#force_limit_dynamic_modifier = {
+#	icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#	enable = { ROOT = { check_variable = { num_divisions > force_limit } } #optional, the modifier won't apply if not enabled
+#	remove_trigger = { ROOT = { check_variable = { num_divisions < force_limit } } } #optional, will remove the modifier if true
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = ROOT
+#		}
+#	}
+#}
+
 sabotaged_resources = {
 	remove_trigger = { 
 		has_resistance = no

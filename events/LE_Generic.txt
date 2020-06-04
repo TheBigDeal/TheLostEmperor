@@ -102,3 +102,18 @@ country_event = { #Majorly Exceeding Force Limit
 		}
 	}
 }
+
+country_event = { 
+	id = le_generic.5
+	title = le_generic.5.t
+	desc = le_generic.5.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = le_generic.4.a
+		create_wargoal = {
+			type = topple_government
+			target = LIT
+		}
+	}
+}

@@ -5,7 +5,7 @@ wargoal_types = {
 		# ROOT = goal owner country
 
 		allowed = {
-
+			always = no
 		}
 
 		available = {
@@ -82,8 +82,6 @@ wargoal_types = {
 
 		take_states = {
 			is_claimed_by = ROOT
-			#is_owned_by = PREV
-			#is_controlled_by = PREV
 		}
 
 		generate_base_cost = 125

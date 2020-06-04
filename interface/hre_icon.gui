@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "hre_icon_container"
-		position = {x=434 y=6}
+		position = {x=440 y=12}
 		iconType = {
 			name = "hre_not_icon_ic"
 			position = {x=0 y=0}
@@ -17,7 +17,7 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "state_core"
-		position = {x=434 y=62}
+		position = {x=440 y=58}
 		iconType = {
 			name = "core_icon_ic"
 			position = {x=0 y=0}
@@ -27,7 +27,7 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "state_claim"
-		position = {x=434 y=62}
+		position = {x=440 y=58}
 		buttonType = {
 			name = "claim_button"
 			position = {x=0 y=0}
