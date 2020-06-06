@@ -1098,9 +1098,9 @@
  ADA_absolutism_DEF:0 "Adagh"
  ADA_absolutism_ADJ:0 "Adagh"
 
- AKU_absolutism:0 "Al-Kufrah"
- AKU_absolutism_DEF:0 "Al-Kufrah"
- AKU_absolutism_ADJ:0 "Al-Kufrah"
+ AKU:0 "Al-Kufrah"
+ AKU_DEF:0 "Al-Kufrah"
+ AKU_ADJ:0 "Al-Kufrah"
 
  TBE_absolutism:0 "Tibesti"
  TBE_absolutism_DEF:0 "Tibesti"
@@ -1110,9 +1110,9 @@
  GRS_absolutism_DEF:0 "Gress"
  GRS_absolutism_ADJ:0 "Gress"
 
- BHR_absolutism:0 "Bahr El Gjazal"
- BHR_absolutism_DEF:0 "Bahr El Gjazal"
- BHR_absolutism_ADJ:0 "Bahr El Gjazal"
+ BHR:0 "Bahr El Gjazal"
+ BHR_DEF:0 "Bahr El Gjazal"
+ BHR_ADJ:0 "Bahr El Gjazal"
 
  THS_proletarianism:0 "Peoples State of Thessaly"
  THS_proletarianism_DEF:0 "Peoples State of Thessaly"

@@ -8,6 +8,10 @@ set_technology = {
 	tech_recon = 1
 }
 
+add_ideas = {
+  le_religion_mujaddidi
+} 
+
 set_politics = {	
 	ruling_party = labryscism
 	last_election = "1933.3.5"
@@ -26,9 +30,9 @@ set_convoys = 5
 
 #Victor Emmanuel III of Italy after 39
 create_country_leader = {
-	name = "Abdelquddus Abusaif"
+	name = "Saifuddin Fairuz"
 	desc = ""
-	picture = "Portrait_Mujahideen_Abdelquddus.dds"
+	picture = "Portrait_Mujahideen_Saifuddin.dds"
 	expire = "1965.1.1"
 	ideology = labryscism_ideology
 	traits = {
