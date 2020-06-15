@@ -39,23 +39,17 @@
 LE_sunni_radicalism_modifier = {
 	enable = { has_idea = le_religion_sunni }
 	
-	icon = GFX_current_radicalism
-	
-	labryscism_drift = global.LE_sunni_radicalism_var
+	labryscism_drift = LE_sunni_radicalism_modifier2
 }
 
 LE_shia_radicalism_modifier = {
 	enable = { has_idea = le_religion_shia }
-	
-	icon = GFX_current_radicalism
 	
     absolutism_drift = global.LE_shia_radicalism_var
 }
 
 LE_ibadi_radicalism_modifier = {
 	enable = { has_idea = le_religion_ibadi }
-	
-	icon = GFX_current_radicalism
 	
     theocracy_drift = global.LE_ibadi_radicalism_var
 }

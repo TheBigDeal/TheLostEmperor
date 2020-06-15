@@ -1,0 +1,5 @@
+﻿l_english:
+ current_sunni_radicalism_TOOLTIP:0 "Religious Radicalism Level is §Y[?global.LE_sunni_radicalism_var|%0]§!"
+ current_sunni_radicalism_TOOLTIP_DELAYED:0 "§RDaily Labryscism Support:§! §Y[?global.LE_sunni_radicalism_var]§!"
+ current_shia_radicalism_TOOLTIP:0 "Religious Radicalism Level is §Y[?global.LE_shia_radicalism_var|%0]§!"
+ current_ibadi_radicalism_TOOLTIP:0 "Religious Radicalism Level is §Y[?global.LE_ibadi_radicalism_var|%0]§!"
