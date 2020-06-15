@@ -9,6 +9,27 @@
 # that'll be used if trigger passes
 
 defined_text = {
+	name = GetSunniRadicalismName
+	text = {
+		localization_key = "[?global.LE_sunni_radicalism_var|%0]"
+	}
+}
+
+defined_text = {
+	name = GetShiaRadicalismName
+	text = {
+		localization_key = "[?global.LE_shia_radicalism_var|%0]"
+	}
+}
+
+defined_text = {
+	name = GetIbadiRadicalismName
+	text = {
+		localization_key = "[?global.LE_ibadi_radicalism_var|%0]"
+	}
+}
+
+defined_text = {
 	name = GetTreasury_K
 	text = {
 		trigger = {check_variable = { treasury_k = 0}}

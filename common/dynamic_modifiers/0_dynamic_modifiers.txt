@@ -39,7 +39,7 @@
 LE_sunni_radicalism_modifier = {
 	enable = { has_idea = le_religion_sunni }
 	
-	labryscism_drift = LE_sunni_radicalism_modifier2
+	labryscism_drift = global.LE_sunni_radicalism_var
 }
 
 LE_shia_radicalism_modifier = {
