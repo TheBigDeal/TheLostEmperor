@@ -9,6 +9,7 @@ MJG = "countries/Mujahideen_Groups.txt"
 JTH = "countries/Jaysh_ut-Tahrir.txt"
 MAH = "countries/Mahdist_State.txt"
 ASW = "countries/Aswan.txt"
+AMC = "countries/Ahmadiyya_Muslim_Community.txt"
 
 #AFRICA
 MET = "countries/Metz.txt"

@@ -18,6 +18,10 @@
  ASW_DEF:0 "Aswan"
  ASW_ADJ:0 "Aswani"
  
+ AMC:0 "Ahmadiyya Muslim Community"
+ AMC_DEF:0 "Ahmadiyya Muslim Community"
+ AMC_ADJ:0 "Ahmadi"
+ 
  #Holy Roman Empire
  ###############################
  ULM:0 "Ulm"

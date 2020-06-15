@@ -4,7 +4,10 @@ ASW = {
 	color = rgb { 227 159 70 }
 	color_ui = rgb { 227 159 70 }
 }
-
+AMC = {
+	color = rgb { 67 105 74 }
+	color_ui = rgb { 67 105 74 }
+}
 MJG = {
 	color = rgb { 45 46 43 }
 	color_ui = rgb { 45 46 43 }
