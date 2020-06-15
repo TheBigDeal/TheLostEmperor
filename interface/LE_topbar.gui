@@ -231,7 +231,7 @@ guiTypes = {
 			name ="current_sunni_radicalism_text"
 			position = { x= 12 y = 4 }
 			font = "hoi_18mbs"
-			text = "[?global.sunni_radicalism|%0]"
+			text = "[? global.LE_sunni_radicalism |%0]"
 			format = right
 			maxWidth = 70
 			maxHeight = 24
@@ -258,7 +258,7 @@ guiTypes = {
 			name ="current_radicalism_text"
 			position = { x= 12 y = 4 }
 			font = "hoi_18mbs"
-			text = "[?global.shia_radicalism|%0]"
+			text = "[?global.LE_shia_radicalism|%0]"
 			format = right
 			maxWidth = 70
 			maxHeight = 24
@@ -285,7 +285,7 @@ guiTypes = {
 			name ="current_radicalism_text"
 			position = { x= 12 y = 4 }
 			font = "hoi_18mbs"
-			text = "[?global.ibadi_radicalism|%0]"
+			text = "[?global.LE_ibadi_radicalism|%0]"
 			format = right
 			maxWidth = 70
 			maxHeight = 24

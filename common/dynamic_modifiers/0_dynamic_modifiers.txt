@@ -36,6 +36,25 @@
 #	}
 #}
 
+LE_sunni_radicalism = {
+    enable = { has_idea = le_religion_sunni }
+    icon = "GFX_idea_unknown"
+    labryscism_drift = LE_sunni_radicalism_var/10
+}
+
+LE_shia_radicalism = {
+    enable = { has_idea = le_religion_shia }
+    icon = "GFX_idea_unknown"
+    absolutism_drift = LE_shia_radicalism_var/10
+}
+
+LE_ibadi_radicalism = {
+    enable = { has_idea = le_religion_shia }
+    icon = "GFX_idea_unknown"
+    theocracy_drift = LE_ibadi_radicalism_var/10
+}
+
+
 sabotaged_resources = {
 	remove_trigger = { 
 		has_resistance = no

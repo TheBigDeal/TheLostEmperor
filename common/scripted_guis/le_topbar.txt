@@ -70,7 +70,7 @@ scripted_gui = {
 
 		}
 	}
-	show_sunni_radicalism = {
+	show_shia_radicalism = {
 		context_type = player_context
 		window_name = "religion_shia_radicalism_container"
 		visible = {
@@ -80,7 +80,7 @@ scripted_gui = {
 
 		}
 	}
-	show_sunni_radicalism = {
+	show_ibadi_radicalism = {
 		context_type = player_context
 		window_name = "religion_ibadi_radicalism_container"
 		visible = {
