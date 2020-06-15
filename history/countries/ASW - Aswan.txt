@@ -8,7 +8,9 @@ set_technology = {
 	tech_recon = 1
 }
 
-
+add_ideas = {
+	le_religion_sunni
+}
 
 set_convoys = 5
 

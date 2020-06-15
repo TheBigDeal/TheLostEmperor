@@ -9,9 +9,9 @@ on_actions = {
 			set_variable = { dailytempfix = 0}
 			set_variable = { selected_economy_tab2 = 2}
 			
-			set_variable = { global. LE_sunni_radicalism_var = 0.20}
-			set_variable = { global.LE_shia_radicalism_var = 0.60}
-			set_variable = { global.LE_ibadi_radicalism_var = 0.30}
+			set_variable = { global.LE_sunni_radicalism_var = 0.20 }
+			set_variable = { global.LE_shia_radicalism_var = 0.60 }
+			set_variable = { global.LE_ibadi_radicalism_var = 0.30} 
 			
 			HRE_load_emperor_array = yes
 			HRE_load_elector_array = yes
@@ -30,6 +30,30 @@ on_actions = {
 				set_economic_pp_costs = yes
 				set_variable = { treasury = 0 }
 				
+			}
+			every_country = {
+				limit = {
+					has_idea = le_religion_sunni
+				}
+				add_dynamic_modifier = {
+					modifier = LE_sunni_radicalism_modifier
+				}
+			}
+			every_country = {
+				limit = {
+					has_idea = le_religion_shia
+				}
+				add_dynamic_modifier = {
+					modifier = LE_shia_radicalism_modifier
+				}
+			}
+			every_country = {
+				limit = {
+					has_idea = le_religion_ibadi
+				}
+				add_dynamic_modifier = {
+					modifier = LE_ibadi_radicalism_modifier
+				}
 			}
 			load_great_powers_array = yes
 		}
