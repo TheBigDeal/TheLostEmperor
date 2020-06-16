@@ -236,7 +236,7 @@ guiTypes = {
 			maxWidth = 70
 			maxHeight = 24
 			fixedsize = yes
-			pdx_tooltip = "current_sunni_radicalism_TOOLTIP"
+			pdx_tooltip = "current_radicalism_TOOLTIP"
 			pdx_tooltip_delayed = "current_sunni_radicalism_TOOLTIP_DELAYED"
 		}
 	}
@@ -263,7 +263,7 @@ guiTypes = {
 			maxWidth = 70
 			maxHeight = 24
 			fixedsize = yes
-			pdx_tooltip = "current_shia_radicalism_TOOLTIP"
+			pdx_tooltip = "current_radicalism_TOOLTIP"
 			#pdx_tooltip_delayed = "current_radicalism_TOOLTIP_DELAYED"
 		}
 	}
@@ -290,7 +290,7 @@ guiTypes = {
 			maxWidth = 70
 			maxHeight = 24
 			fixedsize = yes
-			pdx_tooltip = "[?global.GetRadicalismName]"
+			pdx_tooltip = "current_radicalism_TOOLTIP"
 			#pdx_tooltip_delayed = "current_radicalism_TOOLTIP_DELAYED"
 		}
 	}
