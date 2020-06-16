@@ -92,6 +92,10 @@ if = {
 		target = ASW
 		autonomous_state = autonomy_vilayet
 	}
+	set_autonomy = {
+		target = BHN
+		autonomous_state = autonomy_vilayet
+	}
 	else = {
 		puppet = IRQ
 		puppet = EGY
@@ -101,6 +105,7 @@ if = {
 		puppet = NEJ
 		puppet = SHM
 		puppet = ASW
+		puppet = BHN
 	}
 }
 
@@ -242,6 +247,19 @@ ASW = {
 		royalism = 25
 		despotism = 55
 	}
+}
+
+BHN = {
+  set_politics = {	
+	  ruling_party = despotism
+  	last_election = "1933.3.5"
+  	election_frequency = 48
+	  elections_allowed = no
+  }
+
+  set_popularities = {
+    despotism = 100
+  }
 }
 
 create_country_leader = {
