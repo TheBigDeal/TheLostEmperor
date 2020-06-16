@@ -12,15 +12,15 @@ defined_text = {
 	name = GetRadicalismName
 	text = {
 		trigger = { has_idea = le_religion_sunni }
-		localization_key = "[?global.LE_sunni_radicalism_var|%0]"
+		localization_key = "sl_sunni"
 	}
 	text = {
 		trigger = { has_idea = le_religion_shia }
-		localization_key = "[?global.LE_shia_radicalism_var|%0]"
+		localization_key = "sl_shia"
 	}
 	text = {
 		trigger = { has_idea = le_religion_ibadi }
-		localization_key = "[?global.LE_ibadi_radicalism_var|%0]"
+		localization_key = "sl_ibadi"
 	}
 }
 

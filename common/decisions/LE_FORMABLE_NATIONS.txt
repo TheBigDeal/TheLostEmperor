@@ -22,3 +22,53 @@ form_frankish_empire_cat = {
 		}
 	}
 }
+form_romania = {
+	diplomatically_form_romania = {
+
+		icon = generic_army_support
+
+		available = {
+			
+		}
+		visible = {
+			OR = {
+				original_tag = WAL
+				original_tag = MOL
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			set_cosmetic_tag = Frankish_Empire
+		}
+	}
+	form_romania = {
+
+		icon = generic_army_support
+
+		available = {
+			owns_state = 81
+			owns_state = 46
+			owns_state = 79
+		}
+		visible = {
+			OR = {
+				original_tag = WAL
+				original_tag = MOL
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			set_cosmetic_tag = Frankish_Empire
+		}
+	}
+}
