@@ -9,9 +9,18 @@
 # that'll be used if trigger passes
 
 defined_text = {
-	name = GetSunniRadicalismName
+	name = GetRadicalismName
 	text = {
+		trigger = { has_idea = le_religion_sunni }
 		localization_key = "[?global.LE_sunni_radicalism_var|%0]"
+	}
+	text = {
+		trigger = { has_idea = le_religion_shia }
+		localization_key = "[?global.LE_shia_radicalism_var|%0]"
+	}
+	text = {
+		trigger = { has_idea = le_religion_ibadi }
+		localization_key = "[?global.LE_ibadi_radicalism_var|%0]"
 	}
 }
 

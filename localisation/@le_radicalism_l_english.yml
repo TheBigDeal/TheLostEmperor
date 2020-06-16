@@ -1,4 +1,4 @@
 ﻿l_english:
- current_sunni_radicalism_TOOLTIP:0 "Religious Radicalism Level is §Y[!GetSunniRadicalismName]§!" current_sunni_radicalism_TOOLTIP_DELAYED:0 "AAAAAAAAAAA"
- current_shia_radicalism_TOOLTIP:0 "Religious Radicalism Level is §Y[!GetShiaRadicalismName]§!"
- current_ibadi_radicalism_TOOLTIP:0 "Religious Radicalism Level is §Y[!GetIbadiRadicalismName]§!"
+ current_sunni_radicalism_TOOLTIP:0 "Religious Radicalism Level is §Y[?global.LE_sunni_radicalism_var|%0]§!"
+ current_shia_radicalism_TOOLTIP:0 "Religious Radicalism Level is §Y[?GetShiaRadicalismName]§!"
+ current_ibadi_radicalism_TOOLTIP:0 "Religious Radicalism Level is §Y[?GetIbadiRadicalismName]§!"
