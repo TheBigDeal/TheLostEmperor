@@ -26,6 +26,8 @@ add_ideas = {
 
 set_convoys = 5
 
+create_faction = ahmadiyya_faction
+add_to_faction = PAK
 
 create_country_leader = {
 	name = "Mirza Bashir Ahmed"

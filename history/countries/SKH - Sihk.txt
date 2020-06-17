@@ -29,13 +29,16 @@ declare_war_on = {
   type = annex_everything
 }
 declare_war_on = {
-  target = BHA
+  target = PAK
   type = annex_everything
 }
 declare_war_on = {
   target = AFG
   type = annex_everything
 }
+
+create_faction = sikhdom
+add_to_faction = BHA
 
 #Victor Emmanuel III of Italy after 39
 create_country_leader = {

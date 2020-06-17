@@ -1,4 +1,20 @@
 ideas = {
+ country = {
+	##################
+	#  Afghanistan   #
+	##################
+	AFG_Shattered_Leadership = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			stability_factor = -0.30
+			despotism_drift = 0.01 
+		}
+	AFG_Persian_Influence = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			political_power_factor = -0.05 
+		}
+	}
 	political_advisor = {
 
 		AFG_haji_faiz_muhammed_zikeria = {
