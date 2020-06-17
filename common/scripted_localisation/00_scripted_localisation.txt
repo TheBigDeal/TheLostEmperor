@@ -9,7 +9,7 @@
 # that'll be used if trigger passes
 
 defined_text = {
-	name = GetRadicalismName
+	name = GetRadicalismValue
 	text = {
 		trigger = { has_idea = le_religion_sunni }
 		localization_key = "sl_radicalism_sunni"
