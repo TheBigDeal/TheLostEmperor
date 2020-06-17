@@ -4,13 +4,13 @@ state={
 	name="STATE_440"
 
 	history={
-		owner = SKH
+		owner = AMC
 		buildings = {
 			infrastructure = 5
 
 		}
+		add_core_of = AMC
 		add_core_of = SKH
-
 	}
 
 	provinces={

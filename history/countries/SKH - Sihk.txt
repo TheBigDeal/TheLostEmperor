@@ -24,17 +24,30 @@ set_popularities = {
 
 set_convoys = 5
 
+declare_war_on = {
+  target = AMC
+  type = annex_everything
+}
+declare_war_on = {
+  target = BHA
+  type = annex_everything
+}
+declare_war_on = {
+  target = AFG
+  type = annex_everything
+}
+
 #Victor Emmanuel III of Italy after 39
-#create_country_leader = {
-#	name = "King Zog"
-#	desc = "POLITICS_KING_ZOG_DESC"
-#	picture = "Portrait_Albania_King_Zog.dds"
-#	expire = "1965.1.1"
-#	ideology = absolutism_ideology
-#	traits = {
-#		#
-#	}
-#}
+create_country_leader = {
+	name = "Maharaja Ranjit II" #Victor Duleep Singh
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Albania_King_Zog.dds"
+	expire = "1965.1.1"
+	ideology = absolutism_ideology
+	traits = {
+		#
+	}
+}
 
 #create_field_marshal = {
 #	name = "Xhemal Aranitasi"
