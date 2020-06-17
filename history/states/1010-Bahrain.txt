@@ -2,7 +2,7 @@ state={
 	id=1010
 	name="STATE_1010"
 	history={
-		owner = TNS
+		owner = BHN
 		victory_points = {
 			13267 2
 		}
@@ -10,7 +10,7 @@ state={
 			infrastructure = 1
 			industrial_complex = 1
 		}
-		add_core_of = TNS
+		add_core_of = BHN
 	}
 	provinces={
 		13267 

@@ -10,6 +10,9 @@ JTH = "countries/Jaysh_ut-Tahrir.txt"
 MAH = "countries/Mahdist_State.txt"
 ASW = "countries/Aswan.txt"
 AMC = "countries/Ahmadiyya_Muslim_Community.txt"
+BHN = "countries/Bahrain.txt"
+AHV = "countries/D50.txt"
+
 
 #AFRICA
 MET = "countries/Metz.txt"
