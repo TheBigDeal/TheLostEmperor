@@ -11,8 +11,10 @@ MAH = "countries/Mahdist_State.txt"
 ASW = "countries/Aswan.txt"
 AMC = "countries/Ahmadiyya_Muslim_Community.txt"
 BHN = "countries/Bahrain.txt"
-AHV = "countries/D50.txt"
-
+AHV = "countries/D50.txt" #Ahvaz - Sheihkdom Arabistan - Sheikh Khaz'al Al-Ka'by 
+SHR = "countries/D48.txt" #Shiraz - Abdol-Majid Eyn-ed-Dawlah
+BHI = "countries/D49.txt" #Baha'i-Bàbi Insurgents at East Shiraz
+FRS = "countries/D17.txt" #Fars Province - Nationalists in West Shiraz Ahmad Ali Akhgar
 
 #AFRICA
 MET = "countries/Metz.txt"
