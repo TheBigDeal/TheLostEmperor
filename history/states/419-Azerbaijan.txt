@@ -4,7 +4,7 @@ state={
 	name="STATE_419"
 
 	history={
-		owner = PER
+		owner = TBR
 		buildings = {
 			infrastructure = 3
 
@@ -12,8 +12,8 @@ state={
 		victory_points = {
 			1896 3 
 		}
-		add_core_of = PER
-
+		add_core_of = TBR
+  add_core_of = PER
 	}
 
 	provinces={

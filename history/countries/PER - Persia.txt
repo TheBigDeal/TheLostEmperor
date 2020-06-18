@@ -36,8 +36,50 @@ set_popularities = {
 		proletarianism = 6
 		collectivism = 3
   mutualism = 1
-	}
+}
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = TBR
+		autonomous_state = autonomy_vilayet
+	}
+	set_autonomy = {
+		target = MZD
+		autonomous_state = autonomy_vilayet
+	}
+	set_autonomy = {
+		target = KHR
+		autonomous_state = autonomy_vilayet
+	}
+	set_autonomy = {
+		target = AHV
+		autonomous_state = autonomy_vilayet
+	}
+	set_autonomy = {
+		target = SHR
+		autonomous_state = autonomy_vilayet
+	}
+	set_autonomy = {
+		target = AJM
+		autonomous_state = autonomy_vilayet
+	}
+	set_autonomy = {
+		target = SMN
+		autonomous_state = autonomy_vilayet
+	}
+	else = {
+		puppet = TBR
+		puppet = KHR
+		puppet = MZD
+		puppet = SMN
+		puppet = AJM
+		puppet = AHV
+		puppet = SHR
+	}
+}
 
 create_country_leader = {
 	name = "Mohammed Ali Shah"

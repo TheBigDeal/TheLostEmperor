@@ -17,9 +17,9 @@ BHI = "countries/Bahai_Insurgence.txt" #Baha'i-Bàbi Insurgents at East Shiraz -
 FRS = "countries/Fars.txt" #Fars Province - Nationalists in West Shiraz - Sayyid Mohammed Tadayyon
 KHR = "countries/Khorasan.txt" #Khorasan Province - Abdul-Majid Eyn-ed-Dawlah - Qajar
 MZD - "countries/Mazandaran.txt" #Mazandaran Province - Mohammed (Sepahsalar-e) Tonkaponi - Reformist
-TBR = "countries/Tibriz.txt" #Tibriz Province - Seyyid Hassan Taqizadeh - Revivalists
+TBR = "countries/Tibriz.txt" #Tibriz Province - Seyyid Hassan Taqizadeh - Revivalist
 AJM = "countries/Iraq-e_Ajam.txt" #Ajam Province - (Feyzulla) Hikmatullah Shausha'i - Qajar 
-SMN = "countries/Semnan.txt" #Semnan Province - (Hasan) Abdol-Jalal Vosough-ed-Dawlah
+SMN = "countries/Semnan.txt" #Semnan Province - (Hasan) Abdol-Jalal Vosough-ed-Dawlah - Loyalist
 
 
 #AFRICA
