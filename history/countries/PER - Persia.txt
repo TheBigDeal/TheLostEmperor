@@ -35,7 +35,7 @@ set_popularities = {
 		absolutism = 13
 		proletarianism = 6
 		collectivism = 3
-  mutualism = 1
+   		mutualism = 1
 }
 
 if = {
@@ -67,14 +67,14 @@ if = {
 		autonomous_state = autonomy_vilayet
 	}
 	set_autonomy = {
-		target = SMN
+		target = KRM
 		autonomous_state = autonomy_vilayet
 	}
 	else = {
 		puppet = TBR
 		puppet = KHR
 		puppet = MZD
-		puppet = SMN
+		puppet = KRM
 		puppet = AJM
 		puppet = AHV
 		puppet = SHR

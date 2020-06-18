@@ -4,15 +4,14 @@ state={
 	name="STATE_445"
 
 	history={
-		owner = PER
+		owner = SKH
 		buildings = {
 			infrastructure = 3
 			air_base = 4
 
 		}
-		add_core_of = PER
+		add_core_of = SKH
 		add_core_of = PAK
-
 	}
 
 	provinces={
