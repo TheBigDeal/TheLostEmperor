@@ -122,8 +122,5 @@ scripted_gui = {
 		    set_variable = { radicalism_gui = 1 }
 		    }
 		  } 
-		  }
 		}
 	}
-}
-

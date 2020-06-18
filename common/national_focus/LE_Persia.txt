@@ -1,192 +1,176 @@
 focus_tree = {
-	id = LEpersian_focus
-	
+	id = le_persia
 	country = {
 		factor = 0
-		
 		modifier = {
 			add = 10
 			tag = PER
 		}
 	}
-	
-	default = no
-	continuous_focus_position = { x = 50 y = 3100 }
-	
-	
-	#MAIN FOCUS PATH
-	#####################
+	#Focus for A Reformist Stance
 	focus = {
-		id = PER_FOCUS
-		icon = GFX_goal_generic_national_unity
-		x = 4
-		y = 0
+		id = PER_a_reformist_stance
+		icon = GFX_goal_unknown
+		x = 8
+		y = 4
 		cost = 10
-		ai_will_do = {
-			factor = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = PER_crackdown_on_nationalists 
 		}
-		completion_reward = {
-			add_political_power = 100		
+		prerequisite = { 
+			focus = PER_a_quality_standard 
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
+
+	#Focus for Crackdown on Nationalists
 	focus = {
-		id = PER_STRIKE_BRITIAN
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = PER_FOCUS }
-		
+		id = PER_crackdown_on_nationalists
+		icon = GFX_goal_unknown
 		x = 6
-		y = 1
+		y = 3
 		cost = 10
-		ai_will_do = {
-			factor = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = PER_strengthen_provincial_rule 
+			focus = PER_centralize_the_state 
 		}
-		completion_reward = {
-			add_political_power = 100		
+		ai_will_do = {
+			factor = 1
 		}
 	}
+
+	#Focus for Strip Down Mazandaran
 	focus = {
-		id = PER_WITH_RUSSIA
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = PER_STRIKE_BRITIAN }
-		mutually_exclusive = { focus = PER_WITHOUT_RUSSIA }
-		x = 5
-		y = 2
+		id = PER_strip_down_mazandaran
+		icon = GFX_goal_unknown
+		x = 3
+		y = 3
 		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PER_centralize_the_state }
 		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100		
+			factor = 1
 		}
 	}
+
+	#Focus for A Quality Standard
 	focus = {
-		id = PER_WITHOUT_RUSSIA
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = PER_STRIKE_BRITIAN }
-		mutually_exclusive = { focus = PER_WITH_RUSSIA }
-		x = 7
-		y = 2
+		id = PER_a_quality_standard
+		icon = GFX_goal_unknown
+		x = 9
+		y = 3
 		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PER_strengthen_provincial_rule }
 		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100		
+			factor = 1
 		}
 	}
+
+	#Focus for Shah Dies
 	focus = {
-		id = PER_STRIKE_TURKS
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = PER_FOCUS }
-		x = 2
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 10
+		id = PER_shah_dies
+		icon = GFX_goal_unknown
+		x = 6
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		available = {
+			always = no
 		}
-		completion_reward = {
-			add_political_power = 100		
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
 		}
 	}
+
+	#Focus for Centralize the State
 	focus = {
-		id = PER_WITH_GREECE
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = PER_STRIKE_TURKS }
-		mutually_exclusive = { focus = PER_WITHOUT_GREECE }
-		x = 1
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100		
-		}
-	}
-	focus = {
-		id = PER_WITHOUT_GREECE
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = PER_STRIKE_TURKS }
-		mutually_exclusive = { focus = PER_WITH_GREECE }
+		id = PER_centralize_the_state
+		icon = GFX_goal_unknown
 		x = 3
 		y = 2
 		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PER_the_new_throne }
+		mutually_exclusive = { focus = PER_strengthen_provincial_rule }
 		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100		
+			factor = 1
 		}
 	}
-	
-	#POLITCAL PATH
-	#####################
+
+	#Focus for The New Throne
 	focus = {
-		id = PER_POLITICAL_PATH
-		icon = GFX_goal_generic_national_unity
-		x = 12
-		y = 0
+		id = PER_the_new_throne
+		icon = GFX_goal_unknown
+		x = 6
+		y = 1
 		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PER_shah_dies }
 		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100		
+			factor = 1
 		}
 	}
+
+	#Focus for Strengthen Provincial Rule
 	focus = {
-		id = PER_collectivism
-		icon = GFX_goal_support_proletarianism
-		prerequisite = { focus = PER_POLITICAL_PATH }
+		id = PER_strengthen_provincial_rule
+		icon = GFX_goal_unknown
 		x = 9
-		y = 1
+		y = 2
 		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PER_the_new_throne }
+		mutually_exclusive = { focus = PER_centralize_the_state }
 		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100		
+			factor = 1
 		}
 	}
+
+	#Focus for Appoint Qajar Princes
 	focus = {
-		id = PER_DEMOCRACY
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = PER_POLITICAL_PATH }
-		x = 11
-		y = 1
+		id = PER_appoint_qajar_princes
+		icon = GFX_goal_unknown
+		x = 4
+		y = 4
 		cost = 10
-		ai_will_do = {
-			factor = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = PER_crackdown_on_nationalists 
 		}
-		completion_reward = {
-			add_political_power = 100		
+		prerequisite = { 
+			focus = PER_strip_down_mazandaran 
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
+
+	#Focus for An Eye on Khorasan
 	focus = {
-		id = PER_MONARCHIST
-		icon = GFX_focus_hun_elect_a_king
-		prerequisite = { focus = PER_POLITICAL_PATH }
-		x = 13
-		y = 1
+		id = PER_an_eye_on_khorasan
+		icon = GFX_goal_unknown
+		x = 6
+		y = 5
 		cost = 10
-		ai_will_do = {
-			factor = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = PER_crackdown_on_nationalists
+			
 		}
-		completion_reward = {
-			add_political_power = 100		
+		prerequisite = { 
+			focus = PER_appoint_qajar_princes
+			focus = PER_a_reformist_stance
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
-	focus = {
-		id = PER_labryscism
-		icon = GFX_goal_support_rexism
-		prerequisite = { focus = PER_POLITICAL_PATH }
-		x = 15
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100		
-		}
-	}
+
+#End of focuses 
+ }
