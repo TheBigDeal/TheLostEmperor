@@ -3,7 +3,7 @@ autonomy_state = {
 
 	is_puppet = yes
 	
-	min_freedom_level = 0.30
+	min_freedom_level = 0.10
 	
 	rule = {
 		can_not_declare_war = yes
@@ -18,7 +18,7 @@ autonomy_state = {
 	}
 	
 	ai_subject_wants_higher = {
-		factor = 0.0
+		factor = 0.5
 	}
 	
 	ai_overlord_wants_lower = {
@@ -26,11 +26,16 @@ autonomy_state = {
 	}
 
 	ai_overlord_wants_garrison = {
-		always = no
+		factor = 0.5
 	}
 
 	allowed = {
-		OVERLORD = { original_tag = TUR }
+		OVERLORD = { 
+		  OR = {
+    		original_tag = TUR
+    		original_tag = PER 
+    } 
+  }
 	}
 	
 	can_take_level = {

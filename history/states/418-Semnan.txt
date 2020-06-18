@@ -4,17 +4,17 @@ state={
 	name="STATE_418"
 
 	history={
-		owner = PER
+		owner = KHR
 		buildings = {
 			infrastructure = 1
 
 		}
+		add_core_of = KHR
 		add_core_of = PER
-
 	}
 
 	provinces={
-		5073 8009 10873 11671 12748 
+		5073 8009 11671 12748 
 	}
 	manpower=332362
 	buildings_max_level_factor=1.000

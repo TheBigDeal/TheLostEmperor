@@ -1,4 +1,4 @@
-﻿capital = 440
+﻿capital = 421
 
 ###OOB = "AAC_1928"
 
@@ -24,21 +24,9 @@ set_popularities = {
 
 set_convoys = 5
 
-declare_war_on = {
-  target = AMC
-  type = annex_everything
-}
-declare_war_on = {
-  target = PAK
-  type = annex_everything
-}
-
-create_faction = sikhdom
-add_to_faction = BHA
-
 #Victor Emmanuel III of Italy after 39
 create_country_leader = {
-	name = "Maharaja Ranjit II" #Victor Duleep Singh
+	name = "Hikmatullah Shausha'i" #Ajam Province - (Feyzulla) Hikmatullah Shausha'i - Qajar
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "Portrait_Albania_King_Zog.dds"
 	expire = "1965.1.1"

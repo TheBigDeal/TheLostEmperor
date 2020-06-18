@@ -11,15 +11,15 @@ MAH = "countries/Mahdist_State.txt"
 ASW = "countries/Aswan.txt"
 AMC = "countries/Ahmadiyya_Muslim_Community.txt"
 BHN = "countries/Bahrain.txt"
-AHV = "countries/Ahvaz.txt" #Ahvaz - Sheihkdom Arabistan - Sheikh Khaz'al Al-Ka'by 
-SHR = "countries/Shiraz.txt" #Shiraz Province - Masoud Zell-es-Soltan - Qajar
-BHI = "countries/Bahai_Insurgence.txt" #Baha'i-Bàbi Insurgents at East Shiraz - Abdol-Baha'
-FRS = "countries/Fars.txt" #Fars Province - Nationalists in West Shiraz - Sayyid Mohammed Tadayyon
-KHR = "countries/Khorasan.txt" #Khorasan Province - Abdul-Majid Eyn-ed-Dawlah - Qajar
-MZD - "countries/Mazandaran.txt" #Mazandaran Province - Mohammed (Sepahsalar-e) Tonkaponi - Reformist
-TBR = "countries/Tibriz.txt" #Tibriz Province - Seyyid Hassan Taqizadeh - Revivalists
-AJM = "countries/Iraq-e_Ajam.txt" #Ajam Province - (Feyzulla) Hikmatullah Shausha'i - Qajar 
-SMN = "countries/Semnan.txt" #Semnan Province - (Hasan) Abdol-Jalal Vosough-ed-Dawlah
+AHV = "countries/Ahvaz.txt"  
+SHR = "countries/Shiraz.txt" 
+BHI = "countries/Bahai_Insurgence.txt" #Baha'i-Bàbi Insurgents at East Shiraz - Abdol-Baha'-
+FRS = "countries/Fars.txt" #Fars Province - Nationalists in West Shiraz - Sayyid Mohammed Tadayyon-
+KHR = "countries/Khorasan.txt" 
+MZD = "countries/Mazandaran.txt" 
+TBR = "countries/Tibriz.txt" 
+AJM = "countries/Iraq-e_Ajam.txt"  
+KRM = "countries/Kerman.txt" 
 
 
 #AFRICA
