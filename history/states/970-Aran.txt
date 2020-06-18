@@ -4,14 +4,14 @@ state={
 	name="STATE_970"
 
 	history={
-		owner = RUS
+		owner = MZD
 		buildings = {
 			infrastructure = 3
 
 		}
-		add_core_of = RUS
+		add_core_of = MZD
 		add_core_of = AZR
-
+		add_core_of = PER
 	}
 
 	provinces={
