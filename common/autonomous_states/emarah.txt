@@ -1,9 +1,11 @@
 autonomy_state = {
-	id = autonomy_vilayet
+	id = autonomy_emarah
 
 	is_puppet = yes
+
+	use_overlord_color = yes
 	
-	min_freedom_level = 0.10
+	min_freedom_level = 0.05
 	
 	rule = {
 		can_not_declare_war = yes
@@ -31,7 +33,10 @@ autonomy_state = {
 
 	allowed = {
 		OVERLORD = { 
-    		original_tag = TUR
+    		OR = {
+				has_idea = le_religion_shia
+				has_idea = le_religion_sunni
+			}
   		}
 	}
 	

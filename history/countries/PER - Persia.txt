@@ -44,31 +44,31 @@ if = {
 	}
 	set_autonomy = {
 		target = TBR
-		autonomous_state = autonomy_vilayet
+		autonomous_state = autonomy_emarah
 	}
 	set_autonomy = {
 		target = MZD
-		autonomous_state = autonomy_vilayet
+		autonomous_state = autonomy_emarah
 	}
 	set_autonomy = {
 		target = KHR
-		autonomous_state = autonomy_vilayet
+		autonomous_state = autonomy_emarah
 	}
 	set_autonomy = {
 		target = AHV
-		autonomous_state = autonomy_vilayet
+		autonomous_state = autonomy_emarah
 	}
 	set_autonomy = {
 		target = SHR
-		autonomous_state = autonomy_vilayet
+		autonomous_state = autonomy_emarah
 	}
 	set_autonomy = {
 		target = AJM
-		autonomous_state = autonomy_vilayet
+		autonomous_state = autonomy_emarah
 	}
 	set_autonomy = {
 		target = KRM
-		autonomous_state = autonomy_vilayet
+		autonomous_state = autonomy_emarah
 	}
 	else = {
 		puppet = TBR
@@ -78,6 +78,102 @@ if = {
 		puppet = AJM
 		puppet = AHV
 		puppet = SHR
+	}
+}
+
+KRM = {
+	set_politics = {	
+		ruling_party = conservatism
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+		liberalism = 0
+		rexism = 0
+		proletarianism = 10
+		conservatism = 90
+	}
+}
+
+MZD = {
+	set_politics = {	
+		ruling_party = socialism
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+		liberalism = 0
+		rexism = 0
+		proletarianism = 10
+		socialism = 90
+	}
+}
+
+TBR = {
+	set_politics = {	
+		ruling_party = liberalism
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+		liberalism = 90
+		rexism = 0
+		proletarianism = 10
+		absolutism = 0
+	}
+}
+
+AHV = {
+	set_politics = {	
+		ruling_party = absolutism
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+		liberalism = 0
+		rexism = 0
+		proletarianism = 10
+		absolutism = 90
+	}
+}
+
+SHR = {
+	set_politics = {	
+		ruling_party = absolutism
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+		liberalism = 0
+		rexism = 0
+		proletarianism = 10
+		absolutism = 90
+	}
+}
+
+AJM = {
+	set_politics = {	
+		ruling_party = absolutism
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+		liberalism = 0
+		rexism = 0
+		proletarianism = 10
+		absolutism = 90
 	}
 }
 
@@ -105,8 +201,8 @@ create_country_leader = {
 #}
 
 create_country_leader = {
-	name = "Soleyman Mirza Eskandari"
-	desc = "POLITICS_SOLEYMAN_MIRZA_ESKANDARI_DESC"
+	name = "Iraj Eskandari"
+	desc = ""
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
 	expire = "1965.1.1"
 	ideology = proletarianism
