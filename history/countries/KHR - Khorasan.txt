@@ -8,25 +8,14 @@ set_technology = {
 	tech_recon = 1
 }
 
-set_politics = {	
-	ruling_party = absolutism
-	last_election = "1933.3.5"
-	election_frequency = 48
-	elections_allowed = no
+add_ideas = {
+	le_religion_shia
 }
-
-set_popularities = {
-    liberalism = 0
-    rexism = 0
-    proletarianism = 10
-    absolutism = 90
-}
-
 set_convoys = 5
 
 #Victor Emmanuel III of Italy after 39
 create_country_leader = {
-	name = "Abdul-Majid Eyn-ed-Dawlah" #Khorasan Province - Abdul-Majid Eyn-ed-Dawlah - Qajar
+	name = "Abdul-Majeed Eyn-ed-Dawlah" #Khorasan Province - Abdul-Majid Eyn-ed-Dawlah - Qajar
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "Portrait_Albania_King_Zog.dds"
 	expire = "1965.1.1"

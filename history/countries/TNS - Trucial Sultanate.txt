@@ -1,4 +1,4 @@
-﻿capital = 887
+﻿capital = 658
 
 OOB = "generic_arab"
 
