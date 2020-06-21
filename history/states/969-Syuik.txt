@@ -2,12 +2,14 @@ state={
 	id=969
 	name="STATE_969"
 	history={
-		owner = RUS
+		owner = TBR
 		buildings = {
 			infrastructure = 3
 		}
 		add_core_of = GEO
 		add_core_of = ARM
+		add_core_of = TBR
+		add_core_of = PER
 	}
 	provinces={
 		4660 6642 

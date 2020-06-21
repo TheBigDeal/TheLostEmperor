@@ -22,6 +22,10 @@
  AMC_DEF:0 "Ahmadiyya Muslim Community"
  AMC_ADJ:0 "Ahmadi"
  
+ BHN:0 "Bahrain"
+ BHN_DEF:0 "Bahrain"
+ BHN_ADJ:0 "Bahraini"
+ 
  #Holy Roman Empire
  ###############################
  ULM:0 "Ulm"

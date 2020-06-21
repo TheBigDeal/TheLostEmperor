@@ -1,10 +1,6 @@
 ﻿l_english:
- current_sunni_radicalism_TOOLTIP:0 "Religious Radicalism Level is §Y[GetRadicalismName]§!"
- current_shia_radicalism_TOOLTIP:0 "Religious Radicalism Level is §Y[GetRadicalismName]§!"
- current_ibadi_radicalism_TOOLTIP:0 "Religious Radicalism Level is §Y[GetRadicalismName]§!"
- 
- 
- 
- sl_sunni:0 "[?global.LE_sunni_radicalism_var|%0]"
- sl_shia:0 "[?global.LE_shia_radicalism_var|%0]"
- sl_ibadi:0 "[?global.LE_ibadi_radicalism_var|%0]"
+ current_radicalism_TOOLTIP:0 "Religious Radicalism Level is §Y[GetRadicalismValue]§!"
+ current_radicalism_TOOLTIP_DELAYED:0 "Thicc"
+ sl_radicalism_sunni:0 "[?global.LE_sunni_radicalism_var|%1]"
+ sl_radicalism_shia:0 "[?global.LE_shia_radicalism_var|%1]"
+ sl_radicalism_ibadi:0 "[?global.LE_ibadi_radicalism_var|%1]"

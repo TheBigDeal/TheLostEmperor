@@ -1,6 +1,6 @@
-﻿capital = 1024
+﻿capital = 1010
 
-OOB = "generic_arab"
+###OOB = "AAC_1928"
 
 set_technology = {
 	infantry_weapons = 1
@@ -9,16 +9,16 @@ set_technology = {
 }
 
 add_ideas = {
-	le_religion_sunni
-}
+ le_religion_shia 
+} 
 
 set_convoys = 5
 
-
+#Victor Emmanuel III of Italy after 39
 create_country_leader = {
-	name = "Mostafa el-Nahhas"
+	name = "Talib An-Naqib"
 	desc = ""
-	picture = "Portrait_Aswan_Mostafa_Nahhas.tga"
+	picture = ".dds"
 	expire = "1965.1.1"
 	ideology = despotism_ideology
 	traits = {

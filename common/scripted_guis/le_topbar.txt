@@ -67,7 +67,19 @@ scripted_gui = {
             has_idea = le_religion_sunni
 		}
 		effects = {
-
+		  show_sunni_radicalism_click = {
+		    if = { 
+		    limit = { check_variable = { radicalism_gui = 1 }
+		     }
+		    set_variable = { radicalism_gui = 0 }
+		    }
+		  if = { 
+		    limit = { check_variable = { radicalism_gui = 0 }
+		     }
+		    set_variable = { radicalism_gui = 1 }
+		    }
+		  } 
+		  }
 		}
 	}
 	show_shia_radicalism = {
@@ -77,7 +89,18 @@ scripted_gui = {
             has_idea = le_religion_shia
 		}
 		effects = {
-
+		  show_shia_radicalism_click = {
+		  if = { 
+		    limit = { check_variable = { radicalism_gui = 1 }
+		     }
+		    set_variable = { radicalism_gui = 0 }
+		    }
+		  if = { 
+		    limit = { check_variable = { radicalism_gui = 0 }
+		     }
+		    set_variable = { radicalism_gui = 1 }
+		    }
+		  } 
 		}
 	}
 	show_ibadi_radicalism = {
@@ -87,8 +110,17 @@ scripted_gui = {
             has_idea = le_religion_ibadi
 		}
 		effects = {
-
+		  show_ibadi_radicalism_click = {
+		    if = { 
+		    limit = { check_variable = { radicalism_gui = 1 }
+		     }
+		    set_variable = { radicalism_gui = 0 }
+		    }
+		  if = { 
+		    limit = { check_variable = { radicalism_gui = 0 }
+		     }
+		    set_variable = { radicalism_gui = 1 }
+		    }
+		  } 
 		}
 	}
-}
-

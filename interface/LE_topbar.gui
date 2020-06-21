@@ -231,13 +231,13 @@ guiTypes = {
 			name ="current_sunni_radicalism_text"
 			position = { x= 12 y = 4 }
 			font = "hoi_18mbs"
-			text = "[?global.LE_sunni_radicalism_var|%1]"
+			text = "[GetRadicalismValue]"
 			format = right
 			maxWidth = 70
 			maxHeight = 24
 			fixedsize = yes
-			pdx_tooltip = "current_sunni_radicalism_TOOLTIP"
-			pdx_tooltip_delayed = "current_sunni_radicalism_TOOLTIP_DELAYED"
+			pdx_tooltip = "current_radicalism_TOOLTIP"
+			pdx_tooltip_delayed = "current_radicalism_TOOLTIP_DELAYED"
 		}
 	}
 	containerWindowType = {
@@ -258,13 +258,13 @@ guiTypes = {
 			name ="current_radicalism_text"
 			position = { x= 12 y = 4 }
 			font = "hoi_18mbs"
-			text = "[?global.LE_shia_radicalism_var|%0]"
+			text = "[GetRadicalismValue]"
 			format = right
 			maxWidth = 70
 			maxHeight = 24
 			fixedsize = yes
-			pdx_tooltip = "current_shia_radicalism_TOOLTIP"
-			#pdx_tooltip_delayed = "current_radicalism_TOOLTIP_DELAYED"
+			pdx_tooltip = "current_radicalism_TOOLTIP"
+			pdx_tooltip_delayed = "current_radicalism_TOOLTIP_DELAYED"
 		}
 	}
 	containerWindowType = {
@@ -285,13 +285,13 @@ guiTypes = {
 			name ="current_radicalism_text"
 			position = { x= 12 y = 4 }
 			font = "hoi_18mbs"
-			text = "[?global.LE_ibadi_radicalism_var|%0]"
+			text = "[GetRadicalismValue]"
 			format = right
 			maxWidth = 70
 			maxHeight = 24
 			fixedsize = yes
-			pdx_tooltip = "[?global.GetRadicalismName]"
-			#pdx_tooltip_delayed = "current_radicalism_TOOLTIP_DELAYED"
+			pdx_tooltip = "current_radicalism_TOOLTIP"
+			pdx_tooltip_delayed = "current_radicalism_TOOLTIP_DELAYED"
 		}
 	}
 }

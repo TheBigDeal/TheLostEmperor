@@ -15,8 +15,6 @@ set_technology = {
 	CAS1 = 1
 }
 
-
-
 set_convoys = 10
 set_politics = {	
 	ruling_party = absolutism
@@ -26,25 +24,67 @@ set_politics = {
 }
 
 set_popularities = {
-		conservatism = 11
-		liberalism = 0
-		socialism = 0 
+		conservatism = 17
+		liberalism = 9
+		socialism = 8 
 		labryscism = 6
 		rexism = 0
 		despotism = 5
-		royalism = 33
+		royalism = 15
 		theocracy = 17
-		absolutism = 5
-		proletarianism = 23
-		collectivism = 0
-  mutualism = 0
-	}
+		absolutism = 13
+		proletarianism = 6
+		collectivism = 3
+   		mutualism = 1
+}
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = TBR
+		autonomous_state = autonomy_vilayet
+	}
+	set_autonomy = {
+		target = MZD
+		autonomous_state = autonomy_vilayet
+	}
+	set_autonomy = {
+		target = KHR
+		autonomous_state = autonomy_vilayet
+	}
+	set_autonomy = {
+		target = AHV
+		autonomous_state = autonomy_vilayet
+	}
+	set_autonomy = {
+		target = SHR
+		autonomous_state = autonomy_vilayet
+	}
+	set_autonomy = {
+		target = AJM
+		autonomous_state = autonomy_vilayet
+	}
+	set_autonomy = {
+		target = KRM
+		autonomous_state = autonomy_vilayet
+	}
+	else = {
+		puppet = TBR
+		puppet = KHR
+		puppet = MZD
+		puppet = KRM
+		puppet = AJM
+		puppet = AHV
+		puppet = SHR
+	}
+}
 
 create_country_leader = {
-	name = "Reza Shah Pahlavi"
-	desc = "POLITICS_REZA_SHAH_PAHLAVI_DESC"
-	picture = "Portrait_Iran_Reza_Shah_Pahlavi.dds"
+	name = "Mohammed Ali Shah"
+	desc = ""
+	picture = ""
 	expire = "1965.1.1"
 	ideology = absolutism_ideology
 	traits = {

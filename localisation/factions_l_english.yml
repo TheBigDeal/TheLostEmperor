@@ -1,6 +1,8 @@
 ﻿l_english:
 #MOD
  THE_HANSA:0 "Hanseatic League"
+ ahmadiyya_faction:0 "Ahmadiyya Pact"
+ sikhdom:0 "Sikhistan"
  ITALIAN_MARITIME_COMPANY:0 "Italian Maritime Company"
  ROOT_SPHERE:0 "[Root.Nation_ADJ] Sphere"
  Nation_ADJ:0 "$COUNTRY$"

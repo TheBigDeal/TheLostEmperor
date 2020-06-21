@@ -10,6 +10,17 @@ JTH = "countries/Jaysh_ut-Tahrir.txt"
 MAH = "countries/Mahdist_State.txt"
 ASW = "countries/Aswan.txt"
 AMC = "countries/Ahmadiyya_Muslim_Community.txt"
+BHN = "countries/Bahrain.txt"
+AHV = "countries/Ahvaz.txt"  
+SHR = "countries/Shiraz.txt" 
+BHI = "countries/Bahai_Insurgence.txt" #Baha'i-Bàbi Insurgents at East Shiraz - Abdol-Baha'-
+FRS = "countries/Fars.txt" #Fars Province - Nationalists in West Shiraz - Sayyid Mohammed Tadayyon-
+KHR = "countries/Khorasan.txt" 
+MZD = "countries/Mazandaran.txt" 
+TBR = "countries/Tibriz.txt" 
+AJM = "countries/Iraq-e_Ajam.txt"  
+KRM = "countries/Kerman.txt" 
+
 
 #AFRICA
 MET = "countries/Metz.txt"

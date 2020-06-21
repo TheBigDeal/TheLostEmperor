@@ -1,0 +1,32 @@
+﻿###########################
+# Belarus Events
+###########################
+
+add_namespace = le_persia
+
+#Death of the Unifier
+country_event = {
+	id = le_persia.1
+	title = le_persia.1.t
+	desc = le_persia.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		#
+	}
+	option = {
+		name = le_persia.1.a #A new era has begun
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Ahmed Shah"
+			desc = ""
+			picture = ""
+			expire = "1965.1.1"
+			ideology = absolutism_ideology
+			traits = {
+				#
+			}
+		}
+		complete_national_focus = PER_shah_dies
+	}
+}

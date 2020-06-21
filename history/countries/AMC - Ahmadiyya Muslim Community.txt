@@ -1,4 +1,4 @@
-﻿capital = 916
+﻿capital = 440
 
 ###OOB = "AAC_1928"
 
@@ -9,17 +9,16 @@ set_technology = {
 }
 
 set_politics = {	
-	ruling_party = absolutism
+	ruling_party = rexism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    liberalism = 0
-    rexism = 0
-    proletarianism = 10
-    absolutism = 90
+    rexism = 67
+    theocracy = 16
+    labryscism = 17
 }
 add_ideas = {
 	le_religion_mujaddidi
@@ -27,9 +26,22 @@ add_ideas = {
 
 set_convoys = 5
 
+create_faction = ahmadiyya_faction
+add_to_faction = PAK
 
 create_country_leader = {
 	name = "Mirza Bashir Ahmed"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Albania_King_Zog.dds"
+	expire = "1965.1.1"
+	ideology = rexism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mirza Mahmoud Ahmed"
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "Portrait_Albania_King_Zog.dds"
 	expire = "1965.1.1"
@@ -39,3 +51,13 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Mirza Hakim Ahmed"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Albania_King_Zog.dds"
+	expire = "1965.1.1"
+	ideology = labryscism_ideology
+	traits = {
+		#
+	}
+}
