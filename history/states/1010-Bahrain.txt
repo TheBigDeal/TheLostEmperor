@@ -4,7 +4,7 @@ state={
 	history={
 		owner = BHN
 		victory_points = {
-			13267 2
+			13267 5
 		}
 		buildings = {
 			infrastructure = 1
@@ -13,7 +13,7 @@ state={
 		add_core_of = BHN
 	}
 	provinces={
-		13267 
+		13267 10791 12702
 	}
 	manpower=99970
 	buildings_max_level_factor=1.000
