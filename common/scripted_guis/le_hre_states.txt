@@ -21,9 +21,18 @@ scripted_gui = {
 		context_type = selected_state_context
 		window_name = "state_claim"
 		parent_window_token = selected_state_view
-		visible = { NOT = {is_controlled_by = ROOT } }
+		visible = { NOT = { is_controlled_by = ROOT } }
 		triggers = {
-			has_claim_button_visible = { is_claimed_by = ROOT }
+			has_claim_button_visible = { 
+				OR = {
+					is_claimed_by = ROOT #cannot claim if claim already exists
+					ROOT = { has_political_power < 300 }#cannot claim without PP (value to be changed later
+					AND = {
+						NOT = { any_neighbor_state = { is_owned_by = ROOT } }
+						NOT = { any_neighbor_state = { is_claimed_by = ROOT } }
+					}
+				}
+			}
 		}
 		effects = {
 			claim_button_click = { 
@@ -54,5 +63,12 @@ scripted_gui = {
 				ROOT = { set_variable = { open_claim_container = 0 } }
 			}
 		}
+	}
+	nuke_province_tech = { 
+		context_type = selected_state_context
+		window_name = "province_info_window"
+		parent_window_token = selected_state_view
+		visible = { always = yes }
+		triggers = { nuke_province_visible = { always = no } }
 	}
 }

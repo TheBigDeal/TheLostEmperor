@@ -33,11 +33,14 @@ guiTypes = {
 			position = {x=0 y=0}
 			spriteType = "GFX_claim_state_button"
 			pdx_tooltip = "claim_state"
+			pdx_tooltip_delayed = "claim_state_delayed"
 		}
-		iconType = {
+		buttonType = {
 			name = "has_claim_button"
 			position = {x=0 y=0}
 			spriteType = "GFX_has_claim_state_button"
+			pdx_tooltip = "cannot_claim_state"
+			pdx_tooltip_delayed = "claim_state_delayed"
 		}
 	}
 	

@@ -1,6 +1,8 @@
 ﻿l_english:
  state_in_HRE:0 "This State Is A Part Of The Holy Roman Empire"
- claim_state:0 "§YClaim State§!\nCost (£pol_power ): 300"
+ claim_state:0 "§YClaim State§!\nCost (£pol_power ): 300\nWe §GCan§! Claim This State"
+ cannot_claim_state:0 "§YClaim State§!\nCost (£pol_power ): 300\nWe §RCannot§! Claim This State"
+ claim_state_delayed:0 "§YEnforcing A Claim Requires:§!\n  - Have No Current Claim\n  - Have More Than 300 Political Power\n  - Border our land, or a current claim"
  CHANGE_CAT1_ONLY_UNDERGROUND:0 "Do you want to replace our current policial law with §YOnly Underground§!?"
  random_list_spacing_tt:0 "          §!" #WORKING IN LE_Ottoman_I_english, wont take from here for whatever reason.
  prestige30_tt:0 "Gain §Y30 Prestige§!"
