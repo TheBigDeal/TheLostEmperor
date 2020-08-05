@@ -10,7 +10,8 @@ country_event = { #German Civil War
 	is_triggered_only = yes
 	option = {
 		name = le_germany.1.a
-		complete_national_focus = GER_GERMAN_CIVIL_WAR
+		#complete_national_focus = GER_GERMAN_CIVIL_WAR
+		PRE = { calculate_maximum_divisions = yes }
 	}
 }
 country_event = { #German Coup

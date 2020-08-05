@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Election_Cordel_Hull"
+		texturefile = "gfx/interface/USA_Elections/Election_Cordel_Hull.tga"
+	}
+	spriteType = {
+		name = "GFX_Election_Frank_Lowden"
+		texturefile = "gfx/interface/USA_Elections/Election_Frank_Lowden.dds"
+	}
+	spriteType = {
+		name = "GFX_Election_James_Reed"
+		texturefile = "gfx/interface/USA_Elections/Election_James_Reed.tga"
+	}
+	spriteType = {
+		name = "GFX_Election_Quentin_Roosevelt"
+		texturefile = "gfx/interface/USA_Elections/Election_Quentin_Roosevelt.tga"
+	}
+	spriteType = {
+		name = "GFX_Election_Democrat"
+		texturefile = "gfx/interface/USA_Elections/democrat.dds"
+	}
+	spriteType = {
+		name = "GFX_Election_Republican"
+		texturefile = "gfx/interface/USA_Elections/republican.dds"
+	}
+}

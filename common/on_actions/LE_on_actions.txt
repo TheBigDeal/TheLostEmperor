@@ -29,7 +29,6 @@ on_actions = {
 				get_starting_food = yes
 				set_economic_pp_costs = yes
 				set_variable = { treasury = 0 }
-				
 			}
 			every_country = {
 				limit = {

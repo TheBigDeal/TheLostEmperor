@@ -1,0 +1,22 @@
+### GLOBAL ON ACTIONS FILE ###
+### COUNTRY-SPECIFIC ACTIONS SHOULD GO INTO THEIR OWN FILES ###
+### DON'T EDIT THIS FILE WITHOUT CHECKING IN THE CODING CHANNEL FIRST ###
+
+on_actions = {
+	on_weekly = {
+		effect = {
+			# unit limit calculations
+			calculate_maximum_divisions = yes
+			country_event = force_limit.122
+		}
+	}
+
+	on_startup = {
+		effect = {
+			every_country = {
+				# unit limit calculations
+				calculate_maximum_divisions = yes
+			}
+		}
+	}
+}

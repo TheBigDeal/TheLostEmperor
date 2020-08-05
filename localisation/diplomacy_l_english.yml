@@ -10,6 +10,15 @@
  BORDER_WAR_LOSS:0 ""
  BORDER_WAR_WIN:0 ""
  BORDER_WAR_HINT:0 ""
+ 
+ #Custom Diplomatic Actions
+ 
+ #Alliance
+ stronger_nation:0 "Stronger Nation"
+ opinion_desire:0 "Opinion"
+ too_weak:0 "Weaker Nation"
+ subject_nation:0 "Is A Subject Nation"
+ base_desire:0 "Base Desire"
 #VANILLA
  DIPLO_POSITIVE:0 "Positive: $VAL|G$"
  DIPLO_NEGATIVE:0 "Negative: $VAL|R$"
@@ -24,6 +33,11 @@
  X_JOINS_ALLIED_WARS:1 "$WHO|H$ joined wars of $WHOM|H$"
  FACTION_JOIN_THREAT_IMPACT:0 "This will change World Tension by $VAL$."
  BOOST_PARTY_SELECT_TT:0 "The $IDE|Y$ party of $NAME|Y$ has a popularity of §Y$CURR|2$%§!, and with our pressure it will change by §G+$CHANGE|2$§! due to\n$WHY$"
+ DIPLOMACY_REQUEST_ACCESS_TO_LICENCE_PRODUCTION_TITLE:0 "Negotiate Licenses"
+ DIPLOMACY_REQUEST_ACCESS_TO_LICENCE_PRODUCTION_ACTION_DESC:0 "Request access to see production licenses"
+ DIPLOMACY_REQUEST_ACCESS_TO_LICENCE_PRODUCTION_REQUEST_DESC:0 "$COUNTRY|H$ is asking to access your production to make a production license request"
+ DIPLOMACY_CANCEL_ACCESS_TO_LICENCE_PRODUCTION_ACTION_DESC:0 "Cancel their access to seeing our production licenses"
+ REQUEST_ACCESS_TO_LICENCE_PRODUCTION_DESC:0 "You need access to $TARGET|H$'s production in order to make a request for a production license request."
  DIPLOMACY_WAR_TITLE:0 "Declare war"
  DIPLOMACY_WAR_DESC:0 "Select a war goal to declare war."
  DIPLOMACY_WAR_GOALS:0 "War goals"

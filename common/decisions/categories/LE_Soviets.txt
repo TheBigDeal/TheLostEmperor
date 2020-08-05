@@ -5,12 +5,16 @@
 SOV_ATTACK_COUNTRIES = {
 	icon = idea_collectivism
 	allowed = {
-		tag = SOV
+		always = no
 	}
 }
 SOV_CREATE_SOCIALIST_REPUBLICS = {
 	icon = idea_collectivism
 	allowed = {
-		tag = SOV
+		OR = {
+			tag = SOV
+			tag = RUS
+		}
+		NOT = { has_country_flag = SOV_SOVIET_REVOLUTION }
 	}
 }

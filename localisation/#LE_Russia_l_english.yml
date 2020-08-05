@@ -72,6 +72,19 @@
 
 ### Ideas ###
  rus_vast_empire:0 "Vast Empire"
+ rus_readied_the_reserves:0 "Readied The Reserves"
+ RUS_THE_SOUND_TOLL:0 "The Sound Toll"
+ rus_breakaway_state:0 "Russian Breakaway State"
+ rus_breakaway_state_desc:0 "Revolting from the tyranny of the Russian Empire, [ROOT.GetName] has taken advantage of the Russian civil war to gain their independence. Since they have been under Russian rule, the tactics of Russia are ineffective against this nation."
+ RUS_DESPERATE_TIMES_1:0 "Desperate Times"
+ RUS_DESPERATE_TIMES_2:0 "Desperate Times"
+ RUS_DESPERATE_TIMES_3:0 "Desperate Times"
+ RUS_DESPERATE_TIMES_4:0 "Desperate Times"
+ RUS_DESPERATE_TIMES_5:0 "Desperate Times"
+ RUS_DESPERATE_TIMES_6:0 "Desperate Times"
+ RUS_DESPERATE_TIMES_7:0 "Desperate Times"
+ RUS_DESPERATE_TIMES_8:0 "Desperate Times"
+ RUS_DESPERATE_TIMES_9:0 "Desperate Times"
 ### Opinion Modifier ###
 
 ### Tooltips ###
@@ -91,6 +104,10 @@
  RUS_high:0 "§YHigh§!"
  RUS_veryhigh:0 "§RVery High§!"
  RUS_extreme:0 "§RExtreme§!"
+ POST_REVOLUTION_REVOLTS:0 "Internal Revolts"
+ UKRAINIAN_REVOLT:0 "[UKR.GetFlag] [UKR.GetAdjective] Revolt"
+ LATVIAN_REVOLT:0 "[LAT.GetFlag] [LAT.GetAdjective] Revolt"
+ ESTONIAN_REVOLT:0 "[EST.GetFlag] [EST.GetAdjective] Revolt"
 ### Focus Tree ###
  RUS_DECLARE_STATE_OF_EMERGENCY:0 "Declare State Of Emergency"
  RUS_READY_THE_RESERVES:0 "Ready The Reserves"
@@ -143,3 +160,8 @@
  le_russia.11.d:0 "Russia is asking for aid against their internal communist threat. Having a large communist nation such as russia would be be quite a hinderence on the world."
  le_russia.11.a:0 "Accept"
  le_russia.11.b:0 "Decline"
+ 
+ le_russia.14.t:0 "Russia asks for Aid"
+ le_russia.14.d:0 "Russia is asking for aid against their internal communist threat. Having a large communist nation such as russia would be be quite a hinderence on the world."
+ le_russia.14.a:0 "Accept"
+ le_russia.14.b:0 "Decline"

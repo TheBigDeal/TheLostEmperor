@@ -9,7 +9,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = absolutism
+	ruling_party = despotism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -21,8 +21,8 @@ set_popularities = {
     socialism = 8
     labryscism = 8
     rexism = 2
-    despotism = 12
-    royalism = 25
+    despotism = 41
+    royalism = 12
     theocracy = 3
     absolutism = 13
     proletarianism = 5
@@ -30,17 +30,16 @@ set_popularities = {
 
 set_convoys = 30
 
-#Victor Emmanuel III of Italy after 39
-#create_country_leader = {
-#	name = "King Zog"
-#	desc = "POLITICS_KING_ZOG_DESC"
-#	picture = "Portrait_Albania_King_Zog.dds"
-#	expire = "1965.1.1"
-#	ideology = absolutism_ideology
-#	traits = {
-#		#
-#	}
-#}
+create_country_leader = {
+	name = "Maciej Sulkiewicz"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "CRI_Maciej_Sulkiewicz.dds"
+	expire = "1965.1.1"
+	ideology = despotism_ideology
+	traits = {
+		#
+	}
+}
 
 #create_field_marshal = {
 #	name = "Xhemal Aranitasi"

@@ -1,0 +1,15 @@
+scripted_gui = {
+	election_event = {
+		context_type = player_context
+		
+		window_name = "election_event"
+		
+		visible = { check_variable = { usa_elections = 1 } original_tag = USA }
+		effects = {
+			close_button_click = {
+				set_variable = { open_hre_container = 0 }
+			}
+		}
+	}
+}
+

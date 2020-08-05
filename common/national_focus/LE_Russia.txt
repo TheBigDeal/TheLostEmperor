@@ -9,12 +9,16 @@ focus_tree = {
 		mutually_exclusive = { focus = RUS_BUSINESS_AS_USUAL}
 		x = 5
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_stability = -0.10
 			add_war_support = -0.20
-			add_political_power = 100		
+			add_political_power = 100	
+			add_days_mission_timeout = {
+				mission = RUSSIAN_CIVIL_WAR
+				days = -14
+			}			
 		}
 	}
 	focus = {
@@ -23,10 +27,14 @@ focus_tree = {
 		prerequisite = { focus = RUS_DECLARE_STATE_OF_EMERGENCY }
 		x = 5
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_ideas = { rus_readied_the_reserves }
+			add_days_mission_timeout = {
+				mission = RUSSIAN_CIVIL_WAR
+				days = -14
+			}
 		}
 	}
 	focus = {
@@ -36,7 +44,7 @@ focus_tree = {
 		mutually_exclusive = { focus = RUS_ONE_LOYAL_ARMY }
 		x = 4
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			subtract_from_variable = { current_money = 1000 }
@@ -85,6 +93,10 @@ focus_tree = {
 					owner = RUS
 				}
 			}
+			add_days_mission_timeout = {
+				mission = RUSSIAN_CIVIL_WAR
+				days = -14
+			}
 		}
 	}
 	focus = {
@@ -93,10 +105,14 @@ focus_tree = {
 		prerequisite = { focus = RUS_CALL_IN_THE_MERCENARIES }
 		x = 0
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			GBR = { country_event = { id = le_russia.11 = 2} }
+			add_days_mission_timeout = {
+				mission = RUSSIAN_CIVIL_WAR
+				days = -14
+			}
 		}
 	}
 	focus = {
@@ -105,12 +121,16 @@ focus_tree = {
 		prerequisite = { focus = RUS_REQUEST_BRITISH_AID }
 		x = 0
 		y = 4
-		cost = 10
+		cost = 5
 		available = { has_country_flag = accepted_british_support }
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			air_experience = 50
 			GBR = { send_equipment = { equipment = fighter_equipment amount = 150 target = RUS } }
+			add_days_mission_timeout = {
+				mission = RUSSIAN_CIVIL_WAR
+				days = -14
+			}
 		}
 	}
 	focus = {
@@ -119,10 +139,14 @@ focus_tree = {
 		prerequisite = { focus = RUS_CALL_IN_THE_MERCENARIES }
 		x = 2
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			DEN = { country_event = { id = le_russia.14 } }
+			add_days_mission_timeout = {
+				mission = RUSSIAN_CIVIL_WAR
+				days = -14
+			}
 		}
 	}
 	focus = {
@@ -131,13 +155,17 @@ focus_tree = {
 		prerequisite = { focus = RUS_REQUEST_DANISH_AID }
 		x = 2
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		available = {
 			has_country_flag = accepted_danish_support
 		}
 		completion_reward = {
 			SOV = {add_ideas = { RUS_THE_SOUND_TOLL }}
+			add_days_mission_timeout = {
+				mission = RUSSIAN_CIVIL_WAR
+				days = -14
+			}
 		}
 	}
 	focus = {
@@ -146,10 +174,14 @@ focus_tree = {
 		prerequisite = { focus = RUS_CALL_IN_THE_MERCENARIES }
 		x = 4
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			PRE = { country_event = { id = le_russia.14 } }
+			add_days_mission_timeout = {
+				mission = RUSSIAN_CIVIL_WAR
+				days = -14
+			}
 		}
 	}
 	focus = {
@@ -158,22 +190,36 @@ focus_tree = {
 		prerequisite = { focus = RUS_REQUEST_PRUSSIAN_AID }
 		x = 4
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			army_experience = 50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_tech
+			}
+			add_days_mission_timeout = {
+				mission = RUSSIAN_CIVIL_WAR
+				days = -14
+			}
 		}
 	}
 	focus = {
 		id = RUS_THE_COST_WE_HAVE_TO_PAY
-		icon = GFX_unknown
+		icon = GFX_labour_voucher_focus
 		prerequisite = { focus = RUS_A_TRAINING_GROUND_FOR_THE_RAF focus = RUS_BLOCKADE_SOVIET_SUPPLIERS focus = RUS_EMPLOY_GERMAN_WEAPON_DESIGNER }
 		x = 2
 		y = 6
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_manpower = 50000
+			add_stability = -0.10
+			add_days_mission_timeout = {
+				mission = RUSSIAN_CIVIL_WAR
+				days = -70
+			}
 		}
 	}
 	focus = {
@@ -183,94 +229,178 @@ focus_tree = {
 		mutually_exclusive = { focus = RUS_CALL_IN_THE_MERCENARIES }
 		x = 6
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			army_experience = 50
+			add_ideas = RUS_DESPERATE_TIMES_1
+			add_days_mission_timeout = {
+				mission = RUSSIAN_CIVIL_WAR
+				days = -14
+			}
 		}
 	}
 	focus = {
 		id = RUS_FILL_THE_RANKS
-		icon = GFX_unknown
+		icon = GFX_focus_quantity_recruitment
 		prerequisite = { focus = RUS_ONE_LOYAL_ARMY }
 		x = 6
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_manpower = 40000	
+			add_war_support = -0.10
+			add_days_mission_timeout = {
+				mission = RUSSIAN_CIVIL_WAR
+				days = -14
+			}
 		}
 	}
 	focus = {
 		id = RUS_BRINGING_IN_THE_ARTILLERY
-		icon = GFX_unknown
+		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = RUS_ONE_LOYAL_ARMY }
 		x = 8
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_war_support = -0.10
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 200
+				producer = RUS
+			}
+			add_days_mission_timeout = {
+				mission = RUSSIAN_CIVIL_WAR
+				days = -14
+			}
 		}
 	}
 	focus = {
 		id = RUS_RUSHING_WEAPON_PRODUCTION
-		icon = GFX_unknown
+		icon = GFX_focus_focus_fra_maquis
 		prerequisite = { focus = RUS_FILL_THE_RANKS focus = RUS_BRINGING_IN_THE_ARTILLERY }
 		x = 6
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			if = {
+				limit = { has_idea = RUS_DESPERATE_TIMES_1 }
+				swap_ideas = { add_idea = RUS_DESPERATE_TIMES_1 remove_idea = RUS_DESPERATE_TIMES_2 }
+			}
+			else_if = {
+				limit = { has_idea = RUS_DESPERATE_TIMES_2 }
+				swap_ideas = { add_idea = RUS_DESPERATE_TIMES_3 remove_idea = RUS_DESPERATE_TIMES_4 }
+			}
+			else = {
+				swap_ideas = { add_idea = RUS_DESPERATE_TIMES_1 remove_idea = RUS_DESPERATE_TIMES_2 }
+			}
+			add_days_mission_timeout = {
+				mission = RUSSIAN_CIVIL_WAR
+				days = -14
+			}
 		}
 	}
 	focus = {
 		id = RUS_FORCE_PEASANTS_INTO_FACTORIES
-		icon = GFX_unknown
+		icon = GFX_Generic_Industry
 		prerequisite = { focus = RUS_FILL_THE_RANKS focus = RUS_BRINGING_IN_THE_ARTILLERY }
 		x = 8
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_manpower = -4000	
+			if = {
+				limit = { has_idea = RUS_DESPERATE_TIMES_1 }
+				swap_ideas = { add_idea = RUS_DESPERATE_TIMES_1 remove_idea = RUS_DESPERATE_TIMES_3 }
+			}
+			else_if = {
+				limit = { has_idea = RUS_DESPERATE_TIMES_2 }
+				swap_ideas = { add_idea = RUS_DESPERATE_TIMES_2 remove_idea = RUS_DESPERATE_TIMES_4 }
+			}
+			else = {
+				swap_ideas = { add_idea = RUS_DESPERATE_TIMES_1 remove_idea = RUS_DESPERATE_TIMES_3 }
+			}
+			add_days_mission_timeout = {
+				mission = RUSSIAN_CIVIL_WAR
+				days = -14
+			}
 		}
 	}
 	focus = {
 		id = RUS_PUT_THE_CIVIL_ENGINEERS_TO_WORK
-		icon = GFX_unknown
-		prerequisite = { focus = RUS_FORCE_PEASANTS_INTO_FACTORIES focus = RUS_RUSHING_WEAPON_PRODUCTION }
+		icon = GFX_USA_workers_for_business
+		prerequisite = { focus = RUS_FORCE_PEASANTS_INTO_FACTORIES }
+		prerequisite = { focus = RUS_RUSHING_WEAPON_PRODUCTION }
 		x = 6
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			if = {
+				limit = { has_idea = RUS_DESPERATE_TIMES_4 }
+				swap_ideas = { remove_idea = RUS_DESPERATE_TIMES_4 add_idea = RUS_DESPERATE_TIMES_5 }
+			}
+			else_if = {
+				limit = { has_idea = RUS_DESPERATE_TIMES_6 }
+				swap_ideas = { remove_idea = RUS_DESPERATE_TIMES_6 add_idea = RUS_DESPERATE_TIMES_7 }
+			}
+			else = {
+				swap_ideas = { remove_idea = RUS_DESPERATE_TIMES_4 add_idea = RUS_DESPERATE_TIMES_5 }
+			}
+			add_days_mission_timeout = {
+				mission = RUSSIAN_CIVIL_WAR
+				days = -14
+			}
 		}
 	}
 	focus = {
 		id = RUS_LET_THE_WOMEN_TILL_THE_FIELDS
-		icon = GFX_unknown
-		prerequisite = { focus = RUS_FORCE_PEASANTS_INTO_FACTORIES focus = RUS_RUSHING_WEAPON_PRODUCTION }
+		icon = GFX_goal_women_industry
+		prerequisite = { focus = RUS_RUSHING_WEAPON_PRODUCTION }
+		prerequisite = { focus = RUS_FORCE_PEASANTS_INTO_FACTORIES}
 		x = 8
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			if = {
+				limit = { has_idea = RUS_DESPERATE_TIMES_4 }
+				swap_ideas = { remove_idea = RUS_DESPERATE_TIMES_4 add_idea = RUS_DESPERATE_TIMES_6 }
+			}
+			else_if = {
+				limit = { has_idea = RUS_DESPERATE_TIMES_5 }
+				swap_ideas = { remove_idea = RUS_DESPERATE_TIMES_5 add_idea = RUS_DESPERATE_TIMES_7 }
+			}
+			else = {
+				swap_ideas = { remove_idea = RUS_DESPERATE_TIMES_4 add_idea = RUS_DESPERATE_TIMES_6 }
+			}
+			add_days_mission_timeout = {
+				mission = RUSSIAN_CIVIL_WAR
+				days = -14
+			}
 		}
 	}
 	focus = {
 		id = RUS_THE_LIVES_WE_HAVE_TO_LOSE
-		icon = GFX_unknown
-		prerequisite = { focus = RUS_PUT_THE_CIVIL_ENGINEERS_TO_WORK focus = RUS_LET_THE_WOMEN_TILL_THE_FIELDS }
+		icon = GFX_Crush_the_Rebellion
+		prerequisite = { focus = RUS_LET_THE_WOMEN_TILL_THE_FIELDS }
+		prerequisite = { focus = RUS_PUT_THE_CIVIL_ENGINEERS_TO_WORK }
 		x = 7
 		y = 6
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_manpower = 50000
+			add_war_support = -0.20
+			add_days_mission_timeout = {
+				mission = RUSSIAN_CIVIL_WAR
+				days = -70
+			}
 		}
 	}
 	focus = {
@@ -279,7 +409,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_THE_LIVES_WE_HAVE_TO_LOSE focus = RUS_THE_COST_WE_HAVE_TO_PAY }
 		x = 0
 		y = 7
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -291,7 +421,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_THE_LIVES_WE_HAVE_TO_LOSE focus = RUS_THE_COST_WE_HAVE_TO_PAY }
 		x = 3
 		y = 7
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -303,7 +433,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_THE_LIVES_WE_HAVE_TO_LOSE focus = RUS_THE_COST_WE_HAVE_TO_PAY }
 		x = 6
 		y = 7
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -315,7 +445,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_THE_LIVES_WE_HAVE_TO_LOSE focus = RUS_THE_COST_WE_HAVE_TO_PAY }
 		x = 9
 		y = 7
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -329,7 +459,7 @@ focus_tree = {
 		mutually_exclusive = { focus = RUS_DECLARE_STATE_OF_EMERGENCY}
 		x = 18
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -341,7 +471,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_BUSINESS_AS_USUAL}
 		x = 18
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -354,7 +484,7 @@ focus_tree = {
 		mutually_exclusive = { focus = RUS_A_BULLET_IN_THE_FOOT focus = RUS_THE_LONG_ROAD_AHEAD }
 		x = 14
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -366,7 +496,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_AN_EYE_FOR_AN_EYE}
 		x = 13
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -378,7 +508,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_PARDON_THE_BLACK_HUNDREDS}
 		x = 12
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -390,7 +520,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_PARDON_THE_BLACK_HUNDREDS focus = RUS_OUR_MEN_ON_THE_INSIDE}
 		x = 14
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -404,7 +534,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_ADMIT_MILITARY_PERSONELL_IN_THE_DUMA }
 		x = 14
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -416,7 +546,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_PAVE_THE_ROAD_TO_MOSCOW }
 		x = 14
 		y = 6
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -428,7 +558,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_AN_EYE_FOR_AN_EYE}
 		x = 15
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -440,7 +570,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_OUR_MEN_ON_THE_INSIDE focus = RUS_REINFORCE_THE_CHAIN_OF_COMMAND }
 		x = 16
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -452,7 +582,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_ADMIT_MILITARY_PERSONELL_IN_THE_DUMA }
 		x = 17
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -464,7 +594,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_A_CONTROLLED_LEFT focus = RUS_TWO_BULLETS_IN_THE_HEAD}
 		x = 21
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -477,7 +607,7 @@ focus_tree = {
 		mutually_exclusive = { focus = RUS_AN_EYE_FOR_AN_EYE focus = RUS_A_BULLET_IN_THE_FOOT }
 		x = 18
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -489,7 +619,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_THE_LONG_ROAD_AHEAD}
 		x = 18
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -501,7 +631,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_REINFORCE_THE_CHAIN_OF_COMMAND focus = RUS_HELP_FROM_UNEXPECTED_PLACES }
 		x = 20
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -514,7 +644,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_A_CONTROLLED_LEFT}
 		x = 19
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -528,7 +658,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_FREE_THE_POLITICAL_PRISONERS}
 		x = 18
 		y = 6
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -541,7 +671,7 @@ focus_tree = {
 		mutually_exclusive = { focus = RUS_AN_EYE_FOR_AN_EYE focus = RUS_THE_LONG_ROAD_AHEAD }
 		x = 23
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -553,7 +683,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_A_BULLET_IN_THE_FOOT}
 		x = 22
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -565,7 +695,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_A_BULLET_IN_THE_FOOT}
 		x = 24
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -578,7 +708,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_CONVINCE_KIROV}
 		x = 23
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -590,7 +720,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_TWO_BULLETS_IN_THE_HEAD}
 		x = 23
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -602,7 +732,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_TWO_BULLETS_IN_THE_HEAD}
 		x = 25
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		
@@ -616,7 +746,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_FREE_THE_POLITICAL_PRISONERS }
 		x = 23
 		y = 6
-		cost = 10
+		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
 			add_political_power = 100		

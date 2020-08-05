@@ -2,6 +2,7 @@
  farm:0 "Farm"
  farm_plural:0 "Farms"
  farm_desc:0 "Farms are a countries source of §Yfood§!. Without farms countries cannot eat, and cannot exist.\n- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\nProdudes One £texticon_food"
+ modifier_production_speed_farm_factor:0 "§YFarm§! construction speed:"
  textile_factory:0 "Textile Factory"
  textile_factory_plural:0 "Textile Factories"
  

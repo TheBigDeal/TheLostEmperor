@@ -1,5 +1,8 @@
 #reload countrycolors
-
+MAK = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 100 100 100 }
+}
 ASW = {
 	color = rgb { 227 159 70 }
 	color_ui = rgb { 227 159 70 }
@@ -1690,4 +1693,12 @@ D14 = {
 D15 = {
 	color = rgb { 194 140 86 }
 	color_ui = rgb { 252 182 112 }
+}
+XXA = {
+	color = rgb { 125 125 125 }
+	color_ui = rgb { 125 125 125 }
+}
+XXB = {
+	color = rgb { 125 125 125 }
+	color_ui = rgb { 125 125 125 }
 }

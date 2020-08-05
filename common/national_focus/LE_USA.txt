@@ -192,6 +192,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = { id = le_USA.7 }
+			set_variable = { usa_elections = 1 }
 		}
 	}
 	focus = {

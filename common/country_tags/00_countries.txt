@@ -21,6 +21,7 @@ TBR = "countries/Tibriz.txt"
 AJM = "countries/Iraq-e_Ajam.txt"  
 KRM = "countries/Kerman.txt" 
 
+MAK = "countries/Makhnovia.txt" 
 
 #AFRICA
 MET = "countries/Metz.txt"
@@ -471,3 +472,8 @@ MLD = "countries/Maldives.txt"
 FIJ = "countries/Fiji.txt"
 SLV = "countries/Slovenia.txt"
 NIR = "countries/Northern Ireland.txt"
+
+
+#### GFX storage only - These tags should always be at the end of this list
+XXA = "countries/WestEur.txt"
+XXB = "countries/WestEur.txt"

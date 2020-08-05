@@ -118,6 +118,10 @@ spriteTypes = {
 	# OTHER MOD GFX
 	#############################################################
 	SpriteType = {
+		name = "GFX_focus_quantity_recruitment"
+		texturefile = "gfx/interface/goals/focus_quantity_recruitment.dds"
+	}
+	SpriteType = {
 		name = "GFX_GEO_stalinreturns"
 		texturefile = "gfx/interface/goals/GEO_stalinreturns.dds"
 	}

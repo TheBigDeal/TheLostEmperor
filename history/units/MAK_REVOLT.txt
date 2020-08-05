@@ -1,0 +1,38 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Militsiya Diviziya"			# Rifle Division
+	is_locked = no
+	division_names_group = SOV_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+	}
+}
+##### OOB #####
+units = {
+	division = { name = "Militsiya Diviziya" location = 721 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 737 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 11715 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 11561 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 6423 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 9433 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 9463 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 9479 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 3508 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 11397 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 11437 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 11437 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 11437 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 11437 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 418 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 11405 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 6474 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 9461 division_template = "Militsiya Diviziya" }
+}

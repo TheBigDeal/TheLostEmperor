@@ -10,6 +10,19 @@ country = {
 			production_speed_infrastructure_factor	= 0.10
 		}
 	}
+	rus_breakaway_state = {
+		picture = generic_collectivist_army
+		modifier = {
+			training_time_factor = -0.10
+			war_support_factor = -0.10
+			conscription = 0.1
+		}
+		targeted_modifier = { tag = SOV attack_bonus_against = 0.05 }
+		targeted_modifier = { tag = SOV defense_bonus_against = 0.15 }
+		targeted_modifier = { tag = RUS attack_bonus_against = 0.05 }
+		targeted_modifier = { tag = RUS defense_bonus_against = 0.15 }
+	}
+	
 	rus_readied_the_reserves = {
 		picture = generic_collectivist_army
 		modifier = {
@@ -20,6 +33,92 @@ country = {
 	RUS_THE_SOUND_TOLL = {
 		modifier = {
 			trade_opinion_factor = -0.25
+		}
+	}
+	
+	RUS_DESPERATE_TIMES_1 = {
+		modifier = {
+			stability_factor = -0.20
+		}
+	}
+	
+	RUS_DESPERATE_TIMES_2 = {
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = 0.1 instant = yes
+			}
+		}
+		modifier = {
+			stability_factor = -0.20
+			stability_weekly = 0.01
+		}
+	}
+	
+	RUS_DESPERATE_TIMES_3 = {
+		modifier = {
+			stability_factor = -0.20
+			production_speed_arms_factory_factor = -0.10
+			production_speed_industrial_complex_factor = -0.10
+		}
+	}
+	
+	RUS_DESPERATE_TIMES_4 = { # 2, 3 Combined
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = 0.1 instant = yes
+			}
+		}
+		modifier = {
+			stability_factor = -0.20
+			stability_weekly = -0.01
+			production_speed_arms_factory_factor = -0.10
+			production_speed_industrial_complex_factor = -0.10
+		}
+	}
+	
+	RUS_DESPERATE_TIMES_5 = {
+		research_bonus = { industry = 0.1 }
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = 0.1 instant = yes
+			}
+		}
+		modifier = {
+			stability_factor = -0.20
+			stability_weekly = -0.01
+			production_speed_arms_factory_factor = -0.10
+			production_speed_industrial_complex_factor = -0.10
+		}
+	}
+	
+	RUS_DESPERATE_TIMES_6 = { # 2, 3 Combined
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = 0.1 instant = yes
+			}
+		}
+		modifier = {
+			stability_factor = -0.20
+			stability_weekly = -0.01
+			production_speed_arms_factory_factor = -0.10
+			production_speed_industrial_complex_factor = -0.10
+			production_speed_farm_factor = 0.10
+		}
+	}
+	
+	RUS_DESPERATE_TIMES_7 = { # 5, 6 Combined
+		research_bonus = { industry = 0.1 }
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = 0.1 instant = yes
+			}
+		}
+		modifier = {
+			stability_factor = -0.20
+			stability_weekly = -0.01
+			production_speed_arms_factory_factor = -0.10
+			production_speed_industrial_complex_factor = -0.10
+			production_speed_farm_factor = 0.10
 		}
 	}
 }

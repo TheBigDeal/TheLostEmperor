@@ -8,41 +8,76 @@ country_event = { #CAUCASUS DECLARES INDEPENDENCE
 	id = le_russia_unrest.1
 	title = le_russia_unrest.1.t
 	desc = le_russia_unrest.1.d
-	mean_time_to_happen = { days = 10 }
-	trigger = {
-		tag = RUS
-		check_variable = {
-   			var = RUS_GEORGIAN_STRENGTH
-    		value = 40
-    		compare = greater_than
-		}
-		NOT = { country_exists = GEO }
-	}
+	is_triggered_only = yes
+	fire_only_once = yes
 	immediate = {
-		hidden_effect = {
+		if = {
+			limit = { NOT = {country_exists = GEO}}
 			GEO = { transfer_state = 231 }
 			GEO = { transfer_state = 967 }
 			GEO = { load_OOB = GEO_1928 }
+		}
+		if = {
+			limit = { NOT = {country_exists = ARM}}
 			ARM = { transfer_state = 230 }
 			ARM = { transfer_state = 969 }
+		}
+		if = {
+			limit = { NOT = {country_exists = AZR}}
 			AZR = { transfer_state = 229 }
 			AZR = { transfer_state = 970 }
 			AZR = { transfer_state = 971 }
-			
 		}
 	}
 	option = { #Sign A Treaty of Peace
 		name = le_russia_unrest.1.a
-		set_truce = {target = GEO days = 365}
-		set_truce = {target = AZR days = 365}
-		set_truce = {target = ARM days = 365}
+		ai_chance = { factor = 10 }
+		if = {
+			limit = {tag = RUS}
+			set_truce = {target = GEO days = 365}
+			set_truce = {target = AZR days = 365}
+		}
+		else_if = {
+			limit = {tag = PER}
+			set_truce = {target = ARM days = 365}
+			set_truce = {target = AZR days = 365}
+		}
+		else_if = {
+			limit = {tag = TUR}
+			set_truce = {target = ARM days = 365}
+		}
+		else = {
+			set_truce = {target = GEO days = 365}
+			set_truce = {target = AZR days = 365}
+			set_truce = {target = ARM days = 365}
+		}
 	}
 	option = { #Attack Immediately
 		name = le_russia_unrest.1.b
-		declare_war_on = { target = GEO type = annex_everything }
+		ai_chance = { factor = 0 }
+		if = {
+			limit = {tag = RUS}
+			declare_war_on = { target = GEO type = annex_everything }
+			declare_war_on = { target = AZR type = annex_everything }
+		}
+		else_if = {
+			limit = {tag = PER}
+			declare_war_on = { target = ARM type = annex_everything }
+			declare_war_on = { target = AZR type = annex_everything }
+		}
+		else_if = {
+			limit = {tag = TUR}
+			declare_war_on = { target = ARM type = annex_everything }
+		}
+		else = {
+			declare_war_on = { target = GEO type = annex_everything }
+			declare_war_on = { target = AZR type = annex_everything }
+			declare_war_on = { target = ARM type = annex_everything }
+		}
 	}
 	option = { #Play as Georgia
 		name = le_russia_unrest.1.c
+		ai_chance = { factor = 0 }
 		set_truce = {
     		target = GEO
     		days = 365
@@ -54,16 +89,8 @@ country_event = { #UKRAINE DECLARES INDEPENDENCE
 	id = le_russia_unrest.2
 	title = le_russia_unrest.2.t
 	desc = le_russia_unrest.2.d
-	mean_time_to_happen = { days = 10 }
-	trigger = {
-		tag = RUS
-		check_variable = {
-   			var = RUS_UKRAINIAN_STRENGTH
-    		value = 40
-    		compare = greater_than
-		}
-		NOT = { country_exists = UKR }
-	}
+	is_triggered_only = yes
+	fire_only_once = yes
 	immediate = {
 		hidden_effect = {
 			UKR = { 
@@ -77,76 +104,115 @@ country_event = { #UKRAINE DECLARES INDEPENDENCE
 				transfer_state = 198
 				transfer_state = 78
 				transfer_state = 960
-				transfer_state = 196
 				transfer_state = 137
-				transfer_state = 200
-				transfer_state = 227
-				transfer_state = 226
-				transfer_state = 221
 				transfer_state = 259
 				transfer_state = 225 
 				transfer_state = 193
+				load_OOB = "UKR_REVOLT"
+				add_ideas = tot_economic_mobilisation
+				add_ideas = service_by_requirement
+				add_timed_idea = {
+					idea = rus_breakaway_state
+					days = 365
+				}
 			}
-			set_variable = { RUS_UKRAINIAN_STRENGTH = 0 }
+			MAK = { 
+				transfer_state = 196
+				transfer_state = 200
+				transfer_state = 227
+				transfer_state = 228
+				transfer_state = 226
+				transfer_state = 221
+				load_OOB = "MAK_REVOLT"
+				declare_war_on = { target = UKR type = annex_everything }
+				add_ideas = tot_economic_mobilisation
+				add_ideas = service_by_requirement
+				add_timed_idea = {
+					idea = rus_breakaway_state
+					days = 365
+				}
+			}
+			CRI = {
+				transfer_state = 137
+			}
+			every_state = {
+				limit = {is_owned_by = MAK}
+				add_core_of = MAK
+			}
+			every_state = {
+				limit = {is_owned_by = UKR}
+				add_core_of = MAK
+			}
 		}
 	}
 	option = { #Sign A Treaty of Peace
 		name = le_russia_unrest.2.a
-		set_truce = {
-    		target = UKR
-    		days = 365
-		}
-		add_to_variable = { var = RUS_BELERUS_STRENGTH value = 10 }
-		add_to_variable = { var = RUS_BELERUS_STRENGTH value = 10 }
+		ai_chance = { factor = 5 }
+		set_truce = { target = UKR days = 730 }
+		set_truce = { target = MAK days = 730 }
+		set_truce = { target = CRI days = 730 }
 	}
 	option = { #Attack Immediately
 		name = le_russia_unrest.2.b
+		ai_chance = { factor = 10 }
 		declare_war_on = { target = UKR type = annex_everything }
-		add_to_variable = { var = RUS_SOVIET_STRENGTH value = 20 }
-		add_to_variable = { var = RUS_GEORGIAN_STRENGTH value = 20 }
-		add_to_variable = { var = RUS_UKRAINIAN_STRENGTH value = 20 }
-		add_to_variable = { var = RUS_LATVIAN_STRENGTH value = 20 }
-		add_to_variable = { var = RUS_ESTONIAN_STRENGTH value = 20 }
-		add_to_variable = { var = RUS_BELERUS_STRENGTH value = 20 }
-		add_to_variable = { var = RUS_DON_KUBAN_STRENGTH value = 20 }
-		add_to_variable = { var = RUS_ARMENIA_STRENGTH value = 20 }
-		add_to_variable = { var = RUS_AZERBIJAN_STRENGTH value = 20 }
-		add_to_variable = { var = RUS_ALASH_ORDA_STRENGTH value = 20 }
-		
+		declare_war_on = { target = MAK type = annex_everything }
+		declare_war_on = { target = CRI type = annex_everything }
 	}
-	option = { #Play as Georgia
+	option = { #Play as
 		name = le_russia_unrest.2.c
-		set_truce = {
-    		target = UKR
-    		days = 365
+		ai_chance = { factor = 0 }
+		random_list = {
+			75 = {
+				RUS = {
+					declare_war_on = { target = UKR type = annex_everything }
+					declare_war_on = { target = MAK type = annex_everything }
+					declare_war_on = { target = CRI type = annex_everything }
+				}
+			}
+			25 = {
+				set_truce = { target = UKR days = 730 }
+				set_truce = { target = MAK days = 730 }
+				set_truce = { target = CRI days = 730 }
+			}
 		}
-		add_to_variable = { var = RUS_BELERUS_STRENGTH value = 10 }
-		add_to_variable = { var = RUS_ESTONIA_STRENGTH value = 10 }
 		UKR = { change_tag_from = ROOT }
+	}
+	option = { #Play as Makhnovia
+		name = le_russia_unrest.2.4
+		ai_chance = { factor = 0 }
+		random_list = {
+			75 = {
+				RUS = {
+					declare_war_on = { target = UKR type = annex_everything }
+					declare_war_on = { target = MAK type = annex_everything }
+					declare_war_on = { target = CRI type = annex_everything }
+				}
+			}
+			25 = {
+				set_truce = { target = UKR days = 730 }
+				set_truce = { target = MAK days = 730 }
+				set_truce = { target = CRI days = 730 }
+			}
+		}
+		MAK = { change_tag_from = ROOT }
 	}
 }
 country_event = { #LATVIA DECLARES INDEPENDENCE
 	id = le_russia_unrest.3
 	title = le_russia_unrest.3.t
 	desc = le_russia_unrest.3.d
-	mean_time_to_happen = { days = 10 }
-	trigger = {
-		tag = RUS
-		check_variable = {
-	   		var = RUS_LATVIAN_STRENGTH
-	    	value = 40
-	    	compare = greater_than
-		}
-		NOT = { country_exists = LAT }
-	}
+	is_triggered_only = yes
 	immediate = {
 		LAT = { 
 			transfer_state = 12
+			load_OOB = LAT_REVOLT
 		}
 		set_variable = { RUS_LATVIAN_STRENGTH = 0 }
 	}
 	option = { #Sign A Treaty of Peace
 		name = le_russia_unrest.3.a
+		ai_chance = { factor = 5 }
 		set_truce = {
     		target = LAT
     		days = 365
@@ -155,6 +221,7 @@ country_event = { #LATVIA DECLARES INDEPENDENCE
 	}
 	option = { #Attack Immediately
 		name = le_russia_unrest.3.b
+		ai_chance = { factor = 10 }
 		declare_war_on = { target = UKR type = annex_everything }
 		add_to_variable = { var = RUS_SOVIET_STRENGTH value = 20 }
 		add_to_variable = { var = RUS_GEORGIAN_STRENGTH value = 20 }
@@ -169,6 +236,7 @@ country_event = { #LATVIA DECLARES INDEPENDENCE
 	}
 	option = { #Play as Georgia
 		name = le_russia_unrest.3.c
+		ai_chance = { factor = 0 }
 		set_truce = {
     		target = UKR
     		days = 365
@@ -181,25 +249,18 @@ country_event = { #ESTONIA DECLARES INDEPENDENCE
 	id = le_russia_unrest.4
 	title = le_russia_unrest.4.t
 	desc = le_russia_unrest.4.d
-	mean_time_to_happen = { days = 10 }
-	trigger = {
-		tag = RUS
-		check_variable = {
-	   		var = RUS_ESTONIAN_STRENGTH
-	    	value = 40
-	    	compare = greater_than
-		}
-		NOT = { country_exists = EST }
-	}
+	is_triggered_only = yes
 	immediate = {
 		EST = { 
 			transfer_state = 13
 			transfer_state = 191
+			load_OOB = EST_REVOLT
 		}
 		set_variable = { RUS_ESTONIAN_STRENGTH = 0 }
 	}
 	option = { #Sign A Treaty of Peace
 		name = le_russia_unrest.3.a
+		ai_chance = { factor = 5 }
 		set_truce = {
     		target = EST
     		days = 365
@@ -209,6 +270,7 @@ country_event = { #ESTONIA DECLARES INDEPENDENCE
 	}
 	option = { #Attack Immediately
 		name = le_russia_unrest.3.b
+		ai_chance = { factor = 10 }
 		declare_war_on = { target = UKR type = annex_everything }
 		add_to_variable = { var = RUS_SOVIET_STRENGTH value = 20 }
 		add_to_variable = { var = RUS_GEORGIAN_STRENGTH value = 20 }
@@ -223,6 +285,7 @@ country_event = { #ESTONIA DECLARES INDEPENDENCE
 	}
 	option = { #Play as Georgia
 		name = le_russia_unrest.3.c
+		ai_chance = { factor = 0 }
 		set_truce = {
     		target = UKR
     		days = 365

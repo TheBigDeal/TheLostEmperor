@@ -31,7 +31,7 @@ country_event = {
 				transfer_state = 227
 				transfer_state = 228
 				transfer_state = 78
-				load_oob = UKRAINE_REVOLUTION
+				#load_oob = UKRAINE_REVOLUTION
 			}
 		}
 	}

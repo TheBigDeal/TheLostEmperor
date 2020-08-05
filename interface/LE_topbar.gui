@@ -44,7 +44,7 @@ guiTypes = {
 		iconType = {
 			name ="current_food_icon"
 			spriteType = "GFX_food"
-			position = { x= 2 y = -2 }
+			position = { x= 4 y = 2 }
 		}
 		
 		instantTextBoxType = {

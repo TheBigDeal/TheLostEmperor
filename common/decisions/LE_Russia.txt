@@ -1,36 +1,130 @@
 RUS_REVOLT_RISK_CAT = {
 	RUSSIAN_CIVIL_WAR = {
 		icon = GFX_decision_russian_civil_war
-		visible = { tag = RUS }
-		days_mission_timeout = 730
+		visible = { 
+			tag = RUS 
+		}
+		days_mission_timeout = 270
 		fire_only_once = yes
 		is_good = no
 		allowed = {
-			original_tag = RUS
+			AND = {
+				original_tag = RUS
+			}
 		}
 		available = {
-			NOT = { original_tag = RUS }
+			country_exists = SOV
 		}
 		timeout_effect = {
 			country_event = { id = le_russia.2 }
-			set_country_flag = SOV_SOVIET_REVOLUTION
+			SOV = { set_country_flag = SOV_SOVIET_REVOLUTION }
+			RUS = { set_country_flag = SOV_SOVIET_REVOLUTION }
+		}
+		complete_effect = {
+			
 		}
 	}
 	CAUCASUS_REVOLUTION = {
 		icon = GFX_decision_revolt
-		visible = { tag = RUS }
-		fire_only_once = yes
-		days_mission_timeout = 140
+		fire_only_once = no
 		is_good = no
 		allowed = {
-			original_tag = RUS
+			OR = {
+				original_tag = SOV
+				original_tag = RUS
+				original_tag = PER
+				original_tag = TUR
+			}
 		}
 		available = {
-			NOT = { original_tag = RUS }
-		}
+            always = no
+        }
+		days_mission_timeout = 140 
 		timeout_effect = {
 			country_event = { id = le_russia_unrest.1 }
 			set_country_flag = SOV_CAUCASUS_REVOLUTION
+			GEO = { transfer_state = 231 }
+			GEO = { transfer_state = 967 }
+			GEO = { load_OOB = GEO_1928 }
+			ARM = { transfer_state = 230 }
+			ARM = { transfer_state = 969 }
+			AZR = { transfer_state = 229 }
+			AZR = { transfer_state = 970 }
+			AZR = { transfer_state = 971 }
+		}
+	}
+}
+POST_REVOLUTION_REVOLTS = {
+	UKRAINIAN_REVOLT = {
+		icon = GFX_decision_revolt
+		fire_only_once = yes
+		is_good = no
+		allowed = {
+			OR = {
+				original_tag = RUS
+				original_tag = SOV
+			}
+		}
+		activation = {
+			OR = {
+				has_war_with = SOV 
+				has_war_with = RUS   
+			}
+        }
+		available = {
+            always = no
+        }
+		days_mission_timeout = 14
+		timeout_effect = {
+			country_event = { id = le_russia_unrest.2 } 
+		}
+	}
+	LATVIAN_REVOLT = {
+		icon = GFX_decision_revolt
+		fire_only_once = yes
+		is_good = no
+		allowed = {
+			OR = {
+				original_tag = RUS
+				original_tag = SOV
+			}
+		}
+		activation = {
+			OR = {
+				has_war_with = SOV 
+				has_war_with = RUS   
+			}
+        }
+		available = {
+            always = no
+        }
+		days_mission_timeout = 28
+		timeout_effect = {
+			country_event = { id = le_russia_unrest.3 }
+		}
+	}
+	ESTONIAN_REVOLT = {
+		icon = GFX_decision_revolt
+		fire_only_once = yes
+		is_good = no
+		allowed = {
+			OR = {
+				original_tag = RUS
+				original_tag = SOV
+			}
+		}
+		activation = {
+			OR = {
+				has_war_with = SOV 
+				has_war_with = RUS   
+			}
+        }
+		available = {
+            always = no
+        }
+		days_mission_timeout = 28
+		timeout_effect = {
+			country_event = { id = le_russia_unrest.4 }
 		}
 	}
 }

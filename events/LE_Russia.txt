@@ -15,6 +15,7 @@ country_event = {
 
 	option = {
 		name = le_russia.1.a
+		set_variable = { open_economy_container = 1 }
 	}
 }
 
@@ -24,13 +25,7 @@ country_event = {
 	desc = le_russia.2.d
 	picture = GFX_report_event_spain_civil_war_soldiers
 	fire_only_once = yes
-	trigger = {
-		AND = {
-			tag = RUS
-			proletarianism > 0.5
-		}
-	}
-	mean_time_to_happen = {	days = 60	}
+	is_triggered_only = yes
 	immediate = {
 		hidden_effect = { SOV = { transfer_state = 247 } }
 		RUS = { load_oob = RUS_CIVIL_WAR }
@@ -62,13 +57,6 @@ country_event = {
 				}
 				add_core_of = SOV
 			}
-			LAT = { country_event = { id = le_latvia.2 } }
-			UKR = { country_event = { id = le_ruthenia.1 } }
-			CRI = { country_event = { id = le_crimea.1 } }
-			DON = { country_event = { id = le_donkuban.1 } }
-			ALH = { country_event = { id = le_alash.1 } }
-			BLR = { country_event = { id = le_belarus.1 } }
-			RUS = { country_event = { days = 10 id = le_russia.8 } }
 		}
 		ai_chance = { factor = 20 }
 	}
@@ -82,7 +70,7 @@ country_event = {
 				ideology = collectivism
 				size = 0.6
 				capital = 219
-				states = { 247 248 253 252 254 255 257 239 401 407 236 406 402 404 220 240 587 220 222 223 192 227 200 196 193 191 209 210 207 219 205 242 224 243 241 13 12 137 234 558 263 246 208 228 221 225 259 226 197 203 226 218 657 202 14 201 198 199 204 206 258 265 245 238 217 237 235 232 233 231 229 230 260 78 562 637 644 574 565 575 566 567 }
+				states = { 247 248 253 252 254 255 257 239 401 407 236 406 220 240 220 222 223 192 227 200 196 193 191 209 210 207 219 205 242 224 243 241 13 12 137 234 558 263 246 208 228 221 225 259 226 197 203 226 218 657 202 14 201 198 199 204 206 258 265 245 238 217 237 235 232 233 231 229 230 260 78 562 637 644 574 565 575 566 567 967 194 960}
 			}
 			random_other_country = {
 				limit = {
@@ -99,13 +87,6 @@ country_event = {
 				}
 				add_core_of = SOV
 			}
-			LAT = { country_event = { id = le_latvia.2 } }
-			UKR = { country_event = { id = le_ruthenia.1 } }
-			CRI = { country_event = { id = le_crimea.1 } }
-			DON = { country_event = { id = le_donkuban.1 } }
-			ALH = { country_event = { id = le_alash.1 } }
-			BLR = { country_event = { id = le_belarus.1 } }
-			RUS = { country_event = { days = 10 id = le_russia.8 } }
 		}
 		SOV = { change_tag_from = RUS }
 	}
@@ -136,13 +117,6 @@ country_event = {
 				}
 				add_core_of = SOV
 			}
-			LAT = { country_event = { id = le_latvia.2 } }
-			UKR = { country_event = { id = le_ruthenia.1 } }
-			CRI = { country_event = { id = le_crimea.1 } }
-			DON = { country_event = { id = le_donkuban.1 } }
-			ALH = { country_event = { id = le_alash.1 } }
-			BLR = { country_event = { id = le_belarus.1 } }
-			RUS = { country_event = { days = 10 id = le_russia.8 } }
 		}
 		country_event = { id = le_russia.4 }
 	}
@@ -425,6 +399,61 @@ country_event = { #Denmark refused our aid
 	}
 }
 
+country_event = { #Russia requests aid
+	id = le_russia.17
+	title = le_russia.17.t
+	desc = le_russia.17.d
+	is_triggered_only = yes
+	option = { #accept
+		name = le_russia.17.a
+		RUS = { country_event = { id = le_russia.18 }} 
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 500
+			target = RUS
+		}
+		diplomatic_relation = {
+			country = RUS
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+	option = { #decline
+		name = le_russia.17.b
+		RUS = { country_event = { id = le_russia.19 } }
+	}
+}
+country_event = { #Prussia accepted our aid
+	id = le_russia.18
+	title = le_russia.18.t
+	desc = le_russia.18.d
+	is_triggered_only = yes
+	option = { #accept
+		name = le_russia.18.a
+		RUS = { set_country_flag = accepted_british_support}
+		effect_tooltip = {
+			send_equipment = {
+				equipment = close_air_support
+				amount = 100
+				target = RUS
+			}
+			diplomatic_relation = {
+				country = RUS
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+	}
+}
+country_event = { #Prussia refused our aid
+	id = le_russia.19
+	title = le_russia.19.t
+	desc = le_russia.19.d
+	is_triggered_only = yes
+	option = { #accept
+		name = le_russia.13.a
 
+	}
+}
 
 
