@@ -3,7 +3,7 @@
 #################
 le_achievements = {
 	available = {
-		always = yes
+		is_ai = no
 	}
 }
 test_cat = {

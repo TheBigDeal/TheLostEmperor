@@ -816,15 +816,19 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = POL_APPEAL_TO_SOCIALISTS
+		id = POL_APPEAL_TO_COMMUNISTS
 		icon = GFX_unknown
 		prerequisite = { focus = POL_THE_FIRST_POLISH_ELECTIONS }
 		mutually_exclusive = { focus = POL_APPEAL_TO_NATIONALISTS focus = POL_APPEAL_TO_MONARCHISTS focus = POL_APPEAL_TO_THE_RELIGIOUS focus = POL_APPEAL_TO_DEMOCRATS focus = POL_APPEAL_TO_THE_MILITARY }
+		search_filters = { FOCUS_FILTER_POL_COMMUNIST_PATH }
 		x = 23
 		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 12
+		}
+		available = {
+			country_exists = SOV
 		}
 		completion_reward = {
 					
@@ -833,7 +837,8 @@ focus_tree = {
 	focus = {
 		id = POL_UNIVERSAL_HEALTH_CARE
 		icon = GFX_unknown
-		prerequisite = { focus = POL_APPEAL_TO_SOCIALISTS }
+		prerequisite = { focus = POL_APPEAL_TO_COMMUNISTS }
+		search_filters = { FOCUS_FILTER_POL_COMMUNIST_PATH }
 		x = 22
 		y = 3
 		cost = 10
@@ -847,7 +852,8 @@ focus_tree = {
 	focus = {
 		id = POL_LABOR_VOUCHERS
 		icon = GFX_unknown
-		prerequisite = { focus = POL_APPEAL_TO_SOCIALISTS }
+		prerequisite = { focus = POL_APPEAL_TO_COMMUNISTS }
+		search_filters = { FOCUS_FILTER_POL_COMMUNIST_PATH }
 		x = 24
 		y = 3
 		cost = 10
@@ -855,13 +861,14 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-					
+			
 		}
 	}
 	focus = {
 		id = POL_UNIVERSAL_INCOME
 		icon = GFX_unknown
 		prerequisite = { focus = POL_UNIVERSAL_HEALTH_CARE focus = POL_LABOR_VOUCHERS }
+		search_filters = { FOCUS_FILTER_POL_COMMUNIST_PATH }
 		x = 22
 		y = 4
 		cost = 10
@@ -876,6 +883,7 @@ focus_tree = {
 		id = POL_PUBLIC_HOUSING
 		icon = GFX_unknown
 		prerequisite = { focus = POL_LABOR_VOUCHERS focus = POL_UNIVERSAL_HEALTH_CARE }
+		search_filters = { FOCUS_FILTER_POL_COMMUNIST_PATH }
 		x = 24
 		y = 4
 		cost = 10
@@ -891,6 +899,7 @@ focus_tree = {
 		icon = GFX_unknown
 		prerequisite = { focus = POL_UNIVERSAL_INCOME focus = POL_PUBLIC_HOUSING }
 		mutually_exclusive = { focus = POL_ATHIEST_STATE }
+		search_filters = { FOCUS_FILTER_POL_COMMUNIST_PATH }
 		x = 22
 		y = 5
 		cost = 10
@@ -906,6 +915,7 @@ focus_tree = {
 		icon = GFX_pol_athiest_state
 		prerequisite = { focus = POL_PUBLIC_HOUSING focus = POL_UNIVERSAL_INCOME }
 		mutually_exclusive = { focus = POL_SECULAR_STATE }
+		search_filters = { FOCUS_FILTER_POL_COMMUNIST_PATH }
 		x = 24
 		y = 5
 		cost = 10
@@ -920,6 +930,7 @@ focus_tree = {
 		id = POL_INVITE_RELIGIOUS_REFUGEES
 		icon = GFX_unknown
 		prerequisite = { focus = POL_SECULAR_STATE }
+		search_filters = { FOCUS_FILTER_POL_COMMUNIST_PATH }
 		x = 22
 		y = 6
 		cost = 10
@@ -934,6 +945,7 @@ focus_tree = {
 		id = POL_SEIZE_CHURCH_ASSETS
 		icon = GFX_unknown
 		prerequisite = { focus = POL_ATHIEST_STATE }
+		search_filters = { FOCUS_FILTER_POL_COMMUNIST_PATH }
 		x = 24
 		y = 6
 		cost = 10
@@ -948,6 +960,7 @@ focus_tree = {
 		id = POL_BAN_POLITICAL_OPPOSITION
 		icon = GFX_unknown
 		prerequisite = { focus = POL_INVITE_RELIGIOUS_REFUGEES focus = POL_SEIZE_CHURCH_ASSETS }
+		search_filters = { FOCUS_FILTER_POL_COMMUNIST_PATH }
 		x = 23
 		y = 7
 		cost = 10
@@ -962,8 +975,8 @@ focus_tree = {
 		id = POL_APPEAL_TO_MONARCHISTS
 		icon = GFX_unknown
 		prerequisite = { focus = POL_THE_FIRST_POLISH_ELECTIONS }
-		mutually_exclusive = { focus = POL_APPEAL_TO_SOCIALISTS focus = POL_APPEAL_TO_NATIONALISTS focus = POL_APPEAL_TO_THE_RELIGIOUS focus = POL_APPEAL_TO_DEMOCRATS focus = POL_APPEAL_TO_THE_MILITARY }
-		x = 27
+		mutually_exclusive = { focus = POL_APPEAL_TO_COMMUNISTS focus = POL_APPEAL_TO_NATIONALISTS focus = POL_APPEAL_TO_THE_RELIGIOUS focus = POL_APPEAL_TO_DEMOCRATS focus = POL_APPEAL_TO_THE_MILITARY }
+		x = 35
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -978,7 +991,7 @@ focus_tree = {
 		icon = GFX_unknown
 		prerequisite = { focus = POL_APPEAL_TO_MONARCHISTS }
 		mutually_exclusive = { focus = POL_EMPOWER_THE_KING }
-		x = 26
+		x = 34
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -993,7 +1006,7 @@ focus_tree = {
 		icon = GFX_pol_empower_the_king
 		prerequisite = { focus = POL_APPEAL_TO_MONARCHISTS }
 		mutually_exclusive = { focus = POL_FOUND_A_PARLIAMENT }
-		x = 28
+		x = 36
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -1007,7 +1020,7 @@ focus_tree = {
 		id = POL_FOREIGN_MARRIAGES
 		icon = GFX_unknown
 		prerequisite = { focus = POL_EMPOWER_THE_KING focus = POL_FOUND_A_PARLIAMENT }
-		x = 26
+		x = 34
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -1021,7 +1034,7 @@ focus_tree = {
 		id = POL_THE_KINGS_ARMY
 		icon = GFX_unknown
 		prerequisite = { focus = POL_EMPOWER_THE_KING focus = POL_FOUND_A_PARLIAMENT }
-		x = 28
+		x = 36
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -1035,7 +1048,7 @@ focus_tree = {
 		id = POL_THE_ROYAL_COURT
 		icon = GFX_unknown
 		prerequisite = { focus = POL_FOREIGN_MARRIAGES focus = POL_THE_KINGS_ARMY }
-		x = 26
+		x = 34
 		y = 5
 		cost = 10
 		ai_will_do = {
@@ -1049,7 +1062,7 @@ focus_tree = {
 		id = POL_SUCCESSION_LAWS
 		icon = GFX_unknown
 		prerequisite = { focus = POL_FOREIGN_MARRIAGES focus = POL_THE_KINGS_ARMY }
-		x = 28
+		x = 36
 		y = 5
 		cost = 10
 		ai_will_do = {
@@ -1063,7 +1076,7 @@ focus_tree = {
 		id = POL_POLISH_IMPERIALISM
 		icon = GFX_unknown
 		prerequisite = { focus = POL_THE_ROYAL_COURT focus = POL_SUCCESSION_LAWS }
-		x = 26
+		x = 34
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -1077,7 +1090,7 @@ focus_tree = {
 		id = POL_THE_WINGED_HUSSARS
 		icon = GFX_unknown
 		prerequisite = { focus = POL_THE_ROYAL_COURT focus = POL_SUCCESSION_LAWS }
-		x = 28
+		x = 36
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -1092,7 +1105,7 @@ focus_tree = {
 		icon = GFX_unknown
 		prerequisite = { focus = POL_THE_WINGED_HUSSARS }
 		prerequisite = { focus = POL_POLISH_IMPERIALISM }
-		x = 27
+		x = 35
 		y = 7
 		cost = 10
 		ai_will_do = {
@@ -1106,7 +1119,7 @@ focus_tree = {
 		id = POL_APPEAL_TO_THE_RELIGIOUS
 		icon = GFX_unknown
 		prerequisite = { focus = POL_THE_FIRST_POLISH_ELECTIONS }
-		mutually_exclusive = { focus = POL_APPEAL_TO_SOCIALISTS focus = POL_APPEAL_TO_MONARCHISTS focus = POL_APPEAL_TO_NATIONALISTS focus = POL_APPEAL_TO_DEMOCRATS focus = POL_APPEAL_TO_THE_MILITARY }
+		mutually_exclusive = { focus = POL_APPEAL_TO_COMMUNISTS focus = POL_APPEAL_TO_MONARCHISTS focus = POL_APPEAL_TO_NATIONALISTS focus = POL_APPEAL_TO_DEMOCRATS focus = POL_APPEAL_TO_THE_MILITARY }
 		x = 31
 		y = 2
 		cost = 10
@@ -1250,8 +1263,8 @@ focus_tree = {
 		id = POL_APPEAL_TO_DEMOCRATS
 		icon = GFX_unknown
 		prerequisite = { focus = POL_THE_FIRST_POLISH_ELECTIONS }
-		mutually_exclusive = { focus = POL_APPEAL_TO_SOCIALISTS focus = POL_APPEAL_TO_MONARCHISTS focus = POL_APPEAL_TO_THE_RELIGIOUS focus = POL_APPEAL_TO_NATIONALISTS focus = POL_APPEAL_TO_THE_MILITARY }
-		x = 35
+		mutually_exclusive = { focus = POL_APPEAL_TO_COMMUNISTS focus = POL_APPEAL_TO_MONARCHISTS focus = POL_APPEAL_TO_THE_RELIGIOUS focus = POL_APPEAL_TO_NATIONALISTS focus = POL_APPEAL_TO_THE_MILITARY }
+		x = 27
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -1266,7 +1279,7 @@ focus_tree = {
 		icon = GFX_unknown
 		prerequisite = { focus = POL_APPEAL_TO_DEMOCRATS }
 		mutually_exclusive = { focus = POL_ALLIANCE_OF_DEMOCRATS_LEADS }
-		x = 34
+		x = 26
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -1281,7 +1294,7 @@ focus_tree = {
 		icon = GFX_unknown
 		prerequisite = { focus = POL_APPEAL_TO_DEMOCRATS }
 		mutually_exclusive = { focus = POL_CENTROLEW_LEADS }
-		x = 36
+		x = 28
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -1295,7 +1308,7 @@ focus_tree = {
 		id = POL_ENCOURAGE_FREE_MARKET
 		icon = GFX_pol_free_market
 		prerequisite = { focus = POL_CENTROLEW_LEADS focus = POL_ALLIANCE_OF_DEMOCRATS_LEADS }
-		x = 34
+		x = 26
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -1309,7 +1322,7 @@ focus_tree = {
 		id = POL_A_CAPITALIST_SOCIETY
 		icon = GFX_pol_capitalist_society
 		prerequisite = { focus = POL_CENTROLEW_LEADS focus = POL_ALLIANCE_OF_DEMOCRATS_LEADS }
-		x = 36
+		x = 28
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -1323,7 +1336,7 @@ focus_tree = {
 		id = POL_BAN_CHILD_LABOR
 		icon = GFX_unknown
 		prerequisite = { focus = POL_ENCOURAGE_FREE_MARKET focus = POL_A_CAPITALIST_SOCIETY }
-		x = 34
+		x = 26
 		y = 5
 		cost = 10
 		ai_will_do = {
@@ -1337,7 +1350,7 @@ focus_tree = {
 		id = POL_EQUAL_VOTING_RIGHTS
 		icon = GFX_unknown
 		prerequisite = { focus = POL_ENCOURAGE_FREE_MARKET focus = POL_A_CAPITALIST_SOCIETY }
-		x = 36
+		x = 28
 		y = 5
 		cost = 10
 		ai_will_do = {
@@ -1351,7 +1364,7 @@ focus_tree = {
 		id = POL_FREE_PRESS
 		icon = GFX_unknown
 		prerequisite = { focus = POL_BAN_CHILD_LABOR focus = POL_EQUAL_VOTING_RIGHTS }
-		x = 34
+		x = 26
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -1365,7 +1378,7 @@ focus_tree = {
 		id = POL_LIMIT_CONSCRIPTION
 		icon = GFX_pol_limit_conscription
 		prerequisite = { focus = POL_BAN_CHILD_LABOR focus = POL_EQUAL_VOTING_RIGHTS }
-		x = 36
+		x = 28
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -1380,7 +1393,7 @@ focus_tree = {
 		icon = GFX_unknown
 		prerequisite = { focus = POL_FREE_PRESS }
 		prerequisite = { focus = POL_LIMIT_CONSCRIPTION }
-		x = 35
+		x = 27
 		y = 7
 		cost = 10
 		ai_will_do = {
@@ -1394,7 +1407,7 @@ focus_tree = {
 		id = POL_APPEAL_TO_THE_MILITARY
 		icon = GFX_unknown
 		prerequisite = { focus = POL_THE_FIRST_POLISH_ELECTIONS }
-		mutually_exclusive = { focus = POL_APPEAL_TO_SOCIALISTS focus = POL_APPEAL_TO_MONARCHISTS focus = POL_APPEAL_TO_THE_RELIGIOUS focus = POL_APPEAL_TO_DEMOCRATS focus = POL_APPEAL_TO_NATIONALISTS }
+		mutually_exclusive = { focus = POL_APPEAL_TO_COMMUNISTS focus = POL_APPEAL_TO_MONARCHISTS focus = POL_APPEAL_TO_THE_RELIGIOUS focus = POL_APPEAL_TO_DEMOCRATS focus = POL_APPEAL_TO_NATIONALISTS }
 		x = 39
 		y = 2
 		cost = 10
@@ -1538,7 +1551,7 @@ focus_tree = {
 		id = POL_APPEAL_TO_NATIONALISTS
 		icon = GFX_unknown
 		prerequisite = { focus = POL_THE_FIRST_POLISH_ELECTIONS }
-		mutually_exclusive = { focus = POL_APPEAL_TO_SOCIALISTS focus = POL_APPEAL_TO_MONARCHISTS focus = POL_APPEAL_TO_THE_RELIGIOUS focus = POL_APPEAL_TO_DEMOCRATS focus = POL_APPEAL_TO_THE_MILITARY }
+		mutually_exclusive = { focus = POL_APPEAL_TO_COMMUNISTS focus = POL_APPEAL_TO_MONARCHISTS focus = POL_APPEAL_TO_THE_RELIGIOUS focus = POL_APPEAL_TO_DEMOCRATS focus = POL_APPEAL_TO_THE_MILITARY }
 		x = 43
 		y = 2
 		cost = 10
@@ -1669,6 +1682,68 @@ focus_tree = {
 		prerequisite = { focus = POL_CULTURAL_UNITY focus = POL_FOREIGN_DIVISIONS }
 		x = 43
 		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	#Economy
+	focus = {
+		id = POL_INVEST_IN_THE_NATION
+		icon = GFX_unknown
+		x = 6
+		y = 8
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	#Foriegn Policy
+	focus = {
+		id = POL_WORLD_REVOLUTION
+		icon = GFX_unknown
+		prerequisite = { focus = POL_BAN_POLITICAL_OPPOSITION }
+		mutually_exclusive = { focus = POL_AGGRESSIVE_SURVIVAL focus = POL_DREAMS_OF_AN_EMPIRE }
+		search_filters = { FOCUS_FILTER_POL_COMMUNIST_PATH }
+		x = 23
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_AGGRESSIVE_SURVIVAL
+		icon = GFX_unknown
+		prerequisite = { focus = POL_GOD_SAVE_THE_KING focus = POL_DEFENDER_OF_THE_FAITH focus = POL_BEACON_OF_LIBERTY }
+		mutually_exclusive = { focus = POL_DREAMS_OF_AN_EMPIRE focus = POL_WORLD_REVOLUTION }
+		x = 29
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+					
+		}
+	}
+	focus = {
+		id = POL_DREAMS_OF_AN_EMPIRE
+		icon = GFX_unknown
+		prerequisite = { focus = POL_THE_UNBREAKABLE_NATION focus = POL_STRONGER_THAN_EVER focus = POL_DEFENDER_OF_THE_FAITH focus = POL_GOD_SAVE_THE_KING }
+		mutually_exclusive = { focus = POL_AGGRESSIVE_SURVIVAL focus = POL_WORLD_REVOLUTION }
+		x = 37
+		y = 8
 		cost = 10
 		ai_will_do = {
 			factor = 12

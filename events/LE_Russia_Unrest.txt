@@ -128,8 +128,12 @@ country_event = { #UKRAINE DECLARES INDEPENDENCE
 				add_ideas = tot_economic_mobilisation
 				add_ideas = service_by_requirement
 				add_timed_idea = {
+					idea = mak_makhnovian_geurilla_tactics
+					days = 730
+				}
+				add_timed_idea = {
 					idea = rus_breakaway_state
-					days = 365
+					days = 730
 				}
 			}
 			CRI = {
@@ -147,7 +151,7 @@ country_event = { #UKRAINE DECLARES INDEPENDENCE
 	}
 	option = { #Sign A Treaty of Peace
 		name = le_russia_unrest.2.a
-		ai_chance = { factor = 5 }
+		ai_chance = { factor = 0 }
 		set_truce = { target = UKR days = 730 }
 		set_truce = { target = MAK days = 730 }
 		set_truce = { target = CRI days = 730 }
@@ -155,9 +159,17 @@ country_event = { #UKRAINE DECLARES INDEPENDENCE
 	option = { #Attack Immediately
 		name = le_russia_unrest.2.b
 		ai_chance = { factor = 10 }
-		declare_war_on = { target = UKR type = annex_everything }
-		declare_war_on = { target = MAK type = annex_everything }
 		declare_war_on = { target = CRI type = annex_everything }
+		if = { 
+			limit = { tag = RUS }
+			declare_war_on = { target = MAK type = annex_everything }
+			RUS = { country_event = { id = le_russia_unrest.10 } }
+		}
+		if = {
+			limit = { tag = SOV }
+			declare_war_on = { target = UKR type = annex_everything }
+			SOV = { country_event = { id = le_russia_unrest.8 } }
+		}
 	}
 	option = { #Play as
 		name = le_russia_unrest.2.c
@@ -472,5 +484,70 @@ country_event = { #Alash Orda DECLARES INDEPENDENCE
 		}
 		add_to_variable = { var = RUS_DON_KUBAN_STRENGTH value = 10 }
 		ALH = { change_tag_from = ROOT }
+	}
+}
+
+country_event = { #Alliance with Makhnovia?
+	id = le_russia_unrest.8
+	title = le_russia_unrest.8.t
+	desc = le_russia_unrest.8.d
+	is_triggered_only = yes
+	option = { #Offer An Alliance
+		name = le_russia_unrest.8.a
+		ai_chance = { factor = 10 }
+		MAK = { country_event = { id = le_russia_unrest.9 } }
+	}
+	option = { #Attack Immediately
+		name = le_russia_unrest.8.b
+		ai_chance = { factor = 5 }
+		declare_war_on = { target = MAK type = annex_everything }
+	}
+}
+
+country_event = { #Alliance with The Soviets?
+	id = le_russia_unrest.9
+	title = le_russia_unrest.9.t
+	desc = le_russia_unrest.9.d
+	is_triggered_only = yes
+	option = { #Accept
+		name = le_russia_unrest.9.a
+		ai_chance = { factor = 10 }
+		SOV = { add_to_faction = MAK }
+		RUS = { country_event = { id = le_russia_unrest.10 } }
+	}
+	option = { #Decline
+		name = le_russia_unrest.9.b
+		ai_chance = { factor = 0 }
+		declare_war_on = { target = SOV type = annex_everything }
+	}
+}
+
+country_event = { #Ask Ukraine to join our side?
+	id = le_russia_unrest.10
+	title = le_russia_unrest.10.t
+	desc = le_russia_unrest.10.d
+	is_triggered_only = yes
+	option = { #Invite Ukraine
+		name = le_russia_unrest.10.a
+		UKR = { country_event = { id = le_russia_unrest.11 } }
+	}
+	option = { 
+		name = le_russia_unrest.10.b
+		add_political_power = 10
+	}
+}
+
+country_event = { #Makhonvia joins the Soviets
+	id = le_russia_unrest.11
+	title = le_russia_unrest.11.t
+	desc = le_russia_unrest.11.d
+	is_triggered_only = yes
+	option = { #Accept
+		name = le_russia_unrest.11.a
+		RUS = { add_to_faction = UKR }
+	}
+	option = { #Deny
+		name = le_russia_unrest.11.b
+		add_political_power = 10
 	}
 }

@@ -22,6 +22,14 @@ country = {
 		targeted_modifier = { tag = RUS attack_bonus_against = 0.05 }
 		targeted_modifier = { tag = RUS defense_bonus_against = 0.15 }
 	}
+	mak_makhnovian_geurilla_tactics = {
+		picture = generic_collectivist_army
+		modifier = {
+			army_speed_factor = 0.05
+			army_org_factor = 0.1
+			army_morale_factor = 0.15
+		}
+	}
 	
 	rus_readied_the_reserves = {
 		picture = generic_collectivist_army

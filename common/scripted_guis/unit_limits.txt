@@ -15,7 +15,25 @@ scripted_gui = {
 				has_global_flag = KR_unit_limits_ai_only
 			}
 		}
+		
+		effects = {
+			refresh_button_click = {
+				calculate_maximum_divisions = yes
+			}
+		}
 	}
+	
+	#LE_refresh_unit_limit = {
+	#	context_type = player_context
+	#	window_name = "after_intel_agency_button"
+	#	parent_window_token = deployment_tab
+	#	effects = {
+	#		deployment_button_click = {
+	#			calculate_maximum_divisions = yes
+	#		}
+	#	}
+	#}
+	
 	KR_unit_limits_army_view = {
 		context_type = player_context
 		window_name = "KR_unit_limit_countryarmyview"
@@ -32,6 +50,8 @@ scripted_gui = {
 				has_global_flag = KR_unit_limits_ai_only
 			}
 		}
+		
+		
 	}
 	KR_unit_limits_alert = {
 		context_type = player_context

@@ -59,5 +59,13 @@ scripted_gui = {
 			}
 		}
 	}
+	hansa_button = {
+		context_type = player_context
+		window_name = "hansa_button"
+		visible = { always = yes }
+		effects = {
+			
+		}
+	}
 }
 

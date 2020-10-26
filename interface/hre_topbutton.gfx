@@ -4,6 +4,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/hre.dds"
 	}
 	spriteType = {
+		name = "GFX_hansa"
+		texturefile = "gfx/interface/hansa.dds"
+	}
+	spriteType = {
 		name = "GFX_category_header_long"
 		texturefile = "gfx/interface/category_header_long.dds"
 	}

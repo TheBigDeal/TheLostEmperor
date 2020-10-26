@@ -1,24 +1,24 @@
+
 state={
 	id=785
 	name="STATE_785"
-	
+
 	history={
-		owner = DEN
-		
+		owner = SHL
 		buildings = {
 			infrastructure = 7
 			arms_factory = 3
 			industrial_complex = 5
 
 		}
-		
-		add_core_of = DEN
+		add_core_of = SHL
+
 	}
-	
+
 	provinces={
-		317 11366 
+		317 
 	}
 	manpower=516345
-	state_category = city
 	buildings_max_level_factor=1.000
+	state_category=city
 }

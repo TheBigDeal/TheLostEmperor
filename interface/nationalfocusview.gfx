@@ -317,5 +317,10 @@ spriteTypes = {
 		name = "GFX_FOCUS_FILTER_SPA_CARLIST_UPRISING"
 		texturefile = "gfx/interface/focusview/filter/spa_carlist_uprising.dds"
 	}
-
+	
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_POL_COMMUNIST_PATH"
+		texturefile = "gfx/interface/focusview/filter/communist_icon.dds"
+	}
+	
 }

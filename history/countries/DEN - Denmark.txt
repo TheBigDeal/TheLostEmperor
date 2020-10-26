@@ -36,6 +36,19 @@ set_popularities = {
 
 set_convoys = 40
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = SHL
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	else = {
+		puppet = SHL
+	}
+}
 
 create_country_leader = {
 	name = "King Christian Glücksburg X"

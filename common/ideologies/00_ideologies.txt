@@ -407,6 +407,7 @@ ideologies = {
 		types = {
 			labryscism = {}
 			labryscism_ideology = {}
+			french_revanchism = {}
 		}
 
 		dynamic_faction_names = {

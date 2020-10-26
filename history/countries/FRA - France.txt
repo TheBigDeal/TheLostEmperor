@@ -160,6 +160,16 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Arthur NoName"
+	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+	picture = "Arthur.dds"
+	expire = "1965.1.1"
+	ideology = french_revanchism
+	traits = {
+	}
+}
+
 create_corps_commander = {
 	name = "Jean de Lattre de Tassigny"
 	picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"

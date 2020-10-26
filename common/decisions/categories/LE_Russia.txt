@@ -17,3 +17,6 @@ RUS_CAUCAUS_REVOLUTION = {
 POST_REVOLUTION_REVOLTS = {
 	icon = idea_collectivism
 }
+UNITE_UKRAINE_CAT = {
+	icon = idea_collectivism
+}

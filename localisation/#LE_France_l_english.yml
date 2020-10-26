@@ -23,17 +23,20 @@
  FR3_conservatism:0 "Fifth French Republic"
  
 ### Cosmetic Tags ###
-
+ FRA_REPUBLIC:0 "French Republic"
 ### Political Parties ###
- FRA_absolutism_party:0 "The Legitimists"
- FRA_royalism_party:0 "Enosis Party"
- FRA_rexism_party:0 "Greek National Party"
- FRA_despotism_party:0 "National Salvation Council"
- FRA_conservatism_party:0 "Enosis Party (Moderates)"
- FRA_liberalism_party:0 "liberalism Liberal Party"
+ french_revanchism_desc:0 "French Revanchism is the belief that France has been wronged, and demands the return of its glory. Based in strong nationalism, with inspiration from the Greek Labryscists, the party is very radical."
+ FRA_absolutism_party:0 "House d'Orleans"
+ FRA_royalism_party:0 "House d'Orleans"
+ FRA_rexism_party:0 "House d'Orleans"
+ FRA_despotism_party:0 "League Of Patriots"
+ FRA_conservatism_party:0 "French Democratic Coalition"
+ FRA_liberalism_party:0 "French Democratic Coalition"
  FRA_socialism_party:0 "French Socialist Front"
- FRA_theocracy_party:0 "Hands of God"
- FRA_labryscism_party:0 "French Nationalist Party"
+ FRA_theocracy_party:0 "League Of Patriots"
+ FRA_labryscism_party:0 "League Of Patriots"
+ FRA_french_revanchism_party:0 "League Of Patriots"
+ 
  FRA_mutualism_party:0 "French Socialist Front"
  FRA_collectivism_party:0 "French Socialist Front"
  FRA_proletarianism_party:0 "French Socialist Front"
@@ -55,15 +58,20 @@
  #USA_J_Edgar_Hoover:0 "Edgar Hoover"
  
 ### Ideas ###
- 
+ FRA_GLORIOUS_REVOLUTION:0 "The Glorious Revolution"
 ### Tooltips ###
  
  
 ### Global / Country Flags ###
- 
+ empowered_the_workers:0 "Empowered The Workers"
+ pleased_the_people:0 "Pleased The People"
+ limited_reforms:0 "Limited Reforms"
+ encouraged_nationalism:0 "Encouraged Nationalism"
 ### Focus Tree ###
+ FRA_ENCOURAGE_NATIONALISM:0 "Encourage Nationalism"
+ FRA_FRENCH_SUPREMACY:0 "French Supremacy"
  FRA_A_NATION_IN_TURMOIL:0 "A Nation In Turmoil"
- FRA_OVERTHROW_THE_KING:0 "Overthrow The King"
+ FRA_EMPOWER_THE_WORKERS:0 "Empower the Workers"
  FRA_THE_GLORIOUS_REVOLUTION:0 "The Glorious Revolution"
  FRA_MONARCHY_IS_THE_WAY:0 "Limit Reforms"
  FRA_CRACK_DOWN_ON_EXTREMISTS:0 "Crack Down On Extremists"
@@ -337,4 +345,11 @@
  le_france.14.3:0 "Elect Sebastien Faure (Mutualist)"
  le_france.19.t:0 "The State Of France"
  le_france.19.d:0 "For the last 50 years France has been in a state of chaos. Numberous invasions from France, Prussia, Austria, and Spain has fractured the nation into many pieces. Ever since the French people and government have looked for ways out of this perpetial dismantlement, but in their efforts they have just made France weaker, and more susceptable to invasion. The people do not trust the government anymore, and many believe change is needed and look towards radical ideologies. Many look to the new ideology of Greek Labryscism for help, the French Party; French Nationalist Party (FNP) believe that only a strong leader can help get France out of its current state, one with the capibility to make change overnight, one stronger than a monarch. Others in the nation believe that the people can lead france to greatness, and that the workers of the nation may band together to fix the country, these beliefs match closly with the French Socialist Front, a coalition of all forms of collectivism and liberalism socialism."
- le_france.19.a:0 "Dark Days Are Ahead."
+ le_france.19.1:0 "Empower the Workers"
+ le_france.19.2:0 "Please The People"
+ le_france.19.3:0 "Limit Reforms"
+ le_france.19.4:0 "Encourage Nationalism"
+ 
+ le_france.20.t:0 "The 6th French Revolution"
+ le_france.21.t:0 "Coup In France!"
+ le_france.22.t:0 "The King Steps Down."

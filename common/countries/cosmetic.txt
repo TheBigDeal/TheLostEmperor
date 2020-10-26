@@ -11,8 +11,8 @@ SOUTH_GERMAN_SOCIALIST_REPUBLIC = {
 	color_ui = rgb { 181 54 75 }
 }
 FRA_COMMUNIST = {
-	color = rgb { 178 99 99 }
-	color_ui = rgb { 178 99 99 }
+	color = rgb { 150 30 30 }
+	color_ui = rgb { 150 30 30 }
 }
 FRA_REPUBLIC = {
 	color = rgb { 89 148 175 }
@@ -23,12 +23,16 @@ FRA_THEOCRACY = {
 	color_ui = rgb { 148 172 183 }
 }
 FRA_FASCIST = {
-	color = rgb { 147 129 97 }
-	color_ui = rgb { 147 129 97 }
+	color = rgb { 25 106 145 }
+	color_ui = rgb { 25 106 145 }
 }
 FRA_ROYALIST = {
 	color = rgb { 129 94 158 }
 	color_ui = rgb { 129 94 158 }
+}
+FRA_NORMAL = {
+	color = rgb { 106 142 174 }
+	color_ui = rgb { 74 147 255 }
 }
 UNITED_COMMUNES_OF_AMERICA = {
 	color = rgb { 158 78 73 }

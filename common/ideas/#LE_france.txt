@@ -248,4 +248,11 @@ country = {
 			drift_defence_factor = 0.15
 		}
 	}
+	FRA_GLORIOUS_REVOLUTION = {
+		picture = GFX_idea_ger_revive_the_kaiserreich
+		modifier = {
+			army_morale_factor = 0.15
+			conscription = 0.10
+		}
+	}
 }

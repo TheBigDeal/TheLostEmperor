@@ -9,7 +9,17 @@ guiTypes = {
 			name ="hre_bg"
 			spriteType = "GFX_hre"
 			position = { x=0 y=0 }
-			shortcut = "ctrl+h"
+			shortcut = "ctrl+1"
+		}
+	}
+	containerWindowType = {
+		name = "hansa_button"
+		position = { x = 96% y = 220 }
+		buttonType ={
+			name ="hansa_bg"
+			spriteType = "GFX_hansa"
+			position = { x=0 y=0 }
+			shortcut = "ctrl+2"
 		}
 	}
 	containerWindowType = {

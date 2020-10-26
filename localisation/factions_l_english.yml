@@ -7,6 +7,8 @@
  ROOT_SPHERE:0 "[Root.Nation_ADJ] Sphere"
  Nation_ADJ:0 "$COUNTRY$"
  Bavarian_Coalition:0 "Bavarian Coalition"
+ WHITE_MOVEMENT:0 "White Movement"
+ RED_MOVEMENT:0 "Red Movement"
  
  FACTION_LEADER:0 "Faction leader: §Y$COUNTRY$§!"
  FACTION_MEMBER:0 "Faction member: §Y$COUNTRY$§!"

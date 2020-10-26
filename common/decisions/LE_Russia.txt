@@ -4,7 +4,7 @@ RUS_REVOLT_RISK_CAT = {
 		visible = { 
 			tag = RUS 
 		}
-		days_mission_timeout = 270
+		days_mission_timeout = 5
 		fire_only_once = yes
 		is_good = no
 		allowed = {
@@ -39,18 +39,12 @@ RUS_REVOLT_RISK_CAT = {
 		available = {
             always = no
         }
-		days_mission_timeout = 140 
+		days_mission_timeout = 70
 		timeout_effect = {
-			country_event = { id = le_russia_unrest.1 }
+			RUS = { country_event = { id = le_caucaus.1 } }
+			TUR = { country_event = { id = le_caucaus.2 } }
+			PER = { country_event = { id = le_caucaus.3 } }
 			set_country_flag = SOV_CAUCASUS_REVOLUTION
-			GEO = { transfer_state = 231 }
-			GEO = { transfer_state = 967 }
-			GEO = { load_OOB = GEO_1928 }
-			ARM = { transfer_state = 230 }
-			ARM = { transfer_state = 969 }
-			AZR = { transfer_state = 229 }
-			AZR = { transfer_state = 970 }
-			AZR = { transfer_state = 971 }
 		}
 	}
 }
@@ -125,6 +119,41 @@ POST_REVOLUTION_REVOLTS = {
 		days_mission_timeout = 28
 		timeout_effect = {
 			country_event = { id = le_russia_unrest.4 }
+		}
+	}
+}
+UNITE_UKRAINE_CAT = {
+	MAK_UNITE_UKRAINE = {
+		icon = GFX_decision_revolt
+		fire_only_once = yes
+		is_good = no
+		allowed = {
+			OR = {
+				original_tag = MAK
+			}
+		}
+		available = {
+			owns_state = 228
+			owns_state = 227
+			owns_state = 221
+			owns_state = 226
+			owns_state = 200
+			owns_state = 196
+			owns_state = 226
+			owns_state = 225
+			owns_state = 259
+			owns_state = 197
+			owns_state = 203
+			owns_state = 193
+			owns_state = 202
+			owns_state = 201
+			owns_state = 198
+			owns_state = 199
+			NOT = { country_exists = UKR }
+		}
+		complete_effect = {
+			set_capital = 202
+			set_cosmetic_tag = MAK_UNITED
 		}
 	}
 }

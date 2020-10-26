@@ -9,10 +9,8 @@ country_event = {
 	id = le_russia.1
 	title = le_russia.1.t
 	desc = le_russia.1.d
-
 	fire_only_once = yes
 	is_triggered_only = yes
-
 	option = {
 		name = le_russia.1.a
 		set_variable = { open_economy_container = 1 }
@@ -27,9 +25,16 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	immediate = {
-		hidden_effect = { SOV = { transfer_state = 247 } }
-		RUS = { load_oob = RUS_CIVIL_WAR }
-		SOV = { load_oob = SOV_CIVIL_WAR }
+		hidden_effect = { SOV = { transfer_state = 247 }
+			RUS = { 
+				load_oob = RUS_CIVIL_WAR 
+				create_faction = WHITE_MOVEMENT
+			}
+			SOV = { 
+				load_oob = SOV_CIVIL_WAR 
+				create_faction = RED_MOVEMENT
+			}
+		}
 	}
 	option = { #Play As Russia
 		name = le_russia.2.a
@@ -40,7 +45,7 @@ country_event = {
 				ideology = collectivism
 				size = 0.6
 				capital = 219
-				states = { 247 248 253 252 254 255 257 239 401 407 236 406 402 404 220 240 587 220 222 223 192 227 200 196 193 191 209 210 207 219 205 242 224 243 241 13 12 137 234 558 263 246 208 228 221 225 259 226 197 203 226 218 560 657 561 202 14 201 198 199 204 206 258 265 245 238 217 237 235 232 233 231 229 230 260 78 562 637 644 574 565 575 566 567 }
+				states = { 247 248 253 252 254 255 257 239 401 407 236 406 402 404 220 240 587 220 222 223 192 227 200 196 193 191 209 210 207 219 205 242 224 243 241 13 12 137 234 558 263 246 208 228 221 225 259 226 197 203 226 218 560 657 561 202 14 201 198 199 204 206 258 265 245 238 217 237 235 232 233 231 229 230 260 78 562 637 644 574 565 575 566 567 194 960 967 }
 			}
 			random_other_country = {
 				limit = {
@@ -89,36 +94,6 @@ country_event = {
 			}
 		}
 		SOV = { change_tag_from = RUS }
-	}
-	option = { #Play as a released country
-		name = le_russia.2.c
-		ai_chance = { factor = 0 }
-		hidden_effect = {
-			set_global_flag = Russian_Civil_War
-			start_civil_war = {
-				ruling_party = absolutism
-				ideology = collectivism
-				size = 0.6
-				capital = 219
-				states = { 247 248 253 252 254 255 257 239 401 407 236 406 402 404 220 240 587 220 222 223 192 227 200 196 193 191 209 210 207 219 205 242 224 243 241 13 12 137 234 558 263 246 208 228 221 225 259 226 197 203 226 218 560 561 202 14 201 198 199 204 206 258 265 245 238 217 237 235 232 233 231 229 230 260 78 562 637 644 574 565 575 566 567 }
-			}
-			random_other_country = {
-				limit = {
-					original_tag = RUS
-					has_government = collectivism
-				}
-				SOV = { transfer_state = 247 }
-				SOV = { annex_country = { target = PREV transfer_troops = yes } }
-			}
-			SOV = { declare_war_on = { target = RUS type = annex_everything } }
-			every_state = {
-				limit = {
-					is_owned_by = RUS
-				}
-				add_core_of = SOV
-			}
-		}
-		country_event = { id = le_russia.4 }
 	}
 }
 	################################

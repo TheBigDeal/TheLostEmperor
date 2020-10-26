@@ -5,6 +5,12 @@ state={
 
 	history={
 		owner = MZD
+		victory_points = {
+			4473 1 
+		}
+		victory_points = {
+			1536 1 
+		}
 		buildings = {
 			infrastructure = 3
 

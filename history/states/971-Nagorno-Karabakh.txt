@@ -5,9 +5,11 @@ state={
 
 	history={
 		owner = TBR
+		victory_points = {
+			11674 2
+		}
 		buildings = {
 			infrastructure = 3
-
 		}
 		add_core_of = GEO
 		add_core_of = AZR

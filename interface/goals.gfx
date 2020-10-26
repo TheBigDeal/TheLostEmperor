@@ -28,6 +28,30 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/Mod/Red_Army_Officers.dds"
 	}
 	SpriteType = {
+		name = "GFX_threaten_MCH"
+		texturefile = "gfx/interface/goals/Mod/threaten_MCH.dds"
+	}
+	SpriteType = {
+		name = "GFX_threaten_MEK"
+		texturefile = "gfx/interface/goals/Mod/threaten_MEK.dds"
+	}
+	SpriteType = {
+		name = "GFX_threaten_VRP"
+		texturefile = "gfx/interface/goals/Mod/threaten_VRP.dds"
+	}
+	SpriteType = {
+		name = "GFX_threaten_ANH"
+		texturefile = "gfx/interface/goals/Mod/threaten_ANH.dds"
+	}
+	SpriteType = {
+		name = "GFX_challenge_the_danes"
+		texturefile = "gfx/interface/goals/Mod/challenge_the_danes.dds"
+	}
+	SpriteType = {
+		name = "GFX_occupy_holstein"
+		texturefile = "gfx/interface/goals/Mod/occupy_holstein.dds"
+	}
+	SpriteType = {
 		name = "GFX_form_transcaucasia"
 		texturefile = "gfx/interface/goals/Mod/form_transcaucasia.dds"
 	}
@@ -117,6 +141,23 @@ spriteTypes = {
 	}
 	# OTHER MOD GFX
 	#############################################################
+	SpriteType = {
+		name = "GFX_generic_hammer_sickle"
+		texturefile = "gfx/interface/goals/generic_hammer_sickle.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_support_nationalism"
+		texturefile = "gfx/interface/goals/support_nationalism.dds"
+	}
+	SpriteType = {
+		name = "GFX_French_Glory"
+		texturefile = "gfx/interface/goals/French_Glory.tga"
+	}
+	SpriteType = {
+		name = "GFX_generic_constitution"
+		texturefile = "gfx/interface/goals/Generic_Constitution.dds"
+	}
 	SpriteType = {
 		name = "GFX_focus_quantity_recruitment"
 		texturefile = "gfx/interface/goals/focus_quantity_recruitment.dds"

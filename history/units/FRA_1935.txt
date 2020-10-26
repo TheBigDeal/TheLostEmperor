@@ -115,64 +115,28 @@ units = {
 	#PARIS
 	###############
 	division= {	
-		name = "Division d'Infanterie" 
+		name = "Division de Cavalerie" 
 		location = 11506
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		name = "Division d'Infanterie" 
-		location = 11506
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		name = "Division d'Infanterie" 
-		location = 11506
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		name = "Division d'Infanterie" 
-		location = 11506
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		division_template = "Division de Cavalerie"
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division de Cavalerie" 
 		location = 11506
 		division_template = "Division de Cavalerie"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		name = "Division de Cavalerie" 
-		location = 11506
-		division_template = "Division de Cavalerie"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		name = "Brigade de Chars de Combat" 
-		location = 11506
-		division_template = "Brigade de Chars de Combat"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division d'Infanterie" 
 		location = 11506
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division d'Infanterie" 
 		location = 11506
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		name = "Division d'Infanterie Motorisée" 
-		location = 11506
-		division_template = "Division d'Infanterie Motorisée"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	
 	#BORDEAUX
@@ -181,37 +145,37 @@ units = {
 		name = "Division d'Infanterie" 
 		location = 9737
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division d'Infanterie" 
 		location = 9737
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division d'Infanterie" 
 		location = 9737
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division d'Infanterie" 
 		location = 9737
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division d'Infanterie Motorisée" 
 		location = 9737
 		division_template = "Division d'Infanterie Motorisée"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division d'Infanterie Motorisée" 
 		location = 9737
 		division_template = "Division d'Infanterie Motorisée"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	#LIMOGES
 	###################
@@ -219,13 +183,13 @@ units = {
 		name = "Division d'Infanterie" 
 		location = 620
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division d'Infanterie" 
 		location = 620
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	#VICKY
 	###################
@@ -233,19 +197,19 @@ units = {
 		name = "Division d'Infanterie" 
 		location = 3594
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division de Cavalerie" 
 		location = 3594
 		division_template = "Division de Cavalerie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division de Cavalerie" 
 		location = 3594
 		division_template = "Division de Cavalerie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	#LA ROCHELLE
 	###################
@@ -253,27 +217,13 @@ units = {
 		name = "Division d'Infanterie" 
 		location = 6657
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division de Cavalerie" 
 		location = 6657
 		division_template = "Division de Cavalerie"
-		start_experience_factor = 0.3
-	}
-	#NANTES
-	###################
-	division= {	
-		name = "Division d'Infanterie" 
-		location = 11465
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		name = "Division de Cavalerie" 
-		location = 11465
-		division_template = "Division de Cavalerie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	#LYON
 	###################
@@ -281,13 +231,13 @@ units = {
 		name = "Division d'Infanterie" 
 		location = 6613
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division d'Infanterie" 
 		location = 6613
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	#DIJON
 	###################
@@ -295,13 +245,13 @@ units = {
 		name = "Division d'Infanterie" 
 		location = 3652
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division d'Infanterie" 
 		location = 3652
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	#REIMS
 	###################
@@ -309,13 +259,13 @@ units = {
 		name = "Division d'Infanterie" 
 		location = 13011
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division d'Infanterie" 
 		location = 13011
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	#TOULOUSE
 	###################
@@ -323,25 +273,25 @@ units = {
 		name = "Division d'Infanterie" 
 		location = 6766
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division d'Infanterie" 
 		location = 6766
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division d'Infanterie" 
 		location = 6766
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division de Cavalerie" 
 		location = 6766
 		division_template = "Division de Cavalerie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	#MONTPELLIER
 	###################
@@ -349,13 +299,13 @@ units = {
 		name = "Division d'Infanterie" 
 		location = 9898
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division d'Infanterie" 
 		location = 9898
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	#MARSEILLE
 	###################
@@ -363,27 +313,13 @@ units = {
 		name = "Division d'Infanterie" 
 		location = 11834
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division d'Infanterie" 
 		location = 11834
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-	}
-	#TOULON
-	###################
-	division= {	
-		name = "Division d'Infanterie" 
-		location = 911
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		name = "Division d'Infanterie" 
-		location = 911
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	#TOULON
 	###################
@@ -391,13 +327,13 @@ units = {
 		name = "Division d'Infanterie" 
 		location = 3768
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "Division d'Infanterie" 
 		location = 3768
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	#TOURS
 	###################
@@ -405,6 +341,6 @@ units = {
 		name = "Division d'Infanterie" 
 		location = 3671
 		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 }

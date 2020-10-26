@@ -1,0 +1,165 @@
+﻿###########################
+# Russian Events
+###########################
+
+add_namespace = le_caucaus
+
+country_event = { #CAUCASUS DECLARES INDEPENDENCE - RUSSIA
+	id = le_caucaus.1
+	title = le_caucaus.1.t
+	desc = le_caucaus.1.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		if = {
+			limit = { NOT = {country_exists = GEO}}
+			GEO = { transfer_state = 967 }
+			GEO = { transfer_state = 231 }
+			GEO = { load_OOB = GEO_1928 }
+		}
+		if = {
+			limit = { NOT = {country_exists = ARM}}
+			ARM = { transfer_state = 230 }
+			ARM = { transfer_state = 968 }
+			ARM = { transfer_state = 969 }
+		}
+		if = {
+			limit = { NOT = {country_exists = AZR}}
+			AZR = { transfer_state = 229 }
+			AZR = { transfer_state = 970 }
+			AZR = { transfer_state = 971 }
+		}
+	}
+	option = { #Sign A Treaty of Peace
+		name = le_caucaus.1.a
+		ai_chance = { factor = 10 }
+		set_truce = {target = GEO days = 365}
+		set_truce = {target = ARM days = 365}
+		set_truce = {target = AZR days = 365}
+	}
+	option = { #Attack Immediately
+		name = le_caucaus.1.b
+		ai_chance = { factor = 0 }
+		if = {
+			limit = {tag = RUS}
+			declare_war_on = { target = GEO type = annex_everything }
+			declare_war_on = { target = AZR type = annex_everything }
+		}
+		else_if = {
+			limit = {tag = PER}
+			declare_war_on = { target = ARM type = annex_everything }
+			declare_war_on = { target = AZR type = annex_everything }
+		}
+		else_if = {
+			limit = {tag = TUR}
+			declare_war_on = { target = ARM type = annex_everything }
+		}
+		else = {
+			declare_war_on = { target = GEO type = annex_everything }
+			declare_war_on = { target = AZR type = annex_everything }
+			declare_war_on = { target = ARM type = annex_everything }
+		}
+	}
+	option = { #Play as Georgia
+		name = le_caucaus.1.c
+		ai_chance = { factor = 0 }
+		set_truce = {target = GEO days = 365}
+		set_truce = {target = ARM days = 365}
+		set_truce = {target = AZR days = 365}
+		GEO = { change_tag_from = ROOT }
+	}
+}
+country_event = { #CAUCASUS DECLARES INDEPENDENCE - OTTOMANS
+	id = le_caucaus.2
+	title = le_caucaus.2.t
+	desc = le_caucaus.2.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		if = {
+			limit = { NOT = {country_exists = GEO}}
+			GEO = { transfer_state = 967 }
+			GEO = { transfer_state = 231 }
+			GEO = { load_OOB = GEO_1928 }
+		}
+		if = {
+			limit = { NOT = {country_exists = ARM}}
+			ARM = { transfer_state = 230 }
+			ARM = { transfer_state = 968 }
+			ARM = { transfer_state = 969 }
+		}
+		if = {
+			limit = { NOT = {country_exists = AZR}}
+			AZR = { transfer_state = 229 }
+			AZR = { transfer_state = 970 }
+			AZR = { transfer_state = 971 }
+		}
+	}
+	option = { #Sign A Treaty of Peace
+		name = le_caucaus.2.a
+		ai_chance = { factor = 10 }
+		set_truce = {target = GEO days = 365}
+		set_truce = {target = ARM days = 365}
+		set_truce = {target = AZR days = 365}
+	}
+	option = { #Attack Immediately
+		name = le_caucaus.2.b
+		ai_chance = { factor = 0 }
+		declare_war_on = { target = ARM type = annex_everything }
+	}
+	option = { #Play as Armenia
+		name = le_caucaus.2.c
+		ai_chance = { factor = 0 }
+		set_truce = {target = GEO days = 365}
+		set_truce = {target = ARM days = 365}
+		set_truce = {target = AZR days = 365}
+		ARM = { change_tag_from = ROOT }
+	}
+}
+country_event = { #CAUCASUS DECLARES INDEPENDENCE - Persia
+	id = le_caucaus.3
+	title = le_caucaus.3.t
+	desc = le_caucaus.3.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		if = {
+			limit = { NOT = {country_exists = GEO}}
+			GEO = { transfer_state = 967 }
+			GEO = { transfer_state = 231 }
+			GEO = { load_OOB = GEO_1928 }
+		}
+		if = {
+			limit = { NOT = {country_exists = ARM}}
+			ARM = { transfer_state = 230 }
+			ARM = { transfer_state = 968 }
+			ARM = { transfer_state = 969 }
+		}
+		if = {
+			limit = { NOT = {country_exists = AZR}}
+			AZR = { transfer_state = 229 }
+			AZR = { transfer_state = 970 }
+			AZR = { transfer_state = 971 }
+		}
+	}
+	option = { #Sign A Treaty of Peace
+		name = le_caucaus.3.a
+		ai_chance = { factor = 10 }
+		set_truce = {target = GEO days = 365}
+		set_truce = {target = ARM days = 365}
+		set_truce = {target = AZR days = 365}
+	}
+	option = { #Attack Immediately
+		name = le_caucaus.3.b
+		ai_chance = { factor = 0 }
+		declare_war_on = { target = ARM type = annex_everything }
+	}
+	option = { #Play as Azerbijan
+		name = le_caucaus.3.c
+		ai_chance = { factor = 0 }
+		set_truce = {target = GEO days = 365}
+		set_truce = {target = ARM days = 365}
+		set_truce = {target = AZR days = 365}
+		AZR = { change_tag_from = ROOT }
+	}
+}

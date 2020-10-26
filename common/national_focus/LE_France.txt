@@ -5,10 +5,10 @@ focus_tree = {
 	id = french_focus
 	country = {
 		factor = 0
-		modifier = {
-			add = 10
-			tag = FRA
-		}
+		modifier = { add = 10 tag = FRA }
+		modifier = { add = 10 tag = FR1 }
+		modifier = { add = 10 tag = FR2 }
+		modifier = { add = 10 tag = FR3 }
 	}
 	default = no
 	continuous_focus_position = { x = 50 y = 2600 }
@@ -18,67 +18,78 @@ focus_tree = {
 		x = 28
 		y = 0
 		cost = 1
-		ai_will_do = {
-			factor = 10
-		}
+		ai_will_do = {factor = 10}
 		completion_reward = {
 			country_event = { id = le_france.19 }
 		}
 	}
 	focus = {
-		id = FRA_OVERTHROW_THE_KING
-		icon = GFX_goal_generic_support_democracy
+		id = FRA_EMPOWER_THE_WORKERS
+		icon = GFX_Workers_Paradise
 		prerequisite = { focus = FRA_A_NATION_IN_TURMOIL }
-		mutually_exclusive = { focus = FRA_MONARCHY_IS_THE_WAY focus = FRA_PLEASE_THE_PEOPLE }
-		x = 26
+		mutually_exclusive = { focus = FRA_MONARCHY_IS_THE_WAY focus = FRA_PLEASE_THE_PEOPLE focus = FRA_ENCOURAGE_NATIONALISM }
+		x = 25
 		y = 1
 		cost = 2
-		ai_will_do = {
-			factor = 10
+		ai_will_do = {factor = 10}
+		bypass = {
+			OR = {
+				has_government = proletarianism
+				has_government = mutualism
+				has_government = collectivism
+			}
+		}
+		available = {
+			has_country_flag = empowered_the_workers
 		}
 		completion_reward = {
-			add_popularity = { ideology = absolutism popularity = -0.05 }
-			add_popularity = { ideology = royalism popularity = -0.05 }
-			add_popularity = { ideology = rexism popularity = -0.05 }
+			random_list = {
+				60 = { #Revolution
+					country_event = { id = le_france.20 }
+				}
+				40 = { #Coup
+					country_event = { id = le_france.21 }
+				}
+			}
 		}
 	}
 	focus = {
 		id = FRA_THE_GLORIOUS_REVOLUTION
-		icon = GFX_goal_generic_support_democracy
-		prerequisite = { focus = FRA_OVERTHROW_THE_KING }
-		x = 26
+		icon = GFX_generic_hammer_sickle
+		prerequisite = { focus = FRA_EMPOWER_THE_WORKERS }
+		x = 25
 		y = 2
 		cost = 2
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			country_event = { id = le_france.20 }
+			add_ideas = FRA_GLORIOUS_REVOLUTION
 		}
 	}
 	focus = {
 		id = FRA_PLEASE_THE_PEOPLE
-		icon = GFX_goal_generic_support_democracy
+		icon = GFX_focus_national_socialist_male
 		prerequisite = { focus = FRA_A_NATION_IN_TURMOIL }
-		mutually_exclusive = { focus = FRA_MONARCHY_IS_THE_WAY focus = FRA_OVERTHROW_THE_KING }
-		x = 28
+		mutually_exclusive = { focus = FRA_MONARCHY_IS_THE_WAY focus = FRA_EMPOWER_THE_WORKERS focus = FRA_ENCOURAGE_NATIONALISM }
+		x = 27
 		y = 1
 		cost = 2
 		ai_will_do = {
 			factor = 10
 		}
+		available = {
+			has_country_flag = pleased_the_people
+		}
 		completion_reward = {
-			add_popularity = { ideology = liberalism popularity = 0.05 }
-			add_popularity = { ideology = conservatism popularity = 0.05 }
-			add_popularity = { ideology = socialism popularity = 0.05 }
-			add_stability = 0.10
+			country_event = { id = le_france.22 }
 		}
 	}
 	focus = {
 		id = FRA_DRAFT_A_BILL_OF_RIGHTS
-		icon = GFX_goal_generic_support_democracy
+		icon = GFX_generic_constitution
 		prerequisite = { focus = FRA_PLEASE_THE_PEOPLE }
-		x = 28
+		x = 27
 		y = 2
 		cost = 2
 		ai_will_do = {
@@ -90,14 +101,17 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_MONARCHY_IS_THE_WAY
-		icon = GFX_goal_generic_support_democracy
+		icon = GFX_generic_political_oppression
 		prerequisite = { focus = FRA_A_NATION_IN_TURMOIL }
-		mutually_exclusive = { focus = FRA_OVERTHROW_THE_KING focus = FRA_PLEASE_THE_PEOPLE }
-		x = 30
+		mutually_exclusive = { focus = FRA_EMPOWER_THE_WORKERS focus = FRA_PLEASE_THE_PEOPLE focus = FRA_ENCOURAGE_NATIONALISM }
+		x = 29
 		y = 1
 		cost = 2
 		ai_will_do = {
 			factor = 10
+		}
+		available = {
+			has_country_flag = limited_reforms
 		}
 		completion_reward = {
 			add_stability = -0.10
@@ -105,9 +119,44 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_CRACK_DOWN_ON_EXTREMISTS
-		icon = FRA_MONARCHY_IS_THE_WAY
+		icon = GFX_generic_political_purge
 		prerequisite = { focus = FRA_MONARCHY_IS_THE_WAY }
-		x = 30
+		x = 29
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_popularity = { ideology = labryscism popularity = -0.05 }
+			add_popularity = { ideology = proletarianism popularity = -0.05 }
+			add_popularity = { ideology = collectivism popularity = -0.05 }
+			add_popularity = { ideology = mutualism popularity = -0.05 }
+		}
+	}
+	focus = {
+		id = FRA_ENCOURAGE_NATIONALISM
+		icon = GFX_support_nationalism
+		prerequisite = { focus = FRA_A_NATION_IN_TURMOIL }
+		mutually_exclusive = { focus = FRA_EMPOWER_THE_WORKERS focus = FRA_PLEASE_THE_PEOPLE focus = FRA_MONARCHY_IS_THE_WAY }
+		x = 31
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_country_flag = encouraged_nationalism
+		}
+		completion_reward = {
+			add_stability = -0.10
+		}
+	}
+	focus = {
+		id = FRA_FRENCH_SUPREMACY
+		icon = GFX_French_Glory
+		prerequisite = { focus = FRA_ENCOURAGE_NATIONALISM }
+		x = 31
 		y = 2
 		cost = 2
 		ai_will_do = {
@@ -2598,7 +2647,7 @@ focus_tree = {
 	focus = {
 		id = FRA_NATIONALISTIC_SURGE
 		icon = GFX_nationalist_victory
-		prerequisite = { focus = FRA_THE_GLORIOUS_REVOLUTION }
+		prerequisite = { focus = FRA_FRENCH_SUPREMACY }
 		mutually_exclusive = { focus = FRA_DEMOCRACY_PREVAILS focus = FRA_THE_FOURTH_REVOLUTION focus = FRA_PRESERVE_THE_MONARCHY }
 		x = 44
 		y = 3
