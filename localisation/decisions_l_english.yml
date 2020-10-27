@@ -31,6 +31,7 @@
 
 
  #Categories
+  PEACE_DEALS:0 "Treaties and Peace Deals"
   sphere_options_cat:0 "Sphere Options"
   expand_influence:0 "Expand Influence In [FROM.GetName]"
   sphere_infuence_tt:0 "Under the [FROM.GetSphereController] Sphere.\n"

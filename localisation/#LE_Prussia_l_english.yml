@@ -100,7 +100,16 @@
  pol_subjugation_tt:0 "§LUpon reaching 80% capitulation or capturing [?POL.GetCapital] Poland will submit and become a Prussian Dominion"
 ### Global / Country Flags ###
  PRE_wilhelm_in_capital:0 "Prince Wilhelm Visited The Capital"
+ VICTORY_OVER_DANES:0 "Victory Over The Danes"
+ 
+### Decisions ###
+ PRUSSIAN_DANISH_WAR_FOR_HOLSTEIN:0 "Treaty Of Kiel"
+ PRUSSIAN_POLISH_SUBJUGATION_WAR:0 "Treaty Of Warsaw"
 ### Focus Tree ###
+ PRE_POL_SUBJUGATION:0 "Subjuation of Poland"
+ PRE_POLISH_DIPLOMACY:0 "Polish Diplomacy"
+ PRE_POL_DEAL:0 "The Poznan Trade"
+ PRE_POL_DEMAND:0 "Demand Poznan"
  PRE_CHALLENGE_THE_DANES:0 "Challenge The Danes"
  PRE_OCCUPY_HOLSTEIN:0 "Occupy Holstein"
  PRE_DEMAND_LOWER_SAXON_LOYALTY:0 "Demand Lower Saxon Loyalty"
@@ -292,3 +301,8 @@
  le_prussia.55.t:0 "Formation of the South German Confederation"
  le_prussia.55.d:0 "In response to us forming the Northern Confederation, Bavaria must have felt threatened and created their own confederation. Too bad it won't last very long."
  le_prussia.55.a:0 "We are close."
+ 
+ le_prussia.60.t:0 "The Treaty of Warsaw"
+ le_prussia.64.t:0 "The Treaty of Kiel"
+ le_prussia.65.t:0 "Victory over [?DEN.GetNameDef]"
+ le_prussia.66.t:0 "Victory over [?POL.GetNameDef]"

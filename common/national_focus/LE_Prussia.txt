@@ -425,7 +425,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_THREATEN_VORPOMMERN }
 		x = 26
 		y = 2
-		cost = 1
+		cost = 5
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			add_state_claim = 58
@@ -439,19 +439,20 @@ focus_tree = {
 		prerequisite = { focus = PRE_CHALLENGE_THE_DANES }
 		x = 26
 		y = 3
-		cost = 1
+		cost = 5
 		ai_will_do = { factor = 100 }
 		completion_reward = {
+			set_global_flag = OCCUPY_HOLSTEIN
 			create_wargoal = { target = SHL type = annex_everything }
 		}
 	}
 	focus = {
 		id = PRE_POLISH_DIPLOMACY
-		icon = GFX_occupy_holstein
+		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = PRE_OCCUPY_HOLSTEIN }
 		x = 26
 		y = 4
-		cost = 1
+		cost = 5
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			
@@ -459,15 +460,16 @@ focus_tree = {
 	}
 	focus = {
 		id = PRE_POL_SUBJUGATION
-		icon = GFX_occupy_holstein
+		icon = GFX_conquer_poland
 		prerequisite = { focus = PRE_POLISH_DIPLOMACY }
+		mutually_exclusive = { focus = PRE_POL_DEAL focus = PRE_POL_DEMAND }
 		x = 26
 		y = 5
-		cost = 1
+		cost = 5
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			set_country_flag = SUBJUGATING_POLAND
-			create_wargoal = { target = SHL type = puppet_wargoal_focus }
+			create_wargoal = { target = POL type = puppet_wargoal_focus }
 			custom_effect_tooltip = pol_subjugation_tt
 		}
 	}
@@ -475,6 +477,7 @@ focus_tree = {
 		id = PRE_POL_DEAL
 		icon = GFX_occupy_holstein
 		prerequisite = { focus = PRE_POLISH_DIPLOMACY }
+		mutually_exclusive = { focus = PRE_POL_SUBJUGATION focus = PRE_POL_DEMAND }
 		x = 28
 		y = 5
 		cost = 1
@@ -487,6 +490,7 @@ focus_tree = {
 		id = PRE_POL_DEMAND
 		icon = GFX_occupy_holstein
 		prerequisite = { focus = PRE_POLISH_DIPLOMACY }
+		mutually_exclusive = { focus = PRE_POL_DEAL focus = PRE_POL_SUBJUGATION }
 		x = 30
 		y = 5
 		cost = 1

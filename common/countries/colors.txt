@@ -23,7 +23,10 @@ MAH = {
 	color = rgb { 138 101 66 }
 	color_ui = rgb { 138 101 66 }
 }
-
+VLH = {
+	color = rgb { 232 228 100 }
+	color_ui = rgb { 232 228 100 }
+}
 MET = {
 	color = rgb { 66 177 138 }
 	color_ui = rgb { 224 133 22 }

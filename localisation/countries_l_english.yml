@@ -18,6 +18,10 @@
  MAK_DEF:0 "Makhnovia Free Territory"
  MAK_ADJ:0 "Makhnovian"
  
+ VLH:0 "Western Ukranian Republic"
+ VLH_DEF:0 "Western Ukranian Republic"
+ VLH_ADJ:0 "Western Ukranian"
+ 
  ASW:0 "Aswan"
  ASW_DEF:0 "Aswan"
  ASW_ADJ:0 "Aswani"

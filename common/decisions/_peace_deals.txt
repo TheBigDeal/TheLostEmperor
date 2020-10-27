@@ -1,0 +1,54 @@
+PEACE_DEALS = {
+	PRUSSIAN_DANISH_WAR_FOR_HOLSTEIN = {
+		icon = GFX_decision_category_generic_political_actions
+		days_mission_timeout = 7
+		fire_only_once = yes
+		is_good = yes
+		allowed = {original_tag = PRE}
+		available = {
+			AND = {
+				NOT = { has_global_flag = VICTORY_OVER_DANES }
+			}
+		}
+		visible = { 
+			original_tag = PRE
+			AND = {
+				has_global_flag = VICTORY_OVER_DANES
+			}
+		}
+		activation = {
+			has_global_flag = VICTORY_OVER_DANES
+		}
+		timeout_effect = {
+			country_event = { id = le_prussia.64 }
+			clr_global_flag = VICTORY_OVER_DANES
+		}
+		complete_effect = {}
+	}
+	PRUSSIAN_POLISH_SUBJUGATION_WAR = {
+		icon = GFX_decision_category_generic_political_actions
+		days_mission_timeout = 7
+		fire_only_once = yes
+		is_good = yes
+		allowed = {original_tag = PRE}
+		available = {
+			AND = {
+				NOT = { has_country_flag = SUBJUGATED_POLAND }
+			}
+		}
+		visible = { 
+			original_tag = PRE
+			AND = {
+				has_country_flag = SUBJUGATED_POLAND
+			}
+		}
+		activation = {
+			has_country_flag = SUBJUGATED_POLAND
+		}
+		timeout_effect = {
+			country_event = { id = le_prussia.60 }
+			clr_country_flag = SUBJUGATED_POLAND
+		}
+		complete_effect = {}
+	}
+}

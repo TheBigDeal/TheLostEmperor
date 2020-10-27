@@ -2,6 +2,8 @@
 ############
 #MOD
 ############
+ #Tooltips
+ peace_treaty_tt:0 "§LA peace conference will begin in 10 days to discuss the terms of our victory.§!"
  #Mod Options
  playerevents.1.t:0 "The Lost Emperor"
  playerevents.1.d:0 "Make a Mod Description."

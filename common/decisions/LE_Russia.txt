@@ -4,7 +4,7 @@ RUS_REVOLT_RISK_CAT = {
 		visible = { 
 			tag = RUS 
 		}
-		days_mission_timeout = 5
+		days_mission_timeout = 275
 		fire_only_once = yes
 		is_good = no
 		allowed = {
@@ -26,14 +26,21 @@ RUS_REVOLT_RISK_CAT = {
 	}
 	CAUCASUS_REVOLUTION = {
 		icon = GFX_decision_revolt
-		fire_only_once = no
+		fire_only_once = yes
 		is_good = no
 		allowed = {
-			OR = {
-				original_tag = SOV
-				original_tag = RUS
-				original_tag = PER
-				original_tag = TUR
+			AND = {
+				OR = {
+					original_tag = SOV
+					original_tag = RUS
+					original_tag = PER
+					original_tag = TUR
+				}
+				#AND = {
+				#	NOT = { country_exists = GEO }
+				#	NOT = { country_exists = AZR }
+				#	NOT = { country_exists = ARM }
+				#}
 			}
 		}
 		available = {
@@ -58,6 +65,8 @@ POST_REVOLUTION_REVOLTS = {
 				original_tag = RUS
 				original_tag = SOV
 			}
+			NOT = { country_exists = UKR }
+			NOT = { country_exists = MAK }
 		}
 		activation = {
 			OR = {
@@ -82,6 +91,7 @@ POST_REVOLUTION_REVOLTS = {
 				original_tag = RUS
 				original_tag = SOV
 			}
+			NOT = { country_exists = LAT }
 		}
 		activation = {
 			OR = {
@@ -106,6 +116,7 @@ POST_REVOLUTION_REVOLTS = {
 				original_tag = RUS
 				original_tag = SOV
 			}
+			NOT = { country_exists = EST }
 		}
 		activation = {
 			OR = {
@@ -119,6 +130,31 @@ POST_REVOLUTION_REVOLTS = {
 		days_mission_timeout = 28
 		timeout_effect = {
 			country_event = { id = le_russia_unrest.4 }
+		}
+	}
+	BELARUS_REVOLT = {
+		icon = GFX_decision_revolt
+		fire_only_once = yes
+		is_good = no
+		allowed = {
+			OR = {
+				original_tag = RUS
+				original_tag = SOV
+			}
+			NOT = { country_exists = BLR }
+		}
+		activation = {
+			OR = {
+				has_war_with = SOV 
+				has_war_with = RUS   
+			}
+        }
+		available = {
+            always = no
+        }
+		days_mission_timeout = 60
+		timeout_effect = {
+			country_event = { id = le_russia_unrest.5 }
 		}
 	}
 }

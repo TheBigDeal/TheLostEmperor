@@ -11,3 +11,7 @@ test_cat = {
 		always = yes
 	}
 }
+PEACE_DEALS = {
+	available = {
+	}
+}

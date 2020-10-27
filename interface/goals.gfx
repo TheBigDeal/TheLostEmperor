@@ -145,6 +145,10 @@ spriteTypes = {
 		name = "GFX_generic_hammer_sickle"
 		texturefile = "gfx/interface/goals/generic_hammer_sickle.dds"
 	}
+	SpriteType = {
+		name = "GFX_conquer_poland"
+		texturefile = "gfx/interface/goals/conquer_poland.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_support_nationalism"

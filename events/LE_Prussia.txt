@@ -744,73 +744,73 @@ country_event = { #Prussia Occupies Poznan
 	}
 }
 
-country_event = { #Prussia Occupies Warsaw
-	id = le_prussia.39
-	title = le_prussia.39.t
-	desc = le_prussia.39.d
-	fire_only_once = yes
-	trigger = {
-		AND = {
-			PRE = { controls_state = 10 }
-			original_tag = POL
-		}
-	}
-	option = { #Send a Peace Deal to Prussia
-		name = le_prussia.39.a
-		PRE = { country_event = { id = le_prussia.40 }}
-	}
-}
+#country_event = { #Prussia Occupies Warsaw
+#	id = le_prussia.39
+#	title = le_prussia.39.t
+#	desc = le_prussia.39.d
+#	fire_only_once = yes
+#	trigger = {
+#		AND = {
+#			PRE = { controls_state = 10 }
+#			original_tag = POL
+#		}
+#	}
+#	option = { #Send a Peace Deal to Prussia
+#		name = le_prussia.39.a
+#		PRE = { country_event = { id = le_prussia.40 }}
+#	}
+#}
 
-country_event = { #Poland Surrenders
-	id = le_prussia.40
-	title = le_prussia.40.t
-	desc = le_prussia.40.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = { #Accept The Transfer of Poznan
-		name = le_prussia.40.a
-		white_peace = {
-			tag = POL
-			message = POL_PRS_WHITE_PEACE
-		}
-		hidden_effect = { transfer_state = 86 }
-	}
-}
+#country_event = { #Poland Surrenders
+#	id = le_prussia.40
+#	title = le_prussia.40.t
+#	desc = le_prussia.40.d
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#	option = { #Accept The Transfer of Poznan
+#		name = le_prussia.40.a
+#		white_peace = {
+#			tag = POL
+#			message = POL_PRS_WHITE_PEACE
+#		}
+#		hidden_effect = { transfer_state = 86 }
+#	}
+#}
 
-country_event = { #Prussia Occupies Holstein
-	id = le_prussia.41
-	title = le_prussia.41.t
-	desc = le_prussia.41.d
-	fire_only_once = yes
-	trigger = {
-		PRE = { controls_state = 1018 }
-		PRE = { controls_state = 785 }
-		original_tag = DEN
-	}
-	option = { #Send a Peace Deal to Prussia
-		name = le_prussia.41.a
-		PRE = { country_event = { id = le_prussia.42 }}
-	}
-}
+#country_event = { #Prussia Occupies Holstein
+#	id = le_prussia.41
+#	title = le_prussia.41.t
+#	desc = le_prussia.41.d
+#	fire_only_once = yes
+#	trigger = {
+#		PRE = { controls_state = 1018 }
+#		PRE = { controls_state = 785 }
+#		original_tag = DEN
+#	}
+#	option = { #Send a Peace Deal to Prussia
+#		name = le_prussia.41.a
+#		PRE = { country_event = { id = le_prussia.42 }}
+#	}
+#}
 
-country_event = { #Denmark Surrenders
-	id = le_prussia.42
-	title = le_prussia.42.t
-	desc = le_prussia.42.d
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = { #Accept The Peace Deal
-		name = le_prussia.42.a
-		white_peace = {
-			tag = DEN
-			message = DEN_PRS_WHITE_PEACE
-		}
-		hidden_effect = { 
-			transfer_state = 1018
-			transfer_state = 785
-		}
-	}
-}
+#country_event = { #Denmark Surrenders
+#	id = le_prussia.42
+#	title = le_prussia.42.t
+#	desc = le_prussia.42.d
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#	option = { #Accept The Peace Deal
+#		name = le_prussia.42.a
+#		white_peace = {
+#			tag = DEN
+#			message = DEN_PRS_WHITE_PEACE
+#		}
+#		hidden_effect = { 
+#			transfer_state = 1018
+#			transfer_state = 785
+#		}
+#	}
+#}
 
 country_event = { #Bohemian Nationalist Influence
 	id = le_prussia.43
@@ -1044,5 +1044,178 @@ country_event = { #The Germans are getting too Strong!
 		name = le_prussia.55.a
 		ai_chance = { factor = 0 }
 		FRA = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+}
+country_event = { #The Prussians Declare Subjugation War
+	id = le_prussia.57
+	title = le_prussia.57.t
+	desc = le_prussia.57.d
+	is_triggered_only = yes
+	option = { #We will prevail!
+		name = le_prussia.57.a
+		add_war_support = 0.25
+	}
+}
+country_event = { #The Prussians Take Warsaw
+	id = le_prussia.58
+	title = le_prussia.58.t
+	desc = le_prussia.58.d
+	trigger = {
+		10 = { is_controlled_by = GER }
+		10 = { is_owned_by = POL }
+		PRE = { has_war_with = POL }
+		PRE = { has_country_flag = SUBJUGATING_POLAND }
+	}
+	option = { #We can still win!
+		name = le_prussia.58.a
+		add_stability = -0.25
+		add_war_support = -0.50
+	}
+	#option = { #Surrender
+	#	name = le_prussia.58.b
+	#	PRE = { clr_country_flag = SUBJUGATING_POLAND }
+	#	PRE = { set_country_flag = SUBJUGATED_POLAND }
+	#	white_peace = PRE
+	#}
+}
+country_event = { #The Prussians Have Defeated Us
+	id = le_prussia.59
+	title = le_prussia.59.t
+	desc = le_prussia.59.d
+	trigger = {
+		tag = POL
+		PRE = { has_war_with = POL }
+		PRE = { has_country_flag = SUBJUGATING_POLAND }
+		surrender_progress > 0.6
+	}
+	option = { #Surrender
+		name = le_prussia.59.a
+		PRE = { clr_country_flag = SUBJUGATING_POLAND }
+		PRE = { set_country_flag = SUBJUGATED_POLAND }
+		PRE = { country_event = { id = le_prussia.66 } }
+	}
+}
+country_event = { #Treaty Of Warsaw
+	id = le_prussia.60
+	title = le_prussia.60.t
+	desc = le_prussia.60.d
+	is_triggered_only = yes
+	option = { #Surrender
+		name = le_prussia.60.a
+		puppet = POL
+		transfer_state = 86
+		86 = { add_compliance = 20 }
+		POL = { set_cosmetic_tag = PRE_PUPPET_POL }
+	}
+}
+country_event = { #Belerusian's Break Free
+	id = le_prussia.61
+	title = le_prussia.61.t
+	desc = le_prussia.61.d
+	trigger = {
+		tag = POL
+		PRE = { has_war_with = POL }
+		PRE = { has_country_flag = SUBJUGATING_POLAND }
+		surrender_progress > 0.25
+		
+	}
+	option = { #Belerus Breaks Free
+		name = le_prussia.60.a
+		release = BLR
+		SOV = { country_event = { id = le_russia_unrest.5 days = 10 } }
+	}
+}
+country_event = { #Ukrainians's Break Free
+	id = le_prussia.62
+	title = le_prussia.62.t
+	desc = le_prussia.62.d
+	trigger = {
+		tag = POL
+		PRE = { has_war_with = POL }
+		PRE = { has_country_flag = SUBJUGATING_POLAND }
+		surrender_progress > 0.25
+		
+	}
+	option = { #Belerus Breaks Free
+		name = le_prussia.62.a
+		if = {
+			limit { country_exists = UKR }
+			UKR = { transfer_state = 93 }
+			UKR = { transfer_state = 873 }
+		}
+		else = {
+			release = VLH
+		}
+	}
+}
+
+country_event = { #Occupy Holstein
+	id = le_prussia.63
+	title = le_prussia.63.t
+	desc = le_prussia.63.d
+	trigger = {
+		tag = DEN
+		OR = {
+			AND = {
+				99 = { is_controlled_by = PRE }
+				99 = { is_owned_by = DEN }
+				1018 = { is_controlled_by = PRE }
+				1018 = { is_owned_by = DEN }
+				1027 = { is_controlled_by = PRE }
+				1027 = { is_owned_by = DEN }
+				785 = { is_controlled_by = PRE }
+				785 = { is_owned_by = SHL }
+				58 = { is_controlled_by = PRE }
+				58 = { is_owned_by = SHL }
+			}
+			surrender_progress > 0.60
+		}
+		PRE = { has_war_with = SHL }
+		PRE = { has_global_flag = OCCUPY_HOLSTEIN }
+	}
+	option = { #Belerus Breaks Free
+		name = le_prussia.63.a
+		
+		clr_country_flag = OCCUPY_HOLSTEIN
+		set_global_flag = VICTORY_OVER_DANES
+		PRE = { country_event = { id = le_prussia.65 } }
+	}
+}
+
+country_event = { #Treaty of Kiel
+	id = le_prussia.64
+	title = le_prussia.64.t
+	desc = le_prussia.64.d
+	is_triggered_only = yes
+	option = { #Belerus Breaks Free
+		name = le_prussia.63.a
+		PRE = {
+			transfer_state = 58
+			transfer_state = 785
+			transfer_state = 1027
+			transfer_state = 1018
+		}
+	}
+}
+country_event = { #Denmark Surrenders
+	id = le_prussia.65
+	title = le_prussia.65.t
+	desc = le_prussia.65.d
+	is_triggered_only = yes
+	option = { #Belerus Breaks Free
+		name = le_prussia.65.a
+		white_peace = DEN
+		custom_effect_tooltip = peace_treaty_tt
+	}
+}
+country_event = { #Poland Surrenders
+	id = le_prussia.66
+	title = le_prussia.66.t
+	desc = le_prussia.66.d
+	is_triggered_only = yes
+	option = { #Belerus Breaks Free
+		name = le_prussia.66.a
+		white_peace = POL
+		custom_effect_tooltip = peace_treaty_tt
 	}
 }

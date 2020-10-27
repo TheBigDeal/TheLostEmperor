@@ -18,6 +18,7 @@ state={
 			}
 		}
 		add_core_of = POL
+		add_core_of = VLH
 		victory_points = {
 			10337 10
 		}

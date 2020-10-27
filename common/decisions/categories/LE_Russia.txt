@@ -10,9 +10,6 @@ RUS_REVOLT_RISK_CAT = {
 }
 RUS_CAUCAUS_REVOLUTION = {
 	icon = idea_collectivism
-	visible = {
-		always = yes
-	}
 }
 POST_REVOLUTION_REVOLTS = {
 	icon = idea_collectivism
