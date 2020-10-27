@@ -224,9 +224,11 @@
  le_greece.2.III:0 "The Liberal Monarchist Eleftherios Venizelos Wins"
  le_greece.2.IV:0 "The Radical Charles Zervas Wins"
  
- le_greece.7.t:0 "Prince Constantine Returns!"
- le_greece.7.d:0 "Today word has reached the king that his rival, Prince Constantine has returned from his exile. This has caused quite a stir in Greece, causing supporters of the Prince to come out in his name. Many feel Greece is being ruled by a foreign power as the king is German born, and not Greek."
- le_greece.7.a:0 "Damn!"
+ le_greece.7.t:0 "A Letter from Prince Constantine"
+ le_greece.7.d:0 "Today a letter arrived from the exiled bastard brother of the king, Prince Constantine. In it, the prince expresses his 'Warmest greetings' to his half brother King Albert and other well wishes. More importantly, the prince asked his brother if he may return from his exile in Germany to Greece and take up a more active role alongside His Majesty. While His Majesty is inclined to agree, given the king's tendency for mercy, the prime minister and the government recommend against letting the prince return, given that he has consistently supported the overthrow of both Albert and Greek democracy in the past. Constantine insists he has changed but ultimately the decision rests with the king."
+ le_greece.7.a:0 "Revoke Constantines Exile"
+ le_greece.7.b:0 "Make No Changes"
+ 
  le_greece.8.t:0 "Prince Constantine Makes A Move!"
  le_greece.8.d:0 "Today the kings home in Athens was raided. In an attempt to seize power for hiself Prince Constantine has ordered his followers to oust the current king. This includes some army leaders and government officials. Tensions are high and Constantine is close to taking power. Who knows what will happen next."
  le_greece.8.a:0 "Constantine Seizes Power"
@@ -259,3 +261,7 @@
  le_greece.20.t:0 "The Gyaros Report"
  le_greece.20.d:0 "Since our expansion of the prison complex on Gyaros island certain rumors have been circulating among our population that the prison is host to grave violations of people’s rights. Some time ago several foreign newspapers published a scathing article titled the ‘Gyaros Report’ which details what goes on at the island prison. Stories of prisoners being forced into tubs of human vomit or reports of dissidents being herded into crowded cells with cattle prods have outraged the population."
  le_greece.20.a:0 "A Small Price To Pay For Salvation"
+ 
+ le_greece.22.t:0 "The Bastard Prince Returns"
+ le_greece.22.d:0 "Arriving on a large cruise liner at the port of Piraeus, Prince Constantine returned to Greece and was greeted by throngs of jubilant supporters. Almost five thousand people cheered his motorcade as it drove towards Athens while the handsome prince wasted no time in waving to the people. As the first Greek prince actually born in Greece and the first one whose first language is Greek, Constantine is seen as a sort of People's Prince by many Greeks, especially those critical of King Albert and his "Teutonic stench" as one Epirote newspaper put it. Nevertheless, when the Prince arrived in Athens he was greeted warmly by his until recently estranged brother and the two embraced before attending a short church service and lunch."
+ le_greece.22.a:0 "For good or ill, the bastard's back."

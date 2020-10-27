@@ -2,6 +2,7 @@
  cc_leader:0 "General"
  fm_leader:0 "Field Marshal"
  navy_leader:0 "Admiral"
+ gre_egotistical_autocrat:0 "Egotistical Autocrat"
  communist_revolutionary:0 "Communist Revolutionary"
  communist_revolutionary_desc:0 "§LA supporter of the international revolution hoping to aid the country's, and eventually the world's, transition to a communist society.§!"
  liberalism_reformer:0 "liberalism Reformer"

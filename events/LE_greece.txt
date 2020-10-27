@@ -94,7 +94,7 @@ country_event = { #The Turks Refused Thrace
 		create_wargoal = { type = annex_everything target = TUR }
 	}
 }
-country_event = { #PRINCE CONSTANTINE RETURNS
+country_event = { #PRINCE CONSTANTINE LETTER
 	id = le_greece.7
 	title = le_greece.7.t
 	desc = le_greece.7.d
@@ -112,9 +112,17 @@ country_event = { #PRINCE CONSTANTINE RETURNS
 			set_country_flag = constantines_return
 		}
 	}
-	option = { #Cede Thrace
+	option = { #Return
 		name = le_greece.7.a
-		add_popularity = { ideology = absolutism popularity = 0.25 }
+		remove_ideas = { GRE_exiled_prince_constantine }
+		add_stability = -0.05
+		add_political_power = -100
+		hidden_effect = { country_event = { id = le_greece.22 days = 7 } }
+	}
+	option = { #keep Out
+		name = le_greece.7.b
+		add_stability = -0.10
+		add_political_power = -50
 	}
 }
 country_event = { #PRINCE CONSTANTINES MAKES A MOVE
@@ -133,26 +141,13 @@ country_event = { #PRINCE CONSTANTINES MAKES A MOVE
 			expire = "1965.1.1"
 			ideology = absolutism
 			traits = {
-				
+				gre_egotistical_autocrat
 			}
-		}
-		start_civil_war = {
-			ruling_party = absolutism
-			ideology = royalism
-			size = 0.4
-			
-			capital = 185
-			states = { 
-				185 825 826 731 955
-			}
-			#keep_unit_leaders = {
-			#	750 751 752 731 955
-			#}
 		}
 		set_country_flag = GRE_ROYAL_WAR
 	}
 	option = { #Constantine has failed
-		name = le_greece.8.a
+		name = le_greece.8.b
 		country_event = { id = le_greece.1 days = 5 } 
 	}
 }
@@ -426,5 +421,17 @@ country_event = { #CONSTANTINE VICTORY
 	option = {
 		name = le_greece.21.a
 		add_stability = 0.25
+	}
+}
+
+country_event = { #PRINCE CONSTANTINES RETURN
+	id = le_greece.22
+	title = le_greece.22.t
+	desc = le_greece.22.d
+	picture = GFX_constantines_return
+	is_triggered_only = yes
+	option = { #Constantine has failed
+		name = le_greece.22.a
+		add_popularity = { ideology = absolutism popularity = 0.03 }
 	}
 }

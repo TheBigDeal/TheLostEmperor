@@ -406,7 +406,8 @@ country = {
 	GRE_exiled_prince_constantine = {
 		picture = prince_constantine
 		modifier = {
-			war_support_weekly = -0.02
+			stability_factor = -0.05
+			war_support_factor = -0.05
 		}
 	}
 	GRE_unreliable_military = {

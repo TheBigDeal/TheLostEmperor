@@ -28,6 +28,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/Mod/Red_Army_Officers.dds"
 	}
 	SpriteType = {
+		name = "GFX_focus_form_germany"
+		texturefile = "gfx/interface/goals/Mod/Large/focus_form_germany.dds"
+	}
+	SpriteType = {
 		name = "GFX_threaten_MCH"
 		texturefile = "gfx/interface/goals/Mod/threaten_MCH.dds"
 	}

@@ -2,6 +2,10 @@ PRE_PUPPET_POL = {
 	color = rgb { 247 48 48 }
 	color_ui = rgb { 247 48 48 }
 }
+PRE_HAN_PUPPET = {
+	color = rgb { 20 69 103 }
+	color_ui = rgb { 20 69 103 }
+}
 BAY_CIVIL_WAR = {
 	color = rgb { 73 128 216 }
 	color_ui = rgb { 73 128 216 }
