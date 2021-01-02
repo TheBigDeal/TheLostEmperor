@@ -1,0 +1,20 @@
+state={
+	id=1030
+	name="STATE_1030"
+	history={
+		owner = TUR
+		victory_points = { 6361 3 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		12029 
+	}
+	manpower=53463
+	buildings_max_level_factor=1.000
+	state_category=town
+}

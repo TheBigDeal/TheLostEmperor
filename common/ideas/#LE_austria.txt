@@ -13,6 +13,34 @@ country = {
 			industrial_capacity_factory = -0.15
 		}
 	}
+	aus_military_presence = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			conscription = -0.10
+			industrial_capacity_factory = -0.15
+		}
+	}
+	aus_vassal_taxes = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			industrial_capacity_factory = 0.20
+			consumer_goods_factor = -0.10
+		}
+	}
+	aus_austrian_taxes = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			industrial_capacity_factory = -0.05
+			consumer_goods_factor = 0.10
+		}
+	}
+	aus_ethnic_protests = {
+		picture = Hungarian_Monarchy
+		modifier = {
+			stability_factor = -0.15
+			war_support_factor = -0.20
+		}
+	}
 	aus_aeiou = {
 		picture = Hungarian_Monarchy
 		modifier = {
@@ -23,13 +51,13 @@ country = {
 	AUS_INCREASED_AUTONOMY = {
 		picture = Hungarian_Monarchy
 		modifier = {
-			consumer_goods_factor = 0.10
+			consumer_goods_factor = -0.05
 		}
 	}
 	AUS_MINISTRY_OF_CULTURE = {
 		picture = Hungarian_Monarchy
 		modifier = {
-			stability_factor = 0.05
+			stability_factor = 0.15
 		}
 	}
 	aus_ethnic_tensions = {
@@ -56,7 +84,7 @@ country = {
 		picture = Hungarian_Monarchy
 		modifier = {
 			consumer_goods_factor = 0.10
-			political_power_factor = -0.05
+			political_power_factor = -0.25
 			stability_factor = -0.10
 		}
 	}

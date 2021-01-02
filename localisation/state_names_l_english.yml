@@ -358,7 +358,7 @@
  STATE_357:0 "New York"
  STATE_358:0 "New York"
  STATE_359:0 "New Jersey"
- STATE_360:0 "Pennsylvania"
+ STATE_360:0 "Eastern Pennsylvania"
  STATE_361:0 "Maryland"
  STATE_362:0 "Virginia"
  STATE_363:0 "North Carolina"
@@ -969,4 +969,6 @@
  STATE_1024:0 "Aswan"
  STATE_1025:0 "Bahar"
  STATE_1026:0 "Halayeb"
+ 
+ STATE_1031:0 "West Pennsylvania"
  

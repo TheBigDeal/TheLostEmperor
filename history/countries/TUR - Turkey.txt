@@ -96,6 +96,10 @@ if = {
 		target = BHN
 		autonomous_state = autonomy_vilayet
 	}
+	set_autonomy = {
+		target = ALB
+		autonomous_state = autonomy_vilayet
+	}
 	else = {
 		puppet = IRQ
 		puppet = EGY
@@ -106,6 +110,7 @@ if = {
 		puppet = SHM
 		puppet = ASW
 		puppet = BHN
+		puppet = ALB
 	}
 }
 
@@ -140,7 +145,7 @@ ASR = {
 	}
 	set_politics = {
 		ruling_party = theocracy
-		last_election = "1920.15.6"
+		last_election = "1920.6.15"
 		election_frequency = 48
 		elections_allowed = no
 	}
@@ -174,7 +179,7 @@ IRQ = {
 	}
 	set_politics = {
 		ruling_party = royalism
-		last_election = "1920.15.6"
+		last_election = "1920.6.15"
 		election_frequency = 48
 		elections_allowed = no
 	}
@@ -192,7 +197,7 @@ LBA = {
 	}
 	set_politics = {
 		ruling_party = labryscism
-		last_election = "1920.15.6"
+		last_election = "1920.6.15"
 		election_frequency = 48
 		elections_allowed = no
 	}

@@ -36,6 +36,16 @@ LOR = {
 	color_ui = rgb { 151 164 168 }
 }
 
+MIC = {
+	color = rgb { 77 146 176 }
+	color_ui = rgb { 77 146 176 }
+}
+MCK = {
+	color = rgb { 140 162 171 }
+	color_ui = rgb { 140 162 171 }
+}
+
+
 AND = {
 	color = rgb { 255 113 22 }
 	color_ui = rgb { 224 133 22 }
@@ -1043,8 +1053,8 @@ PEN = {
 	color_ui = rgb { 68 136 244 }
 }
 NEW = {
-	color = rgb { 37 132 30 }
-	color_ui = rgb { 37 132 30 }
+	color = rgb { 214 195 109 }
+	color_ui = rgb { 214 195 109 }
 }
 JER = {
 	color = rgb { 153 106 36 }

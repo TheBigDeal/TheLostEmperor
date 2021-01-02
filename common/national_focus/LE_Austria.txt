@@ -17,7 +17,7 @@ focus_tree = {
 		icon = GFX_focus_austria
 		x = 13
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -31,7 +31,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_ALLES_ERDREICH_IST_OSTERREICH_UNTERTAN }
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 		available = {
 			OR = {
 				has_completed_focus = AUS_DANUBIAN_FEDERATION
@@ -56,7 +56,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_REVENGE_OF_THE_KAISERTUM_OSTTERICH }
 		x = 2
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -85,7 +85,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_GAIN_THE_ALLEGIANCE_OF_SOUTH_GERMANY }
 		x = 2
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -99,7 +99,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_FORM_A_COALITION }
 		x = 2
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -117,7 +117,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_FORM_A_COALITION }
 		x = 0
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -135,7 +135,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_AUSTRO_PRUSSIAN_WAR }
 		x = 2
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -163,7 +163,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_PROPOSE_FRANCO_AUSTRIAN_ALLIANCE }
 		x = 3
 		y = 7
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -177,7 +177,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_REVENGE_OF_THE_KAISERTUM_OSTTERICH }
 		x = 4
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -191,7 +191,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_REGAIN_ITALIAN_INFLUENCE }
 		x = 4
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -205,7 +205,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_PARTITION_VENICE }
 		x = 4
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -219,7 +219,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_PARTITION_VENICE }
 		x = 6
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -234,7 +234,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_SOUTH_GERMAN_CONFEDERATION focus = AUS_SPLIT_ITALY }
 		x = 3
 		y = 6
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -248,11 +248,12 @@ focus_tree = {
 		prerequisite = { focus = AUS_ALLES_ERDREICH_IST_OSTERREICH_UNTERTAN }
 		x = 13
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
+			country_event = { id = le_austria.4 }
 			add_stability = 0.05
 			add_political_power = 100		
 		}
@@ -262,9 +263,12 @@ focus_tree = {
 		icon = GFX_peace
 		prerequisite = { focus = AUS_A_FRACTURED_NATION }
 		mutually_exclusive = { focus = AUS_AUSTRIAN_DOMINANCE focus = AUS_THE_DUAL_MONARCHY }
-		x = 10
-		y = 2
-		cost = 10
+		x = 9
+		y = 2z
+		available = {
+			always = no
+		}
+		cost = 500
 		ai_will_do = {
 			factor = 10
 		}
@@ -279,7 +283,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_A_PEACEFUL_SOLUTION }
 		x = 10
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -295,7 +299,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_UNITY_PROPAGANDA }
 		x = 10
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -311,7 +315,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_A_PEACEFUL_SOLUTION }
 		x = 8
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -328,7 +332,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_INCREASE_LOCAL_AUTONOMY }
 		x = 8
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -347,7 +351,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_ONE_NATION_ONE_PEOPLE }
 		x = 9
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -357,34 +361,16 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AUS_DANUBIAN_FEDERATION
-		icon = GFX_AUS_federation
-		prerequisite = { focus = AUS_ETHNIC_REPRESENTATION }
-		x = 9
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			set_cosmetic_tag = DANUBIAN_FEDERATION
-			add_ideas = aus_danubia
-			HUN = { country_event = { id = le_austria.2 }}
-			CRO = { country_event = { id = le_austria.2 }}
-			SLO = { country_event = { id = le_austria.2 }}
-			TRN = { country_event = { id = le_austria.2 }}
-			VOJ = { country_event = { id = le_austria.2 }}
-			GAL = { country_event = { id = le_austria.2 }}
-		}
-	}
-	focus = {
 		id = AUS_AUSTRIAN_DOMINANCE
 		icon = GFX_Officers_Command
 		prerequisite = { focus = AUS_A_FRACTURED_NATION }
 		mutually_exclusive = { focus = AUS_A_PEACEFUL_SOLUTION focus = AUS_THE_DUAL_MONARCHY}
 		x = 13
 		y = 2
-		cost = 10
+		cost = 5
+		available = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -399,29 +385,12 @@ focus_tree = {
 		prerequisite = { focus = AUS_AUSTRIAN_DOMINANCE }
 		x = 12
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 20
-			random_list = {
-				90 = {
-					every_country = {
-						limit = { is_subject_of = AUS }
-						add_stability = -0.20
-					}	
-				}
-				10 = {
-					every_country = {
-						limit = { is_subject_of = AUS }
-						declare_war_on = {
-							target = AUS
-							type = annex_everything
-						}
-					}	
-				}
-			}
+			remove_ideas = aus_ethnic_protests	
 		}
 	}
 	focus = {
@@ -430,46 +399,48 @@ focus_tree = {
 		prerequisite = { focus = AUS_CRACKDOWN_ON_PROTESTS }
 		x = 12
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			add_stability = 0.10
-			add_political_power = -50
-			add_war_support = -0.25
+			custom_effect_tooltip = aus_hun_revolt_risk_tt
+			custom_effect_tooltip = aus_military_presence_tt
+			effect_tooltip = {
+				add_ideas = aus_military_presence
+			}
+			hidden_effect = {
+				every_country = {
+					limit = { is_subject_of = AUS }
+					country_event = { id = le_austria.6 }
+				}
+			}
 		}
 	}
 	focus = {
 		id = AUS_OCCUPY_THE_NATION
 		icon = GFX_Crush_the_Rebellion
 		prerequisite = { focus = AUS_MILITARY_PRESENCE_IN_CITIES }
+		prerequisite = { focus = AUS_ILLEGALIZE_MINORITY_LANGUAGES }
 		x = 12
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			AUS = { add_ideas = AUS_new_order }
-			add_political_power = 20
-			random_list = {
-				75 = {
-					every_country = {
-						limit = { is_subject_of = AUS }
-						add_ideas = AUS_austrian_occupation
-					}	
+			custom_effect_tooltip = aus_hun_revolt_risk_tt
+			custom_effect_tooltip = aus_military_presence_tt
+			effect_tooltip = {
+				add_ideas = AUS_austrian_occupation
+			}	
+			add_ideas = AUS_new_order		
+			hidden_effect = {
+				every_country = {
+					limit = { is_subject_of = AUS }
+					country_event = { id = le_austria.8 }
 				}
-				25 = {
-					every_country = {
-						limit = { is_subject_of = AUS }
-						declare_war_on = {
-							target = AUS
-							type = annex_everything
-						}
-					}	
-				}
-			}
+			}			
 		}
 	}
 	focus = {
@@ -478,15 +449,22 @@ focus_tree = {
 		prerequisite = { focus = AUS_AUSTRIAN_DOMINANCE }
 		x = 14
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			every_country = {
-				limit = { is_subject_of = AUS }
+			custom_effect_tooltip = aus_hun_revolt_risk_tt
+			custom_effect_tooltip = aus_military_presence_tt
+			effect_tooltip = {
 				add_ideas = AUS_germanization_programs
-			}		
+			}
+			hidden_effect = {
+				every_country = {
+					limit = { is_subject_of = AUS }
+					country_event = { id = le_austria.9 }
+				}
+			}
 		}
 	}
 	focus = {
@@ -495,25 +473,46 @@ focus_tree = {
 		prerequisite = { focus = AUS_BEGIN_GERMANIZATION_PROGRAMS }
 		x = 14
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power = 40
-			every_country = {
-				limit = { is_subject_of = AUS }
+			custom_effect_tooltip = aus_hun_revolt_risk_tt
+			custom_effect_tooltip = aus_military_presence_tt
+			effect_tooltip = {
 				add_stability = -0.10
 			}
+			hidden_effect = {
+				every_country = {
+					limit = { is_subject_of = AUS }
+					country_event = { id = le_austria.10 }
+				}
+			}
+		}
+	}
+	focus = {
+		id = AUS_BOHEMIAN_ANNEXATION
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = AUS_ILLEGALIZE_MINORITY_LANGUAGES  }
+		x = 14
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			#custom_effect_tooltip = bohemian_refurendum_tt
+			create_wargoal = { type = annex_everything target = BOH }
 		}
 	}
 	focus = {
 		id = AUS_BOHEMIAN_REFURENDUM
 		icon = GFX_goal_generic_elections
-		prerequisite = { focus = AUS_ILLEGALIZE_MINORITY_LANGUAGES focus = AUS_ALLOW_HUNGARIAN_AS_A_SECONDARY_LANGUAGE }
-		x = 15
+		prerequisite = { focus = AUS_ALLOW_HUNGARIAN_AS_A_SECONDARY_LANGUAGE }
+		x = 17
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -524,36 +523,63 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_REVOKE_AUTONOMY
-		#icon = GFX_focus_ENG_move_to_secure_the_dominions
 		icon = GFX_focus_CZE_german_puppet
-		prerequisite = { focus = AUS_BOHEMIAN_REFURENDUM }
-		prerequisite = { focus = AUS_ILLEGALIZE_MINORITY_LANGUAGES }
-		mutually_exclusive = { focus = AUS_THE_THREE_CROWNS focus = AUS_THE_TWO_CROWNS}
-		x = 14
+		#prerequisite = { focus = AUS_BOHEMIAN_REFURENDUM }
+		prerequisite = { focus = AUS_OCCUPY_THE_NATION }
+		prerequisite = { focus = AUS_BOHEMIAN_ANNEXATION }
+		x = 13
 		y = 6
-		cost = 10
+		cost = 5
+		available = {
+			owns_state = 9
+		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			AUS = {
-				annex_country = { target = VOJ transfer_troops = yes }
-				annex_country = { target = SLO transfer_troops = yes }
-				annex_country = { target = TRN transfer_troops = yes }
-				annex_country = { target = GAL transfer_troops = yes }
-				annex_country = { target = HUN transfer_troops = yes }
-			}	
+			custom_effect_tooltip = aus_military_presence_tt
+			effect_tooltip = {
+				country_event = { id = le_austria.5 }
+			}
+			hidden_effect = {
+				every_country = {
+					limit = { is_subject_of = AUS }
+					country_event = { id = le_austria.5 }
+				}
+			}
+		}
+	}
+	focus = {
+		id = AUS_THE_AUSTRIAN_EMPIRE
+		icon = GFX_AUS_legacy
+		prerequisite = { focus = AUS_REVOKE_AUTONOMY }
+		x = 13
+		y = 7
+		cost = 5
+		available = {
+			HUN = { exists = no }
+			CRO = { exists = no }
+			GAL = { exists = no }
+			TRN = { exists = no }
+			BOH = { exists = no }
+			SLO = { exists = no }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_cosmetic_tag = AUSTRIAN_EMPIRE	
 		}
 	}
 	focus = {
 		id = AUS_THE_TWO_CROWNS
 		icon = GFX_focus_hun_elect_a_king
+		#prerequisite = { focus = AUS_BOHEMIAN_REFURENDUM }
 		prerequisite = { focus = AUS_BOHEMIAN_REFURENDUM }
-		prerequisite = { focus = AUS_ALLOW_HUNGARIAN_AS_A_SECONDARY_LANGUAGE }
 		mutually_exclusive = { focus = AUS_REVOKE_AUTONOMY focus = AUS_THE_THREE_CROWNS }
 		x = 16
 		y = 6
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -573,11 +599,10 @@ focus_tree = {
 		id = AUS_THE_THREE_CROWNS
 		icon = GFX_focus_ger_return_of_the_kaiser
 		prerequisite = { focus = AUS_BOHEMIAN_REFURENDUM }
-		prerequisite = { focus = AUS_ALLOW_HUNGARIAN_AS_A_SECONDARY_LANGUAGE }
 		mutually_exclusive = { focus = AUS_REVOKE_AUTONOMY focus = AUS_THE_TWO_CROWNS }
 		x = 18
 		y = 6
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -595,17 +620,19 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AUS_THE_AUSTRIAN_EMPIRE
-		icon = GFX_AUS_legacy
-		prerequisite = { focus = AUS_REVOKE_AUTONOMY }
-		x = 14
+		id = AUS_UNITED_STATES_OF_GREATER_AUSTRIA
+		icon = GFX_AUS_united_crowns
+		prerequisite = { focus = AUS_THE_THREE_CROWNS }
+		x = 18
 		y = 7
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			set_cosmetic_tag = AUSTRIAN_EMPIRE	
+			set_cosmetic_tag = UNITED_CROWNS	
+			annex_country = { target = HUN transfer_troops = yes }
+			annex_country = { target = CRO transfer_troops = yes }			
 		}
 	}
 	focus = {
@@ -615,7 +642,10 @@ focus_tree = {
 		mutually_exclusive = { focus = AUS_A_PEACEFUL_SOLUTION focus = AUS_AUSTRIAN_DOMINANCE }
 		x = 17
 		y = 2
-		cost = 10
+		cost = 5
+		available = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -629,7 +659,7 @@ focus_tree = {
 		prerequisite = { focus = AUS_THE_DUAL_MONARCHY }
 		x = 17
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -644,7 +674,7 @@ focus_tree = {
 		#prerequisite = { focus = AUS_BEGIN_GERMANIZATION_PROGRAMS }
 		x = 17
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -653,28 +683,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AUS_UNITED_STATES_OF_GREATER_AUSTRIA
-		icon = GFX_AUS_united_crowns
-		prerequisite = { focus = AUS_THE_THREE_CROWNS }
-		x = 18
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			set_cosmetic_tag = UNITED_CROWNS	
-			annex_country = { target = HUN transfer_troops = yes }
-			annex_country = { target = CRO transfer_troops = yes }			
-		}
-	}
-	focus = {
 		id = AUS_AUSTRO_HUNGARIAN_EMPIRE
 		icon = GFX_AH_focus
 		prerequisite = { focus = AUS_THE_TWO_CROWNS }
 		x = 16
 		y = 7
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -686,10 +700,10 @@ focus_tree = {
 	focus = {
 		id = AUS_APPROACH_BOHEMIA
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = AUS_DANUBIAN_FEDERATION }
+		prerequisite = { focus = AUS_ETHNIC_REPRESENTATION }
 		x = 9
-		y = 7
-		cost = 10
+		y = 6
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -698,12 +712,33 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = AUS_DANUBIAN_FEDERATION
+		icon = GFX_AUS_federation
+		prerequisite = { focus = AUS_APPROACH_BOHEMIA }
+		x = 9
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_cosmetic_tag = DANUBIAN_FEDERATION
+			add_ideas = aus_danubia
+			HUN = { country_event = { id = le_austria.2 }}
+			CRO = { country_event = { id = le_austria.2 }}
+			SLO = { country_event = { id = le_austria.2 }}
+			TRN = { country_event = { id = le_austria.2 }}
+			VOJ = { country_event = { id = le_austria.2 }}
+			GAL = { country_event = { id = le_austria.2 }}
+		}
+	}
+	focus = {
 		id = AUS_BALKAN_DOMINANCE
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = AUS_ALLES_ERDREICH_IST_OSTERREICH_UNTERTAN }
-		x = 21
+		x = 25
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -715,9 +750,9 @@ focus_tree = {
 		id = AUS_INVADE_THE_SLAVS
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = AUS_BALKAN_DOMINANCE }
-		x = 20
+		x = 24
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -729,9 +764,9 @@ focus_tree = {
 		id = AUS_UNITE_THE_ROMANIANS
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = AUS_BALKAN_DOMINANCE }
-		x = 22
+		x = 26
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -744,9 +779,9 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = AUS_INVADE_THE_SLAVS }
 		prerequisite = { focus = AUS_UNITE_THE_ROMANIANS }
-		x = 21
+		x = 25
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -758,9 +793,9 @@ focus_tree = {
 		id = AUS_ORGANIZE_A_COLONY
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = AUS_REVENGE_FOR_1529 }
-		x = 21
+		x = 25
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -772,9 +807,9 @@ focus_tree = {
 		id = AUS_ROYAL_CHARTER
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = AUS_ORGANIZE_A_COLONY }
-		x = 21
+		x = 25
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -787,9 +822,9 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = AUS_ROYAL_CHARTER }
 		mutually_exclusive = { focus = AUS_SEIZE_THE_SUEZ }
-		x = 20
+		x = 24
 		y = 6
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -802,9 +837,9 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = AUS_ROYAL_CHARTER }
 		mutually_exclusive = { focus = AUS_COMPROMISE_FOR_THE_SUEZ }
-		x = 22
+		x = 26
 		y = 6
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -817,9 +852,9 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = AUS_INVADE_THE_SLAVS }
 		prerequisite = { focus = AUS_UNITE_THE_ROMANIANS }
-		x = 23
+		x = 27
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}

@@ -95,3 +95,168 @@ country_event = { #BOHEMIAN REFURENDUM
 		}
 	}
 }
+country_event = { #UNIFICATION PATH
+	id = le_austria.4
+	title = le_austria.4.t
+	desc = le_austria.4.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { #PEACEFUL SOLUTION
+		name = le_austria.4.a
+		ai_chance = {
+			factor = 10
+		}
+		complete_national_focus = AUS_A_PEACEFUL_SOLUTION
+	}
+	option = { #AUSTRIAN DOMINANCE
+		name = le_austria.4.b
+		ai_chance = {
+			factor = 10
+		}
+		complete_national_focus = AUS_AUSTRIAN_DOMINANCE
+	}
+	option = { #DUAL MONARCHY
+		name = le_austria.4.c
+		ai_chance = {
+			factor = 0
+		}
+		complete_national_focus = AUS_THE_DUAL_MONARCHY
+	}
+}
+country_event = { #Austia Dissolves our Government
+	id = le_austria.5
+	title = le_austria.5.t
+	desc = le_austria.5.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { #ACCEPT
+		name = le_austria.5.a
+		ai_chance = {
+			factor = 100
+		}
+		AUS = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+}
+
+country_event = { #Austia increases military presence
+	id = le_austria.6
+	title = le_austria.6.t
+	desc = le_austria.6.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { #Demand Military Presence be revoked
+		name = le_austria.6.a
+		trigger = {
+			tag = HUN
+		}
+		ai_chance = {
+			factor = 2
+		}
+		AUS = { country_event = { id = austria.7 } }
+	}
+	option = { #Damn 
+		name = le_austria.6.b
+		ai_chance = {
+			factor = 10
+		}
+		add_ideas = aus_military_presence
+	}
+}
+
+country_event = { #Hungary opposes us
+	id = le_austria.7
+	title = le_austria.7.t
+	desc = le_austria.7.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { #Force our demands
+		name = le_austria.7.a
+		ai_chance = {
+			factor = 10
+		}
+		end_puppet = HUN
+		declare_war_on = {target = HUN type = annex_everything}
+	}
+	option = { #Revoke our demands
+		name = le_austria.7.b
+		ai_chance = {
+			factor = 2
+		}
+		add_ideas = aus_military_presence
+	}
+}
+
+country_event = { #Austia increases military presence
+	id = le_austria.8
+	title = le_austria.8.t
+	desc = le_austria.8.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { #Demand Military Presence be revoked
+		name = le_austria.8.a
+		trigger = {
+			tag = HUN
+		}
+		ai_chance = {
+			factor = 2
+		}
+		AUS = { country_event = { id = austria.7 } }
+	}
+	option = { #Damn 
+		name = le_austria.8.b
+		ai_chance = {
+			factor = 10
+		}
+		add_ideas = aus_military_occupation
+	}
+}
+
+country_event = { #Austia announces germanisation programs
+	id = le_austria.9
+	title = le_austria.9.t
+	desc = le_austria.9.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { #Demand Military Presence be revoked
+		name = le_austria.9.a
+		trigger = {
+			tag = HUN
+		}
+		ai_chance = {
+			factor = 2
+		}
+		AUS = { country_event = { id = austria.7 } }
+	}
+	option = { #Damn 
+		name = le_austria.9.b
+		ai_chance = {
+			factor = 10
+		}
+		add_ideas = AUS_germanization_programs
+	}
+}
+
+country_event = { #Austia increases military presence
+	id = le_austria.10
+	title = le_austria.10.t
+	desc = le_austria.10.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { #Demand Military Presence be revoked
+		name = le_austria.10.a
+		trigger = {
+			tag = HUN
+		}
+		ai_chance = {
+			factor = 1
+		}
+		AUS = { country_event = { id = austria.7 } }
+	}
+	option = { #Damn 
+		name = le_austria.10.b
+		ai_chance = {
+			factor = 15
+		}
+		add_stability = -0.10
+	}
+}

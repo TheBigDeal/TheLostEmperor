@@ -25,13 +25,6 @@
 
  #France Events
  
- #Austria
- le_austria.1.t:0 "Invitation To The South German Confederation"
- le_austria.1.d:0 "Austria has announced a new German confederation to be formed in the name of keeping peace in the German Region. Prussia has shown to be a very large threat in the region and a rival to Austria's power. This confederation will act as a detorrent for Prussia."
- le_austria.1.a:0 "Join the Confederation"
- le_austria.1.b:0 "Refuse"
- le_austria.2.t:0 "The Danubian Federation"
- le_austria.3.t:0 "Bohemian Referendum"
  
 
  #Political

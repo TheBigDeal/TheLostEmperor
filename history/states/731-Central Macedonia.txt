@@ -6,7 +6,7 @@ state={
 		wood=7
 	}
 	history={
-		owner = GRE
+		owner = TUR
 		victory_points = {
 			11818 5
 		}
@@ -17,7 +17,7 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = GRE
+		add_core_of = TUR
 		add_claim_by = MAC
 	}
 

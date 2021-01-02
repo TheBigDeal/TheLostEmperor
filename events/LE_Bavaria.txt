@@ -107,10 +107,10 @@ country_event = { #Bavaria Is Defeated
 	trigger = {
 		has_idea = HRE_emperor
 		OR = {
-			NOT = { country_exists = BAV }
+			NOT = { country_exists = BAY }
 			AND = {
-				BAV = { has_government = collectivism }
-				BAV = { has_civil_war = no }
+				BAY = { has_government = collectivism }
+				BAY = { NOT = { has_idea = HRE_member } }
 			}
 		}
 	}

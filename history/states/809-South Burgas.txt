@@ -1,29 +1,27 @@
+
 state={
 	id=809
 	name="STATE_809"
 	resources={
-		wood=9
+		wood=9.000
 	}
+
 	history={
-		owner = TUR
+		owner = BUL
 		victory_points = {
-			9919 5
+			9919 5 
 		}
 		buildings = {
 			infrastructure = 6
 			arms_factory = 2
-			air_base = 5
-
 		}
-		add_core_of = TUR
-
+		add_core_of = BUL
 	}
 
-	state_category=town
-
 	provinces={
-		6967 9888 9902 9919
+		6967 9919 
 	}
 	manpower=1534742
 	buildings_max_level_factor=1.000
+	state_category=town
 }

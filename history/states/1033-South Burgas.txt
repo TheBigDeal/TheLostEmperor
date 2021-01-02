@@ -1,0 +1,17 @@
+state={
+	id=1033
+	name="STATE_1033"
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		9888 9902 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

@@ -47,6 +47,15 @@
  usa_popular_discontent:0 "Popular Discontent"
  usa_general_strike:0 "General Strike"
  usa_election_rigged:0 "Rigged Elections"
+ usa_crime_spree:0 "Crime Spree"
+ usa_crime_spree_1:0 "Crime Spree"
+ usa_crime_spree_2:0 "Crime Spree"
+ usa_economic_meltdown:0 "Economic Meltdown"
+ usa_economic_meltdown_1:0 "Economic Meltdown"
+ usa_economic_meltdown_2:0 "Economic Meltdown"
+ usa_widespread_apathy:0 "Widespread Apathy"
+ usa_widespread_apathy_1:0 "Widespread Apathy"
+ usa_kept_the_gold_standard:0 "Kept The Gold Standard"
 ### Tooltips ###
  presidents_address_tt:0 "§RTHIS ACTION WILL ANGER SOCIALISTS AROUND THE NATION§!\n"
  democrats_protest_tt:0 "§RTHIS ACTION WILL ANGER DEMOCRATS AROUND THE NATION§!\n"
@@ -121,6 +130,24 @@
  USA_EXTREMISTS_MAKE_THEIR_MOVE:0 "Extremeists Make Their Move"
  USA_TALKS_IN_CHICAGO:0 "Talks In Chicago"
 
+
+
+ 
+ USA_THE_DEATH_OF_THE_DREAM:0 "The Dream Of The Dream"
+ USA_SEND_IN_THE_NATIONAL_GUARD:0 "Send In The National Guard"
+ USA_SEIZE_FEDERAL_WEAPONS_DEPOTS:0 "Seize Federal Weapons Depots"
+ USA_CRACKDOWN_ON_EXTREMEISM:0 "Crackdown On Extremeism"
+ USA_LOOSEN_RESTRICTIONS:0 "Loosen Restrictions"
+ USA_TEMPORARILY_CLOSE_THE_BANKS:0 "Temporarily Close The Banks"
+ USA_KEEPING_THE_GOLD_STANDARD:0 "Keeping The Gold Standard?"
+ USA_RESTORE_BUSINESS_CONFIDENCE:0 "Restoring Business Confidence"
+ USA_REOPEN_THE_BANKS:0 "Reopen The Banks"
+ USA_EMERGENCY_POWERS_TO_THE_GOVERNOR:0 "Emergency Powers To The Governor"
+ USA_APPEAL_FOR_INTERNATIONAL_AID:0 "Appeal For International Aid"
+ USA_CREATE_A_BORDER_PATROL:0 "Create A Border Patrol"
+ USA_LESSONS_FROM_THE_US_ARMY:0 "Lessons From The US Army"
+ USA_CONSTITUTIONAL_CONVENTION:0 "Constitutional Convention"
+ 
 ### Events ###
  le_USA.1.t:0 "The Nations Fractures"
  le_USA.1.d:0 ""
@@ -198,3 +225,15 @@
  le_USA.28.t:0 "A House Divided"
  le_USA.28.d:0 "' The United States of America'. Pfft. We are the Disunited States of America. What are we but a squabbling band of states who can’t even agree who leads us when our leader dies? Are we a democracy? No, we are nothing anymore. America has tried to crush us but here we are, proud and strong. The bourgeois think they can destroy us, but they fail to see the inevitability of socialism. Our time has come! The working class has nothing to lose but their chains! We have a world to win! Working people of America, unite!\n\n\nCheers ring out from the crowd as the speaker sits down. Amid renditions of “Solidarity Forever” the Chicago Commune is declared. Detroit follows. Then Minneapolis. Even Cleveland declares its commune. The time of America has ended but the age of chaos has begun."
  le_USA.28.a:0 "A House Divided Against Itself Cannot Stand."
+ 
+ le_USA.30.t:0 "Keeping The Gold Standard?"
+ le_USA.30.d:0 "With the recent collapse of the United States, our state finds itself in the midst of a total economic meltdown. Thousands are out of work, and our currency reserves- which are still in almost worthless US dollars- are rapidly drying up. Luckily for us, our quick thinking enabled us to close the banks to prevent rapid withdrawals of cash and we have a little room to breathe. However, this state of affairs cannot endure and some economists have implored us to get rid of the gold standard to they we may better help our economy. This move is very unpopular with businesses, yet keeping the gold standard is likely unsustainable. A few people are even suggesting the adoption of a silver standard as a sort of compromise."
+ le_USA.30.a:0 "Get Rid of The Gold Standard"
+ le_USA.30.b:0 "Keep The Gold Standard"
+ le_USA.30.c:0 "Go Silver!"
+ 
+ le_USA.31.t:0 "Appeal for aid"
+ le_USA.31.d:0 "The collapse of the old United States was a shock to all. Without federal support and investment, our trains don't run, our fields lay fallow, and our businesses flee abroad.  The truth is, as much as we pride ourselves on our independent spirit, we need foreign aid now more than ever. Many won't like this, but this is necessary for our continued survival. Now, the question remains- who should we ask? The British? Our overlords of old? The French? America's oldest ally? Or maybe the Dutch, the finest economists in Europe?"
+ le_USA.31.a:0 "The British, our friends across the pond!"
+ le_USA.31.b:0 "The French, once an ally, always an ally!"
+ le_USA.31.c:0 "The Dutch, we need their calvinist ethics!"

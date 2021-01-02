@@ -359,6 +359,7 @@ KUT = "countries/Kutai.txt"
 BEU = "countries/Berau.txt"
 YOG = "countries/Yogyakarta.txt"
 
+MCK = "countries/Mackinac.txt"
 NCL = "countries/North Carolina.txt"
 NEW = "countries/New York.txt"
 OHI = "countries/Ohio.txt"

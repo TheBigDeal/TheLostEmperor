@@ -12,8 +12,8 @@ country_event = { #Prince Wilhelm Visits the Capital
 	is_triggered_only = yes
 	option = { #Accept Wilhelm
 		name = le_prussia.1.a
-		#country_event = { id = le_prussia.7 days = 10 }
-		set_country_flag = prs_wilhelm_in_capital
+		set_country_flag = PRE_wilhelm_in_capital
+		complete_national_focus = PRE_THE_KING_IS_SICK
 	}
 	option = { #Turn Wilhelm Away
 		name = le_prussia.1.b

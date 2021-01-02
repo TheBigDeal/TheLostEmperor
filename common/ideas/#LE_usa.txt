@@ -1,5 +1,80 @@
 ideas = {
 	country = {
+		#####################
+		#      STATES       #
+		#####################
+		usa_crime_spree = {
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				MONTHLY_POPULATION = -1.10
+				research_speed_factor = -0.25
+				consumer_goods_factor = 0.25
+			}
+		}
+		usa_crime_spree_1 = {
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				MONTHLY_POPULATION = -0.50
+				research_speed_factor = -0.20
+				consumer_goods_factor = 0.20
+			}
+		}
+		usa_crime_spree_2 = {
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				MONTHLY_POPULATION = -0.50
+				research_speed_factor = -0.10
+				consumer_goods_factor = 0.10
+			}
+		}
+		usa_economic_meltdown = {
+			picture = unknown
+			modifier = {
+				industrial_capacity_factory = -0.40
+				production_speed_buildings_factor = -0.40
+				industrial_capacity_dockyard = -0.40
+			}
+		}
+		usa_economic_meltdown_1 = {
+			picture = unknown
+			modifier = {
+				industrial_capacity_factory = -0.50
+				production_speed_buildings_factor = -0.50
+				industrial_capacity_dockyard = -0.50
+			}
+		}
+		usa_economic_meltdown_2 = {
+			picture = unknown
+			modifier = {
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.25
+				industrial_capacity_dockyard = -0.25
+			}
+		}
+		usa_widespread_apathy = {
+			picture = unknown
+			modifier = {
+				stability_factor = -0.30
+				war_support_factor = -0.30
+				political_power_gain = -0.50
+			}
+		}
+		usa_widespread_apathy_1 = {
+			picture = unknown
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.20
+				political_power_gain = -0.25
+			}
+		}
+		usa_kept_the_gold_standard = {
+			picture = unknown
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
 		##################
 		#      USA       #
 		##################

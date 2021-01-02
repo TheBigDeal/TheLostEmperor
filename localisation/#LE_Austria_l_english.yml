@@ -1,0 +1,154 @@
+﻿l_english: 
+### Country Name ###
+ #labryscism
+ AUS_rexism:0 "Austria"
+ AUS_rexism_DEF:0 "The Kingdom of Austria"
+ AUS_despotism:0 "Austria"
+ AUS_despotism_DEF:0 "Austria"
+ AUS_labryscism:0 "Austria"
+ AUS_labryscism_DEF:0 "The Austria State"
+ #Democracy
+ AUS_conservatism:0 "Austrian Republic"
+ AUS_conservatism_DEF:0 "The Republic of Austria"
+ AUS_liberalism:0 "Austrian Republic"
+ AUS_liberalism_DEF:0 "The Republic of Austria"
+ AUS_socialist:0 "Austrian Republic"
+ AUS_socialist_DEF:0 "The Republic of Austria"
+ #Monarchy
+ AUS_absolutism:0 "Austria"
+ AUS_absolutism_DEF:0 "The Kingdom of Austria"
+ AUS_royalism:0 "Austria"
+ AUS_royalism_DEF:0 "The Kingdom of Austria"
+ AUS_theocracy:0 "Austria"
+ AUS_theocracy_DEF:0 "The Kingdom of Austria"
+ #collectivism
+ AUS_mutualism:1 "Austrian Mutualist Republic"
+ AUS_mutualism_DEF:1 "The Austrian Mutualist Republic"
+ AUS_collectivism:1 "Austrian Commune"
+ AUS_collectivism_DEF:1 "The Austrian Commune"
+ AUS_proletarianism:1 "Austrian Socialist Republic"
+ AUS_proletarianism_DEF:1 "The Austrian Socialist Republic"
+ #Adjectives
+ AUS_rexism_ADJ:0 "Austrian"
+ AUS_despotism_ADJ:0 "Austrian"
+ AUS_labryscism_ADJ:0 "Austrian"
+ AUS_conservative_ADJ:0 "Austrian"
+ AUS_liberal_ADJ:0 "Austrian"
+ AUS_socialist_ADJ:0 "Austrian"
+ AUS_absolutism_ADJ:0 "Austrian"
+ AUS_royalism_ADJ:0 "Austrian"
+ AUS_theocracy_ADJ:0 "Austrian"
+ AUS_mutualism_ADJ:1 "Austrian"
+ AUS_collectivism_ADJ:1 "Austrian"
+ AUS_proletarianism_ADJ:1 "Austrian"
+
+### Political Parties ###
+ AUS_absolutism_party:0 "Loyalist Party"
+ AUS_royalism_party:0 "Loyalist Party"
+ AUS_rexism_party:0 "Loyalist Party"
+ AUS_despotism_party:0 "Military National Party"
+ AUS_conservatism_party:0 "Austrian Moderate Party"
+ AUS_liberalism_party:0 "Democratic Liberal Party"
+ AUS_socialism_party:0 "Austrian Peoples Party"
+ AUS_theocracy_party:0 "The Hands of God"
+ AUS_labryscism_party:0 "National Socialist Party"
+ AUS_mutualism_party:0 "Austrian Anarchist Party"
+ AUS_collectivism_party:0 "Austrian Workers Front"
+ AUS_proletarianism_party:0 "Peoples Socialist Party"
+ 
+### Ministers ###
+ # Head Of State
+ #USA_calvin_coolidge:0 "Calvin Coolidge"
+ # Secondary Head
+ #USA_frank_lowden:0 "Frank Lowden"
+ # Foriegn Minister
+ #USA_Frank_B_Kellogg:0 "Frank B. Kellogg"
+ # Minister Of Defence
+ #USA_John_Pershing:0 "John Pershing"
+ # Economic Minister
+ #USA_Andrew_Mellon:0 "Andrew Mellon"
+ # Minister Of The Interior
+ #USA_Hubert_Work:0 "Hubert Work"
+ # Minister Of Security
+ #USA_J_Edgar_Hoover:0 "Edgar Hoover"
+ 
+### Ideas ###
+ aus_military_presence:0 "Austrian Military Presence"
+ aus_austrian_taxes:0 "Austrian Taxes"
+ aus_vassal_taxes:0 "Vassal Taxes"
+ aus_ethnic_protests:0 "Ethnic Protests"
+### Tooltips ###
+ aus_military_presence_tt:0 "All Subjects of §Y[?AUS.GetNameWithFlag]§!:"
+ aus_hun_revolt_risk_tt:0 "§RVassals will be angered by this, and a Hungarian revolt may be possible.§!"
+### Global / Country Flags ###
+
+### Cosmetic Tags ###
+
+### Decisions ###
+
+### Focus Tree ###
+ AUS_ALLES_ERDREICH_IST_OSTERREICH_UNTERTAN:0 "Alles Erdreich Is Österreich Untertan"
+ AUS_REVENGE_OF_THE_KAISERTUM_OSTTERICH:0 "Revenge of the Kaisertum Osterreich"
+ AUS_REGAIN_ITALIAN_INFLUENCE:0 "Regain Italian Influence"
+ AUS_GAIN_THE_ALLEGIANCE_OF_SOUTH_GERMANY:0 "Gain The Allegiance of South Germany"
+ AUS_FORM_A_COALITION:0 "Form A Coalition Against Prussia"
+ AUS_AUSTRO_PRUSSIAN_WAR:0 "Austro-Prussian War"
+ AUS_INVITE_THE_FRENCH:0 "Invite The French"
+ AUS_SOUTH_GERMAN_CONFEDERATION:0 "South German Confederation"
+ AUS_PARTITION_VENICE:0 "Partition Venice"
+ AUS_A_SICILIAN_HABSBURG:0 "A Sicilian Habsburg"
+ AUS_SPLIT_ITALY:0 "Split Italy"
+ AUS_PROPOSE_FRANCO_AUSTRIAN_ALLIANCE:0 "Propose Franco-Austrian Alliance"
+ AUS_A_FRACTURED_NATION:0 "A Fractured Nation"
+ AUS_A_PEACEFUL_SOLUTION:0 "A Peaceful Solution"
+ AUS_INCREASE_LOCAL_AUTONOMY:0 "Increase Local Autonomy"
+ AUS_MINISTRY_FOR_CULTURE:0 "Ministry For Culture"
+ AUS_UNITY_PROPAGANDA:0 "Unity Propaganda"
+ AUS_ONE_NATION_ONE_PEOPLE:0 "One Nation, One People"
+ AUS_DANUBIAN_FEDERATION:0 "Danubian Federation"
+ AUS_AUSTRIAN_DOMINANCE:0 "Austrian Dominance"
+ AUS_CRACKDOWN_ON_PROTESTS:0 "Crackdown On Protests"
+ AUS_MILITARY_PRESENCE_IN_CITIES:0 "Military Presence In Cities"
+ AUS_BEGIN_GERMANIZATION_PROGRAMS:0 "Begin Germanization Programs"
+ AUS_ILLEGALIZE_MINORITY_LANGUAGES:0 "National German Language Dominance"
+ AUS_REVOKE_AUTONOMY:0 "Revoke Autonomy"
+ AUS_THE_AUSTRIAN_EMPIRE:0 "The Austrian Empire"
+ AUS_THE_DUAL_MONARCHY:0 "The Dual Monarchy"
+ AUS_ALLOW_MAGYARIZATION:0 "Allow Magyarization"
+ AUS_ALLOW_HUNGARIAN_AS_A_SECONDARY_LANGUAGE:0 "Allow Hungarian As A Secondary Language"
+ AUS_EXCLUDE_CROATIANS:0 "Exclude Croatians"
+ AUS_AUSTRO_HUNGARIAN_EMPIRE:0 "Austro-Hungarian Empire"
+ AUS_APPEASE_CROATIANS:0 "Appease Croatians"
+ AUS_UNITED_STATES_OF_GREATER_AUSTRIA:0 "United Crowns Of Greater Austria"
+ AUS_FORM_GERMANY:0 "Form Germany"
+ AUS_ETHNIC_REPRESENTATION:0 "Ethnic Representation"
+ AUS_APPROACH_BOHEMIA:0 "Aproach Bohemia"
+ AUS_OCCUPY_THE_NATION:0 "Occupy Disloyal Subjects"
+ AUS_THE_AUTONOMY_QUESTION:0 "The Autonomy Question"
+ AUS_THE_TWO_CROWNS:0 "The Two Crowns"
+ AUS_THE_THREE_CROWNS:0 "The Three Crowns"
+ AUS_BOHEMIAN_REFURENDUM:0 "Bohemian Refurendum"
+ AUS_HUNGARIANS_IN_GOVERNMENT:0 "Hungarians In Government"
+ AUS_BOHEMIAN_ANNEXATION:0 "Bohemian Annexation"
+### Events ###
+ le_austria.1.t:0 "Invitation To The South German Confederation"
+ le_austria.1.d:0 "Austria has announced a new German confederation to be formed in the name of keeping peace in the German Region. Prussia has shown to be a very large threat in the region and a rival to Austria's power. This confederation will act as a detorrent for Prussia."
+ le_austria.1.a:0 "Join the Confederation"
+ le_austria.1.b:0 "Refuse"
+ le_austria.2.t:0 "The Danubian Federation"
+ le_austria.3.t:0 "Bohemian Referendum"
+ le_austria.4.t:0 "Reclaiming Our Nation"
+ le_austria.5.t:0 "Austria dissolves our Government!"
+ 
+ le_austria.6.t:0 "Austrian military arrives in major cities."
+ le_austria.6.d:0 "Today military units sent from Austria have arrived in most of our major cites. They claim to be there to completely stop the protests and to keep the peace, as our local police has not been doing good enough"
+ le_austria.6.a:0 "We cannot accept this!"
+ le_austria.6.b:0 "We have no choice."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,19 @@
+state={
+	id=1032
+	name="STATE_1032"
+	
+	history={
+		owner = BUL
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+		}
+		add_core_of = BUL
+	}
+	
+	provinces={
+		6814 6952 6982 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

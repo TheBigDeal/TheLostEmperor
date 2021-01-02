@@ -25,6 +25,8 @@ set_variable = { var = AUS_THURINGIA_SUPPORT value = -100 }
 add_ideas = {
 	HRE_emperor
 	aus_ethnic_tensions
+	aus_ethnic_protests
+	aus_vassal_taxes
 }
 set_politics = {	
 	ruling_party = royalism
@@ -62,10 +64,6 @@ if = {
 		autonomous_state = autonomy_integrated_puppet
 	}
 	set_autonomy = {
-		target = BOS
-		autonomous_state = autonomy_integrated_puppet
-	}
-	set_autonomy = {
 		target = GAL
 		autonomous_state = autonomy_integrated_puppet
 	}
@@ -74,7 +72,6 @@ if = {
 		autonomous_state = autonomy_integrated_puppet
 	}
 	else = {
-		puppet = BOS
 		puppet = HUN
 		puppet = SLO
 		puppet = TRN
@@ -84,6 +81,12 @@ if = {
 	}
 }
 
+HUN = { add_ideas = aus_austrian_taxes }
+SLO = { add_ideas = aus_austrian_taxes }
+TRN = { add_ideas = aus_austrian_taxes }
+CRO = { add_ideas = aus_austrian_taxes }
+GAL = { add_ideas = aus_austrian_taxes }
+VOJ = { add_ideas = aus_austrian_taxes }
 
 set_stability = 0.50
 give_guarantee = HRE

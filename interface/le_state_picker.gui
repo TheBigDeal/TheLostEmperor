@@ -1,0 +1,163 @@
+guiTypes = {
+	containerWindowType = {
+		name = "us_state_picker"
+		position = { x= 25% y = 15% }
+		size = { width = 1146 height = 700 }
+		clipping = no
+		moveable = yes
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_paper_w_frame_bg"
+		}
+		iconType = {
+			name = "elections_header"
+			position = { x= 5 y = 5 }
+			spriteType = "GFX_header_ultrawide_bg"
+		}
+		instantTextboxType = {
+			name = "elections_title"
+			position = { x = 60 y = 4 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "United States Of America: Elections of 1928"
+			maxWidth = 1000
+			maxHeight = 20
+			fixedsize = yes
+			format = center
+		}
+		
+		iconType = {
+			name = "USA_Democrat"
+			position = { x= 210 y = 50 }
+			spriteType = "GFX_Election_Democrat"
+		}
+		instantTextboxType = {
+			name = "democrat_title"
+			position = { x = 150 y = 160 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "Democratic Party"
+			maxWidth = 1000
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+		iconType = {
+			name = "USA_Republican"
+			position = { x= 810 y = 55 }
+			spriteType = "GFX_Election_Republican"
+		}
+		instantTextboxType = {
+			name = "republican_title"
+			position = { x = 745 y = 160 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "Republican Party"
+			maxWidth = 1000
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "Elections_Desc"
+			position = { x = 80 y = 220 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "Put some election text here in the future"
+			maxWidth = 1000
+			maxHeight = 20
+			fixedsize = yes
+			format = center
+		}
+		
+		iconType = {
+			name = "USA_James_Reed"
+			position = { x= 40 y = 350 }
+			spriteType = "GFX_Election_James_Reed"
+		}
+		iconType = {
+			name = "diplo_leader_frame1"
+			position = { x= 32 y = 340 }
+			spriteType = "GFX_pol_leader_frame"
+		}
+		buttonType = {
+			name = "USA_James_Reed_Button"
+			position = { x = 34 y = 560 }
+			quadTextureSprite ="GFX_sort_button_171x35"
+			buttonFont = "Vic_14"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			text = "James Reed"
+			pdx_tooltip = "CLOSE"
+		}
+		iconType = {
+			name = "USA_Cordel_Hull"
+			position = { x= 340 y = 350 }
+			spriteType = "GFX_Election_Cordel_Hull"
+		}
+		iconType = {
+			name = "diplo_leader_frame2"
+			position = { x= 332 y = 340 }
+			spriteType = "GFX_pol_leader_frame"
+		}
+		buttonType = {
+			name = "USA_Cordel_Hull_Button"
+			position = { x = 334 y = 560 }
+			quadTextureSprite ="GFX_sort_button_171x35"
+			buttonFont = "Vic_14"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			text = "Cordel Hull"
+			pdx_tooltip = "CLOSE"
+		}
+		iconType = {
+			name = "USA_Frank_Lowden"
+			position = { x= 640 y = 350 }
+			spriteType = "GFX_Election_Frank_Lowden"
+		}
+		iconType = {
+			name = "diplo_leader_frame3"
+			position = { x= 632 y = 340 }
+			spriteType = "GFX_pol_leader_frame"
+		}
+		buttonType = {
+			name = "USA_Frank_Lowden_Button"
+			position = { x = 634 y = 560 }
+			quadTextureSprite ="GFX_sort_button_171x35"
+			buttonFont = "Vic_14"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			text = "Frank Lowden"
+			pdx_tooltip = "CLOSE"
+		}
+		iconType = {
+			name = "USA_Quentin_Roosevelt"
+			position = { x= 940 y = 350 }
+			spriteType = "GFX_Election_Quentin_Roosevelt"
+		}
+		iconType = {
+			name = "diplo_leader_frame4"
+			position = { x= 932 y = 340 }
+			spriteType = "GFX_pol_leader_frame"
+		}
+		buttonType = {
+			name = "USA_Quentin_Roosevelt_Button"
+			position = { x = 934 y = 560 }
+			quadTextureSprite ="GFX_sort_button_171x35"
+			buttonFont = "Vic_14"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			text = "Quentin Roosevelt"
+			pdx_tooltip = "CLOSE"
+		}
+	}
+}

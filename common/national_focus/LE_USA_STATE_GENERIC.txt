@@ -1,0 +1,271 @@
+focus_tree = {
+	id = LE_USA_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			OR = {
+				tag = PEN
+				tag = NEW
+				tag = NCL
+				tag = NEW
+				tag = OHI
+				tag = SCL
+				tag = TEN
+				tag = VIR
+				tag = ALA
+				tag = GRG
+				tag = IND
+				tag = JER
+				tag = KNT 
+				tag = MIS 
+				tag = MIC 
+				tag = MAS 
+				tag = MRY
+				tag = CNT
+				tag = VRM
+				tag = NHS
+				tag = MNE
+				tag = MIC
+				tag = ILL
+				tag = MIN
+				tag = DAK
+				tag = WIS
+				tag = IWA
+				tag = FLO
+				tag = RIS
+				tag = MCK
+			}
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 50 y = 3100 }
+	###############################
+	#TIME TO MANIFEST SOME DESTINY#
+	###############################
+	focus = {
+		id = USA_THE_DEATH_OF_THE_DREAM
+		icon = GFX_goal_generic_propaganda
+		x = 8
+		y = 0
+		cost = 8
+		bypass = {
+			always = yes
+		}
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {	
+		}
+	}
+	focus = {
+		id = USA_SEND_IN_THE_NATIONAL_GUARD
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = USA_THE_DEATH_OF_THE_DREAM }
+		x = 6
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {	
+			swap_ideas = { add_idea = usa_crime_spree_1 remove_idea = usa_crime_spree }
+		}
+	}
+	focus = {
+		id = USA_SEIZE_FEDERAL_WEAPONS_DEPOTS
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = USA_SEND_IN_THE_NATIONAL_GUARD }
+		x = 6
+		y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {	
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 3000 producer = USA }
+			add_equipment_to_stockpile = { type = support_equipment amount = 150 producer = USA }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 80 producer = USA }
+		}
+	}
+	focus = {
+		id = USA_CRACKDOWN_ON_EXTREMEISM
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = USA_SEIZE_FEDERAL_WEAPONS_DEPOTS }
+		x = 6
+		y = 3
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {	
+			swap_ideas = { add_idea = usa_crime_spree_2 remove_idea = usa_crime_spree_1 }
+			if = {
+				limit = { has_government = liberalism }
+				add_popularity = { ideology = liberalism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_government = convervatism }
+				add_popularity = { ideology = convervatism popularity = 0.1 }
+			}
+			if = {
+				limit = { has_government = socialism }
+				add_popularity = { ideology = socialism popularity = 0.1 }
+			}
+		}
+	}
+	focus = {
+		id = USA_LOOSEN_RESTRICTIONS
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = USA_CRACKDOWN_ON_EXTREMEISM }
+		x = 6
+		y = 4
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {	
+			remove_ideas = USA_crime_spree_2
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = USA_TEMPORARILY_CLOSE_THE_BANKS
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = USA_THE_DEATH_OF_THE_DREAM }
+		x = 8
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {	
+			add_political_power = -200
+			swap_ideas = { add_idea = usa_economic_meltdown_1 remove_idea = usa_economic_meltdown }
+		}
+	}
+	focus = {
+		id = USA_KEEPING_THE_GOLD_STANDARD
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = USA_TEMPORARILY_CLOSE_THE_BANKS }
+		x = 8
+		y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {	
+			country_event = { id = le_USA.30 }
+		}
+	}
+	focus = {
+		id = USA_RESTORE_BUSINESS_CONFIDENCE
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = USA_KEEPING_THE_GOLD_STANDARD }
+		x = 8
+		y = 3
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {	
+			swap_ideas = { add_idea = usa_economic_meltdown_2 remove_idea = usa_economic_meltdown_1 }
+		}
+	}
+	focus = {
+		id = USA_REOPEN_THE_BANKS
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = USA_RESTORE_BUSINESS_CONFIDENCE }
+		x = 8
+		y = 4
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {	
+			remove_ideas = usa_economic_meltdown_2
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = USA_EMERGENCY_POWERS_TO_THE_GOVERNOR
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = USA_THE_DEATH_OF_THE_DREAM }
+		x = 10
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {	
+			swap_ideas = { add_idea = usa_widespread_apathy_1 remove_idea = usa_widespread_apathy }
+		}
+	}
+	focus = {
+		id = USA_APPEAL_FOR_INTERNATIONAL_AID
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = USA_EMERGENCY_POWERS_TO_THE_GOVERNOR }
+		x = 10
+		y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {	
+			country_event = { id = le_USA.31 }
+		}
+	}
+	focus = {
+		id = USA_CREATE_A_BORDER_PATROL
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = USA_APPEAL_FOR_INTERNATIONAL_AID }
+		x = 10
+		y = 3
+		cost = 8
+		available = {
+			has_political_power > 50
+		}
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {	
+			add_political_power = -50
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = USA_LESSONS_FROM_THE_US_ARMY
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = USA_CREATE_A_BORDER_PATROL }
+		x = 10
+		y = 4
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {	
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = USA_CONSTITUTIONAL_CONVENTION
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = USA_REOPEN_THE_BANKS }
+		prerequisite = { focus = USA_LOOSEN_RESTRICTIONS }
+		prerequisite = { focus = USA_LESSONS_FROM_THE_US_ARMY }
+		x = 8
+		y = 5
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {	
+			remove_ideas = usa_widespread_apathy_1
+		}
+	}
+}

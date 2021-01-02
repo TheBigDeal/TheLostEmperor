@@ -7,7 +7,19 @@ scripted_gui = {
 		visible = { check_variable = { usa_elections = 1 } original_tag = USA }
 		effects = {
 			close_button_click = {
-				set_variable = { open_hre_container = 0 }
+				set_variable = { usa_elections = 0 }
+			}
+		}
+	}
+	us_state_picker = {
+		context_type = player_context
+		
+		window_name = "election_event"
+		
+		visible = { check_variable = { us_state_picker = 1 } original_tag = USA }
+		effects = {
+			close_button_click = {
+				set_variable = { us_state_picker = 0 }
 			}
 		}
 	}
