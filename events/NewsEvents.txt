@@ -2,39 +2,28 @@
 # News Events
 ###########################
 
-add_namespace = le_news
+add_namespace = news
 
 # Voting Started
 news_event = { #Second Arabian War of Unification
-	id = le_news.1
-	title = le_news.1.t
-	desc = le_news.1.d
+	id = news.1
+	title = news.1.t
+	desc = news.1.d
 	picture = GFX_news_event_001
 	major = yes
 	is_triggered_only = yes
 	option = { #Good For Them.
-		name = le_news.1.a
+		name = news.1.a
 	}
 }
 news_event = { #Coolidge not running for a second term
-	id = le_news.2
-	title = le_news.2.t
-	desc = le_news.2.d
-	picture = GFX_news_event_001
-	major = yes
-	is_triggered_only = yes
-	option = {
-		name = le_news.2.a
-	}
-}
-news_event = { #First Use Of Chemical Warfare
-	id = le_news.3
-	title = le_news.3.t
-	desc = le_news.3.d
+	id = news.2
+	title = news.2.t
+	desc = news.2.d
 	picture = GFX_news_event_001
 	major = yes
 	is_triggered_only = yes
 	option = { 
-		name = le_news.3.a
+		name = news.2.a
 	}
 }

@@ -29,3 +29,14 @@ country_event = {
 		country_event = { id = le_chooseideology.1 }
 	}
 }
+
+country_event = {
+	id = le_alash.2
+	title = le_alash.2.t
+	desc = le_alash.2.d
+	is_triggered_only = yes
+	option = {
+		name = le_alash.2.a
+		set_cosmetic_tag = NORTH_GERMAN_CONFEDERATION
+	}
+}

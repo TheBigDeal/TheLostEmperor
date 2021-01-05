@@ -423,61 +423,39 @@ equipments = {
 		build_cost_ic = 0.4
 	}
 	### CHEMICAL WARFARE ###
-	
-	chemical_gas = {
-		year = 1930
-	
-		is_archetype = yes
-		picture = archetype_infantry_equipment		
-		is_buildable = no
-		type = infantry
-		group_by = archetype
-		visual_level = 6
-		interface_category = interface_category_land
-		active = yes
-		#Space taken in convoy
-		lend_lease_cost = 10
-		build_cost_ic = 4
-		resources = {
-			steel = 2
-			aluminium = 5
-		}
-		
-	}
-	
 	cyanide_gas = {
 		year = 1930
-		archetype = chemical_gas
+		archetype = infantry_equipment
 		priority = 10
-		visual_level = 6
-		build_cost_ic = 4
+		visual_level = 1
+		build_cost_ic = 10
 	}
 	chlorine_gas = {
 		year = 1934
 		archetype = infantry_equipment
 		priority = 10
-		visual_level = 6
-		build_cost_ic = 5
+		visual_level = 1
+		build_cost_ic = 10
 	}
 	mustard_gas = {
 		year = 1938
 		archetype = infantry_equipment
 		priority = 10
-		visual_level = 6
-		build_cost_ic = 6
+		visual_level = 1
+		build_cost_ic = 10
 	}
 	sarin_gas = {
 		year = 1942
 		archetype = infantry_equipment
 		priority = 10
-		visual_level = 6
-		build_cost_ic = 7
+		visual_level = 1
+		build_cost_ic = 10
 	}
 	VX_gas = {
 		year = 1946
 		archetype = infantry_equipment
 		priority = 10
-		visual_level = 6
-		build_cost_ic = 8
+		visual_level = 1
+		build_cost_ic = 10
 	}
 }

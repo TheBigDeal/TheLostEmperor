@@ -2,22 +2,6 @@ PRE_PUPPET_POL = {
 	color = rgb { 247 48 48 }
 	color_ui = rgb { 247 48 48 }
 }
-NEW_ENGLAND = {
-	color = rgb { 64 122 69 }
-	color_ui = rgb { 64 122 69 }
-}
-NEW_ENGLAND_CROSS = {
-	color = rgb { 64 122 69 }
-	color_ui = rgb { 64 122 69 }
-}
-NEW_ENGLAND_BUNKER = {
-	color = rgb { 64 122 69 }
-	color_ui = rgb { 64 122 69 }
-}
-NEW_ENGLAND_PINE = {
-	color = rgb { 64 122 69 }
-	color_ui = rgb { 64 122 69 }
-}
 PRE_HAN_PUPPET = {
 	color = rgb { 20 69 103 }
 	color_ui = rgb { 20 69 103 }
@@ -25,10 +9,6 @@ PRE_HAN_PUPPET = {
 BAY_CIVIL_WAR = {
 	color = rgb { 73 128 216 }
 	color_ui = rgb { 73 128 216 }
-}
-USA_REMNENTS = {
-	color = rgb { 14 95 165 }
-	color_ui = rgb { 14 95 165 }
 }
 BAY_COMMUNIST = {
 	color = rgb { 181 54 75 }

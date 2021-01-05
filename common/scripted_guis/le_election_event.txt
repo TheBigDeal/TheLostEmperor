@@ -14,32 +14,12 @@ scripted_gui = {
 	us_state_picker = {
 		context_type = player_context
 		
-		window_name = "us_state_picker"
+		window_name = "election_event"
 		
-		visible = { check_variable = { USA_STATE_PICKER = 1 } original_tag = USA }
+		visible = { check_variable = { us_state_picker = 1 } original_tag = USA }
 		effects = {
 			close_button_click = {
-				set_variable = { USA_STATE_PICKER = 0 }
-			}
-			USA_Maine_click = {
-				MNE = { change_tag_from = USA }
-				set_variable = { USA_STATE_PICKER = 0 }
-			}
-			USA_New_Hampshire_click = {
-				NHS = { change_tag_from = USA }
-				set_variable = { USA_STATE_PICKER = 0 }
-			}
-			USA_Vermont_click = {
-				VRM = { change_tag_from = USA }
-				set_variable = { USA_STATE_PICKER = 0 }
-			}
-			USA_Massachusetts_click = {
-				MAS = { change_tag_from = USA }
-				set_variable = { USA_STATE_PICKER = 0 }
-			}
-			USA_Rhode_Island_click = {
-				RIS = { change_tag_from = USA }
-				set_variable = { USA_STATE_PICKER = 0 }
+				set_variable = { us_state_picker = 0 }
 			}
 		}
 	}

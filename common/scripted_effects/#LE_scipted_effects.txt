@@ -408,14 +408,8 @@ load_great_powers_array = {
 		clear_array = global.score_tag_array
 		
 		set_variable = { total_score = 0 }
-		#set_variable = { prestige_score = 0 }
-		#set_variable = { military_score = 0 }
-		#set_variable = { industrial_score = 0 }
 		
-		get_military_score = yes
-		get_industrial_score = yes
-		
-		if = { #Add Puppet score to overload
+		if = {
 			limit = {
 				OR = {
 					is_puppet = yes 
@@ -429,7 +423,7 @@ load_great_powers_array = {
 				set_variable = { puppet_prestige_counter = PREV.prestige_score }
 			}
 		}
-		else = { #Unless not a puppet
+		else = {
 			add_to_variable = { var = total_score value = prestige_score }
 		}
 		if = {
@@ -467,163 +461,157 @@ load_great_powers_array = {
 			add_to_variable = { var = total_score value = industrial_score }
 		}
 	}
-	if = {
-		limit = {
-			OR = {
-				is_puppet = no 
-				is_subject = no
-			} 
-		}
-		every_country = {
-			round_variable = total_score
-			round_variable = prestige_score
-			round_variable = military_score
-			round_variable = industrial_score
-			add_to_array = { global.score_array = total_score }
-			
-			add_to_array = { global.prestige_score_array = prestige_score }
-			add_to_array = { global.military_score_array = military_score }
-			add_to_array = { global.industrial_score_array = industrial_score }
-			
-			add_to_array = { global.score_tag_array = THIS.id }
-			add_to_array = { global.p_score_tag_array = THIS.id }
-			add_to_array = { global.m_score_tag_array = THIS.id }
-			add_to_array = { global.i_score_tag_array = THIS.id }
-			
-			set_temp_variable = { length_temp = global.score_array^num }
-		}
+	
+	every_country = {
+		round_variable = total_score
+		round_variable = prestige_score
+		round_variable = military_score
+		round_variable = industrial_score
+		add_to_array = { global.score_array = total_score }
 		
-		for_loop_effect = {
-			start = 0
-			end = length_temp
-			add = 1
-			value = v
-			break = b
-			find_highest_in_array = { array = global.score_array value = score_array_highest_value index = score_array_highest_index }
-			find_highest_in_array = { array = global.prestige_score_array value = prestige_score_array_highest_value index = prestige_score_array_highest_index }
-			find_highest_in_array = { array = global.military_score_array value = military_score_array_highest_value index = military_score_array_highest_index }
-			find_highest_in_array = { array = global.industrial_score_array value = industrial_score_array_highest_value index = industrial_score_array_highest_index }
-			
-			remove_from_array = { array = global.score_array index = score_array_highest_index }
-			remove_from_array = { array = global.prestige_score_array index = prestige_score_array_highest_index }
-			remove_from_array = { array = global.military_score_array index = military_score_array_highest_index }
-			remove_from_array = { array = global.industrial_score_array index = industrial_score_array_highest_index }
-			
-			add_to_temp_array = { array = global.score_array_temp value = score_array_highest_value }
-			add_to_temp_array = { array = global.p_score_array_temp value = prestige_score_array_highest_value }
-			add_to_temp_array = { array = global.m_score_array_temp value = military_score_array_highest_value }
-			add_to_temp_array = { array = global.i_score_array_temp value = industrial_score_array_highest_value }
-			
-			set_temp_variable = { tag_temp = global.score_tag_array^score_array_highest_index }
-			set_temp_variable = { p_tag_temp = global.p_score_tag_array^prestige_score_array_highest_index }
-			set_temp_variable = { m_tag_temp = global.m_score_tag_array^military_score_array_highest_index }
-			set_temp_variable = { i_tag_temp = global.i_score_tag_array^industrial_score_array_highest_index }
-			
-			remove_from_array = { array = global.score_tag_array index = score_array_highest_index }
-			remove_from_array = { array = global.p_score_tag_array index = prestige_score_array_highest_index }
-			remove_from_array = { array = global.m_score_tag_array index = military_score_array_highest_index }
-			remove_from_array = { array = global.i_score_tag_array index = industrial_score_array_highest_index }
-			
-			add_to_temp_array = { array = global.score_tag_array_temp value = tag_temp }
-			add_to_temp_array = { array = global.p_score_tag_array_temp value = p_tag_temp}
-			add_to_temp_array = { array = global.m_score_tag_array_temp value = m_tag_temp }
-			add_to_temp_array = { array = global.i_score_tag_array_temp value = i_tag_temp }
-		}
-		for_loop_effect = {
-			start = 0
-			end = length_temp
-			add = 1
-			value = v
-			break = b
-			add_to_array = { array = global.score_array value = global.score_array_temp^v }
-			add_to_array = { array = global.score_tag_array value = global.score_tag_array_temp^v }
-			
-			add_to_array = { array = global.prestige_score_array value = global.p_score_array_temp^v }
-			add_to_array = { array = global.p_score_tag_array value = global.p_score_tag_array_temp^v }
-			
-			add_to_array = { array = global.military_score_array value = global.m_score_array_temp^v  }
-			add_to_array = { array = global.m_score_tag_array value = global.m_score_tag_array_temp^v }
-			
-			add_to_array = { array = global.industrial_score_array value = global.i_score_array_temp^v }
-			add_to_array = { array = global.i_score_tag_array value = global.i_score_tag_array_temp^v }
-		}
-		for_loop_effect = { #Add Numbers to array based on how many tags exist
-			start = 0
-			end = length_temp
-			add = 1
-			value = v
-			break = b
-					
-			add_to_array = { array = global.score_array_position value = v }	
-			add_to_variable = { global.score_array_position^v = 1 } 		
-			
-			add_to_array = { array = global.p_score_array_position  value = v }	
-			add_to_variable = { global.p_score_array_position^v = 1 }
-			
-			add_to_array = { array = global.m_score_array_position value = v }	
-			add_to_variable = { global.m_score_array_position^v = 1 }
-			
-			add_to_array = { array = global.i_score_array_position value = v }	
-			add_to_variable = { global.i_score_array_position^v = 1 }
-		}	
-			
-		every_country = { #Get Position in list
-			for_loop_effect = {
-				start = 0
-				end = length_temp
-				add = 1
-				value = v  
-				break = b 
-					
-				if = {
-					limit = { check_variable = { global.score_tag_array^v = THIS } }
-					set_variable = { score_array_position_var = v } 
-					set_variable = { b = 0 }
-				}
-				if = {
-					limit = { check_variable = { global.score_tag_array^v = THIS } }
-					set_variable = { p_score_array_position_var = v } 
-					set_variable = { b = 0 }
-				}	
-				if = {
-					limit = { check_variable = { global.score_tag_array^v = THIS } }
-					set_variable = { m_score_array_position_var = v } 
-					set_variable = { b = 0 }
-				}
-				if = {
-					limit = { check_variable = { global.score_tag_array^v = THIS } }
-					set_variable = { i_score_array_position_var = v } 
-					set_variable = { b = 0 }
-				}
-			}      
-			set_variable = { score_array_position_var_pop = score_array_position_var }
-			add_to_variable = { score_array_position_var = 1 } 
-			set_variable = { p_score_array_position_var_pop = p_score_array_position_var }
-			add_to_variable = { p_score_array_position_var = 1 } 
-			set_variable = { i_score_array_position_var_pop = i_score_array_position_var }
-			add_to_variable = { i_score_array_position_var = 1 } 
-			set_variable = { m_score_array_position_var_pop = m_score_array_position_var }
-			add_to_variable = { m_score_array_position_var = 1 } 
-		}
+		add_to_array = { global.prestige_score_array = prestige_score }
+		add_to_array = { global.military_score_array = military_score }
+		add_to_array = { global.industrial_score_array = industrial_score }
 		
-		every_country = {	
-			for_loop_effect = {
-				start = 0
-				end = length_temp
-				add = 1
-				value = v  
-				break = b 
-					
-				if = {
-					limit = { check_variable = { global.score_tag_array^v = THIS } }		
-					set_variable = { global.prestige_score_array^v = prestige_score } 	
-					set_variable = { global.military_score_array^v = military_score }
-					set_variable = { global.industrial_score_array^v = industrial_score }
-					set_variable = { b = 0 }
-				}		
+		add_to_array = { global.score_tag_array = THIS.id }
+		add_to_array = { global.p_score_tag_array = THIS.id }
+		add_to_array = { global.m_score_tag_array = THIS.id }
+		add_to_array = { global.i_score_tag_array = THIS.id }
+		
+        set_temp_variable = { length_temp = global.score_array^num }
+    }
+	
+	for_loop_effect = {
+        start = 0
+        end = length_temp
+        add = 1
+        value = v
+        break = b
+        find_highest_in_array = { array = global.score_array value = score_array_highest_value index = score_array_highest_index }
+		find_highest_in_array = { array = global.prestige_score_array value = prestige_score_array_highest_value index = prestige_score_array_highest_index }
+		find_highest_in_array = { array = global.military_score_array value = military_score_array_highest_value index = military_score_array_highest_index }
+		find_highest_in_array = { array = global.industrial_score_array value = industrial_score_array_highest_value index = industrial_score_array_highest_index }
+		
+        remove_from_array = { array = global.score_array index = score_array_highest_index }
+		remove_from_array = { array = global.prestige_score_array index = prestige_score_array_highest_index }
+		remove_from_array = { array = global.military_score_array index = military_score_array_highest_index }
+		remove_from_array = { array = global.industrial_score_array index = industrial_score_array_highest_index }
+		
+        add_to_temp_array = { array = global.score_array_temp value = score_array_highest_value }
+		add_to_temp_array = { array = global.p_score_array_temp value = prestige_score_array_highest_value }
+		add_to_temp_array = { array = global.m_score_array_temp value = military_score_array_highest_value }
+		add_to_temp_array = { array = global.i_score_array_temp value = industrial_score_array_highest_value }
+		
+        set_temp_variable = { tag_temp = global.score_tag_array^score_array_highest_index }
+		set_temp_variable = { p_tag_temp = global.p_score_tag_array^prestige_score_array_highest_index }
+		set_temp_variable = { m_tag_temp = global.m_score_tag_array^military_score_array_highest_index }
+		set_temp_variable = { i_tag_temp = global.i_score_tag_array^industrial_score_array_highest_index }
+		
+        remove_from_array = { array = global.score_tag_array index = score_array_highest_index }
+		remove_from_array = { array = global.p_score_tag_array index = prestige_score_array_highest_index }
+		remove_from_array = { array = global.m_score_tag_array index = military_score_array_highest_index }
+		remove_from_array = { array = global.i_score_tag_array index = industrial_score_array_highest_index }
+		
+        add_to_temp_array = { array = global.score_tag_array_temp value = tag_temp }
+		add_to_temp_array = { array = global.p_score_tag_array_temp value = p_tag_temp}
+		add_to_temp_array = { array = global.m_score_tag_array_temp value = m_tag_temp }
+		add_to_temp_array = { array = global.i_score_tag_array_temp value = i_tag_temp }
+    }
+    for_loop_effect = {
+        start = 0
+        end = length_temp
+        add = 1
+        value = v
+        break = b
+        add_to_array = { array = global.score_array value = global.score_array_temp^v }
+        add_to_array = { array = global.score_tag_array value = global.score_tag_array_temp^v }
+		
+		add_to_array = { array = global.prestige_score_array value = global.p_score_array_temp^v }
+        add_to_array = { array = global.p_score_tag_array value = global.p_score_tag_array_temp^v }
+		
+		add_to_array = { array = global.military_score_array value = global.m_score_array_temp^v  }
+        add_to_array = { array = global.m_score_tag_array value = global.m_score_tag_array_temp^v }
+		
+		add_to_array = { array = global.industrial_score_array value = global.i_score_array_temp^v }
+        add_to_array = { array = global.i_score_tag_array value = global.i_score_tag_array_temp^v }
+    }
+    for_loop_effect = { #Add Numbers to array based on how many tags exist
+        start = 0
+        end = length_temp
+        add = 1
+        value = v
+        break = b
+				
+        add_to_array = { array = global.score_array_position value = v }	
+        add_to_variable = { global.score_array_position^v = 1 } 		
+		
+		add_to_array = { array = global.p_score_array_position  value = v }	
+        add_to_variable = { global.p_score_array_position^v = 1 }
+		
+		add_to_array = { array = global.m_score_array_position value = v }	
+        add_to_variable = { global.m_score_array_position^v = 1 }
+		
+		add_to_array = { array = global.i_score_array_position value = v }	
+        add_to_variable = { global.i_score_array_position^v = 1 }
+    }	
+		
+	every_country = { #Get Position in list
+        for_loop_effect = {
+            start = 0
+            end = length_temp
+            add = 1
+            value = v  
+            break = b 
+                
+            if = {
+                limit = { check_variable = { global.score_tag_array^v = THIS } }
+                set_variable = { score_array_position_var = v } 
+                set_variable = { b = 0 }
+            }
+			if = {
+                limit = { check_variable = { global.score_tag_array^v = THIS } }
+                set_variable = { p_score_array_position_var = v } 
+                set_variable = { b = 0 }
+            }	
+			if = {
+                limit = { check_variable = { global.score_tag_array^v = THIS } }
+                set_variable = { m_score_array_position_var = v } 
+                set_variable = { b = 0 }
+            }
+			if = {
+                limit = { check_variable = { global.score_tag_array^v = THIS } }
+                set_variable = { i_score_array_position_var = v } 
+                set_variable = { b = 0 }
+            }
+        }      
+        set_variable = { score_array_position_var_pop = score_array_position_var }
+        add_to_variable = { score_array_position_var = 1 } 
+		set_variable = { p_score_array_position_var_pop = p_score_array_position_var }
+        add_to_variable = { p_score_array_position_var = 1 } 
+		set_variable = { i_score_array_position_var_pop = i_score_array_position_var }
+        add_to_variable = { i_score_array_position_var = 1 } 
+		set_variable = { m_score_array_position_var_pop = m_score_array_position_var }
+        add_to_variable = { m_score_array_position_var = 1 } 
+    }
+	
+	every_country = {	
+        for_loop_effect = {
+            start = 0
+            end = length_temp
+            add = 1
+            value = v  
+            break = b 
+				
+		    if = {
+				limit = { check_variable = { global.score_tag_array^v = THIS } }		
+			    set_variable = { global.prestige_score_array^v = prestige_score } 	
+                set_variable = { global.military_score_array^v = military_score }
+			    set_variable = { global.industrial_score_array^v = industrial_score }
+				set_variable = { b = 0 }
 			}		
-		}
-	}
+        }		
+    }
+	
 }
 
 get_population_number = {

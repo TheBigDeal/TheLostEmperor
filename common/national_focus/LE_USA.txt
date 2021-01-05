@@ -9,6 +9,7 @@ focus_tree = {
 			tag = USA
 		}
 	}
+	
 	default = no
 	continuous_focus_position = { x = 50 y = 3100 }
 	###############################

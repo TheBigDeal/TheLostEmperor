@@ -3,13 +3,11 @@ state={
 	id=430
 	name="STATE_430" # East BGBRal
 	manpower = 31973300
-	resources={
-		oil=60
-	}
+	
 	state_category = town
 
 	history={
-		owner = BNG
+		owner = RAJ
 		victory_points = {
 			11929 1
 		}
@@ -23,8 +21,8 @@ state={
 			
 		}
 		add_core_of = PAK
-		add_core_of = BNG
-		
+		add_core_of = RAJ
+
 	}
 
 	provinces={

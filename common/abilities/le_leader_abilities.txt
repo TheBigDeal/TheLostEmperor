@@ -3,72 +3,25 @@ ability = {
 		name = GAS_ATTACK
 		desc = GAS_ATTACK_DESC
 		
-		sound_effect = command_power_ability_special
+		sound_effect = command_power_ability_offensive
 		
 		type = army_leader
 		
 		allowed = {
-			#Allowed if stockpile has more than 100 Gas Cannisters
-			OWNER = { has_equipment = { cyanide_gas > 99 } }
-			#NOT = { has_trait = le_using_cyanide_gas_trait }
+			#Allowed if stockpile has more than 500 Gas Cannisters
+			OWNER = { has_equipment = { cyanide_gas > 1000 } }
 		}
 		
 		cost = 0.00
 		duration = 168
 		
 		one_time_effect = {
-			add_equipment_to_stockpile = { type = cyanide_gas amount = -100  }
+			ROOT = { set_country_flag = active_gas_attack }
 			custom_effect_tooltip = ABILITY_GAS_ATTACK_TOOLTIP
-			OWNER = { 
-				if = { 
-					limit = { NOT = { has_global_flag = le_first_use_chemical_weapons } } 
-					set_global_flag = le_first_use_chemical_weapons 
-					news_event = { id = le_news.3 days = 1}
-				}
-			}
-			#lr_global_flag = le_first_use_chemical_weapons
-			add_timed_unit_leader_trait = {
-				trait = le_using_cyanide_gas_trait
-				days = 7
-			}
 		}
 		
-		unit_modifiers = {
-			attrition = 0.35
-			unit_upkeep_attrition_factor = 0.25
-		}
 		ai_will_do = {
 			factor = 1
-		}
-	}
-	
-	equip_standard_gas_masks = {
-		name = EQUIP_STANDARD_GAS_MASKS
-		desc = EQUIP_STANDARD_GAS_MASKS_DESC
-		
-		sound_effect = command_power_ability_special
-		
-		type = army_leader
-		
-		allowed = {
-			#Allowed if stockpile has more than 100 Gas Cannisters
-			OWNER = { has_tech = standard_gas_mask }
-			OWNER = { has_equipment = { support_equipment > 500 } }
-			NOT = { has_trait = le_equipped_standard_gas_mask }
-		}
-		cost = 0.05
-		duration = 24
-		one_time_effect = {
-			add_equipment_to_stockpile = { type = support_equipment amount = -20000  }
-			custom_effect_tooltip = ABILITY_EQUIP_GAS_MASKS_TOOLTIP
-			#lr_global_flag = le_first_use_chemical_weapons
-			add_unit_leader_trait = le_equipped_standard_gas_mask
-		}
-		
-		unit_modifiers = {}
-		
-		ai_will_do = {
-			factor = 100
 		}
 	}
 }
