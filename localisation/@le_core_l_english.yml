@@ -6,7 +6,7 @@
  CHANGE_CAT1_ONLY_UNDERGROUND:0 "Do you want to replace our current policial law with §YOnly Underground§!?"
  random_list_spacing_tt:0 "          §!" #WORKING IN LE_Ottoman_I_english, wont take from here for whatever reason.
  prestige30_tt:0 "Gain §Y30 Prestige§!"
- gp_name:0 "[ROOT.GetName]"
+ 
  
  ### Demobilisation ###
 mobilisation_penalty_modifier:0 "Above Division Limit"

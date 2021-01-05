@@ -40,7 +40,6 @@ focus_tree = {
 			}
 		}
 	}
-	shared_focus = NEN_the_hartford_convention
 	
 	default = no
 	continuous_focus_position = { x = 50 y = 3100 }
@@ -49,8 +48,8 @@ focus_tree = {
 	###############################
 	focus = {
 		id = USA_THE_DEATH_OF_THE_DREAM
-		icon = GFX_freedom
-		x = 4
+		icon = GFX_goal_generic_propaganda
+		x = 8
 		y = 0
 		cost = 8
 		bypass = {
@@ -64,9 +63,9 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_SEND_IN_THE_NATIONAL_GUARD
-		icon = GFX_Generic_Crossed_Rifles
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = USA_THE_DEATH_OF_THE_DREAM }
-		x = 2
+		x = 6
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -78,9 +77,9 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_SEIZE_FEDERAL_WEAPONS_DEPOTS
-		icon = GFX_generic_bad_expansionism
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = USA_SEND_IN_THE_NATIONAL_GUARD }
-		x = 2
+		x = 6
 		y = 2
 		cost = 8
 		ai_will_do = {
@@ -94,9 +93,9 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_CRACKDOWN_ON_EXTREMEISM
-		icon = GFX_generic_political_oppression
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = USA_SEIZE_FEDERAL_WEAPONS_DEPOTS }
-		x = 2
+		x = 6
 		y = 3
 		cost = 8
 		ai_will_do = {
@@ -120,9 +119,9 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_LOOSEN_RESTRICTIONS
-		icon = GFX_generic_socialism
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = USA_CRACKDOWN_ON_EXTREMEISM }
-		x = 2
+		x = 6
 		y = 4
 		cost = 8
 		ai_will_do = {
@@ -135,9 +134,9 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_TEMPORARILY_CLOSE_THE_BANKS
-		icon = GFX_Cash_and_Carry
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = USA_THE_DEATH_OF_THE_DREAM }
-		x = 4
+		x = 8
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -150,9 +149,9 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_KEEPING_THE_GOLD_STANDARD
-		icon = GFX_focus_usa_reestablish_the_gold_standard
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = USA_TEMPORARILY_CLOSE_THE_BANKS }
-		x = 4
+		x = 8
 		y = 2
 		cost = 8
 		ai_will_do = {
@@ -164,9 +163,9 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_RESTORE_BUSINESS_CONFIDENCE
-		icon = GFX_goal_foreign_diplomacy
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = USA_KEEPING_THE_GOLD_STANDARD }
-		x = 4
+		x = 8
 		y = 3
 		cost = 8
 		ai_will_do = {
@@ -178,9 +177,9 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_REOPEN_THE_BANKS
-		icon = GFX_goal_government_icon
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = USA_RESTORE_BUSINESS_CONFIDENCE }
-		x = 4
+		x = 8
 		y = 4
 		cost = 8
 		ai_will_do = {
@@ -194,9 +193,9 @@ focus_tree = {
 	
 	focus = {
 		id = USA_EMERGENCY_POWERS_TO_THE_GOVERNOR
-		icon = GFX_goal_new_treaty
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = USA_THE_DEATH_OF_THE_DREAM }
-		x = 6
+		x = 10
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -208,9 +207,9 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_APPEAL_FOR_INTERNATIONAL_AID
-		icon = GFX_Shelter_the_People
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = USA_EMERGENCY_POWERS_TO_THE_GOVERNOR }
-		x = 6
+		x = 10
 		y = 2
 		cost = 8
 		ai_will_do = {
@@ -222,9 +221,9 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_CREATE_A_BORDER_PATROL
-		icon = GFX_generic_army_focus_red
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = USA_APPEAL_FOR_INTERNATIONAL_AID }
-		x = 6
+		x = 10
 		y = 3
 		cost = 8
 		available = {
@@ -241,9 +240,9 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_LESSONS_FROM_THE_US_ARMY
-		icon = GFX_generic_social_liberal
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = USA_CREATE_A_BORDER_PATROL }
-		x = 6
+		x = 10
 		y = 4
 		cost = 8
 		ai_will_do = {
@@ -259,7 +258,7 @@ focus_tree = {
 		prerequisite = { focus = USA_REOPEN_THE_BANKS }
 		prerequisite = { focus = USA_LOOSEN_RESTRICTIONS }
 		prerequisite = { focus = USA_LESSONS_FROM_THE_US_ARMY }
-		x = 4
+		x = 8
 		y = 5
 		cost = 8
 		ai_will_do = {

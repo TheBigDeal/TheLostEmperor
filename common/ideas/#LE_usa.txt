@@ -3,29 +3,6 @@ ideas = {
 		#####################
 		#      STATES       #
 		#####################
-		usa_fall_of_america = {
-			picture = FRA_scw_intervention_republicans_focus
-			modifier = {
-				stability_factor = -0.10
-				war_support_factor = -0.10
-				consumer_goods_factor = 0.10
-				production_speed_buildings_factor = -0.15
-			}
-		}
-		usa_spirit_of_bunker_hill = {
-			picture = FRA_scw_intervention_republicans_focus
-			modifier = {
-				army_core_defence_factor = 0.05
-				army_core_attack_factor = 0.05
-				conscription = 0.01
-			}
-		}
-		usa_never_surrender = {
-			picture = FRA_scw_intervention_republicans_focus
-			modifier = {
-				surrender_limit = 0.25
-			}
-		}
 		usa_crime_spree = {
 			picture = FRA_scw_intervention_republicans_focus
 			modifier = {
@@ -97,36 +74,7 @@ ideas = {
 				industrial_capacity_factory = 0.05
 			}
 		}
-		usa_empowered_congress = {
-			picture = FRA_scw_intervention_republicans_focus
-			modifier = {
-				political_power_gain = -0.05
-				stability_factor = 0.05
-			}
-		}
-		usa_empowered_president = {
-			picture = FRA_scw_intervention_republicans_focus
-			modifier = {
-				political_power_gain = 0.05
-				stability_factor = -0.05
-			}
-		}
-		usa_centralization = {
-			picture = FRA_scw_intervention_republicans_focus
-			modifier = {
-				political_power_gain = 0.10
-				stability_factor = -0.05
-				surrender_limit = -0.05
-			}
-		}
-		usa_articles_of_confederation = {
-			picture = FRA_scw_intervention_republicans_focus
-			modifier = {
-				political_power_gain = -0.05
-				stability_factor = -0.05
-				drift_defence_factor = 0.05
-			}
-		}
+		
 		##################
 		#      USA       #
 		##################

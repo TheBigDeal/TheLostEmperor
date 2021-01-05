@@ -3,10 +3,6 @@ MAK = {
 	color = rgb { 100 100 100 }
 	color_ui = rgb { 100 100 100 }
 }
-BNG = {
-	color = rgb { 112 155 224 }
-	color_ui = rgb { 112 155 224 }
-}
 ASW = {
 	color = rgb { 227 159 70 }
 	color_ui = rgb { 227 159 70 }
@@ -48,6 +44,8 @@ MCK = {
 	color = rgb { 140 162 171 }
 	color_ui = rgb { 140 162 171 }
 }
+
+
 AND = {
 	color = rgb { 255 113 22 }
 	color_ui = rgb { 224 133 22 }

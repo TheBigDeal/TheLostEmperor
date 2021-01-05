@@ -14,7 +14,7 @@ state={
 
 		}
 		set_border_war = yes 
-		#set_demilitarized_zone = yes
+		set_demilitarized_zone = yes
 		add_core_of = TUR
 		add_core_of = LEV
 	}

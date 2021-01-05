@@ -1,0 +1,586 @@
+focus_tree = {
+	id = swedish_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = SWE
+		}
+	}
+	
+	Focus = {
+	
+	id = finnish_question
+	
+	icon = GFX_focus_secret_rearmament
+	x = 15
+	y = 2
+	cost = 5
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = {}
+	prerequisite = { focus = tradition_values focus = modernisation_priority }
+	required = { focus = finnish_question }
+	completion_reward = { 
+	  country_event = swe.1
+	                     
+	    }
+	}
+	
+	Focus = {
+	
+	id = prussian_question
+	
+	icon = GFX_focus_ger_oppose_hitler
+	x = 15
+	y = 4
+	cost = 5
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = {}
+	prerequisite = { focus = finnish_question }
+	completion_reward = { 
+	  add_political_power = 50
+	                     
+	    }
+	}
+	
+	Focus = {
+	
+	id = scania_question
+	
+	icon = GFX_focus_generic_support_the_left_right
+	x = 15
+	y = 6
+	cost = 5
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = {}
+	prerequisite = { focus = prussian_question }
+	completion_reward = { 
+	  add_political_power = 50
+	                     
+	    }
+	}
+	
+	
+	
+	Focus = {
+	
+	id = modernisation_priority
+	
+	 x = 5
+	 y = 1
+	 cost = 5
+	 ai_will_do = { factor = 50 }
+	 mutually_exclusive = { focus = tradition_values }
+	 completion_reward = { 
+	  add_political_power = 50
+	                     
+	    }
+    }
+	
+	Focus = {
+	
+	id = tradition_values
+	
+	icon = 
+	x = 25
+	y = 1
+	cost = 5
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = { focus = modernisation_priority }
+	completion_reward = { 
+	add_ideas = SWE_traditiona_values
+	
+	    }
+	}
+	
+	Focus = {
+	
+	id = old_glory
+	
+	x = 27
+	y = 3
+	cost = 10
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = { focus = new_glory }
+	prerequisite = { focus = tradition_values }
+	completion_reward = {
+	add_opinion_modifier = { target = RUS modifier = medium_decrease }
+	RUS = { add_opinion_modifier = { target = SWE modifier = large_decrease } add_opinion_modifier = { target = SWE modifier = large_decrease }}
+	add_state_claim = 13
+	add_state_claim = 191
+	add_state_claim = 12
+	add_state_claim = 208
+	add_state_claim = 195
+	add_state_claim = 146
+	
+	
+	    }
+	}
+	
+	Focus = {
+	
+	id = new_glory
+	
+	x = 23
+	y = 3
+	cost = 10
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = { focus = old_glory }
+	prerequisite = { focus = tradition_values }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	Focus = {
+	
+	id = kings_ministers
+	
+	x = 30
+	y = 5
+	cost = 5
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = { focus = national_ministers focus = elected_ministers }
+	prerequisite = { focus = old_glory }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	Focus = {
+	
+	id = elected_ministers
+	
+	x = 25
+	y = 5
+	cost = 5
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = { focus = national_ministers focus = kings_ministers}
+	prerequisite = { focus = new_glory focus = old_glory }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	Focus = {
+	
+	id = national_ministers
+	
+	x = 20
+	y = 5
+	cost = 5
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = { focus = kings_ministers focus = elected_ministers }
+	prerequisite = { focus = new_glory }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	
+	Focus = {
+	
+	id = the_fatherland_buildup
+	
+	x = 25
+	y = 7
+	cost = 10
+	ai_will_do = { factor = 50 }
+	prerequisite = { focus = national_ministers focus = elected_ministers focus = kings_ministers }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	Focus = {
+	
+	id = civilian_industry
+	
+	x = 23
+	y = 8
+	cost = 3
+	ai_will_do = { factor = 50 }
+	prerequisite = { focus = the_fatherland_buildup }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	
+	Focus = {
+	
+	id = factory_advancements
+	
+	x = 23
+	y = 9
+	cost = 5
+	ai_will_do = { factor = 50 }
+	prerequisite = { focus = civilian_industry }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	Focus = {
+	
+	id = political_workplaces
+	
+	x = 25
+	y = 9
+	cost = 5
+	ai_will_do = { factor = 50 }
+	prerequisite = { focus = civilian_industry }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	
+	Focus = {
+	
+	id = encourage_employment
+	
+	x = 21
+	y = 9
+	cost = 5
+	ai_will_do = { factor = 50 }
+	prerequisite = { focus = civilian_industry }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	
+	Focus = {
+	
+	id = worker_payrise
+	
+	x = 19
+	y = 10
+	cost = 2
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = { focus = nationalize_industry }
+	prerequisite = { focus = encourage_employment }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	Focus = {
+	
+	id = nationalize_industry
+	
+	x = 21
+	y = 10
+	cost = 2
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = { focus = worker_payrise }
+	prerequisite = { focus = encourage_employment }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	
+	Focus = {
+	
+	id = military_industry
+	
+	x = 27
+	y = 8
+	cost = 3
+	ai_will_do = { factor = 50 }
+	prerequisite = { focus = the_fatherland_buildup }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	
+	Focus = {
+	
+	id = the_nordic_navy
+	
+	x = 26
+	y = 10
+	cost = 3
+	ai_will_do = { factor = 50 }
+	prerequisite = { focus = military_industry }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	Focus = {
+	
+	id = the_nordic_airforce
+	
+	x = 28
+	y = 10
+	cost = 3
+	ai_will_do = { factor = 50 }
+	prerequisite = { focus = military_industry }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	Focus = {
+	
+	id = caroline_regiments
+	
+	x = 26
+	y = 11
+	cost = 4
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = { focus = modern_regiments }
+	prerequisite = { focus = the_nordic_airforce }
+	prerequisite = { focus = the_nordic_navy }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	Focus = {
+	
+	id = modern_regiments
+	
+	x = 28
+	y = 11
+	cost = 3
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = { focus = caroline_regiments }
+	prerequisite = { focus = the_nordic_airforce }
+	prerequisite = { focus = the_nordic_navy }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	Focus = {
+	
+	id = peacetime_buildup
+	
+	x = 32
+	y = 9
+	cost = 3
+	ai_will_do = { factor = 50 }
+	prerequisite = { focus = military_industry }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	Focus = {
+	
+	id = gothenburg_dockyards
+	
+	x = 34
+	y = 10
+	cost = 1
+	ai_will_do = { factor = 50 }
+	prerequisite = { focus = peacetime_buildup }
+	mutually_exclusive = { focus = stockholm_amrouries focus = increase_morale }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+		Focus = {
+	
+	id = navy_production_focus
+	
+	x = 34
+	y = 11
+	cost = 1
+	ai_will_do = { factor = 50 }
+	prerequisite = { focus = gothenburg_dockyards focus = increase_morale }
+	mutually_exclusive = { focus = work_ethics focus = minor_streamlining}
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+		Focus = {
+	
+	id = smoland_air_research
+	
+	x = 34
+	y = 12
+	cost = 1
+	ai_will_do = { factor = 50 }
+	prerequisite = { focus = navy_production_focus focus = work_ethics }
+	mutually_exclusive = { focus = worker_codes focus = expand_airbases }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	
+	
+	Focus = {
+	
+	id = stockholm_amrouries
+	
+	x = 30
+	y = 10
+	cost = 1
+	ai_will_do = { factor = 50 }
+	prerequisite = { focus = peacetime_buildup }
+	mutually_exclusive = { focus = increase_morale focus = gothenburg_dockyards }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	Focus = {
+	
+	id = minor_streamlining
+	
+	x = 30
+	y = 11
+	cost = 1
+	ai_will_do = { factor = 50 }
+	prerequisite = { focus = stockholm_amrouries focus = increase_morale}
+	mutually_exclusive = { focus = work_ethics focus = navy_production_focus }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	Focus = {
+	
+	id = expand_airbases
+	
+	x = 30
+	y = 12
+	cost = 1
+	ai_will_do = { factor = 50 }
+	prerequisite = { focus = minor_streamlining focus = work_ethics }
+	mutually_exclusive = { focus = worker_codes focus = smoland_air_research }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	
+
+	Focus = {
+	
+	id = increase_morale
+	
+	x = 32
+	y = 10
+	cost = 1
+	ai_will_do = { factor = 50 }
+	prerequisite = { focus = peacetime_buildup }
+	mutually_exclusive = { focus = stockholm_amrouries focus = gothenburg_dockyards }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	Focus = {
+	
+	id = work_ethics
+	
+	x = 32
+	y = 11
+	cost = 1
+	ai_will_do = { factor = 50 }
+	prerequisite = { focus = increase_morale focus = stockholm_amrouries focus = gothenburg_dockyards }
+	mutually_exclusive = { focus = navy_production_focus focus = minor_streamlining}
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	Focus = {
+	
+	id = worker_codes
+	
+	x = 32
+	y = 12
+	cost = 1
+	ai_will_do = { factor = 50 }
+	prerequisite = { focus = work_ethics focus = minor_streamlining focus = navy_production_focus}
+	mutually_exclusive = { focus = smoland_air_research focus = expand_airbases}
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	
+	
+	
+	Focus = {
+	
+	id = finalize_the_buildup
+	
+	x = 25
+	y = 14
+	cost = 10
+	ai_will_do = { factor = 50 } 
+	prerequisite = { focus = expand_airbases focus = worker_codes focus = smoland_air_research }
+	prerequisite = { focus = modern_regiments focus = caroline_regiments }
+	prerequisite = { focus = nationalize_industry focus = worker_payrise }
+	prerequisite = { focus = political_workplaces }
+	prerequisite = { focus = factory_advancements }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}

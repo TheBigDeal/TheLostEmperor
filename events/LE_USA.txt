@@ -545,162 +545,132 @@ country_event = { #Hour of Reckoning
 			NEW = { 
 				transfer_state = 357
 				transfer_state = 358
-				add_state_core = 357
-				add_state_core = 358
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			PEN = { 
 				transfer_state = 360
 				transfer_state = 1031 
-				add_state_core = 360
-				add_state_core = 1031
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			NCL = { 
 				transfer_state = 363 
-				add_state_core = 363
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			OHI = { 
 				transfer_state = 261 
-				add_state_core = 261
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			SCL = { 
 				transfer_state = 364 
-				add_state_core = 364
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			TEN = { 
 				transfer_state = 368 
-				add_state_core = 368
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			#VIR = { transfer_state = 362 }
 			#VIR = { transfer_state = 792 }
 			ALA = { 
 				transfer_state = 367 
-				add_state_core = 367
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			GRG = { 
 				transfer_state = 365 
-				add_state_core = 365
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			IND = { 
 				transfer_state = 396 
-				add_state_core = 396
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			JER = { 
 				transfer_state = 359 
-				add_state_core = 359
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			KNT = { 
 				transfer_state = 369 
-				add_state_core = 369
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			MIS = { 
 				transfer_state = 370 
-				add_state_core = 370
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			MIC = { 
 				transfer_state = 393 
 				transfer_state = 900
-				add_state_core = 393
-				add_state_core = 900
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			MAS = { 
-				add_state_core = 788
 				transfer_state = 788 
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
+			#MRY = { transfer_state = 361 }
 			CNT = { 
 				transfer_state = 787 
-				#add_state_core = 787
-				787 = { add_core_of = CNT }
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			VRM = { 
 				transfer_state = 789 
-				add_state_core = 789
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			NHS = { 
 				transfer_state = 790 
-				add_state_core = 790
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			MNE = { 
 				transfer_state = 791 
-				add_state_core = 791
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			ILL = { 
 				transfer_state = 395 
-				add_state_core = 395
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			MIN = { 
 				transfer_state = 391 
-				add_state_core = 391
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			DAK = { 
 				transfer_state = 893 
 				transfer_state = 894
 				transfer_state = 1007
-				add_state_core = 893
-				add_state_core = 894
-				add_state_core = 1007
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			WIS = { 
 				transfer_state = 394 
-				add_state_core = 394
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			IWA = { 
 				transfer_state = 392 
-				add_state_core = 392
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			FLO = { 
 				transfer_state = 366 
-				add_state_core = 366
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			RIS = { 
 				transfer_state = 998 
-				add_state_core = 998
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
 			MCK = { 
 				transfer_state = 817 
-				add_state_core = 817
 				add_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
 			}
-			set_cosmetic_tag = USA_REMNENTS
-			load_focus_tree = LE_FED_focus
-			
 		}
 	}
-	option = { #A Dark Day.
+	option = { #Illinois
 		name = le_USA.29.I
-		set_variable = { USA_STATE_PICKER = 1 }
-		hidden_effect = {
-			MAS = {country_event = { id = le_USA.35 days = 7}}
-			RIS = {country_event = { id = le_USA.35 days = 7}}
-			MNE = {country_event = { id = le_USA.35 days = 7}}
-			NHS = {country_event = { id = le_USA.35 days = 7}}
-			VRM = {country_event = { id = le_USA.35 days = 7}}
-			CNT = {country_event = { id = le_USA.35 days = 7}}
-		}
+		ILL = { change_tag_from = USA }
+	}
+	option = { #Georgia
+		name = le_USA.29.II
+		GRG = { change_tag_from = USA }
+	}
+	option = { #Massachussetts
+		name = le_USA.29.III
+		MAS = { change_tag_from = USA }
+	}
+	option = { #Stay in DC
+		name = le_USA.29.IV
+		
 	}
 }
 country_event = { #The Gold Standard
@@ -839,407 +809,5 @@ country_event = { #Country declines aid
 	option = { #Approve of Aid
 		name = le_USA.34.a
 		add_stability = -0.05
-	}
-}
-
-country_event = { #New England Rises
-	id = le_USA.35
-	title = le_USA.35.t
-	desc = le_USA.35.d
-	picture = GFX_report_event_american_hunger_march
-	is_triggered_only = yes
-	option = { # Form New England
-		name = le_USA.35.a
-		ai_chance = { factor = 10 }
-		if = {
-			limit = { tag = MAS }
-			set_cosmetic_tag = NEW_ENGLAND
-			remove_ideas = { usa_crime_spree usa_economic_meltdown usa_widespread_apathy }
-			add_ideas = { usa_fall_of_america }
-			add_state_core = 791
-			add_state_core = 790
-			add_state_core = 789
-			add_state_core = 791
-			add_state_core = 787
-			add_state_core = 998
-		}
-		else = {
-			if = {
-				limit = { is_ai = no }
-				MAS = { change_tag_from  = ROOT }
-			}
-			MAS = { annex_country = { target = ROOT transfer_troops = yes } }
-		}
-	}
-	option = { #Form a Defensive Pact
-		name = le_USA.35.b
-		ai_chance = { factor = 0 }
-		create_faction = NEW_ENGLAND
-		add_to_faction = RIS
-		add_to_faction = CNT
-		add_to_faction = MNE
-		add_to_faction = VRM
-		add_to_faction = NHS
-	}
-}
-
-country_event = { #The Convention Begins
-	id = le_USA.36
-	title = le_USA.36.t
-	desc = le_USA.36.d
-	picture = GFX_report_event_american_hunger_march
-	is_triggered_only = yes
-	option = { # Form New England
-		name = le_USA.36.a
-		ai_chance = { factor = 0 }
-	}
-}
-
-country_event = { #The Convention Begins
-	id = le_USA.37
-	title = le_USA.37.t
-	desc = le_USA.37.d
-	picture = GFX_report_event_american_hunger_march
-	fire_only_once = yes
-	trigger = {
-		AND = {
-			tag = MAS
-			focus_progress = { focus = NEN_the_hartford_convention progress > 0.20 }
-		}
-	}
-	option = { # Boston
-		name = le_USA.37.a
-		ai_chance = { factor = 10 }
-		set_capital = 788
-	}
-	option = { # Hartford
-		name = le_USA.37.b
-		ai_chance = { factor = 0 }
-		set_capital = 787
-	}
-	option = { # Providence
-		name = le_USA.37.c
-		ai_chance = { factor = 0 }
-		set_capital = 998
-	}
-}
-
-country_event = { #The Convention Begins
-	id = le_USA.38
-	title = le_USA.38.t
-	desc = le_USA.38.d
-	picture = GFX_report_event_american_hunger_march
-	fire_only_once = yes
-	trigger = {
-		AND = {
-			tag = MAS
-			focus_progress = { focus = NEN_the_hartford_convention progress > 0.40 }
-		}
-	}
-	option = { # Boston
-		name = le_USA.38.a
-		ai_chance = { factor = 10 }
-		add_popularity = { ideology = liberalism popularity = 0.03 }
-		add_ideas = usa_empowered_congress
-	}
-	option = { # Hartford
-		name = le_USA.38.b
-		ai_chance = { factor = 10 }
-		add_popularity = { ideology = conservatism popularity = 0.03 }
-		add_ideas = usa_empowered_president
-	}
-}
-country_event = { #The Convention Begins
-	id = le_USA.39
-	title = le_USA.39.t
-	desc = le_USA.39.d
-	picture = GFX_report_event_american_hunger_march
-	fire_only_once = yes
-	trigger = {
-		AND = {
-			tag = MAS
-			focus_progress = { focus = NEN_the_hartford_convention progress > 0.60 }
-		}
-	}
-	option = { # Boston
-		name = le_USA.39.a
-		ai_chance = { factor = 10 }
-		add_popularity = { ideology = conservatism popularity = 0.03 }
-		add_ideas = { usa_centralization }
-	}
-	option = { # Hartford
-		name = le_USA.39.b
-		ai_chance = { factor = 10 }
-		add_popularity = { ideology = liberalism popularity = 0.03 }
-		add_political_power = 50
-		add_stability = 0.05
-	}
-	option = { # Hartford
-		name = le_USA.39.c
-		ai_chance = { factor = 10 }
-		add_ideas = { usa_articles_of_confederation }
-	}
-}
-country_event = { #The new England Flag
-	id = le_USA.40
-	title = le_USA.40.t
-	desc = le_USA.40.d
-	picture = GFX_report_event_american_hunger_march
-	fire_only_once = yes
-	trigger = {
-		AND = {
-			tag = MAS
-			focus_progress = { focus = NEN_the_hartford_convention progress > 0.80 }
-		}
-	}
-	option = { # Regular
-		name = le_USA.40.a
-		ai_chance = { factor = 10 }
-		set_cosmetic_tag = NEW_ENGLAND_PINE
-	}
-	option = { # Bunker Hill
-		name = le_USA.40.b
-		ai_chance = { factor = 10 }
-		set_cosmetic_tag = NEW_ENGLAND_BUNKER
-	}
-	option = { # Cross
-		name = le_USA.40.c
-		ai_chance = { factor = 10 }
-		set_cosmetic_tag = NEW_ENGLAND_CROSS
-	}
-}
-country_event = { #The new England Flag
-	id = le_USA.41
-	title = le_USA.41.t
-	desc = le_USA.41.d
-	picture = GFX_report_event_american_hunger_march
-	is_triggered_only = yes
-	option = { # Regular
-		name = le_USA.41.a
-		ai_chance = { factor = 10 }
-		add_stability = 0.05
-	}
-}
-country_event = { #A Messenger From London
-	id = le_USA.42
-	title = le_USA.42.t
-	desc = le_USA.42.d
-	picture = GFX_report_event_american_hunger_march
-	is_triggered_only = yes
-	option = { # Regular
-		name = le_USA.42.a
-		ai_chance = { factor = 10 }
-		GBR = { country_event = {id = le_USA.44}  }
-	}
-	option = { # Regular
-		name = le_USA.42.b
-		ai_chance = { factor = 10 }
-		GBR = { country_event = {id = le_USA.45}  }
-	}
-	option = { # Regular
-		name = le_USA.42.c
-		ai_chance = { factor = 10 }
-		GBR = { country_event = {id = le_USA.46}  }
-	}
-}
-country_event = { #A Messenger From London - British Side
-	id = le_USA.43
-	title = le_USA.43.t
-	desc = le_USA.43.d
-	picture = GFX_report_event_american_hunger_march
-	is_triggered_only = yes
-	option = { # Regular
-		name = le_USA.43.a
-		ai_chance = { factor = 10 }
-		add_stability = 0.05
-		MAS = { complete_national_focus = NEN_a_messenger_from_london }
-		MAS = { country_event = { id = le_USA.42 } }
-	}
-}
-
-country_event = { #New England Submits
-	id = le_USA.44
-	title = le_USA.44.t
-	desc = le_USA.44.d
-	picture = GFX_report_event_american_hunger_march
-	is_triggered_only = yes
-	option = { # Regular
-		name = le_USA.44.a
-		ai_chance = { factor = 10 }
-		GBR = { puppet = MAS }
-		MAS = { complete_national_focus = NEN_a_necessary_sacrifice }
-	}
-}
-country_event = { #New England offers a compromise
-	id = le_USA.45
-	title = le_USA.45.t
-	desc = le_USA.45.d
-	picture = GFX_report_event_american_hunger_march
-	is_triggered_only = yes
-	option = { # Regular
-		name = le_USA.45.a
-		ai_chance = { factor = 10 }
-		GBR = { add_to_faction = MAS }
-		MAS = { complete_national_focus = NEN_toe_the_line }
-	}
-	option = { # Regular
-		name = le_USA.45.b
-		ai_chance = { factor = 10 }
-		GBR = { declare_war_on = { target = MAS type = annex_everything } }
-		MAS = { complete_national_focus = NEN_the_patriots_dream }
-	}
-}
-country_event = { #New England Refuses
-	id = le_USA.46
-	title = le_USA.46.t
-	desc = le_USA.46.d
-	picture = GFX_report_event_american_hunger_march
-	is_triggered_only = yes
-	option = { # Regular
-		name = le_USA.46.a
-		ai_chance = { factor = 10 }
-		GBR = { declare_war_on = { target = MAS type = annex_everything } }
-		MAS = { complete_national_focus = NEN_the_patriots_dream }
-	}
-}
-country_event = { #The British are Coming
-	id = le_USA.47
-	title = le_USA.47.t
-	desc = le_USA.47.d
-	picture = GFX_report_event_american_hunger_march
-	is_triggered_only = yes
-	option = { # Regular
-		name = le_USA.47.a
-		ai_chance = { factor = 10 }
-		add_war_support = 0.05
-	}
-}
-country_event = { #The British bombard Bostom
-	id = le_USA.48
-	title = le_USA.48.t
-	desc = le_USA.48.d
-	picture = GFX_report_event_american_hunger_march
-	is_triggered_only = yes
-	option = { # Regular
-		name = le_USA.48.a
-		ai_chance = { factor = 10 }
-		add_popularity = { ideology = liberalism popularity = -0.03 }
-		add_stability = -0.03
-		add_war_support = -0.03
-		788 = {
-			damage_building = {
-				type = infrastructure
-				damage = 1
-			}
-			damage_building = {
-				type = industrial_complex
-				damage = 1
-			}
-		}
-	}
-}
-country_event = { #The British send us (Canada) Troops
-	id = le_USA.49
-	title = le_USA.49.t
-	desc = le_USA.49.d
-	picture = GFX_report_event_american_hunger_march
-	is_triggered_only = yes
-	option = { # Regular
-		name = le_USA.49.a
-		ai_chance = { factor = 10 }
-		CAN = { load_OOB = CAN_additional_troops }
-	}
-}
-
-country_event = { #His Majesty Intervenes
-	id = le_USA.50
-	title = le_USA.50.t
-	desc = le_USA.50.d
-	picture = GFX_report_event_american_hunger_march
-	is_triggered_only = yes
-	option = { # Regular
-		name = le_USA.50.a
-		ai_chance = { factor = 10 }
-		white_peace = MAS
-		MAS = { country_event = { id = le_USA.51 }}
-	}
-}
-
-country_event = { #Britain Backs Down
-	id = le_USA.51
-	title = le_USA.51.t
-	desc = le_USA.51.d
-	picture = GFX_report_event_american_hunger_march
-	is_triggered_only = yes
-	option = { # Regular
-		name = le_USA.50.a
-		ai_chance = { factor = 10 }
-		effect_tooltip = {
-			white_peace = GBR
-		}
-	}
-}
-
-country_event = { #Britain Wins
-	id = le_USA.52
-	title = le_USA.52.t
-	desc = le_USA.52.d
-	picture = GFX_report_event_american_hunger_march
-	is_triggered_only = yes
-	option = { # Regular
-		name = le_USA.52.a
-		ai_chance = { factor = 10 }
-		effect_tooltip = {
-			GBR = {
-				white_peace = MAS
-				set_autonomy = {
-					target = MAS
-					autonomy_state = autonomy_dominion
-				}
-			}
-		}
-	}
-}
-
-country_event = { #Britain Wins
-	id = le_USA.53
-	title = le_USA.53.t
-	desc = le_USA.53.d
-	picture = GFX_report_event_american_hunger_march
-	is_triggered_only = yes
-	option = { # Regular
-		name = le_USA.53.a
-		ai_chance = { factor = 10 }
-		GBR = {
-			white_peace = MAS
-			set_autonomy = {
-				target = MAS
-				autonomy_state = autonomy_dominion
-			}
-		}
-	}
-}
-
-country_event = { #The Irish Volunteers
-	id = le_USA.54
-	title = le_USA.54.t
-	desc = le_USA.54.d
-	picture = GFX_report_event_american_hunger_march
-	is_triggered_only = yes
-	option = { # Regular
-		name = le_USA.54.a
-		ai_chance = { factor = 10 }
-		load_OOB = New_England_Irish
-		add_popularity = { ideology = conservatism popularity = 0.03 }
-		create_corps_commander = {
-			name = "Thomas Francis Meagher"
-			picture = "None.dds"
-			traits = { infantry_leader }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 2
-		}
 	}
 }

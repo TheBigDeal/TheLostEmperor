@@ -5,40 +5,37 @@
 
 ### MOD ###
 
-tactic_gas_attack = {
-
-	is_attacker = yes
-	trigger = { # combined scope for both country and combatant
-		is_attacker = yes
-		phase = no
-		has_trait = le_using_cyanide_gas_trait
-	}
-	active = yes
-	base =  { factor = 9999 }
-	picture = attack
-	countered_by = tactic_gas_counterattack
-	attacker = 2.50
-	attacker_movement_speed = -0.25
-}
-
-tactic_gas_counterattack = { # counters basic attack, assault
-	is_attacker = no
-	trigger = {
-		is_attacker = no
-		phase = no
-		has_trait = le_equipped_standard_gas_mask
-	}
-	active = yes
-	base =  {
-		factor = 0
-		modifier = { 
-			add = 9999
-			has_trait = le_equipped_standard_gas_mask
-		}
-	}
-	picture = counterattack
-	defender = 5
-}
+#tactic_gas_attack = {
+#
+#	is_attacker = yes
+#	#has_country_flag = active_gas_attack
+#	trigger = { # combined scope for both country and combatant
+#		is_attacker = yes
+#		phase = no
+#		
+#	}
+#	active = yes
+#	base =  { factor = 9999 }
+#	picture = attack
+#	countered_by = tactic_gas_counterattack
+#	attacker = 0.25
+#	attacker_movement_speed = -0.25
+#}
+#
+#tactic_gas_counterattack = { # counters basic attack, assault
+#	is_attacker = no
+#	trigger = {
+#		is_attacker = no
+#		phase = no
+#		has_tech = standard_gas_mask
+#	}
+#	active = yes
+#	base =  {
+#		factor = 9999
+#	}
+#	picture = counterattack
+#	defender = 0.25
+#}
 
 
 ### VANILLA ###
