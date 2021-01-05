@@ -346,8 +346,8 @@ guiTypes = {
 					name = "category_1_law_political_parties_name"
 					position = { x = 28 y = -10 }
 					font = "vic_18"
-					text = "tno_political_parties"
-					pdx_tooltip = "tno_political_parties"
+					text = "le_political_parties"
+					pdx_tooltip = "le_political_parties_tt"
 					maxWidth = 100
 					maxHeight = 15
 					fixedsize = yes

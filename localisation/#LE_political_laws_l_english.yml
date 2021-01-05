@@ -24,7 +24,7 @@
  LE_trade_tt:0 "§GClick to change§!§Y Trade Law§!"
  #LAW TOOLTIPS
  #######################################
- LE_political_parties_1_tt:0 "§YPolitical Parties: Only Underground§!\n\nCost (£pol_power)): §R300§!\n\n§YTo Enact:§!\n   Cannot have ideology: §YLiberalism§!\n   Cannot have ideology: §YConservatism§!\n   Cannot have ideology: §YSocialism§!\n§YEffects:§!\n   Lose Income ( £texticon_money  ): §R-140§! \n   Stability §R-10%§!\n   Ideology Drift Defence §G+25%§!"
+ 
  #EFFECT CHANGES
  #######################################
  EFFECT_CHANGE_LAW_le_religion:0 "Change State Religion to '$NAME|Y$' which grants ($DESC$)."
@@ -125,9 +125,22 @@
  LE_WIP_Modifier:0 "No Current Effects"
  LE_Catholicism_Modifier:0 "War Support: §G+10.00%§!\nIdeology Drift Defence: §G+10.00%§!\n§YEnables Papal Actions§!"
  LE_Orthodoxy_Modifier:0 "Conscription: §G+5.00%§!\nIdeology Drift Defence: §R-8.00%§!"
- #CATEGORIES
- #######################################
+
+
+
+
+ ### LAWS ###
+ 
+ ### Political Parties
+ le_political_parties:0 "Political Parties"
+ le_political_parties_tt:0 "Political Parties"
+ LE_political_parties_1_tt:0 "§YPolitical Parties: Only Underground§!\n\nCost (£pol_power)): §R300§!\n\n§YTo Enact:§!\n   Cannot have ideology: §YLiberalism§!\n   Cannot have ideology: §YConservatism§!\n   Cannot have ideology: §YSocialism§!\n§YEffects:§!\n   Stability §R-10%§!\n   Ideology Drift Defence §G+25%§!"
  law_1_only_underground:0 "Only Underground"
+ law_1_harassment:0 "Harrassment"
+ law_1_gerrymanding:0 "Gerrymandering"
+ law_1_open_ballots:0 "Open Ballots"
+ law_1_confidential_ballots:0 "Confidential Ballots"
+ ### Vore Franchise
  #POLITICAL IDEA LAWS
  law_3_all_allowed:0 "Unrestricted Trade Unions"
  

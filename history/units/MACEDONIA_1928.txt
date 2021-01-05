@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Trigonikó Pezikoú" 				# Triangular Infantry Division
+	name = "Rebels" 				# Triangular Infantry Division
 	# Prior to 1940 mobilization = 3rd, 4th, 5th, 9th, 10, 13th;
 	# 	6th, 7th, 11th, and 12th had 2 regiments; 14th had 1 regiment
 	# Note: sources have all Greek regular infantry as mountain-trained
@@ -10,59 +10,58 @@
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-}
-division_template = {
-	name = "Merarchía Ippikoú" 			# Cavalry Division
-
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
 	}
 }
 
 units = {
 	######## Ellinikó Genikó Epiteleío ########
 	division = {
-		name = "Trigonikó Pezikoú"
-		location = 6857
-		division_template = "Trigonikó Pezikoú" 
+		name = "Macedonian Rebels"
+		location = 867
+		division_template = "Rebels" 
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "Merarchía Ippikoú"
-		location = 9818
-		division_template = "Merarchía Ippikoú" 
-		start_experience_factor = 0.3
+		name = "Macedonian Rebels"
+		location = 11832
+		division_template = "Rebels" 
+		start_experience_factor = 0.4
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "Trigonikó Pezikoú"
-		location = 3833
-		division_template = "Trigonikó Pezikoú" 
-		start_experience_factor = 0.3
+		name = "Macedonian Rebels"
+		location = 11832
+		division_template = "Rebels" 
+		start_experience_factor = 0.4
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "Trigonikó Pezikoú"
-		location = 974
-		division_template = "Trigonikó Pezikoú" 
-		start_experience_factor = 0.3
+		name = "Macedonian Rebels"
+		location = 867
+		division_template = "Rebels" 
+		start_experience_factor = 0.4
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "Trigonikó Pezikoú"
-		location = 11856
-		division_template = "Trigonikó Pezikoú" 
-		start_experience_factor = 0.9
+		name = "Macedonian Rebels"
+		location = 3882
+		division_template = "Rebels" 
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Macedonian Rebels"
+		location = 3882
+		division_template = "Rebels" 
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Macedonian Rebels"
+		location = 3882
+		division_template = "Rebels" 
+		start_experience_factor = 0.4
 		start_equipment_factor = 0.5
 	}
 }

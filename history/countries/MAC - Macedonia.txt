@@ -1,7 +1,10 @@
 ﻿capital = 106
 
-#OOB = "MACEDONIA_1928"
+set_province_controller = 3882 }
+set_province_controller = 11832 }
+set_province_controller = 867 }
 
+OOB = "MACEDONIA_1928"
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1
@@ -13,6 +16,11 @@ set_politics = {
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+declare_war_on = {
+    target = TUR
+    type = annex_everything
 }
 
 set_popularities = {
