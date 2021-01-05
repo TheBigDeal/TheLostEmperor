@@ -1,0 +1,132 @@
+﻿l_english: 
+### Country Name ###
+ #labryscism
+ ALB_rexism:0 "Austria"
+ ALB_rexism_DEF:0 "The Kingdom of Austria"
+ ALB_despotism:0 "Austria"
+ ALB_despotism_DEF:0 "Austria"
+ ALB_labryscism:0 "Austria"
+ ALB_labryscism_DEF:0 "The Austria State"
+ #Democracy
+ ALB_conservatism:0 "Austrian Republic"
+ ALB_conservatism_DEF:0 "The Republic of Austria"
+ ALB_liberalism:0 "Austrian Republic"
+ ALB_liberalism_DEF:0 "The Republic of Austria"
+ ALB_socialist:0 "Austrian Republic"
+ ALB_socialist_DEF:0 "The Republic of Austria"
+ #Monarchy
+ ALB_absolutism:0 "Austria"
+ ALB_absolutism_DEF:0 "The Kingdom of Austria"
+ ALB_royalism:0 "Austria"
+ ALB_royalism_DEF:0 "The Kingdom of Austria"
+ ALB_theocracy:0 "Austria"
+ ALB_theocracy_DEF:0 "The Kingdom of Austria"
+ #collectivism
+ ALB_mutualism:1 "Austrian Mutualist Republic"
+ ALB_mutualism_DEF:1 "The Austrian Mutualist Republic"
+ ALB_collectivism:1 "Austrian Commune"
+ ALB_collectivism_DEF:1 "The Austrian Commune"
+ ALB_proletarianism:1 "Austrian Socialist Republic"
+ ALB_proletarianism_DEF:1 "The Austrian Socialist Republic"
+ #Adjectives
+ ALB_rexism_ADJ:0 "Austrian"
+ ALB_despotism_ADJ:0 "Austrian"
+ ALB_labryscism_ADJ:0 "Austrian"
+ ALB_conservative_ADJ:0 "Austrian"
+ ALB_liberal_ADJ:0 "Austrian"
+ ALB_socialist_ADJ:0 "Austrian"
+ ALB_absolutism_ADJ:0 "Austrian"
+ ALB_royalism_ADJ:0 "Austrian"
+ ALB_theocracy_ADJ:0 "Austrian"
+ ALB_mutualism_ADJ:1 "Austrian"
+ ALB_collectivism_ADJ:1 "Austrian"
+ ALB_proletarianism_ADJ:1 "Austrian"
+
+### Political Parties ###
+ ALB_absolutism_party:0 "Loyalist Party"
+ ALB_royalism_party:0 "Loyalist Party"
+ ALB_rexism_party:0 "Loyalist Party"
+ ALB_despotism_party:0 "Military National Party"
+ ALB_conservatism_party:0 "Austrian Moderate Party"
+ ALB_liberalism_party:0 "Democratic Liberal Party"
+ ALB_socialism_party:0 "Austrian Peoples Party"
+ ALB_theocracy_party:0 "The Hands of God"
+ ALB_labryscism_party:0 "National Socialist Party"
+ ALB_mutualism_party:0 "Austrian Anarchist Party"
+ ALB_collectivism_party:0 "Austrian Workers Front"
+ ALB_proletarianism_party:0 "Peoples Socialist Party"
+ 
+### Ministers ###
+ # Head Of State
+ #USA_calvin_coolidge:0 "Calvin Coolidge"
+ # Secondary Head
+ #USA_frank_lowden:0 "Frank Lowden"
+ # Foriegn Minister
+ #USA_Frank_B_Kellogg:0 "Frank B. Kellogg"
+ # Minister Of Defence
+ #USA_John_Pershing:0 "John Pershing"
+ # Economic Minister
+ #USA_Andrew_Mellon:0 "Andrew Mellon"
+ # Minister Of The Interior
+ #USA_Hubert_Work:0 "Hubert Work"
+ # Minister Of Security
+ #USA_J_Edgar_Hoover:0 "Edgar Hoover"
+ 
+### Ideas ###
+
+### Tooltips ###
+
+### Global / Country Flags ###
+
+### Cosmetic Tags ###
+
+### Decisions ###
+
+### Focus Tree ###
+ ALB_THE_JANUARY_ULTIMATUM:0 "The January Ultimatum"
+ ALB_POINT_I_SURRENDER_OF_CONSPIRATORIAL_FUGITIVES:0 "Point I: Surrender Of Conspiratorial Fugitives"
+ ALB_REFUSE_TO_PUNISH_THE_MANY:0 "Refuse To Punish The Many"
+ ALB_PROTECT_OUR_FEW:0 "Protect Our Few"
+ ALB_HAND_OVER_THE_BLACK_HAND:0 "Hand Over The Black Hand"
+ ALB_ARREST_PROTESTORS:0 "Make An Example"
+ ALB_ALBANIANS_TOGETHER_HEADS_ON_PIKES:0 ""
+ 
+ ALB_POINT_II_NATIONALISATION_OF_LOCAL_COURTS:0 "Point II: Nationalisation Of Local Courts"
+ ALB_A_JURY_OF_ALBANIANS:0 "A Jury Of Albanians"
+ ALB_CREATE_MORE_TRANSPARENCY:0 "Create More Transparency"
+ ALB_SEND_ALL_CASES_TO_THE_SULTANATE:0 "Send All Cases To The Sultanate"
+ ALB_STREAMLINE_CAPITAL_PUNISHMENT:0 "Streamline Capital Punishment"
+ ALB_KEEPING_JUSTICE_FREE_BLIND_AND_DEAD_JUSTICE:0 ""
+ 
+ ALB_POINT_III_ADJUSTMENT_OF_ACADEMIC_CURRICULUM:0 "Point III: Adjustment Of Academic Curriculum"
+ ALB_NEVER_FORGET_OUR_STRUGGLE:0 "Never Forget Our Struggle"
+ ALB_REMEMBER_EVERY_REBELLION:0 "Remember Every Rebellion"
+ ALB_LESSONS_OF_OTTOMAN_BENEVOLENCE:0 "Lessons Of Ottoman Benevolence"
+ ALB_WASH_AWAY_THE_BLOOD:0 "Wash Away The Blood"
+ ALB_A_TRUE_HISTORY_A_CLEAN_HISTORY:0 ""
+ 
+ ALB_POINT_IV_RESTORATION_OF_ORDER_IN_THE_VILAYET:0 "Point IV: Restoration Of Order In The Valayet"
+ ALB_MAINTAIN_THE_DEMILITARISED_BORDER:0 "Maintain The Demilitarised Border"
+ ALB_LET_NO_TURK_CROSS:0 "Let No Turk Cross"
+ ALB_LET_THE_OTTOMANS_MARCH:0 "Let The Ottomans March"
+ ALB_ACCEPT_NEW_CURFEWS:0 "Accept New Curfews"
+ ALB_REJECT_THE_IRON_FIST_SOLDIERS_IN_THE_STREETS:0 ""
+ 
+ ALB_POINT_V_DISSOLUTION_OF_THE_ASSEMBLY_OF_ALBANIA:0 "Point V: Dissolution Of The Albanian Assembly"
+ ALB_PUT_THE_MATTER_TO_A_VOTE:0 "Put The Matter To A Vote"
+ ALB_A_12_TO_1_MAJORITY:0 "A 12 To 1 Majority"
+ ALB_ACCEPT_THE_TRADITIONAL_SYSTEM:0 "Accept The Traditional System"
+ ALB_PREPARE_A_WELCOMING_BANQUET:0 "Prepare A Welcoming Banquet"
+ ALB_THE_ASSEMBLY_REMAINS_THE_NEW_VALI:0 ""
+ 
+ 
+ 
+### Events ###
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 

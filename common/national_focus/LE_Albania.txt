@@ -1,0 +1,509 @@
+focus_tree = {
+	id = albania_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ALB
+		}
+	}
+	default = no
+	focus = {
+		id = ALB_THE_JANUARY_ULTIMATUM
+		icon = GFX_focus_purge_bureaucracy
+		x = 14
+		y = 0
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	#########################
+	###                   ###
+	###      POINT 1      ###
+	###                   ###
+	#########################
+	focus = {
+		id = ALB_POINT_I_SURRENDER_OF_CONSPIRATORIAL_FUGITIVES
+		icon = GFX_generic_espionage
+		prerequisite = { focus = ALB_THE_JANUARY_ULTIMATUM }
+		x = 2
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_REFUSE_TO_PUNISH_THE_MANY
+		icon = GFX_generic_revolution
+		prerequisite = { focus = ALB_POINT_I_SURRENDER_OF_CONSPIRATORIAL_FUGITIVES }
+		mutually_exclusive = { focus = ALB_HAND_OVER_THE_BLACK_HAND }
+		relative_position_id = ALB_POINT_I_SURRENDER_OF_CONSPIRATORIAL_FUGITIVES
+		x = -2
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_PROTECT_OUR_FEW
+		icon = GFX_generic_socialism
+		prerequisite = { focus = ALB_REFUSE_TO_PUNISH_THE_MANY }
+		relative_position_id = ALB_POINT_I_SURRENDER_OF_CONSPIRATORIAL_FUGITIVES
+		x = -2
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_HAND_OVER_THE_BLACK_HAND
+		icon = GFX_focus_trade_unions
+		prerequisite = { focus = ALB_POINT_I_SURRENDER_OF_CONSPIRATORIAL_FUGITIVES }
+		mutually_exclusive = { focus = ALB_REFUSE_TO_PUNISH_THE_MANY }
+		relative_position_id = ALB_POINT_I_SURRENDER_OF_CONSPIRATORIAL_FUGITIVES
+		x = 2
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_ARREST_PROTESTORS
+		icon = GFX_generic_handgun
+		prerequisite = { focus = ALB_HAND_OVER_THE_BLACK_HAND }
+		relative_position_id = ALB_POINT_I_SURRENDER_OF_CONSPIRATORIAL_FUGITIVES
+		x = 2
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_ALBANIANS_TOGETHER_HEADS_ON_PIKES
+		icon = GFX_goal_revolution
+		prerequisite = { focus = ALB_ARREST_PROTESTORS focus = ALB_PROTECT_OUR_FEW }
+		relative_position_id = ALB_POINT_I_SURRENDER_OF_CONSPIRATORIAL_FUGITIVES
+		x = 0
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	#########################
+	###                   ###
+	###      POINT 2      ###
+	###                   ###
+	#########################
+	focus = {
+		id = ALB_POINT_II_NATIONALISATION_OF_LOCAL_COURTS
+		icon = GFX_goal_government_icon
+		prerequisite = { focus = ALB_THE_JANUARY_ULTIMATUM }
+		x = 8
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_A_JURY_OF_ALBANIANS
+		icon = GFX_goal_new_treaty
+		prerequisite = { focus = ALB_POINT_II_NATIONALISATION_OF_LOCAL_COURTS }
+		mutually_exclusive = { focus = ALB_SEND_ALL_CASES_TO_THE_SULTANATE }
+		relative_position_id = ALB_POINT_II_NATIONALISATION_OF_LOCAL_COURTS
+		x = -2
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_CREATE_MORE_TRANSPARENCY
+		icon = GFX_goal_foreign_diplomacy
+		prerequisite = { focus = ALB_A_JURY_OF_ALBANIANS }
+		relative_position_id = ALB_POINT_II_NATIONALISATION_OF_LOCAL_COURTS
+		x = -2
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_SEND_ALL_CASES_TO_THE_SULTANATE
+		icon = GFX_focus_red_constitution
+		prerequisite = { focus = ALB_POINT_II_NATIONALISATION_OF_LOCAL_COURTS }
+		mutually_exclusive = { focus = ALB_A_JURY_OF_ALBANIANS }
+		relative_position_id = ALB_POINT_II_NATIONALISATION_OF_LOCAL_COURTS
+		x = 2
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_STREAMLINE_CAPITAL_PUNISHMENT
+		icon = GFX_Freedom
+		prerequisite = { focus = ALB_SEND_ALL_CASES_TO_THE_SULTANATE }
+		relative_position_id = ALB_POINT_II_NATIONALISATION_OF_LOCAL_COURTS
+		x = 2
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_KEEPING_JUSTICE_FREE_BLIND_AND_DEAD_JUSTICE
+		icon = GFX_goal_generic_elections
+		prerequisite = { focus = ALB_CREATE_MORE_TRANSPARENCY focus = ALB_STREAMLINE_CAPITAL_PUNISHMENT }
+		relative_position_id = ALB_POINT_II_NATIONALISATION_OF_LOCAL_COURTS
+		x = 0
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	#########################
+	###                   ###
+	###      POINT 3      ###
+	###                   ###
+	#########################
+	focus = {
+		id = ALB_POINT_III_ADJUSTMENT_OF_ACADEMIC_CURRICULUM
+		icon = GFX_focus_research2
+		prerequisite = { focus = ALB_THE_JANUARY_ULTIMATUM }
+		x = 14
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_NEVER_FORGET_OUR_STRUGGLE
+		icon = GFX_generic_political_oppression
+		prerequisite = { focus = ALB_POINT_III_ADJUSTMENT_OF_ACADEMIC_CURRICULUM }
+		mutually_exclusive = { focus = ALB_LESSONS_OF_OTTOMAN_BENEVOLENCE }
+		relative_position_id = ALB_POINT_III_ADJUSTMENT_OF_ACADEMIC_CURRICULUM
+		x = -2
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_REMEMBER_EVERY_REBELLION
+		icon = GFX_generic_strike
+		prerequisite = { focus = ALB_NEVER_FORGET_OUR_STRUGGLE }
+		relative_position_id = ALB_POINT_III_ADJUSTMENT_OF_ACADEMIC_CURRICULUM
+		x = -2
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_LESSONS_OF_OTTOMAN_BENEVOLENCE
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus = ALB_POINT_III_ADJUSTMENT_OF_ACADEMIC_CURRICULUM }
+		mutually_exclusive = { focus = ALB_NEVER_FORGET_OUR_STRUGGLE }
+		relative_position_id = ALB_POINT_III_ADJUSTMENT_OF_ACADEMIC_CURRICULUM
+		x = 2
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_WASH_AWAY_THE_BLOOD
+		icon = GFX_red_terror
+		prerequisite = { focus = ALB_LESSONS_OF_OTTOMAN_BENEVOLENCE }
+		relative_position_id = ALB_POINT_III_ADJUSTMENT_OF_ACADEMIC_CURRICULUM
+		x = 2
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_A_TRUE_HISTORY_A_CLEAN_HISTORY
+		icon = GFX_prison_camps
+		prerequisite = { focus = ALB_REMEMBER_EVERY_REBELLION focus = ALB_WASH_AWAY_THE_BLOOD }
+		relative_position_id = ALB_POINT_III_ADJUSTMENT_OF_ACADEMIC_CURRICULUM
+		x = 0
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	#########################
+	###                   ###
+	###      POINT 4      ###
+	###                   ###
+	#########################
+	focus = {
+		id = ALB_POINT_IV_RESTORATION_OF_ORDER_IN_THE_VILAYET
+		icon = GFX_fight_the_system
+		prerequisite = { focus = ALB_THE_JANUARY_ULTIMATUM }
+		x = 20
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_MAINTAIN_THE_DEMILITARISED_BORDER
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = ALB_POINT_IV_RESTORATION_OF_ORDER_IN_THE_VILAYET }
+		mutually_exclusive = { focus = ALB_LET_THE_OTTOMANS_MARCH }
+		relative_position_id = ALB_POINT_IV_RESTORATION_OF_ORDER_IN_THE_VILAYET
+		x = -2
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_LET_NO_TURK_CROSS
+		icon = GFX_goal_cutdown_ottoman_empire
+		prerequisite = { focus = ALB_MAINTAIN_THE_DEMILITARISED_BORDER }
+		relative_position_id = ALB_POINT_IV_RESTORATION_OF_ORDER_IN_THE_VILAYET
+		x = -2
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_LET_THE_OTTOMANS_MARCH
+		icon = GFX_stomp_out_the_weak
+		prerequisite = { focus = ALB_POINT_IV_RESTORATION_OF_ORDER_IN_THE_VILAYET }
+		mutually_exclusive = { focus = ALB_MAINTAIN_THE_DEMILITARISED_BORDER }
+		relative_position_id = ALB_POINT_IV_RESTORATION_OF_ORDER_IN_THE_VILAYET
+		x = 2
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_ACCEPT_NEW_CURFEWS
+		icon = GFX_generic_prison_camp
+		prerequisite = { focus = ALB_LET_THE_OTTOMANS_MARCH }
+		relative_position_id = ALB_POINT_IV_RESTORATION_OF_ORDER_IN_THE_VILAYET
+		x = 2
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_REJECT_THE_IRON_FIST_SOLDIERS_IN_THE_STREETS
+		icon = GFX_goal_army_guy_2
+		prerequisite = { focus = ALB_LET_NO_TURK_CROSS focus = ALB_ACCEPT_NEW_CURFEWS }
+		relative_position_id = ALB_POINT_IV_RESTORATION_OF_ORDER_IN_THE_VILAYET
+		x = 0
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	#########################
+	###                   ###
+	###      POINT 5      ###
+	###                   ###
+	#########################
+	focus = {
+		id = ALB_POINT_V_DISSOLUTION_OF_THE_ASSEMBLY_OF_ALBANIA
+		icon = GFX_education_reform
+		prerequisite = { focus = ALB_THE_JANUARY_ULTIMATUM }
+		x = 26
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_PUT_THE_MATTER_TO_A_VOTE
+		icon = GFX_goal_generic_elections
+		prerequisite = { focus = ALB_POINT_V_DISSOLUTION_OF_THE_ASSEMBLY_OF_ALBANIA }
+		mutually_exclusive = { focus = ALB_ACCEPT_THE_TRADITIONAL_SYSTEM }
+		relative_position_id = ALB_POINT_V_DISSOLUTION_OF_THE_ASSEMBLY_OF_ALBANIA
+		x = -2
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_A_12_TO_1_MAJORITY
+		icon = GFX_generic_constitution
+		prerequisite = { focus = ALB_PUT_THE_MATTER_TO_A_VOTE }
+		relative_position_id = ALB_POINT_V_DISSOLUTION_OF_THE_ASSEMBLY_OF_ALBANIA
+		x = -2
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_ACCEPT_THE_TRADITIONAL_SYSTEM
+		icon = GFX_focus_usa_voter_registration_act
+		prerequisite = { focus = ALB_POINT_V_DISSOLUTION_OF_THE_ASSEMBLY_OF_ALBANIA }
+		mutually_exclusive = { focus = ALB_PUT_THE_MATTER_TO_A_VOTE }
+		relative_position_id = ALB_POINT_V_DISSOLUTION_OF_THE_ASSEMBLY_OF_ALBANIA
+		x = 2
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_PREPARE_A_WELCOMING_BANQUET
+		icon = GFX_focus_rom_parties_end
+		prerequisite = { focus = ALB_ACCEPT_THE_TRADITIONAL_SYSTEM }
+		relative_position_id = ALB_POINT_V_DISSOLUTION_OF_THE_ASSEMBLY_OF_ALBANIA
+		x = 2
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ALB_THE_ASSEMBLY_REMAINS_THE_NEW_VALI
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = ALB_A_12_TO_1_MAJORITY focus = ALB_PREPARE_A_WELCOMING_BANQUET }
+		relative_position_id = ALB_POINT_V_DISSOLUTION_OF_THE_ASSEMBLY_OF_ALBANIA
+		x = 0
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			
+		}
+	}
+}
+	

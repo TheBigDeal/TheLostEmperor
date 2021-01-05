@@ -91,19 +91,29 @@ guiTypes = {
 		}
 		iconType = {
 			name = gp_header
-			spriteType = "GFX_category_header_long"
+			spriteType = "GFX_category_header_extra_long"
 			position = {x=2 y=-4}
 			alwaystransparent = yes
 		}
 		buttonType = {
 			name = "gp_close_button"
-			position = { x = -42 y = 2 }
+			position = { x = -41 y = 2 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
 			Orientation = "UPPER_RIGHT"
 			clicksound = click_close
 			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "gp_refresh_button"
+			position = { x = -85 y = 2 }
+			quadTextureSprite ="GFX_refreshbutton"
+			buttonFont = "Main_14_black"
+			shortcut = ""
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "Refresh"
 		}
 		instantTextboxType = {
 			name = "gp_title"

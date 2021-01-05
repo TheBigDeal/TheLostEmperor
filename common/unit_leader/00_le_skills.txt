@@ -1,0 +1,10 @@
+leader_traits = {
+	le_using_cyanide_gas_trait = { 
+		type = land
+		trait_type = le_using_cyanide_gas_trait
+	}
+	le_equipped_standard_gas_mask = { 
+		type = land
+		trait_type = le_equipped_standard_gas_mask
+	}
+}

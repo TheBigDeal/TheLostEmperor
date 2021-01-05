@@ -6,6 +6,10 @@
  MJG_DEF:0 "Mujahideen Groups"
  MJG_ADJ:0 "Mujahideen"
  
+ BNG:0 "Bengal"
+ BNG_DEF:0 "Bengal"
+ BNG_ADJ:0 "Bengal"
+ 
  JTH:0 "Jaysh ut-Tahrir"
  JTH_DEF:0 "Jaysh ut-Tahrir"
  JTH_ADJ:0 "Tahriri"
@@ -928,9 +932,9 @@
  HNT_absolutism_DEF:0 "The East African Hinterlands"
  HNT_absolutism_ADJ:0 "East African"
 
- MUG_absolutism:0 "Mughals"
- MUG_absolutism_DEF:0 "Mughals"
- MUG_absolutism_ADJ:0 "Mughal"
+ MUG_absolutism:0 "Delhi State Committee"
+ MUG_absolutism_DEF:0 "The Delhi State Committee"
+ MUG_absolutism_ADJ:0 "Delhi"
 
  MAR_despotism:0 "Maratha"
  MAR_despotism_DEF:0 "Maratha"
@@ -944,9 +948,9 @@
  BHA_absolutism_DEF:0 "Bahawalpur"
  BHA_absolutism_ADJ:0 "Bahawalpur"
 
- SKH_absolutism:0 "Sikh"
- SKH_absolutism_DEF:0 "Sikh"
- SKH_absolutism_ADJ:0 "Sikh"
+ SKH_absolutism:0 "Punjab"
+ SKH_absolutism_DEF:0 "Punjab"
+ SKH_absolutism_ADJ:0 "Punjab"
 
 
  ZUL_absolutism:0 "Zulu Protectorate"

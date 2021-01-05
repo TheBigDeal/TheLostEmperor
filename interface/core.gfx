@@ -7,6 +7,26 @@ spriteTypes = {
 	#	noOfFrames = 2
 	#}
 	
+	spriteType = {
+		name = "GFX_category_header"
+		textureFile = "gfx/interface/category_header.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_category_header_long"
+		texturefile = "gfx/interface/category_header_long.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_category_header_extra_long"
+		texturefile = "gfx/interface/category_header_extra_long.dds"
+	}
+	spriteType = {
+		name = "GFX_refreshbutton"
+		texturefile = "gfx/interface/refreshbutton.dds"
+	}
+	
+	
 	textSpriteType = {
 		name = "GFX_sort_button_164x29"
 		texturefile = "gfx//interface//sort_button_164x29.dds"

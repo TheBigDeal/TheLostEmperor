@@ -1,0 +1,66 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Volunteers"  	# Standard formation for frontline divisions
+
+	division_names_group = USA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+
+	}
+}
+
+###### OOB ######
+units = {
+	####### CONUS Theater #######
+	### Carribean Forces ###
+	division = {			
+		name = "Connecticut Volunteers"
+		location = 6909
+		division_template = "Volunteers"
+		start_experience_factor = 0.20
+		start_equipment_factor = 1
+	}			
+	division = {			
+		name = "Rhode Island Volunteers"		
+		location = 11830
+		division_template = "Volunteers"
+		start_experience_factor = 0.20
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "Massachusetts Volunteers"		
+		location = 6732
+		division_template = "Volunteers"
+		start_experience_factor = 0.20
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "New Hampshire Volunteers"		
+		location = 3712
+		division_template = "Volunteers"
+		start_experience_factor = 0.20
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "Vermont Volunteers"		
+		location = 4445
+		division_template = "Volunteers"
+		start_experience_factor = 0.20
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "Maine Volunteers"		
+		location = 7462
+		division_template = "Volunteers"
+		start_experience_factor = 0.20
+		start_equipment_factor = 1
+	}
+}

@@ -21,7 +21,8 @@ state={
 			974 1 
 		}
 		add_core_of = TUR
-
+		set_border_war = yes
+		set_demilitarized_zone = yes
 	}
 
 	provinces={

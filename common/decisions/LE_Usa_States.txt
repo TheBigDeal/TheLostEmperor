@@ -1,0 +1,135 @@
+british-new_england_war = {
+	The_British_New_England_War = {
+		icon = generic_army_support
+		cost = 0
+		ai_will_do = { factor = 10 }
+		available = {
+			GBR = {
+				has_war_support < 0.30
+			}
+		}
+		activation  = {
+			GBR = { has_war_with = MAS} 
+		}
+		days_mission_timeout = 360 
+		is_good = no
+		complete_effect = {
+			GBR = { country_event = { id = le_USA.50 } }
+		}
+		timeout_effect = {
+			GBR = { country_event = { id = le_USA.50 } }
+		}
+	}
+	Sign_Peace_Treaty = {
+		icon = generic_army_support
+		cost = 0
+		ai_will_do = { factor = 10 }
+		available = {
+			tag = MAS
+			has_global_flag = GBR_MAS_SENT_PEACE_DEAL
+		}
+		complete_effect = {
+			PAP = { transfer_state = 2}
+		}
+	}
+	Send_Weapons_To_Canada = {
+		icon = generic_army_support
+		cost = 50
+		ai_will_do = { factor = 10 }
+		days_re_enable = 90
+		visible = {
+			tag = GBR
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment_1 > 1999
+			}
+		}
+		complete_effect = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 2000
+				target = CAN
+			}
+			add_days_mission_timeout = {
+				mission = The_British_New_England_War
+				days = -14
+			}
+		}
+	}
+	Naval_Bombardment_Of_Boston = {
+		icon = generic_army_support
+		cost = 20
+		ai_will_do = { factor = 10 }
+		visible = {
+			tag = GBR
+		}
+		available = {
+			ships_in_area = { area = 54 size > 14 } 
+		}
+		complete_effect = {
+			MAS = { country_event = { id = le_USA.48 } }
+			effect_tooltip = {
+				788 = {
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 1
+					}
+				}
+			}
+			add_days_mission_timeout = {
+				mission = The_British_New_England_War
+				days = -14
+			}
+		}
+	}
+	Send_Over_Troops = {
+		icon = generic_army_support
+		cost = 20
+		ai_will_do = { factor = 10 }
+		visible = {
+			tag = GBR
+		}
+		available = {
+			has_manpower > 4999
+		}
+		complete_effect = {
+			CAN = { country_event = { id = le_USA.49 } }
+			add_days_mission_timeout = {
+				mission = The_British_New_England_War
+				days = -14
+			}
+		}
+	}
+	
+	Call_In_The_Irish = {
+		icon = generic_army_support
+		cost = 10
+		ai_will_do = { factor = 10 }
+		visible = {
+			tag = MAS
+		}
+		available = {
+			has_manpower > 4999
+		}
+		complete_effect = {
+			MAS = { country_event = { id = le_USA.54 } }
+		}
+	}
+	
+	Mine_the_new_england_coast = {
+		icon = generic_army_support
+		cost = 30
+		ai_will_do = { factor = 10 }
+		visible = {
+			tag = MAS
+		}
+		complete_effect = {
+			add_mines = { region = 54 amount = 30 }
+		}
+	}
+}

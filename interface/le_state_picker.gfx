@@ -1,0 +1,110 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_State_Maine"
+		texturefile = "gfx/interface/State_Picker/Maine.dds"
+	}
+	spriteType = {
+		name = "GFX_State_New_Hampshire"
+		texturefile = "gfx/interface/State_Picker/NewHampshire.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Vermont"
+		texturefile = "gfx/interface/State_Picker/Vermont.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Massachusetts"
+		texturefile = "gfx/interface/State_Picker/Massachusetts.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Rhode_Island"
+		texturefile = "gfx/interface/State_Picker/RhodeIsland.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Connecticut"
+		texturefile = "gfx/interface/State_Picker/Connecticut.dds"
+	}
+	spriteType = {
+		name = "GFX_State_New_York"
+		texturefile = "gfx/interface/State_Picker/NewYork.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Pennsylvania"
+		texturefile = "gfx/interface/State_Picker/Pennsylvania.dds"
+	}
+	spriteType = {
+		name = "GFX_State_New_Jersey"
+		texturefile = "gfx/interface/State_Picker/NewJersey.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Federal_Remnants"
+		texturefile = "gfx/interface/State_Picker/Federal_Remnants.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Ohio"
+		texturefile = "gfx/interface/State_Picker/Ohio.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Kentucky"
+		texturefile = "gfx/interface/State_Picker/Kentucky.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Indiana"
+		texturefile = "gfx/interface/State_Picker/Indiana.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Michigan"
+		texturefile = "gfx/interface/State_Picker/Michigan.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Illinois"
+		texturefile = "gfx/interface/State_Picker/Illinois.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Wisconsin"
+		texturefile = "gfx/interface/State_Picker/Wisconsin.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Mackinac"
+		texturefile = "gfx/interface/State_Picker/Mackinac.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Iowa"
+		texturefile = "gfx/interface/State_Picker/Iowa.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Minnesota"
+		texturefile = "gfx/interface/State_Picker/Minnesota.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Dakota"
+		texturefile = "gfx/interface/State_Picker/Dakota.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Tennessee"
+		texturefile = "gfx/interface/State_Picker/Tennessee.dds"
+	}
+	spriteType = {
+		name = "GFX_State_North_Carolina"
+		texturefile = "gfx/interface/State_Picker/North_Carolina.dds"
+	}
+	spriteType = {
+		name = "GFX_State_South_Carolina"
+		texturefile = "gfx/interface/State_Picker/South_Carolina.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Georgia"
+		texturefile = "gfx/interface/State_Picker/Georgia.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Alabama"
+		texturefile = "gfx/interface/State_Picker/Alabama.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Mississippi"
+		texturefile = "gfx/interface/State_Picker/Mississippi.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Florida"
+		texturefile = "gfx/interface/State_Picker/Florida.dds"
+	}
+}

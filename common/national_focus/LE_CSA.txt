@@ -1,0 +1,152 @@
+focus_tree = {
+	id = csa
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CSA
+		}
+	}
+	#Focus for Away down south...
+	focus = {
+		id = CSA_away_down_south
+		icon = GFX_focus_usa_honor_the_confederacy
+		x = 7
+		y = 0
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ...in the land of cotton...
+	focus = {
+		id = CSA_in_the_land_of_cotton
+		icon = GFX_goal_generic_construct_civilian
+		x = 5
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_away_down_south }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ...dixie land...
+	focus = {
+		id = CSA_dixie_land
+		icon = GFX_focus_usa_honor_the_confederacy
+		x = 7
+		y = 3
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_look_away_look_away }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ...look away, look away...
+	focus = {
+		id = CSA_look_away_look_away
+		icon = GFX_goal_generic_small_arms
+		x = 7
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CSA_in_the_land_of_cotton 
+		}
+		prerequisite = { 
+			focus = CSA_old_times_they_are_not_forgotten 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ...old times they are not forgotten...
+	focus = {
+		id = CSA_old_times_they_are_not_forgotten
+		icon = GFX_goal_generic_demand_territory
+		x = 9
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_away_down_south }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Democratic Convention
+	focus = {
+		id = CSA_the_democratic_convention
+		icon = GFX_goal_generic_improve_relations
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_dixie_land }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Reformist Torch
+	focus = {
+		id = CSA_the_reformist_torch
+		icon = GFX_goal_support_democracy
+		x = 5
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_the_democratic_convention }
+		mutually_exclusive = { focus = CSA_the_new_south }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Status Quo
+	focus = {
+		id = CSA_status_quo
+		icon = GFX_goal_generic_demand_territory
+		x = 7
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_the_democratic_convention }
+		mutually_exclusive = { focus = CSA_the_new_south }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The New South
+	focus = {
+		id = CSA_the_new_south
+		icon = GFX_goal_support_fascism
+		x = 0
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_the_democratic_convention }
+		mutually_exclusive = { 
+			focus = CSA_the_reformist_torch 
+		}
+		mutually_exclusive = { 
+			focus = CSA_status_quo 
+		}
+		mutually_exclusive = { 
+			focus = CSA_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

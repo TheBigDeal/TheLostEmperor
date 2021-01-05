@@ -1,0 +1,16 @@
+####################
+##### GENERIC ######
+####################
+
+british-new_england_war = {
+	icon = idea_collectivism
+	visible = {
+		AND = {
+			OR = {
+				tag = GBR
+				tag = MAS
+			}
+			GBR = { has_war_with = MAS }
+		}
+	}
+}

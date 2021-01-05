@@ -146,6 +146,18 @@ spriteTypes = {
 	# OTHER MOD GFX
 	#############################################################
 	SpriteType = {
+		name = "GFX_fight_the_system"
+		texturefile = "gfx/interface/goals/RAJ_fight_the_system.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_prison_camp"
+		texturefile = "gfx/interface/goals/generic_prison_camp.dds"
+	}
+	SpriteType = {
+		name = "GFX_freedom"
+		texturefile = "gfx/interface/goals/Freedom.tga"
+	}
+	SpriteType = {
 		name = "GFX_generic_hammer_sickle"
 		texturefile = "gfx/interface/goals/generic_hammer_sickle.dds"
 	}
@@ -153,7 +165,6 @@ spriteTypes = {
 		name = "GFX_conquer_poland"
 		texturefile = "gfx/interface/goals/conquer_poland.dds"
 	}
-	
 	SpriteType = {
 		name = "GFX_support_nationalism"
 		texturefile = "gfx/interface/goals/support_nationalism.dds"

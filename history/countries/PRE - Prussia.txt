@@ -18,6 +18,13 @@ set_technology = {
 	industrial_factories = 1
 	early_automobile_industry = 1
 	basic_infrastructure = 1
+	experimental_aircraft = 1
+	observation_balloon = 1
+	zeppelin1 = 1
+	scout_plane0 = 1
+	triplane_fighter = 1
+	biplane_fighter = 1
+	biplane_bomber = 1
 }
 add_ideas = {
 	HRE_elector

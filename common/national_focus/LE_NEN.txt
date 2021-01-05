@@ -1,0 +1,557 @@
+focus_tree = {
+	id = LE_USA_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = MAS
+		}
+	}
+	#Focus for Create the RNEMP
+	focus = {
+		id = NEN_create_the_rnemp
+		icon = GFX_goal_generic_political_pressure
+		x = 6
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { focus = NEN_a_necessary_sacrifice }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Driving on the Left
+	focus = {
+		id = NEN_driving_on_the_left
+		icon = GFX_focus_generic_rubber
+		x = 6
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { focus = NEN_create_the_rnemp }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Cut tariffs with Britain
+	focus = {
+		id = NEN_cut_tariffs_with_britain
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 0
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { focus = NEN_toe_the_line }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Hartford Convention
+	focus = {
+		id = NEN_the_hartford_convention
+		icon = GFX_goal_tripartite_pact
+		x = 6
+		y = 0
+		cost = 14.3
+		cancelable = no
+		available = {
+			OR = {
+				has_cosmetic_tag = NEW_ENGLAND
+				has_cosmetic_tag = NEW_ENGLAND_BUNKER
+				has_cosmetic_tag = NEW_ENGLAND_PINE
+				has_cosmetic_tag = NEW_ENGLAND_CROSS
+			}
+		}
+		allow_branch = {
+			tag = MAS
+		}
+		select_effect = {
+			country_event = { id = le_USA.36 days = 1 }
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+			country_event = { id = le_USA.41 }
+			GBR = { country_event = { id = le_USA.43 days = 2 }}
+		}
+	}
+
+	#Focus for A messenger from London...
+	focus = {
+		id = NEN_a_messenger_from_london
+		icon = GFX_focus_generic_home_defense
+		x = 0
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { focus = NEN_the_hartford_convention }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Patriot's Dream
+	focus = {
+		id = NEN_the_patriots_dream
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = -4
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { focus = NEN_a_messenger_from_london }
+		available = {
+			is_subject = no
+		}	
+		mutually_exclusive = { 
+			focus = NEN_a_necessary_sacrifice 
+		}
+		mutually_exclusive = { 
+			focus = NEN_toe_the_line 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+			country_event = { id = le_USA.47 }
+			hidden_effect = { load_OOB = NEWENGLANDPATRIOTSDREAM }
+			custom_effect_tooltip = patriots_dream_tt
+			add_war_support = 0.10
+			add_manpower = 25000
+		}
+	}
+
+	#Focus for A necessary sacrifice
+	focus = {
+		id = NEN_a_necessary_sacrifice
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 4
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { focus = NEN_a_messenger_from_london }
+		available = {
+			is_subject = no
+		}
+		mutually_exclusive = { 
+			focus = NEN_the_patriots_dream 
+		}
+		mutually_exclusive = { 
+			focus = NEN_toe_the_line 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Spirit of Bunker Hill
+	focus = {
+		id = NEN_spirit_of_bunker_hill
+		icon = GFX_goal_generic_military_sphere
+		x = -4
+		y = 3
+		cost = 6
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { focus = NEN_the_patriots_dream }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_subject = no
+		}
+		completion_reward = {
+			add_timed_idea = { days = 360 idea = usa_spirit_of_bunker_hill }
+		}
+	}
+
+	#Focus for Drive them back!
+	focus = {
+		id = NEN_drive_them_back
+		icon = GFX_focus_AST_never_gallipoli
+		x = -4
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { focus = NEN_spirit_of_bunker_hill }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_subject = no
+		}
+		completion_reward = {
+			add_war_support = 0.10
+			add_timed_idea = { days = 360 idea = usa_never_surrender }
+		}
+	}
+
+	#Focus for Revise the convention
+	focus = {
+		id = NEN_revise_the_convention
+		icon = GFX_focus_generic_treaty
+		x = 4
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { focus = NEN_a_necessary_sacrifice }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Governor-General
+	focus = {
+		id = NEN_the_governorgeneral
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 4
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { focus = NEN_revise_the_convention }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Long live the Republic!
+	focus = {
+		id = NEN_long_live_the_republic
+		icon = GFX_goal_support_democracy
+		x = -4
+		y = 5
+		cost = 6
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { 
+			focus = NEN_stamp_out_the_tories 
+		}
+		prerequisite = { 
+			focus = NEN_enforce_the_english_language 
+		}
+		prerequisite = { 
+			focus = NEN_drive_them_back 
+		}
+		mutually_exclusive = { 
+			focus = NEN_the_dominion_of_new_england 
+		}
+		mutually_exclusive = { 
+			focus = NEN_the_middle_ground 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_subject = no
+		}
+	}
+
+	#Focus for The Dominion of New England
+	focus = {
+		id = NEN_the_dominion_of_new_england
+		icon = GFX_focus_rom_handle_king
+		x = 4
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { 
+			focus = NEN_the_governorgeneral 
+		}
+		prerequisite = { 
+			focus = NEN_driving_on_the_left 
+		}
+		prerequisite = { 
+			focus = NEN_relax_british_immigration_rules 
+		}
+		mutually_exclusive = { 
+			focus = NEN_long_live_the_republic 
+		}
+		mutually_exclusive = { 
+			focus = NEN_the_middle_ground 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Toe the Line
+	focus = {
+		id = NEN_toe_the_line
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 0
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { focus = NEN_a_messenger_from_london }
+		mutually_exclusive = { 
+			focus = NEN_the_patriots_dream 
+		}
+		mutually_exclusive = { 
+			focus = NEN_a_necessary_sacrifice 
+		}
+		mutually_exclusive = { 
+			focus = NEN_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_subject = no
+		}
+	}
+
+	#Focus for The Flag Referendum
+	focus = {
+		id = NEN_the_flag_referendum
+		icon = GFX_focus_eng_decolonization
+		x = 0
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { focus = NEN_cut_tariffs_with_britain }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_subject = no
+		}
+	}
+
+	#Focus for The Middle Ground
+	focus = {
+		id = NEN_the_middle_ground
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 0
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { 
+			focus = NEN_the_flag_referendum 
+		}
+		prerequisite = { 
+			focus = NEN_relax_british_immigration_rules 
+		}
+		prerequisite = { 
+			focus = NEN_enforce_the_english_language 
+		}
+		mutually_exclusive = { 
+			focus = NEN_long_live_the_republic 
+		}
+		mutually_exclusive = { 
+			focus = NEN_the_dominion_of_new_england 
+		}
+		mutually_exclusive = { 
+			focus = NEN_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_subject = no
+		}
+	}
+
+	#Focus for The Minutemen
+	focus = {
+		id = NEN_the_minutemen
+		icon = GFX_focus_generic_little_entente
+		x = -2
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { 
+			focus = NEN_the_patriots_dream 
+			focus = NEN_toe_the_line 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_subject = no
+		}
+		completion_reward = {
+			load_OOB = New_England_Green_Mountain
+			set_technology = {
+				tech_mountaineers = 1
+			}
+		}
+	}
+
+	#Focus for University Cooperation
+	focus = {
+		id = NEN_university_cooperation
+		icon = GFX_goal_generic_scientific_exchange
+		x = 2
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { 
+			focus = NEN_a_necessary_sacrifice 
+			focus = NEN_toe_the_line 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Relax British Immigration Rules
+	focus = {
+		id = NEN_relax_british_immigration_rules
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { 
+			focus = NEN_university_cooperation
+			focus = NEN_toe_the_line
+		}
+		prerequisite = { 
+			focus = NEN_a_necessary_sacrifice
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Enforce the English Language
+	focus = {
+		id = NEN_enforce_the_english_language
+		icon = GFX_goal_generic_demand_territory
+		x = -2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { focus = NEN_the_minutemen }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_subject = no
+		}
+		available = {
+			has_political_power > 20
+		}
+		completion_reward = {
+			add_stability = 0.05
+			CAN = {
+				add_opinion_modifier = {
+					target = MAS
+					modifier = usa_enforced_english
+				}
+			}
+		}
+	}
+
+	#Focus for Fortify the Coast
+	focus = {
+		id = NEN_fortify_the_coast
+		icon = GFX_focus_generic_coastal_fort
+		x = -6
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { focus = NEN_the_patriots_dream }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_subject = no
+		}
+		completion_reward = {
+			788 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 6732
+				}
+			}
+			998 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 11830
+				}
+			}
+			787 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 6909
+				}
+			}
+			790 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 3712
+				}
+			}
+			791 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 7462
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 12459
+				}
+			}
+		}
+	}
+
+	#Focus for Stamp out the Tories
+	focus = {
+		id = NEN_stamp_out_the_tories
+		icon = GFX_focus_RAJ_clamp_down_on_corruption
+		x = -6
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		relative_position_id = NEN_the_hartford_convention
+		prerequisite = { focus = NEN_fortify_the_coast }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_subject = no
+		}
+		completion_reward = {
+			add_popularity = { ideology = liberalism popularity = -0.20 }
+			add_popularity = { ideology = conservatism popularity = 0.20 }
+			set_politics = { ruling_party = conservatism }
+		}
+	}
+}

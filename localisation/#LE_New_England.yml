@@ -1,0 +1,67 @@
+﻿l_english: 
+
+### PARTIES ###
+ NEN_proletarianism_party:0 "American Workers Party"
+ NEN_mutualism_party:0 "American Workers Party"
+ NEN_collectivism_party:0 "American Workers Party"
+ NEN_despotism_party:0 "American National Workers Party"
+ NEN_labryscism_party:0 "American National Workers Party"
+ NEN_socialism_party:0 "Socialist Party"
+ NEN_liberalism_party:0 "Federalist Party"
+ NEN_conservatism_party:0 "Democratic Party"
+ NEN_rexism_party:0 "American Monarchist Party"
+ NEN_absolutism_party:0 "American Monarchist Party"
+ NEN_royalism_party:0 "American Monarchist Party"
+ NEN_theocracy_party:0 "American Monarchist Party"
+ 
+### Cosmetic Tags ###
+
+### Ministers ###
+ # Head Of State
+ NEN_calvin_coolidge:0 "Calvin Coolidge"
+ # Secondary Head
+ NEN_frank_lowden:0 "Frank Lowden"
+ # Foriegn Minister
+ NEN_Frank_B_Kellogg:0 "Frank B. Kellogg"
+ # Minister Of Defence
+ NEN_John_Pershing:0 "John Pershing"
+ # Economic Minister
+ NEN_Andrew_Mellon:0 "Andrew Mellon"
+ # Minister Of The Interior
+ NEN_Hubert_Work:0 "Hubert Work"
+ # Minister Of Security
+ NEN_J_Edgar_Hoover:0 "Edgar Hoover"
+ 
+### Ideas ###
+
+### Tooltips ###
+
+### Global / Country Flags ###
+
+### Focus Tree ###
+ NEN_the_minutemen:0 "The Minutemen"
+ NEN_the_minutemen_desc:0 ""
+ NEN_the_hartford_convention:0 "The Hartford Convention"
+ NEN_the_hartford_convention_desc:0 ""
+ NEN_a_messenger_from_london:0 "A messenger from London..."
+ NEN_a_messenger_from_london_desc:0 ""
+ NEN_the_patriots_dream:0 "The Patriot's Dream"
+ NEN_the_patriots_dream_desc:0 ""
+ NEN_a_necessary_sacrifice:0 "A necessary sacrifice"
+ NEN_a_necessary_sacrifice_desc:0 ""
+ NEN_spirit_of_bunker_hill:0 "Spirit of Bunker Hill"
+ NEN_spirit_of_bunker_hill_desc:0 ""
+ NEN_drive_them_back:0 "Drive them back!"
+ NEN_drive_them_back_desc:0 ""
+ NEN_revise_the_convention:0 "Revise the convention"
+ NEN_revise_the_convention_desc:0 ""
+ NEN_the_governorgeneral:0 "The Governor-General"
+ NEN_the_governorgeneral_desc:0 ""
+ NEN_long_live_the_republic:0 "Long live the Republic!"
+ NEN_long_live_the_republic_desc:0 ""
+ NEN_the_dominion_of_new_england:0 "The Dominion of New England"
+ NEN_the_dominion_of_new_england_desc:0 ""
+ NEN_the_ivy_league:0 "The Ivy League"
+ NEN_the_ivy_league_desc:0 ""
+ 
+### Events ###

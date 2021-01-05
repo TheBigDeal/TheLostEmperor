@@ -46,6 +46,9 @@ scripted_gui = {
 			gp_close_button_click = {
 				set_variable = { open_great_power_container = 0 }
 			}
+			gp_refresh_button_click = {
+				load_great_powers_array = yes
+			}
 		}
 	}
 }
