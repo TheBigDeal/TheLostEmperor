@@ -20,11 +20,6 @@ set_politics = {
 	elections_allowed = no
 }
 
-declare_war_on = {
-    target = TUR
-    type = annex_everything
-}
-
 set_popularities = {
     mutualism = 80
     rexism = 20
