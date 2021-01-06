@@ -1,7 +1,0 @@
-﻿l_english:
- GAS_ATTACK:0 "Issue Gas Attack"
- GAS_ATTACK_DESC:0 "Gives the army clearance to use their issued Gas Cannisters, deals MASSIVE damage to units without gas masks."
- ABILITY_GAS_ATTACK_TOOLTIP:0 "Use §R5000§! Gas Cannisters against the enemy\n\n§YEffects:§!\n    Allows §MGas Attack Tactics§! for Selected Army Group."
- tactic_gas_attack:0 "Chemical Gas Attack"
- tactic_gas_counterattack:0 "Chemical Gas Counter-Attack"
- state_in_HRE:0 "Test"

@@ -1,8 +1,16 @@
 ideas = {
 	country = {
 	
-		SWE_en_svensk_tiger = {
-		
+		en_svensk_tiger = {
+			
+			visible = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = liberalism
+			}
+
 			removal_cost = -1
 
 			picture = generic_spy_intel
@@ -12,27 +20,8 @@ ideas = {
 				enemy_justify_war_goal_time = 0.1
 			}
 		}
-		SWE_finnish_oposition = {
-		
-			picture = generic_spy_intel
-			
-			modifier = {
-				stability = -0.1
-			}
-		}
-		SWE_traditiona_values = {
-		
-			picture = generic_spy_intel
-			
-			modifier = {
-				stability_weekly = -0.005
-				political_power_gain = 0.20
-			}
-		}
 	
 	}
-	
-	
 
 	political_advisor = {
 

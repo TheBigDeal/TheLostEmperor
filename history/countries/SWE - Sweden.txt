@@ -4,24 +4,6 @@ oob = "SWE_1936"
 
 set_research_slots = 3
 
-set_oob = "SWE_1928"
-if = {
-    limit = {
-        has_dlc = "Man the Guns"
-    }
-    set_naval_oob = "SWE_1928_Naval"
-    else = {
-        set_naval_oob = "SWE_1928_Naval_Legacy"
-    }
-}
-
-load_oob = "SWE_Motorized"
-
-Add_ideas = {
-
-SWE_finnish_oposition
-
-}
 
 set_technology = {
 	infantry_weapons = 1
@@ -54,14 +36,14 @@ set_popularities = {
     collectivism = 8
 }
 
-set_convoys = 200
-set_stability = 0.6
-set_warsupport = 0.7
+set_convoys = 25
+set_stability = 0.9
+
 
 
 
 create_country_leader = {
-	name = "Gustaf Adolf the Fifth of Bernadotte"
+	name = "Oscar Gustaf Adolf Bernadotte V"
 	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
 	picture = "Portrait_Sweden_Gustaf_V.tga"
 	expire = "1950.10.29"
@@ -72,7 +54,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Gustaf Adolf the Fifth of Bernadotte"
+	name = "Oscar Gustaf Adolf Bernadotte V"
 	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
 	picture = "Portrait_Sweden_Gustaf_V.tga"
 	expire = "1950.10.29"
@@ -116,15 +98,4 @@ create_equipment_variant = {
 		sub_stealth_upgrade = 1
 		sub_torpedo_upgrade = 1
 	}
-create_equipment_variant = {
-    name = "Svea Class"
-    type = costal_defense_ship
-	upgrades = {
-	     medium_battery_2 = 1
-		 secondary_battery_2 = 2
-		 secondary_battery = 1
-		 engine_upgrade = 3
-	}
-
-    }
 }

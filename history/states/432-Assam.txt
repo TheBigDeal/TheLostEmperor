@@ -8,14 +8,15 @@ state={
 	
 	resources={
 		oil=6
+		wood = 13
 	}
 
 	history={
-		owner = RAJ
+		owner = BNG
 		buildings = {
 			infrastructure = 3
 		}
-
+		add_core_of = BNG
 	}
 
 	provinces={
