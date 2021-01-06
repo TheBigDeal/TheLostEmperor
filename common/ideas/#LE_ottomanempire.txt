@@ -1,15 +1,26 @@
 ideas = {
 	country = {
+		TUR_rebels_to_the_last_breath = {
+			picture = GFX_idea_Prussian_Militarism
+			visible = {
+				always = yes
+			}
+			modifier = {
+				army_core_defence_factor = 1
+				army_core_attack_factor = 1
+				army_org_factor = 1
+				conscription = 0.20
+			}
+		}
+	
 		TUR_internal_instability = {
 			picture = GFX_idea_Prussian_Militarism
 			visible = {
 				always = yes
 			}
 			modifier = {
-				conscription = 0.02
-				justify_war_goal_time = 0.75
-				army_org_Factor = -0.5
-				army_attack_factor = -0.1
+				stability_factor = -0.20
+				political_power_factor = -0.2
 			}
 		}
 		TUR_rebellious_subject_states = {
@@ -18,7 +29,6 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				conscription = 0.02
 				justify_war_goal_time = 0.75
 				army_org_Factor = -0.5
 				army_attack_factor = -0.1

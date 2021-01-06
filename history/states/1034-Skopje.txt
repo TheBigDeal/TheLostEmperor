@@ -1,0 +1,23 @@
+state={
+	id=1034
+	name="STATE_1034"
+	
+	history={
+		owner = MAC
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			3882 10 
+		}
+		add_core_of = MAC
+	}
+	
+	provinces={
+		867 3882 11832 
+	}
+	manpower=1658932
+	buildings_max_level_factor=1.000
+}

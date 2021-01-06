@@ -1,10 +1,12 @@
 ﻿capital = 106
 
-set_province_controller = 3882 }
-set_province_controller = 11832 }
-set_province_controller = 867 }
 
 OOB = "MACEDONIA_1928"
+
+add_ideas = {
+	TUR_rebels_to_the_last_breath
+}
+
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1
