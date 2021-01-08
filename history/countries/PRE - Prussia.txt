@@ -81,7 +81,7 @@ give_guarantee = HRE
 
 create_country_leader = {
 	name = "Heinrich von Hohenzollern"
-	desc = "POLITICS_KING_ZOG_DESC"
+	desc = "POLITICS_HEINRICH_VON_HOHENZOLLERN_DESC"
 	picture = "Portrait_Heinrich.tga"
 	expire = "1950.4.6"
 	ideology = absolutism_ideology

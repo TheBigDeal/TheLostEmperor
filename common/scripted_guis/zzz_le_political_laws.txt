@@ -481,42 +481,42 @@ scripted_gui = {
 			################################################
 			law_political_parties_btn_1_click = {
 				if = {
-					limit = { NOT = { has_idea = law_1_only_underground } }
+					limit = { NOT = { has_idea = law_1_only_underground } has_political_power > 299 }
 					set_variable = { open_law_window = 1 }
 					set_variable = { law_1_only_underground_var = 1 }
 				}
 			}
 			law_political_parties_btn_2_click = {
 				if = {
-					limit = { NOT = { has_idea = law_1_harrassment } }
+					limit = { NOT = { has_idea = law_1_harrassment } has_political_power > 299 }
 					set_variable = { open_law_window = 1 }
 					set_variable = { law_1_harrassment_var = 1 }
 				}
 			}
 			law_political_parties_btn_3_click = {
 				if = {
-					limit = { NOT = { has_idea = law_1_gerrymandering } }
+					limit = { NOT = { has_idea = law_1_gerrymandering } has_political_power > 299 }
 					set_variable = { open_law_window = 1 }
 					set_variable = { law_1_gerrymandering_var = 1 }
 				}
 			}
 			law_political_parties_btn_4_click = {
 				if = {
-					limit = { NOT = { has_idea = law_1_open_ballots } }
+					limit = { NOT = { has_idea = law_1_open_ballots } has_political_power > 299 }
 					set_variable = { open_law_window = 1 }
 					set_variable = { law_1_open_ballots_var = 1 }
 				}
 			}
 			law_political_parties_btn_5_click = {
 				if = {
-					limit = { NOT = { has_idea = law_1_confidential_ballots } }
+					limit = { NOT = { has_idea = law_1_confidential_ballots } has_political_power > 299 }
 					set_variable = { open_law_window = 1 }
 					set_variable = { law_1_confidential_ballots_var = 1 }
 				}
 			}
 			law_vote_franchise_btn_1_click = {
 				if = {
-					limit = { NOT = { has_idea = law_2_no_voting } }
+					limit = { NOT = { has_idea = law_2_no_voting } has_political_power > 299 }
 					set_variable = { open_law_window = 1 }
 					set_variable = { law_2_no_voting_var = 1 }
 				}

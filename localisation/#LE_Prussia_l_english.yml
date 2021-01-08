@@ -58,6 +58,8 @@
  PRE_proletarianism_party:0 "Peoples Socialist Party"
  
 ### Ministers ###
+ #Leader
+ POLITICS_HEINRICH_VON_HOHENZOLLERN_DESC:0 "Heinrich Von Hohenzollern:\n\nHeinrich Von Hohenzollern is the second son to former King Frederick III of Prussia. Heinrich came to power when his father died on March 9th, 1888, who died of throat cancer. On his death bed the Prussian king proclaimed the heir apparent Wilhelm, kill no longer be heir, and instead Heinrich shall take the throne. This news came as a surprise to the entire nation, most most importantly, to Wilhelm. Heinrich has no choice but to accept the crown and ascend to the throne. In the years afterwards Wilhelm would never live this down, but alas there was nothing he could do. \n\nHeinrichs reign has so far been successful, and the king is loved by the people, however more conservative citizens and nobles of the country do not take too kindly to Heinrich. In their opinion he has been too focuses on Internal affairs, and has not been doing enough to expand the nation. The lack of wars and stagnation of territorial expansion has caused convervatives in the country to become more radical and hostile. Today Prussia seems to be split between the king, and the old ways of war."
  # Head Of State
  #USA_calvin_coolidge:0 "Calvin Coolidge"
  # Secondary Head

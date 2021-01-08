@@ -23,7 +23,7 @@ ideas = {
 				refresh_economy = yes
 			}
 			modifier = {
-				stability_factor = -0.08
+				stability_factor = -0.05
 				drift_defence_factor = 0.15
 			}
 			cancel_if_invalid = no
@@ -35,8 +35,7 @@ ideas = {
 				refresh_economy = yes
 			}
 			modifier = {
-				stability_factor = -0.5
-				drift_defence_factor = 0.08
+				drift_defence_factor = 0.05
 			}
 			cancel_if_invalid = no
 		}
@@ -48,7 +47,7 @@ ideas = {
 			}
 			modifier = {
 				stability_factor = 0.05
-				drift_defence_factor = -0.03
+				drift_defence_factor = -0.05
 			}
 			cancel_if_invalid = no
 		}
@@ -59,8 +58,8 @@ ideas = {
 				refresh_economy = yes
 			}
 			modifier = {
-				stability_factor = 0.10
-				drift_defence_factor = -0.10
+				stability_factor = 0.15
+				drift_defence_factor = -0.15
 			}
 			cancel_if_invalid = no
 		}
@@ -73,25 +72,25 @@ ideas = {
 		law_2_no_voting = {
 			default = yes
 			modifier = {
-				stability_factor = -0.20
+				stability_factor = -0.10
 			}
 			cancel_if_invalid = no
 		}
 		law_2_execuitive_comittee = {
 			modifier = {
-				stability_factor = -0.15
+				stability_factor = -0.05
 			}
 			cancel_if_invalid = no
 		}
 		law_2_wealth = {
 			modifier = {
-				stability_factor = -0.10
+				stability_factor = -0.03
 			}
 			cancel_if_invalid = no
 		}
 		law_2_only_men = {
 			modifier = {
-				stability_factor = 0.05
+				stability_factor = 0
 			}
 			cancel_if_invalid = no
 		}

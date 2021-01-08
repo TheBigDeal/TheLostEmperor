@@ -37,7 +37,7 @@ guiTypes = {
 				font = "hoi_36header"
 				text = "Rank"
 				maxWidth = 400
-				maxHeight = 400
+				maxHeight = 100
 				fixedsize = no
 				format = left		
 				alwaystransparent = no
@@ -48,7 +48,7 @@ guiTypes = {
 				font = "hoi_36header"
 				text = "Name"
 				maxWidth = 400
-				maxHeight = 400
+				maxHeight = 100
 				fixedsize = no
 				format = left		
 				alwaystransparent = no
@@ -59,7 +59,7 @@ guiTypes = {
 				font = "hoi_36header"
 				text = "Total Score"
 				maxWidth = 400
-				maxHeight = 400
+				maxHeight = 100
 				fixedsize = no
 				format = left		
 				alwaystransparent = no
@@ -117,11 +117,11 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "gp_title"
-			position = { x = 60 y = 0 }
+			position = { x = 360 y = 0 }
 			font = "hoi_36header"
 			text = "Great Powers"
 			maxWidth = 400
-			maxHeight = 400
+			maxHeight = 50
 			fixedsize = no
 			format = center		
 			alwaystransparent = no
@@ -180,10 +180,10 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "gp_rank"
-			position = { x = -288 y = 8 }
+			position = { x = 10 y = 8 }
 			font = "hoi_36header"
 			text = "gp_rank"
-			maxWidth = 700
+			maxWidth = 100
 			maxHeight = 400
 			fixedsize = no
 			format = center		

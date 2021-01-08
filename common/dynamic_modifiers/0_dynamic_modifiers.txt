@@ -54,14 +54,19 @@ LE_ibadi_radicalism_modifier = {
     theocracy_drift = global.LE_ibadi_radicalism_var
 }
 
+LE_tur_rebels_modifier = {
+	enable = { has_idea = TUR_rebels_to_the_last_breath }
+	army_core_defence_factor = TUR.TUR_rebels_strength
+	army_core_attack_factor = TUR.TUR_rebels_strength
+	army_org_factor = TUR.TUR_rebels_strength
+	conscription = 0.20
+}
 
 sabotaged_resources = {
 	remove_trigger = { 
 		has_resistance = no
 	}
-	
 	icon = GFX_modifiers_sabotaged_resource
-	
 	temporary_state_resource_oil = sabotaged_oil
 	temporary_state_resource_aluminium = sabotaged_aluminium
 	temporary_state_resource_rubber = sabotaged_rubber

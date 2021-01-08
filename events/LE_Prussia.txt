@@ -1092,17 +1092,17 @@ country_event = { #The Prussians Have Defeated Us
 	id = le_prussia.59
 	title = le_prussia.59.t
 	desc = le_prussia.59.d
-	trigger = {
-		tag = POL
-		PRE = { has_war_with = POL }
-		PRE = { has_country_flag = SUBJUGATING_POLAND }
-		surrender_progress > 0.6
-	}
+	is_triggered_only = yes
 	option = { #Surrender
 		name = le_prussia.59.a
-		PRE = { clr_country_flag = SUBJUGATING_POLAND }
-		PRE = { set_country_flag = SUBJUGATED_POLAND }
-		PRE = { country_event = { id = le_prussia.66 } }
+		effect_tooltip = {
+			PRE = {
+				puppet = POL
+				transfer_state = 86
+				86 = { add_compliance = 20 }
+				POL = { set_cosmetic_tag = PRE_PUPPET_POL }
+			}
+		}
 	}
 }
 country_event = { #Treaty Of Warsaw
@@ -1135,8 +1135,7 @@ country_event = { #Belerusian's Break Free
 		tag = POL
 		PRE = { has_war_with = POL }
 		PRE = { has_country_flag = SUBJUGATING_POLAND }
-		surrender_progress > 0.25
-		
+		surrender_progress > 0.50
 	}
 	option = { #Belerus Breaks Free
 		name = le_prussia.60.a
@@ -1147,21 +1146,6 @@ country_event = { #Belerusian's Break Free
 			}
 			SOV = { country_event = { id = le_russia_unrest.5 days = 10 } }
 		}
-	}
-}
-country_event = { #Ukrainians's Break Free
-	id = le_prussia.62
-	title = le_prussia.62.t
-	desc = le_prussia.62.d
-	trigger = {
-		tag = POL
-		PRE = { has_war_with = POL }
-		PRE = { has_country_flag = SUBJUGATING_POLAND }
-		surrender_progress > 0.25
-		
-	}
-	option = { #Belerus Breaks Free
-		name = le_prussia.62.a
 		if = {
 			limit { country_exists = UKR }
 			UKR = { transfer_state = 93 }
@@ -1170,6 +1154,17 @@ country_event = { #Ukrainians's Break Free
 		else = {
 			release = VLH
 		}
+		PRE = { country_event = { id = le_prussia.62 } }
+	}
+}
+country_event = { #Ukrainians's Break Free
+	id = le_prussia.62
+	title = le_prussia.62.t
+	desc = le_prussia.62.d
+	is_triggered_only = yes
+	option = { #Belerus Breaks Free
+		name = le_prussia.62.a
+
 	}
 }
 
@@ -1179,27 +1174,16 @@ country_event = { #Occupy Holstein
 	desc = le_prussia.63.d
 	trigger = {
 		tag = DEN
-		OR = {
-			AND = {
-				99 = { is_controlled_by = PRE }
-				99 = { is_owned_by = DEN }
-				1018 = { is_controlled_by = PRE }
-				1018 = { is_owned_by = DEN }
-				1027 = { is_controlled_by = PRE }
-				1027 = { is_owned_by = DEN }
-				785 = { is_controlled_by = PRE }
-				785 = { is_owned_by = SHL }
-				58 = { is_controlled_by = PRE }
-				58 = { is_owned_by = SHL }
-			}
-			surrender_progress > 0.40
-		}
-		PRE = { has_war_with = SHL }
-		PRE = { has_global_flag = OCCUPY_HOLSTEIN }
+		99 = { is_controlled_by = PRE }
+		1018 = { is_controlled_by = PRE }
+		1027 = { is_controlled_by = PRE }
+		785 = { is_controlled_by = PRE }
+		58 = { is_controlled_by = PRE }
+		PRE = { has_war_with = DEN }
+		PRE = { has_country_flag = OCCUPY_HOLSTEIN }
 	}
 	option = { #Belerus Breaks Free
 		name = le_prussia.63.a
-		
 		clr_country_flag = OCCUPY_HOLSTEIN
 		set_global_flag = VICTORY_OVER_DANES
 		PRE = { country_event = { id = le_prussia.65 } }

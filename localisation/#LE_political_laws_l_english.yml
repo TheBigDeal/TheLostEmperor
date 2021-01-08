@@ -22,9 +22,8 @@
  LE_conscription_tt:0 "§GClick to change§!§Y Conscription Law§!"
  LE_economic_tt:0 "§GClick to change§!§Y Economic Law§!"
  LE_trade_tt:0 "§GClick to change§!§Y Trade Law§!"
- #LAW TOOLTIPS
- #######################################
- LE_political_parties_1_tt:0 "§YPolitical Parties: Only Underground§!\n\nCost (£pol_power)): §R300§!\n\n§YTo Enact:§!\n   Cannot have ideology: §YLiberalism§!\n   Cannot have ideology: §YConservatism§!\n   Cannot have ideology: §YSocialism§!\n§YEffects:§!\n   Lose Income ( £texticon_money  ): §R-140§! \n   Stability §R-10%§!\n   Ideology Drift Defence §G+25%§!"
+ 
+ 
  #EFFECT CHANGES
  #######################################
  EFFECT_CHANGE_LAW_le_religion:0 "Change State Religion to '$NAME|Y$' which grants ($DESC$)."
@@ -125,10 +124,27 @@
  LE_WIP_Modifier:0 "No Current Effects"
  LE_Catholicism_Modifier:0 "War Support: §G+10.00%§!\nIdeology Drift Defence: §G+10.00%§!\n§YEnables Papal Actions§!"
  LE_Orthodoxy_Modifier:0 "Conscription: §G+5.00%§!\nIdeology Drift Defence: §R-8.00%§!"
- #CATEGORIES
- #######################################
- law_1_only_underground:0 "Only Underground"
- #POLITICAL IDEA LAWS
+ 
+ 
+ #########################
+ ####  National Laws  ####
+ #########################
+ # Only Underground
+ law_1_only_underground:0 "Political Parties: Only Underground"
+ LE_political_parties_1_tt:0 "§YPolitical Parties: Only Underground§!\n\nCost (£pol_power)): §R300§!\n\n§YTo Enact:§!\n   Cannot have ideology: §YLiberalism§!\n   Cannot have ideology: §YConservatism§!\n   Cannot have ideology: §YSocialism§!\n§YEffects:§!\n   Stability §R-10%§!\n   Ideology Drift Defence §G+25%§!"
+ # Harrassment
+ law_1_harrassment:0 "Political Parties: Hassassment"
+ LE_political_parties_2_tt:0 "§YPolitical Parties: Harrassment§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Stability §R-5%§!\n   Ideology Drift Defence §G+15%§!"
+ # Gerrymandering
+ law_1_gerrymandering:0 "Political Parties: Gerrymandering"
+ LE_political_parties_3_tt:0 "§YPolitical Parties: Gerrymandering§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Ideology Drift Defence §G+5%§!"
+ # Open Ballots
+ law_1_open_ballots:0 "Political Parties: Open Ballots"
+ LE_political_parties_4_tt:0 "§YPolitical Parties: Open Ballots§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Stability §G5%§!\n   Ideology Drift Defence §R-5%§!"
+ # Confidential Ballots
+ law_1_confidential_ballots:0 "Political Parties: Confidential Ballets"
+ LE_political_parties_5_tt:0 "§YPolitical Parties: Confidential Ballets§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Stability §G15%§!\n   Ideology Drift Defence §R-15%§!"
+ 
  law_3_all_allowed:0 "Unrestricted Trade Unions"
  
  

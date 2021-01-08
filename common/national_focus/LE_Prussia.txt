@@ -442,7 +442,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 100 }
 		completion_reward = {
-			set_global_flag = OCCUPY_HOLSTEIN
+			set_country_flag = OCCUPY_HOLSTEIN
 			create_wargoal = { target = SHL type = annex_everything }
 		}
 	}

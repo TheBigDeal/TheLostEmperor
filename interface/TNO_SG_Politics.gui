@@ -346,8 +346,7 @@ guiTypes = {
 					name = "category_1_law_political_parties_name"
 					position = { x = 28 y = -10 }
 					font = "vic_18"
-					text = "tno_political_parties"
-					pdx_tooltip = "tno_political_parties"
+					text = "Political Parties"
 					maxWidth = 100
 					maxHeight = 15
 					fixedsize = yes
@@ -365,7 +364,7 @@ guiTypes = {
 					name = "law_political_parties_btn_2"
 					position = { x = 0 y = 44 }
 					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_political_parties_2_tt"
 					buttonFont = "vic_18"
 					text = "Harrassment"
 					Orientation = "UPPER_LEFT"
@@ -374,7 +373,7 @@ guiTypes = {
 					name = "law_political_parties_btn_3"
 					position = { x = 0 y = 68 }
 					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_political_parties_3_tt"
 					buttonFont = "vic_18"
 					text = "Gerrymandering"
 					Orientation = "UPPER_LEFT"
@@ -383,7 +382,7 @@ guiTypes = {
 					name = "law_political_parties_btn_4"
 					position = { x = 0 y = 92 }
 					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_political_parties_4_tt"
 					buttonFont = "vic_18"
 					text = "Open Ballots"
 					Orientation = "UPPER_LEFT"
@@ -392,7 +391,7 @@ guiTypes = {
 					name = "law_political_parties_btn_5"
 					position = { x = 0 y = 116 }
 					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_political_parties_5_tt"
 					buttonFont = "vic_18"
 					text = "Confidential Ballots"
 					Orientation = "UPPER_LEFT"

@@ -44,7 +44,7 @@ add_ideas = {
 
 set_politics = {	
 	ruling_party = liberalism
-	last_election = "1932.11.8"
+	last_election = "1924.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
