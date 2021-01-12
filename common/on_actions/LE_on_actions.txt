@@ -11,7 +11,7 @@ on_actions = {
 			
 			set_variable = { global.LE_sunni_radicalism_var = 0.20 }
 			set_variable = { global.LE_shia_radicalism_var = 0.60 }
-			set_variable = { global.LE_ibadi_radicalism_var = 0.30} 
+			set_variable = { global.LE_ibadi_radicalism_var = 0.30 } 
 			
 			HRE_load_emperor_array = yes
 			HRE_load_elector_array = yes

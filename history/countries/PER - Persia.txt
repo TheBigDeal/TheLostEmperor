@@ -4,6 +4,9 @@ oob = "PER_1936"
 
 add_ideas = {
 	le_religion_shia
+	PER_crumbling_bureaucracy
+	PER_fractured_religious_unity
+	PER_army_of_the_conqueror
 }
 
 # Starting tech
@@ -15,7 +18,7 @@ set_technology = {
 	CAS1 = 1
 }
 
-set_convoys = 10
+set_convoys = 100
 set_politics = {	
 	ruling_party = absolutism
 	last_election = "1936.1.1"
