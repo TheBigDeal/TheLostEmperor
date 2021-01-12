@@ -25,3 +25,7 @@ autonomy_emarah:0 "Emarah"
 PER_unifier_died:0 "Death of the Unifier"
 le_persia.1.t:0 "Death of the Unifier"
 le_persia.1.a:0 "A new era has begun."
+
+PER_crumbling_bureaucracy:0 "Crumbling Bureaucracy"
+PER_fractured_religious_unity:0 "Fractured Religious Unity"
+PER_army_of_the_conqueror:0 "The Conqueror's Army"
