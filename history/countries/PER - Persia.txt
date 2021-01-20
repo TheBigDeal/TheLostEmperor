@@ -47,31 +47,31 @@ if = {
 	}
 	set_autonomy = {
 		target = TBR
-		autonomous_state = autonomy_emarah
+		autonomous_state = autonomy_emirate
 	}
 	set_autonomy = {
 		target = MZD
-		autonomous_state = autonomy_emarah
+		autonomous_state = autonomy_emirate
 	}
 	set_autonomy = {
 		target = KHR
-		autonomous_state = autonomy_emarah
+		autonomous_state = autonomy_emirate
 	}
 	set_autonomy = {
 		target = AHV
-		autonomous_state = autonomy_emarah
+		autonomous_state = autonomy_emirate
 	}
 	set_autonomy = {
 		target = SHR
-		autonomous_state = autonomy_emarah
+		autonomous_state = autonomy_emirate
 	}
 	set_autonomy = {
 		target = AJM
-		autonomous_state = autonomy_emarah
+		autonomous_state = autonomy_emirate
 	}
 	set_autonomy = {
 		target = KRM
-		autonomous_state = autonomy_emarah
+		autonomous_state = autonomy_emirate
 	}
 	else = {
 		puppet = TBR

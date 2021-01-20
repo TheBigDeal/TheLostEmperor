@@ -1,12 +1,11 @@
-version="0.01"
+name="The Lost Emperor - Dev Build NWS"
+path="mod/TheLostEmperor/"
 tags={
 	"Alternative History"
+	"Ideologies"
 	"Gameplay"
 	"Map"
-	"National Focuses"
-	"Technologies"
-	"Military"
-	"Ideologies"
 }
-name="TheLostEmperor"
-supported_version="1.8.1"
+picture="NapWar.jpg"
+remote_file_id="1369668266"
+supported_version="1.8.*"
