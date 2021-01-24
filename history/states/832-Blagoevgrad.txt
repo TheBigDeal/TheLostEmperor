@@ -3,14 +3,14 @@ state={
 	id=832
 	name="STATE_832"
 	resources={
-		wood=7
+		wood=7.000
 	}
+
 	history={
 		owner = TUR
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-
 		}
 		victory_points = {
 			6857 3 
@@ -20,9 +20,9 @@ state={
 	}
 
 	provinces={
-		6857 9818 
+		6857 9818 13284 
 	}
 	manpower=435653
-	state_category = city
 	buildings_max_level_factor=1.000
+	state_category=city
 }
