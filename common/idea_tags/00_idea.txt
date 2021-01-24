@@ -16,6 +16,9 @@ idea_categories = {
 	law_vote_franchise = { hidden = yes cost = 0 removal_cost = -1 }
 	law_trade_unions = { hidden = yes cost = 0 removal_cost = -1 }
 	law_slavery = { hidden = yes cost = 0 removal_cost = -1 }
+	law_immigration = { hidden = yes cost = 0 removal_cost = -1 }
+	law_state_press = { hidden = yes cost = 0 removal_cost = -1 }
+	law_minorities = { hidden = yes cost = 0 removal_cost = -1 }
 	#Vanilla
 	hidden_ideas = {
 		hidden = yes

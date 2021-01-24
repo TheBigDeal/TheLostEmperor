@@ -13,11 +13,10 @@ country_event = { #Prince Wilhelm Visits the Capital
 	option = { #Accept Wilhelm
 		name = le_prussia.1.a
 		set_country_flag = PRE_wilhelm_in_capital
-		complete_national_focus = PRE_THE_KING_IS_SICK
+		complete_national_focus = PRE_ROYAL_VISITATION
 	}
 	option = { #Turn Wilhelm Away
 		name = le_prussia.1.b
-		complete_national_focus = PRS_ERADICATE_THE_OPPOSITION
 	}
 }
 country_event = { #Wilhelm Makes A Move
@@ -28,14 +27,14 @@ country_event = { #Wilhelm Makes A Move
 	is_triggered_only = yes
 	option = {
 		name = le_prussia.2.a
-		complete_national_focus = PRS_LONG_LIVE_KING_WILHELM
+		complete_national_focus = PRE_A_ROYAL_COUP
 	}
 	option = {
 		name = le_prussia.2.b
-		complete_national_focus = PRS_LONG_LIVE_KING_WALDEMAR
+		complete_national_focus = PRE_THE_RIGHTFUL_HEIR
 	}
 }
-country_event = { #Nationalist Coup
+country_event = { #Wilhelm Arrives at the Capital
 	id = le_prussia.3
 	title = le_prussia.3.t
 	desc = le_prussia.3.d
@@ -43,6 +42,11 @@ country_event = { #Nationalist Coup
 	is_triggered_only = yes
 	option = {
 		name = le_prussia.3.a
+		complete_national_focus = PRE_THE_KING_IS_DEAD
+	}
+	option = {
+		name = le_prussia.3.b
+		complete_national_focus = PRE_THE_ROYAL_DIVIDE
 	}
 }
 country_event = { #Nationalists assassinate the King, seize power
@@ -103,9 +107,17 @@ country_event = {
 	title = le_prussia.7.t
 	desc = le_prussia.7.d
 	is_triggered_only = yes
-	option = {
+	option = {`
 		name = le_prussia.7.a
 		kill_country_leader = yes
+		create_country_leader = {
+			name = "No Monarch"
+			desc = "POLITICS_HEINRICH_VON_HOHENZOLLERN_DESC"
+			picture = "Portrait_Empty_Throne.dds"
+			expire = "1970.4.6"
+			ideology = absolutism_ideology
+			traits = {}
+		}
 	}
 }
 country_event = { #Support The Prussians (GBR) / Embargo The Austrians
@@ -172,7 +184,7 @@ country_event = { #Contacted Opposition
 	option = {
 		name = le_prussia.12.a
 		country_event = { id = le_prussia.14 }
-		PRE = { complete_national_focus = PRS_PRUSSIAN_SPONSORED_ASSASSINATIONS }
+		PRE = { complete_national_focus = PRE_PRUSSIAN_SPONSORED_ASSASSINATIONS }
 	}
 }
 #country_event = { #Assassination of Hannover Ruler Failed!
@@ -353,7 +365,7 @@ country_event = { #Prussia Berlin Conference
 			GBR = { country_event = { id = le_prussia.8 }} #Support The Prussians
 			else_if = {
 				limit = {
-					has_completed_focus = PRS_NATIONALIST_MOVEMENT
+					has_completed_focus = PRE_NATIONALIST_MOVEMENT
 				}
 				random_list = {
 					60 = { BOH = { country_event = { id = le_prussia.8 }}} #Nationalist Coup
@@ -362,7 +374,7 @@ country_event = { #Prussia Berlin Conference
 			}
 			else_if = {
 				limit = {
-					has_completed_focus = PRS_LOVE_LIVE_KING_WILHELM
+					has_completed_focus = PRE_LOVE_LIVE_KING_WILHELM
 				}
 				country_event = { id = le_prussia.45 } #Load Extra Units
 			}
@@ -582,7 +594,7 @@ country_event = { #Britain gives us Hannover
 	option = { #Deny
 		name = le_prussia.29.a
 		PRE = { annex_country = { target = HAN transfer_troops = yes } }
-		PRE = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+		PRE = { complete_national_focus = PRE_NEGOTIATE_WITH_THE_BRITISH }
 	}
 }
 country_event = { #Britain offers to sell Hannover
@@ -620,8 +632,8 @@ country_event = { #Britain Wants us to Limit our Navy
 	option = { #Accept
 		name = le_prussia.31.a
 		PRE = { annex_country = { target = HAN transfer_troops = yes } }
-		PRE = { add_ideas = { prs_limited_navy }}
-		PRE = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+		PRE = { add_ideas = { PRE_limited_navy }}
+		PRE = { complete_national_focus = PRE_NEGOTIATE_WITH_THE_BRITISH }
 	}
 	option = { #Counter-Offer
 		name = le_prussia.31.b
@@ -675,8 +687,8 @@ country_event = { #Britain enforces old deal
 	option = { #Accept Prior Deal
 		name = le_prussia.34.a
 		PRE = { annex_country = { target = HAN transfer_troops = yes } }
-		PRE = { add_ideas = { prs_purchased_hannover }}
-		PRE = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+		PRE = { add_ideas = { PRE_purchased_hannover }}
+		PRE = { complete_national_focus = PRE_NEGOTIATE_WITH_THE_BRITISH }
 	}
 	option = { #Resort to Espionage
 		name = le_prussia.34.b
@@ -698,8 +710,8 @@ country_event = { #Britain accepts counter offer
 	option = { #Accept Prior Deal
 		name = le_prussia.35.a
 		PRE = { annex_country = { target = HAN transfer_troops = yes } }
-		PRE = { add_ideas = { prs_purchased_hannover_counter }}
-		PRE = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+		PRE = { add_ideas = { PRE_purchased_hannover_counter }}
+		PRE = { complete_national_focus = PRE_NEGOTIATE_WITH_THE_BRITISH }
 	}
 }
 
@@ -711,8 +723,8 @@ country_event = { #Britain enforces old deal
 	option = { #Accept Prior Deal
 		name = le_prussia.36.a
 		PRE = { annex_country = { target = HAN transfer_troops = yes } }
-		PRE = { add_ideas = { prs_limited_navy }}
-		PRE = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+		PRE = { add_ideas = { PRE_limited_navy }}
+		PRE = { complete_national_focus = PRE_NEGOTIATE_WITH_THE_BRITISH }
 	}
 	option = { #Resoft to Espionage
 		name = le_prussia.36.b
@@ -734,8 +746,8 @@ country_event = { #Britain accepts counter offer
 	option = { #Accept Prior Deal
 		name = le_prussia.37.a
 		PRE = { annex_country = { target = HAN transfer_troops = yes } }
-		PRE = { add_ideas = { prs_limited_navy_counter }}
-		PRE = { complete_national_focus = PRS_NEGOTIATE_WITH_THE_BRITISH }
+		PRE = { add_ideas = { PRE_limited_navy_counter }}
+		PRE = { complete_national_focus = PRE_NEGOTIATE_WITH_THE_BRITISH }
 	}
 }
 
@@ -781,7 +793,7 @@ country_event = { #Prussia Occupies Poznan
 #		name = le_prussia.40.a
 #		white_peace = {
 #			tag = POL
-#			message = POL_PRS_WHITE_PEACE
+#			message = POL_PRE_WHITE_PEACE
 #		}
 #		hidden_effect = { transfer_state = 86 }
 #	}
@@ -813,7 +825,7 @@ country_event = { #Prussia Occupies Poznan
 #		name = le_prussia.42.a
 #		white_peace = {
 #			tag = DEN
-#			message = DEN_PRS_WHITE_PEACE
+#			message = DEN_PRE_WHITE_PEACE
 #		}
 #		hidden_effect = { 
 #			transfer_state = 1018
@@ -852,7 +864,7 @@ country_event = { #Wilhelm Extra Units
 	is_triggered_only = yes
 	option = { #this is most unfortunate.
 		name = le_prussia.45.a
-		load_oob = "PRS_Wilhelm_Conference"
+		load_oob = "PRE_Wilhelm_Conference"
 	}
 }
 country_event = { #Militias Join the Army
@@ -862,7 +874,7 @@ country_event = { #Militias Join the Army
 	is_triggered_only = yes
 	option = { #this is most unfortunate.
 		name = le_prussia.46.a
-		load_oob = "PRS_Conference"
+		load_oob = "PRE_Conference"
 	}
 }
 country_event = { #Militias Rise up in Hannover
@@ -1314,5 +1326,253 @@ country_event = { #Referemdum Fails
 	option = { #Revolt it is.
 		name = le_prussia.71.a
 		country_event = { id = le_prussia.12 }
+	}
+}
+country_event = { #Approaching Poland
+	id = le_prussia.72
+	title = le_prussia.72.t
+	desc = le_prussia.72.d
+	is_triggered_only = yes
+	option = { #Subjugate Poland
+		name = le_prussia.72.a
+		ai_chance = { 
+			factor = 3
+			modifier = {
+				factor = 15
+				has_government = labryscism
+				has_government = despotism
+				has_government = rexism
+			}
+		}
+		complete_national_focus = { PRE_POL_SUBJUGATION }
+	}
+	option = { #Guarentee Polish Independance
+		name = le_prussia.72.a
+		ai_chance = { factor = 10 }
+		complete_national_focus = { PRE_PRE_POL_DEAL }
+	}
+	option = { #Demand Poznan
+		name = le_prussia.72.a
+		ai_chance = { factor = 10 }
+		complete_national_focus = { PRE_POL_DEMAND }
+	}
+}
+
+country_event = { #The Poznan Trade
+	id = le_prussia.73
+	title = le_prussia.73.t
+	desc = le_prussia.73.d
+	is_triggered_only = yes
+	option = { #Accept
+		name = le_prussia.72.a
+		ai_chance = { 
+			factor = 20
+		}
+		PRE = { country_event = { id = le_prussia.74 } }
+		effect_tooltip = {
+			PRE = {
+				transfer_state = 86
+				give_guarantee = POL
+			}
+		}
+	}
+	option = { #Demand Poznan
+		name = le_prussia.72.a
+		ai_chance = { factor = 5 }
+		PRE = { country_event = { id = le_prussia.75 } }
+		effect_tooltip = {
+			PRE = {
+				transfer_state = 86
+				give_guarantee = POL
+			}
+		}
+	}
+}
+
+country_event = { #The Polish are willing to trade Poznan
+	id = le_prussia.74
+	title = le_prussia.74.t
+	desc = le_prussia.74.d
+	is_triggered_only = yes
+	option = { #Accept
+		name = le_prussia.74.a
+		ai_chance = {factor = 20}
+		transfer_state = 86
+		give_guarantee = POL
+	}
+}
+
+country_event = { #The Nationalist Civil War
+	id = le_prussia.75
+	title = le_prussia.75.t
+	desc = le_prussia.75.d
+	is_triggered_only = yes
+	option = { #Side with the Monarchists
+		name = le_prussia.75.a
+		ai_chance = {factor = 20}
+		start_civil_war = {
+			ideology = labryscism
+			size = 0.50
+			only_own_territory = no
+			capital = 950
+			states = { 
+				5 67 85 188 762 950 953
+			}
+			keep_political_leader = yes
+		}
+		random_country = {
+			limit = {
+				original_tag = PRE
+				has_government = labryscism
+			}
+			set_cosmetic_tag = PRE_NATIONALIST
+		}
+		random_country = {
+			limit = {
+				original_tag = PRE
+				has_government = absolutism
+			}
+			set_cosmetic_tag = PRE_MONARCHIST
+		}
+	}
+	option = { #Side with the Nationalists
+		name = le_prussia.75.b
+		ai_chance = {factor = 0}
+		set_capital = 950
+		start_civil_war = {
+			ruling_party = labryscism
+			ideology = ROOT
+			size = 0.50
+			only_own_territory = no
+			capital = 64
+			states = { 
+				64 62 879 68 66 63 872
+			}
+			keep_political_leader = yes
+		}
+		random_country = {
+			limit = {
+				original_tag = PRE
+				has_government = labryscism
+			}
+			set_cosmetic_tag = PRE_NATIONALIST
+		}
+		random_country = {
+			limit = {
+				original_tag = PRE
+				has_government = absolutism
+			}
+			set_cosmetic_tag = PRE_MONARCHIST
+		}
+	}
+}
+
+country_event = { #Wilhelms Rebellion
+	id = le_prussia.76
+	title = le_prussia.76.t
+	desc = le_prussia.76.d
+	is_triggered_only = yes
+	option = { #Side with Wilhelm
+		name = le_prussia.76.a
+		ai_chance = {factor = 20}
+		start_civil_war = {
+			ideology = rexism
+			size = 0.50
+			only_own_territory = no
+			capital = 950
+			states = { 
+				5 67 85 188 762 950 953
+			}
+			keep_political_leader = yes
+		}
+		random_country = {
+			limit = {
+				original_tag = PRE
+				has_government = rexism
+			}
+			set_cosmetic_tag = PRE_WILHELM
+			add_ideas = { PRE_political_opposition PRE_unmaintained_navy }
+			#if = {
+			#	limit = { NOT = { tag = PRE } }
+			#	load_focus_tree = prussian_focus
+			#}
+		}
+		random_country = {
+			limit = {
+				original_tag = PRE
+				has_government = absolutism
+			}
+			set_cosmetic_tag = PRE_MONARCHIST
+			add_ideas = { PRE_political_opposition PRE_unmaintained_navy }
+			#if = {
+			#	limit = { NOT = { tag = PRE } }
+			#	load_focus_tree = prussian_focus
+			#}
+		}
+	}
+	option = { #Side with the Loyalists
+		name = le_prussia.76.b
+		ai_chance = {factor = 0}
+		set_capital = 950
+		start_civil_war = {
+			ruling_party = rexism
+			ideology = ROOT
+			size = 0.50
+			only_own_territory = no
+			capital = 64
+			states = { 
+				64 62 879 68 66 63 872
+			}
+			#keep_political_leader = yes
+		}
+		random_country = {
+			limit = {
+				original_tag = PRE
+				has_government = rexism
+			}
+			set_cosmetic_tag = PRE_WILHELM
+			add_ideas = { PRE_political_opposition PRE_unmaintained_navy }
+			if = {
+				limit = { NOT = { tag = PRE } }
+				load_focus_tree = LE_Prussia
+			}
+		}
+		random_country = {
+			limit = {
+				original_tag = PRE
+				has_government = absolutism
+			}
+			set_cosmetic_tag = PRE_MONARCHIST
+			add_ideas = { PRE_political_opposition PRE_unmaintained_navy }
+			if = {
+				limit = { NOT = { tag = PRE } }
+				load_focus_tree = LE_Prussia
+			}
+		}
+	}
+}
+
+country_event = { #Coronation of King Waldemar
+	id = le_prussia.77
+	title = le_prussia.77.t
+	desc = le_prussia.77.d
+	is_triggered_only = yes
+	option = { #Accept
+		name = le_prussia.77.a
+		ai_chance = {factor = 20}
+		add_stability = 0.10
+		add_war_support = 0.05
+	}
+}
+country_event = { #Coronation of King Wilhelm
+	id = le_prussia.78
+	title = le_prussia.78.t
+	desc = le_prussia.78.d
+	is_triggered_only = yes
+	option = { #Accept
+		name = le_prussia.78.a
+		ai_chance = {factor = 20}
+		add_stability = 0.05
+		add_war_support = 0.10
 	}
 }

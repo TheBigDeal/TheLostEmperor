@@ -57,7 +57,7 @@ puppet = AQU
 #Order matters here Daladier will start as leaders because added last
 
 create_country_leader = {
-	name = "Jamie de Borbon III"
+	name = "Jacques de Borbon I"
 	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
 	picture = "Portrait_Jaime_De_Bourbon.tga"
 	expire = "1965.1.1"
@@ -68,7 +68,7 @@ create_country_leader = {
 	id = 2
 }
 create_country_leader = {
-	name = "Jamie de Borbon III"
+	name = "Jacques de Borbon I"
 	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
 	picture = "Portrait_Jaime_De_Bourbon.tga"
 	expire = "1965.1.1"

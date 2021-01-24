@@ -28,7 +28,6 @@ set_technology = {
 }
 add_ideas = {
 	HRE_elector
-	PRE_PRUSSIAN_MILITARISM
 	PRE_political_opposition
 	PRE_unmaintained_navy
 }
@@ -102,25 +101,13 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Heinrich von Hohenzollern"
-	desc = "POLITICS_KING_ZOG_DESC"
-	picture = "Portrait_Heinrich.tga"
-	expire = "1950.4.6"
-	ideology = rexism_ideology
-	traits = {
-		Political_Dancer
-	}
-}
-
-create_country_leader = {
-	name = "Wilhelm II von Hehenzollern"
+	name = "Wilhelm II von Hohenzollern"
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "Portrait_Prussia_Wilhelm_II.tga"
 	id = 2
 	expire = "1950.4.6"
 	ideology = rexism_ideology
 	traits = {
-		Political_Dancer
 		Warmonger
 	}
 }

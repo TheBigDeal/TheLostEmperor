@@ -129,6 +129,9 @@
  #########################
  ####  National Laws  ####
  #########################
+ 
+# Political Parties
+#############
  # Only Underground
  law_1_only_underground:0 "Political Parties: Only Underground"
  LE_political_parties_1_tt:0 "§YPolitical Parties: Only Underground§!\n\nCost (£pol_power)): §R300§!\n\n§YTo Enact:§!\n   Cannot have ideology: §YLiberalism§!\n   Cannot have ideology: §YConservatism§!\n   Cannot have ideology: §YSocialism§!\n§YEffects:§!\n   Stability §R-10%§!\n   Ideology Drift Defence §G+25%§!"
@@ -145,12 +148,60 @@
  law_1_confidential_ballots:0 "Political Parties: Confidential Ballets"
  LE_political_parties_5_tt:0 "§YPolitical Parties: Confidential Ballets§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Stability §G15%§!\n   Ideology Drift Defence §R-15%§!"
  
- law_3_all_allowed:0 "Unrestricted Trade Unions"
+# Vote Franchise
+####################
+ # Only Underground
+ law_2_no_voting:0 "Vote Franchise: No Voting"
+ LE_vote_franchise_1_tt:0 "§YVote Franchise: No Voting§!\n\nCost (£pol_power)): §R300§!\n\n§YTo Enact:§!\n   Cannot have ideology: §YLiberalism§!\n   Cannot have ideology: §YConservatism§!\n   Cannot have ideology: §YSocialism§!\n§YEffects:§!\n   Public §YElections§! Will Not Be Held\n   Political Power Cost: §Y+5%§!\n   Party Popularity Stability Factor: §R-25%§!"
+ # Harrassment
+ law_2_execuitive_comittee:0 "Vote Franchise: Execuitive Comittee"
+ LE_vote_franchise_2_tt:0 "§YVote Franchise: Execuitive Comittee§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Public §YElections§! Will Be Held\n   Political Power Cost: §Y+10%§!\n   Party Popularity Stability Factor: §R-15%§!"
+ # Gerrymandering
+ law_2_wealth:0 "Vote Franchise: Wealth Based Voting"
+ LE_vote_franchise_3_tt:0 "§YVote Franchise: Wealth Based Voting§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Public §YElections§! Will Be Held\n   Political Power Cost: §Y+15%§!\n   Party Popularity Stability Factor: §R-5%§!"
+ # Open Ballots
+ law_2_only_men:0 "Vote Franchise: Only Men"
+ LE_vote_franchise_4_tt:0 "§YVote Franchise: Only Men§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Public §YElections§! Will Be Held\n   Political Power Cost: §Y+20%§!\n   Party Popularity Stability Factor: §G+5%§!"
+ # Confidential Ballots
+ law_2_universal_voting:0 "Vote Franchise: Universial Voting"
+ LE_vote_franchise_5_tt:0 "§YVote Franchise: Universial Voting§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Public §YElections§! Will Be Held\n   Political Power Cost: §Y+25%§!\n   Party Popularity Stability Factor: §G+15%§!"
  
- 
- 
- 
- 
+# Trade Unions
+####################
+ # Only Underground
+ law_3_illegal:0 "Trade Unions: Illegal"
+ LE_trade_unions_1_tt:0 "§YTrade Unions: Illegal§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Factory Max Efficiency: §R-15%§!\n   Ideology Drift Defence §Y+10%§!"
+ # Harrassment
+ law_3_state_controlled:0 "Trade Unions: State Controlled"
+ LE_trade_unions_2_tt:0 "§YTrade Unions: State Controlled§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Factory Max Efficiency: §R-5%§!\n   Ideology Drift Defence §Y+5%§!"
+ # Gerrymandering
+ law_3_non_socialist_allowed:0 "Trade Unions: Non-Socialist Only"
+ LE_trade_unions_3_tt:0 "§YTrade Unions: Non-Socialist Only§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Factory Max Efficiency: §G+5%§!\n   Ideology Drift Defence §Y-5%§!"
+ # Open Ballots
+ law_3_all_allowed:0 "Trade Unions: Unrestricted"
+ LE_trade_unions_4_tt:0 "§YTrade Unions: Unrestricted§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Factory Max Efficiency: §G+15%§!\n   Ideology Drift Defence §Y-10%§!\n   §RCollectivism Drift +0.03%§!"
+# Slavery
+####################
+ # Illegal
+ law_4_not_allowed:0 "Slavery: Illegal"
+ LE_slavery_1_tt:0 "§YSlavery: Illegal§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   No Effects"
+ # Legal
+ law_4_allowed:0 "Slavery: Legal"
+ LE_slavery_2_tt:0 "§YSlavery: Legal§!\n\nCost (£pol_power)): §R300§!\n\n§YTo Enact:§!\n   Cannot have ideology: §YLiberalism§!\n   Cannot have ideology: §YConservatism§!\n   Cannot have ideology: §YSocialism§!\n   Cannot have ideology: §YCollectivism§!\n   Cannot have ideology: §YProletarianism§!\n   Cannot have ideology: §YMutualism§!\n§YEffects:§!\n   Stability: §R-20%§!\n   War Support: §R-20%§!\n   Political Power Factor: §R-15%§!\n   Factory Max Efficiency: §G+10%§!\n   Factory Efficiency Gain: §G+10%§!"
+# Immigration
+####################
+ # Closed Borders
+ law_5_closed_borders:0 "Immigration: Closed Borders"
+ LE_immigration_1_tt:0 "§YImmigration: Closed Borders§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Encryption Factor: §Y+25§!\n   Enemy Operative Detection Chance: §Y+20§!"
+ # Quota Immigration
+ law_5_quota_immigration:0 "Immigration: Quota Immigration"
+ LE_immigration_2_tt:0 "§YImmigration: Quota Immigration§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Monthly Population: §Y+10%§!\n   Encryption Factor: §G+5%§!\n   Enemy Operative Detection Chance: §G+5%§!"
+ # Open Immigration
+ law_5_open_immigration:0 "Immigration: Open Immigration"
+ LE_immigration_3_tt:0 "§YImmigration: Open Immigration§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Monthly Population: §Y+15%§!"
+ # Naturalization Immigration
+ law_5_naturalization:0 "Immigration: Naturalization"
+ LE_immigration_4_tt:0 "§YImmigration: Naturalization§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Monthly Population: §Y+20%§!\n   Encryption Factor: §R-10%§!\n   Enemy Operative Detection Chance: §R-10%§!"
 #UNCATEGORIZED
  military_laws:0 "Military Laws"
  tno_conscription_law:0 "Conscription"

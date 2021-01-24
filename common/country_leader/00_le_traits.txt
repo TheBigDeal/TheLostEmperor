@@ -15,6 +15,11 @@ leader_traits = {
 		stability_factor = 0.15
 		surrender_limit = 0.1
 	}
+	pre_soldier_king = {
+		random = no
+		army_org_factor = 0.15
+		surrender_limit = 0.1
+	}
 	prs_the_red_baron = {
 		random = no
 		sprite = 13

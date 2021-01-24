@@ -3,28 +3,28 @@ ideas = {
 		HRE_member = {
 			picture = idea_HRE_member
 			modifier = {
-				MONTHLY_POPULATION = 0.25
+				MONTHLY_POPULATION = 0.05
 			}
 		}
 		HRE_city = {
 			picture = idea_HRE_city
 			modifier = {
-				conscription = 0.1
-				MONTHLY_POPULATION = 0.5
+				conscription = 0.03
+				MONTHLY_POPULATION = 0.1
 			}
 		}
 		HRE_elector = {
 			picture = idea_HRE_elector
 			modifier = {
-				conscription = 0.1
-				MONTHLY_POPULATION = 0.5
+				conscription = 0.05
+				MONTHLY_POPULATION = 0.15
 			}
 		}
 		HRE_emperor = {
 			picture = idea_HRE_emperor
 			modifier = {
 				#custom_effect_tooltip = hre_emperor_tt
-				conscription = 0.15
+				conscription = 0.08
 			}
 		}
 	}

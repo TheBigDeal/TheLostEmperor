@@ -28,6 +28,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/Mod/Red_Army_Officers.dds"
 	}
 	SpriteType = {
+		name = "GFX_the_rightful_heir"
+		texturefile = "gfx/interface/goals/Mod/the_rightful_heir.dds"
+	}
+	SpriteType = {
+		name = "GFX_death_of_heinrich"
+		texturefile = "gfx/interface/goals/Mod/death_of_heinrich.dds"
+	}
+	SpriteType = {
+		name = "GFX_a_new_monarch"
+		texturefile = "gfx/interface/goals/Mod/a_new_monarch.dds"
+	}
+	SpriteType = {
 		name = "GFX_focus_form_germany"
 		texturefile = "gfx/interface/goals/Mod/Large/focus_form_germany.dds"
 	}
@@ -146,8 +158,32 @@ spriteTypes = {
 	# OTHER MOD GFX
 	#############################################################
 	SpriteType = {
+		name = "GFX_pre_military_with_a_state"
+		texturefile = "gfx/interface/goals/PRE_MILITARY_WITH_A_STATE.dds"
+	}
+	SpriteType = {
+		name = "GFX_ww1_nationalfocus_zeppelin"
+		texturefile = "gfx/interface/goals/ww1_nationalfocus_zeppelin.tga"
+	}
+	SpriteType = {
+		name = "GFX_rifles_guns_cannons"
+		texturefile = "gfx/interface/goals/rifles_guns_cannons.tga"
+	}
+	SpriteType = {
+		name = "GFX_death_calls"
+		texturefile = "gfx/interface/goals/Death_Calls.tga"
+	}
+	SpriteType = {
+		name = "GFX_Forced_Conscription"
+		texturefile = "gfx/interface/goals/Forced_Conscription.dds"
+	}
+	SpriteType = {
 		name = "GFX_fight_the_system"
 		texturefile = "gfx/interface/goals/RAJ_fight_the_system.dds"
+	}
+	SpriteType = {
+		name = "GFX_wermacht_loyalties"
+		texturefile = "gfx/interface/goals/wermacht_loyalties.dds"
 	}
 	SpriteType = {
 		name = "GFX_generic_prison_camp"

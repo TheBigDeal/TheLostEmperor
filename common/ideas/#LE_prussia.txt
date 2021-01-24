@@ -18,6 +18,21 @@ ideas = {
 				experience_gain_navy_factor = -0.15
 			}
 		}
+		PRE_GOVERNMANTAL_CHAOS = {
+			picture = general_staff
+			modifier = {
+				political_power_factor = -0.75
+				consumer_goods_factor = 0.50
+				army_org_factor = -0.25
+			}
+		}
+		PRE_radicalism_condemned = {
+			picture = general_staff
+			modifier = {
+				labryscism_drift = -0.02
+				stability_factor = -0.10
+			}
+		}
 		PRE_purchased_hannover_counter = {
 			picture = general_staff
 			modifier = {
@@ -59,6 +74,30 @@ ideas = {
 				stability_weekly = -0.01
 			}
 		}
+		PRE_nationalists_purged = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}		
+			modifier = {
+				labryscism_drift = -0.05
+				stability_factor = -0.20
+				political_power_factor = -0.25
+				war_support_factor = 0.20
+			}
+		}
+		PRE_nationalist_policies = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}		
+			modifier = {
+				labryscism_drift = 0.05
+				stability_factor = 0.05
+				political_power_factor = 0.10
+				war_support_factor = 0.10
+			}
+		}
 		PRE_waldemars_acedemics = {
 			picture = general_staff
 			modifier = {
@@ -75,6 +114,14 @@ ideas = {
 				conscription = 0.02
 				army_org_factor = 0.05
 				army_attack_factor = 0.05
+			}
+		}
+		PRE_WERMACHT_GOVERNMENT = {
+			picture = general_staff
+			modifier = {
+				conscription = -0.05
+				army_org_factor = 0.08
+				army_attack_factor = 0.08
 			}
 		}
 		PRE_political_opposition = {

@@ -86,7 +86,7 @@
  STATE_85:0 "Danzig"
  STATE_86:0 "Poznan"
  STATE_87:0 "Lodz"
- STATE_88:0 "Krakow"
+ STATE_88:0 "West Galicia"
  STATE_89:0 "Stanislawow"
  STATE_90:0 "Kielce"
  STATE_91:0 "Lwow"
@@ -971,4 +971,4 @@
  STATE_1026:0 "Halayeb"
  
  STATE_1031:0 "West Pennsylvania"
- 
+ STATE_1035:0 "Krakow"

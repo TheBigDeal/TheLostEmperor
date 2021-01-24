@@ -1243,3 +1243,59 @@ country_event = { #The Irish Volunteers
 		}
 	}
 }
+
+country_event = { #Formation of the CSA
+	id = le_USA.55
+	title = le_USA.55.t
+	desc = le_USA.55.d
+	picture = GFX_report_event_american_hunger_march
+	is_triggered_only = yes
+	option = { # Regular
+		name = le_USA.55.a
+		ai_chance = { factor = 10 }
+		GRG = { 
+			set_cosmetic_tag = CSA 
+			annex_country = { target = ALA transfer_troops = yes }
+			annex_country = { target = MIS transfer_troops = yes }
+			annex_country = { target = SCL transfer_troops = yes }
+			annex_country = { target = FLO transfer_troops = yes }
+		}
+	}
+}
+
+country_event = { #Formation of the USSA
+	id = le_USA.56
+	title = le_USA.56.t
+	desc = le_USA.56.d
+	picture = GFX_report_event_american_hunger_march
+	is_triggered_only = yes
+	option = { # Regular
+		name = le_USA.56.a
+		ai_chance = { factor = 10 }
+		ILL = { 
+			set_cosmetic_tag = USSA 
+			annex_country = { target = IND transfer_troops = yes }
+			annex_country = { target = MIC transfer_troops = yes }
+			annex_country = { target = OHI transfer_troops = yes }
+		}
+	}
+}
+
+country_event = { #Great Plains Union
+	id = le_USA.57
+	title = le_USA.57.t
+	desc = le_USA.57.d
+	picture = GFX_report_event_american_hunger_march
+	is_triggered_only = yes
+	option = { # Regular
+		name = le_USA.57.a
+		ai_chance = { factor = 10 }
+		MIN = { 
+			set_cosmetic_tag = GPU
+			annex_country = { target = IWA transfer_troops = yes }
+			annex_country = { target = DAK transfer_troops = yes }
+			annex_country = { target = WIS transfer_troops = yes }
+			annex_country = { target = MCK transfer_troops = yes }
+		}
+	}
+}

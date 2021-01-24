@@ -1,0 +1,23 @@
+state={
+	id=1035
+	name="STATE_1035"
+	history={
+		owner = GAL
+		victory_points = {
+			9427 10 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 4
+		}
+		add_core_of = POL
+		add_core_of = GAL
+
+	}
+	provinces={
+		9427 
+	}
+	manpower=766683
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		RAJ_local_chiefdoms = {
+			picture = GFX_idea_Prussian_Militarism
+			modifier = {
+				conscription = -0.20
+			}
+		}
+		RAJ_famine = {
+			picture = GFX_idea_Prussian_Militarism
+			modifier = {
+				political_power_factor = -0.25
+				consumer_goods_factor = 0.1
+			}
+		}
+		RAJ_a_grand_army = {
+			picture = GFX_idea_Prussian_Militarism
+			modifier = {
+				
+			}
+		}
+	}

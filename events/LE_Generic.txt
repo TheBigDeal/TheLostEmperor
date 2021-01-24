@@ -1,1 +1,15 @@
-﻿
+﻿###########################
+# Generic Events
+###########################
+add_namespace = le_generic
+
+country_event = { #POW's Return From War
+	id = le_generic.1
+	title = le_generic.1.t
+	desc = le_generic.1.d
+	is_triggered_only = yes
+	option = { #The Communists win the election
+		name = le_generic.1.a
+		add_manpower = WAR_CASUALTIES
+	}
+}

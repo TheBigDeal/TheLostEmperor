@@ -1,6 +1,6 @@
 ﻿l_english:
  test_cat:0 "Mod Temp Info"
- test_cat_desc:0 "Food Needed: §R[?food_needed]§!\nCurrent Food Stockpile: §G[?current_food]§!\nForce Limit: §Y[?num_divisions]/[?force_limit]§!\nActual Force Limit[?max_divisions]\nMaxavailablemanpowerk [?max_available_manpower_k]k\nLower Limit: [?lower_limit] Upper Limit: [?upper_limit]"
+ test_cat_desc:0 "Food Needed: §R[?food_needed]§!\nCurrent Food Stockpile: §G[?current_food]§!\nForce Limit: §Y[?num_divisions]/[?force_limit]§!\nActual Force Limit[?max_divisions]\nMaxavailablemanpowerk [?max_available_manpower_k]k\nLower Limit: [?lower_limit] Upper Limit: [?upper_limit]\n[?WAR_CASUALTIES]"
  
  
  

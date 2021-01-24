@@ -399,7 +399,7 @@ guiTypes = {
 			}
 			containerWindowType = {
 				name = "selected_laws_political_parties_1"
-				position = { x=-10 y=29}
+				position = { x=-11 y=29}
 				size = { width = 100%% height = 100%% }
 				iconType = {
 					name = "law_political_parties_selected_1"
@@ -417,7 +417,7 @@ guiTypes = {
 					name = "law_political_parties_selected_3"
 					position = { x=10 y=68 }
 					spriteType = "GFX_selected_law"
-					alwaystransparent = no
+					alwaystransparent = yes
 				}
 				iconType = {
 					name = "law_political_parties_selected_4"
@@ -458,7 +458,7 @@ guiTypes = {
 					name = "law_vote_franchise_btn_1"
 					position = { x = 0 y = 20 }
 					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_vote_franchise_1_tt"
 					buttonFont = "vic_18"
 					text = "No Voting"
 					Orientation = "UPPER_LEFT"
@@ -467,7 +467,7 @@ guiTypes = {
 					name = "law_vote_franchise_btn_2"
 					position = { x = 0 y = 44 }
 					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_vote_franchise_2_tt"
 					buttonFont = "vic_18"
 					text = "Executive Committee"
 					Orientation = "UPPER_LEFT"
@@ -476,7 +476,7 @@ guiTypes = {
 					name = "law_vote_franchise_btn_3"
 					position = { x = 0 y = 68 }
 					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_vote_franchise_3_tt"
 					buttonFont = "vic_18"
 					text = "Wealth"
 					Orientation = "UPPER_LEFT"
@@ -485,7 +485,7 @@ guiTypes = {
 					name = "law_vote_franchise_btn_4"
 					position = { x = 0 y = 92 }
 					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_vote_franchise_4_tt"
 					buttonFont = "vic_18"
 					text = "Only Men"
 					Orientation = "UPPER_LEFT"
@@ -494,7 +494,7 @@ guiTypes = {
 					name = "law_vote_franchise_btn_5"
 					position = { x = 0 y = 116 }
 					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_vote_franchise_5_tt"
 					buttonFont = "vic_18"
 					text = "Universial Voting"
 					Orientation = "UPPER_LEFT"
@@ -502,7 +502,7 @@ guiTypes = {
 			}
 			containerWindowType = {
 				name = "selected_laws_vote_franchise_2"
-				position = { x=125 y=-586}
+				position = { x=124 y=-586}
 				size = { width = 100%% height = 100%% }
 				iconType = {
 					name = "law_vote_franchise_selected_1"
@@ -520,7 +520,7 @@ guiTypes = {
 					name = "law_vote_franchise_selected_3"
 					position = { x=10 y=682 }
 					spriteType = "GFX_selected_law"
-					alwaystransparent = no
+					alwaystransparent = yes
 				}
 				iconType = {
 					name = "law_vote_franchise_selected_4"
@@ -538,7 +538,7 @@ guiTypes = {
 			### TRADE UNIONS
 			####################################
 			containerWindowType = {
-				name = "category_2_trade_unions"
+				name = "category_3_trade_unions"
 				position = { x =270 y = 29 }
 				size = { width = 100%% height = 30 }
 				iconType = {
@@ -548,7 +548,7 @@ guiTypes = {
 					position = { x=0 y=-18 }
 				}
 				instantTextboxType = {
-					name = "category_1_law_slavery_name"
+					name = "category_3_law_trade_unions_name"
 					position = { x = 26 y = -10 }
 					font = "vic_18"
 					text = "Trade Unions"
@@ -561,7 +561,7 @@ guiTypes = {
 					name = "law_trade_unions_btn_1"
 					position = { x = 0 y = 20 }
 					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_trade_unions_1_tt"
 					buttonFont = "vic_18"
 					text = "Illegal"
 					Orientation = "UPPER_LEFT"
@@ -570,7 +570,7 @@ guiTypes = {
 					name = "law_trade_unions_btn_2"
 					position = { x = 0 y = 44 }
 					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_trade_unions_2_tt"
 					buttonFont = "vic_18"
 					text = "State Controlled"
 					Orientation = "UPPER_LEFT"
@@ -579,24 +579,24 @@ guiTypes = {
 					name = "law_trade_unions_btn_3"
 					position = { x = 0 y = 68 }
 					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_trade_unions_3_tt"
 					buttonFont = "vic_18"
-					text = "Non-Socialist Allowed"
+					text = "Non-Socialist Only"
 					Orientation = "UPPER_LEFT"
 				}
 				buttonType = {
 					name = "law_trade_unions_btn_4"
 					position = { x = 0 y = 92 }
 					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_trade_unions_4_tt"
 					buttonFont = "vic_18"
-					text = "All Allowed"
+					text = "Unrestricted"
 					Orientation = "UPPER_LEFT"
 				}
 			}
 			containerWindowType = {
 				name = "selected_laws_trade_unions_3"
-				position = { x=260 y=-586}
+				position = { x=258 y=-586}
 				size = { width = 100%% height = 100%% }
 				iconType = {
 					name = "law_trade_unions_selected_1"
@@ -626,7 +626,7 @@ guiTypes = {
 			### SLAVERY
 			####################################################################
 			containerWindowType = {
-				name = "category_2_slavery"
+				name = "category_4_slavery"
 				position = { x =405 y = 29 }
 				size = { width = 100%% height = 30 }
 				iconType = {
@@ -649,7 +649,7 @@ guiTypes = {
 					name = "law_slavery_btn_1"
 					position = { x = 0 y = 20 }
 					quadTextureSprite ="GFX_sort_button_104x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_slavery_1_tt"
 					buttonFont = "vic_18"
 					text = "Not Allowed"
 					Orientation = "UPPER_LEFT"
@@ -658,7 +658,7 @@ guiTypes = {
 					name = "law_slavery_btn_2"
 					position = { x = 0 y = 44 }
 					quadTextureSprite ="GFX_sort_button_104x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_slavery_2_tt"
 					buttonFont = "vic_18"
 					text = "Allowed"
 					Orientation = "UPPER_LEFT"
@@ -666,7 +666,7 @@ guiTypes = {
 			}
 			containerWindowType = {
 				name = "selected_laws_slavery_4"
-				position = { x=395 y=-586}
+				position = { x=394 y=-586}
 				size = { width = 100%% height = 100%% }
 				iconType = {
 					name = "law_slavery_selected_1"
@@ -684,7 +684,7 @@ guiTypes = {
 			### IMMIGRATION
 			############################
 			containerWindowType = {
-				name = "category_2_immigration"
+				name = "category_5_immigration"
 				position = { x =0 y = 196 }
 				size = { width = 100%% height = 30 }
 				iconType = {
@@ -712,7 +712,7 @@ guiTypes = {
 					name = "law_immigration_btn_1"
 					position = { x = 0 y = 20 }
 					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_immigration_1_tt"
 					buttonFont = "vic_18"
 					text = "Closed Borders"
 					Orientation = "UPPER_LEFT"
@@ -721,7 +721,7 @@ guiTypes = {
 					name = "law_immigration_btn_2"
 					position = { x = 0 y = 44 }
 					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_immigration_2_tt"
 					buttonFont = "vic_18"
 					text = "Quota Immigration"
 					Orientation = "UPPER_LEFT"
@@ -730,7 +730,7 @@ guiTypes = {
 					name = "law_immigration_btn_3"
 					position = { x = 0 y = 68 }
 					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_immigration_3_tt"
 					buttonFont = "vic_18"
 					text = "Open Immigration"
 					Orientation = "UPPER_LEFT"
@@ -739,10 +739,109 @@ guiTypes = {
 					name = "law_immigration_btn_4"
 					position = { x = 0 y = 92 }
 					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_immigration_4_tt"
 					buttonFont = "vic_18"
 					text = "Naturalization"
 					Orientation = "UPPER_LEFT"
+				}
+			}
+			containerWindowType = {
+				name = "selected_laws_immigration_5"
+				position = { x=-11 y=-418}
+				size = { width = 100%% height = 100%% }
+				iconType = {
+					name = "law_immigration_selected_1"
+					position = { x=10 y=635 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "law_immigration_selected_2"
+					position = { x=10 y=659 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "law_immigration_selected_3"
+					position = { x=10 y=683 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "law_immigration_selected_4"
+					position = { x=10 y=707 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
+				}
+			}
+			containerWindowType = {
+				name = "category_6_press_rights"
+				position = { x =135 y = 196 }
+				size = { width = 100%% height = 130 }
+				iconType = {
+					name = "law_minorities_icon"
+					spriteType = "GFX_political_strip"
+					frame = 6
+					position = { x=2 y=-17 }
+				}
+				instantTextboxType = {
+					name = "category_6_law_press_rights_name"
+					position = { x = 28 y = -10 }
+					font = "vic_18"
+					text = "Press Rights"
+					maxWidth = 140
+					maxHeight = 15
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "law_press_rights_btn_1"
+					position = { x = 0 y = 20 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "State Run Press"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_press_rights_btn_2"
+					position = { x = 0 y = 44 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Censored Press"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_press_rights_btn_3"
+					position = { x = 0 y = 68 }
+					quadTextureSprite ="GFX_sort_button_140x29"
+					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					buttonFont = "vic_18"
+					text = "Free Press"
+					Orientation = "UPPER_LEFT"
+				}
+			}
+			containerWindowType = {
+				name = "selected_laws_press_rights_6"
+				position = { x=123 y=-418}
+				size = { width = 100%% height = 100%% }
+				iconType = {
+					name = "law_press_rights_selected_1"
+					position = { x=10 y=635 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "law_press_rights_selected_2"
+					position = { x=10 y=659 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "law_press_rights_selected_3"
+					position = { x=10 y=683 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
 				}
 			}
 			containerWindowType = {
@@ -759,7 +858,7 @@ guiTypes = {
 					name = "category_1_law_public_meetings_name"
 					position = { x = 24 y = -10 }
 					font = "vic_18"
-					text = "Meetings"
+					text = "Protests"
 					pdx_tooltip = "tno_political_parties"
 					maxWidth = 100
 					maxHeight = 15
@@ -829,54 +928,6 @@ guiTypes = {
 					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
 					buttonFont = "vic_18"
 					text = "Protected"
-					Orientation = "UPPER_LEFT"
-				}
-			}
-			containerWindowType = {
-				name = "category_2_press_rights"
-				position = { x =135 y = 196 }
-				size = { width = 100%% height = 130 }
-				iconType = {
-					name = "law_minorities_icon"
-					spriteType = "GFX_political_strip"
-					frame = 6
-					position = { x=2 y=-17 }
-				}
-				instantTextboxType = {
-					name = "category_1_law_press_rights_name"
-					position = { x = 28 y = -10 }
-					font = "vic_18"
-					text = "Press Rights"
-					pdx_tooltip = "tno_political_parties"
-					maxWidth = 140
-					maxHeight = 15
-					fixedsize = yes
-				}
-				buttonType = {
-					name = "law_press_rights_btn_1"
-					position = { x = 0 y = 20 }
-					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
-					buttonFont = "vic_18"
-					text = "State Run Press"
-					Orientation = "UPPER_LEFT"
-				}
-				buttonType = {
-					name = "law_press_rights_btn_2"
-					position = { x = 0 y = 44 }
-					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
-					buttonFont = "vic_18"
-					text = "Censored Press"
-					Orientation = "UPPER_LEFT"
-				}
-				buttonType = {
-					name = "law_press_rights_btn_3"
-					position = { x = 0 y = 68 }
-					quadTextureSprite ="GFX_sort_button_140x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
-					buttonFont = "vic_18"
-					text = "Free Press"
 					Orientation = "UPPER_LEFT"
 				}
 			}
@@ -1718,19 +1769,21 @@ guiTypes = {
 						name = "header"
 						position = { x = 90 y = 12 }
 						font = "vic_18"
-						text = "le_religion_txt_sunni"
+						text = "Ibadi"
 						maxWidth = 670
 						maxHeight = 20
 						format = left
+						alwaystransparent = yes
 					}
 					instantTextboxType = {
 						name = "set_law_le_religion_txt_15_txt"
 						position = { x = 90 y = 38 }
 						font = "garamond_14"
 						text = "LE_WIP_Modifier"
-						maxWidth = 300
-						maxHeight = 100
+						maxWidth = 100
+						maxHeight = 20
 						format = left
+						alwaystransparent = yes
 					}
 				}
 				containerWindowType = {
@@ -1750,6 +1803,7 @@ guiTypes = {
 						maxWidth = 670
 						maxHeight = 20
 						format = left
+						alwaystransparent = yes
 					}
 					instantTextboxType = {
 						name = "set_law_le_religion_txt_9_txt"
@@ -1759,6 +1813,7 @@ guiTypes = {
 						maxWidth = 300
 						maxHeight = 100
 						format = left
+						alwaystransparent = yes
 					}
 				}
 				containerWindowType = {
@@ -1778,6 +1833,7 @@ guiTypes = {
 						maxWidth = 670
 						maxHeight = 20
 						format = left
+						alwaystransparent = yes
 					}
 					instantTextboxType = {
 						name = "set_law_le_religion_txt_10_txt"
@@ -1787,6 +1843,7 @@ guiTypes = {
 						maxWidth = 300
 						maxHeight = 100
 						format = left
+						alwaystransparent = yes
 					}
 				}
 				containerWindowType = {
@@ -1806,6 +1863,7 @@ guiTypes = {
 						maxWidth = 670
 						maxHeight = 20
 						format = left
+						alwaystransparent = yes
 					}
 					instantTextboxType = {
 						name = "set_law_le_religion_txt_11_txt"
@@ -1815,6 +1873,7 @@ guiTypes = {
 						maxWidth = 300
 						maxHeight = 100
 						format = left
+						alwaystransparent = yes
 					}
 				}
 				containerWindowType = {
@@ -1834,6 +1893,7 @@ guiTypes = {
 						maxWidth = 670
 						maxHeight = 20
 						format = left
+						alwaystransparent = yes
 					}
 					instantTextboxType = {
 						name = "set_law_le_religion_txt_12_txt"
@@ -1843,6 +1903,7 @@ guiTypes = {
 						maxWidth = 300
 						maxHeight = 100
 						format = left
+						alwaystransparent = yes
 					}
 				}
 				containerWindowType = {
@@ -1868,6 +1929,7 @@ guiTypes = {
 						maxWidth = 670
 						maxHeight = 20
 						format = left
+						alwaystransparent = yes
 					}
 					instantTextboxType = {
 						name = "set_law_le_religion_txt_13_txt"
@@ -1877,6 +1939,7 @@ guiTypes = {
 						maxWidth = 300
 						maxHeight = 100
 						format = left
+						alwaystransparent = yes
 					}
 				}
 				containerWindowType = {
@@ -1902,6 +1965,7 @@ guiTypes = {
 						maxWidth = 670
 						maxHeight = 20
 						format = left
+						alwaystransparent = yes
 					}
 					instantTextboxType = {
 						name = "set_law_le_religion_txt_14_txt"
@@ -1911,6 +1975,7 @@ guiTypes = {
 						maxWidth = 300
 						maxHeight = 100
 						format = left
+						alwaystransparent = yes
 					}
 				}
 				containerWindowType = {
@@ -1924,7 +1989,7 @@ guiTypes = {
 					}
 					iconType ={
 						name ="law_religious_rights_16_icon"
-						spriteType = "GFX_religion_confucianism"
+						spriteType = "GFX_religion_taoism"
 						position = { x= 12 y = 11 }
 						Orientation = "UPPER_LEFT"
 					}
@@ -1936,6 +2001,7 @@ guiTypes = {
 						maxWidth = 670
 						maxHeight = 20
 						format = left
+						alwaystransparent = yes
 					}
 					instantTextboxType = {
 						name = "set_law_le_religion_txt_16_txt"
@@ -1945,6 +2011,7 @@ guiTypes = {
 						maxWidth = 300
 						maxHeight = 100
 						format = left
+						alwaystransparent = yes
 					}
 				}
 			}

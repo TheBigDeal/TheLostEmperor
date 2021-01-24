@@ -26,18 +26,10 @@ form_romania = {
 	diplomatically_form_romania = {
 		icon = generic_army_support
 		available = {
-			MOL = {
-				OR = {
-					has_opinion = { target = WAL value > 49 }
-					has_opinion = { target = AUS value < -51 }
-				}
-			}
-			WAL = {
-				OR = {
-					has_opinion = { target = MOL value > 49 }
-					has_opinion = { target = AUS value < -51 }
-				}
-			}
+			country_exists = RUS
+			country_exists = SOV
+			SOV = { has_war_with = RUS }
+			RUS = { has_war_with = SOV }
 		}
 		visible = {
 			OR = {
@@ -52,7 +44,26 @@ form_romania = {
 			factor = 1
 		}
 		complete_effect = {
-			set_cosmetic_tag = Frankish_Empire
+			ROM = { change_tag_from = ROOT }
+			if = {
+				limit = { country_exists = WAL }
+				ROM = { annex_country = { target = WAL transfer_troops = yes } }
+			}
+			if = {
+				limit = { country_exists = MOL }
+				ROM = { annex_country = { target = MOL transfer_troops = yes } }
+			}
+			add_state_core = 81
+			add_state_core = 46
+			add_state_core = 79
+			add_state_core = 78
+			add_state_core = 960
+			add_state_core = 808
+			add_state_core = 80
+			add_state_core = 84
+			add_state_core = 83
+			add_state_core = 82
+			add_state_core = 1001
 		}
 	}
 	form_romania = {

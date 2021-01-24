@@ -4,7 +4,8 @@
 technology_categories = {
 	landcruiser_cat
 	railway_gun_cat
-
+	zeppelin
+	
 	light_air
 	medium_air
 	heavy_air

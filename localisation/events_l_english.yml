@@ -23,10 +23,11 @@
  news.2.d:0 "Coolidge Not Running For A Second Term"
  news.2.a:0 "Messy Business"
 
- #France Events
+ #Generic Events
+ le_generic.1.t:0 "Soldiers Return From War"
+ le_generic.1.d:0 "After our most recent war, many troops lost their lives. Others injured in combat, whom later died of their wounds. But some others met a different fate, they were captured by the enemy. Luckily for them, after the war there is no reason for our foes to hold them anymore, so now they return back to their homeland."
+ le_generic.1.a:0 "Welcome Home Boys!"
  
- 
-
  #Political
  le_political.18.t:0 "Labryscists Demand Referendum"
  le_political.18.d:1 "The rapidly growing [Root.GetAdjective] Labryscist movement has never claimed that they need majority support before they seize power, counting on uniting the nation under their leadership once their rule is established. However, it seems their public support has grown rapidly. Many fascists are now calling [Root.GetLeader] a hypocrite, claiming to represent the wishes of the people while in reality turning a deaf ear to the masses.\n\nThe call for a referendum has been dismissed as typical attempts at disrupting the system by [Root.GetRulingParty] members so far, but at least it's a political measure. If we do not act now, the fascists may choose the violent struggle as a better path to power."

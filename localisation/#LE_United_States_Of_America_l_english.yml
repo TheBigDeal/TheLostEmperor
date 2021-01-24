@@ -28,8 +28,9 @@
  NEW_ENGLAND_PINE:0 "New England"
  NEW_ENGLAND_BUNKER:0 "New England"
  
- 
- 
+ CSA:0 "Confederate States of America"
+ USSA:0 "United Socialist States of America"
+ GPU:0 "Great Plains Union"
  
  USA_REMNENTS:0 "Federal Remnant"
 ### Ministers ###

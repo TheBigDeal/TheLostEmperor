@@ -77,8 +77,7 @@ technologies = {
 		}
 		
 		categories = {
-			light_air
-			light_fighter
+			zeppelin
 			air_equipment
 		}
 	}
@@ -101,8 +100,7 @@ technologies = {
 		}
 		
 		categories = {
-			light_air
-			light_fighter
+			zeppelin
 			air_equipment
 		}
 	}
@@ -122,8 +120,7 @@ technologies = {
 		}
 		
 		categories = {
-			light_air
-			light_fighter
+			zeppelin
 			air_equipment
 		}
 	}
@@ -143,8 +140,7 @@ technologies = {
 		}
 		
 		categories = {
-			light_air
-			light_fighter
+			zeppelin
 			air_equipment
 		}
 	}
@@ -157,8 +153,7 @@ technologies = {
 		}
 		
 		categories = {
-			light_air
-			light_fighter
+			zeppelin
 			air_equipment
 		}
 	}

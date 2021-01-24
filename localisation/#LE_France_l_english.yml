@@ -26,9 +26,9 @@
  FRA_REPUBLIC:0 "French Republic"
 ### Political Parties ###
  french_revanchism_desc:0 "French Revanchism is the belief that France has been wronged, and demands the return of its glory. Based in strong nationalism, with inspiration from the Greek Labryscists, the party is very radical."
- FRA_absolutism_party:0 "House d'Orleans"
- FRA_royalism_party:0 "House d'Orleans"
- FRA_rexism_party:0 "House d'Orleans"
+ FRA_absolutism_party:0 "House de Bourbon"
+ FRA_royalism_party:0 "House de Bourbon"
+ FRA_rexism_party:0 "House de Bourbon"
  FRA_despotism_party:0 "League Of Patriots"
  FRA_conservatism_party:0 "French Democratic Coalition"
  FRA_liberalism_party:0 "French Democratic Coalition"

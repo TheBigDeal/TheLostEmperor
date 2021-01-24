@@ -16,7 +16,6 @@ add_ideas = {
 # Starting tech
 set_technology = {
 	#Industrial Techs
-	
 	agriculture1 = 1
 	agriculture2 = 1
 	city_planning = 1
@@ -62,8 +61,8 @@ if = {
 	}
 	set_autonomy = {
 		target = RAJ
-		autonomous_state = autonomy_colony
-		freedom_level = 0.35
+		autonomous_state = autonomy_colonial_company
+		freedom_level = 1
 	}
 	set_autonomy = {
 		target = CAN

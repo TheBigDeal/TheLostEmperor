@@ -1,9 +1,12 @@
 on_actions = {
 	on_capitulation = {
 		effect = {
+			FROM = { set_variable = { WAR_CASUALTIES = casualties } }
+			FROM = { multiply_variable = { WAR_CASUALTIES = 0.08 }
+			FROM = { country_event = { id = le_generic.1 } }
 			if = {  # Prussian - Polish Subjugation War
 				limit = {
-					original_tag = POL
+					#original_tag = POL
 					PRE = { has_country_flag = SUBJUGATING_POLAND } #Needs to have flag, basically verifing what war this is. Declare flag when declaring war.
 				}
 				PRE = { white_peace = POL } #White peace needed so peace conference doesnt fire
@@ -12,7 +15,7 @@ on_actions = {
 			}
 			if = {  # Prussian - Polish Subjugation War
 				limit = {
-					original_tag = POL
+					#original_tag = POL
 					PRE = { has_country_flag = OCCUPY_HOLSTEIN } #Needs to have flag, basically verifing what war this is. Declare flag when declaring war.
 				}
 				PRE = { white_peace = DEN } #White peace needed so peace conference doesnt fire

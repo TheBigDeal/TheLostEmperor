@@ -4,11 +4,10 @@ ideas = {
 	law_political_parties = {
 		law = yes
 		law_1_only_underground = {
-			#hidden = yes
-			on_add = {
-				reload_ideas = yes 
-				refresh_economy = yes
-			}
+			#on_add = {
+			#	reload_ideas = yes 
+			#	refresh_economy = yes
+			#}
 			modifier = {
 				stability_factor = -0.10
 				drift_defence_factor = 0.25
@@ -16,12 +15,7 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		law_1_harrassment = {
-			#hidden = yes
 			default = yes
-			on_add = { 
-				reload_ideas = yes 
-				refresh_economy = yes
-			}
 			modifier = {
 				stability_factor = -0.05
 				drift_defence_factor = 0.15
@@ -29,22 +23,12 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		law_1_gerrymandering = {
-			#hidden = yes
-			on_add = {
-				reload_ideas = yes 
-				refresh_economy = yes
-			}
 			modifier = {
 				drift_defence_factor = 0.05
 			}
 			cancel_if_invalid = no
 		}
 		law_1_open_ballots = {
-			#hidden = yes
-			on_add = { 
-				reload_ideas = yes 
-				refresh_economy = yes
-			}
 			modifier = {
 				stability_factor = 0.05
 				drift_defence_factor = -0.05
@@ -52,11 +36,6 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		law_1_confidential_ballots = {
-			#hidden = yes
-			on_add = { 
-				reload_ideas = yes 
-				refresh_economy = yes
-			}
 			modifier = {
 				stability_factor = 0.15
 				drift_defence_factor = -0.15
@@ -72,31 +51,36 @@ ideas = {
 		law_2_no_voting = {
 			default = yes
 			modifier = {
-				stability_factor = -0.10
+				political_power_cost = 0.05
+				party_popularity_stability_factor = -0.25
 			}
 			cancel_if_invalid = no
 		}
 		law_2_execuitive_comittee = {
 			modifier = {
-				stability_factor = -0.05
+				political_power_cost = 0.10
+				party_popularity_stability_factor = -0.15
 			}
 			cancel_if_invalid = no
 		}
 		law_2_wealth = {
 			modifier = {
-				stability_factor = -0.03
+				political_power_cost = 0.15
+				party_popularity_stability_factor = -0.05
 			}
 			cancel_if_invalid = no
 		}
 		law_2_only_men = {
 			modifier = {
-				stability_factor = 0
+				political_power_cost = 0.20
+				party_popularity_stability_factor = 0.05
 			}
 			cancel_if_invalid = no
 		}
 		law_2_universal_voting = {
 			modifier = {
-				stability_factor = 0.10
+				political_power_cost = 0.25
+				party_popularity_stability_factor = 0.15
 			}
 			cancel_if_invalid = no
 		}
@@ -108,26 +92,31 @@ ideas = {
 		law = yes
 		law_3_illegal = {
 			modifier = {
-				stability_factor = -0.20
+				production_factory_max_efficiency_factor = -0.15
+				drift_defence_factor = 0.10
 			}
 			cancel_if_invalid = no
 		}
 		law_3_state_controlled = {
 			default = yes
 			modifier = {
-				stability_factor = -0.15
+				production_factory_max_efficiency_factor = -0.05
+				drift_defence_factor = 0.05
 			}
 			cancel_if_invalid = no
 		}
 		law_3_non_socialist_allowed = {
 			modifier = {
-				stability_factor = -0.10
+				production_factory_max_efficiency_factor = 0.05
+				drift_defence_factor = -0.05
 			}
 			cancel_if_invalid = no
 		}
 		law_3_all_allowed = {
 			modifier = {
-				stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.15
+				drift_defence_factor = -0.10
+				collectivism_drift = 0.03
 			}
 			cancel_if_invalid = no
 		}
@@ -138,14 +127,111 @@ ideas = {
 		law = yes
 		law_4_not_allowed = {
 			default = yes
-			modifier = {
-				stability_factor = -0.20
-			}
+			modifier = {}
 			cancel_if_invalid = no
 		}
 		law_4_allowed = {
 			modifier = {
-				stability_factor = -0.15
+				stability_factor = -0.20
+				war_support_factor = -0.20
+				political_power_factor = -0.15
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+			}
+			cancel_if_invalid = no
+		}
+	}
+	### Immigration
+	###############################
+	law_immigration = {
+		law = yes
+		law_5_closed_borders = {
+			modifier = {
+				encryption_factor = 0.25
+				enemy_operative_detection_chance_factor = 0.20
+			}
+			cancel_if_invalid = no
+		}
+		law_5_quota_immigration = {
+			default = yes
+			modifier = {
+				MONTHLY_POPULATION = 0.10
+				encryption_factor = 0.5
+				enemy_operative_detection_chance_factor = 0.5
+			}
+			cancel_if_invalid = no
+		}
+		law_5_open_immigration = {
+			modifier = {
+				MONTHLY_POPULATION = 0.15
+			}
+			cancel_if_invalid = no
+		}
+		law_5_naturalization = {
+			modifier = {
+				MONTHLY_POPULATION = 0.20
+				encryption_factor = -0.10
+				enemy_operative_detection_chance_factor = -0.10
+			}
+			cancel_if_invalid = no
+		}
+	}
+	### State Press
+	###############################
+	law_state_press = {
+		law = yes
+		law_6_state_run_press = {
+			default = yes
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = 0.3
+				political_power_gain = -0.15
+			}
+			cancel_if_invalid = no
+		}
+		law_6_censored_press = {
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.10
+				political_power_gain = -0.05
+			}
+			cancel_if_invalid = no
+		}
+		law_6_free_press = {
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = -0.20
+				political_power_gain = 0.10
+			}
+			cancel_if_invalid = no
+		}
+	}
+	### Minority Rights
+	###############################
+	law_minorities = {
+		law = yes
+		law_7_oppressed = {
+			modifier = {
+				non_core_manpower = -0.15
+				stability_factor = -0.10
+				drift_defence_factor = 0.10
+			}
+			cancel_if_invalid = no
+		}
+		law_7_limited_rights = {
+			default = yes
+			modifier = {
+				non_core_manpower = 0.05
+				stability_factor = 0.05
+				drift_defence_factor = -0.05
+			}
+			cancel_if_invalid = no
+		}
+		law_7_protected = {
+			modifier = {
+				non_core_manpower = 0.10
+				stability_factor = 0.10
+				drift_defence_factor = -0.10
 			}
 			cancel_if_invalid = no
 		}

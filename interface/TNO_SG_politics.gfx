@@ -29,6 +29,10 @@ spriteTypes = {
 		name = "GFX_religion_ibadism"
 		texturefile = "gfx/interface/goals/Religion/religion_ibadism.dds"
 	}
+	SpriteType = {
+		name = "GFX_religion_taoism"
+		texturefile = "gfx/interface/goals/Religion/religion_taoism.dds"
+	}
 	# TRADE LAW
 	##############################################################
 	SpriteType = {
