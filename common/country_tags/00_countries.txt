@@ -20,7 +20,6 @@ MZD = "countries/Mazandaran.txt"
 TBR = "countries/Tibriz.txt" 
 AJM = "countries/Iraq-e_Ajam.txt"  
 KRM = "countries/Kerman.txt" 
-
 MAK = "countries/Makhnovia.txt" 
 VLH = "countries/Volhynia.txt" 
 #AFRICA

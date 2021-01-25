@@ -4,7 +4,7 @@ state={
 	name="STATE_996"
 
 	history={
-		owner = SER
+		owner = BUL
 		victory_points = {
 			11857 2 
 		}
@@ -14,8 +14,8 @@ state={
 			industrial_complex = 3
 
 		}
-		add_core_of = SER
-
+		add_core_of = BUL
+		add_claim_by = SER
 	}
 
 	provinces={

@@ -7,7 +7,7 @@ set_technology = {
 	tech_support = 1
 	tech_recon = 1
 }
-
+set_cosmetic_tag = LEV_REBELS
 set_politics = {	
 	ruling_party = theocracy
 	last_election = "1933.3.5"

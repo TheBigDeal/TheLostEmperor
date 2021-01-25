@@ -950,8 +950,6 @@
  STATE_1007:0 "Southern Manitoba"
  STATE_1008:0 "Southern Saskatchewan"
  STATE_1009:0 "Southern Alberta"
- 
- 
  STATE_1010:0 "Bahrain"
  STATE_1011:0 "Dubai"
  STATE_1012:0 "Socotra"
@@ -964,13 +962,17 @@
  STATE_1019:0 "Wittenburg"
  STATE_1020:0 "Nancy"
  STATE_1021:0 "Straubing"
- 
+ STATE_1022:0 "Northern Desert"
  STATE_1023:0 "Wahat"
  STATE_1024:0 "Aswan"
  STATE_1025:0 "Bahar"
  STATE_1026:0 "Halayeb"
- 
+ STATE_1027:0 "Southern Schleswig"
+ STATE_1028:0 "Bornholm"
+ STATE_1029:0 "Kosovo"
+ STATE_1030:0 "Hatay"
  STATE_1031:0 "West Pennsylvania"
+ 
  STATE_1035:0 "Krakow"
  STATE_1036:0 "Liaotung Peninsula"
  STATE_1037:0 "South Gyeongsang"
