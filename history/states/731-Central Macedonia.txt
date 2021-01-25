@@ -6,7 +6,7 @@ state={
 		wood=7
 	}
 	history={
-		owner = TUR
+		owner = MAC
 		victory_points = {
 			11818 5
 		}
@@ -17,8 +17,9 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = TUR
+		add_core_of = GRE
 		add_claim_by = MAC
+		add_claim_by = TUR
 	}
 
 	provinces={

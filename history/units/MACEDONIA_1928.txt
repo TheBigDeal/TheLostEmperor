@@ -32,14 +32,14 @@ units = {
 	######## Ellinikó Genikó Epiteleío ########
 	division = {
 		name = "Trigonikó Pezikoú"
-		location = 6857
+		location = 13285
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "Merarchía Ippikoú"
-		location = 9818
+		location = 13285
 		division_template = "Merarchía Ippikoú" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5

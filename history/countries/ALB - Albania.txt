@@ -7,7 +7,9 @@ set_technology = {
 	tech_support = 1
 	tech_recon = 1
 }
-
+add_ideas = {
+	TUR_rebellious_subject_state
+}
 set_politics = {	
 	ruling_party = absolutism
 	last_election = "1933.3.5"

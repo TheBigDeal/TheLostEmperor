@@ -1,3 +1,7 @@
+MAC_REBELS = {
+	color = rgb { 171 190 152 }
+	color_ui = rgb { 222 247 198 }
+}
 PRE_PUPPET_POL = {
 	color = rgb { 247 48 48 }
 	color_ui = rgb { 247 48 48 }

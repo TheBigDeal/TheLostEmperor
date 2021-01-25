@@ -55,7 +55,9 @@ LE_ibadi_radicalism_modifier = {
 }
 
 LE_tur_rebels_modifier = {
-	enable = { has_idea = TUR_rebels_to_the_last_breath }
+	#enable = { has_idea = TUR_rebels_to_the_last_breath }
+	enable = { always = yes }
+	icon = GFX_modifiers_sabotaged_resource
 	army_core_defence_factor = TUR.TUR_rebels_strength
 	army_core_attack_factor = TUR.TUR_rebels_strength
 	army_org_factor = TUR.TUR_rebels_strength

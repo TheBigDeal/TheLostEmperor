@@ -23,15 +23,13 @@ ideas = {
 				political_power_factor = -0.2
 			}
 		}
-		TUR_rebellious_subject_states = {
+		TUR_rebellious_subject_state = {
 			picture = GFX_idea_Prussian_Militarism
 			visible = {
 				always = yes
 			}
 			modifier = {
-				justify_war_goal_time = 0.75
-				army_org_Factor = -0.5
-				army_attack_factor = -0.1
+				ai_join_ally_desire_factor = -1000
 			}
 		}
 	}

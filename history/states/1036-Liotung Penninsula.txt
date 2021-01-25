@@ -1,0 +1,22 @@
+state={
+	id=1036
+	name="STATE_1036"
+	
+	history={
+		owner = JAP
+		victory_points = {
+			1150 1 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+		add_core_of = QNG
+	}
+	
+	provinces={
+		964 3783 3970 6851 6860 6918 6981 9854 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

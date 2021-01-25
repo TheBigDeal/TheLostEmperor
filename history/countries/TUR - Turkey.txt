@@ -7,7 +7,6 @@ set_research_slots = 3
 add_ideas = {
 	limited_conscription
 	TUR_internal_instability
-	TUR_rebellious_subject_states
 	le_religion_sunni
 }
 
@@ -266,6 +265,10 @@ BHN = {
     set_popularities = {
     	despotism = 100
     }
+}
+
+MAC = {
+	declare_war_on = { target = TUR type = annex_everything }
 }
 
 create_country_leader = {

@@ -15,7 +15,9 @@ state={
 				naval_base = 3
 			}
 		}
-		add_claim_by = GRE
+		add_core_of = GRE
+		add_claim_by = MAC
+		add_claim_by = TUR
 	}
 	provinces={
 		895 3936 11818

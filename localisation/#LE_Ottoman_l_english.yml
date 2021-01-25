@@ -50,7 +50,9 @@
 
 ### Ideas ###
  TUR_internal_instability:0 "Internal Instability"
- TUR_rebellious_subject_states:0 "Disorganized Officer Corps"
+ TUR_rebellious_subject_state:0 "Rebellious Subject State"
+ LE_tur_rebels_modifier:0 "Rebellious Spirit"
+ 
 ### Decisions ###
  tur_deal_with_rebellion_coalition:0 "The Rebellion Coalition"
  tur_deal_with_rebellion_coalition_desc:0 "It is no secret the Ottomans Empire's golden age is at an end. It is most clear to the people in our country who work to see the nations end every day. These rebels are from across our nation, different nationalities, relgions, languages, but they all have one common goal in mind; to take us down.\n\n£texticon_rebel Rebellion Coalition Strength: [Root.GetRebelStrength] ( [?TUR.TUR_REBEL_STRENGTH|-0]/100 )"

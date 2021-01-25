@@ -8,6 +8,8 @@ state={
 			arms_factory = 2
 		}
 		add_core_of = MAC
+		add_claim_by = SER
+		add_claim_by = TUR
 	}
 	provinces={
 		867 3882 11832 

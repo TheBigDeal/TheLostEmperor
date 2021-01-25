@@ -14,7 +14,68 @@
 
 ### OOB ###
 units = {
-	#Releaseable only
+	division = {
+		name = "Daehanminguk Yuk-gun"
+		location = 6944
+		division_template = "Daehanminguk Yuk-gun"		# Provincial militia unit (poor equipment and training)
+	}
+	division = {
+		name = "Daehanminguk Yuk-gun"
+		location = 6944
+		division_template = "Daehanminguk Yuk-gun"		# Provincial militia unit (poor equipment and training)
+	}
+	
+	
+	division = {
+		name = "Daehanminguk Yuk-gun"
+		location = 7175
+		division_template = "Daehanminguk Yuk-gun"		# Provincial militia unit (poor equipment and training)
+	}
+	division = {
+		name = "Daehanminguk Yuk-gun"
+		location = 7175
+		division_template = "Daehanminguk Yuk-gun"		# Provincial militia unit (poor equipment and training)
+	}
+	division = {
+		name = "Daehanminguk Yuk-gun"
+		location = 7204
+		division_template = "Daehanminguk Yuk-gun"		# Provincial militia unit (poor equipment and training)
+	}
+	division = {
+		name = "Daehanminguk Yuk-gun"
+		location = 7204
+		division_template = "Daehanminguk Yuk-gun"		# Provincial militia unit (poor equipment and training)
+	}
+	division = {
+		name = "Daehanminguk Yuk-gun"
+		location = 10115
+		division_template = "Daehanminguk Yuk-gun"		# Provincial militia unit (poor equipment and training)
+	}
+	division = {
+		name = "Daehanminguk Yuk-gun"
+		location = 10115
+		division_template = "Daehanminguk Yuk-gun"		# Provincial militia unit (poor equipment and training)
+	}
+	division = {
+		name = "Daehanminguk Yuk-gun"
+		location = 4103
+		division_template = "Daehanminguk Yuk-gun"		# Provincial militia unit (poor equipment and training)
+	}
+	division = {
+		name = "Daehanminguk Yuk-gun"
+		location = 4103
+		division_template = "Daehanminguk Yuk-gun"		# Provincial militia unit (poor equipment and training)
+	}
+	division = {
+		name = "Daehanminguk Yuk-gun"
+		location = 11912
+		division_template = "Daehanminguk Yuk-gun"		# Provincial militia unit (poor equipment and training)
+	}
+	division = {
+		name = "Daehanminguk Yuk-gun"
+		location = 11912
+		division_template = "Daehanminguk Yuk-gun"		# Provincial militia unit (poor equipment and training)
+	}
 }
 
 ### STARTING PRODUCTION ###

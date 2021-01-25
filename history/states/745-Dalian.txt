@@ -15,15 +15,16 @@ state={
 			1150 = {
 				naval_base = 5
 				coastal_bunker = 1
-
 			}
 
 		}
+		add_core_of = JAP
+		add_core_of = QNG
 
 	}
 
 	provinces={
-		964 1150 3783 3970 6851 6860 6918 6981 9854 
+		1150 
 	}
 	manpower=1000000
 	buildings_max_level_factor=1.000

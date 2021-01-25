@@ -1,0 +1,26 @@
+state={
+	id=1038
+	name="STATE_1038"
+	history={
+		owner = JAP
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			dockyard = 2
+			4056 = {
+				naval_base = 5
+			}
+
+		}
+		victory_points = {
+			4056 1 
+		}
+		add_core_of = KOR
+
+	}
+	provinces={
+		1177 
+	}
+	manpower=185395
+	buildings_max_level_factor=1.000
+}

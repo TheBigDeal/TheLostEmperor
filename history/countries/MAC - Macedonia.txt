@@ -1,11 +1,11 @@
-﻿capital = 106
+﻿capital = 1034
 
 
 OOB = "MACEDONIA_1928"
 
-add_ideas = {
-	TUR_rebels_to_the_last_breath
-}
+set_cosmetic_tag = MAC_REBELS
+#declare_war_on = { target = TUR type = annex_everything }
+add_dynamic_modifier = { modifier = LE_tur_rebels_modifier }
 
 set_technology = {
 	infantry_weapons = 1
