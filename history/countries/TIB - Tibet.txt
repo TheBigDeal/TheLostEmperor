@@ -7,24 +7,8 @@ set_technology = {
 	infantry_weapons = 1
 }
 
-
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = construction_effort_2
-	complete_national_focus = production_effort_2
-	complete_national_focus = infrastructure_effort
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "TIB_1939"
-	set_technology = {
+oob = "TIB_1939"
+set_technology = {
 		#doctrines
 		air_superiority = 1
 
@@ -36,19 +20,9 @@ set_technology = {
 		electronic_mechanical_engineering = 1
 		radio = 1
 		radio_detection = 1
-
-		#industry
-		
-		
-		
-		
-		
-		
-		
-	}
 }
 
-set_politics = {	
+set_politics = {
 	ruling_party = absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -71,20 +45,4 @@ create_country_leader = {
 	traits = {
 		#
 	}
-}
-
-
-	set_politics = {	
-	ruling_party = absolutism
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-}
-
-    set_popularities = {
-        liberalism = 0
-        rexism = 0
-        proletarianism = 0
-        absolutism = 100
-    }
 }

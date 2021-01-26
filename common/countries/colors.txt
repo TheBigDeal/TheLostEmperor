@@ -1419,8 +1419,10 @@ ALH = {
 	color_ui = rgb { 97 148 168 }
 }
 TRK = {
-	color = rgb { 107 191 57 }
-	color_ui = rgb { 107 191 57 }
+	#color = rgb { 107 191 57 }
+	#color_ui = rgb { 107 191 57 }
+	color = rgb { 195 214 88 }
+	color_ui = rgb { 195 214 88 }
 }
 SIK = {
 	color = rgb { 112 134 140 }

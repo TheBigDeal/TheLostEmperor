@@ -157,7 +157,7 @@ create_country_leader = {
 	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
 	picture = "GFX_RAJ_krishna_pillai"
 	expire = "1965.1.1"
-	ideology = proletarianism_ideology_ideology
+	ideology = proletarianism_ideology
 	traits = {
 		
 	}
@@ -168,7 +168,7 @@ create_country_leader = {
 	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
 	picture = "GFX_RAJ_pattabhi_sitaramayya"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = socialism_ideology
 	traits = {
 		
 	}

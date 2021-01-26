@@ -9,14 +9,14 @@ set_technology = {
 	early_fighter = 1
 	early_bomber = 1
 	mass_assault = 1
-	
-	
-	
+
+
+
 }
 
 set_convoys = 40
 
-set_politics = {	
+set_politics = {
 	ruling_party = absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -46,7 +46,7 @@ create_country_leader = {
 	desc = "POLITICS_ZHANG_GUOTAO_DESC"
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
 	expire = "1965.1.1"
-	ideology = proletarianism_ideology_ideology
+	ideology = proletarianism_ideology
 	traits = {
 		cornered_fox
 	}
@@ -68,7 +68,7 @@ create_country_leader = {
 	desc = "POLITICS_ZHANG_LAN_DESC"
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = socialism_ideology
 	traits = {
 		#
 	}
@@ -77,7 +77,7 @@ create_country_leader = {
 add_opinion_modifier = { target = PRC modifier = hostile_status }
 
 
-	set_politics = {		
+	set_politics = {
 		ruling_party = absolutism
 		last_election = "1936.1.1"
 		election_frequency = 48

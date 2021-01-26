@@ -102,7 +102,7 @@ create_country_leader = {
 	desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
 	expire = "1965.1.1"
-	ideology = proletarianism_ideology_ideology
+	ideology = proletarianism_ideology
 	traits = {
 		#
 	}

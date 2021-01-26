@@ -47,7 +47,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_CNT_Pompeu_Fabra_i_Poch.tga"
 	expire = "1948.12.25"
-	ideology = mutualism
+	ideology = mutualism_ideology
 	traits = {
 		
 	}

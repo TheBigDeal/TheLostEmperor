@@ -75,7 +75,7 @@ create_country_leader = {
 	desc = "POLITICS_MOSES_KOTANE_DESC"
 	picture = "GFX_SAF_moses_kotane"
 	expire = "1965.1.1"
-	ideology = proletarianism_ideology_ideology
+	ideology = proletarianism_ideology
 	traits = {
 		#
 	}

@@ -35,7 +35,7 @@ add_ideas = {
 #	desc = "POLITICS_OTTO_WELS_DESC"
 #	picture = "Portrait_Germany_Adolf_Hitler.dds"
 #	expire = "1939.1.16"
-#	ideology = socialism
+#	ideology = socialism_ideology
 #	traits = {
 #		exiled
 #		union_man

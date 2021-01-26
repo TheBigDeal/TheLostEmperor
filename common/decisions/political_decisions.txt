@@ -51,13 +51,13 @@ labryscism_on_the_rise = {
 				limit = {
 					check_variable = { var = army_support_var value = 0.1 compare = less_than }
 				}
-				set_variable = { var = army_support_var value = 0.1 } 
+				set_variable = { var = army_support_var value = 0.1 }
 			}
 			if = {
 				limit = {
 					check_variable = { var = army_support_var value = 0.1 compare = greater_than_or_equals }
 				}
-				add_to_variable = { var = army_support_var value = 0.1 } 
+				add_to_variable = { var = army_support_var value = 0.1 }
 			}
 			set_country_flag = military_support_for_labryscist_civil_war
 		}
@@ -137,7 +137,7 @@ labryscism_on_the_rise = {
 			factor = 0
 		}
 	}
-	
+
 	ignite_the_labryscist_civil_war = {
 		icon = generic_ignite_civil_war
 		available = {
@@ -232,7 +232,7 @@ labryscism_on_the_rise = {
 		complete_effect = {set_country_flag = open_up_political_discourse_labryscism}
 		ai_will_do = {factor = 10}
 	}
-	
+
 	discredit_government_labryscism = {
 		icon = generic_political_discourse
 		available = {labryscism > 0.5}
@@ -361,13 +361,13 @@ proletarianism_on_the_rise = {
 				limit = {
 					check_variable = { var = army_support_var value = 0.1 compare = less_than }
 				}
-				set_variable = { var = army_support_var value = 0.1 } 
+				set_variable = { var = army_support_var value = 0.1 }
 			}
 			if = {
 				limit = {
 					check_variable = { var = army_support_var value = 0.1 compare = greater_than_or_equals }
 				}
-				add_to_variable = { var = army_support_var value = 0.1 } 
+				add_to_variable = { var = army_support_var value = 0.1 }
 			}
 			set_country_flag = military_support_for_proletariat_civil_war
 		}
@@ -447,7 +447,7 @@ proletarianism_on_the_rise = {
 			factor = 0
 		}
 	}
-	
+
 	ignite_the_proletariat_civil_war = {
 		icon = generic_ignite_civil_war
 		available = {
@@ -543,7 +543,7 @@ proletarianism_on_the_rise = {
 		ai_will_do = {factor = 10}
 	}
 	
-	discredit_government_labryscism = {
+	discredit_government_proletarianism = {
 		icon = generic_political_discourse
 		available = {proletarianism > 0.5}
 		visible = {

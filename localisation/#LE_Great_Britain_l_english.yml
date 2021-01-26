@@ -1,0 +1,82 @@
+﻿l_english:
+
+### Political Parties ###
+ GBR_absolutism_party:0 "Loyal League"
+ GBR_royalism_party:0 "British National Party"
+ GBR_rexism_party:0 "British Imperial Front"
+ GBR_despotism_party:0 "Unity And Nationalist Association"
+ GBR_conservatism_party:0 "Conservative Party (Tories)"
+ GBR_liberalism_party:0 "Liberal Party"
+ GBR_socialism_party:0 "Labour Party"
+ GBR_theocracy_party:0 "Church Of GBRland"
+ GBR_labryscism_party:0 "New Model Republicans"
+ GBR_mutualism_party:0 "British Congress of Trade Unions"
+ GBR_collectivism_party:0 "British Congress of Trade Unions"
+ GBR_proletarianism_party:0 "British Congress of Trade Unions"
+
+### Ministers ###
+ # Head Of State
+
+ # Secondary Head
+
+ # Foriegn Minister
+
+ # Minister Of Defence
+
+ # Economic Minister
+
+ # Minister Of The Interior
+
+ # Minister Of Security
+
+
+### Ideas ###
+ gbr_the_sun_never_sets:0 "The Sun Never Sets"
+ gbr_britannia_rules_the_waves:0 "Britannia Rules The Waves"
+ gbr_labor_unrest:0 "Labor Unrest"
+ gbr_splendid_isolation:0 "Splendid Isolation"
+ gbr_british_stoicism:0 "British Stoicism"
+ gbr_irish_question:0 "Irish Question"
+ gbr_irish_question_desc:0 "Throughout human history there have always been several universal truths; one of those is that the Irish do not particularly like the British. Centuries of discrimination, rebellion, and anger have soured relations between the two islands. Boycotts of British goods and public protests are common and any conscription attempt of Irishmen, with the notable exception of the pro-British Ulster unionists, is met with fierce resistance. While Ireland might be stable for now some say it’s a ticking time bomb just waiting to explode."
+### Tooltips ###
+
+### Global / Country Flags ###
+
+### Focus Tree ###
+GBR_his_majestys_government:0 "His Majesty's Government"
+GBR_his_majestys_government_desc:0 ""
+GBR_speech_from_the_throne:0 "Speech from the Throne"
+GBR_speech_from_the_throne_desc:0 ""
+GBR_the_conservative_agenda:0 "The Conservative Agenda"
+GBR_the_conservative_agenda_desc:0 ""
+GBR_expand_the_colonial_office:0 "Expand the Colonial Office"
+GBR_expand_the_colonial_office_desc:0 ""
+GBR_the_liberal_plan:0 "The Liberal Plan"
+GBR_the_liberal_plan_desc:0 ""
+GBR_abolish_the_gold_standard:0 "Abolish the Gold Standard"
+GBR_abolish_the_gold_standard_desc:0 ""
+GBR_concessions_to_the_irish:0 "Concessions to the Irish"
+GBR_concessions_to_the_irish_desc:0 ""
+GBR_negotiate_with_suffragettes:0 "Negotiate with Suffragettes"
+GBR_negotiate_with_suffragettes_desc:0 ""
+GBR_royal_irish_constabulary_act:0 "Royal Irish Constabulary Act"
+GBR_royal_irish_constabulary_act_desc:0 ""
+GBR_crackdown_on_the_irish:0 "Crackdown on the Irish"
+GBR_crackdown_on_the_irish_desc:0 ""
+GBR_raise_tariffs:0 "Raise Tariffs"
+GBR_raise_tariffs_desc:0 ""
+GBR_the_empire_act:0 "The Empire Act"
+GBR_the_empire_act_desc:0 ""
+GBR_financial_security_act:0 "Financial Security Act"
+GBR_financial_security_act_desc:0 ""
+GBR_the_suffrage_act:0 "The Suffrage Act"
+GBR_the_suffrage_act_desc:0 ""
+GBR_irish_religious_act:0 "Irish Religious Act"
+GBR_irish_religious_act_desc:0 ""
+GBR_the_national_pension_act:0 "The National Pension Act"
+GBR_the_national_pension_act_desc:0 ""
+
+
+
+
+### Events ###

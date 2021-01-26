@@ -28,7 +28,7 @@ set_popularities = {
 #	desc = "POLITICS_EUSEBIO_AYALA_DESC"
 #	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 #	expire = "1965.1.1"
-#	ideology = liberalism
+#	ideology = liberalism_ideology
 #	traits = {
 #		#
 #	}
@@ -40,7 +40,7 @@ create_country_leader = {
 	desc = "POLITICS_RAFAEL_FRANCO_DESC"
 	picture = "GFX_Portrait_paraguay_rafael_franco"
 	expire = "1965.1.1"
-	ideology = proletarianism_ideology_ideology
+	ideology = proletarianism_ideology
 	traits = {
 		#
 	}

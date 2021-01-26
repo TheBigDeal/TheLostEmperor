@@ -56,11 +56,11 @@ focus_tree = {
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = CSA_in_the_land_of_cotton 
+		prerequisite = {
+			focus = CSA_in_the_land_of_cotton
 		}
-		prerequisite = { 
-			focus = CSA_old_times_they_are_not_forgotten 
+		prerequisite = {
+			focus = CSA_old_times_they_are_not_forgotten
 		}
 		ai_will_do = {
 			factor = 1
@@ -134,19 +134,16 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = CSA_the_democratic_convention }
-		mutually_exclusive = { 
-			focus = CSA_the_reformist_torch 
+		mutually_exclusive = {
+			focus = CSA_the_reformist_torch
 		}
-		mutually_exclusive = { 
-			focus = CSA_status_quo 
-		}
-		mutually_exclusive = { 
-			focus = CSA_ 
+		mutually_exclusive = {
+			focus = CSA_status_quo
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-#End of focuses 
+#End of focuses
  }

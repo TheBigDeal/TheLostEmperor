@@ -27,7 +27,7 @@ create_country_leader = {
 	name = "Muhammad Naguib"
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_liberalism1.dds"
-	ideology = liberalism
+	ideology = liberalism_ideology
 	traits = {
 		#
 	}
@@ -57,7 +57,7 @@ create_country_leader = {
 	name = "Hosni al-Arabi"
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
-	ideology = proletarianism_ideology_ideology
+	ideology = proletarianism_ideology
 	traits = {
 		#
 	}

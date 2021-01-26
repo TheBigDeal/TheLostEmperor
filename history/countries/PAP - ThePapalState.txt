@@ -29,7 +29,7 @@ create_country_leader = {
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "Portrait_Pope_Pius_XI.tga"
 	expire = "1965.1.1"
-	ideology = theocratic
+	ideology = theocratic_ideology
 	traits = {
 		#
 	}

@@ -15,8 +15,8 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	gwtank = 1
-	
-	
+
+
 	early_fighter = 1
 	naval_bomber1 = 1
 	cv_early_fighter = 1
@@ -37,7 +37,7 @@ set_convoys = 300
 set_stability = 0.6
 
 
-set_politics = {	
+set_politics = {
 	ruling_party = absolutism
 	last_election = "1932.5.1"
 	election_frequency = 48
@@ -83,9 +83,9 @@ create_country_leader = {
 	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
 	picture = "Portrait_FRA_Jean_dOrleans.tga"
 	expire = "1965.1.1"
-	ideology = theocratic
+	ideology = theocratic_ideology
 	traits = {
-		
+
 	}
 }
 create_country_leader = {
@@ -93,9 +93,9 @@ create_country_leader = {
 	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
 	picture = "Portrait_Emmanuel_Celestin_Suhard.tga"
 	expire = "1965.1.1"
-	ideology = theocratic
+	ideology = theocratic_ideology
 	traits = {
-		
+
 	}
 }
 create_country_leader = {
@@ -105,7 +105,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = rexism_ideology
 	traits = {
-		
+
 	}
 }
 create_country_leader = {
@@ -113,7 +113,7 @@ create_country_leader = {
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 	picture = "Portrait_France_Edouard_Daladier.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = socialism_ideology
 	traits = {
 		stout_defender
 	}
@@ -123,7 +123,7 @@ create_country_leader = {
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
 	picture = "Portrait_France_Marcel_Cachin.tga"
 	expire = "1965.1.1"
-	ideology = 	proletarianism
+	ideology = proletarianism_ideology
 	traits = {
 		dictator
 		warmonger
@@ -137,7 +137,7 @@ create_country_leader = {
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
 	picture = "Portrait_France_Jacques_Duclos.tga"
 	expire = "1965.1.1"
-	ideology = 	collectivism
+	ideology = collectivism_ideology
 	traits = {
 	}
 }
@@ -146,7 +146,7 @@ create_country_leader = {
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
 	picture = "Portrait_France_Sebastien_Faure.tga"
 	expire = "1965.1.1"
-	ideology = 	mutualism
+	ideology = mutualism_ideology
 	traits = {
 	}
 }
@@ -155,7 +155,7 @@ create_country_leader = {
 	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
 	picture = "Portrait_France_Jacques_Doriot.tga"
 	expire = "1965.1.1"
-	ideology = labryscism
+	ideology = labryscism_ideology
 	traits = {
 	}
 }
@@ -329,7 +329,7 @@ create_equipment_variant = {
 }
 
 
-	
+
 	create_equipment_variant = {
 		name = "Aurore Class"
 		type = submarine_2

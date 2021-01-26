@@ -9,7 +9,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	gw_artillery = 1
 	gwtank = 1
@@ -42,7 +42,7 @@ add_ideas = {
 	USA_J_Edgar_Hoover
 }
 
-set_politics = {	
+set_politics = {
 	ruling_party = liberalism
 	last_election = "1924.11.8"
 	election_frequency = 48
@@ -69,31 +69,6 @@ add_ideas = {
 
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = NOU
-		autonomous_state = autonomy_puppet
-	}
-	else = {
-		puppet = NOU
-	}
-}
-
-NOU = {
-	add_popularity = { ideology = conservatism_ideology popularity = 1 }
-	add_popularity = { ideology = liberalism popularity = 0.5 }
-	add_popularity = { ideology = socialism popularity = 0.25 }
-	add_popularity = { ideology = despotism_ideology popularity = 0.1 }
-	set_politics = {
-		ruling_party = conservatism
-		last_election = "1920.15.6"
-		election_frequency = 48
-		elections_allowed = no
-	}
-}
 
 create_country_leader = {
 	name = "Calvin Coolidge"
@@ -239,7 +214,7 @@ create_corps_commander = {
 		picture = "Portrait_USA_William_Hood_Simpson.dds"
 	traits = {  }
 	skill = 3
-	
+
 }
 
 create_corps_commander = {
@@ -247,7 +222,7 @@ create_corps_commander = {
 		picture = "Portrait_USA_Lawton_Collins.dds"
 	traits = {  trickster }
 	skill = 3
-	
+
 }
 
 create_corps_commander = {
@@ -262,7 +237,7 @@ create_corps_commander = {
 	name = "Joseph Stilwell"
 		picture = "Portrait_USA_Joseph_Stilwell.dds"
 	traits = {  }
-	skill = 1 
+	skill = 1
 }
 
 create_corps_commander = {
@@ -418,7 +393,7 @@ create_equipment_variant = {
 }
 
 
-	
+
 	create_equipment_variant = {
 		name = "Salmon Class"
 		type = submarine_2

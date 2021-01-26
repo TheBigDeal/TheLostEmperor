@@ -1,892 +1,246 @@
 focus_tree = {
-	id = LEdanish_focus
-
+	id = gbr_focus
 	country = {
 		factor = 0
-
 		modifier = {
-			add = 10
+			add = 20
 			tag = GBR
 		}
 	}
-
-	default = no
-	continuous_focus_position = { x = 50 y = 3100 }
-
+	#Focus for His Majesty's Government
 	focus = {
-		id = ENG_GOD_SAVE_THE_QUEEN
-		icon = GFX_ROM_strikes
-		x = 10
+		id = GBR_his_majestys_government
+		icon = GFX_focus_generic_home_defense
+		x = 8
 		y = 0
-		cost = 10
+		cost = 5
+		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
+			factor = 1
 		}
 	}
+
+	#Focus for Speech from the Throne
 	focus = {
-		id = ENG_THE_GENERAL_STRIKE
-		icon = GFX_ROM_strikes
-		prerequisite = { focus = ENG_GOD_SAVE_THE_QUEEN }
-		x = 10
+		id = GBR_speech_from_the_throne
+		icon = GFX_focus_generic_treaty
+		x = 8
 		y = 1
-		cost = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_his_majestys_government }
 		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
+			factor = 1
 		}
 	}
+
+	#Focus for The Conservative Agenda
 	focus = {
-		id = ENG_A_SPARK_IS_LIT
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_THE_GENERAL_STRIKE }
-		mutually_exclusive = { focus = ENG_NEGOTIATIONS_PREVAIL focus = ENG_MARCH_ON_LONDON }
+		id = GBR_the_conservative_agenda
+		icon = GFX_focus_generic_diplomatic_treaty
 		x = 4
 		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 10
+		cost = 5
+		available_if_capitulated = yes
+		available = {
+			has_government = conservatism
 		}
-		completion_reward = {
-			add_political_power = 100
+		prerequisite = { focus = GBR_speech_from_the_throne }
+		ai_will_do = {
+			factor = 1
 		}
 	}
+
+	#Focus for Expand the Colonial Office
 	focus = {
-		id = ENG_THE_FIRE_SPREADS
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_A_SPARK_IS_LIT }
-		mutually_exclusive = { focus = ENG_DAMAGED_BUT_AFLOAT }
-		x = 2
+		id = GBR_expand_the_colonial_office
+		icon = GFX_focus_generic_industry_2
+		x = 6
 		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_the_liberal_plan
+			focus = GBR_the_conservative_agenda
 		}
-		completion_reward = {
-			add_political_power = 100
+		ai_will_do = {
+			factor = 1
 		}
 	}
+
+	#Focus for The Liberal Plan
 	focus = {
-		id = ENG_ARMY_LAYS_DOWN_THEIR_ARMS
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_THE_FIRE_SPREADS }
-		mutually_exclusive = { focus = ENG_ARMY_SUPPORTS_PARLIAMENT }
-		x = 0
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
+		id = GBR_the_liberal_plan
+		icon = GFX_goal_tripartite_pact
+		x = 12
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_speech_from_the_throne }
+		available = {
+			has_government = liberalism
 		}
-		completion_reward = {
-			add_political_power = 100
+		ai_will_do = {
+			factor = 1
 		}
 	}
+
+	#Focus for Abolish the Gold Standard
 	focus = {
-		id = ENG_REFORGE_BRITAIN
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_ARMY_LAYS_DOWN_THEIR_ARMS }
-		x = 0
-		y = 5
-		cost = 10
+		id = GBR_abolish_the_gold_standard
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 16
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_liberal_plan }
 		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
+			factor = 1
 		}
 	}
+
+	#Focus for Concessions to the Irish
 	focus = {
-		id = ENG_A_NEW_MILITARY
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_REFORGE_BRITAIN }
-		x = 0
-		y = 6
-		cost = 10
+		id = GBR_concessions_to_the_irish
+		icon = GFX_goal_generic_major_alliance
+		x = 13
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_liberal_plan }
 		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
+			factor = 1
 		}
 	}
+
+	#Focus for Negotiate with Suffragettes
 	focus = {
-		id = ENG_NATIONAL_TRUTH_BOARD
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_A_NEW_MILITARY }
-		x = 0
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
+		id = GBR_negotiate_with_suffragettes
+		icon = GFX_goal_generic_improve_relations
+		x = 10
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_the_liberal_plan
+			focus = GBR_the_conservative_agenda
 		}
-		completion_reward = {
-			add_political_power = 100
+		ai_will_do = {
+			factor = 1
 		}
 	}
+
+	#Focus for Royal Irish Constabulary Act
 	focus = {
-		id = ENG_EXPAND_WELFARE
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_NATIONAL_TRUTH_BOARD }
-		x = 0
-		y = 8
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_THE_FIRST_TRADES_UNION_CONGRESS
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_EXPAND_WELFARE }
-		prerequisite = { focus = ENG_WORKERS_PARADISE }
-		x = 1
-		y = 9
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_ARMY_SUPPORTS_PARLIAMENT
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_THE_FIRE_SPREADS }
-		mutually_exclusive = { focus = ENG_ARMY_LAYS_DOWN_THEIR_ARMS }
-		x = 4
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_FALL_OF_THE_EMPIRE
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_ARMY_LAYS_DOWN_THEIR_ARMS focus = ENG_ARMY_SUPPORTS_PARLIAMENT }
-		x = 2
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_TUC_DOMINANT
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_FALL_OF_THE_EMPIRE }
-		x = 2
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_WORKERS_PARADISE
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_TUC_DOMINANT }
-		x = 2
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_RECOVER_FROM_CIVIL_WAR
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_ARMY_SUPPORTS_PARLIAMENT }
-		x = 4
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_FEED_THE_COUNTRYSIDE
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_RECOVER_FROM_CIVIL_WAR }
-		x = 4
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_PEOPLES_RECONSTRUCTION_AUTHORITY
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_FEED_THE_COUNTRYSIDE }
-		x = 4
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_REWARD_OUR_FOLLOWERS
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_PEOPLES_RECONSTRUCTION_AUTHORITY }
-		x = 4
-		y = 8
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_DICTATORSHIP_ON_THE_CHAIRMAN
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_REWARD_OUR_FOLLOWERS }
-		prerequisite = { focus = ENG_WORKERS_PARADISE }
+		id = GBR_royal_irish_constabulary_act
+		icon = GFX_goal_generic_military_sphere
 		x = 3
-		y = 9
-		cost = 10
+		y = 4
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_crackdown_on_the_irish }
 		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
+			factor = 1
 		}
 	}
+
+	#Focus for Crackdown on the Irish
 	focus = {
-		id = ENG_DAMAGED_BUT_AFLOAT
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_A_SPARK_IS_LIT }
-		mutually_exclusive = { focus = ENG_THE_FIRE_SPREADS }
-		x = 6
+		id = GBR_crackdown_on_the_irish
+		icon = GFX_goal_generic_political_pressure
+		x = 3
 		y = 3
-		cost = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_conservative_agenda }
 		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
+			factor = 1
 		}
 	}
+
+	#Focus for Raise Tariffs
 	focus = {
-		id = ENG_LABOR_REFORMS
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_DAMAGED_BUT_AFLOAT }
-		x = 6
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_INVESTIGATE_RADICALS
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_LABOR_REFORMS }
-		x = 6
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_NEW_WELFARE_PROGRAMS
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_INVESTIGATE_RADICALS }
-		x = 6
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_NATIONAL_HEALTH_SERVICE
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_NEW_WELFARE_PROGRAMS }
-		x = 6
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_SOCIAL_CREDIT
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_DAMAGED_BUT_AFLOAT focus = ENG_SNAP_ELECTIONS }
-		x = 8
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_UNION_RIGHTS_ACT
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_SOCIAL_CREDIT}
-		x = 8
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_RAID_THE_TUC
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_UNION_RIGHTS_ACT}
-		x = 8
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_NATIONALIZE_FAILING_INDUSTRIES
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_RAID_THE_TUC}
-		x = 8
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_TRUTH_AND_RECONCILIATION
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_SNAP_ELECTIONS }
-		x = 10
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_FOREVER_EYES_PROGRAM
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_TRUTH_AND_RECONCILIATION}
-		x = 10
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_WORKER_CONCESSIONS
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_FOREVER_EYES_PROGRAM }
-		x = 10
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_BREVERIDGE_REPORT
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_WORKER_CONCESSIONS }
-		x = 10
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_BAN_THE_TUC
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_SNAP_ELECTIONS focus = ENG_THE_SHIP_IS_SHAKEN }
-		x = 12
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_LIMIT_STRIKES
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_BAN_THE_TUC }
-		x = 12
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_MONETERISM
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_LIMIT_STRIKES }
-		x = 12
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_BREAK_UNION_POWER
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_MONETERISM }
-		x = 12
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_PATCH_UP_THE_HULL
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_THE_SHIP_IS_SHAKEN }
-		x = 14
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_SUPPORT_BUSINESS
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_PATCH_UP_THE_HULL }
-		x = 14
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_RED_SCARE
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_SUPPORT_BUSINESS }
-		x = 14
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_EXPAND_SCOTLAND_YARD
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_RED_SCARE }
-		x = 14
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_STEADY_AS_SHE_GOES
-		icon = GFX_unknown
-		prerequisite = { 
-			focus = ENG_EXPAND_SCOTLAND_YARD 
-			focus = ENG_BREAK_UNION_POWER 
-			focus = ENG_BREVERIDGE_REPORT
-			focus = ENG_NATIONALIZE_FAILING_INDUSTRIES 
-			focus = ENG_NATIONAL_HEALTH_SERVICE 
-		}
-		x = 10
-		y = 8
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_NEGOTIATIONS_PREVAIL
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_THE_GENERAL_STRIKE }
-		mutually_exclusive = { focus = ENG_MARCH_ON_LONDON focus = ENG_A_SPARK_IS_LIT }
-		x = 10
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_SNAP_ELECTIONS
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_NEGOTIATIONS_PREVAIL }
-		x = 10
+		id = GBR_raise_tariffs
+		icon = GFX_goal_generic_demand_territory
+		x = 0
 		y = 3
-		cost = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_conservative_agenda }
 		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
+			factor = 1
 		}
 	}
+
+	#Focus for The Empire Act
 	focus = {
-		id = ENG_MARCH_ON_LONDON
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_THE_GENERAL_STRIKE }
-		mutually_exclusive = { focus = ENG_NEGOTIATIONS_PREVAIL focus = ENG_A_SPARK_IS_LIT }
-		x = 16
-		y = 2
-		cost = 10
+		id = GBR_the_empire_act
+		icon = GFX_focus_GBR_decolonization
+		x = 6
+		y = 4
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_expand_the_colonial_office }
 		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
+			factor = 1
 		}
 	}
+
+	#Focus for Financial Security Act
 	focus = {
-		id = ENG_THE_SHIP_IS_SHAKEN
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_MARCH_ON_LONDON }
-		mutually_exclusive = { focus = ENG_THE_SHIP_SINKS }
-		x = 14
-		y = 3
-		cost = 10
+		id = GBR_financial_security_act
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 4
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_raise_tariffs }
 		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
+			factor = 1
 		}
 	}
+
+	#Focus for The Suffrage Act
 	focus = {
-		id = ENG_THE_SHIP_SINKS
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_MARCH_ON_LONDON }
-		mutually_exclusive = { focus = ENG_THE_SHIP_IS_SHAKEN }
-		x = 18
-		y = 3
-		cost = 10
+		id = GBR_the_suffrage_act
+		icon = GFX_goal_generic_national_unity
+		x = 10
+		y = 4
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_negotiate_with_suffragettes }
 		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
+			factor = 1
 		}
 	}
+
+	#Focus for Irish Religious Act
 	focus = {
-		id = ENG_THE_KING_TAKES_THE_HELM
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_THE_SHIP_SINKS }
-		mutually_exclusive = { focus = ENG_THE_NEW_CROMWELL }
+		id = GBR_irish_religious_act
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		x = 13
+		y = 4
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_concessions_to_the_irish }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The National Pension Act
+	focus = {
+		id = GBR_the_national_pension_act
+		icon = GFX_goal_generic_intelligence_exchange
 		x = 16
 		y = 4
-		cost = 10
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_abolish_the_gold_standard }
 		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
+			factor = 1
 		}
 	}
-	focus = {
-		id = ENG_ADVISORY_PARLIAMENT
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_THE_KING_TAKES_THE_HELM }
-		x = 16
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_A_ROYAL_CULT
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_ADVISORY_PARLIAMENT }
-		x = 16
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_A_NEW_RURAL_ORDER
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_A_ROYAL_CULT }
-		x = 16
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_ROYAL_CADETS
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_A_NEW_RURAL_ORDER }
-		x = 16
-		y = 8
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_ABSOLUTE_MONARCHY
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_ROYAL_CADETS }
-		prerequisite = { focus = ENG_REWRITE_HISTORY }
-		mutually_exclusive = { focus = ENG_THE_MILITARY_COMMONWEALTH }
-		x = 17
-		y = 9
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_CRUSH_THE_REDS
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_THE_KING_TAKES_THE_HELM focus = ENG_THE_NEW_CROMWELL }
-		x = 18
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_MASS_RALLIES
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_CRUSH_THE_REDS}
-		x = 18
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_REWRITE_HISTORY
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_MASS_RALLIES }
-		x = 18
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_THE_NEW_CROMWELL
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_THE_SHIP_SINKS }
-		mutually_exclusive = { focus = ENG_THE_KING_TAKES_THE_HELM }
-		x = 20
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_DEPOSE_OF_THE_KING
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_THE_NEW_CROMWELL }
-		x = 20
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_PURITAN_VALUES
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_DEPOSE_OF_THE_KING }
-		x = 20
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_DESTROY_THE_EMPIRE
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_PURITAN_VALUES }
-		x = 20
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_IDOLIZE_SAXON_HEROES
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_DESTROY_THE_EMPIRE }
-		x = 20
-		y = 8
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = ENG_THE_MILITARY_COMMONWEALTH
-		icon = GFX_unknown
-		prerequisite = { focus = ENG_IDOLIZE_SAXON_HEROES }
-		prerequisite = { focus = ENG_REWRITE_HISTORY }
-		mutually_exclusive = { focus = ENG_ABSOLUTE_MONARCHY }
-		x = 19
-		y = 9
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-}
+
+#End of focuses
+ }

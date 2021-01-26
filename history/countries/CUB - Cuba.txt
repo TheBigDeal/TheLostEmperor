@@ -28,7 +28,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSE_AGRIPINO_BARNET_DESC"
 	picture = "GFX_portrait_cuba_jose_barnet"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = liberalism_ideology
 	traits = {
 		#
 	}
@@ -39,7 +39,7 @@ create_country_leader = {
 	desc = "POLITICS_FEDERICO_LAREDO_BRU_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = socialism_ideology
 	traits = {
 		#
 	}

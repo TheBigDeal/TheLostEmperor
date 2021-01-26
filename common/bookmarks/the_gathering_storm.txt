@@ -14,7 +14,7 @@ bookmarks = {
 				le_religion_catholicism
 			}
 			focuses = {
-				
+
 			}
 		}
 		USA = {
@@ -44,12 +44,12 @@ bookmarks = {
 			history = GER_BLITZKRIEG_DESC
 			ideology = absolutism
 			ideas = {
-				PRS_PRUSSIAN_MILITARISM
-				PRS_political_opposition
-				PRS_unmaintained_navy
+				PRE_PRUSSIAN_MILITARISM
+				PRE_political_opposition
+				PRE_unmaintained_navy
 			}
 			focuses = {
-				
+
 			}
 		}
 		AUS = {
@@ -147,7 +147,7 @@ bookmarks = {
 			history = "ROM_BLITZKRIEG_DESC"
 			ideology = rexism
 			ideas = {
-				
+
 			}
 			focuses = {
 

@@ -14,11 +14,11 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.10
 			add_war_support = -0.20
-			add_political_power = 100	
+			add_political_power = 100
 			add_days_mission_timeout = {
 				mission = RUSSIAN_CIVIL_WAR
 				days = -14
-			}			
+			}
 		}
 	}
 	focus = {
@@ -90,7 +90,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			GBR = { country_event = { id = le_russia.11 = 2} }
+			GBR = { country_event = { id = le_russia.11 days = 2} }
 			add_days_mission_timeout = {
 				mission = RUSSIAN_CIVIL_WAR
 				days = -14
@@ -231,7 +231,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_manpower = 40000	
+			add_manpower = 40000
 			add_war_support = -0.10
 			add_days_mission_timeout = {
 				mission = RUSSIAN_CIVIL_WAR
@@ -295,7 +295,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_manpower = -4000	
+			add_manpower = -4000
 			if = {
 				limit = { has_idea = RUS_DESPERATE_TIMES_1 }
 				swap_ideas = { add_idea = RUS_DESPERATE_TIMES_1 remove_idea = RUS_DESPERATE_TIMES_3 }
@@ -394,7 +394,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -406,7 +406,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -418,7 +418,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -430,11 +430,11 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = RUS_BUSINESS_AS_USUAL
 		icon = GFX_unknown
@@ -444,7 +444,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -456,7 +456,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -469,7 +469,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -481,7 +481,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -493,7 +493,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -505,7 +505,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -519,7 +519,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -531,7 +531,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -543,7 +543,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -555,7 +555,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -567,7 +567,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -579,7 +579,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -592,7 +592,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -604,7 +604,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -616,7 +616,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -629,7 +629,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -643,7 +643,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -656,7 +656,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -668,7 +668,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -680,7 +680,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -693,7 +693,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -705,7 +705,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -717,7 +717,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -731,7 +731,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {factor = 10}
 		completion_reward = {
-			add_political_power = 100		
+			add_political_power = 100
 		}
 	}
 }

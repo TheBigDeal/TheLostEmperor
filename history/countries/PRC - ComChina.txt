@@ -10,17 +10,18 @@ set_technology = {
 set_stability = 0.6
 set_war_support = 0.7
 
-set_politics = {	
-	ruling_party = proletarianism
-	last_election = "1936.1.1"
+set_politics = {
+	ruling_party = collectivism
+	last_election = "1926.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
     socialism = 10
-    mutualism = 34
-    proletarianism = 66
+    mutualism = 23
+    proletarianism = 29
+		collectivism = 38
 }
 
 
@@ -31,13 +32,12 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "Mao Zedong"
+	name = "Zhang Guotao"
 	desc = "POLITICS_MAO_ZEDONG_DESC"
-	picture = "GFX_portrait_prc_mao_zedong"
-	expire = "1965.1.1"
+	picture = "Portrait_Zhang_Guotao.dds"
+	expire = "1987.1.1"
 	ideology = collectivism_ideology
 	traits = {
-		cornered_fox
 	}
 }
 
