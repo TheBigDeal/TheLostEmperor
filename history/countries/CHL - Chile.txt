@@ -36,7 +36,7 @@ create_country_leader = {
 	desc = "POLITICS_ARTURO_ALESSANDRI_DESC"
 	picture = "Portrait_Fidel_Davila_Arrondo.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = despotism_ideology
 	traits = {
 		#
 	}
@@ -84,7 +84,7 @@ create_country_leader = {
 	desc = "POLITICS_JORGE_GONZÁLEZ_VON_MARÉES_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = rexism
+	ideology = rexism_ideology
 	traits = {
 		#
 	}
@@ -95,7 +95,7 @@ create_country_leader = {
 	desc = "POLITICS_CARLOS_CONTRERAS_LABARCA_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
 	expire = "1965.1.1"
-	ideology = proletarianism
+	ideology = proletarianism_ideology_ideology
 	traits = {
 		#
 	}

@@ -41,7 +41,7 @@ create_country_leader = {
 	name = "Antun Saadeh"
 	desc = ""
 	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_land_3.dds"
-	ideology = rexism
+	ideology = rexism_ideology
 	traits = {
 		#
 	}
@@ -61,7 +61,7 @@ create_country_leader = {
 	name = "Khalid Bakdash"
 	desc = ""
 	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_proletarianism1.dds"
-	ideology = proletarianism
+	ideology = proletarianism_ideology_ideology
 	traits = {
 		#
 	}

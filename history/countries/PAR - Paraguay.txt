@@ -40,7 +40,7 @@ create_country_leader = {
 	desc = "POLITICS_RAFAEL_FRANCO_DESC"
 	picture = "GFX_Portrait_paraguay_rafael_franco"
 	expire = "1965.1.1"
-	ideology = proletarianism
+	ideology = proletarianism_ideology_ideology
 	traits = {
 		#
 	}

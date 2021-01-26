@@ -142,28 +142,6 @@ ideas = {
 			}
 		}
 
-		RAJ_famine = {
-
-			picture = ENG_the_war_to_end_all_wars
-
-			visible = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				stability_factor = -0.15
-				industrial_capacity_factory = -0.25
-				industrial_capacity_dockyard = -0.25
-				conscription_factor = -0.1
-				consumer_goods_factor = 0.05
-			}
-		}
 
 		RAJ_princely_states = {
 

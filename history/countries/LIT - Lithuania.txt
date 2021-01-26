@@ -35,7 +35,7 @@ create_country_leader = {
 	desc = "POLITICS_ANTANAS_SMETONA_DESC"
 	picture = "GFX_Portrait_lithuania_antanas_smetona"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = despotism_ideology
 	traits = {
 		#
 	}
@@ -46,7 +46,7 @@ create_country_leader = {
 	desc = "POLITICS_ANTANAS_SNIECKUS_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = proletarianism
+	ideology = proletarianism_ideology_ideology
 	traits = {
 		#
 	}
@@ -57,7 +57,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = rexism
+	ideology = rexism_ideology
 	traits = {
 		#
 	}

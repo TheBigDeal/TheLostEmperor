@@ -9,7 +9,37 @@ focus_tree = {
 			tag = MAS
 		}
 	}
-	#Focus for Create the RNEMP
+	#Focus for The Hartford Convention
+	focus = {
+		id = NEN_the_hartford_convention
+		icon = GFX_goal_tripartite_pact
+		x = 6
+		y = 0
+		cost = 14.3
+		cancelable = no
+		available = {
+			OR = {
+				has_cosmetic_tag = NEW_ENGLAND
+				has_cosmetic_tag = NEW_ENGLAND_BUNKER
+				has_cosmetic_tag = NEW_ENGLAND_PINE
+				has_cosmetic_tag = NEW_ENGLAND_CROSS
+			}
+		}
+		allow_branch = {
+			tag = MAS
+		}
+		select_effect = {
+			country_event = { id = le_USA.36 days = 1 }
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+			country_event = { id = le_USA.41 }
+			GBR = { country_event = { id = le_USA.43 days = 2 }}
+		}
+	}
 	focus = {
 		id = NEN_create_the_rnemp
 		icon = GFX_goal_generic_political_pressure
@@ -53,39 +83,6 @@ focus_tree = {
 			factor = 1
 		}
 	}
-
-	#Focus for The Hartford Convention
-	focus = {
-		id = NEN_the_hartford_convention
-		icon = GFX_goal_tripartite_pact
-		x = 6
-		y = 0
-		cost = 14.3
-		cancelable = no
-		available = {
-			OR = {
-				has_cosmetic_tag = NEW_ENGLAND
-				has_cosmetic_tag = NEW_ENGLAND_BUNKER
-				has_cosmetic_tag = NEW_ENGLAND_PINE
-				has_cosmetic_tag = NEW_ENGLAND_CROSS
-			}
-		}
-		allow_branch = {
-			tag = MAS
-		}
-		select_effect = {
-			country_event = { id = le_USA.36 days = 1 }
-		}
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {	
-			country_event = { id = le_USA.41 }
-			GBR = { country_event = { id = le_USA.43 days = 2 }}
-		}
-	}
-
 	#Focus for A messenger from London...
 	focus = {
 		id = NEN_a_messenger_from_london

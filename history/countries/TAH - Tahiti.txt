@@ -23,7 +23,7 @@ create_country_leader = {
 	name = "Teri'i-nui-o-Tahiti a Pomare"
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_female_1.dds"
-	ideology = despotism
+	ideology = despotism_ideology
 	female = yes
 	traits = {
 		#

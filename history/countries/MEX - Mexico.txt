@@ -32,7 +32,7 @@ create_country_leader = {
 	desc = "POLITICS_LAZARO_CARDENAS_DESC"
 	picture = "Portrait_Jose_Miaja_Menant.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = despotism_ideology
 	traits = {
 		#
 	}
@@ -56,7 +56,7 @@ create_country_leader = {
 	desc = "POLITICS_SALVADOR_ABASCAL_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = rexism
+	ideology = rexism_ideology
 	traits = {
 		#
 	}
@@ -67,7 +67,7 @@ create_country_leader = {
 	desc = "POLITICS_MANUEL_GOMEZ_MORIN_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservatism_ideology
 	traits = {
 		#
 	}
@@ -78,7 +78,7 @@ create_country_leader = {
 	desc = "POLITICS_DIONISIO_ENCINA_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = proletarianism
+	ideology = proletarianism_ideology_ideology
 	traits = {
 		#
 	}

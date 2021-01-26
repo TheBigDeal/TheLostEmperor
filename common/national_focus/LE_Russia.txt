@@ -51,45 +51,27 @@ focus_tree = {
 			custom_effect_tooltip = merc_tt
 			capital_scope  = {
 				create_unit = {
-					division = "name = \"Strelkovaya Diviziya\" 
-					division_template = \"Strelkovaya Diviziya\" 
-					start_experience_factor = 0.5 
-					start_equipment_factor = 0.5"
+					division = "name = \"Strelkovaya Diviziya\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
 					owner = RUS
 				}
 				create_unit = {
-					division = "name = \"Strelkovaya Diviziya\" 
-					division_template = \"Strelkovaya Diviziya\" 
-					start_experience_factor = 0.5 
-					start_equipment_factor = 0.5"
+					division = "name = \"Strelkovaya Diviziya\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
 					owner = RUS
 				}
 				create_unit = {
-					division = "name = \"Strelkovaya Diviziya\" 
-					division_template = \"Strelkovaya Diviziya\" 
-					start_experience_factor = 0.5 
-					start_equipment_factor = 0.5"
+					division = "name = \"Strelkovaya Diviziya\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
 					owner = RUS
 				}
 				create_unit = {
-					division = "name = \"Strelkovaya Diviziya\" 
-					division_template = \"Strelkovaya Diviziya\" 
-					start_experience_factor = 0.5 
-					start_equipment_factor = 0.5"
+					division = "name = \"Strelkovaya Diviziya\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
 					owner = RUS
 				}
 				create_unit = {
-					division = "name = \"Strelkovaya Diviziya\" 
-					division_template = \"Strelkovaya Diviziya\" 
-					start_experience_factor = 0.5 
-					start_equipment_factor = 0.5"
+					division = "name = \"Strelkovaya Diviziya\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
 					owner = RUS
 				}
 				create_unit = {
-					division = "name = \"Strelkovaya Diviziya\" 
-					division_template = \"Strelkovaya Diviziya\" 
-					start_experience_factor = 0.5 
-					start_equipment_factor = 0.5"
+					division = "name = \"Strelkovaya Diviziya\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
 					owner = RUS
 				}
 			}

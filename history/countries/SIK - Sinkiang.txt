@@ -31,7 +31,7 @@ create_country_leader = {
 	desc = "POLITICS_SHGBR_SHICAI_DESC"
 	picture = "gfx/leaders/SIK/Portrait_Sinkiang_ShGBR_Shicai.dds"
 	expire = "1965.1.1"
-	ideology = proletarianism
+	ideology = proletarianism_ideology_ideology
 	traits = {
 		#
 	}

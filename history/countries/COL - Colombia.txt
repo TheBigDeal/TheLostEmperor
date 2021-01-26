@@ -34,7 +34,7 @@ create_country_leader = {
 	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
 	picture = "Portrait_Gonzalo_Queipo_de_Llano.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = despotism_ideology
 	traits = {
 		#
 	}

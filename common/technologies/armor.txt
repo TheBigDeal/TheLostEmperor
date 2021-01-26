@@ -239,13 +239,12 @@ technologies = {
 		enable_equipments = {
 			gw_tank_equipment
 		}
-
+		on_research_complete_limit = {
+			NOT = {	has_template_containing_unit = light_armor }
+			NOT = {	has_template_containing_unit = heavy_armor }
+			NOT = {	has_template_containing_unit = medium_armor }
+		}
 		on_research_complete = {
-			limit = {
-				NOT = {	has_template_containing_unit = light_armor }
-				NOT = {	has_template_containing_unit = heavy_armor }
-				NOT = {	has_template_containing_unit = medium_armor }
-			}
 			hidden_effect = {
 				if = {
 					limit = {
@@ -304,10 +303,6 @@ technologies = {
 		enable_equipments = {
 			early_medium_tank_equipment
 		}
-
-		on_research_complete = {
-
-		}
 	
 		path = {
 			leads_to_tech = basic_medium_tank
@@ -343,9 +338,6 @@ technologies = {
 			early_heavy_tank_equipment
 		}
 
-		on_research_complete = {
-
-		}
 		path = {
 			leads_to_tech = basic_heavy_tank
 			research_cost_coeff = 1
@@ -384,13 +376,12 @@ technologies = {
 		enable_equipments = {
 			light_tank_equipment_1 
 		}
-
+		on_research_complete_limit = {
+			NOT = {	has_template_containing_unit = light_armor }
+			NOT = {	has_template_containing_unit = heavy_armor }
+			NOT = {	has_template_containing_unit = medium_armor }
+		}
 		on_research_complete = {
-			limit = {
-				NOT = {	has_template_containing_unit = light_armor }
-				NOT = {	has_template_containing_unit = heavy_armor }
-				NOT = {	has_template_containing_unit = medium_armor }
-			}
 			hidden_effect = {
 				if = {
 					limit = {
@@ -464,11 +455,6 @@ technologies = {
 			spaag_equipment_1 
 		}
 
-		on_research_complete = {
-			
-		}
-		
-		
 		research_cost = 2
 		start_year = 1934
 		folder = {
@@ -520,10 +506,6 @@ technologies = {
 	spaag_2 = { 
 		enable_equipments = {
 			spaag_equipment_2
-		}
-
-		on_research_complete = {
-			
 		}
 		
 		path = {
@@ -579,9 +561,6 @@ technologies = {
 			spaag_equipment_3
 		}
 
-		on_research_complete = {
-			
-		}
 		
 		path = {
 			leads_to_tech = spaag_4
@@ -635,11 +614,6 @@ technologies = {
 		enable_equipments = {
 			spaag_equipment_4
 		}
-
-		on_research_complete = {
-			
-		}
-		
 		
 		research_cost = 2
 		start_year = 1934
@@ -1489,13 +1463,12 @@ technologies = {
 		enable_equipments = {
 			heavy_tank_equipment_1 
 		}
-
+		on_research_complete_limit = {
+			NOT = {	has_template_containing_unit = light_armor }
+			NOT = {	has_template_containing_unit = heavy_armor }
+			NOT = {	has_template_containing_unit = medium_armor }
+		}
 		on_research_complete = {
-			limit = {
-				NOT = {	has_template_containing_unit = light_armor }
-				NOT = {	has_template_containing_unit = heavy_armor }
-				NOT = {	has_template_containing_unit = medium_armor }
-			}
 			hidden_effect = {
 				if = {
 					limit = {

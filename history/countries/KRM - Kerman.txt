@@ -21,7 +21,7 @@ create_country_leader = {
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "Portrait_Albania_King_Zog.dds"
 	expire = "1965.1.1"
-	ideology = conservatism_ideology
+	ideology = conservatism_ideology_ideology
 	traits = {
 		#
 	}

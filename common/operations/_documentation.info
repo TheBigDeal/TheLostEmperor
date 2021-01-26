@@ -163,7 +163,7 @@ operation_test = {
 	}
 
 	#
-	# Determines requirements other than equipment to launch the operation
+	# Determines requirements other than equipment to launch the operation. If the requirements are not met anymore while the operation is running, it is cancelled.
 	# SCOPE_COUNTRY [ ROOT, FROM ]
 	#
 
@@ -197,7 +197,7 @@ operation_test = {
 	outcome_potential = {
 		FROM = {
 			set_popularities = {
-				liberalism = 100
+				democratic = 100
 			}
 			
 			ROOT = {
@@ -210,13 +210,13 @@ operation_test = {
 	}
 	
 	#
-	# Chance for outcome_execute to happen, otherwise outcome_execute_extra happens
+	# Chance for outcome_execute_extra to happen (assuming it exists), otherwise outcome_extra will be executed
 	# 
 	
 	outcome_extra_chance = 50
 	
 	#
-	# List of modifiers that apply to outcome_extra_chance
+	# List of modifiers that apply to outcome_chance
 	#
 	
 	outcome_modifiers = { trait_perfectionist trait_planner }
@@ -232,7 +232,7 @@ operation_test = {
 	outcome_execute = {
 		FROM = {
 			set_popularities = {
-				liberalism = 100
+				democratic = 100
 			}
 		}
 		

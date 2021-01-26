@@ -83,10 +83,10 @@ if = {
 }
 
 NOU = {
-	add_popularity = { ideology = conservatism popularity = 1 }
+	add_popularity = { ideology = conservatism_ideology popularity = 1 }
 	add_popularity = { ideology = liberalism popularity = 0.5 }
 	add_popularity = { ideology = socialism popularity = 0.25 }
-	add_popularity = { ideology = despotism popularity = 0.1 }
+	add_popularity = { ideology = despotism_ideology popularity = 0.1 }
 	set_politics = {
 		ruling_party = conservatism
 		last_election = "1920.15.6"
@@ -100,7 +100,7 @@ create_country_leader = {
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
 	picture = "Portrait_Coolidge.tga"
 	expire = "1947.1.1"
-	ideology = liberalism
+	ideology = liberalism_ideology
 	traits = {
 
 	}

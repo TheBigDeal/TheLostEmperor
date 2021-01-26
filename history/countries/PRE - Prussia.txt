@@ -106,7 +106,7 @@ create_country_leader = {
 	picture = "Portrait_Prussia_Wilhelm_II.tga"
 	id = 2
 	expire = "1950.4.6"
-	ideology = rexism_ideology
+	ideology =rexism_ideology
 	traits = {
 		Warmonger
 	}

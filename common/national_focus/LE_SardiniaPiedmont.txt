@@ -1050,9 +1050,6 @@ focus_tree = {
 				add_popularity = { ideology = absolutism popularity = 1 }
 				set_politics = {
 					ruling_party = absolutism
-					last_election = "1920.15.6"
-					election_frequency = 48
-					elections_allowed = no
 				}
 				add_state_core = 764
 				add_state_core = 159

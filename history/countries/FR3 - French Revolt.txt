@@ -31,7 +31,7 @@ create_country_leader = {
 	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
 	picture = "Portrait_FRA_Jean_dOrleans.tga"
 	expire = "1965.1.1"
-	ideology = royalism
+	ideology = royalism_ideology
 	traits = {}
 }
 #create_field_marshal = {

@@ -41,7 +41,7 @@ create_country_leader = {
 	desc = ""
 	picture = "GFX_portrait_indonesia_at_van_starkenborgh"
 	expire = "1953.3.1"
-	ideology = conservatism 
+	ideology = conservatism_ideology 
 	traits = {
 		
 	}
@@ -52,7 +52,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
 	expire = "1953.3.1"
-	ideology = proletarianism
+	ideology = proletarianism_ideology_ideology
 	traits = {
 		
 	}
@@ -63,7 +63,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_rexism.dds"
 	expire = "1953.3.1"
-	ideology = rexism # except for no connection to catholicism, this party perfectly fits into rexism 
+	ideology = rexism_ideology # except for no connection to catholicism, this party perfectly fits into rexism 
 	traits = {
 		
 	}

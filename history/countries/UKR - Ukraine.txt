@@ -62,7 +62,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Ukraine_Pavlo_Skoropadsky.tga"
 	expire = "1953.3.1"
-	ideology = absolutism
+	ideology = absolutism_ideology
 	traits = {}
 }
 create_country_leader = {
@@ -70,7 +70,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Ukraine_Pavlo_Skoropadsky.tga"
 	expire = "1953.3.1"
-	ideology = royalism
+	ideology = royalism_ideology
 	traits = {}
 }
 
@@ -79,7 +79,7 @@ create_country_leader = {
 #	desc = ""
 #	picture = ""
 #	expire = "1953.3.1"
-#	ideology = despotism
+#	ideology = despotism_ideology
 #	traits = {
 #
 #	}

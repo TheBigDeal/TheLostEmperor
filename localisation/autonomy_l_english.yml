@@ -18,6 +18,7 @@
  autonomy_personal_union:0 "Personal Union"
  autonomy_eyalet:0 "Eyalet"
  autonomy_vilayet:0 "Vilayet"
+ autonomy_colonial_company:0 "Colonial Company"
  
  AUTONOMY_CAN_TAKE_DESC:1 "$OWNER|UH$ can become $NEXTLEVEL|H$"
  AUTONOMY_CANT_TAKE_DESC:1 "$OWNER|UH$ can not become $NEXTLEVEL|H$ yet"

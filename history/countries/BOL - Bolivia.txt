@@ -42,7 +42,7 @@ create_country_leader = {
 	desc = "POLITICS_OSCAR_UNZAGA_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = rexism
+	ideology = rexism_ideology
 	traits = {
 		#
 	}

@@ -58,8 +58,8 @@ if = {
 }
 
 KOR = {
-	add_popularity = { ideology = despotism popularity = 1 }
-	add_popularity = { ideology = rexism popularity = 0.2 }
+	add_popularity = { ideology = despotism_ideology popularity = 1 }
+	add_popularity = { ideology = rexism_ideology popularity = 0.2 }
 	add_popularity = { ideology = liberalism popularity = 0.09 }
 	add_popularity = { ideology = socialism popularity = 0.05 }
 	add_popularity = { ideology = collectivism popularity = 0.12 }
@@ -74,7 +74,7 @@ KOR = {
 }
 
 MAN = {
-	add_popularity = { ideology = despotism popularity = 1 }
+	add_popularity = { ideology = despotism_ideology popularity = 1 }
 	set_politics = {
 		ruling_party = despotism
 		last_election = "1931.15.6"
@@ -103,7 +103,7 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "Portrait_Japan_Hirohito.dds"
 	expire = "1989.1.1"
-	ideology = rexism
+	ideology = rexism_ideology
 	traits = {
 		warrior_code
 	}
@@ -114,7 +114,7 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "GFX_Portrait_kyuichi_tokuda"
 	expire = "1989.1.1"
-	ideology = proletarianism
+	ideology = proletarianism_ideology_ideology
 	traits = {
 	}
 }

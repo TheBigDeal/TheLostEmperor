@@ -28,7 +28,7 @@ autonomy_state = {
 	}
 
 	ai_overlord_wants_garrison = {
-		factor = 0.5
+		always = no
 	}
 
 	allowed = {

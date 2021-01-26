@@ -675,7 +675,6 @@ focus_tree = {
 					ruling_party = proletarianism
 					ideology = ROOT
 					size = 0.2
-					only_own_territory = no
 					capital = 155
 					states = { 
 						155

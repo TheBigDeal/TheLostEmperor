@@ -29,7 +29,7 @@ create_country_leader = {
 	desc = "POLITICS_ELEAZAR_LOPEZ_CONTRERAS_DESC"
 	picture = "Portrait_Huey_Long.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = despotism_ideology
 	traits = {
 		#
 	}

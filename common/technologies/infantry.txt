@@ -949,12 +949,11 @@ technologies = {
 			position = { x = 11 y = @1936 }
 		}
 		
+		on_research_complete_limit = {
+			has_template_containing_unit = paratrooper
+		}
+		
 		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = paratrooper
-				}
-			}
 			hidden_effect = {
 				load_oob = "unlock_paratroopers"
 			}
@@ -1071,13 +1070,12 @@ technologies = {
 		enable_subunits = {
 			marine
 		}
-		
-		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = marine
-				}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = marine
 			}
+		}
+		on_research_complete = {
 			hidden_effect = {
 				load_oob = "unlock_marines"
 			}			
@@ -1190,13 +1188,12 @@ technologies = {
 		enable_subunits = {
 			mountaineers
 		}
-
-		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = mountaineers
-				}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = mountaineers
 			}
+		}
+		on_research_complete = {
 			hidden_effect = {
 				load_oob = "unlock_mountineers"
 			}
@@ -1524,13 +1521,12 @@ technologies = {
 		enable_equipments = {
 			motorized_equipment_1
 		}
-
-		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = motorized
-				}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = motorized
 			}
+		}
+		on_research_complete = {
 			hidden_effect = {
 				load_oob = "unlock_motorized"
 			}			

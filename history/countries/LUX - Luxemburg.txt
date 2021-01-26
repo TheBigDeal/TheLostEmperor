@@ -46,7 +46,7 @@ set_popularities = {
 		desc = "POLITICS_PIERRE_DUPONG_DESC"
 		picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 		expire = "1965.1.1"
-		ideology = conservatism
+		ideology = conservatism_ideology
 		traits = {
 			#
 		}
@@ -58,7 +58,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSEPH_BECH_DESC"
 	picture = "GFX_portrait_luxembourg_joseph_bech"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservatism_ideology
 	traits = {
 		#
 	}

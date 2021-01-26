@@ -144,7 +144,7 @@ focus_tree = {
 					complete_national_focus = PRE_THE_GREAT_NATIONALIST_WAR
 				}
 				40 = {
-					remove_idea = PRE_political_opposition
+					remove_ideas = PRE_political_opposition
 				}
 			}
 		}
@@ -189,7 +189,7 @@ focus_tree = {
 				80 = {
 					add_political_power = -100
 					add_popularity = { ideology = labryscism popularity = -0.10 }
-					remove_idea = PRE_political_opposition
+					remove_ideas = PRE_political_opposition
 				}
 				10 = {
 					complete_national_focus = PRE_THE_GREAT_NATIONALIST_WAR
@@ -242,7 +242,7 @@ focus_tree = {
 					complete_national_focus = PRE_THE_NATIONALIST_COUP
 				}
 				40 = {
-					remove_idea = PRE_political_opposition
+					remove_ideas = PRE_political_opposition
 				}
 			}
 		}
@@ -265,7 +265,6 @@ focus_tree = {
 				start_civil_war = {
 					ideology = labryscism
 					size = 0.50
-					only_own_territory = no
 					capital = 950
 					states = { 
 						5 67 85 188 762 950 953

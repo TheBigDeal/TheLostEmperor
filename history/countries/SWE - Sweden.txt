@@ -47,7 +47,7 @@ create_country_leader = {
 	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
 	picture = "Portrait_Sweden_Gustaf_V.tga"
 	expire = "1950.10.29"
-	ideology = absolutism
+	ideology = absolutism_ideology
 	traits = {
 		#
 	}
@@ -58,7 +58,7 @@ create_country_leader = {
 	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
 	picture = "Portrait_Sweden_Gustaf_V.tga"
 	expire = "1950.10.29"
-	ideology = royalism
+	ideology = royalism_ideology
 	traits = {
 		#
 	}

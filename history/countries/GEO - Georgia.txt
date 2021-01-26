@@ -64,7 +64,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Stalin.tga"
 	expire = "1956.3.1"
-	ideology = proletarianism
+	ideology = proletarianism_ideology_ideology
 	traits = {
 		terror_of_the_caucus
 	}

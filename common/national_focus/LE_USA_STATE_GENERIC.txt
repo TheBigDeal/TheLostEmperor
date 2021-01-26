@@ -109,8 +109,8 @@ focus_tree = {
 				add_popularity = { ideology = liberalism popularity = 0.1 }
 			}
 			if = {
-				limit = { has_government = convervatism }
-				add_popularity = { ideology = convervatism popularity = 0.1 }
+				limit = { has_government = conservatism }
+				add_popularity = { ideology = conservatism popularity = 0.1 }
 			}
 			if = {
 				limit = { has_government = socialism }

@@ -309,7 +309,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".dds"
 	expire = "1965.11.10"
-	ideology = rexism_ideology
+	ideology =rexism_ideology
 	traits = {
 		#
 	}
