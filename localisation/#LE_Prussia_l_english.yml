@@ -1,4 +1,4 @@
-﻿l_english: 
+﻿l_english:
 ### Country Name ###
  #labryscism
  PRE_rexism:0 "Prussia"
@@ -81,7 +81,7 @@
  #USA_Hubert_Work:0 "Hubert Work"
  # Minister Of Security
  #USA_J_Edgar_Hoover:0 "Edgar Hoover"
- 
+
 ### Ideas ###
  PRE_political_opposition:0 "Political Opposition"
  PRE_unmaintained_navy:0 "Unmaintained Navy"
@@ -124,6 +124,7 @@
  PRUSSIAN_DANISH_WAR_FOR_HOLSTEIN:0 "Treaty Of Kiel"
  PRUSSIAN_POLISH_SUBJUGATION_WAR:0 "Treaty Of Warsaw"
 ### Focus Tree ###
+ PRE_OVERWHELMING_FIREPOWER:0 "Overwhelming Firepower"
  PRE_HOLD_A_REFERENDUM:0 "Hold A Referendum"
  PRE_POL_SUBJUGATION:0 "Subjuation of Poland"
  PRE_POLISH_DIPLOMACY:0 "Polish Diplomacy"
@@ -232,12 +233,12 @@
  le_prussia.2.d:0 "Shortly after Wilhelms visit to the Capitol our king has fallen ill. After being rushed to the best Medical care Germany can provide he died. This event has caused many to think that Wilhelm has gone too far and assassinated the King. Others have come into support of Wilhelm, saying a family would never do that to eachother. \n\n After the chaos the King's will was found in his bed chambers, while the legitimacy of the document is questionable, it seems to be written by the King hisself. Once government officials found the note a meeting between the council was called. Prince Wilhelm and Prince Waldemar, the Kings son has been called to the meeting as well. \n\nRecently the note's contents have been discovered, and the fate of Prussia is Sealed."
  le_prussia.2.a:0 "A Forged Document by Wilhelm is found. Long Live King Wilhelm!"
  le_prussia.2.b:0 "The Kings actual will was found, Long Live King Waldemar!"
- 
+
  le_prussia.3.t:0 "The Great Tragedy"
  le_prussia.3.d:0 "The King and Prince Wilhelm are in a private room. There they talk and catch up, telling stories of recent events, and gossip about the royal family. However, Wilhelm looks agitated. He's plotting something. The talks countinue for a while, and then . . ."
  le_prussia.3.a:0 "The King takes a drink."
  le_prussia.3.b:0 "The Prince Attacks!."
- 
+
  le_prussia.6.t:0 "Annexation Demand From Prussia!"
  le_prussia.7.t:0 "The King is Dead!"
  le_prussia.7.d:0 "Last night our great Konig has past away. He was found in his chambers late at night reading some books, dead in his chair. Investigations are going on currently while the royal family are all greiving. It is a sad day for the country, and all Germanic Peoples.\n\nHenry will have a legacy that not many Prussian Monarchs had, he was a great diplomat, and valued all Prussian lived and those of all of Germany. One of his main goals was to unite the German Peoples into a German Nation."
@@ -263,49 +264,49 @@
  le_prussia.16.t:0 "Denmark Cedes Holstein"
  le_prussia.16.d:0 "The Danes have come to their senses and accepted that Holstein is rightfully our land."
  le_prussia.16.a:0 "About Time."
- 
+
  le_prussia.17.t:0 "Denmark Rejects Our Demands"
  le_prussia.17.d:0 "The Danes have gone absolutly insane. Willing go go to war over a small piece of land."
  le_prussia.17.a:0 "Unfortunate."
- 
+
  le_prussia.18.t:0 "Prussia Demands Poznan"
  le_prussia.18.d:0 "Prussia has sent a demand for Poznan. We have ruled this land for years and they say they have a claim to it, which it utterly outrageous."
  le_prussia.18.a:0 "Cede Poznan"
  le_prussia.18.b:0 "War it is."
- 
+
  le_prussia.19.t:0 "Poland Cedes Poznan"
  le_prussia.19.d:0 "The Poles have come to their senses and accepted that Poznan is rightfully our land."
  le_prussia.19.a:0 "About Time."
- 
+
  le_prussia.20.t:0 "Poland Rejects Our Demands"
  le_prussia.20.d:0 "The Poles have gone absolutly insane. Willing go go to war over a small piece of land."
  le_prussia.20.a:0 "Unfortunate."
- 
+
  le_prussia.21.t:0 "The Berlin Conference"
  le_prussia.21.d:0 "Today we host the Berlin conference. A meeting to unite the Northern Regions into a major nation, under our control of course. It has been too long that German lands have been ruled by hundreds of different nations, being small and insignificant. A new power will rise in Europe, and we won't stop under we rule it all.
  le_prussia.21.a:0 "Gott Mitt Uns!"
- 
+
  le_prussia.22.t:0 "The Berlin Conference"
  le_prussia.22.d:0 "We have been invited, or morely forced to attend the Conference in Berlin. The Prussians are making it seem like we have a choice to the rest of the world, but if we decline we will all die. They want us to join them and give up our country. Either way we are dead, so we might as well PRSvent further bloodshed."
  le_prussia.22.a:0 "Guess we are Prussians now."
  le_prussia.22.b:0 "Never!"
- 
+
  le_prussia.23.t:0 "The South German Confederation?"
  le_prussia.23.d:0 "Recently Prussia has announced the formation of the North German Confederation, many officials in our country have said we need to respond with oru own South German Confederation, while others are scared Prussia will make a move, and want us to approach Austria."
  le_prussia.23.a:0 "Approach Austria"
  le_prussia.23.b:0 "Form The Confederation"
  le_prussia.23.c:0 "Aproach . . . Prussia?"
- 
+
  le_prussia.24.t:0 "Join The South German Confederation?"
  le_prussia.24.d:0 "Bavaria has responded to Prussian Agression by forming their own Confederation, now it is up whether we shall join it, or go on our own path."
  le_prussia.24.a:0 "Join The Confederation"
  le_prussia.24.t:0 "Go Alone"
- 
+
  le_prussia.25.t:0 "Join The South German Confederation?"
  le_prussia.25.d:0 "Bavaria has responded to Prussian Agression by forming their own Confederation, now it is up whether we shall join it, or go on our own path."
  le_prussia.25.a:0 "Join The Confederation"
  le_prussia.25.t:0 "Go Alone"
- 
+
  le_prussia.27.t:0 "Prince Wilhelm found dead!"
  le_prussia.27.d:0 "Today Prince Wilhelm has been found dead in his house. Rumors have been sPRSading saying it was a political rivalry and many are blaming the nationalists, after many nationalists have been found dead."
  le_prussia.27.a:0 "Good Riddance!"
@@ -336,42 +337,42 @@
  le_prussia.33.d:0 "Prussia has sent us a counter offer."
  le_prussia.33.a:0 "Enforce Our Previous Offer."
  le_prussia.33.b:0 "Accept Their Counter Offer."
- 
+
  le_prussia.34.t:0 "Britain Enforced Their Previous Offer"
  le_prussia.34.d:0 "British officals have doubled down on their Previous offer, unwilling to budge. We must accept or surrender."
  le_prussia.34.a:0 "Accept The Previous Offer"
  le_prussia.34.b:0 "Decline and Resort to Espionage"
- 
+
  le_prussia.35.t:0 "Britain Accepts Our Counter Offer"
  le_prussia.35.d:0 "The British government has agreed to our counter-offer and has begun the process of transferring Hannover over to us!"
  le_prussia.35.a:0 "Huzzah!"
- 
+
  le_prussia.36.t:0 "Britain Enforced Their Previous Offer"
  le_prussia.36.d:0 "British officals have doubled down on their Previous offer, unwilling to budge. We must accept or surrender."
  le_prussia.36.a:0 "Accept The Previous Offer"
  le_prussia.36.b:0 "Decline and Resort to Espionage"
- 
+
  le_prussia.37.t:0 "Britain Accepts Our Counter Offer"
  le_prussia.37.d:0 "The British government has agreed to our counter-offer and has begun the process of transferring Hannover over to us!"
  le_prussia.37.a:0 "Great!"
  le_prussia.55.t:0 "Formation of the South German Confederation"
  le_prussia.55.d:0 "In response to us forming the Northern Confederation, Bavaria must have felt threatened and created their own confederation. Too bad it won't last very long."
  le_prussia.55.a:0 "We are close."
- 
+
  le_prussia.60.t:0 "The Treaty of Warsaw"
  le_prussia.64.t:0 "The Treaty of Kiel"
  le_prussia.65.t:0 "Victory over [?DEN.GetNameDef]"
  le_prussia.66.t:0 "Victory over [?POL.GetNameDef]"
- 
+
  le_prussia.75.t:0 "Nationalists Take Up Arms!"
  le_prussia.75.d:0 "It seems we have gone too far this time. In the chaos of assassinations in our attempt to purge the extremists out of Prussia, our enemies have consolidated and mobilized against us! Our purge has been mostly successful in Berlin and the surrounding areas, but the lands far from our Capital are mostly untouched, hence that is where a majority of resistance stands against us. Our army stands true, our Generals loyal, and our nation ready to fight. These men are not true Prussians, only men who want to being unnecessary fear and death to the world. We shall fight to the bitter end."
  le_prussia.75.a:0 "Onwards! For Prussia!"
  le_prussia.75.b:0 "A new age for Prussia has begun! [Play As Nationalists]"
- 
+
  le_prussia.77.t:0 "The Coronation of Prince Waldemar"
  le_prussia.77.d:0 "Today, after long last a new King has been officially crowned. Prince Waldemar has been fearing this day, knowing it would only come at the expence of his father. Nevertheless Waldemar has been training for this day his entire life. Through the military academy, tudoring, and various other acedemics, he is ready. Waldemar, however is not oblivous to the danger the country is still in. The nationalists are still on high alert, and if nothing is done, then all may be lost. They long for blood, and war."
  le_prussia.77.a:0 "Promise Battle and Glory, Long Live King Waldemar!"
- 
+
  le_prussia.78.t:0 "The Coronation of Prince Wilhelm II"
  le_prussia.78.d:0 "The day has finally come. After working so hard, and being replaced, Wilhelm is finally here. Soon, He will be crowned King of Prussia, a title he earned many years ago, but had taken from him. But now, he must look onwards. "
  le_prussia.78.a:0 "Onwards, to Germany! Long Live King Wilhelm II!"

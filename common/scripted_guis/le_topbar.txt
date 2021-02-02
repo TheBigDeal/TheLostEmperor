@@ -1,7 +1,47 @@
 scripted_gui = {
+	country_information = {
+		context_type = player_context
+		window_name = "gp_toolbar_border"
+		parent_window_name = "topbar"
+		visible = {
+    	always = yes
+		}
+		triggers = {
+        gp_flag_border_visible = {
+            ROOT = { check_variable = {  global.score_array_position^i < 11 } }
+        }
+				sp_flag_border_visible = {
+          	ROOT = { check_variable = {  global.score_array_position^i < 21 } }
+        }
+    }
+		effects = {
+			#current_money_bg_right_click = {
+			#	add_to_variable = { current_money = 100000 }
+			#}
+			#current_money_bg_click = {
+			#	add_to_variable = { current_money = -100000 }
+			#}
+		}
+	}
+	country_information = {
+		context_type = player_context
+		window_name = "country_information_container"
+		parent_window_name = "topbar"
+		visible = {
+    	always = yes
+		}
+		effects = {
+			#current_money_bg_right_click = {
+			#	add_to_variable = { current_money = 100000 }
+			#}
+			#current_money_bg_click = {
+			#	add_to_variable = { current_money = -100000 }
+			#}
+		}
+	}
 	current_money = {
 		context_type = player_context
-		
+
 		window_name = "military_experience_container"
 		parent_window_name = "topbar"
 		visible = {
@@ -12,7 +52,7 @@ scripted_gui = {
                 always = no
             }
         }
-		
+
 		effects = {
 			#current_money_bg_right_click = {
 			#	add_to_variable = { current_money = 100000 }
@@ -43,14 +83,14 @@ scripted_gui = {
 	}
 	show_military_info = {
 		context_type = player_context
-		
+
 		window_name = "experience_value_bg"
 		#parent_window_name = "topbar"
-		
+
 		visible = {
             always = no
 		}
-		
+
 		effects = {
 			#current_money_bg_right_click = {
 			#	add_to_variable = { current_money = 100000 }
@@ -68,17 +108,17 @@ scripted_gui = {
 		}
 		effects = {
 		  show_sunni_radicalism_click = {
-		    if = { 
+		    if = {
 		    limit = { check_variable = { radicalism_gui = 1 }
 		     }
 		    set_variable = { radicalism_gui = 0 }
 		    }
-		  if = { 
+		  if = {
 		    limit = { check_variable = { radicalism_gui = 0 }
 		     }
 		    set_variable = { radicalism_gui = 1 }
 		    }
-		  } 
+		  }
 		  }
 		}
 	}
@@ -90,17 +130,17 @@ scripted_gui = {
 		}
 		effects = {
 		  show_shia_radicalism_click = {
-		  if = { 
+		  if = {
 		    limit = { check_variable = { radicalism_gui = 1 }
 		     }
 		    set_variable = { radicalism_gui = 0 }
 		    }
-		  if = { 
+		  if = {
 		    limit = { check_variable = { radicalism_gui = 0 }
 		     }
 		    set_variable = { radicalism_gui = 1 }
 		    }
-		  } 
+		  }
 		}
 	}
 	show_ibadi_radicalism = {
@@ -111,16 +151,16 @@ scripted_gui = {
 		}
 		effects = {
 		  show_ibadi_radicalism_click = {
-		    if = { 
+		    if = {
 		    limit = { check_variable = { radicalism_gui = 1 }
 		     }
 		    set_variable = { radicalism_gui = 0 }
 		    }
-		  if = { 
+		  if = {
 		    limit = { check_variable = { radicalism_gui = 0 }
 		     }
 		    set_variable = { radicalism_gui = 1 }
 		    }
-		  } 
+		  }
 		}
 	}

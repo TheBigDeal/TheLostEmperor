@@ -32,8 +32,8 @@ focus_tree = {
 			has_country_flag = PRE_wilhelm_in_capital
 		}
 		ai_will_do = { factor = 100 }
-		completion_reward = { 
-			add_political_power = 20 
+		completion_reward = {
+			add_political_power = 20
 			add_popularity = {
 				ideology = rexism
 				popularity = 0.02
@@ -97,7 +97,7 @@ focus_tree = {
 				ideology = royalism
 				popularity = 0.08
 			}
-			
+
 		}
 	}
 	focus = {
@@ -108,11 +108,11 @@ focus_tree = {
 		y = 4
 		cost = 4
 		ai_will_do = { factor = 100 }
-		completion_reward = { 
+		completion_reward = {
 			country_event = { id = le_prussia.76 }
 			set_country_flag = PRE_WILHELMS_REBELLION_FLAG
 		}
-		
+
 	}
 	focus = {
 		id = PRE_AN_IRON_FIST
@@ -236,7 +236,7 @@ focus_tree = {
 		cost = 4
 		ai_will_do = { factor = 100 }
 		completion_reward = {
-			add_timed_idea = { idea = PRE_nationalist_policies days = 365} 
+			add_timed_idea = { idea = PRE_nationalist_policies days = 365}
 			random_list = {
 				60 = {
 					complete_national_focus = PRE_THE_NATIONALIST_COUP
@@ -266,7 +266,7 @@ focus_tree = {
 					ideology = labryscism
 					size = 0.50
 					capital = 950
-					states = { 
+					states = {
 						5 67 85 188 762 950 953
 					}
 					keep_political_leader = yes
@@ -314,7 +314,7 @@ focus_tree = {
 			set_cosmetic_tag = PRE_NATIONALIST
 		}
 	}
-	
+
 	focus = {
 		id = PRE_DEATH_OF_OUR_MONARCH
 		icon = GFX_death_of_heinrich
@@ -664,7 +664,7 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 		completion_reward = {add_political_power = 100}
 	}
-	
+
 	focus = {
 		id = PRE_ARMY_FOCUS
 		icon = GFX_Renewed_Arms
@@ -682,8 +682,8 @@ focus_tree = {
 		id = PRE_ARMY_OF_MOBILITY
 		icon = GFX_Tanks_Across_the_Border
 		prerequisite = { focus = PRE_ARMY_FOCUS }
-		mutually_exclusive = { focus = PRE_AIR_FORTRESSESS focus = PRE_A_MAN_AND_HIS_RIFLE }
-		x = -2
+		mutually_exclusive = { focus = PRE_AIR_FORTRESSESS focus = PRE_A_MAN_AND_HIS_RIFLE focus = PRE_OVERWHELMING_FIREPOWER}
+		x = -3
 		y = 3
 		cost = 5
 		ai_will_do = { factor = 100 }
@@ -700,8 +700,8 @@ focus_tree = {
 		id = PRE_AIR_FORTRESSESS
 		icon = GFX_ww1_nationalfocus_zeppelin
 		prerequisite = { focus = PRE_ARMY_FOCUS }
-		mutually_exclusive = { focus = PRE_A_MAN_AND_HIS_RIFLE focus = PRE_ARMY_OF_MOBILITY }
-		x = 0
+		mutually_exclusive = { focus = PRE_A_MAN_AND_HIS_RIFLE focus = PRE_ARMY_OF_MOBILITY focus = PRE_OVERWHELMING_FIREPOWER}
+		x = -1
 		y = 3
 		cost = 5
 		ai_will_do = { factor = 100 }
@@ -715,11 +715,29 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = PRE_OVERWHELMING_FIREPOWER
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = PRE_ARMY_FOCUS }
+		mutually_exclusive = { focus = PRE_AIR_FORTRESSESS focus = PRE_ARMY_OF_MOBILITY focus = PRE_A_MAN_AND_HIS_RIFLE }
+		x = 1
+		y = 3
+		cost = 5
+		ai_will_do = { factor = 100 }
+		relative_position_id = PRE_GERMAN_AMBITIONS
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
 		id = PRE_A_MAN_AND_HIS_RIFLE
 		icon = GFX_rifles_guns_cannons
 		prerequisite = { focus = PRE_ARMY_FOCUS }
-		mutually_exclusive = { focus = PRE_AIR_FORTRESSESS focus = PRE_ARMY_OF_MOBILITY }
-		x = 2
+		mutually_exclusive = { focus = PRE_AIR_FORTRESSESS focus = PRE_ARMY_OF_MOBILITY focus = PRE_OVERWHELMING_FIREPOWER}
+		x = 3
 		y = 3
 		cost = 5
 		ai_will_do = { factor = 100 }
@@ -745,12 +763,12 @@ focus_tree = {
 			add_ideas = { PRE_PRUSSIAN_MILITARISM }
 		}
 	}
-	
+
 	focus = {
 		id = PRE_THREATEN_ANHALT
 		icon = GFX_threaten_ANH
 		prerequisite = { focus = PRE_GERMAN_AMBITIONS }
-		x = -4
+		x = -5
 		y = 1
 		cost = 1
 		ai_will_do = { factor = 100 }
@@ -763,7 +781,7 @@ focus_tree = {
 		id = PRE_THREATEN_VORPOMMERN
 		icon = GFX_threaten_VRP
 		prerequisite = { focus = PRE_GERMAN_AMBITIONS }
-		x = -2
+		x = -3
 		y = 1
 		cost = 1
 		ai_will_do = { factor = 100 }
@@ -776,7 +794,7 @@ focus_tree = {
 		id = PRE_THREATEN_MECKLENBURG_STRELITZ
 		icon = GFX_threaten_MCH
 		prerequisite = { focus = PRE_GERMAN_AMBITIONS }
-		x = 2
+		x = 3
 		y = 1
 		cost = 1
 		ai_will_do = { factor = 100 }
@@ -789,7 +807,7 @@ focus_tree = {
 		id = PRE_THREATEN_MECKLENBURG_SCHWERIN
 		icon = GFX_threaten_MEK
 		prerequisite = { focus = PRE_GERMAN_AMBITIONS }
-		x = 4
+		x = 5
 		y = 1
 		cost = 1
 		ai_will_do = { factor = 100 }
@@ -805,7 +823,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_THREATEN_MECKLENBURG_SCHWERIN }
 		prerequisite = { focus = PRE_THREATEN_MECKLENBURG_STRELITZ }
 		prerequisite = { focus = PRE_THREATEN_VORPOMMERN }
-		x = 4
+		x = 5
 		y = 2
 		cost = 5
 		ai_will_do = { factor = 100 }
@@ -820,7 +838,7 @@ focus_tree = {
 		id = PRE_OCCUPY_HOLSTEIN
 		icon = GFX_occupy_holstein
 		prerequisite = { focus = PRE_CHALLENGE_THE_DANES }
-		x = 4
+		x = 5
 		y = 3
 		cost = 5
 		ai_will_do = { factor = 100 }
@@ -834,21 +852,21 @@ focus_tree = {
 		id = PRE_POLISH_DIPLOMACY
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = PRE_OCCUPY_HOLSTEIN }
-		x = 4
+		x = 5
 		y = 4
 		cost = 5
 		ai_will_do = { factor = 100 }
 		relative_position_id = PRE_GERMAN_AMBITIONS
 		completion_reward = {
 			country_event = { id = le_prussia.72 }
-		} 
+		}
 	}
 	focus = {
 		id = PRE_POL_SUBJUGATION
 		icon = GFX_conquer_poland
 		prerequisite = { focus = PRE_POLISH_DIPLOMACY }
 		mutually_exclusive = { focus = PRE_POL_DEAL focus = PRE_POL_DEMAND }
-		x = 2
+		x = 3
 		y = 5
 		cost = 5
 		ai_will_do = { factor = 100 }
@@ -870,7 +888,7 @@ focus_tree = {
 		icon = GFX_occupy_holstein
 		prerequisite = { focus = PRE_POLISH_DIPLOMACY }
 		mutually_exclusive = { focus = PRE_POL_SUBJUGATION focus = PRE_POL_DEMAND }
-		x = 4
+		x = 5
 		y = 5
 		cost = 1
 		ai_will_do = { factor = 100 }
@@ -884,13 +902,13 @@ focus_tree = {
 		icon = GFX_occupy_holstein
 		prerequisite = { focus = PRE_POLISH_DIPLOMACY }
 		mutually_exclusive = { focus = PRE_POL_DEAL focus = PRE_POL_SUBJUGATION }
-		x = 6
+		x = 7
 		y = 5
 		cost = 1
 		ai_will_do = { factor = 100 }
 		relative_position_id = PRE_GERMAN_AMBITIONS
 		completion_reward = {
-			
+
 		}
 	}
 	focus = {
@@ -900,7 +918,7 @@ focus_tree = {
 		prerequisite = { focus = PRE_THREATEN_MECKLENBURG_SCHWERIN }
 		prerequisite = { focus = PRE_THREATEN_MECKLENBURG_STRELITZ }
 		prerequisite = { focus = PRE_THREATEN_VORPOMMERN }
-		x = -4
+		x = -5
 		y = 2
 		cost = 1
 		ai_will_do = { factor = 100 }
@@ -925,7 +943,7 @@ focus_tree = {
 		id = PRE_DEMAND_LOWER_SAXON_LOYALTY
 		icon = GFX_generic_political_purge
 		prerequisite = { focus = PRE_WESTERN_THRUST }
-		x = -4
+		x = -5
 		y = 3
 		cost = 1
 		ai_will_do = { factor = 100 }
@@ -948,7 +966,7 @@ focus_tree = {
 		icon = GFX_focus_AST_never_gallipoli
 		prerequisite = { focus = PRE_DEMAND_LOWER_SAXON_LOYALTY }
 		bypass = { NOT = { country_exists = HAN } }
-		x = -4
+		x = -5
 		y = 4
 		cost = 3
 		ai_will_do = { factor = 100 }
@@ -964,7 +982,7 @@ focus_tree = {
 		bypass = { NOT = { country_exists = HAN } }
 		available = { always = no }
 		mutually_exclusive = { focus = PRE_PRUSSIAN_SPONSORED_ASSASSINATIONS focus = PRE_NEGOTIATE_WITH_THE_BRITISH}
-		x = -6
+		x = -7
 		y = 5
 		cost = 5
 		ai_will_do = { factor = 100 }
@@ -978,7 +996,7 @@ focus_tree = {
 		bypass = { NOT = { country_exists = HAN } }
 		available = { always = no }
 		mutually_exclusive = { focus = PRE_PRUSSIAN_SPONSORED_ASSASSINATIONS focus = PRE_HOLD_A_REFERENDUM}
-		x = -4
+		x = -5
 		y = 5
 		cost = 5
 		ai_will_do = { factor = 100 }
@@ -992,7 +1010,7 @@ focus_tree = {
 		bypass = { NOT = { country_exists = HAN } }
 		available = { always = no }
 		mutually_exclusive = { focus = PRE_NEGOTIATE_WITH_THE_BRITISH focus = PRE_HOLD_A_REFERENDUM}
-		x = -2
+		x = -3
 		y = 5
 		cost = 5
 		ai_will_do = { factor = 100 }

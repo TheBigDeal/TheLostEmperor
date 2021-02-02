@@ -9,12 +9,12 @@ guiTypes = {
 		smooth_scrolling = 0.25
 
 		background = {
-			name = "Background"	
+			name = "Background"
 			quadTextureSprite = "GFX_scrollbar_vertical_bg"
 		}
-		
+
 		slider = {
-			name = "Slider"	
+			name = "Slider"
 			quadTextureSprite = "yearslider_slider2"
 			position = { x = -2 y = -2 }
 		}
@@ -32,11 +32,11 @@ guiTypes = {
 			position = { x = 2 y = 3 }
 			scale = 0.9
 		}
-		
+
 		increaseButton = {
 			name = "Increase"
 			quadTextureSprite = "GFX_scroll_down"
-			position = { x=-17 y = -19}	
+			position = { x=-17 y = -19}
 			scale = 0.9
 		}
 	}
@@ -50,12 +50,12 @@ guiTypes = {
 		smooth_scrolling = 0.25
 
 		background = {
-			name = "Background"	
+			name = "Background"
 			quadTextureSprite = "GFX_scrollbar_vertical_bg"
 		}
-		
+
 		slider = {
-			name = "Slider"	
+			name = "Slider"
 			quadTextureSprite = "yearslider_slider2"
 			position = { x = -2 y = -2 }
 		}
@@ -73,15 +73,15 @@ guiTypes = {
 			position = { x = 2 y = 3 }
 			scale = 0.9
 		}
-		
+
 		increaseButton = {
 			name = "Increase"
 			quadTextureSprite = "GFX_scroll_down"
-			position = { x=-17 y = -19}	
+			position = { x=-17 y = -19}
 			scale = 0.9
 		}
 	}
-	
+
 	containerWindowType = {
 		name = "TNO_SG_politics_laws"
 		position = { x = 0 y = 480 }
@@ -104,7 +104,7 @@ guiTypes = {
 				background = {
 					name = "Background"
 					quadTextureSprite ="GFX_blank"
-				}		
+				}
 			}
 			###Governmental Laws Start
 			########################################################
@@ -325,7 +325,7 @@ guiTypes = {
 					shortcut = "4"
 				}
 			}
-			###Category 1 start 
+			###Category 1 start
 			########################################################
 			containerWindowType = {
 				name = "category_2_law_political_parties"
@@ -1487,7 +1487,7 @@ guiTypes = {
 			name = "ideas"
 			position = { x = 0 y = 50 }
 			size = { width=730 height=100%% }
-			
+
 			containerWindowType = {
 				name = "grid"
 				position = { x = 6 y = 0 }
@@ -1499,7 +1499,7 @@ guiTypes = {
 					name = "Background"
 					quadTextureSprite ="GFX_tiled_window_thin_border"
 				}
-				
+
 				containerWindowType = {
 					name = "law_le_religion_txt_1"
 					position = { x = 10 y = 10 }
@@ -2059,7 +2059,7 @@ guiTypes = {
 			name = "ideas"
 			position = { x = 0 y = 50 }
 			size = { width=730 height=100%% }
-			
+
 			containerWindowType = {
 				name = "grid"
 				position = { x = 6 y = 0 }
@@ -2071,7 +2071,7 @@ guiTypes = {
 					name = "Background"
 					quadTextureSprite ="GFX_tiled_window_thin_border"
 				}
-				
+
 				containerWindowType = {
 					name = "law_conscription_1"
 					position = { x = 10 y = 10 }
@@ -2422,7 +2422,7 @@ guiTypes = {
 			pdx_tooltip = "CLOSE"
 		}
 	}
-	
+
 	containerWindowType = {
 		name = "le_economy_window"
 		position = { x = 544 y = 2 }
@@ -2455,7 +2455,7 @@ guiTypes = {
 			name = "ideas"
 			position = { x = 0 y = 50 }
 			size = { width=730 height=100%% }
-			
+
 			containerWindowType = {
 				name = "grid"
 				position = { x = 6 y = 0 }
@@ -2467,7 +2467,7 @@ guiTypes = {
 					name = "Background"
 					quadTextureSprite ="GFX_tiled_window_thin_border"
 				}
-				
+
 				containerWindowType = {
 					name = "law_economy_1"
 					position = { x = 10 y = 10 }
@@ -2661,7 +2661,7 @@ guiTypes = {
 						format = left
 					}
 				}
-				
+
 				containerWindowType = {
 					name = "law_economy_5"
 					position = { x = 10 y = 394 }
@@ -2819,7 +2819,7 @@ guiTypes = {
 			pdx_tooltip = "CLOSE"
 		}
 	}
-	
+
 	containerWindowType = {
 		name = "le_trade_window"
 		position = { x = 544 y = 2 }
@@ -2852,7 +2852,7 @@ guiTypes = {
 			name = "ideas"
 			position = { x = 0 y = 50 }
 			size = { width=730 height=100%% }
-			
+
 			containerWindowType = {
 				name = "grid"
 				position = { x = 6 y = 0 }
@@ -2864,7 +2864,7 @@ guiTypes = {
 					name = "Background"
 					quadTextureSprite ="GFX_tiled_window_thin_border"
 				}
-				
+
 				containerWindowType = {
 					name = "law_trade_1"
 					position = { x = 10 y = 10 }

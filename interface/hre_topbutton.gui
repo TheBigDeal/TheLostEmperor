@@ -2,16 +2,7 @@
 @HEADERS_Y = 167
 @STATUS_Y = 152
 guiTypes = {
-	containerWindowType = {
-		name = "hre_container"
-		position = { x = 96% y = 160 }
-		buttonType ={
-			name ="hre_bg"
-			spriteType = "GFX_hre"
-			position = { x=0 y=0 }
-			shortcut = "ctrl+1"
-		}
-	}
+
 	containerWindowType = {
 		name = "hansa_button"
 		position = { x = 96% y = 220 }
@@ -20,6 +11,29 @@ guiTypes = {
 			spriteType = "GFX_hansa"
 			position = { x=0 y=0 }
 			shortcut = "ctrl+2"
+		}
+	}
+
+	containerWindowType = {
+		name = "parliament_button"
+		position = { x = 96% y = 280 }
+		buttonType = {
+			name ="parliament_bg"
+			spriteType = "GFX_parliament_button"
+			position = { x=0 y=0 }
+			shortcut = "ctrl+3"
+		}
+	}
+
+
+	containerWindowType = {
+		name = "hre_container"
+		position = { x = 96% y = 160 }
+		buttonType ={
+			name ="hre_bg"
+			spriteType = "GFX_hre"
+			position = { x=0 y=0 }
+			shortcut = "ctrl+1"
 		}
 	}
 	containerWindowType = {
@@ -55,7 +69,7 @@ guiTypes = {
 			maxWidth = 400
 			maxHeight = 400
 			fixedsize = no
-			format = center		
+			format = center
 			alwaystransparent = no
 		}
 		containerWindowType = {
@@ -64,15 +78,15 @@ guiTypes = {
 			size = {width = 280 height = 590 }
 			margin = { top = 0 bottom = 0 }
 			Orientation = upper_left
-			
+
 			verticalScrollbar = "right_vertical_slider"
 
 			background = {
 				name = "Background"
 				quadTextureSprite = "GFX_tiled_window_thin_border2"
-			} 
-			
-			
+			}
+
+
 			iconType = {
 				name ="emperor_bg"
 				spriteType = "GFX_imperialeagle"
@@ -100,7 +114,7 @@ guiTypes = {
 				maxWidth = 400
 				maxHeight = 80
 				fixedsize = no
-				format = center		
+				format = center
 				alwaystransparent = no
 			}
 			gridboxtype = {
@@ -125,7 +139,7 @@ guiTypes = {
 				maxWidth = 400
 				maxHeight = 40
 				fixedsize = no
-				format = center		
+				format = center
 				alwaystransparent = no
 			}
 			gridboxtype = {
@@ -150,7 +164,7 @@ guiTypes = {
 				maxWidth = 400
 				maxHeight = 40
 				fixedsize = no
-				format = center		
+				format = center
 				alwaystransparent = no
 			}
 			gridboxtype = {
@@ -214,7 +228,7 @@ guiTypes = {
 			}
 		}
 	}
-	containerWindowType = {  
+	containerWindowType = {
 		name = "hre_emperor_entry"
 		position = { x = 0 y = 0}
 		size = { width = 60 height = 90 }
@@ -226,7 +240,7 @@ guiTypes = {
 			pdx_tooltip = "hre_name_emperor"
 		}
 	}
-	containerWindowType = {  
+	containerWindowType = {
 		name = "hre_elector_entry"
 		position = { x = 0 y = 0}
 		size = { width = 60 height = 90 }
@@ -238,7 +252,7 @@ guiTypes = {
 			pdx_tooltip = "hre_name_elector"
 		}
 	}
-	containerWindowType = {  
+	containerWindowType = {
 		name = "hre_member_entry"
 		position = { x = 0 y = 0}
 		size = { width = 60 height = 90 }
@@ -250,7 +264,7 @@ guiTypes = {
 			pdx_tooltip = "hre_name"
 		}
 	}
-	containerWindowType = {  
+	containerWindowType = {
 		name = "hre_city_entry"
 		position = { x = 0 y = 0}
 		size = { width = 60 height = 90 }

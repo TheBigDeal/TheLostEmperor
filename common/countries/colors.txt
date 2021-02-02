@@ -819,8 +819,8 @@ GBR = {
 }
 
 GNG = {
-	color = rgb { 118 196 62 }
-	color_ui = rgb { 118 196 62 }
+	color = rgb { 179 128 104 }
+	color_ui = rgb { 179 128 104 }
 }
 MOR = {
 	color = rgb { 191  110  62 }
@@ -1203,8 +1203,10 @@ BEL = {
 	color_ui = rgb { 251 222 10 }
 }
 HOL = {
-	color = rgb { 203 138 74 }
-	color_ui = rgb { 255 179 96 }
+	#color = rgb { 203 138 74 }
+	#color_ui = rgb { 255 179 96 }
+	color = rgb { 193 128 64 }
+	color_ui = rgb { 203 138 74 }
 }
 CZE = {
 	color = rgb { 54 167 156 }
@@ -1582,8 +1584,8 @@ INS = {
 }
 
 VIN = {
-	color = rgb { 165 144 114 }
-	color_ui = rgb { 165 144 114 }
+	color = rgb { 136  117  90 }
+	color_ui = rgb { 136  117  90 }
 }
 
 CAM = {

@@ -1,9 +1,9 @@
 ﻿l_english:
  test_cat:0 "Mod Temp Info"
  test_cat_desc:0 "Food Needed: §R[?food_needed]§!\nCurrent Food Stockpile: §G[?current_food]§!\nForce Limit: §Y[?num_divisions]/[?force_limit]§!\nActual Force Limit[?max_divisions]\nMaxavailablemanpowerk [?max_available_manpower_k]k\nLower Limit: [?lower_limit] Upper Limit: [?upper_limit]\n[?WAR_CASUALTIES]"
- 
- 
- 
+
+
+
  ### RESEARCH TOOLTIPS ###
  #Upper Class
  tax_upper_class_none:0 "No Upper Class Taxes"
@@ -50,8 +50,16 @@
  taxes_lower_very_high_tt:0 "Cost (£pol_power ): §R[?lower_economic_pp_cost]§!\n§YEffects:§!\n §R-25§! Stability (£stability_texticon )\n   §Y50%§! Tax On Income"
  tax_lower_class_excessive:0 "Excessive Lower Class Taxes"
  taxes_lower_excessive_tt:0 "Cost (£pol_power ): §R[?lower_economic_pp_cost]§!\n§YEffects:§!\n §R-45§! Stability (£stability_texticon )\n   §Y60%§! Tax On Income"
- 
- 
+
+ EFFECT_CHANGE_LAW_tax_tariffs:0 "Change Tarrif Policy to '$NAME|Y$' which grants ($DESC$)."
+ tax_tariffs_none:0 "Tariffs: None"
+ tax_tariffs_very_low:0 "Tariffs: Very Low"
+ tax_tariffs_low:0 "Tariffs: Low"
+ tax_tariffs_medium:0 "Tariffs: Medium"
+ tax_tariffs_high:0 "Tariffs: High"
+ tax_tariffs_very_high:0 "Tariffs: Very High"
+ tax_tarrifs_excessive:0 "Tariffs: Excessive"
+
  current_money_TOOLTIP:0 "§YTreasury:§!\nYou have §H$[?current_money]§!\nTreasury Change: $[?current_money_rate|+0] Per Day"
  current_money_TOOLTIP_DELAYED:0 "\nYou Gain: [?daily_gain]\n§G[?total_population_tax_gain]§! From Population Taxes.\n      §G[?upper_class_taxes]§! from Upper Class taxes.\n      §G[?middle_class_taxes]§! from Middle Class taxes.\n      §G[?lower_class_taxes]§! from Lower Class taxes.\n§G[?industry_tax]§! From Industry Taxes."
  economy_ledger_text:0 "You Gain §G[?daily_gain]§! per day.\n\n§G[?total_population_tax_gain]§! From Population Taxes.\n      §G[?upper_class_taxes]§! from Upper Class taxes.\n      §G[?middle_class_taxes]§! from Middle Class taxes.\n      §G[?lower_class_taxes]§! from Lower Class taxes.\n§G[?industry_tax]§! From Industry Taxes.\n§G[?total_resource_income]§! From Total Resource Exports\n      §G[?food_resource_income]§! from §Y[?resource_exported@food]§! food exports.\n      §G[?coal_resource_income]§! from §Y[?resource_exported@coal]§! coal exports.\n      §G[?textiles_resource_income]§! from §Y[?resource_exported@textile]§! textile exports.\n      §G[?wood_resource_income]§! from §Y[?resource_exported@wood]§! wood exports.\n      §G[?cotton_resource_income]§! from §Y[?resource_exported@cotton]§! cotton exports.\n      §G[?tobacco_resource_income]§! from §Y[?resource_exported@tobacco]§! tobacco exports.\n      §G[?oil_resource_income]§! from §Y[?resource_exported@oil]§! oil exports.\n      §G[?aluminium_resource_income]§! from §Y[?resource_exported@aluminium]§! aluminium exports.\n      §G[?rubber_resource_income]§! from §Y[?resource_exported@rubber]§! rubber exports.\n      §G[?flint_resource_income]§! from §Y[?resource_exported@flint]§! flint exports.\n      §G[?steel_resource_income]§! from §Y[?resource_exported@steel]§! steel exports.\n      §G[?chromium_resource_income]§! from §Y[?resource_exported@chromium]§! chromium exports.\n\n\n\n\n\n\n\n\n\n\n"

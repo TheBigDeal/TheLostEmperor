@@ -8,10 +8,18 @@ set_stability = 0.6
 add_ideas = {
 	gbr_the_sun_never_sets
 	gbr_britannia_rules_the_waves
-	gbr_labor_unrest
-	gbr_splendid_isolation
 	gbr_british_stoicism
 	gbr_irish_question
+
+	#Laws
+	law_2_only_men
+
+	#Economic Policies
+	tax_tariffs_low
+  #Head Of Government
+	GBR_king_william_v_of_hannover
+	#Prime MInister
+	GBR_Bonar_Law
 }
 # Starting tech
 set_technology = {
@@ -32,9 +40,6 @@ set_technology = {
 	advanced_infrastructure = 1
 }
 
-add_ideas = {
-
-}
 set_convoys = 800
 
 # DIPLOMACY
@@ -66,11 +71,6 @@ if = {
 	}
 	set_autonomy = {
 		target = CAN
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.4
-	}
-	set_autonomy = {
-		target = MAR
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
 	}
@@ -116,7 +116,6 @@ if = {
 	}
 	else = {
 		puppet = MAL
-		puppet = RAJ
 		puppet = CAN
 		puppet = NZL
 		puppet = AST
@@ -131,14 +130,8 @@ if = {
 	}
 }
 
-if = {
-	limit = { has_dlc = "Together for Victory" }
-
-	add_to_tech_sharing_group = commonwealth_research
-}
-
 set_politics = {
-	ruling_party = royalism
+	ruling_party = conservatism
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
@@ -148,43 +141,79 @@ set_popularities = {
     liberalism = 20
     rexism = 10
     proletarianism = 0
-    royalism = 70
+    conservatism = 70
 }
 
+set_popularities = {
+    conservatism = 23
+    liberalism = 20
+    socialism = 15
+    labryscism = 0
+    rexism = 12
+    despotism = 0
+    royalism = 12
+    theocracy = 0
+    absolutism = 3
+    proletarianism = 0
+    collectivism = 13
+    mutualism = 2
+}
 
+RAJ = {
+	set_politics = {
+		ruling_party = despotism
+		last_election = "1925.11.14"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+	    despotism = 100
+	}
+}
 give_military_access = RAJ
 
 
 # Order matters - here Chamberlain becomes starting leader
 
 create_country_leader = {
-	name = "Queen Margaret I"
+	name = "William V of Hanover"
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-	picture = "Portrait_margaret_I.dds"
-	expire = "1936.1.20"
+	picture = "Portrait_William_V.tga"
+	expire = "1946.1.20"
 	ideology = absolutism_ideology
 	traits = {
-		gbr_popular_figurhead
+		determined_imperialist
 	}
 }
 create_country_leader = {
-	name = "Queen Margaret I"
+	name = "William V of Hanover"
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-	picture = "Portrait_margaret_I.dds"
-	expire = "1936.1.20"
+	picture = "Portrait_William_V.tga"
+	expire = "1946.1.20"
 	ideology = royalism_ideology
 	traits = {
-		gbr_popular_figurhead
+		determined_imperialist
 	}
 }
 create_country_leader = {
-	name = "Queen Margaret I"
+	name = "William V of Hanover"
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-	picture = "Portrait_margaret_I.dds"
-	expire = "1936.1.20"
-	ideology =rexism_ideology
+	picture = "Portrait_William_V.tga"
+	expire = "1946.1.20"
+	ideology = rexism_ideology
 	traits = {
-		gbr_popular_figurhead
+		determined_imperialist
+	}
+}
+
+create_country_leader = {
+	name = "William V of Hanover"
+	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+	picture = "Portrait_William_V.tga"
+	expire = "1946.1.20"
+	ideology = conservatism_ideology
+	traits = {
+		determined_imperialist
 	}
 }
 

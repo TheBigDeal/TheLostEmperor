@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = GBR_his_majestys_government
 		icon = GFX_focus_generic_home_defense
-		x = 8
+		x = 16
 		y = 0
 		cost = 5
 		available_if_capitulated = yes
@@ -24,7 +24,8 @@ focus_tree = {
 	focus = {
 		id = GBR_speech_from_the_throne
 		icon = GFX_focus_generic_treaty
-		x = 8
+		relative_position_id = GBR_his_majestys_government
+		x = 0
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
@@ -34,46 +35,13 @@ focus_tree = {
 		}
 	}
 
-	#Focus for The Conservative Agenda
-	focus = {
-		id = GBR_the_conservative_agenda
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = 4
-		y = 2
-		cost = 5
-		available_if_capitulated = yes
-		available = {
-			has_government = conservatism
-		}
-		prerequisite = { focus = GBR_speech_from_the_throne }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Expand the Colonial Office
-	focus = {
-		id = GBR_expand_the_colonial_office
-		icon = GFX_focus_generic_industry_2
-		x = 6
-		y = 3
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = {
-			focus = GBR_the_liberal_plan
-			focus = GBR_the_conservative_agenda
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	#Focus for The Liberal Plan
 	focus = {
 		id = GBR_the_liberal_plan
 		icon = GFX_goal_tripartite_pact
-		x = 12
-		y = 2
+		relative_position_id = GBR_speech_from_the_throne
+		x = -5
+		y = 1
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GBR_speech_from_the_throne }
@@ -83,33 +51,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-	}
-
-	#Focus for Abolish the Gold Standard
-	focus = {
-		id = GBR_abolish_the_gold_standard
-		icon = GFX_focus_usa_reestablish_the_gold_standard
-		x = 16
-		y = 3
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = GBR_the_liberal_plan }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Concessions to the Irish
-	focus = {
-		id = GBR_concessions_to_the_irish
-		icon = GFX_goal_generic_major_alliance
-		x = 13
-		y = 3
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = GBR_the_liberal_plan }
-		ai_will_do = {
-			factor = 1
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
 		}
 	}
 
@@ -117,8 +61,9 @@ focus_tree = {
 	focus = {
 		id = GBR_negotiate_with_suffragettes
 		icon = GFX_goal_generic_improve_relations
-		x = 10
-		y = 3
+		relative_position_id = GBR_the_liberal_plan
+		x = 3
+		y = 1
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = {
@@ -128,75 +73,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-	}
-
-	#Focus for Royal Irish Constabulary Act
-	focus = {
-		id = GBR_royal_irish_constabulary_act
-		icon = GFX_goal_generic_military_sphere
-		x = 3
-		y = 4
-		cost = 6
-		available_if_capitulated = yes
-		prerequisite = { focus = GBR_crackdown_on_the_irish }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Crackdown on the Irish
-	focus = {
-		id = GBR_crackdown_on_the_irish
-		icon = GFX_goal_generic_political_pressure
-		x = 3
-		y = 3
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = GBR_the_conservative_agenda }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Raise Tariffs
-	focus = {
-		id = GBR_raise_tariffs
-		icon = GFX_goal_generic_demand_territory
-		x = 0
-		y = 3
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = GBR_the_conservative_agenda }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for The Empire Act
-	focus = {
-		id = GBR_the_empire_act
-		icon = GFX_focus_GBR_decolonization
-		x = 6
-		y = 4
-		cost = 6
-		available_if_capitulated = yes
-		prerequisite = { focus = GBR_expand_the_colonial_office }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Financial Security Act
-	focus = {
-		id = GBR_financial_security_act
-		icon = GFX_goal_generic_production
-		x = 0
-		y = 4
-		cost = 6
-		available_if_capitulated = yes
-		prerequisite = { focus = GBR_raise_tariffs }
-		ai_will_do = {
-			factor = 1
+		completion_reward = {
+			country_event = { id = le_britain.8 }
 		}
 	}
 
@@ -204,13 +82,35 @@ focus_tree = {
 	focus = {
 		id = GBR_the_suffrage_act
 		icon = GFX_goal_generic_national_unity
-		x = 10
-		y = 4
+		relative_position_id = GBR_the_liberal_plan
+		x = 3
+		y = 2
 		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = GBR_negotiate_with_suffragettes }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			country_event = { id = le_britain.9 }
+		}
+	}
+
+	#Focus for Concessions to the Irish
+	focus = {
+		id = GBR_concessions_to_the_irish
+		icon = GFX_goal_generic_major_alliance
+		relative_position_id = GBR_the_liberal_plan
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_liberal_plan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = { id = le_britain.10 }
 		}
 	}
 
@@ -218,11 +118,30 @@ focus_tree = {
 	focus = {
 		id = GBR_irish_religious_act
 		icon = GFX_focus_mex_restore_the_army_of_christ
-		x = 13
-		y = 4
+		relative_position_id = GBR_the_liberal_plan
+		x = 0
+		y = 2
 		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = GBR_concessions_to_the_irish }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = { id = le_britain.11 }
+		}
+	}
+
+	#Focus for Abolish the Gold Standard
+	focus = {
+		id = GBR_abolish_the_gold_standard
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		relative_position_id = GBR_the_liberal_plan
+		x = -3
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_liberal_plan }
 		ai_will_do = {
 			factor = 1
 		}
@@ -232,8 +151,9 @@ focus_tree = {
 	focus = {
 		id = GBR_the_national_pension_act
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 16
-		y = 4
+		relative_position_id = GBR_the_liberal_plan
+		x = -3
+		y = 2
 		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = GBR_abolish_the_gold_standard }
@@ -242,5 +162,254 @@ focus_tree = {
 		}
 	}
 
+
+
+	#Focus for The Conservative Agenda
+	focus = {
+		id = GBR_the_conservative_agenda
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = GBR_speech_from_the_throne
+		x = 5
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		available = {
+			has_government = conservatism
+		}
+		prerequisite = { focus = GBR_speech_from_the_throne }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+
+	#Focus for Raise Tariffs
+	focus = {
+		id = GBR_raise_tariffs
+		icon = GFX_goal_generic_demand_territory
+		relative_position_id = GBR_the_conservative_agenda
+		x = 3
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_conservative_agenda }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = { id = le_britain.1 }
+		}
+	}
+
+	#Focus for Financial Security Act
+	focus = {
+		id = GBR_financial_security_act
+		icon = GFX_goal_generic_production
+		relative_position_id = GBR_the_conservative_agenda
+		x = 3
+		y = 2
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_raise_tariffs }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = { id = le_britain.2 }
+		}
+	}
+
+	#Focus for Crackdown on the Irish
+	focus = {
+		id = GBR_crackdown_on_the_irish
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = GBR_the_conservative_agenda
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_conservative_agenda }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = { id = le_britain.3}
+		}
+	}
+	#Focus for Royal Irish Constabulary Act
+	focus = {
+		id = GBR_royal_irish_constabulary_act
+		icon = GFX_goal_generic_military_sphere
+		relative_position_id = GBR_the_conservative_agenda
+		x = 0
+		y = 2
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_crackdown_on_the_irish }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = { id = le_britain.4}
+		}
+	}
+
+	#Focus for Expand the Colonial Office
+	focus = {
+		id = GBR_expand_the_colonial_office
+		icon = GFX_focus_generic_industry_2
+		relative_position_id = GBR_the_conservative_agenda
+		x = -3
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_the_liberal_plan
+			focus = GBR_the_conservative_agenda
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = { id = le_britain.6}
+		}
+	}
+
+	#Focus for The Empire Act
+	focus = {
+		id = GBR_the_empire_act
+		icon = GFX_focus_eng_the_sun_never_sets
+		relative_position_id = GBR_the_conservative_agenda
+		x = -3
+		y = 2
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_expand_the_colonial_office }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = { id = le_britain.7}
+		}
+	}
+	#Focus for The People's Flag is Deepest Red
+	focus = {
+		id = ENG_the_peoples_flag_is_deepest_red
+		icon = GFX_focus_por_workers_of_iberia
+		x = 3
+		y = 0
+		cost = 5
+		allow_branch = {
+			OR = {
+				is_debug = yes
+				has_government = socialism
+			}
+		}
+		available = {
+			has_government = socialism
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for New Labour
+	focus = {
+		id = ENG_new_labour
+		icon = GFX_goal_generic_major_alliance
+		relative_position_id = ENG_the_peoples_flag_is_deepest_red
+		x = -2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_the_peoples_flag_is_deepest_red }
+		mutually_exclusive = { focus = ENG_break_the_chains }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Break the Chains
+	focus = {
+		id = ENG_break_the_chains
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		relative_position_id = ENG_the_peoples_flag_is_deepest_red
+		x = 2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_the_peoples_flag_is_deepest_red }
+		mutually_exclusive = { focus = ENG_new_labour }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Economic Readjustment Act
+	focus = {
+		id = ENG_the_economic_readjustment_act
+		icon = GFX_goal_generic_soviet_construction
+		relative_position_id = ENG_the_peoples_flag_is_deepest_red
+		x = -3
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_new_labour }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Union Rights Act
+	focus = {
+		id = ENG_the_union_rights_act
+		icon = GFX_focus_spr_class_war
+		relative_position_id = ENG_the_peoples_flag_is_deepest_red
+		x = 0
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = ENG_break_the_chains
+			focus = ENG_new_labour
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Declare the Republic
+	focus = {
+		id = ENG_declare_the_republic
+		icon = GFX_focus_rom_abdicate
+		relative_position_id = ENG_the_peoples_flag_is_deepest_red
+		x = 3
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_break_the_chains }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The National Health Service
+	focus = {
+		id = ENG_the_national_health_service
+		icon = GFX_focus_generic_treaty
+		relative_position_id = ENG_the_peoples_flag_is_deepest_red
+		x = 0
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ENG_the_union_rights_act }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 #End of focuses
  }

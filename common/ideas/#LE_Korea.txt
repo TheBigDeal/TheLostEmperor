@@ -1,0 +1,40 @@
+ideas = {
+	country = {
+		KOR_the_will_to_fight = {
+			picture = GFX_idea_Prussian_Militarism
+			visible = {	always = yes	}
+			modifier = {
+				war_support_factor = 0.50
+			}
+		}
+		KOR_our_enemy = {
+			picture = GFX_idea_Prussian_Militarism
+			visible = {	always = yes	}
+			targeted_modifier = { tag = JAP attack_bonus_against = 0.20 }
+			targeted_modifier = { tag = JAP defense_bonus_against = 0.20 }
+		}
+		KOR_corrupt_bureaucracy = {
+			picture = GFX_idea_Prussian_Militarism
+			visible = {	always = yes	}
+			modifier = {
+				political_power_factor = -0.10
+				political_advisor_cost_factor = 0.20
+			}
+		}
+		KOR_imperial_family = {
+			picture = GFX_idea_Prussian_Militarism
+			visible = {	always = yes	}
+			modifier = {
+				stability_factor = 0.10
+			}
+		}
+		KOR_ineffective_industry = {
+			picture = GFX_idea_Prussian_Militarism
+			visible = {	always = yes	}
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.10
+				production_speed_arms_factory_factor = -0.30
+				production_speed_industrial_complex_factor = -0.30
+			}
+		}
+	}

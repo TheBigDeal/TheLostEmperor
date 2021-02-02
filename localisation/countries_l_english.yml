@@ -5,39 +5,39 @@
  MJG:0 "Mujahideen Groups"
  MJG_DEF:0 "Mujahideen Groups"
  MJG_ADJ:0 "Mujahideen"
- 
+
  BNG:0 "Bengal"
  BNG_DEF:0 "Bengal"
  BNG_ADJ:0 "Bengal"
- 
+
  JTH:0 "Jaysh ut-Tahrir"
  JTH_DEF:0 "Jaysh ut-Tahrir"
  JTH_ADJ:0 "Tahriri"
- 
+
  MAH:0 "Mahdist State"
  MAH_DEF:0 "Mahdist State"
  MAH_ADJ:0 "Mahdist"
- 
+
  MAK:0 "Makhnovia Free Territory"
  MAK_DEF:0 "Makhnovia Free Territory"
  MAK_ADJ:0 "Makhnovian"
- 
+
  VLH:0 "Western Ukranian Republic"
  VLH_DEF:0 "Western Ukranian Republic"
  VLH_ADJ:0 "Western Ukranian"
- 
+
  ASW:0 "Aswan"
  ASW_DEF:0 "Aswan"
  ASW_ADJ:0 "Aswani"
- 
+
  MCK:0 "Mackinac"
  MCK_DEF:0 "Mackinac"
  MCK_ADJ:0 "Mackinac"
- 
+
  AMC:0 "Ahmadiyya Muslim Community"
  AMC_DEF:0 "Ahmadiyya Muslim Community"
  AMC_ADJ:0 "Ahmadi"
- 
+
  BHN:0 "Bahrain"
  BHN_DEF:0 "Bahrain"
  BHN_ADJ:0 "Bahraini"
@@ -69,7 +69,7 @@
  AHV:0 "Ahvaz"
  AHV_DEF:0 "Ahvaz"
  AHV_ADJ:0 "Ahvazi"
- 
+
  #Holy Roman Empire
  ###############################
  ULM:0 "Ulm"
@@ -189,9 +189,9 @@
  FUS:0 "Furstenberg"
  FUS_DEF:0 "Furstenberg"
  FUS_ADJ:0 "Furstenberg"
- 
+
  CYP_absolutism:0 "Cyprus"
- 
+
  BOH_rexism:0 "Bohemian Empire"
  BOH_rexism_DEF:0 "The Bohemian Empire"
  BOH_liberalism:0 "Czech Republic"
@@ -206,7 +206,7 @@
  BOH_liberalism_ADJ:0 "Czech"
  BOH_ADJ:0 "Bohemian"
  BOH_mutualism_ADJ:0 "Bohemian"
- 
+
  BUR_rexism:0 "Burgundy"
  BUR_rexism_DEF:0 "The State of Burgundy"
  BUR_liberalism:0 "Burgundy"
@@ -451,209 +451,209 @@
  AJU_absolutism:0 "Ajuuraan Sultanate"
  AJU_absolutism_DEF:0 "Ajuuraan Sultanate"
  AJU_absolutism_ADJ:0 "Ajuuraan"
- 
+
  BRO_absolutism:0 "Borana Oromo"
  BRO_absolutism_DEF:0 "Borana Oromo"
  BRO_absolutism_ADJ:0 "Borana"
- 
+
  SAM_absolutism:0 "Samburu Turkana"
  SAM_absolutism_DEF:0 "Samburu Turkana"
  SAM_absolutism_ADJ:0 "Samburu"
- 
+
  AGA_absolutism:0 "Agakuyu"
  AGA_absolutism_DEF:0 "Agakuyu"
  AGA_absolutism_ADJ:0 "Agakuyu"
- 
+
  NAN_absolutism:0 "Nandi"
  NAN_absolutism_DEF:0 "Nandi"
  NAN_absolutism_ADJ:0 "Nandi"
- 
+
  KIS_absolutism:0 "Kisumu"
  KIS_absolutism_DEF:0 "Kisumu"
  KIS_absolutism_ADJ:0 "Kisumu"
- 
+
  TNS_absolutism:0 "Trucial Sultanates"
  TNS_absolutism_DEF:0 "Trucial Sultanates"
  TNS_absolutism_ADJ:0 "Trucial Sultanates"
- 
+
  MAA_absolutism:0 "Maasai"
  MAA_absolutism_DEF:0 "Maasai"
  MAA_absolutism_ADJ:0 "Maasai"
- 
+
  UNY_absolutism:0 "Unyamwezi"
  UNY_absolutism_DEF:0 "Unyamwezi"
  UNY_absolutism_ADJ:0 "Unyamwezi"
- 
+
  UGO_absolutism:0 "Ugogo"
  UGO_absolutism_DEF:0 "Ugogo"
  UGO_absolutism_ADJ:0 "Ugogo"
- 
+
  UHE_absolutism:0 "Uhehe"
  UHE_absolutism_DEF:0 "Uhehe"
  UHE_absolutism_ADJ:0 "Uhehe"
- 
+
  UFI_absolutism:0 "Ufipa"
  UFI_absolutism_DEF:0 "Ufipa"
  UFI_absolutism_ADJ:0 "Ufipa"
- 
+
  RUN_absolutism:0 "Rundi"
  RUN_absolutism_DEF:0 "Rundi"
  RUN_absolutism_ADJ:0 "Rundi"
- 
+
  NCL_liberalism:0 "North Carolina"
  NCL_liberalism_DEF:0 "North Carolina"
  NCL_liberalism_ADJ:0 "North Carolina"
  NCL_conservatism:0 "North Carolina"
  NCL_conservatism_DEF:0 "North Carolina"
  NCL_conservatism_ADJ:0 "North Carolina"
- 
+
  NEW_liberalism:0 "New York"
  NEW_liberalism_DEF:0 "New York"
  NEW_liberalism_ADJ:0 "New York"
  NEW_conservatism:0 "New York"
  NEW_conservatism_DEF:0 "New York"
  NEW_conservatism_ADJ:0 "New York"
- 
+
  OHI_liberalism:0 "Ohio"
  OHI_liberalism_DEF:0 "Ohio"
  OHI_liberalism_ADJ:0 "Ohio"
  OHI_conservatism:0 "Ohio"
  OHI_conservatism_DEF:0 "Ohio"
  OHI_conservatism_ADJ:0 "Ohio"
- 
+
  PEN_liberalism:0 "Pennsylvania"
  PEN_liberalism_DEF:0 "Pennsylvania"
  PEN_liberalism_ADJ:0 "Pennsylvania"
  PEN_conservatism:0 "Pennsylvania"
  PEN_conservatism_DEF:0 "Pennsylvania"
  PEN_conservatism_ADJ:0 "Pennsylvania"
- 
+
  SCL_liberalism:0 "South Carolina"
  SCL_liberalism_DEF:0 "South Carolina"
  SCL_liberalism_ADJ:0 "South Carolina"
  SCL_conservatism:0 "South Carolina"
  SCL_conservatism_DEF:0 "South Carolina"
  SCL_conservatism_ADJ:0 "South Carolina"
- 
+
  TEN_liberalism:0 "Tennessee"
  TEN_liberalism_DEF:0 "Tennessee"
  TEN_liberalism_ADJ:0 "Tennessee"
  TEN_conservatism:0 "Tennessee"
  TEN_conservatism_DEF:0 "Tennessee"
  TEN_conservatism_ADJ:0 "Tennessee"
- 
+
  VIR_liberalism:0 "Virginia"
  VIR_liberalism_DEF:0 "Virginia"
  VIR_liberalism_ADJ:0 "Virginia"
  VIR_conservatism:0 "Virginia"
  VIR_conservatism_DEF:0 "Virginia"
  VIR_conservatism_ADJ:0 "Virginia"
- 
+
  ALA_liberalism:0 "Alabama"
  ALA_liberalism_DEF:0 "Alabama"
  ALA_liberalism_ADJ:0 "Alabama"
  ALA_conservatism:0 "Alabama"
  ALA_conservatism_DEF:0 "Alabama"
  ALA_conservatism_ADJ:0 "Alabama"
- 
+
  GRG_liberalism:0 "Georgia"
  GRG_liberalism_DEF:0 "Georgia"
  GRG_liberalism_ADJ:0 "Georgia"
  GRG_conservatism:0 "Georgia"
  GRG_conservatism_DEF:0 "Georgia"
  GRG_conservatism_ADJ:0 "Georgia"
- 
+
  IND_liberalism:0 "Indiana"
  IND_liberalism_DEF:0 "Indiana"
  IND_liberalism_ADJ:0 "Indiana"
  IND_conservatism:0 "Indiana"
  IND_conservatism_DEF:0 "Indiana"
  IND_conservatism_ADJ:0 "Indiana"
- 
+
  JER_liberalism:0 "New Jersey"
  JER_liberalism_DEF:0 "New Jersey"
  JER_liberalism_ADJ:0 "New Jersey"
  JER_conservatism:0 "New Jersey"
  JER_conservatism_DEF:0 "New Jersey"
  JER_conservatism_ADJ:0 "New Jersey"
- 
+
  KNT_liberalism:0 "Kentucky"
  KNT_liberalism_DEF:0 "Kentucky"
  KNT_liberalism_ADJ:0 "Kentucky"
  KNT_conservatism:0 "Kentucky"
  KNT_conservatism_DEF:0 "Kentucky"
  KNT_conservatism_ADJ:0 "Kentucky"
- 
+
  RIS_liberalism:0 "Rhode Island"
  RIS_liberalism_DEF:0 "Rhode Island"
  RIS_liberalism_ADJ:0 "Rhode Island"
  RIS_conservatism:0 "Rhode Island"
  RIS_conservatism_DEF:0 "Rhode Island"
  RIS_conservatism_ADJ:0 "Rhode Island"
- 
+
  MIS_liberalism:0 "Mississippi"
  MIS_liberalism_DEF:0 "Mississippi"
  MIS_liberalism_ADJ:0 "Mississippi"
  MIS_conservatism:0 "Mississippi"
  MIS_conservatism_DEF:0 "Mississippi"
  MIS_conservatism_ADJ:0 "Mississippi"
- 
+
  MIC_liberalism:0 "Michigan"
  MIC_liberalism_DEF:0 "Michigan"
  MIC_liberalism_ADJ:0 "Michigan"
  MIC_conservatism:0 "Michigan"
  MIC_conservatism_DEF:0 "Michigan"
  MIC_conservatism_ADJ:0 "Michigan"
- 
+
  WVR_liberalism:0 "West Virginia"
  WVR_liberalism_DEF:0 "West Virginia"
  WVR_liberalism_ADJ:0 "West Virginia"
  WVR_conservatism:0 "West Virginia"
  WVR_conservatism_DEF:0 "West Virginia"
  WVR_conservatism_ADJ:0 "West Virginia"
- 
+
  MAS_liberalism:0 "Massachusetts"
  MAS_liberalism_DEF:0 "Massachusetts"
  MAS_liberalism_ADJ:0 "Massachusetts"
  MAS_conservatism:0 "Massachusetts"
  MAS_conservatism_DEF:0 "Massachusetts"
  MAS_conservatism_ADJ:0 "Massachusetts"
- 
+
  MRY_liberalism:0 "Maryland"
  MRY_liberalism_DEF:0 "Maryland"
  MRY_liberalism_ADJ:0 "Maryland"
  MRY_conservatism:0 "Maryland"
  MRY_conservatism_DEF:0 "Maryland"
  MRY_conservatism_ADJ:0 "Maryland"
- 
+
  CNT_liberalism:0 "Connecticut"
  CNT_liberalism_DEF:0 "Connecticut"
  CNT_liberalism_ADJ:0 "Connecticut"
  CNT_conservatism:0 "Connecticut"
  CNT_conservatism_DEF:0 "Connecticut"
  CNT_conservatism_ADJ:0 "Connecticut"
- 
+
  VRM_liberalism:0 "Vermont"
  VRM_liberalism_DEF:0 "Vermont"
  VRM_liberalism_ADJ:0 "Vermont"
  VRM_conservatism:0 "Vermont"
  VRM_conservatism_DEF:0 "Vermont"
  VRM_conservatism_ADJ:0 "Vermont"
- 
+
  NHS_liberalism:0 "New Hampshire"
  NHS_liberalism_DEF:0 "New Hampshire"
  NHS_liberalism_ADJ:0 "New Hampshire"
  NHS_conservatism:0 "New Hampshire"
  NHS_conservatism_DEF:0 "New Hampshire"
  NHS_conservatism_ADJ:0 "New Hampshire"
- 
+
  MNE_liberalism:0 "Maine"
  MNE_liberalism_DEF:0 "Maine"
  MNE_liberalism_ADJ:0 "Maine"
  MNE_conservatism:0 "Maine"
  MNE_conservatism_DEF:0 "Maine"
  MNE_conservatism_ADJ:0 "Maine"
- 
+
  MET_absolutism:0 "Metz"
  MET_absolutism_DEF:0 "Metz"
  MET_absolutism_ADJ:0 "Metz"
@@ -668,42 +668,42 @@
  ILL_conservatism:0 "Illinois"
  ILL_conservatism_DEF:0 "Illinois"
  ILL_conservatism_ADJ:0 "Illinois"
- 
+
  MIN_liberalism:0 "Minnesota"
  MIN_liberalism_DEF:0 "Minnesota"
  MIN_liberalism_ADJ:0 "Minnesota"
  MIN_conservatism:0 "Minnesota"
  MIN_conservatism_DEF:0 "Minnesota"
  MIN_conservatism_ADJ:0 "Minnesota"
- 
+
  DAK_liberalism:0 "Dakota"
  DAK_liberalism_DEF:0 "Dakota"
  DAK_liberalism_ADJ:0 "Dakota"
  DAK_conservatism:0 "Dakota"
  DAK_conservatism_DEF:0 "Dakota"
  DAK_conservatism_ADJ:0 "Dakota"
- 
+
  WIS_liberalism:0 "Wisconsin"
  WIS_liberalism_DEF:0 "Wisconsin"
  WIS_liberalism_ADJ:0 "Wisconsin"
  WIS_conservatism:0 "Wisconsin"
  WIS_conservatism_DEF:0 "Wisconsin"
  WIS_conservatism_ADJ:0 "Wisconsin"
- 
+
  IWA_liberalism:0 "Iowa"
  IWA_liberalism_DEF:0 "Iowa"
  IWA_liberalism_ADJ:0 "Iowa"
  IWA_conservatism:0 "Iowa"
  IWA_conservatism_DEF:0 "Iowa"
  IWA_conservatism_ADJ:0 "Iowa"
- 
+
  FLO_liberalism:0 "Florida"
  FLO_liberalism_DEF:0 "Florida"
  FLO_liberalism_ADJ:0 "Florida"
  FLO_conservatism:0 "Florida"
  FLO_conservatism_DEF:0 "Florida"
  FLO_conservatism_ADJ:0 "Florida"
- 
+
  XAA_absolutism:0 "Xaaso"
  XAA_absolutism_DEF:0 "Xaaso"
  XAA_absolutism_ADJ:0 "Xaaso"
@@ -723,7 +723,7 @@
  TYR_absolutism:0 "Trent"
  TYR_absolutism_DEF:0 "Trent"
  TYR_absolutism_ADJ:0 "Trent"
-  
+
  WLT_absolutism:0 "Walata"
  WLT_absolutism_DEF:0 "Walata"
  WLT_absolutism_ADJ:0 "Walata"
@@ -778,8 +778,8 @@
  PNG_despotism:0 "Hansestaat Papua"
  PNG_despotism_DEF:0 "Hansastaat Papua"
  PNG_despotism_ADJ:0 "Hansa"
-  
-  
+
+
  CAT_rexism:0 "Catalonia"
  CAT_rexism_DEF:0 "Kingdom of Catalonia"
  CAT_rexism_ADJ:0 "Catalonia"
@@ -831,7 +831,7 @@
  FR3_theocracy:0 "French Theocratic Movement"
  FR3_theocracy_DEF:0 "The French Theocrats"
  FR3_theocracy_ADJ:0 "French"
- 
+
  FR4_liberalism:0 "French Fifth Republic"
  FR4_liberalism_DEF:0 "The French Republicans"
  FR4_liberalism_ADJ:0 "French"
@@ -842,7 +842,7 @@
  FR5_collectivism:0 "French Rebels"
  FR5_collectivism_DEF:0 "The French Rebels"
  FR5_collectivism_ADJ:0 "French"
- 
+
  MOD_absolutism:0 "Modena"
  MOD_absolutism_DEF:0 "Modena"
  MOD_absolutism_ADJ:0 "Modenan"
@@ -980,8 +980,8 @@
  BNI_absolutism:0 "Brunei"
  BNI_absolutism_DEF:0 "Brunei"
  BNI_absolutism_ADJ:0 "Brunei"
- 
- 
+
+
  PLM_absolutism:0 "Palembang"
  PLM_absolutism_DEF:0 "Palembang"
  PLM_absolutism_ADJ:0 "Palembang"
@@ -1262,9 +1262,9 @@
  GUI_absolutism_DEF:0 "Guizhou"
  GUI_absolutism_ADJ:0 "Guizhou"
 
- GNG_absolutism:0 "Guang Dynasty"
- GNG_absolutism_DEF:0 "Guang Dynasty"
- GNG_absolutism_ADJ:0 "Guang"
+ GNG_absolutism:0 "Heavenly Kingdom"
+ GNG_absolutism_DEF:0 "The Heavenly Kingdom of China"
+ GNG_absolutism_ADJ:0 "Chinese"
 
  ZHU_absolutism:0 "Lianshan Zhuang"
  ZHU_absolutism_DEF:0 "Lianshan Zhuang"
@@ -1297,9 +1297,9 @@
  GAL_royalism_DEF:0 "The Kingdom Of Galicia-Lodomeria"
  GAL_royalism_ADJ:0 "Galician"
 
- 
 
- 
+
+
 
  KUB_absolutism:0 "Kuba"
  KUB_absolutism_DEF:0 "Kuba"
@@ -1536,7 +1536,7 @@
  SOM_liberalism_ADJ:0 "Somalian"
  SOM_absolutism_ADJ:0 "Dervish"
  SOM_mutualism_ADJ:0 "Somalian"
- 
+
  TRI_rexism:0 "Trier"
  TRI_rexism_DEF:0 "Trier"
  TRI_liberalism:0 "Trier"
@@ -1551,7 +1551,7 @@
  TRI_liberalism_ADJ:0 "Trierian"
  TRI_absolutism_ADJ:0 "Trierian"
  TRI_mutualism_ADJ:0 "Trierian"
- 
+
  GEN_rexism:0 "Genoa"
  GEN_rexism_DEF:0 "The Empire of Genoa"
  GEN_liberalism:0 "Genoa"
@@ -1829,7 +1829,7 @@
  GBR_royalism_ADJ:0 "British"
  GBR_mutualism_ADJ:0 "British"
 
- 
+
 
  ########################################
  #REVOLTS
@@ -1855,8 +1855,8 @@
  RV1_collectivism_ADJ:0 "Revolt"
  RV1_proletarianism_ADJ:0 "Revolt"
  RV1_absolutism_ADJ:0 "Revolt"
- 
- 
+
+
  SWE_rexism:0 "Svea Rike"
  SWE_rexism_DEF:0 "Svea Rike"
  SWE_liberalism:0 "Sweden"
@@ -1872,7 +1872,7 @@
  SWE_absolutism_ADJ:0 "Swedish"
  SWE_mutualism_ADJ:0 "Swedish"
 
- 
+
 
  LUX_rexism:0 "Luxembourg"
  LUX_rexism_DEF:0 "Luxembourg"
@@ -1944,7 +1944,7 @@
  POL_absolutism_ADJ:0 "Polish"
  POL_royalism_ADJ:0 "Polish"
 
- 
+
 
  LIT_rexism:0 "Iron Wolf Lithuania"
  LIT_rexism_DEF:0 "Iron Wolf Lithuania"
@@ -2018,7 +2018,7 @@
  SPR_liberalism_ADJ:0 "Spanish"
  SPR_absolutism_ADJ:0 "Spanish"
  SPR_mutualism_ADJ:0 "Spanish"
- 
+
  ITA_rexism:0 "Italy"
  ITA_rexism_DEF:0 "Italy"
  ITA_liberalism:0 "Republican Italy"
@@ -2205,7 +2205,7 @@
  AFG_liberalism_ADJ:0 "Afghan"
  AFG_absolutism_ADJ:0 "Afghan"
  AFG_mutualism_ADJ:0 "Afghan"
- 
+
  ARG_labryscism:0 "La Plata"
  ARG_despotism:0 "La Plata"
  ARG_rexism:0 "Argentine League"
@@ -2223,7 +2223,7 @@
  ARG_liberalism_ADJ:0 "Argentinean"
  ARG_absolutism_ADJ:0 "Argentinean"
  ARG_mutualism_ADJ:0 "Argentinean"
- 
+
  BOL_rexism:0 "Falangist Bolivia"
  BOL_rexism_DEF:0 "Falangist Bolivia"
  BOL_liberalism:0 "Plurinational Bolivia"
@@ -2278,7 +2278,7 @@
  PRC_liberalism_DEF:0 "The Chinese Republic"
  PRC_absolutism:0 "China"
  PRC_absolutism_DEF:0 "China"
- 
+
  PRC_collectivism:0 "Chinese Collectivist Union"
  PRC_collectivism_DEF:0 "Chinese Collectivist Union"
  PRC_proletarianism:0 "Chinese Socialist State"
@@ -2289,7 +2289,7 @@
  PRC_liberalism_ADJ:0 "Chinese"
  PRC_absolutism_ADJ:0 "Chinese"
  PRC_mutualism_ADJ:0 "Chinese"
- 
+
  CHL_rexism:0 "Vanguard Chile"
  CHL_rexism_DEF:0 "Vanguard Chile"
  CHL_despotism:0 "Chile"
@@ -2304,7 +2304,7 @@
  CHL_liberalism_ADJ:0 "Chilean"
  CHL_absolutism_ADJ:0 "Chilean"
  CHL_mutualism_ADJ:0 "Chilean"
- 
+
  COL_rexism:0 "Nueva Gran Colombia"
  COL_rexism_DEF:0 "Nueva Gran Colombia"
  COL_liberalism:0 "Colombia"
@@ -2355,7 +2355,7 @@
  ELS_liberalism_ADJ:0 "Salvadoran"
  ELS_absolutism_ADJ:0 "Salvadoran"
  ELS_mutualism_ADJ:0 "Salvadoran"
- 
+
  GUA_rexism:0 "Guatemalan Corporate State"
  GUA_rexism_DEF:0 "Guatemalan Corporate State"
  GUA_liberalism:0 "Republic of Guatemala"
@@ -2368,7 +2368,7 @@
  GUA_liberalism_ADJ:0 "Guatemalan"
  GUA_absolutism_ADJ:0 "Guatemalan"
  GUA_mutualism_ADJ:0 "Guatemalan"
- 
+
  HON_rexism:0 "Corporatist Honduras"
  HON_rexism_DEF:0 "Corporatist Honduras"
  HON_liberalism:0 "Honduras"
@@ -2410,7 +2410,7 @@
  JAP_liberalism_ADJ:0 "Japanese"
  JAP_absolutism_ADJ:0 "Japanese"
  JAP_mutualism_ADJ:0 "Japanese"
- 
+
  MEX_rexism:0 "Mexican State"
  MEX_rexism_DEF:0 "Mexican State"
  MEX_liberalism:0 "Mexican Republic"
@@ -2425,7 +2425,7 @@
  MEX_liberalism_ADJ:0 "Mexican"
  MEX_absolutism_ADJ:0 "Mexican"
  MEX_mutualism_ADJ:0 "Mexican"
- 
+
  MON_rexism:0 "Mongol Empire"
  MON_rexism_DEF:0 "The Mongol Empire"
  MON_liberalism:0 "Mongolian Parliamentary Republic"
@@ -2727,7 +2727,7 @@
  YEM_liberalism_ADJ:0 "Yemeni"
  YEM_absolutism_ADJ:0 "Yemeni"
  YEM_mutualism_ADJ:0 "Yemeni"
- 
+
  ETH_rexism:0 "Lictor Ethiopia"
  ETH_rexism_DEF:0 "Lictor Ethiopia"
  ETH_liberalism:0 "Federal liberalism Republic of Ethiopia"
@@ -2740,7 +2740,7 @@
  ETH_liberalism_ADJ:0 "Ethiopian"
  ETH_absolutism_ADJ:0 "Abyssinian"
  ETH_mutualism_ADJ:0 "Ethiopian"
- 
+
  SLO_rexism:0 "Slovakia"
  SLO_rexism_DEF:0 "Slovakia"
  SLO_liberalism:0 "Slovak Republic"
@@ -2791,7 +2791,7 @@
  RAJ_liberalism_ADJ:0 "British Indian"
  RAJ_absolutism_ADJ:0 "British Indian"
  RAJ_mutualism_ADJ:0 "British Indian"
- 
+
  CRO:0 "Illyria"
  CRO_rexism:0 "State of Croatia"
  CRO_rexism_DEF:0 "The State of Croatia"
@@ -2804,7 +2804,7 @@
  CRO_liberalism_ADJ:0 "Croatian"
  CRO_absolutism_ADJ:0 "Croatian"
  CRO_mutualism_ADJ:0 "Croatian"
- 
+
  GXC_rexism:0 "Third Guangxi Clique"
  GXC_rexism_DEF:0 "The Third Guangxi Clique"
  GXC_liberalism:0 "Guangxi Independent Republic"
@@ -3099,13 +3099,13 @@
  KAZ_liberalism_ADJ:0 "Kazakh"
  KAZ_absolutism_ADJ:0 "Kazakh"
  KAZ_mutualism_ADJ:0 "Kazakh"
- 
+
  AZR:0 "Azerbaijan"
  AZR_DEF:0 "Azerbaijan"
  AZR_absolutism:0 "Kingdom of Azerbaijan"
  AZR_absolutism_DEF:0 "The Kingdom of Azerbaijan"
  AZR_ADJ:0 "Azerbaijani"
- 
+
  ARM:0 "Armenia"
  ARM_DEF:0 "Armenia"
  ARM_absolutism:0 "Kingdom of Armenia"

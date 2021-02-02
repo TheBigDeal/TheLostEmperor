@@ -9,6 +9,15 @@ leader_traits = {
 		sprite = 13
 		stability_factor = 0.15
 	}
+	determined_imperialist = {
+		war_support_factor = 0.05
+		political_power_factor = 0.10
+		compliance_gain = 0.10
+	}
+	loyal_unionist = {
+		stability_factor = 0.03
+		political_power_gain = -0.03
+	}
 	prs_legendary_war_hero = {
 		random = no
 		sprite = 13
@@ -99,10 +108,10 @@ leader_traits = {
 		random = no
 		ai_strategy = {
 			type = antagonize
-			id = "GBR"			
+			id = "GBR"
 			value = 200
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -111,10 +120,10 @@ leader_traits = {
 		random = no
 		ai_strategy = {
 			type = antagonize
-			id = "PRE"			
+			id = "PRE"
 			value = 200
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -243,12 +252,12 @@ leader_traits = {
 	dictator = {
 		random = no
 		political_power_factor = 0.25
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	warrior_code = {
 		random = no
 		ai_call_ally_desire_factor = -40
@@ -304,29 +313,29 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	
+
 	ww_one_trauma = {
 		random = no
 		ai_call_ally_desire_factor = 10
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	stout_defender = { # This particular trait will make the AI heavily prioritize defensive warfare, rarely, if ever, attacking out of fortified locations
 		random = no
 		ai_focus_defense_factor = 0.5
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	warmonger = {
 		random = no
 		ai_focus_aggressive_factor = 0.5
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -337,7 +346,7 @@ leader_traits = {
 		political_power_factor = -0.3
 		stability_factor = 0.05
 		justify_war_goal_time = -0.25
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -348,7 +357,7 @@ leader_traits = {
 		war_support_factor = 0.05
 		stability_factor = 0.05
 		justify_war_goal_time = -0.25
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -358,7 +367,7 @@ leader_traits = {
 		random = no
 		political_power_factor = -0.5
 		stability_factor = -0.1
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -368,7 +377,7 @@ leader_traits = {
 		random = no
 		political_power_factor = -0.3
 		stability_factor = -0.2
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -379,7 +388,7 @@ leader_traits = {
 		trade_laws_cost_factor = -0.25
 		economy_cost_factor = -0.25
 		industrial_capacity_factory = 0.1
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -388,7 +397,7 @@ leader_traits = {
 	wallis_fancy_title = {
 		random = no
 		absolutism_drift = 0.05
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -404,7 +413,7 @@ leader_traits = {
 		air_chief_cost_factor = 0.25
 		army_chief_cost_factor = 0.25
 		navy_chief_cost_factor = 0.25
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -413,7 +422,7 @@ leader_traits = {
 	headstrong = {
 		random = no
 		political_power_factor = 0.15
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -424,7 +433,7 @@ leader_traits = {
 		stability_factor = 0.15
 		industrial_capacity_factory = 0.05
 		industrial_capacity_dockyard = 0.05
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -443,7 +452,7 @@ leader_traits = {
 		air_chief_cost_factor = -0.25
 		army_chief_cost_factor = -0.25
 		navy_chief_cost_factor = -0.25
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -456,7 +465,7 @@ leader_traits = {
 		stability_factor = 0.05
 		absolutism_drift = 0.05
 		consumer_goods_factor = -0.05
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -468,7 +477,7 @@ leader_traits = {
 		political_power_factor = -0.1
 		war_support_factor = 0.05
 		conscription = 0.01
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -477,7 +486,7 @@ leader_traits = {
 	stammer = {
 		random = no
 		political_power_factor = -0.1
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -487,7 +496,7 @@ leader_traits = {
 		random = no
 		absolutism_drift = 0.05
 		consumer_goods_factor = -0.05
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -497,7 +506,7 @@ leader_traits = {
 		random = no
 		war_support_factor = 0.1
 		political_power_factor = 0.05
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -506,7 +515,7 @@ leader_traits = {
 	chamberlain_appeaser = {
 		random = no
 		war_support_factor = -0.05
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -515,7 +524,7 @@ leader_traits = {
 	rearmer = {
 		random = no
 		industrial_capacity_factory = 0.05
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -525,7 +534,7 @@ leader_traits = {
 		random = no
 		political_power_factor = 0.05
 		political_advisor_cost_factor = -0.1
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -541,7 +550,7 @@ leader_traits = {
 				air_range = 0.01
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -554,18 +563,18 @@ leader_traits = {
 				air_range = 0.1 naval_strike_attack = 0.1
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	
-	indomitable_perseverance = { # Ground units get 4 more Morale 
+
+	indomitable_perseverance = { # Ground units get 4 more Morale
 		random = no
 		sprite = 5
 		army_morale_factor = 0.04
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -580,8 +589,8 @@ leader_traits = {
 		random = no
 		production_speed_buildings_factor = 0.01
 	}
-	
-	
+
+
 #ai_focus_defense_factor
 #ai_focus_aggressive_factor
 #ai_focus_production_factor
@@ -589,64 +598,64 @@ leader_traits = {
 #ai_focus_peaceful_factor
 #ai_focus_naval_factor
 #ai_focus_naval_air_factor
-#ai_focus_aviation_factor 
-	
+#ai_focus_aviation_factor
+
 	dislikes_germany = {
 		random = no
 		ai_strategy = {
 			type = antagonize
-			id = "GER"			
+			id = "GER"
 			value = 200
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	tenacious_defender = {
 		random = no
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	exiled = {
 		random = no
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	political_prisoner = {
 		random = no
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	assassination_survivor = {
 		random = no
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	stalins_puppet = {
 		random = no
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	union_man = {
 		random = no
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -655,7 +664,7 @@ leader_traits = {
 	political_dancer = {
 		random = no
 		political_power_factor = 0.15
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -664,7 +673,7 @@ leader_traits = {
 	staunch_constitutionalist = {
 		random = no
 		drift_defence_factor = 0.5
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -698,7 +707,7 @@ leader_traits = {
 		random = no
 		army_defence_factor = 0.15
 		army_morale_Factor = 0.10
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -709,7 +718,7 @@ leader_traits = {
 		political_power_factor = -0.15
 		justify_war_goal_time = 0.15
 		subversive_activites_upkeep = -0.3
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -739,7 +748,7 @@ leader_traits = {
 	railroad_enthusiast = { #Valentin Campa
 		random = no
 		production_speed_infrastructure_factor = 0.25
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -749,11 +758,11 @@ leader_traits = {
 		random = no
 		army_morale_factor = 0.05
 		political_power_factor = 0.10
-		
+
 		ai_will_do = {
 			factor = 1
 		}
-	}		
+	}
 
 	revolutionary_general = { #Francisco José Mugica
 		random = no
@@ -761,7 +770,7 @@ leader_traits = {
 		mobilization_laws_cost_factor = -0.25
 		economy_cost_factor = -0.25
 		theorist_cost_factor = -0.25
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -811,25 +820,25 @@ leader_traits = {
 
 	refounder_of_mexico = { # liberalism Cardenas
 		random = no
-		
+
 		stability_factor = 0.05
 		trade_opinion_factor = 0.2
 
 		ai_will_do = {
 			factor = 1
 		}
-	}		
+	}
 
 	the_gentleman_president = { #Manuel Avila Camacho
 		random = no
 		stability_factor = 0.05
 		improve_relations_maintain_cost_factor = -0.5
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	the_silver_president = { #Juan Andreu
 		random = no
 		consumer_goods_factor = -0.05
@@ -844,7 +853,7 @@ leader_traits = {
 
 		stability_factor = 0.05
 		industrial_capacity_factory = 0.1
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -854,7 +863,7 @@ leader_traits = {
 		random = no
 		industrial_capacity_factory = 0.1
 		drift_defence_factor = 0.15
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -868,10 +877,10 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 		}
-	}	
+	}
 
 	fascist_sympathies = {
-		random = no		
+		random = no
 		labryscism_acceptance = 70
 
 		ai_will_do = {
@@ -899,7 +908,7 @@ leader_traits = {
 		air_chief_cost_factor = -0.25
 		army_chief_cost_factor = -0.25
 		navy_chief_cost_factor = -0.25
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -936,7 +945,7 @@ leader_traits = {
 	popular_figurehead2 = {
 		sprite = 13
 		stability_factor = 0.05
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -967,7 +976,7 @@ leader_traits = {
 		air_chief_cost_factor = -0.25
 		army_chief_cost_factor = -0.25
 		navy_chief_cost_factor = -0.25
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -996,12 +1005,12 @@ leader_traits = {
 		army_core_attack_factor = 0.1
 		army_core_defence_factor = 0.1
 	}
-	
+
 	red_army_organizer = { # Trotsky's trait if invited to join the Mexican government. Combines effects of Genius Army Organizer and Communist Revolutionary
 		sprite = 12
 		army_org_factor = 0.12
 		collectivism_drift = 0.1
-		
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -1109,14 +1118,14 @@ leader_traits = {
 	}
 
 	### IDEA TRAITS ###
-	
+
 	# drift is a percent applied weekly
 	communist_revolutionary = {
 		random = no
 		# Boosts collectivism
 		sprite = 13
 		collectivism_drift = 0.1
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1124,27 +1133,27 @@ leader_traits = {
 			}
 		}
 	}
-	
+
 	liberalism_reformer = {
 		random = no
 		# Boosts Democracy
 		sprite = 13
 		liberalism_drift = 0.1
-		
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	
+
 	fascist_demagogue = {
 		random = no
 		# Boosts labryscism
 		sprite = 13
 		labryscism_drift = 0.1
-		
+
 		ai_will_do = {
 			factor = 1
-			modifier = { 
+			modifier = {
 				factor = 0
 			}
 		}
@@ -1154,7 +1163,7 @@ leader_traits = {
 		# Boosts Unaligned
 		sprite = 13
 		absolutism_drift = 0.1
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1162,26 +1171,26 @@ leader_traits = {
 			}
 		}
 	}
-	
+
 	shadow_of_calles = {
 		random = no
 		sprite = 13
 
 		absolutism_drift = 0.1
 		political_power_factor = 0.15
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	social_reformer = {
 		random = no
 		sprite = 13
 
 		liberalism_drift = 0.1
 		stability_factor = 0.15
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -1194,7 +1203,7 @@ leader_traits = {
 		labryscism_drift = 0.1
 		generate_wargoal_tension = -0.5
 		justify_war_goal_time = -0.25
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -1206,7 +1215,7 @@ leader_traits = {
 
 		collectivism_drift = 0.1
 		consumer_goods_factor = -0.05
-		
+
 		ai_will_do = {
 			factor = 1
 		}

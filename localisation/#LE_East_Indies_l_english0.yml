@@ -1,0 +1,71 @@
+﻿l_english:
+### Country Names
+
+### Political Parties ###
+ RAJ_absolutism_party:0 "Loyal League"
+ RAJ_royalism_party:0 "British National Party"
+ RAJ_rexism_party:0 "British Imperial Front"
+ RAJ_despotism_party:0 "Unity And Nationalist Association"
+ RAJ_conservatism_party:0 "Conservative Party (Tories)"
+ RAJ_liberalism_party:0 "Liberal Party"
+ RAJ_socialism_party:0 "Labour Party"
+ RAJ_theocracy_party:0 "Church Of RAJland"
+ RAJ_labryscism_party:0 "New Model Republicans"
+ RAJ_mutualism_party:0 "British Congress of Trade Unions"
+ RAJ_collectivism_party:0 "British Congress of Trade Unions"
+ RAJ_proletarianism_party:0 "British Congress of Trade Unions"
+
+### Ministers ###
+ # Head Of State
+
+ # Secondary Head
+
+ # Foriegn Minister
+
+ # Minister Of Defence
+
+ # Economic Minister
+
+ # Minister Of The Interior
+
+ # Minister Of Security
+
+
+### Ideas ###
+ RAJ_local_chiefdoms:0 "Local Chiefdoms"
+ RAJ_famine:0 "Famine"
+ RAJ_a_grand_army:0 "A Grand Army"
+ RAJ_high_illiteracy:0 "High Illiteracy"
+ RAJ_british_dependence:0 "British Dependence"
+ RAJ_independent_operations:0 "Independent Operations"
+### Traits ###
+
+### Tooltips ###
+buy_weapons_from_britain_tt:0 "Unlocks §YPurchase Weapons from Britain§! Decisions."
+crush_local_chiefdoms_tt:0 "Unlocks §YDestroy The Cheifdoms§! Decisions."
+### Global / Country Flags ###
+
+### Focus Tree ###
+RAJ_EXPAND_OUR_SPHERE_OF_INFLUENCE:0 "Expand our Sphere of Influence"
+RAJ_COUNTINUE_INDEPENDENT_OPERATIONS:0 "Countinue Independent Operations"
+RAJ_DESTROY_LOCAL_CHIEFDOMS:0 "Destroy Local Cheifdoms"
+RAJ_INTERESTS_IN_INDIA:0 "Interests In India"
+RAJ_LOWER_MARATHI_AUTONOMY:0 "Lower Marathi Autonomy"
+RAJ_CLAIM_THE_HEART_OF_INDIA:0 "Claim The Heart Of India"
+RAJ_SECOND_ANGLO_BURMESE_WAR:0 "Second Anglo-Burmese War"
+RAJ_ULTIMATUM_TO_THE_NEPALI_KING:0 "Ultimatum to The Nepali King"
+RAJ_ANNEX_SINDH:0 "Annes Sindh"
+RAJ_CONSOLIDATE_HEGEMONY_OVER_INDIA:0 "Consolidate Hegmony Over India"
+RAJ_THE_COUNCIL_OF_MADRAS:0 "The Council Of Madras"
+RAJ_RETAKE_BENGAL:0 "Retake Bengal"
+RAJ_ROYAL_EAST_INDIAN_RAILWAY:0 "Royal East Indian Railway"
+RAJ_LOYALTY_TO_THE_CROWN:0 "Loyalty To The Crown"
+RAJ_COOPERATE_WITH_THE_CHIEFS:0 "Cooperate With The Chiefs"
+RAJ_DOMINATE_INDIAN_OCEAN_TRADE:0 "Dominate Indian Ocean Trade"
+RAJ_REQUEST_CONTROL_OF_LANKA:0 "Request Control Of Lanka"
+RAJ_THE_PORTUGUESE_AGREEMENT:0 "The Portugese Agreement"
+RAJ_SUBJUGATE_MERINA:0 "Subjugate Merina"
+RAJ_INTERESTS_IN_BALOCHISTAN:0 "Interests In Balochistan"
+RAJ_REBUILD_CONQUERED_LANDS:0 "Rebuild Conquered Lands"
+RAJ_NEAPOLITAN_ANGLO_TREATY:0 "Neopolitan-Anglo Treaty"
+### Events ###

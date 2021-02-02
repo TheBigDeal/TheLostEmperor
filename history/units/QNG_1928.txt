@@ -1,0 +1,172 @@
+division_template = {
+	name = "Sanjiao Jun"			# Represents three-division infantry corps (generally poorly-equipped militias)
+	division_names_group = CHI_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+
+### OOB ###
+units = {
+	###### Liaotung ######
+	division = {
+		name = "Sanjiao Jun"
+		location = 11764
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 892
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 836
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 3839
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 6910
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9848
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	###### Manchuria ######
+	division = {
+		name = "Sanjiao Jun"
+		location = 3944
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 6806
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 783
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 810
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 3843
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 5427
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9798
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 12500
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7569
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 10521
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 4805
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location =  12192
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 12263
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 4290
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 10571
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 3664
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 12559
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+	}
+}
+
+
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "QNG"
+		}
+		requested_factories = 2
+		progress = 0.55
+		efficiency = 100
+	}
+}

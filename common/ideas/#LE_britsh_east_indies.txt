@@ -4,23 +4,43 @@ ideas = {
 			picture = GFX_idea_Prussian_Militarism
 			modifier = {
 				conscription = -0.20
+				stability_factor = -0.10
 			}
 		}
 		RAJ_famine = {
 			picture = ENG_the_war_to_end_all_wars
-			visible = {
-				original_tag = RAJ
-			}
 			modifier = {
 				political_power_factor = -0.25
 				consumer_goods_factor = 0.1
 			}
 		}
-		
+
 		RAJ_a_grand_army = {
 			picture = GFX_idea_Prussian_Militarism
 			modifier = {
-				
+				army_org = 5
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+			}
+		}
+
+		RAJ_high_illiteracy = {
+			picture = GFX_idea_Prussian_Militarism
+			modifier = {
+				research_speed_factor = -0.20
+			}
+		}
+		RAJ_independent_operations = {
+			picture = GFX_idea_Prussian_Militarism
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = -0.05
+			}
+		}
+		RAJ_british_dependence = {
+			picture = GFX_idea_Prussian_Militarism
+			modifier = {
+				stability_factor = 0.05
 			}
 		}
 	}

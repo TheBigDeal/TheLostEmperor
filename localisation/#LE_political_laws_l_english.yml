@@ -22,15 +22,15 @@
  LE_conscription_tt:0 "§GClick to change§!§Y Conscription Law§!"
  LE_economic_tt:0 "§GClick to change§!§Y Economic Law§!"
  LE_trade_tt:0 "§GClick to change§!§Y Trade Law§!"
- 
- 
+
+
  #EFFECT CHANGES
  #######################################
  EFFECT_CHANGE_LAW_le_religion:0 "Change State Religion to '$NAME|Y$' which grants ($DESC$)."
  EFFECT_CHANGE_LAW_law_political_parties:0 "Change Political Parties Law to '$NAME|Y$' which grants ($DESC$)."
  EFFECT_CHANGE_LAW_law_trade_unions:0 "Change Trade Unions Law to '$NAME|Y$' which grants ($DESC$)."
  EFFECT_CHANGE_LAW_law_political_parties:0 "Change Political Parties Law to '$NAME|Y$' which grants ($DESC$)."
- 
+ EFFECT_CHANGE_LAW_law_vote_franchise:0 "Change Vote Franchise Law to '$NAME|Y$' which grants ($DESC$)."
  #HEAD OF GOVERNMENT
  #######################################
  minister:0 "Political Advisors"
@@ -41,7 +41,7 @@
  economy_minister:0 "Economic Minister"
  security_minister:0 "Minister Of The Interior"
  intel_minister:0 "Minister Of Intelligence"
- 
+
  #GOVERNMENTAL LAW IDEAS
  #######################################
  LE_ideas:0 "Head Of State"
@@ -124,12 +124,12 @@
  LE_WIP_Modifier:0 "No Current Effects"
  LE_Catholicism_Modifier:0 "War Support: §G+10.00%§!\nIdeology Drift Defence: §G+10.00%§!\n§YEnables Papal Actions§!"
  LE_Orthodoxy_Modifier:0 "Conscription: §G+5.00%§!\nIdeology Drift Defence: §R-8.00%§!"
- 
- 
+
+
  #########################
  ####  National Laws  ####
  #########################
- 
+
 # Political Parties
 #############
  # Only Underground
@@ -147,7 +147,7 @@
  # Confidential Ballots
  law_1_confidential_ballots:0 "Political Parties: Confidential Ballets"
  LE_political_parties_5_tt:0 "§YPolitical Parties: Confidential Ballets§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Stability §G15%§!\n   Ideology Drift Defence §R-15%§!"
- 
+
 # Vote Franchise
 ####################
  # Only Underground
@@ -165,7 +165,7 @@
  # Confidential Ballots
  law_2_universal_voting:0 "Vote Franchise: Universial Voting"
  LE_vote_franchise_5_tt:0 "§YVote Franchise: Universial Voting§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Public §YElections§! Will Be Held\n   Political Power Cost: §Y+25%§!\n   Party Popularity Stability Factor: §G+15%§!"
- 
+
 # Trade Unions
 ####################
  # Only Underground

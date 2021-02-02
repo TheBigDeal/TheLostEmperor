@@ -1,4 +1,24 @@
 ﻿l_english:
+### Country Names
+ GBR_rexism:0 "British Empire"
+ GBR_rexism_DEF:0 "The British Empire"
+ GBR_socialism:0 "United Kingdom"
+ GBR_socialism_DEF:0 "United Kingdom of Great Britain and Ireland"
+ GBR_liberalism:0 "United Kingdom"
+ GBR_liberalism_DEF:0 "United Kingdom of Great Britain and Ireland"
+ GBR_conservatism:0 "United Kingdom"
+ GBR_conservatism_DEF:0 "United Kingdom of Great Britain and Ireland"
+ GBR_absolutism:0 "United Kingdom"
+ GBR_absolutism_DEF:0 "United Kingdom of Great Britain and Ireland"
+ GBR_royalism:0 "United Kingdom"
+ GBR_royalism_DEF:0 "United Kingdom of Great Britain and Ireland"
+ GBR_mutualism:0 "Union of Britain"
+ GBR_mutualism_DEF:0 "The Union of Britain"
+ GBR_rexism_ADJ:0 "British"
+ GBR_liberalism_ADJ:0 "British"
+ GBR_absolutism_ADJ:0 "British"
+ GBR_royalism_ADJ:0 "British"
+ GBR_ADJ:0 "British"
 
 ### Political Parties ###
  GBR_absolutism_party:0 "Loyal League"
@@ -8,7 +28,7 @@
  GBR_conservatism_party:0 "Conservative Party (Tories)"
  GBR_liberalism_party:0 "Liberal Party"
  GBR_socialism_party:0 "Labour Party"
- GBR_theocracy_party:0 "Church Of GBRland"
+ GBR_theocracy_party:0 "Church Of England"
  GBR_labryscism_party:0 "New Model Republicans"
  GBR_mutualism_party:0 "British Congress of Trade Unions"
  GBR_collectivism_party:0 "British Congress of Trade Unions"
@@ -16,9 +36,9 @@
 
 ### Ministers ###
  # Head Of State
-
+GBR_king_william_v_of_hannover:0 "King William V of Hanover"
  # Secondary Head
-
+GBR_Bonar_Law:0 "Bonar Law"
  # Foriegn Minister
 
  # Minister Of Defence
@@ -37,9 +57,28 @@
  gbr_splendid_isolation:0 "Splendid Isolation"
  gbr_british_stoicism:0 "British Stoicism"
  gbr_irish_question:0 "Irish Question"
+ gbr_irish_question_1:0 "Irish Question"
+ gbr_irish_question_2:0 "Irish Question"
+ gbr_irish_question_3:0 "Irish Question"
+ gbr_irish_question_4:0 "Irish Question"
  gbr_irish_question_desc:0 "Throughout human history there have always been several universal truths; one of those is that the Irish do not particularly like the British. Centuries of discrimination, rebellion, and anger have soured relations between the two islands. Boycotts of British goods and public protests are common and any conscription attempt of Irishmen, with the notable exception of the pro-British Ulster unionists, is met with fierce resistance. While Ireland might be stable for now some say it’s a ticking time bomb just waiting to explode."
-### Tooltips ###
+ gbr_empire_act_1:0 "The Empire Act"
+ gbr_empire_act_2:0 "The Empire Act"
 
+ gbr_national_banking_act_1:0 "National Banking Act"
+ gbr_national_banking_act_2:0 "National Banking Act"
+
+### Traits ###
+ gbr_determined_imperialist:0 "Determined Imperialist"
+ loyal_unionist:0 "Loyal Unionist"
+### Tooltips ###
+ raise_tariffs_tt:0 "Modifies Reward of §Y"The Financial Security Act"§! With:\n\n"
+ irish_question_tt:0 "Modifies Reward of §Y"Royal Irish Constabulary Act"§! With:\n\n"
+ empire_act_tt:0 "Modifies Reward of §Y"The Empire Act"§! With:\n\n"
+ IRA_bolder_tt:0 "§RThe IRA grows bolder . . .§!"
+ suffrage_tt:0 "Modifies Reward of §Y"The Suffrage Act"§! With:\n\n"
+ irish_question_tt:0 "Modifies Reward of §Y"Irish Religious Act"§! With:\n\n"
+ banking_tt:0 "Modifies Reward of §Y"The National Banking Act"§! With:\n\n"
 ### Global / Country Flags ###
 
 ### Focus Tree ###
@@ -73,10 +112,90 @@ GBR_the_suffrage_act:0 "The Suffrage Act"
 GBR_the_suffrage_act_desc:0 ""
 GBR_irish_religious_act:0 "Irish Religious Act"
 GBR_irish_religious_act_desc:0 ""
-GBR_the_national_pension_act:0 "The National Pension Act"
+GBR_the_national_pension_act:0 "The National Banking Act"
 GBR_the_national_pension_act_desc:0 ""
-
+ENG_the_national_banking_act_desc:0 ""
+ENG_the_peoples_flag_is_deepest_red:0 "The People's Flag is Deepest Red"
+ENG_the_peoples_flag_is_deepest_red_desc:0 ""
+ENG_new_labour:0 "New Labour"
+ENG_new_labour_desc:0 ""
+ENG_break_the_chains:0 "Break the Chains"
+ENG_break_the_chains_desc:0 ""
+ENG_the_economic_readjustment_act:0 "The Economic Readjustment Act"
+ENG_the_economic_readjustment_act_desc:0 ""
+ENG_the_union_rights_act:0 "The Union Rights Act"
+ENG_the_union_rights_act_desc:0 ""
+ENG_declare_the_republic:0 "Declare the Republic"
+ENG_declare_the_republic_desc:0 ""
+ENG_the_national_health_service:0 "The National Health Service"
+ENG_the_national_health_service_desc:0 ""
 
 
 
 ### Events ###
+le_britain.1.t:0 "Raising Tariffs"
+le_britain.1.d:0 "The Conservative Party has always stood for the protection of British workers and manufacturers in the face of competition from abroad. To that end, the government has put forward a bill in which a tariff increase has been included but, as expected, there has been serious controversy over this matter. While both workers and employers see the need for a higher tariffs, businesses argue that a small hike will be beneficial and least disruptive to them but workers maintain that only high tariffs can protect jobs."
+le_britain.1.a:0 "A high tariff is best."
+le_britain.1.b:0 "Let’s not be too hasty."
+le_britain.2.t:0 "Voting on the Financial Security Act"
+le_britain.2.d:0 "After months of tireless preparation by the Chancellor of the Exchequer, the long-awaited Financial Security Act has been brought to the floor of the House of Commons for a vote. After a smooth first reading of the bill, the second reading was met with calls from the Labour benches to include protection for workers in the text, a motion decisively defeated by the Conservative majority. After no significant amendments were added in the committee stage, Parliament is poised to vote on the bill as a whole."
+le_britain.2.a:0 "The bill passes!"
+le_britain.2.b:0 "The bill fails!"
+
+le_britain.3.t:0 "Crackdown on the Irish"
+le_britain.3.d:0 "The Irish have hardly ever been model subjects of His Majesty and even now the terrorist 'Irish Republican Army' has been conducting murderous and reckless assaults on the loyal policemen of the Royal Irish Constabulary. Given the tense situation in Ireland, the RIC has asked for more powers and resources to assist it in its fight against the IRA. Seizing at this request as evidence of a rebellion growing increasingly out of hand, the government has begun writing a bill that will drastically empower and militarize the RIC. The only question remains is, how far will the bill go?"
+le_britain.3.a:0 "We'll go as far as required to ensure stability in Ireland."
+le_britain.3.b:0 "Maybe we've done enough harm to the Irish?"
+
+le_britain.4.t:0 "Voting on the Royal Irish Constabulary Act"
+le_britain.4.d:0 "Despite the vigorous anger of the Irish nationalist MPs of the Irish Parliamentary Party (IPP), one of whom interrupted the second reading by lobbing his shoe at the home minister, an act which he refused to apologize for even as he was dragged out of the building by policemen, the Royal Irish Constabulary Act has finally reached the floor and is ready for a final vote. The act heavily militarizes the RIC and awards it funding to purchase modern rifles, machine guns, armored cars, and even a few old tanks in order to restore "peace and the rule of law" in Ireland as one Tory MP put it. As the votes are counted, all MPs hold their breath."
+le_britain.4.a:0 "The bill is passed!"
+le_britain.4.b:0 "The bill fails!"
+
+le_britain.5.t:0 "Bombing at Dublin Castle"
+le_britain.5.d:0 "Early in the morning yesterday, a car bomb detonated in front of Dublin Castle, the headquarters of the British army in Ireland, killing two soldiers and the secretary in whose car the bomb was planted, all of whom were Irish. Shortly afterwards, the Irish Republican Army claimed responsibility, saying in a statement that "Dublin Castle, the symbol of British oppression in Ireland has been attacked. This is a message to the British government and their tyrannical king: Nowhere in Ireland is safe anymore for the likes of you." The attack is notable for being the first terrorist attack on Dublin Castle by the IRA."
+le_britain.5.a:0 "The IRA grows bolder."
+
+le_britain.6.t:0 "Expanding the Colonial Office"
+le_britain.6.d:0 "The Colonial Office, the honorable department which governs our colonies and territories overseas, has grown twofold since the turn of the century and yet it must grow more. Our ever-expanding global empire demands this as more people become subjects of the Crown, more bureaucrats are required to manage them all. Sensibly, the government is preparing to push for a wide-reaching reform of our colonial bureaucracy in the form of an Empire Act. Unfortunately, tension has arose between Liberals and Conservatives as Liberals want to ensure that resources can be extracted as efficiently as possible from the colonies, while Conservatives maintain that security is paramount."
+le_britain.6.a:0 "What are colonies good for except for resources?"
+le_britain.6.b:0 "A rebellious colony is the worst kind of colony."
+
+le_britain.7.t:0 "Voting on the Empire Act"
+le_britain.7.d:0 "The Empire of Act has drawn widespread backing from both sides of the aisle as both Liberals and Conservatives have lauded it as a "triumph of the democratic system" and "surely beneficial for all citizens of the Empire". Despite these praises, Labour has decried the bill as "a death knell for the workers of Britain and abroad" and has maintained that this simply upholds the "oppression" of capitalism. Nonetheless, with both the Liberal and Conservative parties backing the bill, it is expected that it will pass."
+le_britain.7.a:0 "The bill passes!"
+le_britain.7.b:0 "The bill failed?!"
+
+le_britain.8.t:0 "Meeting the Suffragettes"
+le_britain.8.d:0 "In a meeting in Westminster today, the prime minister met personally with Emmeline Pankhurst and other leaders of the Women's Social and Polticial Union, including Emily Davison, the controversial suffragette most famous with being seriously injured during an attempt to break into Buckingham Palace to deliver His Majesty the king a petition to be allowed the right to vote. For her part, Emmeline Pankhurst is most notable as being one of the few MPs for the Labour Party and the first woman MP. During the meeting, the suffragettes pressured the prime minister to allow all women the right to vote, though the PM himself is said to prefer allowing only married women above 30 the vote. Despite these differences, at the end of the meeting, both parties agreed that..."
+le_britain.8.a:0 "Smash the patriarchy! Votes for all women!"
+le_britain.8.b:0 "Restricted suffrage for women is best, I think."
+
+le_britain.9.t:0 "The Suffrage Act goes to the floor"
+le_britain.9.d:0 "Despite strong objections from the Tory benches, with one conservative MP calling it "the death of the traditional English lifestyle", the Suffrage Act is expected to pass parliament as both the Liberals and Labour support the bill, giving it the power to totally ignore conservative qualms. With such strong support, it is highly unlikely that the bill will fail though a few more radical Labour MPs claim that the act itself does not go far enough in ensuring equality for both sexes."
+le_britain.9.a:0 "The bill passes!"
+le_britain.9.b:0 "The bill fails!"
+
+le_britain.10.t:0 "Concessions to the Irish?"
+le_britain.10.d:0 "The Irish have not been model subjects of His Majesty, far from it in fact. They have continuously rebelled against our rule and attacked our loyal soldiers and policemen to such an extent that we can no longer ignore them. One of the most important sore points between us and the Irish nationalists is the question of religion. The vast majority of Irishmen are Catholics and they have faced repeated discrimination based off of this to the point that it has become something of an international embarrassment. In this regard, the government has begun to write up a bill that will either crackdown on religious discrimination in military, government, and public circles or in private ones as we cannot afford to do both."
+le_britain.10.a:0 "Remove all barriers for Catholics in the Army and government."
+le_britain.10.b:0 "A rich Irishmen doesn't rebel. Crack down on discrimination in businesses and the like."
+
+
+le_britain.11.t:0 "The Irish Religious Act is voted on"
+le_britain.11.d:0 "In a particularly stormy session of parliament, in which several Irish MPs were allowed to speak- much to the chagrin of a few radical Tories- the body has finally voted to allow the Irish Religious Act to go to the floor for a vote. Supported by the powerful Irish Catholic Church and opposed by the influential Irish Unionist Party, the bill has proved to be highly controversial and there is a very high possibility that the bill will fail, worsening relations with Irish nationalists."
+le_britain.11.a:0 "The bill passes! A victory for religious equality!"
+le_britain.11.b:0 "The Unionists crack the whip! The bill fails!"
+
+
+
+le_britain.12.t:0 "Abolishing the Gold Standard"
+le_britain.12.d:0 "In the last general election, one of the more controversial promises of the Liberal Party was to abolish the gold standard to ensure a far less restricted pound sterling and to reduce our dependence on gold given the situation in Africa at the moment, where most of our gold originates. As part of this, the government and especially the chancellor in particular is focused on preparing a total overhaul of banking regulations, including the powers of the Bank of England and the chancellor himself. Few know of the chaos of the South Sea financial bubble of the 18th crisis, yet for those that do they advocate making the Bank of England totally independent of the government in terms of interest rates at least and a reduction of the powers of the chancellor of the exchequer. This would, experts say, result in a more measured and less ideological monetary policy but it is under severe criticism from a large group of more left-wing Liberal MPs who see the proposed changes as unnecessarily restrictive."
+le_britain.12.a:0 "Introduce the changes- an independent central bank is best."
+le_britain.12.b:0 "Let's not shoot ourselves in the foot. Discard the changes."
+
+
+le_britain.13.t:0 "The National Banking Act in Westminster"
+le_britain.13.d:0 "While nobody expected the Conservative Party to support the National Banking Act, a small number of Liberal backbenchers and most of the Labour Party has come out in opposition to the bill, throwing its future into doubt. The left claims that it deregulates the banking sector, a claim the government categorically rejects, while the right says that the act burdens businesses with needless regulations, a claim also rejected by the government. Naturally, this has put the government in a difficult position but the prime minister and the cabinet is determined for the bill to pass."
+le_britain.13.a:0 "The bill passes!"
+le_britain.13.b:0 "The bill fails!"

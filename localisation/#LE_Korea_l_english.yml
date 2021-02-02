@@ -1,0 +1,49 @@
+﻿l_english:
+### Country Names
+
+### Political Parties ###
+ KOR_absolutism_party:0 "The Junta"
+ KOR_royalism_party:0 "The Imperial Family"
+ KOR_rexism_party:0 "Korean Rexist Front"
+ KOR_despotism_party:0 "Nationalist Korean Worker's Party"
+ KOR_conservatism_party:0 "Conservative People Power Party"
+ KOR_liberalism_party:0 "Together Democratic Party"
+ KOR_socialism_party:0 "Korean People's Party"
+ KOR_theocracy_party:0 "Shinto-Front"
+ KOR_labryscism_party:0 "New Model Republicans"
+ KOR_mutualism_party:0 "Mutualist Union of Korea"
+ KOR_collectivism_party:0 "Korean Collectivist Front"
+ KOR_proletarianism_party:0 "Korean People's Party"
+
+### Ministers ###
+ # Head Of State
+
+ # Secondary Head
+
+ # Foriegn Minister
+
+ # Minister Of Defence
+
+ # Economic Minister
+
+ # Minister Of The Interior
+
+ # Minister Of Security
+
+
+### Ideas ###
+ KOR_the_will_to_fight:0 "The Will To Fight"
+ KOR_our_enemy:0 "Our Enemy"
+ KOR_corrupt_bureaucracy:0 "Corrupt Bureaucracy"
+ KOR_imperial_family:0 "Imperial Family"
+ KOR_ineffective_industry:0 "Ineffective Industry"
+
+### Traits ###
+
+### Tooltips ###
+
+### Global / Country Flags ###
+
+### Focus Tree ###
+
+### Events ###

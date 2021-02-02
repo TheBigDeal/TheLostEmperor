@@ -8,7 +8,7 @@ set_technology = {
 	tech_recon = 1
 }
 
-set_politics = {	
+set_politics = {
 	ruling_party = absolutism
 	last_election = "1933.3.5"
 	election_frequency = 48
@@ -24,4 +24,13 @@ set_popularities = {
 
 set_convoys = 5
 
-
+create_country_leader = {
+	name = "Yuan Shikai"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "Portrait_Yuan_Shikai.tga"
+	expire = "1965.1.1"
+	ideology = absolutism_ideology
+	traits = {
+		#
+	}
+}

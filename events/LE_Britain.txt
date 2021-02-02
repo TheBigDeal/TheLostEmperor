@@ -1,1 +1,461 @@
-﻿
+###########################
+# British Events
+###########################
+add_namespace = le_britain
+
+country_event = { #Raising Tariffs
+	id = le_britain.1
+	title = le_britain.1.t
+	desc = le_britain.1.d
+	is_triggered_only = yes
+	option = {
+		name = le_britain.1.a
+    custom_effect_tooltip = raise_tariffs_tt
+    set_country_flag = gbr_tarrifs_1
+    effect_tooltip = {
+      if = {
+        limit = {has_idea = tax_tariffs_none}
+        add_ideas = tax_tariffs_medium
+      }
+      else_if = {
+        limit = {has_idea = tax_tariffs_low}
+        add_ideas = tax_tariffs_high
+      }
+      else_if = {
+        limit = {has_idea = tax_tariffs_medium}
+        add_ideas = tax_tariffs_very_high
+      }
+      else_if = {
+        limit = {has_idea = tax_tariffs_high}
+        add_ideas = tax_tariffs_excessive
+      }
+      else_if = {
+        limit = {has_idea = tax_tariffs_very_high}
+        add_ideas = tax_tariffs_excessive
+      }
+    }
+	}
+  option = {
+		name = le_britain.1.b
+    custom_effect_tooltip = raise_tariffs_tt
+    set_country_flag = gbr_tarrifs_2
+    effect_tooltip = {
+      if = {
+        limit = {has_idea = tax_tariffs_none}
+        add_ideas = tax_tariffs_very_low
+      }
+      else_if = {
+        limit = {has_idea = tax_tariffs_low}
+        add_ideas = tax_tariffs_medium
+      }
+      else_if = {
+        limit = {has_idea = tax_tariffs_medium}
+        add_ideas = tax_tariffs_high
+      }
+      else_if = {
+        limit = {has_idea = tax_tariffs_high}
+        add_ideas = tax_tariffs_very_high
+      }
+      else_if = {
+        limit = {has_idea = tax_tariffs_very_high}
+        add_ideas = tax_tariffs_excessive
+      }
+    }
+	}
+}
+country_event = { #Voting on Raising Tariffs
+	id = le_britain.2
+	title = le_britain.2.t
+	desc = le_britain.2.d
+	is_triggered_only = yes
+  picture = GFX_british_parliament
+	option = {
+		name = le_britain.2.a
+    custom_effect_tooltip = raise_tariffs_tt
+    set_country_flag = gbr_tarrifs_1
+    if = {
+      limit = { has_country_flag = gbr_tarrifs_1 }
+      if = {
+        limit = {has_idea = tax_tariffs_none}
+        add_ideas = tax_tariffs_medium
+      }
+      else_if = {
+        limit = {has_idea = tax_tariffs_low}
+        add_ideas = tax_tariffs_high
+      }
+      else_if = {
+        limit = {has_idea = tax_tariffs_medium}
+        add_ideas = tax_tariffs_very_high
+      }
+      else_if = {
+        limit = {has_idea = tax_tariffs_high}
+        add_ideas = tax_tariffs_excessive
+      }
+      else_if = {
+        limit = {has_idea = tax_tariffs_very_high}
+        add_ideas = tax_tariffs_excessive
+      }
+    }
+    else_if = {
+      limit = { has_country_flag = gbr_tarrifs_2 }
+      if = {
+        limit = {has_idea = tax_tariffs_none}
+        add_ideas = tax_tariffs_very_low
+      }
+      else_if = {
+        limit = {has_idea = tax_tariffs_low}
+        add_ideas = tax_tariffs_medium
+      }
+      else_if = {
+        limit = {has_idea = tax_tariffs_medium}
+        add_ideas = tax_tariffs_high
+      }
+      else_if = {
+        limit = {has_idea = tax_tariffs_high}
+        add_ideas = tax_tariffs_very_high
+      }
+      else_if = {
+        limit = {has_idea = tax_tariffs_very_high}
+        add_ideas = tax_tariffs_excessive
+      }
+    }
+    else = {
+      add_ideas = tax_tariffs_medium
+    }
+    add_stability = 0.05
+    add_political_power = 50
+    126 = {
+      add_building_construction = {
+          type = industrial_complex
+          level = 1
+          instant_build = yes
+      }
+      add_extra_state_shared_building_slots = 1
+    }
+	}
+  option = {
+		name = le_britain.2.b
+    add_popularity = { ideology = conservatism popularity = -0.03 }
+    add_stability = -0.02
+	}
+}
+country_event = { #Irish Question
+	id = le_britain.3
+	title = le_britain.3.t
+	desc = le_britain.3.d
+	is_triggered_only = yes
+  picture = GFX_british_parliament
+	option = {
+    name = le_britain.3.a
+    custom_effect_tooltip = irish_question_tt
+    set_country_flag = irish_bad
+    effect_tooltip = {
+      swap_ideas = { remove_idea = gbr_irish_question add_idea = gbr_irish_question_1 }
+    }
+	}
+  option = {
+		name = le_britain.3.b
+    custom_effect_tooltip = irish_question_tt
+    set_country_flag = irish_good
+    effect_tooltip = {
+      swap_ideas = { remove_idea = gbr_irish_question add_idea = gbr_irish_question_2 }
+    }
+	}
+}
+country_event = { #Voting on the Irish Act
+	id = le_britain.4
+	title = le_britain.4.t
+	desc = le_britain.4.d
+	is_triggered_only = yes
+  picture = GFX_british_parliament
+	option = {
+    name = le_britain.4.a
+    if = {
+      limit = {
+        has_country_flag = irish_bad
+      }
+      swap_ideas = { remove_idea = gbr_irish_question add_idea = gbr_irish_question_1 }
+    }
+    else_if = {
+      limit = {
+        has_country_flag = irish_good
+      }
+      swap_ideas = { remove_idea = gbr_irish_question add_idea = gbr_irish_question_2 }
+    }
+    else = {
+      swap_ideas = { remove_idea = gbr_irish_question add_idea = gbr_irish_question_2 }
+    }
+    add_equipment_to_stockpile = {
+      type = infantry_equipment
+      amount = 500
+      producer = GBR
+    }
+    add_equipment_to_stockpile = {
+      type = armored_car_equipment_1
+      amount = 50
+      producer = GBR
+    }
+	}
+  option = {
+		name = le_britain.4.b
+    add_popularity = { ideology = conservatism popularity = -0.02 }
+    custom_effect_tooltip = IRA_bolder_tt
+    hidden_effect = { country_event = { id = le_britain.5 days = 100} }
+	}
+}
+country_event = { #Irish Bombing at Dublin Castle
+	id = le_britain.5
+	title = le_britain.5.t
+	desc = le_britain.5.d
+	is_triggered_only = yes
+  picture = GFX_ira_bombing
+  option = {
+		name = le_britain.5.a
+    add_stability = -0.02
+    add_popularity = { ideology = conservatism popularity = -0.01 }
+	}
+}
+country_event = { #Empire Act
+	id = le_britain.6
+	title = le_britain.6.t
+	desc = le_britain.6.d
+	is_triggered_only = yes
+  #picture = GFX_ira_bombing
+  option = {
+    name = le_britain.6.a
+    custom_effect_tooltip = empire_act_tt
+    set_country_flag = empire_act_1
+    effect_tooltip = {
+      add_ideas = gbr_empire_act_1
+    }
+	}
+  option = {
+		name = le_britain.6.b
+    custom_effect_tooltip = empire_act_tt
+    set_country_flag = empire_act_2
+    effect_tooltip = {
+      add_ideas = gbr_empire_act_2
+    }
+	}
+}
+country_event = { #Vote on Empire Act
+	id = le_britain.7
+	title = le_britain.7.t
+	desc = le_britain.7.d
+	is_triggered_only = yes
+  #picture = GFX_ira_bombing
+  option = {
+    name = le_britain.7.a
+    ai_chance = { base = 1 }
+    if = {
+      limit = {
+        has_country_flag = empire_act_1
+      }
+      add_ideas = gbr_empire_act_1
+    }
+    else_if = {
+      limit = {
+        has_country_flag = empire_act_2
+      }
+      add_ideas = gbr_empire_act_2
+    }
+    else = {
+      add_ideas = gbr_empire_act_2
+    }
+	}
+  option = {
+		name = le_britain.7.b
+    ai_chance = { base = 0 }
+    add_popularity = { ideology = conservatism popularity = -0.03 }
+    add_popularity = { ideology = liberalism popularity = -0.03 }
+    add_popularity = { ideology = socialism popularity = -0.05 }
+    add_political_power = -50
+	}
+}
+
+country_event = { #Negotiate With Suffagettes
+	id = le_britain.8
+	title = le_britain.8.t
+	desc = le_britain.8.d
+	is_triggered_only = yes
+  picture = GFX_emmeline_pankhurst
+	option = {
+    name = le_britain.8.a
+    custom_effect_tooltip = suffrage_tt
+    set_country_flag = suffrage_act_1
+    effect_tooltip = {
+      add_political_power = 50
+			add_ideas = law_2_universal_voting
+    }
+	}
+  option = {
+		name = le_britain.8.b
+    custom_effect_tooltip = suffrage_tt
+    set_country_flag = suffrage_act_2
+    effect_tooltip = {
+    	add_popularity = { ideology = socialism popularity = 0.03 }
+    }
+	}
+}
+country_event = { #Suffrage Act goes to the floor
+	id = le_britain.9
+	title = le_britain.9.t
+	desc = le_britain.9.d
+	is_triggered_only = yes
+  picture = GFX_british_parliament
+	option = {
+    name = le_britain.9.a
+    ai_chance = { base = 1 }
+    if = {
+      limit = {
+        has_country_flag = suffrage_act_1
+      }
+			add_political_power = 50
+			add_ideas = law_2_universal_voting
+    }
+    else_if = {
+      limit = {
+        has_country_flag = suffrage_act_2
+      }
+    add_popularity = { ideology = socialism popularity = 0.03 }
+    }
+    else = {
+			add_political_power = 50
+			add_ideas = law_2_universal_voting
+    }
+	}
+  option = {
+		name = le_britain.9.b
+    ai_chance = { base = 0 }
+    add_popularity = { ideology = conservatism popularity = -0.02 }
+    add_political_power = -30
+	}
+}
+country_event = { #Irish Consessions
+	id = le_britain.10
+	title = le_britain.10.t
+	desc = le_britain.10.d
+	is_triggered_only = yes
+  picture = GFX_british_parliament
+	option = {
+    name = le_britain.10.a
+    custom_effect_tooltip = irish_question_tt
+    set_country_flag = irish_3
+    effect_tooltip = {
+			add_popularity = { ideology = conservatism popularity = -0.02 }
+      swap_ideas = { remove_idea = gbr_irish_question add_idea = gbr_irish_question_3 }
+    }
+	}
+  option = {
+		name = le_britain.10.b
+    custom_effect_tooltip = irish_question_tt
+    set_country_flag = irish_4
+    effect_tooltip = {
+			add_popularity = { ideology = liberalism popularity = 0.01 }
+			add_popularity = { ideology = socialism popularity = 0.01 }
+      swap_ideas = { remove_idea = gbr_irish_question add_idea = gbr_irish_question_4 }
+    }
+	}
+}
+country_event = { #Voting on the Irish Act
+	id = le_britain.11
+	title = le_britain.11.t
+	desc = le_britain.11.d
+	is_triggered_only = yes
+  picture = GFX_british_parliament
+	option = {
+    name = le_britain.11.a
+    if = {
+      limit = {
+        has_country_flag = irish_3
+      }
+			add_popularity = { ideology = conservatism popularity = -0.02 }
+      swap_ideas = { remove_idea = gbr_irish_question add_idea = gbr_irish_question_3 }
+    }
+    else_if = {
+      limit = {
+        has_country_flag = irish_4
+      }
+			add_popularity = { ideology = liberalism popularity = 0.01 }
+			add_popularity = { ideology = socialism popularity = 0.01 }
+			swap_ideas = { remove_idea = gbr_irish_question add_idea = gbr_irish_question_4 }
+    }
+    else = {
+			add_popularity = { ideology = conservatism popularity = -0.02 }
+      swap_ideas = { remove_idea = gbr_irish_question add_idea = gbr_irish_question_3 }
+    }
+	}
+  option = {
+		name = le_britain.11.b
+    add_popularity = { ideology = liberalism popularity = -0.02 }
+		add_stability = -0.05
+    custom_effect_tooltip = IRA_bolder_tt
+    #hidden_effect = { country_event = { id = le_britain.5 days = 100} }
+	}
+}
+
+
+
+
+
+country_event = { #Abandon The Gold Standard
+	id = le_britain.12
+	title = le_britain.12.t
+	desc = le_britain.12.d
+	is_triggered_only = yes
+  picture = GFX_british_parliament
+	option = {
+    name = le_britain.12.a
+    custom_effect_tooltip = banking_tt
+    set_country_flag = banking_1
+    effect_tooltip = {
+			add_popularity = { ideology = liberalism popularity = 0.02 }
+      add_ideas = { gbr_national_banking_act_1 }
+    }
+	}
+  option = {
+		name = le_britain.12.b
+    custom_effect_tooltip = banking_tt
+    set_country_flag = banking_2
+    effect_tooltip = {
+			add_popularity = { ideology = liberalism popularity = 0.01 }
+			add_popularity = { ideology = socialism popularity = 0.02 }
+      add_ideas = { gbr_national_banking_act_2 }
+    }
+	}
+}
+country_event = { #Voting on the National Banking Act
+	id = le_britain.13
+	title = le_britain.13.t
+	desc = le_britain.13.d
+	is_triggered_only = yes
+  picture = GFX_british_parliament
+	option = {
+    name = le_britain.13.a
+    if = {
+      limit = {
+        has_country_flag = banking_1
+      }
+			add_popularity = { ideology = liberalism popularity = 0.02 }
+      add_ideas = { gbr_national_banking_act_1 }
+    }
+    else_if = {
+      limit = {
+        has_country_flag = banking_2
+      }
+			add_popularity = { ideology = liberalism popularity = 0.01 }
+			add_popularity = { ideology = socialism popularity = 0.02 }
+			add_ideas = { gbr_national_banking_act_2 }
+    }
+    else = {
+			add_popularity = { ideology = liberalism popularity = 0.02 }
+      add_ideas = { gbr_national_banking_act_1 }
+    }
+	}
+  option = {
+		name = le_britain.13.b
+    add_popularity = { ideology = liberalism popularity = -0.02 }
+		add_popularity = { ideology = socialism popularity = 0.01 }
+		add_popularity = { ideology = conservatism popularity = 0.01 }
+	}
+}

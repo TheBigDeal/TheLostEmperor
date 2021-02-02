@@ -8,21 +8,21 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	gw_artillery = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	early_fighter = 1
 	early_bomber = 1
 	CAS1 = 1
-	
-	
-	
-	
+
+
+
+
 }
 
 set_convoys = 50
 
 
-set_politics = {	
+set_politics = {
 	ruling_party = absolutism
 	last_election = "1933.3.5"
 	election_frequency = 48
@@ -47,13 +47,7 @@ if = {
 		autonomous_state = autonomy_colony
 		freedom_level = 0.35
 	}
-	set_autonomy = {
-		target = COL
-		autonomous_state = autonomy_colony
-		freedom_level = 0.35
-	}
 	else = {
-		puppet = COL
 		puppet = BRA
 	}
 }
@@ -99,4 +93,3 @@ create_corps_commander = {
 	skill = 3
 
 }
-

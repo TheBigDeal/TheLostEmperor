@@ -7,7 +7,13 @@ set_technology = {
 	infantry_weapons = 1
 	mass_assault = 1
 }
-
+add_ideas = {
+	KOR_the_will_to_fight
+	KOR_our_enemy
+	KOR_corrupt_bureaucracy
+	KOR_imperial_family
+	KOR_ineffective_industry
+}
 set_convoys = 5
 declare_war_on = { target = JAP type = annex_everything }
 QNG = { add_to_war = { targeted_alliance = PREV enemy = JAP hostility_reason = asked_to_join } }

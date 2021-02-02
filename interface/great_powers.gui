@@ -2,12 +2,13 @@
 guiTypes = {
 	containerWindowType = {
 		name = "great_powers_container"
-		position = { x = 65 y = 50 }
+		position = { x = 0 y = 80 }
 		buttonType ={
 			name ="great_powers_bg"
 			spriteType = "GFX_mini_great_powers"
 			position = { x=0 y=0 }
 			shortcut = "ctrl+g"
+			pdx_tooltip = gp_tt
 		}
 	}
 	containerWindowType = {
@@ -39,7 +40,7 @@ guiTypes = {
 				maxWidth = 400
 				maxHeight = 100
 				fixedsize = no
-				format = left		
+				format = left
 				alwaystransparent = no
 			}
 			instantTextboxType = {
@@ -50,7 +51,7 @@ guiTypes = {
 				maxWidth = 400
 				maxHeight = 100
 				fixedsize = no
-				format = left		
+				format = left
 				alwaystransparent = no
 			}
 			instantTextboxType = {
@@ -61,7 +62,7 @@ guiTypes = {
 				maxWidth = 400
 				maxHeight = 100
 				fixedsize = no
-				format = left		
+				format = left
 				alwaystransparent = no
 			}
 			iconType = {
@@ -123,11 +124,11 @@ guiTypes = {
 			maxWidth = 400
 			maxHeight = 50
 			fixedsize = no
-			format = center		
+			format = center
 			alwaystransparent = no
 		}
 	}
-	containerWindowType = {  
+	containerWindowType = {
 		name = "gp_entry"
 		position = { x = 0 y = 0}
 		size = { width = 60 height = 90 }
@@ -164,7 +165,7 @@ guiTypes = {
 			maxWidth = 460
 			maxHeight = 400
 			fixedsize = no
-			format = left		
+			format = left
 			alwaystransparent = no
 		}
 		instantTextboxType = {
@@ -175,7 +176,7 @@ guiTypes = {
 			maxWidth = 700
 			maxHeight = 400
 			fixedsize = no
-			format = left		
+			format = left
 			alwaystransparent = no
 		}
 		instantTextboxType = {
@@ -186,7 +187,7 @@ guiTypes = {
 			maxWidth = 100
 			maxHeight = 400
 			fixedsize = no
-			format = center		
+			format = center
 			alwaystransparent = no
 		}
 		instantTextboxType = {
@@ -197,7 +198,7 @@ guiTypes = {
 			maxWidth = 700
 			maxHeight = 400
 			fixedsize = no
-			format = center		
+			format = center
 			alwaystransparent = no
 		}
 		instantTextboxType = {
@@ -208,7 +209,7 @@ guiTypes = {
 			maxWidth = 700
 			maxHeight = 400
 			fixedsize = no
-			format = center		
+			format = center
 			alwaystransparent = no
 		}
 		instantTextboxType = {
@@ -219,7 +220,7 @@ guiTypes = {
 			maxWidth = 700
 			maxHeight = 400
 			fixedsize = no
-			format = center		
+			format = center
 			alwaystransparent = no
 		}
 	}

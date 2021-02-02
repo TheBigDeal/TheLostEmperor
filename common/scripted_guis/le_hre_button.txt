@@ -24,9 +24,9 @@ scripted_gui = {
 	}
 	hre_elector_list = {
 		context_type = player_context
-		
+
 		window_name = "hre_main_container"
-		
+
 		visible = {check_variable = { open_hre_container = 1 }}
 		dynamic_lists = {
 			hre_show_grid_emp = {
@@ -40,11 +40,11 @@ scripted_gui = {
 			hre_show_grid_member = {
 				array = global.hre_array
 				entry_container = hre_member_entry
-			}	
+			}
 			hre_show_grid_city = {
 				array = global.city_array
 				entry_container = hre_city_entry
-			}	
+			}
 		}
 		properties = {
 			flag = { image = "[?global.elector_array^i.GetFlag]" }
@@ -64,8 +64,19 @@ scripted_gui = {
 		window_name = "hansa_button"
 		visible = { always = yes }
 		effects = {
-			
+
+		}
+	}
+	parliament_button = {
+		context_type = player_context
+		window_name = "parliament_button"
+		visible = {
+      has_country_flag = has_parliament
+		}
+		effects = {
+			parliament_bg_click = {
+				set_variable = { open_parliament_container = 1 }
+			}
 		}
 	}
 }
-

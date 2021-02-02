@@ -1,21 +1,37 @@
 guiTypes = {
+containerWindowType = {
+	name = "gp_toolbar_border"
+	position = { x = 7 y = 15 }
+	iconType ={
+		name ="sp_flag_border"
+		spriteType = "GFX_large_flag_secondary_power"
+		position = { x=0 y=0 }
+		alwaystransparent = yes
+	}
+	iconType ={
+		name ="gp_flag_border"
+		spriteType = "GFX_large_flag_great_power"
+		position = { x=0 y=0 }
+		alwaystransparent = yes
+	}
+}
 	containerWindowType = {
 		name = "current_money_container"
 		position = { x = 220 y = 4 }
-		
+
 		iconType ={
 			name ="current_money_bg"
 			spriteType = "GFX_generic_box_small"
 			position = { x=0 y=0 }
 			#shortcut = "ctrl+k"
 		}
-		
+
 		iconType = {
 			name ="current_money_icon"
 			spriteType = "GFX_current_money"
 			position = { x= 5 y = 1 }
 		}
-		
+
 		instantTextBoxType = {
 			name ="current_money_text"
 			position = { x= 12 y = 4 }
@@ -25,28 +41,51 @@ guiTypes = {
 			maxWidth = 70
 			maxHeight = 24
 			fixedsize = yes
-			
+
 			pdx_tooltip = "current_money_TOOLTIP"
 			pdx_tooltip_delayed = "current_money_TOOLTIP_DELAYED"
 		}
 	}
 	containerWindowType = {
+		name = "country_information_container"
+		position = { x = 34 y = 84 }
+		iconType ={
+			name ="country_information_info"
+			spriteType = "GFX_decision_generic_decision"
+			position = { x=0 y= -2 }
+			pdx_tooltip = "country_info_tt"
+			shortcut = "ctrl+a"
+
+		}
+		instantTextBoxType = {
+			name ="country_information_text"
+			position = { x= 30 y = -1 }
+			font = "hoi_20b"
+			text = "[ROOT.GetNameDef] | [ROOT.GetRulingParty] | [ROOT.GetLeader] | Infamy: 0 | Literacy: 50%"
+			format = left
+			vertical_alignment = center
+			maxWidth = 2000
+			maxHeight = 24
+			fixedsize = yes
+		}
+	}
+	containerWindowType = {
 		name = "current_food_container"
 		position = { x = 310 y = 4 }
-		
+
 		iconType ={
 			name ="current_food_bg"
 			spriteType = "GFX_generic_box_small"
 			position = { x=0 y=0 }
 			#shortcut = "ctrl+k"
 		}
-		
+
 		iconType = {
 			name ="current_food_icon"
 			spriteType = "GFX_food"
 			position = { x= 4 y = 2 }
 		}
-		
+
 		instantTextBoxType = {
 			name ="current_food_text"
 			position = { x= 20 y = 4 }
@@ -62,20 +101,20 @@ guiTypes = {
 	containerWindowType = {
 		name = "current_force_limit_container"
 		position = { x = 720 y = 4 }
-		
+
 		iconType ={
 			name ="current_force_limit_bg"
 			spriteType = "GFX_generic_box_small"
 			position = { x=0 y=0 }
 			#shortcut = "ctrl+k"
 		}
-		
+
 		iconType = {
 			name ="current_force_limit_icon"
 			spriteType = "GFX_force_limit"
 			position = { x= -4 y = -10 }
 		}
-		
+
 		instantTextBoxType = {
 			name ="current_force_limit_text"
 			position = { x= 10 y = 4 }

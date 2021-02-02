@@ -14,8 +14,7 @@ ideas = {
 			picture = Hungarian_Monarchy
 			modifier = {
 				#research_bonus = { naval_doctrine = 0.08 }
-				production_speed_dockyard_factor = 0.1
-				experience_gain_navy = 0.10
+				experience_gain_navy = 0.05
 			}
 		}
 		gbr_labor_unrest = {
@@ -45,6 +44,101 @@ ideas = {
 				conscription_factor = -0.1
 				stability_factor = -0.10
 			}
+		}
+		gbr_irish_question_1 = { #Conservative
+			picture = Hungarian_Monarchy
+			modifier = {
+				political_power_gain = -0.12
+				conscription_factor = -0.08
+				stability_factor = -0.05
+			}
+		}
+		gbr_irish_question_2 = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				political_power_gain = -0.25
+				conscription_factor = -0.1
+				stability_factor = -0.05
+			}
+		}
+
+		gbr_irish_question_3 = { #Liberal
+			picture = Hungarian_Monarchy
+			modifier = {
+				political_power_gain = -0.15
+				conscription_factor = -0.05
+				stability_factor = -0.10
+			}
+		}
+		gbr_irish_question_4 = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				political_power_gain = -0.15
+				conscription_factor = -0.1
+				stability_factor = -0.05
+			}
+		}
+		gbr_national_banking_act_1 = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				political_power_gain = 0.05
+				min_export = 0.5
+				consumer_goods_factor = -0.05
+			}
+		}
+		gbr_national_banking_act_2 = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				stability_factor - 0.03
+				political_power_gain = -0.02
+				min_export = 0.5
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		gbr_empire_act_1 = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				political_power_gain = 0.05
+				acclimatization_hot_climate_gain_factor = 0.10
+				acclimatization_cold_climate_gain_factor = 0.10
+				non_core_manpower = 0.05
+				compliance_gain = 0.15
+				local_resources_factor = 0.10
+			}
+		}
+		gbr_empire_act_2 = {
+			picture = Hungarian_Monarchy
+			modifier = {
+				political_power_gain = 0.10
+				acclimatization_hot_climate_gain_factor = 0.10
+				acclimatization_cold_climate_gain_factor = 0.10
+				non_core_manpower = 0.05
+				compliance_gain = 0.15
+				resistance_damage_to_garrison = -0.1
+			}
+		}
+	}
+
+
+
+	head_of_government = {
+		GBR_king_william_v_of_hannover = {
+			picture = generic_political_advisor_europe_5
+			visible = {
+				original_tag = GBR
+			}
+			cost = 250
+		}
+	}
+	secondary_head = {
+		GBR_Bonar_Law = {
+			picture = generic_political_advisor_europe_5
+			visible = {
+				original_tag = GBR
+			}
+			cost = 250
+			traits = { loyal_unionist }
 		}
 	}
 }

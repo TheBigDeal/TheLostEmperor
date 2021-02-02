@@ -1,14 +1,4 @@
 
 guiTypes = {
-	containerWindowType = {
-		name = "military_experience_container"
-		position = { x = 12679 y = 200 }
-		
-		buttonType ={
-			name ="military_expandable_container"
-			spriteType = "GFX_closebutton"
-			position = { x=0 y=0 }
-			shortcut = "ctrl+a"
-		}
-	}
+	
 }

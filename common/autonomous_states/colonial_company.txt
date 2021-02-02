@@ -1,15 +1,15 @@
 autonomy_state = {
 	id = autonomy_colonial_company
-	
+
 	is_puppet = yes
-	
-	min_freedom_level = 0.00
-	
+
+	min_freedom_level = 0.90
+
 	rule = {
 		can_not_declare_war = no
 		can_decline_call_to_war = yes
 	}
-	
+
 	modifier = {
 		autonomy_manpower_share = 0.0
 		extra_trade_to_overlord_factor = 0.5
@@ -17,11 +17,11 @@ autonomy_state = {
 		can_master_build_for_us = 1
 		research_sharing_per_country_bonus_factor = -0.5
 	}
-	
+
 	ai_subject_wants_higher = {
 		factor = 0.0
 	}
-	
+
 	ai_overlord_wants_lower = {
 		factor = 0.0
 	}
@@ -29,18 +29,12 @@ autonomy_state = {
 	ai_overlord_wants_garrison = {
 		always = no
 	}
-	
+
 	can_take_level = {
-		#if = {
-		#	limit = {
-		#		original_tag = RAJ			
-		#	}
-		#	has_completed_focus = RAJ_cripps_mission
-		#}
-		#trigger here
+		always = no
 	}
 
 	can_lose_level = {
-		#trigger here
+		always = no
 	}
 }
