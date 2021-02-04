@@ -1,6 +1,6 @@
 ﻿capital = 141	
 
-oob = "SWE_1936"
+oob = "SWE_1928"
 
 set_research_slots = 3
 
@@ -44,10 +44,30 @@ set_stability = 0.9
 
 create_country_leader = {
 	name = "Oscar Gustaf Adolf Bernadotte V"
-	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
-	picture = "Portrait_Sweden_Gustaf_V.tga"
+	desc = "POLITICS_GUSTAV_DEN_FEMTE_DESC"
+	picture = "Portrait_Sweden_Gustaf_V.png"
 	expire = "1950.10.29"
 	ideology = absolutism_ideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Sven Olov Lindholm" 
+	desc = "POLITICS_SVEN_OLOV_LINDHOLM_DESC"
+	picture = ".png"
+	expire = "1950.10.29"
+	ideology = rexism_ideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Per Albin Hansson" 
+	desc = "PER_ALBIN_HANSSON_DESC"
+	picture = ".png"
+	expire = "1950.10.29"
+	ideology = rexism_ideology
 	traits = {
 		#
 	}
@@ -55,8 +75,8 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Oscar Gustaf Adolf Bernadotte V"
-	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
-	picture = "Portrait_Sweden_Gustaf_V.tga"
+	desc = "POLITICS_GUSTAV_DEN_FEMTE_DESC"
+	picture = "Portrait_Sweden_Gustaf_V.png"
 	expire = "1950.10.29"
 	ideology = royalism_ideology
 	traits = {
