@@ -2,6 +2,7 @@
 
 # Sweden
  ### Political Parties ###
+ 
   SWE_mutualism_party:0 ""
   SWE_collectivism_party:0 "Sveriges Kommunistiska Parti"
   SWE_proletarianism_party:0 "Det Svenska Kommunistiska Partiet"
@@ -15,3 +16,95 @@
   SWE_rexism_party:0 "Järnhanden"
   SWE_despotism_party:0 "NSAP"
   
+  ###National spirits###
+  
+  ##Starting##
+  
+  baltic_navy:0 "The Baltic Navy"
+  baltic_navy_desc:0 "We are the empire of the baltic, and our baltic sea fleet is a pride we show to those who deny us that title. It is and has been an undisputed fact for years, that although Brittania may rule the atlantic waves, and the Japanese in the pacific the Swedish RULE THE BALTIC"
+  finnish_nationalism:0 "Finish Nationalists" 
+  finnish_nationalism_desc:0 "Finnish nationalism and natinalists have always been a bit of a thorn in the empires side. Soon a meeting will occur between our king and the finnish nominee however, that may solve that issue"
+  worker_issues:0 "Worker Shortages"
+  worker_issues_2:0 "Improving Worker Shortages"
+  
+  
+  ##Gained##
+  
+  ### Focuses ###
+  
+  ##Russia Revolutiona##
+  
+  
+  
+  ##PP Traditional##
+  tradition_values:0 "Traditional Values"
+  tradition_values_desc:0 " As we have been, we shall be, for as long as this time of trial is upon us. The people of the north, the inhabitands of our empire, shall believe in the traditional values we gained through its creation"
+  new_glory:0 "New times, New glory"
+  new_glory_desc:0 "Our country, our people, shall be a bulwark on the modernizing front. And if that means to unite our peoples, for the peoples of the north, nothing shall stand in our way"
+  old_glory:0 "Great history, Great glory"
+  old_glory_desc:0 "The nation of ours, casted through blood sweat and tears, shall not be taken as a minor on the world stage. We were once seen as a great regent of europe, and if we shall seek to regain that title, we need to regain our worth"
+  national_ministers:0 "Titles to Nationalist Ministers"
+  national_ministers_desc:0 "It has been made clear to us, that if the ministry is to lead our empire out of the dark times the ones to do so is the nationalists"
+  elected_ministers:0 "An Elected Gouvernment perhaps?"
+  elected_ministers_desc:0 "If we are to be supported by the very people our country rest on, then we need to show them we give them all a choice against the king. we are to ellect our ministers, fair and square"
+  kings_ministers:0 "Secure the Kings Gouvernment"
+  kings_ministers_desc:0 "The kings power needs to be secured, and if that means ensuring our ministers are loyal then for the king we will."
+  the_fatherland_buildup:0 "A buildup of the fatherland" 
+  the_fatherland_buildup_desc:0 "For long our country has been growing ever more distanced from the art of modern technology, but if we can use the times of peace to our advantage and mount a giant reconstruction of our ways we might lead our nation into a true fatherland"
+  military_industry:0 "The Military Buildup"
+  military_industry_desc:0 "We will mount a reconstruct of our military industry, to secure our military goes undefeated in our future battles"
+
+  ## Buildup ##
+
+  peacetime_buildup:0 "A filling shell"
+  peacetime_buildup_desc:0 "We are to start a massive peacetime buildup, by seeking out the things we lack and filling a shell to erase those gaps"
+  
+  stockholm_armouries:0 "The Stockholm Arsenals"
+  stockholm_armouries_desc:0 "We will expand the aurmouries around stockholm, and increase the amount of factories to expand our armament capabilities"
+  increase_morale:0 "Expand Trust"
+  increase_morale_desc:0 "We shall conduct a series of propaganda tales and quotes of the nation, to encourage the people to believe in our gouvernment"
+  gothenburg_dockyards:0 "The new Gothenburg Dockyards"
+  gothenburg_dockyards_desc:0 "We shall reconstruct some of the harbour area into military dockyard production centres, to increase our navies productions reach"
+  
+  minor_streamlining:0 " Streamlining improvements"
+  minor_streamlining_desc:0 "We will seek to streamline our military economy, to improve our manufacturing speed and improvement rate"
+  work_ethics:0 "Worker ethics"
+  work_ethics_desc:0 "For our workers to work as they should, they need the trust of the state. If we create a proper ethics program to train the workers of the future we should be able to harness more power and efficiency"
+  navy_production_focus:0 "Navy expansion focus"
+  navy_production_focus_desc:0 "We will seek to expand the navy and it's strengths, to ensure our waters remain undisputed untill it favour us"
+  
+  expand_airbases:0 "Create the Smoland Squadron and airbase expansion"
+  expand_airbases_desc:0 "We have generated a grant of land in the central smoland area. We could use it for creating a new smoland airsquadron and expanded airfield or, a new central research centra for our air efforts."
+  worker_codes:0 "The worker codes"
+  worker_codes_desc:0 "We will assemble the worker codes, witch will encourage the economy to grow and the workers to remain loyal at a cost of increased trade union influence"
+  smoland_air_research:0 "Create the SARF ( Smoland Air Research Facilities )"
+  smoland_air_research_desc:0 "We have generated a grant of land in the central smoland area. We could use it for creating a new smoland airsquadron and expanded airfield or, a new central research centra for our air efforts."
+  
+  ## Civvy ##
+  
+  civilian_industry:0 "Civilian Industry"
+  civilian_industry_desc:0 "If we are to be at the forefront of nations, our fatherland must have a strong industrial base"
+  factory_advancements:0 "Factory Advancement"
+  factory_advancements_desc:0 "We will search wide and far for the minds of the future, to improve our factories into ones fitting our glory"
+  political_workplaces:0 "Politicalised Workplaces"
+  political_workplaces_desc:0 "We must endulge the common worker into the politics of our nation, and remind them of the greatness of our gouvernment"
+  
+  encourage_employment:0 "Employment Campains"
+  encourage_employment_desc:0 "To solve our employment issues we must mout massive employment campains, motivating people to join the basic industries that benefit the gouvernment"
+  worker_payrise:0 "A worker payrise"
+  worker_payrise_desc:0 " To finally solve the employment chrisis we must increase the minimum wages to ensure that our workers are satisfied "
+  nationalize_industry:0 " A nationalized industry"
+  nationalize_industry_desc:0 "To finally fix the employment chrisis we must nationalize the industry, and use that to manipulate the industry into a favourable position where we can eliminate the last un-employees"
+  
+  #RawrMy#
+  the_nordic_navy:0 "Northern navy improvements"
+  the_nordic_navy_desc:0 "We need to improve our northern navy, if we are to dominate our seas"
+  the_baltic_navy:0 "The supreme baltic navy"
+  the_baltic_navy_desc:0 "We are the empire of the baltic, We are the holders of the baltic, but we are not alone. If we are to protect our waters we must ensure our navy is the undisputed controler of the baltics, and that our ships go unmatched"
+  caroline_regiments:0 "Återföd Karolinernas regiment"
+  caroline_regiments_desc:0 "When the time for war comes, the elite will lead the charge. The once great Caroline Regiments who led the great Carl Gustaf the XII into battle and beasted our neighbours must be recreated, and under personal lead from Gustav the Fifth they will win any battle"
+  modern_regiments:0 "The modernised regiments"
+  modern_regiments_desc:0 "If our army is to beat our foes, we must bare the weapons of tomorrow. For tomorrow is today, in the eyes of our army. We must not seek to return to the old strategies, but advance into a modern day with new ideas in mind and rifle."
+  
+  finalize_the_buildup:0 "The Fatherland Finalized"
+  finalize_the_buildup_desc:0 "We have spend countless weeks on building up this fatherland, and now, it is time we look past our borders. It is time, we realise, our future is now. For the people, For the nation, and for our empire we stand without failure and without fall!"

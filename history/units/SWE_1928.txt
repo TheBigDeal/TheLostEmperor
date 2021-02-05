@@ -155,6 +155,110 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
+	division = { # "XI. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 3185
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = { # "XII. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 9171
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+		division = { # "XIII. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 11058
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+		division = { # "XIV. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 6055
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+			division = { # "XV. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 6061
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+			division = { # "XVI. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 203
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+				division = { # "XVII. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 3158
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+				division = { # "XVIII. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 6210
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+				division = { # "XIX. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 52
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+				division = { # "XX. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 6282
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	
+	
+	
 	division = {
 		name = "Göteborgs Militärområde"
 		location = 383 # Göteborg

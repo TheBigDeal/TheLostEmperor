@@ -21,14 +21,14 @@ focus_tree = {
 	prerequisite = { focus = tradition_values focus = modernisation_priority }
 	required = { focus = finnish_question }
 	completion_reward = { 
-	  country_event = swe.1
+	  country_event = sweden.1
 	                     
 	    }
 	}
 	
 	Focus = {
 	
-	id = prussian_question
+	id = russian_breakdown
 	
 	icon = GFX_focus_ger_oppose_hitler
 	x = 15
@@ -42,24 +42,6 @@ focus_tree = {
 	                     
 	    }
 	}
-	
-	Focus = {
-	
-	id = scania_question
-	
-	icon = GFX_focus_generic_support_the_left_right
-	x = 15
-	y = 6
-	cost = 5
-	ai_will_do = { factor = 50 }
-	mutually_exclusive = {}
-	prerequisite = { focus = prussian_question }
-	completion_reward = { 
-	  add_political_power = 50
-	                     
-	    }
-	}
-	
 	
 	
 	Focus = {
@@ -81,14 +63,14 @@ focus_tree = {
 	
 	id = tradition_values
 	
-	icon = 
+	icon = GFX_focus_generic_diplomatic_treaty
 	x = 25
 	y = 1
 	cost = 5
 	ai_will_do = { factor = 50 }
 	mutually_exclusive = { focus = modernisation_priority }
 	completion_reward = { 
-	add_ideas = SWE_traditiona_values
+	add_ideas = SWE_traditional_values
 	
 	    }
 	}
@@ -97,6 +79,7 @@ focus_tree = {
 	
 	id = old_glory
 	
+	icon = GFX_focus_generic_monarchy_2
 	x = 27
 	y = 3
 	cost = 10
@@ -112,6 +95,7 @@ focus_tree = {
 	add_state_claim = 208
 	add_state_claim = 195
 	add_state_claim = 146
+	add_state_claim = 840
 	
 	
 	    }
@@ -121,6 +105,7 @@ focus_tree = {
 	
 	id = new_glory
 	
+	icon = GFX_focus_generic_military_mission
 	x = 23
 	y = 3
 	cost = 10
@@ -128,8 +113,15 @@ focus_tree = {
 	mutually_exclusive = { focus = old_glory }
 	prerequisite = { focus = tradition_values }
 	completion_reward = {
-	add_political_power = 50
-	
+	NOR = { add_opinion_modifier = { target = SWE modifier = large_decrease }}
+	DEN = {add_opinion_modifier = { target = SWE modifier = large_decrease }}
+	add_state_claim = 939
+	add_state_claim = 138
+	add_state_core = 138
+	add_state_claim = 1028
+	add_state_claim = 37
+	62 = { add_claim_by = VRP }
+	872 = { add_claim_by = VRP }
 	
 	    }
 	}
@@ -138,6 +130,7 @@ focus_tree = {
 	
 	id = kings_ministers
 	
+	icon = GFX_focus_generic_monarchy_1
 	x = 30
 	y = 5
 	cost = 5
@@ -155,6 +148,7 @@ focus_tree = {
 	
 	id = elected_ministers
 	
+	icon = GFX_focus_generic_concessions
 	x = 25
 	y = 5
 	cost = 5
@@ -172,6 +166,7 @@ focus_tree = {
 	
 	id = national_ministers
 	
+	icon = GFX_focus_generic_strike_at_democracy1
 	x = 20
 	y = 5
 	cost = 5
@@ -190,13 +185,15 @@ focus_tree = {
 	
 	id = the_fatherland_buildup
 	
+	icon = GFX_focus_generic_industry_2
 	x = 25
 	y = 7
 	cost = 10
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = national_ministers focus = elected_ministers focus = kings_ministers }
 	completion_reward = {
-	add_political_power = 50
+	
+	add_timed_idea = {idea = fatherland_buildup days = 380}
 	
 	
 	    }
@@ -206,6 +203,7 @@ focus_tree = {
 	
 	id = civilian_industry
 	
+	icon = GFX_focus_generic_industry_1
 	x = 23
 	y = 8
 	cost = 3
@@ -223,6 +221,7 @@ focus_tree = {
 	
 	id = factory_advancements
 	
+	icon = GFX_focus_generic_license_production
 	x = 23
 	y = 9
 	cost = 5
@@ -239,6 +238,7 @@ focus_tree = {
 	
 	id = political_workplaces
 	
+	icon = GFX_focus_generic_military_academy
 	x = 25
 	y = 9
 	cost = 5
@@ -256,6 +256,7 @@ focus_tree = {
 	
 	id = encourage_employment
 	
+	icon = GFX_focus_generic_little_entente
 	x = 21
 	y = 9
 	cost = 5
@@ -272,7 +273,8 @@ focus_tree = {
 	Focus = {
 	
 	id = worker_payrise
-	
+
+    icon = GFX_focus_mex_privatisation
 	x = 19
 	y = 10
 	cost = 2
@@ -290,6 +292,7 @@ focus_tree = {
 	
 	id = nationalize_industry
 	
+	icon = GFX_focus_generic_the_giant_wakes
 	x = 21
 	y = 10
 	cost = 2
@@ -308,6 +311,7 @@ focus_tree = {
 	
 	id = military_industry
 	
+	icon = GFX_focus_generic_tank_production
 	x = 27
 	y = 8
 	cost = 3
@@ -325,8 +329,9 @@ focus_tree = {
 	
 	id = the_nordic_navy
 	
-	x = 26
-	y = 10
+	icon = GFX_focus_generic_cruiser2
+	x = 27
+	y = 9
 	cost = 3
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = military_industry }
@@ -339,13 +344,14 @@ focus_tree = {
 	
 	Focus = {
 	
-	id = the_nordic_airforce
+	id = the_baltic_navy
 	
-	x = 28
+	icon = GFX_focus_generic_navy_battleship2
+	x = 27
 	y = 10
 	cost = 3
 	ai_will_do = { factor = 50 }
-	prerequisite = { focus = military_industry }
+	prerequisite = { focus = the_nordic_navy }
 	completion_reward = {
 	add_political_power = 50
 	
@@ -362,8 +368,7 @@ focus_tree = {
 	cost = 4
 	ai_will_do = { factor = 50 }
 	mutually_exclusive = { focus = modern_regiments }
-	prerequisite = { focus = the_nordic_airforce }
-	prerequisite = { focus = the_nordic_navy }
+	prerequisite = { focus = the_baltic_navy }
 	completion_reward = {
 	add_political_power = 50
 	
@@ -375,13 +380,13 @@ focus_tree = {
 	
 	id = modern_regiments
 	
+	icon = GFX_focus_generic_military_mission
 	x = 28
 	y = 11
 	cost = 3
 	ai_will_do = { factor = 50 }
 	mutually_exclusive = { focus = caroline_regiments }
-	prerequisite = { focus = the_nordic_airforce }
-	prerequisite = { focus = the_nordic_navy }
+	prerequisite = { focus = the_baltic_navy }
 	completion_reward = {
 	add_political_power = 50
 	
@@ -392,6 +397,7 @@ focus_tree = {
 	Focus = {
 	
 	id = peacetime_buildup
+	
 	
 	x = 32
 	y = 9
@@ -409,12 +415,13 @@ focus_tree = {
 	
 	id = gothenburg_dockyards
 	
+	icon = GFX_goal_generic_construct_naval_dockyard
 	x = 34
 	y = 10
 	cost = 1
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = peacetime_buildup }
-	mutually_exclusive = { focus = stockholm_amrouries focus = increase_morale }
+	mutually_exclusive = { focus = stockholm_armouries focus = increase_morale }
 	completion_reward = {
 	add_political_power = 50
 	
@@ -426,6 +433,7 @@ focus_tree = {
 	
 	id = navy_production_focus
 	
+	icon = GFX_goal_generic_navy_battleship
 	x = 34
 	y = 11
 	cost = 1
@@ -443,6 +451,7 @@ focus_tree = {
 	
 	id = smoland_air_research
 	
+	icon = GFX_goal_generic_air_fighter
 	x = 34
 	y = 12
 	cost = 1
@@ -460,8 +469,9 @@ focus_tree = {
 	
 	Focus = {
 	
-	id = stockholm_amrouries
+	id = stockholm_armouries
 	
+	icon = GFX_goal_generic_construct_mil_factory
 	x = 30
 	y = 10
 	cost = 1
@@ -479,11 +489,12 @@ focus_tree = {
 	
 	id = minor_streamlining
 	
+	icon = GFX_goal_generic_build_tank
 	x = 30
 	y = 11
 	cost = 1
 	ai_will_do = { factor = 50 }
-	prerequisite = { focus = stockholm_amrouries focus = increase_morale}
+	prerequisite = { focus = stockholm_armouries focus = increase_morale}
 	mutually_exclusive = { focus = work_ethics focus = navy_production_focus }
 	completion_reward = {
 	add_political_power = 50
@@ -495,6 +506,8 @@ focus_tree = {
 	Focus = {
 	
 	id = expand_airbases
+	
+	icon = GFX_goal_generic_air_fighter2
 	
 	x = 30
 	y = 12
@@ -515,12 +528,13 @@ focus_tree = {
 	
 	id = increase_morale
 	
+	icon = GFX_goal_generic_major_alliance
 	x = 32
 	y = 10
 	cost = 1
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = peacetime_buildup }
-	mutually_exclusive = { focus = stockholm_amrouries focus = gothenburg_dockyards }
+	mutually_exclusive = { focus = stockholm_armouries focus = gothenburg_dockyards }
 	completion_reward = {
 	add_political_power = 50
 	
@@ -532,11 +546,12 @@ focus_tree = {
 	
 	id = work_ethics
 	
+	icon = GFX_goal_generic_improve_relations
 	x = 32
 	y = 11
 	cost = 1
 	ai_will_do = { factor = 50 }
-	prerequisite = { focus = increase_morale focus = stockholm_amrouries focus = gothenburg_dockyards }
+	prerequisite = { focus = increase_morale focus = stockholm_armouries focus = gothenburg_dockyards }
 	mutually_exclusive = { focus = navy_production_focus focus = minor_streamlining}
 	completion_reward = {
 	add_political_power = 50
@@ -549,6 +564,7 @@ focus_tree = {
 	
 	id = worker_codes
 	
+	icon = GFX_goal_generic_intelligence_exchange
 	x = 32
 	y = 12
 	cost = 1
@@ -569,6 +585,7 @@ focus_tree = {
 	
 	id = finalize_the_buildup
 	
+	icon = GFX_focus_generic_industry_3
 	x = 25
 	y = 14
 	cost = 10
