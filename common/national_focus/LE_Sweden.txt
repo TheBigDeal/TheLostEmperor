@@ -363,6 +363,7 @@ focus_tree = {
 	
 	id = caroline_regiments
 	
+	icon = GFX_swedish_flag_guy
 	x = 26
 	y = 11
 	cost = 4

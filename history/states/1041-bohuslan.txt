@@ -1,0 +1,35 @@
+
+state={
+	id=1041
+	name="STATE_1041"
+	resources={
+		wood = 40
+	}
+
+	history={
+		owner = SWE
+		victory_points = {
+		
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			air_base = 1
+			171 = {
+				naval_base = 2
+				coastal_bunker = 3
+
+			}
+
+		}
+		add_core_of = SWE
+
+	}
+
+	provinces={
+		171 6310 
+	}
+	manpower= 12891
+	buildings_max_level_factor=1.000
+	state_category=city
+}

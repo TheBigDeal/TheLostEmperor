@@ -15,7 +15,7 @@ state={
 			11215 1 
 		}
 		buildings = {
-			infrastructure = 5
+			infrastructure = 6
 			industrial_complex = 1
 			dockyard = 1
 			11215 = {
@@ -31,6 +31,6 @@ state={
 	}
 
 	provinces={
-		3307 6120 6345 6412 9279 9300 9362 11160 11215 11327 11376 
+		 6120 6345 9279 9300 9362 11160 11376 
 	}
 }
