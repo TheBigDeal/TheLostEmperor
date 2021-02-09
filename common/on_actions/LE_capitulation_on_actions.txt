@@ -33,28 +33,33 @@ on_actions = {
 					PRE = { country_event = { id = le_prussia.65 }} #Each participant gets a peace event
 				}
 				else = { #Generic Treaty
-					FROM = { #From is Attacking Country
-						white_peace = ROOT #Root is Capitulated Country
-						country_event = { id = le_generic.2 }
-						ROOT = { country_event = { id = le_generic.3 } }
-						set_temp_variable = { infamy_temp = 0 }
-						add_to_temp_variable = { infamy_temp = 0 }
-
-					}
-					ROOT = {
-						every_owned_state = {
-							limit = {
-								OR = {
-									is_claimed_by = FROM
-									is_core_of = FROM
-								}
-							}
-							FROM = { transfer_state = PREV }
-							FROM = { add_to_temp_variable = { infamy_temp = manpower_k } }
-							FROM = { divide_temp_variable = { infamy_temp = 200000 } }
+					if = {
+						limit = {
+							ROOT = { is_subject = no }
 						}
+						FROM = { #From is Attacking Country
+							white_peace = ROOT #Root is Capitulated Country
+							country_event = { id = le_generic.2 }
+							ROOT = { country_event = { id = le_generic.3 } }
+							set_temp_variable = { infamy_temp = 0 }
+							add_to_temp_variable = { infamy_temp = 0 }
+
+						}
+						ROOT = {
+							every_owned_state = {
+								limit = {
+									OR = {
+										is_claimed_by = FROM
+										is_core_of = FROM
+									}
+								}
+								FROM = { transfer_state = PREV }
+								FROM = { add_to_temp_variable = { infamy_temp = manpower_k } }
+								FROM = { divide_temp_variable = { infamy_temp = 200000 } }
+							}
+						}
+						FROM = { add_to_variable = { infamy_var = infamy_temp} }
 					}
-					FROM = { add_to_variable = { infamy_var = infamy_temp} }
 				}
 			}
 		}

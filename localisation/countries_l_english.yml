@@ -1150,9 +1150,9 @@
  ADA_absolutism_DEF:0 "Adagh"
  ADA_absolutism_ADJ:0 "Adagh"
 
- AKU:0 "Al-Kufrah"
- AKU_DEF:0 "Al-Kufrah"
- AKU_ADJ:0 "Al-Kufrah"
+ AKU:0 "Senussi Tribes"
+ AKU_DEF:0 "Senussi Tribes"
+ AKU_ADJ:0 "Senussi Tribes"
 
  TBE_absolutism:0 "Tibesti"
  TBE_absolutism_DEF:0 "Tibesti"
@@ -1161,6 +1161,10 @@
  GRS_absolutism:0 "Gress"
  GRS_absolutism_DEF:0 "Gress"
  GRS_absolutism_ADJ:0 "Gress"
+
+ ALG:0 "Algiers"
+ ALG_DEF:0 "Algiers"
+ ALG_ADJ:0 "Algiers"
 
  BHR:0 "Bahr El Gjazal"
  BHR_DEF:0 "Bahr El Gjazal"

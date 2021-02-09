@@ -20,6 +20,7 @@ country_event = { #Generic Treaty - Victor
 	is_triggered_only = yes
 	option = { #Treaty of Claimed State
 		name = le_generic.2.a
+		add_to_variable = { infamy_var = 1 }
 	}
 }
 country_event = { #Generic Treaty - Defeat

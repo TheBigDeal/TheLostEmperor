@@ -4,17 +4,17 @@ state={
 	name="STATE_918"
 
 	history={
-		owner = FAZ
+		owner = AKU
 		buildings = {
 			infrastructure = 2
 
 		}
-		add_core_of = FAZ
+		add_core_of = AKU
 
 	}
 
 	provinces={
-		1994 12022 12082 
+		1994 12022 12082
 	}
 	manpower=435653
 	buildings_max_level_factor=1.000

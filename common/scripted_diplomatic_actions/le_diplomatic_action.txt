@@ -16,7 +16,7 @@ scripted_diplomatic_actions = {
 			#
 		}
 		reject_effect = { # Negative Relations
-		
+
 		}
 		ai_desire = {
 			modifier = {
@@ -107,30 +107,6 @@ scripted_diplomatic_actions = {
 			}
 		}
 	}
-	enforce_claims = {
-		show_acceptance_on_action_button = no
-		requires_acceptance = no
-		allowed = {
-			always = yes
-		}
-		visible = {
-			is_subject = no
-		}
-		selectable = { #PREV = Target Country
-			PREV = { 
-				any_owned_state  = {
-					limit = {
-						is_owned_by = PREV
-					}
-					is_claimed_by = ROOT
-				}
-			}
-		}
-		cost = 150
-		complete_effect = {
-			ROOT = { create_wargoal = { type = annex_everything target = PREV } }
-		}
-	}
 	impose_trade_embargo = {
 
 		allowed = {
@@ -159,17 +135,17 @@ scripted_diplomatic_actions = {
 					tag = PREV
 					ratio > 0.50
 				}
-				
+
 			}
 			IF = {
 				limit = {
 					PREV = {
 						OR = {
-						has_war_together_with = ROOT 
-						is_in_faction_with = ROOT 
-						has_non_aggression_pact_with = ROOT 
+						has_war_together_with = ROOT
+						is_in_faction_with = ROOT
+						has_non_aggression_pact_with = ROOT
 						has_war_with = ROOT
-						
+
 						}
 					}
 				}
@@ -211,7 +187,7 @@ scripted_diplomatic_actions = {
 				}
 			add = -5000
 			}
-			modifier = { #If opinion is lower than -50 they will impose embargo if no puppet 
+			modifier = { #If opinion is lower than -50 they will impose embargo if no puppet
 				ROOT = {
 					AND = {
 						is_puppet = no
@@ -254,7 +230,7 @@ scripted_diplomatic_actions = {
 				}
 			add = -100
 			}
-			modifier = { #if ally is at war with target they'll impose embargo regardless of autonomy state 
+			modifier = { #if ally is at war with target they'll impose embargo regardless of autonomy state
 				ROOT = {
 					any_allied_country = {
 						has_war_with = PREV.PREV
