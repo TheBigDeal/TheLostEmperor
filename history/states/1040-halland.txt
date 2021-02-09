@@ -1,0 +1,29 @@
+
+state={
+	id=1040
+	name="STATE_1040"
+	manpower = 257841
+	
+	state_category = city
+
+	history={
+		owner = DEN
+		victory_points = {
+		
+		}
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			3307= {
+				naval_base = 3
+				coastal_bunker = 1
+			}
+		}
+		add_core_of = DEN
+		
+	}
+
+	provinces={
+		 3307 6412
+	}
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=1046
+	name="STATE_1046" # vastmanland
+	manpower = 241432
+	state_category = city
+	
+	resources={
+		wood = 14
+	}
+
+	history={
+		owner = SWE
+		victory_points = {
+			6050 20 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 4
+
+		}
+		add_core_of = SWE
+	}
+
+	provinces={
+		11044 3106 35 11197 114
+	
+	}
+}

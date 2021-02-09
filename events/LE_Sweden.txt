@@ -1,0 +1,21 @@
+###########################
+# Swedish Events
+###########################
+
+add_namespace = le_sweden
+
+country_event = { #Finnish question
+	id = sweden.1
+	title = sweden.1.t
+	desc = sweden.1.d
+	#fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Accept Wilhelm
+		name = le_sweden.1.a
+		set_country_flag = PRE_wilhelm_in_capital
+		complete_national_focus = finnish_question
+	}
+	option = { #Turn Wilhelm Away
+		name = sweden.1.b
+	}
+}

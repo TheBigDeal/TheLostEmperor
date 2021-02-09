@@ -1,68 +1,222 @@
 ﻿capital = 141	
 
-oob = "SWE_1936"
+oob = "SWE_1928"
 
 set_research_slots = 3
 
-
 set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	gw_artillery = 1
+    infantry_weapons = 1
+	tech_support = 1
 	tech_recon = 1
-	tech_support = 1		
-	tech_engineers = 1
-	gwtank = 1
-	
-	CAS1 = 1
-	early_fighter = 1
-	naval_bomber1 = 1
-	cv_naval_bomber1 = 1
-	early_bomber = 1
+	seige_cannon = 1
+	experimental_artillery = 1
+	light_artillery_1 = 1
+	heavy_artillery = 1
+	gw_artillery = 1
+	infantry_weapons1 = 1
+	light_machine_gun_1 = 1
+	basic_machine_tools = 1
+	agriculture1 = 1
+	industrial_realisation = 1
+	industrial_expansion = 1
+	industrial_factories = 1
+	early_automobile_industry = 1
+	basic_infrastructure = 1
+	experimental_aircraft = 1
+	scout_plane0 = 1
+	biplane_fighter = 1
+	biplane_bomber = 1
 }
+add_ideas = {
 
+    en_svensk_tiger
+	
+    baltic_navy
+	
+	finnish_nationalism
+	
+	worker_issues
+	
+	
+	#LAWS#
+	
+	law_1_harrassment
+	law_2_execuitive_comittee
+	law_3_non_socialist_allowed
+	law_4_not_allowed
+	law_5_open_immigration
+	law_6_censored_press
+	law_7_oppressed
+	
+	#TAX#
+	
+	tax_upper_class_low
+	tax_middle_class_medium
+	tax_lower_class_high
+	tax_capital_gains_high
+	tax_army_funding_high
+	tax_education_funding_low
+	tax_social_funding_low
+	
+	#OTHER#
+	le_religion_protestant
+	
+	
+}
 
 set_politics = {	
 	ruling_party = royalism
 	elections_allowed = no
+	
+	
+	
 }
 
 set_popularities = {
-    absolutism = 5
-	royalism = 35
-	rexism = 28
-    socialism = 10
-    liberalism = 14
-    collectivism = 8
+
+    mutualism = 0
+	collectivism = 8
+	proletarianism = 1
+    absolutism = 7 
+	royalism = 28
+	conservatism = 5
+	liberalism = 5
+	socialism = 12
+	labryscism = 11
+	rexism = 19
+	despotism = 4
+}
+    
+
+set_convoys = 175
+puppet = VRP
+give_guarantee = LIT
+create_faction = Swedish Sphere
+add_to_faction = VRP
+add_to_faction = RIG
+
+set_stability = 0.4
+set_warsupport = 0.2
+
+create_country_leader = {
+	name = "Nils Flyg"
+	desc = "PER_ALBIN_HANSSON_DESC"
+	picture = ""
+	expire = "1950.10.29"
+	ideology = collectivism_ideology
+	traits = {
+		#
+	}
 }
 
-set_convoys = 25
-set_stability = 0.9
-
-
-
+create_country_leader = {
+	name = "Nils Flyg"
+	desc = "PER_ALBIN_HANSSON_DESC"
+	picture = ""
+	expire = "1950.10.29"
+	ideology = proletarianism_ideology
+	traits = {
+		#
+	}
+}
 
 create_country_leader = {
 	name = "Oscar Gustaf Adolf Bernadotte V"
-	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
-	picture = "Portrait_Sweden_Gustaf_V.tga"
+	desc = "PER_ALBIN_HANSSON_DESC"
+	picture = "Gustav.dds"
 	expire = "1950.10.29"
 	ideology = absolutism_ideology
 	traits = {
+		Anti-Communist
+		Anti-Democrat
+		Champion of Peace 4
+		Constitutional Monarch
+		Inexperienced Monarch
+		
+	} 
+}
+
+create_country_leader = {
+	name = "Oscar Gustaf Adolf Bernadotte V"
+	desc = "PER_ALBIN_HANSSON_DESC"
+	picture = "Gustav.dds"
+	expire = "1950.10.29"
+	ideology = royalism_ideology
+	traits = {
+		Anti-Communist
+		Anti-Democrat
+		Champion of Peace 4
+		Constitutional Monarch
+		Inexperienced Monarch
+	}
+}
+
+create_country_leader = {
+	name = "Arvid lindman"
+	desc = "PER_ALBIN_HANSSON_DESC"
+	picture = "Gustav.dds"
+	expire = "1950.10.29"
+	ideology = conservatism_ideology
+	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Oscar Gustaf Adolf Bernadotte V"
-	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
-	picture = "Portrait_Sweden_Gustaf_V.tga"
+	name = "Per albin hansson"
+	desc = "PER_ALBIN_HANSSON_DESC"
+	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
 	expire = "1950.10.29"
-	ideology = royalism_ideology
+	ideology = liberalism_ideology
 	traits = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Per albin hansson"
+	desc = "PER_ALBIN_HANSSON_DESC"
+	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
+	expire = "1950.10.29"
+	ideology = socialism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sven Olov Lindholm" 
+	desc = "PER_ALBIN_HANSSON_DESC"
+	picture = "OlovLindholm.dds"
+	expire = "1950.10.29"
+	ideology = labryscism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sven Olov Lindholm" 
+	desc = "PER_ALBIN_HANSSON_DESC"
+	picture = "OlovLindholm.dds"
+	expire = "1950.10.29"
+	ideology = despotism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Oscar Gustaf Adolf Bernadotte V" 
+	desc = "PER_ALBIN_HANSSON_DESC"
+	picture = "Gustav.dds"
+	expire = "1950.10.29"
+	ideology = rexism_ideology
+	traits = {
+		#
+	}
+}
+
 
 create_corps_commander = {
 	name = "Folke Högberg"

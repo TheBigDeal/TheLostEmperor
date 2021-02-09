@@ -1,0 +1,31 @@
+
+state={
+	id=1053
+	name="STATE_1053"
+	manpower=32122
+	resources={
+		steel=52
+		
+	}
+	
+	state_category = town
+	
+
+	history={
+		owner = SWE
+		victory_points = {
+
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			
+		}
+		add_core_of = SWE
+	}
+
+	provinces={
+		3138 6200 3173 9093 11067 6132 3113 182 3173 118 11185 6067 145 11201 9220 3100 109
+		
+	}
+}

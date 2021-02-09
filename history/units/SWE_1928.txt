@@ -1,0 +1,383 @@
+﻿division_template = {
+	name = "Arméfördelning"			# Infantry Division - Planned formation for mobilization of divisions, 1937-1940
+	division_names_group = SWE_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # Regiment of 155mm howitzers, 105mm arty
+		engineer = { x = 0 y = 1 }   
+		recon = { x = 0 y = 2 }      # Recon consisted of ACs, motorcycle inf, cavalry
+	}
+}
+division_template = {
+	name = "KavalleriDivisioner"  	# Cavalry Brigade
+	division_names_group = SWE_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Recon consisted of ACs, motorcycle inf, cavalry
+	}
+}
+
+division_template = {
+	name = "Ockupations Divisioner"			# Garrison Force
+	division_names_group = SWE_GAR_01
+	# For reserve and independent regiments, lower experience and equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+
+units = {
+	######## LAND UNITS ########
+	##### Högkvarteret #####
+	
+	division = { # "I. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9251 # Kristianstad
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+
+	}
+	division = { # "II. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11280 # Kristianstad
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+
+	}
+	division = { # "III. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 329 # Karlskrona
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+
+	}
+	division = { # "IV. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 147 
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	
+	division = { # "V. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3128 # Boden
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	
+	division = { # "VI. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 3111 # Osterund
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division = { # "VII. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 11030
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division = { # "VIII. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 3073
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division = { # "IX. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 3030
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division = { # "X. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 6186
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division = { # "XI. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 3185
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = { # "XII. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 9171
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+		division = { # "XIII. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 11058
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+		division = { # "XIV. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 6055
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+			division = { # "XV. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 6061
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+			division = { # "XVI. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 203
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+				division = { # "XVII. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 3158
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+				division = { # "XVIII. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 6210
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+				division = { # "XIX. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 52
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+				division = { # "XX. Arméfördelning"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 6282
+		division_template = "Arméfördelning"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	
+	
+	
+	division = {
+		name = "Göteborgs Militärområde"
+		location = 383 # Göteborg
+		division_template = "Ockupations Divisioner"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	
+	division = {
+		name = "Helsinki Militärområde"
+		location = 11105 # Osterund
+		division_template = "Ockupations Divisioner"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "Turku Militärområde"
+		location = 3083 # Osterund
+		division_template = "Ockupations Divisioner"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	
+	division = {
+		name = "Karlstad Militärområde"
+		location = 11114 # Skovde
+		division_template = "Ockupations Divisioner"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Stockholms Militärområde"
+		location = 6050 #Stockholm
+		division_template = "Ockupations Divisioner"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	
+	division = {
+		name = "Luleå Militärområde"
+		location = 9108 # Boden
+		division_template = "Ockupations Divisioner"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	
+	division = {
+		name = "Gotlands Militärområde"
+		location = 408 # Gotland
+		division_template = "Ockupations Divisioner"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	
+	division = {
+		name = "Ålands Militärområde"
+		location = 9228 # Gotland
+		division_template = "Ockupations Divisioner"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+
+	
+	division = {
+		name = "Kavalleribrigaden"
+		location = 6050 #Stockholm
+		division_template = "Kavalleribrigaden"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+
+	}
+	
+
+}
+
+### Flygvapnet ###
+air_wings = {
+	141 = {
+		# 1. Bombflyggruppen -- Hawker Harts
+		CAS_equipment_1 = {
+			owner = "SWE" 
+			amount = 36
+		}
+		# 5. Jaktflyggruppen -- Bristol Bulldogs, Svenska Jaktfalks, Centrala Malmslatts
+		fighter_equipment_0 =  {
+			owner = "SWE" 
+			amount = 30
+		}
+	}
+	140 = {
+		# 2. Torpedflyggruppen -- Heinkel HD 16s
+		cv_nav_bomber_equipment_1 =  {
+			owner = "SWE" 
+			amount = 12
+		}
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SWE"
+		}
+		requested_factories = 1
+		progress = 0.77
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SWE"
+		}
+		requested_factories = 1
+		progress = 0.21
+		efficiency = 100
+	}
+}

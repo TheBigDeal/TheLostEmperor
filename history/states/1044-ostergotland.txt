@@ -1,26 +1,24 @@
 
 state={
-	id=139
-	name="STATE_139"
-	manpower = 918593
+	id=1044
+	name="STATE_1044"
+	manpower = 326652
 	
 	state_category = town
 	
 	resources={
-		steel=10
-		wood = 60
+		wood = 34
 	}
 
 
 	history={
 		owner = SWE
 		victory_points = {
-			11380 1 
+
 		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
-			air_base = 2
 			11380 = {
 				naval_base = 1
 			}
@@ -29,6 +27,7 @@ state={
 	}
 
 	provinces={
-		211 242 299 329 363 3229 6148 9251 9329 9406 9410 11231 11280 11311 13095 
+		6311 6397 9308 9393 11289 11380 11390
+		
 	}
 }

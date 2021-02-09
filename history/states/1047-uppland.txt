@@ -1,7 +1,7 @@
 
 state={
-	id=141
-	name="STATE_141" # sodermanland
+	id=1047
+	name="STATE_1047" # uppland
 	manpower = 1051432
 	state_category = city
 	
@@ -13,15 +13,13 @@ state={
 	history={
 		owner = SWE
 		victory_points = {
-			6050 20 
+		
 		}
 		buildings = {
 			infrastructure = 7
 			arms_factory = 2
 			industrial_complex = 3
-			dockyard = 1
-			air_base = 6
-			6050 = {
+			6209 = {
 				naval_base = 5
 				coastal_bunker = 3
 			}
@@ -31,7 +29,7 @@ state={
 	}
 
 	provinces={
-		9109 11188 11082 161 6050 13098
+		11163 6127 3182 9149 11278 6209
 	
 	}
 }

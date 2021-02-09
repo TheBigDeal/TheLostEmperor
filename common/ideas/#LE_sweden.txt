@@ -1,6 +1,8 @@
 ideas = {
 	country = {
 	
+	    ## STARTER ##
+		
 		en_svensk_tiger = {
 			
 			visible = {
@@ -20,6 +22,171 @@ ideas = {
 				enemy_justify_war_goal_time = 0.1
 			}
 		}
+		
+		finnish_nationalism = {
+			
+			visible = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+
+			picture = sisu
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				global_building_slots_factor = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		
+		baltic_navy = {
+			
+			visible = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+
+			picture = liberty_ships_focus
+			
+			modifier = {
+				experience_gain_navy = 0.025
+				experience_gain_navy_unit_factor = 0.05
+				invasion_preparation = -0.2
+				naval_attrition = -0.03
+				naval_damage_factor = 0.03
+				naval_defense_factor = 0.03
+				naval_enemy_retreat_chance = -0.15
+				naval_speed_factor = 0.1
+				naval_retreat_chance = -0.15
+				navy_submarine_attack_factor = -0.2
+			}
+		}
+		
+		worker_issues = {
+			
+			visible = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+            production_speed_buildings_factor = -0.15
+			industrial_capacity_factory = -0.2
+			industrial_capacity_dockyard = -0.1
+			consumer_goods_factor = 0.1
+			conversion_cost_civ_to_mil_factor = 0.1
+			conversion_cost_mil_to_civ_factor = 0.1
+			}
+		}
+		
+		worker_issues_2 = {
+			
+			visible = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+            production_speed_buildings_factor = -0.10
+			industrial_capacity_factory = -0.15
+			industrial_capacity_dockyard = -0.06
+			consumer_goods_factor = 0.06
+			conversion_cost_civ_to_mil_factor = 0.06
+			conversion_cost_mil_to_civ_factor = 0.06
+			}
+		}
+		
+		
+		
+		## Gained ##
+		
+		SWE_traditional_values = {
+			
+			visible = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = labrycism
+				has_government = rexism
+				has_government = royalism
+				has_government = absolutism
+			}
+
+			removal_cost = -1
+
+			picture = british_stoicism
+			
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = -0.1
+				
+				royalism_drift = 0.025
+				royalism_acceptance = 50
+				absolutism_drift = 0.025
+				absolutism_acceptance = 50
+				rexism_drift = 0.05
+				rexism_acceptance = 35
+				labrycism_drift = 0.05
+				labrycism_acceptance = 35
+				conservatism_drift = 0.06
+				conservatism_acceptance = 20
+				
+			}
+		}
+		
+				fatherland_buildup = {
+			
+			visible = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = labrycism
+				has_government = rexism
+				has_government = royalism
+				has_government = absolutism
+			}
+
+			removal_cost = -1
+
+			picture = british_stoicism
+			
+			modifier = {
+            
+			production_speed_buildings_factor = 0.17
+			industrial_capacity_factory = 0.3
+			industrial_capacity_dockyard = 0.15
+			consumer_goods_factor = -0.15
+			
+			
+			}
+		}
+		
 	
 	}
 
