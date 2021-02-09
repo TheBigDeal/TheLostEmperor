@@ -8,7 +8,7 @@
  prestige30_tt:0 "Gain §Y30 Prestige§!"
  gp_name:0 "[ROOT.GetName]"
  gp_tt:0 "§YGreat Powers§!\nShows a ranking of every nation in the world."
- country_info_tt:0 "§YCountry Information§!\n\n§YFull Name:§! [ROOT.GetNameDef]\n§YRuling Party:§![Root.GetRulingParty]\n§YHead Of Government:§![Root.GetLeader]\n§YInfamy:§! 0\n§YLiteracy:§!Literacy: 50%"
+ country_info_tt:0 "§YCountry Information§!\n\n§YFull Name:§! [ROOT.GetNameDef]\n§YRuling Party:§![Root.GetRulingParty]\n§YHead Of Government:§![Root.GetLeader]\n§YInfamy:§! [ROOT.infamy_var]]\n§YLiteracy:§!Literacy: 50%"
  ### Demobilisation ###
 mobilisation_penalty_modifier:0 "Above Division Limit"
 

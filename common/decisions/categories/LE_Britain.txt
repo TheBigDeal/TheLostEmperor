@@ -1,0 +1,16 @@
+####################
+##### GENERIC ######
+####################
+
+gbr_parliament_campaigning_cat = {
+	icon = idea_collectivism
+	fixed_random_seed = no
+	visible = {
+		OR = {
+			has_country_flag = parliament_allow_campaigning_conservative
+			has_country_flag = parliament_allow_campaigning_liberal
+			has_country_flag = parliament_allow_campaigning_labour
+		}
+	}
+	visible_when_empty = yes
+}

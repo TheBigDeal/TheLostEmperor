@@ -256,20 +256,20 @@ BSN = {
 	color_ui = rgb { 94 149 163 }
 }
 SKH = {
-	color = rgb { 188 134 71 }
-	color_ui = rgb { 188 134 71 }
+	color = rgb { 255 82 31 }
+	color_ui = rgb { 255 102 51 }
 }
 BHA = {
 	color = rgb { 193 182 81 }
 	color_ui = rgb { 193 182 81 }
 }
 RJP = {
-	color = rgb { 178 108 176 }
-	color_ui = rgb { 178 108 176 }
+	color = rgb { 95 26 24 }
+	color_ui = rgb { 75 6 4 }
 }
 MAR = {
-	color = rgb { 79 107 140 }
-	color_ui = rgb { 79 107 140 }
+	color = rgb { 239 130 13 }
+	color_ui = rgb { 239 130 13 }
 }
 BRM = {
 	color = rgb { 73 104 65 }
@@ -344,8 +344,8 @@ ARA = {
 	color_ui = rgb { 166  68  72 }
 }
 MUG = {
-	color = rgb { 33 96 48 }
-	color_ui = rgb { 33 96 48 }
+	color = rgb { 34 139 34 }
+	color_ui = rgb { 34 139 34 }
 }
 LEV = {
 	color = rgb { 193 71 71 }

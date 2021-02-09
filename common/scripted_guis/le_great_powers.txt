@@ -1,13 +1,12 @@
 scripted_gui = {
 	great_powers = {
 		context_type = player_context
-		
 		window_name = "great_powers_container"
-		
+		parent_window_name = "topbar"
 		visible = {
-            always = yes
+      always = yes
 		}
-		
+
 		effects = {
 			great_powers_bg_click = {
 				if = {
@@ -23,9 +22,9 @@ scripted_gui = {
 	}
 	great_powers_container = {
 		context_type = player_context
-		
+
 		window_name = "great_powers_main_container"
-		
+
 		visible = {
 			check_variable = { open_great_power_container = 1 }
 		}
@@ -35,7 +34,7 @@ scripted_gui = {
 				entry_container = gp_entry
 			}
 		}
-		triggers = { 
+		triggers = {
 			flag_great_power_border_visible = { check_variable = {  global.score_array_position^i < 11 } }
 			flag_secondary_power_border_visible = { check_variable = {  global.score_array_position^i < 21 } }
 		}
@@ -52,4 +51,3 @@ scripted_gui = {
 		}
 	}
 }
-

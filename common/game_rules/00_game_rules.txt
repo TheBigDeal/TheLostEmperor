@@ -6,7 +6,7 @@
 #	name = "TEXT_KEY_FOR_NAME"
 #	required_dlc = "Name of the Required DLC"
 #	desc = "TEXT_KEY_FOR_LONG_DESC"
-#	group = "TEXT_KEY_FOR_GROUP"					# Used for filtering. A single rule can be in multiple groups 
+#	group = "TEXT_KEY_FOR_GROUP"					# Used for filtering. A single rule can be in multiple groups
 #	icon = gfx_option_token							# Optional icon
 #	option = {										# Unless other specified, the first option is the default option
 #		name = option_token
@@ -30,7 +30,7 @@ allow_wargoals = {
 		text = RULE_OPTION_ALWAYS_FREE
 		desc = "RULE_ALLOW_WARGOALS_ALWAYS_FREE_DESC"
 	}
-	option = {
+	default = {
 		name = "LIMITED"
 		text = "RULE_OPTION_LIMITED"
 		desc = "RULE_ALLOW_WARGOALS_LIMITED_DESC"
@@ -55,7 +55,7 @@ allow_wargoals = {
 		text = RULE_OPTION_FREE_100
 		desc = "RULE_ALLOW_WARGOALS_FREE_100_DESC"
 	}
-	default = {
+	option = {
 		name = "FOCUSES_ONLY"
 		text = RULE_OPTION_FOCUSES_ONLY
 		desc = "RULE_ALLOW_WARGOALS_FOCUSES_ONLY_DESC"
@@ -277,11 +277,11 @@ allow_take_over_faction = {
 	}
 }
 
- ##   ##  #   # ### ###  ###      ##   ##  ### ###  ##  #  #  ## 
-#  # #  # #   # #   #  #  #      #  # #  #  #   #  #  # ## # #   
-#    #  #  # #  ##  ###   #      #### #     #   #  #  # # ##  #  
-#  # #  #  # #  #   #  #  #      #  # #  #  #   #  #  # #  #   # 
- ##   ##    #   ### #  #  #      #  #  ##   #  ###  ##  #  # ##  
+ ##   ##  #   # ### ###  ###      ##   ##  ### ###  ##  #  #  ##
+#  # #  # #   # #   #  #  #      #  # #  #  #   #  #  # ## # #
+#    #  #  # #  ##  ###   #      #### #     #   #  #  # # ##  #
+#  # #  #  # #  #   #  #  #      #  # #  #  #   #  #  # #  #   #
+ ##   ##    #   ### #  #  #      #  #  ##   #  ###  ##  #  # ##
 
 allow_coups = {
 	name = "RULE_ALLOW_COUPS"
@@ -332,11 +332,11 @@ allow_party_boosting = {
 	}
 }
 
-###  ### #   # ###  ## ###  ##  #  #     ### ### #   # ###  #    ##  ### ###  ## 
-#  #  #  #   #  #  #    #  #  # ## #      #  #   ## ## #  # #   #  #  #  #   #   
-#  #  #   # #   #   #   #  #  # # ##      #  ##  # # # ###  #   ####  #  ##   #  
-#  #  #   # #   #    #  #  #  # #  #      #  #   #   # #    #   #  #  #  #     # 
-###  ###   #   ### ##  ###  ##  #  #      #  ### #   # #    ### #  #  #  ### ##  
+###  ### #   # ###  ## ###  ##  #  #     ### ### #   # ###  #    ##  ### ###  ##
+#  #  #  #   #  #  #    #  #  # ## #      #  #   ## ## #  # #   #  #  #  #   #
+#  #  #   # #   #   #   #  #  # # ##      #  ##  # # # ###  #   ####  #  ##   #
+#  #  #   # #   #    #  #  #  # #  #      #  #   #   # #    #   #  #  #  #     #
+###  ###   #   ### ##  ###  ##  #  #      #  ### #   # #    ### #  #  #  ### ##
 
 
 allow_paratroopers = {
@@ -400,11 +400,11 @@ allow_paratroopers = {
 #	}
 #}
 
- ##   ##  #  #  ## ### ###  #  #  ##  ### ###  ##  #  # 
-#  # #  # ## # #    #  #  # #  # #  #  #   #  #  # ## # 
-#    #  # # ##  #   #  ###  #  # #     #   #  #  # # ## 
-#  # #  # #  #   #  #  #  # #  # #  #  #   #  #  # #  # 
- ##   ##  #  # ##   #  #  #  ##   ##   #  ###  ##  #  # 
+ ##   ##  #  #  ## ### ###  #  #  ##  ### ###  ##  #  #
+#  # #  # ## # #    #  #  # #  # #  #  #   #  #  # ## #
+#    #  # # ##  #   #  ###  #  # #     #   #  #  # # ##
+#  # #  # #  #   #  #  #  # #  # #  #  #   #  #  # #  #
+ ##   ##  #  # ##   #  #  #  ##   ##   #  ###  ##  #  #
 
 maximum_fort_level = {
 	name = "RULE_MAXIMUM_FORT_LEVEL"
@@ -462,11 +462,11 @@ maximum_fort_level = {
 	}
 }
 
-###  ###  ## ###  ##  ###   ##  #  # 
-#  # #   #   #   #  # #  # #  # #  # 
-###  ##   #  ##  #### ###  #    #### 
-#  # #     # #   #  # #  # #  # #  # 
-#  # ### ##  ### #  # #  #  ##  #  # 
+###  ###  ## ###  ##  ###   ##  #  #
+#  # #   #   #   #  # #  # #  # #  #
+###  ##   #  ##  #### ###  #    ####
+#  # #     # #   #  # #  # #  # #  #
+#  # ### ##  ### #  # #  #  ##  #  #
 
 #research_ahead_of_time = {
 #	name = "RULE_RESEARCH_AOT"
@@ -498,11 +498,11 @@ maximum_fort_level = {
 #	}
 #}
 
- ##   ##  #  # #  # ### ###  #   #      ## ###  ###  ##  ### ### ###  ##      ###  #  # #   ###  ## 
-#  # #  # #  # ## #  #  #  #  # #      #   #  # #   #  #  #  #    #  #  #     #  # #  # #   #   #   
-#    #  # #  # # ##  #  ###    #        #  ###  ##  #     #  ##   #  #        ###  #  # #   ##   #  
-#  # #  # #  # #  #  #  #  #   #         # #    #   #  #  #  #    #  #  #     #  # #  # #   #     # 
- ##   ##   ##  #  #  #  #  #   #       ##  #    ###  ##  ### #   ###  ##      #  #  ##  ### ### ##  
+ ##   ##  #  # #  # ### ###  #   #      ## ###  ###  ##  ### ### ###  ##      ###  #  # #   ###  ##
+#  # #  # #  # ## #  #  #  #  # #      #   #  # #   #  #  #  #    #  #  #     #  # #  # #   #   #
+#    #  # #  # # ##  #  ###    #        #  ###  ##  #     #  ##   #  #        ###  #  # #   ##   #
+#  # #  # #  # #  #  #  #  #   #         # #    #   #  #  #  #    #  #  #     #  # #  # #   #     #
+ ##   ##   ##  #  #  #  #  #   #       ##  #    ###  ##  ### #   ###  ##      #  #  ##  ### ### ##
 
 
 
@@ -549,11 +549,11 @@ maximum_fort_level = {
 
 
 
- ##  ###     ###  ### #  #  ##  #   # ###  ##  ###  
-#  #  #      #  # #   #  # #  # #   #  #  #  # #  # 
-####  #      ###  ##  #### ####  # #   #  #  # ###  
-#  #  #      #  # #   #  # #  #  # #   #  #  # #  # 
-#  # ###     ###  ### #  # #  #   #   ###  ##  #  # 
+ ##  ###     ###  ### #  #  ##  #   # ###  ##  ###
+#  #  #      #  # #   #  # #  # #   #  #  #  # #  #
+####  #      ###  ##  #### ####  # #   #  #  # ###
+#  #  #      #  # #   #  # #  #  # #   #  #  # #  #
+#  # ###     ###  ### #  # #  #   #   ###  ##  #  #
 
 GER_ai_behavior = {
 	name = "GER_AI_BEHAVIOR"
@@ -659,7 +659,7 @@ ITA_ai_behavior = {
 	option = {
 		name = FASCIST_HISTORICAL
 		text = "RULE_OPTION_FASCIST_HISTORICAL"
-		desc = "RULE_FASCIST_HISTORICAL_ITA_AI_DESC" 
+		desc = "RULE_FASCIST_HISTORICAL_ITA_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
@@ -1334,11 +1334,11 @@ MEX_ai_behavior = {
 	}
 }
 
- ##   ##  #   # ###      ## ### ### #  # ###  
-#    #  # ## ## #       #   #    #  #  # #  # 
-# ## #### # # # ##       #  ##   #  #  # ###  
-#  # #  # #   # #         # #    #  #  # #    
- ##  #  # #   # ###     ##  ###  #   ##  #    
+ ##   ##  #   # ###      ## ### ### #  # ###
+#    #  # ## ## #       #   #    #  #  # #  #
+# ## #### # # # ##       #  ##   #  #  # ###
+#  # #  # #   # #         # #    #  #  # #
+ ##  #  # #   # ###     ##  ###  #   ##  #
 
 americas_colonization_status = {
 	name = "AMERICAS_COLONIZATION_STATUS"

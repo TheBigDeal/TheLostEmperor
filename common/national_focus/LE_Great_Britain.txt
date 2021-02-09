@@ -297,7 +297,7 @@ focus_tree = {
 	}
 	#Focus for The People's Flag is Deepest Red
 	focus = {
-		id = ENG_the_peoples_flag_is_deepest_red
+		id = GBR_the_peoples_flag_is_deepest_red
 		icon = GFX_focus_por_workers_of_iberia
 		x = 3
 		y = 0
@@ -319,15 +319,15 @@ focus_tree = {
 
 	#Focus for New Labour
 	focus = {
-		id = ENG_new_labour
+		id = GBR_new_labour
 		icon = GFX_goal_generic_major_alliance
-		relative_position_id = ENG_the_peoples_flag_is_deepest_red
+		relative_position_id = GBR_the_peoples_flag_is_deepest_red
 		x = -2
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ENG_the_peoples_flag_is_deepest_red }
-		mutually_exclusive = { focus = ENG_break_the_chains }
+		prerequisite = { focus = GBR_the_peoples_flag_is_deepest_red }
+		mutually_exclusive = { focus = GBR_break_the_chains }
 		ai_will_do = {
 			factor = 1
 		}
@@ -335,15 +335,15 @@ focus_tree = {
 
 	#Focus for Break the Chains
 	focus = {
-		id = ENG_break_the_chains
+		id = GBR_break_the_chains
 		icon = GFX_focus_spr_masters_of_our_own_fate
-		relative_position_id = ENG_the_peoples_flag_is_deepest_red
+		relative_position_id = GBR_the_peoples_flag_is_deepest_red
 		x = 2
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ENG_the_peoples_flag_is_deepest_red }
-		mutually_exclusive = { focus = ENG_new_labour }
+		prerequisite = { focus = GBR_the_peoples_flag_is_deepest_red }
+		mutually_exclusive = { focus = GBR_new_labour }
 		ai_will_do = {
 			factor = 1
 		}
@@ -351,14 +351,14 @@ focus_tree = {
 
 	#Focus for The Economic Readjustment Act
 	focus = {
-		id = ENG_the_economic_readjustment_act
+		id = GBR_the_economic_readjustment_act
 		icon = GFX_goal_generic_soviet_construction
-		relative_position_id = ENG_the_peoples_flag_is_deepest_red
+		relative_position_id = GBR_the_peoples_flag_is_deepest_red
 		x = -3
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ENG_new_labour }
+		prerequisite = { focus = GBR_new_labour }
 		ai_will_do = {
 			factor = 1
 		}
@@ -366,16 +366,16 @@ focus_tree = {
 
 	#Focus for The Union Rights Act
 	focus = {
-		id = ENG_the_union_rights_act
+		id = GBR_the_union_rights_act
 		icon = GFX_focus_spr_class_war
-		relative_position_id = ENG_the_peoples_flag_is_deepest_red
+		relative_position_id = GBR_the_peoples_flag_is_deepest_red
 		x = 0
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = {
-			focus = ENG_break_the_chains
-			focus = ENG_new_labour
+			focus = GBR_break_the_chains
+			focus = GBR_new_labour
 		}
 		ai_will_do = {
 			factor = 1
@@ -384,14 +384,14 @@ focus_tree = {
 
 	#Focus for Declare the Republic
 	focus = {
-		id = ENG_declare_the_republic
+		id = GBR_declare_the_republic
 		icon = GFX_focus_rom_abdicate
-		relative_position_id = ENG_the_peoples_flag_is_deepest_red
+		relative_position_id = GBR_the_peoples_flag_is_deepest_red
 		x = 3
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ENG_break_the_chains }
+		prerequisite = { focus = GBR_break_the_chains }
 		ai_will_do = {
 			factor = 1
 		}
@@ -399,14 +399,839 @@ focus_tree = {
 
 	#Focus for The National Health Service
 	focus = {
-		id = ENG_the_national_health_service
+		id = GBR_the_national_health_service
 		icon = GFX_focus_generic_treaty
-		relative_position_id = ENG_the_peoples_flag_is_deepest_red
+		relative_position_id = GBR_the_peoples_flag_is_deepest_red
 		x = 0
 		y = 3
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ENG_the_union_rights_act }
+		prerequisite = { focus = GBR_the_union_rights_act }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = GBR_the_balance_of_power
+		icon = GFX_goal_generic_neutrality_focus
+		x = 41
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_invest_in_canada
+		}
+		prerequisite = {
+			focus = GBR_dominate_johor
+		}
+		prerequisite = {
+			focus = GBR_buy_the_suez_company
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for European Affairs
+	focus = {
+		id = GBR_european_affairs
+		icon = GFX_focus_usa_focus_on_europe
+		x = 39
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_balance_of_power }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invest in Canada
+	focus = {
+		id = GBR_invest_in_canada
+		icon = GFX_goal_generic_production
+		x = 41
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_an_offer_to_china
+		}
+		prerequisite = {
+			focus = GBR_special_operations_executive
+		}
+		prerequisite = {
+			focus = GBR_create_the_african_department
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for An Offer to China
+	focus = {
+		id = GBR_an_offer_to_china
+		icon = GFX_goal_generic_forceful_treaty
+		x = 43
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_dreams_of_an_empire }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Special Operations Executive
+	focus = {
+		id = GBR_special_operations_executive
+		icon = GFX_focus_eng_special_air_service
+		x = 39
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_dreams_of_an_empire }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dominate Johor
+	focus = {
+		id = GBR_dominate_johor
+		icon = GFX_goal_generic_political_pressure
+		x = 43
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_create_the_african_department
+		}
+		prerequisite = {
+			focus = GBR_an_offer_to_china
+		}
+		prerequisite = {
+			focus = GBR_special_operations_executive
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Britannia Royal Naval College
+	focus = {
+		id = GBR_britannia_royal_naval_college
+		icon = GFX_goal_generic_navy_cruiser
+		x = 33
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_the_naval_intelligence_office
+		}
+		prerequisite = {
+			focus = GBR_northern_dockyards
+		}
+		prerequisite = {
+			focus = GBR_the_grand_fleet
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = { limit = { has_idea = gbr_britannia_rules_the_waves_5 }
+				swap_ideas = { remove_idea = gbr_britannia_rules_the_waves_5 add_idea = gbr_britannia_rules_the_waves_6  }
+			}
+			if = { limit = { has_idea = gbr_britannia_rules_the_waves_7 }
+				swap_ideas = { remove_idea = gbr_britannia_rules_the_waves_7 add_idea = gbr_britannia_rules_the_waves_8  }
+			}
+			else = {
+				swap_ideas = { remove_idea = gbr_britannia_rules_the_waves_5 add_idea = gbr_britannia_rules_the_waves_6  }
+			}
+		}
+	}
+
+	#Focus for Scottish Harbors
+	focus = {
+		id = GBR_scottish_harbors
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 31
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_northern_dockyards
+		}
+		prerequisite = {
+			focus = GBR_the_naval_intelligence_office
+		}
+		prerequisite = {
+			focus = GBR_the_grand_fleet
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_list = {
+				25 = {
+					133 = {
+						add_building_construction = {
+					    type = dockyard
+					    level = 2
+					    instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+				25 = {
+					121 = {
+						add_building_construction = {
+					    type = dockyard
+					    level = 2
+					    instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+				25 = {
+					136 = {
+						add_building_construction = {
+					    type = dockyard
+					    level = 2
+					    instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+				25 = {
+					120 = {
+						add_building_construction = {
+					    type = dockyard
+					    level = 2
+					    instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for The Naval Intelligence Office
+	focus = {
+		id = GBR_the_naval_intelligence_office
+		icon = GFX_goal_generic_production2
+		x = 35
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_expand_the_admiralty }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = { limit = { has_idea = gbr_britannia_rules_the_waves_2 }
+				swap_ideas = { remove_idea = gbr_britannia_rules_the_waves_2 add_idea = gbr_britannia_rules_the_waves_4  }
+			}
+			if = { limit = { has_idea = gbr_britannia_rules_the_waves_3 }
+				swap_ideas = { remove_idea = gbr_britannia_rules_the_waves_3 add_idea = gbr_britannia_rules_the_waves_5  }
+			}
+			else = {
+				swap_ideas = { remove_idea = gbr_britannia_rules_the_waves_2 add_idea = gbr_britannia_rules_the_waves_4  }
+			}
+		}
+	}
+
+	#Focus for Rule Britannia
+	focus = {
+		id = GBR_rule_britannia
+		icon = GFX_focus_eng_the_sun_never_sets
+		x = 37
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+		}
+	}
+
+	#Focus for Emperor of India
+	focus = {
+		id = GBR_emperor_of_india
+		icon = GFX_focus_RAJ_all_india_forward_bloc
+		x = 43
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_the_hanover_conondrum
+		}
+		prerequisite = {
+			focus = GBR_assist_the_egyptians
+		}
+		prerequisite = {
+			focus = GBR_seize_india
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Britons never will be slaves!
+	focus = {
+		id = GBR_britons_never_will_be_slaves
+		icon = GFX_focus_eng_imperial_federation
+		x = 41
+		y = 8
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_a_deal_with_the_prussians
+		}
+		prerequisite = {
+			focus = GBR_the_heart_of_darkness
+		}
+		prerequisite = {
+			focus = GBR_emperor_of_india
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for An Empire on which the Sun never sets...
+	focus = {
+		id = GBR_an_empire_on_which_the_sun_never_sets
+		icon = GFX_focus_eng_the_sun_never_sets
+		x = 37
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_britannia_rules_the_waves
+		}
+		prerequisite = {
+			focus = GBR_britons_never_will_be_slaves
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Carrier: The Future of Britannia
+	focus = {
+		id = GBR_the_carrier_the_future_of_britannia
+		icon = GFX_goal_generic_navy_carrier
+		x = 35
+		y = 6
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_a_truly_global_navy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = gbr_britannia_rules_the_waves_8 add_idea = gbr_britannia_rules_the_waves_12 }
+		}
+	}
+
+	#Focus for Anti-Aircraft Effort
+	focus = {
+		id = GBR_antiaircraft_effort
+		icon = GFX_focus_generic_air_defense
+		x = 31
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_battleship_the_pride_of_britannia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = gbr_britannia_rules_the_waves_10 add_idea = gbr_britannia_rules_the_waves_11 }
+		}
+	}
+
+	#Focus for Carrier Aircraft Effort
+	focus = {
+		id = GBR_carrier_aircraft_effort
+		icon = GFX_goal_generic_air_fighter2
+		x = 35
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_carrier_the_future_of_britannia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+				swap_ideas = { remove_idea = gbr_britannia_rules_the_waves_12 add_idea = gbr_britannia_rules_the_waves_13 }
+		}
+	}
+
+	#Focus for Britannia Rules the Waves!
+	focus = {
+		id = GBR_britannia_rules_the_waves
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 33
+		y = 8
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_antiaircraft_effort
+		}
+		prerequisite = {
+			focus = GBR_carrier_aircraft_effort
+		}
+		prerequisite = {
+			focus = GBR_naval_bombers
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			navy_experience = 100
+		}
+	}
+
+	#Focus for African Affairs
+	focus = {
+		id = GBR_african_affairs
+		icon = GFX_goal_tfv_saf_secure_interests_in_africa
+		x = 41
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_balance_of_power }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Hanover Conondrum
+	focus = {
+		id = GBR_the_hanover_conondrum
+		icon = GFX_goal_generic_defence
+		x = 39
+		y = 6
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_european_affairs
+		}
+		prerequisite = {
+			focus = GBR_asian_affairs
+		}
+		prerequisite = {
+			focus = GBR_african_affairs
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Deal with the Prussians
+	focus = {
+		id = GBR_a_deal_with_the_prussians
+		icon = GFX_goal_generic_dangerous_deal
+		x = 39
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_seize_india
+		}
+		prerequisite = {
+			focus = GBR_assist_the_egyptians
+		}
+		prerequisite = {
+			focus = GBR_the_hanover_conondrum
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Assist the Egyptians
+	focus = {
+		id = GBR_assist_the_egyptians
+		icon = GFX_goal_generic_improve_relations
+		x = 41
+		y = 6
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_european_affairs
+		}
+		prerequisite = {
+			focus = GBR_african_affairs
+		}
+		prerequisite = {
+			focus = GBR_asian_affairs
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Seize India
+	focus = {
+		id = GBR_seize_india
+		icon = GFX_focus_RAJ_british_investors
+		x = 43
+		y = 6
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_european_affairs
+		}
+		prerequisite = {
+			focus = GBR_african_affairs
+		}
+		prerequisite = {
+			focus = GBR_asian_affairs
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Heart of Darkness
+	focus = {
+		id = GBR_the_heart_of_darkness
+		icon = GFX_focus_prc_infiltration
+		x = 41
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_the_hanover_conondrum
+		}
+		prerequisite = {
+			focus = GBR_assist_the_egyptians
+		}
+		prerequisite = {
+			focus = GBR_seize_india
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Royal Marines
+	focus = {
+		id = GBR_the_royal_marines
+		icon = GFX_goal_generic_amphibious_assault
+		x = 35
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_the_naval_intelligence_office
+		}
+		prerequisite = {
+			focus = GBR_northern_dockyards
+		}
+		prerequisite = {
+			focus = GBR_the_grand_fleet
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = { limit = { has_idea = gbr_britannia_rules_the_waves_5 }
+				swap_ideas = { remove_idea = gbr_britannia_rules_the_waves_5 add_idea = gbr_britannia_rules_the_waves_7  }
+			}
+			if = { limit = { has_idea = gbr_britannia_rules_the_waves_6 }
+				swap_ideas = { remove_idea = gbr_britannia_rules_the_waves_6 add_idea = gbr_britannia_rules_the_waves_8  }
+			}
+			else = {
+				swap_ideas = { remove_idea = gbr_britannia_rules_the_waves_5 add_idea = gbr_britannia_rules_the_waves_7  }
+			}
+		}
+	}
+
+	#Focus for Reforming our Doctrine
+	focus = {
+		id = GBR_reforming_our_doctrine
+		icon = GFX_goal_generic_occupy_states_coastal
+		x = 33
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_scottish_harbors
+		}
+		prerequisite = {
+			focus = GBR_britannia_royal_naval_college
+		}
+		prerequisite = {
+			focus = GBR_the_royal_marines
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = gbr_britannia_rules_the_waves_8 add_idea = gbr_britannia_rules_the_waves_9 }
+		}
+	}
+	#Focus for The Battleship: The Pride of Britannia
+	focus = {
+		id = GBR_the_battleship_the_pride_of_britannia
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 31
+		y = 6
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_new_wooden_wall }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = gbr_britannia_rules_the_waves_9 add_idea = gbr_britannia_rules_the_waves_10 }
+		}
+	}
+
+	#Focus for Naval Bombers
+	focus = {
+		id = GBR_naval_bombers
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 33
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_his_majestys_submarines }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+		    bonus = 0.5
+		    uses = 1
+		    category = naval_air
+			}
+		}
+	}
+
+	#Focus for His Majesty's Submarines
+	focus = {
+		id = GBR_his_majestys_submarines
+		icon = GFX_goal_generic_navy_submarine
+		x = 33
+		y = 6
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_a_truly_global_navy
+			focus = GBR_the_new_wooden_wall
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+		    bonus = 0.5
+		    uses = 1
+		    category = ss_tech
+			}
+		}
+	}
+
+	#Focus for A Truly Global Navy
+	focus = {
+		id = GBR_a_truly_global_navy
+		icon = GFX_goal_generic_navy_carrier
+		x = 35
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_reforming_our_doctrine }
+		mutually_exclusive = { focus = GBR_the_new_wooden_wall }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_base_strike
+			}
+		}
+	}
+
+	#Focus for The New Wooden Wall
+	focus = {
+		id = GBR_the_new_wooden_wall
+		icon = GFX_goal_generic_navy_battleship
+		x = 31
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_reforming_our_doctrine }
+		mutually_exclusive = { focus = GBR_a_truly_global_navy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+		    bonus = 0.5
+		    uses = 1
+		    category = cat_fleet_in_being
+			}
+		}
+	}
+
+	#Focus for Dreams of an Empire
+	focus = {
+		id = GBR_dreams_of_an_empire
+		icon = GFX_focus_eng_global_defense
+		x = 41
+		y = 1
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_rule_britannia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand the Admiralty
+	focus = {
+		id = GBR_expand_the_admiralty
+		icon = GFX_goal_generic_occupy_states_coastal
+		x = 33
+		y = 1
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_rule_britannia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			GBR = {
+				every_navy_leader = {
+					add_attack = 1
+					add_defense = 1
+					ADD_MANEUVER = 1
+					add_coordination = 1
+				}
+			}
+			swap_ideas = { remove_idea = gbr_britannia_rules_the_waves add_idea = gbr_britannia_rules_the_waves_2  }
+			#navy_leader_start_attack_level = 1
+			#navy_leader_start_defense_level = 1
+			#navy_leader_start_MANEUVER_level = 1
+			#navy_leader_start_coordination_level = 1
+		}
+	}
+
+	#Focus for Northern Dockyards
+	focus = {
+		id = GBR_northern_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 31
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_expand_the_admiralty }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			131 = {
+				add_building_construction = {
+			    type = dockyard
+			    level = 2
+			    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			132 = {
+				add_building_construction = {
+			    type = dockyard
+			    level = 1
+			    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	#Focus for The Grand Fleet
+	focus = {
+		id = GBR_the_grand_fleet
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 33
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_expand_the_admiralty }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = { limit = { has_idea = gbr_britannia_rules_the_waves_2 }
+				swap_ideas = { remove_idea = gbr_britannia_rules_the_waves_2 add_idea = gbr_britannia_rules_the_waves_3  }
+			}
+			if = { limit = { has_idea = gbr_britannia_rules_the_waves_4 }
+				swap_ideas = { remove_idea = gbr_britannia_rules_the_waves_4 add_idea = gbr_britannia_rules_the_waves_5  }
+			}
+			else = {
+				swap_ideas = { remove_idea = gbr_britannia_rules_the_waves_2 add_idea = gbr_britannia_rules_the_waves_3  }
+			}
+		}
+	}
+
+	#Focus for Create the African Department
+	focus = {
+		id = GBR_create_the_african_department
+		icon = GFX_focus_por_luso_tropicalism
+		x = 41
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_dreams_of_an_empire }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Buy the Suez Company
+	focus = {
+		id = GBR_buy_the_suez_company
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 39
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GBR_create_the_african_department
+		}
+		prerequisite = {
+			focus = GBR_special_operations_executive
+		}
+		prerequisite = {
+			focus = GBR_an_offer_to_china
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Asian Affairs
+	focus = {
+		id = GBR_asian_affairs
+		icon = GFX_focus_usa_focus_on_asia
+		x = 43
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_balance_of_power }
 		ai_will_do = {
 			factor = 1
 		}

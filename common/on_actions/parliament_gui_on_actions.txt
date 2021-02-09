@@ -5,6 +5,10 @@ on_actions = {
 				# You can put this in the country's history file alternatively too.
 				parliament_gui_initial = yes
 			}
+			PER = {
+				# You can put this in the country's history file alternatively too.
+				PER_parliament_gui_initial = yes
+			}
 		}
 	}
 }

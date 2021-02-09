@@ -1,11 +1,11 @@
 focus_tree = {
 	id = LE_USA_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
-			add = 10
+			add = 20
 			tag = USA
 		}
 	}
@@ -24,7 +24,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			news_event = { id = news.2 }	
+			news_event = { id = news.2 }
 		}
 	}
 	focus = {
@@ -54,7 +54,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			country_event = { id = le_USA.2 }	
+			country_event = { id = le_USA.2 }
 		}
 	}
 	focus = {
@@ -69,7 +69,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			country_event = { id = le_USA.3 }		
+			country_event = { id = le_USA.3 }
 		}
 	}
 	focus = {
@@ -84,7 +84,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 50	
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -98,7 +98,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			country_event = { id = le_USA.4 }	
+			country_event = { id = le_USA.4 }
 		}
 	}
 	focus = {
@@ -112,7 +112,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			country_event = { id = le_USA.5 }	
+			country_event = { id = le_USA.5 }
 		}
 	}
 	focus = {
@@ -142,7 +142,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			country_event = { id = le_USA.6 }	
+			country_event = { id = le_USA.6 }
 		}
 	}
 	focus = {
@@ -175,7 +175,7 @@ focus_tree = {
 			factor = 912
 		}
 		completion_reward = {
-			add_political_power = 50	
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -210,7 +210,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_political_power = 50		
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -300,10 +300,10 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = crush_strikes_tt
 			hidden_effect = { country_event = { id = le_USA.8 days = 40 } }
-			add_popularity = { ideology = mutualism popularity = -0.05 }	
+			add_popularity = { ideology = mutualism popularity = -0.05 }
 			add_popularity = { ideology = proletarianism popularity = -0.05 }
-			add_popularity = { ideology = collectivism popularity = -0.05 }	
-			
+			add_popularity = { ideology = collectivism popularity = -0.05 }
+
 		}
 	}
 	focus = {
@@ -318,10 +318,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		completion_reward = { 
+		completion_reward = {
 			custom_effect_tooltip = bad_to_worse_tt
 			hidden_effect = { country_event = { id = le_USA.9 days = 10 } }
-			add_stability = -0.02 
+			add_stability = -0.02
 		}
 	}
 	focus = {
@@ -341,7 +341,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_stability = -0.02		
+			add_stability = -0.02
 		}
 	}
 	focus = {
@@ -361,7 +361,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			country_event = { id = le_USA.14 }	
+			country_event = { id = le_USA.14 }
 		}
 	}
 	focus = {
@@ -375,10 +375,10 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			country_event = { id = le_USA.16 }	
+			country_event = { id = le_USA.16 }
 		}
 	}
-	
+
 	focus = {
 		id = USA_THE_PRAGMATIST
 		icon = GFX_unknown
@@ -475,7 +475,7 @@ focus_tree = {
 					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 1
-			}	
+			}
 			add_stability = 0.05
 		}
 	}
@@ -497,7 +497,7 @@ focus_tree = {
 				ideology = conservatism
 				popularity = 0.03
 			}
-			
+
 		}
 	}
 	focus = {
@@ -516,7 +516,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_stability = -0.02	
+			add_stability = -0.02
 		}
 	}
 	focus = {
@@ -530,7 +530,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			country_event = { id = le_USA.19 }	
+			country_event = { id = le_USA.19 }
 		}
 	}
 	focus = {
@@ -544,7 +544,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			country_event = { id = le_USA.22 }	
+			country_event = { id = le_USA.22 }
 		}
 	}
 	focus = {
@@ -650,7 +650,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 150		
+			add_political_power = 150
 			add_stability = -0.03
 		}
 	}
@@ -682,7 +682,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -696,7 +696,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -710,7 +710,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -750,7 +750,7 @@ focus_tree = {
 				transfer_state = 396
 				transfer_state = 261
 				transfer_state = 817
-			}		
+			}
 		}
 	}
 	focus = {
@@ -777,7 +777,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -791,7 +791,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -805,7 +805,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -819,7 +819,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -833,7 +833,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -847,7 +847,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -863,7 +863,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -877,7 +877,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -891,7 +891,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -905,7 +905,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -919,7 +919,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -932,7 +932,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -946,7 +946,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -960,7 +960,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -974,7 +974,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -988,7 +988,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1002,7 +1002,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1016,7 +1016,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1030,7 +1030,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1044,7 +1044,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1058,7 +1058,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1072,7 +1072,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1088,7 +1088,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1102,7 +1102,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1116,7 +1116,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1130,7 +1130,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1144,7 +1144,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1158,7 +1158,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1174,7 +1174,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1187,7 +1187,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1201,7 +1201,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1215,7 +1215,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1229,7 +1229,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1243,7 +1243,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1257,7 +1257,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1271,7 +1271,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1285,7 +1285,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1299,7 +1299,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1313,7 +1313,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1327,7 +1327,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1342,7 +1342,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1356,7 +1356,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1369,7 +1369,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1383,7 +1383,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1398,7 +1398,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1412,7 +1412,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1426,7 +1426,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1441,7 +1441,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1455,7 +1455,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1469,7 +1469,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1486,7 +1486,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1499,7 +1499,7 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 12 }
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1512,7 +1512,7 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 12 }
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1524,7 +1524,7 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 12 }
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1536,7 +1536,7 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 12 }
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1548,7 +1548,7 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 12 }
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1560,7 +1560,7 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 12 }
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1574,7 +1574,7 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 12 }
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1586,7 +1586,7 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 12 }
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1600,7 +1600,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1615,7 +1615,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1629,7 +1629,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1643,7 +1643,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1658,7 +1658,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1672,7 +1672,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -1686,7 +1686,7 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_political_power = 120		
+			add_political_power = 120
 		}
 	}
 }

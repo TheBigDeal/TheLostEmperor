@@ -13,17 +13,17 @@ state={
 
 		}
 		victory_points = {
-			10106 5
+			10106 5 
 		}
 		victory_points = {
-			8123 2
+			8123 2 
 		}
 		add_core_of = PER
 
 	}
 
 	provinces={
-		1600 3795 8123 10793 12372 12413
+		1600 3795 12372 12413 
 	}
 	manpower=1182741
 	buildings_max_level_factor=1.000

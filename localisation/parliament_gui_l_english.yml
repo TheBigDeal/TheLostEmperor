@@ -5,12 +5,11 @@
   parliament_gui_decision_category_desc:0 "placeholder text\nplaceholder text\nplaceholder text"
 
  # Scripted GUIs
-  parliament_gui_title:0 "Grid Parliament"
-  semicircle_parliament_gui_title:0 "Semicircle Parliament"
   parliament_main_icon_tt:0 "[GetParliamentSeatName] - [GetParliamentPartyName]"
   parliament_seat_text:0 "Seat [?temp_seat|Y0]"
-  parliament_member_text:0 "[GetParliamentPartyName] - [?parliament_seat_array^parliament_member_index] Seats"
-  parliament_modify_button_tt:0 "§GCtrl+Click§! to add §Y5§! Seats from [GetParliamentPartyName]\n§GShift+Click§! to subtract §Y5§! Seats from [GetParliamentPartyName]"
+  parliament_member_text:0 "[GetParliamentPartyName]\n[?parliament_seat_array^parliament_member_index] Seats | [?parliament_pending_seats^parliament_member_index] Pending Seats"
+  parliament_modify_button_tt:0 "§YCampaign for [GetParliamentPartyName]§!\nRequires Nearing Election!\n§YCost§!: 100 £pol_power\n\n§GCtrl+Click§! to add §Y1§! Seat from [GetParliamentPartyName]\n§GShift+Click§! to subtract §Y1§! Seats from [GetParliamentPartyName]"
+  snap_election:0 "§YCall a Snap Election§!\n\n§YCost:§!\n  10% §YStability§!\n  100 £pol_power §YPolitical Power§!\n\n§YTo Enact:§!\nMust have been at least 6 months from the last election."
 
   party_1_text:0 "Conservative Party (Tories)"
   party_2_text:0 "Irish Unionist Party"
@@ -19,3 +18,11 @@
   party_5_text:0 "Liberal Party"
   party_6_text:0 "National Party"
   party_7_text:0 "Assorted Nationalist Parties"
+  party_8_text:0 "Sinn Féin"
+
+  PER_party_1_text:0 "Loyalists"
+  PER_party_2_text:0 "Vatanists"
+  PER_party_3_text:0 "Eslamis"
+  PER_party_4_text:0 "Dimokratis"
+  PER_party_5_text:0 "Adaletis"
+  PER_party_6_text:0 "Zoroastrians"

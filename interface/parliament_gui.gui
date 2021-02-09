@@ -3,8 +3,6 @@ guiTypes = {
     name = "parliament_gui_container"
     position = { x = 400 y = 200 }
 		size = { width = 600 height = 1000 }
-
-
 		containerWindowType = {
 			name = "parliament_main_container"
 			position = { x = 0 y = 35 }
@@ -47,11 +45,22 @@ guiTypes = {
 				add_horizontal = no
 			}
 		}
+		buttonType = {
+			name = "parliament_election_button"
+			position = { x = -150 y = 95 }
+			quadTextureSprite = "GFX_button_296x34"
+			buttonFont = "hoi_24header"
+			#shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			text = "Call Snap Election"
+			pdx_tooltip = "snap_election"
+		}
 		gridboxtype = {
 			name = "parliament_member_grid"
-			position = { x = -300 y = 136 }
+			position = { x = -280 y = 146 }
 			size = { width = 100%% height = 100%% }
-			slotsize = { width = 200 height = 20 }
+			slotsize = { width = 200 height = 33 }
 			max_slots_vertical = 10
 			add_horizontal = no
 		}
@@ -59,7 +68,7 @@ guiTypes = {
 
 	containerWindowType = {
     name = "parliament_main_entry"
-    position = { x = 0 y = 0 }
+    position = { x = -20 y = 30 }
 		iconType = {
 			name = "parliament_main_icon"
 			spriteType = "GFX_parliament_party_icon"
@@ -89,11 +98,11 @@ guiTypes = {
 			spriteType = "GFX_parliament_party_icon"
 			position = { x = -20 y = 0 }
 		}
-		buttonType = {
+		iconType = {
 			name = "parliament_modify_button"
 			spriteType = "GFX_parliament_empty_button"
 			position = { x = -20 y = 0 }
-			pdx_tooltip = "parliament_modify_button_tt"
+			#pdx_tooltip = "parliament_modify_button_tt"
 		}
 		instantTextboxType = {
 			name = "parliament_member_text"
@@ -103,6 +112,7 @@ guiTypes = {
 			maxHeight = 16
 			format = left
 			text = "parliament_member_text"
+			alwaystransparent  = yes
 		}
   }
 }

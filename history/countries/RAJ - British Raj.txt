@@ -22,7 +22,7 @@ add_ideas = {
 
 set_convoys = 20
 
-set_cosmetic_tag = RAJ_UK # British Raj
+#set_cosmetic_tag = RAJ_UK # British Raj
 
 	set_technology = {
 		early_fighter = 1

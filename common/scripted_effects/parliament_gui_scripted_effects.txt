@@ -10,7 +10,7 @@ parliament_gui_initial = {
 	add_to_array = { parliament_seat_array = 231 } # Liberal Party
 	add_to_array = { parliament_seat_array = 0 } # National Party
 	add_to_array = { parliament_seat_array = 0 } # Assorted Nationalist Parties
-
+	add_to_array = { parliament_seat_array = 0 } # Sinn Féin
 	# parliament_member_array stores the list of parties
 	# This basically assigns an id for each party, so Party A = 1, Party B = 2, etc. (must start from 1 and is in order)
 	add_to_array = { parliament_member_array = 1 } # Party A
@@ -20,6 +20,41 @@ parliament_gui_initial = {
 	add_to_array = { parliament_member_array = 5 } # Party E
 	add_to_array = { parliament_member_array = 6 } # Party F
 	add_to_array = { parliament_member_array = 7 } # Party G
+	add_to_array = { parliament_member_array = 8 } # Party H
+
+	add_to_array = { parliament_pending_seats = 0 } # Party A
+	add_to_array = { parliament_pending_seats = 0 } # Party B
+	add_to_array = { parliament_pending_seats = 0 } # Party C
+	add_to_array = { parliament_pending_seats = 0 } # Party D
+	add_to_array = { parliament_pending_seats = 0 } # Party E
+	add_to_array = { parliament_pending_seats = 0 } # Party F
+	add_to_array = { parliament_pending_seats = 0 } # Party G
+	add_to_array = { parliament_pending_seats = 0 } # Party H
+	# Set up the positions of the dots for the semicircle parliament
+	parliament_gui_positions = yes
+
+	# Modify what shows up in the gui
+	reload_parliament_gui = yes
+}
+PER_parliament_gui_initial = {
+	# Put simply an array stores a list of things, used here to store the list of parties and list of seats.
+	set_country_flag = has_parliament
+	# parliament_seat_array stores the list of seat numbers for each party
+	add_to_array = { parliament_seat_array = 38 } # Loyalists
+	add_to_array = { parliament_seat_array = 61 } # Vatanists
+	add_to_array = { parliament_seat_array = 19 } # Eslamis
+	add_to_array = { parliament_seat_array = 13 } # Dimokratis
+	add_to_array = { parliament_seat_array = 6 } # Adaletis
+	add_to_array = { parliament_seat_array = 3 } # Zoroastrians
+
+	# parliament_member_array stores the list of parties
+	# This basically assigns an id for each party, so Party A = 1, Party B = 2, etc. (must start from 1 and is in order)
+	add_to_array = { parliament_member_array = 1 } # Party A
+	add_to_array = { parliament_member_array = 2 } # Party B
+	add_to_array = { parliament_member_array = 3 } # Party C
+	add_to_array = { parliament_member_array = 4 } # Party D
+	add_to_array = { parliament_member_array = 5 } # Party E
+	add_to_array = { parliament_member_array = 6 } # Party F
 
 	# Set up the positions of the dots for the semicircle parliament
 	parliament_gui_positions = yes
@@ -27,7 +62,6 @@ parliament_gui_initial = {
 	# Modify what shows up in the gui
 	reload_parliament_gui = yes
 }
-
 # The following scripted effect does the main job of generating the gui, by adding the seats for each party in a grid.
 # This should be called every time you need to update the gui, when you add/subtract seats for example.
 # Read the comments if you're interested in how it works

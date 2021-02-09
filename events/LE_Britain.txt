@@ -393,11 +393,6 @@ country_event = { #Voting on the Irish Act
     #hidden_effect = { country_event = { id = le_britain.5 days = 100} }
 	}
 }
-
-
-
-
-
 country_event = { #Abandon The Gold Standard
 	id = le_britain.12
 	title = le_britain.12.t
@@ -458,4 +453,54 @@ country_event = { #Voting on the National Banking Act
 		add_popularity = { ideology = socialism popularity = 0.01 }
 		add_popularity = { ideology = conservatism popularity = 0.01 }
 	}
+}
+
+country_event = { #The Sparrow and the Serpent
+	id = le_britain.14
+	title = le_britain.14.t
+	desc = le_britain.14.d
+	is_triggered_only = yes
+  picture = GFX_sparrow_and_serpent
+	option = {
+    name = le_britain.14.a
+		add_popularity = { ideology = socialism popularity = 0.01 }
+  }
+}
+
+country_event = { #Upset in East Clare By-election
+	id = le_britain.15
+	title = le_britain.15.t
+	desc = le_britain.15.d
+	is_triggered_only = yes
+  picture = GFX_upset_in_east_clare
+	option = {
+    name = le_britain.15.a
+		custom_effect_tooltip = upset_in_east_clare_tt
+		set_temp_variable = { temp_member = 3 } #IPP
+		set_temp_variable = { temp_seats = -1 }
+		modify_parliament_seat = yes
+		set_temp_variable = { temp_member = 8 } #SF
+		set_temp_variable = { temp_seats = 1 }
+		modify_parliament_seat = yes
+  }
+}
+
+country_event = { #Elections Near In Britain
+	id = le_britain.16
+	title = le_britain.16.t
+	desc = le_britain.16.d
+	is_triggered_only = yes
+  picture = GFX_parliament_campaigning
+	option = {
+    name = le_britain.16.a
+		set_country_flag = parliament_allow_campaigning_conservative
+  }
+	option = {
+    name = le_britain.16.b
+		set_country_flag = parliament_allow_campaigning_liberal
+  }
+	option = {
+    name = le_britain.16.c
+		set_country_flag = parliament_allow_campaigning_labour
+  }
 }

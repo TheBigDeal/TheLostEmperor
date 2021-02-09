@@ -16,8 +16,18 @@ spriteTypes = {
 		name = "GFX_emmeline_pankhurst"
 		texturefile = "gfx/event_pictures/emmeline_pankhurst.dds"
 	}
-
-
+	spriteType = {
+		name = "GFX_sparrow_and_serpent"
+		texturefile = "gfx/event_pictures/sparrow_and_serpent.dds"
+	}
+	spriteType = {
+		name = "GFX_upset_in_east_clare"
+		texturefile = "gfx/event_pictures/upset_in_east_clare.dds"
+	}
+	spriteType = {
+		name = "GFX_parliament_campaigning"
+		texturefile = "gfx/event_pictures/parliament_campaigning.dds"
+	}
 
 	#Vanilla
 	spriteType = {

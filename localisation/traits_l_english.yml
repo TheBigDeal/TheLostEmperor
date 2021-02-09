@@ -1,7 +1,9 @@
 ﻿l_english:
  le_using_cyanide_gas_trait:0 "Using Cyanide Gas Attack"
  le_equipped_standard_gas_mask:0 "Equipped Gas Masks"
- 
+ pre_wilhelm_sympathiser:0 "Wilhelm Sympathiser"
+ pre_nationalist_sympathiser:0 "Nationalist Sympathiser"
+ experienced_leader:0 "Experienced General"
  cc_leader:0 "General"
  fm_leader:0 "Field Marshal"
  navy_leader:0 "Admiral"

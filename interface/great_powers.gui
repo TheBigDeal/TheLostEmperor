@@ -2,7 +2,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "great_powers_container"
-		position = { x = 0 y = 80 }
+		position = { x = 5 y = 81 }
 		buttonType ={
 			name ="great_powers_bg"
 			spriteType = "GFX_mini_great_powers"

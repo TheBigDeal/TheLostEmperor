@@ -1,19 +1,24 @@
+
 state={
 	id=958
 	name="STATE_958"
+
 	history={
 		owner = AJM
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = IRQ
 		add_core_of = AJM
 		add_core_of = PER
+
 	}
+
 	provinces={
-		5014 6826 
+		3916 5014 6826 10811 
 	}
 	manpower=423532
-	state_category = town
 	buildings_max_level_factor=1.000
+	state_category=town
 }

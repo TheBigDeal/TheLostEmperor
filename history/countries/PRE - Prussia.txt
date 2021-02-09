@@ -75,7 +75,6 @@ set_popularities = {
 }
 
 set_convoys = 200
-give_guarantee = HRE
 #add_relation_modifier = { target = HRE modifier = part_of_hre }
 
 create_country_leader = {
@@ -160,9 +159,19 @@ create_field_marshal = {
 	logistics_skill = 4
 }
 create_field_marshal = {
+	name = "Erich von Falkenhayn"
+	portrait_path = "gfx/leaders/PRE/Portrait_erich_falkenhayn.dds"
+	traits = { pre_wilhelm_sympathiser }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+create_field_marshal = {
 	name = "Paul Von Hindenburg"
 	portrait_path = "gfx/leaders/PRE/Portrait_Paul_Von_Hidenburg.tga"
-	traits = { offensive_doctrine }
+	traits = { old_guard }
 	id = 1
 	skill = 6
 	attack_skill = 5
@@ -184,7 +193,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Erwin von Witzleben"
 	picture = "Portrait_Germany_Erwin_von_Witzleben.tga"
-	traits = { offensive_doctrine }
+	traits = { pre_nationalist_sympathiser }
 	skill = 4
 	attack_skill = 3
 	defense_skill = 1
@@ -194,7 +203,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "August von Mackensen"
 	picture = "portrait_ger_august_von_mackensen.dds"
-	traits = { offensive_doctrine }
+	traits = { experienced_leader old_general }
 	skill = 6
 	attack_skill = 5
 	defense_skill = 1

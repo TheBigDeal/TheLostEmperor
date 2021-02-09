@@ -1,22 +1,26 @@
+
 state={
 	id=957
 	name="STATE_957"
+
 	history={
-		owner = AJM
+		owner = PER
 		buildings = {
 			infrastructure = 3
+
 		}
 		victory_points = {
-			10106 5
+			10106 5 
 		}
-		add_core_of = AJM
+		add_core_of = PER
 		add_core_of = IRQ
 
 	}
+
 	provinces={
-		1938 3916 10106 10804 10811 
+		1938 10106 10804 
 	}
 	manpower=314154
-	state_category = town
 	buildings_max_level_factor=1.000
+	state_category=town
 }

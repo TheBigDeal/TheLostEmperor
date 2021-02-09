@@ -1,11 +1,116 @@
-# ideas = {
-	# head_of_government = {
-		# Religion_Protestant = {
-			# picture = GFX_idea_le_religion_protestant
-			# modifier = {
-				# political_power_gain = 0.3
-				# offence = 0.1
-			# }
-		# }
-	# }
-# }
+ideas = {
+  foreign_minister = {
+		generic_communist_sympathiser = {
+			picture = generic_political_advisor_europe_4
+      visible = {
+        NOT = { has_government = collectivism }
+        NOT = { has_government = proletarianism }
+        NOT = { has_government = mutualism }
+      }
+			traits = { }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+    generic_nationalist_sympathiser = {
+			picture = generic_political_advisor_europe_4
+      visible = {
+        NOT = { has_government = labryscism }
+        NOT = { has_government = despotism }
+      }
+			traits = { }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+    generic_absolutist_sympathiser = {
+			picture = generic_political_advisor_europe_4
+			visible = {
+        NOT = { has_government = absolutism }
+        NOT = { has_government = royalism }
+        NOT = { has_government = theocracy }
+        NOT = { has_government = rexism }
+      }
+			traits = { }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+    generic_democratic_sympathiser = {
+			picture = generic_political_advisor_europe_4
+			visible = {
+        NOT = { has_government = conservatism }
+        NOT = { has_government = liberalism }
+        NOT = { has_government = socialism }
+      }
+			traits = { }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	defence_minister = {
+		generic_air_defence = {
+			picture = generic_political_advisor_europe_3
+			visible = {
+        always = yes
+      }
+			traits = { old_general }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+    generic_air_defence = {
+			picture = generic_political_advisor_europe_3
+			visible = {
+        tag = PRE
+      }
+			traits = { old_general }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+    generic_land_defence = {
+			picture = generic_political_advisor_europe_3
+			visible = {}
+			traits = { old_general }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	economy_minister = {
+		generic_industrial_collector = {
+			picture = generic_political_advisor_europe_2
+			traits = {  }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+    generic_tariff_collector = {
+			picture = generic_political_advisor_europe_2
+			traits = {  }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	security_minister = {
+		generic_drift_dude = {
+			picture = generic_political_advisor_europe_1
+			traits = { bland_bueaucrat }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	intel_minister = {
+		generic_expert_spymaster = {
+			picture = generic_political_advisor_europe_4
+			traits = { expert_spymaster }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

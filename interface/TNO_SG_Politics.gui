@@ -84,7 +84,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "TNO_SG_politics_laws"
-		position = { x = 0 y = 480 }
+		position = { x = 0 y = 500 }
 		size = { width=100%% height=96%% }
 		verticalScrollbar = "right_vertical_slider_tno_laws_2"
 		margin = { top = 13 bottom = 8 }

@@ -4,24 +4,24 @@ state={
 	name="STATE_970"
 
 	history={
-		owner = MZD
+		owner = TBR
 		victory_points = {
-			4473 1 
+			4473 1
 		}
 		victory_points = {
-			1536 1 
+			1536 1
 		}
 		buildings = {
 			infrastructure = 3
 
 		}
-		add_core_of = MZD
+		add_core_of = TBR
 		add_core_of = AZR
 		add_core_of = PER
 	}
 
 	provinces={
-		1536 4473 4477 4614 11704 12434 
+		1536 4473 4477 4614 11704 12434
 	}
 	manpower=642536
 	state_category = town

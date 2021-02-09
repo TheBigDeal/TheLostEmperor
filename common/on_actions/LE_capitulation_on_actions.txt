@@ -4,23 +4,58 @@ on_actions = {
 			FROM = { set_variable = { WAR_CASUALTIES = casualties } }
 			FROM = { multiply_variable = { WAR_CASUALTIES = 0.08 }
 			FROM = { country_event = { id = le_generic.1 } }
-			if = {  # Prussian - Polish Subjugation War
-				limit = {
-					#original_tag = POL
-					PRE = { has_country_flag = SUBJUGATING_POLAND } #Needs to have flag, basically verifing what war this is. Declare flag when declaring war.
+			ROOT = {
+				if = {  # Prussian - Polish Subjugation War
+					limit = {
+						AND = {
+							tag = POL
+							PRE = { has_country_flag = SUBJUGATING_POLAND } #Needs to have flag, basically verifing what war this is. Declare flag when declaring war.
+						}
+					}
+					PRE = { white_peace = POL } #White peace needed so peace conference doesnt fire
+					POL = { country_event = { id = le_prussia.59 }} #You Lost
+					if = {
+						limit = { RUS = { has_country_flag = RUS_POL_INTERVENTION } }
+						PRE = { country_event = { id = le_prussia.62 }} #Each participant gets a peace event #You Won if your here
+						RUS = { country_event = { id = le_prussia.62 }} #Each participant gets a peace event #You Won
+					}
+					else = {
+						PRE = { country_event = { id = le_prussia.60 }} #Each participant gets a peace event #You won if russia not here
+					}
 				}
-				PRE = { white_peace = POL } #White peace needed so peace conference doesnt fire
-				POL = { country_event = { id = le_prussia.59 }}
-				PRE = { country_event = { id = le_prussia.60 }} #Each participant gets a peace event
-			}
-			if = {  # Prussian - Polish Subjugation War
-				limit = {
-					#original_tag = POL
-					PRE = { has_country_flag = OCCUPY_HOLSTEIN } #Needs to have flag, basically verifing what war this is. Declare flag when declaring war.
+				else_if = {  # Prussian - Danish War
+					limit = {
+						original_tag = DAN
+						PRE = { has_country_flag = OCCUPY_HOLSTEIN } #Needs to have flag, basically verifing what war this is. Declare flag when declaring war.
+					}
+					PRE = { white_peace = DEN } #White peace needed so peace conference doesnt fire
+					DEN = { country_event = { id = le_prussia.63 }}
+					PRE = { country_event = { id = le_prussia.65 }} #Each participant gets a peace event
 				}
-				PRE = { white_peace = DEN } #White peace needed so peace conference doesnt fire
-				DEN = { country_event = { id = le_prussia.63 }}
-				PRE = { country_event = { id = le_prussia.65 }} #Each participant gets a peace event
+				else = { #Generic Treaty
+					FROM = { #From is Attacking Country
+						white_peace = ROOT #Root is Capitulated Country
+						country_event = { id = le_generic.2 }
+						ROOT = { country_event = { id = le_generic.3 } }
+						set_temp_variable = { infamy_temp = 0 }
+						add_to_temp_variable = { infamy_temp = 0 }
+
+					}
+					ROOT = {
+						every_owned_state = {
+							limit = {
+								OR = {
+									is_claimed_by = FROM
+									is_core_of = FROM
+								}
+							}
+							FROM = { transfer_state = PREV }
+							FROM = { add_to_temp_variable = { infamy_temp = manpower_k } }
+							FROM = { divide_temp_variable = { infamy_temp = 200000 } }
+						}
+					}
+					FROM = { add_to_variable = { infamy_var = infamy_temp} }
+				}
 			}
 		}
 	}

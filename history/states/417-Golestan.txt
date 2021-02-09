@@ -1,20 +1,22 @@
 
 state={
 	id=417
-	name="STATE_417" # Hamadan
-	manpower = 796396
-	state_category = rural
+	name="STATE_417"
 
 	history={
-		owner = MZD
+		owner = PER
 		buildings = {
 			infrastructure = 3
+
 		}
-		add_core_of = MZD
 		add_core_of = PER
+
 	}
 
 	provinces={
-		1982 2065 8040 8125 10922 
+		1982 2065 4553 4637 7969 8040 8125 10523 10922 
 	}
+	manpower=796396
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

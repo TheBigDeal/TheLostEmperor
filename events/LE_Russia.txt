@@ -13,7 +13,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = le_russia.1.a
-		set_variable = { open_economy_container = 1 }
+
 	}
 }
 
@@ -26,12 +26,12 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = { SOV = { transfer_state = 247 }
-			RUS = { 
-				load_oob = RUS_CIVIL_WAR 
+			RUS = {
+				load_oob = RUS_CIVIL_WAR
 				create_faction = WHITE_MOVEMENT
 			}
-			SOV = { 
-				load_oob = SOV_CIVIL_WAR 
+			SOV = {
+				load_oob = SOV_CIVIL_WAR
 				create_faction = RED_MOVEMENT
 			}
 		}
@@ -268,7 +268,7 @@ country_event = { #Russia requests aid
 	is_triggered_only = yes
 	option = { #accept
 		name = le_russia.11.a
-		RUS = { country_event = { id = le_russia.12 }} 
+		RUS = { country_event = { id = le_russia.12 }}
 		send_equipment = {
 			equipment = CAS_equipment
 			amount = 100
@@ -324,7 +324,7 @@ country_event = { #Russia requests aid
 	is_triggered_only = yes
 	option = { #accept
 		name = le_russia.14.a
-		RUS = { country_event = { id = le_russia.15 }} 
+		RUS = { country_event = { id = le_russia.15 }}
 		send_equipment = {
 			equipment = convoy
 			amount = 100
@@ -381,7 +381,7 @@ country_event = { #Russia requests aid
 	is_triggered_only = yes
 	option = { #accept
 		name = le_russia.17.a
-		RUS = { country_event = { id = le_russia.18 }} 
+		RUS = { country_event = { id = le_russia.18 }}
 		send_equipment = {
 			equipment = infantry_equipment
 			amount = 500
@@ -430,5 +430,3 @@ country_event = { #Prussia refused our aid
 
 	}
 }
-
-

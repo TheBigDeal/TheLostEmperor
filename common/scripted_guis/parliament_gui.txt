@@ -27,16 +27,21 @@ scripted_gui = {
       parliament_close_button_click = {
 				set_variable = { open_parliament_container = 0 }
 			}
-			parliament_modify_button_control_click = {
-				set_temp_variable = { temp_member = v }
-				set_temp_variable = { temp_seats = 5 }
-				modify_parliament_seat = yes
-			}
-			parliament_modify_button_shift_click = {
-				set_temp_variable = { temp_member = v }
-				set_temp_variable = { temp_seats = -5 }
-				modify_parliament_seat = yes
-			}
+			#parliament_modify_button_control_click = {
+			#	if = {
+			#		limit = { has_political_power > 99  has_country_flag = parliament_allow_campaigning }
+			#		add_to_variable = { parliament_pending_seats^parliament_member_index = 1 }
+			#		add_political_power = -100
+			#	}
+			#	#modify_parliament_seat = yes
+			#}
+			#parliament_modify_button_shift_click = {
+			#	if = {
+			#		limit = { has_political_power > 99  has_country_flag = parliament_allow_campaigning }
+			#		add_to_variable = { parliament_pending_seats^parliament_member_index = -1 }
+			#		add_political_power = -100
+			#	}
+			#}
 		}
 		properties = {
 			parliament_main_icon = {

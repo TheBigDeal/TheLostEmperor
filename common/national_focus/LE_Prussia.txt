@@ -873,7 +873,7 @@ focus_tree = {
 		relative_position_id = PRE_GERMAN_AMBITIONS
 		completion_reward = {
 			set_country_flag = SUBJUGATING_POLAND
-			create_wargoal = { target = POL type = puppet_wargoal_focus }
+			declare_war_on = {target = POL type = puppet_wargoal_focus }
 			custom_effect_tooltip = pol_subjugation_tt
 			effect_tooltip = {
 				puppet = POL
@@ -881,6 +881,7 @@ focus_tree = {
 				86 = { add_compliance = 20 }
 				POL = { set_cosmetic_tag = PRE_PUPPET_POL }
 			}
+			RUS = { country_event = { id = le_prussia.79 } }
 		}
 	}
 	focus = {

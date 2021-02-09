@@ -1,0 +1,21 @@
+state={
+	id=1039
+	name="STATE_1039"
+	history={
+		owner = AJM
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+		}
+		victory_points = {
+			4056 1
+		}
+		add_core_of = AJM
+		add_core_of = PER
+	}
+	provinces={
+		8123 10793
+	}
+	manpower=36734
+	buildings_max_level_factor=1.000
+}

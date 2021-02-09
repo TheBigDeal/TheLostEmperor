@@ -1,5 +1,7 @@
 ﻿l_english:
 ### Country Names
+ RAJ:0 "East India Company"
+ RAJ_ADJ:0 "British Indian"
 
 ### Political Parties ###
  RAJ_absolutism_party:0 "Loyal League"
@@ -9,7 +11,7 @@
  RAJ_conservatism_party:0 "Conservative Party (Tories)"
  RAJ_liberalism_party:0 "Liberal Party"
  RAJ_socialism_party:0 "Labour Party"
- RAJ_theocracy_party:0 "Church Of RAJland"
+ RAJ_theocracy_party:0 "Church Of England"
  RAJ_labryscism_party:0 "New Model Republicans"
  RAJ_mutualism_party:0 "British Congress of Trade Unions"
  RAJ_collectivism_party:0 "British Congress of Trade Unions"

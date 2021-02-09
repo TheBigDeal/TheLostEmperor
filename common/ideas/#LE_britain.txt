@@ -10,13 +10,6 @@ ideas = {
 				war_support_factor = 0.10
 			}
 		}
-		gbr_britannia_rules_the_waves = {
-			picture = Hungarian_Monarchy
-			modifier = {
-				#research_bonus = { naval_doctrine = 0.08 }
-				experience_gain_navy = 0.05
-			}
-		}
 		gbr_labor_unrest = {
 			picture = Hungarian_Monarchy
 			modifier = {
@@ -118,6 +111,360 @@ ideas = {
 				resistance_damage_to_garrison = -0.1
 			}
 		}
+		gbr_britannia_rules_the_waves = { #Starting
+			picture = Hungarian_Monarchy
+			modifier = {
+				#research_bonus = { naval_doctrine = 0.08 }
+				experience_gain_navy = 0.05
+			}
+		}
+		gbr_britannia_rules_the_waves_2 = { #Admiralty
+			picture = Hungarian_Monarchy
+			modifier = {
+				#research_bonus = { naval_doctrine = 0.08 }
+				experience_gain_navy = 0.05
+				navy_leader_start_attack_level = 1
+				navy_leader_start_defense_level = 1
+				navy_leader_start_MANEUVER_level = 1
+				navy_leader_start_coordination_level = 1
+			}
+		}
+		gbr_britannia_rules_the_waves_3 = { #The Grand Fleet
+			picture = Hungarian_Monarchy
+			equipment_bonus = {
+				ship_hull_heavy = {
+					naval_range = 0.20
+				}
+				ship_hull_cruiser = {
+					naval_range = 0.20
+				}
+				ship_hull_carrier = {
+					naval_range = 0.20
+				}
+				ship_hull_light = {
+					naval_range = 0.20
+				}
+				ship_hull_submarine = {
+					naval_range = 0.20
+				}
+			}
+			modifier = {
+				experience_gain_navy = 0.05
+				navy_leader_start_attack_level = 1
+				navy_leader_start_defense_level = 1
+				navy_leader_start_MANEUVER_level = 1
+				navy_leader_start_coordination_level = 1
+			}
+		}
+		gbr_britannia_rules_the_waves_4 = { #The Naval Intelligence Office
+			picture = Hungarian_Monarchy
+			modifier = {
+				#research_bonus = { naval_doctrine = 0.08 }
+				experience_gain_navy = 0.05
+				navy_leader_start_attack_level = 1
+				navy_leader_start_defense_level = 1
+				navy_leader_start_MANEUVER_level = 1
+				navy_leader_start_coordination_level = 1
+				navy_intel_factor = 0.20
+			}
+		}
+		gbr_britannia_rules_the_waves_5 = { #The Naval Intelligence Office + The Grand Fleet
+			picture = Hungarian_Monarchy
+			equipment_bonus = {
+				ship_hull_heavy = {
+					naval_range = 0.20
+				}
+				ship_hull_cruiser = {
+					naval_range = 0.20
+				}
+				ship_hull_carrier = {
+					naval_range = 0.20
+				}
+				ship_hull_light = {
+					naval_range = 0.20
+				}
+				ship_hull_submarine = {
+					naval_range = 0.20
+				}
+			}
+			modifier = {
+				#research_bonus = { naval_doctrine = 0.08 }
+				experience_gain_navy = 0.05
+				navy_leader_start_attack_level = 1
+				navy_leader_start_defense_level = 1
+				navy_leader_start_MANEUVER_level = 1
+				navy_leader_start_coordination_level = 1
+				navy_intel_factor = 0.20
+			}
+		}
+		gbr_britannia_rules_the_waves_6 = { #Britannia Royal Naval College
+			picture = Hungarian_Monarchy
+			equipment_bonus = {
+				ship_hull_heavy = {
+					naval_range = 0.20
+				}
+				ship_hull_cruiser = {
+					naval_range = 0.20
+				}
+				ship_hull_carrier = {
+					naval_range = 0.20
+				}
+				ship_hull_light = {
+					naval_range = 0.20
+				}
+				ship_hull_submarine = {
+					naval_range = 0.20
+				}
+			}
+			modifier = {
+				#research_bonus = { naval_doctrine = 0.08 }
+				experience_gain_navy = 0.10
+				navy_leader_start_attack_level = 1
+				navy_leader_start_defense_level = 1
+				navy_leader_start_MANEUVER_level = 1
+				navy_leader_start_coordination_level = 1
+				navy_intel_factor = 0.20
+			}
+		}
+		gbr_britannia_rules_the_waves_7 = { #Royal Marines
+			picture = Hungarian_Monarchy
+			equipment_bonus = {
+				ship_hull_heavy = {
+					naval_range = 0.20
+				}
+				ship_hull_cruiser = {
+					naval_range = 0.20
+				}
+				ship_hull_carrier = {
+					naval_range = 0.20
+				}
+				ship_hull_light = {
+					naval_range = 0.20
+				}
+				ship_hull_submarine = {
+					naval_range = 0.20
+				}
+			}
+			modifier = {
+				#research_bonus = { naval_doctrine = 0.08 }
+				invasion_preparation = -0.3
+				experience_gain_navy = 0.05
+				navy_leader_start_attack_level = 1
+				navy_leader_start_defense_level = 1
+				navy_leader_start_MANEUVER_level = 1
+				navy_leader_start_coordination_level = 1
+				navy_intel_factor = 0.20
+			}
+		}
+		gbr_britannia_rules_the_waves_8 = { #Royal Marines + Britannia Royal Naval College
+			picture = Hungarian_Monarchy
+			equipment_bonus = {
+				ship_hull_heavy = {
+					naval_range = 0.20
+				}
+				ship_hull_cruiser = {
+					naval_range = 0.20
+				}
+				ship_hull_carrier = {
+					naval_range = 0.20
+				}
+				ship_hull_light = {
+					naval_range = 0.20
+				}
+				ship_hull_submarine = {
+					naval_range = 0.20
+				}
+			}
+			modifier = {
+				#research_bonus = { naval_doctrine = 0.08 }
+				invasion_preparation = -0.3
+				experience_gain_navy = 0.10
+				navy_leader_start_attack_level = 1
+				navy_leader_start_defense_level = 1
+				navy_leader_start_MANEUVER_level = 1
+				navy_leader_start_coordination_level = 1
+				navy_intel_factor = 0.20
+			}
+		}
+		gbr_britannia_rules_the_waves_9 = { #Royal Marines + Britannia Royal Naval College
+			picture = Hungarian_Monarchy
+			equipment_bonus = {
+				ship_hull_heavy = {
+					naval_range = 0.20
+				}
+				ship_hull_cruiser = {
+					naval_range = 0.20
+				}
+				ship_hull_carrier = {
+					naval_range = 0.20
+				}
+				ship_hull_light = {
+					naval_range = 0.20
+				}
+				ship_hull_submarine = {
+					naval_range = 0.20
+				}
+			}
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			modifier = {
+				#research_bonus = { naval_doctrine = 0.08 }
+				invasion_preparation = -0.3
+				experience_gain_navy = 0.10
+				navy_leader_start_attack_level = 1
+				navy_leader_start_defense_level = 1
+				navy_leader_start_MANEUVER_level = 1
+				navy_leader_start_coordination_level = 1
+				navy_intel_factor = 0.20
+			}
+		}
+		gbr_britannia_rules_the_waves_10 = { #Battleships
+			picture = Hungarian_Monarchy
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.1 instant = yes
+					naval_range = 0.20
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.1 instant = yes
+					naval_range = 0.20
+				}
+				ship_hull_carrier = {
+					naval_range = 0.20
+				}
+				ship_hull_light = {
+					naval_range = 0.20
+				}
+				ship_hull_submarine = {
+					naval_range = 0.20
+				}
+			}
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			modifier = {
+				invasion_preparation = -0.3
+				experience_gain_navy = 0.10
+				navy_leader_start_attack_level = 1
+				navy_leader_start_defense_level = 1
+				navy_leader_start_MANEUVER_level = 1
+				navy_leader_start_coordination_level = 1
+				navy_intel_factor = 0.20
+			}
+		}
+		gbr_britannia_rules_the_waves_11 = { #Anti Air
+			picture = Hungarian_Monarchy
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.1 instant = yes
+					naval_range = 0.20
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.1 instant = yes
+					naval_range = 0.20
+				}
+				ship_hull_carrier = {
+					naval_range = 0.20
+				}
+				ship_hull_light = {
+					naval_range = 0.20
+				}
+				ship_hull_submarine = {
+					naval_range = 0.20
+				}
+				ship_anti_air_upgrade = {
+					anti_air_attack = 0.05
+				}
+			}
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			modifier = {
+				invasion_preparation = -0.3
+				experience_gain_navy = 0.10
+				navy_leader_start_attack_level = 1
+				navy_leader_start_defense_level = 1
+				navy_leader_start_MANEUVER_level = 1
+				navy_leader_start_coordination_level = 1
+				navy_intel_factor = 0.20
+			}
+		}
+		gbr_britannia_rules_the_waves_12 = { #Carriers
+			picture = Hungarian_Monarchy
+			equipment_bonus = {
+				ship_hull_heavy = {
+					naval_range = 0.20
+				}
+				ship_hull_cruiser = {
+					naval_range = 0.20
+				}
+				ship_hull_carrier = {
+					naval_range = 0.20
+					build_cost_ic = -0.1 instant = yes
+				}
+				ship_hull_light = {
+					naval_range = 0.20
+				}
+				ship_hull_submarine = {
+					naval_range = 0.20
+				}
+			}
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			modifier = {
+				#research_bonus = { naval_doctrine = 0.08 }
+				invasion_preparation = -0.3
+				experience_gain_navy = 0.10
+				navy_leader_start_attack_level = 1
+				navy_leader_start_defense_level = 1
+				navy_leader_start_MANEUVER_level = 1
+				navy_leader_start_coordination_level = 1
+				navy_intel_factor = 0.20
+			}
+		}
+		gbr_britannia_rules_the_waves_13 = { #Carriers
+			picture = Hungarian_Monarchy
+			equipment_bonus = {
+				ship_hull_heavy = {
+					naval_range = 0.20
+				}
+				ship_hull_cruiser = {
+					naval_range = 0.20
+				}
+				ship_hull_carrier = {
+					naval_range = 0.20
+					build_cost_ic = -0.1 instant = yes
+				}
+				ship_hull_light = {
+					naval_range = 0.20
+				}
+				ship_hull_submarine = {
+					naval_range = 0.20
+				}
+			}
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			modifier = {
+				#research_bonus = { naval_doctrine = 0.08 }
+				fighter_sortie_efficiency = 0.05
+				invasion_preparation = -0.3
+				experience_gain_navy = 0.10
+				navy_leader_start_attack_level = 1
+				navy_leader_start_defense_level = 1
+				navy_leader_start_MANEUVER_level = 1
+				navy_leader_start_coordination_level = 1
+				navy_intel_factor = 0.20
+			}
+		}
+
+
+
+
+
+
 	}
 
 

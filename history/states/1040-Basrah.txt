@@ -1,0 +1,18 @@
+state={
+	id=1040
+	name="STATE_1040"
+	history={
+		owner = AHV
+		add_core_of = AHV
+		buildings = {
+			infrastructure = 4
+		}
+
+	}
+	provinces={
+		2089 12726
+	}
+	state_category = town
+	manpower=52352
+	buildings_max_level_factor=1.000
+}

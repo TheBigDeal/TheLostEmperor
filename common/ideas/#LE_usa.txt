@@ -204,7 +204,7 @@ ideas = {
 		usa_american_militarism = {
 			picture = usa_desegregation_1
 			modifier = {
-				war_support_factor = 0.10 
+				war_support_factor = 0.10
 				army_core_defence_factor = 0.05
 				army_core_attack_factor = 0.05
 			}
@@ -224,7 +224,7 @@ ideas = {
 				original_tag = USA
 			}
 			cost = 250
-		}	
+		}
 	}
 	secondary_head = {
 		USA_frank_lowden = {
@@ -236,7 +236,7 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
 	}
 	foreign_minister = {
 		USA_Frank_B_Kellogg = {
@@ -248,7 +248,7 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
 	}
 	defence_minister = {
 		USA_John_Pershing = {
@@ -260,7 +260,17 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
+		USA_test_other_guy = {
+			picture = generic_political_advisor_europe_3
+			visible = {
+				original_tag = USA
+			}
+			traits = { old_general }
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 	economy_minister = {
 		USA_Andrew_Mellon = {
@@ -272,7 +282,7 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
 	}
 	security_minister = {
 		USA_Hubert_Work = {
@@ -284,7 +294,7 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
 	}
 	intel_minister = {
 		USA_J_Edgar_Hoover = {
@@ -296,6 +306,6 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
 	}
 }

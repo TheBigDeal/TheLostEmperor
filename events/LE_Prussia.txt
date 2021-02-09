@@ -55,10 +55,10 @@ country_event = { #Nationalists assassinate the King, seize power
 	desc = le_prussia.4.d
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = {
 		name = le_prussia.4.a
-		
+
 	}
 }
 country_event = { #The King steps down for unknown reasons
@@ -69,7 +69,7 @@ country_event = { #The King steps down for unknown reasons
 	is_triggered_only = yes
 	option = {
 		name = le_prussia.5.a
-		
+
 	}
 }
 country_event = { #Threaten Northern States
@@ -82,11 +82,11 @@ country_event = { #Threaten Northern States
 		ai_chance = {
 			factor = 75
 		}
-		PRE = { 
+		PRE = {
 			annex_country = {
 				target = ROOT
 				transfer_troops = no
-			} 
+			}
 		}
 	}
 	option = { #No
@@ -102,7 +102,7 @@ country_event = { #Threaten Northern States
 		}
 	}
 }
-country_event = { 
+country_event = {
 	id = le_prussia.7
 	title = le_prussia.7.t
 	desc = le_prussia.7.d
@@ -132,7 +132,7 @@ country_event = { #Support The Prussians (GBR) / Embargo The Austrians
 	}
 	option = { #Lets not get involved.
 		name = le_prussia.8.b
-		
+
 	}
 }
 country_event = { #Britain Supports Us!
@@ -195,7 +195,7 @@ country_event = { #Contacted Opposition
 #	option = { #Britain is gonna be pissed
 #		name = le_prussia.13.a
 #		add_stability = -0.1
-#		
+#
 #	}
 #}
 country_event = { #Hannover breaks into chaos.
@@ -214,7 +214,7 @@ country_event = { #Hannover breaks into chaos.
 				ruling_party = royalism
 				ideology = absolutism
 				size = 0.5
-				
+
 				capital = 770
 				states = { 770 }
 				keep_unit_leaders = {}
@@ -827,7 +827,7 @@ country_event = { #Prussia Occupies Poznan
 #			tag = DEN
 #			message = DEN_PRE_WHITE_PEACE
 #		}
-#		hidden_effect = { 
+#		hidden_effect = {
 #			transfer_state = 1018
 #			transfer_state = 785
 #		}
@@ -1124,19 +1124,19 @@ country_event = { #Treaty Of Warsaw
 	is_triggered_only = yes
 	option = { #Surrender
 		name = le_prussia.60.a
-		hidden_effect = {
-			if = {
-				limit = {
-					NOT = { country_exists = POL }
-				}
-				release = POL
-				transfer_state = 85
-			}
-		}
 		puppet = POL
 		transfer_state = 86
 		86 = { add_compliance = 20 }
 		POL = { set_cosmetic_tag = PRE_PUPPET_POL }
+		if = {
+			limit = { NOT = { country_exists = BLR } }
+
+		}
+		if = {
+			limit { NOT = { country_exists = UKR } }
+			UKR = { transfer_state = 93 }
+			UKR = { transfer_state = 873 }
+		}
 	}
 }
 country_event = { #Belerusian's Break Free
@@ -1148,6 +1148,7 @@ country_event = { #Belerusian's Break Free
 		PRE = { has_war_with = POL }
 		PRE = { has_country_flag = SUBJUGATING_POLAND }
 		surrender_progress > 0.50
+		NOT = { RUS = { has_country_flag = RUS_POL_INTERVENTION } }
 	}
 	option = { #Belerus Breaks Free
 		name = le_prussia.60.a
@@ -1169,17 +1170,33 @@ country_event = { #Belerusian's Break Free
 		PRE = { country_event = { id = le_prussia.62 } }
 	}
 }
-country_event = { #Ukrainians's Break Free
+country_event = { #Treaty Of Warsaw w/ Russia
 	id = le_prussia.62
 	title = le_prussia.62.t
 	desc = le_prussia.62.d
 	is_triggered_only = yes
-	option = { #Belerus Breaks Free
+	option = { #Surrender
 		name = le_prussia.62.a
-
+		POL = { set_cosmetic_tag = PRE_PUPPET_POL }
+		PRE = {
+			puppet = POL
+			transfer_state = 86
+			86 = { add_compliance = 40 }
+		}
+		RUS = {
+			transfer_state = 95
+			95 = { add_compliance = 40 }
+			transfer_state = 94
+			94 = { add_compliance = 40 }
+			transfer_state = 97
+			97 = { add_compliance = 40 }
+			transfer_state = 873
+			873 = { add_compliance = 40 }
+			transfer_state = 93
+			93 = { add_compliance = 40 }
+		}
 	}
 }
-
 country_event = { #Occupy Holstein
 	id = le_prussia.63
 	title = le_prussia.63.t
@@ -1335,7 +1352,7 @@ country_event = { #Approaching Poland
 	is_triggered_only = yes
 	option = { #Subjugate Poland
 		name = le_prussia.72.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 3
 			modifier = {
 				factor = 15
@@ -1347,12 +1364,12 @@ country_event = { #Approaching Poland
 		complete_national_focus = { PRE_POL_SUBJUGATION }
 	}
 	option = { #Guarentee Polish Independance
-		name = le_prussia.72.a
+		name = le_prussia.72.b
 		ai_chance = { factor = 10 }
 		complete_national_focus = { PRE_PRE_POL_DEAL }
 	}
 	option = { #Demand Poznan
-		name = le_prussia.72.a
+		name = le_prussia.72.c
 		ai_chance = { factor = 10 }
 		complete_national_focus = { PRE_POL_DEMAND }
 	}
@@ -1365,7 +1382,7 @@ country_event = { #The Poznan Trade
 	is_triggered_only = yes
 	option = { #Accept
 		name = le_prussia.72.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 20
 		}
 		PRE = { country_event = { id = le_prussia.74 } }
@@ -1415,7 +1432,7 @@ country_event = { #The Nationalist Civil War
 			size = 0.50
 			only_own_territory = no
 			capital = 950
-			states = { 
+			states = {
 				5 67 85 188 762 950 953
 			}
 			keep_political_leader = yes
@@ -1445,7 +1462,7 @@ country_event = { #The Nationalist Civil War
 			size = 0.50
 			only_own_territory = no
 			capital = 64
-			states = { 
+			states = {
 				64 62 879 68 66 63 872
 			}
 			keep_political_leader = yes
@@ -1480,7 +1497,7 @@ country_event = { #Wilhelms Rebellion
 			size = 0.50
 			only_own_territory = no
 			capital = 950
-			states = { 
+			states = {
 				5 67 85 188 762 950 953
 			}
 			keep_political_leader = yes
@@ -1520,7 +1537,7 @@ country_event = { #Wilhelms Rebellion
 			size = 0.50
 			only_own_territory = no
 			capital = 64
-			states = { 
+			states = {
 				64 62 879 68 66 63 872
 			}
 			#keep_political_leader = yes
@@ -1575,4 +1592,22 @@ country_event = { #Coronation of King Wilhelm
 		add_stability = 0.05
 		add_war_support = 0.10
 	}
+}
+country_event = { #Prussia Invades Poland! [RUS]
+	id = le_prussia.79
+	title = le_prussia.79.t
+	desc = le_prussia.79.d
+	is_triggered_only = yes
+	option = { #Take Advantage of the situation
+		name = le_prussia.79.a
+		declare_war_on = { target = POL type = annex_everything }
+		add_days_mission_timeout = {
+			mission = RUSSIAN_CIVIL_WAR
+			days = -14
+		}
+		set_country_flag = RUS_POL_INTERVENTION
+	}
+	#option = { #Stay Away
+	#	name = le_prussia.79.a
+	#}
 }

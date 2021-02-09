@@ -1,0 +1,416 @@
+gbr_parliament_campaigning_cat = {
+	campaign_in_london = {
+		icon = generic_army_support
+		highlight_state_targets = {
+			state = 126
+		}
+		cost = 5
+		ai_will_do = { factor = 5 }
+		fixed_random_seed = no
+		#days_re_enable = 7
+		days_remove = 14
+		remove_effect = {
+			randomize_temp_variable = {
+				var = num_pend_seats
+				distribution = binomial
+				min = 0
+				max = 8
+			}
+			#set_variable = { num_pend_seats = temp_pend_seats }
+			round_temp_variable = num_pend_seats
+			if = {
+				limit = {has_country_flag = parliament_allow_campaigning_conservative}
+				add_to_variable = { parliament_pending_seats^1 = num_pend_seats }
+				custom_effect_tooltip = campaign_conservative_tt
+				random_list = {
+					50 = {
+						custom_effect_tooltip = lose_seat_liberal_tt
+						subtract_from_variable = { parliament_pending_seats^4 = num_pend_seats }
+					}
+					50 = {
+						custom_effect_tooltip = lose_seat_labour_tt
+						subtract_from_variable = { parliament_pending_seats^3 = num_pend_seats }
+					}
+				}
+			}
+			else_if = {
+				limit = {has_country_flag = parliament_allow_campaigning_liberal}
+				add_to_variable = { parliament_pending_seats^4 = num_pend_seats }
+				custom_effect_tooltip = campaign_liberal_tt
+				random_list = {
+					50 = {
+						custom_effect_tooltip = lose_seat_conservative_tt
+						subtract_from_variable = { parliament_pending_seats^0 = num_pend_seats }
+					}
+					50 = {
+						custom_effect_tooltip = lose_seat_labour_tt
+						subtract_from_variable = { parliament_pending_seats^3 = num_pend_seats }
+					}
+				}
+			}
+			else_if = {
+				limit = {has_country_flag = parliament_allow_campaigning_labour}
+				add_to_variable = { parliament_pending_seats^3 = num_pend_seats }
+				random_list = {
+					50 = {
+						custom_effect_tooltip = lose_seat_liberal_tt
+						subtract_from_variable = { parliament_pending_seats^4 = num_pend_seats }
+					}
+					50 = {
+						custom_effect_tooltip = lose_seat_conservative_tt
+						subtract_from_variable = { parliament_pending_seats^0 = num_pend_seats }
+					}
+				}
+			}
+		}
+	}
+	campaign_in_wales = {
+		icon = generic_army_support
+		highlight_state_targets = {
+			state = 122
+		}
+		available = {
+		}
+		cost = 5
+		fixed_random_seed = no
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 14
+		remove_effect = {
+			randomize_temp_variable = {
+				var = num_pend_seats
+				distribution = binomial
+				min = 0
+				max = 8
+			}
+			#set_variable = { num_pend_seats = temp_pend_seats }
+			round_temp_variable = num_pend_seats
+			if = {
+				limit = {has_country_flag = parliament_allow_campaigning_conservative}
+				add_to_variable = { parliament_pending_seats^1 = num_pend_seats }
+				custom_effect_tooltip = campaign_conservative_tt
+				random_list = {
+					50 = {
+						custom_effect_tooltip = lose_seat_liberal_tt
+						subtract_from_variable = { parliament_pending_seats^4 = num_pend_seats }
+					}
+					50 = {
+						custom_effect_tooltip = lose_seat_labour_tt
+						subtract_from_variable = { parliament_pending_seats^3 = num_pend_seats }
+					}
+				}
+			}
+			else_if = {
+				limit = {has_country_flag = parliament_allow_campaigning_liberal}
+				add_to_variable = { parliament_pending_seats^4 = num_pend_seats }
+				custom_effect_tooltip = campaign_liberal_tt
+				random_list = {
+					50 = {
+						custom_effect_tooltip = lose_seat_conservative_tt
+						subtract_from_variable = { parliament_pending_seats^0 = num_pend_seats }
+					}
+					50 = {
+						custom_effect_tooltip = lose_seat_labour_tt
+						subtract_from_variable = { parliament_pending_seats^3 = num_pend_seats }
+					}
+				}
+			}
+			else_if = {
+				limit = {has_country_flag = parliament_allow_campaigning_labour}
+				add_to_variable = { parliament_pending_seats^3 = num_pend_seats }
+				random_list = {
+					50 = {
+						custom_effect_tooltip = lose_seat_liberal_tt
+						subtract_from_variable = { parliament_pending_seats^4 = num_pend_seats }
+					}
+					50 = {
+						custom_effect_tooltip = lose_seat_conservative_tt
+						subtract_from_variable = { parliament_pending_seats^0 = num_pend_seats }
+					}
+				}
+			}
+		}
+	}
+	campaign_in_scotland = {
+		icon = generic_army_support
+		fixed_random_seed = no
+		highlight_state_targets = {
+			state = 133
+			state = 120
+			state = 136
+			state = 121
+		}
+		available = {
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 14
+		remove_effect = {
+			randomize_temp_variable = {
+				var = num_pend_seats
+				distribution = binomial
+				min = 0
+				max = 8
+			}
+			#set_variable = { num_pend_seats = temp_pend_seats }
+			round_temp_variable = num_pend_seats
+			if = {
+				limit = {has_country_flag = parliament_allow_campaigning_conservative}
+				add_to_variable = { parliament_pending_seats^1 = num_pend_seats }
+				custom_effect_tooltip = campaign_conservative_tt
+				random_list = {
+					50 = {
+						custom_effect_tooltip = lose_seat_liberal_tt
+						subtract_from_variable = { parliament_pending_seats^4 = num_pend_seats }
+					}
+					50 = {
+						custom_effect_tooltip = lose_seat_labour_tt
+						subtract_from_variable = { parliament_pending_seats^3 = num_pend_seats }
+					}
+				}
+			}
+			else_if = {
+				limit = {has_country_flag = parliament_allow_campaigning_liberal}
+				add_to_variable = { parliament_pending_seats^4 = num_pend_seats }
+				custom_effect_tooltip = campaign_liberal_tt
+				random_list = {
+					50 = {
+						custom_effect_tooltip = lose_seat_conservative_tt
+						subtract_from_variable = { parliament_pending_seats^0 = num_pend_seats }
+					}
+					50 = {
+						custom_effect_tooltip = lose_seat_labour_tt
+						subtract_from_variable = { parliament_pending_seats^3 = num_pend_seats }
+					}
+				}
+			}
+			else_if = {
+				limit = {has_country_flag = parliament_allow_campaigning_labour}
+				add_to_variable = { parliament_pending_seats^3 = num_pend_seats }
+				random_list = {
+					50 = {
+						custom_effect_tooltip = lose_seat_liberal_tt
+						subtract_from_variable = { parliament_pending_seats^4 = num_pend_seats }
+					}
+					50 = {
+						custom_effect_tooltip = lose_seat_conservative_tt
+						subtract_from_variable = { parliament_pending_seats^0 = num_pend_seats }
+					}
+				}
+			}
+		}
+	}
+	campaign_in_midlands = {
+		icon = generic_army_support
+		fixed_random_seed = no
+		highlight_state_targets = {
+			state = 128
+			state = 129
+			state = 125
+		}
+		available = {
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 14
+		remove_effect = {
+			randomize_temp_variable = {
+				var = num_pend_seats
+				distribution = binomial
+				min = 0
+				max = 8
+			}
+			#set_variable = { num_pend_seats = temp_pend_seats }
+			round_temp_variable = num_pend_seats
+			if = {
+				limit = {has_country_flag = parliament_allow_campaigning_conservative}
+				add_to_variable = { parliament_pending_seats^1 = num_pend_seats }
+				custom_effect_tooltip = campaign_conservative_tt
+				random_list = {
+					50 = {
+						custom_effect_tooltip = lose_seat_liberal_tt
+						subtract_from_variable = { parliament_pending_seats^4 = num_pend_seats }
+					}
+					50 = {
+						custom_effect_tooltip = lose_seat_labour_tt
+						subtract_from_variable = { parliament_pending_seats^3 = num_pend_seats }
+					}
+				}
+			}
+			else_if = {
+				limit = {has_country_flag = parliament_allow_campaigning_liberal}
+				add_to_variable = { parliament_pending_seats^4 = num_pend_seats }
+				custom_effect_tooltip = campaign_liberal_tt
+				random_list = {
+					50 = {
+						custom_effect_tooltip = lose_seat_conservative_tt
+						subtract_from_variable = { parliament_pending_seats^0 = num_pend_seats }
+					}
+					50 = {
+						custom_effect_tooltip = lose_seat_labour_tt
+						subtract_from_variable = { parliament_pending_seats^3 = num_pend_seats }
+					}
+				}
+			}
+			else_if = {
+				limit = {has_country_flag = parliament_allow_campaigning_labour}
+				add_to_variable = { parliament_pending_seats^3 = num_pend_seats }
+				random_list = {
+					50 = {
+						custom_effect_tooltip = lose_seat_liberal_tt
+						subtract_from_variable = { parliament_pending_seats^4 = num_pend_seats }
+					}
+					50 = {
+						custom_effect_tooltip = lose_seat_conservative_tt
+						subtract_from_variable = { parliament_pending_seats^0 = num_pend_seats }
+					}
+				}
+			}
+		}
+	}
+	campaign_in_southern_england = {
+		icon = generic_army_support
+		fixed_random_seed = no
+		highlight_state_targets = {
+			state = 338
+			state = 123
+			state = 127
+		}
+		available = {
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 14
+		remove_effect = {
+			randomize_temp_variable = {
+				var = num_pend_seats
+				distribution = binomial
+				min = 0
+				max = 8
+			}
+			#set_variable = { num_pend_seats = temp_pend_seats }
+			round_temp_variable = num_pend_seats
+			if = {
+				limit = {has_country_flag = parliament_allow_campaigning_conservative}
+				add_to_variable = { parliament_pending_seats^1 = num_pend_seats }
+				custom_effect_tooltip = campaign_conservative_tt
+				random_list = {
+					50 = {
+						custom_effect_tooltip = lose_seat_liberal_tt
+						subtract_from_variable = { parliament_pending_seats^4 = num_pend_seats }
+					}
+					50 = {
+						custom_effect_tooltip = lose_seat_labour_tt
+						subtract_from_variable = { parliament_pending_seats^3 = num_pend_seats }
+					}
+				}
+			}
+			else_if = {
+				limit = {has_country_flag = parliament_allow_campaigning_liberal}
+				add_to_variable = { parliament_pending_seats^4 = num_pend_seats }
+				custom_effect_tooltip = campaign_liberal_tt
+				random_list = {
+					50 = {
+						custom_effect_tooltip = lose_seat_conservative_tt
+						subtract_from_variable = { parliament_pending_seats^0 = num_pend_seats }
+					}
+					50 = {
+						custom_effect_tooltip = lose_seat_labour_tt
+						subtract_from_variable = { parliament_pending_seats^3 = num_pend_seats }
+					}
+				}
+			}
+			else_if = {
+				limit = {has_country_flag = parliament_allow_campaigning_labour}
+				add_to_variable = { parliament_pending_seats^3 = num_pend_seats }
+				random_list = {
+					50 = {
+						custom_effect_tooltip = lose_seat_liberal_tt
+						subtract_from_variable = { parliament_pending_seats^4 = num_pend_seats }
+					}
+					50 = {
+						custom_effect_tooltip = lose_seat_conservative_tt
+						subtract_from_variable = { parliament_pending_seats^0 = num_pend_seats }
+					}
+				}
+			}
+		}
+	}
+	campaign_in_northern_england = {
+		icon = generic_army_support
+		fixed_random_seed = no
+		highlight_state_targets = {
+			state = 132
+			state = 130
+			state = 131
+		}
+		available = {
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 14
+		remove_effect = {
+			randomize_temp_variable = {
+				var = num_pend_seats
+				distribution = binomial
+				min = 0
+				max = 8
+			}
+			#set_variable = { num_pend_seats = temp_pend_seats }
+			round_temp_variable = num_pend_seats
+			if = {
+				limit = {has_country_flag = parliament_allow_campaigning_conservative}
+				add_to_variable = { parliament_pending_seats^1 = num_pend_seats }
+				custom_effect_tooltip = campaign_conservative_tt
+				random_list = {
+					50 = {
+						custom_effect_tooltip = lose_seat_liberal_tt
+						subtract_from_variable = { parliament_pending_seats^4 = num_pend_seats }
+					}
+					50 = {
+						custom_effect_tooltip = lose_seat_labour_tt
+						subtract_from_variable = { parliament_pending_seats^3 = num_pend_seats }
+					}
+				}
+			}
+			else_if = {
+				limit = {has_country_flag = parliament_allow_campaigning_liberal}
+				add_to_variable = { parliament_pending_seats^4 = num_pend_seats }
+				custom_effect_tooltip = campaign_liberal_tt
+				random_list = {
+					50 = {
+						custom_effect_tooltip = lose_seat_conservative_tt
+						subtract_from_variable = { parliament_pending_seats^0 = num_pend_seats }
+					}
+					50 = {
+						custom_effect_tooltip = lose_seat_labour_tt
+						subtract_from_variable = { parliament_pending_seats^3 = num_pend_seats }
+					}
+				}
+			}
+			else_if = {
+				limit = {has_country_flag = parliament_allow_campaigning_labour}
+				add_to_variable = { parliament_pending_seats^3 = num_pend_seats }
+				random_list = {
+					50 = {
+						custom_effect_tooltip = lose_seat_liberal_tt
+						subtract_from_variable = { parliament_pending_seats^4 = num_pend_seats }
+					}
+					50 = {
+						custom_effect_tooltip = lose_seat_conservative_tt
+						subtract_from_variable = { parliament_pending_seats^0 = num_pend_seats }
+					}
+				}
+			}
+		}
+	}
+}
