@@ -18,19 +18,19 @@ state={
 
 		}
 		victory_points = {
-			191 1 
+			191 1
 		}
 		victory_points = {
-			5117 3 
+			5117 3
 		}
 		add_core_of = FRE
 
 	}
 
 	provinces={
-		2115 2192 3109 5117 5139 8193 8207 10948 10968 12925 12975 
+		5117 10968 12925
 	}
-	manpower=3540948
+	manpower=440948
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

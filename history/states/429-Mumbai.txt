@@ -4,13 +4,12 @@ state={
 	name="STATE_429"
 	resources={
 		tungsten=26.000
+		cotton=119.000
 	}
-	resources={
-		cotton = 119
-	}
+
 	history={
-		owner = MAR
-		add_core_of = MAR
+		owner = EIC
+		add_core_of = EIC
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
@@ -28,7 +27,7 @@ state={
 	}
 
 	provinces={
-		1349 1405 4072 4278 4353 5063 7013 7060 7119 7177 7205 7232 7250 7430 10019 10210 10270 10311 10872 11993 12105 12142 12182 12269 12295 
+		1349 1405 4072 4187 4353 7013 7060 7119 7177 7232 7250 7411 10019 10210 10259 10270 10799 12105 12142 12182 12269 12295 
 	}
 	manpower=17355600
 	buildings_max_level_factor=1.000

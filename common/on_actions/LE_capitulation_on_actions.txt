@@ -3,7 +3,10 @@ on_actions = {
 		effect = {
 			FROM = { set_variable = { WAR_CASUALTIES = casualties } }
 			FROM = { multiply_variable = { WAR_CASUALTIES = 0.08 }
-			FROM = { country_event = { id = le_generic.1 } }
+			if = {
+				limit = { check_variable = { WAR_CASUALTIES > 0 }}
+				FROM = { country_event = { id = le_generic.1 days = 7 } }
+			}
 			ROOT = {
 				if = {  # Prussian - Polish Subjugation War
 					limit = {
@@ -31,6 +34,19 @@ on_actions = {
 					PRE = { white_peace = DEN } #White peace needed so peace conference doesnt fire
 					DEN = { country_event = { id = le_prussia.63 }}
 					PRE = { country_event = { id = le_prussia.65 }} #Each participant gets a peace event
+				}
+				else_if = {  # East Indies Subsidiary Wars
+					limit = {
+						OR {
+							original_tag = TVN
+							original_tag = HYD
+						}
+						FROM = { original_tag = RAJ }
+					}
+					FROM = { white_peace = ROOT } #White peace needed so peace conference doesnt fire
+					FROM = { set_autonomy = { target = ROOT autonomy_state = autonomy_subsidiary }}
+					FROM = { set_country_flag = raj_subsidiary_flag }
+					ROOT = { set_country_flag = raj_subsidiary_flag }
 				}
 				else = { #Generic Treaty
 					if = {

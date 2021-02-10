@@ -7,6 +7,7 @@ set_technology = {
 }
 add_ideas = {
 	HRE_city
+	hansa_member
 }
 set_politics = {
 	ruling_party = despotism
@@ -20,4 +21,3 @@ set_popularities = {
 	collectivism = 40
 }
 set_convoys = 5
-

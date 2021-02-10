@@ -265,7 +265,7 @@
  STATE_264:0 "Tikhvin"
  STATE_265:0 "Mikhaylovka"
  STATE_266:0 "Tehran"
- STATE_267:0 "Kabul"
+ STATE_267:0 "Kabul City"
  STATE_268:0 "French Somaliland"
  STATE_269:0 "British Somaliland"
  STATE_270:0 "Pitcairn Island"
@@ -413,7 +413,7 @@
  STATE_412:0 "Fars"
  STATE_413:0 "Khuzestan"
  STATE_414:0 "Kerman"
- STATE_415:0 "Herat"
+ STATE_415:0 "Farah"
  STATE_416:0 "Khorasan"
  STATE_417:0 "Hamadan"
  STATE_418:0 "Semnan"
@@ -778,7 +778,7 @@
  STATE_777:0 "Southern Desert"
  STATE_778:0 "British Madagascar"
  STATE_779:0 "Dervish State"
- 
+
  STATE_783:0 "East Faud"
  STATE_784:0 "Port Said"
  STATE_785:0 "Southern Holstein"
@@ -810,18 +810,18 @@
  STATE_809:0 "Burgas"
  STATE_810:0 "Plovdiv"
  STATE_811:0 "Anhalt"
- 
+
  STATE_817:0 "Superior"
  STATE_818:0 "Brunswick"
 
  STATE_820:0 "Fulda"
  STATE_822:0 "Bitburg"
- 
+
  STATE_825:0 "Grevena"
  STATE_826:0 "Thessaly"
  STATE_827:0 "Euboea"
  STATE_828:0 "Corfu"
- 
+
  STATE_831:0 "Southern Nejd"
  STATE_832:0 "Blagoevgrad"
  STATE_833:0 "Dijon"
@@ -844,13 +844,13 @@
  STATE_850:0 "Dendi"
  STATE_851:0 "Darfur"
  STATE_852:0 "Wadai"
- 
+
  STATE_858:0 "Hansa Zanzibar"
  STATE_859:0 "Karagwe"
  STATE_860:0 "Ankole"
  STATE_861:0 "Toro"
  STATE_862:0 "Buganda"
- 
+
  STATE_865:0 "Barcelona"
  STATE_866:0 "Northern Aragon"
  STATE_867:0 "City of Calais"
@@ -867,11 +867,11 @@
  STATE_883:0 "Ulm"
  STATE_886:0 "Versailles"
  STATE_887:0 "Quatar"
- 
+
  STATE_897:0 "Tumrait"
  STATE_898:0 "Tarim"
  STATE_900:0 "South Michigan"
- 
+
  STATE_925:0 "Johor"
  STATE_926:0 "Jambi"
  STATE_927:0 "Palembang"
@@ -884,11 +884,13 @@
  STATE_935:0 "Northeast Papua"
  STATE_936:0 "Dutch Papua"
  STATE_937:0 "Aceh"
- STATE_944:0 "Spanish Northern Territory"
+
 
  STATE_940:0 "Lubek"
  STATE_942:0 "Lille"
  STATE_943:0 "Napoli"
+ STATE_944:0 "Spanish Northern Territory"
+ STATE_948:0 "Baharak"
  STATE_949:0 "Vorpommern"
  STATE_950:0 "Königsberg"
  STATE_951:0 "Agrinio"
@@ -896,7 +898,7 @@
  STATE_953:0 "City Of Danzig"
  STATE_954:0 "Athens"
  STATE_955:0 "Mount Athos"
- 
+
  STATE_956:0 "Augustow"
  STATE_957:0 "Mosul"
  STATE_958:0 "Eastern Mosul"
@@ -972,7 +974,7 @@
  STATE_1029:0 "Kosovo"
  STATE_1030:0 "Hatay"
  STATE_1031:0 "West Pennsylvania"
- 
+
  STATE_1035:0 "Krakow"
  STATE_1036:0 "Liaotung Peninsula"
  STATE_1037:0 "South Gyeongsang"
@@ -994,3 +996,13 @@
  STATE_1053:0 "Ångermanland"
  STATE_1054:0 "Västerbotten"
  STATE_1055:0 "Norrbotten"
+ STATE_1056:0 "Blekinge"
+ STATE_1057:0 "Halland"
+ STATE_1058:0 "Equatorial Africa"
+ STATE_1059:0 "Ahemdabad"
+ STATE_1060:0 "Travancore"
+ STATE_1061:0 "Kandahar"
+ STATE_1062:0 "Vadodara"
+ STATE_1063:0 "Kabul"
+ STATE_1064:0 "Herat"
+ STATE_1065:0 "Ladakh"

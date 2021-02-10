@@ -1,0 +1,17 @@
+state={
+	id=1062
+	name="STATE_1062"
+	history = {
+		owner = EIC
+		victory_points = {}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = EIC
+	}
+	provinces={
+		7150 7165 7205 8076 11952 11993
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

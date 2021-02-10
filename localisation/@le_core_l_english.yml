@@ -9,6 +9,9 @@
  gp_name:0 "infamy_var"
  gp_tt:0 "§YGreat Powers§!\nShows a ranking of every nation in the world."
  country_info_tt:0 "§YCountry Information§!\n\n§YFull Name:§! [ROOT.GetNameDef]\n§YRuling Party:§![Root.GetRulingParty]\n§YHead Of Government:§![Root.GetLeader]\n§YInfamy:§! [?infamy_var|H0]\n§YLiteracy:§!Literacy: 50%"
+ hansa_tt:0 "§YNeu-Hansa§!"
+ parliament_tt:0 "§YParliament§!"
+ hre_tt:0 "§YHoly Roman Empire§!"
  ### Demobilisation ###
 mobilisation_penalty_modifier:0 "Above Division Limit"
 

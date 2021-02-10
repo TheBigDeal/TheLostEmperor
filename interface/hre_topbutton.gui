@@ -11,6 +11,149 @@ guiTypes = {
 			spriteType = "GFX_hansa"
 			position = { x=0 y=0 }
 			shortcut = "ctrl+2"
+			pdx_tooltip = "hansa_tt"
+		}
+	}
+	containerWindowType = {
+		name = "hansa_main_container"
+		position = { x = 43% y = 20%% }
+		size = { width=650 height=80%% }
+		margin = { top = 6 bottom = 13}
+		moveable = no
+		background = {
+			name = "hre_main_bg"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		iconType = {
+			name ="main_header"
+			spriteType = "GFX_category_header_long"
+			position = { x= 14 y = 2 }
+		}
+		buttonType = {
+			name = "hansa_close_button"
+			position = { x = -48 y = 8 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		instantTextboxType = {
+			name = "hansa_title"
+			position = { x = 30 y = 4 }
+			font = "hoi_36header"
+			text = "Neu-Hansa Colonial Company"
+			maxWidth = 600
+			maxHeight = 400
+			fixedsize = no
+			format = center
+			alwaystransparent = no
+		}
+		containerWindowType = {
+			name = "hre_main_container_list"
+			position = {x = 0 y = 40}
+			size = {width = 280 height = 600 }
+			margin = { top = 0 bottom = 0 }
+			Orientation = upper_left
+			verticalScrollbar = "right_vertical_slider"
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_thin_border2"
+			}
+			gridboxtype = {
+				name = "hansa_show_grid_leader"
+				position = { x = -20 y = 0 }
+				size = { width = 95 height = 40 }
+				slotsize = { width = 65 height = 40 }
+				max_slots_horizontal = 1
+				max_slots_vertical = 1
+				add_horizontal = no
+			}
+			gridboxtype = {
+				name = "hansa_show_grid_member"
+				position = { x = 10 y = 100 }
+				size = { width = 95 height = 40 }
+				slotsize = { width = 65 height = 40 }
+				max_slots_horizontal = 3
+				max_slots_vertical = 6
+				add_horizontal = yes
+			}
+		}
+		gridboxtype = {
+			name = "hansa_show_grid_colony"
+			position = { x = 345 y = 55 }
+			size = { width = 95 height = 40 }
+			slotsize = { width = 250 height = 240 }
+			max_slots_horizontal = 10
+			max_slots_vertical = 2
+			add_horizontal = no
+		}
+	}
+
+	containerWindowType = {
+		name = "hansa_leader_entry"
+		position = { x = 0 y = 0}
+		size = { width = 60 height = 90 }
+		buttonType = {
+			name = "flag_l"
+			quadTextureSprite = "GFX_shield_medium"
+			position = { x = 100 y = 50 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "hansa_name_leader"
+		}
+	}
+	containerWindowType = {
+		name = "hansa_member_entry"
+		position = { x = 0 y = 0}
+		size = { width = 60 height = 90 }
+		buttonType = {
+			name = "flag_m"
+			quadTextureSprite = "GFX_flag_small2"
+			position = { x = 25 y = 50 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "hansa_name_member"
+		}
+	}
+	containerWindowType = {
+		name = "hansa_colony_entry"
+		position = { x = 0 y = 0}
+		size = { width = 260 height = 290 }
+		instantTextboxType = {
+			name = "colony_name"
+			position = { x = 10 y = -170 }
+			font = "hoi_18mbs"
+			text = "hansa_name_colony"
+			maxWidth = 120
+			maxHeight = 400
+			format = center
+			vertical_alignment = center
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "flag_c"
+			quadTextureSprite = "GFX_shield_medium"
+			position = { x = 25 y = 50 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "hansa_name_colony"
+		}
+		buttonType = {
+			name = "war_button"
+			quadTextureSprite = "GFX_generic_box_96"
+			position = { x = 20 y = 110 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "hansa_name_colony"
+			buttonText = "Declare War"
+			buttonFont = hoi_18mbs
+		}
+		buttonType = {
+			name = "invest_button"
+			quadTextureSprite = "GFX_generic_box_96"
+			position = { x = 20 y = 140 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "hansa_name_colony"
+			buttonText = "Invest"
+			buttonFont = hoi_18mbs
 		}
 	}
 
@@ -22,6 +165,7 @@ guiTypes = {
 			spriteType = "GFX_parliament_button"
 			position = { x=0 y=0 }
 			shortcut = "ctrl+3"
+			pdx_tooltip = "parliament_tt"
 		}
 	}
 
@@ -34,6 +178,7 @@ guiTypes = {
 			spriteType = "GFX_hre"
 			position = { x=0 y=0 }
 			shortcut = "ctrl+1"
+				pdx_tooltip = "hre_tt"
 		}
 	}
 	containerWindowType = {
@@ -78,15 +223,11 @@ guiTypes = {
 			size = {width = 280 height = 590 }
 			margin = { top = 0 bottom = 0 }
 			Orientation = upper_left
-
 			verticalScrollbar = "right_vertical_slider"
-
 			background = {
 				name = "Background"
 				quadTextureSprite = "GFX_tiled_window_thin_border2"
 			}
-
-
 			iconType = {
 				name ="emperor_bg"
 				spriteType = "GFX_imperialeagle"

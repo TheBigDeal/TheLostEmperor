@@ -8,7 +8,7 @@ set_technology = {
 	tech_recon = 1
 }
 
-set_politics = {	
+set_politics = {
 	ruling_party = absolutism
 	last_election = "1933.3.5"
 	election_frequency = 48
@@ -32,9 +32,14 @@ declare_war_on = {
   target = PAK
   type = annex_everything
 }
+declare_war_on = {
+  target = SAQ
+  type = annex_everything
+}
 
-create_faction = sikhdom
-add_to_faction = BHA
+
+#create_faction = sikhdom
+#add_to_faction = BHA
 
 #Victor Emmanuel III of Italy after 39
 create_country_leader = {
@@ -53,4 +58,3 @@ create_country_leader = {
 #	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 #	skill = 2
 #}
-

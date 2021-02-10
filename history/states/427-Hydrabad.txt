@@ -7,21 +7,21 @@ state={
 	}
 
 	history={
-		owner = RAJ
+		owner = HYD
+		add_core_of = HYD
 		victory_points = {
 			8087 1 
 		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			air_base = 3
 
 		}
 
 	}
 
 	provinces={
-		1275 1317 1359 4280 4472 5019 5104 8087 10324 10511 11950 12114 12226 
+		1275 1317 1359 1622 4280 4472 5019 5063 5104 7428 7465 8087 10171 10311 10324 10511 11950 12114 12226 12490 
 	}
 	manpower=14013400
 	buildings_max_level_factor=1.000

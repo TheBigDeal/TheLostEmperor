@@ -1,0 +1,31 @@
+ideas = {
+	country = {
+		hansa_leader = {
+			picture = idea_HRE_member
+			modifier = {
+				political_power_gain = 0.10
+			}
+		}
+		hansa_member = {
+			picture = idea_HRE_city
+			modifier = {
+				political_power_gain = -0.10
+			}
+		}
+		hansa_colony = {
+			picture = idea_HRE_emperor
+			modifier = {
+				#custom_effect_tooltip = hre_emperor_tt
+				political_power_gain = -0.10
+				local_resources_factor = 0.5
+			}
+		}
+		hansa_supporter = {
+			picture = idea_HRE_emperor
+			modifier = {
+				#custom_effect_tooltip = hre_emperor_tt
+				political_power_gain = -0.10
+			}
+		}
+	}
+}

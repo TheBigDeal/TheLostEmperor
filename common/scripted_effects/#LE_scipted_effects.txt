@@ -5,7 +5,7 @@ refresh_economy2 = {
 	set_variable = { daily_gain = 0 }
 	set_variable = { daily_loss = 0 }
 	set_variable = { daily_income = 0}
-	
+
 	#Population Taxes
 	######################################################
 	set_variable = { upper_class_population = max_manpower_k }
@@ -15,11 +15,11 @@ refresh_economy2 = {
 	set_variable = { middle_class_percent = 0.75 }
 	set_variable = { lower_class_population = max_manpower_k }
 	set_variable = { lower_class_percent = 0.20 }
-	
+
 	multiply_variable = { upper_class_population = upper_class_percent }
 	multiply_variable = { middle_class_population = middle_class_percent }
 	multiply_variable = { lower_class_population = lower_class_percent }
-	
+
 	#Upper Class
 	if = {
 		limit = { has_idea = tax_upper_class_none }
@@ -111,23 +111,23 @@ refresh_economy2 = {
 	multiply_variable = { upper_class_taxes = upper_class_tax_rate }
 	divide_variable = {  upper_class_taxes = 10 }
 	round_variable = upper_class_taxes
-	
+
 	set_variable = { middle_class_taxes = middle_class_population }
 	multiply_variable = { middle_class_taxes = middle_class_tax_rate }
 	divide_variable = {  middle_class_taxes = 100 }
 	round_variable = middle_class_taxes
-	
+
 	set_variable = { lower_class_taxes = lower_class_population }
 	multiply_variable = { lower_class_taxes = lower_class_tax_rate }
 	divide_variable = {  lower_class_taxes = 100 }
 	round_variable = lower_class_taxes
-	
+
 	set_variable = { total_population_tax_gain = upper_class_taxes }
 	add_to_variable = { total_population_tax_gain = middle_class_taxes }
 	add_to_variable = { total_population_tax_gain = lower_class_taxes }
-	
+
 	add_to_variable = { daily_gain = total_population_tax_gain }
-	
+
 	#Industry Taxes
 	######################################################
 	set_variable = { industry_tax = num_of_civilian_factories }
@@ -163,7 +163,7 @@ refresh_economy2 = {
 	multiply_variable = { industry_tax = 2 }
 	round_variable = industry_tax
 	add_to_variable = { daily_gain = industry_tax}
-	
+
 	#Resource Income
 	######################################################
 	set_variable = { food_resource_income = resource_exported@food }
@@ -183,7 +183,7 @@ refresh_economy2 = {
 	divide_variable = { steel_resource_income = 10 } #0.10 Per Steel
 	set_variable = { chromium_resource_income = resource_exported@chromium }
 	divide_variable = { chromium_resource_income = 10 } #0.10 Per Chromium
-	
+
 	set_variable = { total_resource_income = food_resource_income }
 	add_to_variable = { total_resource_income = coal_resource_income }
 	add_to_variable = { total_resource_income = textiles_resource_income }
@@ -285,10 +285,44 @@ HRE_recalc_congress_icon_frames = {
 		}
 	}
 	else = {
-		set_temp_variable = { house_temp = 1 }		
+		set_temp_variable = { house_temp = 1 }
 	}
 	set_variable = { current_house_icon_frame = house_temp }
 }
+load_hansa_leader_array = {
+	clear_array = global.hansa_leader_array
+	add_to_array = { global.hansa_leader_array = LUB }
+}
+load_hansa_member_array = {
+	clear_array = global.hansa_member_array
+	set_variable = { hansa_members = 0 }
+	every_country = {
+		limit = {
+			has_idea = hansa_member
+		}
+		add_to_array = { global.hansa_member_array = this.id }
+	}
+	for_each_loop = {
+		array = global.hansa_member_array
+		add_to_variable = { hansa_members = 1 }
+	}
+}
+load_hansa_colony_array = {
+	clear_array = global.hansa_colony_array
+	set_variable = { hansa_colonies = 0 }
+	every_country = {
+		limit = {
+			has_idea = hansa_colony
+		}
+		add_to_array = { global.hansa_colony_array = this.id }
+	}
+	for_each_loop = {
+		array = global.hansa_colony_array
+		add_to_variable = { hansa_colonies = 1 }
+	}
+}
+
+
 HRE_load_emperor_array = {
 	clear_array = global.emperor_array
 	add_to_array = { global.emperor_array = AUS }
@@ -300,7 +334,7 @@ HRE_load_elector_array = {
 		limit = {
 			has_idea = HRE_elector
 		}
-		add_to_array = { global.elector_array = this.id } 
+		add_to_array = { global.elector_array = this.id }
 	}
 	for_each_loop = {
 		array = global.elector_array
@@ -314,7 +348,7 @@ HRE_load_city_array = {
 		limit = {
 			has_idea = HRE_city
 		}
-		add_to_array = { global.city_array = this.id } 
+		add_to_array = { global.city_array = this.id }
 	}
 	for_each_loop = {
 		array = global.city_array
@@ -328,7 +362,7 @@ HRE_load_country_array = {
 		limit = {
 			has_idea = HRE_member
 		}
-		add_to_array = { global.hre_array = this.id } 
+		add_to_array = { global.hre_array = this.id }
 	}
 	for_each_loop = {
 		array = global.hre_array
@@ -398,30 +432,30 @@ load_great_powers_array = {
 	every_country = {
 		clear_array = global.powers_array
 		clear_array = global.sorted_powers_array
-		clear_array = global.score_array 
-		
-		clear_array = global.prestige_score_array 
-		clear_array = global.military_score_array 
-		clear_array = global.industrial_score_array 
-		
+		clear_array = global.score_array
+
+		clear_array = global.prestige_score_array
+		clear_array = global.military_score_array
+		clear_array = global.industrial_score_array
+
 		clear_array = global.score_array_position
 		clear_array = global.score_tag_array
-		
+
 		set_variable = { total_score = 0 }
 		#set_variable = { prestige_score = 0 }
 		#set_variable = { military_score = 0 }
 		#set_variable = { industrial_score = 0 }
-		
+
 		get_military_score = yes
 		get_industrial_score = yes
-		
+
 		if = { #Add Puppet score to overload
 			limit = {
 				OR = {
-					is_puppet = yes 
-					is_subject = yes 
+					is_puppet = yes
+					is_subject = yes
 					NOT = { check_variable = { prestige_score = puppet_prestige_counter } }
-				} 
+				}
 			}
 			OVERLORD = {
 				add_to_variable = { var = prestige_score value = PREV.prestige_score }
@@ -435,10 +469,10 @@ load_great_powers_array = {
 		if = {
 			limit = {
 				OR = {
-					is_puppet = yes 
-					is_subject = yes 
+					is_puppet = yes
+					is_subject = yes
 					NOT = { check_variable = { prestige_score = puppet_prestige_counter } }
-				} 
+				}
 			}
 			OVERLORD = {
 				add_to_variable = { var = military_score value = PREV.military_score }
@@ -452,10 +486,10 @@ load_great_powers_array = {
 		if = {
 			limit = {
 				OR = {
-					is_puppet = yes 
+					is_puppet = yes
 					is_subject = yes
 					NOT = { check_variable = { prestige_score = puppet_prestige_counter } }
-				} 
+				}
 			}
 			OVERLORD = {
 				add_to_variable = { var = industrial_score value = PREV.industrial_score }
@@ -470,9 +504,9 @@ load_great_powers_array = {
 	if = {
 		limit = {
 			OR = {
-				is_puppet = no 
+				is_puppet = no
 				is_subject = no
-			} 
+			}
 		}
 		every_country = {
 			round_variable = total_score
@@ -480,19 +514,19 @@ load_great_powers_array = {
 			round_variable = military_score
 			round_variable = industrial_score
 			add_to_array = { global.score_array = total_score }
-			
+
 			add_to_array = { global.prestige_score_array = prestige_score }
 			add_to_array = { global.military_score_array = military_score }
 			add_to_array = { global.industrial_score_array = industrial_score }
-			
+
 			add_to_array = { global.score_tag_array = THIS.id }
 			add_to_array = { global.p_score_tag_array = THIS.id }
 			add_to_array = { global.m_score_tag_array = THIS.id }
 			add_to_array = { global.i_score_tag_array = THIS.id }
-			
+
 			set_temp_variable = { length_temp = global.score_array^num }
 		}
-		
+
 		for_loop_effect = {
 			start = 0
 			end = length_temp
@@ -503,27 +537,27 @@ load_great_powers_array = {
 			find_highest_in_array = { array = global.prestige_score_array value = prestige_score_array_highest_value index = prestige_score_array_highest_index }
 			find_highest_in_array = { array = global.military_score_array value = military_score_array_highest_value index = military_score_array_highest_index }
 			find_highest_in_array = { array = global.industrial_score_array value = industrial_score_array_highest_value index = industrial_score_array_highest_index }
-			
+
 			remove_from_array = { array = global.score_array index = score_array_highest_index }
 			remove_from_array = { array = global.prestige_score_array index = prestige_score_array_highest_index }
 			remove_from_array = { array = global.military_score_array index = military_score_array_highest_index }
 			remove_from_array = { array = global.industrial_score_array index = industrial_score_array_highest_index }
-			
+
 			add_to_temp_array = { array = global.score_array_temp value = score_array_highest_value }
 			add_to_temp_array = { array = global.p_score_array_temp value = prestige_score_array_highest_value }
 			add_to_temp_array = { array = global.m_score_array_temp value = military_score_array_highest_value }
 			add_to_temp_array = { array = global.i_score_array_temp value = industrial_score_array_highest_value }
-			
+
 			set_temp_variable = { tag_temp = global.score_tag_array^score_array_highest_index }
 			set_temp_variable = { p_tag_temp = global.p_score_tag_array^prestige_score_array_highest_index }
 			set_temp_variable = { m_tag_temp = global.m_score_tag_array^military_score_array_highest_index }
 			set_temp_variable = { i_tag_temp = global.i_score_tag_array^industrial_score_array_highest_index }
-			
+
 			remove_from_array = { array = global.score_tag_array index = score_array_highest_index }
 			remove_from_array = { array = global.p_score_tag_array index = prestige_score_array_highest_index }
 			remove_from_array = { array = global.m_score_tag_array index = military_score_array_highest_index }
 			remove_from_array = { array = global.i_score_tag_array index = industrial_score_array_highest_index }
-			
+
 			add_to_temp_array = { array = global.score_tag_array_temp value = tag_temp }
 			add_to_temp_array = { array = global.p_score_tag_array_temp value = p_tag_temp}
 			add_to_temp_array = { array = global.m_score_tag_array_temp value = m_tag_temp }
@@ -537,13 +571,13 @@ load_great_powers_array = {
 			break = b
 			add_to_array = { array = global.score_array value = global.score_array_temp^v }
 			add_to_array = { array = global.score_tag_array value = global.score_tag_array_temp^v }
-			
+
 			add_to_array = { array = global.prestige_score_array value = global.p_score_array_temp^v }
 			add_to_array = { array = global.p_score_tag_array value = global.p_score_tag_array_temp^v }
-			
+
 			add_to_array = { array = global.military_score_array value = global.m_score_array_temp^v  }
 			add_to_array = { array = global.m_score_tag_array value = global.m_score_tag_array_temp^v }
-			
+
 			add_to_array = { array = global.industrial_score_array value = global.i_score_array_temp^v }
 			add_to_array = { array = global.i_score_tag_array value = global.i_score_tag_array_temp^v }
 		}
@@ -553,75 +587,75 @@ load_great_powers_array = {
 			add = 1
 			value = v
 			break = b
-					
-			add_to_array = { array = global.score_array_position value = v }	
-			add_to_variable = { global.score_array_position^v = 1 } 		
-			
-			add_to_array = { array = global.p_score_array_position  value = v }	
+
+			add_to_array = { array = global.score_array_position value = v }
+			add_to_variable = { global.score_array_position^v = 1 }
+
+			add_to_array = { array = global.p_score_array_position  value = v }
 			add_to_variable = { global.p_score_array_position^v = 1 }
-			
-			add_to_array = { array = global.m_score_array_position value = v }	
+
+			add_to_array = { array = global.m_score_array_position value = v }
 			add_to_variable = { global.m_score_array_position^v = 1 }
-			
-			add_to_array = { array = global.i_score_array_position value = v }	
+
+			add_to_array = { array = global.i_score_array_position value = v }
 			add_to_variable = { global.i_score_array_position^v = 1 }
-		}	
-			
+		}
+
 		every_country = { #Get Position in list
 			for_loop_effect = {
 				start = 0
 				end = length_temp
 				add = 1
-				value = v  
-				break = b 
-					
+				value = v
+				break = b
+
 				if = {
 					limit = { check_variable = { global.score_tag_array^v = THIS } }
-					set_variable = { score_array_position_var = v } 
+					set_variable = { score_array_position_var = v }
 					set_variable = { b = 0 }
 				}
 				if = {
 					limit = { check_variable = { global.score_tag_array^v = THIS } }
-					set_variable = { p_score_array_position_var = v } 
-					set_variable = { b = 0 }
-				}	
-				if = {
-					limit = { check_variable = { global.score_tag_array^v = THIS } }
-					set_variable = { m_score_array_position_var = v } 
+					set_variable = { p_score_array_position_var = v }
 					set_variable = { b = 0 }
 				}
 				if = {
 					limit = { check_variable = { global.score_tag_array^v = THIS } }
-					set_variable = { i_score_array_position_var = v } 
+					set_variable = { m_score_array_position_var = v }
 					set_variable = { b = 0 }
 				}
-			}      
+				if = {
+					limit = { check_variable = { global.score_tag_array^v = THIS } }
+					set_variable = { i_score_array_position_var = v }
+					set_variable = { b = 0 }
+				}
+			}
 			set_variable = { score_array_position_var_pop = score_array_position_var }
-			add_to_variable = { score_array_position_var = 1 } 
+			add_to_variable = { score_array_position_var = 1 }
 			set_variable = { p_score_array_position_var_pop = p_score_array_position_var }
-			add_to_variable = { p_score_array_position_var = 1 } 
+			add_to_variable = { p_score_array_position_var = 1 }
 			set_variable = { i_score_array_position_var_pop = i_score_array_position_var }
-			add_to_variable = { i_score_array_position_var = 1 } 
+			add_to_variable = { i_score_array_position_var = 1 }
 			set_variable = { m_score_array_position_var_pop = m_score_array_position_var }
-			add_to_variable = { m_score_array_position_var = 1 } 
+			add_to_variable = { m_score_array_position_var = 1 }
 		}
-		
-		every_country = {	
+
+		every_country = {
 			for_loop_effect = {
 				start = 0
 				end = length_temp
 				add = 1
-				value = v  
-				break = b 
-					
+				value = v
+				break = b
+
 				if = {
-					limit = { check_variable = { global.score_tag_array^v = THIS } }		
-					set_variable = { global.prestige_score_array^v = prestige_score } 	
+					limit = { check_variable = { global.score_tag_array^v = THIS } }
+					set_variable = { global.prestige_score_array^v = prestige_score }
 					set_variable = { global.military_score_array^v = military_score }
 					set_variable = { global.industrial_score_array^v = industrial_score }
 					set_variable = { b = 0 }
-				}		
-			}		
+				}
+			}
 		}
 	}
 }
@@ -648,13 +682,13 @@ get_force_limit = {
 	set_variable = { force_limit = max_manpower_k }
 	divide_variable = { force_limit = 450 }
 	round_variable = force_limit
-	
+
 	set_variable = { force_limit_6 = force_limit }
 	add_to_variable = { force_limit_6 = 6 } #Minor Exceeding
-	
+
 	set_variable = { force_limit_12 = force_limit }
 	add_to_variable = { force_limit_12 = 12 } #Exceeding
-	
+
 	set_variable = { force_limit_18 = force_limit }
 	add_to_variable = { force_limit_18 = 18 } #Major Exceeding
 }
@@ -683,16 +717,16 @@ get_food_needs = {
 
 find_total_communist_pop = {
 	every_country = {
-	  limit = { 
+	  limit = {
 		  	OR = {
 			  has_idea = le_religion_sunni
 			  has_idea = le_religion_shia
 			  has_idea = le_religion_ibadi
-	  		}  
+	  		}
 		}
 		set_variable = { total_communist_pop = party_popularity@mutualism }
 		add_to_variable = { total_communist_pop = party_popularity@proletarianism }
-	 	add_to_variable = { total_communist_pop = party_popularity@collectivism} 
+	 	add_to_variable = { total_communist_pop = party_popularity@collectivism}
 	}
 }
 
@@ -720,7 +754,7 @@ MJG_spawn_effect = {
 			owner = MJG
 			##
 		}
-	} 
+	}
 	random_owned_controlled_state = {
 		is_capital = no
 		MJG = {
@@ -765,7 +799,7 @@ JTH_spawn_effect = {
 			##
 			count = 3
 		}
-	} 
+	}
 	random_owned_controlled_state = {
 		is_capital = no
 		JTH = {
@@ -801,7 +835,7 @@ IKH_spawn_effect = {
 			##
 			count = 3
 		}
-	} 
+	}
 	random_owned_controlled_state = {
 		is_capital = no
 		IKH = {

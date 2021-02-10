@@ -3,6 +3,31 @@ MAK = {
 	color = rgb { 100 100 100 }
 	color_ui = rgb { 100 100 100 }
 }
+SAQ = {
+	color = rgb { 112 100 83 }
+	color_ui = rgb { 112 100 83 }
+}
+KND = {
+	color = rgb { 37 90 110 }
+	color_ui = rgb { 37 90 110 }
+}
+MYS = {
+	color = rgb { 190 202 207 }
+	color_ui = rgb { 190 202 207 }
+}
+TVN = {
+	color = rgb { 81 115 85 }
+	color_ui = rgb { 81 115 85 }
+}
+HYD = {
+	color = rgb { 92 129 145 }
+	color_ui = rgb { 92 129 145 }
+}
+GUJ = {
+	color = rgb { 231 224 107 }
+	color_ui = rgb { 231 224 107 }
+}
+
 BNG = {
 	color = rgb { 112 155 224 }
 	color_ui = rgb { 112 155 224 }
@@ -260,12 +285,12 @@ SKH = {
 	color_ui = rgb { 255 102 51 }
 }
 BHA = {
-	color = rgb { 193 182 81 }
-	color_ui = rgb { 193 182 81 }
+	color = rgb { 145 168 191 }
+	color_ui = rgb { 145, 168, 191 }
 }
 RJP = {
-	color = rgb { 95 26 24 }
-	color_ui = rgb { 75 6 4 }
+	color = rgb { 255 189 0 }
+	color_ui = rgb { 255 189 0 }
 }
 MAR = {
 	color = rgb { 239 130 13 }
@@ -328,24 +353,13 @@ VRP = {
 	color_ui = rgb { 8  82  165 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 ARA = {
 	color = rgb { 166  68  72 }
 	color_ui = rgb { 166  68  72 }
 }
 MUG = {
-	color = rgb { 34 139 34 }
-	color_ui = rgb { 34 139 34 }
+	color = rgb { 33  96  48 }
+	color_ui = rgb { 33  96  48 }
 }
 LEV = {
 	color = rgb { 193 71 71 }
@@ -1495,6 +1509,10 @@ RAJ = {
 	color = rgb { 170  10  10 }
 	color_ui = rgb { 200  10  10 }
 }
+EIC = {
+	color = rgb { 170  10  10 }
+	color_ui = rgb { 200  10  10 }
+}
 CRO = {
 	color = rgb { 0 113 193 }
 	color_ui = rgb { 0 113 193 }
@@ -1636,8 +1654,8 @@ BOT = {
 	color_ui = rgb { 11 132 112 }
 }
 PAK = {
-	color = rgb { 21 38 66 }
-	color_ui = rgb { 21 38 66 }
+	color = rgb { 175 82 16 }
+	color_ui = rgb { 175 82 16 }
 }
 WGR = {
     color = rgb { 195 236 230 } # The colors are set to be more are less what we are used to

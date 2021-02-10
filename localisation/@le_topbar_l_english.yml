@@ -17,4 +17,11 @@
  hre_name_elector:0 "§Y[?global.elector_array^i.GetNameDef]§!"
  hre_name_emperor:0 "§Y[?global.emperor_array^i.GetNameDef]§!"
  hre_name_city:0 "§Y[?global.city_array^i.GetNameDef]§!"
+
+ hansa_name_leader:0 "§Y[?global.hansa_leader_array^i.GetNameDef]§!"
+ hansa_name_member:0 "§Y[?global.hansa_member_array^i.GetNameDef]§!"
+ hansa_name_colony:0 "§Y[?global.hansa_colony_array^i.GetNameDef]§!"
+ hansa_name_investor:0 "§Y[?global.hansa_investor_array^i.GetNameDef]§!"
+
+
  total_gain:0 "§Y[?treasury]§!"

@@ -7,8 +7,10 @@ set_technology = {
 	tech_support = 1
 	tech_recon = 1
 }
-
-set_politics = {	
+add_ideas = {
+	hansa_member
+}
+set_politics = {
 	ruling_party = despotism
 	last_election = "1933.3.5"
 	election_frequency = 48

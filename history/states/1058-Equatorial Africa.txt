@@ -1,0 +1,23 @@
+state={
+	id=1058
+	name="STATE_1058"
+
+	resources={
+		steel = 5
+		wood = 20
+	}
+
+	history={
+		owner = SPR
+		victory_points = {}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SPR
+	}
+	provinces={
+		2115 2192 3109 5139 8193 8207 10948 12975
+	}
+	manpower=323536
+	buildings_max_level_factor=1.000
+}

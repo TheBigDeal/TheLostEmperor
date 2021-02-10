@@ -19,7 +19,8 @@
  autonomy_eyalet:0 "Eyalet"
  autonomy_vilayet:0 "Vilayet"
  autonomy_colonial_company:0 "Colonial Company"
- 
+ autonomy_subsidiary:0 "Subsidiary"
+
  AUTONOMY_CAN_TAKE_DESC:1 "$OWNER|UH$ can become $NEXTLEVEL|H$"
  AUTONOMY_CANT_TAKE_DESC:1 "$OWNER|UH$ can not become $NEXTLEVEL|H$ yet"
  AUTONOMY_CAN_LOSE_DESC:1 "$OWNER|UH$ can be reduced to $PREVLEVEL|H$"
@@ -69,4 +70,3 @@
  CONSTRUCTION_MASTER_BUILDING_CANT_REDUCE:0 "§RWe are not allowed to reduce the level or cancel this construction.§!"
  CONSTRUCTION_INFO_MASTER:0 "This construction is built on the $WHO|H$ territory. If we don't use all factories, they can contribute using theirs."
  CONSTRUCTION_INFO_SUBJECT:0 "This construction is built for us by the $WHO|H$. If they don't use all factories, we can contribute using ours."
- 

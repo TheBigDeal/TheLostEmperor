@@ -1,31 +1,31 @@
 
 state={
 	id=666
-	name="STATE_666" # Lappland
-	manpower = 415327
+	name="STATE_666"
 	resources={
-		tungsten=70
-		steel= 80
-		chromium = 40
+		tungsten=70.000
+		steel=80.000
+		chromium=40.000
 	}
-	
-	state_category = rural
 
 	history={
 		owner = SWE
 		victory_points = {
-			
+
 		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
-			
+
 		}
 		add_core_of = SWE
+
 	}
 
 	provinces={
-		11 58 61 101 118  148 151 190  3003 3054 3062 3095 3179 6024 6055 6074 6083  6155 6161   6170  6206 6208 9083  9143  9175 9178  9211 9226 11058 11060  11102 11112 11152 11155 11190 11208 13119
-		
+		11 58 61 101 148 151 190 3003 3054 3062 3095 3179 6055 6074 6155 6170 6206 6208 9083 9175 9178 9211 9226 11058 11060 11102 11112 11152 11155 11190 11208 13119 
 	}
+	manpower=415327
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

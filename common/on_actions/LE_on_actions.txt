@@ -9,14 +9,19 @@ on_actions = {
 			set_variable = { dailytempfix = 0}
 			set_variable = { selected_economy_tab2 = 2}
 
-			set_variable = { global.LE_sunni_radicalism_var = 0.20 }
-			set_variable = { global.LE_shia_radicalism_var = 0.60 }
-			set_variable = { global.LE_ibadi_radicalism_var = 0.30 }
+			set_variable = { global.LE_sunni_radicalism_var = 0.02 }
+			set_variable = { global.LE_shia_radicalism_var = 0.06 }
+			set_variable = { global.LE_ibadi_radicalism_var = 0.03 }
 
 			HRE_load_emperor_array = yes
 			HRE_load_elector_array = yes
 			HRE_load_country_array = yes
 			HRE_load_city_array = yes
+
+			load_hansa_leader_array = yes
+			load_hansa_member_array = yes
+			load_hansa_colony_array = yes
+
 			every_country = {
 				set_variable = { prestige_score = 0 }
 				set_variable = { infamy_var = 0 }

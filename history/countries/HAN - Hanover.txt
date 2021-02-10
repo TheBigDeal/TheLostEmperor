@@ -8,7 +8,7 @@ set_technology = {
 	tech_recon = 1
 }
 
-set_politics = {	
+set_politics = {
 	ruling_party = royalism
 	last_election = "1933.3.5"
 	election_frequency = 48
@@ -27,24 +27,44 @@ add_ideas = {
 set_convoys = 5
 
 create_country_leader = {
-	name = "Ernest Augustus von Hannover"
-	desc = "POLITICS_KING_ZOG_DESC"
-	picture = "Portrait_Ernest_Augustus_von_Hannover.tga"
-	expire = "1965.1.1"
+	name = "William V of Hanover"
+	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+	picture = "Portrait_William_V.tga"
+	expire = "1946.1.20"
+	ideology = absolutism_ideology
+	traits = {
+		determined_imperialist
+	}
+}
+create_country_leader = {
+	name = "William V of Hanover"
+	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+	picture = "Portrait_William_V.tga"
+	expire = "1946.1.20"
 	ideology = royalism_ideology
 	traits = {
-		#
+		determined_imperialist
+	}
+}
+create_country_leader = {
+	name = "William V of Hanover"
+	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+	picture = "Portrait_William_V.tga"
+	expire = "1946.1.20"
+	ideology = rexism_ideology
+	traits = {
+		determined_imperialist
 	}
 }
 
 create_country_leader = {
-	name = "Queen Margaret I"
+	name = "William V of Hanover"
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-	picture = "Portrait_margaret_I.dds"
-	expire = "1936.1.20"
-	ideology = royalism_ideology
+	picture = "Portrait_William_V.tga"
+	expire = "1946.1.20"
+	ideology = conservatism_ideology
 	traits = {
-		gbr_popular_figurhead
+		determined_imperialist
 	}
 }
 #create_field_marshal = {
@@ -52,4 +72,3 @@ create_country_leader = {
 #	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 #	skill = 2
 #}
-

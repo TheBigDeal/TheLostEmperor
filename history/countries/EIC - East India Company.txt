@@ -1,0 +1,116 @@
+﻿capital = 423
+
+oob = "RAJ_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	trench_warfare = 1
+	CAS1 = 1
+}
+add_ideas = {
+	RAJ_local_chiefdoms
+	RAJ_famine
+	RAJ_a_grand_army
+	RAJ_high_illiteracy
+}
+set_convoys = 20
+
+set_politics = {
+	ruling_party = despotism
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+    despotism = 100
+}
+
+give_military_access = GBR
+declare_war_on = { target = TVN type = annex_everything }
+declare_war_on = { target = HYD type = annex_everything }
+if = {
+	limit = {	has_dlc = "Together for Victory" }
+	set_autonomy = { target = MYS autonomous_state = autonomy_subsidiary freedom_level = 0.90}
+	set_autonomy = { target = MAR autonomous_state = autonomy_subsidiary freedom_level = 0.90}
+	set_autonomy = { target = GUJ autonomous_state = autonomy_subsidiary freedom_level = 0.90}
+	else = {
+		puppet = MYS
+		puppet = GUJ
+		puppet = MAR
+	}
+}
+
+MAR = {
+	set_politics = {
+		ruling_party = absolutism
+		last_election = "1935.11.14"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+	    absolutism = 100
+	}
+}
+GUJ = {
+	set_politics = {
+		ruling_party = absolutism
+		last_election = "1935.11.14"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+	    absolutism = 100
+	}
+}
+MYS = {
+	set_politics = {
+		ruling_party = absolutism
+		last_election = "1935.11.14"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+	    absolutism = 100
+	}
+}
+create_country_leader = {
+	name = "Lord Irwin"
+	desc = "POLITICS_LORD_LINLITHGOW_DESC"
+	picture = "Portrait_Lord_Irwin.tga"
+	expire = "1965.1.1"
+	ideology = despotism_ideology
+	traits = {}
+}
+
+create_corps_commander = {
+	name = "Noel Beresford-Peirse"
+	gfx = "GFX_RAJ_noel_beresford_peirse"
+	traits = { panzer_leader }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Frank Messervy"
+	gfx = "GFX_RAJ_frank_messervy"
+	traits = { hill_fighter }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Douglas Gracey"
+	gfx = "GFX_RAJ_douglas_gracey"
+	traits = { desert_fox }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Herbert Fitzherbert"
+	gfx = "GFX_RAJ_herbert_fitzherbert"
+	traits = { }
+	skill = 3
+}

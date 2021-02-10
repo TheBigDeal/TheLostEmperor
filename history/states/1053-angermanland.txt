@@ -2,14 +2,9 @@
 state={
 	id=1053
 	name="STATE_1053"
-	manpower=32122
 	resources={
-		steel=52
-		
+		steel=52.000
 	}
-	
-	state_category = town
-	
 
 	history={
 		owner = SWE
@@ -19,13 +14,16 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			
+
 		}
 		add_core_of = SWE
+
 	}
 
 	provinces={
-		3138 6200 3173 9093 11067 6132 3113 182 3173 118 11185 6067 145 11201 9220 3100 109
-		
+		109 118 145 182 3100 3113 3138 3173 3173 6067 6132 6200 9093 9220 11067 11185 11201 
 	}
+	manpower=32122
+	buildings_max_level_factor=1.000
+	state_category=town
 }

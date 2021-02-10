@@ -6,9 +6,33 @@
  MJG_DEF:0 "Mujahideen Groups"
  MJG_ADJ:0 "Mujahideen"
 
+ SAQ:0 "Saqqawist Rebels"
+ SAQ_DEF:0 "Saqqawist Rebels"
+ SAQ_ADJ:0 "Saqqawist"
+
+ KND:0 "Kandahar"
+ KND_DEF:0 "Kandahar"
+ KND_ADJ:0 "Kandahar"
+
+ MYS:0 "Mysore"
+ MYS_DEF:0 "Mysore"
+ MYS_ADJ:0 "Mysore"
+
+ GUJ:0 "Gujarat"
+ GUJ_DEF:0 "Gujarat"
+ GUJ_ADJ:0 "Gujarat"
+
+ TVN:0 "Travanjore"
+ TVN_DEF:0 "Travanjore"
+ TVN_ADJ:0 "Travanjore"
+
+ HYD:0 "Hyderabad"
+ HYD_DEF:0 "Hyderabad"
+ HYD_ADJ:0 "Hyderabad"
+
  BNG:0 "Bengal"
  BNG_DEF:0 "Bengal"
- BNG_ADJ:0 "Bengal"
+ BNG_ADJ:0 "Bengalese"
 
  JTH:0 "Jaysh ut-Tahrir"
  JTH_DEF:0 "Jaysh ut-Tahrir"
@@ -856,7 +880,7 @@
  WIT_absolutism_ADJ:0 "Wituland"
 
  ZAN_absolutism:0 "Freistaat Zanzibar"
- ZAN_absolutism_DEF:0 "Kingdom of Freistaat Zanzibar"
+ ZAN_absolutism_DEF:0 "Freistaat Zanzibar"
  ZAN_absolutism_ADJ:0 "Freistaat Zanzibar"
 
  SOK_absolutism:0 "Sokoto"
@@ -932,17 +956,17 @@
  HNT_absolutism_DEF:0 "The East African Hinterlands"
  HNT_absolutism_ADJ:0 "East African"
 
- MUG_absolutism:0 "Delhi State Committee"
- MUG_absolutism_DEF:0 "The Delhi State Committee"
- MUG_absolutism_ADJ:0 "Delhi"
+ MUG:0 "Mughals"
+ MUG_DEF:0 "Mughals"
+ MUG_ADJ:0 "Mughal"
 
  MAR_despotism:0 "Maratha"
  MAR_despotism_DEF:0 "Maratha"
  MAR_despotism_ADJ:0 "Marathan"
 
- RJP_absolutism:0 "Rajput"
- RJP_absolutism_DEF:0 "Rajput"
- RJP_absolutism_ADJ:0 "Rajput"
+ RJP:0 "Rajputana"
+ RJP_DEF:0 "Rajputana"
+ RJP_ADJ:0 "Rajputana"
 
  BHA_absolutism:0 "Bahawalpur"
  BHA_absolutism_DEF:0 "Bahawalpur"

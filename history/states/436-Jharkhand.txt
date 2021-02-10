@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = RAJ
+		owner = EIC
 		buildings = {
 			infrastructure = 4
 
@@ -16,7 +16,7 @@ state={
 	}
 
 	provinces={
-		1510 2005 4410 4557 4883 7497 7574 7619 7938 8120 10030 10332 10401 10801 12375 12420 12480 12781 12854 
+		1510 2005 4410 7497 7574 7938 8120 10332 10401 10801 12375 12420 12480 12854 
 	}
 	manpower=14123100
 	buildings_max_level_factor=1.000

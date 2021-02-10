@@ -2,10 +2,14 @@ state={
 	id=948
 	name="STATE_948"
 	history={
-		owner = TRK
+		owner = SAQ
+		victory_points = {
+			12653 1 
+		}
 		buildings = {
 			infrastructure = 5
 		}
+		add_core_of = SAQ
 		add_core_of = AFG
 		add_core_of = TRK
 	}

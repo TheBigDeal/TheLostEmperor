@@ -1,0 +1,16 @@
+state={
+	id=1065
+	name="STATE_1065"
+	history = {
+		owner = SAQ
+		victory_points = {}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces={
+		2084 4558 5042 7273 10821 12763
+	}
+	manpower=364745
+	buildings_max_level_factor=1.000
+}

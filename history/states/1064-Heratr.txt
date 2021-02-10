@@ -1,0 +1,20 @@
+state={
+	id=1064
+	name="STATE_1064"
+	history={
+		owner = KHR
+		victory_points = {
+			4893 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = KHR
+
+	}
+	provinces={
+		4893 4958 10476 10896
+	}
+	manpower=245363
+	buildings_max_level_factor=1.000
+}

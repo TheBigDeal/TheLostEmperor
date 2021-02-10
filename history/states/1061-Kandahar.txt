@@ -1,0 +1,21 @@
+state={
+	id=1061
+	name="STATE_1061"
+
+	history={
+		owner = KND
+		victory_points = {
+			4949 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = KND
+	}
+
+	provinces={
+		4949 5020 5064 8013 8090 10789
+	}
+	manpower=253646
+	buildings_max_level_factor=1.000
+}

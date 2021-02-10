@@ -64,7 +64,47 @@ scripted_gui = {
 		window_name = "hansa_button"
 		visible = { always = yes }
 		effects = {
-
+			hansa_bg_click = {
+				if = {
+					limit = { check_variable = { open_hansa_container = 1 } }
+					set_variable = { open_hansa_container = 0 }
+				}
+				else = {
+					set_variable = { open_hansa_container = 1 }
+					load_hansa_leader_array = yes
+					load_hansa_member_array = yes
+					load_hansa_colony_array = yes
+				}
+			}
+		}
+	}
+	hansa_window = {
+		context_type = player_context
+		window_name = "hansa_main_container"
+		visible = { check_variable = { open_hansa_container = 1 } }
+		dynamic_lists = {
+			hansa_show_grid_leader = {
+				array = global.hansa_leader_array
+				entry_container = hansa_leader_entry
+			}
+			hansa_show_grid_member = {
+				array = global.hansa_member_array
+				entry_container = hansa_member_entry
+			}
+			hansa_show_grid_colony = {
+				array = global.hansa_colony_array
+				entry_container = hansa_colony_entry
+			}
+		}
+		effects = {
+			hansa_close_button_click = {
+				set_variable = { open_hansa_container = 0 }
+			}
+		}
+		properties = {
+			flag_l = { image = "[?global.hansa_leader_array^i.GetFlag]" }
+			flag_m = { image = "[?global.hansa_member_array^i.GetFlag]" }
+			flag_c = { image = "[?global.hansa_colony_array^i.GetFlag]" }
 		}
 	}
 	parliament_button = {
