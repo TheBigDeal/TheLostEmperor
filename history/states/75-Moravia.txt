@@ -11,7 +11,7 @@ state={
 	history={
 		owner = BOH
 		victory_points = {
-			3569 25 
+			3569 12
 		}
 		buildings = {
 			infrastructure = 7
@@ -24,7 +24,7 @@ state={
 	}
 
 	provinces={
-		421 569 3414 3553 3569 6562 6576 6590 11511 
+		421 569 3414 3553 3569 6562 6576 6590 11511
 	}
 	manpower=2598400
 	buildings_max_level_factor=1.000

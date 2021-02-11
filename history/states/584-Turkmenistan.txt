@@ -4,18 +4,19 @@ state={
 	name="STATE_584"
 
 	history={
-		owner = TRK
+		owner = KHI
+		victory_points = {
+			12383 2
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-
 		}
-		add_core_of = TRK
-
+		add_core_of = KHI
 	}
 
 	provinces={
-		1493 4563 4620 7477 7541 7563 7635 10348 10406 10485 12383 12454
+		1479 1493 1576 1614 4563 4620 7477 7541 7563 7618 7635 10348 10395 10406 10435 10485 12324 12383 12454 12465
 	}
 	manpower=1064523
 	buildings_max_level_factor=1.000

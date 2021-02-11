@@ -36,13 +36,13 @@ country_event = { #POLISH-LITHUANIAN DEFENSIVE PACT
 	desc = le_poland.3.d
 	fire_only_once = yes
 	is_triggered_only = yes
-	option = { #ACCEPT
+	option = { #Commonwealth
+		POL = { complete_national_focus = POL_POLISH_LITHUANIAN_COMMONWEALTH }
+  }
+	option = { #Alliance
 		LIT = { give_guarantee = POL }
 		POL = { give_guarantee = LIT }
-    }
-	option = { #DENY
-		POL = { country_event = { id = le_poland.4 } }
-    }
+  }
 }
 country_event = { #POLISH-LITHUANIAN DEFENSIVE PACT
 	id = le_poland.4
@@ -57,5 +57,271 @@ country_event = { #POLISH-LITHUANIAN DEFENSIVE PACT
 				modifier = declined_alliance
 			}
 		}
-    }
+  }
+}
+country_event = { #Our Next Steps
+	id = le_poland.5
+	title = le_poland.5.t
+	desc = le_poland.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Strengthen Lithuanian Ties
+		name = le_poland.5.a
+		complete_national_focus = POL_STRENGTHEN_LITHUANIAN_TIES
+  }
+	option = { #Invade Lithuania
+		name = le_poland.5.a
+		complete_national_focus = POL_INVADE_LITHUANIA
+  }
+}
+country_event = { #Forming the Commonwealth
+	id = le_poland.6
+	title = le_poland.6.t
+	desc = le_poland.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Strengthen Lithuanian Ties
+		name = le_poland.6.a
+		set_cosmetic_tag = POL_LIT_COMMONWEALTH
+		annex_country = { target = LIT transfer_troops = yes }\
+		#Lithuanian Cores
+		add_state_core = 956
+		add_state_core = 11
+		add_state_core = 96
+		add_state_core = 807
+		add_state_core = 189
+		add_state_core = 190
+
+		#Prussian Cores
+		add_state_core = 953
+		add_state_core = 5
+		add_state_core = 188
+
+		add_state_core = 206
+		add_state_core = 204
+		add_state_core = 194
+		add_state_core = 201
+		add_state_core = 199
+		add_state_core = 198
+
+		add_state_core = 80
+		add_state_core = 79
+		add_state_core = 78
+		add_state_core = 960
+  }
+}
+country_event = { #Galicia
+	id = le_poland.7
+	title = le_poland.7.t
+	desc = le_poland.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Approach Austria
+		name = le_poland.7.a
+		AUS = { id = le_poland.8 }
+  }
+	option = { #Hold a Refurendum
+		name = le_poland.7.b
+		AUS = { id = le_poland.12 }
+  }
+	option = { #Encite Revolt
+		name = le_poland.7.c
+		GAL = { id = le_poland.14 days = 7}
+  }
+}
+country_event = { #Poland approaches us about Galicia
+	id = le_poland.8
+	title = le_poland.8.t
+	desc = le_poland.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Galicia has been in the hands of us for years!
+		name = le_poland.8.a
+		ai_chance = { base = 10 }
+		POL = { country_event = { id = le_poland.9 }}
+  }
+	option = { #They may have Krakow, but that is it
+		name = le_poland.8.b
+		ai_chance = { base = 5 }
+		effect_tooltip = {
+			POL = {
+				country_event = { id = le_poland.10 }
+				add_timed_idea = { idea = POL_AUSTRIAN_PAYMENTS_1 days = 365 }
+				transfer_state = 1035
+			}
+		}
+  }
+	option = { #Fine
+		name = le_poland.8.c
+		ai_chance = { base = 0 }
+		effect_tooltip = {
+			POL = {
+				country_event = { id = le_poland.11 }
+				add_timed_idea = { idea = POL_AUSTRIAN_PAYMENTS_2 days = 730 }
+				transfer_state = 88
+				transfer_state = 1035
+				transfer_state = 72
+				transfer_state = 89
+				transfer_state = 91
+			}
+		}
+  }
+}
+country_event = { #Austria Denies us Galicia
+	id = le_poland.9
+	title = le_poland.9.t
+	desc = le_poland.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Was to be expected.
+		name = le_poland.9.a
+		ai_chance = { base = 10 }
+		add_opinion_modifier = {
+			target = AUS
+			modifier = declined_alliance
+		}
+  }
+	option = { #Claim The Territory.
+		name = le_poland.9.a
+		ai_chance = { base = 10 }
+		add_opinion_modifier = {
+			target = AUS
+			modifier = refused_our_claims
+		}
+		AUS = {
+			add_opinion_modifier = {
+				target = POL
+				modifier = claimed_our_land
+			}
+		}
+		add_state_claim = 88
+		add_state_claim = 1035
+		add_state_claim = 72
+		add_state_claim = 89
+		add_state_claim = 91
+  }
+}
+
+country_event = { #Austria offers us Krakow
+	id = le_poland.10
+	title = le_poland.10.t
+	desc = le_poland.10.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Krakow is Returned!
+		name = le_poland.10.a
+		ai_chance = { base = 10 }
+		add_timed_idea = { idea = POL_AUSTRIAN_PAYMENTS_1 days = 365 }
+		transfer_state = 1035
+  }
+	option = { #We need more than that...
+		name = le_poland.10.a
+		ai_chance = { base = 10 }
+		add_opinion_modifier = {
+			target = AUS
+			modifier = refused_our_claims
+		}
+		AUS = {
+			add_opinion_modifier = {
+				target = POL
+				modifier = claimed_our_land
+			}
+		}
+		add_state_claim = 88
+		add_state_claim = 1035
+		add_state_claim = 72
+		add_state_claim = 89
+		add_state_claim = 91
+  }
+}
+country_event = { #Austria offers us Galicia
+	id = le_poland.11
+	title = le_poland.11.t
+	desc = le_poland.11.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Krakow is Returned!
+		name = le_poland.11.a
+		ai_chance = { base = 10 }
+		add_timed_idea = { idea = POL_AUSTRIAN_PAYMENTS_2 days = 730 }
+		transfer_state = 88
+		transfer_state = 1035
+		transfer_state = 72
+		transfer_state = 89
+		transfer_state = 91
+  }
+	option = { #Too Expensive for us.
+		name = le_poland.11.a
+		ai_chance = { base = 10 }
+		add_opinion_modifier = {
+			target = AUS
+			modifier = refused_our_claims
+		}
+		AUS = {
+			add_opinion_modifier = {
+				target = POL
+				modifier = claimed_our_land
+			}
+		}
+		add_state_claim = 88
+		add_state_claim = 1035
+		add_state_claim = 72
+		add_state_claim = 89
+		add_state_claim = 91
+  }
+}
+country_event = { #Poland holds a refurendum in Galicia
+	id = le_poland.12
+	title = le_poland.12.t
+	desc = le_poland.12.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #We will honor the Refurendum
+		name = le_poland.12.a
+		ai_chance = { base = 10 }
+		random_list = {
+			60 = {
+				country_evemt = { id = le_poland.13 days = 7}
+				POL = { country_evemt = { id = le_poland.13 days = 7}}
+			}
+			40 = {
+				country_evemt = { id = le_poland.14 days = 7}
+				POL = { country_evemt = { id = le_poland.14 days = 7}}
+			}
+		}
+  }
+	option = { #This is pointless.
+		name = le_poland.12.b
+		ai_chance = { base = 3 }
+		POL = { id = le_poland.13 days = 9 }
+  }
+}
+country_event = { #The Refurendum Succeeds
+	id = le_poland.13
+	title = le_poland.13.t
+	desc = le_poland.13.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #This is pointless.
+		name = le_poland.13.a
+		ai_chance = { base = 3 }
+		POL = {
+			transfer_state = 88
+			transfer_state = 1035
+			transfer_state = 72
+			transfer_state = 89
+			transfer_state = 91
+		}
+  }
+}
+country_event = { #The Refurendum Fails
+	id = le_poland.14
+	title = le_poland.14.t
+	desc = le_poland.14.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = le_poland.14.a
+		ai_chance = { base = 10 }
+  }
 }

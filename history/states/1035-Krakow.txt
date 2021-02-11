@@ -4,7 +4,7 @@ state={
 	history={
 		owner = GAL
 		victory_points = {
-			9427 10 
+			9427 20
 		}
 		buildings = {
 			infrastructure = 6
@@ -16,7 +16,7 @@ state={
 
 	}
 	provinces={
-		9427 
+		9427
 	}
 	manpower=766683
 	buildings_max_level_factor=1.000

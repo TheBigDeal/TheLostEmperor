@@ -5,6 +5,7 @@ ideas = {
 			visible = {
 				always = yes
 			}
+
 			modifier = {
 				#army_core_defence_factor = 1
 				#army_core_attack_factor = 1
@@ -25,9 +26,8 @@ ideas = {
 		}
 		TUR_rebellious_subject_state = {
 			picture = GFX_idea_Prussian_Militarism
-			visible = {
-				always = yes
-			}
+			visible = { always = yes }
+			rule = { can_decline_call_to_war = yes }
 			modifier = {
 				ai_join_ally_desire_factor = -5000
 			}

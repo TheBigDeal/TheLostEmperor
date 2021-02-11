@@ -107,6 +107,34 @@ scripted_diplomatic_actions = {
 			}
 		}
 	}
+	offer_alliance = {
+		icon = 16
+		show_acceptance_on_action_button = yes
+		requires_acceptance = yes
+		allowed = {
+			FROM = {
+				strength_ratio = { tag = ROOT ratio < 0.75 }
+			}
+		}
+		visible = {
+			OR = {
+				has_idea = le_religion_sunni
+				has_idea = le_religion_shia
+				has_idea = le_religion_ibadi
+				has_idea = le_religion_sikhism
+				has_idea = le_religion_confucianism
+			}
+		}
+		on_sent_effect = {
+			ROOT = { set_country_flag = { flag = diplomatic_action_cooldown value = 1 days = 7 } }
+		}
+		complete_effect = { #Positive Relations + Alliance
+			#
+		}
+		reject_effect = { # Negative Relations
+			#Tributary CB
+		}
+	}
 	impose_trade_embargo = {
 
 		allowed = {

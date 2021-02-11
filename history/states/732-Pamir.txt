@@ -4,17 +4,18 @@ state={
 	name="STATE_732"
 
 	history={
-		owner = TRK
+		owner = KAZ
+		victory_points = {
+			1591 3
+		}
 		buildings = {
 			infrastructure = 1
-
 		}
-		add_core_of = TRK
-
+		add_core_of = KAZ
 	}
 
 	provinces={
-		1591 1675 1840 4391 4768 4845 5062 10547 12511 13147
+		1591 1675 1825 1840 4224 4316 4391 4651 4768 4773 4845 5062 7711 7795 7856 10146 10547 10550 10619 12370 12511 12529 12583 13147 13197
 	}
 	manpower=230000
 	buildings_max_level_factor=1.000

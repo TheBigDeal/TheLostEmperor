@@ -1,5 +1,21 @@
 ideas = {
 	country = {
+		POL_AUSTRIAN_PAYMENTS_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea POL_AUSTRIAN_PAYMENTS_1"}
+			picture = generic_pp_unity_bonus
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.05
+			}
+		}
+		POL_AUSTRIAN_PAYMENTS_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea POL_AUSTRIAN_PAYMENTS_1"}
+			picture = generic_pp_unity_bonus
+			modifier = {
+				political_power_gain = -0.20
+				stability_factor = -0.15
+			}
+		}
 		pol_protect_orthodox_christians = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pol_protect_orthodox_christians"}
 			picture = generic_pp_unity_bonus
@@ -7,7 +23,7 @@ ideas = {
 				political_power_gain = -0.10
 				MONTHLY_POPULATION = 0.02
 			}
-		}	
+		}
 		pol_de_facto_government = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pol_de_facto_government"}
 			picture = generic_pp_unity_bonus
@@ -73,7 +89,7 @@ ideas = {
 				original_tag = POL
 			}
 			cost = 250
-		}	
+		}
 	}
 	foreign_minister = {
 		POL_Edward_Bernard_Raczynski = {
@@ -85,7 +101,7 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
 	}
 	defence_minister = {
 		POL_Tadeusz_Kaprzycki = {
@@ -97,7 +113,7 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
 	}
 	economy_minister = {
 		POL_Wladyslaw_Grabski = {
@@ -109,7 +125,7 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
 	}
 	security_minister = {
 		POL_Maciej_Rataj = {
@@ -121,7 +137,7 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
 	}
 	intel_minister = {
 

@@ -3,6 +3,7 @@ state={
 	name="STATE_1065"
 	history = {
 		owner = SAQ
+		add_core_of = SKH
 		victory_points = {}
 		buildings = {
 			infrastructure = 2

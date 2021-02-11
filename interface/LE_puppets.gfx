@@ -7,4 +7,8 @@ spriteTypes = {
 		name = "GFX_autonomy_subsidiary_icon"
 		textureFile = "gfx/interface/autonomy/autonomy_subsidiary_icon.dds"
 	}
+	spriteType = {
+		name = "GFX_autonomy_tributary_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_tributary_icon.dds"
+	}
 }

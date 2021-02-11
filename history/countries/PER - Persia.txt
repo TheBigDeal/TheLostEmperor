@@ -19,7 +19,7 @@ set_technology = {
 }
 
 set_convoys = 100
-set_politics = {	
+set_politics = {
 	ruling_party = absolutism
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -29,7 +29,7 @@ set_politics = {
 set_popularities = {
 		conservatism = 10
 		liberalism = 6
-		socialism = 8 
+		socialism = 8
 		labryscism = 2
 		rexism = 6
 		despotism = 8
@@ -73,6 +73,14 @@ if = {
 		target = KRM
 		autonomous_state = autonomy_emirate
 	}
+	set_autonomy = {
+		target = AFG
+		autonomous_state = autonomy_tributary
+	}
+	set_autonomy = {
+		target = KND
+		autonomous_state = autonomy_tributary
+	}
 	else = {
 		puppet = TBR
 		puppet = KHR
@@ -85,13 +93,13 @@ if = {
 }
 
 KRM = {
-	set_politics = {	
+	set_politics = {
 		ruling_party = conservatism
 		last_election = "1933.3.5"
 		election_frequency = 48
 		elections_allowed = no
 	}
-	
+
 	set_popularities = {
 		liberalism = 0
 		rexism = 0
@@ -101,13 +109,13 @@ KRM = {
 }
 
 MZD = {
-	set_politics = {	
+	set_politics = {
 		ruling_party = socialism
 		last_election = "1933.3.5"
 		election_frequency = 48
 		elections_allowed = no
 	}
-	
+
 	set_popularities = {
 		liberalism = 0
 		rexism = 0
@@ -117,13 +125,13 @@ MZD = {
 }
 
 TBR = {
-	set_politics = {	
+	set_politics = {
 		ruling_party = liberalism
 		last_election = "1933.3.5"
 		election_frequency = 48
 		elections_allowed = no
 	}
-	
+
 	set_popularities = {
 		liberalism = 90
 		rexism = 0
@@ -133,13 +141,13 @@ TBR = {
 }
 
 AHV = {
-	set_politics = {	
+	set_politics = {
 		ruling_party = absolutism
 		last_election = "1933.3.5"
 		election_frequency = 48
 		elections_allowed = no
 	}
-	
+
 	set_popularities = {
 		liberalism = 0
 		rexism = 0
@@ -149,13 +157,13 @@ AHV = {
 }
 
 SHR = {
-	set_politics = {	
+	set_politics = {
 		ruling_party = absolutism
 		last_election = "1933.3.5"
 		election_frequency = 48
 		elections_allowed = no
 	}
-	
+
 	set_popularities = {
 		liberalism = 0
 		rexism = 0
@@ -165,13 +173,13 @@ SHR = {
 }
 
 AJM = {
-	set_politics = {	
+	set_politics = {
 		ruling_party = absolutism
 		last_election = "1933.3.5"
 		election_frequency = 48
 		elections_allowed = no
 	}
-	
+
 	set_popularities = {
 		liberalism = 0
 		rexism = 0
@@ -181,19 +189,19 @@ AJM = {
 }
 
 KHR = {
-	set_politics = {	
+	set_politics = {
 		ruling_party = absolutism
 		last_election = "1933.3.5"
 		election_frequency = 48
 		elections_allowed = no
 	}
-	
+
 	set_popularities = {
 		liberalism = 0
 		rexism = 0
 		proletarianism = 10
 		absolutism = 90
-	}	
+	}
 }
 
 create_country_leader = {

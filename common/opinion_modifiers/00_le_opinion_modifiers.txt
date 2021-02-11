@@ -25,4 +25,6 @@ opinion_modifiers = {
 	bav_supported_the_communists = { value = -100 }
 	bav_invaded_our_holdings = { value = -100 }
 	usa_enforced_english = { value = -10 }
+	claimed_our_land = { value = -50 }
+	refused_our_claims = { value = -25 }
 }

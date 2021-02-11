@@ -10,23 +10,22 @@ state={
 	}
 
 	history={
-		owner = TRK
+		owner = KOK
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3
 
 		}
 		victory_points = {
-			1591 3
+			1459 3
 		}
-		add_core_of = TRK
-		add_core_of = RUS
-		add_core_of = SOV
+		
+		add_core_of = KOK
 
 	}
 
 	provinces={
-		1483 1825 4316 7706 10408 10488 10530 10603 10660 12370 12583 12640
+		1459 10187 10408 10488 10530 10601 10660 12640
 	}
 	manpower=2563404
 	buildings_max_level_factor=1.000

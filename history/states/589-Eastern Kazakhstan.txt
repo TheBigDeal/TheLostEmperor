@@ -4,18 +4,18 @@ state={
 	name="STATE_589"
 
 	history={
-		owner = TRK
+		owner = KAZ
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 
 		}
-		add_core_of = TRK
+		add_core_of = KAZ
 
 	}
 
 	provinces={
-		4224 4773 10146
+		4492 4595 7556 7597 7706 10506 10508 10603 12329 12340 12385 12397 12487 12658 
 	}
 	manpower=535191
 	buildings_max_level_factor=1.000

@@ -1,0 +1,18 @@
+state={
+	id=1066
+	name="STATE_1066"
+
+	history={
+		owner = SAQ
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SAQ
+	}
+
+	provinces={
+		10417 12805
+	}
+	manpower=32634
+	buildings_max_level_factor=1.000
+}

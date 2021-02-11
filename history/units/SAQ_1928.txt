@@ -1,0 +1,72 @@
+﻿division_template = {
+	name = "Militia"
+
+	division_names_group = AFG_ARM_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+	priority = 2
+}
+
+units = {
+	#Afghan Side
+	division = {
+		name = "Militia"
+		location = 12314
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia"
+		location = 12653
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+	#Punjabi Side
+	division = {
+		name = "Militia"
+		location = 12763
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia"
+		location = 2084
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia"
+		location = 10821
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Militia"
+		location = 7273
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "AFG"
+		}
+		requested_factories = 1
+		progress = 0.28
+		efficiency = 100
+	}
+}
