@@ -16,11 +16,11 @@ set_convoys = 5
 
 #Victor Emmanuel III of Italy after 39
 create_country_leader = {
-	name = "Masoud Zell-es-Soltan" #Shiraz Province - Masoud Zell-es-Soltan - Qajar
+	name = "Firouz Nosrat-ed-Dowleh Khan" #Shiraz Province - Vatanist - Qajar
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "Portrait_Albania_King_Zog.dds"
 	expire = "1965.1.1"
-	ideology = absolutism_ideology
+	ideology = rexism_ideology
 	traits = {
 		#
 	}

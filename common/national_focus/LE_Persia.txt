@@ -19,7 +19,7 @@ focus_tree = {
 			focus = PER_crackdown_on_nationalists 
 		}
 		prerequisite = { 
-			focus = PER_a_quality_standard 
+			focus = PER_promote_general_democracy 
 		}
 		ai_will_do = {
 			factor = 1
@@ -57,9 +57,9 @@ focus_tree = {
 		}
 	}
 
-	#Focus for A Quality Standard
+	#Focus for Promote General Democracy
 	focus = {
-		id = PER_a_quality_standard
+		id = PER_promote_general_democracy
 		icon = GFX_goal_unknown
 		x = 9
 		y = 3

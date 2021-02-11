@@ -18,7 +18,7 @@ country_event = {
 		name = le_persia.1.a #A new era has begun
 		kill_country_leader = yes
 		create_country_leader = {
-			name = "Ahmed Shah"
+			name = "Ahmed Shah Qajar"
 			desc = ""
 			picture = ""
 			expire = "1965.1.1"
@@ -28,5 +28,34 @@ country_event = {
 			}
 		}
 		complete_national_focus = PER_shah_dies
+	}
+}
+
+country_event = {
+	id = le_persia.2 #General unrest in the country!
+	title = le_persia.2.t
+	desc = le_persia.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		#
+	}
+	option = {
+		name = le_persia.2.a #Denounce Ulema and clergy!
+		#idk
+	}
+	option = {
+		name = le_persia.2.b #Vatanists are truly the trouble!
+		swap_ideas = {
+			remove_idea = PER_crumbling_bureaucracy
+			add_idea = PER_crumbling_bureaucracy_2
+		}
+	}
+	option = {
+		name = le_persia.2.c #Eliminating the Arabs is our only choice!
+		custom_effect_tooltip = PER_invading_ahvaz_tt
+		declare_war_on = {
+			target = AHV
+		}
 	}
 }

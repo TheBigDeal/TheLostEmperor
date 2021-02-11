@@ -108,7 +108,7 @@ KRM = {
 	}
 }
 
-MZD = {
+TBR = {
 	set_politics = {
 		ruling_party = socialism
 		last_election = "1933.3.5"
@@ -117,23 +117,7 @@ MZD = {
 	}
 
 	set_popularities = {
-		liberalism = 0
-		rexism = 0
-		proletarianism = 10
 		socialism = 90
-	}
-}
-
-TBR = {
-	set_politics = {
-		ruling_party = liberalism
-		last_election = "1933.3.5"
-		election_frequency = 48
-		elections_allowed = no
-	}
-
-	set_popularities = {
-		liberalism = 90
 		rexism = 0
 		proletarianism = 10
 		absolutism = 0
@@ -158,7 +142,7 @@ AHV = {
 
 SHR = {
 	set_politics = {
-		ruling_party = absolutism
+		ruling_party = rexism
 		last_election = "1933.3.5"
 		election_frequency = 48
 		elections_allowed = no
@@ -168,7 +152,7 @@ SHR = {
 		liberalism = 0
 		rexism = 0
 		proletarianism = 10
-		absolutism = 90
+		rexism = 90
 	}
 }
 
