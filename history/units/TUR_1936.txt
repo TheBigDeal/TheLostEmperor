@@ -16,7 +16,7 @@
 	}
 	support = {
 		artillery = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 } 
+		recon = { x = 0 y = 1 }
 	}
 }
 division_template = {
@@ -74,8 +74,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 14
 		}
-		location = 6990
-		division_template = "Süvari Tümeni" 
+		location = 11919
+		division_template = "Süvari Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -87,8 +87,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 7
 		}
-		location = 832
-		division_template = "Piyade Tümeni" 
+		location = 1074
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -99,8 +99,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 17
 		}
-		location = 832
-		division_template = "Piyade Tümeni" 
+		location = 4486
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -111,8 +111,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 20
 		}
-		location = 11811
-		division_template = "Piyade Tümeni" 
+		location = 7184
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -125,8 +125,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 9833
-		division_template = "Piyade Tümeni" 
+		location = 10383
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -137,8 +137,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 9833
-		division_template = "Süvari Tümeni" 
+		location = 6857
+		division_template = "Süvari Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -150,8 +150,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 11842
-		division_template = "Piyade Tümeni" 
+		location = 13284
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -162,8 +162,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 23
 		}
-		location = 3893
-		division_template = "Piyade Tümeni" 
+		location = 6990
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -175,7 +175,7 @@ units = {
 			name_order = 24
 		}
 		location = 11842
-		division_template = "Piyade Tümeni" 
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -188,7 +188,7 @@ units = {
 			name_order = 8
 		}
 		location = 6895
-		division_template = "Piyade Tümeni" 
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -200,7 +200,7 @@ units = {
 			name_order = 22
 		}
 		location = 6895
-		division_template = "Piyade Tümeni" 
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -212,7 +212,7 @@ units = {
 			name_order = 1
 		}
 		location = 6895
-		division_template = "Dag Tugayi" 
+		division_template = "Dag Tugayi"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -226,7 +226,7 @@ units = {
 			name_order = 39
 		}
 		location = 947
-		division_template = "Dag Tugayi" 
+		division_template = "Dag Tugayi"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -239,7 +239,7 @@ units = {
 			name_order = 6
 		}
 		location = 4112
-		division_template = "Piyade Tümeni" 
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -251,7 +251,7 @@ units = {
 			name_order = 16
 		}
 		location = 4112
-		division_template = "Piyade Tümeni" 
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -277,7 +277,7 @@ units = {
 			name_order = 4
 		}
 		location = 849
-		division_template = "Piyade Tümeni" 
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -289,7 +289,7 @@ units = {
 			name_order = 18
 		}
 		location = 849
-		division_template = "Dag Tugayi" 
+		division_template = "Dag Tugayi"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -302,7 +302,7 @@ units = {
 			name_order = 5
 		}
 		location = 947
-		division_template = "Piyade Tümeni" 
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -314,12 +314,12 @@ units = {
 			name_order = 25
 		}
 		location = 947
-		division_template = "Piyade Tümeni" 
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
-	
+
 	division = {
 		#name = "25. Piyade Tümeni"
 		division_name = {    # New syntax for compatibility with name lists
@@ -327,12 +327,12 @@ units = {
 			name_order = 26
 		}
 		location = 6923
-		division_template = "Piyade Tümeni" 
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
-	
+
 	division = {
 		#name = "25. Piyade Tümeni"
 		division_name = {    # New syntax for compatibility with name lists
@@ -340,12 +340,12 @@ units = {
 			name_order = 27
 		}
 		location = 6990
-		division_template = "Piyade Tümeni" 
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
-	
+
 	division = {
 		#name = "25. Piyade Tümeni"
 		division_name = {    # New syntax for compatibility with name lists
@@ -353,7 +353,7 @@ units = {
 			name_order = 28
 		}
 		location = 9919
-		division_template = "Piyade Tümeni" 
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -368,7 +368,7 @@ units = {
 			name_order = 2
 		}
 		location = 4512
-		division_template = "Piyade Tümeni" 
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -380,7 +380,7 @@ units = {
 			name_order = 10
 		}
 		location = 4512
-		division_template = "Piyade Tümeni" 
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -393,7 +393,7 @@ units = {
 			name_order = 12
 		}
 		location = 11881
-		division_template = "Piyade Tümeni" 
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -405,7 +405,7 @@ units = {
 			name_order = 15
 		}
 		location = 11881
-		division_template = "Piyade Tümeni" 
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -418,7 +418,7 @@ units = {
 			name_order = 3
 		}
 		location = 10403
-		division_template = "Piyade Tümeni" 
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -430,7 +430,7 @@ units = {
 			name_order = 9
 		}
 		location = 10472
-		division_template = "Piyade Tümeni" 
+		division_template = "Piyade Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -442,7 +442,7 @@ units = {
 			name_order = 1
 		}
 		location = 10472
-		division_template = "Süvari Tümeni" 
+		division_template = "Süvari Tümeni"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -454,15 +454,15 @@ units = {
 ### Air Wings ###
 air_wings = {
 	##### Türk Hava Kuvvetleri #####
-	341 = { 
+	341 = {
 		# 1. Havacilik Alay -- Curtiss F11C Hawk II fighters (technically CAG fighters)
 		fighter_equipment_0 = {
-			owner = "TUR" 
+			owner = "TUR"
 			amount = 45
 		}
 		# 2. Havacilik Alay -- Letov S.16T light bombers
 		CAS_equipment_1 = {
-			owner = "TUR" 
+			owner = "TUR"
 			amount = 16
 		}
 	}

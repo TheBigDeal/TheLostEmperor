@@ -118,7 +118,7 @@ HEJ = {
 	set_popularities = {
 		conservatism = 5
 		liberalism = 5
-		socialism = 5 
+		socialism = 5
 		labryscism = 11
 		rexism = 0
 		despotism = 5
@@ -238,13 +238,13 @@ NEJ = {
 }
 
 ASW = {
-	set_politics = {	
+	set_politics = {
 		ruling_party = despotism
 		last_election = "1920.3.5"
 		election_frequency = 48
 		elections_allowed = no
 	}
-	
+
 	set_popularities = {
 		theocracy = 5
 		absolutism = 10
@@ -255,7 +255,7 @@ ASW = {
 }
 
 BHN = {
-    set_politics = {	
+    set_politics = {
 		ruling_party = despotism
   		last_election = "1933.3.5"
   		election_frequency = 48
@@ -268,6 +268,12 @@ BHN = {
 }
 
 MAC = {
+	declare_war_on = { target = TUR type = annex_everything }
+}
+JOR = {
+	declare_war_on = { target = TUR type = annex_everything }
+}
+LEV = {
 	declare_war_on = { target = TUR type = annex_everything }
 }
 
