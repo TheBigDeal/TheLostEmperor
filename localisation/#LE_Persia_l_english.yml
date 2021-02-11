@@ -7,8 +7,8 @@
  PER_crackdown_on_nationalists_desc:0 ""
  PER_strip_down_mazandaran:0 "Strip Down Mazandaran"
  PER_strip_down_mazandaran_desc:0 ""
- PER_a_quality_standard:0 "A Quality Standard"
- PER_a_quality_standard_desc:0 ""
+ PER_promote_general_democracy:0 "Promote General Democracy"
+ PER_promote_general_democracy_desc:0 ""
  PER_shah_dies:0 "Death of the Unifier"
  PER_shah_dies_desc:0 ""
  PER_centralize_the_state:0 "Centralize the State"
@@ -27,6 +27,13 @@ autonomy_emirate:0 "Emirate"
 PER_unifier_died:0 "Death of the Unifier"
 le_persia.1.t:0 "Death of the Unifier"
 le_persia.1.a:0 "A new era has begun."
+
+le_persia.2.t:0 "General unrest in the country!"
+le_persia.2.a:0 "Denounce Ulema and Sattarists!"
+le_persia.2.b:0 "Vatanists are truly the trouble!"
+le_persia.2.c:0 "Eliminating the Arabs is our only choice!"
+PER_invading_ahvaz_tt:0 "Declaring War on Ahvaz may be costly and reputation-tarnishing, but it may be the only key to resist the protests."
+
 
 ### Ideas ###
  PER_crumbling_bureaucracy:0 "Crumbling Bureaucracy"

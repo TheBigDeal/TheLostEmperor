@@ -6,7 +6,17 @@ country = {
 	PER_crumbling_bureaucracy = {
 		picture = Hungarian_Monarchy
 		modifier = {
+			stability_factor = -0.15
+			political_power_factor = -0.5
+			research_speed_factor  = -0.2
+			political_advisor_cost_factor  = -0.5
+		}
+	}
+	PER_crumbling_bureaucracy_2 = {
+		picture = Hungarian_Monarchy
+		modifier = {
 			stability_weekly = -0.01
+			stability_factor = -0.2
 			political_power_factor = -0.5
 			research_speed_factor  = -0.2
 			political_advisor_cost_factor  = -0.5
@@ -15,7 +25,7 @@ country = {
 	PER_fractured_religious_unity = {
 		picture = Hungarian_Monarchy
 		modifier = {
-			
+			#idk
 		}
 	}
 	PER_army_of_the_conqueror = {
