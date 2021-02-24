@@ -1,0 +1,10 @@
+focus_tree = {
+	id = swedish_focus_rightwing
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = SWE
+		}
+	}
+}

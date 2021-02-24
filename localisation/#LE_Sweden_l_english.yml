@@ -1,8 +1,13 @@
 ﻿l_english: 
 
 # Sweden
- ### Political Parties ###
+
+ ##Focus Trees##
+ swedish_focus:0 "The Kingdom of Swedens Focus Tree"
+ LE_Sweden_rightwing:0 "The way to Swedish glory"
+ ### Political ###
  
+ ## Parties ##
   SWE_mutualism_party:0 ""
   SWE_collectivism_party:0 "Sveriges Kommunistiska Parti"
   SWE_proletarianism_party:0 "Det Svenska Kommunistiska Partiet"
@@ -12,11 +17,52 @@
   SWE_conservatism_party:0 "Allmänna valmansförbundet"
   SWE_liberalism_party:0 "Det Socialdemokratiska Vänsterpartiet"
   SWE_socialism_party:0 "Socialdemokratiska Vänsterpartiet"
-  SWE_labryscism_party:0 "NSAP"
+  SWE_labryscism_party:0 "National Socialistiska Arbetare Partiet"
   SWE_rexism_party:0 "Järnhanden"
-  SWE_despotism_party:0 "NSAP"
+  SWE_despotism_party:0 "Svensk Socialistisk Samling"
+  
+  ## guys n gals ##
+  
+  SWE_Gustaf_V:0 "Gustaf den femte"
+  SWE_Gustaf_V_2:0 "Gustaf den femte"
+  SWE_sven_olov_lindholm:0 "Sven Olov Lindholm"
+  SWE_sven_olov_lindholm_2:0 "Sven Olov Lindholm"
+  SWE_Royal_Cabinet:0 "The Royal Cabinet"
+  SWE_Royal_Cabinet_2:0"The Royal Advisory Body"
+  SWE_birger_furugard:0 "Birger Furugård"
+  SWE_arne_forssell:0 "Arne Forssell"
+  SWE_royal_guard:0 "Högvakten"
+  
+  ##Assigned Thingos##
+  
+  constitutional_monarch:0 "Constitutional Monarch"
+  sins_of_the_father:0 "His Majesty's Iron Fist"
+  Imperial_Connections:0 "The Royalist Advisors"
+  
   
   ###National spirits###
+  
+  ##ASS##
+  Shell_0:0 "An empty shell"
+  Shell_1:0 "A half filled shell"
+  Shell_2:0 "An overflowing shell"
+  Shell_3:0 "An overflowing shell"
+  Shell_4:0 "An overflowing shell"
+  Shell_5:0 "An overflowing shell"
+  Shell_6:0 "An overflowing shell"
+  Shell_7:0 "An overflowing shell"
+  Shell_8:0 "A filled shell"
+  Shell_9:0 "A filled shell"
+  Shell_10:0 "A filled shell"
+  Shell_11:0 "An overflowing shell"
+  Shell_12:0 "An overflowing shell"
+  Shell_13:0 "An overflowing shell"
+  Shell_14:0 "An overflowing shell"
+  Shell_15:0 "An overflowing shell"
+  Shell_16:0 "An overflowing shell"
+  Shell_17:0 "A filled shell"
+  Shell_18:0 "A filled shell"
+  Shell_19:0 "A filled shell"
   
   ##Starting##
   
@@ -30,13 +76,16 @@
   
   ##Gained##
   
-  ### Focuses ###
+  SWE_traditional_values:0 "Traditional Values of the People"
+  
+  ### Focuses of the first focus tree ###
   
   ##Russia Revolutiona##
   
   
   
   ##PP Traditional##
+  
   tradition_values:0 "Traditional Values"
   tradition_values_desc:0 " As we have been, we shall be, for as long as this time of trial is upon us. The people of the north, the inhabitands of our empire, shall believe in the traditional values we gained through its creation"
   new_glory:0 "New times, New glory"
@@ -56,7 +105,7 @@
 
   ## Buildup ##
 
-  peacetime_buildup:0 "A filling shell"
+  peacetime_buildup:0 "A shell to fill"
   peacetime_buildup_desc:0 "We are to start a massive peacetime buildup, by seeking out the things we lack and filling a shell to erase those gaps"
   
   stockholm_armouries:0 "The Stockholm Arsenals"
@@ -96,7 +145,7 @@
   nationalize_industry:0 " A nationalized industry"
   nationalize_industry_desc:0 "To finally fix the employment chrisis we must nationalize the industry, and use that to manipulate the industry into a favourable position where we can eliminate the last un-employees"
   
-  #RawrMy#
+  ##RawrMy##
   the_nordic_navy:0 "Northern navy improvements"
   the_nordic_navy_desc:0 "We need to improve our northern navy, if we are to dominate our seas"
   the_baltic_navy:0 "The supreme baltic navy"

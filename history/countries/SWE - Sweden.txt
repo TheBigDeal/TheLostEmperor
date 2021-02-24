@@ -37,6 +37,7 @@ add_ideas = {
 	
 	worker_issues
 	
+	SWE_Gustaf_V
 	
 	#LAWS#
 	
@@ -79,12 +80,12 @@ set_popularities = {
 	proletarianism = 1
     absolutism = 7 
 	royalism = 28
-	conservatism = 5
+	conservatism = 7
 	liberalism = 5
 	socialism = 12
-	labryscism = 11
-	rexism = 19
-	despotism = 4
+	labryscism = 12
+	rexism = 14
+	despotism = 6
 }
     
 
@@ -127,12 +128,8 @@ create_country_leader = {
 	expire = "1950.10.29"
 	ideology = absolutism_ideology
 	traits = {
-		Anti-Communist
-		Anti-Democrat
-		Champion of Peace 4
-		Constitutional Monarch
-		Inexperienced Monarch
-		
+	    Imperialist
+        Disdain_for_Politicians 2		
 	} 
 }
 
@@ -143,11 +140,9 @@ create_country_leader = {
 	expire = "1950.10.29"
 	ideology = royalism_ideology
 	traits = {
-		Anti-Communist
-		Anti-Democrat
-		Champion of Peace 4
-		Constitutional Monarch
-		Inexperienced Monarch
+	    Inexperienced_Imperialist
+		Anti_Communist
+		Champion_of_Peace_4		
 	}
 }
 
@@ -213,7 +208,9 @@ create_country_leader = {
 	expire = "1950.10.29"
 	ideology = rexism_ideology
 	traits = {
-		#
+		Anti_Communist
+		Anti_Democrat
+		Empire_Builder
 	}
 }
 

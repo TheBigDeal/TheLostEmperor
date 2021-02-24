@@ -10,7 +10,7 @@ focus_tree = {
 	
 	Focus = {
 	
-	id = finnish_question
+	id = a_breakdown
 	
 	icon = GFX_focus_secret_rearmament
 	x = 15
@@ -19,7 +19,7 @@ focus_tree = {
 	ai_will_do = { factor = 50 }
 	mutually_exclusive = {}
 	prerequisite = { focus = tradition_values focus = modernisation_priority }
-	required = { focus = finnish_question }
+	required = { focus = a_breakdown }
 	completion_reward = { 
 	  country_event = sweden.1
 	                     
@@ -36,7 +36,7 @@ focus_tree = {
 	cost = 5
 	ai_will_do = { factor = 50 }
 	mutually_exclusive = {}
-	prerequisite = { focus = finnish_question }
+	prerequisite = { focus = a_breakdown }
 	completion_reward = { 
 	  add_political_power = 50
 	                     
@@ -96,7 +96,8 @@ focus_tree = {
 	add_state_claim = 195
 	add_state_claim = 146
 	add_state_claim = 840
-	
+	add_state_claim = 722
+	add_state_claim = 147
 	
 	    }
 	}
@@ -116,11 +117,19 @@ focus_tree = {
 	NOR = { add_opinion_modifier = { target = SWE modifier = large_decrease }}
 	DEN = {add_opinion_modifier = { target = SWE modifier = large_decrease }}
 	add_state_claim = 939
+	add_state_claim = 144
 	add_state_claim = 138
 	add_state_core = 138
+	add_state_claim = 1056
+	add_state_claim = 1057
+	add_state_core = 1056
+	add_state_core = 1057
 	add_state_claim = 1028
 	add_state_claim = 37
 	62 = { add_claim_by = VRP }
+	62 = { add_core_of = VRP }
+	63 = { add_claim_by = VRP }
+	85 = { add_claim_by = VRP }
 	872 = { add_claim_by = VRP }
 	
 	    }
@@ -138,7 +147,7 @@ focus_tree = {
 	mutually_exclusive = { focus = national_ministers focus = elected_ministers }
 	prerequisite = { focus = old_glory }
 	completion_reward = {
-	add_political_power = 50
+	add_ideas = { SWE_Royal_Cabinet SWE_royal_guard }
 	
 	
 	    }
@@ -156,7 +165,7 @@ focus_tree = {
 	mutually_exclusive = { focus = national_ministers focus = kings_ministers}
 	prerequisite = { focus = new_glory focus = old_glory }
 	completion_reward = {
-	add_political_power = 50
+	add_political_power = 300
 	
 	
 	    }
@@ -174,7 +183,7 @@ focus_tree = {
 	mutually_exclusive = { focus = kings_ministers focus = elected_ministers }
 	prerequisite = { focus = new_glory }
 	completion_reward = {
-	add_political_power = 50
+	add_ideas = { SWE_sven_olov_lindholm_2 SWE_arne_forssell SWE_birger_furugard }
 	
 	
 	    }
@@ -401,11 +410,11 @@ focus_tree = {
 	
 	x = 32
 	y = 9
-	cost = 3
+	cost = 5
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = military_industry }
 	completion_reward = {
-	add_political_power = 50
+	add_ideas = Shell_0
 	
 	
 	    }
@@ -418,7 +427,7 @@ focus_tree = {
 	icon = GFX_goal_generic_construct_naval_dockyard
 	x = 34
 	y = 10
-	cost = 1
+	cost = 4
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = peacetime_buildup }
 	mutually_exclusive = { focus = stockholm_armouries focus = increase_morale }
@@ -440,7 +449,7 @@ focus_tree = {
 	icon = GFX_goal_generic_navy_battleship
 	x = 34
 	y = 11
-	cost = 1
+	cost = 4
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = gothenburg_dockyards focus = increase_morale }
 	mutually_exclusive = { focus = work_ethics focus = minor_streamlining}
@@ -463,7 +472,7 @@ focus_tree = {
 	icon = GFX_goal_generic_air_fighter
 	x = 34
 	y = 12
-	cost = 1
+	cost = 4
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = navy_production_focus focus = work_ethics }
 	mutually_exclusive = { focus = worker_codes focus = expand_airbases }
@@ -499,7 +508,7 @@ focus_tree = {
 	icon = GFX_goal_generic_construct_mil_factory
 	x = 30
 	y = 10
-	cost = 1
+	cost = 4
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = peacetime_buildup }
 	mutually_exclusive = { focus = increase_morale focus = gothenburg_dockyards }
@@ -530,7 +539,7 @@ focus_tree = {
 	icon = GFX_goal_generic_build_tank
 	x = 30
 	y = 11
-	cost = 1
+	cost = 4
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = stockholm_armouries focus = increase_morale}
 	mutually_exclusive = { focus = work_ethics focus = navy_production_focus }
@@ -554,7 +563,7 @@ focus_tree = {
 	
 	x = 30
 	y = 12
-	cost = 1
+	cost = 4
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = minor_streamlining focus = work_ethics }
 	mutually_exclusive = { focus = worker_codes focus = smoland_air_research }
@@ -574,7 +583,7 @@ focus_tree = {
 	icon = GFX_goal_generic_major_alliance
 	x = 32
 	y = 10
-	cost = 1
+	cost = 4
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = peacetime_buildup }
 	mutually_exclusive = { focus = stockholm_armouries focus = gothenburg_dockyards }
@@ -592,7 +601,7 @@ focus_tree = {
 	icon = GFX_goal_generic_improve_relations
 	x = 32
 	y = 11
-	cost = 1
+	cost = 4
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = increase_morale focus = stockholm_armouries focus = gothenburg_dockyards }
 	mutually_exclusive = { focus = navy_production_focus focus = minor_streamlining}
@@ -615,7 +624,7 @@ focus_tree = {
 	icon = GFX_goal_generic_intelligence_exchange
 	x = 32
 	y = 12
-	cost = 1
+	cost = 4
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = work_ethics focus = minor_streamlining focus = navy_production_focus}
 	mutually_exclusive = { focus = smoland_air_research focus = expand_airbases}
@@ -663,7 +672,7 @@ focus_tree = {
 	prerequisite = { focus = political_workplaces }
 	prerequisite = { focus = factory_advancements }
 	completion_reward = {
-	add_political_power = 50
+	load_focus_tree = LE_Sweden_rightwing
 	
 	
 	    }

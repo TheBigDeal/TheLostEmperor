@@ -80,7 +80,13 @@ ideas = {
 			
 			}
 		}
+	Shell_0 = {
+			picture = generic_spy_intel	
+			modifier = {
 			
+			}
+		}
+	
 	Shell_17 = {
 			picture = generic_spy_intel	
 			modifier = {
@@ -328,42 +334,167 @@ ideas = {
 		
 	
 	}
-
-	political_advisor = {
-
-		SWE_thorwald_bergquist = {
-
-			picture = generic_political_advisor_europe_5
-			
-			visible = {
-				original_tag = SWE
+	###GOUVERNMENT###
+    
+	head_of_government = {
+	
+        SWE_Gustaf_V = {
+            picture = generic_political_advisor_europe_2
+            visible = {
+            original_tag = SWE
+            }
+			is_locked = yes
+            traits = { }
+            ai_will_do = {
+                factor = 1
+            }
+			cost = 150
+		}
+		SWE_sven_olov_lindholm = {
+            picture = generic_political_advisor_europe_3
+            visible = {
+            original_tag = SWE
+            }
+			available = {
+			Has_government = labrycism
+			Has_government = despotism
+			}
+            traits = { }
+            ai_will_do = {
+                factor = 1
+            }
+			cost = 150
+		}
+		
+    }
+    secondary_head = {
+	
+        SWE_Gustaf_V_2 = {
+            picture = generic_political_advisor_europe_2
+            visible = {
+            NOT = { Has_government  = royalism }
+			NOT = { Has_government  = absolutism }
+			original_tag = SWE
+            }
+			is_locked = yes
+            traits = { Constitutional_Monarch }
+            ai_will_do = {
+                factor = 1
+            }
+			cost = 150
+		}
+		SWE_Royal_Cabinet = {
+            picture = Gustav.dds
+            visible = {
+            Has_government  = royalism 
+			original_tag = SWE
+            }
+			available = {
+			Has_completed_focus = elected_ministers 
+			Has_completed_focus = kings_ministers
+			}
+            traits = { Imperial_Connections }
+            ai_will_do = {
+                factor = 1
+            }
+			cost = 150
+		}
+		SWE_Royal_Cabinet_2 = {
+            picture = Gustav.dds
+            visible = {
+            NOT = { Has_government  = royalism }
+			original_tag = SWE
+            }
+			available = {
+			Has_government = absolutism
+			has_government = rexism
+			}
+            traits = { Sins_of_the_Father }
+            ai_will_do = {
+                factor = 1
+            }
+			cost = 150
+		}
+		SWE_sven_olov_lindholm_2 = {
+            picture = generic_political_advisor_europe_3
+            visible = {
+            original_tag = SWE
+            }
+			available = {
+			Has_completed_focus = elected_ministers 
+			Has_completed_focus = national_ministers
 			}
 			
-			traits = { compassionate_gentleman }
+            traits = { Fascist_Demagogue }
+            ai_will_do = {
+                factor = 1
+            }
+			cost = 150
 		}
-
-		SWE_osten_unden = {
-
-			picture = generic_political_advisor_europe_2
-
-			visible = {
-				original_tag = SWE
+    }
+    foreign_minister = {
+	
+        SWE_arne_forssell = {
+            picture = generic_political_advisor_europe_4
+            visible = {
+                original_tag = SWE
+            }
+			available = {
+			Has_completed_focus = elected_ministers 
+			Has_completed_focus = national_ministers
 			}
-			
-			traits = { silent_workhorse }
-		}
-
-		SWE_ernst_wigforss = {
-
-			picture = generic_political_advisor_europe_3
-			
-			visible = {
-				original_tag = SWE
+            traits = { Fascist_Sympathies }
+            ai_will_do = {
+                factor = 1
+            }
+			cost = 150
+        }
+		
+		
+    }
+    defence_minister = {
+	
+        SWE_birger_furugard = {
+            picture = generic_political_advisor_europe_5
+            visible = {
+                original_tag = SWE
+            }
+			available = {
+			Has_completed_focus = elected_ministers 
+			Has_completed_focus = national_ministers
 			}
-			
-			traits = { captain_of_industry }
-		}
-	}
+            traits = { Fascist_Militia_Leader }
+            ai_will_do = {
+                factor = 1
+            }
+			cost = 150
+        }
+		SWE_royal_guard = {
+            picture = generic_political_advisor_europe
+            visible = {
+                original_tag = SWE
+            }
+			available = {
+			Has_completed_focus = elected_ministers 
+			Has_completed_focus = kings_ministers
+			}
+            traits = { Hawk }
+            ai_will_do = {
+                factor = 1
+            }
+			cost = 150
+        }
+    }
+    economy_minister = {
+         
+    }
+    security_minister = {
+
+    }
+    intel_minister = {
+
+    }
+
 
 	theorist = {
 
@@ -383,7 +514,7 @@ ideas = {
 			traits = { military_theorist }
 		}
 
-		SWE_erik_palMEKierna = {
+		SWE_erik_palierna = {
 					
 					
 			visible = {
@@ -398,414 +529,5 @@ ideas = {
 			
 			traits = { naval_theorist }
 		}
-	}
-	# MILITARY
-	army_chief = {
-
-		SWE_olof_thornell = {
-			
-			picture = generic_army_europe_5
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { army_chief_old_guard }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_ivar_holmquist = {
-			
-			picture = generic_army_europe_1
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { army_chief_organizational_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_per_sylvan = {
-			
-			picture = generic_army_europe_6
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { army_chief_defensive_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_oscar_nygren = {
-			
-			picture = generic_army_europe_3
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { army_chief_drill_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	air_chief = {
-		
-
-		SWE_bengt_nordenskiold = {
-			
-			picture = generic_air_europe_3
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_torsten_friis = {
-			
-			picture = generic_air_europe_3
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { air_chief_all_weather_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-	}
-
-	navy_chief = {
-
-		SWE_gosta_ehrensvard = {
-			
-			picture = generic_navy_europe_2
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { navy_chief_commerce_raiding_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_fabian_tamm = {
-			
-			picture = generic_navy_europe_1
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { navy_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_charles_de_champs = {
-			
-			picture = generic_navy_europe_2
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { navy_chief_decisive_battle_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-	}
-
-	high_command = {
-
-		SWE_axel_rappe = {
-			
-			picture = generic_army_europe_1
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { army_artillery_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	
-		SWE_archibald_douglas = {
-			
-			picture = generic_army_europe_2
-
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_axel_ljungdahl = {
-			
-			picture = generic_air_europe_2
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { air_bomber_interception_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_helge_stromback = {
-			
-			picture = generic_navy_europe_2
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { navy_fleet_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	tank_manufacturer = { 
-		
-		designer = yes
-		
-		landsverk = {
-			
-			picture = generic_tank_manufacturer_2
-
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-			research_bonus = {
-				armor = 0.10
-			}
-			
-			traits = { tank_manufacturer }
-			
-			modifier = {
-				# notable tanks L-120 and L-60, lighter tanks as well as the medium tank Stridsvagn m/42, that was mobile and well protected.
-			}
-		}
-
-	}
-	
-	naval_manufacturer = { 
-			
-		designer = yes
-		
-		marinvarkstaderna = { #Karlskrona
-			
-			picture = generic_naval_manufacturer_1
-
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			equipment_bonus = {
-				# mer research
-			}
-			
-			traits = { coastal_defence_naval_manufacturer }
-			
-			modifier = {
-			}
-		}
-
-		gotaverken = {
-			
-			picture = generic_naval_manufacturer_2
-
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			equipment_bonus = {
-				# worlds biggest shipyard by launched gross tonnes
-			}
-			
-			traits = { atlantic_fleet_naval_manufacturer }
-			
-			modifier = {
-			}
-		}
-
-		kockums = {
-			
-			picture = generic_naval_manufacturer_3
-
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			 
-			equipment_bonus = {
-				# submarines and battleships
-			}
-			
-			traits = { raiding_fleet_naval_manufacturer }
-			
-			modifier = {
-			}
-		}
-	}
-
-
-	materiel_manufacturer = {
-		
-		designer = yes
-	
-		bofors = {
-			
-			picture = generic_artillery_manufacturer_1
-
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-			research_bonus = {
-				artillery = 0.10
-			}
-			
-			equipment_bonus = {
-				artillery = {
-					reliability = 0.20
-				}
-			}
-			
-			traits = { artillery_manufacturer }
-			
-			modifier = {
-			}
-		}
-	
-		husqvarna = {
-			
-			picture = generic_infantry_equipment_manufacturer_2
-
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-			research_bonus = {
-				infantry_weapons = 0.10
-			}
-			
-			equipment_bonus = {
-				# rifles and pistols
-			}
-			
-			traits = { infantry_equipment_manufacturer }
-			
-			modifier = {
-			}
-		}
-		scania = {
-			
-
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-			research_bonus = {
-				motorized_equipment = 0.10
-			}
-			
-			traits = { motorized_equipment_manufacturer }
-			
-			modifier = {
-				# more info
-			}
-		}
-		
-	}
+	}	
 }
