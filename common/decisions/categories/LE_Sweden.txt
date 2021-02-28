@@ -1,0 +1,15 @@
+############################
+##### SWEDISH KINGDOM ######
+############################
+
+category_swedish_russia = {
+    icon = idea_collectivism
+	picture = GFX_british_parlament
+	priority = 2
+	allowed = {
+	original_tag = SWE
+	}
+	visible = {
+	has_completed_focus = invite_lithuania
+	}
+}

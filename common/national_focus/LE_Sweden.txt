@@ -10,7 +10,7 @@ focus_tree = {
 	
 	Focus = {
 	
-	id = a_breakdown
+	id = prepare_for_breakdown
 	
 	icon = GFX_focus_secret_rearmament
 	x = 15
@@ -19,29 +19,178 @@ focus_tree = {
 	ai_will_do = { factor = 50 }
 	mutually_exclusive = {}
 	prerequisite = { focus = tradition_values focus = modernisation_priority }
-	required = { focus = a_breakdown }
+	required = { focus =  }
 	completion_reward = { 
-	  country_event = sweden.1
 	                     
 	    }
 	}
 	
 	Focus = {
 	
-	id = russian_breakdown
+	id = invite_lithuania
 	
-	icon = GFX_focus_ger_oppose_hitler
+	icon = GFX_befriend_lithuania
 	x = 15
 	y = 4
 	cost = 5
 	ai_will_do = { factor = 50 }
+	        allow_branch = {
+			OR = {
+                has_completed_focus = old_glory
+				is_debug = yes
+				}
+			}
 	mutually_exclusive = {}
-	prerequisite = { focus = a_breakdown }
+	prerequisite = { focus = prepare_for_breakdown }
 	completion_reward = { 
-	  add_political_power = 50
+	 LIT = { country_event = { id = le_SWE.10 } }
 	                     
 	    }
 	}
+	
+		Focus = {
+	
+	id = annex_riga
+	
+	icon = GFX_goal_generic_occupy_states_ongoing_war
+	x = 0
+	y = 1
+	cost = 5
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = {}
+	prerequisite = { focus = invite_lithuania }
+	relative_position_id = invite_lithuania 
+	completion_reward = { 
+	  annex_country = { target = RIG transfer_troops = yes }
+	                     
+	    }
+	}
+	
+		Focus = {
+	
+	id = prepare_for_livonia
+	
+	icon = GFX_focus_ger_oppose_hitler
+	x = 2
+	y = 2
+	cost = 5
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = {}
+	prerequisite = { focus = invite_lithuania }
+	relative_position_id = invite_lithuania 
+	completion_reward = { 
+	  set_country_flag = prepare_for_livonia
+	  custom_effect_tooltip = livonia_expand  
+	    }
+	}
+	Focus = {
+	
+	id = integrate_new_livonia
+	
+	icon = GFX_focus_ger_oppose_hitler
+	x = 2
+	y = 5
+	cost = 5
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = {}
+	prerequisite = { focus = prepare_for_livonia }
+	prerequisite = { focus = a_breakdown }
+	relative_position_id = invite_lithuania 
+	completion_reward = {
+      custom_effect_tooltip = livonia_core	
+	  hidden = {
+	  add_state_core = 191
+	  add_state_core = 13
+	  add_state_core = 12
+	  add_state_core = 840
+	  }
+	                     
+	    }
+	}
+	
+			Focus = {
+	
+	id = prepare_for_finland
+	
+	icon = GFX_focus_ger_oppose_hitler
+	x = -2
+	y = 2
+	cost = 5
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = {}
+	prerequisite = { focus = invite_lithuania }
+	relative_position_id = invite_lithuania 
+	completion_reward = { 
+	  set_country_flag = prepare_for_finland
+	  custom_effect_tooltip = finland_expand                       
+	    }
+	}
+	
+	Focus = {
+	
+	id = integrate_new_finland
+	
+	icon = GFX_focus_ger_oppose_hitler
+	x = -2
+	y = 5
+	cost = 5
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = {}
+	prerequisite = { focus = prepare_for_finland }
+	prerequisite = { focus = a_breakdown }
+	relative_position_id = invite_lithuania 
+	completion_reward = { 
+	custom_effect_tooltip = finland_core	
+	hidden = {
+    add_state_core = 146
+	add_state_core = 147
+	add_state_core = 722
+	}
+	                     
+	    }
+	}
+	
+	Focus = {
+	
+	id = a_breakdown
+	
+	icon = GFX_focus_generic_provoke_border_clashes
+	x = 0
+	y = 3
+	cost = 0
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = {}
+	prerequisite = { focus = invite_lithuania }
+	Available = { has_global_flag = Russian_Civil_War }
+	bypass = { has_global_flag = Russian_Civil_War }
+	relative_position_id = invite_lithuania
+	required = { focus =  }
+	completion_reward = { 
+	    custom_effect_tooltip = breakdown_tooltip                 
+	    }
+	}
+	
+	Focus = {
+	
+	id = message_to_the_russians
+	
+	icon = GFX_focus_hol_the_foundations_of_defense
+	x = 0
+	y = 6
+	cost = 5
+	ai_will_do = { factor = 50 }
+	mutually_exclusive = {}
+	prerequisite = { focus = integrate_new_livonia }
+	prerequisite = { focus = a_breakdown  }
+	prerequisite = { focus = integrate_new_finland}
+	relative_position_id = invite_lithuania 
+	required = { focus =  }
+	completion_reward = { 
+	  RUS = { country_event = le_SWE.20 }
+	    }
+	}
+	
+
 	
 	
 	Focus = {
@@ -71,7 +220,6 @@ focus_tree = {
 	mutually_exclusive = { focus = modernisation_priority }
 	completion_reward = { 
 	add_ideas = SWE_traditional_values
-	
 	    }
 	}
 	
@@ -98,7 +246,9 @@ focus_tree = {
 	add_state_claim = 840
 	add_state_claim = 722
 	add_state_claim = 147
-	
+	hidden = {
+    country_event = { id = le_SWE.69 }
+	}
 	    }
 	}
 	
@@ -202,7 +352,7 @@ focus_tree = {
 	prerequisite = { focus = national_ministers focus = elected_ministers focus = kings_ministers }
 	completion_reward = {
 	
-	add_timed_idea = {idea = fatherland_buildup days = 380}
+	add_timed_idea = {idea = fatherland_buildup days = 200}
 	
 	    }
 	}
@@ -218,7 +368,27 @@ focus_tree = {
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = the_fatherland_buildup }
 	completion_reward = {
-	add_political_power = 50
+		1041 = {
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+		type = industrial_complex
+		level = 1
+	    }
+    }
+		1042 = {
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+		type = industrial_complex
+		level = 1
+	    }
+    }
+		140 = {
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+		type = industrial_complex
+		level = 2
+	    }
+    }
 	
 	
 	    }
@@ -236,7 +406,17 @@ focus_tree = {
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = civilian_industry }
 	completion_reward = {
-	add_political_power = 50
+	add_tech_bonus = {
+	
+	name = tech_bonus
+	bonus = 0.25
+	uses = 2
+	technology = agriculture2
+	technology = agriculture3
+	technology = engine
+	technology = factory_works
+	
+	}
 	
 	
 	    }
@@ -253,9 +433,19 @@ focus_tree = {
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = civilian_industry }
 	completion_reward = {
-	add_political_power = 50
+	add_popularity = { ideology = collectivism popularity = 0.05 }
+	add_popularity = { ideology = proletarianism popularity = 0.02 }
+	add_popularity = { ideology = royalism popularity = 0.08 }
 	
-	
+			if = { limit = { has_idea = worker_issues }
+				swap_ideas = { remove_idea = worker_issues add_idea = worker_issues_2  }
+			}
+			if = { limit = { has_idea = worker_issues_2 }
+				swap_ideas = { remove_idea = worker_issues_2 add_idea = worker_issues_3  }
+			}
+			if = { limit = { has_idea = worker_issues_3 }
+				swap_ideas = { remove_idea = worker_issues_3 add_idea = worker_issues_4  }
+			}
 	    }
 	}
 	
@@ -271,8 +461,17 @@ focus_tree = {
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = civilian_industry }
 	completion_reward = {
-	add_political_power = 50
+	add_political_power = -75
 	
+	        if = { limit = { has_idea = worker_issues }
+				swap_ideas = { remove_idea = worker_issues add_idea = worker_issues_2  }
+			}
+			if = { limit = { has_idea = worker_issues_2 }
+				swap_ideas = { remove_idea = worker_issues_2 add_idea = worker_issues_3  }
+			}
+			if = { limit = { has_idea = worker_issues_3 }
+				swap_ideas = { remove_idea = worker_issues_3 add_idea = worker_issues_4  }
+			}
 	
 	    }
 	}
@@ -290,8 +489,18 @@ focus_tree = {
 	mutually_exclusive = { focus = nationalize_industry }
 	prerequisite = { focus = encourage_employment }
 	completion_reward = {
-	add_political_power = 50
-	
+	add_political_power = -200
+		    if = { limit = { has_idea = worker_issues }
+				swap_ideas = { remove_idea = worker_issues add_idea = worker_issues_2  }
+			}
+			if = { limit = { has_idea = worker_issues_2 }
+				swap_ideas = { remove_idea = worker_issues_2 add_idea = worker_issues_3  }
+			}
+			if = { limit = { has_idea = worker_issues_3 }
+				swap_ideas = { remove_idea = worker_issues_3 add_idea = worker_issues_4  }
+			}
+	add_popularity = { ideology = collectivism popularity = 0.02 }
+	add_popularity = { ideology = proletarianism popularity = 0.01 }
 	
 	    }
 	}
@@ -309,6 +518,17 @@ focus_tree = {
 	prerequisite = { focus = encourage_employment }
 	completion_reward = {
 	add_political_power = 50
+	add_popularity = { ideology = collectivism popularity = 0.04 }
+	add_popularity = { ideology = proletarianism popularity = 0.02 }
+			if = { limit = { has_idea = worker_issues }
+				swap_ideas = { remove_idea = worker_issues add_idea = worker_issues_2  }
+			}
+			if = { limit = { has_idea = worker_issues_2 }
+				swap_ideas = { remove_idea = worker_issues_2 add_idea = worker_issues_3  }
+			}
+			if = { limit = { has_idea = worker_issues_3 }
+				swap_ideas = { remove_idea = worker_issues_3 add_idea = worker_issues_4  }
+			}
 	
 	
 	    }
@@ -326,7 +546,34 @@ focus_tree = {
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = the_fatherland_buildup }
 	completion_reward = {
-	add_political_power = 50
+			1047 = {
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+		type = arms_factory
+		level = 1
+	    }
+    }
+		1046 = {
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+		type = arms_factory
+		level = 1
+	    }
+    }
+	    1045 = {
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+		type = arms_factory
+		level = 1
+	    }
+    }
+		141 = {
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+		type = arms_factory
+		level = 1
+	    }
+    }
 	
 	
 	    }
@@ -344,7 +591,22 @@ focus_tree = {
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = military_industry }
 	completion_reward = {
-	add_political_power = 50
+		add_tech_bonus = {
+	
+	name = tech_bonus
+	bonus = 0.5
+	uses = 3
+	technology = basic_depth_charges
+	technology = improved_depth_charges
+	technology = sonar
+	technology = improved_sonar
+	technology = basic_ship_hull_cruiser
+	technology = basic_cruiser_armor_scheme
+	technology = basic_ship_hull_heavy
+	technology = magnetic_detonator
+	technology = improved_ship_torpedo_launcher
+	
+	}
 	
 	
 	    }
@@ -361,8 +623,7 @@ focus_tree = {
 	ai_will_do = { factor = 50 }
 	prerequisite = { focus = the_nordic_navy }
 	completion_reward = {
-	add_political_power = 50
-	
+	swap_ideas = { remove_idea = baltic_navy add_idea = baltic_navy_2  }
 	
 	    }
 	}
@@ -379,7 +640,7 @@ focus_tree = {
 	mutually_exclusive = { focus = modern_regiments }
 	prerequisite = { focus = the_baltic_navy }
 	completion_reward = {
-	add_political_power = 50
+	add_ideas = karolinerna
 	
 	
 	    }
@@ -397,7 +658,17 @@ focus_tree = {
 	mutually_exclusive = { focus = caroline_regiments }
 	prerequisite = { focus = the_baltic_navy }
 	completion_reward = {
-	add_political_power = 50
+	
+	add_tech_bonus = {
+	
+	name = tech_bonus
+	bonus = 1
+	uses = 3
+    category = infantry_tech
+	category = land_doctrine
+	category = artillery
+	category = support_tech
+	}
 	
 	
 	    }
@@ -673,6 +944,7 @@ focus_tree = {
 	prerequisite = { focus = factory_advancements }
 	completion_reward = {
 	load_focus_tree = LE_Sweden_rightwing
+	add_research_slot = 1
 	
 	
 	    }

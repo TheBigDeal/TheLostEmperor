@@ -4,10 +4,11 @@ state={
 	name="STATE_846"
 	state_category = city
 	history={
-		owner = BEN
+		owner = SWE
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 4
+			industrial_complex = 2
+			naval_base = 3
 
 		}
 		add_core_of = BEN

@@ -1,0 +1,53 @@
+############################
+##### SWEDISH KINGDOM ######
+############################
+
+category_swedish_russia = {
+    move_on_latvia = {
+	cost = 50
+	icon = GFX_
+	    avalible = {
+	has_manpower > 1000
+	has_completed_focus = prepare_for_livonia
+	}
+	fire_only_once = yes
+		visible = {
+	has_country_flag = prepare_for_livonia
+	}
+	complete_effect = {
+	LAT = { country_event = le_SWE.12 }
+	}
+	}
+	move_on_estonia = {
+	cost = 50
+	icon = GFX_
+		avalible = {
+	has_manpower > 1000
+	has_completed_focus = prepare_for_livonia
+	}
+	fire_only_once = yes
+		visible = {
+	has_country_flag = prepare_for_livonia
+	}
+	complete_effect = {
+	EST = { country_event = le_SWE.14 }
+	}
+	}
+	move_on_finland = {
+	cost = 50
+	icon = GFX_
+		avalible = {
+	has_manpower > 1000
+	has_completed_focus = prepare_for_finland
+	}
+	visible = {
+	has_country_flag = prepare_for_finland
+	}
+	fire_only_once = yes
+	complete_effect = {
+	RUS = { country_event = le_SWE.15 }
+	}
+	}
+	
+
+}

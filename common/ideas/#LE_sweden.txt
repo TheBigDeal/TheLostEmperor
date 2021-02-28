@@ -23,6 +23,18 @@ ideas = {
 		baltic_navy = {
 			picture = liberty_ships_focus	
 			modifier = {
+				experience_gain_navy = 0.01
+				naval_attrition = -0.02
+				naval_damage_factor = 0.02
+				naval_defense_factor = 0.02
+				naval_speed_factor = 0.1
+				naval_retreat_chance = -0.20
+				navy_submarine_attack_factor = -0.3
+			}
+		}
+		baltic_navy_2 = {
+			picture = liberty_ships_focus	
+			modifier = {
 				experience_gain_navy = 0.025
 				experience_gain_navy_unit_factor = 0.05
 				invasion_preparation = -0.2
@@ -42,33 +54,54 @@ ideas = {
             production_speed_buildings_factor = -0.15
 			industrial_capacity_factory = -0.2
 			industrial_capacity_dockyard = -0.1
-			consumer_goods_factor = 0.1
+			consumer_goods_factor = 0.12
 			conversion_cost_civ_to_mil_factor = 0.1
 			conversion_cost_mil_to_civ_factor = 0.1
 			}
 		}
 		
 		worker_issues_2 = {
-			
-			visible = {
-				always = no
-			}
-
-			allowed_civil_war = {
-
-			}
-
-			removal_cost = -1
-
 			picture = generic_production_bonus
-			
 			modifier = {
             production_speed_buildings_factor = -0.10
 			industrial_capacity_factory = -0.15
+			industrial_capacity_dockyard = -0.08
+			consumer_goods_factor = 0.1
+			conversion_cost_civ_to_mil_factor = 0.08
+			conversion_cost_mil_to_civ_factor = 0.08
+			}
+		}
+		worker_issues_3 = {
+			picture = generic_production_bonus
+			modifier = {
+            production_speed_buildings_factor = -0.07
+			industrial_capacity_factory = -0.10
 			industrial_capacity_dockyard = -0.06
-			consumer_goods_factor = 0.06
+			consumer_goods_factor = 0.09
 			conversion_cost_civ_to_mil_factor = 0.06
 			conversion_cost_mil_to_civ_factor = 0.06
+			}
+		}
+		worker_issues_4 = {
+			picture = generic_production_bonus
+			modifier = {
+            production_speed_buildings_factor = -0.0.05
+			industrial_capacity_factory = -0.07
+			industrial_capacity_dockyard = -0.04
+			consumer_goods_factor = 0.07
+			conversion_cost_civ_to_mil_factor = 0.04
+			conversion_cost_mil_to_civ_factor = 0.04
+			}
+		}
+		worker_issues_5 = {
+			picture = generic_production_bonus
+			modifier = {
+            production_speed_buildings_factor = -0.02
+			industrial_capacity_factory = -0.04
+			industrial_capacity_dockyard = -0.02
+			consumer_goods_factor = 0.05
+			conversion_cost_civ_to_mil_factor = 0.02
+			conversion_cost_mil_to_civ_factor = 0.02
 			}
 		}
 		###ASSHATTERY###
@@ -270,26 +303,10 @@ ideas = {
 		## Gained ##
 		
 		SWE_traditional_values = {
-			
-			visible = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = labrycism
-				has_government = rexism
-				has_government = royalism
-				has_government = absolutism
-			}
-
-			removal_cost = -1
-
 			picture = british_stoicism
-			
 			modifier = {
 				political_power_gain = 0.1
 				stability_factor = -0.1
-				
 				royalism_drift = 0.025
 				royalism_acceptance = 50
 				absolutism_drift = 0.025
@@ -305,30 +322,25 @@ ideas = {
 		}
 		
 				fatherland_buildup = {
-			
-			visible = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = labrycism
-				has_government = rexism
-				has_government = royalism
-				has_government = absolutism
-			}
-
-			removal_cost = -1
-
 			picture = british_stoicism
-			
 			modifier = {
-            
 			production_speed_buildings_factor = 0.17
 			industrial_capacity_factory = 0.3
 			industrial_capacity_dockyard = 0.15
 			consumer_goods_factor = -0.15
 			
 			
+			}
+		}
+				karolinerna = {
+			picture = british_stoicism	
+			modifier = {
+            acclimatization_cold_climate_gain_factor = 0.2
+			army_infantry_attack_factor = 0.05
+			army_infantry_defence_factor = 0.05
+			army_infantry_speed_factor = 0.05
+			army_morale_factor = 0.15
+			army_org_regain = 0.15
 			}
 		}
 		
