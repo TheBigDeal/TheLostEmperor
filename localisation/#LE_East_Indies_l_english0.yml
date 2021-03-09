@@ -1,6 +1,7 @@
 ﻿l_english:
 ### Country Names
  EIC:0 "East India Company"
+ EIC_DEF:0 "East India Company"
  EIC_ADJ:0 "British Indian"
 
 ### Political Parties ###
@@ -40,6 +41,7 @@
  EIC_high_illiteracy:0 "High Illiteracy"
  EIC_british_dependence:0 "British Dependence"
  EIC_independent_operations:0 "Independent Operations"
+ EIC_company_pressure:0 "Company Pressure"
 ### Traits ###
 
 ### Tooltips ###
@@ -56,7 +58,7 @@ EIC_LOWER_MARATHI_AUTONOMY:0 "Lower Marathi Autonomy"
 EIC_CLAIM_THE_HEART_OF_INDIA:0 "Claim The Heart Of India"
 EIC_SECOND_ANGLO_BURMESE_WAR:0 "Second Anglo-Burmese War"
 EIC_ULTIMATUM_TO_THE_NEPALI_KING:0 "Ultimatum to The Nepali King"
-EIC_ANNEX_SINDH:0 "Annes Sindh"
+EIC_ANNEX_SINDH:0 "Annex Punjab"
 EIC_CONSOLIDATE_HEGEMONY_OVER_INDIA:0 "Consolidate Hegmony Over India"
 EIC_THE_COUNCIL_OF_MADRAS:0 "The Council Of Madras"
 EIC_RETAKE_BENGAL:0 "Retake Bengal"
@@ -70,4 +72,9 @@ EIC_SUBJUGATE_MERINA:0 "Subjugate Merina"
 EIC_INTERESTS_IN_BALOCHISTAN:0 "Interests In Balochistan"
 EIC_REBUILD_CONQUERED_LANDS:0 "Rebuild Conquered Lands"
 EIC_NEAPOLITAN_ANGLO_TREATY:0 "Neopolitan-Anglo Treaty"
+EIC_INVADE_THE_RAJPUT_STATES:0 "Invade the Rajput States"
 ### Events ###
+le_east_indies.1.t: "East Indies sends an Ultimatum"
+le_east_indies.1.d: ""
+le_east_indies.1.a: "Accept their terms"
+le_east_indies.1.b: "We won't go down without a fight"

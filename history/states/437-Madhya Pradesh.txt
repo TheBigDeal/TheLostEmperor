@@ -9,6 +9,10 @@ state={
 	history={
 		owner = MAR
 		add_core_of = MAR
+		victory_points = { 12080 22 } #Indore
+		victory_points = { 1199 5 } #Ujjain
+		victory_points = { 11995 20 } #Bhopal
+		victory_points = { 5096 1 } #Sagar
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
@@ -18,7 +22,7 @@ state={
 	}
 
 	provinces={
-		1199 1949 2036 2092 2105 4045 4106 4953 5040 5096 7080 10807 10816 11995 12080 12743 12829 
+		1199 1949 2036 2092 2105 4045 4106 4953 5040 5096 7080 10807 10816 11995 12080 12743 12829
 	}
 	manpower=8402500
 	buildings_max_level_factor=1.000

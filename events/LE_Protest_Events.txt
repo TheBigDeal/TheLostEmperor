@@ -1,0 +1,79 @@
+﻿###########################
+# Belarus Events
+###########################
+
+add_namespace = le_protests
+country_event = { #Protestors Killed while dispursing
+	id = le_protests.1
+	title = le_protests.1.t
+	desc = le_protests.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Accept Their Demands
+		name = le_protests.1.a #A new era has begun
+		add_stability = -0.10
+	}
+}
+
+#Protests - Political Parties
+country_event = {
+	id = le_protests.2
+	title = le_protests.2.t
+	desc = le_protests.2.d
+	fire_only_once = no
+	mean_time_to_happen = { days = 200 } #1% per day according to wiki at least, dont question it
+	trigger = {
+		AND = {
+			OR = {
+				has_idea = law_8_supressed
+				has_idea = law_8_allowed
+			}
+			NOT = { has_idea = law_1_confidential_ballots }
+		}
+	}
+	option = { #Accept Their Demands
+		name = le_protests.2.a #A new era has begun
+		if = {
+			limit = { has_idea = law_1_only_underground }
+			add_ideas = law_1_harrassment
+		}
+		else_if = {
+			limit = { has_idea = law_1_harrassment }
+			add_ideas = law_1_gerrymandering
+		}
+		else_if = {
+			limit = { has_idea = law_1_gerrymandering }
+			add_ideas = law_1_open_ballots
+		}
+		else_if = {
+			limit = { has_idea = law_1_open_ballots }
+			add_ideas = law_1_confidential_ballots
+		}
+	}
+	option = { #Ignore the Protests
+		name = le_protests.2.b #A new era has begun
+		add_stability = -0.05
+		random_list = {
+			75 = {
+				country_event = { id = le_protests.2 days = 30 }
+			}
+			25 = {
+
+			}
+		}
+	}
+	option = { #Dispurse The Crowd
+		name = le_protests.2.c #A new era has begun
+		custom_effect_tooltip = protests_suppressed_tt
+		trigger = { has_idea = law_8_suppressed }
+		random_list = {
+			75 = {
+				add_stability = -0.02
+				add_war_support = -0.05
+			}
+			25 = {
+				country_event = { id = le_protests.1 hours = 12 }
+			}
+		}
+	}
+}

@@ -431,7 +431,7 @@
  STATE_430:0 "East Bengal"
  STATE_431:0 "West Bengal"
  STATE_432:0 "Assam"
- STATE_433:0 "Rajahsthan"
+ STATE_433:0 "Jaipur"
  STATE_434:0 "Arunachal Pradesh"
  STATE_435:0 "Bihar"
  STATE_436:0 "Jabalpur"
@@ -1006,3 +1006,6 @@
  STATE_1063:0 "Kabul"
  STATE_1064:0 "Herat"
  STATE_1065:0 "Ladakh"
+
+
+ STATE_1069:0 "Ajmer"

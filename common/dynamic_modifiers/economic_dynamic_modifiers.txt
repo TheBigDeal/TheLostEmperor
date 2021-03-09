@@ -1,0 +1,12 @@
+economy_upper_class_taxes = {
+    enable = { has_country_flag = economy_enabled }
+    stability_factor = economy_upper_class_taxes_dm_stability
+}
+economy_middle_class_taxes = {
+    enable = { has_country_flag = economy_enabled }
+    stability_factor = economy_middle_class_taxes_dm_stability
+}
+economy_lower_class_taxes = {
+    enable = { has_country_flag = economy_enabled }
+    stability_factor = economy_lower_class_taxes_dm_stability
+}

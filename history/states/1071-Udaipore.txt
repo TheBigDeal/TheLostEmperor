@@ -1,0 +1,21 @@
+
+state={
+	id=1071
+	name="STATE_1071"
+
+	history={
+		owner = UDA
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = UDA
+
+	}
+
+	provinces={
+		4149 4971 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

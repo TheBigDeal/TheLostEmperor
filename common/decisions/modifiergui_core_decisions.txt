@@ -1,0 +1,29 @@
+modifiergui_core_decision_category = {
+
+    modifiergui_core_decision_open_menu = {
+
+        visible = {
+            NOT = {
+                has_country_flag = modifiergui_core_guiflag_menu
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = modifiergui_core_guiflag_menu
+        }
+
+    }
+
+    modifiergui_core_decision_close_menu = {
+
+        visible = {
+            has_country_flag = modifiergui_core_guiflag_menu
+        }
+
+        complete_effect = {
+            clr_country_flag = modifiergui_core_guiflag_menu
+        }
+
+    }
+
+}

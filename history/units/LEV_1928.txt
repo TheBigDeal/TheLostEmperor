@@ -34,8 +34,20 @@ units = {
 		start_equipment_factor = 0.2
 	}
 	division = {
+		division_name = {  is_name_ordered = yes name_order = 2 }
+		location = 1086
+		division_template = "Infantry Division"
+		start_equipment_factor = 0.2
+	}
+	division = {
 		division_name = {  is_name_ordered = yes name_order = 3 }
 		location = 4206
+		division_template = "Infantry Division"
+		start_equipment_factor = 0.2
+	}
+	division = {
+		division_name = {  is_name_ordered = yes name_order = 4 }
+		location = 1065
 		division_template = "Infantry Division"
 		start_equipment_factor = 0.2
 	}

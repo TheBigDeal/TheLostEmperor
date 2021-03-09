@@ -23,6 +23,9 @@ scripted_gui = {
 		visible = { always = yes }
 		effects = {
 			economy_button_click = {
+				#Default to Balances
+				set_variable = { selected_economy_tab = 1 }
+				set_variable = { selected_economy_tab2 = 2 }
 				if = {
 					limit = {check_variable = { open_economic_window = 1 }}
 					set_variable = { open_economic_window = 0 }
@@ -32,4 +35,3 @@ scripted_gui = {
 		}
 	}
 }
-

@@ -21,7 +21,10 @@ on_actions = {
 			load_hansa_leader_array = yes
 			load_hansa_member_array = yes
 			load_hansa_colony_array = yes
-
+			if = {
+				limit = { is_ai = no }
+				country_event = { id = le_generic.4 }
+			}
 			every_country = {
 				set_variable = { prestige_score = 0 }
 				set_variable = { infamy_var = 0 }

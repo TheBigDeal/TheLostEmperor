@@ -1,5 +1,5 @@
 #	Example:
-# 
+#
 #	example_dynamic_modifier = {
 #		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
 #		enable = { always = yes } #optional, the modifier won't apply if not enabled
@@ -38,19 +38,19 @@
 
 LE_sunni_radicalism_modifier = {
 	enable = { has_idea = le_religion_sunni }
-	
+
 	labryscism_drift = global.LE_sunni_radicalism_var
 }
 
 LE_shia_radicalism_modifier = {
 	enable = { has_idea = le_religion_shia }
-	
+
     absolutism_drift = global.LE_shia_radicalism_var
 }
 
 LE_ibadi_radicalism_modifier = {
 	enable = { has_idea = le_religion_ibadi }
-	
+
     theocracy_drift = global.LE_ibadi_radicalism_var
 }
 
@@ -65,7 +65,7 @@ LE_tur_rebels_modifier = {
 }
 
 sabotaged_resources = {
-	remove_trigger = { 
+	remove_trigger = {
 		has_resistance = no
 	}
 	icon = GFX_modifiers_sabotaged_resource
@@ -81,7 +81,7 @@ autonomous_state = {
 	enable = { always = yes }
 
 	icon = GFX_modifiers_sabotaged_resource
-	
+
 	recruitable_population_factor = -0.5
 	local_building_slots_factor = -0.25
 	state_resources_factor = -0.25
@@ -92,7 +92,7 @@ semi_autonomous_state = {
 	enable = { always = yes }
 
 	icon = GFX_modifiers_sabotaged_resource
-	
+
 	local_building_slots_factor = -0.25
 	state_resources_factor = -0.25
 	state_production_speed_buildings_factor = -0.25

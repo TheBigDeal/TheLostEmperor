@@ -15,6 +15,48 @@ KAZ = {
 	color = rgb { 202 217 170 }
 	color_ui = rgb { 202 217 170 }
 }
+RAG = {
+	color = rgb { 160 82 128 }
+	color_ui = rgb { 160 82 128 }
+}
+
+
+
+
+
+
+
+JAI = {
+	color = rgb { 196 69 33 }
+	color_ui = rgb { 202 217 170 }
+}
+JOD = {
+	color = rgb { 52 217 40 }
+	color_ui = rgb { 202 217 170 }
+}
+AMR = {
+	color = rgb { 22 21 170 }
+	color_ui = rgb { 202 217 170 }
+}
+SNC = {
+	color = rgb { 88 162 168 }
+	color_ui = rgb { 202 217 170 }
+}
+UDA = {
+	color = rgb { 117 99 84 }
+	color_ui = rgb { 202 217 170 }
+}
+ALW = {
+	color = rgb { 222 247 17 }
+	color_ui = rgb { 202 217 170 }
+}
+
+
+
+
+
+
+
 
 
 

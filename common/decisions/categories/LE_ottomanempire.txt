@@ -16,3 +16,9 @@ tur_subject_liberty_desire = {
 		has_idea = TUR_rebellious_subject_states
 	}
 }
+tur_unrest = {
+	icon = idea_collectivism
+	visible = {
+		tag = TUR
+	}
+}

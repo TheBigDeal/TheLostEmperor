@@ -1,21 +1,26 @@
 ideas = {
 	country = {
-		RAJ_local_chiefdoms = {
+		EIC_local_chiefdoms = {
 			picture = GFX_idea_Prussian_Militarism
 			modifier = {
 				conscription_factor = -0.20
 				stability_factor = -0.10
 			}
 		}
-		RAJ_famine = {
+		EIC_famine = {
 			picture = ENG_the_war_to_end_all_wars
 			modifier = {
 				political_power_factor = -0.25
 				consumer_goods_factor = 0.1
 			}
 		}
-
-		RAJ_a_grand_army = {
+		EIC_company_pressure = {
+			picture = ENG_the_war_to_end_all_wars
+			modifier = {
+				autonomy_gain = -0.2
+			}
+		}
+		EIC_a_grand_army = {
 			picture = GFX_idea_Prussian_Militarism
 			modifier = {
 				army_org = 5
@@ -24,20 +29,20 @@ ideas = {
 			}
 		}
 
-		RAJ_high_illiteracy = {
+		EIC_high_illiteracy = {
 			picture = GFX_idea_Prussian_Militarism
 			modifier = {
 				research_speed_factor = -0.20
 			}
 		}
-		RAJ_independent_operations = {
+		EIC_independent_operations = {
 			picture = GFX_idea_Prussian_Militarism
 			modifier = {
 				political_power_factor = 0.15
 				stability_factor = -0.05
 			}
 		}
-		RAJ_british_dependence = {
+		EIC_british_dependence = {
 			picture = GFX_idea_Prussian_Militarism
 			modifier = {
 				stability_factor = 0.05

@@ -20,93 +20,14 @@ refresh_economy2 = {
 	multiply_variable = { middle_class_population = middle_class_percent }
 	multiply_variable = { lower_class_population = lower_class_percent }
 
-	#Upper Class
-	if = {
-		limit = { has_idea = tax_upper_class_none }
-		set_variable = { upper_class_tax_rate = 0 }
-	}
-	else_if = {
-		limit = { has_idea = tax_upper_class_very_low }
-		set_variable = { upper_class_tax_rate = 0.10 }
-	}
-	else_if = {
-		limit = { has_idea = tax_upper_class_low }
-		set_variable = { upper_class_tax_rate = 0.20 }
-	}
-	else_if = {
-		limit = { has_idea = tax_upper_class_medium }
-		set_variable = { upper_class_tax_rate = 0.30 }
-	}
-	else_if = {
-		limit = { has_idea = tax_upper_class_high }
-		set_variable = { upper_class_tax_rate = 0.40 }
-	}
-	else_if = {
-		limit = { has_idea = tax_upper_class_very_high }
-		set_variable = { upper_class_tax_rate = 0.50 }
-	}
-	else_if = {
-		limit = { has_idea = tax_upper_class_excessive }
-		set_variable = { upper_class_tax_rate = 0.60 }
-	}
-	#Middle Class
-	if = {
-		limit = { has_idea = tax_middle_class_none }
-		set_variable = { middle_class_tax_rate = 0 }
-	}
-	else_if = {
-		limit = { has_idea = tax_middle_class_very_low }
-		set_variable = { middle_class_tax_rate = 0.10 }
-	}
-	else_if = {
-		limit = { has_idea = tax_middle_class_low }
-		set_variable = { middle_class_tax_rate = 0.20 }
-	}
-	else_if = {
-		limit = { has_idea = tax_middle_class_medium }
-		set_variable = { middle_class_tax_rate = 0.30 }
-	}
-	else_if = {
-		limit = { has_idea = tax_middle_class_high }
-		set_variable = { middle_class_tax_rate = 0.40 }
-	}
-	else_if = {
-		limit = { has_idea = tax_middle_class_very_high }
-		set_variable = { middle_class_tax_rate = 0.50 }
-	}
-	else_if = {
-		limit = { has_idea = tax_middle_class_excessive }
-		set_variable = { middle_class_tax_rate = 0.60 }
-	}
-	#Lower Class
-	if = {
-		limit = { has_idea = tax_lower_class_none }
-		set_variable = { lower_class_tax_rate = 0 }
-	}
-	else_if = {
-		limit = { has_idea = tax_lower_class_very_low }
-		set_variable = { lower_class_tax_rate = 0.10 }
-	}
-	else_if = {
-		limit = { has_idea = tax_lower_class_low }
-		set_variable = { lower_class_tax_rate = 0.20 }
-	}
-	else_if = {
-		limit = { has_idea = tax_lower_class_medium }
-		set_variable = { lower_class_tax_rate = 0.30 }
-	}
-	else_if = {
-		limit = { has_idea = tax_lower_class_high }
-		set_variable = { lower_class_tax_rate = 0.40 }
-	}
-	else_if = {
-		limit = { has_idea = tax_lower_class_very_high }
-		set_variable = { lower_class_tax_rate = 0.50 }
-	}
-	else_if = {
-		limit = { has_idea = tax_lower_class_excessive }
-		set_variable = { lower_class_tax_rate = 0.60 }
-	}
+	set_variable = { upper_class_tax_rate = economy_upper_class_taxes_dm }
+	divide_variable = { upper_class_tax_rate = 100 }
+	set_variable = { middle_class_tax_rate = economy_middle_class_taxes_dm }
+	divide_variable = { middle_class_tax_rate = 100 }
+	set_variable = { lower_class_tax_rate = economy_lower_class_taxes_dm }
+	divide_variable = { lower_class_tax_rate = 100 }
+
+
 	set_variable = { upper_class_taxes = upper_class_population }
 	multiply_variable = { upper_class_taxes = upper_class_tax_rate }
 	divide_variable = {  upper_class_taxes = 10 }

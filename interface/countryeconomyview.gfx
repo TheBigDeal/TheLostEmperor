@@ -8,6 +8,10 @@ spriteTypes = {
 		textureFile = "gfx//interface//economy_bar_bg.dds"
 	}
 	spriteType = {
+		name = "GFX_header_bigger_bg"
+		textureFile = "gfx//interface//header_bg_bigger.dds"
+	}
+	spriteType = {
 		name = "GFX_header_ultrawide_bg"
 		textureFile = "gfx//interface//header_ultrawide_bg.dds"
 	}
@@ -15,4 +19,14 @@ spriteTypes = {
 		name = "GFX_button_border_77x31"
 		textureFile = "gfx//interface//Button_Border_77x31.dds"
 	}
+	spriteType = {
+		name = "GFX_counter_bg"
+		textureFile = "gfx//interface//counter_bg.tga"
+	}
+	spriteType = {
+		name = "GFX_pops_small"
+		texturefile = "gfx/interface/pops_small.dds"
+		noOfFrames = 12
+	}
 }
+s

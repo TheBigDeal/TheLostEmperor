@@ -202,6 +202,18 @@
  # Naturalization Immigration
  law_5_naturalization:0 "Immigration: Naturalization"
  LE_immigration_4_tt:0 "§YImmigration: Naturalization§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\n   Monthly Population: §Y+20%§!\n   Encryption Factor: §R-10%§!\n   Enemy Operative Detection Chance: §R-10%§!"
+
+# Immigration
+####################
+ # Closed Borders
+ law_8_allowed:0 "Protests: Allowed"
+ LE_protests_1_tt:0 "§YProtests: Allowed§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\nEnables Protest Events"
+ # Quota Immigration
+ law_8_suppressed:0 "Protests: Suppressed"
+ LE_protests_2_tt:0 "§YProtests: Suppressed§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\nEnables Protest Events\nGives the option to dispurse the Protests."
+ # Open Immigration
+ law_8_not_allowed:0 "Protests: Not Allowed"
+ LE_protests_3_tt:0 "§YProtests: Not Allowed§!\n\nCost (£pol_power)): §R300§!\n\n§YEffects:§!\nDisables Protest Events"
 #UNCATEGORIZED
  military_laws:0 "Military Laws"
  tno_conscription_law:0 "Conscription"

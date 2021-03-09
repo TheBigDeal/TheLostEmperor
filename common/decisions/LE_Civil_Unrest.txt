@@ -1,0 +1,51 @@
+CIVIL_UNREST_CAT = {
+	CAUCASUS_REVOLUTION = { #Caucus Revolts for Ottomans, Persia, And Russia
+		icon = GFX_decision_revolt
+		fire_only_once = yes
+		is_good = no
+		allowed = {
+			AND = {
+				OR = {
+					original_tag = SOV
+					original_tag = RUS
+					original_tag = PER
+					original_tag = TUR
+				}
+				#AND = {
+				#	NOT = { country_exists = GEO }
+				#	NOT = { country_exists = AZR }
+				#	NOT = { country_exists = ARM }
+				#}
+			}
+		}
+		available = {
+      always = no
+    }
+		days_mission_timeout = 160
+		timeout_effect = {
+			RUS = { country_event = { id = le_caucaus.1 } }
+			TUR = { country_event = { id = le_caucaus.2 } }
+			PER = { country_event = { id = le_caucaus.3 } }
+			set_country_flag = SOV_CAUCASUS_REVOLUTION
+		}
+	}
+	SYRIAN_REVOLUTION = { #Syrian Uprising
+		icon = GFX_decision_revolt
+		fire_only_once = yes
+		is_good = no
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+	    NOT = { country_exists = LEV }
+			NOT = { country_exists = JOR }
+    }
+		days_mission_timeout = 70
+		complete_effect = {
+			add_stability = 0.10
+		}
+		timeout_effect = {
+			TUR = { country_event = { id = le_ottoman.1 } }
+		}
+	}
+}

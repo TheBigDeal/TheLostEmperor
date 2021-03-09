@@ -21,7 +21,7 @@ guiTypes = {
 			position = { x= 5 y = -40 }
 			Orientation = "UPPER_LEFT"
 		}
-		
+
 		buttonType = {
 			name = "balances_button"
 			quadTextureSprite = "GFX_tab_intel_ledger"
@@ -64,589 +64,198 @@ guiTypes = {
 			}
 			containerWindowType = {
 				name = "upper_class_taxes"
-				position = { x = 0 y = 0 }
+				position = { x = -40 y = -30 }
 				instantTextboxType = {
 					name = "upper_class_taxes_tx"
-					position = { x = 20 y = 20 }
-					font = "hoi18_mbs"
+					position = { x = 50 y = 52 }
+					font = "vic_22s"
 					text = "Upper Class Taxes"
 					maxWidth = 200
 					maxHeight = 40
 					fixedsize = yes
-					format = left		
+					format = center
 					alwaystransparent = yes
 				}
 				buttonType = {
-					name = "taxes_upper_none"
-					position = { x = 20 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "None"
-					pdx_tooltip = "taxes_upper_none_tt"
-				}
-				iconType = {
-					name ="taxes_upper_none_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 22 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_upper_very_low"
-					position = { x = 97 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Very Low"
-					pdx_tooltip = "taxes_upper_very_low_tt"
-				}
-				iconType = {
-					name ="taxes_upper_very_low_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 99 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_upper_low"
-					position = { x = 174 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Low"
-					pdx_tooltip = "taxes_upper_low_tt"
-				}
-				iconType = {
-					name ="taxes_upper_low_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 176 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_upper_medium"
-					position = { x = 251 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Medium"
-					pdx_tooltip = "taxes_upper_medium_tt"
-				}
-				iconType = {
-					name ="taxes_upper_medium_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 253 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_upper_high"
-					position = { x = 328 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "High"
-					pdx_tooltip = "taxes_upper_high_tt"
-				}
-				iconType = {
-					name ="taxes_upper_high_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 330 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_upper_very_high"
-					position = { x = 405 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Very High"
-					pdx_tooltip = "taxes_upper_very_high_tt"
-				}
-				iconType = {
-					name ="taxes_upper_very_high_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 407 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_upper_excessive"
-					position = { x = 482 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Excessive"
-					pdx_tooltip = "taxes_upper_excessive_tt"
-				}
-				iconType = {
-					name ="taxes_upper_excessive_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 484 y = 42 }
-					alwaystransparent = yes
-				}
+	           name = "upper_class_counter"
+	           position = { x = 100  y = 76 }
+	           quadTextureSprite = "GFX_modifiergui_modifier_var_counter"
+	           buttonText = "[?economy_upper_class_taxes_dm]%"
+	           buttonFont = "vic_36s"
+	           pdx_tooltip = "upper_class_modifer_tt"
+	       }
+	       buttonType = {
+	           name = "upper_class_button_down"
+	           position = { x = 55 y = 76 }
+	           quadTextureSprite = "GFX_modifiergui_modifier_var_button"
+	           buttonText = "modifiergui_core_localisation_downvar"
+	           buttonFont = "vic_36"
+	           pdx_tooltip = "taxes_decrease_tt"
+	       }
+	       buttonType = {
+	           name = "upper_class_button_up"
+	           position = {  x = 195 y = 76 }
+	           quadTextureSprite = "GFX_modifiergui_modifier_var_button"
+	           buttonText = "modifiergui_core_localisation_upvar"
+	           buttonFont = "vic_36"
+	           pdx_tooltip = "taxes_increase_tt"
+	       }
 			}
 			containerWindowType = {
 				name = "middle_class_taxes"
-				position = { x = 0 y = 50 }
+				position = { x = 148 y = -30 }
 				instantTextboxType = {
-					name = "Middle_Class_Taxes_tx"
-					position = { x = 20 y = 20 }
-					font = "hoi18_mbs"
+					name = "middle_class_taxes_tx"
+					position = { x = 50 y = 50 }
+					font = "vic_22s"
 					text = "Middle Class Taxes"
 					maxWidth = 200
 					maxHeight = 40
 					fixedsize = yes
-					format = left		
+					format = center
 					alwaystransparent = yes
 				}
 				buttonType = {
-					name = "taxes_middle_none"
-					position = { x = 20 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "None"
-					pdx_tooltip = "taxes_middle_none_tt"
-				}
-				iconType = {
-					name ="taxes_middle_none_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 22 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_middle_very_low"
-					position = { x = 97 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Very Low"
-					pdx_tooltip = "taxes_middle_very_low_tt"
-				}
-				iconType = {
-					name ="taxes_middle_very_low_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 99 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_middle_low"
-					position = { x = 174 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Low"
-					pdx_tooltip = "taxes_middle_low_tt"
-				}
-				iconType = {
-					name ="taxes_middle_low_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 176 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_middle_medium"
-					position = { x = 251 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Medium"
-					pdx_tooltip = "taxes_middle_medium_tt"
-				}
-				iconType = {
-					name ="taxes_middle_medium_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 253 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_middle_high"
-					position = { x = 328 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "High"
-					pdx_tooltip = "taxes_middle_high_tt"
-				}
-				iconType = {
-					name ="taxes_middle_high_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 330 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_middle_very_high"
-					position = { x = 405 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Very High"
-					pdx_tooltip = "taxes_middle_very_high_tt"
-				}
-				iconType = {
-					name ="taxes_middle_very_high_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 407 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_middle_excessive"
-					position = { x = 482 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Excessive"
-					pdx_tooltip = "taxes_middle_excessive_tt"
-				}
-				iconType = {
-					name ="taxes_middle_excessive_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 484 y = 42 }
-					alwaystransparent = yes
-				}
+	           name = "middle_class_counter"
+	           position = { x = 100  y = 76 }
+	           quadTextureSprite = "GFX_modifiergui_modifier_var_counter"
+	           buttonText = "[?economy_middle_class_taxes_dm]%"
+	           buttonFont = "vic_36s"
+	           pdx_tooltip = "middle_class_modifer_tt"
+	       }
+	       buttonType = {
+	           name = "middle_class_button_down"
+	           position = { x = 55 y = 76 }
+	           quadTextureSprite = "GFX_modifiergui_modifier_var_button"
+	           buttonText = "modifiergui_core_localisation_downvar"
+	           buttonFont = "vic_36"
+	           pdx_tooltip = "taxes_decrease_tt"
+	       }
+	       buttonType = {
+	           name = "middle_class_button_up"
+	           position = {  x = 195 y = 76 }
+	           quadTextureSprite = "GFX_modifiergui_modifier_var_button"
+	           buttonText = "modifiergui_core_localisation_upvar"
+	           buttonFont = "vic_36"
+	           pdx_tooltip = "taxes_increase_tt"
+	       }
 			}
 			containerWindowType = {
 				name = "lower_class_taxes"
-				position = { x = 0 y = 100 }
+				position = { x = 335 y = -30 }
 				instantTextboxType = {
-					name = "Lower_Class_Taxes_tx"
-					position = { x = 20 y = 20 }
-					font = "hoi18_mbs"
+					name = "lower_class_taxes_tx"
+					position = { x = 50 y = 50 }
+					font = "vic_22s"
 					text = "Lower Class Taxes"
 					maxWidth = 200
 					maxHeight = 40
 					fixedsize = yes
-					format = left		
+					format = center
 					alwaystransparent = yes
 				}
 				buttonType = {
-					name = "taxes_lower_none"
-					position = { x = 20 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "None"
-					pdx_tooltip = "taxes_middle_none_tt"
-				}
-				iconType = {
-					name ="taxes_lower_none_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 22 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_lower_very_low"
-					position = { x = 97 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Very Low"
-					pdx_tooltip = "taxes_middle_very_low_tt"
-				}
-				iconType = {
-					name ="taxes_lower_very_low_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 99 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_lower_low"
-					position = { x = 174 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Low"
-					pdx_tooltip = "taxes_middle_low_tt"
-				}
-				iconType = {
-					name ="taxes_lower_low_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 176 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_lower_medium"
-					position = { x = 251 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Medium"
-					pdx_tooltip = "taxes_middle_medium_tt"
-				}
-				iconType = {
-					name ="taxes_lower_medium_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 253 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_lower_high"
-					position = { x = 328 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "High"
-					pdx_tooltip = "taxes_middle_high_tt"
-				}
-				iconType = {
-					name ="taxes_lower_high_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 330 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_lower_very_high"
-					position = { x = 405 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Very High"
-					pdx_tooltip = "taxes_middle_very_high_tt"
-				}
-				iconType = {
-					name ="taxes_lower_very_high_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 407 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_lower_excessive"
-					position = { x = 482 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Excessive"
-					pdx_tooltip = "taxes_middle_excessive_tt"
-				}
-				iconType = {
-					name ="taxes_lower_excessive_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 484 y = 42 }
-					alwaystransparent = yes
-				}
+	           name = "lower_class_counter"
+	           position = { x = 100  y = 76 }
+	           quadTextureSprite = "GFX_modifiergui_modifier_var_counter"
+	           buttonText = "[?economy_lower_class_taxes_dm]%"
+	           buttonFont = "vic_36s"
+	           pdx_tooltip = "lower_class_modifer_tt"
+	       }
+	       buttonType = {
+	           name = "lower_class_button_down"
+	           position = { x = 55 y = 76 }
+	           quadTextureSprite = "GFX_modifiergui_modifier_var_button"
+	           buttonText = "modifiergui_core_localisation_downvar"
+	           buttonFont = "vic_36"
+	           pdx_tooltip = "taxes_decrease_tt"
+	       }
+	       buttonType = {
+	           name = "lower_class_button_up"
+	           position = {  x = 195 y = 76 }
+	           quadTextureSprite = "GFX_modifiergui_modifier_var_button"
+	           buttonText = "modifiergui_core_localisation_upvar"
+	           buttonFont = "vic_36"
+	           pdx_tooltip = "taxes_increase_tt"
+	       }
 			}
 			containerWindowType = {
 				name = "capital_gains_taxes"
-				position = { x = 0 y = 150 }
+				position = { x = 60 y = 60 }
 				instantTextboxType = {
 					name = "capital_gains_taxes_tx"
-					position = { x = 20 y = 20 }
-					font = "hoi18_mbs"
-					text = "Capital Gains Taxes"
+					position = { x = 50 y = 50 }
+					font = "vic_22s"
+					text = "Industrial Taxes"
 					maxWidth = 200
 					maxHeight = 40
 					fixedsize = yes
-					format = left		
+					format = center
 					alwaystransparent = yes
 				}
 				buttonType = {
-					name = "taxes_capital_gains_none"
-					position = { x = 20 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "None"
-				}
-				iconType = {
-					name ="taxes_capital_gains_none_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 22 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_capital_gains_very_low"
-					position = { x = 97 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Very Low"
-				}
-				iconType = {
-					name ="taxes_capital_gains_very_low_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 99 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_capital_gains_low"
-					position = { x = 174 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Low"
-				}
-				iconType = {
-					name ="taxes_capital_gains_low_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 176 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_capital_gains_medium"
-					position = { x = 251 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Medium"
-				}
-				iconType = {
-					name ="taxes_capital_gains_medium_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 253 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_capital_gains_high"
-					position = { x = 328 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "High"
-				}
-				iconType = {
-					name ="taxes_capital_gains_high_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 330 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_capital_gains_very_high"
-					position = { x = 405 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Very High"
-				}
-				iconType = {
-					name ="taxes_capital_gains_very_high_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 407 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "taxes_capital_gains_excessive"
-					position = { x = 482 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Excessive"
-				}
-				iconType = {
-					name ="taxes_capital_gains_excessive_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 484 y = 42 }
-					alwaystransparent = yes
-				}
+	           name = "capital_gains_counter"
+	           position = { x = 100  y = 76 }
+	           quadTextureSprite = "GFX_modifiergui_modifier_var_counter"
+	           buttonText = "[?economy_capital_gains_taxes_dm]%"
+	           buttonFont = "vic_36s"
+	           pdx_tooltip = "capital_gains_modifer_tt"
+	       }
+	       buttonType = {
+	           name = "capital_gains_button_down"
+	           position = { x = 55 y = 76 }
+	           quadTextureSprite = "GFX_modifiergui_modifier_var_button"
+	           buttonText = "<"
+	           buttonFont = "vic_36"
+	           pdx_tooltip = "taxes_decrease_tt"
+	       }
+	       buttonType = {
+	           name = "capital_gains_button_up"
+	           position = {  x = 195 y = 76 }
+	           quadTextureSprite = "GFX_modifiergui_modifier_var_button"
+	           buttonText = ">"
+	           buttonFont = "vic_36"
+	           pdx_tooltip = "taxes_increase_tt"
+	       }
 			}
 			containerWindowType = {
 				name = "tariffs"
-				position = { x = 0 y = 200 }
+				position = { x = 248 y = 60 }
 				instantTextboxType = {
-					name = "tariffs_tx"
-					position = { x = 20 y = 20 }
-					font = "hoi18_mbs"
-					text = "Tariffs"
+					name = "capital_gains_taxes_tx"
+					position = { x = 48 y = 50 }
+					font = "vic_22s"
+					text = "Tarrifs"
 					maxWidth = 200
 					maxHeight = 40
 					fixedsize = yes
-					format = left		
+					format = center
 					alwaystransparent = yes
 				}
 				buttonType = {
-					name = "tariffs_none"
-					position = { x = 20 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "None"
-				}
-				iconType = {
-					name ="tariffs_none_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 22 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "tariffs_very_low"
-					position = { x = 97 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Very Low"
-				}
-				iconType = {
-					name ="tariffs_very_low_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 99 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "tariffs_low"
-					position = { x = 174 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Low"
-				}
-				iconType = {
-					name ="tariffs_low_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 176 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "tariffs_medium"
-					position = { x = 251 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Medium"
-				}
-				iconType = {
-					name ="tariffs_medium_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 253 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "tariffs_high"
-					position = { x = 328 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "High"
-				}
-				iconType = {
-					name ="tariffs_high_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 330 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "tariffs_very_high"
-					position = { x = 405 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Very High"
-				}
-				iconType = {
-					name ="tariffs_very_high_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 407 y = 42 }
-					alwaystransparent = yes
-				}
-				buttonType = {
-					name = "tariffs_excessive"
-					position = { x = 482 y = 40 }
-					quadTextureSprite = "GFX_77x31_button"
-					buttonFont = "hoi_18"
-					Orientation = "UPPER_LEFT"
-					buttonText = "Excessive"
-				}
-				iconType = {
-					name ="tariffs_excessive_border"
-					spriteType = "GFX_button_border_77x31"
-					position = { x= 484 y = 42 }
-					alwaystransparent = yes
-				}
+						 name = "tarrifs_counter"
+						 position = { x = 100  y = 76 }
+						 quadTextureSprite = "GFX_modifiergui_modifier_var_counter"
+						 buttonText = "[?economy_capital_gains_taxes_dm]%"
+						 buttonFont = "vic_36s"
+						 pdx_tooltip = "capital_gains_modifer_tt"
+				 }
+				 buttonType = {
+						 name = "tarrifs_button_down"
+						 position = { x = 55 y = 76 }
+						 quadTextureSprite = "GFX_modifiergui_modifier_var_button"
+						 buttonText = "<"
+						 buttonFont = "vic_36"
+						 pdx_tooltip = "taxes_decrease_tt"
+				 }
+				 buttonType = {
+						 name = "tarrifs_button_up"
+						 position = {  x = 195 y = 76 }
+						 quadTextureSprite = "GFX_modifiergui_modifier_var_button"
+						 buttonText = ">"
+						 buttonFont = "vic_36"
+						 pdx_tooltip = "taxes_increase_tt"
+				 }
 			}
 		}
 		containerWindowType = {
@@ -667,7 +276,7 @@ guiTypes = {
 					maxWidth = 200
 					maxHeight = 40
 					fixedsize = yes
-					format = left		
+					format = left
 					alwaystransparent = yes
 				}
 				buttonType = {
@@ -780,7 +389,7 @@ guiTypes = {
 					maxWidth = 200
 					maxHeight = 40
 					fixedsize = yes
-					format = left		
+					format = left
 					alwaystransparent = yes
 				}
 				buttonType = {
@@ -893,7 +502,7 @@ guiTypes = {
 					maxWidth = 200
 					maxHeight = 40
 					fixedsize = yes
-					format = left		
+					format = left
 					alwaystransparent = yes
 				}
 				buttonType = {
@@ -1006,7 +615,7 @@ guiTypes = {
 					maxWidth = 200
 					maxHeight = 40
 					fixedsize = yes
-					format = left		
+					format = left
 					alwaystransparent = yes
 				}
 				buttonType = {
@@ -1119,7 +728,7 @@ guiTypes = {
 					maxWidth = 200
 					maxHeight = 40
 					fixedsize = yes
-					format = left		
+					format = left
 					alwaystransparent = yes
 				}
 				buttonType = {
@@ -1230,7 +839,7 @@ guiTypes = {
 			maxWidth = 600
 			maxHeight = 40
 			fixedsize = yes
-			format = center		
+			format = center
 			alwaystransparent = yes
 		}
 		containerWindowType = {
@@ -1253,7 +862,7 @@ guiTypes = {
 				maxWidth = 80
 				maxHeight = 20
 				fixedsize = yes
-				format = center		
+				format = center
 				alwaystransparent = yes
 			}
 			iconType = {
@@ -1269,7 +878,7 @@ guiTypes = {
 				maxWidth = 250
 				maxHeight = 2000
 				fixedsize = no
-				format = left		
+				format = left
 				alwaystransparent = yes
 			}
 		}

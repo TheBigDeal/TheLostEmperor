@@ -3,22 +3,22 @@ state={
 	id=105
 	name="STATE_105" # Montenegro
 	manpower = 895500
-	
+
 	state_category = rural
-	
+
 	resources={
 		chromium=36
 		aluminium=112
 	}
 
 	history={
-		owner = MNT
-		add_core_of = MNT
+		owner = TUR
+		add_core_of = TUR
 		victory_points = {
-			9809 3 
+			9809 3
 		}
 		victory_points = {
-			9821 1 
+			9821 1
 		}
 		buildings = {
 			infrastructure = 3
@@ -28,7 +28,7 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = SER
+		add_core_of = TUR
 	}
 
 	provinces={

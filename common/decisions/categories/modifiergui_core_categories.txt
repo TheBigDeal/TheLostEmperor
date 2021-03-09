@@ -1,0 +1,8 @@
+modifiergui_core_decision_category = {
+    visible = {
+        NOT = {
+            has_country_flag = modifiergui_core_flag_category_close
+        }
+        is_ai = no
+    }
+}

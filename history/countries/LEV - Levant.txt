@@ -1,14 +1,14 @@
 ﻿capital = 454
 
-#OOB = "RUM_1928"
-
+OOB = "LEV_1928"
+add_dynamic_modifier = { modifier = LE_tur_rebels_modifier }
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1
 	tech_recon = 1
 }
 set_cosmetic_tag = LEV_REBELS
-set_politics = {	
+set_politics = {
 	ruling_party = theocracy
 	last_election = "1933.3.5"
 	election_frequency = 48
@@ -29,24 +29,4 @@ set_popularities = {
     collectivism = 4
     mutualism = 3
 }
-
 set_convoys = 5
-
-#Victor Emmanuel III of Italy after 39
-#create_country_leader = {
-#	name = "King Zog"
-#	desc = "POLITICS_KING_ZOG_DESC"
-#	picture = "Portrait_Albania_King_Zog.dds"
-#	expire = "1965.1.1"
-#	ideology = absolutism_ideology
-#	traits = {
-#		#
-#	}
-#}
-
-#create_field_marshal = {
-#	name = "Xhemal Aranitasi"
-#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-#	skill = 2
-#}
-

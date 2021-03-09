@@ -11,14 +11,14 @@ state={
 
 		}
 		victory_points = {
-			7151 1 
+			7151 1
 		}
 		add_core_of = JOR
-
+		add_claim_by = TUR
 	}
 
 	provinces={
-		4017 4115 4574 4591 7001 7151 7170 10089 
+		4017 4115 4574 4591 7001 7151 7170 10089
 	}
 	manpower=932000
 	buildings_max_level_factor=1.000

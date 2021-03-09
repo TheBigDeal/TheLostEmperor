@@ -1,0 +1,2002 @@
+modifiergui_generated_applydynamicmodifier_political_power_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_political_power_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_political_power_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_political_power_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_political_power_gain = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_political_power_gain
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_political_power_gain
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_political_power_gain
+    }
+}
+modifiergui_generated_applydynamicmodifier_legitimacy_daily = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_legitimacy_daily
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_legitimacy_daily
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_legitimacy_daily
+    }
+}
+modifiergui_generated_applydynamicmodifier_legitimacy_gain_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_legitimacy_gain_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_legitimacy_gain_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_legitimacy_gain_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_stability_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_stability_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_stability_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_stability_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_stability_weekly = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_stability_weekly
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_stability_weekly
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_stability_weekly
+    }
+}
+modifiergui_generated_applydynamicmodifier_war_support_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_war_support_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_war_support_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_war_support_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_war_support_weekly = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_war_support_weekly
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_war_support_weekly
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_war_support_weekly
+    }
+}
+modifiergui_generated_applydynamicmodifier_surrender_limit = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_surrender_limit
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_surrender_limit
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_surrender_limit
+    }
+}
+modifiergui_generated_applydynamicmodifier_max_surrender_limit_offset = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_max_surrender_limit_offset
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_max_surrender_limit_offset
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_max_surrender_limit_offset
+    }
+}
+modifiergui_generated_applydynamicmodifier_democratic_drift = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_democratic_drift
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_democratic_drift
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_democratic_drift
+    }
+}
+modifiergui_generated_applydynamicmodifier_communism_drift = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_communism_drift
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_communism_drift
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_communism_drift
+    }
+}
+modifiergui_generated_applydynamicmodifier_fascism_drift = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_fascism_drift
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_fascism_drift
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_fascism_drift
+    }
+}
+modifiergui_generated_applydynamicmodifier_neutrality_drift = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_neutrality_drift
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_neutrality_drift
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_neutrality_drift
+    }
+}
+modifiergui_generated_applydynamicmodifier_justify_war_goal_time = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_justify_war_goal_time
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_justify_war_goal_time
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_justify_war_goal_time
+    }
+}
+modifiergui_generated_applydynamicmodifier_enemy_justify_war_goal_time = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_enemy_justify_war_goal_time
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_enemy_justify_war_goal_time
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_enemy_justify_war_goal_time
+    }
+}
+modifiergui_generated_applydynamicmodifier_foreign_subversive_activites = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_foreign_subversive_activites
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_foreign_subversive_activites
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_foreign_subversive_activites
+    }
+}
+modifiergui_generated_applydynamicmodifier_subversive_activites_upkeep = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_subversive_activites_upkeep
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_subversive_activites_upkeep
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_subversive_activites_upkeep
+    }
+}
+modifiergui_generated_applydynamicmodifier_guarantee_cost = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_guarantee_cost
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_guarantee_cost
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_guarantee_cost
+    }
+}
+modifiergui_generated_applydynamicmodifier_send_volunteer_divisions_required = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_send_volunteer_divisions_required
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_send_volunteer_divisions_required
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_send_volunteer_divisions_required
+    }
+}
+modifiergui_generated_applydynamicmodifier_send_volunteer_size = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_send_volunteer_size
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_send_volunteer_size
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_send_volunteer_size
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_volunteer_cap = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_volunteer_cap
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_volunteer_cap
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_volunteer_cap
+    }
+}
+modifiergui_generated_applydynamicmodifier_guarantee_tension = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_guarantee_tension
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_guarantee_tension
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_guarantee_tension
+    }
+}
+modifiergui_generated_applydynamicmodifier_lend_lease_tension = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_lend_lease_tension
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_lend_lease_tension
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_lend_lease_tension
+    }
+}
+modifiergui_generated_applydynamicmodifier_send_volunteers_tension = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_send_volunteers_tension
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_send_volunteers_tension
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_send_volunteers_tension
+    }
+}
+modifiergui_generated_applydynamicmodifier_join_faction_tension = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_join_faction_tension
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_join_faction_tension
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_join_faction_tension
+    }
+}
+modifiergui_generated_applydynamicmodifier_generate_wargoal_tension = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_generate_wargoal_tension
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_generate_wargoal_tension
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_generate_wargoal_tension
+    }
+}
+modifiergui_generated_applydynamicmodifier_global_building_slots_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_global_building_slots_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_global_building_slots_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_global_building_slots_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_production_speed_buildings_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_production_speed_buildings_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_production_speed_buildings_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_production_speed_buildings_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_industry_repair_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_industry_repair_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_industry_repair_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_industry_repair_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_industry_free_repair_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_industry_free_repair_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_industry_free_repair_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_industry_free_repair_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_local_resources_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_local_resources_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_local_resources_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_local_resources_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_fuel_gain_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_fuel_gain_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_fuel_gain_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_fuel_gain_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_fuel_gain_factor_from_states = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_fuel_gain_factor_from_states
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_fuel_gain_factor_from_states
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_fuel_gain_factor_from_states
+    }
+}
+modifiergui_generated_applydynamicmodifier_base_fuel_gain = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_base_fuel_gain
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_base_fuel_gain
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_base_fuel_gain
+    }
+}
+modifiergui_generated_applydynamicmodifier_base_fuel_gain_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_base_fuel_gain_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_base_fuel_gain_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_base_fuel_gain_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_production_factory_max_efficiency_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_production_factory_max_efficiency_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_production_factory_max_efficiency_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_production_factory_max_efficiency_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_production_factory_efficiency_gain_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_production_factory_efficiency_gain_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_production_factory_efficiency_gain_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_production_factory_efficiency_gain_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_production_factory_start_efficiency_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_production_factory_start_efficiency_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_production_factory_start_efficiency_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_production_factory_start_efficiency_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_industrial_capacity_factory = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_industrial_capacity_factory
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_industrial_capacity_factory
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_industrial_capacity_factory
+    }
+}
+modifiergui_generated_applydynamicmodifier_industrial_capacity_dockyard = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_industrial_capacity_dockyard
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_industrial_capacity_dockyard
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_industrial_capacity_dockyard
+    }
+}
+modifiergui_generated_applydynamicmodifier_nuclear_production = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_nuclear_production
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_nuclear_production
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_nuclear_production
+    }
+}
+modifiergui_generated_applydynamicmodifier_nuclear_production_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_nuclear_production_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_nuclear_production_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_nuclear_production_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_monthly_population = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_monthly_population
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_monthly_population
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_monthly_population
+    }
+}
+modifiergui_generated_applydynamicmodifier_consumer_goods_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_consumer_goods_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_consumer_goods_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_consumer_goods_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_min_export = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_min_export
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_min_export
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_min_export
+    }
+}
+modifiergui_generated_applydynamicmodifier_resistance_target = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_resistance_target
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_resistance_target
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_resistance_target
+    }
+}
+modifiergui_generated_applydynamicmodifier_resistance_damage_to_garrison = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_resistance_damage_to_garrison
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_resistance_damage_to_garrison
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_resistance_damage_to_garrison
+    }
+}
+modifiergui_generated_applydynamicmodifier_starting_compliance = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_starting_compliance
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_starting_compliance
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_starting_compliance
+    }
+}
+modifiergui_generated_applydynamicmodifier_compliance_gain = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_compliance_gain
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_compliance_gain
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_compliance_gain
+    }
+}
+modifiergui_generated_applydynamicmodifier_compliance_growth = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_compliance_growth
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_compliance_growth
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_compliance_growth
+    }
+}
+modifiergui_generated_applydynamicmodifier_compliance_growth_on_our_occupied_states = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_compliance_growth_on_our_occupied_states
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_compliance_growth_on_our_occupied_states
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_compliance_growth_on_our_occupied_states
+    }
+}
+modifiergui_generated_applydynamicmodifier_max_command_power = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_max_command_power
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_max_command_power
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_max_command_power
+    }
+}
+modifiergui_generated_applydynamicmodifier_command_power_gain = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_command_power_gain
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_command_power_gain
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_command_power_gain
+    }
+}
+modifiergui_generated_applydynamicmodifier_command_power_gain_mult = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_command_power_gain_mult
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_command_power_gain_mult
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_command_power_gain_mult
+    }
+}
+modifiergui_generated_applydynamicmodifier_conscription_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_conscription_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_conscription_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_conscription_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_conscription = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_conscription
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_conscription
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_conscription
+    }
+}
+modifiergui_generated_applydynamicmodifier_non_core_manpower = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_non_core_manpower
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_non_core_manpower
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_non_core_manpower
+    }
+}
+modifiergui_generated_applydynamicmodifier_army_attack_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_attack_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_army_attack_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_attack_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_army_defence_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_defence_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_army_defence_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_defence_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_army_core_attack_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_core_attack_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_army_core_attack_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_core_attack_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_army_core_defence_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_core_defence_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_army_core_defence_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_core_defence_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_army_speed_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_speed_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_army_speed_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_speed_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_minimum_training_level = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_minimum_training_level
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_minimum_training_level
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_minimum_training_level
+    }
+}
+modifiergui_generated_applydynamicmodifier_training_time_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_training_time_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_training_time_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_training_time_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_special_forces_min = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_special_forces_min
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_special_forces_min
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_special_forces_min
+    }
+}
+modifiergui_generated_applydynamicmodifier_special_forces_cap = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_special_forces_cap
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_special_forces_cap
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_special_forces_cap
+    }
+}
+modifiergui_generated_applydynamicmodifier_experience_gain_army_unit = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_army_unit
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_experience_gain_army_unit
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_army_unit
+    }
+}
+modifiergui_generated_applydynamicmodifier_experience_gain_army_unit_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_army_unit_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_experience_gain_army_unit_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_army_unit_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_experience_loss_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_loss_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_experience_loss_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_loss_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_army_morale_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_morale_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_army_morale_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_morale_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_land_reinforce_rate = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_land_reinforce_rate
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_land_reinforce_rate
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_land_reinforce_rate
+    }
+}
+modifiergui_generated_applydynamicmodifier_max_planning = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_max_planning
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_max_planning
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_max_planning
+    }
+}
+modifiergui_generated_applydynamicmodifier_planning_speed = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_planning_speed
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_planning_speed
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_planning_speed
+    }
+}
+modifiergui_generated_applydynamicmodifier_attrition = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_attrition
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_attrition
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_attrition
+    }
+}
+modifiergui_generated_applydynamicmodifier_heat_attrition_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_heat_attrition_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_heat_attrition_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_heat_attrition_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_winter_attrition_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_winter_attrition_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_winter_attrition_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_winter_attrition_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_acclimatization_cold_climate_gain_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_acclimatization_cold_climate_gain_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_acclimatization_cold_climate_gain_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_acclimatization_cold_climate_gain_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_acclimatization_hot_climate_gain_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_acclimatization_hot_climate_gain_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_acclimatization_hot_climate_gain_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_acclimatization_hot_climate_gain_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_terrain_penalty_reduction = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_terrain_penalty_reduction
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_terrain_penalty_reduction
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_terrain_penalty_reduction
+    }
+}
+modifiergui_generated_applydynamicmodifier_max_dig_in = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_max_dig_in
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_max_dig_in
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_max_dig_in
+    }
+}
+modifiergui_generated_applydynamicmodifier_dig_in_speed = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_dig_in_speed
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_dig_in_speed
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_dig_in_speed
+    }
+}
+modifiergui_generated_applydynamicmodifier_supply_consumption_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_supply_consumption_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_supply_consumption_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_supply_consumption_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_out_of_supply_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_out_of_supply_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_out_of_supply_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_out_of_supply_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_no_supply_grace = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_no_supply_grace
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_no_supply_grace
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_no_supply_grace
+    }
+}
+modifiergui_generated_applydynamicmodifier_amphibious_invasion = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_amphibious_invasion
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_amphibious_invasion
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_amphibious_invasion
+    }
+}
+modifiergui_generated_applydynamicmodifier_invasion_preparation = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_invasion_preparation
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_invasion_preparation
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_invasion_preparation
+    }
+}
+modifiergui_generated_applydynamicmodifier_army_leader_start_level = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_leader_start_level
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_army_leader_start_level
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_leader_start_level
+    }
+}
+modifiergui_generated_applydynamicmodifier_army_leader_start_attack_level = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_leader_start_attack_level
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_army_leader_start_attack_level
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_leader_start_attack_level
+    }
+}
+modifiergui_generated_applydynamicmodifier_army_leader_start_defense_level = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_leader_start_defense_level
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_army_leader_start_defense_level
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_leader_start_defense_level
+    }
+}
+modifiergui_generated_applydynamicmodifier_army_leader_start_planning_level = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_leader_start_planning_level
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_army_leader_start_planning_level
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_leader_start_planning_level
+    }
+}
+modifiergui_generated_applydynamicmodifier_army_leader_start_logistics_level = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_leader_start_logistics_level
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_army_leader_start_logistics_level
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_leader_start_logistics_level
+    }
+}
+modifiergui_generated_applydynamicmodifier_experience_gain_navy_unit = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_navy_unit
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_experience_gain_navy_unit
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_navy_unit
+    }
+}
+modifiergui_generated_applydynamicmodifier_experience_gain_navy_unit_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_navy_unit_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_experience_gain_navy_unit_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_navy_unit_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_naval_speed_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_naval_speed_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_naval_speed_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_naval_speed_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_navy_max_range_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_navy_max_range_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_navy_max_range_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_navy_max_range_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_sortie_efficiency = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_sortie_efficiency
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_sortie_efficiency
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_sortie_efficiency
+    }
+}
+modifiergui_generated_applydynamicmodifier_naval_hit_chance = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_naval_hit_chance
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_naval_hit_chance
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_naval_hit_chance
+    }
+}
+modifiergui_generated_applydynamicmodifier_naval_coordination = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_naval_coordination
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_naval_coordination
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_naval_coordination
+    }
+}
+modifiergui_generated_applydynamicmodifier_ships_at_battle_start = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_ships_at_battle_start
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_ships_at_battle_start
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_ships_at_battle_start
+    }
+}
+modifiergui_generated_applydynamicmodifier_naval_retreat_speed = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_naval_retreat_speed
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_naval_retreat_speed
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_naval_retreat_speed
+    }
+}
+modifiergui_generated_applydynamicmodifier_naval_retreat_chance = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_naval_retreat_chance
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_naval_retreat_chance
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_naval_retreat_chance
+    }
+}
+modifiergui_generated_applydynamicmodifier_convoy_escort_efficiency = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_convoy_escort_efficiency
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_convoy_escort_efficiency
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_convoy_escort_efficiency
+    }
+}
+modifiergui_generated_applydynamicmodifier_convoy_raiding_efficiency_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_convoy_raiding_efficiency_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_convoy_raiding_efficiency_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_convoy_raiding_efficiency_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_navy_submarine_detection_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_navy_submarine_detection_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_navy_submarine_detection_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_navy_submarine_detection_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_navy_anti_air_attack_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_navy_anti_air_attack_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_navy_anti_air_attack_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_navy_anti_air_attack_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_naval_invasion_capacity = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_naval_invasion_capacity
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_naval_invasion_capacity
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_naval_invasion_capacity
+    }
+}
+modifiergui_generated_applydynamicmodifier_carrier_capacity_penalty_reduction = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_carrier_capacity_penalty_reduction
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_carrier_capacity_penalty_reduction
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_carrier_capacity_penalty_reduction
+    }
+}
+modifiergui_generated_applydynamicmodifier_port_strike = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_port_strike
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_port_strike
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_port_strike
+    }
+}
+modifiergui_generated_applydynamicmodifier_navy_leader_start_level = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_navy_leader_start_level
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_navy_leader_start_level
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_navy_leader_start_level
+    }
+}
+modifiergui_generated_applydynamicmodifier_navy_leader_start_attack_level = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_navy_leader_start_attack_level
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_navy_leader_start_attack_level
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_navy_leader_start_attack_level
+    }
+}
+modifiergui_generated_applydynamicmodifier_navy_leader_start_defense_level = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_navy_leader_start_defense_level
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_navy_leader_start_defense_level
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_navy_leader_start_defense_level
+    }
+}
+modifiergui_generated_applydynamicmodifier_navy_leader_start_maneuvering_level = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_navy_leader_start_maneuvering_level
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_navy_leader_start_maneuvering_level
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_navy_leader_start_maneuvering_level
+    }
+}
+modifiergui_generated_applydynamicmodifier_navy_leader_start_coordination_level = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_navy_leader_start_coordination_level
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_navy_leader_start_coordination_level
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_navy_leader_start_coordination_level
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_range_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_range_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_range_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_range_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_training_xp_gain_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_training_xp_gain_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_training_xp_gain_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_training_xp_gain_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_mission_xp_gain_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_mission_xp_gain_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_mission_xp_gain_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_mission_xp_gain_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_army_bonus_air_superiority_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_bonus_air_superiority_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_army_bonus_air_superiority_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_army_bonus_air_superiority_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_enemy_army_bonus_air_superiority_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_enemy_army_bonus_air_superiority_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_enemy_army_bonus_air_superiority_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_enemy_army_bonus_air_superiority_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_night_penalty = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_night_penalty
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_night_penalty
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_night_penalty
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_weather_penalty = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_weather_penalty
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_weather_penalty
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_weather_penalty
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_accidents_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_accidents_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_accidents_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_accidents_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_strategic_bomber_night_penalty = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_strategic_bomber_night_penalty
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_strategic_bomber_night_penalty
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_strategic_bomber_night_penalty
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_ace_generation_chance_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_ace_generation_chance_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_ace_generation_chance_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_ace_generation_chance_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_cas_present_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_cas_present_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_cas_present_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_cas_present_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_strategic_bomber_bombing_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_strategic_bomber_bombing_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_strategic_bomber_bombing_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_strategic_bomber_bombing_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_mission_efficiency = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_mission_efficiency
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_mission_efficiency
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_mission_efficiency
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_superiority_efficiency = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_superiority_efficiency
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_superiority_efficiency
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_superiority_efficiency
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_escort_efficiency = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_escort_efficiency
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_escort_efficiency
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_escort_efficiency
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_intercept_efficiency = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_intercept_efficiency
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_intercept_efficiency
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_intercept_efficiency
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_cas_efficiency = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_cas_efficiency
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_cas_efficiency
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_cas_efficiency
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_nav_efficiency = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_nav_efficiency
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_nav_efficiency
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_nav_efficiency
+    }
+}
+modifiergui_generated_applydynamicmodifier_naval_strike_targetting_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_naval_strike_targetting_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_naval_strike_targetting_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_naval_strike_targetting_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_bombing_targetting = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_bombing_targetting
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_bombing_targetting
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_bombing_targetting
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_detection = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_detection
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_detection
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_detection
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_interception_detect_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_interception_detect_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_interception_detect_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_interception_detect_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_air_superiority_detect_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_superiority_detect_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_air_superiority_detect_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_air_superiority_detect_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_research_speed_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_research_speed_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_research_speed_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_research_speed_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_experience_gain_army = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_army
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_experience_gain_army
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_army
+    }
+}
+modifiergui_generated_applydynamicmodifier_experience_gain_army_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_army_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_experience_gain_army_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_army_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_experience_gain_navy = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_navy
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_experience_gain_navy
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_navy
+    }
+}
+modifiergui_generated_applydynamicmodifier_experience_gain_navy_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_navy_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_experience_gain_navy_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_navy_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_experience_gain_air = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_air
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_experience_gain_air
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_air
+    }
+}
+modifiergui_generated_applydynamicmodifier_experience_gain_air_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_air_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_experience_gain_air_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_experience_gain_air_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_decryption_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_decryption_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_decryption_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_decryption_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_encryption_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_encryption_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_encryption_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_encryption_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_intel_network_gain = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_intel_network_gain
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_intel_network_gain
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_intel_network_gain
+    }
+}
+modifiergui_generated_applydynamicmodifier_operative_slot = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_operative_slot
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_operative_slot
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_operative_slot
+    }
+}
+modifiergui_generated_applydynamicmodifier_own_operative_detection_chance = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_own_operative_detection_chance
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_own_operative_detection_chance
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_own_operative_detection_chance
+    }
+}
+modifiergui_generated_applydynamicmodifier_own_operative_detection_chance_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_own_operative_detection_chance_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_own_operative_detection_chance_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_own_operative_detection_chance_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_enemy_operative_detection_chance = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_enemy_operative_detection_chance
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_enemy_operative_detection_chance
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_enemy_operative_detection_chance
+    }
+}
+modifiergui_generated_applydynamicmodifier_enemy_operative_detection_chance_factor = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_enemy_operative_detection_chance_factor
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_enemy_operative_detection_chance_factor
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_enemy_operative_detection_chance_factor
+    }
+}
+modifiergui_generated_applydynamicmodifier_agency_upgrade_time = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_agency_upgrade_time
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_agency_upgrade_time
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_agency_upgrade_time
+    }
+}
+modifiergui_generated_applydynamicmodifier_decryption_power = {
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = modifiergui_generated_hasdynamicmodifierflag_decryption_power
+            }
+        }
+        add_dynamic_modifier = {
+            modifier = modifiergui_generated_dynamicmodifier_decryption_power
+        }
+        set_country_flag = modifiergui_generated_hasdynamicmodifierflag_decryption_power
+    }
+}

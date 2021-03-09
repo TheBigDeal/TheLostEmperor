@@ -66,7 +66,7 @@ focus_tree = {
 		cost = 3
 		ai_will_do = { factor = 12 }
 		available = {
-			has_army_manpower = {size > 349999 }
+			has_army_manpower = {size > 199999 }
 		}
 		completion_reward = {
 			add_war_support = 0.12
@@ -81,64 +81,87 @@ focus_tree = {
 		y = 3
 		cost = 3
 		ai_will_do = { factor = 12 }
-		available = { MAR = { is_subject_of = ROOT }}
+		available = { }
 		completion_reward = {
-
+			if = {
+				limit = { MAR = { is_subject_of = ROOT }}
+				MAR = { add_timed_idea = { idea = EIC_company_pressure days = 90 } }
+			}
+			if = {
+				limit = { MYS = { is_subject_of = ROOT }}
+				MYS = { add_timed_idea = { idea = EIC_company_pressure days = 90 } }
+			}
+			if = {
+				limit = { TVN = { is_subject_of = ROOT }}
+				TVN = { add_timed_idea = { idea = EIC_company_pressure days = 90 } }
+			}
+			if = {
+				limit = { GUJ = { is_subject_of = ROOT }}
+				GUJ = { add_timed_idea = { idea = EIC_company_pressure days = 90 } }
+			}
+			if = {
+				limit = { HYD = { is_subject_of = ROOT }}
+				HYD = { add_timed_idea = { idea = EIC_company_pressure days = 90 } }
+			}
 		}
 	}
 	focus = {
 		id = EIC_CLAIM_THE_HEART_OF_INDIA
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy1
 		prerequisite = { focus = EIC_LOWER_MARATHI_AUTONOMY }
 		x = 4
 		y = 4
 		cost = 3
 		ai_will_do = { factor = 12 }
+		available = { has_army_manpower = {size > 249999 } }
 		completion_reward = {
-
+			create_wargoal = { type = annex_everything target = MUG }
 		}
 	}
 	focus = {
 		id = EIC_SECOND_ANGLO_BURMESE_WAR
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = EIC_CLAIM_THE_HEART_OF_INDIA }
 		x = 4
 		y = 5
 		cost = 3
 		ai_will_do = { factor = 12 }
+		available = { has_army_manpower = {size > 299999 } }
 		completion_reward = {
-
+			create_wargoal = { type = annex_everything target = BRM }
 		}
 	}
 	focus = {
 		id = EIC_ULTIMATUM_TO_THE_NEPALI_KING
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_the_foundations_of_defense
 		prerequisite = { focus = EIC_SECOND_ANGLO_BURMESE_WAR }
 		x = 2
 		y = 6
 		cost = 3
 		ai_will_do = { factor = 12 }
 		completion_reward = {
-
+			country_event = { id = le_east_indies.1 }
 		}
 	}
 	focus = {
 		id = EIC_ANNEX_SINDH
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = EIC_ULTIMATUM_TO_THE_NEPALI_KING }
 		x = 2
 		y = 7
 		cost = 3
 		ai_will_do = { factor = 12 }
 		completion_reward = {
-
+			create_wargoal = { type = annex_everything target = SKH }
 		}
 	}
 	focus = {
 		id = EIC_CONSOLIDATE_HEGEMONY_OVER_INDIA
 		icon = GFX_goal_unknown
 		prerequisite = { focus = EIC_ANNEX_SINDH }
-		x = 2
+		prerequisite = { focus = EIC_ROYAL_EAST_INDIAN_RAILWAY }
+		prerequisite = { focus = EIC_RETAKE_BENGAL }
+		x = 4
 		y = 8
 		cost = 3
 		ai_will_do = { factor = 12 }
@@ -148,38 +171,93 @@ focus_tree = {
 	}
 	focus = {
 		id = EIC_THE_COUNCIL_OF_MADRAS
-		icon = GFX_goal_unknown
+		icon = GFX_focus_RAJ_two_nation_theory
 		prerequisite = { focus = EIC_SECOND_ANGLO_BURMESE_WAR }
 		x = 6
 		y = 6
 		cost = 3
 		ai_will_do = { factor = 12 }
 		completion_reward = {
-
+			set_capital = 439
+			add_stability = 0.10
 		}
 	}
 	focus = {
 		id = EIC_RETAKE_BENGAL
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = EIC_INVADE_THE_RAJPUT_STATES }
+		x = 4
+		y = 7
+		cost = 3
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = BNG }
+		}
+	}
+	focus = {
+		id = EIC_ROYAL_EAST_INDIAN_RAILWAY
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = EIC_THE_COUNCIL_OF_MADRAS }
 		x = 6
 		y = 7
 		cost = 3
 		ai_will_do = { factor = 12 }
+		available = { owns_state = 439 }
 		completion_reward = {
-
+			439 = {
+				add_building_construction = {
+			    type = infrastructure
+			    level = 2
+			    instant_build = yes
+				}
+			}
+			438 = {
+				add_building_construction = {
+			    type = infrastructure
+			    level = 1
+			    instant_build = yes
+				}
+			}
+			436 = {
+				add_building_construction = {
+			    type = infrastructure
+			    level = 1
+			    instant_build = yes
+				}
+			}
+			426 = {
+				add_building_construction = {
+			    type = infrastructure
+			    level = 1
+			    instant_build = yes
+				}
+			}
+			429 = {
+				add_building_construction = {
+			    type = infrastructure
+			    level = 1
+			    instant_build = yes
+				}
+			}
+			424 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
-		id = EIC_ROYAL_EAST_INDIAN_RAILWAY
-		icon = GFX_goal_unknown
-		prerequisite = { focus = EIC_RETAKE_BENGAL }
-		x = 6
-		y = 8
+		id = EIC_INVADE_THE_RAJPUT_STATES
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = EIC_SECOND_ANGLO_BURMESE_WAR }
+		x = 4
+		y = 6
 		cost = 3
 		ai_will_do = { factor = 12 }
 		completion_reward = {
-
+			create_wargoal = { type = annex_everything target = SKH }
 		}
 	}
 	focus = {

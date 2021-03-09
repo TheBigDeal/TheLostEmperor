@@ -15,11 +15,11 @@ focus_tree = {
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = PER_crackdown_on_nationalists 
+		prerequisite = {
+			focus = PER_crackdown_on_nationalists
 		}
-		prerequisite = { 
-			focus = PER_promote_general_democracy 
+		prerequisite = {
+			focus = PER_promote_general_democracy
 		}
 		ai_will_do = {
 			factor = 1
@@ -34,9 +34,9 @@ focus_tree = {
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = PER_strengthen_provincial_rule 
-			focus = PER_centralize_the_state 
+		prerequisite = {
+			focus = PER_strengthen_provincial_rule
+			focus = PER_centralize_the_state
 		}
 		ai_will_do = {
 			factor = 1
@@ -82,7 +82,7 @@ focus_tree = {
 		available = {
 			always = no
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL } 
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = {
 			factor = 1
 		}
@@ -140,11 +140,11 @@ focus_tree = {
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = PER_crackdown_on_nationalists 
+		prerequisite = {
+			focus = PER_crackdown_on_nationalists
 		}
-		prerequisite = { 
-			focus = PER_strip_down_mazandaran 
+		prerequisite = {
+			focus = PER_strip_down_mazandaran
 		}
 		ai_will_do = {
 			factor = 1
@@ -159,11 +159,11 @@ focus_tree = {
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
+		prerequisite = {
 			focus = PER_crackdown_on_nationalists
-			
+
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = PER_appoint_qajar_princes
 			focus = PER_a_reformist_stance
 		}
@@ -172,5 +172,5 @@ focus_tree = {
 		}
 	}
 
-#End of focuses 
+#End of focuses
  }

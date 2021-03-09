@@ -1,0 +1,21 @@
+
+state={
+	id=1068
+	name="STATE_1068"
+
+	history={
+		owner = JOD
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = JOD
+
+	}
+
+	provinces={
+		4984 12886 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

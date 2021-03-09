@@ -38,6 +38,15 @@
  le_political.18.a:0 "Suppress this hateful movement!"
  le_political.18.b:0 "Don't pay any attention to them."
  le_political.18.c:0 "If the people want it, we'll hold the referendum."
+
+
+ le_protests.1:0 "Protests killed while dispursing the crowd!"
+ protests_suppressed_tt:0 "This option is available because you have the idea: §YProtests: Suppressed§!"
+ le_protests.2.t:0 "Protests in [Root.Capital.GetName]"
+ le_protests.2.d:0 "Protests have erupted in [Root.Capital.GetName] overnight. The people have been shouting anti-governmental slogans, and disrupting normal operations. They seem to be demanding us to ease restrictions on Political Parties, so that different ideologies may be represented in our state more easily. While this is foolish, we may have to fold in order to keep our people happy."
+ le_protests.2.a:0 "We accept their demands"
+ le_protests.2.b:0 "Ignore them, they will go away."
+ le_protests.2.c:0 "Force the protestors home."
  #Spain
  #############################
  le_spain.1.t:0 "Spanish War For The Throne"

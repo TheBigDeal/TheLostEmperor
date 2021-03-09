@@ -17,7 +17,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "hansa_main_container"
 		position = { x = 43% y = 20%% }
-		size = { width=650 height=80%% }
+		size = { width=650 height=71%% }
 		margin = { top = 6 bottom = 13}
 		moveable = no
 		background = {
@@ -61,6 +61,17 @@ guiTypes = {
 				name = "Background"
 				quadTextureSprite = "GFX_tiled_window_thin_border2"
 			}
+			instantTextboxType = {
+				name = "hansa_leader_title"
+				position = { x = -163 y = 0 }
+				font = "hoi_36header"
+				text = "Leader"
+				maxWidth = 600
+				maxHeight = 400
+				fixedsize = no
+				format = center
+				alwaystransparent = no
+			}
 			gridboxtype = {
 				name = "hansa_show_grid_leader"
 				position = { x = -20 y = 0 }
@@ -69,6 +80,17 @@ guiTypes = {
 				max_slots_horizontal = 1
 				max_slots_vertical = 1
 				add_horizontal = no
+			}
+			instantTextboxType = {
+				name = "hansa_member_title"
+				position = { x = -163 y = 110 }
+				font = "hoi_36header"
+				text = "Members"
+				maxWidth = 600
+				maxHeight = 400
+				fixedsize = no
+				format = center
+				alwaystransparent = no
 			}
 			gridboxtype = {
 				name = "hansa_show_grid_member"
@@ -82,9 +104,9 @@ guiTypes = {
 		}
 		gridboxtype = {
 			name = "hansa_show_grid_colony"
-			position = { x = 345 y = 55 }
+			position = { x = 308 y = 86 }
 			size = { width = 95 height = 40 }
-			slotsize = { width = 250 height = 240 }
+			slotsize = { width = 185 height = 210 }
 			max_slots_horizontal = 10
 			max_slots_vertical = 2
 			add_horizontal = no
@@ -118,15 +140,20 @@ guiTypes = {
 	containerWindowType = {
 		name = "hansa_colony_entry"
 		position = { x = 0 y = 0}
-		size = { width = 260 height = 290 }
+		size = { width = 190 height = 220 }
+		background = {
+			name = "colony_bg"
+			position = { x = 10 y = 20}
+			quadTextureSprite ="GFX_tiled_window_thin_border"
+		}
 		instantTextboxType = {
 			name = "colony_name"
-			position = { x = 10 y = -170 }
+			position = { x = 25 y = -162 }
 			font = "hoi_18mbs"
 			text = "hansa_name_colony"
-			maxWidth = 120
+			maxWidth = 150
 			maxHeight = 400
-			format = center
+			format = left
 			vertical_alignment = center
 			alwaystransparent = yes
 		}
@@ -139,8 +166,8 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "war_button"
-			quadTextureSprite = "GFX_generic_box_96"
-			position = { x = 20 y = 110 }
+			quadTextureSprite = "GFX_button_148x34"
+			position = { x = 34 y = 110 }
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "hansa_name_colony"
 			buttonText = "Declare War"
@@ -148,12 +175,43 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "invest_button"
-			quadTextureSprite = "GFX_generic_box_96"
-			position = { x = 20 y = 140 }
+			quadTextureSprite = "GFX_button_148x34"
+			position = { x = 34 y = 143 }
 			Orientation = "UPPER_LEFT"
 			pdx_tooltip = "hansa_name_colony"
 			buttonText = "Invest"
 			buttonFont = hoi_18mbs
+		}
+		buttonType = {
+			name = "prospect_button"
+			quadTextureSprite = "GFX_button_148x34"
+			position = { x = 34 y = 176 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "hansa_name_colony"
+			buttonText = "Prospect"
+			buttonFont = hoi_18mbs
+		}
+		instantTextboxType = {
+			name = "invested_money"
+			position = { x = 110 y = -135 }
+			font = "hoi_18mbs"
+			text = "hansa_needed_money"
+			maxWidth = 150
+			maxHeight = 400
+			format = left
+			vertical_alignment = center
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "needed_money"
+			position = { x = 110 y = -110 }
+			font = "hoi_18mbs"
+			text = "hansa_needed_money"
+			maxWidth = 150
+			maxHeight = 400
+			format = left
+			vertical_alignment = center
+			alwaystransparent = yes
 		}
 	}
 

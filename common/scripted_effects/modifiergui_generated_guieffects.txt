@@ -1,0 +1,1770 @@
+modifiergui_windowcollapse_menu = {
+    clr_country_flag = modifiergui_core_guiflag_menu
+    set_variable = { modifiergui_generated_guivar_menu = 0 }
+
+	set_variable = { modifiergui_generated_guivar_glowbool_category_politics = 1 }
+    modifiergui_windowcollapse_category_politics = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_diplomacy = 1 }
+    modifiergui_windowcollapse_category_diplomacy = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_industry = 1 }
+    modifiergui_windowcollapse_category_industry = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_production = 1 }
+    modifiergui_windowcollapse_category_production = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_civil = 1 }
+    modifiergui_windowcollapse_category_civil = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_military = 1 }
+    modifiergui_windowcollapse_category_military = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_army = 1 }
+    modifiergui_windowcollapse_category_army = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_navy = 1 }
+    modifiergui_windowcollapse_category_navy = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_air = 1 }
+    modifiergui_windowcollapse_category_air = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_research = 1 }
+    modifiergui_windowcollapse_category_research = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_espionage = 1 }
+    modifiergui_windowcollapse_category_espionage = yes
+}
+modifiergui_windowcollapse_menu_categories = {
+    set_variable = { modifiergui_generated_guivar_menu = 0 }
+	set_variable = { modifiergui_generated_guivar_glowbool_category_politics = 1 }
+    modifiergui_windowcollapse_category_politics = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_diplomacy = 1 }
+    modifiergui_windowcollapse_category_diplomacy = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_industry = 1 }
+    modifiergui_windowcollapse_category_industry = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_production = 1 }
+    modifiergui_windowcollapse_category_production = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_civil = 1 }
+    modifiergui_windowcollapse_category_civil = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_military = 1 }
+    modifiergui_windowcollapse_category_military = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_army = 1 }
+    modifiergui_windowcollapse_category_army = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_navy = 1 }
+    modifiergui_windowcollapse_category_navy = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_air = 1 }
+    modifiergui_windowcollapse_category_air = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_research = 1 }
+    modifiergui_windowcollapse_category_research = yes
+	set_variable = { modifiergui_generated_guivar_glowbool_category_espionage = 1 }
+    modifiergui_windowcollapse_category_espionage = yes
+}
+modifiergui_generated_buttongloweffect_menu = {
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_menu = 1 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_category_politics = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_category_politics = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_menu = 2 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_category_diplomacy = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_category_diplomacy = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_menu = 3 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_category_industry = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_category_industry = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_menu = 4 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_category_production = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_category_production = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_menu = 5 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_category_civil = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_category_civil = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_menu = 6 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_category_military = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_category_military = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_menu = 7 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_category_army = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_category_army = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_menu = 8 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_category_navy = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_category_navy = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_menu = 9 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_category_air = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_category_air = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_menu = 10 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_category_research = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_category_research = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_menu = 11 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_category_espionage = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_category_espionage = 1 }
+    }
+}
+modifiergui_windowcollapse_category_politics = {
+    set_variable = { modifiergui_generated_guivar_category_politics = 0 }
+    set_variable = { modifiergui_generated_guivar_menu = 0 }
+
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_political_power_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_political_power_gain = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_legitimacy_daily = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_legitimacy_gain_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_stability_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_stability_weekly = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_war_support_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_war_support_weekly = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_surrender_limit = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_max_surrender_limit_offset = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_democratic_drift = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_communism_drift = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_fascism_drift = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_neutrality_drift = 1 }
+}
+modifiergui_generated_buttongloweffect_category_politics = {
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_politics = 1 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_political_power_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_political_power_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_politics = 2 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_political_power_gain = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_political_power_gain = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_politics = 3 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_legitimacy_daily = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_legitimacy_daily = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_politics = 4 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_legitimacy_gain_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_legitimacy_gain_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_politics = 5 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_stability_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_stability_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_politics = 6 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_stability_weekly = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_stability_weekly = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_politics = 7 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_war_support_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_war_support_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_politics = 8 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_war_support_weekly = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_war_support_weekly = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_politics = 9 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_surrender_limit = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_surrender_limit = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_politics = 10 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_max_surrender_limit_offset = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_max_surrender_limit_offset = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_politics = 11 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_democratic_drift = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_democratic_drift = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_politics = 12 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_communism_drift = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_communism_drift = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_politics = 13 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_fascism_drift = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_fascism_drift = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_politics = 14 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_neutrality_drift = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_neutrality_drift = 1 }
+    }
+}
+modifiergui_windowcollapse_category_diplomacy = {
+    set_variable = { modifiergui_generated_guivar_category_diplomacy = 0 }
+    set_variable = { modifiergui_generated_guivar_menu = 0 }
+
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_justify_war_goal_time = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_enemy_justify_war_goal_time = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_foreign_subversive_activites = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_subversive_activites_upkeep = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_guarantee_cost = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_send_volunteer_divisions_required = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_send_volunteer_size = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_volunteer_cap = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_guarantee_tension = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_lend_lease_tension = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_send_volunteers_tension = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_join_faction_tension = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_generate_wargoal_tension = 1 }
+}
+modifiergui_generated_buttongloweffect_category_diplomacy = {
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_diplomacy = 1 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_justify_war_goal_time = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_justify_war_goal_time = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_diplomacy = 2 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_enemy_justify_war_goal_time = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_enemy_justify_war_goal_time = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_diplomacy = 3 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_foreign_subversive_activites = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_foreign_subversive_activites = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_diplomacy = 4 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_subversive_activites_upkeep = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_subversive_activites_upkeep = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_diplomacy = 5 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_guarantee_cost = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_guarantee_cost = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_diplomacy = 6 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_send_volunteer_divisions_required = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_send_volunteer_divisions_required = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_diplomacy = 7 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_send_volunteer_size = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_send_volunteer_size = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_diplomacy = 8 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_volunteer_cap = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_volunteer_cap = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_diplomacy = 9 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_guarantee_tension = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_guarantee_tension = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_diplomacy = 10 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_lend_lease_tension = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_lend_lease_tension = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_diplomacy = 11 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_send_volunteers_tension = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_send_volunteers_tension = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_diplomacy = 12 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_join_faction_tension = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_join_faction_tension = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_diplomacy = 13 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_generate_wargoal_tension = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_generate_wargoal_tension = 1 }
+    }
+}
+modifiergui_windowcollapse_category_industry = {
+    set_variable = { modifiergui_generated_guivar_category_industry = 0 }
+    set_variable = { modifiergui_generated_guivar_menu = 0 }
+
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_global_building_slots_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_production_speed_buildings_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_industry_repair_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_industry_free_repair_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_local_resources_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_fuel_gain_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_fuel_gain_factor_from_states = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_base_fuel_gain = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_base_fuel_gain_factor = 1 }
+}
+modifiergui_generated_buttongloweffect_category_industry = {
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_industry = 1 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_global_building_slots_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_global_building_slots_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_industry = 2 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_production_speed_buildings_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_production_speed_buildings_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_industry = 3 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_industry_repair_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_industry_repair_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_industry = 4 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_industry_free_repair_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_industry_free_repair_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_industry = 5 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_local_resources_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_local_resources_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_industry = 6 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_fuel_gain_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_fuel_gain_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_industry = 7 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_fuel_gain_factor_from_states = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_fuel_gain_factor_from_states = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_industry = 8 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_base_fuel_gain = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_base_fuel_gain = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_industry = 9 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_base_fuel_gain_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_base_fuel_gain_factor = 1 }
+    }
+}
+modifiergui_windowcollapse_category_production = {
+    set_variable = { modifiergui_generated_guivar_category_production = 0 }
+    set_variable = { modifiergui_generated_guivar_menu = 0 }
+
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_production_factory_max_efficiency_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_production_factory_efficiency_gain_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_production_factory_start_efficiency_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_industrial_capacity_factory = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_industrial_capacity_dockyard = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_nuclear_production = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_nuclear_production_factor = 1 }
+}
+modifiergui_generated_buttongloweffect_category_production = {
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_production = 1 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_production_factory_max_efficiency_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_production_factory_max_efficiency_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_production = 2 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_production_factory_efficiency_gain_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_production_factory_efficiency_gain_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_production = 3 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_production_factory_start_efficiency_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_production_factory_start_efficiency_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_production = 4 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_industrial_capacity_factory = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_industrial_capacity_factory = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_production = 5 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_industrial_capacity_dockyard = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_industrial_capacity_dockyard = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_production = 6 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_nuclear_production = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_nuclear_production = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_production = 7 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_nuclear_production_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_nuclear_production_factor = 1 }
+    }
+}
+modifiergui_windowcollapse_category_civil = {
+    set_variable = { modifiergui_generated_guivar_category_civil = 0 }
+    set_variable = { modifiergui_generated_guivar_menu = 0 }
+
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_monthly_population = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_consumer_goods_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_min_export = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_resistance_target = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_resistance_damage_to_garrison = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_starting_compliance = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_compliance_gain = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_compliance_growth = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_compliance_growth_on_our_occupied_states = 1 }
+}
+modifiergui_generated_buttongloweffect_category_civil = {
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_civil = 1 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_monthly_population = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_monthly_population = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_civil = 2 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_consumer_goods_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_consumer_goods_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_civil = 3 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_min_export = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_min_export = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_civil = 4 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_resistance_target = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_resistance_target = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_civil = 5 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_resistance_damage_to_garrison = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_resistance_damage_to_garrison = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_civil = 6 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_starting_compliance = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_starting_compliance = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_civil = 7 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_compliance_gain = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_compliance_gain = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_civil = 8 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_compliance_growth = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_compliance_growth = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_civil = 9 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_compliance_growth_on_our_occupied_states = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_compliance_growth_on_our_occupied_states = 1 }
+    }
+}
+modifiergui_windowcollapse_category_military = {
+    set_variable = { modifiergui_generated_guivar_category_military = 0 }
+    set_variable = { modifiergui_generated_guivar_menu = 0 }
+
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_max_command_power = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_command_power_gain = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_command_power_gain_mult = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_conscription_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_conscription = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_non_core_manpower = 1 }
+}
+modifiergui_generated_buttongloweffect_category_military = {
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_military = 1 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_max_command_power = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_max_command_power = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_military = 2 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_command_power_gain = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_command_power_gain = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_military = 3 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_command_power_gain_mult = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_command_power_gain_mult = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_military = 4 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_conscription_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_conscription_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_military = 5 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_conscription = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_conscription = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_military = 6 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_non_core_manpower = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_non_core_manpower = 1 }
+    }
+}
+modifiergui_windowcollapse_category_army = {
+    set_variable = { modifiergui_generated_guivar_category_army = 0 }
+    set_variable = { modifiergui_generated_guivar_menu = 0 }
+
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_attack_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_defence_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_core_attack_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_core_defence_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_speed_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_minimum_training_level = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_training_time_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_special_forces_min = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_special_forces_cap = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_army_unit = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_army_unit_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_loss_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_morale_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_land_reinforce_rate = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_max_planning = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_planning_speed = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_attrition = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_heat_attrition_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_winter_attrition_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_acclimatization_cold_climate_gain_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_acclimatization_hot_climate_gain_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_terrain_penalty_reduction = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_max_dig_in = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_dig_in_speed = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_supply_consumption_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_out_of_supply_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_no_supply_grace = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_amphibious_invasion = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_invasion_preparation = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_leader_start_level = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_leader_start_attack_level = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_leader_start_defense_level = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_leader_start_planning_level = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_leader_start_logistics_level = 1 }
+}
+modifiergui_generated_buttongloweffect_category_army = {
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 1 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_attack_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_attack_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 2 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_defence_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_defence_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 3 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_core_attack_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_core_attack_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 4 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_core_defence_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_core_defence_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 5 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_speed_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_speed_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 6 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_minimum_training_level = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_minimum_training_level = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 7 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_training_time_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_training_time_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 8 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_special_forces_min = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_special_forces_min = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 9 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_special_forces_cap = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_special_forces_cap = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 10 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_army_unit = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_army_unit = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 11 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_army_unit_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_army_unit_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 12 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_loss_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_loss_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 13 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_morale_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_morale_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 14 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_land_reinforce_rate = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_land_reinforce_rate = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 15 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_max_planning = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_max_planning = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 16 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_planning_speed = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_planning_speed = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 17 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_attrition = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_attrition = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 18 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_heat_attrition_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_heat_attrition_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 19 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_winter_attrition_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_winter_attrition_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 20 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_acclimatization_cold_climate_gain_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_acclimatization_cold_climate_gain_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 21 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_acclimatization_hot_climate_gain_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_acclimatization_hot_climate_gain_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 22 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_terrain_penalty_reduction = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_terrain_penalty_reduction = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 23 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_max_dig_in = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_max_dig_in = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 24 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_dig_in_speed = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_dig_in_speed = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 25 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_supply_consumption_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_supply_consumption_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 26 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_out_of_supply_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_out_of_supply_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 27 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_no_supply_grace = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_no_supply_grace = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 28 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_amphibious_invasion = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_amphibious_invasion = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 29 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_invasion_preparation = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_invasion_preparation = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 30 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_leader_start_level = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_leader_start_level = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 31 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_leader_start_attack_level = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_leader_start_attack_level = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 32 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_leader_start_defense_level = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_leader_start_defense_level = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 33 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_leader_start_planning_level = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_leader_start_planning_level = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_army = 34 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_leader_start_logistics_level = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_leader_start_logistics_level = 1 }
+    }
+}
+modifiergui_windowcollapse_category_navy = {
+    set_variable = { modifiergui_generated_guivar_category_navy = 0 }
+    set_variable = { modifiergui_generated_guivar_menu = 0 }
+
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_navy_unit = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_navy_unit_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_speed_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_max_range_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_sortie_efficiency = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_hit_chance = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_coordination = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_ships_at_battle_start = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_retreat_speed = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_retreat_chance = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_convoy_escort_efficiency = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_convoy_raiding_efficiency_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_submarine_detection_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_anti_air_attack_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_invasion_capacity = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_carrier_capacity_penalty_reduction = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_port_strike = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_leader_start_level = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_leader_start_attack_level = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_leader_start_defense_level = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_leader_start_maneuvering_level = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_leader_start_coordination_level = 1 }
+}
+modifiergui_generated_buttongloweffect_category_navy = {
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 1 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_navy_unit = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_navy_unit = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 2 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_navy_unit_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_navy_unit_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 3 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_speed_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_speed_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 4 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_max_range_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_max_range_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 5 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_sortie_efficiency = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_sortie_efficiency = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 6 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_hit_chance = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_hit_chance = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 7 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_coordination = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_coordination = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 8 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_ships_at_battle_start = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_ships_at_battle_start = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 9 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_retreat_speed = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_retreat_speed = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 10 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_retreat_chance = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_retreat_chance = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 11 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_convoy_escort_efficiency = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_convoy_escort_efficiency = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 12 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_convoy_raiding_efficiency_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_convoy_raiding_efficiency_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 13 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_submarine_detection_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_submarine_detection_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 14 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_anti_air_attack_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_anti_air_attack_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 15 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_invasion_capacity = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_invasion_capacity = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 16 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_carrier_capacity_penalty_reduction = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_carrier_capacity_penalty_reduction = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 17 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_port_strike = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_port_strike = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 18 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_leader_start_level = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_leader_start_level = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 19 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_leader_start_attack_level = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_leader_start_attack_level = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 20 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_leader_start_defense_level = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_leader_start_defense_level = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 21 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_leader_start_maneuvering_level = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_leader_start_maneuvering_level = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_navy = 22 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_leader_start_coordination_level = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_navy_leader_start_coordination_level = 1 }
+    }
+}
+modifiergui_windowcollapse_category_air = {
+    set_variable = { modifiergui_generated_guivar_category_air = 0 }
+    set_variable = { modifiergui_generated_guivar_menu = 0 }
+
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_range_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_training_xp_gain_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_mission_xp_gain_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_bonus_air_superiority_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_enemy_army_bonus_air_superiority_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_night_penalty = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_weather_penalty = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_accidents_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_strategic_bomber_night_penalty = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_ace_generation_chance_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_cas_present_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_strategic_bomber_bombing_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_mission_efficiency = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_superiority_efficiency = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_escort_efficiency = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_intercept_efficiency = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_cas_efficiency = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_nav_efficiency = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_strike_targetting_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_bombing_targetting = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_detection = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_interception_detect_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_superiority_detect_factor = 1 }
+}
+modifiergui_generated_buttongloweffect_category_air = {
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 1 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_range_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_range_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 2 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_training_xp_gain_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_training_xp_gain_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 3 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_mission_xp_gain_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_mission_xp_gain_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 4 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_bonus_air_superiority_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_army_bonus_air_superiority_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 5 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_enemy_army_bonus_air_superiority_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_enemy_army_bonus_air_superiority_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 6 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_night_penalty = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_night_penalty = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 7 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_weather_penalty = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_weather_penalty = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 8 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_accidents_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_accidents_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 9 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_strategic_bomber_night_penalty = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_strategic_bomber_night_penalty = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 10 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_ace_generation_chance_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_ace_generation_chance_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 11 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_cas_present_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_cas_present_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 12 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_strategic_bomber_bombing_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_strategic_bomber_bombing_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 13 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_mission_efficiency = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_mission_efficiency = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 14 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_superiority_efficiency = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_superiority_efficiency = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 15 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_escort_efficiency = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_escort_efficiency = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 16 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_intercept_efficiency = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_intercept_efficiency = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 17 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_cas_efficiency = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_cas_efficiency = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 18 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_nav_efficiency = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_nav_efficiency = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 19 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_strike_targetting_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_naval_strike_targetting_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 20 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_bombing_targetting = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_bombing_targetting = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 21 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_detection = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_detection = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 22 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_interception_detect_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_interception_detect_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_air = 23 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_superiority_detect_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_air_superiority_detect_factor = 1 }
+    }
+}
+modifiergui_windowcollapse_category_research = {
+    set_variable = { modifiergui_generated_guivar_category_research = 0 }
+    set_variable = { modifiergui_generated_guivar_menu = 0 }
+
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_research_speed_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_army = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_army_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_navy = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_navy_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_air = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_air_factor = 1 }
+}
+modifiergui_generated_buttongloweffect_category_research = {
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_research = 1 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_research_speed_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_research_speed_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_research = 2 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_army = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_army = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_research = 3 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_army_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_army_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_research = 4 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_navy = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_navy = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_research = 5 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_navy_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_navy_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_research = 6 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_air = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_air = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_research = 7 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_air_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_experience_gain_air_factor = 1 }
+    }
+}
+modifiergui_windowcollapse_category_espionage = {
+    set_variable = { modifiergui_generated_guivar_category_espionage = 0 }
+    set_variable = { modifiergui_generated_guivar_menu = 0 }
+
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_decryption_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_encryption_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_intel_network_gain = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_operative_slot = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_own_operative_detection_chance = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_own_operative_detection_chance_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_enemy_operative_detection_chance = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_enemy_operative_detection_chance_factor = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_agency_upgrade_time = 1 }
+	set_variable = { modifiergui_generated_guivar_glowbool_modifier_decryption_power = 1 }
+}
+modifiergui_generated_buttongloweffect_category_espionage = {
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_espionage = 1 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_decryption_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_decryption_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_espionage = 2 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_encryption_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_encryption_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_espionage = 3 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_intel_network_gain = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_intel_network_gain = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_espionage = 4 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_operative_slot = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_operative_slot = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_espionage = 5 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_own_operative_detection_chance = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_own_operative_detection_chance = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_espionage = 6 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_own_operative_detection_chance_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_own_operative_detection_chance_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_espionage = 7 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_enemy_operative_detection_chance = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_enemy_operative_detection_chance = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_espionage = 8 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_enemy_operative_detection_chance_factor = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_enemy_operative_detection_chance_factor = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_espionage = 9 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_agency_upgrade_time = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_agency_upgrade_time = 1 }
+    }
+	if = {
+        limit = {
+            check_variable = { modifiergui_generated_guivar_category_espionage = 10 }
+        }
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_decryption_power = 2 }
+    }
+    else = {
+        set_variable = { modifiergui_generated_guivar_glowbool_modifier_decryption_power = 1 }
+    }
+}

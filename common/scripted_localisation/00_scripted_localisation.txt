@@ -9,6 +9,30 @@
 # that'll be used if trigger passes
 
 defined_text = {
+	name = get_pie_tooltip
+	text = {
+		trigger = { pie_chart^v = 1 }
+		localization_key = "upper_class_tt"
+	}
+	text = {
+		trigger = { pie_chart^v = 2 }
+		localization_key = "middle_class_tt"
+	}
+	text = {
+		trigger = { pie_chart^v = 3 }
+		localization_key = "middle_class_tt"
+	}
+}
+
+defined_text = {
+	name = get_opening_text
+	text = {
+		trigger = { original_tag = ALK }
+		localization_key = "opening_text_alk"
+	}
+}
+
+defined_text = {
 	name = GetRadicalismValue
 	text = {
 		trigger = { has_idea = le_religion_sunni }
@@ -66,19 +90,19 @@ defined_text = {
 		trigger = {
             check_variable = { num_suffix = 1}
 		}
-		localization_key = ",000" 
+		localization_key = ",000"
 	}
 	text = {
 		trigger = {
             check_variable = { num_suffix = 2}
 		}
-		localization_key = ",000" 
+		localization_key = ",000"
 	}
 	text = {
 		trigger = {
             check_variable = { num_suffix = 3}
 		}
-		localization_key = " ,000" 
+		localization_key = " ,000"
 	}
 }
 
@@ -88,13 +112,13 @@ defined_text = {
 		trigger = {
             check_variable = { is_over_million_pop = 1}
 		}
-		localization_key = "Million" 
+		localization_key = "Million"
 	}
 	text = {
 		trigger = {
             check_variable = { is_over_million_pop = 0}
 		}
-		localization_key = "Thousand" 
+		localization_key = "Thousand"
 	}
 }
 
@@ -103,33 +127,33 @@ defined_text = {
 	name = GetPowerStatusName
 	text = {
 		trigger = {
-            check_variable = { 
+            check_variable = {
 			var = this.score_array_position_var
-            value = 8		
-			compare = less_than_or_equals 
-			}			
+            value = 8
+			compare = less_than_or_equals
+			}
 		}
-		localization_key = "Great Power" 
+		localization_key = "Great Power"
 	}
 	text = {
-		trigger = {	
-            check_variable = { this.score_array_position_var >  8 }		
-            check_variable = { 
+		trigger = {
+            check_variable = { this.score_array_position_var >  8 }
+            check_variable = {
 			var = this.score_array_position_var
-            value = 16 		
-			compare = less_than_or_equals 
-			}			
+            value = 16
+			compare = less_than_or_equals
+			}
 		}
 		localization_key = "Secondary Power"
 	}
 	text = {
-		trigger = {		
-            check_variable = { this.score_array_position_var >  16 }		
-            check_variable = { 
+		trigger = {
+            check_variable = { this.score_array_position_var >  16 }
+            check_variable = {
 			var = this.score_array_position_var
-            value = 40 		
-			compare = less_than_or_equals 
-			}		
+            value = 40
+			compare = less_than_or_equals
+			}
 		}
 		localization_key = "Regional Power"
 	}

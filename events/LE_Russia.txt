@@ -28,11 +28,11 @@ country_event = {
 		hidden_effect = { SOV = { transfer_state = 247 }
 			RUS = {
 				load_oob = RUS_CIVIL_WAR
-				create_faction = WHITE_MOVEMENT
+				#create_faction = WHITE_MOVEMENT
 			}
 			SOV = {
 				load_oob = SOV_CIVIL_WAR
-				create_faction = RED_MOVEMENT
+				#create_faction = RED_MOVEMENT
 			}
 		}
 	}

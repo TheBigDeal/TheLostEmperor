@@ -42,7 +42,7 @@ guiTypes = {
 	}
 	extendedScrollbarType = {
 		name = "right_vertical_slider_tno_laws_2"
-		position = { x =-8 y = 0 }
+		position = { x =-5 y = 0 }
  		size = { width = 18 height = 18 }
 		startValue = 0
 		orientation = upper_right
@@ -84,28 +84,18 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "TNO_SG_politics_laws"
-		position = { x = 0 y = 500 }
-		size = { width=100%% height=96%% }
+		position = { x = 0 y = 480 }
+		size = { width=700 height=96%% }
 		verticalScrollbar = "right_vertical_slider_tno_laws_2"
 		margin = { top = 13 bottom = 8 }
 		background = {
 			name = "Background"
-			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+			quadTextureSprite ="GFX_tiled_window_1b_thin_border"
 		}
 		containerWindowType = {
 			name = "LE_category_1"
-			position = { x = 12 y = 120 }
+			position = { x = 20 y = 120 }
 			size = { width=240 height=700 }
-			containerWindowType = {
-				name = "TNO_category_1_slider"
-				position = { x = 0 y = 0 }
-				size = { width=200%% height=700 }
-				margin = { top = 4 bottom = 5 }
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_blank"
-				}
-			}
 			###Governmental Laws Start
 			########################################################
 			containerWindowType = {
@@ -685,13 +675,13 @@ guiTypes = {
 			############################
 			containerWindowType = {
 				name = "category_5_immigration"
-				position = { x =0 y = 196 }
+				position = { x =508 y = 29 }
 				size = { width = 100%% height = 30 }
-				iconType = {
-					name = "law_political_parties_header"
-					spriteType = "GFX_category_header"
-					position = { x=-2 y=-24 }
-				}
+				#iconType = {
+				#	name = "law_political_parties_header"
+				#	spriteType = "GFX_category_header"
+				#	position = { x=-2 y=-24 }
+				#}
 				iconType = {
 					name = "law_vote_franchise_icon"
 					spriteType = "GFX_political_strip"
@@ -747,7 +737,7 @@ guiTypes = {
 			}
 			containerWindowType = {
 				name = "selected_laws_immigration_5"
-				position = { x=-11 y=-418}
+				position = { x=498 y=-586}
 				size = { width = 100%% height = 100%% }
 				iconType = {
 					name = "law_immigration_selected_1"
@@ -779,7 +769,7 @@ guiTypes = {
 				position = { x =135 y = 196 }
 				size = { width = 100%% height = 130 }
 				iconType = {
-					name = "law_minorities_icon"
+					name = "law_press_rights_icon"
 					spriteType = "GFX_political_strip"
 					frame = 6
 					position = { x=2 y=-17 }
@@ -868,7 +858,7 @@ guiTypes = {
 					name = "law_public_meetings_btn_1"
 					position = { x = 0 y = 20 }
 					quadTextureSprite ="GFX_sort_button_104x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_protests_1_tt"
 					buttonFont = "vic_18"
 					text = "Not Allowed"
 					Orientation = "UPPER_LEFT"
@@ -877,10 +867,42 @@ guiTypes = {
 					name = "law_public_meetings_btn_2"
 					position = { x = 0 y = 44 }
 					quadTextureSprite ="GFX_sort_button_104x29"
-					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
+					pdx_tooltip = "LE_protests_2_tt"
+					buttonFont = "vic_18"
+					text = "Suppressed"
+					Orientation = "UPPER_LEFT"
+				}
+				buttonType = {
+					name = "law_public_meetings_btn_3"
+					position = { x = 0 y = 68 }
+					quadTextureSprite ="GFX_sort_button_104x29"
+					pdx_tooltip = "LE_protests_3_tt"
 					buttonFont = "vic_18"
 					text = "Allowed"
 					Orientation = "UPPER_LEFT"
+				}
+			}
+			containerWindowType = {
+				name = "selected_laws_public_meetings"
+				position = { x=396 y=-420}
+				size = { width = 100%% height = 100%% }
+				iconType = {
+					name = "law_public_meetings_selected_1"
+					position = { x=10 y=635 }
+					spriteType = "GFX_selected_law_small"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "law_public_meetings_selected_2"
+					position = { x=10 y=659 }
+					spriteType = "GFX_selected_law_small"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "law_public_meetings_selected_3"
+					position = { x=10 y=683 }
+					spriteType = "GFX_selected_law_small"
+					alwaystransparent = yes
 				}
 			}
 			containerWindowType = {
@@ -932,6 +954,29 @@ guiTypes = {
 				}
 			}
 			containerWindowType = {
+				name = "selected_laws_minorites_5"
+				position = { x=258 y=-420}
+				size = { width = 100%% height = 100%% }
+				iconType = {
+					name = "law_minorities_selected_1"
+					position = { x=10 y=635 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "law_minorities_selected_2"
+					position = { x=10 y=659 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "law_minorities_selected_3"
+					position = { x=10 y=683 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
+				}
+			}
+			containerWindowType = {
 				name = "category_1_law_minimum_wage"
 				position = { x =0 y = 332 }
 				size = { width = 100%% height = 30 }
@@ -962,7 +1007,7 @@ guiTypes = {
 					quadTextureSprite ="GFX_sort_button_140x29"
 					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
 					buttonFont = "vic_18"
-					text = "No Minimun Wage"
+					text = "No Wages"
 					Orientation = "UPPER_LEFT"
 				}
 				buttonType = {
@@ -971,7 +1016,7 @@ guiTypes = {
 					quadTextureSprite ="GFX_sort_button_140x29"
 					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
 					buttonFont = "vic_18"
-					text = "Poor Minimun Wage"
+					text = "Poor Wages"
 					Orientation = "UPPER_LEFT"
 				}
 				buttonType = {
@@ -980,7 +1025,7 @@ guiTypes = {
 					quadTextureSprite ="GFX_sort_button_140x29"
 					pdx_tooltip = "TNO_POLITICS_CATEGORY_1_LAW_tno_political_parties_TT"
 					buttonFont = "vic_18"
-					text = "Low Minimum Wage"
+					text = "Low Wages"
 					Orientation = "UPPER_LEFT"
 				}
 				buttonType = {
@@ -1000,6 +1045,41 @@ guiTypes = {
 					buttonFont = "vic_18"
 					text = "Good Wages"
 					Orientation = "UPPER_LEFT"
+				}
+			}
+			containerWindowType = {
+				name = "selected_laws_minimum_wage"
+				position = { x=2 y=-420}
+				size = { width = 100%% height = 100%% }
+				iconType = {
+					name = "law_minimum_wage_selected_1"
+					position = { x=10 y=635 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "law_minimum_wage_selected_2"
+					position = { x=10 y=659 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "law_minimum_wage_selected_3"
+					position = { x=10 y=683 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "law_minimum_wage_selected_4"
+					position = { x=10 y=683 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "law_minimum_wage_selected_5"
+					position = { x=10 y=683 }
+					spriteType = "GFX_selected_law"
+					alwaystransparent = yes
 				}
 			}
 			containerWindowType = {

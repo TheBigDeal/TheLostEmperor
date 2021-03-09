@@ -1,0 +1,54 @@
+EIC_DESTROY_LOCAL_CHIEFDOMS_CAT = {
+	EIC_arrest_local_chiefs = {
+		icon = generic_army_support
+		cost = 0
+		ai_will_do = { factor = 5 }
+		fixed_random_seed = no
+		#days_re_enable = 7
+		days_remove = 30
+		visible = {
+			always = yes
+		}
+		available = {
+			always = yes
+		}
+		remove_effect = {
+			set_country_flag = eic_chiefs_arrested
+			add_stability = -0.02
+		}
+	}
+	EIC_trial_of_the_chiefs = {
+		icon = generic_army_support
+		cost = 100
+		ai_will_do = { factor = 5 }
+		fixed_random_seed = no
+		#days_re_enable = 7
+		days_remove = 190
+		visible = {
+			always = yes
+		}
+		available = {
+			has_country_flag = eic_chiefs_arrested
+		}
+		remove_effect = {
+			set_country_flag = eic_chief_trial
+		}
+	}
+	EIC_execute_the_chiefs = {
+		icon = generic_army_support
+		cost = 50
+		ai_will_do = { factor = 5 }
+		fixed_random_seed = no
+		#days_re_enable = 7
+		days_remove = 180
+		visible = {
+			always = yes
+		}
+		available = {
+			has_country_flag = eic_chief_trial
+		}
+		remove_effect = {
+			add_stability = -0.03
+		}
+	}
+}

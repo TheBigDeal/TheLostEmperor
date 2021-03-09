@@ -32,36 +32,59 @@ units = {
 	######## Ellinikó Genikó Epiteleío ########
 	division = {
 		name = "Trigonikó Pezikoú"
-		location = 13285
-		division_template = "Trigonikó Pezikoú" 
+		location = 3882
+		division_template = "Trigonikó Pezikoú"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "Merarchía Ippikoú"
+		location = 3882
+		division_template = "Merarchía Ippikoú"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+	}
+
+
+	division = {
+		name = "Trigonikó Pezikoú"
+		location = 6886
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Trigonikó Pezikoú"
 		location = 13285
-		division_template = "Merarchía Ippikoú" 
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Merarchía Ippikoú"
+		location = 3526
+		division_template = "Merarchía Ippikoú"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "Trigonikó Pezikoú"
-		location = 3833
-		division_template = "Trigonikó Pezikoú" 
+		location = 6886
+		division_template = "Trigonikó Pezikoú"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "Trigonikó Pezikoú"
-		location = 974
-		division_template = "Trigonikó Pezikoú" 
+		location = 13285
+		division_template = "Trigonikó Pezikoú"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "Trigonikó Pezikoú"
-		location = 11856
-		division_template = "Trigonikó Pezikoú" 
+		location = 3526
+		division_template = "Trigonikó Pezikoú"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.5
 	}

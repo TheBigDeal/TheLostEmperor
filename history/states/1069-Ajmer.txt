@@ -1,0 +1,18 @@
+
+state={
+	id=1069
+	name="STATE_1069"
+	history={
+		owner = AMR
+		victory_points = { 1908 1 }
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = AMR
+	}
+	provinces={
+		1908 12844
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

@@ -76,6 +76,15 @@ scripted_gui = {
 					load_hansa_colony_array = yes
 				}
 			}
+			flag_c_click = {
+				goto_state = 1
+				#any_state = {
+				#	limit = {
+				#		is_capital = yes
+				#	}
+				#	goto_state = THIS
+				#}
+			}
 		}
 	}
 	hansa_window = {

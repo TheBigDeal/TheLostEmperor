@@ -1,4 +1,6 @@
 ﻿l_english:
+ country_name:0 "[?manpower_k]"
+ hansa_needed_money:0 "100,000 £texticon_money"
  state_in_HRE:0 "This State Is A Part Of The Holy Roman Empire"
  claim_state:0 "§YClaim State§!\nCost (£pol_power ): 300\nWe §GCan§! Claim This State"
  cannot_claim_state:0 "§YClaim State§!\nCost (£pol_power ): 300\nWe §RCannot§! Claim This State"
@@ -12,6 +14,13 @@
  hansa_tt:0 "§YNeu-Hansa§!"
  parliament_tt:0 "§YParliament§!"
  hre_tt:0 "§YHoly Roman Empire§!"
+ NONE_secondary_leader:0 "No Secondary Leader"
+ class_division_tt:0 "§YSocial Classes:§!\nUpper Class: §Y[?upper_class_percent|%]§!\nMiddle Class: §Y[?middle_class_percent|%]§!\nLower Class: §Y[?lower_class_percent|%]§!"
+ class_division_delayed_tt:0 "Social classes have always been in society, wether it was the Kings versus the Peasants, the nobility and the church. Our society is broken into different cliques, but the main divide is always our economic value."
+#Start Text
+opening_text_mod:0 "The French Revolution was supposed to be a rebirth. A new beginning for Europe, a death to the old Ancien Régimes which had, for far too long, brutally oppressed the peoples of the continent. But, in the end, it failed. The guillotine, once used for the executions of reactionaries, was utilized once more to put an end to the lives of countless revolutionary heroes. The ancient French monarchy however, forcibly restored by their allies across Europe, proved notoriously unstable. Numerous revolutions followed, each being less successful than the previous one. Today, in the year of our Lord 1927, Europe stands on the edge of the abyss. Ideas such as Socialism and Marxism have replaced the radical Liberalism of the First Revolution and each and every European monarch sits upon an uneasy throne. France, once the greatest power in Europe, has been almost dismembered by its supposed allies on the continent. Its people toil away, in constant fear of the royalist secret police. But, away from prying eyes, the people whisper and shadows move. Ancient slogans of "Liberté, égalité, fraternité" appear written alongside hammer and sickles. The world is on the verge of catastrophe, and it only takes a spark to light a flame."
+opening_text_alk:0 "The Dominion of Alaska is one of the northernmost reaches of the British Empire, although, and one of the largest dominions of Britain. However, its size is of basically no use, due to Permafrosts and low levels of development, and almost the entire legislature is formed of Native People of Alaska. The attempts made at merging Alaska with the Dominion of Canada have been failures, with the Legislature being intent on the fact that they will fight for independence if any more merger attempts with Canada are made. In 1911, a British Representative, Sir Edward Williams, who was known as the "The British Coronado" due to his great diplomatic skills, was sent to Alaska for merger talks, and he was later found dead in a freezing pond. After this drastic event, discussions have broken out in the crown to give Alaska Independence. However, as a result of this, the British have enforced Martial Law and it seems as if Alaska has been stripped off its resources, and the future of Alaska remains insecure if they decide to go with the crown."
+
  ### Demobilisation ###
 mobilisation_penalty_modifier:0 "Above Division Limit"
 

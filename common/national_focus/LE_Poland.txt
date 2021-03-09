@@ -532,6 +532,7 @@ focus_tree = {
 		id = POL_FUND_THE_SOVIETS
 		icon = GFX_unknown
 		prerequisite = { focus = POL_APPEAL_TO_POLES_IN_GALICIA focus = POL_ASK_FOR_AUSTRIAN_SUPPORT }
+		mutually_exclusive = { focus =  POL_FUND_BAVARIAN_SOCIALISTS }
 		x = 14
 		y = 6
 		cost = 7.2
@@ -546,6 +547,7 @@ focus_tree = {
 		id = POL_FUND_BAVARIAN_SOCIALISTS
 		icon = GFX_unknown
 		prerequisite = { focus = POL_APPEAL_TO_POLES_IN_GALICIA focus = POL_ASK_FOR_AUSTRIAN_SUPPORT }
+		mutually_exclusive = { focus =  POL_FUND_THE_SOVIETS }
 		x = 10
 		y = 6
 		cost = 7.2

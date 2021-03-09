@@ -5,8 +5,8 @@ state={
 	resources={
 		tungsten=42.000
 	}
-
 	history={
+		victory_points = { 2054 5 }
 		owner = RJP
 		add_core_of = RJP
 		buildings = {
@@ -18,9 +18,9 @@ state={
 	}
 
 	provinces={
-		1147 1908 1980 2054 4149 4915 4971 4984 7905 7998 10843 10847 10866 12041 12718 12844 12876 12886 
+		2054 4915 7905 7998
 	}
-	manpower=11786000
+	manpower=3786000
 	buildings_max_level_factor=1.000
 	state_category=town
 }

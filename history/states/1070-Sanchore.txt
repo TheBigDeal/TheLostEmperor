@@ -1,0 +1,21 @@
+
+state={
+	id=1070
+	name="STATE_1070"
+
+	history={
+		owner = SNC
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SNC
+
+	}
+
+	provinces={
+		1147 1980 10847 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

@@ -4,7 +4,7 @@ scripted_gui = {
 		parent_window_token = politics_tab
 		window_name = "TNO_SG_politics_laws"
 		visible = { always = yes }
-		triggers = { 
+		triggers = {
 			###GOVERNMENTAL LAWS
 			################################################
 			#Conscription Law
@@ -55,15 +55,27 @@ scripted_gui = {
 			law_immigration_selected_2_visible = { has_idea = law_5_quota_immigration }
 			law_immigration_selected_3_visible = { has_idea = law_5_open_immigration }
 			law_immigration_selected_4_visible = { has_idea = law_5_naturalization }
-			
 			law_press_rights_selected_1_visible = { has_idea = law_6_state_run_press }
 			law_press_rights_selected_2_visible = { has_idea = law_6_censored_press }
 			law_press_rights_selected_3_visible = { has_idea = law_6_free_press }
+			law_minorities_selected_1_visible = { has_idea = law_7_oppressed }
+			law_minorities_selected_2_visible = { has_idea = law_7_limited_rights }
+			law_minorities_selected_3_visible = { has_idea = law_7_protected }
+			law_public_meetings_selected_1_visible = { has_idea = law_8_not_allowed }
+			law_public_meetings_selected_2_visible = { has_idea = law_8_suppressed }
+			law_public_meetings_selected_3_visible = { has_idea = law_8_allowed }
+
+			law_minimum_wage_selected_1_visible = { has_idea = law_9_no_wages }
+			law_minimum_wage_selected_2_visible = { has_idea = law_9_poor_wages }
+			law_minimum_wage_selected_3_visible = { has_idea = law_9_low_wages }
+			law_minimum_wage_selected_4_visible = { has_idea = law_9_acceptable_wages }
+			law_minimum_wage_selected_5_visible = { has_idea = law_9_good_wages }
+
 		}
 		effects = {
 			###CONSCRIPTION LAWS
 			################################################
-			law_conscription_btn_1_click = { 
+			law_conscription_btn_1_click = {
 				if = {
 					limit = { check_variable = { open_conscription_container = 0 } }
 					set_variable = { open_conscription_container = 1 }
@@ -82,7 +94,7 @@ scripted_gui = {
 					set_variable = { open_economy_container = 0 }
 				}
 			}
-			law_conscription_btn_2_click = { 
+			law_conscription_btn_2_click = {
 				if = {
 					limit = { check_variable = { open_conscription_container = 0 } }
 					set_variable = { open_conscription_container = 1 }
@@ -101,7 +113,7 @@ scripted_gui = {
 					set_variable = { open_economy_container = 0 }
 				}
 			}
-			law_conscription_btn_3_click = { 
+			law_conscription_btn_3_click = {
 				if = {
 					limit = { check_variable = { open_conscription_container = 0 } }
 					set_variable = { open_conscription_container = 1 }
@@ -120,7 +132,7 @@ scripted_gui = {
 					set_variable = { open_economy_container = 0 }
 				}
 			}
-			law_conscription_btn_4_click = { 
+			law_conscription_btn_4_click = {
 				if = {
 					limit = { check_variable = { open_conscription_container = 0 } }
 					set_variable = { open_conscription_container = 1 }
@@ -139,7 +151,7 @@ scripted_gui = {
 					set_variable = { open_economy_container = 0 }
 				}
 			}
-			law_conscription_btn_5_click = { 
+			law_conscription_btn_5_click = {
 				if = {
 					limit = { check_variable = { open_conscription_container = 0 } }
 					set_variable = { open_conscription_container = 1 }
@@ -158,7 +170,7 @@ scripted_gui = {
 					set_variable = { open_economy_container = 0 }
 				}
 			}
-			law_conscription_btn_6_click = { 
+			law_conscription_btn_6_click = {
 				if = {
 					limit = { check_variable = { open_conscription_container = 0 } }
 					set_variable = { open_conscription_container = 1 }
@@ -177,7 +189,7 @@ scripted_gui = {
 					set_variable = { open_economy_container = 0 }
 				}
 			}
-			law_conscription_btn_7_click = { 
+			law_conscription_btn_7_click = {
 				if = {
 					limit = { check_variable = { open_conscription_container = 0 } }
 					set_variable = { open_conscription_container = 1 }
@@ -197,7 +209,7 @@ scripted_gui = {
 				}
 			}
 			###TRADE LAWS
-			law_trade_btn_1_click = { 
+			law_trade_btn_1_click = {
 				if = {
 					limit = { check_variable = { open_trade_container = 0 } }
 					set_variable = { open_trade_container = 1 }
@@ -216,7 +228,7 @@ scripted_gui = {
 					set_variable = { open_economy_container = 0 }
 				}
 			}
-			law_trade_btn_2_click = { 
+			law_trade_btn_2_click = {
 				if = {
 					limit = { check_variable = { open_trade_container = 0 } }
 					set_variable = { open_trade_container = 1 }
@@ -235,7 +247,7 @@ scripted_gui = {
 					set_variable = { open_economy_container = 0 }
 				}
 			}
-			law_trade_btn_3_click = { 
+			law_trade_btn_3_click = {
 				if = {
 					limit = { check_variable = { open_trade_container = 0 } }
 					set_variable = { open_trade_container = 1 }
@@ -254,7 +266,7 @@ scripted_gui = {
 					set_variable = { open_economy_container = 0 }
 				}
 			}
-			law_trade_btn_4_click = { 
+			law_trade_btn_4_click = {
 				if = {
 					limit = { check_variable = { open_trade_container = 0 } }
 					set_variable = { open_trade_container = 1 }
@@ -274,7 +286,7 @@ scripted_gui = {
 				}
 			}
 			###ECONOMY LAWS
-			law_economy_btn_1_click = { 
+			law_economy_btn_1_click = {
 				if = {
 					limit = { check_variable = { open_economy_container = 0 } }
 					set_variable = { open_economy_container = 1 }
@@ -293,7 +305,7 @@ scripted_gui = {
 					set_variable = { open_trade_container = 0 }
 				}
 			}
-			law_economy_btn_2_click = { 
+			law_economy_btn_2_click = {
 				if = {
 					limit = { check_variable = { open_economy_container = 0 } }
 					set_variable = { open_economy_container = 1 }
@@ -312,7 +324,7 @@ scripted_gui = {
 					set_variable = { open_trade_container = 0 }
 				}
 			}
-			law_economy_btn_3_click = { 
+			law_economy_btn_3_click = {
 				if = {
 					limit = { check_variable = { open_economy_container = 0 } }
 					set_variable = { open_economy_container = 1 }
@@ -331,7 +343,7 @@ scripted_gui = {
 					set_variable = { open_trade_container = 0 }
 				}
 			}
-			law_economy_btn_4_click = { 
+			law_economy_btn_4_click = {
 				if = {
 					limit = { check_variable = { open_economy_container = 0 } }
 					set_variable = { open_economy_container = 1 }
@@ -350,7 +362,7 @@ scripted_gui = {
 					set_variable = { open_trade_container = 0 }
 				}
 			}
-			law_economy_btn_5_click = { 
+			law_economy_btn_5_click = {
 				if = {
 					limit = { check_variable = { open_economy_container = 0 } }
 					set_variable = { open_economy_container = 1 }
@@ -369,7 +381,7 @@ scripted_gui = {
 					set_variable = { open_trade_container = 0 }
 				}
 			}
-			law_economy_btn_6_click = { 
+			law_economy_btn_6_click = {
 				if = {
 					limit = { check_variable = { open_economy_container = 0 } }
 					set_variable = { open_economy_container = 1 }
@@ -388,7 +400,7 @@ scripted_gui = {
 					set_variable = { open_trade_container = 0 }
 				}
 			}
-			law_economy_btn_7_click = { 
+			law_economy_btn_7_click = {
 				if = {
 					limit = { check_variable = { open_economy_container = 0 } }
 					set_variable = { open_economy_container = 1 }
@@ -409,7 +421,7 @@ scripted_gui = {
 			}
 			###RELIGOUS LAWS
 			################################################
-			law_religion_btn_1_click = { 
+			law_religion_btn_1_click = {
 				if = {
 					limit = { check_variable = { open_religion_container = 0 } }
 					set_variable = { open_religion_container = 1 }
@@ -428,7 +440,7 @@ scripted_gui = {
 					set_variable = { open_economy_container = 0 }
 				}
 			}
-			law_religion_btn_2_click = { 
+			law_religion_btn_2_click = {
 				if = {
 					limit = { check_variable = { open_religion_container = 0 } }
 					set_variable = { open_religion_container = 1 }
@@ -466,7 +478,7 @@ scripted_gui = {
 					set_variable = { open_economy_container = 0 }
 				}
 			}
-			law_religion_btn_4_click = { 
+			law_religion_btn_4_click = {
 				if = {
 					limit = { check_variable = { open_religion_container = 0 } }
 					set_variable = { open_religion_container = 1 }
@@ -489,9 +501,9 @@ scripted_gui = {
 			################################################
 			law_political_parties_btn_1_click = {
 				if = {
-					limit = { 
-						NOT = { has_idea = law_1_only_underground } 
-						has_political_power > 299 
+					limit = {
+						NOT = { has_idea = law_1_only_underground }
+						has_political_power > 299
 						NOT = { has_government = liberalism }
 						NOT = { has_government = conservatism }
 						NOT = { has_government = socialism }
@@ -712,7 +724,7 @@ scripted_gui = {
 					limit = {check_variable = { law_2_no_voting_var = 1 }}
 					remove_ideas = { law_2_execuitive_comittee law_2_wealth law_2_only_men law_2_universal_voting}
 					add_ideas = { law_2_no_voting }
-					set_politics = { 
+					set_politics = {
 						ruling_party = ROOT
 						elections_allowed = no
 					}
@@ -724,7 +736,7 @@ scripted_gui = {
 					limit = {check_variable = { law_2_execuitive_comittee_var = 1 }}
 					remove_ideas = { law_2_no_voting law_2_wealth law_2_only_men law_2_universal_voting}
 					add_ideas = { law_2_execuitive_comittee }
-					set_politics = { 
+					set_politics = {
 						ruling_party = ROOT
 						elections_allowed = yes
 					}
@@ -736,7 +748,7 @@ scripted_gui = {
 					limit = {check_variable = { law_2_wealth_var = 1 }}
 					remove_ideas = { law_2_execuitive_comittee law_2_no_voting law_2_only_men law_2_universal_voting}
 					add_ideas = { law_2_wealth }
-					set_politics = { 
+					set_politics = {
 						ruling_party = ROOT
 						elections_allowed = yes
 					}
@@ -748,7 +760,7 @@ scripted_gui = {
 					limit = {check_variable = { law_2_only_men_var = 1 }}
 					remove_ideas = { law_2_execuitive_comittee law_2_wealth law_2_no_voting law_2_universal_voting}
 					add_ideas = { law_2_only_men }
-					set_politics = { 
+					set_politics = {
 						ruling_party = ROOT
 						elections_allowed = yes
 					}
@@ -760,7 +772,7 @@ scripted_gui = {
 					limit = {check_variable = { law_2_universal_voting_var = 1 }}
 					remove_ideas = { law_2_execuitive_comittee law_2_wealth law_2_only_men law_2_no_voting}
 					add_ideas = { law_2_universal_voting }
-					set_politics = { 
+					set_politics = {
 						ruling_party = ROOT
 						elections_allowed = yes
 					}
@@ -789,7 +801,7 @@ scripted_gui = {
 					set_variable = { open_law_window = 0 }
 					set_variable = { law_3_non_socialist_allowed_var = 0 }
 				}
-				else_if = { 
+				else_if = {
 					limit = {check_variable = { law_3_all_allowed_var = 1 }}
 					remove_ideas = { law_3_state_controlled law_3_non_socialist_allowed law_3_illegal }
 					add_ideas = { law_3_all_allowed }
@@ -1187,5 +1199,13 @@ scripted_gui = {
 			}
 		}
 	}
+	#main_window_refresh_pie_charts = {
+	#	context_type = player_context
+	#	parent_window_token = "topbar"
+	#	window_name = "topbar"
+	#	visible = { always = yes }
+	#	effects = {
+	#		player_flag_click = { add_political_power = 20 }
+	#	}
+	#}
 }
-

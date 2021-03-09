@@ -2,6 +2,35 @@
 ###############################
 #MODS
 ###############################
+ JAI:0 "Jaisalmer"
+ JAI_DEF:0 "Jaisalmer"
+ JAI_ADJ:0 "Jaisalmer"
+
+ JOD:0 "Jodhpur"
+ JOD_DEF:0 "Jodhpur"
+ JOD_ADJ:0 "Jodhpur"
+
+ RAG:0 "Ragusa"
+ RAG_DEF:0 "Ragusa"
+ RAG_ADJ:0 "Ragusa"
+
+ AMR:0 "Ajmer"
+ AMR_DEF:0 "Ajmer"
+ AMR_ADJ:0 "Ajmer"
+
+ SNC:0 "Sanchore"
+ SNC_DEF:0 "Sanchore"
+ SNC_ADJ:0 "Sanchore"
+
+ UDA:0 "Udaipore"
+ UDA_DEF:0 "Udaipore"
+ UDA_ADJ:0 "Udaipore"
+
+ ALW:0 "Alwart"
+ ALW_DEF:0 "Alwart"
+ ALW_ADJ:0 "Alwart"
+
+
  MJG:0 "Mujahideen Groups"
  MJG_DEF:0 "Mujahideen Groups"
  MJG_ADJ:0 "Mujahideen"
@@ -964,9 +993,9 @@
  MAR_despotism_DEF:0 "Maratha"
  MAR_despotism_ADJ:0 "Marathan"
 
- RJP:0 "Rajputana"
- RJP_DEF:0 "Rajputana"
- RJP_ADJ:0 "Rajputana"
+ RJP:0 "Jaipur"
+ RJP_DEF:0 "Jaipur"
+ RJP_ADJ:0 "Jaipur"
 
  BHA_absolutism:0 "Bahawalpur"
  BHA_absolutism_DEF:0 "Bahawalpur"

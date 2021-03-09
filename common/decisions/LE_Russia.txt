@@ -1,8 +1,8 @@
 RUS_REVOLT_RISK_CAT = {
 	RUSSIAN_CIVIL_WAR = {
 		icon = GFX_decision_russian_civil_war
-		visible = { 
-			tag = RUS 
+		visible = {
+			tag = RUS
 		}
 		days_mission_timeout = 275
 		fire_only_once = yes
@@ -21,37 +21,7 @@ RUS_REVOLT_RISK_CAT = {
 			RUS = { set_country_flag = SOV_SOVIET_REVOLUTION }
 		}
 		complete_effect = {
-			
-		}
-	}
-	CAUCASUS_REVOLUTION = {
-		icon = GFX_decision_revolt
-		fire_only_once = yes
-		is_good = no
-		allowed = {
-			AND = {
-				OR = {
-					original_tag = SOV
-					original_tag = RUS
-					original_tag = PER
-					original_tag = TUR
-				}
-				#AND = {
-				#	NOT = { country_exists = GEO }
-				#	NOT = { country_exists = AZR }
-				#	NOT = { country_exists = ARM }
-				#}
-			}
-		}
-		available = {
-            always = no
-        }
-		days_mission_timeout = 70
-		timeout_effect = {
-			RUS = { country_event = { id = le_caucaus.1 } }
-			TUR = { country_event = { id = le_caucaus.2 } }
-			PER = { country_event = { id = le_caucaus.3 } }
-			set_country_flag = SOV_CAUCASUS_REVOLUTION
+
 		}
 	}
 }
@@ -70,8 +40,8 @@ POST_REVOLUTION_REVOLTS = {
 		}
 		activation = {
 			OR = {
-				has_war_with = SOV 
-				has_war_with = RUS   
+				has_war_with = SOV
+				has_war_with = RUS
 			}
         }
 		available = {
@@ -79,7 +49,7 @@ POST_REVOLUTION_REVOLTS = {
         }
 		days_mission_timeout = 14
 		timeout_effect = {
-			country_event = { id = le_russia_unrest.2 } 
+			country_event = { id = le_russia_unrest.2 }
 		}
 	}
 	LATVIAN_REVOLT = {
@@ -95,8 +65,8 @@ POST_REVOLUTION_REVOLTS = {
 		}
 		activation = {
 			OR = {
-				has_war_with = SOV 
-				has_war_with = RUS   
+				has_war_with = SOV
+				has_war_with = RUS
 			}
         }
 		available = {
@@ -120,8 +90,8 @@ POST_REVOLUTION_REVOLTS = {
 		}
 		activation = {
 			OR = {
-				has_war_with = SOV 
-				has_war_with = RUS   
+				has_war_with = SOV
+				has_war_with = RUS
 			}
         }
 		available = {
@@ -145,8 +115,8 @@ POST_REVOLUTION_REVOLTS = {
 		}
 		activation = {
 			OR = {
-				has_war_with = SOV 
-				has_war_with = RUS   
+				has_war_with = SOV
+				has_war_with = RUS
 			}
         }
 		available = {

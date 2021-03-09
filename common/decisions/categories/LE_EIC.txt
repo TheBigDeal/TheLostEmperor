@@ -1,0 +1,10 @@
+################
+##### EIC ######
+################
+
+EIC_DESTROY_LOCAL_CHIEFDOMS_CAT = {
+	icon = idea_collectivism
+	visible = {
+		tag = EIC
+	}
+}

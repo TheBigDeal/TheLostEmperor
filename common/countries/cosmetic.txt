@@ -2,7 +2,10 @@ POL_LIT_COMMONWEALTH = {
 	color = rgb { 176 81 111 }
 	color_ui = rgb { 176 81 111 }
 }
-
+TUR_PUPPET = {
+	color = rgb { 171 190 152 }
+	color_ui = rgb { 222 247 198 }
+}
 MAC_REBELS = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 222 247 198 }

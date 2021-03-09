@@ -5,7 +5,7 @@ ideas = {
 		law = yes
 		law_1_only_underground = {
 			#on_add = {
-			#	reload_ideas = yes 
+			#	reload_ideas = yes
 			#	refresh_economy = yes
 			#}
 			modifier = {
@@ -43,7 +43,7 @@ ideas = {
 			cancel_if_invalid = no
 		}
 	}
-	
+
 	### VOTE FRANCHISE
 	###############################
 	law_vote_franchise = {
@@ -85,7 +85,7 @@ ideas = {
 			cancel_if_invalid = no
 		}
 	}
-	
+
 	### TRADE UNIONS
 	###############################
 	law_trade_unions = {
@@ -232,6 +232,65 @@ ideas = {
 				non_core_manpower = 0.10
 				stability_factor = 0.10
 				drift_defence_factor = -0.10
+			}
+			cancel_if_invalid = no
+		}
+	}
+	### Protests
+	###############################
+	law_protests = {
+		law = yes
+		law_8_not_allowed = {
+			modifier = {}
+			cancel_if_invalid = no
+		}
+		law_8_suppressed = {
+			default = yes
+			modifier = {}
+			cancel_if_invalid = no
+		}
+		law_8_allowed = {
+			modifier = {}
+			cancel_if_invalid = no
+		}
+	}
+	### Minimum Wage
+	###############################
+	law_wages = {
+		law = yes
+		law_9_no_wages = {
+			default = yes
+			modifier = {
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = -0.20
+			}
+			cancel_if_invalid = no
+		}
+		law_9_poor_wages = {
+			modifier = {
+				consumer_goods_factor = -0.10
+				industrial_capacity_factory = -0.10
+			}
+			cancel_if_invalid = no
+		}
+		law_9_low_wages = {
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+			cancel_if_invalid = no
+		}
+		law_9_acceptable_wages = {
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+			cancel_if_invalid = no
+		}
+		law_9_good_wages = {
+			modifier = {
+				consumer_goods_factor = 0.10
+				industrial_capacity_factory = 0.10
 			}
 			cancel_if_invalid = no
 		}

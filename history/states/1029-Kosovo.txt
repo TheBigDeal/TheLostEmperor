@@ -2,14 +2,14 @@ state={
 	id=1029
 	name="STATE_1029"
 	history={
-		owner = SER
+		owner = TUR
 		victory_points = { 6361 3 }
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 			arms_factory = 1
 		}
-		add_core_of = SER
+		add_core_of = TUR
 	}
 	provinces={
 		6940 9849 9874 9890 

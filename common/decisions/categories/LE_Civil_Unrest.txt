@@ -1,0 +1,6 @@
+##############################
+##### Civil Unrest ######
+##############################
+CIVIL_UNREST_CAT = {
+	icon = idea_collectivism
+}

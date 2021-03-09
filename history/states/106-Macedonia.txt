@@ -21,7 +21,7 @@ state={
 			974 1 
 		}
 		add_core_of = MAC
-		add_claim_by = SER
+		add_claim_by = TUR
 		add_claim_by = TUR
 	}
 

@@ -1,0 +1,34 @@
+guiTypes = {
+
+    containerWindowType = {
+        name = "modifiergui_core_window_enablebutton"
+        Orientation = LOWER_RIGHT
+        position = {
+            x=-105
+            y=-450
+        }
+        size = {
+            width = 100
+            height = 15
+        }
+        moveable = yes
+
+        background = {
+            name = "bg"
+            quadTextureSprite = "GFX_modifiergui_enablebutton_bg"
+        }
+
+        buttonType = {
+            name = "enablebutton"
+            position = {
+                x = 15
+                y = 1
+            }
+            spriteType = "GFX_modifiergui_enablebutton_button"
+            buttonText = "Modifier GUI"
+            buttonFont = "Arial12"
+        }
+
+    }
+
+}

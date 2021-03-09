@@ -1,0 +1,59 @@
+﻿###########################
+# East Indies Events
+###########################
+add_namespace = le_east_indies
+country_event = { #Nepalese Ultimatum
+	id = le_east_indies.1
+	title = le_east_indies.1.t
+	desc = le_east_indies.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Accept Subsidary Status
+		name = le_east_indies.1.a
+		EIC = { country_event = { id = le_east_indies.2 } }
+		effect_tooltip = {
+			if = {
+				limit = {	has_dlc = "Together for Victory" }
+				EIC = { set_autonomy = { target = NEP autonomous_state = autonomy_subsidiary freedom_level = 0.90} }
+				else = {
+					EIC = { puppet = NEP }
+				}
+			}
+		}
+  }
+	option = {
+		name = le_east_indies.1.b
+		EIC = { country_event = { id = le_east_indies.3 } }
+		effect_tooltip = {
+			EIC = { create_wargoal = { type = annex_everything target = NEP } }
+		}
+  }
+}
+country_event = { #Nepal Accepts Subsidary Status
+	id = le_east_indies.2
+	title = le_east_indies.2.t
+	desc = le_east_indies.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Great
+		name = le_east_indies.2.a
+		if = {
+			limit = {	has_dlc = "Together for Victory" }
+			set_autonomy = { target = NEP autonomous_state = autonomy_subsidiary freedom_level = 0.90}
+			else = {
+				puppet = NEP
+			}
+		}
+  }
+}
+country_event = { #Nepal Declines
+	id = le_east_indies.3
+	title = le_east_indies.3.t
+	desc = le_east_indies.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Unfortunate for them...
+		name = le_east_indies.3.b
+		create_wargoal = { type = annex_everything target = NEP }
+  }
+}

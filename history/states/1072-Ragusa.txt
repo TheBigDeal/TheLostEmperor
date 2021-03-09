@@ -1,0 +1,18 @@
+state={
+	id=1072
+	name="STATE_1072"
+	history={
+		owner = RAG
+		victory_points = { 6889 5 }
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+		}
+		add_core_of = RAG
+	}
+	provinces={
+		6889
+	}
+	manpower=142353
+	buildings_max_level_factor=1.000
+}

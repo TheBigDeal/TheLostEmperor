@@ -10,7 +10,8 @@ set_technology = {
 add_ideas = {
 	TUR_rebellious_subject_state
 }
-set_politics = {	
+set_cosmetic_tag = TUR_PUPPET
+set_politics = {
 	ruling_party = absolutism
 	last_election = "1933.3.5"
 	election_frequency = 48
@@ -43,4 +44,3 @@ create_field_marshal = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	skill = 2
 }
-

@@ -2,10 +2,20 @@
  test_cat:0 "Mod Temp Info"
  test_cat_desc:0 "Food Needed: §R[?food_needed]§!\nCurrent Food Stockpile: §G[?current_food]§!\nForce Limit: §Y[?num_divisions]/[?force_limit]§!\nActual Force Limit[?max_divisions]\nMaxavailablemanpowerk [?max_available_manpower_k]k\nLower Limit: [?lower_limit] Upper Limit: [?upper_limit]\n[?WAR_CASUALTIES]"
 
+ upper_class_tt:0 "Upper Class"
+ middle_class_tt:0 "Middle Class"
+ lower_class_tt:0 "Lower Class"
 
+ taxes_increase_tt:0 "§YIncrease Taxes By 1%§!\n\nCost: ( £pol_power ) : §R20§!"
+ taxes_decrease_tt:0 "§YDecrease Taxes By 1%§!\n\nCost: ( £pol_power ) : §R20§!"
 
- ### RESEARCH TOOLTIPS ###
- #Upper Class
+ economy_upper_class_taxes:0 "£texticon_money  Upper Class Taxes"
+ upper_class_modifer_tt:0 "§YCurrent Effects:§!\n    Stability: [?economy_upper_class_taxes_dm_stability|%R]"
+ economy_middle_class_taxes:0 "£texticon_money  Middle  Class Taxes"
+ middle_class_modifer_tt:0 "§YCurrent Effects:§!\n    Stability: [?economy_middle_class_taxes_dm_stability|%R]"
+ economy_lower_class_taxes:0 "£texticon_money  Lower Class Taxes"
+ lower_class_modifer_tt:0 "§YCurrent Effects:§!\n    Stability: [?economy_lower_class_taxes_dm_stability|%R]"
+
  tax_upper_class_none:0 "No Upper Class Taxes"
  taxes_upper_none_tt:0 "Cost (£pol_power ): §R[?upper_economic_pp_cost]§!\n§YEffects:§!\n §G+25§! Stability (£stability_texticon )\n   §Y0%§! Tax On Income"
  tax_upper_class_very_low:0 "Very Low Upper Class Taxes"

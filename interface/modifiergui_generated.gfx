@@ -1,0 +1,30 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_modifiergui_generated_category_bg_s7"
+        texturefile = "gfx/interface/generated/modifiergui_generated_category_bg_s7.dds"
+    }
+        spriteType = {
+        name = "GFX_modifiergui_generated_category_bg_s5"
+        texturefile = "gfx/interface/generated/modifiergui_generated_category_bg_s5.dds"
+    }
+        spriteType = {
+        name = "GFX_modifiergui_generated_category_bg_s4"
+        texturefile = "gfx/interface/generated/modifiergui_generated_category_bg_s4.dds"
+    }
+        spriteType = {
+        name = "GFX_modifiergui_generated_category_bg_s3"
+        texturefile = "gfx/interface/generated/modifiergui_generated_category_bg_s3.dds"
+    }
+        spriteType = {
+        name = "GFX_modifiergui_generated_category_bg_s17"
+        texturefile = "gfx/interface/generated/modifiergui_generated_category_bg_s17.dds"
+    }
+        spriteType = {
+        name = "GFX_modifiergui_generated_category_bg_s11"
+        texturefile = "gfx/interface/generated/modifiergui_generated_category_bg_s11.dds"
+    }
+        spriteType = {
+        name = "GFX_modifiergui_generated_category_bg_s12"
+        texturefile = "gfx/interface/generated/modifiergui_generated_category_bg_s12.dds"
+    }
+    }

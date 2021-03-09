@@ -1,0 +1,19 @@
+﻿capital = 1071
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+set_politics = {
+	ruling_party = absolutism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+    liberalism = 0
+    rexism = 0
+    proletarianism = 10
+    absolutism = 90
+}
+set_convoys = 5

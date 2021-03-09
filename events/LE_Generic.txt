@@ -32,3 +32,13 @@ country_event = { #Generic Treaty - Defeat
 		name = le_generic.3.a
 	}
 }
+country_event = { #Generic Treaty - Defeat
+	id = le_generic.4
+	title = le_generic.4.t
+	desc = le_generic.4.d
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		create_pie_chart = yes
+	}
+}

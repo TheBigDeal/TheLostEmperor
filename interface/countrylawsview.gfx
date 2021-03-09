@@ -111,11 +111,11 @@ spriteTypes = {
 		name = "GFX_conscription_scraping_the_barrel"
 		texturefile = "gfx/interface/goals/Governmental_Laws/conscription_scraping_the_barrel.dds"
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 	#MISC
 	spriteType = {
 		name = "GFX_political_strip"
@@ -123,25 +123,25 @@ spriteTypes = {
 		#effectFile = "gfx/FX/buttonstate.lua"
 		noOfFrames = 8
 	}
-	
+
 	spriteType = {
 		name = "GFX_social_strip"
 		texturefile = "gfx//interface//movement_strip_social.dds"
 		#effectFile = "gfx/FX/buttonstate.lua"
 		noOfFrames = 8
 	}
-	
+
 	spriteType = {
 		name = "GFX_selected_law"
 		texturefile = "gfx/interface/selected_law.dds"
 	}
 	spriteType = {
 		name = "GFX_selected_law_small"
-		texturefile = "gfx/interface/selected_law_small.dds"	
+		texturefile = "gfx/interface/selected_law_small.dds"
 	}
 	spriteType = {
 		name = "GFX_lawheader"
-		texturefile = "gfx/interface/lawheader.dds"	
+		texturefile = "gfx/interface/lawheader.dds"
 	}
 	spriteType = {
 		name = "GFX_category_header_longer"
@@ -261,5 +261,5 @@ spriteTypes = {
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-	}		
+	}
 }

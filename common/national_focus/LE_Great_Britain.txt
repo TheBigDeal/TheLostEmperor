@@ -281,7 +281,7 @@ focus_tree = {
 	#Focus for The Empire Act
 	focus = {
 		id = GBR_the_empire_act
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_GBR_the_sun_never_sets
 		relative_position_id = GBR_the_conservative_agenda
 		x = -3
 		y = 2
@@ -486,7 +486,7 @@ focus_tree = {
 	#Focus for Special Operations Executive
 	focus = {
 		id = GBR_special_operations_executive
-		icon = GFX_focus_eng_special_air_service
+		icon = GFX_focus_GBR_special_air_service
 		x = 39
 		y = 2
 		cost = 8
@@ -646,7 +646,7 @@ focus_tree = {
 	#Focus for Rule Britannia
 	focus = {
 		id = GBR_rule_britannia
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_GBR_the_sun_never_sets
 		x = 37
 		y = 0
 		cost = 5
@@ -685,7 +685,7 @@ focus_tree = {
 	#Focus for Britons never will be slaves!
 	focus = {
 		id = GBR_britons_never_will_be_slaves
-		icon = GFX_focus_eng_imperial_federation
+		icon = GFX_focus_GBR_imperial_federation
 		x = 41
 		y = 8
 		cost = 8
@@ -707,7 +707,7 @@ focus_tree = {
 	#Focus for An Empire on which the Sun never sets...
 	focus = {
 		id = GBR_an_empire_on_which_the_sun_never_sets
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_focus_GBR_the_sun_never_sets
 		x = 37
 		y = 10
 		cost = 8
@@ -1091,7 +1091,7 @@ focus_tree = {
 	#Focus for Dreams of an Empire
 	focus = {
 		id = GBR_dreams_of_an_empire
-		icon = GFX_focus_eng_global_defense
+		icon = GFX_focus_GBR_global_defense
 		x = 41
 		y = 1
 		cost = 8
@@ -1236,5 +1236,155 @@ focus_tree = {
 			factor = 1
 		}
 	}
-#End of focuses
- }
+	#Focus for Begin the Blockade
+	focus = {
+		id = GBR_begin_the_blockade
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 49
+		y = 2
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_golden_cavalry_of_st_george }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ask the Austrians
+	focus = {
+		id = GBR_ask_the_austrians
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 53
+		y = 3
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_gather_the_coalition }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Call upon the Prussians
+	focus = {
+		id = GBR_call_upon_the_prussians
+		icon = GFX_focus_ger_return_of_the_kaiser
+		x = 55
+		y = 2
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_gather_the_coalition }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Gather the Coalition
+	focus = {
+		id = GBR_gather_the_coalition
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 53
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_balance_tips }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Golden Cavalry of St. George
+	focus = {
+		id = GBR_the_golden_cavalry_of_st_george
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 47
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_balance_tips }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GBR_the_british_expeditionary_force
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 47
+		y = 3
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_golden_cavalry_of_st_george }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Rally Scandinavia
+	focus = {
+		id = GBR_rally_scandinavia
+		icon = GFX_goal_generic_dangerous_deal
+		x = 51
+		y = 2
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_gather_the_coalition }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Balance Tips
+	focus = {
+		id = GBR_the_balance_tips
+		icon = GFX_goal_generic_demand_territory
+		x = 50
+		y = 0
+		cost = 6
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Funding the Resistance
+	focus = {
+		id = GBR_funding_the_resistance
+		icon = GFX_goal_generic_special_forces
+		x = 45
+		y = 2
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = GBR_the_golden_cavalry_of_st_george }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Britannia Unleashed
+	focus = {
+		id = GBR_britannia_unleashed
+		icon = GFX_goal_generic_territory_or_war
+		x = 50
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+				focus = GBR_begin_the_blockade
+			}
+		prerequisite = {
+			focus = GBR_ask_the_austrians
+		}
+		prerequisite = {
+			focus = GBR_call_upon_the_prussians
+		}
+		prerequisite = {
+			focus = GBR_rally_scandinavia
+		}
+		prerequisite = {
+			focus = GBR_funding_the_resistance
+		}
+		prerequisite = {
+			focus = GBR_the_british_expeditionary_force
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
