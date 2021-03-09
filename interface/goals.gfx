@@ -23,6 +23,19 @@ spriteTypes = {
 	}
 	# THE LOST EMPEROR CUSTOM ICONS
 	#############################################################
+	
+	###Sweden###
+	
+		SpriteType = {
+		name = "GFX_Carolean_army"
+		texturefile = "gfx/interface/goals/Mod/swedishflagguy.dds"
+	}
+		SpriteType = {
+		name = "GFX_Swedish_Royalty"
+		texturefile = "gfx/interface/goals/Mod/swedisch.dds"
+	}
+    
+	###OTHER###
 	SpriteType = {
 		name = "GFX_red_army_officers"
 		texturefile = "gfx/interface/goals/Mod/Red_Army_Officers.dds"

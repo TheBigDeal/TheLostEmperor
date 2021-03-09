@@ -2,7 +2,7 @@
 # Swedish Events
 ###########################
 
-add_namespace = le_sweden
+add_namespace = le_SWE
 
 country_event = { #Finnish question
 	id = sweden.1
@@ -17,5 +17,114 @@ country_event = { #Finnish question
 	}
 	option = { #Turn Wilhelm Away
 		name = sweden.1.b
+	}
+}
+country_event = { 
+	id = le_SWE.69
+	hours = 1
+	title = le_SWE.69.t
+	desc = le_SWE.69.d
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+      mark_focus_tree_layout_dirty = yes 
+	}
+}
+country_event = { 
+	id = le_SWE.10
+	title = le_SWE.10.t
+	desc = le_SWE.10.d
+	is_triggered_only = yes
+	option = { #Accept Invite
+		name = le_SWE.10.a
+		ai_will_do_factor = 100
+		SWE = { add_to_faction = LIT }
+
+	}
+		option = { #Decline invite
+		name = le_SWE.10.b
+		ai_will_do_factor = 0
+		SWE = { event = { id = }}
+
+	}
+
+
+}
+country_event = { 
+	id = le_SWE.12
+	title = le_SWE.12.t
+	desc = le_SWE.12.d
+	is_triggered_only = yes
+	option = { #Accept annaxation
+		name = le_SWE.12.a
+		ai_will_do_factor = 100
+		SWE = { annex_country = { target = LAT transfer_troops = yes } }
+
+	}
+		option = { #Decline annaxetion, accept russia
+		name = le_SWE.12.b
+		ai_will_do_factor = 0
+		SWE = { event = { id = }}
+
+	}
+
+
+}
+country_event = { 
+	id = le_SWE.14
+	title = le_SWE.14.t
+	desc = le_SWE.14.d
+	is_triggered_only = yes
+	option = { #Accept Invite
+		name = le_SWE.14.a
+		ai_will_do_factor = 100
+		SWE { annex_country = { target = EST transfer_troops = yes } }
+
+	}
+		option = { #Decline invite
+		name = le_SWE.14.b
+		ai_will_do_factor = 0
+		SWE = { event = { id = }}
+
+	}
+
+
+}
+country_event = { 
+	id = le_SWE.15
+	title = le_SWE.15.t
+	desc = le_SWE.15.d
+	is_triggered_only = yes
+	option = { #Accept Invite
+		name = le_SWE.15.a
+		ai_will_do_factor = 100
+		SWE = { transfer_state = 146 }
+		SWE = { transfer_state = 147 }
+		SWE = { transfer_state = 722 }
+	}
+}
+country_event = { 
+	id = le_SWE.16
+	title = le_SWE.16.t
+	desc = le_SWE.16.d
+	picture	= GFX_report_event_king_speech
+	is_triggered_only = yes
+	option = { #Accept Invite
+		name = le_SWE.16.a
+		
+
+	}
+}
+country_event = { 
+	id = le_SWE.20
+	title = le_SWE.20.t
+	desc = le_SWE.20.d
+	picture	= GFX_report_event_king_speech
+	is_triggered_only = yes
+	option = { #Accept Invite
+		name = le_SWE.20.a
+		ai_will_do_factor = 100
+		
+
 	}
 }

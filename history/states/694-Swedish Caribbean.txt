@@ -6,8 +6,8 @@ state={
 	state_category = rural
 
 	history={
-		owner = CFE
-		add_core_of = CFE
+		owner = SWE
+		add_core_of = SWE
 		buildings = {
 			infrastructure = 4
 			air_base = 1
@@ -15,7 +15,7 @@ state={
 				naval_base = 3
 			}
 			9377 = {
-				naval_base = 1
+				naval_base = 2
 			}
 		}
 	}

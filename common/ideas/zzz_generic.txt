@@ -7,7 +7,7 @@ ideas = {
 				always = yes
 			}
 			visible = {
-				NOT = { tag = USA }
+				NOT = { tag = USA tag = SWE } 
 			}
 			ai_will_do = {
 				factor = 1
@@ -21,7 +21,8 @@ ideas = {
 				always = yes
 			}
 			visible = {
-				NOT = { tag = USA }
+				NOT = { tag = USA tag = SWE }
+			
 			}
 			ai_will_do = {
 				factor = 1
@@ -35,7 +36,7 @@ ideas = {
 				always = yes
 			}
 			visible = {
-				NOT = { tag = USA }
+				NOT = { tag = USA tag = SWE }
 			}
 			ai_will_do = {
 				factor = 1
@@ -49,7 +50,7 @@ ideas = {
 				always = yes
 			}
 			visible = {
-				NOT = { tag = USA }
+				NOT = { tag = USA tag = SWE }
 			}
 			ai_will_do = {
 				factor = 1
@@ -63,7 +64,7 @@ ideas = {
 				always = yes
 			}
 			visible = {
-				NOT = { tag = USA }
+				NOT = { tag = USA tag = SWE }
 			}
 			ai_will_do = {
 				factor = 1

@@ -1,8 +1,36 @@
 ﻿l_english: 
 
-# Sweden
- ### Political Parties ###
+#Sweden
+
+  ##Focus Trees##
+  swedish_focus:0 "The Kingdom of Swedens Focus Tree"
+  LE_Sweden_rightwing:0 "The way to Swedish glory"
+  ### Events ###
  
+  le_SWE.10.t:0 "Sweden invites us to the Swedish Military Sphere"
+  le_SWE.69.t:0 "What to do with the russians"
+ 
+  le_SWE.12.t:0 "Sweden offers protection from the russians"
+  le_SWE.12.d:0 "The Swedish king has publically announced his support for us, clearly showing he does not want us to return to russian tyranny. Today, a formal letter was recieved from the Swedish embassy stating that he offers to reassemble us and the Estonians in to a new Duchy of Livonia inside the great Kingdom of Sweden. This would affectively force the russians to leave our terratorry, as to not provoke the Swedish into joining the civil war and tipping the scales. We are in a dire situation, but is it dire enough for us to give up on the Lithuanian cause?"
+  le_SWE.12.a:0 "For the safety of our people and our lands, we will rest our future inside of Livonia"
+  le_SWE.12.b:0 "It is a lucrative offer, but we will fight for our freedom or die trying!"
+ 
+  le_SWE.14.t:0 "Sweden offers protection from the russians"
+  le_SWE.14.d:0 "The Swedish king has publically announced his support for us, clearly showing he does not want us to return to russian tyranny. Today, a formal letter was recieved from the Swedish embassy stating that he offers to reassemble us and the Latvians in to a new Duchy of Livonia inside the great Kingdom of Sweden. This would affectively force the russians to leave our terratorry, as to not provoke the Swedish into joining the civil war and tipping the scales. We are in a dire situation, but is it dire enough for us to give up on the Estonian cause?"
+  le_SWE.14.a:0 "For the safety of our people and our lands, we will rest our future inside of Livonia"
+  le_SWE.14.b:0 "It is a lucrative offer, but we will fight for our freedom or die trying!"
+ 
+ 
+  le_SWE.15.t:0 "Sweden maches into former finnish lands"
+  le_SWE.15.d:0 "We have gotten reports from northern garrissons that swedish troops has marched back into the former finnish areas of Karjala, Salla and Petsamo. As of our current situation we could not affort fighting the swedish, and the few troops located in those areas were immediatly ordered to retreat and let the swedish in"
+  le_SWE.15.a:0 "Let them occupy the areas for the time being, it won't last long"
+  
+  le_SWE.20.t:0 "Their deed is official"
+  le_SWE.20.d:0 "It is now official. We had earlier gotten reports from local generals that sweden had been moving into russian terratory, and we also had to stop our advances into the baltic, as they had been "Placed under protection" by Sweden. This was however all secret, and only Swedish and Russian generals were aware of this, most hoping that when the civil war concludes the terratories be reverted. However, this morning the Swedish king, together with the regent of Swedis Finland, and the Livonian duchy, wrote a formal letter to the press. In witch they state to the public that they have moved in to protect their fellow baltic people from the graps of russian tyranny, and that the lands where now integral parts of Sweden. Nothing russian will be allowed to remain. This statement is outrageous, and we can not allow them to this to us and our lands!"
+  le_SWE.20.a:0 "We have more important matters in our hands, but they should know this won't last for long"
+  ### Political ###
+ 
+  ## Parties ##
   SWE_mutualism_party:0 ""
   SWE_collectivism_party:0 "Sveriges Kommunistiska Parti"
   SWE_proletarianism_party:0 "Det Svenska Kommunistiska Partiet"
@@ -12,16 +40,59 @@
   SWE_conservatism_party:0 "Allmänna valmansförbundet"
   SWE_liberalism_party:0 "Det Socialdemokratiska Vänsterpartiet"
   SWE_socialism_party:0 "Socialdemokratiska Vänsterpartiet"
-  SWE_labryscism_party:0 "NSAP"
+  SWE_labryscism_party:0 "National Socialistiska Arbetare Partiet"
   SWE_rexism_party:0 "Järnhanden"
-  SWE_despotism_party:0 "NSAP"
+  SWE_despotism_party:0 "Svensk Socialistisk Samling"
+  
+  ## guys n gals ##
+  
+  SWE_Gustaf_V:0 "Gustaf den femte"
+  SWE_Gustaf_V_2:0 "Gustaf den femte"
+  SWE_sven_olov_lindholm:0 "Sven Olov Lindholm"
+  SWE_sven_olov_lindholm_2:0 "Sven Olov Lindholm"
+  SWE_Royal_Cabinet:0 "The Royal Cabinet"
+  SWE_Royal_Cabinet_2:0"The Royal Advisory Body"
+  SWE_birger_furugard:0 "Birger Furugård"
+  SWE_arne_forssell:0 "Arne Forssell"
+  SWE_royal_guard:0 "Högvakten"
+  
+  ##Assigned Thingos##
+  
+  constitutional_monarch:0 "Constitutional Monarch"
+  sins_of_the_father:0 "His Majesty's Iron Fist"
+  Imperial_Connections:0 "The Royalist Advisors"
+  
   
   ###National spirits###
+  
+  ##ASS##
+  Shell_0:0 "An empty shell"
+  Shell_1:0 "A half filled shell"
+  Shell_2:0 "An overflowing shell"
+  Shell_3:0 "An overflowing shell"
+  Shell_4:0 "An overflowing shell"
+  Shell_5:0 "An overflowing shell"
+  Shell_6:0 "An overflowing shell"
+  Shell_7:0 "An overflowing shell"
+  Shell_8:0 "A filled shell"
+  Shell_9:0 "A filled shell"
+  Shell_10:0 "A filled shell"
+  Shell_11:0 "An overflowing shell"
+  Shell_12:0 "An overflowing shell"
+  Shell_13:0 "An overflowing shell"
+  Shell_14:0 "An overflowing shell"
+  Shell_15:0 "An overflowing shell"
+  Shell_16:0 "An overflowing shell"
+  Shell_17:0 "A filled shell"
+  Shell_18:0 "A filled shell"
+  Shell_19:0 "A filled shell"
   
   ##Starting##
   
   baltic_navy:0 "The Baltic Navy"
-  baltic_navy_desc:0 "We are the empire of the baltic, and our baltic sea fleet is a pride we show to those who deny us that title. It is and has been an undisputed fact for years, that although Brittania may rule the atlantic waves, and the Japanese in the pacific the Swedish RULE THE BALTIC"
+  baltic_navy_desc:0 "We are the empire of the baltic, and our baltic sea fleet is a pride we show to those who deny us that title. It is and has been an undisputed fact for years, that although Brittania may rule the atlantic waves, and the Japanese in the pacific the Swedish rules the Baltic waves"
+  baltic_navy_2:0 "The Supreme Baltic Navy"
+  baltic_navy_2_desc:0 "We are the empire of the baltic, and our baltic sea fleet is a pride we show to those who deny us that title. It is and has been an undisputed fact for years, that although Brittania may rule the atlantic waves, and the Japanese in the pacific the Swedish rules the Baltic waves"
   finnish_nationalism:0 "Finish Nationalists" 
   finnish_nationalism_desc:0 "Finnish nationalism and natinalists have always been a bit of a thorn in the empires side. Soon a meeting will occur between our king and the finnish nominee however, that may solve that issue"
   worker_issues:0 "Worker Shortages"
@@ -30,13 +101,30 @@
   
   ##Gained##
   
-  ### Focuses ###
+  SWE_traditional_values:0 "Traditional Values of the People"
+  
+  ### Focuses of the first focus tree ###
   
   ##Russia Revolutiona##
   
+  prepare_for_breakdown:0 "Prepare for the Russian breakdown"
+  invite_lithuania:0 "Secure the Lithuanian front"
+  annex_riga:0 "Protect Riga"
+  prepare_for_finland:0 "Prepare for finnish expansions"
+  integrate_new_finland:0 "Integrate the new Finnish lands"
+  prepare_for_livonia:0 "Prepare for livonian expansions"
+  integrate_new_livonia:0 "Organize a loyal Livonian government"
+  a_breakdown:0 "The Russian Breakdown"
+  message_to_the_russians:0 "A letter from the king"
   
+  breakdown_tooltip:0 "The decisions to §BExpand finnish terratories§!, §BExpand into Estonia§! and §BExpand into Latvia§! are now avalible  "
+  finland_expand:0 "Unlocks decision §BExpand finnish terratories§! once the Russian civil war begins"
+  finland_core:0 "We gain cores on all §YFinnish§! states previously aquired"
+  livonia_expand:0 "Unlocks decisions §BExpand into Estonia§! and §BExpand into Latvia§! once the Russian civil war begins"
+  livonia_core:0 "We gain cores on all §YLivonian§! states previously aquired"
   
   ##PP Traditional##
+  
   tradition_values:0 "Traditional Values"
   tradition_values_desc:0 " As we have been, we shall be, for as long as this time of trial is upon us. The people of the north, the inhabitands of our empire, shall believe in the traditional values we gained through its creation"
   new_glory:0 "New times, New glory"
@@ -52,11 +140,11 @@
   the_fatherland_buildup:0 "A buildup of the fatherland" 
   the_fatherland_buildup_desc:0 "For long our country has been growing ever more distanced from the art of modern technology, but if we can use the times of peace to our advantage and mount a giant reconstruction of our ways we might lead our nation into a true fatherland"
   military_industry:0 "The Military Buildup"
-  military_industry_desc:0 "We will mount a reconstruct of our military industry, to secure our military goes undefeated in our future battles"
+  military_industry_desc:0 "We should seek to construct military factories in the areas around Stockholm, in the northeast of southern sweden, to make sure our army doesn't lack equipment"
 
   ## Buildup ##
 
-  peacetime_buildup:0 "A filling shell"
+  peacetime_buildup:0 "A shell to fill"
   peacetime_buildup_desc:0 "We are to start a massive peacetime buildup, by seeking out the things we lack and filling a shell to erase those gaps"
   
   stockholm_armouries:0 "The Stockholm Arsenals"
@@ -83,20 +171,21 @@
   ## Civvy ##
   
   civilian_industry:0 "Civilian Industry"
-  civilian_industry_desc:0 "If we are to be at the forefront of nations, our fatherland must have a strong industrial base"
+  civilian_industry_desc:0 "We must increase the industry around the northwestern areas, around our main city of gothenburg, to make sure our industrial capabilities keep on top"
   factory_advancements:0 "Factory Advancement"
   factory_advancements_desc:0 "We will search wide and far for the minds of the future, to improve our factories into ones fitting our glory"
   political_workplaces:0 "Politicalised Workplaces"
-  political_workplaces_desc:0 "We must endulge the common worker into the politics of our nation, and remind them of the greatness of our gouvernment"
+  political_workplaces_desc:0 "In order to improve upon our worker chrisis, we must lend some political freedom for the workers to organize labour unions, to increase worker effectivity. This will unfortunatly hand an increasing vote to the communist parties, but if we balance with our own propaganda in the factories, the kings party should stay on top"
   
   encourage_employment:0 "Employment Campains"
-  encourage_employment_desc:0 "To solve our employment issues we must mout massive employment campains, motivating people to join the basic industries that benefit the gouvernment"
+  encourage_employment_desc:0 "To solve our employment issues we must mout massive employment campains, motivating people to join the basic industries that benefit the government"
   worker_payrise:0 "A worker payrise"
   worker_payrise_desc:0 " To finally solve the employment chrisis we must increase the minimum wages to ensure that our workers are satisfied "
   nationalize_industry:0 " A nationalized industry"
   nationalize_industry_desc:0 "To finally fix the employment chrisis we must nationalize the industry, and use that to manipulate the industry into a favourable position where we can eliminate the last un-employees"
   
-  #RawrMy#
+  ##RawrMy##
+  
   the_nordic_navy:0 "Northern navy improvements"
   the_nordic_navy_desc:0 "We need to improve our northern navy, if we are to dominate our seas"
   the_baltic_navy:0 "The supreme baltic navy"

@@ -6,6 +6,8 @@ ideas = {
         NOT = { has_government = collectivism }
         NOT = { has_government = proletarianism }
         NOT = { has_government = mutualism }
+		NOT = { original_tag = SWE }
+		
       }
 			traits = { }
 			ai_will_do = {
@@ -17,6 +19,7 @@ ideas = {
       visible = {
         NOT = { has_government = labryscism }
         NOT = { has_government = despotism }
+		NOT = { original_tag = SWE }
       }
 			traits = { }
 			ai_will_do = {
@@ -30,6 +33,7 @@ ideas = {
         NOT = { has_government = royalism }
         NOT = { has_government = theocracy }
         NOT = { has_government = rexism }
+		NOT = { original_tag = SWE }
       }
 			traits = { }
 			ai_will_do = {
@@ -42,6 +46,7 @@ ideas = {
         NOT = { has_government = conservatism }
         NOT = { has_government = liberalism }
         NOT = { has_government = socialism }
+		NOT = { original_tag = SWE }
       }
 			traits = { }
 			ai_will_do = {
@@ -50,19 +55,11 @@ ideas = {
 		}
 	}
 	defence_minister = {
-		generic_air_defence = {
-			picture = generic_political_advisor_europe_3
-			visible = {
-        always = yes
-      }
-			traits = { old_general }
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	
     generic_air_defence = {
 			picture = generic_political_advisor_europe_3
 			visible = {
+		NOT = { original_tag = SWE }
         tag = PRE
       }
 			traits = { old_general }
@@ -72,7 +69,9 @@ ideas = {
 		}
     generic_land_defence = {
 			picture = generic_political_advisor_europe_3
-			visible = {}
+			visible = {
+			NOT = { original_tag = SWE }
+			}
 			traits = { old_general }
 			ai_will_do = {
 				factor = 1
@@ -82,6 +81,9 @@ ideas = {
 	economy_minister = {
 		generic_industrial_collector = {
 			picture = generic_political_advisor_europe_2
+			visible = {
+			NOT = { original_tag = SWE }
+			}
 			traits = {  }
 			ai_will_do = {
 				factor = 1
@@ -89,6 +91,9 @@ ideas = {
 		}
     generic_tariff_collector = {
 			picture = generic_political_advisor_europe_2
+			visible = {
+			NOT = { original_tag = SWE }
+			}
 			traits = {  }
 			ai_will_do = {
 				factor = 1
@@ -98,6 +103,9 @@ ideas = {
 	security_minister = {
 		generic_drift_dude = {
 			picture = generic_political_advisor_europe_1
+			visible = {
+			NOT = { original_tag = SWE }
+			}
 			traits = { bland_bueaucrat }
 			ai_will_do = {
 				factor = 1
@@ -107,6 +115,9 @@ ideas = {
 	intel_minister = {
 		generic_expert_spymaster = {
 			picture = generic_political_advisor_europe_4
+			visible = {
+			NOT = { original_tag = SWE }
+			}
 			traits = { expert_spymaster }
 			ai_will_do = {
 				factor = 1

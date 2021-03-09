@@ -4,19 +4,7 @@ ideas = {
 	    ## STARTER ##
 		
 		en_svensk_tiger = {
-			
-			visible = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = liberalism
-			}
-
-			removal_cost = -1
-
-			picture = generic_spy_intel
-			
+			picture = generic_spy_intel	
 			modifier = {
 				drift_defence_factor = 0.1
 				enemy_justify_war_goal_time = 0.1
@@ -24,19 +12,7 @@ ideas = {
 		}
 		
 		finnish_nationalism = {
-			
-			visible = {
-				always = no
-			}
-
-			allowed_civil_war = {
-
-			}
-
-			removal_cost = -1
-
-			picture = sisu
-			
+			picture = sisu			
 			modifier = {
 				consumer_goods_factor = 0.15
 				global_building_slots_factor = -0.1
@@ -45,19 +21,19 @@ ideas = {
 		}
 		
 		baltic_navy = {
-			
-			visible = {
-				always = no
+			picture = liberty_ships_focus	
+			modifier = {
+				experience_gain_navy = 0.01
+				naval_attrition = -0.02
+				naval_damage_factor = 0.02
+				naval_defense_factor = 0.02
+				naval_speed_factor = 0.1
+				naval_retreat_chance = -0.20
+				navy_submarine_attack_factor = -0.3
 			}
-
-			allowed_civil_war = {
-
-			}
-
-			removal_cost = -1
-
-			picture = liberty_ships_focus
-			
+		}
+		baltic_navy_2 = {
+			picture = liberty_ships_focus	
 			modifier = {
 				experience_gain_navy = 0.025
 				experience_gain_navy_unit_factor = 0.05
@@ -73,50 +49,252 @@ ideas = {
 		}
 		
 		worker_issues = {
-			
-			visible = {
-				always = no
-			}
-
-			allowed_civil_war = {
-
-			}
-
-			removal_cost = -1
-
-			picture = generic_production_bonus
-			
-			modifier = {
+           picture = generic_production_bonus
+		   modifier = {
             production_speed_buildings_factor = -0.15
 			industrial_capacity_factory = -0.2
 			industrial_capacity_dockyard = -0.1
-			consumer_goods_factor = 0.1
+			consumer_goods_factor = 0.12
 			conversion_cost_civ_to_mil_factor = 0.1
 			conversion_cost_mil_to_civ_factor = 0.1
 			}
 		}
 		
 		worker_issues_2 = {
-			
-			visible = {
-				always = no
-			}
-
-			allowed_civil_war = {
-
-			}
-
-			removal_cost = -1
-
 			picture = generic_production_bonus
-			
 			modifier = {
             production_speed_buildings_factor = -0.10
 			industrial_capacity_factory = -0.15
+			industrial_capacity_dockyard = -0.08
+			consumer_goods_factor = 0.1
+			conversion_cost_civ_to_mil_factor = 0.08
+			conversion_cost_mil_to_civ_factor = 0.08
+			}
+		}
+		worker_issues_3 = {
+			picture = generic_production_bonus
+			modifier = {
+            production_speed_buildings_factor = -0.07
+			industrial_capacity_factory = -0.10
 			industrial_capacity_dockyard = -0.06
-			consumer_goods_factor = 0.06
+			consumer_goods_factor = 0.09
 			conversion_cost_civ_to_mil_factor = 0.06
 			conversion_cost_mil_to_civ_factor = 0.06
+			}
+		}
+		worker_issues_4 = {
+			picture = generic_production_bonus
+			modifier = {
+            production_speed_buildings_factor = -0.0.05
+			industrial_capacity_factory = -0.07
+			industrial_capacity_dockyard = -0.04
+			consumer_goods_factor = 0.07
+			conversion_cost_civ_to_mil_factor = 0.04
+			conversion_cost_mil_to_civ_factor = 0.04
+			}
+		}
+		worker_issues_5 = {
+			picture = generic_production_bonus
+			modifier = {
+            production_speed_buildings_factor = -0.02
+			industrial_capacity_factory = -0.04
+			industrial_capacity_dockyard = -0.02
+			consumer_goods_factor = 0.05
+			conversion_cost_civ_to_mil_factor = 0.02
+			conversion_cost_mil_to_civ_factor = 0.02
+			}
+		}
+		###ASSHATTERY###
+		
+			Shell_1 = {
+			picture = generic_spy_intel	
+			modifier = {
+            political_power_gain = 0.15
+			
+			}
+		}
+	Shell_0 = {
+			picture = generic_spy_intel	
+			modifier = {
+			
+			}
+		}
+	
+	Shell_17 = {
+			picture = generic_spy_intel	
+			modifier = {
+            political_power_gain = 0.15
+			industrial_capacity_factory = 0.1
+			}
+		}
+    Shell_18 = {
+			picture = generic_spy_intel	
+			modifier = {
+			stability_factor = 0.15
+			political_power_gain = 0.15
+				
+			}
+		}
+	Shell_19 = {
+			picture = generic_spy_intel	
+			modifier = {
+			political_power_gain = 0.15
+			industrial_capacity_dockyard = 0.12
+			}
+		}
+	Shell_2 = {
+			picture = generic_spy_intel	
+			modifier = {
+			monthly_population = 0.2
+			trade_opinion_factor = 0.5
+			min_export = -0.2
+			political_power_gain = 0.15
+			industrial_capacity_factory = 0.1
+			
+			}
+		}
+	Shell_3 = {
+			picture = generic_spy_intel	
+			modifier = {
+			monthly_population = 0.2
+			trade_opinion_factor = 0.5
+			min_export = -0.2
+		    stability_factor = 0.15
+			political_power_gain = 0.15
+			
+			}
+		}
+	Shell_4 = {
+			picture = generic_spy_intel	
+			modifier = {
+			monthly_population = 0.2
+			trade_opinion_factor = 0.5
+			min_export = -0.2
+			political_power_gain = 0.15
+			industrial_capacity_dockyard = 0.12
+			}
+		}
+	Shell_5 = {
+			picture = generic_spy_intel	
+			modifier = {
+			air_equipment_upgrade_xp_cost = 0.1
+			air_ace_generation_chance_factor = 0.5
+			air_agility_factor = 0.1
+			air_attack_factor = 0.1
+			air_defence_factor = 0.1
+			air_training_xp_gain_factor = 0.5
+			political_power_gain = 0.15
+			industrial_capacity_factory = 0.1
+			}
+		}
+	Shell_6 = {
+			picture = generic_spy_intel	
+			modifier = {
+			air_equipment_upgrade_xp_cost = 0.1
+			air_ace_generation_chance_factor = 0.5
+			air_agility_factor = 0.1
+			air_attack_factor = 0.1
+			air_defence_factor = 0.1
+			air_training_xp_gain_factor = 0.5
+			stability_factor = 0.15
+			political_power_gain = 0.15
+			}
+		}
+	Shell_7 = {
+			picture = generic_spy_intel	
+			modifier = {
+			air_equipment_upgrade_xp_cost = 0.1
+			air_ace_generation_chance_factor = 0.5
+			air_agility_factor = 0.1
+			air_attack_factor = 0.1
+			air_defence_factor = 0.1
+			air_training_xp_gain_factor = 0.5
+			political_power_gain = 0.15
+			industrial_capacity_dockyard = 0.12
+			}
+		}
+		
+    Shell_8 = {
+			picture = generic_spy_intel	
+			modifier = {
+            industrial_capacity_factory = 0.1
+			}
+		}
+	Shell_9 = {
+			picture = generic_spy_intel	
+			modifier = {
+            stability_factor = 0.15
+			}
+		}
+	Shell_10 = {
+			picture = generic_spy_intel	
+			modifier = {
+            industrial_capacity_dockyard = 0.12
+			}
+		}
+		
+		
+	Shell_11 = {
+			picture = generic_spy_intel	
+			modifier = {
+			industrial_capacity_factory = 0.1
+			monthly_population = 0.2
+			trade_opinion_factor = 0.5
+			min_export = -0.2
+			}
+		}
+	Shell_12 = {
+			picture = generic_spy_intel	
+			modifier = {
+			stability_factor = 0.15
+			monthly_population = 0.2
+			trade_opinion_factor = 0.5
+			min_export = -0.2
+			}
+		}
+	Shell_13 = {
+			picture = generic_spy_intel	
+			modifier = {
+			industrial_capacity_dockyard = 0.12
+			monthly_population = 0.2
+			trade_opinion_factor = 0.5
+			min_export = -0.2
+			}
+		}
+	Shell_14 = {
+			picture = generic_spy_intel	
+			modifier = {
+			air_equipment_upgrade_xp_cost = 0.1
+			air_ace_generation_chance_factor = 0.5
+			air_agility_factor = 0.1
+			air_attack_factor = 0.1
+			air_defence_factor = 0.1
+			air_training_xp_gain_factor = 0.5
+			industrial_capacity_factory = 0.1
+			}
+		}
+	Shell_15 = {
+			picture = generic_spy_intel	
+			modifier = {
+			air_equipment_upgrade_xp_cost = 0.1
+			air_ace_generation_chance_factor = 0.5
+			air_agility_factor = 0.1
+			air_attack_factor = 0.1
+			air_defence_factor = 0.1
+			air_training_xp_gain_factor = 0.5
+			stability_factor = 0.15
+			}
+		}
+	Shell_16 = {
+			picture = generic_spy_intel	
+			modifier = {
+			air_equipment_upgrade_xp_cost = 0.1
+			air_ace_generation_chance_factor = 0.5
+			air_agility_factor = 0.1
+			air_attack_factor = 0.1
+			air_defence_factor = 0.1
+			air_training_xp_gain_factor = 0.5
+			industrial_capacity_dockyard = 0.12
 			}
 		}
 		
@@ -125,26 +303,10 @@ ideas = {
 		## Gained ##
 		
 		SWE_traditional_values = {
-			
-			visible = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = labrycism
-				has_government = rexism
-				has_government = royalism
-				has_government = absolutism
-			}
-
-			removal_cost = -1
-
 			picture = british_stoicism
-			
 			modifier = {
 				political_power_gain = 0.1
 				stability_factor = -0.1
-				
 				royalism_drift = 0.025
 				royalism_acceptance = 50
 				absolutism_drift = 0.025
@@ -160,24 +322,8 @@ ideas = {
 		}
 		
 				fatherland_buildup = {
-			
-			visible = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = labrycism
-				has_government = rexism
-				has_government = royalism
-				has_government = absolutism
-			}
-
-			removal_cost = -1
-
 			picture = british_stoicism
-			
 			modifier = {
-            
 			production_speed_buildings_factor = 0.17
 			industrial_capacity_factory = 0.3
 			industrial_capacity_dockyard = 0.15
@@ -186,45 +332,181 @@ ideas = {
 			
 			}
 		}
+				karolinerna = {
+			picture = british_stoicism	
+			modifier = {
+            acclimatization_cold_climate_gain_factor = 0.2
+			army_infantry_attack_factor = 0.05
+			army_infantry_defence_factor = 0.05
+			army_infantry_speed_factor = 0.05
+			army_morale_factor = 0.15
+			army_org_regain = 0.15
+			}
+		}
 		
 	
 	}
-
-	political_advisor = {
-
-		SWE_thorwald_bergquist = {
-
-			picture = generic_political_advisor_europe_5
-			
-			visible = {
-				original_tag = SWE
+	###GOUVERNMENT###
+    
+	head_of_government = {
+	
+        SWE_Gustaf_V = {
+            picture = generic_political_advisor_europe_2
+            visible = {
+            original_tag = SWE
+            }
+			is_locked = yes
+            traits = { }
+            ai_will_do = {
+                factor = 1
+            }
+			cost = 150
+		}
+		SWE_sven_olov_lindholm = {
+            picture = generic_political_advisor_europe_3
+            visible = {
+            original_tag = SWE
+            }
+			available = {
+			Has_government = labrycism
+			Has_government = despotism
+			}
+            traits = { }
+            ai_will_do = {
+                factor = 1
+            }
+			cost = 150
+		}
+		
+    }
+    secondary_head = {
+	
+        SWE_Gustaf_V_2 = {
+            picture = generic_political_advisor_europe_2
+            visible = {
+            NOT = { Has_government  = royalism }
+			NOT = { Has_government  = absolutism }
+			original_tag = SWE
+            }
+			is_locked = yes
+            traits = { Constitutional_Monarch }
+            ai_will_do = {
+                factor = 1
+            }
+			cost = 150
+		}
+		SWE_Royal_Cabinet = {
+            picture = Gustav.dds
+            visible = {
+            Has_government  = royalism 
+			original_tag = SWE
+            }
+			available = {
+			Has_completed_focus = elected_ministers 
+			Has_completed_focus = kings_ministers
+			}
+            traits = { Imperial_Connections }
+            ai_will_do = {
+                factor = 1
+            }
+			cost = 150
+		}
+		SWE_Royal_Cabinet_2 = {
+            picture = Gustav.dds
+            visible = {
+            NOT = { Has_government  = royalism }
+			original_tag = SWE
+            }
+			available = {
+			Has_government = absolutism
+			has_government = rexism
+			}
+            traits = { Sins_of_the_Father }
+            ai_will_do = {
+                factor = 1
+            }
+			cost = 150
+		}
+		SWE_sven_olov_lindholm_2 = {
+            picture = generic_political_advisor_europe_3
+            visible = {
+            original_tag = SWE
+            }
+			available = {
+			Has_completed_focus = elected_ministers 
+			Has_completed_focus = national_ministers
 			}
 			
-			traits = { compassionate_gentleman }
+            traits = { Fascist_Demagogue }
+            ai_will_do = {
+                factor = 1
+            }
+			cost = 150
 		}
-
-		SWE_osten_unden = {
-
-			picture = generic_political_advisor_europe_2
-
-			visible = {
-				original_tag = SWE
+    }
+    foreign_minister = {
+	
+        SWE_arne_forssell = {
+            picture = generic_political_advisor_europe_4
+            visible = {
+                original_tag = SWE
+            }
+			available = {
+			Has_completed_focus = elected_ministers 
+			Has_completed_focus = national_ministers
 			}
-			
-			traits = { silent_workhorse }
-		}
-
-		SWE_ernst_wigforss = {
-
-			picture = generic_political_advisor_europe_3
-			
-			visible = {
-				original_tag = SWE
+            traits = { Fascist_Sympathies }
+            ai_will_do = {
+                factor = 1
+            }
+			cost = 150
+        }
+		
+		
+    }
+    defence_minister = {
+	
+        SWE_birger_furugard = {
+            picture = generic_political_advisor_europe_5
+            visible = {
+                original_tag = SWE
+            }
+			available = {
+			Has_completed_focus = elected_ministers 
+			Has_completed_focus = national_ministers
 			}
-			
-			traits = { captain_of_industry }
-		}
-	}
+            traits = { Fascist_Militia_Leader }
+            ai_will_do = {
+                factor = 1
+            }
+			cost = 150
+        }
+		SWE_royal_guard = {
+            picture = generic_political_advisor_europe
+            visible = {
+                original_tag = SWE
+            }
+			available = {
+			Has_completed_focus = elected_ministers 
+			Has_completed_focus = kings_ministers
+			}
+            traits = { Hawk }
+            ai_will_do = {
+                factor = 1
+            }
+			cost = 150
+        }
+    }
+    economy_minister = {
+         
+    }
+    security_minister = {
+
+    }
+    intel_minister = {
+
+    }
+
 
 	theorist = {
 
@@ -244,7 +526,7 @@ ideas = {
 			traits = { military_theorist }
 		}
 
-		SWE_erik_palMEKierna = {
+		SWE_erik_palierna = {
 					
 					
 			visible = {
@@ -259,414 +541,5 @@ ideas = {
 			
 			traits = { naval_theorist }
 		}
-	}
-	# MILITARY
-	army_chief = {
-
-		SWE_olof_thornell = {
-			
-			picture = generic_army_europe_5
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { army_chief_old_guard }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_ivar_holmquist = {
-			
-			picture = generic_army_europe_1
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { army_chief_organizational_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_per_sylvan = {
-			
-			picture = generic_army_europe_6
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { army_chief_defensive_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_oscar_nygren = {
-			
-			picture = generic_army_europe_3
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { army_chief_drill_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	air_chief = {
-		
-
-		SWE_bengt_nordenskiold = {
-			
-			picture = generic_air_europe_3
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_torsten_friis = {
-			
-			picture = generic_air_europe_3
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { air_chief_all_weather_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-	}
-
-	navy_chief = {
-
-		SWE_gosta_ehrensvard = {
-			
-			picture = generic_navy_europe_2
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { navy_chief_commerce_raiding_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_fabian_tamm = {
-			
-			picture = generic_navy_europe_1
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { navy_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_charles_de_champs = {
-			
-			picture = generic_navy_europe_2
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { navy_chief_decisive_battle_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-	}
-
-	high_command = {
-
-		SWE_axel_rappe = {
-			
-			picture = generic_army_europe_1
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { army_artillery_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	
-		SWE_archibald_douglas = {
-			
-			picture = generic_army_europe_2
-
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_axel_ljungdahl = {
-			
-			picture = generic_air_europe_2
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { air_bomber_interception_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SWE_helge_stromback = {
-			
-			picture = generic_navy_europe_2
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-
-			
-			traits = { navy_fleet_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	tank_manufacturer = { 
-		
-		designer = yes
-		
-		landsverk = {
-			
-			picture = generic_tank_manufacturer_2
-
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-			research_bonus = {
-				armor = 0.10
-			}
-			
-			traits = { tank_manufacturer }
-			
-			modifier = {
-				# notable tanks L-120 and L-60, lighter tanks as well as the medium tank Stridsvagn m/42, that was mobile and well protected.
-			}
-		}
-
-	}
-	
-	naval_manufacturer = { 
-			
-		designer = yes
-		
-		marinvarkstaderna = { #Karlskrona
-			
-			picture = generic_naval_manufacturer_1
-
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			equipment_bonus = {
-				# mer research
-			}
-			
-			traits = { coastal_defence_naval_manufacturer }
-			
-			modifier = {
-			}
-		}
-
-		gotaverken = {
-			
-			picture = generic_naval_manufacturer_2
-
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			equipment_bonus = {
-				# worlds biggest shipyard by launched gross tonnes
-			}
-			
-			traits = { atlantic_fleet_naval_manufacturer }
-			
-			modifier = {
-			}
-		}
-
-		kockums = {
-			
-			picture = generic_naval_manufacturer_3
-
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			 
-			equipment_bonus = {
-				# submarines and battleships
-			}
-			
-			traits = { raiding_fleet_naval_manufacturer }
-			
-			modifier = {
-			}
-		}
-	}
-
-
-	materiel_manufacturer = {
-		
-		designer = yes
-	
-		bofors = {
-			
-			picture = generic_artillery_manufacturer_1
-
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-			research_bonus = {
-				artillery = 0.10
-			}
-			
-			equipment_bonus = {
-				artillery = {
-					reliability = 0.20
-				}
-			}
-			
-			traits = { artillery_manufacturer }
-			
-			modifier = {
-			}
-		}
-	
-		husqvarna = {
-			
-			picture = generic_infantry_equipment_manufacturer_2
-
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-			research_bonus = {
-				infantry_weapons = 0.10
-			}
-			
-			equipment_bonus = {
-				# rifles and pistols
-			}
-			
-			traits = { infantry_equipment_manufacturer }
-			
-			modifier = {
-			}
-		}
-		scania = {
-			
-
-			
-			visible = {
-				original_tag = SWE
-			}
-			
-			research_bonus = {
-				motorized_equipment = 0.10
-			}
-			
-			traits = { motorized_equipment_manufacturer }
-			
-			modifier = {
-				# more info
-			}
-		}
-		
-	}
+	}	
 }
