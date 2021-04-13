@@ -35,9 +35,9 @@ set_convoys = 150
 set_stability = 0.5
 
 create_country_leader = {
-	name = "Alfanso XIII de Bourbon"
-	desc = "POLITICS_MANUEL_AZANA_DESC"
-	picture = "Portrait_Alfonso_XIII.tga"
+	name = "Amadeus II"
+	desc = ""
+	picture = "Portrait_AmadeusII.tga"
 	expire = "1965.1.1"
 	ideology = absolutism_ideology
 	traits = {
