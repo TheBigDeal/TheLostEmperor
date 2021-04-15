@@ -6,7 +6,7 @@ state={
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1
-			dockyard = 2
+			dockyard = 1
 			4056 = {
 				naval_base = 7
 			}
@@ -18,7 +18,7 @@ state={
 			4056 1
 		}
 		add_core_of = KOR
-
+		add_claim_by = JAP
 	}
 	provinces={
 		1054 1081 4056 4086 4126 7121 10085 10110 11948 11977 12060 12085 12089

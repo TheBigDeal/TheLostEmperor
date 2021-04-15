@@ -90,12 +90,12 @@ containerWindowType = {
 			name ="current_food_text"
 			position = { x= 20 y = 4 }
 			font = "hoi_18mbs"
-			text = "[?current_food|*0.1]"
+			text = "[?current_food]"
 			format = center
 			maxWidth = 70
 			maxHeight = 24
 			fixedsize = yes
-			pdx_tooltip = "topbar_food_tt"
+			pdx_tooltip = topbar_food_tt
 		}
 	}
 	containerWindowType = {
@@ -111,20 +111,21 @@ containerWindowType = {
 
 		iconType = {
 			name ="current_force_limit_icon"
-			spriteType = "GFX_force_limit"
-			position = { x= -4 y = -10 }
+			spriteType = "GFX_division_icon"
+			position = { x= -3 y = -1 }
 		}
 
 		instantTextBoxType = {
 			name ="current_force_limit_text"
-			position = { x= 10 y = 4 }
+			position = { x= 22 y = 4 }
 			font = "hoi_18mbs"
-			text = "[?num_divisions]/[?force_limit]"
-			format = right
+			text = "unit_limit_count"
+			format = center
 			maxWidth = 70
 			maxHeight = 24
 			fixedsize = yes
-			pdx_tooltip = "topbar_force_limit_tt"
+			pdx_tooltip = unit_limit_label
+			pdx_tooltip_delayed = unit_limit_desc
 		}
 	}
 	containerWindowType = {

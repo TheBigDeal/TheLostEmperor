@@ -9,18 +9,13 @@
 # that'll be used if trigger passes
 
 defined_text = {
-	name = get_pie_tooltip
+	name = get_food_desc
 	text = {
-		trigger = { pie_chart^v = 1 }
-		localization_key = "upper_class_tt"
+		trigger = { check_variable = { root.current_food = 0 } }
+		localization_key = "topbar_famine_food_tt"
 	}
 	text = {
-		trigger = { pie_chart^v = 2 }
-		localization_key = "middle_class_tt"
-	}
-	text = {
-		trigger = { pie_chart^v = 3 }
-		localization_key = "middle_class_tt"
+		localization_key = ""
 	}
 }
 

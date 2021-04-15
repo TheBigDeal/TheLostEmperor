@@ -1,16 +1,4 @@
 ﻿l_english:
+
+
  
- 
- prestige_score:0 "[?prestige_score]"
- prestige_TOOLTIP:0 "§YPrestige Score§!\nPrestige is earned through special events, wars, and focuses."
- industrial_score:0 "[?industrial_score]"
- industrial_score_TOOLTIP:0 "§YIndustrial Score§!\nIndustrial score is increased through having a high population, and building factories!\n§YCurrent Population:§! [?country_population|0.01] [?ROOT.GetPopulationSuffix]\n§YCurrent Civilian Factories:§! [?num_of_civilian_factories]"
- military_score:0 "[?military_score]"
- military_score_TOOLTIP:0 "§YMilitary Score§!\nMilitary score is increased through having large army, the more active manpower the better!\n§YCurrent Deployed Manpower:§! [?max_available_manpower_k|0]\n§YCurrent Military Factories:§! [?num_of_military_factories|0]\n§YCurrent Naval Dockyards:§! [?num_of_naval_factories|0]"
- 
- GreatPower1:0 "ROOT.GetName"
- current_money_loss:0 ""
- money_breakdown:0 "Test"
- 
- populationsuffix_M:0 "M"
- populationsuffix_K:0 "K"

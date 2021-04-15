@@ -28,5 +28,38 @@ spriteTypes = {
 		texturefile = "gfx/interface/pops_small.dds"
 		noOfFrames = 12
 	}
+	spriteType = {
+    name = "GFX_modifiergui_enablebutton_bg"
+    texturefile = "gfx/interface/modifiergui_window_enablebutton_bg.dds"
+  }
+  spriteType = {
+    name = "GFX_modifiergui_enablebutton_button"
+    texturefile = "gfx/interface/modifiergui_button_enablebutton.dds"
+  }
+  spriteType = {
+    name = "GFX_modifiergui_menu_bg"
+    texturefile = "gfx/interface/modifiergui_window_menu_bg.dds"
+  }
+  spriteType = {
+    name = "GFX_modifiergui_category_button"
+    noOfFrames = 2
+    texturefile = "gfx/interface/modifiergui_button_category_button.dds"
+  }
+  spriteType = {
+    name = "GFX_modifiergui_modifier_button"
+    noOfFrames = 2
+    texturefile = "gfx/interface/modifiergui_button_modifier_button.dds"
+  }
+  spriteType = {
+    name = "GFX_modifiergui_modifier_bg"
+    texturefile = "gfx/interface/modifiergui_window_modifier_bg.dds"
+  }
+  spriteType = {
+    name = "GFX_modifiergui_modifier_var_button"
+    texturefile = "gfx/interface/modifiergui_button_modifier_var_button.dds"
+  }
+  spriteType = {
+    name = "GFX_modifiergui_modifier_var_counter"
+    texturefile = "gfx/interface/modifiergui_button_modifier_var_counter.dds"
+  }
 }
-s

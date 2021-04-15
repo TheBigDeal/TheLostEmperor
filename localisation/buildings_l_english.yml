@@ -1,11 +1,13 @@
 ﻿l_english:
  farm:0 "Farm"
  farm_plural:0 "Farms"
- farm_desc:0 "Farms are a countries source of §Yfood§!. Without farms countries cannot eat, and cannot exist.\n- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\nProdudes One £texticon_food"
+ farm_desc:0 "Farms are a countries source of §Yfood§!. Without farms people cannot eat!\n- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\nProdudes One £texticon_food"
+
+ textile_factory_desc:0 "Textile Factories are specialized type of factory which will take §YTwo £texticon_cotton Cotton§! and produce §YOne £texticon_textiles Textile§!.\n- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\nProdudes §YOne £texticon_textiles Textile§!"
  modifier_production_speed_farm_factor:0 "§YFarm§! construction speed:"
  textile_factory:0 "Textile Factory"
  textile_factory_plural:0 "Textile Factories"
- 
+
  infrastructure:0 "Infrastructure"
  infrastructure_plural:0 "Infrastructure"
  infrastructure_desc:0 "This building provides the state with improvement of infrastructure. It increases your supply power in strategic regions and increases your divisions' speed."

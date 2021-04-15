@@ -4,7 +4,7 @@ state={
 	name="STATE_1004"
 
 	history={
-		owner = CAT
+		owner = ARA
 		victory_points = { 872 3 }
 		victory_points = { 897 1 }
 		buildings = {
@@ -13,13 +13,13 @@ state={
 			industrial_complex = 1
 
 		}
+		add_core_of = ARA
 		add_core_of = CAT
 		add_core_of = SPR
-
 	}
 
 	provinces={
-		872 897 3898 3899 6836 13264 
+		872 897 3898 3899 6836 13264
 	}
 	manpower=33423
 	buildings_max_level_factor=1.000

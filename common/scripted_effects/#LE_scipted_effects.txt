@@ -243,7 +243,6 @@ load_hansa_colony_array = {
 	}
 }
 
-
 HRE_load_emperor_array = {
 	clear_array = global.emperor_array
 	add_to_array = { global.emperor_array = AUS }
@@ -613,29 +612,48 @@ get_force_limit = {
 	set_variable = { force_limit_18 = force_limit }
 	add_to_variable = { force_limit_18 = 18 } #Major Exceeding
 }
-
-get_food_needs = {
+get_starting_food = {
 	if = {
-		limit = { check_variable = { allowed_to_run = 0 }}
+		limit = { check_variable = { global.food_allowed_to_run = 1 }}
 		set_variable = { starting_food = max_manpower_k }
-		divide_variable = {starting_food = 200}
+		divide_variable = {starting_food = 400}
 		round_variable = starting_food #Food every day needed
-		multiply_variable = { starting_food = 30 } #30 days of food stockpiled in beginning
+		multiply_variable = { starting_food = 2 } #7 Days of Food to Start
 		add_to_variable = { current_food = starting_food }
-		set_variable = { allowed_to_run = 1 }
+		set_variable = { days_in_famine = 0 }
+		set_variable = { famine_value = 0 }
 	}
-	set_variable = { food_needed = max_manpower_k }
-	divide_variable = {food_needed = 200}
-	round_variable = food_needed
-	if = {
-		limit = { check_variable = { food_needed < resource@food } }
-		set_variable = { surplus_food = resource@food }
-		subtract_from_variable = { surplus_food = food_needed }
-		set_variable = { current_food = surplus_food }
-	}
-	clamp_variable = { var = current_food min = 0 max = 100000}
 }
-
+get_food_needs = {
+	set_variable = { food_needed = max_manpower_k }
+	divide_variable = { food_needed = 400 }
+	round_variable = food_needed
+	#set_variable = { food_needed_dm = food_needed }
+	#multiply_variable = { food_needed_dm = -1 } #Make it negative
+	if = {
+		limit = { check_variable = { food_needed < resource_produced@food } } #If you have more food than what is needed
+		set_variable = { food_daily = resource@food } #Surplus food is total amount of food minus how much food you consume
+		subtract_from_variable = { food_daily = food_needed } # ^^^
+		add_to_variable = { current_food = food_daily } #Add the surplus to the stockpile
+		set_variable = { days_in_famine = 0 } #Reseting famine counter if no longer in famine
+		set_variable = { famine_value = 0 } #Reseting famine value if no longer in famine
+	}
+	if = {
+		limit = { check_variable = { food_needed > resource@food } } #If you have less food than what is needed
+		set_variable = { food_daily = food_needed } #Subtract needed food from stockpile
+		multiply_variable = { food_daily = -1 } #Make it negative
+		add_to_variable = { food_daily = resource@food } #Add the surplus to the stockpile
+		add_to_variable = { current_food = food_daily } # ^^^
+		if = { limit = { check_variable = { current_food < 1 }} #In Famine
+			add_to_variable = { days_in_famine = 1 }
+			if = {
+				limit = {check_variable = { famine_value > -0.25 }}
+				subtract_from_variable = { famine_value = 0.001 }
+			}
+		}
+	}
+	clamp_variable = { var = current_food min = 0 max = 2000000} #Cannot have negative food, either have food or dont have food
+}
 find_total_communist_pop = {
 	every_country = {
 	  limit = {

@@ -30,7 +30,7 @@ country = {
 			army_morale_factor = 0.15
 		}
 	}
-	
+
 	rus_readied_the_reserves = {
 		picture = generic_collectivist_army
 		modifier = {
@@ -43,13 +43,13 @@ country = {
 			trade_opinion_factor = -0.25
 		}
 	}
-	
+
 	RUS_DESPERATE_TIMES_1 = {
 		modifier = {
 			stability_factor = -0.20
 		}
 	}
-	
+
 	RUS_DESPERATE_TIMES_2 = {
 		equipment_bonus = {
 			infantry_equipment = {
@@ -61,7 +61,7 @@ country = {
 			stability_weekly = 0.01
 		}
 	}
-	
+
 	RUS_DESPERATE_TIMES_3 = {
 		modifier = {
 			stability_factor = -0.20
@@ -69,7 +69,7 @@ country = {
 			production_speed_industrial_complex_factor = -0.10
 		}
 	}
-	
+
 	RUS_DESPERATE_TIMES_4 = { # 2, 3 Combined
 		equipment_bonus = {
 			infantry_equipment = {
@@ -83,7 +83,7 @@ country = {
 			production_speed_industrial_complex_factor = -0.10
 		}
 	}
-	
+
 	RUS_DESPERATE_TIMES_5 = {
 		research_bonus = { industry = 0.1 }
 		equipment_bonus = {
@@ -98,7 +98,7 @@ country = {
 			production_speed_industrial_complex_factor = -0.10
 		}
 	}
-	
+
 	RUS_DESPERATE_TIMES_6 = { # 2, 3 Combined
 		equipment_bonus = {
 			infantry_equipment = {
@@ -113,7 +113,7 @@ country = {
 			production_speed_farm_factor = 0.10
 		}
 	}
-	
+
 	RUS_DESPERATE_TIMES_7 = { # 5, 6 Combined
 		research_bonus = { industry = 0.1 }
 		equipment_bonus = {

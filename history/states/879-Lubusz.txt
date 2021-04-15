@@ -5,24 +5,30 @@ state={
 	resources={
 		steel=60.000
 		aluminium=20.000
-		wood=30
+		wood=30.000
 	}
 
 	history={
 		owner = PRE
-		victory_points = { 3438 7 }
-		victory_points = { 6236 5 }
+		victory_points = {
+			3438 7 
+		}
+		victory_points = {
+			6236 5 
+		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
 			farm = 3
+
 		}
 		add_core_of = PRE
 		add_core_of = BRN
+
 	}
 
 	provinces={
-		444 537 3438 3473 3572 6236 9387 11478 
+		444 3473 9496 11478 
 	}
 	manpower=645532
 	buildings_max_level_factor=1.000

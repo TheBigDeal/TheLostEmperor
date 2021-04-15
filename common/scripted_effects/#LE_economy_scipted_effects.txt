@@ -1,10 +1,10 @@
 update_economy_modifiers = {
 	set_variable = { economy_upper_class_taxes_dm_stability = economy_upper_class_taxes_dm }
-	multiply_variable = { economy_upper_class_taxes_dm_stability = -0.005 }
+	multiply_variable = { economy_upper_class_taxes_dm_stability = -0.006 }
 
 	set_variable = { economy_middle_class_taxes_dm_stability = economy_middle_class_taxes_dm }
-	multiply_variable = { economy_middle_class_taxes_dm_stability = -0.005 }
+	multiply_variable = { economy_middle_class_taxes_dm_stability = -0.006 }
 
 	set_variable = { economy_lower_class_taxes_dm_stability = economy_lower_class_taxes_dm }
-	multiply_variable = { economy_lower_class_taxes_dm_stability = -0.005 }
+	multiply_variable = { economy_lower_class_taxes_dm_stability = -0.006 }
 }

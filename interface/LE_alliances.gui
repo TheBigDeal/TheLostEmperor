@@ -1,0 +1,12 @@
+guiTypes = {
+	containerWindowType = {
+		name = "country_alliances"
+		position = { x = 1000 y = 200 }
+		size = { width = 268 height = 200 }
+		margin = { top = 0 bottom = 0}
+		background = {
+			name = "Background"
+			spriteType ="GFX_tiled_window_1b_thin_border"
+		}
+	}
+}

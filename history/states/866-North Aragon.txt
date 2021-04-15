@@ -4,7 +4,7 @@ state={
 	name="STATE_866"
 
 	history={
-		owner = SPR
+		owner = ARA
 		buildings = {
 			infrastructure = 7
 			arms_factory = 1
@@ -13,11 +13,10 @@ state={
 		}
 		add_core_of = ARA
 		add_core_of = SPR
-		set_demilitarized_zone = yes
 	}
 
 	provinces={
-		899 915 9840 9842 11819 11821 11838 
+		899 915 9840 9842 11819 11821 11838
 	}
 	manpower=435653
 	buildings_max_level_factor=1.000

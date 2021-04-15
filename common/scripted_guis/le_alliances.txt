@@ -1,0 +1,11 @@
+scripted_gui = {
+	alliances_gui = {
+		parent_window_name = countrydiplomacyview
+		context_type = selected_country_context
+		window_name = "country_alliances"
+		visible = { always = yes }
+		effects = {
+
+		}
+	}
+}

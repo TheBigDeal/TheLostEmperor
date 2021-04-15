@@ -11,9 +11,6 @@ division_template = {
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 	}
-	support = {
-		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
-	}
 }
 ##### OOB #####
 units = {
@@ -82,21 +79,4 @@ units = {
 	division = { name = "Militsiya Diviziya" location = 6348 division_template = "Militsiya Diviziya" }
 	division = { name = "Militsiya Diviziya" location = 6348 division_template = "Militsiya Diviziya" }
 	division = { name = "Militsiya Diviziya" location = 6348 division_template = "Militsiya Diviziya" }
-	####
-	division = { name = "Militsiya Diviziya" location = 3290 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 3290 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 3290 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 3290 division_template = "Militsiya Diviziya" }
-
-	division = { name = "Militsiya Diviziya" location = 10641 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 10641 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 10641 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 10641 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 10641 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 10641 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 10641 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 10641 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 10641 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 10641 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 10641 division_template = "Militsiya Diviziya" }
 }

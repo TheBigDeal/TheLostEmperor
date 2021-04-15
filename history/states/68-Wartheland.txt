@@ -4,16 +4,19 @@ state={
 	name="STATE_68"
 	resources={
 		aluminium=24.000
-		wood = 20
+		wood=20.000
 	}
 
 	history={
 		owner = PRE
-		victory_points = { 11415 6 }
+		victory_points = {
+			11415 6 
+		}
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 1
 			farm = 5
+
 		}
 		add_core_of = PRE
 		add_core_of = BRN
@@ -21,7 +24,7 @@ state={
 	}
 
 	provinces={
-		478 9496 11415 
+		478 11415 
 	}
 	manpower=1250840
 	buildings_max_level_factor=1.000

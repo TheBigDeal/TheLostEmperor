@@ -60,7 +60,7 @@
  STATE_59:0 "Hannover"
  STATE_60:0 "Erfurt"
  STATE_61:0 "Mecklenburg"
- STATE_62:0 "Pommern"
+ STATE_62:0 "Neubrandenburg"
  STATE_63:0 "Hinterpommern"
  STATE_64:0 "Brandenburg"
  STATE_65:0 "Sachsen"
@@ -606,7 +606,7 @@
  STATE_605:0 "Sichuan"
  STATE_606:0 "Anhui"
  STATE_607:0 "Henan"
- STATE_608:0 "Beijing"
+ STATE_608:0 "Peking"
  STATE_609:0 "East Hebei"
  STATE_610:0 "Jehol"
  STATE_611:0 "South Chahar"
@@ -862,6 +862,8 @@
  STATE_874:0 "Edirne"
  STATE_875:0 "Groningen"
  STATE_877:0 "Aachen"
+
+ STATE_879:0 "Sternburg"
  STATE_880:0 "Ionian Islands"
  STATE_882:0 "Hamburg"
  STATE_883:0 "Ulm"
@@ -1009,3 +1011,8 @@
 
 
  STATE_1069:0 "Ajmer"
+
+ STATE_1073:0 "Neumark"
+ STATE_1074:0 "Magdeburg"
+ STATE_1075:0 "Altmark"
+ STATE_1076:0 "Könitz"

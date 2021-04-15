@@ -3,6 +3,7 @@
  food_desc:0 "Food is required to feed people! Without it they die."
  coal:0 "Coal"
  coal_desc:0 "Coal Desc"
+ country_resource_cotton:0 "Consumes £texticon_cotton §YCotton:§! "
  textiles:0 "Textiles"
  textiles_desc:0 "Textiles Desc"
  wood:0 "Wood"

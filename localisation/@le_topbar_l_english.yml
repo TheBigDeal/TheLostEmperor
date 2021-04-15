@@ -2,7 +2,9 @@
  current_money_TOOLTIP:0 "§YTreasury§!\nYou have §H$[?current_money]§!\nTreasury Change: $[?current_money_rate|+0] Per Day"
  current_money_TOOLTIP_DELAYED:0 "\nYou Gain: [?daily_gain]\n§G[?total_population_tax_gain]§! From Population Taxes.\n      §G[?upper_class_taxes]§! from Upper Class taxes.\n      §G[?middle_class_taxes]§! from Middle Class taxes.\n      §G[?lower_class_taxes]§! from Lower Class taxes.\n§G[?industry_tax]§! From Industry Taxes."
  economy_ledger_text:0 "You Gain §G[?daily_gain]§! per day.\n\n§G[?total_population_tax_gain]§! From Population Taxes.\n      §G[?upper_class_taxes]§! from Upper Class taxes.\n      §G[?middle_class_taxes]§! from Middle Class taxes.\n      §G[?lower_class_taxes]§! from Lower Class taxes.\n§G[?industry_tax]§! From Industry Taxes.\n§G[?total_resource_income]§! From Total Resource Exports\n      §G[?food_resource_income]§! from §Y[?resource_exported@food]§! food exports.\n      §G[?coal_resource_income]§! from §Y[?resource_exported@coal]§! coal exports.\n      §G[?textiles_resource_income]§! from §Y[?resource_exported@textile]§! textile exports.\n      §G[?wood_resource_income]§! from §Y[?resource_exported@wood]§! wood exports.\n      §G[?cotton_resource_income]§! from §Y[?resource_exported@cotton]§! cotton exports.\n      §G[?tobacco_resource_income]§! from §Y[?resource_exported@tobacco]§! tobacco exports.\n      §G[?oil_resource_income]§! from §Y[?resource_exported@oil]§! oil exports.\n      §G[?aluminium_resource_income]§! from §Y[?resource_exported@aluminium]§! aluminium exports.\n      §G[?rubber_resource_income]§! from §Y[?resource_exported@rubber]§! rubber exports.\n      §G[?flint_resource_income]§! from §Y[?resource_exported@flint]§! flint exports.\n      §G[?steel_resource_income]§! from §Y[?resource_exported@steel]§! steel exports.\n      §G[?chromium_resource_income]§! from §Y[?resource_exported@chromium]§! chromium exports.\n\n\n\n\n\n\n\n\n\n\n"
- topbar_food_tt:0 "§YFood§!\nCurrent food production: §Y[?resource@food]/[?food_needed]§! needed.\nCurrent food surplus: §Y[?current_food]§!\n"
+ LE_food_famine_dynamic_modifier:0 "£texticon_food National Famine"
+ topbar_food_tt:0 "§YFood§!\nCurrent food production: §Y[?resource@food]/[?food_needed]§! £texticon_food needed.\nCurrent food stockpile: §Y[?current_food]§!\nDaily Change: [?food_daily|+0] £texticon_food\n\n[get_food_desc]"
+ topbar_famine_food_tt:0 "\nWe have been in the famine for [?days_in_famine|Y0] days.\n\n§YCurrent Effects:§! \nSurrender Limit: [?root.famine_value|0.1R%]\nStability: [?root.famine_value|0.1R%]"
  topbar_force_limit_tt:0 "§YForce Limit§!\nCurrent force limit: §Y[?num_divisions] Divisions /[?force_limit] Force Limit§!\nGain more §Ypopulation§! to increase force limit."
  gp_score:0 "[?global.score_array^i]"
  gp_industrial_rank:0 "#[?score_array_position_var]"
@@ -13,6 +15,21 @@
  gp_industrial:0 "[?global.industrial_score_array^i]"
  gp_military:0 "[?global.military_score_array^i]"
  gp_rank:0 "[?global.score_array_position^i]"
+
+ prestige_score:0 "[?prestige_score|0]"
+ prestige_TOOLTIP:0 "§YPrestige Score§!\nPrestige is earned through special events, wars, and focuses.\n\nCurrent Prestige: [?prestige_score|0.3Y]"
+ industrial_score:0 "[?industrial_score]"
+ industrial_score_TOOLTIP:0 "§YIndustrial Score§!\nIndustrial score is increased through having a high population, and building factories!\nCurrent Population: [?country_population|0.1Y] §Y[?ROOT.GetPopulationSuffix]§!\nCurrent Civilian Factories: [?num_of_civilian_factories|Y0]"
+ military_score:0 "[?military_score]"
+ military_score_TOOLTIP:0 "§YMilitary Score§!\nMilitary score is increased through having large army, the more active manpower the better!\nCurrent Deployed Manpower: [?max_available_manpower_k|0Y]\nCurrent Military Factories: [?num_of_military_factories|0Y]\nCurrent Naval Dockyards: [?num_of_naval_factories|0Y]"
+
+ GreatPower1:0 "ROOT.GetName"
+ current_money_loss:0 ""
+ money_breakdown:0 "Test"
+
+ populationsuffix_M:0 "M"
+ populationsuffix_K:0 "K"
+
  hre_name:0 "§Y[?global.hre_array^i.GetNameDef]§!"
  hre_name_elector:0 "§Y[?global.elector_array^i.GetNameDef]§!"
  hre_name_emperor:0 "§Y[?global.emperor_array^i.GetNameDef]§!"
@@ -22,6 +39,5 @@
  hansa_name_member:0 "§Y[?global.hansa_member_array^i.GetNameDef]§!"
  hansa_name_colony:0 "§Y[?global.hansa_colony_array^i.GetNameDef]§!"
  hansa_name_investor:0 "§Y[?global.hansa_investor_array^i.GetNameDef]§!"
-
 
  total_gain:0 "§Y[?treasury]§!"
