@@ -96,8 +96,10 @@
   finnish_nationalism:0 "Finish Nationalists" 
   finnish_nationalism_desc:0 "Finnish nationalism and natinalists have always been a bit of a thorn in the empires side. Soon a meeting will occur between our king and the finnish nominee however, that may solve that issue"
   worker_issues:0 "Worker Shortages"
-  worker_issues_2:0 "Improving Worker Shortages"
-  
+  worker_issues_2:0 "Slightly Improved Worker Shortages"
+  worker_issues_3:0 "Improved Worker Shortages"
+  worker_issues_4:0 "Very Improved Worker Shortages"
+  worker_issues_5:0 "Almost no Worker Shortages"
   
   ##Gained##
   

@@ -107,28 +107,28 @@ ideas = {
 		###ASSHATTERY###
 		
 			Shell_1 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
             political_power_gain = 0.15
 			
 			}
 		}
 	Shell_0 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air
 			modifier = {
 			
 			}
 		}
 	
 	Shell_17 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
             political_power_gain = 0.15
 			industrial_capacity_factory = 0.1
 			}
 		}
     Shell_18 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
 			stability_factor = 0.15
 			political_power_gain = 0.15
@@ -136,14 +136,14 @@ ideas = {
 			}
 		}
 	Shell_19 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
 			political_power_gain = 0.15
 			industrial_capacity_dockyard = 0.12
 			}
 		}
 	Shell_2 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
 			monthly_population = 0.2
 			trade_opinion_factor = 0.5
@@ -154,7 +154,7 @@ ideas = {
 			}
 		}
 	Shell_3 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
 			monthly_population = 0.2
 			trade_opinion_factor = 0.5
@@ -165,7 +165,7 @@ ideas = {
 			}
 		}
 	Shell_4 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
 			monthly_population = 0.2
 			trade_opinion_factor = 0.5
@@ -175,7 +175,7 @@ ideas = {
 			}
 		}
 	Shell_5 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
 			air_equipment_upgrade_xp_cost = 0.1
 			air_ace_generation_chance_factor = 0.5
@@ -188,7 +188,7 @@ ideas = {
 			}
 		}
 	Shell_6 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
 			air_equipment_upgrade_xp_cost = 0.1
 			air_ace_generation_chance_factor = 0.5
@@ -201,7 +201,7 @@ ideas = {
 			}
 		}
 	Shell_7 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
 			air_equipment_upgrade_xp_cost = 0.1
 			air_ace_generation_chance_factor = 0.5
@@ -215,19 +215,19 @@ ideas = {
 		}
 		
     Shell_8 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
             industrial_capacity_factory = 0.1
 			}
 		}
 	Shell_9 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
             stability_factor = 0.15
 			}
 		}
 	Shell_10 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
             industrial_capacity_dockyard = 0.12
 			}
@@ -235,7 +235,7 @@ ideas = {
 		
 		
 	Shell_11 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
 			industrial_capacity_factory = 0.1
 			monthly_population = 0.2
@@ -244,7 +244,7 @@ ideas = {
 			}
 		}
 	Shell_12 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
 			stability_factor = 0.15
 			monthly_population = 0.2
@@ -253,7 +253,7 @@ ideas = {
 			}
 		}
 	Shell_13 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
 			industrial_capacity_dockyard = 0.12
 			monthly_population = 0.2
@@ -262,7 +262,7 @@ ideas = {
 			}
 		}
 	Shell_14 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
 			air_equipment_upgrade_xp_cost = 0.1
 			air_ace_generation_chance_factor = 0.5
@@ -274,7 +274,7 @@ ideas = {
 			}
 		}
 	Shell_15 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
 			air_equipment_upgrade_xp_cost = 0.1
 			air_ace_generation_chance_factor = 0.5
@@ -286,7 +286,7 @@ ideas = {
 			}
 		}
 	Shell_16 = {
-			picture = generic_spy_intel	
+			picture = man_five_year_plan_air	
 			modifier = {
 			air_equipment_upgrade_xp_cost = 0.1
 			air_ace_generation_chance_factor = 0.5
@@ -303,7 +303,7 @@ ideas = {
 		## Gained ##
 		
 		SWE_traditional_values = {
-			picture = british_stoicism
+			picture = HUN_hungarian_monarchy_fascism
 			modifier = {
 				political_power_gain = 0.1
 				stability_factor = -0.1
@@ -322,7 +322,7 @@ ideas = {
 		}
 		
 				fatherland_buildup = {
-			picture = british_stoicism
+			picture = generic_exploit_mines
 			modifier = {
 			production_speed_buildings_factor = 0.17
 			industrial_capacity_factory = 0.3
@@ -333,7 +333,7 @@ ideas = {
 			}
 		}
 				karolinerna = {
-			picture = british_stoicism	
+			picture = generic_reserve_divisions
 			modifier = {
             acclimatization_cold_climate_gain_factor = 0.2
 			army_infantry_attack_factor = 0.05

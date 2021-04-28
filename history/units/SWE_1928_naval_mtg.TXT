@@ -1,0 +1,234 @@
+units = {
+    fleet = {
+        name = "Kustflottan" # Name 1
+        naval_base = 6050
+		
+        task_force = {
+            name = "Kanonbåtsgruppen" # Name 2
+            location = 6209
+			
+            ship = {
+                name = "HMS Blenda" # Name 3
+                pride_of_the_fleet = no
+                definition = destroyer
+                equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "1a Klass Kanonbåt" } }
+            }
+			ship = {
+                name = "HMS Rota" # Name 3
+                pride_of_the_fleet = no
+                definition = destroyer
+                equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "1a Klass Kanonbåt" } }
+            }
+			ship = {
+                name = "HMS Skagul" # Name 3
+                pride_of_the_fleet = no
+                definition = destroyer
+                equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "1a Klass Kanonbåt" } }
+            }
+			ship = {
+                name = "HM Verdande" # Name 3
+                pride_of_the_fleet = no
+                definition = destroyer
+                equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "1a Klass Kanonbåt" } }
+            }
+			ship = {
+                name = "HM skuld" # Name 3
+                pride_of_the_fleet = no
+                definition = destroyer
+                equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "1a Klass Kanonbåt" } }
+            }
+			ship = {
+                name = "HMS Ingered" # Name 3
+                pride_of_the_fleet = no
+                definition = destroyer
+                equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "2a Klass Kanonbåt" } }
+            }	
+        }
+
+        task_force = {
+            name = "Torpedbåtsgruppen" # Name 1
+            location = 11380
+			
+            ship = {
+                name = "HMS Rolf" # Name 2
+                definition = destroyer
+                equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "1a Klass Torpedbåt" } }
+            }
+			ship = {
+                name = "HMS Blixt" # Name 2
+                definition = destroyer
+                equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "2a Klass Torpedbåt" } }
+            }
+			ship = {
+                name = "HMS Hugin" # Name 2
+                definition = destroyer
+                equipment = { ship_hull_light_1 = { amount = 1 owner = SWE version_name = "1a Klass Torpedbåt" } }
+            }
+			ship = {
+                name = "HMS galdr" # Name 2
+                definition = destroyer
+                equipment = { ship_hull_light_1 = {  amount = 1
+                        owner = SWE
+                        version_name = "2a Klass Torpedbåt"
+                    }
+                }
+            }
+						ship = {
+                name = "HMS freke" # Name 2
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = SWE
+                        version_name = "1a Klass Torpedbåt"
+                    }
+                }
+            }
+						ship = {
+                name = "HMS narf" # Name 2
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = SWE
+                        version_name = "2a Klass Torpedbåt"
+                    }
+                }
+            }
+						ship = {
+                name = "HMS nörve" # Name 2
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = SWE
+                        version_name = "2a Klass Torpedbåt"
+                    }
+                }
+            }
+			
+			
+			
+        }
+		
+			  task_force = {
+            name = "Minläggargruppen" # Name 1
+            location = 6050
+			
+			ship = {
+                name = "Minutläggare n:o 4" # Name 2
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = SWE
+                        version_name = "1a Klass minutläggare"
+                    }
+                }
+            }
+			ship = {
+                name = "Minutläggare n:o 5" # Name 2
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = SWE
+                        version_name = "1a Klass minutläggare"
+                    }
+                }
+            }
+			
+			}
+		
+		     task_force = {
+            name = "Vedettbåtsgruppen" # Name 1
+            location = 6050
+			
+			
+			ship = {
+                name = "Vedett 3" # Name 2
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = SWE
+                        version_name = "1a Klass Vedettbåt"
+                    }
+                }
+            }
+			ship = {
+                name = "Vedett 6" # Name 2
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = SWE
+                        version_name = "1a Klass Vedettbåt"
+                    }
+                }
+            }
+			ship = {
+                name = "Vedett 8" # Name 2
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = SWE
+                        version_name = "1a Klass Vedettbåt"
+                    }
+                }
+            }
+            ship = {
+                name = "Vedettbåt 1" # Name 2
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = SWE
+                        version_name = "1a Klass Vedettbåt"
+                    }
+                }
+            }
+			ship = {
+                name = "Vedettbåt 2" # Name 2
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = SWE
+                        version_name = "1a Klass Vedettbåt"
+                    }
+                }
+            }
+			ship = {
+                name = "Vedettbåt 3" # Name 2
+                definition = destroyer
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = SWE
+                        version_name = "1a Klass Vedettbåt"
+                    }
+                }
+            }
+			
+        }
+		task_force = {
+            name = "Pansarbåtsgruppen" # Name 1
+            location = 6050
+		ship = {
+                name = "HMS Svea" # Name 2
+				pride_of_the_fleet = yes
+                definition = heavy_cruiser
+                equipment = {
+                    ship_hull_cruiser_1 = {
+                        amount = 1
+                        owner = SWE
+                        version_name = "1a Klass Pansarbåt"
+                    }
+                }
+            }
+		}
+		
+    }
+}
