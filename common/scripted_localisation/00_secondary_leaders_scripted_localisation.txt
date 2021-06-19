@@ -12,10 +12,9 @@ defined_text = {
 	name = get_secondary_leader_name
 	text = {
 		trigger = { tag = GBR }
-		localization_key = "GBR_secondary_leader:0 "John Smith"
+		localization_key = "John Smith"
 	}
 	text = {
-		trigger = { always = yes }
 		localization_key = "NONE_secondary_leader"
 	}
 }

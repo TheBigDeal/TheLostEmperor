@@ -9,26 +9,27 @@ buildings = {
 		base_cost = 1000               # Cost in CIC to build.
 		per_level_extra_cost = 1000    # Added cost per building level.
 		max_level = 10               # The maximum level that can be built.
-		value = 1                   # The base health of the building. Is multiplied by the level of the building built.
+		value = 4                   # The base health of the building. Is multiplied by the level of the building built.
 		icon_frame = 15             # Which icon frame in GFX_buildings_strip to use for the building.
 		shares_slots = yes                          # Determines if this building uses building slots.
 		infrastructure_construction_effect = yes    # Determines if this building benefits from infrastructure boosting construction speed.
 		provincial = no                            # Determines if this building is a province building.
 		local_resources_food = 5  # Adds resources to state.
 	}
-	
+
 	textile_factory = {
-		#show_on_map = 1
 		base_cost = 5000
+		per_level_extra_cost = 1000
 		icon_frame = 16
 		max_level = 6 # This is the max unlock level
 		shares_slots = yes
 		value = 2
 		infrastructure_construction_effect = yes
 		show_modifier = yes
+		country_resource_cotton = -2
 		local_resources_textiles = 5  # Adds resources to state.
 	}
-	
+
 	#VANILLA
 	infrastructure = {
 		base_cost = 3000
@@ -129,7 +130,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 
-	
+
 	anti_air_building = {
 		show_on_map = 3
 		base_cost = 2500
@@ -153,7 +154,7 @@ buildings = {
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
-		
+
 		show_modifier = yes
 		fuel_gain_from_states = 2.0 #per hour
 	}
@@ -167,7 +168,7 @@ buildings = {
 		value = 5
 		infrastructure_construction_effect = yes
 		fuel_silo = yes
-		
+
 		show_modifier = yes
 		max_fuel_building = 100.0 #k
 	}

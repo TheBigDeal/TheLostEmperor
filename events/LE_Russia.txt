@@ -25,16 +25,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	immediate = {
-		hidden_effect = { SOV = { transfer_state = 247 }
-			RUS = {
-				load_oob = RUS_CIVIL_WAR
-				#create_faction = WHITE_MOVEMENT
-			}
-			SOV = {
-				load_oob = SOV_CIVIL_WAR
-				#create_faction = RED_MOVEMENT
-			}
-		}
+		hidden_effect = { SOV = { transfer_state = 247 }}
 	}
 	option = { #Play As Russia
 		name = le_russia.2.a
@@ -61,6 +52,14 @@ country_event = {
 					is_owned_by = RUS
 				}
 				add_core_of = SOV
+			}
+			RUS = {
+				load_oob = RUS_CIVIL_WAR
+				#create_faction = WHITE_MOVEMENT
+			}
+			SOV = {
+				load_oob = SOV_CIVIL_WAR
+				#create_faction = RED_MOVEMENT
 			}
 		}
 		ai_chance = { factor = 20 }
@@ -91,6 +90,14 @@ country_event = {
 					is_owned_by = RUS
 				}
 				add_core_of = SOV
+			}
+			RUS = {
+				load_oob = RUS_CIVIL_WAR
+				#create_faction = WHITE_MOVEMENT
+			}
+			SOV = {
+				load_oob = SOV_CIVIL_WAR
+				#create_faction = RED_MOVEMENT
 			}
 		}
 		SOV = { change_tag_from = RUS }

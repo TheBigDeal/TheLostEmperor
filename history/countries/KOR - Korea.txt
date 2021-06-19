@@ -15,8 +15,6 @@ add_ideas = {
 	KOR_ineffective_industry
 }
 set_convoys = 5
-declare_war_on = { target = JAP type = annex_everything }
-QNG = { add_to_war = { targeted_alliance = PREV enemy = JAP hostility_reason = asked_to_join } }
 
 set_politics = {
 	ruling_party = absolutism

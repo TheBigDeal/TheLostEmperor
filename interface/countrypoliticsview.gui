@@ -314,7 +314,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "national_spirit"
 			position = { x = -90 y = 328 }
-			size = { width = 360 height = 50 }
+			size = { width = 460 height = 50 }
 			clipping = no
 
 			instantTextboxType = {
@@ -326,12 +326,10 @@ guiTypes = {
 				maxHeight = 20
 				alwaystransparent = yes
 			}
-
-
 			containerWindowType = {
 				name = "national_spirit_container"
 				position = { x = 90 y = 16 }
-				size = { width = 365 height = 68 }
+				size = { width = 545 height = 68 }
 
 				verticalScrollbar = "right_vertical_slider"
 
@@ -343,16 +341,16 @@ guiTypes = {
 				gridboxtype = {
 					name = "spirit_grid"
 					position = { x = 12 y = 0 }
-					size = { width = 350 height = 100%% }
+					size = { width = 650 height = 100%% }
 					slotsize = { width = 60 height = 68 }
-					max_slots = { x = 8 y = 1 }
+					max_slots = { x = 14 y = 1 }
 					format = "UPPER_LEFT"
 				}
 				gridboxtype = {
 					name = "spirit_grid_over_defined"
-					size = { width = 350 height = 100%% }
+					size = { width = 650 height = 100%% }
 					slotsize = { width = 33 height = 32 }
-					max_slots_horizontal = 10
+					max_slots_horizontal = 24
 					format = "UPPER_LEFT"
 				}
 			}
@@ -395,7 +393,7 @@ guiTypes = {
 			name = "leader_name2"
 			position = { x = 175 y = 271 }
 			font = "hoi_18mbs"
-			text = "[?get_secondary_leader_name]"
+			text = "get_secondary_leader_name"
 			maxWidth = 155
 			maxHeight = 20
 			format = center
@@ -545,7 +543,6 @@ guiTypes = {
 		position = { x = -10 y = 8 }
 		size = { width=550 height= 100 }
 		clipping = no
-
 		iconType ={
 			name ="category_header"
 			spriteType = "GFX_category_header_longer"
@@ -560,8 +557,6 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			scale = 0.5
 		}
-
-
 		instantTextboxType = {
 			name = "name"
 			position = { x = -20 y = 24 }
@@ -570,7 +565,6 @@ guiTypes = {
 			maxWidth = 300
 			maxHeight = 20
 		}
-
 		gridboxtype = {
 			name = "ideas_grid"
 			position = { x = -32 y = 38 }

@@ -6,7 +6,7 @@ state={
 		wood=3
 	}
 	history={
-		owner = CAT
+		owner = ARA
 		victory_points = {
 			6812 5
 		}
@@ -15,13 +15,14 @@ state={
 			arms_factory = 1
 			industrial_complex = 1
 		}
+		add_core_of = ARA
 		add_core_of = CAT
 		add_core_of = SPR
 
 	}
 
 	provinces={
-		6812 6966 
+		6812 6966
 	}
 	manpower=3036537
 	buildings_max_level_factor=1.000

@@ -1,0 +1,11 @@
+ideas = {
+	country = {
+		ARA_inefficient_military = {
+			picture = GFX_idea_General_Staff
+			visible = {	always = yes	}
+			modifier = {
+				war_support_factor = -0.25
+				training_time_factor = 0.90
+			}
+		}
+	}

@@ -333,7 +333,7 @@ focus_tree = {
 	prerequisite = { focus = new_glory }
 	completion_reward = {
 	add_ideas = { SWE_sven_olov_lindholm_2 SWE_arne_forssell SWE_birger_furugard }
-	
+	set_country_flag = nationalist_ministers_flag
 	
 	    }
 	}
@@ -858,7 +858,7 @@ focus_tree = {
 	prerequisite = { focus = peacetime_buildup }
 	mutually_exclusive = { focus = stockholm_armouries focus = gothenburg_dockyards }
 	completion_reward = {
-	add_ideas = Shell_1
+	swap_ideas = { remove_idea = shell_0 add_idea = shell_1 }
 	
 	
 	    }
@@ -942,9 +942,10 @@ focus_tree = {
 	prerequisite = { focus = political_workplaces }
 	prerequisite = { focus = factory_advancements }
 	completion_reward = {
-	load_focus_tree = LE_Sweden_rightwing
+	load_focus_tree = swedish_focus_rightwing
 	add_research_slot = 1
 	
 	
 	    }
 	}
+}

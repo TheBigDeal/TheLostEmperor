@@ -1,4 +1,5 @@
 opinion_modifiers = {
+	Alliance = { value = 100 }
 	Monarchist_Diplomat = { value = 20 }
 	HRE_relations = { value = 160 }
 	PRUSSIAN_SPHERE = { value = 60 }

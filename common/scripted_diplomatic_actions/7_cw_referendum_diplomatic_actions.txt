@@ -1,0 +1,255 @@
+scripted_diplomatic_actions = {
+	cw_intervene_yes_no_referendum = {
+		icon = 25
+		visible = {		#The target country
+			has_country_flag = country_yes_no_ref_initiator
+			ROOT = { is_major = yes }
+			ROOT = {
+				NOT = {
+					is_in_array = {
+						array = PREV.country_yes_no_ref_1_array
+						value = ROOT.id
+					}
+				} 
+			}			
+		}
+		selectable = {
+			hidden_trigger = { ROOT = { NOT = { has_country_flag = did_diplomatic_action } } }		#Used to suspend request spam by AI
+			ROOT = { is_major = yes }
+			ROOT = {
+				custom_trigger_tooltip = {
+					tooltip = "Must not be intervening in more than 3 referendums simultaneously."
+					ROOT = { check_variable = { var = intervened_referendums value = 3 compare = less_than } }
+				}
+			}
+		}
+		can_be_accepted = {
+			always = yes
+		}
+		can_be_sent = {
+			always = yes
+		}
+
+		send_description = CW_INTEVENE_YES_NO_REF_LOC
+		accept_title = CW_RECOGNIZE_GOV_TITLE
+		accept_description = CW_RECOGNIZE_GOV_DESC
+		
+		cost = 0
+
+		requires_acceptance = no
+
+		on_sent_effect = {
+		}
+		complete_effect = {
+			ROOT = { add_to_array = { PREV.country_yes_no_ref_1_array = THIS.id } }
+			ROOT = { add_to_variable = { intervened_referendums = 1 } }
+		}
+		ai_desire = {
+		}
+	}
+	cw_intervene_mon_referendum = {
+		icon = 25
+		visible = {		#The target country
+			has_country_flag = mon_ref_initiator
+			ROOT = { is_major = yes }
+			ROOT = {
+				NOT = {
+					is_in_array = {
+						array = PREV.mon_ref_1_array
+						value = ROOT.id
+					}
+				} 
+			}			
+		}
+		selectable = {
+			hidden_trigger = { ROOT = { NOT = { has_country_flag = did_diplomatic_action } } }		#Used to suspend request spam by AI
+			ROOT = { is_major = yes }
+			ROOT = {
+				custom_trigger_tooltip = {
+					tooltip = "Must not be intervening in more than 3 referendums simultaneously."
+					ROOT = { check_variable = { var = intervened_referendums value = 3 compare = less_than } }
+				}
+			}
+		}
+		can_be_accepted = {
+			always = yes
+		}
+		can_be_sent = {
+			always = yes
+		}
+
+		send_description = CW_INTEVENE_MON_REF_LOC
+		accept_title = CW_RECOGNIZE_GOV_TITLE
+		accept_description = CW_RECOGNIZE_GOV_DESC
+		
+		cost = 0
+
+		requires_acceptance = no
+
+		on_sent_effect = {
+		}
+		complete_effect = {
+			ROOT = { set_variable = { intervening_mon_ref = PREV.id } }
+			ROOT = { add_to_array = { PREV.mon_ref_1_array = ROOT.id } }
+			ROOT = { add_to_variable = { intervened_referendums = 1 } }
+		}
+		ai_desire = {
+		}
+	}
+	cw_intervene_cs_referendum = {
+		icon = 25
+		visible = {		#The target country
+			has_country_flag = cs_ref_initiator
+			NOT = { has_country_flag = fourth_option_occupied }
+			ROOT = { OR = { is_major = yes is_neighbor_of = FROM } }
+			ROOT = {
+				NOT = {
+					is_in_array = {
+						array = PREV.cs_ref_1_array
+						value = ROOT.id
+					}
+				} 
+			}			
+		}
+		selectable = {
+			hidden_trigger = { ROOT = { NOT = { has_country_flag = did_diplomatic_action } } }		#Used to suspend request spam by AI
+			ROOT = { OR = { is_major = yes is_neighbor_of = PREV } }
+			ROOT = {
+				custom_trigger_tooltip = {
+					tooltip = "Must not be intervening in more than 3 referendums simultaneously."
+					ROOT = { check_variable = { var = intervened_referendums value = 3 compare = less_than } }
+				}
+			}
+		}
+		can_be_accepted = {
+			always = yes
+		}
+		can_be_sent = {
+			always = yes
+		}
+
+		send_description = CW_INTEVENE_CS_REF_LOC
+		accept_title = CW_RECOGNIZE_GOV_TITLE
+		accept_description = CW_RECOGNIZE_GOV_DESC
+		
+		cost = 0
+
+		requires_acceptance = no
+
+		on_sent_effect = {
+		}
+		complete_effect = {
+			ROOT = { set_country_flag = intervening_cs_referendum }
+			ROOT = { set_variable = { intervening_cs_ref = PREV.id } }
+			ROOT = { add_to_variable = { intervened_referendums = 1 } }
+			ROOT = { add_to_array = { PREV.cs_ref_1_array = ROOT.id } }
+			if = {
+				limit = {
+					all_owned_state = { is_claimed_by = ROOT }
+				}
+				if = {
+					limit = {
+						has_country_flag = third_option_occupied
+					}
+					set_variable = { ref_cs_fourth_option = ROOT.id }
+					set_country_flag = fourth_option_occupied
+					random_list = {
+						25 = {
+							set_variable = { country_ref_fourth_option_votes_percent = 20 }
+						}
+						25 = {
+							set_variable = { country_ref_fourth_option_votes_percent = 15 }
+						}
+						25 = {
+							set_variable = { country_ref_fourth_option_votes_percent = 10 }
+						}
+						25 = {
+							set_variable = { country_ref_fourth_option_votes_percent = 5 }
+						}
+					}
+					set_country_flag = { flag = fourth_option_intervention value = 1 days = 1 }
+					cw_country_ref_reclaculate_votes_intervention = yes
+				}
+			}			
+			if = {
+				limit = {
+					all_owned_state = { is_claimed_by = ROOT }
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = third_option_occupied }
+					}
+					set_variable = { ref_cs_third_option = ROOT.id }
+					set_country_flag = third_option_occupied
+					random_list = {
+						25 = {
+							set_variable = { country_ref_third_option_votes_percent = 20 }
+						}
+						25 = {
+							set_variable = { country_ref_third_option_votes_percent = 15 }
+						}
+						25 = {
+							set_variable = { country_ref_third_option_votes_percent = 10 }
+						}
+						25 = {
+							set_variable = { country_ref_third_option_votes_percent = 5 }
+						}
+					}
+					set_country_flag = { flag = third_option_intervention value = 1 days = 1 }
+					cw_country_ref_reclaculate_votes_intervention = yes
+				}
+			}
+		}
+		ai_desire = {
+		}
+	}
+	cw_intervene_state_referendum = {
+		icon = 25
+		visible = {		#The target country
+			has_country_flag = state_ref_initiator
+			ROOT = { OR = { is_major = yes is_neighbor_of = PREV } }
+			FROM = {
+				NOT = {
+					is_in_array = {
+						array = ROOT.state_ref_1_array
+						value = FROM.id
+					}
+				} 
+			}			
+		}
+		selectable = {
+			hidden_trigger = { ROOT = { NOT = { has_country_flag = did_diplomatic_action } } }		#Used to suspend request spam by AI
+			ROOT = { OR = { is_major = yes is_neighbor_of = PREV } }
+			ROOT = {
+				custom_trigger_tooltip = {
+					tooltip = "Must not be intervening in more than 3 referendums simultaneously."
+					ROOT = { check_variable = { var = intervened_referendums value = 3 compare = less_than } }
+				}
+			}
+		}
+		can_be_accepted = {
+			always = yes
+		}
+		can_be_sent = {
+			always = yes
+		}
+
+		send_description = CW_INTEVENE_STATE_REFERENDUM_LOC
+		
+		cost = 0
+
+		requires_acceptance = no
+
+		on_sent_effect = {
+		}
+		complete_effect = {
+			ROOT = { set_country_flag = intervening_state_referendum }
+			ROOT = { set_variable = { intervening_state_ref = PREV.id } }
+			ROOT = { add_to_variable = { intervened_referendums = 1 } }
+			ROOT = { add_to_array = { ROOT.state_ref_1_array = THIS.id } }
+			FROM = { add_to_array = { ROOT.state_ref_1_array = FROM.id } }
+		}
+		ai_desire = {
+		}
+	}	
+}

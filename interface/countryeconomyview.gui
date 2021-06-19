@@ -88,7 +88,7 @@ guiTypes = {
 	           name = "upper_class_button_down"
 	           position = { x = 55 y = 76 }
 	           quadTextureSprite = "GFX_modifiergui_modifier_var_button"
-	           buttonText = "modifiergui_core_localisation_downvar"
+	           buttonText = "<"
 	           buttonFont = "vic_36"
 	           pdx_tooltip = "taxes_decrease_tt"
 	       }
@@ -96,7 +96,7 @@ guiTypes = {
 	           name = "upper_class_button_up"
 	           position = {  x = 195 y = 76 }
 	           quadTextureSprite = "GFX_modifiergui_modifier_var_button"
-	           buttonText = "modifiergui_core_localisation_upvar"
+	           buttonText = ">"
 	           buttonFont = "vic_36"
 	           pdx_tooltip = "taxes_increase_tt"
 	       }
@@ -127,7 +127,7 @@ guiTypes = {
 	           name = "middle_class_button_down"
 	           position = { x = 55 y = 76 }
 	           quadTextureSprite = "GFX_modifiergui_modifier_var_button"
-	           buttonText = "modifiergui_core_localisation_downvar"
+	           buttonText = "<"
 	           buttonFont = "vic_36"
 	           pdx_tooltip = "taxes_decrease_tt"
 	       }
@@ -135,7 +135,7 @@ guiTypes = {
 	           name = "middle_class_button_up"
 	           position = {  x = 195 y = 76 }
 	           quadTextureSprite = "GFX_modifiergui_modifier_var_button"
-	           buttonText = "modifiergui_core_localisation_upvar"
+	           buttonText = ">"
 	           buttonFont = "vic_36"
 	           pdx_tooltip = "taxes_increase_tt"
 	       }
@@ -166,7 +166,7 @@ guiTypes = {
 	           name = "lower_class_button_down"
 	           position = { x = 55 y = 76 }
 	           quadTextureSprite = "GFX_modifiergui_modifier_var_button"
-	           buttonText = "modifiergui_core_localisation_downvar"
+	           buttonText = "<"
 	           buttonFont = "vic_36"
 	           pdx_tooltip = "taxes_decrease_tt"
 	       }
@@ -174,7 +174,7 @@ guiTypes = {
 	           name = "lower_class_button_up"
 	           position = {  x = 195 y = 76 }
 	           quadTextureSprite = "GFX_modifiergui_modifier_var_button"
-	           buttonText = "modifiergui_core_localisation_upvar"
+	           buttonText = ">"
 	           buttonFont = "vic_36"
 	           pdx_tooltip = "taxes_increase_tt"
 	       }

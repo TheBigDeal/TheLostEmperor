@@ -6,7 +6,7 @@ state={
 	history={
 		owner = SPR
 		victory_points = {
-			11707 1 
+			11707 1
 		}
 		buildings = {
 			infrastructure = 6
@@ -24,7 +24,7 @@ state={
 	}
 
 	provinces={
-		726 918 920 3727 3729 3918 3920 4024 6746 6749 6907 9699 11707 
+		726 918 920 3727 3729 3918 3920 4024 6746 6749 6907 9699 11707
 	}
 	manpower=1566041
 	buildings_max_level_factor=1.000

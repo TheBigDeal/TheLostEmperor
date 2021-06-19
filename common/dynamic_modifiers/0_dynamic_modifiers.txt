@@ -44,16 +44,22 @@ LE_sunni_radicalism_modifier = {
 
 LE_shia_radicalism_modifier = {
 	enable = { has_idea = le_religion_shia }
-
-    absolutism_drift = global.LE_shia_radicalism_var
+  absolutism_drift = global.LE_shia_radicalism_var
 }
 
 LE_ibadi_radicalism_modifier = {
 	enable = { has_idea = le_religion_ibadi }
-
-    theocracy_drift = global.LE_ibadi_radicalism_var
+  theocracy_drift = global.LE_ibadi_radicalism_var
 }
-
+LE_food_dynamic_modifier = {
+	enable = { always = yes }
+	country_resource_food = root.food_needed_dm
+}
+LE_food_famine_dynamic_modifier = {
+	enable = { check_variable = { root.current_food = 0 } }
+	surrender_limit = root.famine_value
+	stability_factor = root.famine_value
+}
 LE_tur_rebels_modifier = {
 	#enable = { has_idea = TUR_rebels_to_the_last_breath }
 	enable = { always = yes }

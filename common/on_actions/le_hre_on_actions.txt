@@ -1,6 +1,14 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			if = {
+				limit = {
+					tag = KHI
+					is_ai = no
+				}
+				country_event = { id = le_belarus.2 }
+			}
+
 			#HRE DIET
 			set_variable = { var = representatives_total value = 79 }
 			set_variable = { var = representatives_support value = 50 }

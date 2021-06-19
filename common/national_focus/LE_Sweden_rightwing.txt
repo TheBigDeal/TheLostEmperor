@@ -7,4 +7,87 @@ focus_tree = {
 			tag = SWE
 		}
 	}
+	
+		Focus = {
+	
+	id = no_man_rules_alone
+	
+	icon = GFX_Swedish_Royalty
+	x = 20
+	y = 1
+	cost = 5
+	ai_will_do = { factor = 50 } 
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+		Focus = {
+	
+	id = an_interesting_proposal
+	
+	icon = GFX_Swedish_Royalty
+	x = 28
+	y = 2
+	cost = 5
+	ai_will_do = { factor = 50 } 
+	prerequisite = { focus = no_man_rules_alone }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+		Focus = {
+	
+	id = ensure_loyalty
+	
+	icon = GFX_Swedish_Royalty
+	x = 23
+	y = 2
+	cost = 5
+	ai_will_do = { factor = 50 } 
+	prerequisite = { focus = no_man_rules_alone }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+		Focus = {
+	
+	id = form_constitutional_monarchy
+	
+	icon = GFX_Swedish_Royalty
+	x = 17
+	y = 2
+	cost = 5
+	ai_will_do = { factor = 50 } 
+	prerequisite = { focus = no_man_rules_alone }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+		Focus = {
+	
+	id = nationalists_demand_power
+	
+	icon = GFX_Swedish_Royalty
+	x = 12
+	y = 2
+	cost = 5
+	available = { has_country_flag = nationalist_ministers_flag }
+	ai_will_do = { factor = 50 } 
+	prerequisite = { focus = no_man_rules_alone }
+	completion_reward = {
+	add_political_power = 50
+	
+	
+	    }
+	}
+	
+	
 }

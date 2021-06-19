@@ -136,7 +136,6 @@ ideas = {
 				liberalism_acceptance = -50
 				conservatism_acceptance = -50
 				socialism_acceptance = -50
-				country_resource_textiles = -10
 			}
 		}
 		PRE_unmaintained_navy = {

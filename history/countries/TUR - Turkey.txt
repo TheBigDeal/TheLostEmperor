@@ -19,7 +19,7 @@ set_variable = { var = JABAL_SHAMMAR_LIBERTY_DESIRE value = 20 }
 set_variable = { var = NEJD_LIBERTY_DESIRE value = 40 }
 set_variable = { var = ASIR_LIBERTY_DESIRE value = 30 }
 
-set_variable = { var = TUR_rebels_strength value = 1}
+set_variable = { var = TUR_rebels_strength value = 5 }
 
 set_technology = {
 	infantry_weapons = 1
@@ -72,14 +72,14 @@ if = {
 		target = HEJ
 		autonomous_state = autonomy_eyalet
 	}
-	set_autonomy = {
-		target = NEJ
-		autonomous_state = autonomy_eyalet
-	}
-	set_autonomy = {
-		target = SHM
-		autonomous_state = autonomy_eyalet
-	}
+	#set_autonomy = {
+	#	target = NEJ
+	#	autonomous_state = autonomy_eyalet
+	#}
+	#set_autonomy = {
+	#	target = SHM
+	#	autonomous_state = autonomy_eyalet
+	#}
 	set_autonomy = {
 		target = LBA
 		autonomous_state = autonomy_vilayet
@@ -92,10 +92,10 @@ if = {
 		target = ASW
 		autonomous_state = autonomy_vilayet
 	}
-	set_autonomy = {
-		target = BHN
-		autonomous_state = autonomy_vilayet
-	}
+	#set_autonomy = {
+	#	target = BHN
+	#	autonomous_state = autonomy_vilayet
+	#}
 	set_autonomy = {
 		target = ALB
 		autonomous_state = autonomy_vilayet

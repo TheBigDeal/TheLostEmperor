@@ -29,10 +29,14 @@ units = {
 	division = { name = "Militsiya Diviziya" location = 3557 division_template = "Militsiya Diviziya" }
 	division = { name = "Militsiya Diviziya" location = 3455 division_template = "Militsiya Diviziya" }
 	division = { name = "Militsiya Diviziya" location = 501 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 11670 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 525 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 525 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 525 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 525 division_template = "Militsiya Diviziya" }
-	division = { name = "Militsiya Diviziya" location = 525 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 501 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 501 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 501 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 501 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 501 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 501 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 501 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 501 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 501 division_template = "Militsiya Diviziya" }
+	division = { name = "Militsiya Diviziya" location = 501 division_template = "Militsiya Diviziya" }
 }

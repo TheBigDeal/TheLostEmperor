@@ -1,0 +1,24 @@
+
+state={
+	id=1074
+	name="STATE_1074"
+	resources={
+		wood=20.000
+	}
+
+	history={
+		owner = PRE
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = PRE
+
+	}
+
+	provinces={
+		6487 9375 9456 9560 11468 
+	}
+	manpower=535364
+	buildings_max_level_factor=1.000
+}

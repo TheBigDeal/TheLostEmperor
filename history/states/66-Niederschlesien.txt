@@ -2,14 +2,11 @@
 state={
 	id=66
 	name="STATE_66"
-	manpower = 3052726
 	resources={
-		steel=110
-		aluminium=38
-		wood = 14
+		steel=110.000
+		aluminium=38.000
+		wood=14.000
 	}
-	
-	state_category = large_city
 
 	history={
 		owner = PRE
@@ -21,6 +18,7 @@ state={
 			arms_factory = 1
 			industrial_complex = 1
 			farm = 5
+
 		}
 		add_core_of = PRE
 		add_core_of = SIL
@@ -28,6 +26,9 @@ state={
 	}
 
 	provinces={
-		552 3283 3485 3510 3545 6462 6534 6595 9470 9570 11517 
+		552 3283 3438 3485 3510 3545 3572 6462 6534 6595 9470 9570 11517 
 	}
+	manpower=3052726
+	buildings_max_level_factor=1.000
+	state_category=large_city
 }

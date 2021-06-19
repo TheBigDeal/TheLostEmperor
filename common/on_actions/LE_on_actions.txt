@@ -13,6 +13,8 @@ on_actions = {
 			set_variable = { global.LE_shia_radicalism_var = 0.06 }
 			set_variable = { global.LE_ibadi_radicalism_var = 0.03 }
 
+			set_variable = { global.food_allowed_to_run = 1} #Defaults food to enabled
+
 			HRE_load_emperor_array = yes
 			HRE_load_elector_array = yes
 			HRE_load_country_array = yes
@@ -27,12 +29,16 @@ on_actions = {
 			}
 			every_country = {
 				set_variable = { prestige_score = 0 }
+				clamp_variable = { var = prestige_score min = 0 max = 99999 }
 				set_variable = { infamy_var = 0 }
+				add_dynamic_modifier = { modifier = LE_food_dynamic_modifier }
+				add_dynamic_modifier = { modifier = LE_food_famine_dynamic_modifier }
 				get_industrial_score = yes
 				get_military_score = yes
 				get_total_score = yes
 				get_population_number = yes
 				refresh_economy2 = yes
+				get_starting_food = yes
 				get_food_needs = yes
 				get_force_limit = yes
 				get_starting_food = yes
@@ -77,6 +83,16 @@ on_actions = {
 			get_force_limit = yes
 			#load_great_powers_array = yes
 			find_total_communist_pop = yes
+		}
+	}
+	on_army_leader_won_combat = {
+		effect = {
+			FROM = { add_to_variable = { prestige_score = 0.01 } }
+		}
+	}
+	on_army_leader_lost_combat  = {
+		effect = {
+			FROM = { add_to_variable = { prestige_score = -0.005 } }
 		}
 	}
 }

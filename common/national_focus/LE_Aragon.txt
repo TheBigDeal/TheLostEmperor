@@ -1,0 +1,2146 @@
+focus_tree = {
+	id = greece_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+
+	default = no
+	continuous_focus_position = { x = 50 y = 3100 }
+	focus = {
+		id = GRE_A_NATION_ON_THE_BRINK
+		icon = GFX_goal_revolution
+		x = 10
+		y = 0
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { }
+	}
+	focus = {
+		id = GRE_THE_ELECTIONS_OF_1928
+		icon = GFX_goal_generic_elections
+		prerequisite = { focus = GRE_A_NATION_ON_THE_BRINK }
+		x = 10
+		y = 1
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			
+			if = {
+				limit = { has_country_flag = constantines_return }
+				country_event = { id = le_greece.8 } 
+			}
+			if = {
+				limit = { NOT = { has_country_flag = constantines_return } }
+				country_event = { id = le_greece.1 } 
+			}
+		}
+	}
+	focus = {
+		id = GRE_A_PEOPLES_GREECE
+		icon = GFX_Workers_Paradise
+		prerequisite = { focus = GRE_THE_ELECTIONS_OF_1928 }
+		mutually_exclusive = { focus = GRE_THE_CENTER_HOLDS focus = GRE_A_PROUD_GREECE }
+		x = 4
+		y = 2
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			set_politics = {
+				ruling_party = collectivism
+			}
+		}
+	}
+	focus = {
+		id = GRE_DISPOSE_OF_THE_KING
+		icon = GFX_Purge_the_Monarchy
+		prerequisite = { focus = GRE_A_PEOPLES_GREECE }
+		x = 4
+		y = 3
+		cost = 5
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			remove_ideas = gre_unpopular_monarchy
+			add_popularity = {
+				ideology = mutualism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = collectivism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = proletarianism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = GRE_PEOPLES_TRIBUNALS
+		icon = GFX_focus_purge_bureaucracy
+		prerequisite = { focus = GRE_DISPOSE_OF_THE_KING }
+		x = 4
+		y = 4
+		cost = 5
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_popularity = {
+				ideology = royalism
+				popularity = -0.10
+			}
+			add_popularity = {
+				ideology = theocracy
+				popularity = -0.10
+			}
+			add_popularity = {
+				ideology = absolutism
+				popularity = -0.10
+			}
+			add_popularity = {
+				ideology = despotism
+				popularity = -0.10
+			}
+			add_popularity = {
+				ideology = labryscism
+				popularity = -0.10
+			}
+		}
+	}
+	focus = {
+		id = GRE_REFORM_PARLIAMENT
+		icon = GFX_education_reform
+		prerequisite = { focus = GRE_PEOPLES_TRIBUNALS }
+		x = 4
+		y = 5
+		cost = 5
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = gre_peoples_congress
+		}
+	}
+	focus = {
+		id = GRE_NATIONALIZATION
+		icon = GFX_goal_commune_politics
+		prerequisite = { focus = GRE_A_PEOPLES_GREECE }
+		x = 2
+		y = 3
+		cost = 5
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_ideas = gre_nationalization
+		}
+	}
+	focus = {
+		id = GRE_ENFORCE_SECULARIZATION
+		icon = GFX_Enshrine_Secularism
+		prerequisite = { focus = GRE_NATIONALIZATION }
+		x = 2
+		y = 4
+		cost = 5
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_ideas = gre_secularization
+		}
+	}
+	focus = {
+		id = GRE_ROOT_OUT_CAPITALISTS
+		icon = GFX_red_terror
+		prerequisite = { focus = GRE_ENFORCE_SECULARIZATION }
+		x = 2
+		y = 5
+		cost = 5
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_popularity = {
+				ideology = liberalism
+				popularity = -0.10
+			}
+			add_popularity = {
+				ideology = conservatism
+				popularity = -0.10
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.05
+			}
+		}
+	}
+	focus = {
+		id = GRE_BREAK_THE_CHAINS
+		icon = GFX_goal_revolution_tools
+		prerequisite = { focus = GRE_A_PEOPLES_GREECE }
+		x = 0
+		y = 3
+		cost = 5
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = GRE_WORKERS_MILITIA
+		icon = GFX_Peoples_Guard
+		prerequisite = { focus = GRE_BREAK_THE_CHAINS }
+		x = 0
+		y = 4
+		cost = 5
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_ideas = gre_workers_militias
+		}
+	}
+	focus = {
+		id = GRE_PEASANT_COUNCILS
+		icon = GFX_commie_council
+		prerequisite = { focus = GRE_WORKERS_MILITIA }
+		x = 0
+		y = 5
+		cost = 5
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = GRE_HELLENIC_SOCIALIST_REPUBLIC
+		icon = GFX_communist_pride
+		prerequisite = { focus = GRE_PEASANT_COUNCILS }
+		prerequisite = { focus = GRE_ROOT_OUT_CAPITALISTS }
+		prerequisite = { focus = GRE_REFORM_PARLIAMENT }
+		x = 2
+		y = 6
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_ideas = gre_hellenic_socialist_republic
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = GRE_WE_NEED_EQUALITY
+		icon = GFX_focus_collectivism
+		prerequisite = { focus = GRE_HELLENIC_SOCIALIST_REPUBLIC }
+		mutually_exclusive = { focus = GRE_WE_NEED_LIBERTY focus = GRE_WE_NEED_ORDER }
+		x = 0
+		y = 7
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_politics = {
+				ruling_party = collectivism
+			}
+		}
+	}
+	focus = {
+		id = GRE_GREEK_SOCIALISM
+		icon = GFX_socialist
+		prerequisite = { focus = GRE_HELLENIC_SOCIALIST_REPUBLIC }
+		x = 0
+		y = 8
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = gre_greek_socialism
+		}
+	}
+	focus = {
+		id = GRE_WE_NEED_ORDER
+		icon = GFX_focus_proletarianism
+		prerequisite = { focus = GRE_HELLENIC_SOCIALIST_REPUBLIC }
+		mutually_exclusive = { focus = GRE_WE_NEED_LIBERTY focus = GRE_WE_NEED_EQUALITY }
+		x = 2
+		y = 7
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_politics = {
+				ruling_party = proletarianism
+			}
+		}
+	}
+	focus = {
+		id = GRE_POWER_TO_ONE_MAN
+		icon = GFX_Officers_Command
+		prerequisite = { focus = GRE_WE_NEED_ORDER }
+		x = 2
+		y = 8
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = gre_big_brother
+		}
+	}
+	focus = {
+		id = GRE_WE_NEED_LIBERTY
+		icon = GFX_focus_mutualism
+		prerequisite = { focus = GRE_HELLENIC_SOCIALIST_REPUBLIC }
+		mutually_exclusive = { focus = GRE_WE_NEED_EQUALITY focus = GRE_WE_NEED_ORDER }
+		x = 4
+		y = 7
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_politics = {
+				ruling_party = mutualism
+			}
+		}
+	}
+	focus = {
+		id = GRE_THE_COMMUNAL_REPUBLIC
+		icon = GFX_goal_government_icon
+		prerequisite = { focus = GRE_WE_NEED_LIBERTY }
+		x = 4
+		y = 8
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = gre_devolution
+		}
+	}
+	focus = {
+		id = GRE_PERMANENT_REVOLUTION
+		icon = GFX_goal_national_mobilization
+		prerequisite = { focus = GRE_GREEK_SOCIALISM focus = GRE_POWER_TO_ONE_MAN focus = GRE_THE_COMMUNAL_REPUBLIC }
+		x = 2
+		y = 9
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_war_support = 0.10
+			add_stability = 0.10
+		}
+	}
+	focus = {
+		id = GRE_THE_CENTER_HOLDS
+		icon = GFX_goal_government_icon
+		prerequisite = { focus = GRE_THE_ELECTIONS_OF_1928 }
+		mutually_exclusive = { focus = GRE_A_PEOPLES_GREECE focus = GRE_A_PROUD_GREECE }
+		x = 10
+		y = 2
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_political_power = 100 }
+	}
+	focus = {
+		id = GRE_FORM_A_COALITION_GOVERNMENT
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = GRE_THE_CENTER_HOLDS }
+		x = 10
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { country_event = { id = le_greece.2 } }
+	}
+	focus = {
+		id = GRE_PP_DLP_COALITION
+		icon = GFX_ideology_liberalism
+		prerequisite = { focus = GRE_FORM_A_COALITION_GOVERNMENT }
+		mutually_exclusive = { focus = GRE_DLP_EP_COALITION focus = GRE_EP_NP_COALITION }
+		x = 8
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_politics = {
+				ruling_party = liberalism
+			}
+		}
+	}
+	
+	focus = {
+		id = GRE_INVESTIGATE_CLERICAL_ABUSES
+		icon = GFX_focus_trade_unions
+		prerequisite = { focus = GRE_PP_DLP_COALITION focus = GRE_DLP_EP_COALITION }
+		mutually_exclusive = { focus = GRE_RESTRICT_UNIONS }
+		x = 9
+		y = 6
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_stability = -0.05
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = GRE_BUISNESS_REGULATIONS
+		icon = GFX_goal_money_chains
+		prerequisite = { focus = GRE_INVESTIGATE_CLERICAL_ABUSES }
+		x = 9
+		y = 8
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_ideas = gre_captalism_civilized
+		}
+	}
+	focus = {
+		id = GRE_WOMENS_SUFFURAGE
+		icon = GFX_goal_women_industry
+		prerequisite = { focus = GRE_PP_DLP_COALITION }
+		x = 6
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = gre_womens_suffurage
+		}
+	}
+	focus = {
+		id = GRE_CULL_MILITARY_POWER
+		icon = GFX_focus_red_constitution
+		prerequisite = { focus = GRE_WOMENS_SUFFURAGE }
+		x = 6
+		y = 6
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_war_support = -0.05
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.05
+			}				
+		}
+	}
+	focus = {
+		id = GRE_SOCIAL_SECURITY
+		icon = GFX_goal_new_treaty
+		prerequisite = { focus = GRE_PP_DLP_COALITION }
+		x = 8
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_ideas = gre_social_security
+		}
+	}
+	focus = {
+		id = GRE_UNIVERSAL_HEALTH_CARE
+		icon = GFX_goal_government_icon
+		prerequisite = { focus = GRE_SOCIAL_SECURITY }
+		x = 8
+		y = 7
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = gre_social_security
+				add_idea = gre_welfare_state
+			}
+		}
+	}
+	focus = {
+		id = GRE_DLP_EP_COALITION
+		icon = GFX_ideology_conservatism
+		prerequisite = { focus = GRE_FORM_A_COALITION_GOVERNMENT }
+		mutually_exclusive = { focus = GRE_PP_DLP_COALITION focus = GRE_EP_NP_COALITION }
+		x = 10
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			set_politics = {
+				ruling_party = conservatism
+			}
+		}
+	}
+	focus = {
+		id = GRE_DEFANG_THE_ARMY
+		icon = GFX_Focus_Conscription_Act
+		prerequisite = { focus = GRE_DLP_EP_COALITION }
+		x = 10
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_ideas = gre_depoliticized_military
+		}
+	}
+	focus = {
+		id = GRE_LOWER_TAXES
+		icon = GFX_goal_new_treaty
+		prerequisite = { focus = GRE_DEFANG_THE_ARMY }
+		x = 10
+		y = 7
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_political_power = -100
+			add_stability = 0.10
+		}
+	}
+	focus = {
+		id = GRE_EP_NP_COALITION
+		icon = GFX_goal_empower_monarchy
+		prerequisite = { focus = GRE_FORM_A_COALITION_GOVERNMENT }
+		mutually_exclusive = { focus = GRE_DLP_EP_COALITION focus = GRE_PP_DLP_COALITION }
+		x = 12
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_politics = {
+				ruling_party = royalism
+			}
+		}
+	}
+	focus = {
+		id = GRE_RESTRICT_UNIONS
+		icon = GFX_labour_voucher_focus
+		prerequisite = { focus = GRE_EP_NP_COALITION focus = GRE_DLP_EP_COALITION }
+		mutually_exclusive = { focus = GRE_INVESTIGATE_CLERICAL_ABUSES }
+		x = 11
+		y = 6
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = gre_restrict_unions
+			add_political_power = -100
+		}
+	}
+	focus = {
+		id = GRE_EDUCATION_REFORM
+		icon = GFX_education_reform
+		prerequisite = { focus = GRE_RESTRICT_UNIONS }
+		x = 11
+		y = 8
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_ideas = gre_education_reform
+		}
+	}
+	focus = {
+		id = GRE_FLAG_ACT
+		icon = GFX_goal_national_mobilization
+		prerequisite = { focus = GRE_EP_NP_COALITION }
+		x = 14
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = GRE_RED_SCARE
+		icon = GFX_the_red_scare
+		prerequisite = { focus = GRE_FLAG_ACT }
+		x = 14
+		y = 6
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_popularity = { ideology = collectivism popularity = -0.1 }
+			add_popularity = { ideology = proletarianism popularity = -0.1 }
+			add_popularity = { ideology = mutualism popularity = -0.1 }
+		}
+	}
+	focus = {
+		id = GRE_GREEK_PATRIOTISM
+		icon = GFX_GRE_new_expansionism
+		prerequisite = { focus = GRE_EP_NP_COALITION }
+		x = 12
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_war_support = 0.10
+			add_popularity = { ideology = royalism popularity = -0.1 }
+		}
+	}
+	focus = {
+		id = GRE_LAISSEZ_FAIRE_ECONOMY
+		icon = GFX_planned_economy
+		prerequisite = { focus = GRE_GREEK_PATRIOTISM }
+		x = 12
+		y = 7
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_ideas = gre_laissez_faire_economy
+		}
+	}
+	focus = {
+		id = GRE_A_FREE_GREECE
+		icon = GFX_GRE_monarchy
+		prerequisite = { focus = GRE_LAISSEZ_FAIRE_ECONOMY focus = GRE_UNIVERSAL_HEALTH_CARE focus = GRE_LOWER_TAXES }
+		x = 10
+		y = 9
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			remove_ideas = { GRE_unpopular_monarchy GRE_exiled_prince_constantine }
+			add_ideas = gre_a_free_greece		
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = GRE_FOR_THE_KING
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_A_FREE_GREECE }
+		mutually_exclusive = { focus = GRE_HELLENIC_REPUBLIC }
+		x = 9
+		y = 10
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { }
+	}
+	focus = {
+		id = GRE_HELLENIC_REPUBLIC
+		icon = GFX_goal_unknown
+		prerequisite = { focus = GRE_A_FREE_GREECE }
+		mutually_exclusive = { focus = GRE_FOR_THE_KING }
+		x = 11
+		y = 10
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { }
+	}
+	focus = {
+		id = GRE_A_PROUD_GREECE
+		icon = GFX_nationalist_victory
+		prerequisite = { focus = GRE_THE_ELECTIONS_OF_1928 }
+		mutually_exclusive = { focus = GRE_THE_CENTER_HOLDS focus = GRE_A_PEOPLES_GREECE }
+		x = 16
+		y = 2
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_politics = {
+				ruling_party = labryscism
+			}
+		}
+	}
+	focus = {
+		id = GRE_DEAL_WITH_THE_KING
+		icon = GFX_goal_purge_opposition
+		prerequisite = { focus = GRE_A_PROUD_GREECE }
+		x = 16
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { country_event = { id = le_greece.3} }
+	}
+	focus = {
+		id = GRE_PURGE_COMMUNISTS
+		icon = GFX_red_terror
+		prerequisite = { focus = GRE_DEAL_WITH_THE_KING }
+		x = 16
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_popularity = { ideology = collectivism popularity = -0.1 } add_popularity = { ideology = proletarianism popularity = -0.1 } add_popularity = { ideology = mutualism popularity = -0.1 }}
+	}
+	focus = {
+		id = GRE_ABOLISH_PARLIAMENT
+		icon = GFX_goal_government_icon
+		prerequisite = { focus = GRE_PURGE_COMMUNISTS }
+		x = 16
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_ideas = gre_abolished_parliament }
+	}
+	focus = {
+		id = GRE_CENTRALIZATION
+		icon = GFX_education_reform
+		prerequisite = { focus = GRE_A_PROUD_GREECE }
+		x = 18
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_ideas = gre_centralization
+		}
+	}
+	focus = {
+		id = GRE_WEAKEN_THE_CHURCH
+		icon = GFX_focus_trade_unions
+		prerequisite = { focus = GRE_CENTRALIZATION }
+		x = 18
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_stability = -0.10
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = GRE_CHILDREN_OF_ARES
+		icon = GFX_gre_children_of_ares
+		prerequisite = { focus = GRE_WEAKEN_THE_CHURCH }
+		x = 18
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_ideas = gre_children_of_ares
+		}
+	}
+	focus = {
+		id = GRE_YOUNG_HOPLITES_ASSOCIATION
+		icon = GFX_Officers_Command
+		prerequisite = { focus = GRE_A_PROUD_GREECE }
+		x = 20
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_ideas = gre_young_hoplite_association
+		}
+	}
+	focus = {
+		id = GRE_EMULATE_SPARTA
+		icon = GFX_goal_army_guy_2
+		prerequisite = { focus = GRE_YOUNG_HOPLITES_ASSOCIATION }
+		x = 20
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+		id = GRE_ONLY_THE_STRONG
+		icon = GFX_stomp_out_the_weak
+		prerequisite = { focus = GRE_EMULATE_SPARTA }
+		x = 20
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = GRE_SPARTAN_MILITARY_STATE
+		icon = GFX_focus_sparta
+		prerequisite = { focus = GRE_ABOLISH_PARLIAMENT }
+		prerequisite = { focus = GRE_CHILDREN_OF_ARES }
+		prerequisite = { focus = GRE_ONLY_THE_STRONG }
+		x = 18
+		y = 6
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = extensive_conscription
+			add_ideas = war_economy
+		}
+	}
+	focus = {
+		id = GRE_TAKE_BACK_MACEDONIA
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = GRE_SPARTAN_MILITARY_STATE }
+		x = 16
+		y = 7
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			create_wargoal = {
+				type = annex_everything
+				target = MAC
+			}
+		}
+	}
+	focus = {
+		id = GRE_IONIAN_GREECE
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = GRE_TAKE_BACK_MACEDONIA }
+		x = 16
+		y = 8
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_state_claim = 880
+		}
+	}
+	focus = {
+		id = GRE_CLAIM_THE_AEGEAN
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GRE_SPARTAN_MILITARY_STATE }
+		x = 18
+		y = 7
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_state_claim = 187
+		}
+	}
+	focus = {
+		id = GRE_FATE_OF_ALBANIA
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GRE_CLAIM_THE_AEGEAN }
+		x = 18
+		y = 8
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ALB
+			}
+		}
+	}
+	focus = {
+		id = GRE_DEMAND_THRACE
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = GRE_SPARTAN_MILITARY_STATE }
+		x = 20
+		y = 7
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			TUR = { country_event = { id = le_greece.4 } }
+		}
+	}
+	focus = {
+		id = GRE_MARCH_ON_THE_HELLESPONT
+		icon = GFX_continued_hellenisation
+		prerequisite = { focus = GRE_DEMAND_THRACE }
+		x = 20
+		y = 8
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { }
+	}
+	focus = {
+		id = GRE_ALEXANDERS_LEGACY
+		icon = GFX_focus_FRA_eagle
+		prerequisite = { focus = GRE_IONIAN_GREECE }
+		prerequisite = { focus = GRE_FATE_OF_ALBANIA }
+		prerequisite = { focus = GRE_MARCH_ON_THE_HELLESPONT }
+		x = 18
+		y = 9
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = gre_alexanders_legacy
+		}
+	}
+	focus = {
+		id = GRE_A_PIOUS_GREECE
+		icon = GFX_bible
+		x = 25
+		y = 0
+		cost = 8
+		ai_will_do = { factor = 10 }
+		available = {
+			has_government = theocracy
+		}
+		completion_reward = { 
+			add_popularity = { ideology = theocracy popularity = 0.10 }
+		}
+	}
+	focus = {
+		id = GRE_QUESTION_OF_THE_KING
+		icon = GFX_goal_empower_monarchy
+		prerequisite = { focus = GRE_A_PIOUS_GREECE }
+		x = 25
+		y = 1
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { country_event = { id = le_greece.11 } }
+	}
+	focus = {
+		id = GRE_A_THEOCRATIC_STATE
+		icon = GFX_goal_orthodox_state
+		prerequisite = { focus = GRE_QUESTION_OF_THE_KING }
+		mutually_exclusive = { focus = GRE_A_THEOCRATIC_MONARCHY }
+		x = 24
+		y = 2
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_popularity = { ideology = theocracy popularity = 0.10 } 
+			remove_ideas = gre_unpopular_monarchy
+		}
+	}
+	focus = {
+		id = GRE_A_THEOCRATIC_MONARCHY
+		icon = GFX_focus_monarchy
+		prerequisite = { focus = GRE_QUESTION_OF_THE_KING }
+		mutually_exclusive = { focus = GRE_A_THEOCRATIC_STATE }
+		x = 26
+		y = 2
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			remove_ideas = { gre_unpopular_monarchy }
+		}
+	}
+	focus = {
+		id = GRE_MONASTIC_DOMINANCE
+		icon = GFX_gre_monastic_dominance
+		prerequisite = { focus = GRE_A_THEOCRATIC_STATE }
+		x = 23
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_ideas = gre_monastic_dominance }
+	}
+	focus = {
+		id = GRE_RULE_BY_THE_PATRIARCH
+		icon = GFX_focus_red_constitution
+		prerequisite = { focus = GRE_MONASTIC_DOMINANCE }
+		x = 23
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_popularity = { ideology = theocracy popularity = 0.10 } }
+	}
+	focus = {
+		id = GRE_IKONER_STUDIOS
+		icon = GFX_goal_government_icon
+		prerequisite = { focus = GRE_RULE_BY_THE_PATRIARCH }
+		x = 23
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_stability = 0.05 add_political_power = 50}
+	}
+	focus = {
+		id = GRE_DEAL_WITH_THE_SINNERS
+		icon = GFX_goal_purge_opposition
+		prerequisite = { focus = GRE_IKONER_STUDIOS }
+		x = 23
+		y = 6
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_manpower = -15000
+			add_popularity = { ideology = theocracy popularity = 0.25 }
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = GRE_ORTHODOX_TEACHINGS
+		icon = GFX_goal_GRE_orthodoxy
+		prerequisite = { focus = GRE_A_THEOCRATIC_MONARCHY focus = GRE_A_THEOCRATIC_STATE }
+		x = 25
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_ideas = gre_orthodox_teachings }
+	}
+	focus = {
+		id = GRE_MANDATORY_CHURCH_SCHOOLS
+		icon = GFX_education_reform
+		prerequisite = { focus = GRE_ORTHODOX_TEACHINGS }
+		x = 25
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_ideas = gre_church_schools }
+	}
+	focus = {
+		id = GRE_PLACATE_THE_ARCHBISHOP
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = GRE_MANDATORY_CHURCH_SCHOOLS }
+		x = 25
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_popularity = { ideology = royalism popularity = -0.10}
+			#ADD ARCHBISHOP DAMASKINOS
+		}
+	}
+	focus = {
+		id = GRE_THE_EASTERN_MENACE
+		icon = GFX_goal_cutdown_ottoman_empire
+		prerequisite = { focus = GRE_PLACATE_THE_ARCHBISHOP }
+		x = 25
+		y = 6
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_war_support = 0.10
+			add_state_claim = 341
+		}
+	}
+	focus = {
+		id = GRE_DIVINE_RIGHT_OF_KINGS
+		icon = GFX_gre_divine_right
+		prerequisite = { focus = GRE_A_THEOCRATIC_MONARCHY }
+		x = 27
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = gre_divine_right_of_kings
+		}
+	}
+	focus = {
+		id = GRE_IN_GODS_LIGHT
+		icon = GFX_religion_orthodox2
+		prerequisite = { focus = GRE_DIVINE_RIGHT_OF_KINGS }
+		x = 27
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_political_power = 100 }
+	}
+	focus = {
+		id = GRE_GOD_IN_HEAVEN_KING_ON_EARTH
+		icon = GFX_GRE_new_expansionism
+		prerequisite = { focus = GRE_IN_GODS_LIGHT }
+		x = 27
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_stability = 0.10 }
+	}
+	focus = {
+		id = GRE_A_KINGDOM_OF_THE_FAITHFUL
+		icon = GFX_peace
+		prerequisite = { focus = GRE_GOD_IN_HEAVEN_KING_ON_EARTH }
+		x = 27
+		y = 6
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_ideas = gre_kingdom_of_the_faithful }
+	}
+	focus = {
+		id = GRE_RECREATE_THE_PENTARCHY
+		icon = GFX_orthodox_eagle
+		prerequisite = { focus = GRE_THE_EASTERN_MENACE }
+		prerequisite = { focus = GRE_DEAL_WITH_THE_SINNERS }
+		x = 24
+		y = 7
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_state_claim = 2
+			add_state_claim = 677
+			add_state_claim = 680
+			add_state_claim = 959
+			add_state_claim = 554
+			add_state_claim = 553
+			add_state_claim = 454
+			add_state_claim = 453
+			add_state_claim = 446
+			add_state_claim = 447
+			add_state_claim = 452
+			add_state_claim = 451
+			add_state_claim = 457
+			add_state_claim = 456
+		}
+	}
+	focus = {
+		id = GRE_BYZANTIUM_RESTORED
+		icon = GFX_byzantine
+		prerequisite = { focus = GRE_THE_EASTERN_MENACE }
+		prerequisite = { focus = GRE_A_KINGDOM_OF_THE_FAITHFUL }
+		x = 26
+		y = 7
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			set_cosmetic_tag = BYZ_UNIFIED
+			set_capital = 341
+			341 = { set_state_name = "Constantinople" }
+			set_province_name = {
+				id = 9833
+				name = "Constantinople"
+			}
+		}
+	}
+	focus = {
+		id = GRE_BULWARK_OF_CHRISTENDOM
+		icon = GFX_goal_army_guy_2
+		prerequisite = { focus = GRE_BYZANTIUM_RESTORED focus = GRE_RECREATE_THE_PENTARCHY }
+		x = 25
+		y = 8
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_ideas = gre_bulwark_of_christiandom }
+	}
+	focus = {
+		id = GRE_THE_CRISIS_WORSENS
+		icon = GFX_focus_death_or_dishonor
+		x = 32
+		y = 0
+		cost = 8
+		ai_will_do = { factor = 10 }
+		available = {
+			has_country_leader = {
+				name = "King Constantine"
+				ruling_only = yes
+			}
+		}
+		completion_reward = { add_stability = -0.05 }
+	}
+	focus = {
+		id = GRE_THE_BASTARD_PRINCE
+		icon = GFX_gre_constantine
+		prerequisite = { focus = GRE_THE_CRISIS_WORSENS }
+		mutually_exclusive = { focus = GRE_MILITARY_COUP }
+		x = 31
+		y = 1
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_popularity = { ideology = absolutism popularity = 0.10 } 
+			set_politics = {ruling_party = absolutism}
+			remove_ideas = GRE_exiled_prince_constantine 
+		}
+	}
+	focus = {
+		id = GRE_END_THE_PRETENDER
+		icon = GFX_goal_purge_opposition
+		prerequisite = { focus = GRE_THE_BASTARD_PRINCE }
+		x = 30
+		y = 2
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { country_event = {id = le_greece.12 }}
+	}
+	focus = {
+		id = GRE_DISSOLVE_PARLAMENT
+		icon = GFX_goal_government_icon
+		prerequisite = { focus = GRE_END_THE_PRETENDER }
+		x = 30
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_popularity = { ideology = liberalism popularity = -0.05 }
+			add_popularity = { ideology = conservatism popularity = -0.05 }
+			add_popularity = { ideology = socialism popularity = -0.05 }
+			add_ideas = gre_absolute_monarchy
+		}
+	}
+	focus = {
+		id = GRE_COOPERATE_WITH_THE_CHURCH
+		icon = GFX_goal_orthodox_state
+		prerequisite = { focus = GRE_DISSOLVE_PARLAMENT }
+		x = 30
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_popularity = { ideology = absolutism popularity = 0.10 }
+			add_popularity = { ideology = theocracy popularity = -0.10 }
+		}
+	}
+	focus = {
+		id = GRE_ROYAL_CADETS
+		icon = GFX_Officers_Command
+		prerequisite = { focus = GRE_COOPERATE_WITH_THE_CHURCH }
+		x = 30
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_ideas = gre_royal_cadets
+		}
+	}
+	focus = {
+		id = GRE_ALL_FOR_THE_KING
+		icon = GFX_GRE_new_expansionism
+		prerequisite = { focus = GRE_ROYAL_CADETS }
+		prerequisite = { focus = GRE_FREEDOM_ISNT_FREE }
+		x = 30
+		y = 6
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_stability = 0.10
+			add_war_support = 0.10
+			add_popularity = { ideology = absolutism popularity = 0.10 }
+		}
+	}
+	focus = {
+		id = GRE_A_NEW_KING_OF_MONARCH
+		icon = GFX_focus_monarchy
+		prerequisite = { focus = GRE_ALL_FOR_THE_KING }
+		mutually_exclusive = { focus = GRE_A_TRADITIONAL_MONARCH }
+		x = 29
+		y = 7
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_country_leader_trait = gre_the_peoples_king }
+	}
+	focus = {
+		id = GRE_A_TRADITIONAL_MONARCH
+		icon = GFX_focus_hun_elect_a_king
+		prerequisite = { focus = GRE_ALL_FOR_THE_KING }
+		mutually_exclusive = { focus = GRE_A_NEW_KING_OF_MONARCH }
+		x = 31
+		y = 7
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_country_leader_trait = gre_nationalist_symbol }
+	}
+	focus = {
+		id = GRE_GREECE_IS_SAVED
+		icon = GFX_GRE_monarchy
+		prerequisite = { focus = GRE_EXPAND_CONSCRIPTION }
+		prerequisite = { focus = GRE_FREEDOM_ISNT_FREE }
+		x = 34
+		y = 6
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_stability = 0.10 
+			country_event = { id = le_greece.13 }
+		}
+	}
+	focus = {
+		id = GRE_RESTORE_DEMOCRACY
+		icon = GFX_peace
+		prerequisite = { focus = GRE_GREECE_IS_SAVED }
+		mutually_exclusive = { focus = GRE_AN_EXECUTIVE_JUNTA }
+		x = 33
+		y = 7
+		cost = 8
+		ai_will_do = { factor = 10 }
+		available = { has_country_flag = gre_keep_the_king }
+		completion_reward = { 
+			set_politics = { ruling_party = conservatism }
+			add_popularity = { ideology = despotism popularity = -0.15 }
+			remove_ideas = GRE_unpopular_monarchy
+		}
+	}
+	focus = {
+		id = GRE_AN_EXECUTIVE_JUNTA
+		icon = GFX_nationalist_victory
+		prerequisite = { focus = GRE_GREECE_IS_SAVED }
+		mutually_exclusive = { focus = GRE_RESTORE_DEMOCRACY }
+		x = 35
+		y = 7
+		cost = 8
+		ai_will_do = { factor = 10 }
+		available = { has_country_flag = gre_republic_declared }
+		completion_reward = { 
+			remove_ideas = GRE_unpopular_monarchy
+			add_timed_idea = { idea = gre_political_protests days = 180 }
+			add_popularity = { ideology = despotism popularity = 0.10 }
+		}
+	}
+	focus = {
+		id = GRE_MILITARY_COUP
+		icon = GFX_Crush_the_Rebellion
+		prerequisite = { focus = GRE_THE_CRISIS_WORSENS }
+		mutually_exclusive = { focus = GRE_THE_BASTARD_PRINCE }
+		x = 33
+		y = 1
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { set_politics = { ruling_party = despotism } }
+	}
+	focus = {
+		id = GRE_DESTROY_THE_COMMUNISTS
+		icon = GFX_the_red_scare
+		prerequisite = { focus = GRE_THE_BASTARD_PRINCE focus = GRE_MILITARY_COUP }
+		x = 32
+		y = 2
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { }
+	}
+	focus = {
+		id = GRE_A_STATE-OF_EMERGENCY
+		icon = GFX_Tanks_Across_the_Border
+		prerequisite = { focus = GRE_MILITARY_COUP }
+		x = 34
+		y = 2
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_ideas = gre_state_of_emergency }
+	}
+	focus = {
+		id = GRE_SUSPEND_THE_CONSTITUTION
+		icon = GFX_focus_red_constitution
+		prerequisite = { focus = GRE_A_STATE-OF_EMERGENCY }
+		x = 34
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = gre_state_of_emergency
+				add_idea = gre_suspended_the_constitution
+			} 
+			add_popularity = { ideology = despotism popularity = 0.10 }
+		}
+	}
+	focus = {
+		id = GRE_WORK_WITH_THE_ARCHBISHOP
+		icon = GFX_goal_GRE_orthodoxy
+		prerequisite = { focus = GRE_SUSPEND_THE_CONSTITUTION }
+		x = 34
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			remove_ideas = GRE_exiled_prince_constantine
+			add_political_power = 100
+			#Add Archbishop Damaskinos as a popular figurehead
+		}
+	}
+	focus = {
+		id = GRE_EXPAND_CONSCRIPTION
+		icon = GFX_goal_officers
+		prerequisite = { focus = GRE_WORK_WITH_THE_ARCHBISHOP }
+		x = 34
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_ideas = gre_expanded_conscription
+		}
+	}
+	focus = {
+		id = GRE_ELIMINATE_THE_COMMUNISTS
+		icon = GFX_red_terror
+		prerequisite = { focus = GRE_THE_BASTARD_PRINCE focus = GRE_MILITARY_COUP }
+		x = 32
+		y = 2
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_popularity = { ideology = collectivism popularity = -0.10}
+			add_popularity = { ideology = proletarianism popularity = -0.10}
+			add_popularity = { ideology = mutualism popularity = -0.10}
+			add_popularity = { ideology = socialism popularity = -0.10}
+		}
+	}
+	focus = {
+		id = GRE_ELIMINATE_THE_LABRYSCISTS
+		icon = GFX_goal_revolution
+		prerequisite = { focus = GRE_ELIMINATE_THE_COMMUNISTS }
+		x = 32
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_popularity = { ideology = labryscism popularity = -0.10} }
+	}
+	focus = {
+		id = GRE_PROPAGNDA_CAMPAIGN
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = GRE_ELIMINATE_THE_LABRYSCISTS }
+		x = 32
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = GRE_FREEDOM_ISNT_FREE
+		icon = GFX_goal_generic_absolutism_focus
+		prerequisite = { focus = GRE_PROPAGNDA_CAMPAIGN }
+		x = 32
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_ideas = gre_freedom_isnt_free }
+	}
+	focus = {
+		id = GRE_THE_GREEK_ECONOMY
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 46
+		y = 0
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_political_power = 50 }
+	}
+	focus = {
+		id = GRE_REDISTRIBUTION_OF_WEALTH
+		icon = GFX_goal_economic_control_red
+		prerequisite = { focus = GRE_THE_GREEK_ECONOMY }
+		mutually_exclusive = { focus = GRE_LAISSEZ_FAIRE_POLICY focus = GRE_INTERVENTIONISM focus = GRE_MILITARY_INDUSTRIAL_COMPLEX  focus = GRE_THE_KINGS_ENONOMY }
+		x = 38
+		y = 1
+		cost = 8
+		ai_will_do = { factor = 10 }
+		available = {
+			OR = {
+				has_government = collectivism
+				has_government = proletarianism
+				has_government = mutualism
+			}
+		}
+		completion_reward = { add_ideas = { gre_redisribution_of_wealth }}
+	}
+	focus = {
+		id = GRE_LABOR_VOUCHERS
+		icon = GFX_labour_voucher_focus
+		prerequisite = { focus = GRE_REDISTRIBUTION_OF_WEALTH }
+		x = 38
+		y = 2
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			custom_effect_tooltip = LABOR_VOUCHERS_TT
+			set_country_flag = labor_vouchers
+		}
+	}
+	focus = {
+		id = GRE_LABOR_DIVISIONS
+		icon = GFX_focus_red_army
+		prerequisite = { focus = GRE_LABOR_VOUCHERS }
+		x = 37
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_ideas = { gre_labor_divisions } }
+	}
+	focus = {
+		id = GRE_UNION_LEAD_FACTORIES
+		icon = GFX_focus_trade_unions
+		prerequisite = { focus = GRE_LABOR_DIVISIONS }
+		x = 37
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			47 = { 
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				} 
+				add_extra_state_shared_building_slots = 1
+			} 
+		}
+	}
+	focus = {
+		id = GRE_WORKPLACE_EQUALITY
+		icon = GFX_goal_women_industry
+		prerequisite = { focus = GRE_UNION_LEAD_FACTORIES }
+		x = 37
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { } #REVISIT
+	}
+	focus = {
+		id = GRE_COLLECTIVIZATION
+		icon = GFX_focus_collectivism
+		prerequisite = { focus = GRE_LABOR_VOUCHERS }
+		x = 39
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			186 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			47 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			954 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			951 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			826 = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = GRE_SEIZE_CHURCH_ASSETS
+		icon = GFX_seize_the_means_of_production
+		prerequisite = { focus = GRE_COLLECTIVIZATION }
+		x = 39
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			955 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			1002 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			731 = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = GRE_BULLETS_AND_BREAD
+		icon = GFX_goal_generic_arm_populace
+		prerequisite = { focus = GRE_SEIZE_CHURCH_ASSETS }
+		x = 39
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_manpower = 10000
+			random_state = {
+				limit = { is_owned_by = GRE}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = GRE_A_SOCIALIST_ECONOMY
+		icon = GFX_Workers_Paradise
+		prerequisite = { focus = GRE_WORKPLACE_EQUALITY }
+		prerequisite = { focus = GRE_BULLETS_AND_BREAD }
+		x = 38
+		y = 6
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_ideas = { gre_a_socialist_economy }
+			remove_ideas = { gre_failed_economy }
+		}
+	}
+	focus = {
+		id = GRE_LAISSEZ_FAIRE_POLICY
+		icon = GFX_goal_government_icon
+		prerequisite = { focus = GRE_THE_GREEK_ECONOMY }
+		mutually_exclusive = { focus = GRE_REDISTRIBUTION_OF_WEALTH focus = GRE_INTERVENTIONISM focus = GRE_MILITARY_INDUSTRIAL_COMPLEX focus = GRE_THE_KINGS_ENONOMY }
+		x = 42
+		y = 1
+		cost = 8
+		ai_will_do = { factor = 10 }
+		available = {
+			OR = {
+				has_government = conservatism
+				has_government = royalism
+			}
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = GRE_FUND_UNIVERSITIES
+		icon = GFX_education_reform
+		prerequisite = { focus = GRE_LAISSEZ_FAIRE_POLICY }
+		x = 42
+		y = 2
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_ideas = gre_funding_universities }
+	}
+	focus = {
+		id = GRE_CHRISTIAN_AUSTERITY
+		icon = GFX_goal_GRE_orthodoxy
+		prerequisite = { focus = GRE_FUND_UNIVERSITIES }
+		x = 41
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_ideas = gre_christian_austerity}
+	}
+	focus = {
+		id = GRE_PROTECT_CHURCH_ASSETS
+		icon = GFX_goal_orthodox_state
+		prerequisite = { focus = GRE_CHRISTIAN_AUSTERITY }
+		x = 41
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_political_power = -100
+			random_state = {
+				limit = { is_owned_by = GRE }
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = GRE_CUT_BENEFITS
+		icon = GFX_focus_red_constitution
+		prerequisite = { focus = GRE_PROTECT_CHURCH_ASSETS }
+		x = 41
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_ideas = gre_benefits_cut }
+	}
+	focus = {
+		id = GRE_BAIL_OUT_FAILING_BUSINESSES
+		icon = GFX_focus_trade_unions
+		prerequisite = { focus = GRE_FUND_UNIVERSITIES }
+		x = 43
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_political_power = -100
+			random_state = {
+				limit = { is_owned_by = GRE }
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				set_state_flag = gre_bailing_buisness
+			}
+			random_state = {
+				limit = { is_owned_by = GRE NOT = {has_state_flag = gre_bailing_buisness } }
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = GRE_CAPITALISM_FOREVER
+		icon = GFX_capitalism_forever
+		prerequisite = { focus = GRE_BAIL_OUT_FAILING_BUSINESSES }
+		x = 43
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_ideas = gre_greek_capitalism }
+	}
+	focus = {
+		id = GRE_REFORM_THE_BANKS
+		icon = GFX_goal_new_treaty
+		prerequisite = { focus = GRE_CAPITALISM_FOREVER }
+		x = 43
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_ideas = gre_bank_reform 
+			random_state = {
+				limit = { is_owned_by = GRE industrial_complex > 1 }
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = GRE_FREE_MARKET_FREE_PEOPLE
+		icon = GFX_Freedom
+		prerequisite = { focus = GRE_REFORM_THE_BANKS }
+		prerequisite = { focus = GRE_CUT_BENEFITS }
+		x = 42
+		y = 6
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			remove_ideas = gre_failed_economy
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = GRE_INTERVENTIONISM
+		icon = GFX_ideology_socialism
+		prerequisite = { focus = GRE_THE_GREEK_ECONOMY }
+		mutually_exclusive = { focus = GRE_LAISSEZ_FAIRE_POLICY focus = GRE_REDISTRIBUTION_OF_WEALTH focus = GRE_MILITARY_INDUSTRIAL_COMPLEX focus = GRE_THE_KINGS_ENONOMY }
+		x = 46
+		y = 1
+		cost = 8
+		ai_will_do = { factor = 10 }
+		available = {
+			OR = {
+				has_government = socialism
+				has_government = theocracy
+			}
+		}
+		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = GRE_UNIVERSAL_BASIC_INCOME
+		icon = GFX_Cash_and_Carry
+		prerequisite = { focus = GRE_INTERVENTIONISM}
+		x = 46
+		y = 2
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { }
+	}
+	focus = {
+		id = GRE_PUBLIC_WORKS_PROGRAM
+		icon = GFX_Generic_Industry
+		prerequisite = { focus = GRE_UNIVERSAL_BASIC_INCOME}
+		x = 45
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			every_state = {
+				limit = { is_owned_by = GRE }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GRE_ENSHRINE_WORKERS_RIGHTS
+		icon = GFX_focus_national_socialist_male
+		prerequisite = { focus = GRE_PUBLIC_WORKS_PROGRAM}
+		x = 45
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = GRE_WAR_ON_POVERTY
+		icon = GFX_cash
+		prerequisite = { focus = GRE_ENSHRINE_WORKERS_RIGHTS }
+		x = 45
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_ideas = gre_war_on_poverty
+		}
+	}
+	focus = {
+		id = GRE_NATIONALIZE_FAILING_INDUSTRIES
+		icon = GFX_Nurture_Heavy_Industry
+		prerequisite = { focus = GRE_UNIVERSAL_BASIC_INCOME }
+		x = 47
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			random_state = {
+				limit = { is_owned_by = GRE industrial_complex > 1 }
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_state = {
+				limit = { is_owned_by = GRE industrial_complex > 1 }
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_state = {
+				limit = { is_owned_by = GRE NOT = {has_state_flag = gre_bailing_buisness } }
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = GRE_UNEMPLOYMENT_BENEFITS
+		icon = GFX_Shelter_the_People
+		prerequisite = { focus = GRE_NATIONALIZE_FAILING_INDUSTRIES }
+		x = 47
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_ideas = gre_unemployment_benefits }
+	}
+	focus = {
+		id = GRE_REGULATE_THE_MARKET
+		icon = GFX_Generic_Good_Economy
+		prerequisite = { focus = GRE_UNEMPLOYMENT_BENEFITS }
+		x = 47
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_political_power = -100
+			random_state = {
+				limit = { is_owned_by = GRE NOT = {has_state_flag = gre_bailing_buisness } }
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_state = {
+				limit = { is_owned_by = GRE NOT = {has_state_flag = gre_bailing_buisness } }
+				add_building_construction = {
+					type = synthetic_refinery	
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = GRE_THE_WELFARE_STATE
+		icon = GFX_Unite_the_People
+		prerequisite = { focus = GRE_REGULATE_THE_MARKET }
+		prerequisite = { focus = GRE_WAR_ON_POVERTY }
+		x = 46
+		y = 6
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { } #TODO
+	}
+	focus = {
+		id = GRE_MILITARY_INDUSTRIAL_COMPLEX
+		icon = GFX_Generic_Crossed_Rifles
+		prerequisite = { focus = GRE_THE_GREEK_ECONOMY }
+		mutually_exclusive = { focus = GRE_LAISSEZ_FAIRE_POLICY focus = GRE_INTERVENTIONISM focus = GRE_REDISTRIBUTION_OF_WEALTH focus = GRE_THE_KINGS_ENONOMY }
+		x = 50
+		y = 1
+		cost = 8
+		ai_will_do = { factor = 10 }
+		available = {
+			OR = {
+				has_government = despotism
+				has_government = labryscism
+			}
+		}
+		completion_reward = {
+			add_ideas = { gre_military_industrial_complex }
+		}
+	}
+	focus = {
+		id = GRE_MINING_EXPANSION
+		icon = GFX_Generic_exploit_mines
+		prerequisite = { focus = GRE_MILITARY_INDUSTRIAL_COMPLEX }
+		x = 50
+		y = 2
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			custom_effect_tooltip = GRE_MINING_EXPANSION_TT
+			add_to_variable = {
+				var = current_money
+				value = 3000
+			}
+			add_resource = {
+				type = steel
+				amount = 8
+				state = 186
+			}
+			add_resource = {
+				type = tungsten
+				amount = 3
+				state = 826
+			}
+		}
+	}
+	focus = {
+		id = GRE_CONSCRIPT_THE_UNEMPLOYED
+		icon = GFX_Focus_Conscription_Act
+		prerequisite = { focus = GRE_MINING_EXPANSION }
+		x = 49
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_ideas = {gre_conscript_the_unemployed }}
+	}
+	focus = {
+		id = GRE_MILITARIZE_INDUSTRIES
+		icon = GFX_Generic_Industry_Tanks
+		prerequisite = { focus = GRE_CONSCRIPT_THE_UNEMPLOYED }
+		x = 49
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			random_state = {
+				limit = { is_owned_by = GRE industrial_complex  > 1 }
+				remove_building = { type = industrial_complex level = 1 }
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_owned_by = GRE industrial_complex  > 1 }
+				remove_building = { type = industrial_complex level = 1 }
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GRE_NATIONAL_AUSTERITY
+		icon = GFX_Nurture_Heavy_Industry
+		prerequisite = { focus = GRE_MILITARIZE_INDUSTRIES }
+		x = 49
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_ideas = {gre_national_austerity_plan }}
+	}
+	focus = {
+		id = GRE_MILITARY_ENGINEERING_TECHNIQUES
+		icon = GFX_science
+		prerequisite = { focus = GRE_MINING_EXPANSION }
+		x = 51
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	focus = {
+		id = GRE_STATES_CORPORATISM 
+		icon = GFX_USA_workers_for_business
+		prerequisite = { focus = GRE_MILITARY_ENGINEERING_TECHNIQUES }
+		x = 51
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_political_power = -100
+			random_state = {
+				limit = { is_owned_by = GRE NOT = {has_state_flag = gre_bailing_buisness } }
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = GRE_PUBLIC_LABOR_BATALIONS
+		icon = GFX_Soldiers_for_Workers
+		prerequisite = { focus = GRE_STATES_CORPORATISM }
+		x = 51
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_manpower = 10000
+			add_stability = -0.02
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = GRE_READY_FOR_WAR
+		icon = GFX_Generic_Army_Officers
+		prerequisite = { focus = GRE_PUBLIC_LABOR_BATALIONS }
+		prerequisite = { focus = GRE_NATIONAL_AUSTERITY }
+		x = 50
+		y = 6
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = war_economy
+			remove_ideas = gre_failed_economy
+		}
+	}	
+	focus = {
+		id = GRE_THE_KINGS_ENONOMY
+		icon = GFX_goal_empower_monarchy
+		prerequisite = { focus = GRE_THE_GREEK_ECONOMY }
+		mutually_exclusive = { focus = GRE_LAISSEZ_FAIRE_POLICY focus = GRE_INTERVENTIONISM focus = GRE_REDISTRIBUTION_OF_WEALTH focus = GRE_MILITARY_INDUSTRIAL_COMPLEX }
+		x = 54
+		y = 1
+		cost = 8
+		ai_will_do = { factor = 10 }
+		available = {
+			OR = {
+				has_government = absolutism
+				has_government = rexism
+			}
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = GRE_ENCOURAGE_FOREIGN_INVESTORS
+		icon = GFX_planned_economy
+		prerequisite = { focus = GRE_THE_KINGS_ENONOMY }
+		x = 54
+		y = 2
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {add_ideas = gre_foreign_investment}
+	}
+	focus = {
+		id = GRE_EXPAND_ROYAL_ESTATES
+		icon = GFX_education_reform
+		prerequisite = { focus = GRE_ENCOURAGE_FOREIGN_INVESTORS }
+		x = 53
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			random_state = {
+				limit = { is_owned_by = GRE }
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+	focus = {
+		id = GRE_RESPECT_CHURCH_AUTHORITY
+		icon = GFX_goal_orthodox_state
+		prerequisite = { focus = GRE_EXPAND_ROYAL_ESTATES }
+		x = 53
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { add_ideas = gre_church_assets_protected}
+	}
+	focus = {
+		id = GRE_FUND_THE_MILITARY
+		icon = GFX_goal_army_guy_2
+		prerequisite = { focus = GRE_RESPECT_CHURCH_AUTHORITY }
+		x = 53
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			add_ideas = gre_raised_military_spending
+			#ADD LOSS PER MONTH OF MONEY
+		}
+	}
+	focus = {
+		id = GRE_SUPPORT_BIG_BUSINESS
+		icon = GFX_Nurture_Heavy_Industry
+		prerequisite = { focus = GRE_ENCOURAGE_FOREIGN_INVESTORS }
+		x = 55
+		y = 3
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = -100
+			random_state = {
+				limit = { is_owned_by = GRE is_coastal = yes}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_state = {
+				limit = { is_owned_by = GRE }
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = GRE_SLASH_CORPORATE_TAXES
+		icon = GFX_Cash_and_Carry
+		prerequisite = { focus = GRE_SUPPORT_BIG_BUSINESS }
+		x = 55
+		y = 4
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = -50
+			#LOSE MONEY
+			add_stability = 0.05
+			random_state = {
+				limit = { is_owned_by = GRE }
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_state = {
+				limit = { is_owned_by = GRE }
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = GRE_DESTROY_UNION_POWER
+		icon = GFX_focus_trade_unions
+		prerequisite = { focus = GRE_SLASH_CORPORATE_TAXES }
+		x = 55
+		y = 5
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = -100
+			add_popularity = { ideology = absolutism popularity = 0.10 }
+		}
+	}
+	focus = {
+		id = GRE_THE_ROYAL_MIRACLE
+		icon = GFX_focus_monarchy
+		prerequisite = { focus = GRE_FUND_THE_MILITARY }
+		prerequisite = { focus = GRE_DESTROY_UNION_POWER }
+		x = 54
+		y = 6
+		cost = 8
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			every_state = {
+				limit = { is_owned_by = GRE }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			remove_ideas = gre_failed_economy
+		}
+	}

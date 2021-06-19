@@ -1,4 +1,5 @@
 ﻿l_english:
+ LE_food_dynamic_modifier:0 "Food being consumed:"
  country_name:0 "[?manpower_k]"
  hansa_needed_money:0 "100,000 £texticon_money"
  state_in_HRE:0 "This State Is A Part Of The Holy Roman Empire"
