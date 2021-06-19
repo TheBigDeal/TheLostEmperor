@@ -69,7 +69,6 @@ focus_tree = {
 		Focus = {
 	
 	id = prepare_for_livonia
-	
 	icon = GFX_focus_ger_oppose_hitler
 	x = 2
 	y = 2
